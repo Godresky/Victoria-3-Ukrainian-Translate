@@ -1,10 +1,10 @@
 ﻿l_russian:
 
- concept_economy_health:0 "Economy Health"
- concept_economy_health_healthy:0 "Healthy Economy"
- concept_economy_health_healthy_short:0 "Healthy"
- concept_economy_health_unhealthy:0 "Unhealthy Economy"
- concept_economy_health_unhealthy_short:0 "Unhealthy"
+ concept_economy_health: "Здоров'я економіки"
+ concept_economy_health_healthy: "Здорова економіка"
+ concept_economy_health_healthy_short: "Здорова"
+ concept_economy_health_unhealthy: "Нездорова економіка"
+ concept_economy_health_unhealthy_short: "Нездорова"
  concept_economy_health_desc:0 "A [Concept('concept_country','$concept_country_possessive$')] economy is considered $concept_economy_health_healthy_short$ if #italic either#!:\n$TAB$@green_checkmark_box! its fixed incomes exceed its fixed expenses\n$TAB$@green_checkmark_box! its [concept_principal] is less than half their total [concept_credit]"
 
  concept_bankroll:0 "$bankroll$"

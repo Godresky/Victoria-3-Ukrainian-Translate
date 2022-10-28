@@ -1,5 +1,5 @@
 ﻿l_russian:
- AND:0 " and "
- AND_LIST:0 ", and "
+ AND:0 " і "
+ AND_LIST:0 ", і "
  COMMA:0 ", "
  NEWLINE:0 "\n"
