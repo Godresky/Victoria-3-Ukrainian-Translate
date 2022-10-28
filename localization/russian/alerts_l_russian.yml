@@ -151,7 +151,7 @@
 
  ALERT_PEACE_PROPOSED_ENTRY:0 "[WAR.GetName|b] - [WAR.GetDaysUntilPeaceDealFails|v] day(s) until peace deal is rejected"
   
- alert_has_no_research_alert_name:0 "No Active Research"
+ alert_has_no_research_alert_name: "Жодних активних досліджень"
  alert_has_no_research_alert_desc:1 "We are currently not actively researching any [concept_technology]. Any [concept_innovation] we are generating will increase our passive technology spread."
  alert_has_no_research_alert_hint:1 "You set which Technology to research in one of the three Technology trees in the Technology Panel."
  alert_has_no_research_alert_action:0 "Technology Panel"

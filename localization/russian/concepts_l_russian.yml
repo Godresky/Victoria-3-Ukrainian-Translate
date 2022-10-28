@@ -275,8 +275,8 @@
  concept_timed:0 "Timed"
  concept_timed_modifier_desc:0 "A [concept_modifier] with an expiry date, after which it will disappear. $concept_timed_modifiers$ can either maintain its full effect up until its expiry date, or [concept_decay] gradually until the date has been reached."
  
- concept_modifier:0 "Modifier"
- concept_modifiers:1 "Modifiers"
+ concept_modifier: "Змінювач"
+ concept_modifiers: "Змінювачі"
  concept_modifier_desc:1 "Any adjustment of a value away from its norm is considered a $concept_modifier$. These can be permanent or [Concept('concept_timed_modifier','$concept_timed$')], and their origin can always be sourced back to something like a [concept_law], [concept_technology], [concept_institution], [concept_building], [concept_character_trait], or even an option selected during a special event. Values adjusted by $concept_modifiers$ all have tooltips that explain the full list of sources and their values."
 
  concept_terrain:0 "Terrain"
@@ -346,7 +346,7 @@
  concept_workforce:0 "Workforce"
  concept_workforce_desc:1 "The $concept_workforce$ of a [concept_building] consists of [Concept('concept_pop', '$concept_pops$')] of different [Concept('concept_profession', '$concept_professions$')] depending on the currently active [Concept('concept_production_method', '$concept_production_methods$')]."
 
- concept_gold_reserves:0 "Gold Reserves"
+ concept_gold_reserves: "Золотий запас"
  concept_gold_reserves_desc:1 "A [Concept('concept_country','$concept_country_possessive$')] weekly budget surplus is accumulated in its $concept_gold_reserves$. If the budget balance becomes negative, any [concept_money] in the $concept_gold_reserves$ will be depleted first before the $concept_country$ starts taking [concept_loans]. The $concept_gold_reserves$ can only accumulate up to a fraction of your [concept_gdp] before diminishing returns set in. Stockpiling gold will eventually lead to depleting your economic engine."
 
  concept_cash_reserves:0 "Cash Reserves"
@@ -518,6 +518,8 @@
  concept_trade_lens_desc:1 "View [Concept('concept_market','$concept_markets$')] and [Concept('concept_trade_route','$concept_trade_routes$')], construct [concept_infrastructure] [Concept('concept_building','$concept_buildings$')], and manage Trade-related aspects of your [concept_country]."
 
  concept_country: "Країна"
+ concept_country_gen: "Країни"
+ concept_country_ins: "Країною"
  concept_countries: "Країни"
  concept_country_nation: "Нація"
  concept_country_nation_state: "Національна держава"
@@ -677,8 +679,8 @@
  concept_diplomatic_incidents:0 "Diplomatic Incidents"
  concept_diplomatic_incident_desc:1 "A $concept_diplomatic_incident$ is typically the result of a [concept_country] starting a [concept_diplomatic_play]. $concept_diplomatic_incidents$ generate [concept_infamy] for the $concept_country$ who started it, and will cause [concept_relations] to fall with all $concept_countries$ with an [concept_interest] in the [concept_strategic_region], particularly the target of the $concept_diplomatic_play_short$. $concept_diplomatic_incidents$ can also be the result of other actions, for example decisions made during special events."
 
- concept_tension:0 "Tension"
- concept_tensions:1 "Tensions"
+ concept_tension: "Напруга"
+ concept_tensions: "Напруги"
  concept_tension_desc:3 "How strained the relationship is between a [Concept('concept_colony', '$concept_colonizing$')] [concept_country] and nearby [Concept('concept_decentralized_nation', '$concept_decentralized_nations$')]. $concept_tensions$ rise with all nearby $concept_decentralized_nations$ whenever a [concept_province] is taken over, and decreases over time as long as no new land is taken.\n\nIf the tension level rises to #b $tension_volatile$#!, continued colonization may trigger a [concept_native_uprising]."
 
  concept_relations: "Відносини"
@@ -1103,7 +1105,7 @@
  concept_religious_trait_desc:2 "Aspects of a [concept_religion], such as its major religion group. The similarity between the $concept_religious_traits$ of a [Concept('concept_country','$concept_country_possessive$')] [concept_state_religion] and the $concept_religion$ adhered to by a [concept_pop], combined with the $concept_country$'s current [SelectLocalization(GetPlayer.IsValid,'concept_religious_trait_desc_added','Church and State')] [concept_law], determines whether the $concept_pop$ is [Concept('concept_discrimination','$concept_discriminated_against$')] or not."
  concept_religious_trait_desc_added:0 "[GetLawType('law_state_religion').GetGroup.GetName]"
  
- concept_investment_pool:0 "Investment Pool"
+ concept_investment_pool: "Розмір вкладу"
  concept_investment_pool_desc:2 "A portion of the [concept_dividends] collected by [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_shares$')] is deposited into the $concept_investment_pool$, where it becomes available to [Concept('concept_construction','$concept_construct$')] [Concept('concept_building','$concept_buildings$')] the [Concept('concept_country','$concept_country_possessive$')] current [SelectLocalization(GetPlayer.IsValid,'concept_investment_pool_desc_added','Economic System')] [concept_law] permits to be built with these funds. As $concept_construction$ of such $concept_buildings$ take place, the funds required to build them are deducted from the $concept_investment_pool$ and deposited in the [concept_treasury] as an [concept_budget_investment_income]."
  concept_investment_pool_desc_added:0 "[GetLawType('law_traditionalism').GetGroup.GetName]"
 
@@ -1522,6 +1524,7 @@
  concept_journal_entry: "Запис у часописі"
  concept_journal: "Часопис"
  concept_journal_entries: "Записи у часописі"
+ concept_journal_entries_gen: "Записів у часописі"
  concept_journal_entry_desc:1 "$concept_journal_entries$ track ongoing events in your country. They can present opportunities or challenges, remind you of promises you have made, or warn of potential crises that may occur.\n\n$concept_journal_entries$ usually resolve and are removed from your $concept_journal$ when they are considered #bold Complete#!. Not all $concept_journal_entries$ can be #bold Completed#! - some can only #bold Fail#!, #bold Time Out#!, or will be removed under some condition."
 
  concept_political_movement_placated:0 "Placated"
