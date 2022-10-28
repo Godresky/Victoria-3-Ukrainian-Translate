@@ -59,7 +59,7 @@
  DIPLO_PLAY_SWAY_OFFER_OBLIGATION_DESC:1 "Try to convince [COUNTRY.GetName] to join your side by offering them an [concept_obligation].[ConcatIfNeitherEmpty( '\n$TOOLTIP_DELIMITER$\n', '$ERRORS$' )]"
  DIPLO_PLAY_SWAY_OFFER_WAR_GOAL_DESC:0 "[WAR_GOAL.GetSwayDesc][ConcatIfNeitherEmpty( '\n$TOOLTIP_DELIMITER$\n', '$ERRORS$' )]"
 
- texan_war_of_independence:0 "Texan War of Independence"
+ texan_war_of_independence: "Техаська війна за незалежність"
   
  WARGOAL_NO_TREATY_PORT:1 " Target state has no valid [concept_treaty_port] province"
  WARGOAL_IS_TREATY_PORT:1 " Target state is a [concept_treaty_port]"

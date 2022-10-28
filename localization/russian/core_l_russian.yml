@@ -3,9 +3,9 @@
  HOVER_COUNTRY_NAME:0 "#v [STATE.GetCountry.GetName]#!"
  SPLIT_STATE_REGION:0 "[concept_state_region]: [State.GetStateRegion.GetName]\n"
  SPLIT_STATE_REGION_LINEBREAK_FIRST:0 "\n[concept_state_region]: [State.GetStateRegion.GetName]"
- HOVER_STATE_TOOLTIP_NON_COLONIZABLE:2 "[STATE.GetCountry.GetAdjectiveNoFormatting] [concept_attitude] towards us: #tooltippable #tooltip:[STATE.GetCountry.GetTooltipTag],COUNTRY_ATTITUDE_TOOLTIP [STATE.GetCountry.GetAttitudeTowards(GetPlayer.Self).GetName]#!#! (#tooltippable #tooltip:[STATE.GetCountry.GetTooltipTag],COUNTRY_ATTITUDE_SCORE_TOOLTIP [STATE.GetCountry.GetAttitudeTowards(GetPlayer.Self).CalcScore|+0]#!#!)"
+ HOVER_STATE_TOOLTIP_NON_COLONIZABLE:2 "[STATE.GetCountry.GetAdjectiveNoFormatting]е [concept_attitude] до нас: #tooltippable #tooltip:[STATE.GetCountry.GetTooltipTag],COUNTRY_ATTITUDE_TOOLTIP [STATE.GetCountry.GetAttitudeTowards(GetPlayer.Self).GetName]#!#! (#tooltippable #tooltip:[STATE.GetCountry.GetTooltipTag],COUNTRY_ATTITUDE_SCORE_TOOLTIP [STATE.GetCountry.GetAttitudeTowards(GetPlayer.Self).CalcScore|+0]#!#!)"
  HOVER_STATE_TOOLTIP_COLONIZABLE:0 "#BOLD #V [GetPlayer.GetAdjectiveNoFormatting]#!#! [concept_tension] with #variable [STATE.GetCountry.GetName]#!: [GetPlayer.GetTensionWithDesc( STATE.GetOwner )|+] (#BOLD [GetPlayer.GetTensionWith( STATE.GetCountry )|+]#!)\n"
- HOVER_STATE_PRODUCTION_LENS:1 "[concept_arable_land]: [State.GetSubsistenceBuilding.GetExpansionLevelBreakdownDesc]\nPeasants: [State.GetNumSubsistenceWorkingAdults|Kv]\n[concept_unemployed]: [State.GetNumUnemployedWorkingAdults|Kv]\nGDP: #variable @money![STATE.GetGDPContribution|K]#! (#variable [STATE.GetGDPContributionPercentage|%1]#! of GDP in [STATE.GetOwner.GetName] last week)"
+ HOVER_STATE_PRODUCTION_LENS:1 "[concept_arable_land]: [State.GetSubsistenceBuilding.GetExpansionLevelBreakdownDesc]\nPeasants: [State.GetNumSubsistenceWorkingAdults|Kv]\n[concept_unemployed]: [State.GetNumUnemployedWorkingAdults|Kv]\nВВП: #variable @money![STATE.GetGDPContribution|K]#! (#variable [STATE.GetGDPContributionPercentage|%1]#! of GDP in [STATE.GetOwner.GetName] last week)"
  HOVER_STATE_POLITICAL_LENS:1 "Average Standard of Living: #bold [STATE.GetFormattedStandardOfLivingAll|v]#!\nPopulation: #BOLD [STATE.GetPopulationSize|Kv] [GetArrowIcon_int32( STATE.GetPopTotalChange )]#!\nGovernment Expenses: #variable @money![STATE.GetGovernmentExpenses|+d]#!\nTax income: #variable @money![STATE.GetTaxationRevenue|=+D]#!\n[concept_bureaucracy] cost: @bur![STATE.GetBureaucracyCost|dv]"
  HOVER_STATE_DIPLOMATIC_LENS:1 "[SelectLocalization(STATE.GetOwner.IsPlayer, '', 'AI_STRATEGIES_SUMMARY')]#title Cultures considering [STATE.GetName] their Homeland:#!\n[STATE.GetHomelandsDesc] [ConcatIfNeitherEmpty('\n\n#title Countries with Claims on this State:#!\n', STATE.GetClaimsDesc)]"
  AI_STRATEGIES_SUMMARY:0 "$AI_STRATEGIES$: [State.GetOwner.GetAIStrategiesDesc]\n[State.GetCountry.GetAttitudeTowards(GetPlayer.Self).GetStrategicDesireDesc]\n\n"
@@ -60,7 +60,7 @@
  MISSING_SAVE_GAME_FILE:0 "@warning! #X Missing Savegame#!"
 
  YOU_CANNOT_PLAY_AS_DECENTRALIZED:0 "You cannot play as a $decentralized_nation$"
- LAUNCHER_SAVE_DESCRIPTION:0 "Playing as $COUNTRY$"
+ LAUNCHER_SAVE_DESCRIPTION: "Грати за $COUNTRY$"
  LAUNCHER_SAVE_DESCRIPTION_OBSERVER:1 "[Concept('concept_observer_mode','$concept_observing$')] $COUNTRY$"
 
  BASE_VALUE_YELLOW:0 "Base Value: #BOLD $VAL|Dv$#!"

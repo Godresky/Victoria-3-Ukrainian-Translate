@@ -6,7 +6,7 @@
  USERNAME:0 "Username"
  UPDATE_USERNAME:0 "Update"
  POPS_ERROR_MESSAGE_BOX_TITLE:0 "Error"
- POPS_OK:0 "OK"
+ POPS_OK: "Гаразд"
  EMAIL:0 "E-mail"
  PASSWORD:0 "Password"
  PASSWORD_REPEAT:0 "Repeat password"

@@ -25,7 +25,7 @@
  SETTINGS_CATEGORY_GUI:0 "GUI"
  SETTINGS_CATEGORY_INPUT_BINDINGS:0 "Input Bindings"
  DISCARD:0 "Discard"
- SAVE_AND_CLOSE:0 "OK"
+ SAVE_AND_CLOSE: "Гаразд"
  SETTINGS: "Налаштування"
  REQUIRES_RESTART: "Потрібен перезапуск"
  REQUIRE_RESTART_DESCRIPTION:0 "Some settings will not take effect until you restart the game."
