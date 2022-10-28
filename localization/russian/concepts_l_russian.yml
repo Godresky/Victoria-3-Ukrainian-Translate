@@ -1,5 +1,9 @@
 ﻿l_russian:
-
+#_gen - Родовий
+#_dat - Давальний
+#_acc - Знахідний
+#_ins - Орудний
+#_loc - Місцевий 
  concept_economy_health: "Здоров'я економіки"
  concept_economy_health_healthy: "Здорова економіка"
  concept_economy_health_healthy_short: "Здорова"
@@ -237,8 +241,8 @@
  concept_conscript_battalion_drafting:0 "Drafting"
  concept_conscript_battalion_desc:4 "$concept_conscript_battalions$ are temporary [Concept('concept_battalion', '$concept_battalions$')] recruited and maintained from the civilian [Concept('concept_pop','$concept_population$')] by [Concept('concept_conscription_center','$concept_conscription_centers$')] activated during [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] or [Concept('concept_war','$concept_wars$')]."
  
- concept_front:0 "Front"
- concept_fronts:1 "Fronts"
+ concept_front: "Фронт"
+ concept_fronts: "Фронти"
  concept_front_desc:2 "A collection of [Concept('concept_province', '$concept_provinces$')] on the border of [Concept('concept_theater','$concept_theaters$')] between two [Concept('concept_country', '$concept_countries$')] at [concept_war] with each other. [Concept('concept_general', '$concept_generals$')] can be [Concept('concept_order','$concept_ordered$')] to advance or defend $concept_fronts$, which can result in [Concept('concept_battle','$concept_battles$')] that change the size of the $concept_theaters$ and the location of the $concept_front$."
 
  concept_garrison: "Залога"
@@ -252,10 +256,10 @@
  concept_advancement_speed:0 "Advancement Speed"
  concept_advancement_speed_desc:1 "How rapidly a [concept_general] can advance their [concept_front] by accumulating [concept_advancement_progress].\nA $concept_general$ with no [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilized$')]  [Concept('concept_battalion','$concept_battalions$')] has an effective $concept_advancement_speed$ of zero."
 
- concept_province:0 "Province"
- concept_provinces:1 "Provinces"
+ concept_province: "Провінція"
+ concept_provinces: "Провінції"
  concept_province_possessive:0 "Province\\'s"
- concept_province_land:0 "Land"
+ concept_province_land: "Земля"
  concept_province_desc:2 "Subdivisions of [Concept('concept_state', '$concept_states$')], each with its own [concept_terrain]. $concept_provinces$ are transferred between $concept_states$ during [Concept('concept_colony','$concept_colonization$')], and can be temporarily transferred between [Concept('concept_theater','$concept_theaters$')] during [concept_war] as the outcome of [Concept('concept_battle','$concept_battles$')]."
 
  concept_battle_condition:0 "Battle Condition"
@@ -515,12 +519,13 @@
 
  concept_country: "Країна"
  concept_countries: "Країни"
- concept_country_nation:0 "Nation"
- concept_country_nation_state:0 "Nation-State"
- concept_country_polity:0 "Polity"
- concept_country_polities:0 "Polities"
+ concept_country_nation: "Нація"
+ concept_country_nation_state: "Національна держава"
+ concept_country_polity: "Політика"
+ concept_country_polities: "Політики"
  concept_country_possessive:1 "Country\\'s"
  concept_countries_possessive:0 "Countries\\'"
+
  concept_country_desc:3 "A $concept_country$ consists of one or several parcels of [Concept('concept_province','$concept_province_land$')] organized into [Concept('concept_state','$concept_states$')], in which a [Concept('concept_pop','$concept_population$')] resides under the rule of a [concept_government] and its [concept_head_of_state]. In Victoria 3, both human and AI players each control a $concept_country$.\n\nAside from the nature of their $concept_pops$, which $concept_states$ they own, and how they been developed, a $concept_country$ is defined also by their [concept_country_tier], [concept_primary_cultures], and [concept_state_religion], and whether they are [Concept('concept_recognized_power','$concept_recognized_power_short$')] or [Concept('concept_unrecognized_power','$concept_unrecognized_power_short$')]. $concept_countries$ also have different [Concept('concept_law','$concept_laws$')] and access to different [Concept('concept_technology','$concept_technologies$')]."
 
  concept_decree:0 "Decree"
@@ -1029,9 +1034,9 @@
  concept_military_goods:1 "Military Goods"
  concept_military_good_desc:1 "[Concept('concept_good', '$concept_goods$')] [Concept('concept_good_consumption','$concept_good_consumed$')] by [Concept('concept_military_building', '$concept_military_buildings$')] using funds from the [concept_treasury]."
 
- concept_state: "Провінція"
- concept_states: "Провінції"
- concept_state_or_states:0 "Провінція(-ї)"
+ concept_state: "Регіон"
+ concept_states: "Регіони"
+ concept_state_or_states: "Регіон(-и)"
  concept_state_possessive:1 "State\\'s"
  concept_state_desc:2 "A geographic region controlled by a [concept_country]. [Concept('concept_pop', '$concept_pops$')] live and work in the [Concept('concept_building', '$concept_buildings$')] in the $concept_state$. Unless it is a [concept_split_state] its territory is equivalent to a [concept_state_region]. Unless it is [Concept('concept_isolated_state', '$concept_isolated_state_short$')], it will trade any [Concept('concept_good','$concept_goods$')] locally [Concept('concept_good_consumption','$concept_good_consumed$')] and [Concept('concept_good_production','$concept_good_produced$')] with other $concept_states$ in the same [concept_market] in to a degree based on its [concept_market_access]."
 

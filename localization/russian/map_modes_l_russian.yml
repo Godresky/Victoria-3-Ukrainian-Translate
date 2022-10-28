@@ -2,7 +2,7 @@
  mm_default: "Країни"
  mm_ongoing_diplo_play:0 "Involved in Conflict"
  mm_strategic_region: "Стратегічні регіони"
- mm_state: "Провінції"
+ mm_state: "Регіони"
  mm_theater:0 "Theaters"
  mm_military: "Військо"
  mm_military_with_past_battles:0 "Battles"

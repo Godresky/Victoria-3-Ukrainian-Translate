@@ -1590,7 +1590,7 @@
  ZOOM_TO_EVENT_WINDOW_STATE: "Приблизити до [EventWindow.GetEvent.GetState.GetName]"
  ZOOM_TO_COUNTRY_CAPITAL: "Приблизити до [Country.AccessCapital.GetName]"
  ZOOM_TO_MARKET_CAPITAL: "Приблизити до [Concept('concept_market_capital','$concept_market_capitals$')] [Market.AccessMarketCapital.GetName]"
- ZOOM_TO_STATE: "Приблизити до провінції [State.GetName]"
+ ZOOM_TO_STATE: "Приблизити до регіону [State.GetName]"
  ZOOM_TO_LOCATION: "Приблизити до місцини"
 
  POLITICS: "Політика"
@@ -2802,7 +2802,7 @@
  BUDGET_PANEL_TITLE: "#BOLD Бюджет#!"
  WEEKLY_BALANCE: "Щотижневий баланс: [AccessPlayer.PredictWeeklyBalanceWithEconomyHealthHint]"
  BUDGET_TAB_OVERVIEW: "Огляд"
- STATES: "Провінції"
+ STATES: "Регіони"
  BUDGET_TAB_ASSETS:0 "Assets"
  POOLS:0 "Pools"
 
@@ -6374,8 +6374,8 @@
  UNPIN_JOURNAL_ENTRY: "Відкріпити [JournalEntry.GetName] від планувальника"
  PIN_MARKET: "Прикріпити [Market.GetName] до планувальника"
  UNPIN_MARKET: "Відкріпити [Market.GetName] від планувальника"
- PIN_STATE: "Прикріпити провінцію [State.GetName] до планувальника"
- UNPIN_STATE: "Відкріпити провінцію [State.GetName] від планувальника"
+ PIN_STATE: "Прикріпити регіон [State.GetName] до планувальника"
+ UNPIN_STATE: "Відкріпити регіон [State.GetName] від планувальника"
  RADICALISM_LOW:0 "Low"
  RADICALISM_MEDIUM:0 "Medium"
  RADICALISM_HIGH:0 "High"
