@@ -80,15 +80,15 @@
  relations_cold: "#N Холодні#!"
  relations_hostile: "#N Ворожі#!"
  
- tension_calm:0 "#G Calm#!"
- tension_uneasy:0 "#V Uneasy#!"
- tension_tense:0 "#N Tense#!"
- tension_volatile:0 "#N Volatile#!"
+ tension_calm: "#G Спокійні#!"
+ tension_uneasy: "#V Занепокоєні#!"
+ tension_tense: "#N Напружені#!"
+ tension_volatile: "#N Сутички#!"
  
- infamy_reputable:0 "#V Reputable#!"
- infamy_infamous:0 "#N Infamous#!"
- infamy_notorious:0 "#N Notorious#!"
- infamy_pariah:0 "#N Pariah#!"
+ infamy_reputable: "#V Шановані#!"
+ infamy_infamous: "#N Ганебні#!"
+ infamy_notorious: "#N Горезвісні#!"
+ infamy_pariah: "#N Ізгої#!"
  
  subject_type_protectorate:0 "[concept_protectorate]"
  subject_type_puppet:0 "[concept_puppet]"
