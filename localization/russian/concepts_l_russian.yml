@@ -847,8 +847,8 @@
  concept_turmoil:0 "Turmoil"
  concept_turmoil_desc:2 "[Concept('concept_state', '$concept_states$')] and [Concept('concept_culture', '$concept_cultures$')] with $concept_turmoil$ contain [Concept('concept_radical', '$concept_radicals$')] that are unhappy with their current circumstances. The amount of $concept_turmoil$ is equal to the fraction of the $concept_state$'s or $concept_culture$'s [concept_workforce] that are $concept_radical$.\n\n$concept_turmoil$ can inflict a number of negative local status effects on a $concept_state$ if it gets high enough. [concept_cultural_turmoil] can impact a whole [concept_country] in very disruptive ways."
 
- concept_unemployed:0 "Unemployed"
- concept_unemployment:0 "Unemployment"
+ concept_unemployed: "Безробітний"
+ concept_unemployment: "Безробіття"
  concept_unemployed_desc:2 "An $concept_unemployed$ [concept_pop] does not work in any of its [Concept('concept_state','$concept_state_possessive$')] [Concept('concept_building','$concept_buildings$')] and therefore does not collect a [concept_building_wage]. They are likely to take the next best job that comes along, and will likely [Concept('concept_migration','$concept_emigrate$')] if nothing comes along."
 
  concept_cultural_turmoil:0 "Cultural Turmoil"

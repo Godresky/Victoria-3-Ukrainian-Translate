@@ -1,218 +1,218 @@
 ﻿l_russian:
- building_food_industry:0 "Харчова промисловість"
- building_food_industry_lens_option:0 "Розширити Харчову промисловість"
- building_textile_mills:0 "Тканинна виробня"
- building_textile_mills_lens_option:0 "Розширити Тканинні виробні"
- building_tooling_workshops:0 "Майстерня інструментів"
- building_tooling_workshops_lens_option:0 "Розширити Майстерні інструментів"
- building_paper_mills:0 "Паперова виробня"
- building_paper_mills_lens_option:0 "Розширити Паперові виробні"
- building_shipyards:0 "Карабельня"
- building_shipyards_lens_option:0 "Розширити Карабельні"
- building_chemical_plants:0 "Хімічна промисловість"
- building_chemical_plants_lens_option:0 "Розширити Хімічні промисловісті"
- building_furniture_manufacturies:0 "Меблева товарня"
- building_furniture_manufacturies_lens_option:0 "Розширити Меблеві товарні"
- building_electrics_industry:0 "Електрична промисловість"
- building_electrics_industry_lens_option:0 "Розширити $building_electrics_industry$"
- building_arms_industry:0 "Війскова ладня"
- building_arms_industry_lens_option:0 "Розширити Війскові ладні"
- building_war_machine_industry:0 "Промисел важких машин"
- building_war_machine_industry_lens_option:0 "Розширити Промисел важких машин"
- building_motor_industry:0 "Майстерня рушіїв"
- building_motor_industry_lens_option:0 "Розширити Майстерні рушіїв"
- building_munition_plants:0 "Виробня набоїв"
- building_munition_plants_lens_option:0 "Розширити Виробні набоїв"
- building_synthetics_plants:0 "Синтетична промисловість"
- building_synthetics_plants_lens_option:0 "Розширити Синтетичну промисловість"
- building_steel_mills:0 "Металоварня"     #Незнаю чи є таке слово, але як на мене воно непогано звучить
- building_steel_mills_lens_option:0 "Розширити Металоварні"
- building_glassworks:0 "Скловарня"       #Незнаю чи є таке слово, але як на мене воно непогано звучить
- building_glassworks_lens_option:0 "Розширити Скловарні"
- building_coal_mine:0 "Вугільна копальня"
- building_coal_mine_lens_option:0 "Розширити Вугільні копальні"
- building_coffee_plantation:0 "Кофейне полище"     #або ланина
- building_coffee_plantation_lens_option:0 "Розширити Кофейні полища"
- building_cotton_plantation:0 "Бавовняне полище"   #або ланина
- building_cotton_plantation_lens_option:0 "Розширити Бавовняні полища"
- building_silk_plantation:0 "Шовкове полище"   #або ланина
- building_silk_plantation_lens_option:0 "Розширити Шовкові полища"
- building_dye_plantation:0 "Полище барвила"   #або ланина
- building_dye_plantation_lens_option:0 "Розширити Полища барвил"
- building_fishing_wharf:0 "Рибальська приплава"
- building_fishing_wharf_lens_option:0 "Розширити Рибальські приплави"
- building_whaling_station:0 "Китобійня"     #або Китобійна станиця, Китобійний ставець
- building_whaling_station_lens_option:0 "Розширити Китобійні"
- building_rye_farm:0 "Житний хутір"   #або присілок
- building_rye_farm_les_option:0 "Розширити Житні хутори"
- building_wheat_farm:0 "Пшеничний хутір"    #або присілок
- building_wheat_farm_les_option:0 "Розширити Пшеничні хутори"
- building_rice_farm:0 "Рисовий хутір"    #або присілок
- building_rice_farm_les_option:0 "Розширити Рисові хутори"
- building_maize_farm:0 "Кукурудзяний хутір"    #або присілок
- building_maize_farm_les_option:0 "Розширити Кукурудзяні хутори"
- building_millet_farm:0 "Пшоний хутір"    #або присілок
- building_millet_farm_les_option:0 "Розширити Пшоні хутори"
- building_iron_mine:0 "Залізна копальня"
- building_iron_mine_lens_option:0 "Розширити Залізні копальні"
- building_gold_mine:0 "Золота копальня"
- building_gold_mine_lens_option:0 "Розширити Золоті копальні"
- building_lead_mine:0 "Свинцева копальня"
- building_lead_mine_lens_option:0 "Розширити Свинцеві копальні"
- building_oil_rig:0 "Нафтова вишка"
- building_oil_rig_lens_option:0 "Розширити Нафтові вишки"
- building_oil_rig_discovered_resource:0 "Навта"
- building_opium_plantation:0 "Опіумне полище"   #або ланина
- building_opium_plantation_lens_option:0 "Розширити Опіумні полища"
- building_orchard:0 "Фруктовий сад"
- building_orchard_lens_option:0 "Розширити Фруктові сади"
+ building_food_industry: "Харчова промисловість"
+ building_food_industry_lens_option: "Розширити Харчову промисловість"
+ building_textile_mills: "Тканинна виробня"
+ building_textile_mills_lens_option: "Розширити Тканинні виробні"
+ building_tooling_workshops: "Майстерня інструментів"
+ building_tooling_workshops_lens_option: "Розширити Майстерні інструментів"
+ building_paper_mills: "Паперова виробня"
+ building_paper_mills_lens_option: "Розширити Паперові виробні"
+ building_shipyards: "Карабельня"
+ building_shipyards_lens_option: "Розширити Карабельні"
+ building_chemical_plants: "Хімічна промисловість"
+ building_chemical_plants_lens_option: "Розширити Хімічні промисловісті"
+ building_furniture_manufacturies: "Меблева товарня"
+ building_furniture_manufacturies_lens_option: "Розширити Меблеві товарні"
+ building_electrics_industry: "Електрична промисловість"
+ building_electrics_industry_lens_option: "Розширити $building_electrics_industry$"
+ building_arms_industry: "Війскова ладня"
+ building_arms_industry_lens_option: "Розширити Війскові ладні"
+ building_war_machine_industry: "Промисел важких машин"
+ building_war_machine_industry_lens_option: "Розширити Промисел важких машин"
+ building_motor_industry: "Майстерня рушіїв"
+ building_motor_industry_lens_option: "Розширити Майстерні рушіїв"
+ building_munition_plants: "Виробня набоїв"
+ building_munition_plants_lens_option: "Розширити Виробні набоїв"
+ building_synthetics_plants: "Синтетична промисловість"
+ building_synthetics_plants_lens_option: "Розширити Синтетичну промисловість"
+ building_steel_mills: "Металоварня"     #Незнаю чи є таке слово, але як на мене воно непогано звучить
+ building_steel_mills_lens_option: "Розширити Металоварні"
+ building_glassworks: "Скловарня"       #Незнаю чи є таке слово, але як на мене воно непогано звучить
+ building_glassworks_lens_option: "Розширити Скловарні"
+ building_coal_mine: "Вугільна копальня"
+ building_coal_mine_lens_option: "Розширити Вугільні копальні"
+ building_coffee_plantation: "Кавове полище"     #або ланина
+ building_coffee_plantation_lens_option: "Розширити Кавові полища"
+ building_cotton_plantation: "Бавовняне полище"   #або ланина
+ building_cotton_plantation_lens_option: "Розширити Бавовняні полища"
+ building_silk_plantation: "Шовкове полище"   #або ланина
+ building_silk_plantation_lens_option: "Розширити Шовкові полища"
+ building_dye_plantation: "Полище барвила"   #або ланина
+ building_dye_plantation_lens_option: "Розширити Полища барвил"
+ building_fishing_wharf: "Рибальська приплава"
+ building_fishing_wharf_lens_option: "Розширити Рибальські приплави"
+ building_whaling_station: "Китобійня"     #або Китобійна станиця, Китобійний ставець
+ building_whaling_station_lens_option: "Розширити Китобійні"
+ building_rye_farm: "Житний хутір"   #або присілок
+ building_rye_farm_les_option: "Розширити Житні хутори"
+ building_wheat_farm: "Пшеничний хутір"    #або присілок
+ building_wheat_farm_les_option: "Розширити Пшеничні хутори"
+ building_rice_farm: "Рисовий хутір"    #або присілок
+ building_rice_farm_les_option: "Розширити Рисові хутори"
+ building_maize_farm: "Кукурудзяний хутір"    #або присілок
+ building_maize_farm_les_option: "Розширити Кукурудзяні хутори"
+ building_millet_farm: "Пшоний хутір"    #або присілок
+ building_millet_farm_les_option: "Розширити Пшоні хутори"
+ building_iron_mine: "Залізна копальня"
+ building_iron_mine_lens_option: "Розширити Залізні копальні"
+ building_gold_mine: "Золота копальня"
+ building_gold_mine_lens_option: "Розширити Золоті копальні"
+ building_lead_mine: "Свинцева копальня"
+ building_lead_mine_lens_option: "Розширити Свинцеві копальні"
+ building_oil_rig: "Нафтова вишка"
+ building_oil_rig_lens_option: "Розширити Нафтові вишки"
+ building_oil_rig_discovered_resource: "Навта"
+ building_opium_plantation: "Опіюмне полище"   #або ланина
+ building_opium_plantation_lens_option: "Розширити Опіюмні полища"
+ building_orchard: "Фруктовий сад"
+ building_orchard_lens_option: "Розширити Фруктові сади"
  
      #Золоте поле? чому потім викорестовується теґ копальні? потім подивлюся у грі щоб зрозуміти що це
- building_gold_fields:0 "Gold Fields"
- building_gold_fields_lens_option:0 "Розширити $building_gold_mine$"
+ building_gold_fields: "Gold Fields"
+ building_gold_fields_lens_option: "Розширити $building_gold_mine$"
  
- building_gold_fields_discovered_resource:0 "Золото"
- building_rubber_plantation:0 "Каучукове полище"    #або ланина
- building_rubber_plantation_lens_option:0 "Розширити Каучукові полища"
- building_rubber_plantation_discovered_resource:0 "Гума"
- building_livestock_ranch:0 "Тваринницька ферма"
- building_livestock_ranch_lens_option:0 "Розширити Тваринницькі ферми"
- building_silkworm_plantation:0 "Шовкопрядна ланина"    #або ланина
- building_silkworm_plantation_lens_option:0 "Розширити Шовкопрядні ланини"
- building_sulfur_mine:0 "Сірчана копальня"
- building_sulfur_mine_lens_option:0 "Розширити Сірчані копальні"
- building_tea_plantation:0 "Чайне полище"    #або ланина
- building_tea_plantation_lens_option:0 "Розширити Чайні полища"
- building_logging_camp:0 "Тартак"
- building_logging_camp_lens_option:0 "Розширити Тартаки"
- building_tobacco_plantation:0 "Тютюнове полище"    #або ланина
- building_tobacco_plantation_lens_option:0 "Розширити Тютюнові полища"
- building_tropical_wood_lodge:0 "Тропічний тартак"
- building_tropical_wood_lodge_lens_option:0 "Розширити Тропічні тартаки"
- building_sugar_plantation:0 "Цукрове полище"    #або ланина
- building_sugar_plantation_lens_option:0 "Розширити Цукрові полища"
- building_urban_center:0 "Міський центр"
- building_urban_center_lens_option:0 "Розширити Міські центри"
- building_power_plant:0 "Струмарня"
- building_power_plant_lens_option:0 "Розширити Струмарні"
- building_subsistence_farms:0 "Натуральні господарства"
- building_subsistence_orchards:0 "Натуральні сади"
- building_subsistence_pastures:0 "Підсобні пасовища"
- building_construction_sector:0 "Будівельний витінок"   #або сектор
- building_banana_plantation:0 "Бананове полище"    #або ланина
- building_banana_plantation_lens_option:0 "Розширити Бананові полища"
- building_suez_canal:0 "Суецьке кринище"   #або канал, крен
- building_suez_canal_lens_option:0 "Побудувати Суецьке кринище"
- building_panama_canal:0 "Панамське кринище"   #або канал, крен
- building_panama_canal_lens_option:0 "Побудувати Панамське кринище"
- UNEMPLOYED:0 "[concept_unemployed]"
+ building_gold_fields_discovered_resource: "Золото"
+ building_rubber_plantation: "Каучукове полище"    #або ланина
+ building_rubber_plantation_lens_option: "Розширити Каучукові полища"
+ building_rubber_plantation_discovered_resource: "Гума"
+ building_livestock_ranch: "Тваринницька ферма"
+ building_livestock_ranch_lens_option: "Розширити Тваринницькі ферми"
+ building_silkworm_plantation: "Шовкопрядна ланина"    #або ланина
+ building_silkworm_plantation_lens_option: "Розширити Шовкопрядні ланини"
+ building_sulfur_mine: "Сірчана копальня"
+ building_sulfur_mine_lens_option: "Розширити Сірчані копальні"
+ building_tea_plantation: "Чайне полище"    #або ланина
+ building_tea_plantation_lens_option: "Розширити Чайні полища"
+ building_logging_camp: "Тартак"
+ building_logging_camp_lens_option: "Розширити Тартаки"
+ building_tobacco_plantation: "Тютюнове полище"    #або ланина
+ building_tobacco_plantation_lens_option: "Розширити Тютюнові полища"
+ building_tropical_wood_lodge: "Тропічний тартак"
+ building_tropical_wood_lodge_lens_option: "Розширити Тропічні тартаки"
+ building_sugar_plantation: "Цукрове полище"    #або ланина
+ building_sugar_plantation_lens_option: "Розширити Цукрові полища"
+ building_urban_center: "Міський центр"
+ building_urban_center_lens_option: "Розширити Міські центри"
+ building_power_plant: "Струмарня"
+ building_power_plant_lens_option: "Розширити Струмарні"
+ building_subsistence_farms: "Натуральні господарства"
+ building_subsistence_orchards: "Натуральні сади"
+ building_subsistence_pastures: "Підсобні пасовища"
+ building_construction_sector: "Будівельний витинок"   #або сектор
+ building_banana_plantation: "Бананове полище"    #або ланина
+ building_banana_plantation_lens_option: "Розширити Бананові полища"
+ building_suez_canal: "Суецький водовід"   #або канал, крен
+ building_suez_canal_lens_option: "Побудувати Суецький водовід"
+ building_panama_canal: "Панамський водовід"   #або канал, крен
+ building_panama_canal_lens_option: "Побудувати Панамський водовід"
+ UNEMPLOYED: "[concept_unemployed]"
 
 
 # Building Groups
- bg_subsistence:0 "Натуральні господарства"
- bg_service:0 "Сфери послуг"
- bg_agriculture:0 "Сільське господарство"
- bg_plantations:0 "Полища"    #або ланина
- bg_ranching:0 "Ферми"
- bg_mining:0 "Копальні"
- bg_gold_mining:0 "Золоті копальні"
- bg_coal_mining:0 "Вугільні копальні"
- bg_iron_mining:0 "Залізні копальні"
- bg_lead_mining:0 "Свинцеві копальні"
- bg_sulfur_mining:0 "Сірчані копальні"
- bg_rubber:1 "Каучукові пасовища"
- bg_logging:0 "Тартаки"
- bg_fishing:0 "Рибальство"
- bg_whaling:0 "Китобійний промисел"
- bg_oil_extraction:0 "Навтовий витяг"
- bg_manufacturing:0 "Товарні"
- bg_urban_facilities:0 "Міські споруди"
- bg_bureaucracy:0 "Бюрократичні установи"
- bg_government:0 "Урядові структури"
- bg_trade:0 "Торгові центри"
- bg_infrastructure:0 "Інфраструктура"
- bg_banana_plantations:0 "Бананові полища"    #або ланина
- bg_light_industry:0 "Легка промисловість"
- bg_heavy_industry:0 "Важка промисловість"
- bg_rye_farms:0 "Житні хутори"
- bg_wheat_farms:0 "Пшеничні хутори"
- bg_rice_farms:0 "Рисові хутори"
- bg_maize_farms:0 "Кукурудзяні хутори"
- bg_millet_farms:0 "Пшоні хутори"
- bg_livestock_ranches:0 "Тваринницькі ферми"
- bg_coffee_plantations:0 "Кофейні полища"   #або ланина
- bg_cotton_plantations:0 "Бавовняні полища"   #або ланина
- bg_silk_plantations:0 "Шовкові полища"   #або ланина
- bg_dye_plantations:0 "Полища барвил"   #або ланина
- bg_opium_plantations:0 "Опіумні полища"   #або ланина
- bg_tea_plantations:0 "Чайні полища"   #або ланина
- bg_tobacco_plantations:0 "Тютюнові полища"   #або ланина
- bg_sugar_plantations:0 "Цукрові полища"   #або ланина
- bg_public_infrastructure:0 "Громадські споруди"
- bg_construction:0 "Будівництво"
- bg_private_infrastructure:0 "Приватні споруди"
- bg_military:0 "Військові споруди"
- bg_special:0 "Спеціальні споруди"
- bg_conscription:0 "Призовні будівлі"
+ bg_subsistence: "Натуральні господарства"
+ bg_service: "Сфери послуг"
+ bg_agriculture: "Сільське господарство"
+ bg_plantations: "Полища"    #або ланина
+ bg_ranching: "Ферми"
+ bg_mining: "Копальні"
+ bg_gold_mining: "Золоті копальні"
+ bg_coal_mining: "Вугільні копальні"
+ bg_iron_mining: "Залізні копальні"
+ bg_lead_mining: "Свинцеві копальні"
+ bg_sulfur_mining: "Сірчані копальні"
+ bg_rubber: "Каучукові пасовища"
+ bg_logging: "Тартаки"
+ bg_fishing: "Рибальство"
+ bg_whaling: "Китобійний промисел"
+ bg_oil_extraction: "Навтовий витяг"
+ bg_manufacturing: "Товарні"
+ bg_urban_facilities: "Міські споруди"
+ bg_bureaucracy: "Бюрократичні установи"
+ bg_government: "Урядові структури"
+ bg_trade: "Торгові центри"
+ bg_infrastructure: "Інфраструктура"
+ bg_banana_plantations: "Бананові полища"    #або ланина
+ bg_light_industry: "Легка промисловість"
+ bg_heavy_industry: "Важка промисловість"
+ bg_rye_farms: "Житні хутори"
+ bg_wheat_farms: "Пшеничні хутори"
+ bg_rice_farms: "Рисові хутори"
+ bg_maize_farms: "Кукурудзяні хутори"
+ bg_millet_farms: "Пшоні хутори"
+ bg_livestock_ranches: "Тваринницькі ферми"
+ bg_coffee_plantations: "Кавові полища"   #або ланина
+ bg_cotton_plantations: "Бавовняні полища"   #або ланина
+ bg_silk_plantations: "Шовкові полища"   #або ланина
+ bg_dye_plantations: "Полища барвил"   #або ланина
+ bg_opium_plantations: "Опіюмні полища"   #або ланина
+ bg_tea_plantations: "Чайні полища"   #або ланина
+ bg_tobacco_plantations: "Тютюнові полища"   #або ланина
+ bg_sugar_plantations: "Цукрові полища"   #або ланина
+ bg_public_infrastructure: "Громадські споруди"
+ bg_construction: "Будівництво"
+ bg_private_infrastructure: "Приватні споруди"
+ bg_military: "Військові споруди"
+ bg_special: "Спеціяльні споруди"
+ bg_conscription: "Призовні будівлі"
 
 #Factories
 
 
 
   # Infrastructure
- building_port:0 "Приплав"
- building_railway:0 "Залізниця"
- building_trade_center:0 "Торговий центр"
- building_link:0 "Торговий шлях"  #при перекладі виходить посилання, але мабуть воне має значення шлях 
+ building_port: "Приплав"
+ building_railway: "Залізниця"
+ building_trade_center: "Торговий центр"
+ building_link: "Торговий шлях"  #при перекладі виходить посилання, але мабуть воне має значення шлях 
 
- building_port_lens_option:0 "Приплав"
- building_railway_lens_option:0 "Залізниця"
- building_trade_center_lens_option:0 "Створити новий ринок"
- building_link_merge_markets_lens_option:0 "Об'єднати ринки"
+ building_port_lens_option: "Приплав"
+ building_railway_lens_option: "Залізниця"
+ building_trade_center_lens_option: "Створити новий ринок"
+ building_link_merge_markets_lens_option: "Об'єднати ринки"
   
   #Academies
- building_university:0 "Учильня"
- building_university_lens_option:0 "Розширити Учильні"
- building_arts_academy:0 "Війскова учильня"
- building_arts_academy_lens_option:0 "Розширити Війскові учильні"
+ building_university: "Учильня"
+ building_university_lens_option: "Розширити Учильні"
+ building_arts_academy: "Війскова учильня"
+ building_arts_academy_lens_option: "Розширити Війскові учильні"
 
   #Colonies
- building_colony_military:0 "Військова осада"   #або колонія
- building_colony_military_lens_option:0 "Встановити Війскову осаду"
- building_colony_military_hover:0 "Встановити #variable Війскову осаду#! у #variable [STATE.GetName]"
- building_colony_missionary:0 "Метарська осада"    #від метар(месіонер)
- building_colony_missionary_lens_option:0 "Встановити Метарську осаду"
- building_colony_missionary_hover:0 "Встановити #variable Метарську осаду#! у #variable [STATE.GetName]#!"
- building_colony_trade:0 "Торгова осада"
- building_colony_trade_lens_option:0 "Встановити Торгову осаду"
- building_colony_trade_hover:0 "Встановити #variable Торгову осаду#! у #variable [STATE.GetName]"
+ building_colony_military: "Військова осада"   #або колонія
+ building_colony_military_lens_option: "Встановити Війскову осаду"
+ building_colony_military_hover: "Встановити #variable Війскову осаду#! у #variable [STATE.GetName]"
+ building_colony_missionary: "Метарська осада"    #від метар(месіонер)
+ building_colony_missionary_lens_option: "Встановити Метарську осаду"
+ building_colony_missionary_hover: "Встановити #variable Метарську осаду#! у #variable [STATE.GetName]#!"
+ building_colony_trade: "Торгова осада"
+ building_colony_trade_lens_option: "Встановити Торгову осаду"
+ building_colony_trade_hover: "Встановити #variable Торгову осаду#! у #variable [STATE.GetName]"
 
   #Barracks
- building_barracks:0 "Курінь"
- building_barracks_lens_option:0 "Розширити Куріні"
- building_naval_base:0 Морська база"  #ні блін Морський Ґрунт
- building_naval_base_lens_option:0 "Розширити Морські бази"
- building_conscription_center:0 "Призовний пункт"
+ building_barracks: "Курінь"
+ building_barracks_lens_option: "Розширити Куріні"
+ building_naval_base: Морська база"  #ні блін Морський Ґрунт
+ building_naval_base_lens_option: "Розширити Морські бази"
+ building_conscription_center: "Призовний пункт"
 
   #National Buildings
- building_government_administration:0 "Державна управа"
- building_government_administration_lens_option:0 "Розширити Державну управу"
+ building_government_administration: "Державна управа"
+ building_government_administration_lens_option: "Розширити Державну управу"
 
   # Unlock tooltips
- tooltip_unlock_railways:0 "Allows construction of the Railway building"
+ tooltip_unlock_railways: "Дозволить будівництво Залізниці"
   
   # Monuments
- building_eiffel_tower:0 "Ейфелева вежа"
+ building_eiffel_tower: "Ейфелева вежа"
  
- building_dummy:1 "#Це бутафорська будівля, яка не служить для механічних цілей ігрового процесу, але все одно потребує реагування графікою міського центру. Він (і цей текст) ніколи не повинен з’являтися в інтерфейсі користувачаI#!"
- building_argebam:0 "$building_dummy$"
- building_chichen_itza:0 "$building_dummy$"
- building_easter_island_heads:0 "$building_dummy$"
- building_eye_of_sahara:0 "$building_dummy$"
- building_giza_necropolis:0 "$building_dummy$"
- building_khaju_bridge:0 "$building_dummy$"
- building_machu_picchu:0 "$building_dummy$"
- building_petra:0 "$building_dummy$"
+ building_dummy: "#Це бутафорська будівля, яка не служить для механічних цілей ігрового процесу, але все одно потребує реагування графікою міського центру. Він (і цей текст) ніколи не повинен з’являтися в інтерфейсі користувачаI#!"
+ building_argebam: "$building_dummy$"
+ building_chichen_itza: "$building_dummy$"
+ building_easter_island_heads: "$building_dummy$"
+ building_eye_of_sahara: "$building_dummy$"
+ building_giza_necropolis: "$building_dummy$"
+ building_khaju_bridge: "$building_dummy$"
+ building_machu_picchu: "$building_dummy$"
+ building_petra: "$building_dummy$"
 
   # Skyscraper
- building_skyscraper:0 "Хмарочос"
+ building_skyscraper: "Хмарочос"
