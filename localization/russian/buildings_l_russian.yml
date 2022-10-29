@@ -14,7 +14,7 @@
  building_furniture_manufacturies: "Меблева товарня"
  building_furniture_manufacturies_lens_option: "Розширити Меблеві товарні"
  building_electrics_industry: "Електрична промисловість"
- building_electrics_industry_lens_option: "Розширити $building_electrics_industry$"
+ building_electrics_industry_lens_option: "Розширити Електричну промисловість"
  building_arms_industry: "Війскова ладня"
  building_arms_industry_lens_option: "Розширити Війскові ладні"
  building_war_machine_industry: "Промисел важких машин"
@@ -67,9 +67,9 @@
  building_orchard: "Фруктовий сад"
  building_orchard_lens_option: "Розширити Фруктові сади"
  
-     #Золоте поле? чому потім викорестовується теґ копальні? потім подивлюся у грі щоб зрозуміти що це
- building_gold_fields: "Gold Fields"
- building_gold_fields_lens_option: "Розширити $building_gold_mine$"
+ #Золоте поле? чому потім викорестовується теґ копальні? потім подивлюся у грі щоб зрозуміти що це
+ building_gold_fields: "Золота старальня"
+ building_gold_fields_lens_option: "Розширити Золоті старальні"
  
  building_gold_fields_discovered_resource: "Золото"
  building_rubber_plantation: "Каучукове полище"    #або ланина
@@ -77,8 +77,8 @@
  building_rubber_plantation_discovered_resource: "Гума"
  building_livestock_ranch: "Тваринницька ферма"
  building_livestock_ranch_lens_option: "Розширити Тваринницькі ферми"
- building_silkworm_plantation: "Шовкопрядна ланина"    #або ланина
- building_silkworm_plantation_lens_option: "Розширити Шовкопрядні ланини"
+ building_silkworm_plantation: "Шовкопрядне полище"    #або ланина
+ building_silkworm_plantation_lens_option: "Розширити Шовкопрядні полища"
  building_sulfur_mine: "Сірчана копальня"
  building_sulfur_mine_lens_option: "Розширити Сірчані копальні"
  building_tea_plantation: "Чайне полище"    #або ланина
@@ -179,7 +179,7 @@
   #Colonies
  building_colony_military: "Військова осада"   #або колонія
  building_colony_military_lens_option: "Встановити Війскову осаду"
- building_colony_military_hover: "Встановити #variable Війскову осаду#! у #variable [STATE.GetName]"
+ building_colony_military_hover: "Встановити #variable Війскову осаду#! у регіоні #variable [STATE.GetName]"
  building_colony_missionary: "Метарська осада"    #від метар(месіонер)
  building_colony_missionary_lens_option: "Встановити Метарську осаду"
  building_colony_missionary_hover: "Встановити #variable Метарську осаду#! у #variable [STATE.GetName]#!"
