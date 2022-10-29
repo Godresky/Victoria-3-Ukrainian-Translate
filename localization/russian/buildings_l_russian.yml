@@ -190,7 +190,7 @@
   #Barracks
  building_barracks: "Курінь"
  building_barracks_lens_option: "Розширити Куріні"
- building_naval_base: Морська база"  #ні блін Морський Ґрунт
+ building_naval_base: "Морська база"
  building_naval_base_lens_option: "Розширити Морські бази"
  building_conscription_center: "Призовний пункт"
 
