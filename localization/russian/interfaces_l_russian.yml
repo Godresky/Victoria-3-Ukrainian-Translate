@@ -90,8 +90,8 @@
  STATE_GOODS_PRODUCTION_TOOLTIP:0 "[GOODS.GetTextIcon][GOODS.GetName] in [STATE.GetName]\nProduction: [STATE.GetNumProduced(GOODS.Self)|1v]\n$TOOLTIP_DELIMITER$\nConsumption: [STATE.GetNumConsumed(GOODS.Self)|1v]\nPotential Base Production: [STATE.GetPotentialProductionForCountry(GOODS.Self, GetPlayer)|0v]\n\n[STATE.GetPotentialProductionForCountryDesc(GOODS.Self, GetPlayer)]"
  STATE_GOODS_CONSUMPTION_TOOLTIP:0 "[GOODS.GetTextIcon][GOODS.GetName] in [STATE.GetName]\nConsumption: [STATE.GetNumConsumed(GOODS.Self)|1v]\n$TOOLTIP_DELIMITER$\nProduction: [STATE.GetNumProduced(GOODS.Self)|1v]\nPotential Base Production: [STATE.GetPotentialProductionForCountry(GOODS.Self, GetPlayer)|0v]\n\n[STATE.GetPotentialProductionForCountryDesc(GOODS.Self, GetPlayer)]"
 
- DIPLOMACY_HOVER_ATTITUDE_COUNTRY:0 "#header Viewing [concept_attitude] from the perspective of [Country.GetName]#!"
- DIPLOMACY_HOVER_RELATIONS_COUNTRY:2 "#header Viewing [concept_relations] from the perspective of [Country.GetName]#!"
+ DIPLOMACY_HOVER_ATTITUDE_COUNTRY: "#header Перегляд [Concept('concept_attitude', '$concept_attitude_gen$')] з прозору [Concept('concept_country', '$concept_country_gen$')] [Country.GetName]#!"
+ DIPLOMACY_HOVER_RELATIONS_COUNTRY:2 "#header Перегляд [Concept('concept_relations', '$concept_relations_gen$')] з прозору [Concept('concept_country', '$concept_country_gen$')] [Country.GetName]#!"
 
  MULT_ICON:0 "#bold ×#!"
  PROFITABILITY_SHORT:0 "Prof"
@@ -202,7 +202,7 @@
  CLICK_TO_CHANGE_RESPONSE:0 "#instruction Click to change our response#!"
 
  COUNTRY_IN_MARKET_SUBTITLE:0 "[concept_country] входить в [CountryPanel.AccessCountry.AccessFirstMarket.GetName]"
- STATE_IN_COUNTRY_SUBTITLE:0 "[concept_state] держави [State.GetCountry.GetName]"
+ STATE_IN_COUNTRY_SUBTITLE: "[concept_state] [Concept('concept_country', '$concept_country_gen$')] [State.GetCountry.GetName]"
  BATTLE_ON_FRONT_SUBTITLE:0 "[concept_battle] on [Battle.GetFront.GetName]"
  FRONT_IN_WAR_SUBTITLE:0 "[concept_front] in [Front.AccessDiplomaticPlay.AccessWar.GetName]"
 
@@ -419,7 +419,7 @@
  POP_CULTURE_TEXT:0 "Pop Culture: #variable [Pop.GetCulture.GetName]#!"
  POP_RELIGION_TEXT:0 "Pop Religion: #variable [Pop.GetReligion.GetName]#!"
  POP_POL_STR_TEXT:0 "[concept_political_strength]: #variable [Pop.GetPoliticalStrength|1*]#!"
- CURRENT_GDP_STATE:2 "#header [State.GetOwner.GetAdjectiveNoFormatting] [concept_gdp] from [State.GetName]#!\n$TOOLTIP_DELIMITER$\nCurrent annual GDP contribution: #variable @money![State.GetGDPContribution|K]#!\n\n[State.GetName] is contributing #variable [State.GetGDPContributionPercentage|%1]#! of [State.GetOwner.GetAdjectiveNoFormatting] $GDP_SHORT$\n\n[State.GetGDPGoodsContributionBreakdown]"
+ CURRENT_GDP_STATE: "#header [State.GetOwner.GetAdjectiveNoFormatting]ий [concept_gdp] від регіону [State.GetName]#!\n$TOOLTIP_DELIMITER$\nПоточний річний внесок у $GDP_SHORT$: #variable @money![State.GetGDPContribution|K]#!\n\n[State.GetName] дає #variable [State.GetGDPContributionPercentage|%1]#! [State.GetOwner.GetAdjectiveNoFormatting]ого $GDP_SHORT$\n\n[State.GetGDPGoodsContributionBreakdown]"
  STATE_GDP_GOODS:1 "Top $GDP_SHORT$ contributing [Concept('concept_good','$concept_goods$')] in [State.GetName] per week\n$BREAKDOWN$"
  STATE_GDP_GOODS_ENTRY:1 "[Goods.GetTextIcon][Nbsp][Goods.GetName]: @money!$VAL|vD$ ($RATIO|v%0$)"
 
@@ -443,7 +443,7 @@
  GOOD_CATEGORY_LUXURY:0 "Luxury"
 
  DIPLOMATIC_OVERVIEW_TITLE: "#BOLD Дипломатія#!"
- OPEN_DIPLOMATIC_BROWSER:0 "Open Country Browser"
+ OPEN_DIPLOMATIC_BROWSER: "Показати список країн"
  COUNTRIES_TITLE: "#BOLD Країни#!"
 
  POTENTIAL_MAP_MARKER_TOOLTIP:0 "#header [State.GetName] has potential for [Building.GetName]#!\nCurrent size: [State.GetBuilding( BuildingPotentialMarker.GetBuildingType.GetKey).GetExpansionLevelBreakdownDesc]"
@@ -618,7 +618,7 @@
  PANEL_MILITARY_FIELDED:0 "Fielded"
  PANEL_MILITARY_IN_RESERVE:0 "[concept_in_reserve]"
 
- MILITARY_PANEL_ACTIVATE_CONSCRIPTS:0 "Activate conscripts"
+ MILITARY_PANEL_ACTIVATE_CONSCRIPTS: "Почати призов"
  MILITARY_PANEL_CURRENT_GARRISON:0 "@battalions![Country.GetNumGarrisonUnits|0v]"
  MILITARY_PANEL_IN_GARRISON:0 "In Garrison: [Country.GetNumGarrisonUnits|0v]"
  MILITARY_PANEL_POTENTIAL_GARRISON:1 "[Add_int32( Country.GetNumGarrisonMaxUnits, Country.GetNumGarrisonMaxUnitsFromConscripts )]"
@@ -629,13 +629,13 @@
  MILITARY_PANEL_HQ_UNITS_TOOLTIP:1 "#header [Hq.GetName] [concept_garrison]#!\nThere are currently [Hq.GetGarrisonUnitsHeader] in [Hq.GetNameNoFlag]\n\n[Hq.GetHomeGarrisonUnitsDesc]"
  MILITARY_PANEL_HQ_UNITS_IN_RESERVE_FORMAT:0 "#variable [Hq.GetReserveUnitsRaw]#! [Hq.GetCombatUnitsIcon]"
  MILITARY_PANEL_BUILDING_UNITS_IN_RESERVE_FORMAT:0 "#variable [Building.GetNumCombatUnitsInReserve]#!/[Building.GetCombatUnitCapacity] [Building.GetCombatUnitsIcon]"
- MILITARY_PANEL_HQ_AVAILABLE:0 "Available"
+ MILITARY_PANEL_HQ_AVAILABLE: "Доступні"
  MILITARY_PANEL_BUILDING_UNITS_IN_RESERVE_TOOLTIP:0 "There are currently #variable [Building.GetNumCombatUnitsInReserve]#! [Building.GetCombatUnitsIcon] [concept_in_reserve]"
  MILITARY_PANEL_NOT_GARRISONED:0 "Not garrisoned"
  MILITARY_PANEL_NOT_GARRISONED_UNITS_FORMAT:0 "#variable [Hq.GetNumNotGarrisonedUnits]#! [Hq.GetCombatUnitsIcon]"
  MILITARY_PANEL_HQ_STATE_NAME_FORMAT:0 "[State.GetName]"
  MILITARY_PANEL_HQ_STATE_BATTALIONS_FORMAT:0 "#variable [State.GetNumBattalions]#!/[State.GetMaxBattalions] @army_SP!"
- MILITARY_PANEL_NO_BATTALIONS:0 "No [Concept('concept_battalion', '$concept_battalions$')] available in this [concept_hq]"
+ MILITARY_PANEL_NO_BATTALIONS: "Немає [Concept('concept_battalion', '$concept_battalions_gen$')] доступних у цьому [Concept('concept_hq', '$concept_hq_loc$')]"
  MILITARY_PANEL_COMMANDER_NAME_FORMAT:0 "[Character.GetFullName]"
  MILITARY_PANEL_COMMANDER_STATUS_FORMAT:1 "[Character.GetLocationFormatted]"
  MILITARY_PANEL_BUILDING_TROOP_NAME:0 "[Building.GetCustom('troop_name')] in [Building.GetState.GetName]"
@@ -647,7 +647,7 @@
  MILITARY_PANEL_MOBILIZED:0 "[Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized$')]"
  GARRISONED_CONCEPT:0 "[Concept('concept_mobilize_general', '$GARRISONED$')]"
 
- GARRISONED:0 "Garrisoned"
+ GARRISONED: "У залозі"
 
  BUILDING_PANEL_COMMANDER_UNITS:0 "[Character.GetNumCombatUnitsFromBuilding(Building.Self)|0v] [Building.GetCombatUnitsIcon]"
  BUILDING_PANEL_RESERVE_UNITS:0 "[Building.GetNumCombatUnitsInReserve|0v] [Building.GetCombatUnitsIcon]"
@@ -656,7 +656,7 @@
  GARRISON_MAP_MARKER_HQ_GARRISON:1 "[Hq.GetCombatUnitsIcon] #variable [Hq.GetHomeGarrisonUnits]#!"
  GARRISON_MAP_MARKER_HQ_GARRISON_TOOLTIP:0 "There are currently [Hq.GetGarrisonUnitsHeader] in [Hq.GetNameNoFlag]\n\n[Hq.GetHomeGarrisonUnitsDesc]"
 
- SUPPLY_NETWORK_MAPMARKER_HEADER:1 "#header [GetPlayer.GetAdjectiveNoFormatting] [concept_supply_network]#!"
+ SUPPLY_NETWORK_MAPMARKER_HEADER:1 "#header [GetPlayer.GetAdjectiveNoFormatting]а [concept_supply_network]#!"
  SUPPLY_NETWORK_MAPMARKER_IS_RAIDED:1 "@warning! [Concept('concept_raid_convoys', '$concept_convoy_raiding$')] has sunk $NUM_SUNK_CONVOYS|-v$ [concept_convoys] belonging to our [Concept('concept_shipping_lane', '$concept_shipping_lanes$')] passing through this node, reducing their efficiency by an average of $DAMAGE|v-%$"
  SUPPLY_NETWORK_TOOLTIP:1 "$SUPPLY_NETWORK_MAPMARKER_HEADER$\n$NUM_CONVOYS_NO_DAMAGE$\n$USED_CONVOYS$\n$NUM_SEA_NODES$\n$SUPPLY_NETWORK_STRENGTH$"
  SUPPLY_NETWORK_DAMAGED_TOOLTIP:1 "$SUPPLY_NETWORK_MAPMARKER_HEADER$\n$USED_CONVOYS$\n$NUM_SEA_NODES$\n$SUPPLY_NETWORK_STRENGTH$\n\n$IS_BEING_RAIDED_DESC$"
@@ -668,19 +668,19 @@
  NUM_CONVOYS_TOOLTIP_EXTENDED:3 "#header [Country.GetAdjective|v] [concept_convoys]#!\n[Country.GetRequiredConvoys|v] [concept_convoys] used by the [Country.GetAdjectiveNoFlag|v] [concept_supply_network] out of [Country.GetNumConvoys|v] available\n$TOOLTIP_DELIMITER$\n$USED_CONVOYS_TOOLTIP_SHORT$\n\nNumber of Convoys produced\n[Country.GetNumConvoysDesc][ConcatIfNeitherEmpty( '\n', Country.GetNumConvoysDamagedDesc )]"
  CONVOY_DAMAGE_TOOLTIP_ENTRY:0 "[Character.GetCountry.GetFlagTextIcon] [Character.GetFullName] convoy raiding in [Character.GetCommanderOrder.GetStrategicRegion.GetName]: #BOLD @convoys!$VALUE|+=$#!"
  CONVOY_DAMAGE_TOOLTIP_ENTRY_LINGERING:0 "[Country.GetFlagTextIcon] lingering convoy raiding damage: #BOLD @convoys!$VALUE|+=$#!"
- USED_CONVOYS:1 "Required Convoys: #tooltippable #tooltip:[Country.GetTooltipTag],USED_CONVOYS_TOOLTIP @convoys![Country.GetRequiredConvoys]#!#!"
- USED_AVAILABE_CONVOYS_TEXT:1 "Required Convoys:"
+ USED_CONVOYS: "Потребує конвоїв: #tooltippable #tooltip:[Country.GetTooltipTag],USED_CONVOYS_TOOLTIP @convoys![Country.GetRequiredConvoys]#!#!"
+ USED_AVAILABE_CONVOYS_TEXT: "Потребує конвоїв:"
  USED_AVAILABE_CONVOYS_VALUE:2 "@convoys! #tooltippable #tooltip:[Country.GetTooltipTag],USED_CONVOYS_TOOLTIP [Country.GetRequiredConvoys]#!#! / #tooltippable #tooltip:[Country.GetTooltipTag],NUM_CONVOYS_TOOLTIP [Country.GetNumUsableConvoys]#!#!"
  USED_CONVOYS_TOOLTIP:1 "Number of Convoys required by the [Country.GetAdjective|v] [concept_supply_network]\n[Country.GetRequiredConvoysBreakdown]"
  USED_CONVOYS_TOOLTIP_SHORT:0 "Used $concept_convoys$\n[Country.GetRequiredConvoysBreakdown]"
  SUPPLY_NETWORK_STRENGTH_COLOR:0 "[GetSupplyNetworkColorstring( Country.GetSupplyNetworkStrength )]"
- SUPPLY_NETWORK_STRENGTH:0 "Supply Network Strength: #$SUPPLY_NETWORK_STRENGTH_COLOR$ [Country.GetSupplyNetworkStrength|%0]#!"
- SUPPLY_NETWORK_STRENGTH_TEXT:0 "Supply Network Strength:"
+ SUPPLY_NETWORK_STRENGTH: "Потужність мережі постачання: #$SUPPLY_NETWORK_STRENGTH_COLOR$ [Country.GetSupplyNetworkStrength|%0]#!"
+ SUPPLY_NETWORK_STRENGTH_TEXT: "Потужність мережі постачання:"
  SUPPLY_NETWORK_STRENGTH_VALUE:0 "#$SUPPLY_NETWORK_STRENGTH_COLOR$ [Country.GetSupplyNetworkStrength|%0]#!"
  SUPPLY_NETWORK_STRENGTH_TOOLTIP:1 "How many [concept_convoys] are available versus required"
- NUM_SEA_NODES:1 "Sea Nodes: #v [Country.GetSupplyNetworkNumSeaNodes]#!"
- NUM_SEA_NODES_TEXT:0 "Sea Nodes:"
- NUM_SEA_NODES_VALUE:0 "[Country.GetSupplyNetworkNumSeaNodes]"
+ NUM_SEA_NODES: "Морські вузли: #v [Country.GetSupplyNetworkNumSeaNodes]#!"
+ NUM_SEA_NODES_TEXT: "Морські вузли:"
+ NUM_SEA_NODES_VALUE: "[Country.GetSupplyNetworkNumSeaNodes]"
  NUM_SEA_NODES_TOOLTIP:1 "The [Country.GetAdjectiveNoFormatting|v] [concept_supply_network] spans across [Country.GetSupplyNetworkNumSeaNodes] Sea Nodes.\n\n[Country.GetSupplyNetworkNumSeaNodesDesc]"
 
  REQUIRED_CONVOYS_BREAKDOWN:1 "$TAB$[Concept('concept_supply_route', '$concept_supply_routes$')]: @convoys! #v $SUPPLY_ROUTE_CONVOYS$#!\n$TAB$[Concept('concept_trade_route', '$concept_trade_routes$')]: @convoys! #v $TRADE_ROUTE_CONVOYS$#!\n$TAB$[Concept('concept_port_connection', '$concept_port_connections$')]: @convoys! #v $PORT_CONNECTION_CONVOYS$#!"
@@ -821,11 +821,11 @@
  advance_gerund:1 "Advancing"
  advance_desc:2 "#header $advance$#!\nOrder this Commander to advance a [concept_front], trying to invade enemy territory.\nA Commander with an Advance Order can still partake in defensive battles.[ConcatIfNeitherEmpty( '\n\n', COMMANDER_ORDER_TYPE.GetModifier.GetDesc )]"
  advance_tooltip:0 "#header $advance$#!\nIs targeting [SCOPE.GetRootScope.GetFront.GetName]"
- stand_by:1 "Stand By"
- stand_by_gerund:0 "Standing by"
- stand_by_desc:4 "#header Stand By#!\nOrder [Character.GetFullName] to leave the [concept_front] and move back to the [Character.GetHomeHQ.GetName|v].\n\nTheir [Concept('concept_battalion', '$concept_battalions$')] will still be able to participate in defensive [Concept('concept_battle', '$concept_battles$')], but without the benefit of their General. While at the [concept_hq] the troops will not take any [concept_attrition].[ConcatIfNeitherEmpty( '\n\n', Character.GetDaysToTravelHomeHQFormatted )]"
- patrol_coast:0 "Patrol Coast"
- patrol_coast_gerund:0 "Patrolling Coast"
+ stand_by: "Очікувати"
+ stand_by_gerund: "Очікує"
+ stand_by_desc:4 "#header Очікує#!\nOrder [Character.GetFullName] to leave the [concept_front] and move back to the [Character.GetHomeHQ.GetName|v].\n\nTheir [Concept('concept_battalion', '$concept_battalions$')] will still be able to participate in defensive [Concept('concept_battle', '$concept_battles$')], but without the benefit of their General. While at the [concept_hq] the troops will not take any [concept_attrition].[ConcatIfNeitherEmpty( '\n\n', Character.GetDaysToTravelHomeHQFormatted )]"
+ patrol_coast: "Патрулювати берег"
+ patrol_coast_gerund: "Патрулює берег"
  patrol_coast_desc:0 "#header $patrol_coast$#!\nSeek out and destroy any enemy vessels along the coastline."
  patrol_coast_tooltip:0 "#header $patrol_coast$#!\nIs targeting [SCOPE.GetRootScope.GetHQ.GetName]"
  raid_convoys:0 "Raid Convoys"
@@ -850,12 +850,12 @@
  commander_status_attacking_in_battle:0 "Is Attacking in the [Character.GetBattle.GetName|v] on the [Character.GetBattle.GetFront.GetName]"
  commander_status_defending_in_battle:0 "Is Defending in the [Character.GetBattle.GetName|v] on the [Character.GetBattle.GetFront.GetName]"
 
- troop_name_regular:0 "Regular Troops"
- troop_name_conscript:0 "Conscript Troops"
+ troop_name_regular: "Регулярні війська"
+ troop_name_conscript: "Призвані війська"
 
- combat_unit_regular:0 "Regular"
- combat_unit_conscript:0 "Conscript"
- combat_unit_flotilla:0 "Flotilla"
+ combat_unit_regular: "Регулярні"
+ combat_unit_conscript: "Призвані"
+ combat_unit_flotilla: "Флотилія"
  
  CONVOY_RAIDING_ENEMIES_TOOLTIP:0 "Hostile Supply Networks:"
  CONVOY_RAIDING_ENEMIES_TOOLTIP_ENTRY:0 "[Country.GetName]"
@@ -1241,8 +1241,8 @@
  REFORM_GOVERNMENT_CIVIL_WAR_ERROR: "@red_cross! [Country.GetName] у [Concept('concept_civil_war', '$concept_civil_war_loc$')]"
  REFORM_GOVERNMENT_MOVE_TO_GOVERNMENT_BUTTON_TOOLTIP:0 "@red_cross! [InterestGroup.GetName] supports an ongoing [concept_revolution]"
  REFORM_GOVERNMENT_BOLD:0 "#BOLD $REFORM_GOVERNMENT$#!"
- IN_OPPOSITION_TITLE:0 "#title Opposition#!"
- IN_GOVERNMENT_TITLE:0 "#title Government#!"
+ IN_OPPOSITION_TITLE: "#title Опозиція#!"
+ IN_GOVERNMENT_TITLE: "#title Уряд#!"
  ELECTION_TITLE:0 "#title Elections#!"
  MARGINAL_TITLE:0 "#title [concept_marginalized] [Concept('concept_interest_group', '$concept_interest_groups$')]#!"
  MARGINAL_TITLE_ACCORDION:0 "[concept_marginalized] [Concept('concept_interest_group', '$concept_interest_groups$')] (#v [GetDataModelSize( AccessPlayer.AccessMarginalInterestGroups)]#!)"
@@ -1311,9 +1311,9 @@
 
  EXPENSIVE_GOODS_IN_MARKET_ELEMENT:0 "$TAB$[State.GetName] - [Goods.GetMarketPriceWithTooltip|1]"
 
- URBAN_PART_OF_STATE:0 "Urban Buildings"
- NON_URBAN_PART_OF_STATE:0 "Rural Buildings"
- INFRA_PART_OF_STATE:0 "Development"
+ URBAN_PART_OF_STATE: "Міські будівлі"
+ NON_URBAN_PART_OF_STATE: "Сільські будівлі"
+ INFRA_PART_OF_STATE: "Development"
 
  URBAN_CENTER:0 "Urban Center"
  LEVEL:0 "Size:"
@@ -1330,8 +1330,8 @@
 
  EXPAND:1 "#header Expand#!"
  COLLAPSE:0 "#header Collapse#!"
- UNPIN:0 "#header Unpin#! from outliner"
- PIN:0 "#header Pin#! to outliner"
+ UNPIN: "#header Відкріпити#! з планувальника"
+ PIN: "#header Прикріпити#! до планувальника"
  buildings_expand:0 "Expand"
  buildings_expand_tooltip:0 "#BOLD #V Expand#!#!\n$TOOLTIP_DELIMITER$\n[concept_building_desc]"
  buildings_upgrade:0 "Upgrade"
@@ -1643,7 +1643,7 @@
 
  MARKET_STATE_REGION_LIST_IN:0 "In?"
  STATE_REGION:1 "[concept_state_region]"
- MARKET_ACCESS:0 "[concept_market_access]"
+ MARKET_ACCESS: "[concept_market_access]"
 
  GDP_CONTRIBUTION:0 "[Concept('concept_gdp','$concept_gdp_short$')] Contribution"
 
@@ -1814,7 +1814,7 @@
  BUILDING_INACTIVE:0 "Inactive"
  BUILDING_INACTIVE_CONSUMPTION_EMPTY_STATE:0 "No [concept_building] Consumption since this $concept_building$ is inactive."
  LOCAL_PRICE_CONDENSED:0 "Local Price: #variable @money![ProductionInterfaceInfo.GetLocalPrice|1]#!"
- STATE_CONTROLLED_BY:0 "#BOLD #V [State.GetName]#!#! is controlled by #BOLD #V [State.GetController.GetName]#!#!"
+ STATE_CONTROLLED_BY: "#BOLD #V [State.GetName]#!#! під контролем [Concept('concept_country', '$concept_country_gen$')] #BOLD #V [State.GetController.GetName]#!#!"
  STATE_INVADED_BY:0 "#BOLD #V [State.GetInvader.GetName]#!#! has control over #v [State.GetControlledProvinceFractionFor(State.GetInvader)|%]#! of #BOLD #V [State.GetName]#!#!"
  STATE_CONTESTED:0 "Control of #BOLD #V [State.GetName]#!#! is contested!"
 
@@ -2475,13 +2475,13 @@
  INVESTMENT_TITLE: "Кількість рівнів вкладу:"
  COST_PER_INVESTMENT_TITLE: "Вартість [Concept('concept_bureaucracy', '$concept_bureaucracy_gen$')] на рівень вкладу:"
  WEEKLY_COSTS_TITLE: "Щомісячна вартість:"
- INSTITUTION_LEVEL_CHANGE:0 "Зміна на рівень [Institution.GetTargetInvestmentLevel]"
+ INSTITUTION_LEVEL_CHANGE: "Зміна на рівень [Institution.GetTargetInvestmentLevel]"
  INSTITUTION_CURRENT_LEVEL: "Рівень [Institution.GetInvestmentLevel]"
  INSTITUTION_TIME_TO_REACH_LEVEL: "$NUM_WEEKS|v$ тижнів (-я)"
- INSTITUTION_TIME_TO_REACH_LEVEL_DAYS:0 "$NUM_DAYS|v$ днів (-я)"
+ INSTITUTION_TIME_TO_REACH_LEVEL_DAYS: "$NUM_DAYS|v$ днів (-я)"
  INSTITUTION_TIME_TO_REACH_LEVEL_ONE_DAY: "1 день"
  INSTITUTION_TIME_TO_REACH_LEVEL_LESS_THAN_ONE_DAY: "Менше 1-го дня"
- NO_INSTITUTIONS:0 "No [Concept('concept_institution', '$concept_institutions$')]"
+ NO_INSTITUTIONS: "Немає [Concept('concept_institution', '$concept_institutions_gen$')]"
 
  MINCOST:0 "Minimum Cost: $VAL|v1$"
  INCORPORATED_POPULATION_LAW_COST:1 "Incorporated Population of $POPULATION|vK$ costs #v $COST|1+$#! per Investment\n$TAB$Base Cost: #v $BASECOST|1+$#! $MODIFIER$"
@@ -2803,14 +2803,14 @@
  WEEKLY_BALANCE: "Щотижневий баланс: [AccessPlayer.PredictWeeklyBalanceWithEconomyHealthHint]"
  BUDGET_TAB_OVERVIEW: "Огляд"
  STATES: "Регіони"
- BUDGET_TAB_ASSETS:0 "Assets"
- POOLS:0 "Pools"
+ BUDGET_TAB_ASSETS: "Активи"
+ POOLS: "Кошти"
 
- LAND_TAX:0 "[concept_budget_land_taxes]"
- HEATHEN_TAX:0 "[concept_budget_heathen_taxes]"
- PER_CAPITA_TAX:0 "[concept_budget_per_capita_taxes]"
+ LAND_TAX: "[concept_budget_land_taxes]"
+ HEATHEN_TAX: "[concept_budget_heathen_taxes]"
+ PER_CAPITA_TAX: "[concept_budget_per_capita_taxes]"
 
- NATIONAL_REVENUE:0 "National Revenue"
+ NATIONAL_REVENUE: "Національний дохід"
  BUDGET_TAXATION_LEVEL:0 "[Concept('concept_taxes','$concept_tax_level$')]"
  BUDGET_INCOME_TAXES:0 "[concept_budget_income_taxes]"
  BUDGET_POLL_TAXES:0 "[concept_budget_poll_taxes]"
@@ -2839,8 +2839,8 @@
  RESUME_ALL_CONSTRUCTION_TOOLTIP_HEADER:0 "#header Resume all construction#!"
  CHANGE_ALL_CONSTRUCTION_SPEED_TOOLTIP_HEADER:1 "#header Switch entire $building_construction_sector$ to [PRODUCTION_METHOD.GetName]#!"
 
- TAXES:0 "Taxes"
- EXPENSES:0 "Expenses"
+ TAXES: "Податки"
+ EXPENSES: "Витрати"
 
  invalid_market:0 "Not a valid Market"
 
@@ -3015,7 +3015,7 @@
 
  BALANCE_ITEM:0 "[TradeOverviewEntry.GetGoods.GetCompareIconAgainstBasePriceNoFormatting(TradeOverviewEntry.GetGoods.GetMarketPrice)] "
 
- RELATIONS_TOOLTIP:2 "#header [concept_relations]#!\n[concept_relations] between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName] are #BOLD $LABEL$#! (#variable $VAL|+=$#!)$PROGRESS$"
+ RELATIONS_TOOLTIP: "#header [concept_relations]#!\n[concept_relations] між [Concept('concept_country', '$concept_countries_ins$')] [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] - #BOLD $LABEL$#! (#variable $VAL|+=$#!)$PROGRESS$"
  INFAMY_TOOLTIP:2 "#header [COUNTRY.GetAdjective]а [concept_infamy]: #BOLD $INFAMY_LABEL$#! (#variable $INFAMY|-1$#!)#!\n$TOOLTIP_DELIMITER$\n$INFAMY_DECAY$[ConcatIfNeitherEmpty('\n\nEffects:\n','$INFAMY_EFFECTS$')]"
  INFAMY_DECAY_RATE:0 "[concept_infamy] decay: #P #bold -$VAL|3$#!#! / week\n$TAB$Base decay: #P #bold -$YEARLYBASE|3$#!#!  / year$MITIGATION$"
  TENSION_TOOLTIP:0 "The [concept_tension] level between us and [COUNTRY.GetName] is #BOLD $LABEL$#! (#variable $VAL|-$#!)$DECAY$"
@@ -3150,7 +3150,7 @@
 
  TAX_INCOME:0 "Taxation Income"
 
- DECLARE_BANKRUPTCY:0 "Declare [concept_bankruptcy]"
+ DECLARE_BANKRUPTCY: "Оголосити про [Concept('concept_bankruptcy','$concept_bankruptcy_acc$')]"
  DECLARE_BANKRUPTCY_TOOLTIP:0 "[Country.GetDeclareBankruptcyDesc]"
  DECLARE_BANKRUPTCY_NOT_IN_DEFAULT:0 "We are not in [concept_default]"
  DECLARE_BANKRUPTCY_DESC:1 "#header Declare [concept_bankruptcy]#!\n$TOOLTIP_DELIMITER$\nDeclaring [concept_bankruptcy] will erase our [concept_loans] and bring [GetPlayer.GetName] out of [concept_default], but doing so will have severe domestic consequences for our [concept_country]:\n$EFFECTS$[ConcatIfNeitherEmpty('\n\nNot possible due to:\n','$ERRORS$')]"
@@ -3164,7 +3164,7 @@
   # Reserves Limit: #variable @money![GetPlayer.GetGoldReserveLimit|K]#!"
  GOLD_RESERVE_DIMINISHING_RETURNS:0 "Excessive stockpiling of gold causes the gold price to rise. Your balance of #variable @money!$MONEY|D$#! buys you the equivalent of only #variable @money!$VAL|D$#! worth of gold."
 
- WAGES:0 "Wages"
+ WAGES: "Зарплата"
  SLAVE_UPKEEP:0 "Slave Upkeep"
 
  IN_THIS_MARKET:1 "#title [Concept('concept_country', '$concept_countries$')] in this $concept_market$#!"
@@ -3464,7 +3464,7 @@
  MILITARY_PANEL_COMMAND_LIMIT_BREAKDOWN_TOOLTIP:3 "#header Units#!\n[Character.GetFullName] commands [GetUnitStrengthHeader( Character.GetNumCombatUnits, Character.GetMaxNumCombatUnits, Character.GetCombatUnitsTypeIcon )]\n$TOOLTIP_DELIMITER$\nHis Rank of [Character.GetRankName] gives him a [concept_command_limit] of #v [Character.GetStrengthPointsIcon][Character.GetTotalCommandLimit]#!:\n[Character.GetCommandLimitDesc]"
 
  REGULARS: "Регулярні"
- CONSCRIPTS: "Мобілізовані"
+ CONSCRIPTS: "Призвані"
  IN_GARRISON: "У [Concept('concept_general', '$concept_garrison_loc$')]"
  WITH_GENERALS: "З [Concept('concept_general', '$concept_generals_ins$')]"
 
@@ -3678,7 +3678,7 @@
  ig_approval_loyal: "#bold #P Підтримуюче#!#!"
  ig_approval_happy: "#bold #P Щасливе#!#!"
  ig_approval_neutral: "#bold Нейтральне#!"
- ig_approval_unhappy: "#bold #N Нещасне#!#!"
+ ig_approval_unhappy: "#bold #N Нещасливе#!#!"
  ig_approval_angry: "#bold #N Вороже#!#!"
 
  WILL_RADICALIZE_WARNING:1 "@warning! This will [Concept('concept_political_movement_radicalism', '$concept_political_movement_radicalize$')] the [INTEREST_GROUP.GetName]"
@@ -4650,13 +4650,13 @@
  NO_WARS: "Жодних [Concept('concept_war','$concept_wars_gen$')]"
  ACTIVE_DIPLOMATIC_PLAYS: "Активні [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')]"
  NO_ACTIVE_DIPLOMATIC_PLAYS: "Жодних активних\n [Concept('concept_diplomatic_play', '$concept_diplomatic_plays_gen$')]"
- DIPLOMATIC_ACTION_NAME:0 "[DiplomaticAction.GetFullName]"
- DIPLO_ACTIONS:0 "[Concept('concept_diplomatic_action', '$concept_diplomatic_actions$')] targeting [Country.GetName]"
- NO_DIPLO_ACTIONS:0 "No Possible [concept_diplomatic_action]"
- NO_DIPLO_PLAYS:0 "No Possible [concept_diplomatic_play]"
+ DIPLOMATIC_ACTION_NAME: "[DiplomaticAction.GetFullName]"
+ DIPLO_ACTIONS: "[Concept('concept_diplomatic_action', '$concept_diplomatic_actions$')] з [Concept('concept_country', '$concept_country_ins$')] [Country.GetName]"
+ NO_DIPLO_ACTIONS: "Неможливо використати [Concept('concept_diplomatic_action', '$concept_diplomatic_action_acc$')]"
+ NO_DIPLO_PLAYS: "Неможливо почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')]"
  NO_ACTIVE_DIPLOMACY: "Жодної активної дипломатії"
- DIPLOMATIC_PLAYS_TARGETING_COUNTRY:0 "[Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] targeting [Country.GetName]"
- NO_DIPLOMATIC_PLAYS_TARGETING_COUNTRY:0 "No [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] available"
+ DIPLOMATIC_PLAYS_TARGETING_COUNTRY: "[Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] з [Concept('concept_country', '$concept_country_ins$')] [Country.GetName]"
+ NO_DIPLOMATIC_PLAYS_TARGETING_COUNTRY: "[Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] недоступні"
  DIPLOMATIC_STATUS_HEADER: "#title Дипломатія#!"
  TRUCES:0 "Truces"
  OBLIGATIONS_OWED_FROM:1 "Owes Obligations From"
@@ -4714,7 +4714,7 @@
  RANK_TOOLTIP_MAX_SUBJECT:1 "@information! [COUNTRY.GetName] cannot achieve a higher $concept_rank$ than $HIGHEST_RANK|v$ due to being the [concept_subject] of [Country.GetOverlord.GetName], limiting them to a maximum score position of #v ##$HIGHEST_POSITION$#! in the world"
  RANK_TOOLTIP_MAX_COUNTRY_TYPE:1 "@information! [COUNTRY.GetName] cannot achieve a higher $concept_rank$ than $HIGHEST_RANK|v$ due to their $COUNTRY_TYPE|v$ status, limiting them to a maximum score position of #v ##$HIGHEST_POSITION$#! in the world"
 
- COUNTRY_RANK_TOOLTIP:1 "#header [concept_rank]#!\n$TOOLTIP_DELIMITER$\n[COUNTRY.GetName] currently holds the $concept_rank$ of #variable [COUNTRY.GetRank]#! with an overall score position of #variable ##[COUNTRY.GetCountryScorePositionDesc]#! in the world.\n\nCurrent [concept_prestige]: #tooltippable #tooltip:[COUNTRY.GetTooltipTag],COUNTRY_PRESTIGE_BREAKDOWN [COUNTRY.GetPrestige|v]#!#!"
+ COUNTRY_RANK_TOOLTIP: "#header [concept_rank]#!\n$TOOLTIP_DELIMITER$\n[COUNTRY.GetName] має $concept_rank$ #variable [COUNTRY.GetRank]#! із загальною позицією #variable ##[COUNTRY.GetCountryScorePositionDesc]#! у світі.\n\nПоточний [concept_prestige]: #tooltippable #tooltip:[COUNTRY.GetTooltipTag],COUNTRY_PRESTIGE_BREAKDOWN [COUNTRY.GetPrestige|v]#!#!"
  COUNTRY_PRESTIGE_BREAKDOWN:0 "#header [concept_prestige] of [Country.GetName]: [Country.GetPrestige|v]#!\n$TOOLTIP_DELIMITER$\n[Country.GetPrestigeDesc]"
  OBSERVER_RANK_TOOLTIP:0 "#header [concept_rank]#!\n#v ##0 #!$OBSERVER_NO_COUNTRY_SELECTED$"
 
@@ -4838,8 +4838,8 @@
  CLICK_TO_OPEN_LAW_GROUP:0 "#instruction Click to view [concept_law_group]#!"
 
  LAW_ENACTMENT_PROGRESS_TOPBAR:0 "[SelectLocalization( GetPlayer.IsEnactingLaw, 'ENACTING_LAW', 'NOT_ENACTING_LAW' )]\n[GetPlayer.GetLawEnactmentProgressDesc]"
- ENACTING_LAW:0 "[GetPlayer.GetName] is currently enacting #variable [GetPlayer.GetLawBeingEnacted.GetName]#!"
- NOT_ENACTING_LAW:0 "[GetPlayer.GetName] is not actively enacting a new [concept_law]."
+ ENACTING_LAW:0 "[GetPlayer.GetName] впроваджує [Concept('concept_law', '$concept_law$')] #variable [GetPlayer.GetLawBeingEnacted.GetName]#!"
+ NOT_ENACTING_LAW: "[GetPlayer.GetName] не впроваджує нового [Concept('concept_law', '$concept_law_gen$')]."
  LAW_ENACTMENT_ATTEMPT_TOO_SOON:0 "An attempt to enact [Law.GetName] was made too recently. Wait $TIME_REMAINING$ before another attempt."
  LAW_ENACTMENT_PROGRESS:1 "[ConcatIfNeitherEmpty(Law.PredictLegitimacyChangeToEnactDesc, '\n')][Law.GetCheckpointRemainingDays|v] days until next checkpoint\n\n$LAW_NEXT_CHECKPOINT_OUTCOME_CHANCES_DESC$"
  LAW_NEXT_CHECKPOINT_TIME:0 "In [Law.GetCheckpointRemainingDays|v] days ([Law.GetCheckpointEndDateString])"
@@ -5845,7 +5845,7 @@
  MOBILIZED_CONSCRIPTS_IN_GARRISON_TOOLTIP:0 "@battalions![Country.GetConscriptedBattalionsInGarrisonRaw|v] [Concept('concept_conscript_battalion','$concept_conscript_battalions$')] are not assigned to a [concept_general]\n\n[Country.GetConscriptedBattalionsInGarrisonBreakdown]"
 
  GENERALS_HEADER_COUNT:0 "[Concept('concept_general', '$concept_generals$')] ([GetDataModelSize( Country.AccessGenerals )|v0])"
- MOBILIZED_BATTALIONS_HEADER_COUNT:0 "Mobilized @battalions![Country.GetBattalionsFullyMobilized|v0]/[Country.GetBattalionsWithGeneralRaw]"
+ MOBILIZED_BATTALIONS_HEADER_COUNT: "Призвані @battalions![Country.GetBattalionsFullyMobilized|v0]/[Country.GetBattalionsWithGeneralRaw]"
  MOBILIZED_BATTALIONS_HEADER_TOOLTIP:0 "[Country.GetFullyMobilizedBattalionsPercentageRaw|%0v] of all [Concept('concept_battalion','$concept_battalions$')] in [Country.GetName] are [Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized$')]"
  MOBILIZED_BATTALIONS_WITH_GENERAL_COUNT:0 "With [Concept('concept_general', '$concept_generals$')]: [Country.GetBattalionsFullyMobilized|v0]/[Country.GetBattalionsMobilizable]"
  ADMIRALS_HEADER_COUNT:0 "[Concept('concept_admiral', '$concept_admirals$')] ([GetDataModelSize( Country.AccessAdmirals )|v0])"
@@ -5854,14 +5854,14 @@
 
  CANAL_WRONG_STATE_REGION:0 "#N Can only be built in [STATE_REGION.GetName]#!"
 
- MOBILIZE_GENERAL:0 "Mobilize"
+ MOBILIZE_GENERAL: "Призов"
  MOBILIZE_GENERAL_TOOLTIP:2 "#header $concept_mobilize_general$#!\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty( GetDesc( Character.Mobilize ), '\n\n' )]$concept_mobilize_general_desc$\n\nEstimated Cost / Week: [Character.GetMobilizationCostDesc]"
  MOBILIZE_GENERAL_COST_WITH_BREAKDOWN:1 "#tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] @money!$COST|K-=$#!#!"
  MOBILIZE_GENERAL_COST_NO_BREAKDOWN:1 "@money!$COST|K-=$"
  MOBILIZE_GENERAL_COST_ITEM:1 "[Building.GetName] in [Building.GetState.GetName]: #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] @money!$COST|K-=$#!#!"
  MOBILIZE_ALL_GENERALS_BUTTON:0 "Mobilize All"
- MOBILIZE_ALL_GENERALS:0 "Mobilize all [Concept('concept_general', '$concept_generals$')]"
- MOBILIZE_ALL_GENERALS_HEADER:0 "Mobilize all [Concept('concept_general', '$concept_generals$')]?"
+ MOBILIZE_ALL_GENERALS: "Призвати [Concept('concept_general', '$concept_generals_gen$')]"
+ MOBILIZE_ALL_GENERALS_HEADER: "Призвати [Concept('concept_general', '$concept_generals_gen$')]?"
  MOBILIZE_ALL_GENERALS_QUESTION:1 "#bold This will [Concept('concept_mobilize_general', '$concept_mobilize_general_mobilize$')] #v [Country.GetNumberOfUnmobilizedGenerals]#! [Concept('concept_general', '$concept_general_plural_singular$')]:"
  MOBILIZE_ALL_GENERALS_MOBILIZED_GENERALS:0 "Currently, there are #v [Country.GetNumberOfMobilizedGenerals]#! [Concept('concept_general', '$concept_general_plural_singular$')] already [Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized$')]."
  MOBILIZE_ALL_GENERALS_BATTALIONS:1 "Resulting in a total of @battalions!#v [Country.GetBattalionsMobilizable|0]#! [Concept('concept_battalion', '$concept_battalions$')] that will begin their [Concept('concept_mobilize_battalion', '$concept_mobilize_battalion_mobilization$')]."
@@ -6108,11 +6108,11 @@
 
  MODIFIER_CONSCRIPTION_RATE_ADD_ADDITIONAL_INFO:1 "Can mobilize @battalions!$NUM_BATTALIONS|v$ [Concept('concept_battalion', '$concept_battalions$')]"
 
- DEFAULT_HQ_NAME:0 "[HQ.GetCountry.GetFlagTextIcon] [HQ.GetStrategicRegion.GetNameNoFormatting] [Concept('concept_hq', 'HQ')]"
- DEFAULT_HQ_NAME_NO_FLAG:0 "[HQ.GetStrategicRegion.GetNameNoFormatting] [Concept('concept_hq', 'HQ')]"
+ DEFAULT_HQ_NAME: "[HQ.GetCountry.GetFlagTextIcon] [Concept('concept_hq', '$concept_hq$')] в регіоні [HQ.GetStrategicRegion.GetNameNoFormatting]"
+ DEFAULT_HQ_NAME_NO_FLAG: "[Concept('concept_hq', '$concept_hq$')] в регіоні [HQ.GetStrategicRegion.GetNameNoFormatting] [Concept('concept_hq', 'HQ')]"
 
- NO_GENERALS:1 "No [Concept('concept_general', '$concept_generals$')]"
- NO_ADMIRALS:1 "No [Concept('concept_admiral', '$concept_admirals$')]"
+ NO_GENERALS: "Немає [Concept('concept_general', '$concept_generals_gen$')]"
+ NO_ADMIRALS: "Немає [Concept('concept_admiral', '$concept_admirals_gen$')]"
 
  RESET_TECH_TREE_VIEW:0 "Reset"
 
@@ -6254,8 +6254,8 @@
  START_ANY_COUNTRY_TOOLTIP:0 "Start a new game and pick any [concept_country] on the map"
  START_GAME_TOOLTIP:0 "Start a new game as #variable [CountryDefinition.GetName]#!"
 
- SELECTABLE_COUNTRY_TOOLTIP: "#header [Country.GetName]#!\n$DATA_COUNTRY_NAME_TOOLTIP$\n\n#instruction Нажміть, щоб вибрати державу [Country.GetName]#!"
- RIGHT_CLICK_TO_OPEN_CONTEXT_MENU:0 "@rightclick! #instruction #bold Right-click#! to open Context Menu#!"
+ SELECTABLE_COUNTRY_TOOLTIP: "#header [Country.GetName]#!\n$DATA_COUNTRY_NAME_TOOLTIP$\n\n#instruction Клацніть, щоб вибрати державу [Country.GetName]#!"
+ RIGHT_CLICK_TO_OPEN_CONTEXT_MENU: "@rightclick! #instruction #bold Правий клац#!, щоб відкрити Грясть#!"
 
  NULL_OBJ: "#NULL_OBJ#!"
  NULL_OBJ_ADJ: "#NULL_OBJ_ADJ#!"
@@ -6349,8 +6349,8 @@
  SOL_CONDENSED:0 "[LabelingHelper.GetLabelForStandardOfLivingNoIconCFixedPointFormatFromExpected(State.GetAverageStandardOfLivingAll,State.GetExpectedStandardOfLivingAll)|v] ([State.GetFormattedStandardOfLivingAll|v])"
  STATE_TURMOIL_CONDENSED:0 "#b [State.CalcTurmoil|%1-]#!"
  STATE_DEVASTATION_CONDENSED:0 "#b [State.GetStateRegion.GetDevastationLevel|%R1]#!"
- STATE_INFRASTRUCTURE_CONDENSED:0 "[SelectLocalization(GreaterThan_CFixedPoint(State.GetInfrastructureUsage,State.GetInfrastructure), 'WARNING', '')]Using #tooltippable #tooltip:[State.GetTooltipTag],STATE_INFRASTRUCTURE_USAGE_TOOLTIP [State.GetInfrastructureUsage|0v]#!#! of #tooltippable #tooltip:[State.GetTooltipTag],STATE_INFRASTRUCTURE_TOOLTIP [State.GetInfrastructure|0v]#!#!"
- STATE_TAX_CAPACITY_CONDENSED:0 "[AddLocalizationIf(GreaterThan_CFixedPoint(State.CalcTaxCapacityUsage,State.CalcTaxCapacity), 'WARNING')]Using #tooltippable #tooltip:[State.GetTooltipTag],STATE_TAX_CAPACITY_USAGE_TOOLTIP [State.CalcTaxCapacityUsage|0v]#!#! of #tooltippable #tooltip:[State.GetTooltipTag],STATE_TAX_CAPACITY_TOOLTIP [State.CalcTaxCapacity|0v]#!#! [AddLocalizationIf(GreaterThan_CFixedPoint(State.CalcTaxCapacityUsage, State.CalcTaxCapacity), 'STATE_TAX_CAPACITY_INSUFFICIENT')]"
+ STATE_INFRASTRUCTURE_CONDENSED: "[SelectLocalization(GreaterThan_CFixedPoint(State.GetInfrastructureUsage,State.GetInfrastructure), 'WARNING', '')]Користують #tooltippable #tooltip:[State.GetTooltipTag],STATE_INFRASTRUCTURE_USAGE_TOOLTIP [State.GetInfrastructureUsage|0v]#!#! з #tooltippable #tooltip:[State.GetTooltipTag],STATE_INFRASTRUCTURE_TOOLTIP [State.GetInfrastructure|0v]#!#!"
+ STATE_TAX_CAPACITY_CONDENSED: "[AddLocalizationIf(GreaterThan_CFixedPoint(State.CalcTaxCapacityUsage,State.CalcTaxCapacity), 'WARNING')]Користують #tooltippable #tooltip:[State.GetTooltipTag],STATE_TAX_CAPACITY_USAGE_TOOLTIP [State.CalcTaxCapacityUsage|0v]#!#! з #tooltippable #tooltip:[State.GetTooltipTag],STATE_TAX_CAPACITY_TOOLTIP [State.CalcTaxCapacity|0v]#!#! [AddLocalizationIf(GreaterThan_CFixedPoint(State.CalcTaxCapacityUsage, State.CalcTaxCapacity), 'STATE_TAX_CAPACITY_INSUFFICIENT')]"
  STATE_MARKET_CAPITAL_STATUS_CONDENSED:0 "[State.GetMarket.GetName]\n[State.GetMarketAccess|%v0]"
 
  CASUALTY_DEBUG_CASUALTIES_HEADER:0 "Casualties taken:"
