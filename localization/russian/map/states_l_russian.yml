@@ -573,7 +573,7 @@
  STATE_BRANDENBURG:0 "Brandenburg"
  STATE_SCHLESWIG_HOLSTEIN:0 "Schleswig-Holstein"
  STATE_WURTTEMBERG:0 "Württemberg"
- STATE_BADEN: "Баєрн"
+ STATE_BADEN: "Баден"
  STATE_HANNOVER: "Ганновер"
  STATE_NASSAU:0 "Nassau"
  STATE_BAVARIA:0 "Bavaria"
