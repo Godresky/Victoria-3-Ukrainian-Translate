@@ -153,6 +153,7 @@
  concept_building_level_desc:0 "A [Concept('concept_building', '$concept_building_possessive$')] $concept_building_level_short$ scales its current [concept_good_consumption], [concept_good_production], [concept_workforce] requirements, and may apply an [concept_economy_of_scale] bonus. The maximum $concept_building_level_short$ a $concept_building$ can be expanded to may depend on the [concept_resource_potential] or [concept_arable_land] in the [concept_state]. Expanding a $concept_building$'s $concept_building_level_short$ usually requires [concept_construction], though some $concept_building$'s $concept_building_level_short$ is automatically adjusted based on other factors such as [concept_infrastructure], [Concept('concept_trade_route','$concept_trade_routes$')], [Concept('concept_conscription_center','$concept_conscription$')] rate, or unused $concept_arable_land$."
  
  concept_diplomatic_play: "Дипломатична гра"
+ concept_diplomatic_play_acc: "Дипломатичну гру"
  concept_diplomatic_play_short: "Гра"
  concept_diplomatic_plays: "Дипломатичні ігри"
  concept_diplomatic_plays_gen: "Дипломатичних ігор"
@@ -192,8 +193,8 @@
  concept_target:0 "Target"
  concept_target_desc:0 "The [concept_country] targeted by a [concept_diplomatic_play]."
 
- concept_homeland:0 "Homeland"
- concept_homelands:1 "Homelands"
+ concept_homeland: "Батьківщина"
+ concept_homelands: "Батьківщина"
  concept_homeland_desc:2 "A [Concept('concept_culture','$concept_culture_possessive$')] $concept_homelands$ consist of those [Concept('concept_state_region','$concept_state_regions$')] that [Concept('concept_pop', '$concept_pops$')] of that $concept_culture$ feel are historically or naturally their territory. $concept_pops$ are more prone to [Concept('concept_migration','$concept_migrate$')] to their $concept_homelands$ than other [Concept('concept_state','$concept_states$')], and $concept_pops$ who reside there will never consider [Concept('concept_assimilation','$concept_assimilating$')].\n\nLaunching a [concept_diplomatic_play] to conquer a $concept_state$ considered a $concept_homeland$ of one of your [concept_primary_cultures] is considered relatively legitimate, and will generate substantially less [concept_infamy] than usual."
 
  concept_mobilize_general:0 "Mobilize General"
@@ -204,7 +205,7 @@
  concept_mobilize_general_desc:3 "$concept_mobilize_general_mobilizing$ a [concept_general] will immediately begin the process of $concept_mobilize_general_mobilization$ for all [Concept('concept_battalion', '$concept_battalions$')] assigned to them. Once $concept_mobilize_general_mobilized$, a $concept_general$ cannot be demobilized manually but will automatically stand down once the [concept_country] is no longer at [concept_war]."
 
  concept_mobilize_battalion:0 "Mobilize Battalion"
- concept_mobilize_battalion_demobilized:0 "Demobilized"
+ concept_mobilize_battalion_demobilized: "Знепризвані"
  concept_mobilize_battalion_mobilize:0 "Mobilize"
  concept_mobilize_battalion_mobilizing:0 "Mobilizing"
  concept_mobilize_battalion_mobilized:0 "Mobilized"
@@ -292,9 +293,10 @@
  concept_swayed:0 "Swayed"
  concept_sway_desc:1 "The [concept_initiator] or [concept_target] in a [concept_diplomatic_play] can attempt to $concept_sway$ any other [concept_country] with an [concept_active_interest] in the [concept_strategic_region] to their side, by offering a [concept_war_goal] or other promise such as an [concept_obligation]. Attempting to $concept_sway$ a $concept_country$ costs [Concept('concept_maneuver','$concept_maneuvers$')], and the chance an AI $concept_country$ will accept the offer depends on your [concept_relations] and their [concept_attitude] to you as well as your opponent."
 
- concept_diplomatic_action:0 "Diplomatic Action"
- concept_diplomatic_actions:0 "Diplomatic Actions"
- concept_diplomatic_actions_short:0 "Actions"
+ concept_diplomatic_action: "Дипломатична дія"
+ concept_diplomatic_action_acc: "Дипломатичну дію"
+ concept_diplomatic_actions: "Дипломатичні дії"
+ concept_diplomatic_actions_short: "Дії"
  concept_diplomatic_action_desc:2 "A broad term for interactions between two [Concept('concept_country','$concept_countries$')] that includes [Concept('concept_instant_diplomatic_action','$concept_instant_diplomatic_actions$')], [Concept('concept_ongoing_diplomatic_action','$concept_ongoing_diplomatic_actions$')], and [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]. They differ from [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] in that no third party is allowed to have a say in its outcome, and there is no risk the action on its own might escalate into [concept_war]."
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MAY 4, 2022
@@ -308,12 +310,12 @@
  concept_military_building_army_and_navy:0 "Army and Navy"
  concept_military_building_desc:4 "[Concept('concept_government_building','$concept_government_buildings$')] used to train, maintain, and supply [Concept('concept_battalion','$concept_battalions$')] and [Concept('concept_flotilla','$concept_flotillas$')] for the [Concept('concept_country','$concept_country_possessive$')] army and navy respectively. The [concept_workforce] of $concept_military_buildings$ get paid according to the [concept_military_wage]."
  
- concept_incorporated_state:0 "Incorporated State"
- concept_incorporated_states:1 "Incorporated States"
- concept_incorporate_state:0 "Incorporate State"
- concept_incorporate:0 "Incorporate"
- concept_incorporated:0 "Incorporated"
- concept_incorporating:0 "Incorporating"
+ concept_incorporated_state: "Включений регіон"
+ concept_incorporated_states: "Включені регіони"
+ concept_incorporate_state: "Включенити регіон"
+ concept_incorporate: "Включити"
+ concept_incorporated: "Включений"
+ concept_incorporating: "Включення"
  concept_incorporation:0 "Incorporation"
  concept_incorporated_state_desc:2 "[Concept('concept_state','$concept_states$')] that are fully integrated into a [concept_country]. [Concept('concept_pop', '$concept_pops$')] in $concept_incorporated_states$ pay taxes, gain access to benefits from [Concept('concept_institution', '$concept_institutions$')], and participate fully in the Country's political system. [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] can be $concept_incorporated$ through a sometimes lengthy process."
 
@@ -332,8 +334,9 @@
  concept_influence: "Вплив"
  concept_influence_desc:3 "@inf! Influence is a [concept_capacity] used for [Concept('concept_diplomatic_action', '$concept_diplomatic_actions$')] and [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts_short$')] targeting another [concept_country]. You gain @inf! based on your [concept_rank]."
 
- concept_institution:0 "Institution"
- concept_institutions:1 "Institutions"
+ concept_institution: "Установа"
+ concept_institutions: "Установи"
+ concept_institutions_gen: "Установ"
  concept_institution_possessive:0 "Institution\\'s"
  concept_institution_desc:2 "$concept_institutions$ provide benefits to [Concept('concept_incorporated_state', '$concept_incorporated_states$')] across your [concept_country]. They cost [concept_bureaucracy] to maintain in proportion to the number of [Concept('concept_pop', '$concept_pops$')] living in your $concept_incorporated_states$ and the $concept_institution$'s investment level. Higher levels increase both the cost and the effect. Adjusting investment levels take a set amount of time."
  
@@ -448,13 +451,13 @@
  concept_subsistence_output_desc:3 "A form of in-kind income that [SelectLocalization(GetPlayer.IsValid,'concept_subsistence_output_desc_added','Peasants')] generate from [Concept('concept_subsistence_building','$concept_subsistence_building_farming$')], which represents the work they perform producing [Concept('concept_good','$concept_goods$')] to cover their own [Concept('concept_pop_needs','$concept_pop_needs_short$')]. Unlike [Concept('concept_building_wage','$concept_building_wages$')], $concept_subsistence_output$ is not paid out from the $concept_building$'s [concept_revenue] and is not subject to [concept_budget_income_taxes]."
  concept_subsistence_output_desc_added:0 "[GetPopType('peasants').GetName]"
 
- concept_split_state:0 "Split State"
- concept_split_state_short:0 "Split"
+ concept_split_state: "Поділений регіон"
+ concept_split_state_short: "Поділений"
  concept_split_state_desc:2 "A [concept_state_region] split into multiple smaller [Concept('concept_state', '$concept_states$')] belonging to different [Concept('concept_country','$concept_countries$')]. When split, a portion of the [Concept('concept_resource_potential','$concept_resource_potentials$')], [Concept('concept_building','$concept_buildings$')], and [Concept('concept_pop','$concept_pops$')] are redistributed between the $concept_states$. Should one $concept_country$ take control of more than one part of the $concept_split_state$, these will be combined into a single $concept_state$."
 
- concept_unincorporated_state:0 "Unincorporated State"
- concept_unincorporated_state_short:0 "Unincorporated"
- concept_unincorporated_states:0 "Unincorporated States"
+ concept_unincorporated_state: "Невключений регіон"
+ concept_unincorporated_state_short: "Невключений"
+ concept_unincorporated_states: "Невключені регіони"
  concept_unincorporated_state_desc:2 "A [concept_state] that is within a [Concept('concept_country','$concept_country_possessive$')] domain, but considered a territorial holding or frontier beyond the reach of [Concept('concept_institution','$concept_institutions$')] and [concept_government]. [Concept('concept_pop', '$concept_pops$')] who live in $concept_unincorporated_states$ are disenfranchised and do not contribute much [concept_political_strength] to their [Concept('concept_interest_group', '$concept_interest_groups$')], nor can they [Concept('concept_votes','$concept_vote$')] in [Concept('concept_election','$concept_elections$')]. On the upside (for them) they are exempt from [Concept('concept_taxes','$concept_taxation$')].\n\n$concept_unincorporated_states$ do not cost [concept_bureaucracy] to maintain, as $concept_taxes$ are not collected and $concept_institutions$ do not provide any benefits there. $concept_unincorporated_states$ can be [Concept('concept_incorporated_state','$concept_incorporated$')], which will put it under the direct management of the [Concept('concept_country','$concept_country_possessive$')] central authority.[AddLocalizationIf(GetPlayer.IsValid,'concept_unincorporated_state_desc_added')]"
  concept_unincorporated_state_desc_added:0 "\n$concept_unincorporated_states$ are subject to the following effects:\n[GetStaticModifier('unincorporated_state').GetDesc]#!"
 
@@ -519,10 +522,12 @@
  concept_trade_lens: "Сочка торгівлі"
  concept_trade_lens_desc:1 "View [Concept('concept_market','$concept_markets$')] and [Concept('concept_trade_route','$concept_trade_routes$')], construct [concept_infrastructure] [Concept('concept_building','$concept_buildings$')], and manage Trade-related aspects of your [concept_country]."
 
- concept_country: "Країна"
- concept_country_gen: "Країни"
- concept_country_ins: "Країною"
- concept_countries: "Країни"
+ concept_country: "Держава"
+ concept_country_gen: "Держави"
+ concept_country_acc: "Державу"
+ concept_country_ins: "Державою"
+ concept_countries: "Держави"
+ concept_countries_ins: "Державами"
  concept_country_nation: "Нація"
  concept_country_nation_state: "Національна держава"
  concept_country_polity: "Політика"
@@ -600,7 +605,8 @@
  concept_default:0 "Default"
  concept_default_desc:4 "Once the [concept_treasury] accumulates [concept_loans] large enough that they exceed the [Concept('concept_country','$concept_country_possessive$')] total [concept_credit], the $concept_country$ is considered to be in $concept_default$. This will pause all ongoing [concept_construction] and will have a negative impact on the [concept_throughput] of [Concept('concept_building', '$concept_buildings$')], growing more severe as time passes. Penalties are removed as soon as the $concept_country$'s weekly balance becomes positive again, or if [concept_bankruptcy] is declared."
 
- concept_bankruptcy:0 "Bankruptcy"
+ concept_bankruptcy: "Зубожник"
+ concept_bankruptcy_acc: "Звід"
  concept_bankruptcy_desc:2 "If a [concept_country] is in [concept_default] and unable to pay back its [concept_loans], it may opt to declare $concept_bankruptcy$. This will clear the debt but wipe out all [concept_cash_reserves] the $concept_country$ had borrowed from, and will greatly anger any [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_shares$')].[AddLocalizationIf(GetPlayer.IsValid,'concept_bankruptcy_desc_added')] "
  concept_bankruptcy_desc_added:0 "In addition, the following effects are applied for #v [GetDefine('NEconomy','DECLARE_BANKRUPTCY_PENALTY_DURATION_YEARS')|0] years#!:\n[GetStaticModifier('declared_bankruptcy').GetDesc]"
 
@@ -686,6 +692,7 @@
  concept_tension_desc:3 "How strained the relationship is between a [Concept('concept_colony', '$concept_colonizing$')] [concept_country] and nearby [Concept('concept_decentralized_nation', '$concept_decentralized_nations$')]. $concept_tensions$ rise with all nearby $concept_decentralized_nations$ whenever a [concept_province] is taken over, and decreases over time as long as no new land is taken.\n\nIf the tension level rises to #b $tension_volatile$#!, continued colonization may trigger a [concept_native_uprising]."
 
  concept_relations: "Відносини"
+ concept_relations_gen: "Відносин"
  concept_relations_desc:0 "The current stance of diplomatic $concept_relations$ between two [Concept('concept_country', '$concept_countries$')]. Both sides can influence this mutual score using the [GetDiplomaticActionType('increase_relations').GetName], [GetDiplomaticActionType('damage_relations').GetName], and [GetDiplomaticActionType('expel_diplomats').GetName] [Concept('concept_diplomatic_action','$concept_diplomatic_actions$')] by spending [concept_influence]. $concept_relations$ impact which $concept_diplomatic_actions$ and [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts_short$')] are valid interaction options for the $concept_countries$, and also impact the likelihood they will accept diplomatic overtures or take your side in a [concept_diplomatic_play]."
 
  concept_ai_strategy: "Стратегія"
@@ -695,7 +702,8 @@
  concept_strategic_desire:0 "Strategic Desire"
  concept_strategic_desire_desc:2 "AI-controlled [Concept('concept_country', '$concept_countries$')] may have a $concept_strategic_desire$ towards $concept_countries$ they deem geopolitically relevant. Their $concept_strategic_desire$ influence their [concept_attitude]."
 
- concept_attitude: "Cтавлення"
+ concept_attitude: "Ставлення"
+ concept_attitude_gen: "Ставлення"
  concept_attitude_desc:1 "An indication of how another [concept_country] feels about you, based on [concept_relations], [concept_infamy], [concept_strategic_desire], and factors such as how large your military is and which $concept_countries$ you have [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] with. $concept_attitude$ affects what sorts of actions a $concept_country$ is likely to take towards you and what role you play in their plans."
 
  concept_instant_diplomatic_action:0 "Instant Diplomatic Action"
@@ -817,10 +825,10 @@
  concept_credit_limit:0 "Credit Limit"
  concept_credit_desc:2 "The national $concept_credit$ is the amount of [concept_money] the [concept_treasury] can borrow from its economy, equal to the sum of all domestic [concept_cash_reserves] plus a base value determined by [concept_gdp]. If the [concept_principal] exceeds the $concept_credit_limit$ the [concept_country] goes into [concept_default]."
 
- concept_principal:0 "Principal"
+ concept_principal: "Спосуда"
  concept_principal_desc:2 "The total size of [concept_loans] the [concept_treasury] has accrued, not including the [concept_budget_interest] it owes. If the [concept_principal] exceeds your [concept_credit] you will go into [concept_default]."
 
- concept_loans:0 "Loans"
+ concept_loans: "Позики"
  concept_loans_desc:1 "Funds that the [concept_treasury] owes to the [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_shares$')], typically due to some type of government bond program. Whenever the $concept_treasury$ is running a negative balance, it will add to its $concept_loans$ unless it has sufficient [concept_gold_reserves] to cover it. The maximum size of $concept_loans$ a $concept_country$ may take before going into [concept_default] is equal to the sum of its [Concept('concept_building','$concept_buildings_possessive$')] [concept_cash_reserves]. [concept_budget_interest] is accrued on the [concept_principal] weekly, and is collected by $concept_pops$ with [Concept('concept_ownership_share','$concept_ownership_shares$')] proportionate to the amount of [concept_credit] their share of the $concept_cash_reserves$ provides."
 
  concept_war_support:0 "War Support"
@@ -867,6 +875,7 @@
 
  concept_general: "Генерал"
  concept_generals: "Генерали"
+ concept_generals_gen: "Генералів"
  concept_generals_ins: "Генералами"
  concept_general_possessive:0 "General\\'s"
  concept_general_plural_singular: "Генерал(и)"
@@ -874,6 +883,7 @@
 
  concept_admiral: "Адмірал"
  concept_admirals: "Адмірали"
+ concept_admirals_gen: "Адміралів"
  concept_admiral_possessive:0 "Admiral\\'s"
  concept_admiral_desc:2 "A naval [concept_commander] [concept_character] who leads a [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_flotilla','$concept_flotillas$')].  Effects from an $concept_admiral$'s [Concept('concept_character_trait','$concept_character_traits$')] are conferred onto $concept_flotillas$ under their command."
 
@@ -1012,10 +1022,10 @@
  concept_market_possessive:1 "Market\\'s"
  concept_market_desc:2 "All [Concept('concept_state', '$concept_states$')] in the same $concept_market$ will trade [Concept('concept_good', '$concept_goods$')] with each other, unless they are [Concept('concept_isolated_state','$concept_isolated_state_short$')]. How well connected these $concept_states$ are with each other is measured by their [concept_market_access]. $concept_markets$ may also trade with each other through [Concept('concept_trade_route','$concept_trade_routes$')].\n\nEach [concept_country] either controls its own $concept_market$ or participates in one other via a [concept_customs_union] or [concept_subject] relationship. "
 
- concept_market_access:0 "Market Access"
+ concept_market_access: "Доступ до ринку"
  concept_market_access_desc:1 "A measure of how well-connected a [concept_state] is to the rest of its [concept_market]. It starts at 100% and is reduced proportionally whenever the $concept_state$'s [concept_infrastructure_usage] exceeds its [concept_infrastructure]. It impacts both how many [concept_sell_orders] and [concept_buy_orders] are generated due to the $concept_state$'s [concept_good_production] and [concept_good_consumption], and also how much the [concept_market_price] affects the [concept_local_price] of [Concept('concept_good','$concept_goods$')]."
 
- concept_infrastructure:0 "Infrastructure"
+ concept_infrastructure: "Інфраструктура"
  concept_infrastructure_desc:2 "$concept_infrastructure$ is provided by [Concept('concept_building','$concept_buildings$')] like [SelectLocalization(GetPlayer.IsValid,'concept_infrastructure_desc_added','Railway')] and [SelectLocalization(GetPlayer.IsValid,'concept_infrastructure_desc_added_2','Port')]. It influences how well connected a [concept_state] is to its [concept_market], and how rapidly [Concept('concept_battalion', '$concept_battalions$')] [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilize$')]."
  concept_infrastructure_desc_added:0 "[GetBuildingType('building_railway').GetName]"
  concept_infrastructure_desc_added_2:0 "[GetBuildingType('building_port').GetName]"
@@ -1023,11 +1033,11 @@
  concept_infrastructure_usage:0 "Infrastructure Usage"
  concept_infrastructure_usage_desc:1 "[Concept('concept_building','$concept_buildings$')] use a certain amount of [concept_infrastructure] depending on how technologically advanced or demanding they are. The total $concept_infrastructure_usage$ in the [concept_state] is compared to the $concept_infrastructure$ to determine the $concept_state$'s [concept_market_access]. $concept_infrastructure_usage$ also increases the cost of [Concept('concept_port_connection','$concept_port_connections$')]."
   
- concept_good:0 "Good"
- concept_goods:0 "Goods"
+ concept_good: "Товар"
+ concept_goods: "Товари"
  concept_good_possessive:0 "Good\\'s"
- concept_goods_input:0 "Input Goods"
- concept_goods_output:0 "Output Goods"
+ concept_goods_input: "Вхідні товари"
+ concept_goods_output: "Вихідні товари"
  concept_good_desc:1 "$concept_goods$ are [Concept('concept_good_production','$concept_good_produced$')] in [Concept('concept_building','$concept_buildings$')] by $concept_buildings$ and [Concept('concept_pop','$concept_pops$')]. $concept_goods$ have both a [concept_local_price] and a [concept_market_price]."
 
  concept_government_good:0 "Government Good"
@@ -1176,30 +1186,30 @@
  concept_budget_minted:0 "Minted"
  concept_budget_minting_desc:2 "A form of income that all [Concept('concept_country', '$concept_countries$')] generate through the printing or casting of new [concept_money]. The greater a [Concept('concept_country','$concept_country_possessive$')] [concept_gdp], the more $concept_money$ can be $concept_budget_minted$ without compromising the economy."
 
- concept_budget_poll_taxes:0 "Poll Taxes"
+ concept_budget_poll_taxes: "Поголовщина"
  concept_budget_poll_tax:1 "Poll Tax"
  concept_budget_poll_taxes_desc:2 "A flat [Concept('concept_taxes','$concept_tax$')] collected on every [Concept('concept_working_adults', '$concept_working_adult$')] it applies to. Since $concept_budget_poll_taxes$ do not scale with the $concept_pop$'s income it tends to impact the [concept_lower_strata] the most."
 
- concept_budget_land_taxes:0 "Land Taxes"
+ concept_budget_land_taxes: "Земельні податки"
  concept_budget_land_taxes_desc:4 "A type of [Concept('concept_budget_poll_taxes', '$concept_budget_poll_tax$')] collected from [SelectLocalization(GetPlayer.IsValid,'concept_budget_land_taxes_desc_added','Peasants')] only."
  concept_budget_land_taxes_desc_added:0 "[GetPopType('peasants').GetName]"
 
  concept_budget_heathen_taxes:0 "Heathen Taxes"
  concept_budget_heathen_taxes_desc:1 "A type of [Concept('concept_budget_poll_taxes', '$concept_budget_poll_tax$')] collected from all [Concept('concept_pop', '$concept_pops$')] whose [concept_religion] is [Concept('concept_discrimination','$concept_discriminated$')] against by their [concept_country]."
 
- concept_budget_per_capita_taxes:0 "Per Capita Taxes"
+ concept_budget_per_capita_taxes: "Подушні податки"
  concept_budget_per_capita_taxes_desc:4 "A type of [Concept('concept_budget_poll_taxes', '$concept_budget_poll_tax$')] collected from all [Concept('concept_pop', '$concept_pops$')] except [SelectLocalization(GetPlayer.IsValid,'concept_budget_per_capita_taxes_desc_added','Peasants')]."
  concept_budget_per_capita_taxes_desc_added:0 "[GetPopType('peasants').GetName]"
 
- concept_budget_income_taxes:0 "Income Taxes"
+ concept_budget_income_taxes: "Податки на прибуток"
  concept_budget_income_taxes_desc:1 "A [Concept('concept_taxes','$concept_tax$')] collected on the [Concept('concept_building_wage','$concept_building_wages$')] paid to the [concept_workforce]."
 
  concept_budget_investment_income:1 "Investment Pool Transfer"
  concept_budget_investment_income_desc:2 "When [concept_money] from the [concept_treasury] is used in the [concept_construction] of [Concept('concept_building','$concept_buildings$')] that may be funded by the [concept_investment_pool] under the [Concept('concept_country','$concept_country_possessive$')] current [SelectLocalization(GetPlayer.IsValid,'concept_budget_investment_income_desc_added','Economic System')] [concept_law], the $concept_treasury$ is compensated by an equal transfer of funds from the $concept_investment_pool$."
  concept_budget_investment_income_desc_added:0 "[GetLawType('law_traditionalism').GetGroup.GetName]"
 
- concept_budget_consumption_taxes:0 "Consumption Taxes"
- concept_budget_consumption_tax:0 "Consumption Tax"
+ concept_budget_consumption_taxes: "Податки на споживання"
+ concept_budget_consumption_tax: "Податок на споживання"
  concept_budget_consumption_tax_rate:0 "$concept_budget_consumption_tax$ Rate"
  concept_budget_consumption_taxes_desc:2 "A [Concept('concept_taxes','$concept_tax$')] collected on the [Concept('concept_good_consumption','$concept_good_consumption$')] of [Concept('concept_good','$concept_goods$')]. $concept_goods$ subject to $concept_budget_consumption_taxes$ will have its [concept_market_price] increased by the $concept_budget_consumption_tax_rate$, and whenever [Concept('concept_pop','$concept_pops$')] buy it this increase will be collected by the [concept_treasury]. [Concept('concept_building','$concept_buildings$')] are exempt from paying $concept_budget_consumption_taxes$."
 
@@ -1208,12 +1218,12 @@
  concept_budget_dividends_taxes:0 "Dividends Taxes"
  concept_budget_dividends_taxes_desc:1 "A [Concept('concept_taxes','$concept_tax$')] applied to the [concept_dividends] earned by [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_shares$')]."
 
- concept_taxes:0 "Taxes"
- concept_tax:0 "Tax"
- concept_taxing:0 "Taxing"
+ concept_taxes: "Податки"
+ concept_tax: "Податок"
+ concept_taxing: "Оподаткування"
  concept_taxation:0 "Taxation"
  concept_tax_rate:0 "Tax Rate"
- concept_tax_level:0 "Taxation Level"
+ concept_tax_level: "Рівень податку"
  concept_taxes_desc:1 "[Concept('concept_country', '$concept_countries$')] can tap into their market economies in various ways. The most common is to tax its populace's private sector incomes, or charge duties on the sales, purchase, or trade of [Concept('concept_good', '$concept_goods$')]."
 
  concept_budget_additional_income:0 "Additional Income"
@@ -1239,8 +1249,8 @@
  concept_budget_government_wages:0 "Government Wages"
  concept_budget_government_wages_desc:1 "[Concept('concept_building_wage','$concept_building_wages$')] paid to [Concept('concept_pop','$concept_pops$')] by [Concept('concept_government_building','$concept_government_buildings$')]. The rate is based on the [Concept('concept_country','$concept_country_possessive$')] [concept_normal_wage]. You can adjust it up and down in the $BUDGET_PANEL_TITLE$ panel."
 
- concept_budget_wages:0 "Wages"
- concept_budget_wage:0 "Wage"
+ concept_budget_wages: "Зарплата"
+ concept_budget_wage: "Зарплата"
  concept_budget_wages_desc:1 "[Concept('concept_pop','$concept_pops$')] in the employ of a [Concept('concept_country', '$concept_country_possessive$')] [Concept('concept_government_building','$concept_government_buildings$')] and [Concept('concept_military_building','$concept_military_buildings$')] get paid $concept_budget_wages$ from the [concept_treasury] each week, according to the [concept_government_wage] and [concept_military_wage] respectively."
 
  concept_budget_goods_for_government_buildings:1 "$concept_goods$ for $concept_government_buildings$"
@@ -1312,16 +1322,17 @@
  concept_qualify:1 "Qualify"
  concept_pop_qualifications_desc:1 "[Concept('concept_pop','$concept_pops$')] develop the $concept_pop_qualifications$ necessary to change into another [concept_profession] over time. If their current attributes match those of the $concept_profession$, or if they currently work in a related field, they will develop $concept_pop_qualifications$ for it sooner. [concept_literacy], [concept_wealth], and [concept_discrimination] are common deciding factors."
 
- concept_hq:1 "HQ"
- concept_hqs:0 "HQs"
+ concept_hq: "Голпровід"
+ concept_hq_loc: "Голпроводі"
+ concept_hqs: "Голпроводи"
  concept_hq_possessive:0 "HQ\\'s"
- concept_hq_long:0 "Headquarter"
+ concept_hq_long: "Головний провід"
  concept_hq_desc:4 "An $concept_hq$ ($concept_hq_long$) is the territory owned by a [concept_country] in a particular [concept_strategic_region]. All military [Concept('concept_unit','$concept_units$')] originating from an $concept_hq$ are pooled and assigned to those [Concept('concept_commander','$concept_commanders$')] who hails from that $concept_hq$. Any $concept_units$ not assigned or not [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilized$')] during [concept_war] are considered to be in that $concept_hq$'s [concept_garrison], where they will independently defend any [concept_front] in their $concept_hq$."
 
  concept_tax_waste:0 "Tax Waste"
  concept_tax_waste_desc:1 "The amount of [concept_taxes] collected that are wasted, due to inefficiencies or corruption, prior to entering the government coffers."
 
- concept_tax_capacity:0 "Taxation Capacity"
+ concept_tax_capacity: "Мічність податків"
  concept_tax_capacity_desc:2 "Each point of Taxation Capacity in a [concept_state] allows for the efficient taxation of [GetDefine('NPops','INDIVIDUALS_TAXED_PER_TAX_CAPACITY')|vK] [Concept('concept_pop','$concept_pops$')]. If the population of a [concept_state] outgrows its Taxation Capacity, the efficiency of all forms of taxation will be reduced. Taxation Capacity can be increased through researching certain $SOCIETY$ $concept_technologies$ or constructing [SelectLocalization(GetPlayer.IsValid, 'concept_tax_capacity_desc_added','Government Administration')] [Concept('concept_building','$concept_buildings$')] in the [concept_state]."
  concept_tax_capacity_desc_added:0 "[GetBuildingType('building_government_administration').GetName]"
 
@@ -1340,7 +1351,7 @@
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED APRIL 1, 2022
 
- concept_supply_network:0 "Supply Network"
+ concept_supply_network: "Мережа постачання"
  concept_supply_network_desc:3 "Every seafaring [concept_country] maintains a $concept_supply_network$ of [concept_convoys] to maintain the transportation needs of their [Concept('concept_shipping_lane','$concept_shipping_lanes$')]. The total strength of your $concept_supply_network$ is determined by comparing the amount of $concept_convoys$ produced to the total [concept_convoy_cost] across all your $concept_shipping_lanes$. This strength is the baseline [Concept('concept_shipping_lane_effectiveness','$concept_shipping_lane_effectiveness_short$')] of all your $concept_shipping_lanes$."
 
  concept_convoys:0 "Convoys"

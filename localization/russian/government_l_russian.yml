@@ -109,7 +109,8 @@
  gov_khanate_desc:1 "This is a [concept_government] ruled by the [Concept('concept_ruler','$RULER_TITLE_KHAN$')], the absolute ruler of the traditional nomadic peoples of the country."
  gov_absolute_principality_muslim:0 "Emirate"
  gov_absolute_principality_muslim_desc:1 "An absolute monarchy ruled by the [Concept('concept_ruler','$RULER_TITLE_EMIR$')], who governs in accordance with Islamic law."
- gov_decentralized_realm:0 "Decentralized Realm"
+ gov_decentralized_realm: "Децентралізована держава"
+ gov_decentralized_realm_desc:0 ""
 
 # Theocracies
  gov_theocracy:0 "Theocracy"
