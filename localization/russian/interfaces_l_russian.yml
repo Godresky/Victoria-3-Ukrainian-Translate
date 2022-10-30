@@ -41,8 +41,8 @@
  COMMAND_CONFIRMATION_REMOVE_INCORPORATE_STATE:0 "Are you sure you want to stop incorporating [STATE.GetName]?"
  COMMAND_CONFIRMATION_REMOVE_INCORPORATE_STATE_UNSPECIFIED:0 "Are you sure you want to stop incorporating this state?"
 
- AGE:0 "Age"
- CHARACTER_AGE:0 "#v [Character.GetAge]#!"
+ AGE: "Вік"
+ CHARACTER_AGE: "#v [Character.GetAge]#!"
  CHARACTER_AGE_TOOLTIP:0 "#header [Character.GetFullName]#! is #v [Character.GetAge]#! years old\n$TOOLTIP_DELIMITER$\n[Character.GetFirstName] was born on #v [Character.GetBirthday]#!"
 
  RELEASE_COUNTRY_HEADER:0 "Release [CountryCreation.GetName]"
@@ -106,15 +106,15 @@
 
  NON_NEGOTIATORS:0 "Non-Negotiating Participants"
 
- RESOURCES:0 "Resources"
+ RESOURCES: "Ресурси"
  BUILDINGS: "Будівлі"
 
- POWER_STRUCTURE:0 "Power Structure"
- ECONOMY:0 "Economy"
- HUMAN_RIGHTS:0 "Human Rights"
+ POWER_STRUCTURE: "Структура влади"
+ ECONOMY: "Економіка"
+ HUMAN_RIGHTS: "Права людей"
 
- UPGRADE:0 "@arrow_up! Upgrading"
- DOWNGRADE:0 "@arrow_down! Downgrading"
+ UPGRADE: "@arrow_up! Оновлення"
+ DOWNGRADE: "@arrow_down! Пониження"
 
  EXCESS:0 "excess"
  LACK:0 "lack of"
@@ -1581,8 +1581,8 @@
 
  HOMELANDS_HEADER:0 "Homelands ([GetDataModelSize(Culture.AccessHomelands)])"
 
- AND_SPACED:0 " і "
- COMMA_SPACED:0 ", "
+ AND_SPACED: " і "
+ COMMA_SPACED: ", "
  MAP_INFO:0 "#header Map#!\n$TOOLTIP_DELIMITER$\nPress and hold #bold "Tab"#! to zoom out fully. Releasing it will zoom you back in to your previous zoom level."
  MAP_INFO_MAP_MODE_LOCKED:0 "$MAP_INFO$\n\n#instruction Click to clear locked Map Mode.#!"
  LOCATION_FINDER: "#header Ськання місцин#!"
@@ -2110,14 +2110,14 @@
  START_DIPLO_PLAY:0 "Start [concept_diplomatic_play] (Declare War)"
  PRICE:0 "Market Price"
 
- GO_TO_BUTTON_FRONT:0 "Go to [Front.GetName]"
- GO_TO_BUTTON_BUILDING:0 "Go to the [Building.GetName] in [Building.GetState.GetName]"
- GO_TO_BUTTON_STATE:0 "Go to [State.GetName]"
- GO_TO_BUTTON_COUNTRY:0 "Go to [Country.GetName]"
- GO_TO_BUTTON_CHARACTER:0 "Go to [Character.GetFullName]"
+ GO_TO_BUTTON_FRONT: "Показати фронт [Front.GetName]"
+ GO_TO_BUTTON_BUILDING: "Показати будівлю [Building.GetName] у регіоні [Building.GetState.GetName]"
+ GO_TO_BUTTON_STATE: "Показати регіон [State.GetName]"
+ GO_TO_BUTTON_COUNTRY: "Показати країну [Country.GetName]"
+ GO_TO_BUTTON_CHARACTER: "Показати персонажа [Character.GetFullName]" 
  GO_TO_BUTTON_MARKET: "Показати [Market.GetName]"
  GO_TO_BUTTON_CONSTRUCTION_QUEUE:0 "Go to [concept_construction_queue]"
- GO_TO_BUTTON_INTEREST_GROUP:0 "Go to [InterestGroup.GetName]"
+ GO_TO_BUTTON_INTEREST_GROUP: "Показати зацікавлену групу [InterestGroup.GetName]"
  GO_TO_BUTTON_WAR:0 "Go to [War.GetName]"
 
  START_RESEARCHING:0 "Start Researching"
@@ -2472,15 +2472,15 @@
  PRODUCTION_METHOD_DISABLED_BY_GAME_RULE:0 "$concept_production_method$ disabled by a game rule"
  CHANGE_TO:0 "#title Change to#!"
  CURRENT_SUFFIX:0 "#title (Current)#!"
- INVESTMENT_TITLE:0 "Number of Investment Levels"
- COST_PER_INVESTMENT_TITLE:0 "[concept_bureaucracy] Cost / Investment Level"
- WEEKLY_COSTS_TITLE:0 "Total Weekly Cost"
- INSTITUTION_LEVEL_CHANGE:0 "Changing to Level [Institution.GetTargetInvestmentLevel]"
- INSTITUTION_CURRENT_LEVEL:0 "Level [Institution.GetInvestmentLevel]"
- INSTITUTION_TIME_TO_REACH_LEVEL:0 "$NUM_WEEKS|v$ weeks"
- INSTITUTION_TIME_TO_REACH_LEVEL_DAYS:0 "$NUM_DAYS|v$ days"
- INSTITUTION_TIME_TO_REACH_LEVEL_ONE_DAY:0 "1 day"
- INSTITUTION_TIME_TO_REACH_LEVEL_LESS_THAN_ONE_DAY:0 "Less than one day"
+ INVESTMENT_TITLE: "Кількість рівнів вкладу:"
+ COST_PER_INVESTMENT_TITLE: "Вартість [Concept('concept_bureaucracy', '$concept_bureaucracy_gen$')] на рівень вкладу:"
+ WEEKLY_COSTS_TITLE: "Щомісячна вартість:"
+ INSTITUTION_LEVEL_CHANGE:0 "Зміна на рівень [Institution.GetTargetInvestmentLevel]"
+ INSTITUTION_CURRENT_LEVEL: "Рівень [Institution.GetInvestmentLevel]"
+ INSTITUTION_TIME_TO_REACH_LEVEL: "$NUM_WEEKS|v$ тижнів (-я)"
+ INSTITUTION_TIME_TO_REACH_LEVEL_DAYS:0 "$NUM_DAYS|v$ днів (-я)"
+ INSTITUTION_TIME_TO_REACH_LEVEL_ONE_DAY: "1 день"
+ INSTITUTION_TIME_TO_REACH_LEVEL_LESS_THAN_ONE_DAY: "Менше 1-го дня"
  NO_INSTITUTIONS:0 "No [Concept('concept_institution', '$concept_institutions$')]"
 
  MINCOST:0 "Minimum Cost: $VAL|v1$"
@@ -2752,8 +2752,8 @@
  GOODS_PROFIT_PRODUCTION:2 "#v @money!$IMPACT|K+=$#! from $NUM_UNITS|0Y=$ [Goods.GetTextIcon] #v [Goods.GetName]#! ($PRICE_CUR_ICON$@arrow_right!$PRICE_NEW_ICON$)"
  GOODS_PROFIT_PRODUCTION_AFTER_SUBSTITUTION:2 "#v @money!$IMPACT|K+=$#! from $NUM_UNITS|0Y=$ [Goods.GetTextIcon] #v [Goods.GetName]#! ($PRICE_CUR_ICON$@arrow_right!$PRICE_NEW_ICON$ after [concept_goods_substitution])"
  NO_OPPOSITION:0 "#bold No [Concept('concept_interest_group', '$concept_interest_groups$')] in Opposition#!"
- NO_POLITICAL_MOVEMENTS:1 "No [Concept('concept_political_movement', '$concept_political_movements$')]"
- NO_LAW_BEING_ENACTED:0 "No [concept_law] being enacted"
+ NO_POLITICAL_MOVEMENTS:1 "Немає [Concept('concept_political_movement', '$concept_political_movements_gen$')]"
+ NO_LAW_BEING_ENACTED: "Немає [Concept('concept_law', '$concept_law_gen$')], що приймається"
  NO_INTERESTS:0 "No [Concept('concept_interest', '$concept_interests$')]"
 
  CANNOT_EXPAND_BUILDING_NO_URBAN_CAP:0 "[BuildingType.GetName] requires [concept_urbanization]"
@@ -3588,17 +3588,17 @@
  CHARACTER_TOOLTIP:0 "[Character.GetInfoTooltip]"
  CHARACTER_IS_BUSY:0 "[Character.GetFullName] is busy and cannot take any assignments"
 
- character_role_general:0 "General"
- character_role_admiral:0 "Admiral"
- character_role_politician:0 "Politician"
- character_role_ruler:0 "Ruler"
- character_role_heir:1 "Heir Apparent"
+ character_role_general: "Генерал"
+ character_role_admiral: "Адмірал"
+ character_role_politician: "Політик"
+ character_role_ruler: "Правитель"
+ character_role_heir: "Спадкоємець"
 
- character_role_general_title:0 "General"
- character_role_admiral_title:0 "Admiral"
+ character_role_general_title: "Генерал"
+ character_role_admiral_title: "Адмірал"
  character_role_politician_title:0 "" # Empty on purpose
 
- ROLE:0 "[concept_character_role]"
+ ROLE: "[concept_character_role]"
  CHARACTER_PRIMARY_ROLE:0 "#v [Character.GetAllRoleNames]#!"
  CHARACTER_PRIMARY_ROLE_TOOLTIP:0 "#header [Character.GetFullName]#! is a #v [Character.GetAllRoleNames]#!"
 
@@ -3675,11 +3675,11 @@
  IDEOLOGY_LAW_STANCE_NEUTRAL:0 "#V Neutral#! towards $LAWS$"
 
  POL_PANEL_IG_STATUS_HEADER:0 "#title Approval#!"
- ig_approval_loyal:0 "#bold #P Loyal#!#!"
- ig_approval_happy:0 "#bold #P Happy#!#!"
- ig_approval_neutral:0 "#bold Neutral#!"
- ig_approval_unhappy:0 "#bold #N Unhappy#!#!"
- ig_approval_angry:0 "#bold #N Angry#!#!"
+ ig_approval_loyal: "#bold #P Підтримуюче#!#!"
+ ig_approval_happy: "#bold #P Щасливе#!#!"
+ ig_approval_neutral: "#bold Нейтральне#!"
+ ig_approval_unhappy: "#bold #N Нещасне#!#!"
+ ig_approval_angry: "#bold #N Вороже#!#!"
 
  WILL_RADICALIZE_WARNING:1 "@warning! This will [Concept('concept_political_movement_radicalism', '$concept_political_movement_radicalize$')] the [INTEREST_GROUP.GetName]"
 
@@ -3753,8 +3753,8 @@
  FAVORS_IDEOLOGY:0 "Favors #variable $IDEOLOGY_NAME$#!: $VAL|+=$"
  OPPOSES_IDEOLOGY:0 "Opposes #variable $IDEOLOGY_NAME$#!: $VAL|+=$"
  RELATION_TO_IG:0 "Total relation to #variable $IG_NAME$#!: $RELATION_VALUE|+=$\n$TOOLTIP_DELIMITER$\n$RELATION_BREAKDOWN$"
- IN_GOVERNMENT_DESC:0 "#HEADER In Government#!\n$TOOLTIP_DELIMITER$\n[concept_in_government_desc]"
- IN_OPPOSITION_DESC:0 "#HEADER In Opposition#!\n$TOOLTIP_DELIMITER$\n$[concept_in_opposition_desc]$"
+ IN_GOVERNMENT_DESC: "#HEADER В уряді#!\n$TOOLTIP_DELIMITER$\n[concept_in_government_desc]"
+ IN_OPPOSITION_DESC: "#HEADER В опозиції#!\n$TOOLTIP_DELIMITER$\n$[concept_in_opposition_desc]$"
  MARGINAL_DESC:0 "#HEADER Marginalized#!\n$TOOLTIP_DELIMITER$\n[concept_marginalized_desc]"
  IN_REVOLUTION_DESC:0 "#HEADER In Revolution#!\n$TOOLTIP_DELIMITER$\n$IN_REVOLUTION_CONCEPT$"
 
@@ -3814,7 +3814,7 @@
  ADD_TO_GOVERNMENT:0 "Add To Government"
  REMOVE_FROM_GOVERNMENT:0 "Remove From Government"
  LEGITIMACY_CHANGE_SWITCH_TOOLTIP:0 "This would result in a [concept_legitimacy] change of #variable $VAL|+=0$#! (Currently #variable [GetPlayer.GetGovernmentLegitimacy|0%]#!)\n$TOOLTIP_DELIMITER$\nThe resulting Government Legitimacy would look like this:\n$DESC$"
- TOOLTIP_REFORM_GOVERNMENT:0 "#HEADER $REFORM_GOVERNMENT$#!\n[ReformGovernment.GetConfirmDesc]"
+ TOOLTIP_REFORM_GOVERNMENT: "#HEADER $REFORM_GOVERNMENT$#!\n[ReformGovernment.GetConfirmDesc]"
 
  ADD_TO_GOVERNMENT_SHORT:0 "Add"
  REMOVE_FROM_GOVERNMENT_SHORT:0 "Remove"
@@ -4891,8 +4891,8 @@
 
  ENACTMENT_FASTENACT_IS_ACTIVE:0 ""fastenact" is active"
 
- LAWS_WITH_GVT_SUPPORT:0 "Laws with Governmental or Movement support"
- LAWS_WITHOUT_GVT_SUPPORT:0 "Laws without Governmental or Movement support"
+ LAWS_WITH_GVT_SUPPORT: "Закони, що мають підтримку Уряду або Зацікавленого Руху"
+ LAWS_WITHOUT_GVT_SUPPORT: "Закони, що не мають підтримку Уряду або Зацікавленого Руху"
 
  CHEAPEST_LAWS_HEADER:1 "$LAWS_WITH_GVT_SUPPORT$ ([GetDataModelSize(AccessPlayer.AccessLawsWithGovernmentOrMovementSupport)|v])"
  LAWS_WITHOUT_SUPPORT:1 "$LAWS_WITHOUT_GVT_SUPPORT$ ([GetDataModelSize(AccessPlayer.AccessLawsWithoutGovernmentOrMovementSupport)|v])"
@@ -4904,13 +4904,13 @@
  PREDICTED_LAWS_WITH_GVT_SUPPORT:0 "$LAWS_WITH_GVT_SUPPORT$ ($PREDICTION$)"
  PREDICTED_LAWS_WITHOUT_GVT_SUPPORT:0 "$LAWS_WITHOUT_GVT_SUPPORT$ ($PREDICTION$)"
 
- TOOLTIP_CHANGE_FROM_LAW:0 "#header Change [LawGroup.GetName] [concept_law]#!\nYou have #variable [LawGroup.GetNumEnactable|+]#! available alternatives to [LawGroup.GetName] in [Law.GetName]"
+ TOOLTIP_CHANGE_FROM_LAW: "#header Змінити [concept_law] [LawGroup.GetName]#!\nYou have #variable [LawGroup.GetNumEnactable|+]#! available alternatives to [LawGroup.GetName] in [Law.GetName]"
  TOOLTIP_CHANGE_FROM_LAW_CURRENTLY_ENACTING:0 "#header Change [LawGroup.GetName] [concept_law]#!\nYou are currently enacting [GetPlayer.GetLawBeingEnacted.GetName] in [GetPlayer.GetLawBeingEnacted.GetGroup.GetName]\nIf you were not, you would have #variable [LawGroup.GetNumPotentialEnactable|+]#! available alternatives to [LawGroup.GetName] in [Law.GetName]"
  PREDICT_LEGITIMACY_TO_ENACT:0 "Once enacted, this Law would change the current Government's Legitimacy by #variable $VAL|=+0$#!"
  LAW_BEING_ENACTED:0 "Being Enacted"
  ENACTING_TO_LAW:0 "Enacting [GetPlayer.GetLawBeingEnacted.GetName]"
  LAW_NO_EFFECT:0 "#italic No effect#!\n"
- ENACT_LAW:0 "Enact (#tooltippable #tooltip:[Law.GetTooltipTag],CHECKPOINT_SUCCESS_CHANCE_BREAKDOWN [Law.GetCheckpointSuccessChance|v0%]#!#! chance every [Law.GetCheckpointBaseDays|v] days)"
+ ENACT_LAW: "Прийняти (Шанс #tooltippable #tooltip:[Law.GetTooltipTag],CHECKPOINT_SUCCESS_CHANCE_BREAKDOWN [Law.GetCheckpointSuccessChance|v0%]#!#! кожних [Law.GetCheckpointBaseDays|v] днів)"
  REENACT_LAW:0 "Re-enact"
  CHANGE_FROM_LAW:0 "Change"
  LAW_CANNOT_ENACT_TRIGGER_DESC:0 "To enact this Law you must satisfy the following:\n$REASON$\n"
@@ -4939,7 +4939,7 @@
  SWITCHING_TO:0 "Reform Underway:"
  ACTIVE_LAWS_TITLE:0 "#title [Concept('concept_law', '$concept_laws$')]#!"
  ACTIVE_INSTITUTIONS_TITLE:0 "#title Institutions#!"
- REFORM:0 "Reform"
+ REFORM: "Реформи"
 
  tariff_import_priority:1 "Protect Domestic Supply"
  tariff_export_priority:1 "Encourage Exports"
@@ -5652,7 +5652,7 @@
  GOODS_NAME_WITH_TRADE_ROUTES:1 "#header [Goods.GetNameNoFormatting]#! $GOODS_NAME_WITH_TRADE_ROUTES_OWNED$"
  GOODS_NAME_WITH_TRADE_ROUTES_OWNED:0 "[SelectLocalization(EqualTo_int32(MarketGoods.GetNumPlayerOwnedTradeRoutes, '(int32)0'), '', 'GOODS_NAME_WITH_TRADE_ROUTES_NUMBER')]"
  GOODS_NAME_WITH_TRADE_ROUTES_NUMBER:0 "([MarketGoods.GetNumPlayerOwnedTradeRoutes|v] [GetPlayer.GetAdjectiveNoFormatting] [SelectLocalization(EqualTo_int32(MarketGoods.GetNumPlayerOwnedTradeRoutes, '(int32)1'), 'route', 'routes')])"
- GOODS_NUMBER_WITH_TRADE_LEVEL:0 "[TradeRoute.GetTradeQuantity|Dv]  (Level [TradeRoute.GetLevel|v])"
+ GOODS_NUMBER_WITH_TRADE_LEVEL: "[TradeRoute.GetTradeQuantity|Dv]  (Рівень [TradeRoute.GetLevel|v])"
 
  NOT_PLAYER_MARKET_CONSUMPTION_TAXES:1 "@red_cross! Can #b not#! set [Concept('concept_consumption_tax','$concept_consumption_taxes$')] on [Goods.GetName] in the [Goods.GetMarket.GetName] since you are not part of this [concept_market]"
  NOT_PLAYER_MARKET_PRIORITY:1 "@red_cross! Can #b not#! set priority on [Goods.GetName] in the [Goods.GetMarket.GetName] since you are not part of this [concept_market]"
@@ -5804,7 +5804,7 @@
  WAR_SUPPORT:0 "[concept_war_support]"
  ACCEPTANCE:0 "Acceptance"
 
- INSTITUTION_NAME_AND_LEVEL:0 "[Institution.GetName] (Level [Institution.GetInvestmentLevel])"
+ INSTITUTION_NAME_AND_LEVEL: "[Institution.GetName] (Рівень [Institution.GetInvestmentLevel])"
  EXPAND_BUILDING_TYPE:0 "Expand #BOLD [BuildingType.GetNameNoFormatting]#!"
  YEARLY_AVERAGE_EARNINGS_PER_EMPLOYEE:0 "Yearly Avg. Earnings / Employee"
 
@@ -6298,7 +6298,7 @@
  RURAL_BUILDINGS_IN_COUNTRY:0 "Rural Buildings in [GetPlayer.GetName]"
  DEVELOPMENT_BUILDINGS_IN_COUNTRY:0 "Development Buildings in [GetPlayer.GetName]"
 
- GRAPH_NOT_INITIALIZED:0 "No historical data"
+ GRAPH_NOT_INITIALIZED: "Немає даних"
 
   # GetPlayer can be used to access the dead player country as long as the game over screen is still available
  GAME_OVER_TITLE:0 "Game Over"

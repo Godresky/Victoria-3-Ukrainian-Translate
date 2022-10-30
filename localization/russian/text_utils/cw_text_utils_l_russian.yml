@@ -1,5 +1,5 @@
 ﻿l_russian:
- AND: " і "
- AND_LIST: ", і "
+ AND: " i "
+ AND_LIST: ", i "
  COMMA: ", "
  NEWLINE: "\n"

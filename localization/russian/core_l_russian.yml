@@ -39,7 +39,7 @@
  INTEREST_GROUP_WILL_JOIN_PARTY:0 "Wants to join $PARTY_NAME$"
  INTEREST_GROUP_WILL_JOIN_PARTY_TOOLTIP:0 "$IG_NAME$ decided they will join $PARTY_NAME$ during the Government Reform"
  INTEREST_GROUP_AFFILIATION_TOOLTIP:0 "#HEADER Current Party affiliation: [PARTY.GetName]#!\n$TOOLTIP_DELIMITER$\n$AFFILIATION_DETAILS$"
- INTEREST_GROUP_AFFILIATION_TOOLTIP_NONE:0 "#HEADER Is not affiliated with any [Concept('concept_party','$concept_party$')]#!\n$TOOLTIP_DELIMITER$\n$AFFILIATION_DETAILS$"
+ INTEREST_GROUP_AFFILIATION_TOOLTIP_NONE: "#HEADER Не входять в ніяку [Concept('concept_party','$concept_party_acc$')]#!\n$TOOLTIP_DELIMITER$\n$AFFILIATION_DETAILS$"
  INTEREST_GROUP_AFFILIATION_TOOLTIP_LIST:0 "Affiliation with [Party.GetName]: #tooltippable #tooltip:[Party.GetTooltipTag]|[InterestGroup.GetTooltipTag],INTEREST_GROUP_AFFILIATION_BREAKDOWN $AFFILIATION_VALUE|+=0$#!#!"
  INTEREST_GROUP_AFFILIATION_TOOLTIP_JOIN:0 "Projected to join [Party.GetName] on [InterestGroup.GetCountry.GetNextElectionDate|v]"
  INTEREST_GROUP_AFFILIATION_BREAKDOWN:0 "[InterestGroup.GetAffiliationBreakdownForParty(Party.Self)]"

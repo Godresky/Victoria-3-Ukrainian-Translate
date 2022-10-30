@@ -11,11 +11,11 @@
  IG_TRAIT_EFFECTS_TITLE:0 ""
  IG_TRAIT_EFFECTS_NO_EFFECT:0 "#italic No effect#!"
 
- ACTIVE_IG_GROUP_TRAITS:0 "#title Active Interest Group Traits#!"
+ ACTIVE_IG_GROUP_TRAITS: "#title Риси активної групи населення#!"
  ELECTION:0 "Election"
  CIVIL_WARS:0 "Civil Wars"
- OPPOSITION:0 "Opposition"
- RESET:0 "Reset"
+ OPPOSITION: "Опозиція"
+ RESET: "Скинути"
  GOVERNMENT_NEW_RULER:0 "New Ruler!"
  IG_CLOUT:0 "#title [concept_clout]#!"
  IG_POP:1 "#title [Concept('concept_pop','$concept_population$')]#!"
@@ -29,7 +29,7 @@
  POLITICAL_MOVEMENT_RESTORING:0 "restoring"
  POLITICAL_MOVEMENT_PRESERVING:0 "preserving"
   
- POLITICAL_MOVEMENTS:2 "$concept_political_movements$"
+ POLITICAL_MOVEMENTS: "$concept_political_movements$"
 
  POLITICAL_MOVEMENT_SUPPORT_AND_RADICALISM_WITH_LABELS:0 "[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] #tooltippable #tooltip:[PoliticalMovement.GetTooltipTag],POLITICAL_MOVEMENT_SUPPORT_TOOLTIP,PoliticalMovementSupportTooltip [LabelingHelper.GetLabelForSupport(PoliticalMovement.GetSupport)] ([PoliticalMovement.GetSupport|v0])#!#!, [Concept('concept_political_movement_radicalism', '$concept_political_movement_radicalism_short$')] #tooltippable #tooltip:[PoliticalMovement.GetTooltipTag],POLITICAL_MOVEMENT_RADICALISM_TOOLTIP,PoliticalMovementRadicalismTooltip [LabelingHelper.GetLabelForRadicalism(PoliticalMovement.GetRadicalism)] ([PoliticalMovement.GetRadicalism|v0])#!#!"
 

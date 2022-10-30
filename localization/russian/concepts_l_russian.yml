@@ -322,6 +322,7 @@
  concept_capacity_desc:0 "A measure of your [Concept('concept_country','$concept_country_possessive$')] capabilities in one of three areas: [concept_bureaucracy], [concept_authority], and [concept_influence]. $concept_capacities$ are not stored and used, but continuously generated from different sources and continually expended by the various projects you have going on. Your remaining balance in each area is displayed in the top bar. Having an excess of a $concept_capacity$ will yield a minor bonus for your $concept_country$, while having a lack of a $concept_capacity$ will inflict large penalties."
 
  concept_bureaucracy: "Бюрократія"
+ concept_bureaucracy_gen: "Бюрократії"
  concept_bureaucracy_desc:4 "@bur! Bureaucracy is a [concept_capacity] used to maintain your [Concept('concept_country','$concept_country_possessive$')] administrative cohesion and day-to-day operations. The cost increases with the population across your [Concept('concept_incorporated_state', '$concept_incorporated_states$')] and with every [concept_institution] investment level, and is also used to administer [Concept('concept_commander','$concept_commanders$')] and [Concept('concept_trade_route','$concept_trade_routes$')]. You gain @bur! from operating [SelectLocalization(GetPlayer.IsValid,'concept_bureaucracy_desc_added','Government Administration')] [Concept('concept_building','$concept_buildings$')]."
  concept_bureaucracy_desc_added:0 "[GetBuildingType('building_government_administration').GetName]"
  
@@ -337,6 +338,7 @@
  concept_institution_desc:2 "$concept_institutions$ provide benefits to [Concept('concept_incorporated_state', '$concept_incorporated_states$')] across your [concept_country]. They cost [concept_bureaucracy] to maintain in proportion to the number of [Concept('concept_pop', '$concept_pops$')] living in your $concept_incorporated_states$ and the $concept_institution$'s investment level. Higher levels increase both the cost and the effect. Adjusting investment levels take a set amount of time."
  
  concept_law: "Закон"
+ concept_law_gen: "Закону"
  concept_laws: "Закони"
  concept_law_desc:3 "$concept_laws$ sets the ground rules for how your [concept_country] operates and is governed. Certain $concept_laws$ enable [Concept('concept_institution', '$concept_institutions$')] that provide further control. For a $concept_law$ to be able to be [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')] it must be [Concept('concept_endorse_oppose','$concept_endorsed$')] by at least one [concept_interest_group] [concept_in_government], or supported by a current [concept_political_movement]."
 
@@ -380,8 +382,8 @@
  concept_economy_of_scale_desc:2 "Many [Concept('concept_building','$concept_buildings$')] become more efficient the larger they get. Such $concept_buildings$ gain the following effects for every [concept_building_level] beyond the first:\n[GetStaticModifier('economy_of_scale').GetDesc][AddLocalizationIf(GetPlayer.IsValid,'concept_economy_of_scale_desc_ingame_added')]"
  concept_economy_of_scale_desc_ingame_added:0 "\n\nYour current national level cap for $concept_economy_of_scale$ effects is [GetPlayer.GetModifier.GetValueWithBreakdownFor('building_economy_of_scale_level_cap_add')]."
 
- concept_interest_group:0 "Interest Group"
- concept_interest_groups:0 "Interest Groups"
+ concept_interest_group: "Зацікавлена група"
+ concept_interest_groups: "Зацікавлені групи"
  concept_interest_group_possessive:1 "Interest Group\\'s"
  concept_interest_group_desc:3 "A political faction within your [concept_country] that share a common interest. They are supported by [Concept('concept_pop', '$concept_pops$')] in relation to their [Concept('concept_interest_group_attraction','$concept_interest_group_attraction_short$')] to them, and the [concept_clout] they enjoy is based directly on the supporting $concept_pops$' [concept_political_strength]. $concept_interest_groups$ have number of [Concept('concept_ideology', '$concept_ideologies$')], causing them to endorse or oppose different [Concept('concept_law', '$concept_laws$')].\n\nThey also have three [Concept('concept_interest_group_trait', '$concept_interest_group_traits$')] that are activated on different [concept_approval] levels. Their [Concept('concept_leader','$concept_leader_possessive$')] personal $concept_ideology$ also rubs off on the $concept_interest_group$."
 
@@ -477,7 +479,7 @@
  concept_voting:0 "Voting"
  concept_votes_desc:1 "Your [Concept('concept_law', '$concept_laws$')] determine whether any given [concept_pop] gets to cast a $concept_vote$, and if so, how much [concept_political_strength] that $vote$ will count for. $concept_votes$ are cast for [Concept('concept_party','$concept_parties$')] during [concept_election] periods. $concept_pops$ will tend to vote for the $concept_party$ their [concept_interest_group] belongs to, but may be won over by another $concept_party$ with greater [concept_momentum]. After the $concept_election$ date, the number of total $concept_votes$ each $concept_party$ received will be fixed until the next $concept_election$, and will increase the [concept_clout] of any $concept_interest_groups$ that are members of the $concept_party$."
  
- concept_clout:0 "Clout"
+ concept_clout: "Вплив"
  concept_clout_desc:1 "An [Concept('concept_interest_group','$concept_interest_group_possessive$')] share of the total [concept_political_strength] that [Concept('concept_pop', '$concept_pops$')] across their [concept_country] generate. $concept_clout$ is the final word on how influential an $concept_interest_group$ is, and affects everything from [concept_legitimacy] and [concept_enactment_of_laws] if the $concept_interest_group$ is [concept_in_government], to [concept_political_movement_support] and [Concept('concept_political_movement_radicalism','$concept_political_movement_radicalism_short$')] if it is [concept_in_opposition]. It also affects whether the $concept_interest_group$ is considered [concept_powerful], [concept_influential], or [concept_marginalized]."
 
  concept_powerful:0 "Powerful"
@@ -570,15 +572,15 @@
  concept_flotilla_desc:1 "A naval [concept_unit] in a [Concept('concept_country','$concept_country_possessive$')] military. They are created and maintained by [SelectLocalization(GetPlayer.IsValid,'concept_flotilla_desc_added','Naval Base')]s and are commanded by [Concept('concept_admiral','$concept_admirals$')]."
  concept_flotilla_desc_added:0 "[GetBuildingType('building_naval_base').GetName]"
 
- concept_in_government:0 "In Government"
+ concept_in_government: "В уряді"
  concept_in_government_desc:1 "[Concept('concept_interest_group','$concept_interest_groups$')] included in the [concept_government] affects which [Concept('concept_law','$concept_laws$')] can be [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')] and sets the [concept_country] [concept_legitimacy]. They will never support [Concept('concept_political_movement','$concept_political_movements$')] unless their [concept_approval] drops low enough that they leave to join the [Concept('concept_in_opposition','$concept_in_opposition_short$')]."
 
- concept_in_opposition:0 "In Opposition"
- concept_in_opposition_short:1 "Opposition"
+ concept_in_opposition: "В опозиції"
+ concept_in_opposition_short: "Опозиція"
  concept_in_opposition_desc:2 "[Concept('concept_interest_group','$concept_interest_groups$')] not part of the [concept_government] are considered $concept_in_opposition$. Their only way to affect [concept_enactment_of_laws] is through [Concept('concept_political_movement','$concept_political_movements$')], but their [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] apply in full as usual."
 
- concept_legitimacy:1 "Legitimacy"
- concept_legitimate:0 "Legitimate"
+ concept_legitimacy: "Легітимність"
+ concept_legitimate: "Легітимний"
  concept_legitimacy_desc:1 "A [Concept('concept_government','$concept_government_possessive$')] $concept_legitimacy$ measures how well the composition of the [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_government] fits with the [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_law', '$concept_laws$')]. The lower the $concept_legitimacy$, the longer the time between attempts to [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enact$')] new $concept_laws$. Raising or lowering [concept_taxes] also has an impact on $concept_legitimacy$."
 
  concept_market_capital: "Столиця ринку"
@@ -911,9 +913,9 @@
  concept_political_movement_radicalize:0 "Radicalize"
  concept_political_movement_radicalism_desc:2 "The $concept_political_movement_radicalism_short$ of a [concept_political_movement] is based on its number of [Concept('concept_radical','$concept_radicals$')] among its supporting [Concept('concept_pop','$concept_pops$')] and the [concept_clout] of supporting [Concept('concept_interest_group','$concept_interest_groups$')] whose [concept_approval] is [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_ANGRY'))] or worse. A highly $concept_political_movement_radical$ $concept_political_movement$ is less interested in solving issues via mundane politics, and will be able to start a [concept_revolution] sooner."
 
- concept_approval:0 "Approval"
- concept_approval_disapproval:0 "Disapproval"
- concept_approval_indifferent:0 "Indifferent"
+ concept_approval: "Схвалення"
+ concept_approval_disapproval: "Несхвалення"
+ concept_approval_indifferent: "Байдужість"
  concept_approval_desc:0 "An [Concept('concept_interest_group','$concept_interest_group_possessive$')] $concept_approval$ depends on two main factors: how much of their [concept_political_strength] comes from [Concept('concept_radical','$concept_radicals$')] compared to [Concept('concept_loyalist','$concept_loyalists$')], and how well the [Concept('concept_country','$concept_country_possessive$')] current [Concept('concept_law','$concept_laws$')] match with the $concept_interest_group_possessive$ [Concept('concept_ideology','$concept_ideologies$')]. In addition, if a new $concept_law$ is currently being [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')], $concept_approval$ will be affected by a larger temporary adjustment which will linger while [Concept('concept_decay','$concept_decaying$')] for up to #v [GetDefine('NPolitics','CHANGED_LAW_APPROVAL_MONTHS')|0] months#! after it has passed.\n\nAn $concept_interest_group$'s $concept_approval$ impacts which [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] they activate. [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_ANGRY'))] $concept_interest_groups$ contribute to the [Concept('concept_political_movement_radicalism','$concept_political_movement_radicalism_short$')] of [Concept('concept_political_movement','$concept_political_movements$')], while $concept_interest_groups$ that are at least [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_HAPPY'))] will refrain from joining $concept_political_movements_short$ in the first place."
 
  concept_revolution:0 "Revolution"
@@ -1426,11 +1428,11 @@
  concept_ruler_possessive:1 "Ruler\\'s"
  concept_ruler_desc:2 "A $concept_ruler$ is usually the [concept_head_of_state] who represents the [Concept('concept_country','$concept_country_possessive$')] in domestic and world affairs. A $concept_ruler$'s [Concept('concept_character_trait','$concept_character_traits$')] affects the $concept_country$ directly. When a $concept_ruler$ dies a new one will take their place, either an [concept_heir] if one exists or another $concept_character$ depending on [concept_government_type]."
 
- concept_heir:0 "Heir"
+ concept_heir: "Heir"
  concept_heir_desc:2 "The $concept_heir$ of a [concept_country] is a [concept_character]. They will take over the [concept_character_role] of [concept_ruler] upon the current $concept_ruler$'s death."
 
- concept_character_role:0 "Role"
- concept_character_roles:0 "Roles"
+ concept_character_role: "Роль"
+ concept_character_roles: "Ролі"
  concept_character_role_desc:2 "$concept_character_roles$ determine what areas of your [concept_country] a particular [concept_character] has influence over. A $concept_character$ can have one or several $concept_character_roles$.\n\nThe list of $concept_character_roles$ are:\n[concept_ruler] (usually also a [concept_politician])\n[concept_heir]\n[concept_politician]\n[concept_general]\n[concept_admiral]"
 
  concept_treasury:0 "Treasury"
@@ -1499,8 +1501,9 @@
  concept_ordered:0 "Ordered"
  concept_order_desc:2 "[Concept('concept_commander','$concept_commanders$')] can be given $concept_orders$ that cause them to pursue different military objectives. Some $concept_orders$ have targets (such as [Concept('concept_front','$concept_fronts$')] or [Concept('concept_hq','$concept_hqs$')]) while others do not. If an $concept_order$ requires a $concept_commander$ to travel they will do so automatically upon having been given it."
 
- concept_party:0 "Party"
- concept_parties:1 "Parties"
+ concept_party: "Партія"
+ concept_party_acc: "Партію"
+ concept_parties: "Партії"
  concept_party_possessive:0 "Party\\'s"
  concept_party_desc:1 "A $concept_party$ is a political entity that participates in [Concept('concept_election','$concept_election$')]. They consist of one or more [Concept('concept_interest_group','$concept_interest_groups$')] whose [Concept('concept_ideology','$concept_ideologies$')] are at least somewhat compatible. These $concept_interest_groups$ are empowered by the [concept_votes] the $concept_party$ has won proportional to their [concept_clout]. Individual $concept_interest_groups$ cannot be included in [concept_government] without the rest of their $concept_party$ members."
 
@@ -1534,10 +1537,11 @@
  concept_political_movement_support_short:1 "Support"
  concept_political_movement_support_desc:1 "The $concept_political_movement_support_short$ of a [concept_political_movement] is based on the [concept_political_strength] of its supporting  [Concept('concept_pop','$concept_pops$')]. A $concept_political_movement$ with a high degree of $concept_political_movement_support_short$ increases the [concept_enactment_success] chance if you pursue the [concept_law] they desire, or reduces it if they oppose it. Should the $concept_political_movement$ lead to a [concept_revolution], $concept_political_movement_support$ will determine how many [Concept('concept_state','$concept_states$')] it will start with."
 
- concept_political_movement:0 "Political Movement"
- concept_political_movement_short:0 "Movement"
- concept_political_movements_short:0 "Movements"
- concept_political_movements:1 "Political Movements"
+ concept_political_movement: "Політичний рух"
+ concept_political_movement_short: "Рух"
+ concept_political_movements_short: "Рухи"
+ concept_political_movements: "Політичні рухи"
+ concept_political_movements_gen: "Політичних рухів"
  concept_political_movement_desc:1 "A $concept_political_movement$ champions a particular [concept_law], either to enact it, preserve it, or restore it. Both individual [Concept('concept_pop','$concept_pops$')] and [Concept('concept_interest_group','$concept_interest_groups$')] can join $concept_political_movements$, which provide it with both [Concept('concept_political_movement_support','$concept_political_movement_support_short$')] and [Concept('concept_political_movement_radicalism','$concept_political_movement_radicalism_short$')].  Pursuing the change a $concept_political_movement$ desires will be easier as you have its $concept_political_movement_support_short$. Failing to pursue the change could lead to a [concept_revolution]."
 
  concept_end_of_discussion_factor:0 "End-of-Discussion Factor"

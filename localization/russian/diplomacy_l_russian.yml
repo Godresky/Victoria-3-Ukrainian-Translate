@@ -113,7 +113,7 @@
  suzerain:0 "Suzerain"
  obligation:1 "[concept_obligation]"
  RELEASE:0 "Release"
- CONFIRM:0 "Confirm"
+ CONFIRM: "Підтвердити"
  CANCEL: "Скасувати"
  USE_OBLIGATION:1 "Use [concept_obligation]"
  OWE_OBLIGATION:1 "Owe [concept_obligation]"
