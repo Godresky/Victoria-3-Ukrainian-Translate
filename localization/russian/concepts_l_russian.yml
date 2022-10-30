@@ -1061,9 +1061,9 @@
  concept_population: "Населення"
  concept_pop_desc:3 "The world's population are organized into $concept_pops$, groups of individuals who work in the same [concept_building] as a certain [concept_profession], and share the same [concept_culture] and [concept_religion]. They use the [Concept('concept_pop_income','$concept_pop_income_short$')] they earn to buy [Concept('concept_good', '$concept_goods$')] to satisfy their [Concept('concept_pop_needs','$concept_pop_needs_short$')], which decides their [concept_wealth] and [concept_sol]. They can support [Concept('concept_interest_group', '$concept_interest_groups$')] and [Concept('concept_political_movement','$concept_political_movements$')], or be [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')]. A $concept_pop$ has a number of [concept_working_adults] and a number of [concept_dependents]. Some number of them are [Concept('concept_literacy','$concept_literate$')], and they might have a number of either [Concept('concept_loyalist','$concept_loyalists$')] or [Concept('concept_radical','$concept_radicals$')]."
 
- concept_profession:0 "Profession"
- concept_profession_jobs:0 "Jobs"
- concept_professions:0 "Professions"
+ concept_profession: "Ремесло"
+ concept_profession_jobs: "Робота"
+ concept_professions: "Ремесла"
  concept_profession_desc:2 "A [Concept('concept_pop','$concept_pop_possessive$')] $concept_profession$ determines which role they perform in their [concept_building], how large of a [concept_building_wage] they collect from it, and whether or not they get [Concept('concept_ownership_share','$concept_ownership_shares$')] in it. It also impacts which [Concept('concept_interest_group','$concept_interest_group$')] they're likely to support, how likely they are to remain [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')], and whether they are considered [concept_lower_strata], [concept_middle_strata], or [concept_upper_strata]. To switch $concept_professions$, a $concept_pop$ must have the appropriate [concept_pop_qualifications]."
 
  concept_production_method:0 "Production Method"
@@ -1098,8 +1098,8 @@
  concept_cultural_heritage_trait_desc:2 "A type of [concept_cultural_trait] that specifies the general region of the world where the [concept_culture] originated. Certain [SelectLocalization(GetPlayer.IsValid,'concept_accepted_culture_desc_added','Citizenship')] [Concept('concept_law','$concept_laws$')] consider $concept_cultural_heritage_traits$ to be more important than other $concept_cultural_traits$ when determining whether a [concept_pop] should be [Concept('concept_discrimination','$concept_discriminated_against$')] or not."
  concept_cultural_heritage_trait_desc_added:0 "[GetLawType('law_national_supremacy').GetGroup.GetName]"
 
- concept_religion:0 "Religion"
- concept_religions:1 "Religions"
+ concept_religion: "Релігія"
+ concept_religions: "Релігії"
  concept_religion_desc:1 "All [Concept('concept_pop', '$concept_pops$')] have a $concept_religion$, which can only change through [concept_conversion]. Their $concept_religion$ determines whether they are [Concept('concept_discrimination','$concept_discriminated_against$')] in their [concept_country] or not."
 
  concept_accepted_religion:0 "Accepted Religion"
