@@ -17,8 +17,8 @@
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MAY 6, 2022
  
- concept_subject:0 "Subject"
- concept_subjects:1 "Subjects"
+ concept_subject: "Підвладний"
+ concept_subjects: "Підвладні"
  concept_subject_possessive:0 "Subject\\'s"
  concept_subject_desc:1 "A [concept_country] whose autonomy and right to self-determination is limited to varying degree by an [concept_overlord]. $concept_subject$ relationships are a type of [concept_diplomatic_pact] that $concept_countries$ can be asked to join or forced into with a [concept_diplomatic_play]. The precise effects depends on the type of $concept_subject$ but tend to include being forced into their $concept_overlord$'s [concept_market], having to give up a part of their [Concept('concept_treasury','$concept_treasury_possessive$')] income, decreased [concept_prestige], the inability to start your own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] or freely decide which side to support in them, and inheriting the $concept_overlord$'s [concept_ruler] as your [concept_head_of_state].\n\n$concept_subjects$ can be liberated with a $concept_diplomatic_play$ started by themselves or a third party. Some $concept_subject$ types can also be targeted by a $concept_diplomatic_play_short$ by their $concept_overlord$ to reduce their autonomy further, or even become fully #b Annexed#! by them."
 
@@ -121,6 +121,7 @@
  concept_concept_desc:0 "This is a tooltippable game concept with another [concept_concept] within."
  
  concept_sol: "Рівень життя"
+ concept_sol_short: "РіЖи"
  concept_sol_desc:1 "$concept_sol$ measures a [Concept('concept_pop','$concept_pop_possessive$')] living conditions, with their material [concept_wealth] as the baseline. It governs [Concept('concept_pop_growth','$concept_pop_growth_birthrate_and_mortality$')], and every time it changes it can cause $concept_pops$ to become more [concept_radical] or [Concept('concept_loyalist','$concept_loyal$')]. The average $concept_sol$ in a [concept_state] affects its [concept_migration_pull]."
 
  concept_expected_sol:0 "Minimum Expected Standard of Living"
@@ -312,7 +313,8 @@
  
  concept_incorporated_state: "Включений регіон"
  concept_incorporated_states: "Включені регіони"
- concept_incorporate_state: "Включенити регіон"
+ concept_incorporated_states_loc: "Включених регіонах"
+ concept_incorporate_state: "Включити регіон"
  concept_incorporate: "Включити"
  concept_incorporated: "Включений"
  concept_incorporating: "Включення"
@@ -329,9 +331,11 @@
  concept_bureaucracy_desc_added:0 "[GetBuildingType('building_government_administration').GetName]"
  
  concept_authority: "Авторитет"
+ concept_authority_gen: "Авторитету"
  concept_authority_desc:3 "@aut! Authority is a [concept_capacity] used to effect internal change to your [concept_country], like issuing [Concept('concept_decree', '$concept_decrees$')] or managing [Concept('concept_interest_group', '$concept_interest_groups$')]. You gain @aut! from [Concept('concept_law', '$concept_laws$')]."
  
  concept_influence: "Вплив"
+ concept_influence_gen: "Впливу"
  concept_influence_desc:3 "@inf! Influence is a [concept_capacity] used for [Concept('concept_diplomatic_action', '$concept_diplomatic_actions$')] and [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts_short$')] targeting another [concept_country]. You gain @inf! based on your [concept_rank]."
 
  concept_institution: "Установа"
@@ -1590,15 +1594,15 @@
  concept_migration_pull_short:0 "Attraction"
  concept_migration_pull_desc:1 "$concept_migration_pull$ is a [concept_state]'s ability to attract migrants. It is based primarily on the average [concept_sol] among [Concept('concept_pop','$concept_pops$')] in the $concept_state$ but can be modified by a number of other factors. Any [Concept('concept_unemployed','$concept_unemployment$')] in the $concept_state$ will depress $concept_migration_pull$. The value is compared against other $concept_states$ between which migration may occur to determine in which direction migrants tend to flow."
 
- concept_lower_strata:0 "Lower Strata"
+ concept_lower_strata: "Нижня верства"
  concept_lower_strata_desc:3 "The $concept_lower_strata$ consist of [Concept('concept_pop','$concept_pops$')] in [Concept('concept_profession','$concept_professions$')] that work with their hands or do repetitive labor which require little to no [concept_pop_qualifications] and result in low [Concept('concept_building_wage','$concept_building_wages$')].[AddLocalizationIf(GetPlayer.IsValid,'concept_lower_strata_ingame_added')]"
  concept_lower_strata_ingame_added:1 "\n\nConsists of the following $concept_professions$:\n[GetPopTypesInLowerStrataDesc]"
 
- concept_middle_strata:0 "Middle Strata"
+ concept_middle_strata: "Середня верства"
  concept_middle_strata_desc:3 "The $concept_middle_strata$ consist of [Concept('concept_pop','$concept_pops$')] with specialized [Concept('concept_profession','$concept_professions$')] that are harder to gain [concept_pop_qualifications] for. This provides them with more leverage on the labor market and thereby higher [Concept('concept_building_wage','$concept_building_wages$')].[AddLocalizationIf(GetPlayer.IsValid,'concept_middle_strata_ingame_added')]"
  concept_middle_strata_ingame_added:1 "\n\nConsists of the following $concept_professions$:\n[GetPopTypesInMiddleStrataDesc]"
 
- concept_upper_strata:0 "Upper Strata"
+ concept_upper_strata: "Верхня верства"
  concept_upper_strata_desc:3 "The $concept_upper_strata$ consist of [Concept('concept_pop','$concept_pops$')] with [Concept('concept_profession','$concept_professions$')] they [Concept('concept_pop_qualifications','$concept_qualify$')] for mostly on the basis of [concept_wealth]. These $concept_professions$ are typically not available to $concept_pops$ subject to [concept_discrimination] either. They tend to hold [Concept('concept_ownership_share','$concept_ownership_shares$')] in their [Concept('concept_building','$concept_buildings$')] and draw [concept_dividends] and collect [concept_budget_interest] in addition to [Concept('concept_building_wage','$concept_building_wages$')].[AddLocalizationIf(GetPlayer.IsValid, 'concept_upper_strata_ingame_added')]"
  concept_upper_strata_ingame_added:1 "\n\nConsists of the following $concept_professions$:\n[GetPopTypesInUpperStrataDesc]"
 
