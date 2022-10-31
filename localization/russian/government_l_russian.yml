@@ -161,7 +161,7 @@
  gov_junta_desc:1 "This is a [concept_government] form where the [concept_country] is ruled by the military."
  gov_warlord_state: "Полкомська держава"
  gov_warlord_state_desc:1 "This is a [concept_government] ruled by an impulsive [Concept('concept_ruler','Warlord')]"
- gov_crown_colony: "Коронна колонія"
+ gov_crown_colony: "Коронна осада"
  gov_crown_colony_desc:0 "This is a colony of the British Crown, ruled by colonial administrators with limited autonomy."
  gov_fascist_state: "Фашистська держава"
  gov_fascist_state_desc:1 "This is a [concept_government] defined by its adherence to fascist [concept_ideology]. It is a cruel and dictatorial regime."

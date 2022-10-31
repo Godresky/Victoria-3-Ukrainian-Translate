@@ -57,7 +57,7 @@
 
  
 
- concept_protectorate:0 "Protectorate"
+ concept_protectorate: "Протекторат"
  concept_protectorate_desc:2 "A $concept_protectorate$ is an autonomous [concept_subject] type able to start their own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]. A [concept_country] may ask, or be asked, to become a $concept_protectorate$ under an [concept_overlord] without risk of [concept_war] if the offer is declined."
  
  concept_puppet:0 "Puppet"
@@ -96,7 +96,8 @@
  concept_trade_revenue_desc:2 "A [concept_trade_route] generates revenue for the [SelectLocalization(GetPlayer.IsValid,'concept_trade_revenue_desc_added','Trade Center')]  managing it, depending on the [concept_market_price] difference and the volume traded. [concept_tariffs] reduce the $concept_trade_revenue$ generated, effectively decreasing the maximum volume a [concept_trade_route] can move before it becomes unprofitable and stagnates."
  concept_trade_revenue_desc_added:0 "[GetBuildingType('building_trade_center').GetName]"
  
- concept_trade_agreement:0 "Trade Agreement"
+ concept_trade_agreement: "Торгова угода"
+ concept_trade_agreement_acc: "Торгову угоду"
  concept_trade_agreement_desc:2 "A type of [concept_diplomatic_pact] between two [Concept('concept_country', '$concept_countries$')] that eliminates [concept_tariffs] and [concept_bureaucracy] cost of [Concept('concept_trade_route','$concept_trade_routes$')] between them."
 
  concept_trade_route_competitiveness:0 "Trade Route Competitiveness"
@@ -496,7 +497,7 @@
  concept_influential_powerful_common:0 "The amount of [concept_clout] an [concept_interest_group] has decides whether it is [concept_powerful], $concept_influential$, or [concept_marginalized]."
  concept_influential_desc:1 "$concept_influential_powerful_common$ An $concept_influential$ $concept_interest_group$'s [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] will have a lesser effect than if they were $concept_powerful$.\n\n$concept_interest_groups$ are considered $concept_influential$ while their $concept_clout$ is below [GetDefine('NPolitics','POWERFUL_IG_THRESHOLD')|%0v]."
 
- concept_marginalized:0 "Marginalized"
+ concept_marginalized: "Маргіналізовані"
  concept_marginalized_desc:1 "$concept_marginalized$ [Concept('concept_interest_group', '$concept_interest_groups$')] have too little [concept_clout] to be politically noteworthy. They cannot join the [concept_government], [Concept('concept_political_movement','$concept_political_movements$')], or [Concept('concept_party','$concept_parties$')]. Their [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] are permanently deactivated for as long as they remain $concept_marginalized$.\n\nAlready $concept_marginalized$ $concept_interest_groups$ remain $concept_marginalized$ for as long as their $concept_clout$ is below [GetDefine('NPolitics','MARGINAL_IG_THRESHOLD')|%0v]. Non-$concept_marginalized$ $concept_interest_groups$ will become $concept_marginalized$ once their $concept_clout$ drops below [GetDefine('NPolitics','MARGINAL_IG_CUTOFF')|%0v], unless they are already [concept_in_government] in which case they do not become $concept_marginalized$ until removed."
  
  concept_politically_inactive_involved: "Політично неактивні/залучені"
@@ -618,9 +619,9 @@
  concept_market_owner_possessive:2 "Market Owner\\'s"
  concept_market_owner_desc:4 "The [concept_country] that owns the market, either because it is the only participant or the [concept_senior_partner] in a [concept_customs_union]. Only the $concept_market_owner$ may set [concept_tariffs], [Concept('concept_market_good_policy','$concept_market_good_policies$')], and issue [Concept('concept_embargo','$concept_embargoes$')]."
 
- concept_embargo:0 "Embargo"
- concept_embargoed:1 "Embargoed"
- concept_embargoes:0 "Embargoes"
+ concept_embargo: "Ембарґо"
+ concept_embargoed: "Під ембарго"
+ concept_embargoes: "Ембарґо"
  concept_embargoing:1 "Embargoing"
  concept_embargo_desc:6 "An [concept_ongoing_diplomatic_action] established by one [concept_country] targeting another, which completely blocks the target [concept_country] from importing or exporting [Concept('concept_good','$concept_goods$')] in the [concept_market] belonging to the country enforcing the embargo. $concept_countries$ that are at [concept_war] will automatically Embargo each other."
  
@@ -649,9 +650,9 @@
  concept_radicalized:0 "Radicalized"
  concept_radical_desc:1 "$concept_radical$ [Concept('concept_individual','$concept_individuals$')] within a [concept_pop] are disillusioned with the state of their [concept_country]. The presence of $concept_radicals$ in a [concept_state] contributes to [concept_turmoil], and the $concept_radicalism$ of $concept_pops$ contribute to [concept_political_movement_radicalism]. The [concept_approval] of [Concept('concept_interest_group','$concept_interest_groups$')] supported by $concept_radical$ $concept_pops$ will also be impacted.\n\n$concept_radicals$ are created continuously while a $concept_pop$ is subjected to [concept_discrimination] or when their [concept_sol] falls below their [concept_expected_sol], whenever a $concept_pop$'s [concept_sol] decreases, and due to decisions made during special events. $concept_radicals$ are also created in $concept_pops$ that support $concept_political_movements$ whose demands go unfulfilled, and when $concept_pops$ are fired from a [Concept('concept_building','$concept_building_possessive$')] [concept_workforce] (particularly if they held [Concept('concept_ownership_share','$concept_ownership_shares$')]).\n\nThe opposite of a $concept_radical$ is a [concept_loyalist]. Whenever a $concept_loyalist$ would be created in a $concept_pop$ that already has $concept_radicals$, one $concept_radical$ is removed instead."
 
- concept_rivalry:0 "Rivalry"
- concept_rivals:1 "Rivals"
- concept_rival:1 "Rival"
+ concept_rivalry: "Суперництво"
+ concept_rivals: "Суперники"
+ concept_rival: "Суперник"
  concept_rivalries:1 "Rivalries"
  concept_rivalry_desc:3 "A [concept_diplomatic_pact] established by one [concept_country] targeting another of similar [concept_rank], and which generates @inf! [concept_influence] for the [concept_country] declaring the rivalry. The two $concept_countries$ must have overlapping [Concept('concept_interest','$concept_interests$')] to be valid rivals. The $concept_diplomatic_pact_short$ will also limit the range of [concept_relations] that can be established between the two $concept_countries$ for as long as the $concept_diplomatic_pact_short$ is active."
 
@@ -753,12 +754,12 @@
  concept_junior_partners_possessive:0 "Junior Partners\\'"
  concept_junior_partner_desc:2 "A $concept_junior_partner$ in a [concept_customs_union] yields control of their [concept_market] to the [concept_senior_partner]. While the $concept_junior_partner$ may continue to [Concept('concept_trade_route','$concept_trade$')] with other $concept_markets$, they may not issue [Concept('concept_embargo','$concept_embargoes$')] or control [Concept('concept_tariffs','$concept_tariff$')] levels. In exchange they collect a minor portion of the $concept_market$'s $concept_tariff$ income and their [Concept('concept_building','$concept_building_industries$')] benefit from participating in a more powerful and mature $concept_market$."
 
- concept_alliance:0 "Alliance"
- concept_alliances:1 "Alliances"
+ concept_alliance: "Альянс"
+ concept_alliances: "Альянси"
  concept_alliance_desc:1 "A [concept_diplomatic_pact] between two [Concept('concept_country','$concept_countries$')]. $concept_countries$ engaged in an $concept_alliance$ may always side with each other in [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] regardless of if the other side maintains an [concept_active_interest] in the affected [concept_strategic_region]. This applies no matter if the other $concept_country$ is the initiator or target of the $concept_diplomatic_play_short$."
 
- concept_defensive_pact:0 "Defensive Pact"
- concept_defensive_pacts:0 "Defensive Pacts"
+ concept_defensive_pact: "Оборонний пакт"
+ concept_defensive_pacts: "Оборонні пакти"
  concept_defensive_pact_desc:0 "A [concept_diplomatic_pact] between two [Concept('concept_country','$concept_countries$')]. $concept_countries$ engaged in a $concept_defensive_pact$ may always side with each other in [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] in which they are the primary target, regardless of if the other side maintains an active [concept_active_interest] in the affected [concept_strategic_region]. This does not extend to $concept_diplomatic_plays$ where the other party is the initiator, or where they are backing a third $concept_country$ as a primary target."
 
  concept_supply:0 "Supply"
@@ -824,12 +825,12 @@
  concept_dividends_desc:2 "While [Concept('concept_building','$concept_buildings$')] have a positive balance, some of these profits are paid out to [Concept('concept_pop', '$concept_pops$')] with [Concept('concept_ownership_share', '$concept_ownership_shares$')] as $concept_dividends$. This source of [concept_pop_income] is subject to [concept_budget_dividends_taxes]. Depending on the [Concept('concept_country','$concept_country_possessive$')] current [SelectLocalization(GetPlayer.IsValid,'concept_dividends_desc_added','Economic System')] [concept_law] some part of these $concept_dividends$ may be allocated to the [concept_investment_pool] while the remainder goes towards [concept_pop_needs] and [concept_wealth]."
  concept_dividends_desc_added:0 "[GetLawType('law_traditionalism').GetGroup.GetName]"
 
- concept_credit:0 "Credit"
- concept_credit_debt:0 "Debt"
- concept_credit_limit:0 "Credit Limit"
+ concept_credit: "Спосуда"
+ concept_credit_debt: "Довг"
+ concept_credit_limit: "Межа спосуди"
  concept_credit_desc:2 "The national $concept_credit$ is the amount of [concept_money] the [concept_treasury] can borrow from its economy, equal to the sum of all domestic [concept_cash_reserves] plus a base value determined by [concept_gdp]. If the [concept_principal] exceeds the $concept_credit_limit$ the [concept_country] goes into [concept_default]."
 
- concept_principal: "Спосуда"
+ concept_principal: "Розмір позики"
  concept_principal_desc:2 "The total size of [concept_loans] the [concept_treasury] has accrued, not including the [concept_budget_interest] it owes. If the [concept_principal] exceeds your [concept_credit] you will go into [concept_default]."
 
  concept_loans: "Позики"
@@ -993,9 +994,9 @@
  concept_declared_interest_desc:2 "If you do not own at least one non-colonial [concept_state] in a [concept_state_region], but wish to maintain an [concept_interest] there anyway, you may choose to $concept_declared_interest_declare$ an $concept_interest$ there. The number of $concept_interests$ you can $concept_declared_interest_declare$ in such $concept_state_regions$ depends on your [concept_rank].[AddLocalizationIf(GetPlayer.IsValid, 'concept_declared_interest_ingame_added')]"
  concept_declared_interest_ingame_added:1 "\n\nYour current number of $concept_declared_interests$ is [GetPlayer.GetNumDeclaredInterests]. Due to your $concept_rank$ of [GetPlayer.GetRank], the most you can $concept_declared_interest_declare$ is #tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#!"
 
- concept_obligation:0 "Obligation"
- concept_obligations:0 "Obligations"
- concept_obligated:0 "Obligated"
+ concept_obligation: "Вяз"
+ concept_obligations: "Вязи"
+ concept_obligated: "Вязиний"
  concept_obligation_desc:1 "One [concept_country] can become $concept_obligated$ to another as a result of agreements made during [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] or when one $concept_country$ buys out another's [concept_loans]. While $concept_obligated$ to a $concept_country$ you are unable to start $concept_diplomatic_plays$ against them or even join a $concept_diplomatic_play_short$ on the other side as them. The other $concept_country$ may use an $concept_obligation$ they hold over you to force you into a [concept_diplomatic_pact], or may absolve it to [concept_sway] you into supporting them in a $concept_diplomatic_play$ or increase [concept_relations] with you."
 
  concept_secession:0 "Secession"
