@@ -362,7 +362,7 @@
 
  #Monuments
  building_angkor_wat:0 "Angkor Wat"
- building_big_ben:0 "Big Ben"
+ building_big_ben: "Біґ-Бен"
  building_forbidden_city:0 "Forbidden City"
  building_hagia_sophia:0 "Hagia Sophia"
  building_mosque_of_djenne:0 "Mosque of Djenne"
@@ -372,7 +372,7 @@
  building_vatican_city:0 "Vatican City"
  building_white_house:0 "White House"
  pm_default_building_angkor_wat:1 "Angkor Wat"
- pm_default_building_big_ben:0 "Big Ben"
+ pm_default_building_big_ben: "Біґ-Бен"
  pm_default_building_forbidden_city:0 "Forbidden City"
  pm_default_building_hagia_sophia:0 "Hagia Sophia"
  pm_default_building_machu_picchu:0 "Machu Picchu"

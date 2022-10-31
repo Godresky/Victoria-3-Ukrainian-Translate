@@ -2779,7 +2779,7 @@
 
  CANNOT_JOIN_FOREIGN_MARKET:0 "No Economic System Law or Customs Unions permit joining the foreign [MARKET.GetName]"
 
- NO_STATE_TRAITS:0 "No State Traits"
+ NO_STATE_TRAITS: "Без рис провінцій"
 
   # MARKET is the market to merge
  MERGE_MARKET_INFO_TOOLTIP:0 "Merge #BOLD #V [MARKET.GetName]#!#! with another Market."
