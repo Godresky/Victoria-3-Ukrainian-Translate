@@ -19,6 +19,8 @@
  
  concept_subject: "Підвладний"
  concept_subjects: "Підвладні"
+ concept_subject_country: "Підвладна держава"
+ concept_subject_country_acc: "Підвладну державу"
  concept_subject_possessive:0 "Subject\\'s"
  concept_subject_desc:1 "A [concept_country] whose autonomy and right to self-determination is limited to varying degree by an [concept_overlord]. $concept_subject$ relationships are a type of [concept_diplomatic_pact] that $concept_countries$ can be asked to join or forced into with a [concept_diplomatic_play]. The precise effects depends on the type of $concept_subject$ but tend to include being forced into their $concept_overlord$'s [concept_market], having to give up a part of their [Concept('concept_treasury','$concept_treasury_possessive$')] income, decreased [concept_prestige], the inability to start your own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] or freely decide which side to support in them, and inheriting the $concept_overlord$'s [concept_ruler] as your [concept_head_of_state].\n\n$concept_subjects$ can be liberated with a $concept_diplomatic_play$ started by themselves or a third party. Some $concept_subject$ types can also be targeted by a $concept_diplomatic_play_short$ by their $concept_overlord$ to reduce their autonomy further, or even become fully #b Annexed#! by them."
 
@@ -125,11 +127,11 @@
  concept_sol_short: "РіЖи"
  concept_sol_desc:1 "$concept_sol$ measures a [Concept('concept_pop','$concept_pop_possessive$')] living conditions, with their material [concept_wealth] as the baseline. It governs [Concept('concept_pop_growth','$concept_pop_growth_birthrate_and_mortality$')], and every time it changes it can cause $concept_pops$ to become more [concept_radical] or [Concept('concept_loyalist','$concept_loyal$')]. The average $concept_sol$ in a [concept_state] affects its [concept_migration_pull]."
 
- concept_expected_sol:0 "Minimum Expected Standard of Living"
- concept_expected_sol_short:0 "Minimum Expected"
+ concept_expected_sol: "Очікуваний мінімум стандартів життя"
+ concept_expected_sol_short: "Очікуваний мінімум"
  concept_expected_sol_desc:0 "$concept_expected_sol$ is the lowest [concept_sol] that a [concept_pop] is willing to tolerate. This number is based on whether the $concept_pop$ is [concept_lower_strata], [concept_middle_strata], or [concept_upper_strata] and adjusted by [concept_literacy], and can be modified by certain [Concept('concept_technology', '$concept_technologies$')]. If a $concept_pop$ has a lower $concept_sol$ than the $concept_expected_sol_short$ they will gradually become more [concept_radical]. $concept_pops$ with a $concept_sol$ above the $concept_expected_sol_short$ will still become more $concept_radical$ each time their $concept_sol$ is reduced."
 
- concept_pop_growth:0 "Pop Growth"
+ concept_pop_growth: "Ріст населення"
  concept_pop_growth_birthrate_and_mortality:0 "Birthrate and Mortality"
  concept_pop_growth_birthrate:0 "Birthrate"
  concept_pop_growth_mortality:0 "Mortality"
@@ -273,8 +275,8 @@
  concept_battles:0 "Battles"
  concept_battle_desc:1 "When two [Concept('concept_commander','$concept_commanders$')] encounter each other and come into conflict during a [concept_war], they and their [Concept('concept_unit','$concept_units$')] will clash in an attempt to inflict [concept_casualties] and damage each others' [concept_morale]. The side whose [concept_manpower] has run out or become $concept_morale_demoralized$ first will withdraw, leaving the other side victorious.\n\nOn land, $concept_battles$ take place in [Concept('concept_province','$concept_provinces$')] adjacent to [Concept('concept_front','$concept_fronts$')] when one [concept_general] is advancing to take or regain $concept_province_land$. The winner will either conquer more $concept_provinces$ or prevent the enemy from doing so.\nAt sea, $concept_battles$ take place in Sea Nodes when one [concept_admiral] intercepts another due to conflicting [Concept('concept_order','$concept_orders$')]. The winner leaves their opponent damaged and forces them to return to port for repairs, leaving them unable to execute their $concept_order$ for a time."
 
- concept_timed_modifier:0 "Timed Modifier"
- concept_timed_modifiers:0 "Timed Modifiers"
+ concept_timed_modifier: "Тимчасовий змінювач"
+ concept_timed_modifiers: "Тимчасові змінювачі"
  concept_timed:0 "Timed"
  concept_timed_modifier_desc:0 "A [concept_modifier] with an expiry date, after which it will disappear. $concept_timed_modifiers$ can either maintain its full effect up until its expiry date, or [concept_decay] gradually until the date has been reached."
  
@@ -507,8 +509,8 @@
  concept_politically_involved_gender_gen: "Політично залучене"
  concept_politically_inactive_involved_desc:3 "The part of a [concept_pop] that does not support an [concept_interest_group] is called #b $concept_politically_inactive$#!. This is often due to low [concept_literacy] or [concept_sol]. $concept_politically_inactive$ parts of $concept_pops$ do not participate in the political process and any [concept_political_strength] they possess is wasted.\n\nThe opposite of this is #b Politically Involved#!. Which means the $concept_pop$ is part of one of your [Concept('concept_country', '$concept_country_possessive$')] [Concept('concept_interest_group', '$concept_interest_groups$')] and the $concept_pop$'s $concept_political_strength$ is attributed to that $concept_interest_group$."
  
- concept_investment_level:0 "Investment Level"
- concept_investment_levels:1 "Investment Levels"
+ concept_investment_level: "Рівень розвитку"
+ concept_investment_levels: "Рівні розвитку"
  concept_investment_level_desc:4 "The current level of an [concept_institution]. Each level costs an amount of [concept_bureaucracy] depending on the [Concept('concept_pop','$concept_population$')] size of your [Concept('concept_incorporated_state','$concept_incorporated_states$')], and its effects scale with the level.[AddLocalizationIf(GetPlayer.IsValid,'concept_investment_level_ingame_added')]"
  concept_investment_level_ingame_added:0 "\n\nYou currently pay @bur! [GetPlayer.GetInstitutionInvestmentBureaucracyCost|v0] [concept_bureaucracy] for [GetPlayer.GetInstitutionInvestment|v0] $concept_investment_levels$, or @bur! [GetPlayer.GetInstitutionInvestmentBureaucracyFactor] [concept_bureaucracy] per level."
 
@@ -530,8 +532,10 @@
  concept_country: "Держава"
  concept_country_gen: "Держави"
  concept_country_acc: "Державу"
+ concept_country_dat: "Державі"
  concept_country_ins: "Державою"
  concept_countries: "Держави"
+ concept_countries_gen: "Держав"
  concept_countries_ins: "Державами"
  concept_country_nation: "Нація"
  concept_country_nation_state: "Національна держава"
@@ -855,6 +859,7 @@
  concept_theater_desc:1 "A region of adjacent [Concept('concept_province','$concept_provinces$')] under the control of a single [concept_country]. [Concept('concept_front','$concept_fronts$')] are created on the border between two $concept_theaters$ controlled by $concept_countries$ hostile to each other in a [concept_war] or [concept_diplomatic_play]."
 
  concept_literacy: "Грамотність"
+ concept_literacy_gen: "Грамотности"
  concept_literate: "Грамотн"
  concept_literacy_desc:2 "The percentage or absolute number of individuals in a [concept_pop] who can read and write. Certain [Concept('concept_profession', '$concept_professions$')] demand higher $concept_literacy$ than others, limiting the [concept_pop_qualifications] for $concept_pops$ in other $concept_professions$ unless their $concept_literacy$ is high enough. You can invest in your [SelectLocalization(GetPlayer.IsValid,'concept_literacy_desc_added','Education')] in order to develop higher $concept_literacy$ in your $concept_population$ over time."
  concept_literacy_desc_added:0 "[GetInstitutionType('institution_schools').GetName]"
@@ -899,8 +904,8 @@
  concept_working_adult:1 "Working Adult"
  concept_working_adults_desc:1 "The part of a [concept_pop] that make up the [concept_workforce] that work in [Concept('concept_building', '$concept_buildings$')] for [Concept('concept_building_wage', '$concept_building_wages$')]. They are the main source of a $concept_pop$'s [Concept('concept_pop_income','$concept_pop_income_short$')] and [concept_political_strength]."
 
- concept_dependents:0 "Dependents"
- concept_dependent:0 "Dependent"
+ concept_dependents: "Утриманці"
+ concept_dependent: "Утриманець"
  concept_dependents_desc:2 "The part of a [concept_pop] not considered part of the [concept_workforce]. They represent the families of the [concept_working_adults] and normally constitute the majority of the population. $concept_dependents$ usually generate [concept_dependent_income] that is typically smaller than the [Concept('concept_building_wage','$concept_building_wages$')] collected by $concept_working_adults$, but they also have lower [concept_pop_needs]. While they are able to support [Concept('concept_interest_group','$concept_interest_groups$')] their [concept_political_strength] typically count for less. They are only granted [Concept('concept_votes','$concept_voting_rights$')] under very specific [Concept('concept_law', '$concept_laws$')].\n\nEnacting different $concept_laws$ or maintaining certain [Concept('concept_institution', '$concept_institutions$')] may convert $concept_dependents$ into $concept_working_adults$ over time, increase their [concept_political_strength], or supplement their $concept_dependent_income$."
 
  concept_disenfranchised:0 "Disenfranchised"
@@ -1059,8 +1064,8 @@
  concept_state_possessive:1 "State\\'s"
  concept_state_desc:2 "A geographic region controlled by a [concept_country]. [Concept('concept_pop', '$concept_pops$')] live and work in the [Concept('concept_building', '$concept_buildings$')] in the $concept_state$. Unless it is a [concept_split_state] its territory is equivalent to a [concept_state_region]. Unless it is [Concept('concept_isolated_state', '$concept_isolated_state_short$')], it will trade any [Concept('concept_good','$concept_goods$')] locally [Concept('concept_good_consumption','$concept_good_consumed$')] and [Concept('concept_good_production','$concept_good_produced$')] with other $concept_states$ in the same [concept_market] in to a degree based on its [concept_market_access]."
 
- concept_pop:0 "Pop"
- concept_pops:0 "Pops"
+ concept_pop: "Людина"
+ concept_pops: "Людей"
  concept_pop_possessive:1 "Pop\\'s"
  concept_pops_possessive:0 "Pops\\'"
  concept_population: "Населення"
@@ -1140,11 +1145,12 @@
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED APRIL 27, 2022
 
- concept_innovation:2 "Innovation"
+ concept_innovation: "Інновація"
+ concept_innovation_gen: "Інновації"
  concept_innovation_desc:3 "@innovation!$concept_innovation$ is produced by [SelectLocalization(GetPlayer.IsValid,'concept_innovation_desc_added','University')] $concept_buildings$ and contributes to active research progress for [Concept('concept_technology', '$concept_technologies$')]. Unspent @innovation!$concept_innovation$ will increase the [concept_technology_spread] you're currently benefiting from, if any."
  concept_innovation_desc_added:0 "[GetBuildingType('building_university').GetName]"
 
- concept_technology_spread:0 "Technology Spread"
+ concept_technology_spread: "Поширення технологій"
  concept_technology_spread_desc:2 "One [concept_technology] that you have not yet acquired from each category ($PRODUCTION_NO_CONCEPT$, $MILITARY$, and $SOCIETY$) is always spreading to you from [Concept('concept_country','$concept_countries$')] that have acquired them. The progress you get in spreading $concept_technologies$ is randomized each week around a base value depending on your $concept_country$'s [concept_literacy]. If no $concept_country$ has invented a certain $concept_technology$ yet it cannot spread to you, so you are more likely to acquire early [Concept('concept_technology_era','$concept_technology_era_short$')] $concept_technologies$ from $concept_technology_spread$ than later ones."
 
  concept_technology_era:0 "Technology Era"

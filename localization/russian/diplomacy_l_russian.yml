@@ -546,7 +546,7 @@
  protectorate: "Протекторат"
  protectorate_action_name: "[concept_protectorate]"
  protectorate_action_propose_name: "Перетворити на [Concept('concept_protectorate', '$concept_protectorate$')]"
- protectorate_action_break_name: "Надати незалежність"
+ protectorate_action_break_name: "Дати незалежність"
  protectorate_action_ask_to_break_name: "Вимагати незалежности"
  protectorate_desc:1 "#header $protectorate$#!\n$TOOLTIP_DELIMITER$\nA [concept_diplomatic_pact] that establishes a [concept_protectorate] type [concept_subject] relationship between two [Concept('concept_country', '$concept_countries$')]."
  protectorate_pact_desc:0 "[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] is a [concept_protectorate] of [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName]."

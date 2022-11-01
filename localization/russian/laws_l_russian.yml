@@ -162,7 +162,7 @@
  ideology_caudillismo_desc:0 "#lore This group tends to support strongman leaders with military backgrounds over constitutional rule of law.#!"
 
   # Government Principles group
- lawgroup_governance_principles:0 "Governance Principles"
+ lawgroup_governance_principles: "Принципи управління"
  lawgroup_governance_principles_desc:0 "The foundational principles and authority by which your country is governed. Determines who the Head of State is."
   
  law_chiefdom:0 "Chiefdom"
@@ -179,7 +179,7 @@
  law_council_republic_desc:0 "A political system where workers elect delegates to local councils. Extends concepts of workplace organization to general governance."
   
   # Free speech group
- lawgroup_free_speech:0 "Free Speech"
+ lawgroup_free_speech: "Свобода слова"
  lawgroup_free_speech_desc:0 "Laws regulating free speech and right to public assembly."
   
  law_outlawed_dissent:0 "Outlawed Dissent"
@@ -192,7 +192,7 @@
  law_protected_speech_desc:0 "The protection of free speech is enshrined in law."
   
   # Army Model group
- lawgroup_army_model:0 "Army Model"
+ lawgroup_army_model: "Тип війська"
  lawgroup_army_model_desc:0 "How your army is organized and regulated."
   
  law_peasant_levies:0 "Peasant Levies"
@@ -205,7 +205,7 @@
  law_professional_army_desc:0 "The army consists of well-trained, professional regulars."
   
   # Distribution of Power group
- lawgroup_distribution_of_power:0 "Distribution of Power"
+ lawgroup_distribution_of_power: "Розподіл влади"
  lawgroup_distribution_of_power_desc:0 "How political power is distributed. Determines who the Head of State is accountable to."
   
  law_autocracy:0 "Autocracy"
@@ -232,7 +232,7 @@
  law_proportional_representation_desc:0 "This system distributes parliamentary seats in proportion to the number of votes cast. It tends to create multi-party coalition governments where compromise is key to getting anything done."
   
   # Workplace Safety group
- lawgroup_labor_rights:0 "Labor Rights"
+ lawgroup_labor_rights: "Права робочих"
  lawgroup_labor_rights_desc:0 "The rights of workers."
   
  law_serfdom:0 "Serfdom"
@@ -245,7 +245,7 @@
  law_worker_protections_desc:0 "Workers enjoy extensive protections that are enshrined in law."
   
   # Children's Rights group
- lawgroup_childrens_rights:0 "Children's Rights"
+ lawgroup_childrens_rights: "Права дітей"
  lawgroup_childrens_rights_desc:0 "The rights and protections afforded to children."
   
  law_child_labor_allowed:0 "Child Labor Allowed"
@@ -256,7 +256,7 @@
  law_compulsory_primary_school_desc:0 "All children must attend several years of primary school during which they're prohibited from working."
   
   # Slavery group
- lawgroup_slavery:0 "Slavery"
+ lawgroup_slavery: "Рабство"
  lawgroup_slavery_desc:0 "People as property."
   
  law_slavery_banned:0 "Slavery Banned"
@@ -269,7 +269,7 @@
  law_legacy_slavery_desc:0 "As a compromise between abolitionists and slaveholders, the institution of slavery may continue as long as it does not expand."
   
   # Church and State group
- lawgroup_church_and_state:0 "Church and State"
+ lawgroup_church_and_state: "Церква та держава"
  lawgroup_church_and_state_desc:0 "The relationship between physical and spiritual governors."
   
  law_state_religion:0 "State Religion"
@@ -282,7 +282,7 @@
  law_atheist_state_desc:0 "Preaching religious belief is prohibited, and practicing one is frowned upon. All religions are discriminated against."
   
   # Citizenship group
- lawgroup_citizenship:0 "Citizenship"
+ lawgroup_citizenship: "Громадянство"
  lawgroup_citizenship_desc:0 "Extending the rights of citizenship."
   
  law_ethnostate:0 "Ethnostate"
@@ -297,7 +297,7 @@
  law_multicultural_desc:0 "No cultures are discriminated against."
   
   # Economic System group
- lawgroup_economic_system:0 "Economic System"
+ lawgroup_economic_system: "Економічна модель"
  lawgroup_economic_system_desc:0 "The fundamental principles of your economy."
 
  law_traditionalism:0 "Traditionalism"
@@ -312,7 +312,7 @@
  law_interventionism_desc:0 "To ensure the stability of our nation, government must curb the worst excesses of private businesses."
 
  # Trade Policy group
- lawgroup_trade_policy:0 "Trade Policy"
+ lawgroup_trade_policy: "Торгова політика"
  lawgroup_trade_policy_desc:0 "Laws governing trade and the exchange of goods across borders."
  
  law_free_trade:0 "Free Trade"
@@ -325,7 +325,7 @@
  law_mercantilism_desc:0 "An export-focused economy with an emphasis on keeping a positive current account and competing with other nations."
 
   # Taxation Group
- lawgroup_taxation:0 "Taxation"
+ lawgroup_taxation: "Оподаткування"
  lawgroup_taxation_desc:0 "How the state raises revenue by taxing its citizens."
  law_consumption_based_taxation:0 "Consumption-Based Taxation"
  law_consumption_based_taxation_desc:0 "A tax system where there are no direct income or per-capita taxes and instead revenue is raised through taxing the consumption of goods."
@@ -339,7 +339,7 @@
  law_graduated_taxation_desc:0 "A tax system that aims to put the burden of taxation primarily on the well-to-do through high Dividends taxes."
   
   # Education System group
- lawgroup_education_system:0 "Education System"
+ lawgroup_education_system: "Освітня модель"
  lawgroup_education_system_desc:0 "For when the children are done with chimney sweeping chores."
   
  law_no_schools:0 "No Schools"
@@ -352,7 +352,7 @@
  law_public_schools_desc:0 "Schooling is the responsibility of the state, and should be standardized and equally accessible to all."
   
   # Health System group
- lawgroup_health_system:0 "Health System"
+ lawgroup_health_system: "Модель охорони здоров'я"
  lawgroup_health_system_desc:1 "Laws about the government's involvement (or lack thereof) in providing healthcare for its citizens."
   
  law_no_health_system:0 "No Health System"
@@ -365,7 +365,7 @@
  law_public_health_insurance_desc:0 "The government provides a publicly funded health insurance program ensuring equal access to care for all."
  
   # Welfare group
- lawgroup_welfare:0 "Welfare"
+ lawgroup_welfare: "Соціяльне забезпечення"
  lawgroup_welfare_desc:0 "Government assistance for the income deprived."
   
  law_no_social_security:0 "No Social Security"
@@ -380,7 +380,7 @@
  law_disability_insurance_desc:0 "It is the state's responsibility to care for those who, through no fault of their own, find themselves unable to work."
   
   # Rights of Women group
- lawgroup_rights_of_women:0 "Rights of Women"
+ lawgroup_rights_of_women: "Права жінок"
  lawgroup_rights_of_women_desc:0 "The legal regulations of the fairer sex."
   
  law_no_womens_rights:0 "Legal Guardianship"
@@ -393,7 +393,7 @@
  law_womens_suffrage_desc:0 "In the adjustment of the new order of things, we women demand an equal voice; we shall accept nothing less."
   
   # Policing
- lawgroup_policing:0 "Policing"
+ lawgroup_policing: "Поліція"
  lawgroup_policing_desc:0 "The priorities of the national police force."
 
  law_no_police:0 "No Police"
@@ -406,7 +406,7 @@
  law_militarized_police_desc:0 "By giving your police force military equipment and military training, their effectiveness at carrying out your will increases."
   
   # Bureaucracy
- lawgroup_bureaucracy:0 "Bureaucracy"
+ lawgroup_bureaucracy: "Бюрократія"
  lawgroup_bureaucracy_desc:0 "How your country is administered."
 
  law_hereditary_bureaucrats:0 "Hereditary Bureaucrats"
@@ -419,7 +419,7 @@
  law_elected_bureaucrats_desc:0 "Local governors are elected by their constitutents, decentralizing power while making citizens easier to manage."
   
   # Colonization
- lawgroup_colonization:0 "Colonization"
+ lawgroup_colonization: "Осадництво"
  lawgroup_colonization_desc:0 "Your stance on establishing colonies to supplant and conquer [concept_decentralized_nation]."
   
  law_no_colonial_affairs:0 "No Colonial Affairs"
@@ -430,7 +430,7 @@
  law_colonial_exploitation_desc:0 "Colonies are established to exploit the area for their natural resources and cheap labor."
   
   # Internal Security
- lawgroup_internal_security:0 "Internal Security"
+ lawgroup_internal_security: "Внутрішня безпека"
  lawgroup_internal_security_desc:0 "Keeping your own affairs in order."
   
  law_no_home_affairs:0 "No Home Affairs"
@@ -443,7 +443,7 @@
  law_guaranteed_liberties_desc:1 "The state's home affairs bureau is solely focused on addressing the grievances of the citizens, and is forbidden from investigating or arresting them without due cause."
   
   # Migration
- lawgroup_migration:0 "Migration"
+ lawgroup_migration: "Міграція"
  lawgroup_migration_desc:0 "Controlling the flow of people."
   
  law_no_migration_controls:0 "No Migration Controls"

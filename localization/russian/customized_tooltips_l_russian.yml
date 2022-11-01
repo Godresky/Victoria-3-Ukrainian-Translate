@@ -149,7 +149,7 @@
  DATA_INSTITUTION_TITLE_TOOLTIP: "[Institution.GetNameNoFormatting] (Рівень [Institution.GetInvestmentLevel])"
  DATA_INSTITUTION_NAME_TOOLTIP:0 "[Institution.GetProvidingLawsDesc] provides:\n[Institution.GetTooltipModifierDesc]\n[Institution.GetTimedModifiersDesc]\n$TOOLTIP_DELIMITER$\n#lore [Institution.GetDesc]#!"
  DATA_INSTITUTION_TYPE_NAME_TOOLTIP:0 "[AddTextIf(Not(InstitutionType.GetModifier.IsEmpty), '#b Effect per Level:#!\n')][InstitutionType.GetModifier.GetDesc][AddTextIf(Not(InstitutionType.GetModifier.IsEmpty), '\n$TOOLTIP_DELIMITER$\n')]#lore [InstitutionType.GetDesc]#!"
- DATA_INSTITUTION_TIMED_MODIFIERS:0 "\n#bold Timed Modifiers:#! \n$MODIFIERS$\n"
+ DATA_INSTITUTION_TIMED_MODIFIERS: "\n#bold Тимчасові змінювачі:#! \n$MODIFIERS$\n"
  DATA_POP_TYPE_NAME_TOOLTIP:0 "[PopType.GetDesc]\n\n$POP_TYPE_STRATA$[SelectLocalization(PopType.IsSlave, 'POP_TYPE_TOOLTIP_SLAVES_AS_LABOR', '')]\n\n$POP_TYPE_IN_PLAYER_COUNTRY$[ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', PopType.GetQualificationsGrowthDesc)]"
  DATA_POP_TYPE_NAME_IN_BUILDING_TOOLTIP:0 "[PopType.GetDesc]\n\n$POP_TYPE_STRATA$[SelectLocalization(PopType.IsSlave, 'POP_TYPE_TOOLTIP_SLAVES_AS_LABOR', '')]\n\n$POP_TYPE_IN_BUILDING$[ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', PopType.GetQualificationsGrowthDesc)]"
  DATA_POP_TYPE_NAME_IN_STATE_TOOLTIP:0 "[PopType.GetDesc]\n\n$POP_TYPE_STRATA$[SelectLocalization(PopType.IsSlave, 'POP_TYPE_TOOLTIP_SLAVES_AS_LABOR', '')]\n\n$POP_TYPE_IN_STATE$[ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', PopType.GetQualificationsGrowthDesc)]"
