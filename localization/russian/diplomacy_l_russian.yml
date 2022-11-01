@@ -85,9 +85,9 @@
  tension_tense: "#N Напруження#!"
  tension_volatile: "#N Сутички#!"
  
- infamy_reputable: "#V Шановані#!"
- infamy_infamous: "#N Ганебні#!"
- infamy_notorious: "#N Горезвісні#!"
+ infamy_reputable: "#V Шанований#!"
+ infamy_infamous: "#N Ганебний#!"
+ infamy_notorious: "#N Горезвісний#!"
  infamy_pariah: "#N Ізгої#!"
  
  subject_type_protectorate: "[concept_protectorate]"

@@ -270,7 +270,7 @@
  TRIGGER_EVENT_DELAY_ONE_DAY:0 "in #v 1#! day"
  TRIGGER_EVENT_DELAY_NUM_DAYS:0 "in #v $NUM_DAYS$#! days"
  TRIGGER_EVENT_DELAY_RANGE_DAYS:0 "in #v $DAYS_MIN$#! to #v $DAYS_MAX$#! days"
- TRIGGER_EVENT:1 "Triggers the Event #variable $EVENT_NAME$#![ConcatIfNeitherEmpty(' ', '$DELAY_DESCRIPTION$')]"
+ TRIGGER_EVENT: "Запустить подію #variable $EVENT_NAME$#![ConcatIfNeitherEmpty(' ', '$DELAY_DESCRIPTION$')]"
  TRIGGER_EVENT_COUNTRY:0 "$COUNTRY_NAME$ gets the Event #variable $EVENT_NAME$#![ConcatIfNeitherEmpty(' ', '$DELAY_DESCRIPTION$')]"
  custom_trigger_event_unspecific:0 "Triggers an Event"
 
