@@ -417,10 +417,10 @@
  concept_leader_possessive:0 "Leader\\'s"
  concept_leader_desc:2 "The [concept_character] who leads an [concept_interest_group] has a set of [Concept('concept_character_trait', '$concept_character_traits$')] that affect it, and a personal [concept_ideology] that is added to the $concept_interest_group$'s $concept_ideologies$ for as long as that $concept_leader$ is in charge."
 
- concept_interest_group_trait:0 "Interest Group Trait"
- concept_interest_group_traits:1 "Interest Group Traits"
- concept_interest_group_trait_short:0 "Trait"
- concept_interest_group_traits_short:0 "Traits"
+ concept_interest_group_trait: "Риса зацікавленої групи"
+ concept_interest_group_traits: "Риси зацікавленої групи"
+ concept_interest_group_trait_short: "Риса"
+ concept_interest_group_traits_short: "Риси"
  concept_interest_group_trait_desc:1 "All [Concept('concept_interest_group','$concept_interest_groups$')] have three $concept_interest_group_traits_short$ that take effect on different levels of [concept_approval] and have a considerable impact on the whole [concept_country].\nA negative $concept_interest_group_trait_short$ will activate if $concept_approval$ drops below $ig_approval_unhappy$ (#v [GetDefine('NPolitics','APPROVAL_THRESHOLD_UNHAPPY')|0=+]#!)\nA positive $concept_interest_group_trait_short$ will activate if $concept_approval$ exceeds $ig_approval_happy$ (#v [GetDefine('NPolitics','APPROVAL_THRESHOLD_HAPPY')|0=+]#!)\nAn additional positive $concept_interest_group_trait_short$ will activate if $concept_approval$ exceeds $ig_approval_loyal$ (#v [GetDefine('NPolitics','APPROVAL_THRESHOLD_LOYAL')|0=+]#!).\n\nThe $concept_interest_group_traits_short$ of [concept_marginalized] $concept_interest_groups$ never activate, while the $concept_interest_group_traits_short$ of [concept_powerful] $concept_interest_groups$ have increased effect."
  
  concept_decay:0 "Decay"
@@ -588,6 +588,7 @@
 
  concept_flotilla: "Флотилія"
  concept_flotillas: "Флотилії"
+ concept_flotillas_gen: "Флотилій"
  concept_flotilla_desc:1 "A naval [concept_unit] in a [Concept('concept_country','$concept_country_possessive$')] military. They are created and maintained by [SelectLocalization(GetPlayer.IsValid,'concept_flotilla_desc_added','Naval Base')]s and are commanded by [Concept('concept_admiral','$concept_admirals$')]."
  concept_flotilla_desc_added:0 "[GetBuildingType('building_naval_base').GetName]"
 
@@ -1193,8 +1194,9 @@
  concept_government_reform_short:0 "Reform"
  concept_government_reform_desc:0 "During a $concept_government_reform$ you may alter the composition of your [concept_government] freely by granting or removing [Concept('concept_interest_group','$concept_interest_groups$')] and/or [Concept('concept_party','$concept_parties$')] from power. $concept_interest_groups$ removed from power during such a $concept_government_reform_short$ will gain [Concept('concept_radical','$concept_radicals$')], unless the $concept_government_reform_short$ is performed shortly after a concluded $concept_election$."
 
- concept_election:0 "Election"
- concept_elections:0 "Elections"
+ concept_election: "Вибори"
+ concept_election_gen: "Виборів"
+ concept_elections: "Вибори"
  concept_election_possessive:0 "Election\\'s"
  concept_election_voting_franchise:0 "Voting Franchise"
  concept_elect:0 "Elect"

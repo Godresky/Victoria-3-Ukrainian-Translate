@@ -1,6 +1,6 @@
 ﻿l_russian:
- PARTY_FULL_NAME:0 "$NAME$ ([concept_party])"
- party_bolsheviks:1 "Bolshevik Party"
+ PARTY_FULL_NAME: "$NAME$ ([concept_party])"
+ party_bolsheviks:0 "Bolshevik Party"
  party_communist:0 "Communist Party"
  party_liberal:0 "Liberal Party"
  party_nazis:0 "Nazi Party"
@@ -10,7 +10,7 @@
  integralist_party:0 "Integralist Party"
  falangist_party:0 "Falangist Party"
  party_fascist:0 "Fascist Party"
- party_conservative:0 "Conservative Party"
+ party_conservative: "Консервативна партія"
  party_tories:0 "Tory Party"
  party_whigs:0 "Whig Party"
  party_radicals:0 "Radical Party"
@@ -20,7 +20,7 @@
  party_free_trade:0 "Free Trade Party"
  party_orleanists:0 "Orleanist Party"
  party_peelites:0 "Peelite Party"
- party_agrarian:0 "Agrarian Party"
+ party_agrarian: "Аграрна партія"
  party_religious:0 "Faith Party"
  party_christian:0 "Christian Party"
  party_catholic:0 "Catholic Party"
@@ -100,7 +100,7 @@
 
 #liberal_party
  party_progressive_party:0 "Progressive Party"
- party_liberal_democrats:0 "Liberal Democrats"
+ party_liberal_democrats: "Ліберальні демократи"
  party_venstre:0 "Venstre"
  party_young_finnish_party:0 "Young Finnish Party"
  party_liberal_union:0 "Liberal Union"

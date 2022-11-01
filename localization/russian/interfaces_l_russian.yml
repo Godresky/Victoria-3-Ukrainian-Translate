@@ -885,11 +885,11 @@
  DEAD_BREAKDOWN_ENTRY_ATTRITION:0 "[Country.GetName] $concept_attrition$: $NUM|-K$"
  DEAD_BREAKDOWN_ENTRY_BATTLE:0 "[Country.GetName] $concept_battle$: $NUM|-K$"
 
- PANEL_MILITARY_NAVY_CURRENT_WARSHIPS:1 "@flotillas! [Country.GetWarships|0v]"
- PANEL_MILITARY_NAVY_CURRENT_WARSHIPS_TOOLTIP:6 "#header Total amount of [Concept('concept_flotilla','$concept_flotillas$')]#!\n$TOOLTIP_DELIMITER$\n[Country.GetName] currently has @flotillas![Country.GetWarships|v] War Ships [Country.GetFlotillasRanking]\n$PANEL_MILITARY_NAVY_POWER_PROJECTION$\n\n[Country.GetWarshipsBreakdown]"
+ PANEL_MILITARY_NAVY_CURRENT_WARSHIPS: "@flotillas! [Country.GetWarships|0v]"
+ PANEL_MILITARY_NAVY_CURRENT_WARSHIPS_TOOLTIP: "#header Загальна кількість [Concept('concept_flotilla','$concept_flotillas_gen$')]#!: [Country.GetWarships|0v]\n$TOOLTIP_DELIMITER$\n[Country.GetName] наразі має @flotillas![Country.GetWarships|v] Військових човнів [Country.GetFlotillasRanking]\n$PANEL_MILITARY_NAVY_POWER_PROJECTION$\n\n[Country.GetWarshipsBreakdown]"
  PANEL_MILITARY_NAVY_CURRENT_WARSHIPS_TOOLTIP_LEFT:0 "#header Total amount of [Concept('concept_flotilla','$concept_flotillas$')]#!\n[WarPanel.GetLeftLeader.GetName] currently has @flotillas![WarPanel.GetLeftLeader.GetWarships|v] War Ships\n\n[WarPanel.GetLeftLeader.GetWarshipsBreakdown]"
  PANEL_MILITARY_NAVY_CURRENT_WARSHIPS_TOOLTIP_RIGHT:0 "#header Total amount of [Concept('concept_flotilla','$concept_flotillas$')]#!\n[WarPanel.GetRightLeader.GetName] currently has @flotillas![WarPanel.GetRightLeader.GetWarships|v] War Ships\n\n[WarPanel.GetRightLeader.GetWarshipsBreakdown]"
- PANEL_MILITARY_NAVY_FIELDED_WARSHIPS:1 "[Country.GetWarshipsFielded|0v]"#header Total amount of [Concept('concept_flotilla','$concept_flotillas$')]#!\n[Country.GetName] currently has @flotillas![Country.GetWarships|v] War Ships\n\n[Country.GetWarshipsBreakdown]""
+ PANEL_MILITARY_NAVY_FIELDED_WARSHIPS: "[Country.GetWarshipsFielded|0v]"#header Total amount of [Concept('concept_flotilla','$concept_flotillas$')]#!\n[Country.GetName] currently has @flotillas![Country.GetWarships|v] War Ships\n\n[Country.GetWarshipsBreakdown]""
  PANEL_MILITARY_NAVY_FIELDED_WARSHIPS_TOOLTIP:2 "#header Assigned and Fielded [Concept('concept_flotilla','$concept_flotillas$')]#!\n[Country.GetWarshipsFieldedBreakdown]"
  PANEL_MILITARY_NAVY_WARSHIPS_IN_RESERVE:0 "[Country.GetWarshipsInReserve|0v]"
  PANEL_MILITARY_NAVY_WARSHIPS_IN_RESERVE_TOOLTIP:1 "#header Unassigned @flotillas! Warships#!\n[Country.GetWarshipsInReserveBreakdown]"
@@ -1243,7 +1243,7 @@
  REFORM_GOVERNMENT_BOLD:0 "#BOLD $REFORM_GOVERNMENT$#!"
  IN_OPPOSITION_TITLE: "#title Опозиція#!"
  IN_GOVERNMENT_TITLE: "#title Уряд#!"
- ELECTION_TITLE:0 "#title Elections#!"
+ ELECTION_TITLE: "#title Вибори#!"
  MARGINAL_TITLE:0 "#title [concept_marginalized] [Concept('concept_interest_group', '$concept_interest_groups$')]#!"
  MARGINAL_TITLE_ACCORDION:0 "[concept_marginalized] [Concept('concept_interest_group', '$concept_interest_groups$')] (#v [GetDataModelSize( AccessPlayer.AccessMarginalInterestGroups)]#!)"
  LAWS_TITLE:0 "#title Enacted [Concept('concept_law', '$concept_laws$')]#!"
@@ -1270,8 +1270,8 @@
  POP_VOTING_POWER_POPULATION:0 "x$NUM|v0$ potentially eligible voters"
  POP_VOTING_POWER:0 "Number of [concept_votes]: #v $VAL|+D0$#!\n$BREAKDOWN$"
 
- NEXT_ELECTION_DATE:0 "Next [concept_election]: [AccessPlayer.GetNextElectionDate|v]"
- PREVIOUS_ELECTION_RESULTS:0 "Previous [concept_election] results"
+ NEXT_ELECTION_DATE: "Наступні [concept_election]: [AccessPlayer.GetNextElectionDate|v]"
+ PREVIOUS_ELECTION_RESULTS: "Результати минулих [Concept('concept_election', '$concept_election_gen$')]:"
  PARTY_ELECTION_TOOLTIP:0 "Candidates from [Party.GetNameNoFormatting|v] received [Party.GetCurrentVotingPower|Kv] votes last [concept_election] ([Party.GetCurrentVotingPowerShare|%1v])"
  ELECTION_ENTRY:0 "[Party.GetName]\n[concept_votes]: $VOTING_POWER|Kv$ ($VOTING_POWER_SHARE|%1v$)"
  ELECTION_POLL_ENTRY:0 "$ELECTION_ENTRY$\n[concept_momentum]: #tooltippable #tooltip:[Party.GetTooltipTag],MOMENTUM_BREAKDOWN [Party.GetMomentum|%=+0]#!#!\n\n"
@@ -2466,7 +2466,7 @@
  POL_STR_FROM_WEALTH:0 "From [concept_wealth]: #variable $VAL|+=D$#!\n$TAB$Wealth #tooltippable #tooltip:[POP.GetTooltipTag],TOOLTIP_WEALTH #v $WEALTH|0$#!#!#!: #bold $VALPERPOP|+=$#! per Politically Active Pop"
  POL_STR_FROM_WEALTH_AVERAGE:0 "From [concept_wealth]: #variable $VAL|+=K$#!\n$TAB$Average Wealth #variable $WEALTH|1$#!: #bold $VALPERPOP|+=2$#! per Politically Active Pop"
 
- NO_ACTIVE_TRAITS:1 "No [Concept('concept_interest_group', '$concept_interest_groups$')] have any active [Concept('concept_interest_group_trait', '$concept_interest_group_traits$')]"
+ NO_ACTIVE_TRAITS: "Немає [Concept('concept_interest_group', '$concept_interest_groups_gen$')], що дають активні [Concept('concept_interest_group_trait', '$concept_interest_group_traits$')]"
  NO_ACTIVE_TRAITS_EXPLAIN:2 "#header [concept_interest_group] Traits#!\nEach [concept_interest_group] has a number of [Concept('concept_interest_group_trait', '$concept_interest_group_traits$')] that will be activated depending on the [concept_interest_group]'s [concept_approval]. These Traits have either negative or positive effects on your Country."
 
  PRODUCTION_METHOD_DISABLED_BY_GAME_RULE:0 "$concept_production_method$ disabled by a game rule"
@@ -5232,10 +5232,10 @@
  IG_TITLE:0 "#title IG#!"
  POP_TYPE_INFORMATION:0 "[Pop.GetPopType.GetName] in [Pop.GetState.GetOwner.GetName]"
 
- GUIDE_ME:0 "Guide Me"
+ GUIDE_ME: "Поясніть мені"
   # TUTORIAL_CANNOT_START: "Cannot start lesson while another tutorial lesson is active"
- TELL_ME_HOW:0 "Tell Me How"
- TELL_ME_WHY:0 "Tell Me Why"
+ TELL_ME_HOW: "Розкажіть мені як?"
+ TELL_ME_WHY: "Розкажіть мені чому?"
 
  RELATIONS_TITLE:0 "#title Relation#!"
  TOWARDS_THEM_TITLE:1 "#title Us @arrow_right! Them#!"

@@ -131,7 +131,7 @@
  DATA_GAME_CONCEPT_TYPE_NAME_TOOLTIP:0 "[GameConceptType.GetDescNoFormatting]"
  DATA_INTEREST_GROUP_NAME_TOOLTIP:4 "[concept_clout]: #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_CLOUT_BREAKDOWN,IGCloutTooltip [InterestGroup.GetClout|%1]#!#![InterestGroup.GetInfluenceDesc]\n[AddLocalizationIf(InterestGroup.HasParty, 'PARTY_DESC')][Concept('concept_ideology', '$concept_ideologies$')]: [InterestGroup.GetIdeologyDesc]\n[concept_leader]: [InterestGroup.GetLeader.GetFullName] ([InterestGroup.GetLeaderIdeologyDesc])\n\n[concept_approval]: #tooltippable #tooltip:IG_APPROVAL_BREAKDOWN [InterestGroup.GetApprovalRating] #bold ([InterestGroup.GetApprovalValue|+=])#!#!#!\n[Concept('concept_interest_group_trait', '$concept_interest_group_traits$')]:\n[InterestGroup.GetTraitsDesc]\n\nPopulation: [InterestGroup.GetPopulation|Kv]\n[InterestGroup.GetSupportingPopTypesDesc][ConcatIfNeitherEmpty('\n\n',InterestGroup.GetPoliticalMovementDesc)]"
  PARTY_DESC:0 "[concept_party]: [InterestGroup.GetParty.GetName]\n"
- DATA_PARTY_NAME_LEADER_TOOLTIP:0 "Led by [Party.GetLeader.GetLeader.GetFullName] from [Party.GetLeader.GetName].\n[Party.GetMembersBreakdown]"
+ DATA_PARTY_NAME_LEADER_TOOLTIP: "На чолі з [Party.GetLeader.GetLeader.GetFullName] ([Party.GetLeader.GetName]).\n[Party.GetMembersBreakdown]"
  DATA_PARTY_NAME_TOOLTIP:2 "[SelectLocalization( Party.GetLeader.IsValid, 'DATA_PARTY_NAME_LEADER_TOOLTIP', 'concept_party_desc' )]"
  DATA_MARKET_NAME_TOOLTIP:1 "[concept_market_owner]: [Market.GetOwner.GetName]\n[concept_market_capital]: [Market.GetMarketCapital.GetName]\nBalance: #tooltippable #tooltip:MARKET_BALANCE_BREAKDOWN #bold @money![Market.GetBalance|+=D]#!#!#!\n[concept_gdp] Contribution: #tooltippable #tooltip:MARKET_GDP_PERCENTAGE_TOOLTIP [Market.GetGDPContributionPercentage( GetPlayer )|%1]#!#! \n[concept_gdp] Value: @money!#variable [Market.GetMarketGDPValue|D]#!"
  DATA_DECREE_TYPE_NAME_TOOLTIP:0 "[DecreeType.GetTooltip(GetPlayer.Self)]"
@@ -201,5 +201,5 @@
  DATA_GOODS_STATE_PRICE_BREAKDOWN:0 "[Goods.GetStatePriceDesc]"
  DATA_GOODS_MARKET_PRICE_BREAKDOWN:0 "[Goods.GetMarketPriceDesc]"
 
- DATA_PARTY_MEMBERS:0 "\n#b Members:#!\n$MEMBERS$"
- PARTY_NAME:0 "#tooltippable_name #tooltip:$TAG$,DATA_PARTY_NAME_TOOLTIP,PartyTooltip $NAME$#!#!"
+ DATA_PARTY_MEMBERS: "\n#b Учасники:#!\n$MEMBERS$"
+ PARTY_NAME: "#tooltippable_name #tooltip:$TAG$,DATA_PARTY_NAME_TOOLTIP,PartyTooltip $NAME$#!#!"

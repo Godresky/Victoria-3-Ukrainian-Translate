@@ -12,8 +12,8 @@
  IG_TRAIT_EFFECTS_NO_EFFECT:0 "#italic No effect#!"
 
  ACTIVE_IG_GROUP_TRAITS: "#title Риси активної групи населення#!"
- ELECTION:0 "Election"
- CIVIL_WARS:0 "Civil Wars"
+ ELECTION: "Вибори"
+ CIVIL_WARS: "Громадянські війни"
  OPPOSITION: "Опозиція"
  RESET: "Скинути"
  GOVERNMENT_NEW_RULER:0 "New Ruler!"
