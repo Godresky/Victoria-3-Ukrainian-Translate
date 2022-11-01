@@ -545,7 +545,7 @@
  industrialists_cars_unrestricted:0 "Approve of cars being unrestricted."
  automobile_regulations:0 "Automobile Safety Regulations"
 
- MULTIPLAYER_GUI_CLICK_TO_SELECT: "Нажміть на країну, щоб вибрати її."
+ MULTIPLAYER_GUI_CLICK_TO_SELECT: "Нажміть на державу, щоб вибрати її."
 
  notification_haiti_stops_paying_france_name:0 "Haiti Stops Payments"
  notification_haiti_stops_paying_france_desc:0 "Haiti has refused to make any further loan payments to France."

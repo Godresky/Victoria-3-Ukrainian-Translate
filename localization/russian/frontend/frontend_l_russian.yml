@@ -37,7 +37,7 @@
  FRONTEND_LEAVE_GAME_TEXT:0 "If you leave, the Multiplayer Game will continue without you"
  FRONTEND_AUTO_SAVE: "Зберегти гру як #high [GetAutosaveName]#!"
  FRONTEND_AUTO_SAVE_IRONMAN:0 "The game will be saved as #high [GetAutosaveName]#!"
- FRONTEND_SWITCH_COUNTRY: "Змінити країну"
+ FRONTEND_SWITCH_COUNTRY: "Змінити державу"
  FRONTEND_LOBBY_UNAVAILABLE_IRONMAN:0 "@warning! #X Multiplayer is unavailable in Ironman#!"
  FRONTEND_LOBBY_UNAVAILABLE_LOGIN:0 "@warning! #X Log in to your Paradox Account to play Multiplayer#!"
  FRONTEND_LOBBY_UNAVAILABLE_USERNAME:0 "@warning! #X You need to set a Username in order to play Multiplayer. You can do that in the Account Window.#!"

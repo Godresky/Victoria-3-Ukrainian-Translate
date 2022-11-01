@@ -3,7 +3,9 @@
 #_dat - Давальний
 #_acc - Знахідний
 #_ins - Орудний
-#_loc - Місцевий 
+#_loc - Місцевий
+
+#_many - Множина 
  concept_economy_health: "Здоров'я економіки"
  concept_economy_health_healthy: "Здорова економіка"
  concept_economy_health_healthy_short: "Здорова"
@@ -132,6 +134,7 @@
  concept_expected_sol_desc:0 "$concept_expected_sol$ is the lowest [concept_sol] that a [concept_pop] is willing to tolerate. This number is based on whether the $concept_pop$ is [concept_lower_strata], [concept_middle_strata], or [concept_upper_strata] and adjusted by [concept_literacy], and can be modified by certain [Concept('concept_technology', '$concept_technologies$')]. If a $concept_pop$ has a lower $concept_sol$ than the $concept_expected_sol_short$ they will gradually become more [concept_radical]. $concept_pops$ with a $concept_sol$ above the $concept_expected_sol_short$ will still become more $concept_radical$ each time their $concept_sol$ is reduced."
 
  concept_pop_growth: "Ріст населення"
+ concept_pop_growth_gen: "Росту населення"
  concept_pop_growth_birthrate_and_mortality:0 "Birthrate and Mortality"
  concept_pop_growth_birthrate:0 "Birthrate"
  concept_pop_growth_mortality:0 "Mortality"
@@ -393,7 +396,9 @@
  concept_economy_of_scale_desc_ingame_added:0 "\n\nYour current national level cap for $concept_economy_of_scale$ effects is [GetPlayer.GetModifier.GetValueWithBreakdownFor('building_economy_of_scale_level_cap_add')]."
 
  concept_interest_group: "Зацікавлена група"
+ concept_interest_group_gen: "Зацікавленої групи"
  concept_interest_groups: "Зацікавлені групи"
+ concept_interest_groups_gen: "Зацікавлених груп"
  concept_interest_group_possessive:1 "Interest Group\\'s"
  concept_interest_group_desc:3 "A political faction within your [concept_country] that share a common interest. They are supported by [Concept('concept_pop', '$concept_pops$')] in relation to their [Concept('concept_interest_group_attraction','$concept_interest_group_attraction_short$')] to them, and the [concept_clout] they enjoy is based directly on the supporting $concept_pops$' [concept_political_strength]. $concept_interest_groups$ have number of [Concept('concept_ideology', '$concept_ideologies$')], causing them to endorse or oppose different [Concept('concept_law', '$concept_laws$')].\n\nThey also have three [Concept('concept_interest_group_trait', '$concept_interest_group_traits$')] that are activated on different [concept_approval] levels. Their [Concept('concept_leader','$concept_leader_possessive$')] personal $concept_ideology$ also rubs off on the $concept_interest_group$."
 
@@ -645,10 +650,12 @@
  concept_loyal:0 "Loyal"
  concept_loyalty:0 "Loyalty"
  concept_loyalists: "Прихильники"
+ concept_loyalists_gen: "Прихильників"
  concept_loyalist_desc:2 "$concept_loyalist$ [Concept('concept_individual','$concept_individuals$')] within a [concept_pop] are pleased with the state of their [concept_country] and are willing to defend it from dissident elements, both verbally and with violence if necessary. The [concept_approval] of [Concept('concept_interest_group','$concept_interest_groups$')] supported by $concept_loyalist$ $concept_pops$ is improved.\n\n$concept_loyalists$ are created whenever a $concept_pop$'s [concept_sol] increases and due to decisions made during special events.\n\nThe opposite of a $concept_loyalist$ is a [concept_radical]. Whenever a $concept_radical$ would be created in a $concept_pop$ that already has $concept_loyalists$, one $concept_loyalist$ is removed instead."
 
  concept_radical: "Радикал"
  concept_radicals: "Радикали"
+ concept_radicals_gen: "Радикалів"
  concept_radicalism: "Радикалізм"
  concept_radicalize:0 "Radicalize"
  concept_radicalized:0 "Radicalized"
@@ -868,6 +875,7 @@
  concept_turmoil_desc:2 "[Concept('concept_state', '$concept_states$')] and [Concept('concept_culture', '$concept_cultures$')] with $concept_turmoil$ contain [Concept('concept_radical', '$concept_radicals$')] that are unhappy with their current circumstances. The amount of $concept_turmoil$ is equal to the fraction of the $concept_state$'s or $concept_culture$'s [concept_workforce] that are $concept_radical$.\n\n$concept_turmoil$ can inflict a number of negative local status effects on a $concept_state$ if it gets high enough. [concept_cultural_turmoil] can impact a whole [concept_country] in very disruptive ways."
 
  concept_unemployed: "Безробітний"
+ concept_unemployed_many: "Безробітні"
  concept_unemployment: "Безробіття"
  concept_unemployed_desc:2 "An $concept_unemployed$ [concept_pop] does not work in any of its [Concept('concept_state','$concept_state_possessive$')] [Concept('concept_building','$concept_buildings$')] and therefore does not collect a [concept_building_wage]. They are likely to take the next best job that comes along, and will likely [Concept('concept_migration','$concept_emigrate$')] if nothing comes along."
 

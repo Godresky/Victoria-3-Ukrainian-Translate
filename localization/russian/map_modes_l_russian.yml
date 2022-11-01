@@ -1,5 +1,5 @@
 ﻿l_russian:
- mm_default: "Країни"
+ mm_default: "Держави"
  mm_ongoing_diplo_play:0 "Involved in Conflict"
  mm_strategic_region: "Стратегічні регіони"
  mm_state: "Регіони"
@@ -18,8 +18,8 @@
  mm_goods_production:0 "Goods Production"
  mm_goods_consumption:0 "Goods Consumption"
  mm_goods_potentials:0 "Goods Potentials"
- mm_country_attitude: "Ставлення країн"
- mm_country_relations: "Відносини між країнами"
+ mm_country_attitude: "Ставлення держав"
+ mm_country_relations: "Відносини між державами"
  mm_technology: "Технології"
  mm_trade: "Ринки"
  mm_province_template_terrain:0 "Province Terrain"
