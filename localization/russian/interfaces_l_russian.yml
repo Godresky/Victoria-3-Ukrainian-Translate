@@ -4709,9 +4709,9 @@
  no_power:0 "No Power"
 
  RANK_HEADER:0 "#header Power Rank#!"
- RANK_TOOLTIP_NEXT:1 "If the $concept_prestige$ of [COUNTRY.GetName] becomes at least [COUNTRY.GetPrestigeForNextRank|v], their $concept_rank$ will increase to [COUNTRY.GetNextRank|v]"
- RANK_TOOLTIP_PREV:1 "If the $concept_prestige$ of [COUNTRY.GetName] is reduced below [COUNTRY.GetPrestigeToMaintainRank|v] for an extended time, their $concept_rank$ will decrease to [COUNTRY.GetPreviousRank|v]"
- RANK_TOOLTIP_MAX_SUBJECT:1 "@information! [COUNTRY.GetName] cannot achieve a higher $concept_rank$ than $HIGHEST_RANK|v$ due to being the [concept_subject] of [Country.GetOverlord.GetName], limiting them to a maximum score position of #v ##$HIGHEST_POSITION$#! in the world"
+ RANK_TOOLTIP_NEXT: "Якщо $concept_prestige$ [Concept('concept_country','$concept_country_gen$')] [COUNTRY.GetName] буде принаймні [COUNTRY.GetPrestigeForNextRank|v], то $concept_rank$ стане [COUNTRY.GetNextRank|v]"
+ RANK_TOOLTIP_PREV: "Якщо $concept_prestige$ [Concept('concept_country','$concept_country_gen$')] [COUNTRY.GetName] буде менше [COUNTRY.GetPrestigeToMaintainRank|v] протягом тривалого часу, то  $concept_rank$ стане [COUNTRY.GetPreviousRank|v]"
+ RANK_TOOLTIP_MAX_SUBJECT: "@information! [COUNTRY.GetName] не може досягти вищого $concept_rank_gen$ ніж $HIGHEST_RANK|v$ через те, що [concept_subject] [Concept('concept_country','$concept_country_gen$')] [Country.GetOverlord.GetName], може мати позицію з максимальним балом #v ##$HIGHEST_POSITION$#! у світі"
  RANK_TOOLTIP_MAX_COUNTRY_TYPE:1 "@information! [COUNTRY.GetName] cannot achieve a higher $concept_rank$ than $HIGHEST_RANK|v$ due to their $COUNTRY_TYPE|v$ status, limiting them to a maximum score position of #v ##$HIGHEST_POSITION$#! in the world"
 
  COUNTRY_RANK_TOOLTIP: "#header [concept_rank]#!\n$TOOLTIP_DELIMITER$\n[COUNTRY.GetName] має $concept_rank$ #variable [COUNTRY.GetRank]#! із загальною позицією #variable ##[COUNTRY.GetCountryScorePositionDesc]#! у світі.\n\nПоточний [concept_prestige]: #tooltippable #tooltip:[COUNTRY.GetTooltipTag],COUNTRY_PRESTIGE_BREAKDOWN [COUNTRY.GetPrestige|v]#!#!"
@@ -6332,8 +6332,8 @@
  RECRUIT_ADMIRAL_BUTTON:0 "Recruit Admiral"
 
  LOAD_GAME_VERSION: "Версія: [SaveGameItem.GetVersionName]"
- LOAD_GAME_DIFFERENT_VERSION:1 "@warning! #X Different version#!"
- LOAD_GAME_DIFFERENT_VERSION_TT:1 "This save was created with a different version of #y Victoria 3#!"
+ LOAD_GAME_DIFFERENT_VERSION: "@warning! #X Інша версія гри#!"
+ LOAD_GAME_DIFFERENT_VERSION_TT: "Це збереження було створено у іншій версії гри #y Вікторії 3#!"
  LOAD_MISSING_ITEMS_TT:1 "[SelectLocalization( SaveGameItem.HasMissingDLCs, 'MISSING_DLC', '' )]\n[SelectLocalization( SaveGameItem.HasMissingMods, 'MISSING_MODS', '' )]\n[SelectLocalization( SaveGameItem.IsDifferentVersion, 'LOAD_GAME_DIFFERENT_VERSION_TT', '' )]"
  LOAD_GAME_DIFFERENT_VERSION_CONFIRM:0 "$LOAD_GAME_DIFFERENT_VERSION_TT$\nAre you sure you want to load this game?"
  LOAD_INGAME_BUTTON_DISABLED_NOSAVES:0 "You have no saved games"

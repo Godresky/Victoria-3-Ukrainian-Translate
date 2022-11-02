@@ -791,6 +791,7 @@
  concept_morale_desc:1 "A [Concept('concept_unit','$concept_unit_possessive$')] $concept_morale$ measures how much of its remaining [concept_manpower] is ready for [concept_battle]. As a result of $concept_units$ taking and inflicting [concept_casualties] on each other in $concept_battle$, some of the remaining $concept_manpower$ will become $concept_morale_demoralized$ for the remainder of the $concept_battle$ and unable to take offensive action. As all $concept_units$ reach a critical threshold of low $concept_morale$ the [concept_commander] will retreat, leaving the other side victorious.\n\nAfter a $concept_battle$, $concept_units$ will regain their $concept_morale$ at a steady rate up to their $concept_commander$'s [concept_supply] rating."
 
  concept_rank: "Чин"
+ concept_rank_gen: "Чину"
  concept_ranks: "Чини"
  concept_rank_desc:3 "A [Concept('concept_country','$concept_country_possessive$')] $concept_rank$ is determined by measuring its [concept_prestige] relative to other $concept_countries$ worldwide. It determines what sorts of international activities you are permitted to engage in, what your people and the world expects of you, and where you stand in the global pecking order.[AddLocalizationIf( GetPlayer.IsValid, 'concept_rank_ingame_added' )]"
  concept_rank_ingame_added:1 "\n\nYour current $concept_rank$ is [GetPlayer.GetRank], which gives you the following benefits:\n[GetPlayer.GetRankModifier.GetDesc]"
