@@ -16,7 +16,7 @@
  CIVIL_WARS: "Громадянські війни"
  OPPOSITION: "Опозиція"
  RESET: "Скинути"
- GOVERNMENT_NEW_RULER:0 "New Ruler!"
+ GOVERNMENT_NEW_RULER: "Новий правитель!"
  IG_CLOUT:0 "#title [concept_clout]#!"
  IG_POP:1 "#title [Concept('concept_pop','$concept_population$')]#!"
  
