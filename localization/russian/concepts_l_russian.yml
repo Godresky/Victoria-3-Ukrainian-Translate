@@ -365,22 +365,22 @@
  concept_gold_reserves: "Золотий запас"
  concept_gold_reserves_desc:1 "A [Concept('concept_country','$concept_country_possessive$')] weekly budget surplus is accumulated in its $concept_gold_reserves$. If the budget balance becomes negative, any [concept_money] in the $concept_gold_reserves$ will be depleted first before the $concept_country$ starts taking [concept_loans]. The $concept_gold_reserves$ can only accumulate up to a fraction of your [concept_gdp] before diminishing returns set in. Stockpiling gold will eventually lead to depleting your economic engine."
 
- concept_cash_reserves:0 "Cash Reserves"
+ concept_cash_reserves: "Грошові резерви"
  concept_cash_reserves_desc:1 "The assets of a [concept_building] is stored in its $concept_cash_reserves$. If the $concept_building$ runs a positive weekly [concept_building_balance], some of the [concept_money] is deposited into the $concept_cash_reserves$ while the rest is paid out to [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_shares$')] as [concept_dividends].\n\n$concept_cash_reserves$ are considered to be owned by the $concept_pops$ with $concept_ownership_shares$, who will be angry if their $concept_cash_reserves$ are destroyed due to downsizing or [concept_bankruptcy]. The sum of all $concept_cash_reserves$ in your [concept_country] determines your [concept_credit]."
 
- concept_obsession:0 "Obsession"
- concept_obsessed:0 "Obsessed"
+ concept_obsession: "Одержимість"
+ concept_obsessed: "Одержимий"
  concept_obsession_desc:1 "A [concept_culture] can be $concept_obsessed$ with specific [Concept('concept_good','$concept_goods$')]. [Concept('concept_pop', '$concept_pops$')] of that $concept_culture$ will spend significantly more on $concept_goods$ they are $concept_obsessed$ with compared to other $concept_goods$ in the same [concept_pop_needs] category."
 
- concept_taboo:0 "Taboo"
+ concept_taboo: "Табу"
  concept_taboo_desc:1 "A [concept_religion] can be have a $concept_taboo$ against specific [Concept('concept_good','$concept_goods$')]. [Concept('concept_pop', '$concept_pops$')] of that $concept_religion$ will spend significantly less on $concept_goods$ they consider $concept_taboo$ compared to other $concept_goods$ in the same [concept_pop_needs] category."
 
  concept_goods_substitution:0 "Goods Substitution"
  concept_goods_substitutes_short:0 "Substitutes"
  concept_goods_substitution_desc:2 "[Concept('concept_good','$concept_goods$')] that are part of the same [concept_pop_needs] category are mutually substitutable to [Concept('concept_pop','$concept_pops$')] based on availability. For example, the Basic Food group contains both Grain and Meat, and $concept_pops$ will consume more Grain and less Meat, increasing their Meat consumption (and thus reducing Grain consumption) if Meat becomes more available in the market at a later point. In some cases, a Good may be substituted entirely if there are no [concept_sell_orders] for that Good in the [concept_market].\n\nHow much of a $concept_good$ a $concept_pop$ will buy compared to other $concept_goods$ in the same category will change substantially if the $concept_good$ is an [concept_obsession] of their [concept_culture] or a [concept_taboo] in their [concept_religion]. $concept_goods$ that have a higher [concept_base_price] count more towards fulfilling a $concept_pop$'s $concept_pop_needs$ within a particular $concept_pop_needs$ category, so a single unit of Groceries is equivalent to several units of Grain."
 
- concept_market_price:0 "Market Price"
- concept_market_prices:0 "Market Prices"
+ concept_market_price: "Ринкова ціна"
+ concept_market_prices: "Ринкові ціни"
  concept_market_price_desc:1 "The price of a [concept_good] in the [concept_market]. It is based on [concept_buy_orders] and [concept_sell_orders], and affect the [concept_local_price] of [Concept('concept_good','$concept_goods$')] in all participating [Concept('concept_state','$concept_states$')] depending on their [concept_market_access]."
  
  concept_local_price:0 "Local Price"
@@ -413,8 +413,8 @@
  concept_politicians:1 "Politicians"
  concept_politician_desc:2 "A [concept_character_role] for those [Concept('concept_character','$concept_characters$')] whose influence is political rather than military. They can act as [concept_ruler], [concept_heir], or [concept_interest_group] [concept_leader]."
 
- concept_leader:0 "Leader"
- concept_leaders:0 "Leaders"
+ concept_leader: "Провідник"
+ concept_leaders: "Провідники"
  concept_leader_possessive:0 "Leader\\'s"
  concept_leader_desc:2 "The [concept_character] who leads an [concept_interest_group] has a set of [Concept('concept_character_trait', '$concept_character_traits$')] that affect it, and a personal [concept_ideology] that is added to the $concept_interest_group$'s $concept_ideologies$ for as long as that $concept_leader$ is in charge."
 
@@ -1110,12 +1110,12 @@
  concept_primary_cultures_desc:4 "The [concept_culture] or $concept_cultures$ a [Concept('concept_country','$concept_country_nation_state$')] is primarily associated with. If a $concept_country$ [Concept('concept_nation_formation','forms a different')] $concept_country$ its $concept_primary_cultures$ may change, but will otherwise remain the same.[AddLocalizationIf(GetPlayer.IsValid,'concept_primary_cultures_ingame_added')]"
  concept_primary_cultures_ingame_added:1 "\n\nThe $concept_primary_cultures$ in [GetPlayer.GetName] are [GetPlayer.GetPrimaryCulturesDesc]."
 
- concept_cultural_trait:0 "Cultural Trait"
- concept_cultural_traits:1 "Cultural Traits"
+ concept_cultural_trait: "Риса культури"
+ concept_cultural_traits: "Риси культури"
  concept_cultural_trait_desc:2 "Aspects of a [concept_culture] such as its dominant language and from which part of the world it originates. The similarity between the $concept_cultural_traits$ of a [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_primary_cultures','$concept_primary_culture$')] and the $concept_culture$ of a [concept_pop], combined with the $concept_country$'s current [GetLawType('law_national_supremacy').GetGroup.GetName] [concept_law], determines whether the $concept_pop$ is [Concept('concept_discrimination','$concept_discriminated_against$')] or not."
 
- concept_cultural_heritage_trait:0 "Heritage Cultural Trait"
- concept_cultural_heritage_traits:0 "Heritage Cultural Traits"
+ concept_cultural_heritage_trait: "Культурна спадщина"
+ concept_cultural_heritage_traits: "Культурні спадщини"
  concept_cultural_heritage_trait_desc:2 "A type of [concept_cultural_trait] that specifies the general region of the world where the [concept_culture] originated. Certain [SelectLocalization(GetPlayer.IsValid,'concept_accepted_culture_desc_added','Citizenship')] [Concept('concept_law','$concept_laws$')] consider $concept_cultural_heritage_traits$ to be more important than other $concept_cultural_traits$ when determining whether a [concept_pop] should be [Concept('concept_discrimination','$concept_discriminated_against$')] or not."
  concept_cultural_heritage_trait_desc_added:0 "[GetLawType('law_national_supremacy').GetGroup.GetName]"
 
