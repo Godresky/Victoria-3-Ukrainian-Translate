@@ -1,47 +1,47 @@
 ﻿l_russian:
- DECISION_TOOLTIP_FORMAT:1 "#header $NAME$#!\n$TOOLTIP_DELIMITER$\n$TRIGGER_SUMMARY$\n\nWhen taken:\n$EFFECT_SUMMARY$"
+ DECISION_TOOLTIP_FORMAT: "#header $NAME$#!\n$TOOLTIP_DELIMITER$\n$TRIGGER_SUMMARY$\n\nПісля ожвавлювання:\n$EFFECT_SUMMARY$"
 
- dummy_decision:0 "Dummy decision"
- dummy_decision_desc:0 "J'adore les boulettes chinoises"
- dummy_decision_tooltip:0 "This tooltip explains things, such as why it makes sense that France (pardon: any great power with french as primary culture) can annex China.\nIn theory this is 100% accurate in at least one alternate timeline."
+ dummy_decision: "Підставне рішення"
+ dummy_decision_desc: "Обожнюю китайські булети"
+ dummy_decision_tooltip: "Ця підказка пояснює речі, наприклад, чому має сенс, що Франція може анексувати Китай.\nТеоретично це 100% можливо принаймні в одній з альтернативних часових шкал."
 
- grand_exhibition_decision:0 "Hold a Grand Exhibition"
- grand_exhibition_decision_desc:0 "Hold a Grand Exhibition to show all the world your wonders. The more technologies you have to show, the more successful the exhibition will be."
- grand_exhibition_decision_custom_tooltip:0 "Must have enough to show off."
-
-
- revive_olympic_games_decision:0 "Revive the Olympic Games"
- revive_olympic_games_decision_desc:0 "Revive the ancient Olympic games for a new era."
-
- ban_opium:0 "Ban the Opium Trade"
- ban_opium_desc:0 "The ongoing opium crisis that ravages our nation must be stopped. The government must levy a total ban on the opium trade, restricting both imports and domestic production."
- remove_opium_ban:0 "Remove the Ban on Opium"
- remove_opium_ban_desc:0 "It may be pertinent to remove the ban on opium should the diplomatic or economic situation warrant it."
-
- establish_film_industry:0 "Establish Film Industry"
- establish_film_industry_desc:0 "The new film technology has opened a whole new possible industry if we want to support it."
- gdp_higher_than_film_check:0 "GDP higher than 5 Million"
- custom_loc_hollywood:0 "Hollywood"
- custom_loc_film_industry_name_default:0 "Film Industry"
+ grand_exhibition_decision: "Грандіозна виставка"
+ grand_exhibition_decision_desc: "Влаштуйте грандіозну виставку, щоб показати всьому світу свої чудеса. Чим більше технологій вам доведеться показати, тим успішнішою буде виставка."
+ grand_exhibition_decision_custom_tooltip: "Повинно бути достатньо, щоб похизуватися."
 
 
- lowlands_land_reclamation:0 "Lowlands Land Reclamation"
- lowlands_land_reclamation_desc:0 "Through a combination of techniques, it is possible to drain certain areas of the lowlands, turning the sea into workable land."
- lowlands_land_reclamation_custom_tooltip:0 "Lowlands land reclamation will begin. "
- notification_lowlands_land_reclamation_notification_desc:0 "Lowlands land reclamation completed"
- notification_lowlands_land_reclamation_notification_tooltip:0 "You have gained arable land."
- notification_lowlands_land_reclamation_notification_name:0 "Lowlands Land Reclamation"
- lowlands_land_reclamation_requirement_tooltip:0 "Owns Holland, Gelre and Friesland"
+ revive_olympic_games_decision: "Відродити Олімпійські ігри"
+ revive_olympic_games_decision_desc: "Відродіть стародавні Олімпійські ігри для нової ери."
 
- niger_river_expedition:0 "Niger River Expedition"
- niger_river_expedition_desc:0 "Launch an expedition to plot the Niger River."
+ ban_opium: "Заборонити торгівлю опіумом"
+ ban_opium_desc: "Триваюча опіумна криза, яка нищить нашу країну, має бути зупинена. Уряд має накласти повну заборону на торгівлю опіумом, обмеживши як імпорт, так і внутрішнє виробництво."
+ remove_opium_ban: "Зняти заборону на опіум"
+ remove_opium_ban_desc: "Може бути доцільно скасувати заборону на опіум, якщо дипломатична чи економічна ситуація вимагатиме цього."
+
+ establish_film_industry: "Створення кіноіндустрії"
+ establish_film_industry_desc: "Нова плівкова технологія відкрила цілу нову можливу галузь, якщо ми звісно захочемо її підтримувати."
+ gdp_higher_than_film_check: "ВВП перевищує 5 млн"
+ custom_loc_hollywood: "Голівуд"
+ custom_loc_film_industry_name_default: "Кіноіндустрія"
 
 
- west_america_expedition:0 "Map the American Western Frontier"
- west_america_expedition_desc:0 "Launch an expedition to map out the unknown regions and geography of the North American Western Frontier."
+ lowlands_land_reclamation: "Осушення низинних земель"
+ lowlands_land_reclamation_desc: "За допомогою комбінації прийомів можна осушити певні ділянки низовини, перетворивши море на придатну для роботи сушу."
+ lowlands_land_reclamation_custom_tooltip: "Розпочнеться осушення низинних земель. "
+ notification_lowlands_land_reclamation_notification_desc: "Завершено рекультивацію низинних земель"
+ notification_lowlands_land_reclamation_notification_tooltip: "Ви отримали ріллю."
+ notification_lowlands_land_reclamation_notification_name: "Осушення низин"
+ lowlands_land_reclamation_requirement_tooltip: "Володіє Голляндією, Фрісляндією та Гельдерном"
 
- suez_survey_decision:0 "Survey the Suez Isthmus"
- suez_survey_decision_desc:0 "Authorize a survey to map the potential of building a canal in across the Suez Isthmus"
+ niger_river_expedition: "Експедиція по річці Ніґер"
+ niger_river_expedition_desc: "Розпочніть експедицію, щоб знайти виток річки Ніґер."
 
- panama_survey_decision:0 "Survey the Panama Isthmus"
- panama_survey_decision_desc:0 "Authorize a survey to map the potential of building a canal in across the Panama Isthmus"
+
+ west_america_expedition: "Мапа західного кордону Америки"
+ west_america_expedition_desc: "Розпочніть експедицію, щоб скласти мапу невідомих регіонів і географії західного кордону Північної Америки."
+
+ suez_survey_decision: "Обстеження Суецького перешийка"
+ suez_survey_decision_desc: "Уповноважте дослідження, щоб скласти мапу потенціалу будівництва каналу через Суецький перешийок"
+
+ panama_survey_decision: "Огляд Панамського перешийка"
+ panama_survey_decision_desc: "Уповноважте дослідження, щоб скласти мапу потенціалу будівництва каналу через Панамський перешийок"
