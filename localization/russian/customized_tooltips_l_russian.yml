@@ -107,7 +107,7 @@
  DATA_COUNTRY_NAME_TOOLTIP_OVERLORD_ENTRY: "\nВладар: [COUNTRY.GetName]"
  DATA_COUNTRY_NAME_TOOLTIP_SUBJECTS_ENTRY: "\nПідвладні: $SUBJECTS$"
  DATA_COUNTRY_NAME_TOOLTIP_SUBJECT_ENTRY: "#variable [COUNTRY.GetName]#!"
- DATA_COUNTRY_NAME_TOOLTIP_MORE_SUBJECTS: "#tooltippable #tooltip:$BREAKDOWN_TAG$ ... і ще #v $NUM_SUBJECTS$#! Підвладних#!#!"
+ DATA_COUNTRY_NAME_TOOLTIP_MORE_SUBJECTS: "#tooltippable #tooltip:$BREAKDOWN_TAG$ ... і ще #v $NUM_SUBJECTS$#! підвладних#!#!"
  DATA_COUNTRY_NAME_TOOLTIP_ALL_SUBJECTS:0 "#header [Concept('concept_subject', '$concept_subjects$')] of [Country.GetName]#!\n$TOOLTIP_DELIMITER$\n$FULL_DESC$"
   
  DATA_CULTURE_NAME_TOOLTIP:2 "[Concept('concept_cultural_trait', '$concept_cultural_traits$')]: [Culture.GetCulturalTraitsDesc]\n[concept_religion]: [Culture.GetReligionsDesc]\n[concept_obsession]: [Culture.GetObsessionsDesc]\n[concept_taboo]: [Culture.GetTaboosDesc][ConcatIfNeitherEmpty( '\n\n', AddLocalizationIf( GetPlayer.IsValid, 'DATA_CULTURE_NAME_TOOLTIP_INGAME_ADDED' ) )]"

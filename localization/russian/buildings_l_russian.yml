@@ -1,110 +1,110 @@
 ﻿l_russian:
  building_food_industry: "Харчова промисловість"
- building_food_industry_lens_option: "Розширити Харчову промисловість"
+ building_food_industry_lens_option: "Розширити харчову промисловість"
  building_textile_mills: "Тканинна виробня"
- building_textile_mills_lens_option: "Розширити Тканинні виробні"
+ building_textile_mills_lens_option: "Розширити тканинні виробні"
  building_tooling_workshops: "Майстерня інструментів"
- building_tooling_workshops_lens_option: "Розширити Майстерні інструментів"
+ building_tooling_workshops_lens_option: "Розширити майстерні інструментів"
  building_paper_mills: "Паперова виробня"
- building_paper_mills_lens_option: "Розширити Паперові виробні"
+ building_paper_mills_lens_option: "Розширити паперові виробні"
  building_shipyards: "Корабельня"
- building_shipyards_lens_option: "Розширити Корабельні"
+ building_shipyards_lens_option: "Розширити корабельні"
  building_chemical_plants: "Хімічна промисловість"
- building_chemical_plants_lens_option: "Розширити Хімічні промисловісті"
+ building_chemical_plants_lens_option: "Розширити хімічні промисловісті"
  building_furniture_manufacturies: "Меблева товарня"
- building_furniture_manufacturies_lens_option: "Розширити Меблеві товарні"
+ building_furniture_manufacturies_lens_option: "Розширити меблеві товарні"
  building_electrics_industry: "Електрична промисловість"
- building_electrics_industry_lens_option: "Розширити Електричну промисловість"
+ building_electrics_industry_lens_option: "Розширити електричну промисловість"
  building_arms_industry: "Війскова ладня"
- building_arms_industry_lens_option: "Розширити Війскові ладні"
+ building_arms_industry_lens_option: "Розширити війскові ладні"
  building_war_machine_industry: "Промисел важких машин"
- building_war_machine_industry_lens_option: "Розширити Промисел важких машин"
+ building_war_machine_industry_lens_option: "Розширити промисел важких машин"
  building_motor_industry: "Майстерня рушіїв"
- building_motor_industry_lens_option: "Розширити Майстерні рушіїв"
+ building_motor_industry_lens_option: "Розширити майстерні рушіїв"
  building_munition_plants: "Виробня набоїв"
- building_munition_plants_lens_option: "Розширити Виробні набоїв"
+ building_munition_plants_lens_option: "Розширити виробні набоїв"
  building_synthetics_plants: "Синтетична промисловість"
- building_synthetics_plants_lens_option: "Розширити Синтетичну промисловість"
+ building_synthetics_plants_lens_option: "Розширити синтетичну промисловість"
  building_steel_mills: "Металоварня"     #Незнаю чи є таке слово, але як на мене воно непогано звучить
- building_steel_mills_lens_option: "Розширити Металоварні"
+ building_steel_mills_lens_option: "Розширити металоварні"
  building_glassworks: "Скловарня"       #Незнаю чи є таке слово, але як на мене воно непогано звучить
- building_glassworks_lens_option: "Розширити Скловарні"
+ building_glassworks_lens_option: "Розширити скловарні"
  building_coal_mine: "Вугільна копальня"
- building_coal_mine_lens_option: "Розширити Вугільні копальні"
+ building_coal_mine_lens_option: "Розширити вугільні копальні"
  building_coffee_plantation: "Кавове полище"     #або ланина
- building_coffee_plantation_lens_option: "Розширити Кавові полища"
+ building_coffee_plantation_lens_option: "Розширити кавові полища"
  building_cotton_plantation: "Бавовняне полище"   #або ланина
- building_cotton_plantation_lens_option: "Розширити Бавовняні полища"
+ building_cotton_plantation_lens_option: "Розширити бавовняні полища"
  building_silk_plantation: "Шовкове полище"   #або ланина
- building_silk_plantation_lens_option: "Розширити Шовкові полища"
+ building_silk_plantation_lens_option: "Розширити шовкові полища"
  building_dye_plantation: "Полище барвила"   #або ланина
- building_dye_plantation_lens_option: "Розширити Полища барвил"
+ building_dye_plantation_lens_option: "Розширити полища барвил"
  building_fishing_wharf: "Рибальська приплава"
- building_fishing_wharf_lens_option: "Розширити Рибальські приплави"
+ building_fishing_wharf_lens_option: "Розширити рибальські приплави"
  building_whaling_station: "Китобійня"     #або Китобійна станиця, Китобійний ставець
- building_whaling_station_lens_option: "Розширити Китобійні"
+ building_whaling_station_lens_option: "Розширити китобійні"
  building_rye_farm: "Житний хутір"   #або присілок
- building_rye_farm_les_option: "Розширити Житні хутори"
+ building_rye_farm_les_option: "Розширити житні хутори"
  building_wheat_farm: "Пшеничний хутір"    #або присілок
- building_wheat_farm_les_option: "Розширити Пшеничні хутори"
+ building_wheat_farm_les_option: "Розширити пшеничні хутори"
  building_rice_farm: "Рисовий хутір"    #або присілок
- building_rice_farm_les_option: "Розширити Рисові хутори"
+ building_rice_farm_les_option: "Розширити рисові хутори"
  building_maize_farm: "Кукурудзяний хутір"    #або присілок
- building_maize_farm_les_option: "Розширити Кукурудзяні хутори"
+ building_maize_farm_les_option: "Розширити кукурудзяні хутори"
  building_millet_farm: "Пшоний хутір"    #або присілок
- building_millet_farm_les_option: "Розширити Пшоні хутори"
+ building_millet_farm_les_option: "Розширити пшоні хутори"
  building_iron_mine: "Залізна копальня"
- building_iron_mine_lens_option: "Розширити Залізні копальні"
+ building_iron_mine_lens_option: "Розширити залізні копальні"
  building_gold_mine: "Золота копальня"
- building_gold_mine_lens_option: "Розширити Золоті копальні"
+ building_gold_mine_lens_option: "Розширити золоті копальні"
  building_lead_mine: "Свинцева копальня"
- building_lead_mine_lens_option: "Розширити Свинцеві копальні"
+ building_lead_mine_lens_option: "Розширити свинцеві копальні"
  building_oil_rig: "Нафтова вишка"
- building_oil_rig_lens_option: "Розширити Нафтові вишки"
- building_oil_rig_discovered_resource: "Навта"
+ building_oil_rig_lens_option: "Розширити нафтові вишки"
+ building_oil_rig_discovered_resource: "Нафта"
  building_opium_plantation: "Опіюмне полище"   #або ланина
- building_opium_plantation_lens_option: "Розширити Опіюмні полища"
+ building_opium_plantation_lens_option: "Розширити опіюмні полища"
  building_orchard: "Фруктовий сад"
- building_orchard_lens_option: "Розширити Фруктові сади"
+ building_orchard_lens_option: "Розширити фруктові сади"
  
  #Золоте поле? чому потім викорестовується теґ копальні? потім подивлюся у грі щоб зрозуміти що це
  building_gold_fields: "Золота старальня"
- building_gold_fields_lens_option: "Розширити Золоті старальні"
+ building_gold_fields_lens_option: "Розширити золоті старальні"
  
  building_gold_fields_discovered_resource: "Золото"
  building_rubber_plantation: "Каучукове полище"    #або ланина
- building_rubber_plantation_lens_option: "Розширити Каучукові полища"
+ building_rubber_plantation_lens_option: "Розширити каучукові полища"
  building_rubber_plantation_discovered_resource: "Гума"
  building_livestock_ranch: "Тваринницька ферма"
- building_livestock_ranch_lens_option: "Розширити Тваринницькі ферми"
+ building_livestock_ranch_lens_option: "Розширити тваринницькі ферми"
  building_silkworm_plantation: "Шовкопрядне полище"    #або ланина
- building_silkworm_plantation_lens_option: "Розширити Шовкопрядні полища"
+ building_silkworm_plantation_lens_option: "Розширити шовкопрядні полища"
  building_sulfur_mine: "Сірчана копальня"
- building_sulfur_mine_lens_option: "Розширити Сірчані копальні"
+ building_sulfur_mine_lens_option: "Розширити сірчані копальні"
  building_tea_plantation: "Чайне полище"    #або ланина
- building_tea_plantation_lens_option: "Розширити Чайні полища"
+ building_tea_plantation_lens_option: "Розширити чайні полища"
  building_logging_camp: "Тартак"
- building_logging_camp_lens_option: "Розширити Тартаки"
+ building_logging_camp_lens_option: "Розширити тартаки"
  building_tobacco_plantation: "Тютюнове полище"    #або ланина
- building_tobacco_plantation_lens_option: "Розширити Тютюнові полища"
+ building_tobacco_plantation_lens_option: "Розширити тютюнові полища"
  building_tropical_wood_lodge: "Тропічний тартак"
- building_tropical_wood_lodge_lens_option: "Розширити Тропічні тартаки"
+ building_tropical_wood_lodge_lens_option: "Розширити тропічні тартаки"
  building_sugar_plantation: "Цукрове полище"    #або ланина
- building_sugar_plantation_lens_option: "Розширити Цукрові полища"
+ building_sugar_plantation_lens_option: "Розширити цукрові полища"
  building_urban_center: "Міський центр"
- building_urban_center_lens_option: "Розширити Міські центри"
+ building_urban_center_lens_option: "Розширити міські центри"
  building_power_plant: "Струмарня"
- building_power_plant_lens_option: "Розширити Струмарні"
+ building_power_plant_lens_option: "Розширити струмарні"
  building_subsistence_farms: "Натуральні господарства"
  building_subsistence_orchards: "Натуральні сади"
  building_subsistence_pastures: "Підсобні пасовища"
  building_construction_sector: "Будівельний витинок"   #або сектор
  building_banana_plantation: "Бананове полище"    #або ланина
- building_banana_plantation_lens_option: "Розширити Бананові полища"
+ building_banana_plantation_lens_option: "Розширити бананові полища"
  building_suez_canal: "Суецький водовід"   #або канал, крен
- building_suez_canal_lens_option: "Побудувати Суецький водовід"
+ building_suez_canal_lens_option: "Побудувати суецький водовід"
  building_panama_canal: "Панамський водовід"   #або канал, крен
- building_panama_canal_lens_option: "Побудувати Панамський водовід"
+ building_panama_canal_lens_option: "Побудувати панамський водовід"
  UNEMPLOYED: "[Concept('concept_unemployed', '$concept_unemployed_many$')]"
 
 
@@ -178,28 +178,28 @@
 
   #Colonies
  building_colony_military: "Військова осада"   #або колонія
- building_colony_military_lens_option: "Встановити Війскову осаду"
- building_colony_military_hover: "Встановити #variable Війскову осаду#! у регіоні #variable [STATE.GetName]"
+ building_colony_military_lens_option: "Встановити війскову осаду"
+ building_colony_military_hover: "Встановити #variable війскову осаду#! у регіоні #variable [STATE.GetName]"
  building_colony_missionary: "Метарська осада"    #від метар(месіонер)
- building_colony_missionary_lens_option: "Встановити Метарську осаду"
- building_colony_missionary_hover: "Встановити #variable Метарську осаду#! у #variable [STATE.GetName]#!"
+ building_colony_missionary_lens_option: "Встановити метарську осаду"
+ building_colony_missionary_hover: "Встановити #variable метарську осаду#! у #variable [STATE.GetName]#!"
  building_colony_trade: "Торгова осада"
- building_colony_trade_lens_option: "Встановити Торгову осаду"
- building_colony_trade_hover: "Встановити #variable Торгову осаду#! у #variable [STATE.GetName]"
+ building_colony_trade_lens_option: "Встановити торгову осаду"
+ building_colony_trade_hover: "Встановити #variable торгову осаду#! у #variable [STATE.GetName]"
 
   #Barracks
  building_barracks: "Курінь"
- building_barracks_lens_option: "Розширити Куріні"
+ building_barracks_lens_option: "Розширити курені"
  building_naval_base: "Морська база"
- building_naval_base_lens_option: "Розширити Морські бази"
+ building_naval_base_lens_option: "Розширити морські бази"
  building_conscription_center: "Призовний пункт"
 
   #National Buildings
  building_government_administration: "Державна управа"
- building_government_administration_lens_option: "Розширити Державну управу"
+ building_government_administration_lens_option: "Розширити державну управу"
 
   # Unlock tooltips
- tooltip_unlock_railways: "Дозволить будівництво Залізниці"
+ tooltip_unlock_railways: "Дозволить будівництво залізниці"
   
   # Monuments
  building_eiffel_tower: "Ейфелева вежа"

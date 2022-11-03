@@ -336,10 +336,10 @@
  JOIN_REVOLUTION:0 "[INTEREST_GROUP.GetName] becomes insurrectionary"
  ABANDON_REVOLUTION:0 "[INTEREST_GROUP.GetName] stops being insurrectionary"
 
- START_BOLSTER_IG:0 "[concept_bolster] [INTEREST_GROUP.GetName]"
- STOP_BOLSTER_IG:0 "Stop [Concept('concept_bolster','$concept_bolstering$')] [INTEREST_GROUP.GetName]"
- START_SUPPRESS_IG:1 "[concept_suppress] [INTEREST_GROUP.GetName]"
- STOP_SUPPRESS_IG:1 "Stop [Concept('concept_suppress','$concept_suppressing$')] [INTEREST_GROUP.GetName]"
+ START_BOLSTER_IG: "[concept_bolster] [INTEREST_GROUP.GetName]"
+ STOP_BOLSTER_IG: "Зупинити [Concept('concept_bolster','$concept_bolstering$')|l] [INTEREST_GROUP.GetName]"
+ START_SUPPRESS_IG: "[concept_suppress] [INTEREST_GROUP.GetName]"
+ STOP_SUPPRESS_IG: "Зупинити [Concept('concept_suppress','$concept_suppressing$')|l] [INTEREST_GROUP.GetName]"
   
  ADD_BANNED_GOODS:0 "[COUNTRY.GetName] places a total ban on [TARGET_GOODS.GetName]"
  ADD_BANNED_GOODS_FIRST:0 "[COUNTRY.GetNameNoFlag] places a total ban on [TARGET_GOODS.GetName]"

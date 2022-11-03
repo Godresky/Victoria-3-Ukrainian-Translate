@@ -113,60 +113,60 @@
   
  ai_attitude_human: "#V Людина#!"
  ai_attitude_human_desc:0 "[COUNTRY.GetName] is controlled by a human player, and their attitude towards us is entirely up to them."
- ai_attitude_human_tooltip:0 "#header $ai_attitude_human$#!\n$ai_attitude_human_desc$"
+ ai_attitude_human_tooltip: "#header $ai_attitude_human$#!\n$ai_attitude_human_desc$"
  
  ai_attitude_disinterested: "#V Незацікавлене#!"
  ai_attitude_disinterested_desc:0 "[COUNTRY.GetName] views [TARGET_COUNTRY.GetName] as a #bold country of little interest#! in geopolitical affairs. They are unlikely to engage in any form of diplomatic interaction with us."
- ai_attitude_disinterested_tooltip:0 "#header $ai_attitude_disinterested$ [concept_attitude]#!\n$ai_attitude_disinterested_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
+ ai_attitude_disinterested_tooltip: "#header $ai_attitude_disinterested$ [concept_attitude|l]#!\n$ai_attitude_disinterested_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
   
  ai_attitude_cautious: "#V Обережне#!"
  ai_attitude_cautious_desc:0 "[COUNTRY.GetName] views [TARGET_COUNTRY.GetName] as an #bold unknown factor#! in geopolitical affairs. They consider [TARGET_COUNTRY.GetName] relevant to their interests but has not yet decided whether they see them as a friend or enemy."
- ai_attitude_cautious_tooltip:0 "#header $ai_attitude_cautious$ [concept_attitude]#!\n$ai_attitude_cautious_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
+ ai_attitude_cautious_tooltip: "#header $ai_attitude_cautious$ [concept_attitude|l]#!\n$ai_attitude_cautious_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
   
  ai_attitude_cooperative: "#V #P Співпраця#!#!"
  ai_attitude_cooperative_desc:1 "[COUNTRY.GetName] views [TARGET_COUNTRY.GetName] as a #P #bold potential friend#!#! in geopolitical affairs. They may seek closer [concept_relations] with [TARGET_COUNTRY.GetName] and are likely to be receptive to diplomatic overtures."
- ai_attitude_cooperative_tooltip:0 "#header $ai_attitude_cooperative$ [concept_attitude]#!\n$ai_attitude_cooperative_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
+ ai_attitude_cooperative_tooltip: "#header $ai_attitude_cooperative$ [concept_attitude|l]#!\n$ai_attitude_cooperative_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
 
  ai_attitude_conciliatory: "#V #P Примирення#!#!"
  ai_attitude_conciliatory_desc:1 "[COUNTRY.GetName] views [TARGET_COUNTRY.GetName] as a #P #bold mistaken enemy#!#! in geopolitical affairs. They are likely to try and patch up [concept_relations] and end any ongoing [concept_rivalry]."
- ai_attitude_conciliatory_tooltip:0 "#header $ai_attitude_conciliatory$ [concept_attitude]#!\n$ai_attitude_conciliatory_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
+ ai_attitude_conciliatory_tooltip: "#header $ai_attitude_conciliatory$ [concept_attitude|l]#!\n$ai_attitude_conciliatory_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
   
  ai_attitude_genial: "#V #P Добросердечне#!#!"
  ai_attitude_genial_desc:1 "[COUNTRY.GetName] views [TARGET_COUNTRY.GetName] as a #P #bold desirable ally#!#! in geopolitical affairs. They are likely to seek closer [concept_relations] and want to form a [concept_defensive_pact] or [concept_alliance] with us."
- ai_attitude_genial_tooltip:0 "#header $ai_attitude_genial$ [concept_attitude]#!\n$ai_attitude_genial_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
+ ai_attitude_genial_tooltip: "#header $ai_attitude_genial$ [concept_attitude|l]#!\n$ai_attitude_genial_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
 
  ai_attitude_loyal: "#V #P Вірні#!#!"
  ai_attitude_loyal_desc:0 "[COUNTRY.GetName] views [TARGET_COUNTRY.GetName] as their #P #bold rightful suzerain#!#! in geopolitical affairs. They are likely to assist [TARGET_COUNTRY.GetName] in [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] and will not attempt to gain independence."
- ai_attitude_loyal_tooltip:0 "#header $ai_attitude_loyal$ [concept_attitude]#!\n$ai_attitude_loyal_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
+ ai_attitude_loyal_tooltip: "#header $ai_attitude_loyal$ [concept_attitude|l]#!\n$ai_attitude_loyal_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
   
  ai_attitude_protective: "#V #P Захисне#!#!"
  ai_attitude_protective_desc:0 "[COUNTRY.GetName] views [TARGET_COUNTRY.GetName] as #P #bold in need of their protection#!#! in geopolitical affairs. They are likely to intervene on our side in [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] and may offer [TARGET_COUNTRY.GetName] to become their [concept_subject]."
- ai_attitude_protective_tooltip:0 "#header $ai_attitude_protective$ [concept_attitude]#!\n$ai_attitude_protective_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
+ ai_attitude_protective_tooltip: "#header $ai_attitude_protective$ [concept_attitude|l]#!\n$ai_attitude_protective_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
   
  ai_attitude_wary: "#V #N Підозріле#!#!"
  ai_attitude_wary_desc:0 "[COUNTRY.GetName] views [TARGET_COUNTRY.GetName] as a #N #bold potential threat#!#! in geopolitical affairs. They will be less receptive to diplomacy and might seek out alliances to protect themselves against us."
- ai_attitude_wary_tooltip:0 "#header $ai_attitude_wary$ [concept_attitude]#!\n$ai_attitude_wary_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
+ ai_attitude_wary_tooltip: "#header $ai_attitude_wary$ [concept_attitude|l]#!\n$ai_attitude_wary_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
  
  ai_attitude_antagonistic: "#V #N Вороже#!#!"
  ai_attitude_antagonistic_desc:0 "[COUNTRY.GetName] views [TARGET_COUNTRY.GetName] as a #N #bold threatening force#!#! in geopolitical affairs. They are likely to seek out alliances with our foes and may join [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] to oppose our expansion."
- ai_attitude_antagonistic_tooltip:0 "#header $ai_attitude_antagonistic$ [concept_attitude]#!\n$ai_attitude_antagonistic_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
+ ai_attitude_antagonistic_tooltip: "#header $ai_attitude_antagonistic$ [concept_attitude|l]#!\n$ai_attitude_antagonistic_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
  
  ai_attitude_belligerent: "#V #N Войовниче#!#!"
  ai_attitude_belligerent_desc:0 "[COUNTRY.GetName] views [TARGET_COUNTRY.GetName] as a #N #bold target of conquest#!#! in geopolitical affairs. They are likely to start a [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] against [TARGET_COUNTRY.GetName] if they feel that the odds are in their favor."
- ai_attitude_belligerent_tooltip:0 "#header $ai_attitude_belligerent$ [concept_attitude]#!\n$ai_attitude_belligerent_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
+ ai_attitude_belligerent_tooltip: "#header $ai_attitude_belligerent$ [concept_attitude|l]#!\n$ai_attitude_belligerent_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
  
  ai_attitude_domineering: "#V #N Надвілльне#!#!"
  ai_attitude_domineering_desc:0 "[COUNTRY.GetName] views [TARGET_COUNTRY.GetName] as a #N #bold natural subject#!#! in geopolitical affairs. They are likely to try and make a [concept_subject] out of us, or further integrate [TARGET_COUNTRY.GetName] if we are already their [concept_subject]."
- ai_attitude_domineering_tooltip:0 "#header $ai_attitude_domineering$ [concept_attitude]#!\n$ai_attitude_domineering_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
+ ai_attitude_domineering_tooltip: "#header $ai_attitude_domineering$ [concept_attitude|l]#!\n$ai_attitude_domineering_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
 
  ai_attitude_rebellious: "#V #N Бунтарське#!#!"
  ai_attitude_rebellious_desc:0 "[COUNTRY.GetName] views [TARGET_COUNTRY.GetName] as their #N #bold tyrannical oppressor#!#! in geopolitical affairs. They are likely to attempt a [concept_diplomatic_play] for independence if they believe they can win."
- ai_attitude_rebellious_tooltip:0 "#header $ai_attitude_rebellious$ [concept_attitude]#!\n$ai_attitude_rebellious_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
+ ai_attitude_rebellious_tooltip: "#header $ai_attitude_rebellious$ [concept_attitude|l]#!\n$ai_attitude_rebellious_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
   
  ATTITUDE_SCORE_NEUTRAL_FORMAT:0 "#v $SCORE|=0$#!"
  ATTITUDE_SCORE_FORMAT:0 "#v $SCORE|=0+$#!"
  AI_STRATEGIC_DESIRE:1 "[COUNTRY.GetAdjectiveNoFormatting] [concept_strategic_desire] towards [TARGET_COUNTRY.GetNameNoFormatting]: #v $STRATEGIC_DESIRE$#!"
- AI_ATTITUDE_SCORE:0 "This is derived from [COUNTRY.GetName]'s [concept_attitude] score of  $ATTITUDE_SCORE$ towards [TARGET_COUNTRY.GetName]:"
+ AI_ATTITUDE_SCORE:0 "This is derived from [COUNTRY.GetName]'s [concept_attitude|l] score of  $ATTITUDE_SCORE$ towards [TARGET_COUNTRY.GetName]:"
   
  AI_REASON_FORMAT:0 "$DESC$: $SCORE|=0+$"
  AI_REASON_NEUTRALITY:0 "[TARGET_COUNTRY.GetName] lacks diplomatic significance for [COUNTRY.GetName]"
