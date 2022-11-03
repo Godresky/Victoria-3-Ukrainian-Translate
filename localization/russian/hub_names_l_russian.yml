@@ -1,5 +1,5 @@
 ﻿l_russian:
-  # Finland
+# Finland
  HUB_NAME_STATE_SOUTHERN_FINLAND_city: "Гельсінкі"
  HUB_NAME_STATE_SOUTHERN_FINLAND_port: "Турку"
  HUB_NAME_STATE_SOUTHERN_FINLAND_mine: "Міккелі"
@@ -19,8 +19,7 @@
  HUB_NAME_STATE_ALAND_port: "Марієгамн"
  HUB_NAME_STATE_ALAND_farm: "Екерьо"
 
-  
-  # Norway
+# Norway
  HUB_NAME_STATE_NORTHERN_NORWAY_city: "Тронгейм"
  HUB_NAME_STATE_NORTHERN_NORWAY_port: "Буде"
  HUB_NAME_STATE_NORTHERN_NORWAY_mine: "Тромсе"
@@ -37,7 +36,7 @@
  HUB_NAME_STATE_EASTERN_NORWAY_farm: "Фредріксхальд"
  HUB_NAME_STATE_EASTERN_NORWAY_wood: "Конґсвінґер"
   
-  # Sweden  
+# Sweden  
  HUB_NAME_STATE_NORRLAND_city: "Сундсвалль"
  HUB_NAME_STATE_NORRLAND_port: "Лулео"
  HUB_NAME_STATE_NORRLAND_mine: "Кіруна"
@@ -64,7 +63,7 @@
  HUB_NAME_STATE_SCANIA_farm: "Гальмстад"
  HUB_NAME_STATE_SCANIA_wood: "Гор"
 
-  # Denmark
+# Denmark
  HUB_NAME_STATE_ZEALAND_city: "Копенгаґен"
  HUB_NAME_STATE_ZEALAND_port: "Калундборґ"
  HUB_NAME_STATE_ZEALAND_farm: "Нествел"
@@ -81,7 +80,7 @@
  HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_farm: "Фленсбурґ"
  HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_wood: "Ітцего"
   
-  # Germany
+# Germany
  HUB_NAME_STATE_MECKLENBURG_city: "Шверін"
  HUB_NAME_STATE_MECKLENBURG_port: "Росток"
  HUB_NAME_STATE_MECKLENBURG_mine: "Нойштреліц"
@@ -151,7 +150,7 @@
  HUB_NAME_STATE_NORTH_RHINE_farm: "Бонн"
  HUB_NAME_STATE_NORTH_RHINE_wood: "Аахен"
 
-  #Belgium
+#Belgium
  HUB_NAME_STATE_WALLONIA_city: "Люксембурґ"
  HUB_NAME_STATE_WALLONIA_mine: "Льєж"
  HUB_NAME_STATE_WALLONIA_farm: "Намюр"
@@ -162,7 +161,7 @@
  HUB_NAME_STATE_FLANDERS_farm: "Антверпен"
  HUB_NAME_STATE_FLANDERS_wood: "Кортрейк"
   
-  #Netherlands
+#Netherlands
  HUB_NAME_STATE_GELRE_city: "Ейндговен"
  HUB_NAME_STATE_GELRE_mine: "Маастрихт"
  HUB_NAME_STATE_GELRE_farm: "Неймеґен"
@@ -178,7 +177,7 @@
  HUB_NAME_STATE_HOLLAND_wood: "Бреда"
  HUB_NAME_STATE_HOLLAND_mine: "Брук-ін-Ватерлянд"
   
-  # Britain 
+# Britain 
  HUB_NAME_STATE_EAST_ANGLIA_city: "Кембридж"
  HUB_NAME_STATE_EAST_ANGLIA_port: "Іпсвіч"
  HUB_NAME_STATE_EAST_ANGLIA_mine: "Лутон"
@@ -231,7 +230,7 @@
  HUB_NAME_STATE_ULSTER_farm: "Ньюрі"
  HUB_NAME_STATE_ULSTER_wood: "Омаг"
 
-  # Ireland  
+# Ireland  
  HUB_NAME_STATE_LEINSTER_city: "Дублін"
  HUB_NAME_STATE_LEINSTER_port: "Вексфорд"
  HUB_NAME_STATE_LEINSTER_mine: "Вотерфорд"
@@ -248,7 +247,7 @@
  HUB_NAME_STATE_MUNSTER_farm: "Меллов"
  HUB_NAME_STATE_MUNSTER_wood: "Ніна"
 
-  # France
+# France
  HUB_NAME_STATE_BRITTANY_city: "Нант"
  HUB_NAME_STATE_BRITTANY_port: "Брест"
  HUB_NAME_STATE_BRITTANY_mine: "Ванн"
@@ -335,7 +334,7 @@
  HUB_NAME_STATE_AQUITAINE_farm: "Мон-де-Марсан"
  HUB_NAME_STATE_AQUITAINE_wood: "По"
 
-  # Portugal
+# Portugal
  HUB_NAME_STATE_ALENTEJO_city: "Евора"
  HUB_NAME_STATE_ALENTEJO_port: "Лаґос"
  HUB_NAME_STATE_ALENTEJO_mine: "Бежа"
@@ -352,7 +351,7 @@
  HUB_NAME_STATE_BEIRA_farm: "Візеу"
  HUB_NAME_STATE_BEIRA_wood: "Каштелу-Бранку"
 
-  # Spain
+# Spain
  HUB_NAME_STATE_GALICIA_city: "Сантьяґо-де-Компостела"
  HUB_NAME_STATE_GALICIA_port: "Ла-Корунья"
  HUB_NAME_STATE_GALICIA_mine: "Понферрада"
@@ -410,7 +409,7 @@
  HUB_NAME_STATE_BALEARES_farm: "Кала д'Ор"
  HUB_NAME_STATE_BALEARES_wood: "Алькудія"
   
-  # Italy
+# Italy
  HUB_NAME_STATE_SARDINIA_city: "Сассарі"
  HUB_NAME_STATE_SARDINIA_port: "Кальярі"
  HUB_NAME_STATE_SARDINIA_mine: "Нуоро"
@@ -485,7 +484,7 @@
  HUB_NAME_STATE_SAVOY_farm: "Шамбері"
  HUB_NAME_STATE_SAVOY_wood: "Сен-Жан-де-Мор'єнн"
   
-  #Switzerland
+#Switzerland
  HUB_NAME_STATE_WEST_SWITZERLAND_city: "Берн"
  HUB_NAME_STATE_WEST_SWITZERLAND_mine: "Базель"
  HUB_NAME_STATE_WEST_SWITZERLAND_farm: "Лозанна"
@@ -495,7 +494,7 @@
  HUB_NAME_STATE_EAST_SWITZERLAND_farm: "Сент-Ґаллен"
  HUB_NAME_STATE_EAST_SWITZERLAND_wood: "Люцерн"
 
-  # Austria
+# Austria
  HUB_NAME_STATE_TYROL_city: "Інсбрук"
  HUB_NAME_STATE_TYROL_mine: "Лієнц"
  HUB_NAME_STATE_TYROL_farm: "Зальцбурґ"
@@ -513,7 +512,7 @@
  HUB_NAME_STATE_AUSTRIA_farm: "Лінц"
  HUB_NAME_STATE_AUSTRIA_wood: "Санкт-Пельтен"
 
-  #Czech Repbulic
+#Czech Repbulic
  HUB_NAME_STATE_BOHEMIA_city: "Прага"
  HUB_NAME_STATE_BOHEMIA_mine: "Чеські Будейовиці"
  HUB_NAME_STATE_BOHEMIA_farm: "Світави"
@@ -522,6 +521,8 @@
  HUB_NAME_STATE_MORAVIA_mine: "Оломуц"
  HUB_NAME_STATE_MORAVIA_farm: "Бржецлав"
  HUB_NAME_STATE_MORAVIA_wood: "Їглава"
+
+#Словікія
  HUB_NAME_STATE_WEST_SLOVAKIA_city: "Пресбурґ"
  HUB_NAME_STATE_WEST_SLOVAKIA_mine: "Жиліна"
  HUB_NAME_STATE_WEST_SLOVAKIA_farm: "Тренчин"
@@ -530,6 +531,8 @@
  HUB_NAME_STATE_EAST_SLOVAKIA_mine: "Ужгород"
  HUB_NAME_STATE_EAST_SLOVAKIA_farm: "Мукачево"
  HUB_NAME_STATE_EAST_SLOVAKIA_wood: "Попрад"
+
+#Угорщина
  HUB_NAME_STATE_CENTRAL_HUNGARY_city: "Будапешт"
  HUB_NAME_STATE_CENTRAL_HUNGARY_mine: "Мішкольц"
  HUB_NAME_STATE_CENTRAL_HUNGARY_farm: "Сольнок"
@@ -550,119 +553,136 @@
  HUB_NAME_STATE_BANAT_mine: "Карансебеш"
  HUB_NAME_STATE_BANAT_farm: "Орцишоара"
  HUB_NAME_STATE_BANAT_wood: "Феджет"
- HUB_NAME_STATE_DELVIDEK_city: "Нові-Сад"
- HUB_NAME_STATE_DELVIDEK_mine: "Панчево"
- HUB_NAME_STATE_DELVIDEK_farm: "Зренянин"
- HUB_NAME_STATE_DELVIDEK_wood: "Суботіца"
- HUB_NAME_STATE_SLAVONIA_city: "Брод на Саві"
- HUB_NAME_STATE_SLAVONIA_mine: "Бєловар"
- HUB_NAME_STATE_SLAVONIA_farm: "Осієк"
- HUB_NAME_STATE_SLAVONIA_wood: "Градішка"
  HUB_NAME_STATE_TRANSDANUBIA_city: "Секешфегервар"
  HUB_NAME_STATE_TRANSDANUBIA_mine: "Печ"
  HUB_NAME_STATE_TRANSDANUBIA_farm: "Кестхей"
  HUB_NAME_STATE_TRANSDANUBIA_wood: "Сомбатгей"
- HUB_NAME_STATE_SLOVENIA_city:0 "Ljubljana"
- HUB_NAME_STATE_SLOVENIA_mine:0 "Ptuj"
- HUB_NAME_STATE_SLOVENIA_farm:0 "Maribor"
- HUB_NAME_STATE_SLOVENIA_wood:1 "Novo Mesto"
- HUB_NAME_STATE_ISTRIA_city:0 "Trieste"
- HUB_NAME_STATE_ISTRIA_port:0 "Pula"
- HUB_NAME_STATE_ISTRIA_mine:1 "Udine"
- HUB_NAME_STATE_ISTRIA_farm:0 "Opatija"
- HUB_NAME_STATE_ISTRIA_wood:1 "Gorizia"
- HUB_NAME_STATE_CROATIA_city:0 "Zagreb"
- HUB_NAME_STATE_CROATIA_mine:0 "Karlovac"
- HUB_NAME_STATE_CROATIA_farm:0 "Sisak"
- HUB_NAME_STATE_CROATIA_port:0 "Rijeka"
- HUB_NAME_STATE_CROATIA_wood:0 "Pokupsko"
- HUB_NAME_STATE_DALMATIA_city:0 "Split"
- HUB_NAME_STATE_DALMATIA_port:1 "Zadar"
- HUB_NAME_STATE_DALMATIA_mine:1 "Ragusa"
- HUB_NAME_STATE_DALMATIA_farm:0 "Knin"
- HUB_NAME_STATE_DALMATIA_wood:1 "Šibenik"
- HUB_NAME_STATE_BOSNIA_city:0 "Sarajevo"
- HUB_NAME_STATE_BOSNIA_mine:0 "Mostar"
- HUB_NAME_STATE_BOSNIA_farm:0 "Banja Luka"
- HUB_NAME_STATE_BOSNIA_wood:0 "Doboj"
- HUB_NAME_STATE_NORTHERN_SERBIA_city:0 "Belgrade"
- HUB_NAME_STATE_NORTHERN_SERBIA_mine:0 "Kruševac"
- HUB_NAME_STATE_NORTHERN_SERBIA_farm:0 "Smederevo"
- HUB_NAME_STATE_NORTHERN_SERBIA_wood:0 "Kraljevo"
- HUB_NAME_STATE_SOUTHERN_SERBIA_city:0 "Pristina"
- HUB_NAME_STATE_SOUTHERN_SERBIA_mine:0 "Leskovac"
- HUB_NAME_STATE_SOUTHERN_SERBIA_farm:0 "Ferizaj"
- HUB_NAME_STATE_SOUTHERN_SERBIA_wood:0 "Besianë"
- HUB_NAME_STATE_MONTENEGRO_city:0 "Podgorica"
- HUB_NAME_STATE_MONTENEGRO_port:0 "Bar"
- HUB_NAME_STATE_MONTENEGRO_mine:1 "Mojkovac"
- HUB_NAME_STATE_MONTENEGRO_farm:0 "Berane"
- HUB_NAME_STATE_MONTENEGRO_wood:1 "Hanovi"
- HUB_NAME_STATE_ALBANIA_city:0 "Tirana"
- HUB_NAME_STATE_ALBANIA_port:0 "Durrës"
- HUB_NAME_STATE_ALBANIA_mine:0 "Shkodër"
- HUB_NAME_STATE_ALBANIA_farm:0 "Fier"
- HUB_NAME_STATE_ALBANIA_wood:0 "Berat"
- HUB_NAME_STATE_SKOPIA_city:0 "Skopje"
- HUB_NAME_STATE_SKOPIA_mine:0 "Tetovo"
- HUB_NAME_STATE_SKOPIA_farm:0 "Kavadartsi"
- HUB_NAME_STATE_SKOPIA_wood:0 "Prilep"
- HUB_NAME_STATE_MACEDONIA_city:0 "Veroia"
- HUB_NAME_STATE_MACEDONIA_port:1 "Salonica"
- HUB_NAME_STATE_MACEDONIA_mine:0 "Florina"
- HUB_NAME_STATE_MACEDONIA_farm:0 "Kozani"
- HUB_NAME_STATE_MACEDONIA_wood:0 "Kastoria"
- HUB_NAME_STATE_WESTERN_THRACE_city:1 "Kavala"
- HUB_NAME_STATE_WESTERN_THRACE_port:0 "Dedeağaç"
- HUB_NAME_STATE_WESTERN_THRACE_mine:1 "Serres"
- HUB_NAME_STATE_WESTERN_THRACE_farm:1 "Xanthi"
- HUB_NAME_STATE_WESTERN_THRACE_wood:0 "Komotini"
- HUB_NAME_STATE_THESSALIA_city:0 "Larisa"
- HUB_NAME_STATE_THESSALIA_port:0 "Volos"
- HUB_NAME_STATE_THESSALIA_mine:0 "Arta"
- HUB_NAME_STATE_THESSALIA_farm:0 "Kardhitsa"
- HUB_NAME_STATE_THESSALIA_wood:0 "Agrinion"
- HUB_NAME_STATE_ATTICA_city:0 "Athens"
- HUB_NAME_STATE_ATTICA_port:0 "Missolonghi"
- HUB_NAME_STATE_ATTICA_mine:0 "Khalkis"
- HUB_NAME_STATE_ATTICA_farm:0 "Lamia"
- HUB_NAME_STATE_ATTICA_wood:0 "Karpenision"
- HUB_NAME_STATE_IONIAN_ISLANDS_city:0 "Corfu"
- HUB_NAME_STATE_IONIAN_ISLANDS_port:0 "Zakinthos"
-  #HUB_NAME_STATE_IONIAN_ISLANDS_mine: "NAME"
- HUB_NAME_STATE_IONIAN_ISLANDS_farm:0 "Kefalonia"
-  #HUB_NAME_STATE_IONIAN_ISLANDS_wood: "NAME"
- HUB_NAME_STATE_PELOPONNESE_city:0 "Tripoli"
- HUB_NAME_STATE_PELOPONNESE_port:0 "Kalamata"
- HUB_NAME_STATE_PELOPONNESE_mine:0 "Nafplion"
- HUB_NAME_STATE_PELOPONNESE_farm:0 "Corinth"
- HUB_NAME_STATE_PELOPONNESE_wood:0 "Patras"
- HUB_NAME_STATE_CRETE_city:0 "Irakleion"
- HUB_NAME_STATE_CRETE_port:0 "Matala"
- HUB_NAME_STATE_CRETE_mine:0 "Ierapetra"
- HUB_NAME_STATE_CRETE_farm:0 "Chania"
- HUB_NAME_STATE_CRETE_wood:0 "Palaiochora"
- HUB_NAME_STATE_WEST_AEGEAN_ISLANDS_city:0 "Chora"
- HUB_NAME_STATE_WEST_AEGEAN_ISLANDS_port:0 "Thera"
-  #HUB_NAME_STATE_WEST_AEGEAN_ISLANDS_mine: "NAME"
- HUB_NAME_STATE_WEST_AEGEAN_ISLANDS_farm:0 "Tinos"
-  #HUB_NAME_STATE_WEST_AEGEAN_ISLANDS_wood: "NAME"
- HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_city:0 "Chios"
- HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_port:1 "Rhodes"
-  #HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_mine: "NAME"
- HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_farm:0 "Mitilini"
- HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_wood:0 "Vathy"
- HUB_NAME_STATE_NORTHERN_THRACE_city:0 "Plovdiv"
- HUB_NAME_STATE_NORTHERN_THRACE_port:0 "Burgas"
- HUB_NAME_STATE_NORTHERN_THRACE_mine:0 "Pazardzhik"
- HUB_NAME_STATE_NORTHERN_THRACE_farm:0 "Haskovo"
- HUB_NAME_STATE_NORTHERN_THRACE_wood:0 "Stara Zagora"
- HUB_NAME_STATE_BULGARIA_city:1 "Sofia"
- HUB_NAME_STATE_BULGARIA_port:0 "Varna"
- HUB_NAME_STATE_BULGARIA_mine:2 "Veliko Tarnovo"
- HUB_NAME_STATE_BULGARIA_farm:0 "Shumen"
- HUB_NAME_STATE_BULGARIA_wood:1 "Pleven"
 
+#Словенія
+ HUB_NAME_STATE_SLOVENIA_city: "Любляна"
+ HUB_NAME_STATE_SLOVENIA_mine: "Птуй"
+ HUB_NAME_STATE_SLOVENIA_farm: "Марібор"
+ HUB_NAME_STATE_SLOVENIA_wood: "Ново Место"
+ HUB_NAME_STATE_ISTRIA_city: "Трієст"
+ HUB_NAME_STATE_ISTRIA_port: "Пула"
+ HUB_NAME_STATE_ISTRIA_mine: "Удіне"
+ HUB_NAME_STATE_ISTRIA_farm: "Опатія"
+ HUB_NAME_STATE_ISTRIA_wood: "Ґоріція"
+
+#Хорватія
+ HUB_NAME_STATE_CROATIA_city: "Заґреб"
+ HUB_NAME_STATE_CROATIA_mine: "Карловац"
+ HUB_NAME_STATE_CROATIA_farm: "Сісак"
+ HUB_NAME_STATE_CROATIA_port: "Рієка"
+ HUB_NAME_STATE_CROATIA_wood: "Покупсько"
+ HUB_NAME_STATE_DALMATIA_city: "Спліт"
+ HUB_NAME_STATE_DALMATIA_port: "Задар"
+ HUB_NAME_STATE_DALMATIA_mine: "Раґуза"
+ HUB_NAME_STATE_DALMATIA_farm: "Кнін"
+ HUB_NAME_STATE_DALMATIA_wood: "Шибеник"
+ HUB_NAME_STATE_SLAVONIA_city: "Брод на Саві"
+ HUB_NAME_STATE_SLAVONIA_mine: "Бєловар"
+ HUB_NAME_STATE_SLAVONIA_farm: "Осієк"
+ HUB_NAME_STATE_SLAVONIA_wood: "Градішка"
+
+#Боснія
+ HUB_NAME_STATE_BOSNIA_city: "Сараєво"
+ HUB_NAME_STATE_BOSNIA_mine: "Мостар"
+ HUB_NAME_STATE_BOSNIA_farm: "Баня-Лука"
+ HUB_NAME_STATE_BOSNIA_wood: "Добой"
+
+#Сербія
+ HUB_NAME_STATE_NORTHERN_SERBIA_city: "Бєлґрад"
+ HUB_NAME_STATE_NORTHERN_SERBIA_mine: "Крушеваць"
+ HUB_NAME_STATE_NORTHERN_SERBIA_farm: "Смедереве"
+ HUB_NAME_STATE_NORTHERN_SERBIA_wood: "Кралево"
+ HUB_NAME_STATE_SOUTHERN_SERBIA_city: "Приштіна"
+ HUB_NAME_STATE_SOUTHERN_SERBIA_mine: "Лесковац"
+ HUB_NAME_STATE_SOUTHERN_SERBIA_farm: "Феріжай"
+ HUB_NAME_STATE_SOUTHERN_SERBIA_wood: "Подуєво"
+ HUB_NAME_STATE_MONTENEGRO_city: "Подґоріца"
+ HUB_NAME_STATE_MONTENEGRO_port: "Бар"
+ HUB_NAME_STATE_MONTENEGRO_mine: "Мойковац"
+ HUB_NAME_STATE_MONTENEGRO_farm: "Беране"
+ HUB_NAME_STATE_MONTENEGRO_wood: "Ганові"
+ HUB_NAME_STATE_DELVIDEK_city: "Нові-Сад"
+ HUB_NAME_STATE_DELVIDEK_mine: "Панчево"
+ HUB_NAME_STATE_DELVIDEK_farm: "Зренянин"
+ HUB_NAME_STATE_DELVIDEK_wood: "Суботіца"
+
+#Албанія
+ HUB_NAME_STATE_ALBANIA_city: "Тірана"
+ HUB_NAME_STATE_ALBANIA_port: "Дуррес"
+ HUB_NAME_STATE_ALBANIA_mine: "Шкодер"
+ HUB_NAME_STATE_ALBANIA_farm: "Фієр"
+ HUB_NAME_STATE_ALBANIA_wood: "Берат"
+
+#Македонія
+ HUB_NAME_STATE_SKOPIA_city: "Скоп'є"
+ HUB_NAME_STATE_SKOPIA_mine: "Тетово"
+ HUB_NAME_STATE_SKOPIA_farm: "Кавадарці"
+ HUB_NAME_STATE_SKOPIA_wood: "Прілеп"
+
+#Ґреція
+ HUB_NAME_STATE_WEST_AEGEAN_ISLANDS_city: "Хора"
+ HUB_NAME_STATE_WEST_AEGEAN_ISLANDS_port: "Санторині"
+ #HUB_NAME_STATE_WEST_AEGEAN_ISLANDS_mine: "NAME"
+ HUB_NAME_STATE_WEST_AEGEAN_ISLANDS_farm: "Тінос"
+ #HUB_NAME_STATE_WEST_AEGEAN_ISLANDS_wood: "NAME"
+ HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_city: "Хіос"
+ HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_port: "Родос"
+ #HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_mine: "NAME"
+ HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_farm: "Мітіліні"
+ HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_wood: "Ваті"
+ HUB_NAME_STATE_MACEDONIA_city: "Верія"
+ HUB_NAME_STATE_MACEDONIA_port: "Салоніки"
+ HUB_NAME_STATE_MACEDONIA_mine: "Флорина"
+ HUB_NAME_STATE_MACEDONIA_farm: "Козані"
+ HUB_NAME_STATE_MACEDONIA_wood: "Касторія"
+ HUB_NAME_STATE_WESTERN_THRACE_city: "Кавала"
+ HUB_NAME_STATE_WESTERN_THRACE_port: "Александруполі"
+ HUB_NAME_STATE_WESTERN_THRACE_mine: "Серрес"
+ HUB_NAME_STATE_WESTERN_THRACE_farm: "Ксанті"
+ HUB_NAME_STATE_WESTERN_THRACE_wood: "Комотіні"
+ HUB_NAME_STATE_THESSALIA_city: "Ларісса"
+ HUB_NAME_STATE_THESSALIA_port: "Волос"
+ HUB_NAME_STATE_THESSALIA_mine: "Амбракія"
+ HUB_NAME_STATE_THESSALIA_farm: "Кардиця"
+ HUB_NAME_STATE_THESSALIA_wood: "Агрініо"
+ HUB_NAME_STATE_ATTICA_city: "Афіни"
+ HUB_NAME_STATE_ATTICA_port: "Месолонґіон"
+ HUB_NAME_STATE_ATTICA_mine: "Халкіда"
+ HUB_NAME_STATE_ATTICA_farm: "Ламія"
+ HUB_NAME_STATE_ATTICA_wood: "Карпенісіон"
+ HUB_NAME_STATE_IONIAN_ISLANDS_city: "Керкіра"
+ HUB_NAME_STATE_IONIAN_ISLANDS_port: "Закінтос"
+ #HUB_NAME_STATE_IONIAN_ISLANDS_mine: "NAME"
+ HUB_NAME_STATE_IONIAN_ISLANDS_farm: "Кефалонія"
+ #HUB_NAME_STATE_IONIAN_ISLANDS_wood: "NAME"
+ HUB_NAME_STATE_PELOPONNESE_city: "Тріполі"
+ HUB_NAME_STATE_PELOPONNESE_port: "Каламата"
+ HUB_NAME_STATE_PELOPONNESE_mine: "Нафпліон"
+ HUB_NAME_STATE_PELOPONNESE_farm: "Корінф"
+ HUB_NAME_STATE_PELOPONNESE_wood: "Патри"
+ HUB_NAME_STATE_CRETE_city: "Іракліон"
+ HUB_NAME_STATE_CRETE_port: "Matala"
+ HUB_NAME_STATE_CRETE_mine: "Ієрапетра"
+ HUB_NAME_STATE_CRETE_farm: "Ханья"
+ HUB_NAME_STATE_CRETE_wood: "Палеохора"
+
+#Болгарія
+ HUB_NAME_STATE_NORTHERN_THRACE_city: "Пловдив"
+ HUB_NAME_STATE_NORTHERN_THRACE_port: "Бурґас"
+ HUB_NAME_STATE_NORTHERN_THRACE_mine: "Пазарджик"
+ HUB_NAME_STATE_NORTHERN_THRACE_farm: "Хасково"
+ HUB_NAME_STATE_NORTHERN_THRACE_wood: "Стара-Заґора"
+ HUB_NAME_STATE_BULGARIA_city: "Софія"
+ HUB_NAME_STATE_BULGARIA_port: "Варна"
+ HUB_NAME_STATE_BULGARIA_mine: "Велико-Тирново"
+ HUB_NAME_STATE_BULGARIA_farm: "Шумен"
+ HUB_NAME_STATE_BULGARIA_wood: "Плевен"
+
+#Румунія
  HUB_NAME_STATE_WALLACHIA_city: "Бухарест"
  HUB_NAME_STATE_WALLACHIA_mine: "Крайова"
  HUB_NAME_STATE_WALLACHIA_farm: "Бузев"
@@ -681,14 +701,8 @@
  HUB_NAME_STATE_MOLDAVIA_mine: "Радівці"
  HUB_NAME_STATE_MOLDAVIA_farm: "Фокшань"
  HUB_NAME_STATE_MOLDAVIA_wood: "Бакеу"
- HUB_NAME_STATE_EAST_GALICIA_city: "Львів"
- HUB_NAME_STATE_EAST_GALICIA_mine: "Чернівці"
- HUB_NAME_STATE_EAST_GALICIA_farm: "Станіслав"
- HUB_NAME_STATE_EAST_GALICIA_wood: "Стрий"
- HUB_NAME_STATE_WEST_GALICIA_city: "Краків"
- HUB_NAME_STATE_WEST_GALICIA_mine: "Ярослав"
- HUB_NAME_STATE_WEST_GALICIA_farm: "Ряшів"
- HUB_NAME_STATE_WEST_GALICIA_wood: "Бельсько"
+ 
+#Польща
  HUB_NAME_STATE_SILESIA_city:0 "Breslau"
  HUB_NAME_STATE_SILESIA_mine:0 "Görbitz"
  HUB_NAME_STATE_SILESIA_farm:0 "Königshütte"
@@ -719,38 +733,58 @@
  HUB_NAME_STATE_MAZOVIA_mine:0 "Siedlce"
  HUB_NAME_STATE_MAZOVIA_farm:0 "Lomza"
  HUB_NAME_STATE_MAZOVIA_wood:0 "Ostroleka"
- HUB_NAME_STATE_BREST_city:0 "Brest"
- HUB_NAME_STATE_BREST_mine:0 "Pinsk"
- HUB_NAME_STATE_BREST_farm:0 "Białystok"
- HUB_NAME_STATE_BREST_wood:1 "Grodno"
- HUB_NAME_STATE_LITHUANIA_city:0 "Vilnius"
- HUB_NAME_STATE_LITHUANIA_mine:0 "Utena"
- HUB_NAME_STATE_LITHUANIA_farm:0 "Šiauliai"
- HUB_NAME_STATE_LITHUANIA_wood:0 "Kaunas"
- HUB_NAME_STATE_LITHUANIA_port:0 "Palanga"
- HUB_NAME_STATE_LATVIA_city:0 "Riga"
- HUB_NAME_STATE_LATVIA_port:0 "Liepāja"
- HUB_NAME_STATE_LATVIA_mine:1 "Jelgava"
- HUB_NAME_STATE_LATVIA_farm:0 "Daugavpils"
- HUB_NAME_STATE_LATVIA_wood:0 "Madona"
+
+#Литва
+ HUB_NAME_STATE_LITHUANIA_city: "Вільнюс"
+ HUB_NAME_STATE_LITHUANIA_mine: "Утена"
+ HUB_NAME_STATE_LITHUANIA_farm: "Шяуляй"
+ HUB_NAME_STATE_LITHUANIA_wood: "Каунас"
+ HUB_NAME_STATE_LITHUANIA_port: "Паланга"
+
+#
+ HUB_NAME_STATE_LATVIA_city: "Ріґа"
+ HUB_NAME_STATE_LATVIA_port: "Лієпая"
+ HUB_NAME_STATE_LATVIA_mine: "Єлґава"
+ HUB_NAME_STATE_LATVIA_farm: "Дауґавпілс"
+ HUB_NAME_STATE_LATVIA_wood: "Мадона"
+
+#
  HUB_NAME_STATE_ESTONIA_city:0 "Reval"
  HUB_NAME_STATE_ESTONIA_port:0 "Pärnu"
  HUB_NAME_STATE_ESTONIA_mine:0 "Tartu"
  HUB_NAME_STATE_ESTONIA_farm:1 "Narva"
  HUB_NAME_STATE_ESTONIA_wood:0 "Haapsalu"
+
+
  HUB_NAME_STATE_INGRIA_city: "Санкт-Петербурґ"
  HUB_NAME_STATE_INGRIA_port:0 "Kronstadt"
  HUB_NAME_STATE_INGRIA_mine:0 "Shlisselburg"
  HUB_NAME_STATE_INGRIA_farm:1 "Yamburg"
  HUB_NAME_STATE_INGRIA_wood:0 "Pskov"
- HUB_NAME_STATE_ORSHA_city:0 "Orsha"
- HUB_NAME_STATE_ORSHA_mine:1 "Mogilev"
- HUB_NAME_STATE_ORSHA_farm:0 "Gomel"
- HUB_NAME_STATE_ORSHA_wood:1 "Vitebsk"
- HUB_NAME_STATE_MINSK_city:0 "Minsk"
- HUB_NAME_STATE_MINSK_mine:1 "Barysaw"
- HUB_NAME_STATE_MINSK_farm:1 "Mozyr"
- HUB_NAME_STATE_MINSK_wood:1 "Bobruisk"
+ 
+#Білорусь
+ HUB_NAME_STATE_MINSK_city: "Мінськ"
+ HUB_NAME_STATE_MINSK_mine: "Борисов"
+ HUB_NAME_STATE_MINSK_farm: "Мозир"
+ HUB_NAME_STATE_MINSK_wood: "Бобруйськ"
+ HUB_NAME_STATE_BREST_city: "Брест"
+ HUB_NAME_STATE_BREST_mine: "Пінськ"
+ HUB_NAME_STATE_BREST_farm: "Білосток"
+ HUB_NAME_STATE_BREST_wood: "Гродно"
+ HUB_NAME_STATE_ORSHA_city: "Орша"
+ HUB_NAME_STATE_ORSHA_mine: "Могильов"
+ HUB_NAME_STATE_ORSHA_farm: "Гомель"
+ HUB_NAME_STATE_ORSHA_wood: "Вітебськ"
+
+#Україна
+ HUB_NAME_STATE_EAST_GALICIA_city: "Львів"
+ HUB_NAME_STATE_EAST_GALICIA_mine: "Чернівці"
+ HUB_NAME_STATE_EAST_GALICIA_farm: "Станіслав"
+ HUB_NAME_STATE_EAST_GALICIA_wood: "Стрий"
+ HUB_NAME_STATE_WEST_GALICIA_city: "Краків"
+ HUB_NAME_STATE_WEST_GALICIA_mine: "Ярослав"
+ HUB_NAME_STATE_WEST_GALICIA_farm: "Ряшів"
+ HUB_NAME_STATE_WEST_GALICIA_wood: "Бельсько"
  HUB_NAME_STATE_VOLHYNIA_city: "Рівне"
  HUB_NAME_STATE_VOLHYNIA_mine: "Тернопіль"
  HUB_NAME_STATE_VOLHYNIA_farm: "Ковель"
@@ -774,6 +808,9 @@
  HUB_NAME_STATE_LUHANSK_mine: "Олександрівка"
  HUB_NAME_STATE_LUHANSK_farm: "Катеринослав"
  HUB_NAME_STATE_LUHANSK_wood: "Олександрівськ"
+
+
+#
  HUB_NAME_STATE_KURSK_city:0 "Orel"
  HUB_NAME_STATE_KURSK_mine:0 "Voronezh"
  HUB_NAME_STATE_KURSK_farm:0 "Kursk"
