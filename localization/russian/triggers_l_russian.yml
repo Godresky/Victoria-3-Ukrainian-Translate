@@ -990,7 +990,7 @@
  TRIGGER_SHARES_NON_HERITAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_THIRD:0 "Shares a [concept_cultural_trait] which is not a [concept_cultural_heritage_trait] with any [concept_primary_cultures] ([Pop.GetCountry.GetPrimaryCulturesDesc] in [Pop.GetCountry.GetName])"
  TRIGGER_SHARES_NON_HERITAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_THIRD_NOT:0 "Does not share a [concept_cultural_trait] which is not a [concept_cultural_heritage_trait] with any [concept_primary_cultures] ([Pop.GetCountry.GetPrimaryCulturesDesc] in [Pop.GetCountry.GetName])"
  
- TRIGGER_SCOPE_COUNTRY_NOCONTEXT:0 "Country"
+ TRIGGER_SCOPE_COUNTRY_NOCONTEXT: "Держава"
  
  TRIGGER_SHARES_HERITAGE_TRAIT_WITH_STATE_RELIGION_NOCONTEXT:1 "Shares a trait with the [concept_state_religion] [concept_state_religion] in their [concept_country]"
  TRIGGER_SHARES_HERITAGE_TRAIT_WITH_STATE_RELIGION_NOCONTEXT_NOT:1 "Does not share a trait with the [concept_state_religion] [concept_state_religion] in their [concept_country]"

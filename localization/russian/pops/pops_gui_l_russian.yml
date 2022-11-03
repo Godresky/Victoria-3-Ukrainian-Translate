@@ -17,7 +17,7 @@
  PLEASE_SELECT_LANGUAGE:0 "Please select your language"
  PLEASE_SELECT_COUNTRY:0 "Please select your country"
  LANGUAGE:0 "Language"
- COUNTRY:0 "Country"
+ COUNTRY: "Держава"
  ADDRESS:0 "Address"
  CITY:0 "City"
  STATE:0 "State"

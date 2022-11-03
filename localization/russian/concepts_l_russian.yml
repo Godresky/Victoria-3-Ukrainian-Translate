@@ -802,6 +802,7 @@
 
  concept_rank: "Чин"
  concept_rank_gen: "Чину"
+ concept_rank_ins: "Чином"
  concept_ranks: "Чини"
  concept_rank_desc:3 "A [Concept('concept_country','$concept_country_possessive$')] $concept_rank$ is determined by measuring its [concept_prestige] relative to other $concept_countries$ worldwide. It determines what sorts of international activities you are permitted to engage in, what your people and the world expects of you, and where you stand in the global pecking order.[AddLocalizationIf( GetPlayer.IsValid, 'concept_rank_ingame_added' )]"
  concept_rank_ingame_added:1 "\n\nYour current $concept_rank$ is [GetPlayer.GetRank], which gives you the following benefits:\n[GetPlayer.GetRankModifier.GetDesc]"
@@ -850,6 +851,7 @@
  concept_dividends_desc_added:0 "[GetLawType('law_traditionalism').GetGroup.GetName]"
 
  concept_credit: "Спосуда"
+ concept_credit_gen: "Спосуди"
  concept_credit_debt: "Довг"
  concept_credit_limit: "Межа спосуди"
  concept_credit_desc:2 "The national $concept_credit$ is the amount of [concept_money] the [concept_treasury] can borrow from its economy, equal to the sum of all domestic [concept_cash_reserves] plus a base value determined by [concept_gdp]. If the [concept_principal] exceeds the $concept_credit_limit$ the [concept_country] goes into [concept_default]."
@@ -1273,6 +1275,7 @@
  concept_budget_diplomatic_pacts_desc:1 "[concept_money] collected from or remitted to the other party in a [concept_diplomatic_pact]."
 
  concept_construction: "Будівництво"
+ concept_construction_adj_many: "Будівельні"
  concept_construct: "Будувати"
  concept_construction_desc:3 "@construction! $concept_construction$ is produced by the [SelectLocalization(GetPlayer.IsValid,'concept_construction_desc_added','Construction Sector')] and is used to construct [Concept('concept_building', '$concept_buildings$')]."
  concept_construction_desc_added:0 "[GetBuildingType('building_construction_sector').GetName]"

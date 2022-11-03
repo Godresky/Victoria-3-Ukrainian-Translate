@@ -176,7 +176,7 @@
  alert_has_decreasing_interests_alert_hint:1 "You can prevent this by using the [Concept('concept_declared_interest','$concept_declare_interests$')] action in the [concept_diplomatic_lens]."
  alert_has_decreasing_interests_alert_action:0 "Diplomacy Panel"
  
- alert_wasted_construction_name:0 "Unused [concept_construction] Production"
+ alert_wasted_construction_name: "Незадіяні [Concept('concept_construction', '$concept_construction_adj_many$')|l] потужності"
  alert_wasted_construction_desc:0 "We have available [concept_construction] production that is not being used to construct any [Concept('concept_building', '$concept_buildings$')]."
  alert_wasted_construction_hint:0 "You can queue up building constructions to make use of the available [concept_construction] production."
  alert_wasted_construction_action:0 "Construction Panel"
@@ -204,7 +204,7 @@
  alert_obligation_expiring_action:0 "Diplomacy Panel"
 
   # Alert groups
- ALERT_GROUP_TOOLTIP_FOOTER:0 "#instruction Click to expand#!"
+ ALERT_GROUP_TOOLTIP_FOOTER: "#instruction Клацніть, щоб розгорнути#!"
  ag_missing_war_goals_name:0 "Missing [Concept('concept_war_goal', '$concept_war_goals$')]"
  ag_missing_war_goals_desc:0 "We are involved in [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] that have no primary [concept_war_goal] selected."
  ag_missing_war_goals_tooltip:0 "#header $ag_missing_war_goals_name$#!\n$TOOLTIP_DELIMITER$\n$ag_missing_war_goals_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
@@ -229,7 +229,7 @@
  ag_isolated_states_desc:0 "We have [GetPlayer.GetNumIsolatedStates] [Concept('concept_isolated_state', '$concept_isolated_states$')] in our country."
  ag_isolated_states_tooltip:0 "#header $ag_isolated_states_name$#!\n$TOOLTIP_DELIMITER$\n$ag_isolated_states_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
- ag_low_market_access_states_name:0 "Low [concept_market_access]"
+ ag_low_market_access_states_name: "Низький [concept_market_access|l]"
  ag_low_market_access_states_desc:0 "We have [GetPlayer.GetNumLowMarketAccessStates] [Concept('concept_state', '$concept_states$')] with low [concept_market_access]"
  ag_low_market_access_states_tooltip:0 "#header $ag_low_market_access_states_name$#!\n$TOOLTIP_DELIMITER$\n$ag_low_market_access_states_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  
