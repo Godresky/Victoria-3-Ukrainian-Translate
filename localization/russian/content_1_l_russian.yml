@@ -1657,7 +1657,7 @@
  bank_robberies:0 "Bank Robberies"
  frontier_military_aid:0 "Frontier Military Aid"
  assassination_completion_tt:0 "The assassination plot fails"
- ig_gentry_assembly:0 "Gentry Assembly"
+ ig_gentry_assembly: "Шляхетське зібрання"
  age_of_caudillos_modifier:0 "Age of Caudillos"
  notification_opium_wars_british_response_angry_name:0 "[SCOPE.sCountry('opium_wars_aggressor_country').GetAdjective] response to Opium Ban"
  notification_opium_wars_british_response_angry_desc:0 "[SCOPE.sCountry('opium_wars_aggressor_country').GetName] has responded angrily to the [SCOPE.sCountry('opium_wars_target_country').GetAdjectiveNoFormatting] ban on opium, with multiple threats towards the government of [SCOPE.sCountry('opium_wars_target_country').GetName]"

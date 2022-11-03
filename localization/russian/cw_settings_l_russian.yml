@@ -46,7 +46,7 @@
  OPTION_OFF:0 "Off"
  OPTION_LOW:0 "Low"
  OPTION_MEDIUM:0 "Medium"
- OPTION_HIGH:0 "High"
+ OPTION_HIGH: "Високі"
  OPTION_ULTRA:1 "Ultra"
  OPTION_CUSTOM:0 "Custom"
  OPTION_DEFAULT:1 "Default"

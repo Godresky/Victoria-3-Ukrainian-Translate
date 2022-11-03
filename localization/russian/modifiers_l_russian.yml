@@ -32,7 +32,7 @@
  modifier_state_tax_capacity_add_desc:0 "An increase or decrease to the amount of [concept_tax_capacity] in [Concept('concept_state', '$concept_states$')]"
  modifier_state_tax_capacity_mult:0 "$modifier_state_tax_capacity_add$"
  modifier_state_tax_capacity_mult_desc:0 "$modifier_state_tax_capacity_add_desc$"
- modifier_state_tax_collection_mult:0 "Tax Collection"
+ modifier_state_tax_collection_mult: "Збір податків"
  modifier_state_tax_collection_mult_desc:0 "An increase or decrease to the final amount of all [concept_taxes] collected from [Concept('concept_pop','$concept_pops$')]."
  modifier_country_law_enactment_time_mult:0 "Enactment Time"
  modifier_country_law_enactment_success_add:0 "Enactment Success Chance"

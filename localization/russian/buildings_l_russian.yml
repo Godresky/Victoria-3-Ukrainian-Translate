@@ -105,7 +105,7 @@
  building_suez_canal_lens_option: "Побудувати Суецький водовід"
  building_panama_canal: "Панамський водовід"   #або канал, крен
  building_panama_canal_lens_option: "Побудувати Панамський водовід"
- UNEMPLOYED: "[concept_unemployed]"
+ UNEMPLOYED: "[Concept('concept_unemployed', '$concept_unemployed_many$')]"
 
 
 # Building Groups

@@ -103,7 +103,7 @@
  RANDOM_EFFECT:0 "#variable $CHANCE|%0$#! chance of:"
  RANDOM_LIST_EFFECT:0 "One of #variable $SIZE$#! options will happen:"
  NONE: "Немає"
- INSIGNIFICANT:0 "Insignificant"
+ INSIGNIFICANT: "Незначні"
  accept: "Прийняти"
  low_pop_state:0 "Sparsely Populated"
  capital_state:0 "[concept_capital_state]"
