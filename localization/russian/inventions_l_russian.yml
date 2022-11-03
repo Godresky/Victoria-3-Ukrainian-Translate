@@ -360,7 +360,7 @@
  power_of_the_purse_desc:0 "Power of the Purse gives the ability to make purchases to the captains, allowing for a much more autonomous and effective fleet."
  pre_modern_warfare:0 "Pre-Modern Warfare"
  pre_modern_warfare_desc:0 "The conflicts of yesteryear pale in comparison to the ravages of modern war, yet they were still bloody affairs in their own right."
- production:0 "Production"
+ production: "Виробництво"
  propaganda:0 "Propaganda"
  propaganda_desc:0 "During the Revolutionary and Napoleonic Wars, the governments of Europe established propaganda wings to garner public support for the hardships faced by the common people. Political pamphlets and satirical cartoons were distributed in the cities, while patriotic verses were written to be sung to popular tunes."
  puddling_furnaces:0 "Puddling Furnaces"

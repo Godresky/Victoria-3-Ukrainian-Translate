@@ -354,7 +354,7 @@
  war_goal_humiliation_desc:0 "Reduces the prestige of [WAR_GOAL.GetTarget.GetName] and prevents them from opposing [WAR_GOAL.GetHolder.GetName] in [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] for 5 years."
  war_goal_humiliation_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by reducing the prestige of [WAR_GOAL.GetTarget.GetName] and preventing them from opposing [WAR_GOAL.GetHolder.GetName] in [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] for 5 years."
   
- war_goal_open_market_type_name:0 "Open Market"
+ war_goal_open_market_type_name: "Відкрити ринок"
  war_goal_open_market_type_desc:0 "Force a [concept_open_market] on another country."
  war_goal_open_market:2 "[Concept('concept_open_market', '$concept_open_market_short$')] [WAR_GOAL.GetTarget.GetAdjectiveNoFormatting] Market"
  war_goal_open_market_desc:1 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to adopt Free Trade laws and [Concept('concept_open_market', '$concept_open_market_short$')] up their market to foreign trade."

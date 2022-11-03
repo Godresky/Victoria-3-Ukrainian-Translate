@@ -61,25 +61,31 @@
 
  
 
- concept_protectorate: "Протекторат"
+ concept_protectorate: "Покровительство"
+ concept_protector: "Покровитель"
+ concept_protector_ins: "Покровителем"
  concept_protectorate_desc:2 "A $concept_protectorate$ is an autonomous [concept_subject] type able to start their own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]. A [concept_country] may ask, or be asked, to become a $concept_protectorate$ under an [concept_overlord] without risk of [concept_war] if the offer is declined."
  
- concept_puppet:0 "Puppet"
- concept_puppets:0 "Puppets"
+ concept_puppet: "Лялька"
+ concept_puppet_acc: "Ляльку"
+ concept_puppets: "Ляльки"
  concept_puppet_desc:2 "[Concept('concept_recognized_power','$concept_recognized_powers$')] may turn a weaker [concept_country] into their $concept_puppet$. A $concept_puppet$ is a [concept_subject] type that cannot start their own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] yet are forced to join their [Concept('concept_overlord','$concept_overlord_possessive$')] [Concept('concept_war','$concept_wars$')], and must also pay #v 20%#! of their [concept_treasury] income to their $concept_overlord$ each week. A $concept_puppet$'s [concept_rank] cannot increase to match or exceed their $concept_overlord$'s, and their $concept_overlord$ may target them with the #b Annexation#! $concept_diplomatic_play$."
  
- concept_personal_union:0 "Personal Union"
+ concept_personal_union: "Особиста унія"
+ concept_personal_union_acc: "Особисту унію"
  concept_personal_union_desc:4 "Two [Concept('concept_country', '$concept_countries$')] with the [SelectLocalization(GetPlayer.IsValid,'concept_personal_union_desc_added','Monarchy')] [concept_law] may be joined together in a $concept_personal_union$, a [concept_subject] relationship where the [Concept('concept_overlord','$concept_overlord_possessive$')] [concept_ruler] is the [concept_head_of_state] in both $concept_countries$. The subject cannot start their own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')], yet are forced to join their $concept_overlord$'s [Concept('concept_war','$concept_wars$')]. The [concept_diplomatic_pact] will break if the $concept_overlord$ abolishes the $law_monarchy$."
  concept_personal_union_desc_added:0 "[GetLawType('law_monarchy').GetName]"
 
- concept_dominion:0 "Dominion"
+ concept_dominion: "Домініон"
  concept_dominion_desc:1 "[Concept('concept_recognized_power','$concept_recognized_powers$')] may turn a weaker [concept_country] into their $concept_dominion$. A $concept_dominion$ is a more autonomous [concept_subject] type that are able to start their own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] and are not forced to join their [Concept('concept_overlord','$concept_overlord_possessive$')] [Concept('concept_war','$concept_wars$')]. They must pay #v 10%#! of their [concept_treasury] income to their $concept_overlord$ each week."
 
- concept_tributary:0 "Tributary"
+ concept_tributary: "Данник"
+ concept_tributary_ins: "Данником"
  concept_tributary_desc:1 "[Concept('concept_unrecognized_power','$concept_unrecognized_powers$')] may turn a weaker [concept_country] into their $concept_tributary$. A $concept_tributary$ is a more autonomous [concept_subject] type that are able to start their own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] and are not forced to join their [Concept('concept_overlord','$concept_overlord_possessive$')] [Concept('concept_war','$concept_wars$')]. They must pay #v 10%#! of their [concept_treasury] income to their $concept_overlord$ each week."
 
- concept_vassal:0 "Vassal"
- concept_vassalize:0 "Vassalize"
+ concept_vassal: "Слушник"
+ concept_vassal_gen: "Слушник"
+ concept_vassalize: "Слушникувати"
  concept_vassal_desc:1 "[Concept('concept_unrecognized_power','$concept_unrecognized_powers$')] may turn a weaker [concept_country] into their $concept_vassal$. A $concept_vassal$ is a [concept_subject] type that cannot start their own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] yet are forced to join their [Concept('concept_overlord','$concept_overlord_possessive$')] [Concept('concept_war','$concept_wars$')], and must also pay #v 15%#! of their [concept_treasury] income to their $concept_overlord$ each week."
  
  concept_observer_mode:0 "Observer Mode"
@@ -127,6 +133,7 @@
  concept_concept_desc:0 "This is a tooltippable game concept with another [concept_concept] within."
  
  concept_sol: "Рівень життя"
+ concept_sol_loc: "Рівенях життя"
  concept_sol_short: "РіЖи"
  concept_sol_desc:1 "$concept_sol$ measures a [Concept('concept_pop','$concept_pop_possessive$')] living conditions, with their material [concept_wealth] as the baseline. It governs [Concept('concept_pop_growth','$concept_pop_growth_birthrate_and_mortality$')], and every time it changes it can cause $concept_pops$ to become more [concept_radical] or [Concept('concept_loyalist','$concept_loyal$')]. The average $concept_sol$ in a [concept_state] affects its [concept_migration_pull]."
 
@@ -433,7 +440,7 @@
  concept_character_traits_short: "Риси"
  concept_character_trait_desc:1 "Personality $concept_character_traits_short$, Skill $concept_character_traits_short$, or Conditions that impact a [Concept('concept_character','$concept_character_possessive$')] ability to carry out their current [concept_character_role]. More or different $concept_character_traits$ may develop as the $concept_character$ gains [concept_life_experience]."
 
- concept_construction_queue:0 "Construction Queue"
+ concept_construction_queue: "Черга на будівництво"
  concept_construction_queue_desc:2 "Any [Concept('concept_building', '$concept_buildings$')] that have been set to be expanded, but are currently not using any [concept_construction], are placed in the $concept_construction_queue$. Whenever any $concept_construction$ becomes available, the first $concept_building$ in the $concept_construction_queue$ will start using that $concept_construction$ and then switch to being [concept_under_construction]."
 
  concept_under_construction: "Будівництво"
@@ -482,8 +489,8 @@
  concept_arable_land: "Рілля"
  concept_arable_land_desc:1 "The amount of land in a [concept_state] that can be used for cultivating crops or raising cattle. Unlike [Concept('concept_building','$concept_buildings$')] that require certain [Concept('concept_resource_potential','$concept_resource_potentials$')] to be constructed, $concept_arable_land$ must be shared between the $concept_building$ types that require it.\n\nThe amount of $concept_arable_land$ that stands unused by other $concept_buildings$ may be used for [Concept('concept_subsistence_building','$concept_subsistence_buildings$')], letting [Concept('concept_pop','$concept_pops$')] eke out a meager living even if not gainfully employed."
 
- concept_state_region:0 "State Region"
- concept_state_regions:0 "State Regions"
+ concept_state_region: "Державний регіон"
+ concept_state_regions: "Державні регіони"
  concept_state_region_desc:3 "A part of the world corresponding with a certain fixed set of [Concept('concept_province', '$concept_provinces$')]. A $concept_state_region$ is usually equivalent to a [concept_state]. In certain cases a $concept_state_region$ can become a [concept_split_state], where two or more [Concept('concept_country','$concept_countries$')] each hold a $concept_state$ in the same $concept_state_region$."
 
  concept_occupancy:0 "Occupancy"
@@ -615,7 +622,7 @@
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MAY 3, 2022
 
- concept_market_share:0 "Market Share"
+ concept_market_share: "Частка ринку"
  concept_market_share_desc:3 "The $concept_market_share$ of each [concept_country] in a [concept_market] is determined by its [concept_gdp], with a bonus if they are the [concept_market_owner]. The higher a $concept_country$'s $concept_market_share$ the more [Concept('concept_consumption_tax', '$concept_consumption_taxes$')] they collect in the [concept_market]."
 
  concept_default:0 "Default"
@@ -756,7 +763,9 @@
  concept_humiliation_desc:2 "A [concept_war_goal] that can be claimed in a [concept_diplomatic_play] or as part of a [concept_peace_deal]. A $concept_humiliated$ [concept_country] is unable to launch any $concept_diplomatic_plays$ of their own against the $concept_country$ they were $concept_humiliated$ by for a duration of #v [GetDefine('NDiplomacy','WAR_GOAL_HUMILIATION_DURATION')|0] months#!.[AddLocalizationIf(GetPlayer.IsValid,'concept_humiliation_desc_added')]"
  concept_humiliation_desc_added:0 "\n\nDuring this duration they are also subjected to the following effects:\n[GetStaticModifier('country_humiliated').GetDesc]"
 
- concept_customs_union:0 "Customs Union"
+ concept_customs_union: "Митна спілка"
+ concept_customs_union_acc: "Митну спілку"
+ concept_customs_union_gen: "Митної спілки"
  concept_customs_union_desc:1 "A [concept_diplomatic_pact] between a [concept_senior_partner] and one or several [Concept('concept_junior_partner','$concept_junior_partners$')] to share a single [concept_market], under the leadership of the $concept_senior_partner$. All [concept_subject] $concept_diplomatic_pacts_short$ also act as a $concept_customs_union$ $concept_diplomatic_pact_short$."
 
  concept_senior_partner:0 "Senior Partner"
@@ -1028,9 +1037,9 @@
  concept_education_access:0 "Education Access"
  concept_education_access_desc:1 "The degree by which a [concept_pop] is able to access education for their children. As new generations are born and raised, the $concept_pop$'s [concept_literacy] will move towards its level of $concept_education_access$."
 
- concept_isolated_state:0 "Isolated State Region"
- concept_isolated_states:1 "Isolated State Regions"
- concept_isolated_state_short:1 "Isolated"
+ concept_isolated_state: "Ізольований державний регіон"
+ concept_isolated_states: "Ізольовані державні регіони"
+ concept_isolated_state_short: "Ізольований"
  concept_isolated_state_desc:2 "A [concept_state_region] is considered $concept_isolated_state_short$ from its [concept_market] if it is not connected by land to its [concept_market_capital], and is not connected by land to a [SelectLocalization(GetPlayer.IsValid,'concept_isolated_state_desc_added','Port')] that can make a [concept_port_connection] to its $concept_market_capital$. $concept_isolated_states$ do not generate any [concept_buy_orders] and [concept_sell_orders], nor is the [concept_local_price] of [Concept('concept_good', '$concept_goods$')] affected by their [concept_market_price]."
  concept_isolated_state_desc_added:0 "[GetBuildingType('building_port').GetName]"
 
@@ -1051,7 +1060,7 @@
  concept_infrastructure_desc_added:0 "[GetBuildingType('building_railway').GetName]"
  concept_infrastructure_desc_added_2:0 "[GetBuildingType('building_port').GetName]"
 
- concept_infrastructure_usage:0 "Infrastructure Usage"
+ concept_infrastructure_usage: "Використання інфраструктури"
  concept_infrastructure_usage_desc:1 "[Concept('concept_building','$concept_buildings$')] use a certain amount of [concept_infrastructure] depending on how technologically advanced or demanding they are. The total $concept_infrastructure_usage$ in the [concept_state] is compared to the $concept_infrastructure$ to determine the $concept_state$'s [concept_market_access]. $concept_infrastructure_usage$ also increases the cost of [Concept('concept_port_connection','$concept_port_connections$')]."
   
  concept_good: "Товар"
@@ -1133,8 +1142,8 @@
  concept_state_religion_desc:2 "The [concept_religion] most associated with a [concept_country]. It is typically the dominant [concept_religion] adhered to by most of its [Concept('concept_pop', '$concept_pops$')], but can sometimes be legally declared or simply the $concept_religion$ preferred by its [concept_ruler]. It does not typically change.[AddLocalizationIf(GetPlayer.IsValid, 'concept_state_religion_ingame_added')]"
  concept_state_religion_ingame_added:2 "\n\nThe $concept_state_religion$ in [GetPlayer.GetName] is [GetPlayer.GetStateReligion.GetName]."
 
- concept_religious_trait:0 "Religious Trait"
- concept_religious_traits:1 "Religious Traits"
+ concept_religious_trait: "Релігійна риса"
+ concept_religious_traits: "Релігійні риси"
  concept_religious_trait_desc:2 "Aspects of a [concept_religion], such as its major religion group. The similarity between the $concept_religious_traits$ of a [Concept('concept_country','$concept_country_possessive$')] [concept_state_religion] and the $concept_religion$ adhered to by a [concept_pop], combined with the $concept_country$'s current [SelectLocalization(GetPlayer.IsValid,'concept_religious_trait_desc_added','Church and State')] [concept_law], determines whether the $concept_pop$ is [Concept('concept_discrimination','$concept_discriminated_against$')] or not."
  concept_religious_trait_desc_added:0 "[GetLawType('law_state_religion').GetGroup.GetName]"
  
@@ -1164,7 +1173,7 @@
  concept_technology_spread: "Поширення технологій"
  concept_technology_spread_desc:2 "One [concept_technology] that you have not yet acquired from each category ($PRODUCTION_NO_CONCEPT$, $MILITARY$, and $SOCIETY$) is always spreading to you from [Concept('concept_country','$concept_countries$')] that have acquired them. The progress you get in spreading $concept_technologies$ is randomized each week around a base value depending on your $concept_country$'s [concept_literacy]. If no $concept_country$ has invented a certain $concept_technology$ yet it cannot spread to you, so you are more likely to acquire early [Concept('concept_technology_era','$concept_technology_era_short$')] $concept_technologies$ from $concept_technology_spread$ than later ones."
 
- concept_technology_era:0 "Technology Era"
+ concept_technology_era: "Technology Era"
  concept_technology_era_short:0 "Era"
  concept_technology_eras_short:0 "Eras"
  concept_technology_era_ahead_of_time_penalty_desc:0 "If you have not yet acquired all $concept_technologies$ from previous $concept_technology_eras_short$, the amount required will increase further."
@@ -1175,8 +1184,8 @@
  concept_technology_desc:3 "$concept_technology$ covers all innovation in the fields of $PRODUCTION_NO_CONCEPT$, $MILITARY$, and $SOCIETY$. $concept_technologies$ have nation-wide effects, which can range from changing the [Concept('concept_country','$concept_country_possessive$')] operating parameters via [Concept('concept_modifier','$concept_modifiers$')] to unlocking new [Concept('concept_production_method','$concept_production_methods$')], [Concept('concept_building','$concept_buildings$')], [Concept('concept_law','$concept_laws$')], [Concept('concept_decree','$concept_decrees$')], and [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')].\n\nProgress is made towards new $concept_technologies$ through [concept_innovation], which is primarily produced by [SelectLocalization(GetPlayer.IsValid,'concept_technology_desc_added','University')] $concept_buildings$. In addition to progress from $concept_innovation$, $concept_technologies$ may propagate from $concept_countries$ who already have them to those who do not via [concept_technology_spread].\n\nThe amount of progress required in a $concept_technology$ to acquire it depends on its [Concept('concept_technology_era','$concept_technology_era_short$')]. $concept_technology_era_ahead_of_time_penalty_desc$"
  concept_technology_desc_added:0 " [GetBuildingType('building_university').GetName]"
 
- concept_canal:0 "Canal"
- concept_canals:1 "Canals"
+ concept_canal: "Водовід"
+ concept_canals: "Водоводи"
  concept_canal_desc:1 "A $concept_canal$ is a [concept_building] that also includes the construction of an artificial connection between two sea nodes across a landmass. $concept_canals$ can only be constructed in particular places and typically require the completion of some sort of survey or other expedition first. $concept_canals$ can drastically shorten the distance [concept_convoys] need to travel when establishing [Concept('concept_shipping_lane','$concept_shipping_lanes$')], making trade with distant lands more affordable."
 
  concept_monument:0 "Monument"
@@ -1258,8 +1267,8 @@
  concept_budget_diplomatic_pacts:0 "Diplomatic Pacts"
  concept_budget_diplomatic_pacts_desc:1 "[concept_money] collected from or remitted to the other party in a [concept_diplomatic_pact]."
 
- concept_construction:2 "Construction"
- concept_construct:0 "Construct"
+ concept_construction: "Будівництво"
+ concept_construct: "Будувати"
  concept_construction_desc:3 "@construction! $concept_construction$ is produced by the [SelectLocalization(GetPlayer.IsValid,'concept_construction_desc_added','Construction Sector')] and is used to construct [Concept('concept_building', '$concept_buildings$')]."
  concept_construction_desc_added:0 "[GetBuildingType('building_construction_sector').GetName]"
 
@@ -1297,7 +1306,7 @@
  concept_budget_military_slaves:0 "Military Slaves"
  concept_budget_military_slaves_desc:3 "The upkeep of [Concept('concept_slavery','$concept_slaves$')] in the service of a [Concept('concept_country','$concept_country_possessive$')] military."
 
- concept_good_production:0 "Production"
+ concept_good_production: "Виробництво"
  concept_good_produced:0 "Produced"
  concept_good_produce:1 "Produce"
  concept_good_produces:0 "Produces"
@@ -1377,8 +1386,8 @@
  concept_supply_network: "Мережа постачання"
  concept_supply_network_desc:3 "Every seafaring [concept_country] maintains a $concept_supply_network$ of [concept_convoys] to maintain the transportation needs of their [Concept('concept_shipping_lane','$concept_shipping_lanes$')]. The total strength of your $concept_supply_network$ is determined by comparing the amount of $concept_convoys$ produced to the total [concept_convoy_cost] across all your $concept_shipping_lanes$. This strength is the baseline [Concept('concept_shipping_lane_effectiveness','$concept_shipping_lane_effectiveness_short$')] of all your $concept_shipping_lanes$."
 
- concept_convoys:0 "Convoys"
- concept_convoy:0 "Convoy"
+ concept_convoys: "Конвої"
+ concept_convoy: "Конвой"
  concept_convoys_desc:2 "$concept_convoys$ are produced by [SelectLocalization(GetPlayer.IsValid,'concept_convoys_desc_added','Port')] $concept_buildings$ and are required to operate [Concept('concept_shipping_lane','$concept_shipping_lanes$')]."
  concept_convoys_desc_added:0 "[GetBuildingType('building_port').GetName]"
 
@@ -1425,7 +1434,7 @@
  concept_government_expenses_short:1 "Expenses"
  concept_government_expenses_desc:1 "The total weekly $concept_government_expenses_short$ accrued by the [concept_government], balanced against all its weekly revenues such as [concept_taxes], with the balance added to or removed from the [concept_treasury]."
 
- concept_sovereignty:0 "Sovereignty"
+ concept_sovereignty: "Самостайність"
  concept_sovereignty_desc:1 "A [Concept('concept_country','$concept_country_possessive$')] right to self-govern. When one $concept_country$ violates the $concept_sovereignty$ of another they openly disrespect this right. Should the other not respond in turn with an immediate military response enforcing the integrity of their borders, they submit to the violator and permit them military access through their territory."
 
  concept_average_wage:0 "Average Annual Wage"
@@ -1445,16 +1454,16 @@
  concept_normal_wage:0 "Normal Wage"
  concept_normal_wage_desc:3 "The baseline [concept_building_wage] in a [concept_country] which many [Concept('concept_building','$concept_buildings$')] take into account. [Concept('concept_government_wage','$concept_government_wages$')] and [Concept('concept_military_wage','$concept_military_wages$')] are based on the $concept_normal_wage$. It is determined from the average $concept_building_wages$ paid by [Concept('concept_building','$concept_building_industries$')] across [Concept('concept_incorporated_state', '$concept_incorporated_states$')]."
 
- concept_in_reserve:0 "In Reserve"
+ concept_in_reserve: "У запасі"
  concept_in_reserve_desc:1 "[Concept('concept_unit','$concept_units$')] that currently have no [concept_commander] are considered to be $concept_in_reserve$. They cannot be given [Concept('concept_order','$concept_orders$')] but will defend their homeland as part of a [concept_garrison] as needed."
 
- concept_dead:0 "Dead"
+ concept_dead: "Мертвий"
  concept_dead_desc:2 "[concept_casualties] that end up $concept_dead$ due to [concept_battle] or [concept_attrition]."
 
- concept_wounded:0 "Wounded"
+ concept_wounded: "Поранений"
  concept_wounded_desc:2 "[concept_casualties] that are merely $concept_wounded$ in [concept_battle] or due to [concept_attrition]. Some $concept_wounded$ $concept_casualties$ recover and return to active service after some time, while others end up as [concept_dependents] of other [Concept('concept_pop','$concept_pops$')] in your [concept_country]."
 
- concept_attrition:0 "Attrition"
+ concept_attrition: "Виснаження"
  concept_attrition_desc:2 "[concept_casualties] inflicted on [concept_manpower] outside of [concept_battle] is referred to as $concept_attrition$. It is frequently experienced when [Concept('concept_battalion','$concept_battalions$')] are [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilized$')] and can be the result of disease, accidents, exposure, or even desertion. $concept_attrition$ can be counteracted with using military $pmg_medical_aid$ [Concept('concept_production_method','$concept_production_methods$')]."
 
  concept_ruler: "Правитель"

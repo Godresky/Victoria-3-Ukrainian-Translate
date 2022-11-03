@@ -29,7 +29,7 @@
  farmers_desc:0 "Sharecroppers, smallholders and others who make a stable but scant living producing food or growing cash crops. Most see their interests represented as the Rural Folk."
  peasants:0 "@peasants! $peasants_no_icon$"
  peasants_only_icon:0 "@peasants!"
- peasants_no_icon:0 "Peasants"
+ peasants_no_icon: "Селяни"
  peasants_desc:2 "Subsistence farmers found only in [Concept('concept_subsistence_building', '$concept_subsistence_buildings$')], where they produce agricultural and simple manufactured products they use mostly for their own needs. They rely on [concept_subsistence_output] for survival and play only a limited role in the [concept_market] economy. They tend to be [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')]."
  laborers:0 "@laborers! $laborers_no_icon$"
  laborers_only_icon:0 "@laborers!"

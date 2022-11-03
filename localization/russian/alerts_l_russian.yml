@@ -4,7 +4,7 @@
   # alert_xyz_hint = information that should help the player to be able to understand the situation and how to fix the problem
   # alert_xyz_action = Where does clicking this take you?
   
- ALERT_TOOLTIP_FORMAT:2 "#header [Alert.GetName]#!\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty(Alert.GetDescription, '\n\n')]@information! [Alert.GetHint]\n\n#instruction Click to open the [Alert.GetAction]#!"
+ ALERT_TOOLTIP_FORMAT:2 "#header [Alert.GetName]#!\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty(Alert.GetDescription, '\n\n')]@information! [Alert.GetHint]\n\n#instruction Клацніть, щоб відкрити [Alert.GetAction]#!"
 
  EXPANDABLE_IMPORTANT_ACTION_ITEM:0 "[Alert.GetToolTip]$notification_tooltip_footer$"
 
