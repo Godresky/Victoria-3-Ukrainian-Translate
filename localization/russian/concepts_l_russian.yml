@@ -408,6 +408,7 @@
 
  concept_interest_group: "Зацікавлена група"
  concept_interest_group_gen: "Зацікавленої групи"
+ concept_interest_group_acc: "Зацікавлену групу"
  concept_interest_groups: "Зацікавлені групи"
  concept_interest_groups_gen: "Зацікавлених груп"
  concept_interest_group_possessive:1 "Interest Group\\'s"
@@ -868,7 +869,7 @@
  concept_loans: "Позики"
  concept_loans_desc:1 "Funds that the [concept_treasury] owes to the [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_shares$')], typically due to some type of government bond program. Whenever the $concept_treasury$ is running a negative balance, it will add to its $concept_loans$ unless it has sufficient [concept_gold_reserves] to cover it. The maximum size of $concept_loans$ a $concept_country$ may take before going into [concept_default] is equal to the sum of its [Concept('concept_building','$concept_buildings_possessive$')] [concept_cash_reserves]. [concept_budget_interest] is accrued on the [concept_principal] weekly, and is collected by $concept_pops$ with [Concept('concept_ownership_share','$concept_ownership_shares$')] proportionate to the amount of [concept_credit] their share of the $concept_cash_reserves$ provides."
 
- concept_war_support:0 "War Support"
+ concept_war_support: "Підтримка війни"
  concept_war_support_desc:1 "A measure of how eager your [Concept('concept_country','$concept_country_possessive$')] is to remain in a [concept_war]. Positive values indicates a desire to stay in the $concept_war$ while negative values indicate a general opposition to it. Once $concept_war_support$ reaches [GetDefine('NWar','AUTO_CAPITULATE_WAR_SUPPORT')|v0] the $concept_country$ will immediately capitulate, allowing all [Concept('concept_war_goal','$concept_war_goals$')] to be pressed on them."
 
  concept_occupation:0 "Occupation"
@@ -953,7 +954,7 @@
  concept_native_uprising_desc:3 "A type of [concept_diplomatic_play] that can occur if the [concept_tension] between a colonizer and a [concept_decentralized_nation] rises to #b $tension_volatile$#! level. In this $concept_diplomatic_play_short$, the $concept_decentralized_nation$ will mobilize its warriors and attempt to seize the [concept_colony] from the colonizer."
 
  concept_discrimination:0 "Discrimination"
- concept_discriminated:1 "Discriminated"
+ concept_discriminated: "Discriminated"
  concept_discriminated_against:0 "Discriminated Against"
  concept_discrimination_desc:3 "[Concept('concept_pop', '$concept_pops$')] can be $concept_discriminated_against$ if their [concept_culture] and/or [concept_religion] are not accepted in their [concept_country]. $concept_discriminated$ $concept_pops$:\n- get paid less than their peers\n- have less [concept_political_strength]\n- are less likely to develop [concept_pop_qualifications] for certain [concept_profession]\n- naturally become [concept_radical] over time\n- and are more likely to [Concept('concept_migration','$concept_emigrate$')].\n\nIn addition, certain [Concept('concept_law', '$concept_laws$')] limit or expand national acceptance of $concept_culture$ and $concept_religions$."
 
@@ -1010,6 +1011,7 @@
 
  concept_interest: "Руп"
  concept_interests: "Рупи"
+ concept_interests_gen: "Рупів"
  concept_interest_desc:2 "A [concept_country] maintaining an $concept_interest$ in a [concept_strategic_region] signals to the rest of the world that they might get involved in [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] taking place there. Having an [concept_active_interest] in a $concept_strategic_region$ is a requirement for many [Concept('concept_diplomatic_action','$concept_diplomatic_actions$')], and you cannot [Concept('concept_colony', '$concept_colonize$')] [Concept('concept_state_region','$concept_state_regions$')] where you do not maintain an [concept_active_interest].\n\nYou automatically gain $concept_interests$ in all $concept_strategic_regions$ where you own at least one non-colonial [concept_state]. Your ability to [Concept('concept_declared_interest','$concept_declared_interest_declare$')] more depends on your [concept_rank]."
 
  concept_inactive_interest:0 "Inactive Interest"
@@ -1566,6 +1568,7 @@
  concept_order_desc:2 "[Concept('concept_commander','$concept_commanders$')] can be given $concept_orders$ that cause them to pursue different military objectives. Some $concept_orders$ have targets (such as [Concept('concept_front','$concept_fronts$')] or [Concept('concept_hq','$concept_hqs$')]) while others do not. If an $concept_order$ requires a $concept_commander$ to travel they will do so automatically upon having been given it."
 
  concept_party: "Партія"
+ concept_party_gen: "Партії"
  concept_party_acc: "Партію"
  concept_parties: "Партії"
  concept_party_possessive:0 "Party\\'s"

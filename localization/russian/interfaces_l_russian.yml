@@ -2015,9 +2015,9 @@
  TOOLTIP_INCORPORATED_STATE_INSTITUTIONS_EFFECT:0 "The effects of [State.GetName] being an [concept_incorporated_state] are the following:\n[State.GetOwner.GetInstitutionsSummary]"
  INSTITUTION_BUR_FACTOR_BREAKDOWN:0 "[Country.GetInstitutionInvestmentBureaucracyFactorDesc]"
 
- INCORPORATE_STATE_COST:0 "Cost: $COST|1v$ @bur![Nbsp][concept_bureaucracy]"
+ INCORPORATE_STATE_COST: "Вартість: $COST|1v$ @bur![Nbsp][concept_bureaucracy]"
  
- TOOLTIP_INCORPORATE_STATE:3 "#header Incorporate State#!\n[State.GetBureaucracyCostDesc]\n$TOOLTIP_DELIMITER$\n[SelectLocalization(StringIsEmpty(GetDesc(State.IncorporateState)), 'STATE_INCORPORATION_TIME', 'STATE_INCORPORATION_ERROR')]"
+ TOOLTIP_INCORPORATE_STATE: "#header Невключений регіон#!\n[State.GetBureaucracyCostDesc]\n$TOOLTIP_DELIMITER$\n[SelectLocalization(StringIsEmpty(GetDesc(State.IncorporateState)), 'STATE_INCORPORATION_TIME', 'STATE_INCORPORATION_ERROR')]"
  STATE_INCORPORATION_TIME:0 "[State.GetIncorporationTimeDesc]"
  STATE_INCORPORATION_ERROR:0 "[GetDesc(State.IncorporateState)]"
  TOOLTIP_CANCEL_INCORPORATION:1 "#header Cancel Incorporation#!\nRefund: [State.PredictBureaucracyCost|1v] @bur![Nbsp][concept_bureaucracy]\n\n@warning! #bold [State.GetIncorporationProgress||v%0] incorporation progress will be lost!#!"
@@ -2118,7 +2118,7 @@
  GO_TO_BUTTON_CHARACTER: "Показати персонажа [Character.GetFullName]" 
  GO_TO_BUTTON_MARKET: "Показати [Market.GetName|l]"
  GO_TO_BUTTON_CONSTRUCTION_QUEUE:0 "Go to [concept_construction_queue]"
- GO_TO_BUTTON_INTEREST_GROUP: "Показати зацікавлену групу [InterestGroup.GetName]"
+ GO_TO_BUTTON_INTEREST_GROUP: "Показати [Concept('concept_interest_group', '$concept_interest_group_acc$')|l] [InterestGroup.GetName]"
  GO_TO_BUTTON_WAR: "Показати війну [War.GetName|l]"
 
  START_RESEARCHING:0 "Start Researching"
@@ -3375,7 +3375,7 @@
  WAR_PANEL_NO_CURRENT_PEACE_DEAL:0 "No Current [concept_peace_deal]"
  WAR_PANEL_CURRENT_PEACE_DEAL:1 "Current [concept_peace_deal]"
  WAR_PANEL_OVERVIEW: "Огляд"
- WAR_PANEL_PEACE:0 "Make Peace"
+ WAR_PANEL_PEACE: "Укладення миру"
  WAR_PANEL_PEACE_TOOLTIP:2 "#header $WAR_PANEL_CURRENT_PEACE_DEAL$#!\n$TOOLTIP_DELIMITER$\n#title Pressed [Concept('concept_war_goal', '$concept_war_goals$')]:#!\n[War.GetPressedWarGoalsString]\n\n[ConcatIfNeitherEmpty(War.GetPeaceDealValidationDesc, '\n' )][War.GetAcceptActivePeaceDealDesc]"
  WAR_PANEL_ALL_ACCEPT_PEACE:2 "@green_checkmark_box! #bold All parties agree to this [concept_peace_deal].#!"
  WAR_PANEL_NONE_ACCEPT_PEACE:2 "@red_cross! #bold No party agrees to this [concept_peace_deal].#!"
@@ -4271,7 +4271,7 @@
  POLITICAL_INACTIVE_TITLE_NO_FORMATTING:0 "#title Politically Inactive#!" # Don't turn this into a concept, it will break some IG tooltips
  TRAIT_INACTIVE:0 "(Inactive)"
 
- POLITICALLY_INACTIVE_POPULATION: "[Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')] Population: [Country.GetInactivePopulation|kv]"
+ POLITICALLY_INACTIVE_POPULATION: "[Concept('concept_politically_inactive_involved', '$concept_politically_inactive_gender_gen$')] населення: [Country.GetInactivePopulation|kv]"
  POLITICALLY_INACTIVE_POPULATION_TOOLTIP: "#header [Concept('concept_politically_inactive_involved', '$concept_politically_inactive_gender_gen$')] населення#!\nTotal: [GetPlayer.GetInactivePopulation|kv]\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetInactivePopulationDesc]"
  POLITICALLY_INVOLVED_POPULATION_TOOLTIP:1 "#header [Concept('concept_politically_inactive_involved', '$concept_politically_involved_gender_gen$')] населення#!\nTotal: [GetPlayer.GetPoliticallyInvolvedPopulation|kv]\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetPoliticallyInvolvedPopulationDesc]"
 
@@ -4303,9 +4303,9 @@
 
  ESTABLISH_COLONY_BUILDING_TOOLTIP:0 "#variable [BUILDING_TYPE.GetName]#!"
 
- STATE_COLONY_TOOLTIP:2 "#header Establishing [State.GetOwner.GetAdjective] Colony in [State.GetName]#!\n$TOOLTIP_DELIMITER$\nProgress towards gaining an additional province: #variable [State.GetColonyProgress|%]#!\nThe next growth of the colony is estimated to occur on #variable [State.GetColonyGrowthDateDesc]#!\n\nProgress increases each day by #variable [State.GetDailyColonyProgress|%]#! due to: \n[State.GetColonyGrowthModifierDesc]"
+ STATE_COLONY_TOOLTIP: "#header Будівництво [State.GetOwner.GetAdjective]ої осади у [Concept('concept_state','$concept_state_loc$')] [State.GetName]#!\n$TOOLTIP_DELIMITER$\nПоступ до отримання додаткової провінції: #variable [State.GetColonyProgress|%]#!\nНаступне зростання осади, за оцінками, відбудеться #variable [State.GetColonyGrowthDateDesc]#!\n\nПоступ збільшується щодня на #variable [State.GetDailyColonyProgress|%]#! завдяки: \n[State.GetColonyGrowthModifierDesc]"
 
- MARKET_CAPITAL:0 "#title [concept_market_capital]#!\n[Market.GetMarketCapital.GetName]"
+ MARKET_CAPITAL: "#title [concept_market_capital]#!\n[Market.GetMarketCapital.GetName]"
  MOVE_CAPITAL_FORBIDDEN_WHILE_IN_ACTIVE_DIPLO_PLAY:0 "#N Cannot move the capital while involved in a [concept_diplomatic_play]#!"
  MOVE_MARKET_CAPITAL_FORBIDDEN_WHILE_IN_ACTIVE_DIPLO_PLAY:0 "#N Cannot move the [concept_market_capital] while involved in a [concept_diplomatic_play]#!"
  MOVE_CAPITAL_FORBIDDEN_WHILE_AT_WAR:0 "#N Cannot move the capital while at [concept_war]#!"
@@ -4709,13 +4709,13 @@
  power:0 "Power"
  no_power:0 "No Power"
 
- RANK_HEADER:0 "#header Power Rank#!"
- RANK_TOOLTIP_NEXT: "Якщо $concept_prestige$ [Concept('concept_country','$concept_country_gen$')|l] [COUNTRY.GetName] буде принаймні [COUNTRY.GetPrestigeForNextRank|v], то $concept_rank$ стане [COUNTRY.GetNextRank|v]"
- RANK_TOOLTIP_PREV: "Якщо $concept_prestige$ [Concept('concept_country','$concept_country_gen$')|l] [COUNTRY.GetName] буде менше [COUNTRY.GetPrestigeToMaintainRank|v] протягом тривалого часу, то  $concept_rank$ стане [COUNTRY.GetPreviousRank|v]"
- RANK_TOOLTIP_MAX_SUBJECT: "@information! [COUNTRY.GetName] не може досягти вищого $concept_rank_gen$ ніж $HIGHEST_RANK|v$ через те, що [concept_subject|l] [Concept('concept_country','$concept_country_gen$')|l] [Country.GetOverlord.GetName], може мати позицію з максимальним балом #v ##$HIGHEST_POSITION$#! у світі"
- RANK_TOOLTIP_MAX_COUNTRY_TYPE:1 "@information! [COUNTRY.GetName] cannot achieve a higher $concept_rank$ than $HIGHEST_RANK|v$ due to their $COUNTRY_TYPE|v$ status, limiting them to a maximum score position of #v ##$HIGHEST_POSITION$#! in the world"
+ RANK_HEADER: "#header Чин держави#!"
+ RANK_TOOLTIP_NEXT: "Якщо [concept_prestige|l] [Concept('concept_country','$concept_country_gen$')|l] [COUNTRY.GetName] буде принаймні [COUNTRY.GetPrestigeForNextRank|v], то [concept_rank|l] стане [COUNTRY.GetNextRank|v]"
+ RANK_TOOLTIP_PREV: "Якщо [concept_prestige|l] [Concept('concept_country','$concept_country_gen$')|l] [COUNTRY.GetName] буде менше [COUNTRY.GetPrestigeToMaintainRank|v] протягом тривалого часу, то [concept_rank|l] стане [COUNTRY.GetPreviousRank|v]"
+ RANK_TOOLTIP_MAX_SUBJECT: "@information! [COUNTRY.GetName] не може досягти вищого [Concept('concept_rank','$concept_rank_gen$')|l] ніж $HIGHEST_RANK|v$ через те, що [concept_subject|l] [Concept('concept_country','$concept_country_gen$')|l] [Country.GetOverlord.GetName], може мати позицію з максимальним балом #v ##$HIGHEST_POSITION$#! у світі"
+ RANK_TOOLTIP_MAX_COUNTRY_TYPE: "@information! [COUNTRY.GetName] не може досягти вищого [Concept('concept_rank','$concept_rank_gen$')|l] ніж $HIGHEST_RANK|v$ через свій статус $COUNTRY_TYPE|v$, який обмежує її позицію з максимальним балом #v ##$HIGHEST_POSITION$#! у світі"
 
- COUNTRY_RANK_TOOLTIP: "#header [concept_rank]#!\n$TOOLTIP_DELIMITER$\n[COUNTRY.GetName] має $concept_rank$ #variable [COUNTRY.GetRank]#! із загальною позицією #variable ##[COUNTRY.GetCountryScorePositionDesc]#! у світі.\n\nПоточний [concept_prestige]: #tooltippable #tooltip:[COUNTRY.GetTooltipTag],COUNTRY_PRESTIGE_BREAKDOWN [COUNTRY.GetPrestige|v]#!#!"
+ COUNTRY_RANK_TOOLTIP: "#header [concept_rank]#!\n$TOOLTIP_DELIMITER$\n[COUNTRY.GetName] має [Concept('concept_rank','$concept_rank$')|l] #variable [COUNTRY.GetRank]#! із загальною позицією #variable ##[COUNTRY.GetCountryScorePositionDesc]#! у світі.\n\nПоточний [concept_prestige|l]: #tooltippable #tooltip:[COUNTRY.GetTooltipTag],COUNTRY_PRESTIGE_BREAKDOWN [COUNTRY.GetPrestige|v]#!#!"
  COUNTRY_PRESTIGE_BREAKDOWN:0 "#header [concept_prestige] of [Country.GetName]: [Country.GetPrestige|v]#!\n$TOOLTIP_DELIMITER$\n[Country.GetPrestigeDesc]"
  OBSERVER_RANK_TOOLTIP:0 "#header [concept_rank]#!\n#v ##0 #!$OBSERVER_NO_COUNTRY_SELECTED$"
 
@@ -4986,7 +4986,7 @@
  CURRENT_TAX_LEVEL_REVENUE:0 "Current Revenue: @money!$VALUE|Kv$"
  PREDICTED_TAX_LEVEL_DELTA:0 "Change in revenue from current tax level: #variable @money!$DELTA_INCOME|+=D$#!"
  PREDICTED_TAX_LAW_DELTA:0 "Change in revenue from current tax law: #variable @money!$DELTA_INCOME|+=D$#!"
- TAX_LEVEL_HEADER:0 "#variable $TAX_LEVEL$ Taxes#!"
+ TAX_LEVEL_HEADER: "#variable $TAX_LEVEL$ податки#!"
  TAX_LEVEL_TAX_LAW:0 "Taxation Law: [LawType.GetName]"
  TAX_LEVEL_NO_TAX_LAW:0 "Taxation Law: None"
  TAXED_GOODS:0 "Currently Taxed [Concept('concept_good', '$concept_goods$')]: $GOODSDESC$"
@@ -5011,14 +5011,14 @@
  PREDICTED_TARIFF_LEVEL_REVENUE:1 "Predicted Revenue: @money!$VALUE|Kv$"
  PREDICTED_TARIFF_LEVEL_DELTA:1 "Change in revenue from current [Concept('concept_tariffs','$concept_tariff$')] focus: #variable @money!$DELTA_INCOME|+=D$#!"
  PREDICTED_TARIFF_LAW_DELTA:1 "Change in revenue from current [Concept('concept_tariffs','$concept_tariff$')] law: #variable @money!$DELTA_INCOME|+=D$#!"
- TARIFF_LEVEL_HEADER:1 " #header [concept_market_good_policy]: $TARIFF_LEVEL$ #!"
+ TARIFF_LEVEL_HEADER: " #header [concept_market_good_policy]: $TARIFF_LEVEL$ #!"
  TARIFF_LEVEL_TARIFF_LAW:0 "Trade Policy: [LawType.GetName]"
  TARIFF_LEVEL_NO_TARIFF_LAW:0 "Trade Policy: None"
 
  LAW_FROM_TO:0 "[GetPlayer.GetActiveLawFromGroup(Law.GetGroup.GetKey).GetName] to [Law.GetName]"
- GROW_INSTITUTION:0 "#header Increase [INSTITUTION.GetName]'s investment level#!"
- SHRINK_INSTITUTION:0 "#header Decrease [INSTITUTION.GetName]'s investment level#!"
- INSTITUTION_CHANGE_TITLE:0 "#bold Effect of Level $LEVEL|v$:#!"
+ GROW_INSTITUTION: "#header Збільшити рівень установи [INSTITUTION.GetName]#!"
+ SHRINK_INSTITUTION: "#header Зменшити рівень установи [INSTITUTION.GetName]#!"
+ INSTITUTION_CHANGE_TITLE: "#bold Заподія рівня $LEVEL|v$:#!"
  CANCEL_INSTITUTION_SIZE_CHANGE_TOOLTIP:0 "Cancel increasing institution's investment level"
 
  LAW_INSTITUTION_TOOLTIP:0 "#header [Law.GetInstitutionType.GetName]#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
@@ -5486,9 +5486,9 @@
  SUBSIDIZED_ALL_NO: "Жодна з будівель цієї групи немає [Concept('concept_subsidies', '$concept_subsidies_gen$')|l].\n\n#instruction Клацніть, щоб надати субсидії всім будівлям.#!"
  SUBSIDIZED_ALL_MIXED: "Деякі з будівель цієї групи мають [Concept('concept_subsidies', '$concept_subsidies_acc$')|l].\n\n#instruction Клацніть, щоб надати субсидії всім будівлям.#!"
 
- AUTO_EXPAND_ALL_YES:0 "#header Automatic Expansion#!\nAll buildings in this group are being Automatically Expanded.\n\n#instruction Click to remove all Automatical Expansion.#!"
- AUTO_EXPAND_ALL_NO:0 "#header No Automatic Expansion#!\nNone of the buildings in this group are being Automatically Expanded.\n\n#instruction Click to Automatically Expand all buildings.#!"
- AUTO_EXPAND_ALL_MIXED:0 "#header Some Automatic Expansion#!\nSome of the buildings in this group are being Automatically Expanded.\n\n#instruction Click to Automatically Expand all buildings.#!"
+ AUTO_EXPAND_ALL_YES: "#header Автоматичне розширення#!\nAll buildings in this group are being Automatically Expanded.\n\n#instruction Click to remove all Automatical Expansion.#!"
+ AUTO_EXPAND_ALL_NO: "#header Без автоматичного розширення#!\nNone of the buildings in this group are being Automatically Expanded.\n\n#instruction Click to Automatically Expand all buildings.#!"
+ AUTO_EXPAND_ALL_MIXED: "#header Деяке автоматичне розширення#!\nSome of the buildings in this group are being Automatically Expanded.\n\n#instruction Click to Automatically Expand all buildings.#!"
 
  SUBSIDIES_TOOLTIP:2 "Wage [concept_subsidies] required: #v @money!$VAL|-0$#!\n$TAB$[Concept('concept_building_wage', '$concept_building_wages$')] required to maintain full employment: #v @money!$SUB_VAL|0$#!\n$TAB$$NAME$ capacity to pay: #v @money!$REG_VAL|0+$#!\n\nInput Goods Subsidy required #v @money!$BALANCE_VAL|-0$#!"
 

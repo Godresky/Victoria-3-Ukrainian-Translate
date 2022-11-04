@@ -50,9 +50,9 @@
   # "Regular" info used in fancier tooltips
  COMMANDER_LOCATION_UNKNOWN:0 "#v Unknown#!"
  COMMANDER_CURRENT_ORDERS: "Місцина: [Character.GetLocationFormatted]"
- DATA_CHARACTER_COMMANDER_LOCATION_TOOLTIP:1 "[AddTextIf(And( Character.GetHomeHQ.IsValid, Not(Character.IsOffer)), '\nLocation:' )] [AddTextIf( And( Character.GetHomeHQ.IsValid, Not(Character.IsOffer)), Character.GetLocationFormatted )]"
+ DATA_CHARACTER_COMMANDER_LOCATION_TOOLTIP: "[AddTextIf(And( Character.GetHomeHQ.IsValid, Not(Character.IsOffer)), '\nМісцина:' )] [AddTextIf( And( Character.GetHomeHQ.IsValid, Not(Character.IsOffer)), Character.GetLocationFormatted )]"
  DATA_BUILDING_NAME_TOOLTIP:1 "[Building.GetTooltip]\n\n[Building.GetBuildingType.GetTooltipForBuilding(Building.Self)][Building.GetDebugTooltip]"
- DATA_BUILDING_TYPE_NAME_TOOLTIP:0 "[BuildingType.GetTooltip]"
+ DATA_BUILDING_TYPE_NAME_TOOLTIP: "[BuildingType.GetTooltip]"
  DATA_BUILDING_TYPE_NAME_TOOLTIP_NO_STATES:0 "[BuildingType.GetTooltip]\n #warning No available states for building#!"
  DATA_CHARACTER_NAME_TOOLTIP: "Ролі: [Character.GetAllRoleNames|v]$DATA_CHARACTER_NAME_TOOLTIP_COMMANDER_DETAILS$\n\n[Concept('concept_character_trait', '$concept_character_traits$')]: [Character.GetTraitsDesc]\n[concept_interest_group]: [Character.GetInterestGroup.GetName]\n[concept_ideology]: [Character.GetIdeology.GetName]\n\n[concept_country]: [Character.GetCountry.GetName]\n[concept_culture]: [Character.GetCulture.GetName]\n[concept_religion]: [Character.GetReligion.GetName]\n[concept_popularity]: #tooltippable_name #tooltip:[Character.GetTooltipTag],POPULARITY_BREAKDOWN [LabelingHelper.GetLabelForPopularityCFixedPoint(Character.GetPopularity)]#!#! (#tooltippable #tooltip:[Character.GetTooltipTag],POPULARITY_BREAKDOWN [Character.GetPopularity|0]#!#!)\nВік: [Character.GetAge|v]"
  DATA_CHARACTER_NAME_TOOLTIP_COMMANDER_DETAILS:0 "[ConcatIfNeitherEmpty( '\n', AddTextIf( Character.IsCommander, Character.GetCommanderDetails ))]"
