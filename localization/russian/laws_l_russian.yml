@@ -1,64 +1,64 @@
 ﻿l_russian:
   
   # Leader Ideologies
- ideology_moderate:0 "Moderate"
+ ideology_moderate: "Помірний"
  ideology_moderate_desc:0 "#lore This leader is considered a moderate in their Interest Group, with no particular ideology of their own.#!"
  
- ideology_traditionalist:0 "Traditionalist"
+ ideology_traditionalist: "Звийчаїст"
  ideology_traditionalist_desc:0 "#lore This leader believes in maintaining traditional customs, viewing them as an extension of natural laws. #!"
 
- ideology_atheist:1 "Nihilist"
+ ideology_atheist: "Ніцтник"
  ideology_atheist_desc:0 "#lore This leader disavows organized religion, viewing it as a form of authoritarian superstition. #!"
 
- ideology_republican_leader:0 "Republican"
+ ideology_republican_leader: "Республіканець"
  ideology_republican_leader_desc:0 "#lore This leader seeks to establish a republic ruled by elected officials. #!"
 
- ideology_radical:0 "Radical"
+ ideology_radical: "Радикал"
  ideology_radical_desc:0 "#lore This leader strives for radical liberal reforms advancing democratic ideals. #!"
 
- ideology_abolitionist:0 "Abolitionist"
+ ideology_abolitionist: "Аболіціоніст"
  ideology_abolitionist_desc:0 "#lore This leader finds slavery an abhorrent violation of human rights and seeks to abolish it from the world. #!"
 
- ideology_slaver:0 "Slaver"
+ ideology_slaver: "Работорговець"
  ideology_slaver_desc:0 "#lore This leader views slavery as a natural part of their way of life and opposes its abolition. #!"
 
- ideology_feminist:0 "Feminist"
+ ideology_feminist: "Фемініст"
  ideology_feminist_desc:0 "#lore This leader holds that women are equal to men and strives for the extension of their rights as citizens.#!"
  
- ideology_reformer:0 "Reformer"
+ ideology_reformer: "Реформатор"
  ideology_reformer_desc:0 "#lore This leader wants to make a few incremental changes to make society just a bit more equal. But not too much.#!"
 
- ideology_pacifist:0 "Pacifist"
+ ideology_pacifist: "Пацифіст"
  ideology_pacifist_desc:0 "#lore This leader believes in non-violence as their method and peace as their goal.#!"
 
- ideology_jingoist_leader:0 "Jingoist"
+ ideology_jingoist_leader: "Шовініст"
  ideology_jingoist_leader_desc:0 "#lore This leader advocates an aggressive foreign policy, emphasizing readiness to go to war to advance its ambitions. #!"
 
- ideology_royalist:0 "Royalist"
+ ideology_royalist: "Рояліст"
  ideology_royalist_desc:0 "#lore This leader's loyalties are to the monarchy and its rightful ruler.#!"
  
- ideology_social_democrat:0 "Social Democrat"
+ ideology_social_democrat: "Соціял-демократ"
  ideology_social_democrat_desc:0 "#lore This leader believes in achieving a socialist society through parliamentary reform. #!"
 
- ideology_communist:0 "Communist"
+ ideology_communist: "Комуніст"
  ideology_communist_desc:0 "#lore This leader believes in the working class seizing political power through whatever means necessary. #!"
 
- ideology_vanguardist:0 "Vanguardist"
+ ideology_vanguardist: "Авангардист"
  ideology_vanguardist_desc:0 "#lore This leader believes in achieving a socialist society through a vanguard party of dedicated radicals. #!"
 
- ideology_fascist:0 "Fascist"
+ ideology_fascist: "Фашист"
  ideology_fascist_desc:0 "#lore This leader is an ultranationalist who espouses the revival of perceived traditional, authoritarian values in a modern context. #!"
 
- ideology_anarchist:0 "Anarchist"
+ ideology_anarchist: "Анархіст"
  ideology_anarchist_desc:0 "#lore This leader seeks the abolishment of hierarchy, authority and the state, leaving people to govern themselves. #!"
 
- ideology_ethno_nationalist:0 "Ethno-Nationalist"
+ ideology_ethno_nationalist: "Етнонаціоналіст"
  ideology_ethno_nationalist_desc:0 "#lore This leader believes in a nation defined on ethnic grounds. #!"
 
- ideology_theocrat:0 "Theocrat"
+ ideology_theocrat: "Боговлад"
  ideology_theocrat_desc:0 "#lore This leader believes in a state run by the church in line with doctrinal values.#!"
 
- ideology_market_liberal:0 "Market Liberal"
+ ideology_market_liberal: "Ринковий ліберал"
  ideology_market_liberal_desc:0 "#lore This leader believes that the invisible hand of the free market should be the guiding force of the nation's economy."
 
   # Interest Group Ideologies

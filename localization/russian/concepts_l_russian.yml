@@ -458,8 +458,8 @@
  concept_endorse:0 "Endorse"
  concept_endorses:0 "Endorses"
  concept_endorsed:0 "Endorsed"
- concept_endorsement:0 "Endorsement"
- concept_opposition:0 "Opposition"
+ concept_endorsement: "Підтримка"
+ concept_opposition: "Опозиція"
  concept_oppose:0 "Oppose"
  concept_opposes:0 "Opposes"
  concept_indifferent:0 "Indifferent"
@@ -639,7 +639,7 @@
  concept_bankruptcy_desc:2 "If a [concept_country] is in [concept_default] and unable to pay back its [concept_loans], it may opt to declare $concept_bankruptcy$. This will clear the debt but wipe out all [concept_cash_reserves] the $concept_country$ had borrowed from, and will greatly anger any [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_shares$')].[AddLocalizationIf(GetPlayer.IsValid,'concept_bankruptcy_desc_added')] "
  concept_bankruptcy_desc_added:0 "In addition, the following effects are applied for #v [GetDefine('NEconomy','DECLARE_BANKRUPTCY_PENALTY_DURATION_YEARS')|0] years#!:\n[GetStaticModifier('declared_bankruptcy').GetDesc]"
 
- concept_market_owner:1 "Market Owner"
+ concept_market_owner: "Власник ринку"
  concept_market_owner_possessive:2 "Market Owner\\'s"
  concept_market_owner_desc:4 "The [concept_country] that owns the market, either because it is the only participant or the [concept_senior_partner] in a [concept_customs_union]. Only the $concept_market_owner$ may set [concept_tariffs], [Concept('concept_market_good_policy','$concept_market_good_policies$')], and issue [Concept('concept_embargo','$concept_embargoes$')]."
 
@@ -1091,6 +1091,7 @@
 
  concept_state: "Регіон"
  concept_state_gen: "Регіону"
+ concept_state_acc: "Регіон"
  concept_state_loc: "Регіоні"
  concept_states: "Регіони"
  concept_state_or_states: "Регіон(-и)"
@@ -1489,19 +1490,19 @@
  concept_ruler_possessive:1 "Ruler\\'s"
  concept_ruler_desc:2 "A $concept_ruler$ is usually the [concept_head_of_state] who represents the [Concept('concept_country','$concept_country_possessive$')] in domestic and world affairs. A $concept_ruler$'s [Concept('concept_character_trait','$concept_character_traits$')] affects the $concept_country$ directly. When a $concept_ruler$ dies a new one will take their place, either an [concept_heir] if one exists or another $concept_character$ depending on [concept_government_type]."
 
- concept_heir: "Heir"
+ concept_heir: "Спадкоємець"
  concept_heir_desc:2 "The $concept_heir$ of a [concept_country] is a [concept_character]. They will take over the [concept_character_role] of [concept_ruler] upon the current $concept_ruler$'s death."
 
  concept_character_role: "Роль"
  concept_character_roles: "Ролі"
  concept_character_role_desc:2 "$concept_character_roles$ determine what areas of your [concept_country] a particular [concept_character] has influence over. A $concept_character$ can have one or several $concept_character_roles$.\n\nThe list of $concept_character_roles$ are:\n[concept_ruler] (usually also a [concept_politician])\n[concept_heir]\n[concept_politician]\n[concept_general]\n[concept_admiral]"
 
- concept_treasury:0 "Treasury"
+ concept_treasury: "Казначейство"
  concept_treasury_possessive:0 "Treasury\\'s"
  concept_treasury_desc:1 "The $concept_treasury$ keeps track of your [Concept('concept_country','$concept_country_possessive$')] assets. Each week your budget balance will result in the $concept_treasury$ taking out more [concept_loans] to cover a [concept_money] deficit, or depositing $concept_money$ into the [concept_gold_reserves]."
 
- concept_building_balance:0 "Balance"
- concept_building_balance_profit:0 "Profit"
+ concept_building_balance: "Баланс"
+ concept_building_balance_profit: "Прибуток"
  concept_building_balance_desc:3 "A [Concept('concept_building','$concept_building_possessive$')] $concept_building_balance$ is the amount of [concept_money] that remains of its [concept_revenue] after paying [Concept('concept_building_wage','$concept_building_wages$')] and purchasing required [Concept('concept_good','$concept_goods_input$')]. The $concept_building_balance$ is divided between [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_share$')] and the $concept_building$'s [concept_cash_reserves]. A $concept_building$'s $concept_building_balance$ can be improved either by making its $concept_goods_input$ cheaper, or by making its $concept_goods_output$ more expensive. This can be done by increasing or decreasing [Concept('concept_sell_orders','$concept_sell_orders_supply$')] and [Concept('concept_buy_orders','$concept_buy_orders_demand$')] on the [concept_market] it belongs to."
 
  concept_building_wage:0 "Wage"

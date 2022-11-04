@@ -787,7 +787,7 @@
  free_arts: "Вільне мистецтво"
  free_science: "Вільна наука"
  teeming_shore: "Буйний берег"
- new_colossus "Новий Колос"
+ new_colossus: "Новий Колос"
   # Education Law Events
  education_laws.1.t:0 "Academic Assistance"
  education_laws.1.d:0 "The teachers of our higher institutions of learning have offered to advise the government in the implementation of the new [SCOPE.sLaw('current_law_scope').GetName]."

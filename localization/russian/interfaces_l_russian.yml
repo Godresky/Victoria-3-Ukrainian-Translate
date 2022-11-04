@@ -657,7 +657,7 @@
  GARRISON_MAP_MARKER_HQ_GARRISON:1 "[Hq.GetCombatUnitsIcon] #variable [Hq.GetHomeGarrisonUnits]#!"
  GARRISON_MAP_MARKER_HQ_GARRISON_TOOLTIP:0 "There are currently [Hq.GetGarrisonUnitsHeader] in [Hq.GetNameNoFlag]\n\n[Hq.GetHomeGarrisonUnitsDesc]"
 
- SUPPLY_NETWORK_MAPMARKER_HEADER:1 "#header [GetPlayer.GetAdjectiveNoFormatting]а [concept_supply_network]#!"
+ SUPPLY_NETWORK_MAPMARKER_HEADER: "#header [GetPlayer.GetAdjectiveNoFormatting]а [concept_supply_network|l]#!"
  SUPPLY_NETWORK_MAPMARKER_IS_RAIDED:1 "@warning! [Concept('concept_raid_convoys', '$concept_convoy_raiding$')] has sunk $NUM_SUNK_CONVOYS|-v$ [concept_convoys] belonging to our [Concept('concept_shipping_lane', '$concept_shipping_lanes$')] passing through this node, reducing their efficiency by an average of $DAMAGE|v-%$"
  SUPPLY_NETWORK_TOOLTIP:1 "$SUPPLY_NETWORK_MAPMARKER_HEADER$\n$NUM_CONVOYS_NO_DAMAGE$\n$USED_CONVOYS$\n$NUM_SEA_NODES$\n$SUPPLY_NETWORK_STRENGTH$"
  SUPPLY_NETWORK_DAMAGED_TOOLTIP:1 "$SUPPLY_NETWORK_MAPMARKER_HEADER$\n$USED_CONVOYS$\n$NUM_SEA_NODES$\n$SUPPLY_NETWORK_STRENGTH$\n\n$IS_BEING_RAIDED_DESC$"
@@ -5887,10 +5887,10 @@
  GENERAL_TRAVELING_FRONT_PANEL:0 "$GENERAL_TRAVELING$ ([Character.GetDaysToCompleteTravelFormatted])"
  GENERAL_TRAVELING_TOOLTIP:0 "[Character.GetFirstName|v] will arrive in [Front.GetName] in [Character.GetDaysToCompleteTravelFormatted]."
  GENERAL_TRAVELING_TOOLTIP_LESS_THAN_ONE_DAY:0 "[Character.GetFirstName|v] will arrive in [Front.GetName] in less than #variable 1#! day."
- GENERAL_TRAVEL_DAY:0 "day"
- GENERAL_TRAVEL_DAYS:0 "days"
+ GENERAL_TRAVEL_DAY: "день"
+ GENERAL_TRAVEL_DAYS: "дня(-ів)"
 
- ACTIVATE_CONSCRIPTION_CENTER:0 "Activate Conscription Center"
+ ACTIVATE_CONSCRIPTION_CENTER: "Активувати призовний пункт"
  ACTIVATE_CONSCRIPTION_CENTER_TOOLTIP:0 "#header Activate [concept_conscription_center]#!\n$TOOLTIP_DELIMITER$\nSize: [Building.GetExpansionLevel|v]\nUnit Capacity: [Building.GetCombatUnitCapacityDesc]$TROOP_ALLOCATION_CHANGES_ACTIVATE_CONSCRIPTION_CENTER$"
  CANNOT_ACTIVATE_CONSCRIPTION_CENTERS_NO_LAW:0 "[concept_country] must have a conscription law"
  CANNOT_ACTIVATE_CONSCRIPTION_CENTERS_NO_DIPLO_PLAY:0 "[concept_country] must be part of a [concept_diplomatic_play]"
@@ -5903,12 +5903,12 @@
  CONSCRIPTION_COST_NO_BREAKDOWN:0 "@money!$COST|K+=$"
  CONSCRIPTION_COST_ITEM:0 "[Building.GetName] in [Building.GetState.GetName]: #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] @money!$COST|K+=$#!#!"
 
- activate_conscription_centers_lens_option:0 "Activate Conscription Centers"
+ activate_conscription_centers_lens_option: "Активувати призовні пункти"
  activate_conscription_centers_lens_option_tooltip:1 "#header Activate Conscription Centers#!\n$TOOLTIP_DELIMITER$\nSelect [Concept('concept_state', '$concept_states$')] where you would like to activate [Concept('concept_conscription_center', '$concept_conscription_centers$')]"
 
- recruit_generals_lens_option:0 "Recruit Generals"
+ recruit_generals_lens_option: "Завербувати генералів"
  recruit_generals_lens_option_tooltip:0 "Recruit Generals for a [concept_hq]."
- recruit_admirals_lens_option:0 "Recruit Admirals"
+ recruit_admirals_lens_option: "Завербувати адміралів"
  recruit_admirals_lens_option_tooltip:0 "Recruit Admirals for a [concept_hq]."
 
  EVENT_HIGHLIGHTED_OPTION:0 "This option is available because:"
