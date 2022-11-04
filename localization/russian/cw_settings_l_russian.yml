@@ -158,6 +158,6 @@
  SETTING_MAP_EDITOR_AUTOSAVE_INTERVAL_MINUTES_TOOLTIP:0 "Map Editor Auto-save interval (minutes)"
  SETTING_NODE_EDITOR_DRAG_PAN_MODE:0 "Node Editor Drag Pan Mode"
  # Accessibility
- SETTINGS_CATEGORY_ACCESSIBILITY:0 "Accessibility"
+ SETTINGS_CATEGORY_ACCESSIBILITY: "Доступність"
  SETTING_COLOR_BLIND_MODE:0 "Color Blind Mode"
  SETTING_COLOR_BLIND_MODE_TOOLTIP:0 "#T $SETTING_COLOR_BLIND_MODE$\n#!Changes the colors used in text throughout the game to a set of colors that is easier to distinguish for different types of color blindness."

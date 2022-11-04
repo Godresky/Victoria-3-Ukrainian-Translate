@@ -48,7 +48,7 @@
  DIPLO_PLAY_GREAT_POWER_TRIGGER:0 "We must be a [concept_great_power] to launch this [concept_diplomatic_play]"
  DIPLO_PLAY_OUTRAGED_TRIGGER:0 "Their [concept_infamy] level must be at $infamy_pariah$"
  
- DIPLO_ACTION_RELATIONS: "[concept_relations] між [Concept('concept_country', '$concept_countries_ins$')] [SCOPE.GetRootScope.GetCountry.GetName] та [SCOPE.sC('target_country').GetName]"
+ DIPLO_ACTION_RELATIONS: "[concept_relations] між [Concept('concept_country', '$concept_countries_ins$')|l] [SCOPE.GetRootScope.GetCountry.GetName] та [SCOPE.sC('target_country').GetName]"
  DIPLO_ACTION_RELATIONS_CORDIAL:1 "$DIPLO_ACTION_RELATIONS$ are $relations_cordial$"
  DIPLO_ACTION_RELATIONS_CORDIAL_NOT:1 "$DIPLO_ACTION_RELATIONS$ are NOT $relations_cordial$"
  DIPLO_ACTION_RELATIONS_AMICABLE:1 "$DIPLO_ACTION_RELATIONS$ are $relations_amicable$"

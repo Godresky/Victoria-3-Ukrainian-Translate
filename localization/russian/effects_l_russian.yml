@@ -12,7 +12,7 @@
  SET_COUNTRY_ARMY_SP_TARGET: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! військові Очки Сили(@army_SP!) встановляться на #variable $VALUE$#!"
  SET_COUNTRY_NAVY_SP_TARGET: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! корабельські Очки Сили(@navy_SP!) встановляться на #variable $VALUE$#!"
  SET_RELATIONS: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! відносини до #variable [TARGET_COUNTRY.GetName]#! встановиться на #variable $VALUE|0$#!"
- SET_TENSION: "[Concept('concept_tension', '$concept_tensions$')] між [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] встановиться на #variable $VALUE|0$#!"
+ SET_TENSION: "[Concept('concept_tension', '$concept_tensions$')|l] між [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] встановиться на #variable $VALUE|0$#!"
  SET_STRATEGY: "[COUNTRY.GetName] затверджує #variable [AIStrategy.GetName]#! стратегію"
  SET_DIPLOMATS_EXPELLED: "[COUNTRY.GetName] висилає дипломатів з [TARGET_COUNTRY.GetName], перешкоджаючи будь-якому поліпшенню відносин протягом #b 5 років#!"
  SET_SECRET_GOAL: "[COUNTRY.GetName] отримає #variable $SECRET_GOAL$#! таємну мету [TARGET_COUNTRY.GetName]"

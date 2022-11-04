@@ -20,7 +20,7 @@
  decree_violent_suppression:0 "Violent Suppression"
  decree_violent_suppression_desc:0 "Use the nation's national guard to control the angry mobs"
 
- move_capital_lens_option:0 "Change Capital"
+ move_capital_lens_option: "Змінити столицю"
  move_capital_lens_option_tooltip:0 "#header $move_capital_lens_option$#!\n$TOOLTIP_DELIMITER$\n#concept You can change your [concept_capital_state], providing that state with certain benefits.#!"
  
  move_market_capital_lens_option: "Перемістити ринкову столицю"
