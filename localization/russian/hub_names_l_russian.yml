@@ -811,7 +811,7 @@
 
 
 #
- HUB_NAME_STATE_KURSK_city:0 "Orel"
+ HUB_NAME_STATE_KURSK_city: "Орел"
  HUB_NAME_STATE_KURSK_mine:0 "Voronezh"
  HUB_NAME_STATE_KURSK_farm:0 "Kursk"
  HUB_NAME_STATE_KURSK_wood:0 "Yefremov"
