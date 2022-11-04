@@ -109,7 +109,7 @@
  expedition_events.690.a:0 "We shall correspond this considerate gift."
  expedition_events.690.b:0 "We have no time to lose fraternizing with locals."
  
- urbanization_events.1.t: "Шлях до прогресу"
+ urbanization_events.1.t: "Шлях до поступу"
  urbanization_events.1.d: "[SCOPE.gsInterestGroup('industrialist_ig').GetName] висловили своє задоволення напрямком розвитку країни та її новозбудованими виробнями."
  urbanization_events.1.f: "«Є тільки один можливий напрямок: вперед! Прогрес, як потяг, який не зупиняється, нікого не чекає, ти або в ньому, або вийде.»"
  urbanization_events.1.a: "Ми зробили це для наших людей."
@@ -118,10 +118,10 @@
  ig_urbanization_industrialists: "Пихильний до промисловців"
 
  je_urbanization_events_1: "Від ферм до виробень"
- je_urbanization_events_1_reason: "Нація селян – це нація минулого. Як ми можемо очікувати прогресу в наших домівках, якщо ці домівки — не більше ніж ферми?"
+ je_urbanization_events_1_reason: "Нація селян – це нація минулого. Як ми можемо очікувати поступу в наших домівках, якщо ці домівки — не більше ніж ферми?"
  
  je_urbanization_events_2: "Урбанізувати [ROOT.GetCountry.GetNameNoFlag]"
- je_urbanization_events_2_reason: "Майбутнє не біле і не чорне, як кажуть у старих казках, — воно сіре! Колір потяга, який дозволяє нам відвідати чужі країни! Колір виробні, що дозволяє нам оплачувати таку подорож! Колір, мій друже, прогресу."
+ je_urbanization_events_2_reason: "Майбутнє не біле і не чорне, як кажуть у старих казках, — воно сіре! Колір потяга, який дозволяє нам відвідати чужі країни! Колір виробні, що дозволяє нам оплачувати таку подорож! Колір, мій друже, поступу."
  modifier_final_urbanization: "Солідно урбанізований"
 
  urbanization_events.2.t: "Ох, місто достатку"

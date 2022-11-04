@@ -288,8 +288,8 @@
  DEFAULT_EVENT_OPTION:0 "This option will be picked automatically after $EVENT_REMAINING_DAYS$."
 
  NO_PROGRESS: "Немає поступу"
- INVALID_OPTIONS:0 "Invalid Options: [GetDataModelSize(MapListPanel.AccessInvalidOptions)|v]"
- FAILED_OPTIONS:0 "Unavailable Options: [GetDataModelSize(MapListPanel.AccessFailedOptions)|v]"
+ INVALID_OPTIONS: "Недійсні параметри: [GetDataModelSize(MapListPanel.AccessInvalidOptions)|v]"
+ FAILED_OPTIONS: "Недоступні параметри: [GetDataModelSize(MapListPanel.AccessFailedOptions)|v]"
 
  BUILDING_TYPE_COUNTRY_BREAKDOWN:0 "[SelectLocalization( GreaterThan_int32( BuildingType.GetLevelCountInCountry(GetPlayer.Self), '(int32)0' ), 'BUILDING_TYPE_COUNTRY_BREAKDOWN_NONEMPTY', 'BUILDING_TYPE_COUNTRY_BREAKDOWN_EMPTY' )]"
  BUILDING_TYPE_COUNTRY_BREAKDOWN_NONEMPTY:0 "There are #tooltippable #tooltip:[BuildingType.GetTooltipTag],BUILDING_TYPE_COUNTRY_BREAKDOWN_TOOLTIP [BuildingType.GetLevelCountInCountry(GetPlayer.Self)]#!#! Levels of [BuildingType.GetNameNoFormatting] in [GetPlayer.GetName][SelectLocalization(And(Not(BuildingType.IsGovernmentFunded), Not(BuildingType.IsSubsistenceBuilding)), 'BUILDING_TYPE_PRODUCTIVITY', '')]"
@@ -338,13 +338,13 @@
 
  POP_CULTURE_CHANGE_ENTRY_POSITIVE:0 "#v $CHANGE|=+$#! assimilating [Pop.GetName] in [Pop.GetState.GetName]"
  POP_CULTURE_CHANGE_ENTRY_NEGATIVE:0 "#v $CHANGE|=+$#! [Pop.GetName] in [Pop.GetState.GetName] assimilating to [Pop.GetAssimilatingCulture.GetName]"
- CULTURE_IN_COUNTRY_DESC:1 "\nPopulation in [GetPlayer.GetName]: [Culture.GetPopulation(GetPlayer.Self)|Kv] [SelectLocalization(NotEqualTo_int32(Culture.GetPopulationChange(GetPlayer.Self),'(int32)0'),'CULTURE_POPULATION_CHANGE_IN_COUNTRY','')]\n[concept_primary_cultures] in [GetPlayer.GetName]: [Culture.IsPrimaryCultureInYesNo(GetPlayer.Self)]\n[concept_migration_target]: [Culture.GetMigrationTargetsDesc]\n[concept_turmoil] of [Culture.GetName] Pops:\n$TAB$#variable [GetPlayer.CalcCulturalTurmoil( Culture.Self )|-0%]#! in [GetPlayer.GetName]\n$TAB$#variable [Culture.GetTurmoil|-0%]#! worldwide"
+ CULTURE_IN_COUNTRY_DESC: "\nНаселення в [Concept('concept_country', '$concept_country_gen$')|l] [GetPlayer.GetName]: [Culture.GetPopulation(GetPlayer.Self)|Kv] [SelectLocalization(NotEqualTo_int32(Culture.GetPopulationChange(GetPlayer.Self),'(int32)0'),'CULTURE_POPULATION_CHANGE_IN_COUNTRY','')]\nЦе [Concept('concept_primary_cultures', '$concept_primary_culture$')|l] у [Concept('concept_country', '$concept_country_dat$')|l] [GetPlayer.GetName]: [Culture.IsPrimaryCultureInYesNo(GetPlayer.Self)]\n[concept_migration_target]: [Culture.GetMigrationTargetsDesc]\n[concept_turmoil] [Concept('concept_culture', '$concept_culture_gen$')|l] [Culture.GetName]:\n$TAB$#variable [GetPlayer.CalcCulturalTurmoil( Culture.Self )|-0%]#! у [Concept('concept_country', '$concept_country_dat$')|l] [GetPlayer.GetName]\n$TAB$#variable [Culture.GetTurmoil|-0%]#! у світі"
  CULTURE_POPULATION_CHANGE:0 "[Culture.GetName] in [Country.GetName] Monthly Change: #v $CHANGE|=+$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
 
  POP_RELIGION_CHANGE_ENTRY_POSITIVE:0 "#v $CHANGE|=+$#! converting [Pop.GetName] in [Pop.GetState.GetName]"
  POP_RELIGION_CHANGE_ENTRY_NEGATIVE:0 "#v $CHANGE|=+$#! [Pop.GetName] in [Pop.GetState.GetName] converting to [Pop.GetConvertingReligion.GetName]"
  RELIGION_NAME_AND_PERCENTAGE:0 "[Religion.GetName] (#v $VAL|2%$#!)"
- RELIGION_IN_COUNTRY_DESC:0 "\nPopulation in [GetPlayer.GetName]: [Religion.GetPopulation( GetPlayer.Self)|kv] [SelectLocalization(NotEqualTo_int32(Religion.GetPopulationChange(GetPlayer.Self),'(int32)0'),'RELIGION_POPULATION_CHANGE_IN_COUNTRY','')]\nPolitical Strength in [GetPlayer.GetName]: [Religion.GetPolStr( GetPlayer.Self )|kv]"
+ RELIGION_IN_COUNTRY_DESC: "\nНаселення в [Concept('concept_country', '$concept_country_dat$')|l] [GetPlayer.GetName]: [Religion.GetPopulation( GetPlayer.Self)|kv] [SelectLocalization(NotEqualTo_int32(Religion.GetPopulationChange(GetPlayer.Self),'(int32)0'),'RELIGION_POPULATION_CHANGE_IN_COUNTRY','')]\nПолітична сила в [Concept('concept_country', '$concept_country_dat$')|l] [GetPlayer.GetName]: [Religion.GetPolStr( GetPlayer.Self )|kv]"
  RELIGION_POPULATION_CHANGE:0 "[Religion.GetName] in [Country.GetName] Monthly Change: #v $CHANGE|=+$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
 
  DISCRIMINATION_TRAIT_CULTURES:1 "[Concept('concept_culture', '$concept_cultures$')]: [DiscriminationTrait.GetCulturesDesc]"
@@ -382,7 +382,7 @@
  COUNTRY_LITERACY: "#title [concept_literacy]:#!\n#variable [Country.GetIncorporatedLiteracyRate|%1]#!"
  COUNTRY_LITERACY_ONE_LINE: "#title [concept_literacy]#!"
  LITERACY_TOOLTIP: "#header [concept_literacy]#!\n#variable [Country.GetNumIncorporatedLiteratePops|*]#! з #variable [Country.GetIncorporatedPopulation|*]#! людей, що проживають у [Concept('concept_incorporated_state', '$concept_incorporated_states_loc$')|l] [Concept('concept_country', '$concept_country_gen$')|l] #variable [Country.GetName]#! є грамотними. Рівень грамотности [Country.GetIncorporatedLiteracyRate|%v] [Country.GetIncorporatedLiteracyRanking]\n$TOOLTIP_DELIMITER$\nНаш рівень [Concept('concept_innovation', '$concept_innovation_gen$')|l] створює обмеження #tooltippable #tooltip:[GetPlayer.GetTooltipTag],INNOVATION_POINTS_MAX_BREAKDOWN @innovation![Country.GetWeeklyMaxInnovation|1]#!#!\nМи створюємо #tooltippable #tooltip:[GetPlayer.GetTooltipTag],INNOVATION_POINTS_CURRENT_BREAKDOWN #v @innovation![Country.GetWeeklyInnovation|+=1]#!#!#! щотижня (@innovation![Country.GetWeeklyRawInnovation|+=1] без обмежень)\n\nКрім того, наш поточний рівень [Concept('concept_literacy', '$concept_literacy_gen$')|l] дає нам наддаток до [concept_technology_spread|l] #P #tooltippable #tooltip:[GetPlayer.GetTooltipTag],TECHNOLOGY_SPREAD_RATE_BREAKDOWN від [Country.GetMinWeeklyTechnologySpread|1] до [Country.GetMaxWeeklyTechnologySpread|1]#!#!#! @innovation![Concept('concept_innovation', '$concept_innovation_gen$')|l] щотижня[SelectLocalization(EqualTo_int32(GetPlayer.GetTotalPopulation,GetPlayer.GetIncorporatedPopulation),'','LITERACY_UNINCORPORATED_TOOLTIP')]"
- LITERACY_UNINCORPORATED_TOOLTIP: "\n$TOOLTIP_DELIMITER$\nЯкщо також врахувати [Concept('concept_unincorporated_state','$concept_unincorporated_states$')], то #variable [Country.GetNumTotalLiteratePops|*]#! з #variable [Country.GetTotalPopulation|*]#! ([Country.GetTotalLiteracyRate|%v]) [Concept('concept_pop','$concept_pops$')] у [Concept('concept_country','$concept_country_dat$')] #variable [Country.GetName]#! є грамотними [Country.GetTotalLiteracyRanking]"
+ LITERACY_UNINCORPORATED_TOOLTIP: "\n$TOOLTIP_DELIMITER$\nЯкщо також врахувати [Concept('concept_unincorporated_state','$concept_unincorporated_states$')|l], то #variable [Country.GetNumTotalLiteratePops|*]#! з #variable [Country.GetTotalPopulation|*]#! ([Country.GetTotalLiteracyRate|%v]) [Concept('concept_pop','$concept_pops$')|l] у [Concept('concept_country','$concept_country_dat$')|l] #variable [Country.GetName]#! є грамотними [Country.GetTotalLiteracyRanking]"
 
  INNOVATION_POINTS_CURRENT_BREAKDOWN:1 "#header @innovation![concept_innovation] generation#!\nWe generate #v @innovation![Country.GetWeeklyInnovation|+2]#!, due to:\n[Country.GetWeeklyInnovationDesc]"
  INNOVATION_POINTS_MAX_BREAKDOWN:1 "#header @innovation![concept_innovation] cap#!\nOur cap of @innovation![Country.GetWeeklyMaxInnovation|v2] is due to:\n[Country.GetWeeklyMaxInnovationDesc]"
@@ -973,9 +973,9 @@
  ENDED_BATTLES:1 "Ended [Concept('concept_battle', '$concept_battles$')]"
  ENDED_LAND_BATTLES:0 "Ended Land [Concept('concept_battle', '$concept_battles$')]"
  ENDED_SEA_BATTLES:0 "Ended Sea [Concept('concept_battle', '$concept_battles$')]"
- BATTLE_VICTORY:0 "Victory!"
- BATTLE_DEFEAT:0 "Defeat!"
- BATTLE_DRAW:0 "Draw!"
+ BATTLE_VICTORY: "Перемога!"
+ BATTLE_DEFEAT: "Поразка!"
+ BATTLE_DRAW: "Нічия!"
  BATTLE_VICTOR:0 "Victor:"
  BATTLE_TERRAIN:0 "[concept_terrain]: [Battle.GetTerrain]"
  BATTLE_ADVANCING:0 "Advancing"
@@ -1225,13 +1225,13 @@
  COUNTRY_CULTURE_FACTORS_AFFECTING_RICH:1 "Factors affecting $rich$ for [Culture.GetName] in [GetPlayer.GetName]:\n[GetPlayer.GetAdditionalSOLFactorsDescWithCultureRich(Culture.Self)]"
 
  SOL_BY_CLOUT_AVERAGE:0 "#title [concept_sol] (by Clout):#!\n[LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Country.GetAverageSoLByPoliticalStrength)|v] ([Country.GetAverageSoLByPoliticalStrength|v])"
- AVG_SOL_HEADER:0 "#header [concept_sol]#!"
+ AVG_SOL_HEADER: "#header [concept_sol]#!"
  OVERVIEW: "Огляд"
- OVERVIEW_BOLD:0 "#BOLD $OVERVIEW$#!"
- GOVERNMENT:0 "Уряд"
- GOVERNMENT_BOLD:0 "#BOLD $GOVERNMENT$#!"
- INTEREST_GROUPS:0 "[Concept('concept_interest_group', '$concept_interest_groups$')]"
- INTEREST_GROUPS_BOLD:0 "#BOLD [Concept('concept_interest_group', '$concept_interest_groups$')]#!"
+ OVERVIEW_BOLD: "#BOLD $OVERVIEW$#!"
+ GOVERNMENT: "Уряд"
+ GOVERNMENT_BOLD: "#BOLD $GOVERNMENT$#!"
+ INTEREST_GROUPS: "[Concept('concept_interest_group', '$concept_interest_groups$')]"
+ INTEREST_GROUPS_BOLD: "#BOLD [Concept('concept_interest_group', '$concept_interest_groups$')]#!"
  LAWS: "Закони"
  LAWS_BOLD: "#BOLD $LAWS$#!"
  INSTITUTIONS: "Установи"
@@ -1244,11 +1244,11 @@
  IN_OPPOSITION_TITLE: "#title Опозиція#!"
  IN_GOVERNMENT_TITLE: "#title Уряд#!"
  ELECTION_TITLE: "#title Вибори#!"
- MARGINAL_TITLE:0 "#title [concept_marginalized] [Concept('concept_interest_group', '$concept_interest_groups$')]#!"
- MARGINAL_TITLE_ACCORDION:0 "[concept_marginalized] [Concept('concept_interest_group', '$concept_interest_groups$')] (#v [GetDataModelSize( AccessPlayer.AccessMarginalInterestGroups)]#!)"
- LAWS_TITLE:0 "#title Enacted [Concept('concept_law', '$concept_laws$')]#!"
- ABOLISHED_LAWS_TITLE:0 "#title Abolished [Concept('concept_law', '$concept_laws$')]#!"
- STATE_TITLE:0 "#title [concept_state]#!"
+ MARGINAL_TITLE: "#title [concept_marginalized] [Concept('concept_interest_group', '$concept_interest_groups$')|l]#!"
+ MARGINAL_TITLE_ACCORDION: "[concept_marginalized] [Concept('concept_interest_group', '$concept_interest_groups$')|l] (#v [GetDataModelSize( AccessPlayer.AccessMarginalInterestGroups)]#!)"
+ LAWS_TITLE: "#title Введені в дію [Concept('concept_law', '$concept_laws$')|l]#!"
+ ABOLISHED_LAWS_TITLE: "#title Скасовані [Concept('concept_law', '$concept_laws$')|l]#!"
+ STATE_TITLE: "#title [concept_state]#!"
 
  STATE_EXPLAINER:0 "#header State#!\n#instruction Click to sort on [concept_state] name#!"
  AVERAGE_POP_WAGE_EXPLAINER:0 "#header Average Wage for [concept_pop]s#!\n#instruction Click to sort on the average wage for the Pops in the [concept_state]#!"
@@ -1527,9 +1527,9 @@
 
  STATE_POP_GROWTH:0 "$concept_pop_growth$ #v [State.GetPopNetGrowth|K=+]#!"
 
- TOOLTIP_POP_GROWTH_COMMON: "Прогноз [Concept('concept_pop_growth','$concept_pop_growth_gen$')] на рік: #variable $NETGROWTHRATE|+=%$ #! (#variable $NETGROWTH|=*$#!)"
- TOOLTIP_COUNTRY_POP_GROWTH:1 "$TOOLTIP_POP_GROWTH_COMMON$"
- TOOLTIP_STATE_POP_GROWTH:1 "$TOOLTIP_POP_GROWTH_COMMON$"
+ TOOLTIP_POP_GROWTH_COMMON: "Прогноз [Concept('concept_pop_growth','$concept_pop_growth_gen$')|l] на рік: #variable $NETGROWTHRATE|+=%$ #! (#variable $NETGROWTH|=*$#!)"
+ TOOLTIP_COUNTRY_POP_GROWTH: "$TOOLTIP_POP_GROWTH_COMMON$"
+ TOOLTIP_STATE_POP_GROWTH: "$TOOLTIP_POP_GROWTH_COMMON$"
  TOOLTIP_STATE_POP_MIGRATION:2 "Annual projected [concept_migration]: #variable $NETGROWTHRATE|+=%$#! (#variable $NETGROWTH|=*$#!)"
 
  MIGRATION_PULL_DESC:0 "[State.GetMigrationPullDesc]"
@@ -1705,12 +1705,12 @@
  CONSTRUCTION_QUEUE_ITEM_VALID:2 "#header Expanding [Building.GetName] in [State.GetName]#!\n#v $WEEKS$#! week(s) until complete\n$TOOLTIP_DELIMITER$\n#v $PROGRESS|0$#!/#v $REQUIRED|0$#! [concept_construction] progress (#v $PERCENT_COMPLETE|%$#!)\n#v [ConstructionQueueElement.GetBaseConstructionSpeed|2]#! [concept_construction] provided by [Building.GetOwner.GetName] results in a total of #v #tooltippable #tooltip:[ConstructionQueueElement.GetTooltipTag],CONSTRUCTION_QUEUE_SPEED_TOOLTIP $SPEED$#!#!#! progress each week\n"
  CONSTRUCTION_QUEUE_ITEM_INVALID:0 "#header [Building.GetName] in [State.GetName]#!\n$TOOLTIP_DELIMITER$\n$INVALID_DESC$"
  CONSTRUCTION_SPEED_BASE_TOOLTIP:4 "#tooltip_header @construction![Nbsp][concept_construction]#![AddLocalizationIf(Country.IsConstructionPaused, '$CONSTRUCTION_IS_PAUSED$')]\nTotal: #v [Country.CalcBaseConstructionSpeed|2]#!\nBeing used: #v [Country.CalcUsedConstruction|0]/[Country.CalcBaseConstructionSpeed|0]#!\n$TOOLTIP_DELIMITER$\n[Country.GetBaseConstructionSpeedDesc]"
- CONSTRUCTION_QUEUE_TOOLTIP:0 "[Country.GetConstructionQueueDesc]"
- CONSTRUCTION_QUEUE_DESC:3 "#header [concept_construction]#! in [Country.GetName][AddLocalizationIf(Country.IsConstructionPaused, '$CONSTRUCTION_IS_PAUSED$')]\n$TOOLTIP_DELIMITER$\n[Country.GetName] is using #v #tooltippable #tooltip:[Country.GetTooltipTag],CONSTRUCTION_SPEED_USED_TOOLTIP [GetPlayer.CalcUsedConstruction|2]#!#!#! [concept_construction] each week and produces a total of #v #tooltippable #tooltip:[Country.GetTooltipTag],CONSTRUCTION_SPEED_BASE_TOOLTIP [Country.CalcBaseConstructionSpeed|2]#!#!#! $concept_construction$ each week.\n\nThere are #v #tooltippable #tooltip:[Country.GetTooltipTag],CONSTRUCTION_QUEUE_ACTIVE_PROJECTS [Country.GetNumActiveConstructionQueueElements]#!#!#! project(s) [concept_under_construction] and #v #tooltippable #tooltip:[Country.GetTooltipTag],CONSTRUCTION_QUEUE_INACTIVE_PROJECTS [Country.GetNumInactiveConstructionQueueElements]#!#!#! additional projects queued in the [concept_construction_queue]\n\n"
+ CONSTRUCTION_QUEUE_TOOLTIP: "[Country.GetConstructionQueueDesc]"
+ CONSTRUCTION_QUEUE_DESC: "#header [concept_construction]#! у [Concept('concept_country', '$concept_country_dat$')|l] [Country.GetName][AddLocalizationIf(Country.IsConstructionPaused, '$CONSTRUCTION_IS_PAUSED$')]\n$TOOLTIP_DELIMITER$\n[Country.GetName] is using #v #tooltippable #tooltip:[Country.GetTooltipTag],CONSTRUCTION_SPEED_USED_TOOLTIP [GetPlayer.CalcUsedConstruction|2]#!#!#! [concept_construction] each week and produces a total of #v #tooltippable #tooltip:[Country.GetTooltipTag],CONSTRUCTION_SPEED_BASE_TOOLTIP [Country.CalcBaseConstructionSpeed|2]#!#!#! $concept_construction$ each week.\n\nThere are #v #tooltippable #tooltip:[Country.GetTooltipTag],CONSTRUCTION_QUEUE_ACTIVE_PROJECTS [Country.GetNumActiveConstructionQueueElements]#!#!#! project(s) [concept_under_construction] and #v #tooltippable #tooltip:[Country.GetTooltipTag],CONSTRUCTION_QUEUE_INACTIVE_PROJECTS [Country.GetNumInactiveConstructionQueueElements]#!#!#! additional projects queued in the [concept_construction_queue]\n\n"
  CONSTRUCTION_IS_PAUSED:0 "\nAll $concept_construction$ is currently #b Paused#!"
  CONSTRUCTION_QUEUE_ACTIVE_PROJECTS:0 "[Country.GetActiveConstructionProjectsDesc]"
  CONSTRUCTION_QUEUE_INACTIVE_PROJECTS:0 "[Country.GetInactiveConstructionProjectsDesc]"
- CONSTRUCTION_SPEED_USED_TOOLTIP:2 "#header [concept_under_construction]#! in [GetPlayer.GetName]\n$TOOLTIP_DELIMITER$\nThere are #v [Country.GetNumActiveConstructionQueueElements]#! project(s) using [concept_construction] this week:[ConcatIfNeitherEmpty('\n',GetPlayer.GetActiveConstructionProjectsDesc)]"
+ CONSTRUCTION_SPEED_USED_TOOLTIP: "#header [concept_under_construction]#! у [Concept('concept_country', '$concept_country_dat$')|l] [GetPlayer.GetName]\n$TOOLTIP_DELIMITER$\nThere are #v [Country.GetNumActiveConstructionQueueElements]#! project(s) using [concept_construction] this week:[ConcatIfNeitherEmpty('\n',GetPlayer.GetActiveConstructionProjectsDesc)]"
  CONSTRUCTION_SPEED_TOOLTIP:0 "[Building.GetConstructionSpeedPerWeekDesc]"
  CONSTRUCTION_QUEUE_SPEED_TOOLTIP:0 "[ConstructionQueueElement.GetConstructionSpeedPerWeekDesc]"
  CONSTRUCTION_QUEUE_DESC_ITEM:0 "#b $NUM$#!: [BUILDING.GetName] in [STATE.GetName]: #v $BASE_SPEED$#! (Max of #v $MAX_BASE_SPEED$#!) - #v $WEEKS_LEFT$#! week(s) until complete"
@@ -1834,7 +1834,7 @@
 
  PRODUCTION_METHOD_TEXT_ICON_DESC:0 "#v $MORE_GOODS$\n$MORE_EMPLOYEES$#!"
 
- MARKET_PARTICIPANT_SHARE:0 "#V [Country.GetName]#! has a [MarketPanel.GetMarket.GetMarketSharePercentageFor(Country.Self)|v%] [concept_market_share] in [MarketPanel.GetMarket.GetName]\n$TOOLTIP_DELIMITER$\n"
+ MARKET_PARTICIPANT_SHARE: "#V [Country.GetName]#! має [MarketPanel.GetMarket.GetMarketSharePercentageFor(Country.Self)|v%] [Concept('concept_market_share', '$concept_market_share_this_gen$')|l]\n$TOOLTIP_DELIMITER$\n" #in [MarketPanel.GetMarket.GetName]
 
  COIN_01_BASE:0 "#tooltippable #tooltip:COIN_STACK_TOOLTIP @coin1!#!#! #bold Very Much Cheaper#! compared to [concept_base_price] ($VAL|v=1%$)"
  COIN_02_BASE:0 "#tooltippable #tooltip:COIN_STACK_TOOLTIP @coin2!#!#! #bold Much Cheaper#! compared to [concept_base_price] ($VAL|v=1%$)"
@@ -1870,13 +1870,13 @@
  GOODS_STATE_PRICE_AGAINST_BASE_PRICE_TOOLTIP:0 "#header [Goods.GetStatePriceLabel] compared to [concept_base_price]#!\n[Goods.GetCompareDescAgainstBasePrice( Goods.GetStatePrice )]\n$TOOLTIP_DELIMITER$\n[Goods.GetStatePriceLabel]: #variable @money![Goods.GetStatePrice|1]#!\n[concept_base_price]: #BOLD #V @money![Goods.GetBasePrice|1]#!#!"
  GOODS_MARKET_PRICE_AGAINST_BASE_PRICE_TOOLTIP:0 "#header [Goods.GetMarketPriceLabel] compared to [concept_base_price]#!\n[Goods.GetCompareDescAgainstBasePrice( Goods.GetMarketPrice )]\n$TOOLTIP_DELIMITER$\n[Goods.GetMarketPriceLabel]: #variable @money![Goods.GetMarketPrice|1]#!\n[concept_base_price]: #BOLD #V @money![Goods.GetBasePrice|1]#!#!"
 
- BUY_ORDERS:0 "[concept_buy_orders]"
- SELL_ORDERS:0 "[concept_sell_orders]"
- PRODUCTION:0 "[concept_good_production]"
- CONSUMPTION:0 "[concept_good_consumption]"
+ BUY_ORDERS: "[concept_buy_orders]"
+ SELL_ORDERS: "[concept_sell_orders]"
+ PRODUCTION: "[concept_good_production]"
+ CONSUMPTION: "[concept_good_consumption]"
 
- BATTALIONS:0 "[Concept('concept_battalion', '$concept_battalions$')]"
- WARSHIPS:2 "[Concept('concept_flotilla','$concept_flotillas$')]"
+ BATTALIONS: "[Concept('concept_battalion', '$concept_battalions$')]"
+ WARSHIPS: "[Concept('concept_flotilla','$concept_flotillas$')]"
 
  GOOD_PRICE_BASED_ON_LAST_TICK_WARNING:1 "#lore These values are updated at least once per week.#!"
  GOODS_PRICE_DESC_FIXED:0 "[GOODS.GetTextIcon][GOODS.GetName] has a fixed price of @money![GOODS.GetPrice|1v] that will never change."
@@ -2332,7 +2332,7 @@
  
  MAX_DECLARED_INTERESTS_TOOLTIP:0 "#header Maximum [Concept('concept_declared_interest','$concept_declared_interests$')] for [Country.GetName]#!\n$TOOLTIP_DELIMITER$\n[Country.GetMaxNumDeclaredInterestsBreakdown]"
 
- MAP_INTERACTION_ESC_TO_CANCEL:0 "#instruction Press #bold ESC#! to close current Map Interaction#!"
+ MAP_INTERACTION_ESC_TO_CANCEL: "#instruction Нажміть #bold ESC#!, щоб закрити поточну взаємодію з картою#!"
  MAP_INTERACTION_BUILD_BUILDING_DESC:0 "Select in which #V State#! to build #V [BUILDING_TYPE.GetName]#!"
  MAP_INTERACTION_BUILD_BUILDING_PERFORMED:0 "Building #V [BuildingType.GetName]#! started"
  MAP_INTERACTION_BUILDING_BUILT:0 "[Building.GetName] built in [Building.GetState.GetName]"
@@ -4343,12 +4343,12 @@
  ESTABLISH_COLONY_NO_COLONIAL_GROWTH:1 "We do not produce any [concept_colonial_growth]"
  ESTABLISH_COLONY_MISSING_TECH:1 "We do not have the required #variable '$TECH$'#! [concept_technology]"
 
- CANCEL_COLONY_TOOLTIP:1 "Cancel [Concept('concept_colony','$concept_colonization$')]"
+ CANCEL_COLONY_TOOLTIP: "Скасувати [Concept('concept_colony','$concept_colonization$')|l]"
  CANCEL_COLONY_NO_COLONY:1 "#N We do not have a [concept_colony] here!#!"
  CANCEL_COLONY_HAS_DIPLO_PLAY:1 "#N Not possible to remove a [concept_colony] while part of an active [concept_diplomatic_play]#!"
  CANCEL_COLONY_TARGET_COUNTRY_NOT_VALID:1 "#N There are no valid targets that could take over the [concept_colony] from us#!"
 
- COLONIZATION_PAUSED:1 "[Concept('concept_colony','$concept_colonization$')] Paused"
+ COLONIZATION_PAUSED: "[Concept('concept_colony','$concept_colonization$')] на павзі"
 
  CANNOT_ESTABLISH_COLONY_HOVER:0 "#header #N Cannot Colonize [STATE_REGION.GetName]#!#!"
  ESTABLISH_COLONY_HOVER:0 "#header Colonize [STATE_REGION.GetName]#!"
@@ -4891,8 +4891,8 @@
 
  ENACTMENT_FASTENACT_IS_ACTIVE:0 ""fastenact" is active"
 
- LAWS_WITH_GVT_SUPPORT: "Закони, що мають підтримку Уряду або Зацікавленого Руху"
- LAWS_WITHOUT_GVT_SUPPORT: "Закони, що не мають підтримку Уряду або Зацікавленого Руху"
+ LAWS_WITH_GVT_SUPPORT: "Закони, що мають підтримку уряду або зацікавленого руху"
+ LAWS_WITHOUT_GVT_SUPPORT: "Закони, що не мають підтримку уряду або зацікавленого руху"
 
  CHEAPEST_LAWS_HEADER:1 "$LAWS_WITH_GVT_SUPPORT$ ([GetDataModelSize(AccessPlayer.AccessLawsWithGovernmentOrMovementSupport)|v])"
  LAWS_WITHOUT_SUPPORT:1 "$LAWS_WITHOUT_GVT_SUPPORT$ ([GetDataModelSize(AccessPlayer.AccessLawsWithoutGovernmentOrMovementSupport)|v])"
@@ -5475,15 +5475,15 @@
 
  SUBSIDIZED_NO:3 "$SUBSIDIZED_NO_HEADER$\n[SelectLocalization(IsValid( Building.ToggleSubsidies ), 'SUBSIDIZE_POSSIBLE', GetDesc(Building.ToggleSubsidies))]"
  SUBSIDIZED_NO_HEADER:1 "#header Not [Concept('concept_subsidies', '$concept_subsidized$')]#!\n$TOOLTIP_DELIMITER$\nThis building is not $concept_subsidized$"
- SUBSIDIZE_POSSIBLE:0 "#instruction Click to subsidize it#!"
+ SUBSIDIZE_POSSIBLE: "#instruction Клацніть, щоб надати субсидію#!"
  NOT_PERMITTED_TO_SUBSIDIZE_BUILDING_GROUP:0 "Subsidizing this building is not permitted in our country. This is usually determined by economic [Concept('concept_law', '$concept_laws$')]."
  CANNOT_SUBSIDIZE_GOVERNMENT_BUILDINGS:0 "[Concept('concept_government_building', '$concept_government_buildings$')] cannot be subsidized."
  CANNOT_SUBSIDIZE_SUBSISTENCE_BUILDINGS:0 "[Concept('concept_subsistence_building', '$concept_subsistence_buildings$')] cannot be subsidized."
 
 
- SUBSIDIZED_ALL_YES:1 "All buildings in this group are [Concept('concept_subsidies', '$concept_subsidized$')].\n\n#instruction Click to remove all subsidies.#!"
- SUBSIDIZED_ALL_NO:1 "None of the buildings in this group are [Concept('concept_subsidies', '$concept_subsidized$')].\n\n#instruction Click to subsidize all buildings.#!"
- SUBSIDIZED_ALL_MIXED:1 "Some of the buildings in this group are [Concept('concept_subsidies', '$concept_subsidized$')].\n\n#instruction Click to subsidize all buildings.#!"
+ SUBSIDIZED_ALL_YES: "Усі будівлі з цієї групи мають [Concept('concept_subsidies', '$concept_subsidies_acc$')|l].\n\n#instruction Клацніть, щоб скасувати всі субсидії.#!"
+ SUBSIDIZED_ALL_NO: "Жодна з будівель цієї групи немає [Concept('concept_subsidies', '$concept_subsidies_gen$')|l].\n\n#instruction Клацніть, щоб надати субсидії всім будівлям.#!"
+ SUBSIDIZED_ALL_MIXED: "Деякі з будівель цієї групи мають [Concept('concept_subsidies', '$concept_subsidies_acc$')|l].\n\n#instruction Клацніть, щоб надати субсидії всім будівлям.#!"
 
  AUTO_EXPAND_ALL_YES:0 "#header Automatic Expansion#!\nAll buildings in this group are being Automatically Expanded.\n\n#instruction Click to remove all Automatical Expansion.#!"
  AUTO_EXPAND_ALL_NO:0 "#header No Automatic Expansion#!\nNone of the buildings in this group are being Automatically Expanded.\n\n#instruction Click to Automatically Expand all buildings.#!"
@@ -5597,8 +5597,8 @@
 
  DEFAULT_MAP_LIST_PANEL_STATUS_HEADER:0 "Status"
  DEFAULT_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP:1 "#header Status#!\n$TOOLTIP_DELIMITER$\n#concept The availability of this interaction on each entry.\n\n@map_list_plus!: You can select this.\n@map_list_plus_and_checkmark!: You can select this and you are already doing this here.\n@map_list_checkmark!: You are already doing this here and you can deselect this.\n@map_list_lock!: You are already doing this here, but you can NOT deselect this.\n@map_list_cross!: You can NOT select this.\n@map_list_cross_and_checkmark!: You are already doing this here, but you can NOT select this.#!"
- DEFAULT_MAP_LIST_PANEL_TITLE_HEADER:0 "Title"
- DEFAULT_MAP_LIST_PANEL_TITLE_HEADER_TOOLTIP:0 "#header Title#!\n$TOOLTIP_DELIMITER$\n#concept The title of this option.#!"
+ DEFAULT_MAP_LIST_PANEL_TITLE_HEADER: "Назва"
+ DEFAULT_MAP_LIST_PANEL_TITLE_HEADER_TOOLTIP: "#header Назва#!\n$TOOLTIP_DELIMITER$\n#concept Назва цього параметра.#!"
 
  BUILDING_MAP_LIST_PANEL_STATUS_HEADER:0 "Status"
  BUILDING_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP:1 "#header Status#!\n$TOOLTIP_DELIMITER$\n#concept The availability of expanding this [concept_building] in each [concept_state].\n\n@map_list_plus!: You can select this.\n@map_list_plus_and_checkmark!: You can select this and you are already doing this here.\n@map_list_checkmark!: You are already doing this here and you can deselect this.\n@map_list_lock!: You are already doing this here, but you can NOT deselect this.\n@map_list_cross!: You can NOT select this.\n@map_list_cross_and_checkmark!: You are already doing this here, but you can NOT select this.#!"
@@ -5741,11 +5741,11 @@
  TOOLTIP_DISALLOW_PM_SINGLE:0 "a [concept_production_method]"
  TOOLTIP_DISALLOW_PM_MANY:0 "multiple [Concept('concept_production_method', '$concept_production_methods$')]"
 
- CURRENTLY_ACTIVE_LAW:0 "#b Active Law#!"
+ CURRENTLY_ACTIVE_LAW: "#b Діючий закон#!"
  CURRENTLY_ACTIVE_LAW_IN_LAWGROUP:0 "Currently Active [Law.GetGroup.GetName] Law"
  LAW_CURRENTLY_BEING_ENACTED:0 "#b Trying to enact this#!"
  CURRENT_LAW_BEING_ENACTED:0 "#b Enacting Law#!"
- NO_LAW_IN_THIS_LAWGROUP_IS_BEING_ENACTED:0 "No [LawGroup.GetName] [concept_law] enacting"
+ NO_LAW_IN_THIS_LAWGROUP_IS_BEING_ENACTED: "Не приймається [concept_law|l] категорії [LawGroup.GetName|l]"
  ACTIVE_LAW:0 "@green_checkmark! Part of our [Concept('concept_law', '$concept_laws$')]"
  BEING_ENACTED_LAW:1 "#v Currently being enacted#! (next checkpoint in #tooltippable #tooltip:[Law.GetTooltipTag],LAW_NEXT_CHECKPOINT_TIME_DESC [Law.GetCheckpointRemainingDays|v] days#!#!)"
  INACTIVE_LAW:0 "@red_cross! Not part of our [Concept('concept_law', '$concept_laws$')]"
@@ -6108,8 +6108,8 @@
 
  MODIFIER_CONSCRIPTION_RATE_ADD_ADDITIONAL_INFO:1 "Can mobilize @battalions!$NUM_BATTALIONS|v$ [Concept('concept_battalion', '$concept_battalions$')]"
 
- DEFAULT_HQ_NAME: "[HQ.GetCountry.GetFlagTextIcon] [HQ.GetStrategicRegion.GetNameNoFormatting] [Concept('concept_hq', 'Голпровід')]"
- DEFAULT_HQ_NAME_NO_FLAG: "[HQ.GetStrategicRegion.GetNameNoFormatting] [Concept('concept_hq', 'Голпровід')]"
+ DEFAULT_HQ_NAME: "[HQ.GetCountry.GetFlagTextIcon] [HQ.GetStrategicRegion.GetNameNoFormatting] [Concept('concept_hq', '$concept_hq$')|l]"
+ DEFAULT_HQ_NAME_NO_FLAG: "[HQ.GetStrategicRegion.GetNameNoFormatting] [Concept('concept_hq', '$concept_hq$')|l]"
 
  NO_GENERALS: "Немає [Concept('concept_general', '$concept_generals_gen$')|l]"
  NO_ADMIRALS: "Немає [Concept('concept_admiral', '$concept_admirals_gen$')|l]"

@@ -624,6 +624,9 @@
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MAY 3, 2022
 
  concept_market_share: "Частка ринку"
+ concept_market_share_gen: "Частки ринку"
+ concept_market_share_this: "Частка цього ринку"
+ concept_market_share_this_gen: "Частки цього ринку"
  concept_market_share_desc:3 "The $concept_market_share$ of each [concept_country] in a [concept_market] is determined by its [concept_gdp], with a bonus if they are the [concept_market_owner]. The higher a $concept_country$'s $concept_market_share$ the more [Concept('concept_consumption_tax', '$concept_consumption_taxes$')] they collect in the [concept_market]."
 
  concept_default:0 "Default"
@@ -682,14 +685,14 @@
  concept_colonial_growth_ingame_added:0 "\n\n[GetPlayer.GetColonialGrowthDetails]"
  concept_colonial_growth_ingame_added_2:0 "[GetInstitutionType('institution_colonial_affairs').GetName]"
 
- concept_colony:0 "Colony"
- concept_colonies:1 "Colonies"
- concept_colonize:0 "Colonize"
+ concept_colony: "Осада"
+ concept_colonies: "Осади"
+ concept_colonize: "Colonize"
  concept_colonial:0 "Colonial"
  concept_colonized:0 "Colonized"
  concept_colonizes:1 "Colonizes"
  concept_colonizing:0 "Colonizing"
- concept_colonization:0 "Colonization"
+ concept_colonization: "Осадництво"
  concept_colony_desc:2 "Settlement efforts initiated by a colonizing [concept_country] in the lands of a [concept_decentralized_nation]. A would-be colonizer must have the [SelectLocalization(GetPlayer.IsValid,'concept_colony_desc_added','Institution Colonial Affairs')] [concept_institution] and an [concept_interest] in the [concept_strategic_region]. At first, a single [concept_province] will be taken. Adjacent $concept_provinces$ will be $concept_colonized$ at a rate depending on the $concept_country$'s [concept_colonial_growth], generating [concept_tension] as they do."
  concept_colony_desc_added:0 "[GetInstitutionType('institution_colonial_affairs').GetName]"
  
@@ -817,8 +820,8 @@
  concept_emigrating:1 "Emigrating"
  concept_migration_desc:1 "The movement of [Concept('concept_pop','$concept_pops$')] between [Concept('concept_state','$concept_states$')] in the same [concept_market], or between [Concept('concept_country','$concept_countries$')] facilitated by [Concept('concept_migration_target','$concept_migration_targets$')]. $concept_migration$ generally flows from $concept_states$ with lower to higher [concept_migration_pull]. $concept_pops$ will only consider $concept_emigrating$ if their [concept_sol] is lower than the average in their [concept_market] or if they are [concept_unemployed]. $concept_migration$ rate is affected by [concept_infrastructure] in the $concept_states$."
 
- concept_migration_target:0 "Migration Target"
- concept_migration_targets:0 "Migration Targets"
+ concept_migration_target: "Ціль міграції"
+ concept_migration_targets: "Цілі міграції"
  concept_migration_target_desc:1 "A [concept_state] selected as a suitable target for mass [concept_migration] by a [concept_culture] subject to considerable [concept_cultural_turmoil]. $concept_migration_target_explainer$ Surrounding $concept_states$ may also see some degree of $concept_immigration$ from a $concept_migration_target$."
  concept_migration_target_explainer:0 "One $concept_migration_target$ may be created for every [GetDefine('NPops','MIGRATION_CULTURE_TARGET_TURMOIL')|v0] $concept_turmoil$ in a $concept_culture$."
 
@@ -1111,6 +1114,7 @@
  concept_nation_formation_desc:0 "If a [concept_country] meets certain requirements, such as owning land in specific [Concept('concept_state_region','$concept_state_regions$')] and/or having discovered a certain $SOCIETY$ [concept_technology], they may be able to form a new $concept_country$ of a higher [concept_country_tier]. The possible $concept_countries$ are listed in the #b $NATION_FORMATION$#! tab in the #b $CULTURE$#! panel."
 
  concept_culture: "Культура"
+ concept_culture_gen: "Культури"
  concept_cultures: "Культури"
  concept_culture_possessive:1 "Culture\\'s"
  concept_culture_desc:2 "All [Concept('concept_pop', '$concept_pops$')] have a $concept_culture$, which can only change through [concept_assimilation]. Their $concept_culture$ determines which [Concept('concept_state_region','$concept_state_regions$')] they consider their [Concept('concept_homeland','$concept_homelands$')] and whether they are [Concept('concept_discrimination','$concept_discriminated_against$')] in their [concept_country] or not."
@@ -1326,7 +1330,10 @@
  concept_input_goods:0 "Input Goods"
  concept_good_consumption_desc:1 "The amount of a [concept_good] consumed by a [concept_building] or [concept_pop] in the process of maintaining its [concept_throughput] or [concept_wealth]."
 
- concept_subsidies:0 "Subsidies"
+ concept_subsidy: "Субсидія"
+ concept_subsidies: "Субсидії"
+ concept_subsidies_gen: "Субсидій"
+ concept_subsidies_acc: "Субсидії"
  concept_subsidize:1 "Subsidize"
  concept_subsidized:1 "Subsidized"
  concept_subsidizing:1 "Subsidizing"

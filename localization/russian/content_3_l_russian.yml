@@ -134,7 +134,7 @@
  outmoded_bureaucracy:0 "Outmoded Bureaucracy"
  cizye_tax:0 "Cizye Tax"
  ottoman_bureaucracy:0 "Ottoman Bureaucracy"
- sick_man_of_europe:0 "Sick Man of Europe"
+ sick_man_of_europe: "Хвора людина Європи"
 
  tanzimat_events.1.t:0 "The Iltizām System"
  tanzimat_events.1.d:0 "For centuries our administration has depended on tax farming for collecting revenue, but this highly ineffecient system leaves much to be desired. Proposals for reform have flooded the Grand Vizier's desk, and the nation eagerly awaits our response."
