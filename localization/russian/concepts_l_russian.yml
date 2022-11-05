@@ -1077,6 +1077,7 @@
   
  concept_good: "Товар"
  concept_goods: "Товари"
+ concept_goods_gen: "Товарів"
  concept_goods_ins: "Товарами"
  concept_good_possessive:0 "Good\\'s"
  concept_goods_input: "Вхідні товари"
@@ -1592,6 +1593,7 @@
  concept_bolster_desc_added:0 "[GetLawGroup('lawgroup_free_speech').GetName]"
 
  concept_journal_entry: "Запис у часописі"
+ concept_journal_entry_short: "Запис"
  concept_journal: "Часопис"
  concept_journal_entries: "Записи у часописі"
  concept_journal_entries_gen: "Записів у часописі"

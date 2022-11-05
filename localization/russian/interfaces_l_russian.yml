@@ -9,7 +9,7 @@
  POP_WORKPLACE_DAY_LABOURER_LIST: "Працює в:\n$LIST$"
  POP_WORKPLACE_EMPLOYED_TOOLTIP:0 "Have $WORKERS|v$ in industry."
  POP_WORKPLACE_UNEMPLOYED_TOOLTIP:0 "Is [concept_unemployed]."
- LOBBYVIEW_SELECT_PLAYABLE: "@red_cross! Держава не вибрана\n\nВиберіть її на карті"
+ LOBBYVIEW_SELECT_PLAYABLE: "@red_cross! Держава не вибрана\n\nВиберіть її на мапі"
  LOBBYVIEW_NO_CROSSPLAY:0 "Disable cross-platform play"
  LOBBYVIEW_NO_CROSSPLAY_TOOLTIP:0 "Only allow players in your current platform"
  JOIN_MULTIPLAYER_PASTE_SERVER_ID: "Вставити тезьбило сервера"
@@ -1394,8 +1394,8 @@
  JOURNAL_WINDOW_HEADER: "Часопис"
  JOURNAL_ENTRY_HEADING: "[concept_journal_entry]"
 
- EFFECT_RATIO_BELOW_MAX:0 "#v $EFFECT_RATIO|0%$#!"
- EFFECT_RATIO_ABOVE_MAX:0 "#v $EFFECT_RATIO|0%$#! or more"
+ EFFECT_RATIO_BELOW_MAX: "#v $EFFECT_RATIO|0%$#!"
+ EFFECT_RATIO_ABOVE_MAX: "#v $EFFECT_RATIO|0%$#! чи більше"
 
  POWER_TOOLTIP: "#tooltip_header $POWER_TYPE$#!\nБаланс: #variable $VAL|+=0$#![ConcatIfNeitherEmpty( '\n', '$EFFECT$' )]"
  POWER_EXCESS_EFFECT_HEADER: "$TOOLTIP_DELIMITER$\n$POWER_TYPE$ дає заподію від $EFFECT_RATIO_DESC$ #g надлишку#! (приріст вищий, ніж використання):\n$BREAKDOWN$"
@@ -1403,9 +1403,9 @@
  BUREAUCRACY_TOOLTIP: "[GetPlayer.GetPowerTooltip('bureaucracy')][SelectLocalization(GetMetaPlayer.GetPlayedOrObservedCountry.IsValid, 'BUREAUCRACY_TOOLTIP_DELAYED', 'OBSERVER_NO_COUNTRY_SELECTED') ]"
  AUTHORITY_TOOLTIP: "[GetPlayer.GetPowerTooltip('authority')][SelectLocalization(GetMetaPlayer.GetPlayedOrObservedCountry.IsValid, 'AUTHORITY_TOOLTIP_DELAYED', 'OBSERVER_NO_COUNTRY_SELECTED') ]"
  INFLUENCE_TOOLTIP: "[GetPlayer.GetPowerTooltip('influence')][SelectLocalization(GetMetaPlayer.GetPlayedOrObservedCountry.IsValid, 'INFLUENCE_TOOLTIP_DELAYED', 'OBSERVER_NO_COUNTRY_SELECTED') ]"
- BUREAUCRACY_TOOLTIP_DELAYED: "\n$TOOLTIP_DELIMITER$\nПриріст @bur![Nbsp][Concept('concept_bureaucracy','$concept_bureaucracy_gen$')] #v [GetPlayer.GetPowerIncome('bureaucracy')|D+0=]#! через:[ConcatIfNeitherEmpty('\n', GetPlayer.GetPowerIncomeString('bureaucracy'))][ConcatIfNeitherEmpty('\n\n', GetPlayer.GetPowerExpensesString('bureaucracy'))]"
- AUTHORITY_TOOLTIP_DELAYED: "\n$TOOLTIP_DELIMITER$\nПриріст @aut![Nbsp][Concept('concept_authority','$concept_authority_gen$')] #v [GetPlayer.GetPowerIncome('authority')|D+0=]#! через:[ConcatIfNeitherEmpty('\n', GetPlayer.GetPowerIncomeString('authority'))][ConcatIfNeitherEmpty('\n\n', GetPlayer.GetPowerExpensesString('authority'))]"
- INFLUENCE_TOOLTIP_DELAYED: "\n$TOOLTIP_DELIMITER$\nПриріст @inf![Nbsp][Concept('concept_influence','$concept_influence_gen$')] #v [GetPlayer.GetPowerIncome('influence')|D+0=]#! через:[ConcatIfNeitherEmpty('\n', GetPlayer.GetPowerIncomeString('influence'))][ConcatIfNeitherEmpty('\n\n', GetPlayer.GetPowerExpensesString('influence'))]"
+ BUREAUCRACY_TOOLTIP_DELAYED: "\n$TOOLTIP_DELIMITER$\nПриріст @bur![Nbsp][Concept('concept_bureaucracy','$concept_bureaucracy_gen$')|l] #v [GetPlayer.GetPowerIncome('bureaucracy')|D+0=]#! через:[ConcatIfNeitherEmpty('\n', GetPlayer.GetPowerIncomeString('bureaucracy'))][ConcatIfNeitherEmpty('\n\n', GetPlayer.GetPowerExpensesString('bureaucracy'))]"
+ AUTHORITY_TOOLTIP_DELAYED: "\n$TOOLTIP_DELIMITER$\nПриріст @aut![Nbsp][Concept('concept_authority','$concept_authority_gen$')|l] #v [GetPlayer.GetPowerIncome('authority')|D+0=]#! через:[ConcatIfNeitherEmpty('\n', GetPlayer.GetPowerIncomeString('authority'))][ConcatIfNeitherEmpty('\n\n', GetPlayer.GetPowerExpensesString('authority'))]"
+ INFLUENCE_TOOLTIP_DELAYED: "\n$TOOLTIP_DELIMITER$\nПриріст @inf![Nbsp][Concept('concept_influence','$concept_influence_gen$')|l] #v [GetPlayer.GetPowerIncome('influence')|D+0=]#! через:[ConcatIfNeitherEmpty('\n', GetPlayer.GetPowerIncomeString('influence'))][ConcatIfNeitherEmpty('\n\n', GetPlayer.GetPowerExpensesString('influence'))]"
  BUREAUCRACY_LAWS:0 "Laws: #variable $COST|+=$#!\n"
  BUREAUCRACY_BUILDINGS:0 "Buildings: #variable $COST|+=$#!\n"
  AUTHORITY_FROM_RULER_POPULARITY:0 "#v $VAL|+=0$#! from [concept_popularity] of [Character.GetFullNameWithTitle]"
@@ -1421,8 +1421,8 @@
  CAPITAL_TRUST:0 "#tooltip_header Trust#!\nCurrent: #HEADER [GetPlayer.GetTrust|2]#!\nMonthly decay: #BOLD #V [GetPlayer.GetMonthlyTrustChange|+=3]#!#!"
  CAPITAL_TRUST_DELAYED:0 "\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetTrustBreakdown]\nMax amount: #variable 100#!\n\n$TRUST_CONCEPT$"
  POP_TOOLTIP:2 "#tooltip_header [Concept('concept_pop','$concept_population$')]#!\nПоточна кількість: [Country.GetTotalPopulation|*2v] [Country.GetPopulationRanking]\n[Country.GetPopGrowthDesc]$POP_TOOLTIP_DELAYED$"
- RADICALS_TOOLTIP: "#tooltip_header $RADICALS$#!\nНаразі у нас є #v [Country.GetNumRadicals|*2]#! [Concept('concept_radical','$concept_radicals_gen$')] серед #v [Country.GetTotalPopulation|*2]#! населення [Concept('concept_country','$concept_country_gen$')] [Country.GetName]\n\nКількість [Concept('concept_radical','$concept_radicals_gen$')] змінилася на #v #tooltippable #tooltip:[Country.GetTooltipTag],RADICALS_CHANGE_TOOLTIP [Country.GetTotalNumRadicalsChange|*=-]#!#!#! з [Country.GetRadicalsLoyalistsChangeStartDate|v][ConcatIfNeitherEmpty('\n\n',SelectLocalization( GreaterThan_int32(Country.CalcNumStatesInTurmoil, '(int32)0'), 'STATES_IN_TURMOIL', '' ))][ConcatIfNeitherEmpty('\n\n',SelectLocalization( Country.HasIGApprovalFromRadicals, 'RADICALS_IG_APPROVAL', '' ))]"
- LOYALISTS_TOOLTIP: "#tooltip_header $LOYALISTS$#!\nНаразі у нас є #v [Country.GetNumLoyalists|*2]#! [Concept('concept_loyalist','$concept_loyalists_gen$')] серед #v [Country.GetTotalPopulation|*2]#! населення [Concept('concept_country','$concept_country_gen$')] [Country.GetName]\n\nКількість [Concept('concept_loyalist','$concept_loyalists_gen$')] змінилася на #v #tooltippable #tooltip:[Country.GetTooltipTag],LOYALISTS_CHANGE_TOOLTIP [Country.GetTotalNumLoyalistsChange|*=+]#!#!#! з [Country.GetRadicalsLoyalistsChangeStartDate|v][ConcatIfNeitherEmpty('\n\n',SelectLocalization( Country.HasIGApprovalFromLoyalists, 'LOYALISTS_IG_APPROVAL', '' ))]"
+ RADICALS_TOOLTIP: "#tooltip_header $RADICALS$#!\nНаразі у нас є #v [Country.GetNumRadicals|*2]#! [Concept('concept_radical','$concept_radicals_gen$')|l] серед #v [Country.GetTotalPopulation|*2]#! населення [Concept('concept_country','$concept_country_gen$')|l] [Country.GetName]\n\nКількість [Concept('concept_radical','$concept_radicals_gen$')|l] змінилася на #v #tooltippable #tooltip:[Country.GetTooltipTag],RADICALS_CHANGE_TOOLTIP [Country.GetTotalNumRadicalsChange|*=-]#!#!#! з [Country.GetRadicalsLoyalistsChangeStartDate|v][ConcatIfNeitherEmpty('\n\n',SelectLocalization( GreaterThan_int32(Country.CalcNumStatesInTurmoil, '(int32)0'), 'STATES_IN_TURMOIL', '' ))][ConcatIfNeitherEmpty('\n\n',SelectLocalization( Country.HasIGApprovalFromRadicals, 'RADICALS_IG_APPROVAL', '' ))]"
+ LOYALISTS_TOOLTIP: "#tooltip_header $LOYALISTS$#!\nНаразі у нас є #v [Country.GetNumLoyalists|*2]#! [Concept('concept_loyalist','$concept_loyalists_gen$')|l] серед #v [Country.GetTotalPopulation|*2]#! населення [Concept('concept_country','$concept_country_gen$')|l] [Country.GetName]\n\nКількість [Concept('concept_loyalist','$concept_loyalists_gen$')|l] змінилася на #v #tooltippable #tooltip:[Country.GetTooltipTag],LOYALISTS_CHANGE_TOOLTIP [Country.GetTotalNumLoyalistsChange|*=+]#!#!#! з [Country.GetRadicalsLoyalistsChangeStartDate|v][ConcatIfNeitherEmpty('\n\n',SelectLocalization( Country.HasIGApprovalFromLoyalists, 'LOYALISTS_IG_APPROVAL', '' ))]"
  POP_TOOLTIP_DELAYED:0 "\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty( SelectLocalization( GreaterThan_int32( GetPlayer.GetPeopleAbroad, '(int32)0' ), 'INCORPORATED_POPULATION', ''), '\n')][ConcatIfNeitherEmpty( SelectLocalization( GreaterThan_int32( GetPlayer.GetPeopleAbroad, '(int32)0' ), 'UNINCORPORATED_POPULATION', ''), '\n\n')]$POP_TOOLTIP_DELAYED_EMPLOYMENT_DETAIL$"
  POP_TOOLTIP_DELAYED_EMPLOYMENT_DETAIL: "Працевлаштовані: #variable [Country.GetSalariedWorkingAdults|K]#!\nСеляни: [Country.GetSubsistingWorkingAdults|Kv]\n[Concept('concept_unemployed','$concept_unemployed_many$')]: [Country.GetUnemployedWorkingAdults|Kv]\n[concept_dependents]: #variable [Country.GetDependents|K]#!"
  COST_POLITICAL:0 "@aut!#BOLD #V $COST|1$#!#!"
@@ -1433,14 +1433,14 @@
  POPULATION: "$concept_population$"
  POPULATION_TOOLTIP: "[Concept('concept_pop', '$concept_population$')]"
  RADICALS: "[Concept('concept_radical', '$concept_radicals$')]"
- NO_RADICALS: "Наразі у нас немає [Concept('concept_radical', '$concept_radicals_gen$')]"
+ NO_RADICALS: "Наразі у нас немає [Concept('concept_radical', '$concept_radicals_gen$')|l]"
  LOYALISTS: "[Concept('concept_loyalist', '$concept_loyalists$')]"
- NO_LOYALISTS: "Наразі у нас немає [Concept('concept_loyalist', '$concept_loyalists_gen$')]"
- AVG_STANDARD_OF_LIVING: "Середній [concept_sol]"
+ NO_LOYALISTS: "Наразі у нас немає [Concept('concept_loyalist', '$concept_loyalists_gen$')|l]"
+ AVG_STANDARD_OF_LIVING: "Середній [concept_sol|l]"
  MONEY: "[concept_gold_reserves]"
  TENSION: "[concept_tension]"
  INFAMY: "[concept_infamy]"
- TAXATION:0 "[Concept('concept_taxes','$concept_taxation$')]"
+ TAXATION: "[Concept('concept_taxes','$concept_taxation$')]"
 
  STATES_IN_TURMOIL:1 "There are #tooltippable #tooltip:[Country.GetTooltipTag],STATES_IN_TURMOIL_TOOLTIP [Country.CalcNumStatesInTurmoil|v]#!#! [Concept('concept_state', '$concept_states$')] that are in [concept_turmoil] due to $RADICALS$"
  STATES_IN_TURMOIL_TOOLTIP:0 "#header [concept_turmoil]#!\n$TOOLTIP_DELIMITER$\n[Country.GetStatesInTurmoilBreakdown]"
@@ -1505,9 +1505,9 @@
 
  BUREAUCRACY_EXPENSE_LIST_ITEM:0 "[STATE.GetName]: #tooltippable #tooltip:$TOOLTIP_TAG$ #variable $COST|-0$#!#!#!"
  BUREAUCRACY_EXPENSE_LAWS:0 "$INCORPORATEDCOST$\n$LAWS$\n$LAW_COST$"
- BUREAUCRACY_EXPENSE_STATES:2 "$NUMINCORPORATED|v0$ [Concept('concept_incorporated_state', '$concept_incorporated_states$')]: $BASECOST$\n$NUMPOPS|Kv$ Pops in [Concept('concept_incorporated_state', '$concept_incorporated_states$')]: $BASEPOPCOST$\n$LAW_COST$"
- BUREAUCRACY_EXPENSE_BASE_COST:0 "#v $VAL|+=0$#!"
- BUREAUCRACY_EXPENSE_BASE_POP_COST:1 "@bur!#v $VAL|+=0$#!"
+ BUREAUCRACY_EXPENSE_STATES: "$NUMINCORPORATED|v0$ [Concept('concept_incorporated_state', '$concept_incorporated_states$')]: $BASECOST$\n$NUMPOPS|Kv$ Населення в [Concept('concept_incorporated_state', '$concept_incorporated_states_loc$')|l]: $BASEPOPCOST$\n$LAW_COST$"
+ BUREAUCRACY_EXPENSE_BASE_COST: "#v $VAL|+=0$#!"
+ BUREAUCRACY_EXPENSE_BASE_POP_COST: "@bur!#v $VAL|+=0$#!"
  BUREAUCRACY_EXPENSE_LAW_COST:1 "Total Institution [Concept('concept_investment_level', '$concept_investment_levels$')]: #v $INVESTMENTS|+=0$#!"
  INSTITUTION_BUREAUCRACY_COST:0 "[INSTITUTION.GetName] ([INSTITUTION.GetInvestmentLevel|v]): #variable $COST|+=0$#!"
  LAW_NAME_WITH_GROUP:0 "$GROUP$ - $NAME$"
@@ -1602,7 +1602,7 @@
  BUTTON_BUDGET: "#header Бюджет#!"
  BUTTON_MILITARY: "#header Військо#!"
  BUTTON_TECHNOLOGY: "#header Технології#!\n[SelectLocalization( Technology.IsValid, 'RESEARCHING', 'NOT_RESEARCHING' )]"
- UNLOCK_MAP_MODE: "Зняти вибраний режим карти"
+ UNLOCK_MAP_MODE: "Зняти вибраний режим мапи"
  UNLOCK_MAP_MODE_TOOLTIP:0 "#header $UNLOCK_MAP_MODE$#!\n[GetSelectedMapModeName] Map Mode is currently locked."
 
  RESEARCHING: "[GetPlayer.GetName] зараз досліджує #variable [Technology.GetName]#!\nПоступ: $TECHNOLOGY_PROGRESS_WITH_GAIN_AND_TIME_LEFT$"
@@ -1625,8 +1625,8 @@
  ALREADY_ACQUIRED_BUTTON:0 "See Known Technologies"
 
  TECHNOLOGY_AQUIRED_POPUP_HEADER:0 "#header [Notification.GetScopeTechnology.GetName] Unlocked#!"
- TECHNOLOGY_UNLOCKS_TEXT:0 "[Technology.GetTooltipWithoutRequirements(GetPlayer.Self)]"
- TECHNOLOGY_LORE_TEXT:0 "#lore [Technology.GetDesc]#!"
+ TECHNOLOGY_UNLOCKS_TEXT: "[Technology.GetTooltipWithoutRequirements(GetPlayer.Self)]"
+ TECHNOLOGY_LORE_TEXT: "#lore [Technology.GetDesc]#!"
  NA: "Недоступний"
 
  JOURNAL_ENTRY_ON_ACTIVATION: "#title Якщо активується:#!\n$EFFECT$"
@@ -1677,7 +1677,7 @@
  TOOLTIP_VIEW_CONDENSED:0 "#header View condensed State Panel#!"
  TOOLTIP_VIEW_DETAILED:0 "#header View detailed State Panel#!"
 
- WARNING:0 "@warning! "
+ WARNING: "@warning! "
 
  BUILDING_POPULATION_STATUS:0 "Employees\n[Building.GetNoOfEmployed|Kv]"
 
@@ -2333,7 +2333,7 @@
  
  MAX_DECLARED_INTERESTS_TOOLTIP:0 "#header Maximum [Concept('concept_declared_interest','$concept_declared_interests$')] for [Country.GetName]#!\n$TOOLTIP_DELIMITER$\n[Country.GetMaxNumDeclaredInterestsBreakdown]"
 
- MAP_INTERACTION_ESC_TO_CANCEL: "#instruction Нажміть #bold ESC#!, щоб закрити поточну взаємодію з картою#!"
+ MAP_INTERACTION_ESC_TO_CANCEL: "#instruction Нажміть #bold ESC#!, щоб закрити поточну взаємодію з мапою#!"
  MAP_INTERACTION_BUILD_BUILDING_DESC:0 "Select in which #V State#! to build #V [BUILDING_TYPE.GetName]#!"
  MAP_INTERACTION_BUILD_BUILDING_PERFORMED:0 "Building #V [BuildingType.GetName]#! started"
  MAP_INTERACTION_BUILDING_BUILT:0 "[Building.GetName] built in [Building.GetState.GetName]"
@@ -2559,9 +2559,9 @@
 
  IMPORT_SUGGESTIONS_TITLE: "Товари зі значним ввозовим попитом"
  EXPORT_SUGGESTIONS_TITLE: "Товари зі значною мічністю для вивозу"
- NO_GOODS_IMPORT_SUGGESTION:0 "No [Concept('concept_good', '$concept_goods$')] have considerable import demand"
- NO_GOODS_EXPORT_SUGGESTION:0 "No [Concept('concept_good', '$concept_goods$')] have considerable export demand"
- MARKET_GOODS_BALANCE_TOOLTIP:1 "[SelectLocalization(LessThan_int32(FixedPointToInt(Goods.GetMarketBuyAndSellOrdersBalance), '(int32)0'), 'MARKET_GOODS_BALANCE_TOOLTIP_IMBALANCE', 'MARKET_GOODS_BALANCE_TOOLTIP_BALANCE')]"
+ NO_GOODS_IMPORT_SUGGESTION: "Немає [Concept('concept_good', '$concept_goods_gen$')|l], що мають значний ввозовий попит"
+ NO_GOODS_EXPORT_SUGGESTION: "Немає [Concept('concept_good', '$concept_goods_gen$')|l], що мають значну мічність для вивозу"
+ MARKET_GOODS_BALANCE_TOOLTIP: "[SelectLocalization(LessThan_int32(FixedPointToInt(Goods.GetMarketBuyAndSellOrdersBalance), '(int32)0'), 'MARKET_GOODS_BALANCE_TOOLTIP_IMBALANCE', 'MARKET_GOODS_BALANCE_TOOLTIP_BALANCE')]"
  MARKET_GOODS_BALANCE_TOOLTIP_BALANCE:0 "#header Balance for [Goods.GetName]#!\nCurrent balance: #v [FixedPointToInt(Goods.GetMarketBuyAndSellOrdersBalance)|=D+]#!\n$TOOLTIP_DELIMITER$\n[concept_sell_orders]: [Goods.GetMarketSellOrdersWithTooltip]\n[concept_buy_orders]: [Goods.GetMarketBuyOrdersWithTooltip]\n\nThe bar shows the [Concept('concept_market_impact', '$concept_market_impact_short$')] the current balance of [Goods.GetTextIcon] [Goods.GetName] has on the [Goods.GetMarket.GetName]. The more #blue blue#! or #gold gold#! the bar is, the higher $concept_market_impact_short$ it has."
  MARKET_GOODS_BALANCE_TOOLTIP_IMBALANCE:0 "#header Balance for [Goods.GetName]#!\nCurrent imbalance: #v [FixedPointToInt(Goods.GetMarketBuyAndSellOrdersBalance)|=D+]#!\n$TOOLTIP_DELIMITER$\n[concept_sell_orders]: [Goods.GetMarketSellOrdersWithTooltip]\n[concept_buy_orders]: [Goods.GetMarketBuyOrdersWithTooltip]\n\nThe bar shows the [Concept('concept_market_impact', '$concept_market_impact_short$')] the current imbalance of [Goods.GetTextIcon] [Goods.GetName] has on the [Goods.GetMarket.GetName]. The more #blue blue#! or #gold gold#! the bar is, the higher $concept_market_impact_short$ it has."
 
@@ -3597,7 +3597,7 @@
 
  character_role_general_title: "Генерал"
  character_role_admiral_title: "Адмірал"
- character_role_politician_title:0 "" # Empty on purpose
+ character_role_politician_title: "" # Empty on purpose
 
  ROLE: "[concept_character_role]"
  CHARACTER_PRIMARY_ROLE:0 "#v [Character.GetAllRoleNames]#!"
@@ -5958,7 +5958,7 @@
  notification_naval_invasion_failed_tooltip:0 "#header $notification_naval_invasion_failed_name$#!\n$notification_naval_invasion_failed_desc$"
 
  notification_journal_entry_activated_name: "Новий [concept_journal_entry|l]: [SCOPE.GetRootScope.GetJournalEntry.GetName]"
- notification_journal_entry_activated_desc:0 "[SCOPE.GetRootScope.GetJournalEntry.GetName] added to the Journal"
+ notification_journal_entry_activated_desc: "[Concept('concept_journal_entry', '$concept_journal_entry_short$')] [SCOPE.GetRootScope.GetJournalEntry.GetName] додано до журналу"
  notification_journal_entry_activated_tooltip:1 "#header $notification_journal_entry_activated_name$#!\n$notification_journal_entry_activated_desc$"
 
  notification_journal_entry_deactivated_name:0 "[SCOPE.GetRootScope.GetJournalEntry.GetName] Closed"
