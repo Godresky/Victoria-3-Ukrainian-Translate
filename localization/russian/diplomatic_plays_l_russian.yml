@@ -271,19 +271,19 @@
  dp_humiliation_tooltip:1 "#header Start a $dp_humiliation$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_humiliation_desc$"
  dp_humiliation_desc:0 "Sets the initiating [concept_war_goal] to reduce the targeted [Concept('concept_country', '$concept_country_possessive$')] prestige and prevents them from opposing you in [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] for #v 5#! years."
 
- dp_leadership_germany:1 "Німецьке лідерство"
+ dp_leadership_germany: "Німецьке провідництво"
  dp_leadership_germany_desc:1 "Start a $dp_leadership_germany$ [concept_diplomatic_play]\n$TOOLTIP_DELIMITER$\n$dp_leadership_germany_tooltip_desc$"
  dp_leadership_germany_tooltip_desc:0 "Sets the initiating [concept_war_goal] to kick out the trageted [concept_country] as a [concept_unification_candidate] of the German [Concept('concept_unification', '$concept_major_unification$')]."
  
- dp_leadership_italy:0 "Італійське лідерство"
+ dp_leadership_italy: "Італійське провідництво"
  dp_leadership_italy_desc:1 "Start a $dp_leadership_italy$ [concept_diplomatic_play]\n$TOOLTIP_DELIMITER$\n$dp_leadership_italy_tooltip_desc$"
  dp_leadership_italy_tooltip_desc:0 "Sets the initiating [concept_war_goal] to kick out the trageted [concept_country] as a [concept_unification_candidate] of the Italian [Concept('concept_unification', '$concept_major_unification$')]."
  
- dp_leadership_scandinavia:0 "Скандинавське лідерство"
+ dp_leadership_scandinavia:0 "Скандинавське провідництво"
  dp_leadership_scandinavia_desc:1 "Start a $dp_leadership_scandinavia$ [concept_diplomatic_play]\n$TOOLTIP_DELIMITER$\n$dp_leadership_scandinavia_tooltip_desc$"
  dp_leadership_scandinavia_tooltip_desc:0 "Sets the initiating [concept_war_goal] to kick out the trageted [concept_country] as a [concept_unification_candidate] of the Scandinavian [Concept('concept_unification', '$concept_major_unification$')]."
  
- war_goal_conquer_state_type_name:0 "Завоювання області"
+ war_goal_conquer_state_type_name: "Завоювання області"
  war_goal_conquer_state_type_desc:1 "Conquer a [concept_state] from another [concept_country]."
  war_goal_conquer_state:0 "Conquer [WAR_GOAL.GetTargetState.GetName]"
  war_goal_conquer_state_desc:1 "[WAR_GOAL.GetHolder.GetName] conquers the [concept_state] of [WAR_GOAL.GetTargetState.GetName] from [WAR_GOAL.GetTarget.GetName]"

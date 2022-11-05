@@ -38,8 +38,8 @@
  DEACTIVATE_LAW: "[COUNTRY.GetName] відключає закон [Law.GetFullNameWithStatus]"
  CALL_ELECTION: "[COUNTRY.GetName] матиме #variable вибори через $MONTHS$ місяці#!"
  SET_INTEREST_GROUP_NAME: "[IG.GetName] переіменується у #variable $IG_NAME$#!"
- SET_AS_INTEREST_GROUP_LEADER: "[Character.GetFullName|v] стає лідером [Character.GetInterestGroup.GetName|v]"
- REMOVE_AS_INTEREST_GROUP_LEADER: "[Character.GetFullName|v] перестає бути лідером [Character.GetInterestGroup.GetName|v]"
+ SET_AS_INTEREST_GROUP_LEADER: "[Character.GetFullName|v] стає провідником [Character.GetInterestGroup.GetName|v]"
+ REMOVE_AS_INTEREST_GROUP_LEADER: "[Character.GetFullName|v] перестає бути провідником [Character.GetInterestGroup.GetName|v]"
  DO_REVOLUTION_CLEANUP: "Громадянська війна закінчується"
  
  ADD_IDEOLOGY: "[InterestGroup.GetName] приймає [Ideology.GetName] Ідеологію"

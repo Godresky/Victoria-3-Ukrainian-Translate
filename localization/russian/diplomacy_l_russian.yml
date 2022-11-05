@@ -8,7 +8,7 @@
  PRESTIGE_FROM_SUBJECT_NAVY_POWER_PROJECTION:2 "#variable $VALUE|+=$#! from Navy [concept_power_projection] of [Concept('concept_subject', '$concept_subjects$')]"
  PRESTIGE_FROM_GOODS_LEADERBOARDS:1 "#tooltippable #tooltip:[Country.GetTooltipTag],PRESTIGE_FROM_GOODS_LEADERBOARDS_BREAKDOWN #v $VAL|+=$#!#!#! from being leading goods producer"
  PRESTIGE_FROM_GOODS_LEADERBOARDS_BREAKDOWN:1 "[Country.GetGoodsLeaderboardDesc]"
- NO_PRESTIGE_RANKING:0 "This [concept_country] has no [concept_prestige] ranking due to #variable $COUNTRY_TYPE$#! status"
+ NO_PRESTIGE_RANKING: "Ця [concept_country|l] не має [Concept('concept_prestige', '$concept_prestige_gen$')|l] через свій статус #variable $COUNTRY_TYPE$#!"
  ARMY_POWER_PROJECTION_DESC:0 "#header $ADJECTIVE$ Army [concept_power_projection]: $VALUE|v0$#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
  NAVY_POWER_PROJECTION_DESC:0 "#header $ADJECTIVE$ Navy [concept_power_projection]: $VALUE|v0$#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
  great_power:1 "[concept_great_power]"
