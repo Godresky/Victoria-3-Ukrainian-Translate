@@ -186,7 +186,7 @@
  DECAYING_DESC_WITH_SPACE_AFTER:0 "$DECAYING_DESC$ "
  DATA_TIMED_MODIFIER_TITLE: "#header $NAME$#!"
  DATA_TIMED_MODIFIER_DURATION:1 "Duration: $DURATION$$MAYBE_DECAYING_WITH_SPACE_BEFORE$"
- DATA_TIMED_MODIFIER_REMAINING:1 "Remaining Time: $DURATION$$MAYBE_DECAYING_WITH_SPACE_BEFORE$"
+ DATA_TIMED_MODIFIER_REMAINING: "Залишилося часу: $DURATION$$MAYBE_DECAYING_WITH_SPACE_BEFORE$"
  DATA_TIMED_MODIFIER_ONELINE:1 "$MODIFIERDESC$ from #title $NAME$#! ($DURATION$)$MAYBE_DECAYING_WITH_SPACE_BEFORE$"
  MODIFIERS_PANEL_MODIFIER_ENTRIES: "#bold Записи змінювачів#!"
  GOVERNMENT_LEGITIMACY:0 "#title [concept_legitimacy]:#! #variable [Country.GetGovernmentLegitimacy|0%]#!"
@@ -473,10 +473,10 @@
 
  NO_DIPLO_INFO:0 "#bold No Active Diplomacy#!"
 
- FORMABLE_COUNTRIES:0 "#bold Formable Countries#!"
- NO_FORMABLE_COUNTRIES:0 "#bold No Possible Country-Formations#!"
+ FORMABLE_COUNTRIES: "#bold Formable Countries#!"
+ NO_FORMABLE_COUNTRIES: "#bold Немає держав, які можна сформувати#!"
 
- NO_JOURNAL_ENTRIES: "Зараз одних активних [Concept('concept_journal_entry', '$concept_journal_entries_gen$')|l]"
+ NO_JOURNAL_ENTRIES: "Зараз немає активних [Concept('concept_journal_entry', '$concept_journal_entries_gen$')|l]"
  NO_DECISIONS:0 "#bold No Decisions can be taken#!"
 
  ACTIVE_JOURNAL_ENTRIES: "Активні [Concept('concept_journal_entry', '$concept_journal_entries$')|l]"
@@ -1526,7 +1526,7 @@
  GOODS_DISCOURAGE_CONSUMPTION_EXPENSE_LIST_ITEM:1 "[Concept('concept_discourage_consumption', '$concept_discouraging_consumption$')] of [GOODS.GetName]: #variable #N -$VAL|0$#!#!"
  GOODS_TAX_EXPENSE_LIST_ITEM:1 "Collecting [Concept('concept_consumption_tax', '$concept_consumption_taxes$')] on [GOODS.GetName]: #variable #N -$VAL|0$#!#!"
 
- STATE_POP_GROWTH:0 "$concept_pop_growth$ #v [State.GetPopNetGrowth|Т=+]#!"
+ STATE_POP_GROWTH: "$concept_pop_growth$: #v [State.GetPopNetGrowth|N=+K]#!"
 
  TOOLTIP_POP_GROWTH_COMMON: "Прогноз [Concept('concept_pop_growth','$concept_pop_growth_gen$')|l] на рік: #variable $NETGROWTHRATE|+=%$ #! (#variable $NETGROWTH|=*$#!)"
  TOOLTIP_COUNTRY_POP_GROWTH: "$TOOLTIP_POP_GROWTH_COMMON$"
@@ -1584,7 +1584,7 @@
 
  AND_SPACED: " і "
  COMMA_SPACED: ", "
- MAP_INFO:0 "#header Map#!\n$TOOLTIP_DELIMITER$\nPress and hold #bold "Tab"#! to zoom out fully. Releasing it will zoom you back in to your previous zoom level."
+ MAP_INFO: "#header Мапа#!\n$TOOLTIP_DELIMITER$\nНатисніть і утримуйте #bold "Tab"#!, щоб повністю зменшити масштаб. Відпустивши її, ви повернетеся до попереднього рівня масштабування."
  MAP_INFO_MAP_MODE_LOCKED:0 "$MAP_INFO$\n\n#instruction Click to clear locked Map Mode.#!"
  LOCATION_FINDER: "#header Ськання місцин#!"
  ZOOM_TO_BUILDING_STATE: "Приблизити до [Building.AccessState.GetName]"
@@ -2312,8 +2312,8 @@
  POPS_LIST_MAX_SIZE:0 "#header [PopListItem.GetPopType.GetName]#!\nEmployed: [PopListItem.GetWorkingAdultsPopSize|Dv]\n$TOOLTIP_DELIMITER$\nThis building can employ #variable [PopListItem.GetMaxPopSize|D]#! [PopListItem.GetPopType.GetName] due to:\n[PopListItem.GetMaxPopSizeDesc][Building.GetEmployeesTransferDesc( PopListItem.GetPopType )][Building.GetFailedHiresDesc( PopListItem.GetPopType )]"
  POPS_LIST_SLAVES_ROLE_MAX_SIZE:0 "#header [PopListItem.GetPopType.GetName]#!\nEmployed: [PopListItem.GetWorkingAdultsPopSize|Dv]\n[PopListItem.GetPopTypeReplacementDesc]\n$TOOLTIP_DELIMITER$\nThis building can employ #variable $MAX_POP_SIZE|D$#! [POP_TYPE.GetName] or [TARGET_POP_TYPE.GetName] due to:\n$MAX_POP_SIZE_DESC$ $TRANSFERS_DESC$ $FAILED_HIRES_DESC$"
  POPS_LIST_SOL:0 "[LabelingHelper.GetLabelForStandardOfLivingFloat(PopListItem.GetAverageSoL)|v] ([PopListItem.GetAverageSoL|1y])"
- POPS_LIST_SOL_TOOLTIP:0 "#header [concept_sol]#!\nAverage [concept_sol]: [LabelingHelper.GetLabelForStandardOfLivingFloat(PopListItem.GetAverageSoL)|v] ([PopListItem.GetAverageSoL|1y])\n\n[SelectLocalization(PopListItem.IsSlave, '', 'POPS_LIST_SOL_TOOLTIP_AVG_INCOME')]"
- POPS_LIST_SOL_TOOLTIP_AVG_INCOME:0 "Average Yearly Income Per Pop: @money![PopListItem.GetAverageAnnualWage|vD]"
+ POPS_LIST_SOL_TOOLTIP: "#header [concept_sol]#!\nСередній [concept_sol|l]: [LabelingHelper.GetLabelForStandardOfLivingFloat(PopListItem.GetAverageSoL)|v] ([PopListItem.GetAverageSoL|1y])\n\n[SelectLocalization(PopListItem.IsSlave, '', 'POPS_LIST_SOL_TOOLTIP_AVG_INCOME')]"
+ POPS_LIST_SOL_TOOLTIP_AVG_INCOME: "Середній річний дохід на населення: @money![PopListItem.GetAverageAnnualWage|vD]"
  ANNUAL_WAGE_TOOLTIP:0 "#header Annual Wage for [PopListItem.GetPopType.GetName]#!\nEvery year [PopListItem.GetPopType.GetName] in this Building make #bold @money![PopListItem.GetAverageAnnualWage|Dv]#! on average"
  POPS_LIST_CAN_BE_REPLACED_BY:0 "Can be replaced by [POP_TYPE.GetNameNoIcon]"
  POPS_LIST_REPLACES_POP_TYPE:0 "Replaces [POP_TYPE.GetNameNoIcon]"
@@ -2478,8 +2478,8 @@
  WEEKLY_COSTS_TITLE: "Щомісячна вартість:"
  INSTITUTION_LEVEL_CHANGE: "Зміна на рівень [Institution.GetTargetInvestmentLevel]"
  INSTITUTION_CURRENT_LEVEL: "Рівень [Institution.GetInvestmentLevel]"
- INSTITUTION_TIME_TO_REACH_LEVEL: "$NUM_WEEKS|v$ тижнів (-я)"
- INSTITUTION_TIME_TO_REACH_LEVEL_DAYS: "$NUM_DAYS|v$ днів (-я)"
+ INSTITUTION_TIME_TO_REACH_LEVEL: "$NUM_WEEKS|v$ тижнів(-я)"
+ INSTITUTION_TIME_TO_REACH_LEVEL_DAYS: "$NUM_DAYS|v$ днів(-я)"
  INSTITUTION_TIME_TO_REACH_LEVEL_ONE_DAY: "1 день"
  INSTITUTION_TIME_TO_REACH_LEVEL_LESS_THAN_ONE_DAY: "Менше 1-го дня"
  NO_INSTITUTIONS: "Немає [Concept('concept_institution', '$concept_institutions_gen$')|l]"
@@ -3123,7 +3123,7 @@
  DIPLOMATIC_ACTION_WITH_COUNTRY:0 "[COUNTRY.GetName] - [DIPLOMATIC_ACTION_TYPE.GetName]"
  IMPORTANT_ACTIONS: "Нинішня ситуація"
  CURRENT_SITUATION_TOOLTIP: "#header Нинішня ситуація#!"
- UNREAD_MESSAGES:0 "#header You have unread messages!#!"
+ UNREAD_MESSAGES: "#header У вас є непрочитані повідомлення!#!"
 
  BALANCE_WITHOUT_TEMPORARY_INCOME_AND_EXPENSES:0 "\nBalance (excluding Temporary Income and Expenses): #v @money![GetPlayer.PredictBalanceWithoutTemporaryIncomeAndExpenses|D+=]#!"
  TAX_OCCUPATION_LOSS:0 "Occupation loss from taxes: #variable [GetPlayer.GetTaxOccupationLoss|1-=]#!\n$poor$: #variable [GetPlayer.GetTaxOccupationLossFor('poor')|1-=]#!\n$middle$: #variable [GetPlayer.GetTaxOccupationLossFor('middle')|1-=]#!\n$rich$: #variable [GetPlayer.GetTaxOccupationLossFor('rich')|1-=]#!\n"
@@ -4434,7 +4434,7 @@
  STATE_EXPECTED_SOL_MIDDLE:0 "#header Average [concept_expected_sol] for $middle$ in [State.GetName]#!\n#v [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(State.GetExpectedStandardOfLivingMiddle)] ([State.GetExpectedStandardOfLivingMiddle|1]#!)\n$TOOLTIP_DELIMITER$\n[State.GetExpectedSOLFactorsDescMiddle]"
  STATE_EXPECTED_SOL_RICH:0 "#header Average [concept_expected_sol] for $rich$ in [State.GetName]#!\n#v [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(State.GetExpectedStandardOfLivingRich)] ([State.GetExpectedStandardOfLivingRich|1]#!)\n$TOOLTIP_DELIMITER$\n[State.GetExpectedSOLFactorsDescRich]"
 
- WE_NOW_HAVE_LAW:0 "#bold We now have [Notification.GetLaw.GetName]!#!"
+ WE_NOW_HAVE_LAW: "#bold У нас - [Notification.GetLaw.GetName]!#!"
  GAINED_MODS:0 "#title Gained from changing to [Notification.GetLaw.GetName]:#!"
  LOST_MODS:0 "#title Lost from changing from [Notification.GetPrevLaw.GetName]:#!"
  ENACT_APPROVAL_CHANGES:0 "#title [concept_interest_group] approval changes from enacting [Notification.GetLaw.GetName]#!"
@@ -4827,7 +4827,7 @@
  STRATEGIC_REGION_MARKER_ADD_IM:0 "#header Add  [concept_interest]#!\nChoose a #bold Power Projection#! Regional Mission to use your military Strength Points to project your Power in #variable [StrategicRegion.GetName]#!\n\n[concept_power_projection_desc]"
  STRATEGIC_REGION_MARKER_START_DP:0 "#header Start [concept_diplomatic_play]#!\nYou have an #variable Interest#! in #variable [StrategicRegion.GetName]#!, meaning you can start a [concept_diplomatic_play] here"
 
- SITUATION_TOOLTIP:0 "#HEADER [EVENT.GetTitle]#!\n$TOOLTIP_DELIMITER$\nLocation: [EVENT.GetState.GetName]\n\nTime remaining: #variable [EVENT.GetRemainingDays]#! days"
+ SITUATION_TOOLTIP: "#HEADER [EVENT.GetTitle]#!\n$TOOLTIP_DELIMITER$\nМісцина: [EVENT.GetState.GetName]\n\nЗалишилося часу: #variable [EVENT.GetRemainingDays]#! днів (-я)"
  SITUATION_DEBUG_TOOLTIP:0 "$TOOLTIP_DELIMITER$\nEvent ID: [EVENT.GetKey|v]"
 
  TOOLTIP_INTEREST_GROUP:1 "#header [InterestGroup.GetName]#!\n$TOOLTIP_DELIMITER$\nLeader Ideology: [InterestGroup.GetLeaderIdeologyDesc]\nIdeologies: [InterestGroup.GetIdeologyDesc]\n\nClout: [InterestGroup.GetClout|%1v]\nPopulation: #variable [InterestGroup.GetPopulation|*]#!\n\n#lore [InterestGroup.GetDesc]#!\n"
@@ -5701,7 +5701,7 @@
  PARTY_AFFILIATION_TOOLTIP:0 "#header [InterestGroup.GetName] Affiliation with [Party.GetName]: $SCORE|v0$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
 
  CULTURE_IN_STATE_ITEM:1 "[STATE.GetPopulationForCulture( CULTURE.Self )|vD] [CULTURE.GetName] ([STATE.GetPolStrForCulture( CULTURE.Self )|vD] [concept_political_strength])"
- CULTURE_IN_STATE_FORMAT:0 "#header Cultures in [STATE.GetName]#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
+ CULTURE_IN_STATE_FORMAT: "#header Культури в [Concept('concept_state', '$concept_state_loc$')|l] [STATE.GetName]#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
 
  IG_IN_STATE_ITEM: "$VAL|vD$ - [INTEREST_GROUP.GetName]"
  IGS_IN_STATE_FORMAT: "#header [concept_political_strength] у [Concept('concept_state', '$concept_state_loc$')|l] [STATE.GetName]#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
@@ -5793,8 +5793,8 @@
  LENS_ACTION_NUMBER:1 "[LensOption.GetText|v]\n[GetDescriptiveText(LensOption.GetMapInteraction)]\nThis action has #v [LensOption.GetNumberOfSelections|+]#! valid targets"
  BUILDING_ACTION_NUMBER:1 "[BuildingType.GetName|v]\nSelect in which [concept_state] to build [BuildingType.GetName|v]\nCan currently be built in #v [BuildingType.GetNumAvailableStatesForBuilding|+]#! different [Concept('concept_state', '$concept_states$')]"
 
- IS_ACTIVE:0 "$TEXT$ (#P Active#!)"
- IS_INACTIVE:0 "$TEXT$ (Inactive)"
+ IS_ACTIVE: "$TEXT$ (#P Активна#!)"
+ IS_INACTIVE: "$TEXT$ (Неактивна)"
 
  PRODUCTION_METHOD_OPTIONS:0 "You have #bold #P [ProductionMethodGroup.GetNumAvailableOptions(Building.AccessSelf)]#!#! options for [ProductionMethodGroup.GetName]"
  PRODUCTION_METHOD_OPTIONS_BULK:0 "You have #bold #P [ProductionMethodGroup.GetNumAvailableOptionsForBuildingType(ProductionMethodsPanelEntry.AccessBuildingType)]#!#! options for [ProductionMethodGroup.GetName]"
@@ -5888,7 +5888,7 @@
  GENERAL_TRAVELING_TOOLTIP:0 "[Character.GetFirstName|v] will arrive in [Front.GetName] in [Character.GetDaysToCompleteTravelFormatted]."
  GENERAL_TRAVELING_TOOLTIP_LESS_THAN_ONE_DAY:0 "[Character.GetFirstName|v] will arrive in [Front.GetName] in less than #variable 1#! day."
  GENERAL_TRAVEL_DAY: "день"
- GENERAL_TRAVEL_DAYS: "дня(-ів)"
+ GENERAL_TRAVEL_DAYS: "днів(-я)"
 
  ACTIVATE_CONSCRIPTION_CENTER: "Активувати призовний пункт"
  ACTIVATE_CONSCRIPTION_CENTER_TOOLTIP:0 "#header Activate [concept_conscription_center]#!\n$TOOLTIP_DELIMITER$\nSize: [Building.GetExpansionLevel|v]\nUnit Capacity: [Building.GetCombatUnitCapacityDesc]$TROOP_ALLOCATION_CHANGES_ACTIVATE_CONSCRIPTION_CENTER$"
@@ -6189,10 +6189,10 @@
 
  GOODS_INPUT_REQUIRED_FOR_NO_PENALTY:1 "At least [GetDefine('NEconomy', 'GOODS_SHORTAGE_PENALTY_THRESHOLD')|v%0] of [concept_buy_orders] for [Goods.GetTextIcon][Nbsp][Goods.GetName] must be satisfied to avoid an output penalty."
  GOODS_INPUT_SHORTAGE_OUTPUT_PENALTY:0 "Current penalty is [Building.GetInputShortagePenalty|%v0], and will change over time towards the target penalty of [Building.CalcInputGoodsShortageTargetPenalty|%v0]."
- GOODS_INPUT_SHORTAGE_MAX_TOOLTIP:1 "#header [concept_input_goods_shortage] in [Building.GetName]#!\nThere are no [concept_sell_orders] available for [Goods.GetTextIcon][Nbsp][Goods.GetName] in [Building.GetState.GetStateRegion.GetName], resulting in an penalty on all outputs for this [concept_building].\n\n$GOODS_INPUT_SHORTAGE_OUTPUT_PENALTY$\n\n$GOODS_INPUT_REQUIRED_FOR_NO_PENALTY$"
- GOODS_INPUT_SHORTAGE_TOOLTIP:2 "#header [concept_input_goods_shortage] in [Building.GetName]#!\nThere is only enough [concept_sell_orders] for [Goods.GetTextIcon][Nbsp][Goods.GetName] available in [Building.GetState.GetName] to satisfy [Building.GetState.CalcSupplyToDemandRatio(Goods.Self)|%v] of the [concept_buy_orders], resulting in an penalty on all outputs for this [concept_building].\n\n$GOODS_INPUT_SHORTAGE_OUTPUT_PENALTY$\n\n$GOODS_INPUT_REQUIRED_FOR_NO_PENALTY$\n\n$alert_market_goods_shortage_alert_hint_data_version$"
- GOODS_OUTPUT_PENALTY_TOOLTIP:1 "#header [concept_input_goods_shortage] in [Building.GetName]#!\nShortages of [Building.GetGoodsShortageListDesc] results in a penalty on all outputs for this [concept_building].\n\n$GOODS_INPUT_SHORTAGE_OUTPUT_PENALTY$"
- GOODS_OUTPUT_PENALTY_LINGERING_TOOLTIP:0 "#header [concept_input_goods_shortage] in [Building.GetName]#!\nPrevious shortages of input [Concept('concept_good', '$concept_goods$')] has resulted in a lingering penalty on all outputs for this [concept_building].\n\nCurrent penalty is [Building.GetInputShortagePenalty|%v0], but this penalty will disappear over time."
+ GOODS_INPUT_SHORTAGE_MAX_TOOLTIP: "#header [Building.GetName] має [Concept('concept_input_goods_shortage', '$concept_input_goods_shortage_acc$')|l]#!\nThere are no [concept_sell_orders] available for [Goods.GetTextIcon][Nbsp][Goods.GetName] in [Building.GetState.GetStateRegion.GetName], resulting in an penalty on all outputs for this [concept_building].\n\n$GOODS_INPUT_SHORTAGE_OUTPUT_PENALTY$\n\n$GOODS_INPUT_REQUIRED_FOR_NO_PENALTY$"
+ GOODS_INPUT_SHORTAGE_TOOLTIP: "#header [Building.GetName] має [Concept('concept_input_goods_shortage', '$concept_input_goods_shortage_acc$')|l]#!\nThere is only enough [concept_sell_orders] for [Goods.GetTextIcon][Nbsp][Goods.GetName] available in [Building.GetState.GetName] to satisfy [Building.GetState.CalcSupplyToDemandRatio(Goods.Self)|%v] of the [concept_buy_orders], resulting in an penalty on all outputs for this [concept_building].\n\n$GOODS_INPUT_SHORTAGE_OUTPUT_PENALTY$\n\n$GOODS_INPUT_REQUIRED_FOR_NO_PENALTY$\n\n$alert_market_goods_shortage_alert_hint_data_version$"
+ GOODS_OUTPUT_PENALTY_TOOLTIP: "#header [Building.GetName] має [Concept('concept_input_goods_shortage', '$concept_input_goods_shortage_acc$')|l]#!\nShortages of [Building.GetGoodsShortageListDesc] results in a penalty on all outputs for this [concept_building].\n\n$GOODS_INPUT_SHORTAGE_OUTPUT_PENALTY$"
+ GOODS_OUTPUT_PENALTY_LINGERING_TOOLTIP: "#header [Building.GetName] має [Concept('concept_input_goods_shortage', '$concept_input_goods_shortage_acc$')|l]#!\nPrevious shortages of input [Concept('concept_good', '$concept_goods$')] has resulted in a lingering penalty on all outputs for this [concept_building].\n\nCurrent penalty is [Building.GetInputShortagePenalty|%v0], but this penalty will disappear over time."
  GOODS_SHORTAGE_STATE_DESC_INTERNAL:0 "@warning! [Goods.GetState.GetName] has an [concept_input_goods_shortage] of [Goods.GetName]"
  GOODS_SHORTAGE_STATE_DESC:1 "[SelectLocalization( Goods.GetState.IsValid, 'GOODS_SHORTAGE_STATE_DESC_INTERNAL', '' )]"
  GOODS_SHORTAGE_MARKET_DESC:0 "@warning! [Goods.GetMarket.GetName] has an [concept_input_goods_shortage] of [Goods.GetName]"

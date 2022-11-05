@@ -555,6 +555,7 @@
  concept_country_dat: "Державі"
  concept_country_ins: "Державою"
  concept_country_loc: "Державі"
+
  concept_countries: "Держави"
  concept_countries_gen: "Держав"
  concept_countries_ins: "Державами"
@@ -1065,8 +1066,9 @@
  concept_isolated_state_desc:2 "A [concept_state_region] is considered $concept_isolated_state_short$ from its [concept_market] if it is not connected by land to its [concept_market_capital], and is not connected by land to a [SelectLocalization(GetPlayer.IsValid,'concept_isolated_state_desc_added','Port')] that can make a [concept_port_connection] to its $concept_market_capital$. $concept_isolated_states$ do not generate any [concept_buy_orders] and [concept_sell_orders], nor is the [concept_local_price] of [Concept('concept_good', '$concept_goods$')] affected by their [concept_market_price]."
  concept_isolated_state_desc_added:0 "[GetBuildingType('building_port').GetName]"
 
- concept_input_goods_shortage:0 "Input Goods Shortage"
- concept_input_goods_shortages:1 "Input Goods Shortages"
+ concept_input_goods_shortage: "Недостача вхідних товарів"
+ concept_input_goods_shortage_acc: "Недостачу вхідних товарів"
+ concept_input_goods_shortages: "Недостача вхідних товарів"
  concept_input_goods_shortage_desc:0 "[Concept('concept_building', '$concept_buildings$')] that consume [Concept('concept_good', '$concept_goods$')] will suffer an output penalty if less than [GetDefine('NEconomy', 'GOODS_SHORTAGE_PENALTY_THRESHOLD')|v%0] of the [concept_buy_orders] for those $concept_goods$ are satisfied. This is usually caused by insufficient availability of the [concept_good] in the [Concept('concept_building', '$concept_building_possessive$')] [concept_market], but may also be a result of low [concept_market_access] in the $concept_building$'s [concept_state_region]."
 
  concept_market: "Ринок"
