@@ -2,7 +2,7 @@
  congo_river_expedition: "Експедиція по річці Конґо"
  congo_river_expedition_desc: "Серце африканського континенту залишається для багатьох загадкою. Ми розпочнемо експедицію для визначення русла річки Конґо."
  congo_river_expedition_tooltip: "Вимоги:"
- modifier_congo_river_expedition_complete: "Нанесли на карту русло річки Конґо"
+ modifier_congo_river_expedition_complete: "Нанесли на мапу русло річки Конґо"
  
  expedition_events.601.t: "Експедиція по річці Конґо"
  expedition_events.601.d: "Була призначена експедиція для дослідження річок Луалаба і Конґо."

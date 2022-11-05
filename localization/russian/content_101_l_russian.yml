@@ -478,8 +478,8 @@
  abolish_tangena_ordeal_desc:0 "The Tangena ordeal consists of consuming poison to prove ones innocence. Regardless of the veracity of the practice, it claims a significant number of lives every year and should be abolished."
  ranavalona_tt:0 "Your ruler is #bold not#! Ranavalona"
 
- modifier_french_independence_payments:0 "French Independence Payments"
- modifier_haitian_independence_payments:0 "Haitian Independence Payments"
+ modifier_french_independence_payments: "Виплати за незалежність від Франції"
+ modifier_haitian_independence_payments: "Платежі Гаїті за незалежність"
 
  stop_paying_france:0 "Stop paying France"
  stop_paying_france_desc:0 "We made a deal with France years ago to pay them for our independence but if we stop paying, what are they going to do?"
