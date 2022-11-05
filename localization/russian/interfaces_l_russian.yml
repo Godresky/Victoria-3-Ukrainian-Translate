@@ -260,14 +260,14 @@
  COUNTRY_MODIFIERS_PER_LEVEL_COLON:0 "#title Country Modifiers (per level):#!"
  STATE_MODIFIERS_PER_LEVEL_COLON:0 "#title State Modifiers (per level):#!"
  APPLIES_TO_BUILDING_TYPE:0 "Applies to $BUILDING_TYPE$ ([ProductionMethodGroup.GetName] [concept_production_method])"
- GOODS_PRODUCTION_COLON:0 "#title Goods Production:#!"
- GOODS_CONSUMPTION_COLON:0 "#title Goods Consumption:#!"
+ GOODS_PRODUCTION_COLON: "#title Виробляє товари:#!"
+ GOODS_CONSUMPTION_COLON: "#title Споживає товари:#!"
  BUILDING_WAGE_PER_LEVEL:0 "Approximately #variable @money!$PER_LEVEL_WAGE|k$#! per Level in Government Wages"
  BUILDING_WAGE_TOTAL:0 "Approximately #variable @money!$TOTAL_WAGE|k$#! Total in Government Wages"
  BUILDING_WAGE_RANGE_PER_LEVEL:0 "Approximately #variable @money!$MIN_PER_LEVEL_WAGE$#! - #variable @money!$MAX_PER_LEVEL_WAGE$#! per Level in Government Wages"
  BUILDING_WAGE_RANGE_TOTAL:0 "Approximately #variable @money!$MIN_TOTAL_WAGE$#! - #variable @money!$MAX_TOTAL_WAGE$#! Total in Government Wages"
- BUILDING_TYPE_NAME_FORMAT:0 "#BOLD #V $NAME$#!#!"
- CONSTRUCTION_MATERIALS_COLON:0 "#title Construction Cost:#!"
+ BUILDING_TYPE_NAME_FORMAT: "#BOLD #V $NAME$#!#!"
+ CONSTRUCTION_MATERIALS_COLON: "#title Вартість будівництва:#!"
  BUILDING_PROVIDES_URBANIZATION_PER_LEVEL:0 "#variable #P +$URBANIZATION$#!#! [concept_urbanization] per Level"
  BUILDING_PROVIDES_URBANIZATION_TOTAL:0 "#variable #P +$URBANIZATION$#!#! [concept_urbanization] Total"
  BUILDING_USES_INFRASTRUCTURE_PER_LEVEL:0 "#variable #N +$USAGE|0$#!#! [concept_infrastructure_usage] per Level"
@@ -297,7 +297,7 @@
  BUILDING_TYPE_COUNTRY_BREAKDOWN_ITEM:0 "Size [BUILDING.GetExpansionLevel|v] [BUILDING.GetName] in [BUILDING.GetState.GetName]"
  BUILDING_TYPE_CONSTRUCTION_COUNTRY_BREAKDOWN_ITEM:0 "[BUILDING.GetExpansionLevelsInQueue|v] levels of [BUILDING.GetName] under construction in [BUILDING.GetState.GetName]"
  BUILDING_TYPE_COUNT:1 "#tooltippable #tooltip:[BuildingType.GetTooltipTag],BUILDING_TYPE_COUNTRY_BREAKDOWN_TOOLTIP [SelectLocalization( GreaterThan_int32( BuildingType.GetUnderConstructionCountInCountry(GetPlayer.Self), '(int32)0' ), 'BUILDING_TYPE_COUNT_ACTIVE_CONSTRUCTIONS', 'BUILDING_TYPE_COUNT_NO_CONSTRUCTION')]#!#!"
- BUILDING_TYPE_COUNTRY_BREAKDOWN_EMPTY:0 "There are no [BuildingType.GetNameNoFormatting] in [GetPlayer.GetName]"
+ BUILDING_TYPE_COUNTRY_BREAKDOWN_EMPTY: "Немає [Concept('concept_building', '$concept_building_gen$')|l] [BuildingType.GetNameNoFormatting] у [Concept('concept_country', '$concept_country_loc$')|l] [GetPlayer.GetName]"
  BUILDING_TYPE_PRODUCTIVITY:0 "\n[concept_productivity]: [BuildingType.GetProductivitySpanDesc(GetPlayer.Self)]"
  BUILDING_TYPE_COUNT_NO_CONSTRUCTION:0 "[BuildingType.GetLevelCountInCountry(GetPlayer.Self)]"
  BUILDING_TYPE_COUNT_ACTIVE_CONSTRUCTIONS:0 "[BuildingType.GetLevelCountInCountry(GetPlayer.Self)]+[BuildingType.GetUnderConstructionCountInCountry(GetPlayer.Self)]"
@@ -4167,8 +4167,8 @@
  notification_institution_investment_decreased_desc:0 "Decreased Investment in the [SCOPE.GetRootScope.GetInstitution.GetName] Institution to [SCOPE.GetRootScope.GetInstitution.GetInvestmentLevel|v]"
  notification_institution_investment_decreased_tooltip:0 "$notification_institution_investment_decreased_name$\n$notification_institution_investment_decreased_desc$\n\n#i Effect:#!\n[SCOPE.GetRootScope.GetInstitution.GetModifier.GetDesc]"
 
- notification_rank_changed_notification_name:0 "Power Rank Changed"
- notification_rank_changed_notification_desc:0 "We are now a [SCOPE.sC('actor').GetRank|v]"
+ notification_rank_changed_notification_name: "Чин держави змінено"
+ notification_rank_changed_notification_desc: "Ваш новий чин - [SCOPE.sC('actor').GetRank|v]"
  notification_rank_changed_notification_tooltip:0 "$notification_rank_changed_notification_name$\n$notification_rank_changed_notification_desc$"
 
  notification_heir_born_notification_name:0 "Heir Born"
@@ -4582,7 +4582,7 @@
  MISSING_CHARACTER:0 "#N There is no Character assigned to this Command#!"
  DETACHMENTS:0 "#title Detachments#!"
 
- MARKET_STATUS_MARKET_CAPITAL:1 "[concept_market_capital] of the [MARKET.GetName] (#variable [STATE.GetMarketAccess|%0v]#! [concept_market_access], [State.GetInfrastructureBalance|0+=] [concept_infrastructure])"
+ MARKET_STATUS_MARKET_CAPITAL:1 "[Concept('concept_market_capital', '$concept_market_capital_short$')] цього ринку (#variable [STATE.GetMarketAccess|%0v]#! [concept_market_access], [State.GetInfrastructureBalance|0+=] [concept_infrastructure])" #[MARKET.GetName]
  MARKET_STATUS_CONNECTED_STATE:1 "[MARKET.GetName] (#variable [STATE.GetMarketAccess|%0v]#! [concept_market_access], [State.GetInfrastructureBalance|0+=] [concept_infrastructure])"
  MARKET_STATUS_ISOLATED:0 "Part of the [MARKET.GetName] ([concept_isolated_state])"
 
@@ -5486,9 +5486,9 @@
  SUBSIDIZED_ALL_NO: "Жодна з будівель цієї групи немає [Concept('concept_subsidies', '$concept_subsidies_gen$')|l].\n\n#instruction Клацніть, щоб надати субсидії всім будівлям.#!"
  SUBSIDIZED_ALL_MIXED: "Деякі з будівель цієї групи мають [Concept('concept_subsidies', '$concept_subsidies_acc$')|l].\n\n#instruction Клацніть, щоб надати субсидії всім будівлям.#!"
 
- AUTO_EXPAND_ALL_YES: "#header Автоматичне розширення#!\nAll buildings in this group are being Automatically Expanded.\n\n#instruction Click to remove all Automatical Expansion.#!"
- AUTO_EXPAND_ALL_NO: "#header Без автоматичного розширення#!\nNone of the buildings in this group are being Automatically Expanded.\n\n#instruction Click to Automatically Expand all buildings.#!"
- AUTO_EXPAND_ALL_MIXED: "#header Деяке автоматичне розширення#!\nSome of the buildings in this group are being Automatically Expanded.\n\n#instruction Click to Automatically Expand all buildings.#!"
+ AUTO_EXPAND_ALL_YES: "#header Автоматичне розширення#!\nУсі будівлі в цій групі розширюються автоматично.\n\n#instruction Клацніть, щоб прибрати всі автоматичні розширення.#!"
+ AUTO_EXPAND_ALL_NO: "#header Без автоматичного розширення#!\nЖодна з будівель у цій групі не розширюється автоматично.\n\n#instruction Клацніть, щоб усі будівлі автоматично розширювалися.#!"
+ AUTO_EXPAND_ALL_MIXED: "#header Деяке автоматичне розширення#!\nДеякі з будівель у цій групі розширюються автоматично.\n\n#instruction Клацніть, щоб усі будівлі автоматично розширювалися.#!"
 
  SUBSIDIES_TOOLTIP:2 "Wage [concept_subsidies] required: #v @money!$VAL|-0$#!\n$TAB$[Concept('concept_building_wage', '$concept_building_wages$')] required to maintain full employment: #v @money!$SUB_VAL|0$#!\n$TAB$$NAME$ capacity to pay: #v @money!$REG_VAL|0+$#!\n\nInput Goods Subsidy required #v @money!$BALANCE_VAL|-0$#!"
 
@@ -5708,8 +5708,8 @@
 
 
  TECHNOLOGY: "Технології"
- TOOLTIP_REQUIREMENTS_ANY:0 "#title Requires one of the following:#!"
- TOOLTIP_REQUIREMENTS_ALL:0 "#title Requires all of the following:#!"
+ TOOLTIP_REQUIREMENTS_ANY: "#title Вимагає будь-що з наступного:#!"
+ TOOLTIP_REQUIREMENTS_ALL: "#title Вимагає все з наступного:#!"
  TECHNOLOGY_RESEARCHED:0 "#i Already Researched#!"
  TOOLTIP_UNLOCKS:0 "#title Unlocks#!"
  TOOLTIP_UNLOCK_PRODUCTION_METHOD:0 "Unlocks $PRODUCTION_METHOD$ for $BUILDING_TYPE$ ([concept_production_method])"
@@ -6203,8 +6203,8 @@
  UNSCALED_MODIFIERS_COLON:0 "#title Unscaled Modifiers:#!"
  PER_LEVEL_MODIFIERS_COLON:0 "#title Per Level Modifiers:#!"
  TOTAL_MODIFIERS_COLON:0 "#title Total Modifiers:#!"
- INCREASED_EMPLOYMENT_COLON:0 "#title Increased Employment:#!"
- DECREASED_EMPLOYMENT_COLON:0 "#title Decreased Employment:#!"
+ INCREASED_EMPLOYMENT_COLON: "#title Збільшить зайнятість:#!"
+ DECREASED_EMPLOYMENT_COLON: "#title Зменшить зайнятість:#!"
  PM_TIMED_MODIFIERS: "#title Тимчасові змінювачі:#!\n$BREAKDOWN$"
  PM_TIMED_MODIFIER_FORMAT:0 "$TAB$#tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] [TimedModifier.GetName]#!#!"
  SINGLE_GOODS_AMOUNT_PRODUCTION_TOTAL:0 "#v $TOTAL_AMOUNT|D=+$#! Total"

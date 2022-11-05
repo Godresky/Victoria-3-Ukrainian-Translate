@@ -154,6 +154,7 @@
  concept_individual_desc:1 "An individual is a single person within a [concept_pop], who can be either a [Concept('concept_working_adults','$concept_working_adult$')] or a [Concept('concept_dependents','$concept_dependent$')]. All [Concept('concept_pop', '$concept_pops$')] are made up of $concept_individuals$ with the same [concept_culture], [concept_religion], [concept_profession], and [Concept('concept_building','$concept_building_workplace$')]."
  
  concept_building: "Будівля"
+ concept_building_gen: "Будівлі"
  concept_buildings: "Будівлі"
  concept_building_industry:0 "Industry"
  concept_building_industries:0 "Industries"
@@ -509,10 +510,12 @@
  concept_clout: "Вплив"
  concept_clout_desc:1 "An [Concept('concept_interest_group','$concept_interest_group_possessive$')] share of the total [concept_political_strength] that [Concept('concept_pop', '$concept_pops$')] across their [concept_country] generate. $concept_clout$ is the final word on how influential an $concept_interest_group$ is, and affects everything from [concept_legitimacy] and [concept_enactment_of_laws] if the $concept_interest_group$ is [concept_in_government], to [concept_political_movement_support] and [Concept('concept_political_movement_radicalism','$concept_political_movement_radicalism_short$')] if it is [concept_in_opposition]. It also affects whether the $concept_interest_group$ is considered [concept_powerful], [concept_influential], or [concept_marginalized]."
 
- concept_powerful:0 "Powerful"
+ concept_powerful: "Потужний"
+ concept_powerful_many: "Потужні"
  concept_powerful_desc:1 "$concept_influential_powerful_common$ A $concept_powerful$ $concept_interest_group$'s [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] will have a [GetDefine('NPolitics','POWERFUL_IG_TRAIT_BONUS')|%0=+] greater effect than if they were merely $concept_influential$.\n\n$concept_interest_groups$ are considered $concept_powerful$ while their $concept_clout$ is above [GetDefine('NPolitics','POWERFUL_IG_THRESHOLD')|%0]."
  
- concept_influential:0 "Influential"
+ concept_influential: "Впливовий"
+ concept_influential_many: "Впливові"
  concept_influential_powerful_common:0 "The amount of [concept_clout] an [concept_interest_group] has decides whether it is [concept_powerful], $concept_influential$, or [concept_marginalized]."
  concept_influential_desc:1 "$concept_influential_powerful_common$ An $concept_influential$ $concept_interest_group$'s [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] will have a lesser effect than if they were $concept_powerful$.\n\n$concept_interest_groups$ are considered $concept_influential$ while their $concept_clout$ is below [GetDefine('NPolitics','POWERFUL_IG_THRESHOLD')|%0v]."
 
@@ -551,6 +554,7 @@
  concept_country_acc: "Державу"
  concept_country_dat: "Державі"
  concept_country_ins: "Державою"
+ concept_country_loc: "Державі"
  concept_countries: "Держави"
  concept_countries_gen: "Держав"
  concept_countries_ins: "Державами"
@@ -616,6 +620,7 @@
  concept_legitimacy_desc:1 "A [Concept('concept_government','$concept_government_possessive$')] $concept_legitimacy$ measures how well the composition of the [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_government] fits with the [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_law', '$concept_laws$')]. The lower the $concept_legitimacy$, the longer the time between attempts to [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enact$')] new $concept_laws$. Raising or lowering [concept_taxes] also has an impact on $concept_legitimacy$."
 
  concept_market_capital: "Столиця ринку"
+ concept_market_capital_short: "Столиця"
  concept_market_capitals: "Столиці ринку"
  concept_market_capital_desc:2 "The [concept_state] that serves as the nexus of a [concept_market], to which all other $concept_states$ in the $concept_market$ must connect lest they become [Concept('concept_isolated_state','$concept_isolated_state_short$')]. [Concept('concept_trade_route','$concept_trade_routes$')] are often, but not always, managed from the $concept_market_capital$. The $concept_market_capital$ is often the same $concept_state$ as the [Concept('concept_market_owner','$concept_market_owner_possessive$')] [concept_capital_state], but it is possible to keep these separate.[AddLocalizationIf(GetPlayer.IsValid,'concept_market_capital_desc_added')] "
  concept_market_capital_desc_added:0 "\nThe following effects apply:\n[GetStaticModifier('market_capital_state').GetDesc]"
@@ -953,9 +958,9 @@
  concept_native_uprising:0 "Native Uprising"
  concept_native_uprising_desc:3 "A type of [concept_diplomatic_play] that can occur if the [concept_tension] between a colonizer and a [concept_decentralized_nation] rises to #b $tension_volatile$#! level. In this $concept_diplomatic_play_short$, the $concept_decentralized_nation$ will mobilize its warriors and attempt to seize the [concept_colony] from the colonizer."
 
- concept_discrimination:0 "Discrimination"
- concept_discriminated: "Discriminated"
- concept_discriminated_against:0 "Discriminated Against"
+ concept_discrimination: "Утиск"
+ concept_discriminated: "Утиснений"
+ concept_discriminated_against: "Утискають"
  concept_discrimination_desc:3 "[Concept('concept_pop', '$concept_pops$')] can be $concept_discriminated_against$ if their [concept_culture] and/or [concept_religion] are not accepted in their [concept_country]. $concept_discriminated$ $concept_pops$:\n- get paid less than their peers\n- have less [concept_political_strength]\n- are less likely to develop [concept_pop_qualifications] for certain [concept_profession]\n- naturally become [concept_radical] over time\n- and are more likely to [Concept('concept_migration','$concept_emigrate$')].\n\nIn addition, certain [Concept('concept_law', '$concept_laws$')] limit or expand national acceptance of $concept_culture$ and $concept_religions$."
 
  concept_political_movement_radicalism:0 "Political Movement Radicalism"

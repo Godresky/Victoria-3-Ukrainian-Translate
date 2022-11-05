@@ -230,36 +230,36 @@
  dp_secession_tooltip:1 "#header Start a $dp_secession$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_secession_desc$"
  dp_secession_desc:0 "Sets the initiating [concept_war_goal] to crush the targeted [concept_secession] and force them to return all [Concept('concept_state', '$concept_states$')] they have seceded from us."
   
- dp_unify_germany: "Об'єднати Німеччину"
+ dp_unify_germany: "Об'єднання Німеччини"
  dp_unify_germany_tooltip:1 "#header Start a $dp_unify_germany$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_unify_germany_desc$"
  dp_unify_germany_desc:0 "Sets the initiating [concept_war_goal] to annex all lesser German countries."
    
- dp_unify_italy: "Об'єднати Італію"
+ dp_unify_italy: "Об'єднання Італії"
  dp_unify_italy_tooltip:1 "#header Start a $dp_unify_italy$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_unify_italy_desc$"
  dp_unify_italy_desc:0 "Sets the initiating [concept_war_goal] to annex all lesser Italian countries."
  
- dp_unify_scandinavia: "Об'єднати Скандинавію"
+ dp_unify_scandinavia: "Об'єднання Скандинавії"
  dp_unify_scandinavia_tooltip:1 "#header Start a $dp_unify_scandinavia$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_unify_scandinavia_desc$"
  dp_unify_scandinavia_desc:0 "Sets the initiating [concept_war_goal] to annex all lesser Scandinavian countries."
    
- dp_unify_ethiopia: "Об'єднати Етіопію"
+ dp_unify_ethiopia: "Об'єднання Етіопії"
  dp_unify_ethiopia_tooltip:1 "#header Start a $dp_unify_ethiopia$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_unify_ethiopia_desc$"
  dp_unify_ethiopia_desc:0 "Sets the initiating [concept_war_goal] to annex all lesser Ethiopian countries."
 
- dp_unify_china: "Об'єднати Китай"
+ dp_unify_china: "Об'єднання Хіни"
  dp_unify_china_tooltip:1 "#header Start a $dp_unify_china$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_unify_china_desc$"
  dp_unify_china_desc:0 "Sets the initiating [concept_war_goal] to annex all lesser Chinese countries."
 
- dp_unify_arabia: "Об'єднати Аравію"
+ dp_unify_arabia: "Об'єднання Аравії"
  dp_unify_arabia_tooltip:1 "#header Start a $dp_unify_arabia$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_unify_arabia_desc$"
  dp_unify_arabia_desc:0 "Sets the initiating [concept_war_goal] to annex all lesser Arabian countries."
  ARA_tt:1 "[SCOPE.sCountry('target').GetName] can form Arabia"
 
- dp_unify_india: "Об'єднати Індію"
+ dp_unify_india: "Об'єднання Індії"
  dp_unify_india_tooltip:1 "#header Start a $dp_unify_india$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_unify_india_desc$"
  dp_unify_india_desc:0 "Sets the initiating [concept_war_goal] to annex all lesser Indian countries."
 
- dp_unify_indonesia: "Об’єднайте Архіпелаг"
+ dp_unify_indonesia: "Об’єднання Архіпелагу"
  dp_unify_indonesia_tooltip:1 "#header Start a $dp_unify_indonesia$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_unify_indonesia_desc$"
  dp_unify_indonesia_desc:0 "Sets the initiating [concept_war_goal] to annex all lesser Indonesian countries."
 
