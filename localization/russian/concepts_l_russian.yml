@@ -1008,7 +1008,11 @@
  concept_resource_potential_desc:3 "A $concept_resource_potential$ grants the ability to construct and expand a specific [concept_building] type in the state, usually a resource industry such as fisheries, mines, or plantations. The maximum [concept_building_level] you can expand the $concept_building$ to is limited either to a fixed amount per resources, or by the $concept_state$'s amount of [concept_arable_land]."
 
  concept_government: "Уряд"
+ concept_government_gen: "Уряду"
+ concept_government_dat: "Урядові"
  concept_governments: "Уряди"
+ concept_governments_gen: "Урядів"
+ concept_governments_dat: "Урядам"
  concept_government_possessive:0 "Government\\'s"
  concept_government_desc:1 "A [Concept('concept_country','$concept_country_possessive$')] $concept_government$ consists of one or several [Concept('concept_interest_group','$concept_interest_groups$')]. If the $concept_country$ has [Concept('concept_votes','$concept_voting_rights$')] these $concept_interest_groups$ may be organized into [Concept('concept_party','$concept_parties$')]. Depending on the $concept_country$'s [Concept('concept_law','$concept_laws$')], this mix of $concept_interest_groups$ will result in higher or lower $concept_government$ [concept_legitimacy].\n\nAny new $concept_law$ you wish to [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enact$')] must have some support among $concept_interest_groups$ that make up the $concept_government$, unless it is supported by an active [concept_political_movement]. The ability to quickly and painlessly push the $concept_law$ through the legislature depends on how unified the $concept_government$'s support of it is."
 
