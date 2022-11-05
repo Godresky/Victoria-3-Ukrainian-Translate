@@ -99,9 +99,9 @@
  INTEREST_GROUP_SUPPORTED_BY_OTHER_HEADER:0 "#title Other [Concept('concept_profession', '$concept_professions$')]#!"
  INTEREST_GROUP_SUPPORTED_BY_OTHER:0 "$TAB$Other [Concept('concept_profession', '$concept_professions$')]: #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] $OTHER_PERCENTAGE|%1v$#!#!"
 
- CULTURE_POPULATION_CHANGE_IN_COUNTRY: "(#v #tooltippable #tooltip:CULTURE_POPULATION_CHANGE_IN_COUNTRY_BREAKDOWN [Culture.GetPopulationChange(GetPlayer.Self)|=+K]#!#!#! / місяць)"
+ CULTURE_POPULATION_CHANGE_IN_COUNTRY: "(#v #tooltippable #tooltip:CULTURE_POPULATION_CHANGE_IN_COUNTRY_BREAKDOWN [Culture.GetPopulationChange(GetPlayer.Self)|=+Т]#!#!#! / місяць)"
  CULTURE_POPULATION_CHANGE_IN_COUNTRY_BREAKDOWN:0 "[Culture.GetPopulationChangeDesc(GetPlayer.Self)]"
- RELIGION_POPULATION_CHANGE_IN_COUNTRY:0 "(#v #tooltippable #tooltip:RELIGION_POPULATION_CHANGE_IN_COUNTRY_BREAKDOWN [Religion.GetPopulationChange(GetPlayer.Self)|=+K]#!#!#! / month)"
+ RELIGION_POPULATION_CHANGE_IN_COUNTRY:0 "(#v #tooltippable #tooltip:RELIGION_POPULATION_CHANGE_IN_COUNTRY_BREAKDOWN [Religion.GetPopulationChange(GetPlayer.Self)|=+Т]#!#!#! / month)"
  RELIGION_POPULATION_CHANGE_IN_COUNTRY_BREAKDOWN:0 "[Religion.GetPopulationChangeDesc(GetPlayer.Self)]"
 
  DATA_COUNTRY_NAME_TOOLTIP_OVERLORD_ENTRY: "\nВладар: [COUNTRY.GetName]"
