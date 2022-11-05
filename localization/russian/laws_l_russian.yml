@@ -201,7 +201,7 @@
  law_national_militia_desc:0 "The standing army is small, but local militias can be activated to defend their homes."
  law_mass_conscription: "Масовий призов"
  law_mass_conscription_desc:0 "Large numbers of infantry conscripts can be activated as needed to supplement the professional army."
- law_professional_army: "Професійна армія"
+ law_professional_army: "Професійне військо"
  law_professional_army_desc:0 "The army consists of well-trained, professional regulars."
   
   # Distribution of Power group

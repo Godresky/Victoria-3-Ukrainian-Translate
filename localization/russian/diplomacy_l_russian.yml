@@ -33,10 +33,10 @@
  forced_slavery_ban:0 "Forced [concept_slavery] Ban"
  forced_regime_change:0 "Forced Regime Change"
  
- centralized: "Централізована країна"
- colonial: "Осадна країна"
+ centralized: "Централізована держава"
+ colonial: "Осадна держава"
  decentralized: "Децентралізована нація"
- unrecognized: "Невизнана країна"
+ unrecognized: "Невизнана держава"
  
  country_tier_city_state: "Місто-держава"
  country_tier_principality: "Князівство"

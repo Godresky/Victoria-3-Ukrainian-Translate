@@ -307,11 +307,11 @@
  war_goal_revoke_all_claims_desc:0 "[WAR_GOAL.GetTarget.GetName] is forced to to revoke all their [Concept('concept_claim', '$concept_claims$')] on [WAR_GOAL.GetHolder.GetName]."
  war_goal_revoke_all_claims_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to revoke all [Concept('concept_claim', '$concept_claims$')] on them."
  
- war_goal_annex_country_type_name:0 "Анексувати країну"
- war_goal_annex_country_type_desc:0 "Повністю анексувати іншу країну."
- war_goal_annex_country:0 "Анексія [WAR_GOAL.GetTarget.GetName]"
- war_goal_annex_country_desc:0 "[WAR_GOAL.GetHolder.GetName] annexes the country of [WAR_GOAL.GetTarget.GetName]"
- war_goal_annex_country_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by allowing them to annex [WAR_GOAL.GetTarget.GetName]."
+ war_goal_annex_country_type_name: "Анексувати державу"
+ war_goal_annex_country_type_desc: "Повністю анексувати іншу державу."
+ war_goal_annex_country: "Анексія [WAR_GOAL.GetTarget.GetName]"
+ war_goal_annex_country_desc: "[WAR_GOAL.GetHolder.GetName] annexes the country of [WAR_GOAL.GetTarget.GetName]"
+ war_goal_annex_country_sway_desc: "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by allowing them to annex [WAR_GOAL.GetTarget.GetName]."
 
  war_goal_annex_native_type_name:0 "Annex Natives"
  war_goal_annex_native_type_desc:0 "Annex a [concept_decentralized_nation] entirely."
@@ -337,7 +337,7 @@
  war_goal_contain_threat_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to release all their recent conquests."
   
  war_goal_war_reparations_type_name: "Військові репарації"
- war_goal_war_reparations_type_desc: "Змусити іншу країну заплатити [concept_war_reparations]."
+ war_goal_war_reparations_type_desc: "Змусити іншу державу заплатити [concept_war_reparations]."
  war_goal_war_reparations:2 "[WAR_GOAL.GetTarget.GetAdjectiveNoFormatting] [concept_war_reparations]"
  war_goal_war_reparations_desc:1 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to pay #variable 10%#! of their tax income in [concept_war_reparations] for 5 years."
  war_goal_war_reparations_sway_desc:1 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to pay them #variable 10%#! of their tax income in [concept_war_reparations] for 5 years."

@@ -74,7 +74,7 @@
  SETTINGS_CATEGORY_GAME_PORTRAITS: "Портрети"
   # Audio - These are copies of clausewitz keys due to case sensitivity
  SETTING_MUSIC: "Музика"
- SETTING_AMBIENT: "Ембіент"
+ SETTING_AMBIENT: "Ембієнт"
  SETTING_MUSIC_TOOLTIP:0 "#T Music Volume\n#!Sets the volume of the music."
  SETTING_AMBIENT_TOOLTIP:0 "#T Ambient Volume\n#!Sets the volume of environmental ambience."
 

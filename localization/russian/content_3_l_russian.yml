@@ -277,7 +277,7 @@
 ##################### Contextual Election Events
 
  election_contextual_events.1.t: "Голоса за гречку" # High Food Prices
- election_contextual_events.1.d: "Оскільки ціни на [SCOPE.sGoods('basic_foodstuff').GetName] стрімко зростають по всій країні, [SCOPE.sParty('high_food_price_party').GetName] перебуває під невпинним тиском з боку опозиції, яку звинувачують у безрозсудній грі з добробутом своїх громадян."
+ election_contextual_events.1.d: "Оскільки ціни на [SCOPE.sGoods('basic_foodstuff').GetName] стрімко зростають по всій державі, [SCOPE.sParty('high_food_price_party').GetName] перебуває під невпинним тиском з боку опозиції, яку звинувачують у безрозсудній грі з добробутом своїх громадян."
  election_contextual_events.1.f: ""Висока ціна [SCOPE.sGoods('basic_foodstuff').GetNameNoFormatting]? Брехня! У моїй молодості ми обходилися вдвічі меншим, ніж ви маєте зараз! Ці «захмарні» ціни на їжу — не що інше, як міркування істеричних домогосподарок!""
  election_contextual_events.1.a: "Тоді їм просто доведеться їсти щось інше!"
  election_contextual_events.1.b: "Фінансувати народні кухні. Ситий робить менше помилок."
@@ -309,15 +309,15 @@
  well_connected:0 "Well-connected"
  imperious_upstart:0 "Imperious Upstart"
 
- election_contextual_events.5.t: "Країна потреб" # Low Standard of Living
- election_contextual_events.5.d:0 "[SCOPE.sCharacter('low_sol_opposition_leader').GetFullName], лідер [SCOPE.gsInterestGroup('low_sol_opposition_ig').GetName], голосно звинувачує [SCOPE.sParty('low_sol_party').GetName] у неправильному керуванні, враховуючи низький рівень життя в країні — стверджуючи, що лише [SCOPE.sParty('low_sol_opposition_party').GetName] має силу волі виправити ситуацію."
+ election_contextual_events.5.t: "Держава потреб" # Low Standard of Living
+ election_contextual_events.5.d:0 "[SCOPE.sCharacter('low_sol_opposition_leader').GetFullName], лідер [SCOPE.gsInterestGroup('low_sol_opposition_ig').GetName], голосно звинувачує [SCOPE.sParty('low_sol_party').GetName] у неправильному керуванні, враховуючи низький рівень життя в державі — стверджуючи, що лише [SCOPE.sParty('low_sol_opposition_party').GetName] має силу волі виправити ситуацію."
  election_contextual_events.5.f:0 ""On my way here today I witnessed scenes so bleak they almost defy description. I saw once-venerable soldiers growling for scraps in the mud  — I saw desperate families crammed together on dusty tenement streets  — I saw malnutrition, poverty, and despair.\n\nFellow citizens, this is the legacy of the [SCOPE.sParty('low_sol_party').GetNameNoFormatting].""
  election_contextual_events.5.a:0 "Чому ми винні? Чи намагалися вони бути менш бідними?"
  election_contextual_events.5.b:0 "Лише кілька поганих яєць в адміністрації, нічого більше."
  indifferent_to_destitution:0 "Байдуже до злиднів"
  defender_of_the_downtrodden:0 "Захисник пригнічених"
 
- election_contextual_events.6.t: "Країна достатку" # High Standard of Living
+ election_contextual_events.6.t: "Держава достатку" # High Standard of Living
  election_contextual_events.6.d:0 "The country's high standard of living has resulted in a widespread sense of contentment with the status quo, favoring [SCOPE.sCharacter('high_sol_leader').GetFullName] and the sitting [SCOPE.sParty('high_sol_party').GetName] in the ongoing elections."
  election_contextual_events.6.f:0 ""Change? Why would I want change? I've got a full belly, a happy wife, and a good job. Why would I squander that chasing what might be?""
  election_contextual_events.6.a:0 "If it is not broken, why fix it?"
