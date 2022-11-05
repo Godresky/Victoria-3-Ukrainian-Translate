@@ -793,8 +793,8 @@
 
  SELECT_COMMANDER_ORDER:0 "#title Commander Orders#!"
  GENERAL_LOCATION_TITLE:1 "#title General Location (Debug)#!"
- GENERAL_LOCATION_PRESENT_DESC:3 "[Character.GetCommanderOrder.GetType.GetNameGerund|v] у $LOCATION|v$$ADDITIONAL_LOCATION_INFO$"
- GENERAL_LOCATION_PRESENT_DESC_WITHOUT_EXTRA_INFO:1 "[Character.GetCommanderOrder.GetType.GetNameGerund|v] у $LOCATION|v$"
+ GENERAL_LOCATION_PRESENT_DESC: "[Character.GetCommanderOrder.GetType.GetNameGerund|v] у $LOCATION|v$$ADDITIONAL_LOCATION_INFO$"
+ GENERAL_LOCATION_PRESENT_DESC_WITHOUT_EXTRA_INFO: "[Character.GetCommanderOrder.GetType.GetNameGerund|v] у $LOCATION|v$"
  GENERAL_LOCATION_TRAVELING_DESC:1 "Traveling to #variable $DESTINATION$#! [SelectLocalization( GreaterThan_int32( Character.GetDaysToCompleteTravelRaw, '(int32)0' ), 'GENERAL_LOCATION_TRAVELING_DAYS', '' )]"
  GENERAL_LOCATION_TRAVELING_DAYS:1 "(+[Character.GetDaysToCompleteTravelFormatted|v])"
  GENERAL_TRAVELING_DAYS_BREAKDOWN:0 "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL$#!#! "
@@ -6109,8 +6109,8 @@
 
  MODIFIER_CONSCRIPTION_RATE_ADD_ADDITIONAL_INFO:1 "Can mobilize @battalions!$NUM_BATTALIONS|v$ [Concept('concept_battalion', '$concept_battalions$')]"
 
- DEFAULT_HQ_NAME: "[HQ.GetCountry.GetFlagTextIcon] [HQ.GetStrategicRegion.GetNameNoFormatting] [Concept('concept_hq', '$concept_hq$')|l]"
- DEFAULT_HQ_NAME_NO_FLAG: "[HQ.GetStrategicRegion.GetNameNoFormatting] [Concept('concept_hq', '$concept_hq$')|l]"
+ DEFAULT_HQ_NAME: "[Concept('concept_hq', '$concept_hq$')] [HQ.GetCountry.GetFlagTextIcon] [HQ.GetStrategicRegion.GetNameNoFormatting]"
+ DEFAULT_HQ_NAME_NO_FLAG: "[Concept('concept_hq', '$concept_hq$')] [HQ.GetStrategicRegion.GetNameNoFormatting]"
 
  NO_GENERALS: "Немає [Concept('concept_general', '$concept_generals_gen$')|l]"
  NO_ADMIRALS: "Немає [Concept('concept_admiral', '$concept_admirals_gen$')|l]"
