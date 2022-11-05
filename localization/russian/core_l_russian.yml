@@ -60,7 +60,7 @@
  MISSING_SAVE_GAME_FILE:0 "@warning! #X Missing Savegame#!"
 
  YOU_CANNOT_PLAY_AS_DECENTRALIZED:0 "You cannot play as a $decentralized_nation$"
- LAUNCHER_SAVE_DESCRIPTION: "Грати за $COUNTRY$"
+ LAUNCHER_SAVE_DESCRIPTION: "Грати за державу $COUNTRY$"
  LAUNCHER_SAVE_DESCRIPTION_OBSERVER:1 "[Concept('concept_observer_mode','$concept_observing$')] $COUNTRY$"
 
  BASE_VALUE_YELLOW: "Базовий приріст: #BOLD $VAL|Dv$#!"

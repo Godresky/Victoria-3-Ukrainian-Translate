@@ -291,7 +291,7 @@
  fiscally_irresponsible:0 "Fiscally Irresponsible"
 
  election_contextual_events.3.t: "Пацифіст засуджує війну" # Waging a War of Aggression
- election_contextual_events.3.d: "[SCOPE.sCharacter('pacifist_ig_leader').GetFullName], відомий пацифіст і лідер [SCOPE.gsInterestGroup('opposition_pacifist_ig').GetName], розпочав різку атаку на діючу [SCOPE.sParty('government_war_party').GetName], стверджуючи, що війська [ROOT.GetCountry.GetAdjectiveNoFormatting] які брали участь у війні [SCOPE.sWar('pacifist_war').GetNameNoFormatting] під їхнім наглядом скоїли серйозні звірства."
+ election_contextual_events.3.d: "[SCOPE.sCharacter('pacifist_ig_leader').GetFullName], відомий пацифіст і провідник [SCOPE.gsInterestGroup('opposition_pacifist_ig').GetName], розпочав різку атаку на діючу [SCOPE.sParty('government_war_party').GetName], стверджуючи, що війська [ROOT.GetCountry.GetAdjectiveNoFormatting] які брали участь у війні [SCOPE.sWar('pacifist_war').GetNameNoFormatting] під їхнім наглядом скоїли серйозні звірства."
  election_contextual_events.3.f: ""Ми... Я отримав наказ зібрати заручників, сер. Старі обличчя, молоді обличчя — деякі не старші мого власного сина. Наші лінії турбували так звані вільні стрільці. «Вбивцями» назвав їх мій командир. «Розбійники» зі злобою в серцях і рушницями в руках. Заручники мали їх стримати!\n\nBut після того, як того вечора впав третій солдат, командир сказав мені взяти заручників... він сказав завести їх у сарай... і... Господи, прости мене.""
  election_contextual_events.3.a: "Що зробили наші війська!? Кому!?"
  election_contextual_events.3.b: "Цікавий знімок. Давайте зацензурим."
@@ -302,7 +302,7 @@
  election_contextual_events.3.tt.2:0 "Незважаючи на наші зусилля, інформація просочується."
 
  election_contextual_events.4.t: "По кому дзвенять дзвони" # Old IG leader
- election_contextual_events.4.d:0 "Постарілий [SCOPE.sCharacter('decrepit_leader').GetFullName], лідер групи [SCOPE.gsInterestGroup('decrepit_leader_ig').GetName], несподівано помер в середині кампанії — залишивши [SCOPE.sParty('decrepit_leader_party').GetName] без наріжного політика. Питання про заміну [SCOPE.sCharacter('decrepit_leader').GetHerHis] зараз у всіх на вустах."
+ election_contextual_events.4.d: "Постарілий [SCOPE.sCharacter('decrepit_leader').GetFullName], провідник групи [SCOPE.gsInterestGroup('decrepit_leader_ig').GetName], несподівано помер в середині кампанії — залишивши [SCOPE.sParty('decrepit_leader_party').GetName] без наріжного політика. Питання про заміну [SCOPE.sCharacter('decrepit_leader').GetHerHis] зараз у всіх на вустах."
  election_contextual_events.4.f:0 ""Unexpected? Bah! That old bag of bones was long overdue to meet [SCOPE.sCharacter('decrepit_leader').GetHerHis] maker. It's about time that party saw some new blood!""
  election_contextual_events.4.a:0 "Ідіть з популярним, але бездарним кандидатом."
  election_contextual_events.4.b:0 "Рішучий, але пихатий хлопець закріплює крісло."
@@ -310,7 +310,7 @@
  imperious_upstart:0 "Imperious Upstart"
 
  election_contextual_events.5.t: "Держава потреб" # Low Standard of Living
- election_contextual_events.5.d:0 "[SCOPE.sCharacter('low_sol_opposition_leader').GetFullName], лідер [SCOPE.gsInterestGroup('low_sol_opposition_ig').GetName], голосно звинувачує [SCOPE.sParty('low_sol_party').GetName] у неправильному керуванні, враховуючи низький рівень життя в державі — стверджуючи, що лише [SCOPE.sParty('low_sol_opposition_party').GetName] має силу волі виправити ситуацію."
+ election_contextual_events.5.d:0 "[SCOPE.sCharacter('low_sol_opposition_leader').GetFullName], провідник [SCOPE.gsInterestGroup('low_sol_opposition_ig').GetName], голосно звинувачує [SCOPE.sParty('low_sol_party').GetName] у неправильному керуванні, враховуючи низький рівень життя в державі — стверджуючи, що лише [SCOPE.sParty('low_sol_opposition_party').GetName] має силу волі виправити ситуацію."
  election_contextual_events.5.f:0 ""On my way here today I witnessed scenes so bleak they almost defy description. I saw once-venerable soldiers growling for scraps in the mud  — I saw desperate families crammed together on dusty tenement streets  — I saw malnutrition, poverty, and despair.\n\nFellow citizens, this is the legacy of the [SCOPE.sParty('low_sol_party').GetNameNoFormatting].""
  election_contextual_events.5.a:0 "Чому ми винні? Чи намагалися вони бути менш бідними?"
  election_contextual_events.5.b:0 "Лише кілька поганих яєць в адміністрації, нічого більше."

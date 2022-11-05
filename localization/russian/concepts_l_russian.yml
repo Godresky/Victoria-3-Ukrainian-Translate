@@ -253,10 +253,10 @@
  concept_conscription_center_desc:2 "When a [concept_state] is $concept_conscripted$ during a [concept_diplomatic_play] or [concept_war], a [SelectLocalization(GetPlayer.IsValid,'concept_conscription_center_desc_added','conscription center')] appears with a [concept_building_level] depending on its #v $modifier_state_conscription_rate_add$#! and $concept_state$ [Concept('concept_pop','$concept_population$')] size. This [concept_military_building] will recruit civilian [concept_workforce] into [Concept('concept_conscript_battalion','$concept_conscript_battalions$')] that will be automatically assigned to [Concept('concept_general','$concept_generals$')] in their [concept_hq] as they are raised.\n\nAfter the $concept_war$, all $concept_conscription_centers$ will deactivate and the $concept_conscript_battalions$ will disband. $concept_pops$ who return to civilian life are not guaranteed to return to their old [concept_profession] but must seek new employment opportunities."
  concept_conscription_center_desc_added:0 "[GetBuildingType('building_conscription_center').GetName]"
 
- concept_conscript_battalion:0 "Conscript Battalion"
- concept_conscript_battalions:0 "Conscript Battalions"
- concept_conscript_battalion_short:0 "Conscript"
- concept_conscript_battalions_short:0 "Conscripts"
+ concept_conscript_battalion: "Призваний батальйон"
+ concept_conscript_battalions: "Призвані батальйони"
+ concept_conscript_battalion_short: "Призваний"
+ concept_conscript_battalions_short: "Призвані"
  concept_conscript_battalion_drafting:0 "Drafting"
  concept_conscript_battalion_desc:4 "$concept_conscript_battalions$ are temporary [Concept('concept_battalion', '$concept_battalions$')] recruited and maintained from the civilian [Concept('concept_pop','$concept_population$')] by [Concept('concept_conscription_center','$concept_conscription_centers$')] activated during [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] or [Concept('concept_war','$concept_wars$')]."
  
@@ -555,6 +555,7 @@
  concept_country_dat: "Державі"
  concept_country_ins: "Державою"
  concept_country_loc: "Державі"
+
  concept_countries: "Держави"
  concept_countries_gen: "Держав"
  concept_countries_ins: "Державами"
@@ -851,6 +852,7 @@
  concept_treaty_port_desc:3 "A coastal [concept_state] that consists of a single [concept_province] taken as a [concept_war_goal] for purpose of opening [Concept('concept_trade_route','$concept_trade$')] with that [concept_country]. A $concept_treaty_port$ permits its owner to bypass [concept_tariffs] and [Concept('concept_embargo','$concept_embargoes$')] when trading with any [concept_market] in the same [concept_state_region]. $concept_treaty_ports$ that come under hostile occupation will not confer any of their benefits while the occupation lasts."
 
  concept_prestige: "Престиж"
+ concept_prestige_gen: "Престижу"
  concept_prestige_desc:3 "Your [concept_rank] is determined by comparing your $concept_prestige$ to all other [Concept('concept_country','$concept_countries$')] in the world. $concept_prestige$ originates primarily from how impressive your economy is as measured by your [concept_gdp], how much [concept_power_projection] your military forces generate, and your [concept_country_tier]. It can also be affected by other factors such as your [SelectLocalization(GetPlayer.IsValid,'concept_prestige_desc_gamestate','Arts Academy')] and [Concept('concept_monument','$concept_monuments$')], and if you are a world leader in the production of a certain [concept_good]."
  concept_prestige_desc_gamestate:0 "[GetBuildingType('building_arts_academy').GetName]"
 
@@ -1064,8 +1066,9 @@
  concept_isolated_state_desc:2 "A [concept_state_region] is considered $concept_isolated_state_short$ from its [concept_market] if it is not connected by land to its [concept_market_capital], and is not connected by land to a [SelectLocalization(GetPlayer.IsValid,'concept_isolated_state_desc_added','Port')] that can make a [concept_port_connection] to its $concept_market_capital$. $concept_isolated_states$ do not generate any [concept_buy_orders] and [concept_sell_orders], nor is the [concept_local_price] of [Concept('concept_good', '$concept_goods$')] affected by their [concept_market_price]."
  concept_isolated_state_desc_added:0 "[GetBuildingType('building_port').GetName]"
 
- concept_input_goods_shortage:0 "Input Goods Shortage"
- concept_input_goods_shortages:1 "Input Goods Shortages"
+ concept_input_goods_shortage: "Недостача вхідних товарів"
+ concept_input_goods_shortage_acc: "Недостачу вхідних товарів"
+ concept_input_goods_shortages: "Недостача вхідних товарів"
  concept_input_goods_shortage_desc:0 "[Concept('concept_building', '$concept_buildings$')] that consume [Concept('concept_good', '$concept_goods$')] will suffer an output penalty if less than [GetDefine('NEconomy', 'GOODS_SHORTAGE_PENALTY_THRESHOLD')|v%0] of the [concept_buy_orders] for those $concept_goods$ are satisfied. This is usually caused by insufficient availability of the [concept_good] in the [Concept('concept_building', '$concept_building_possessive$')] [concept_market], but may also be a result of low [concept_market_access] in the $concept_building$'s [concept_state_region]."
 
  concept_market: "Ринок"
