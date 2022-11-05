@@ -793,8 +793,8 @@
 
  SELECT_COMMANDER_ORDER:0 "#title Commander Orders#!"
  GENERAL_LOCATION_TITLE:1 "#title General Location (Debug)#!"
- GENERAL_LOCATION_PRESENT_DESC:3 "[Character.GetCommanderOrder.GetType.GetNameGerund|v] at $LOCATION|v$$ADDITIONAL_LOCATION_INFO$"
- GENERAL_LOCATION_PRESENT_DESC_WITHOUT_EXTRA_INFO:1 "[Character.GetCommanderOrder.GetType.GetNameGerund|v] at $LOCATION|v$"
+ GENERAL_LOCATION_PRESENT_DESC:3 "[Character.GetCommanderOrder.GetType.GetNameGerund|v] у $LOCATION|v$$ADDITIONAL_LOCATION_INFO$"
+ GENERAL_LOCATION_PRESENT_DESC_WITHOUT_EXTRA_INFO:1 "[Character.GetCommanderOrder.GetType.GetNameGerund|v] у $LOCATION|v$"
  GENERAL_LOCATION_TRAVELING_DESC:1 "Traveling to #variable $DESTINATION$#! [SelectLocalization( GreaterThan_int32( Character.GetDaysToCompleteTravelRaw, '(int32)0' ), 'GENERAL_LOCATION_TRAVELING_DAYS', '' )]"
  GENERAL_LOCATION_TRAVELING_DAYS:1 "(+[Character.GetDaysToCompleteTravelFormatted|v])"
  GENERAL_TRAVELING_DAYS_BREAKDOWN:0 "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL$#!#! "
