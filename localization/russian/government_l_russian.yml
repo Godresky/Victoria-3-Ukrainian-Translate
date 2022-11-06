@@ -57,7 +57,7 @@
  gov_shah_desc:1 "This is a [concept_government] form where the power rests with the [Concept('concept_ruler','$RULER_TITLE_SHAH$')]."
  gov_hawaiian_monarchy: "Алії-Кі-Екіє"
  gov_hawaiian_monarchy_desc:1 "This is a [concept_government] form where the power rests with the hereditary rule of the [Concept('concept_ruler','$RULER_TITLE_ALII_NUI$')]."
- gov_hawaiian_monarchy_recognised:0 "Aupuni Mō'ī"
+ gov_hawaiian_monarchy_recognised: "Аупуні Мої"
  gov_hawaiian_monarchy_recognised_desc:1 "This is a [concept_government] form where the power rests with the Ali'i o ko Hawai'i Pae 'Aina."
  gov_prince: "Князівство"
  gov_prince_desc:1 "This is a [concept_government] form where the power rests with the [Concept('concept_ruler','$RULER_TITLE_PRINCE$')]."

@@ -118,8 +118,8 @@
  wild_west.3.a:0 "The Lawmen are the Law, and we cannot stop the Law."
  wild_west.3.b:0 "Recall the marshals from [SCOPE.sState('OK_corral_state').GetName] temporarily."
 
- je_acw_countdown:0 "The Slavery Debate"
- je_acw_countdown_reason:1 "Slaveholders and abolitionists are engaged in increasingly rancorous debate across the nation. Sooner or later, the arguments will stop being made with words and start being made with bullets."
+ je_acw_countdown: "Суперечка про рабство"
+ je_acw_countdown_reason: "Рабовласники та аболіціоністи ведуть дедалі гостріші суперечки по всій державі. Рано чи пізно аргументи перестануть звучати словами, а почнуть звучати кулями."
  je_acw_countdown_complete:0 "The American Civil War has begun."
  je_acw_reconstruction:0 "Reconstruction"
  je_acw_reconstruction_status:1 "Rebuild the nation after the divisive Civil War."
@@ -213,7 +213,7 @@
  acw_african_american_culture:0 "Afro-American culture becomes a primary culture of our nation."
  acw_no_outlaw_crisis:0 "The frontier's outlaw crisis ceases."
 
- je_acw_countdown_goal:0 "The following must be true for 10 total years:"
+ je_acw_countdown_goal: "Наступне має бути виконаним протягом 10 років:"
  acw_landowner_revolt:0 "Has a Civil War against the Southern Planters"
  acw_antislaver_revolt:0 "Has a Civil War while the Southern Planters are in government"
  acw_will_happen_tt:0 "The American Civil War breaks out"
@@ -222,5 +222,5 @@
  fsa_revolt_name:0 "Free States of America"
  fsa_revolt_name_adj:0 "Free American"
 
- je_acw_wild_wild_west_goal:0 "The following must be true for 5 years total:"
- missouri_compromise:0 "The Missouri Compromise"
+ je_acw_wild_wild_west_goal: "Наступне має бути виконаним протягом 5 років:"
+ missouri_compromise: "Міссурійський компроміс"
