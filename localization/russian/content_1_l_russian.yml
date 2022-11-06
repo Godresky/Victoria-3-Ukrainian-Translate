@@ -1411,7 +1411,7 @@
  low_rank_general_ig_opinion_remove:0 "Refused General Promotion"
  high_rank_general_ig_opinion_add:0 "Denied Rival's Promotion"
  denied_promotion:0 "Denied Promotion"
- ig_buddhist_monks:0 "Buddhist Monks"
+ ig_buddhist_monks: "Буддійські монахи"
  is_meiji_japan:0 "Has completed the Honorable Restoration Journal Entry"
  shinto_decision:0 "Adopt State Shinto"
  shinto_decision_desc:0 "With the restoration of the imperial household to political power, it would be wise to integrate local beliefs into an official state religion emphasizing the Emperor's divinity."

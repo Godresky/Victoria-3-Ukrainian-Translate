@@ -144,9 +144,9 @@
 
  concept_pop_growth: "Ріст населення"
  concept_pop_growth_gen: "Росту населення"
- concept_pop_growth_birthrate_and_mortality:0 "Birthrate and Mortality"
- concept_pop_growth_birthrate:0 "Birthrate"
- concept_pop_growth_mortality:0 "Mortality"
+ concept_pop_growth_birthrate_and_mortality: "Народжуваність та смертність"
+ concept_pop_growth_birthrate: "Народжуваність"
+ concept_pop_growth_mortality: "Смертність"
  concept_pop_growth_desc:3 "The net number of [Concept('concept_individual','$concept_individuals$')] a [concept_pop] gains or loses over time is governed by its $concept_pop_growth_birthrate_and_mortality$. Both metrics are governed by [concept_sol] and modified by factors such as disease, dangerous working conditions, beneficial [Concept('concept_institution', '$concept_institutions$')], and available living space.\n\n@information! External changes to a $concept_pop$'s size due to e.g. [concept_migration] or [concept_casualties] of [concept_war] are not considered $concept_pop_growth$."
 
  concept_individual:0 "Individual"
@@ -319,13 +319,13 @@
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MAY 4, 2022
 
- concept_government_building:0 "Government Building"
- concept_government_buildings:1 "Government Buildings"
+ concept_government_building: "Урядова будівля"
+ concept_government_buildings: "Урядові будівлі"
  concept_government_building_desc:1 "A [concept_building] owned and operated by the [concept_government] using funds from the [concept_treasury]. $concept_government_buildings$ have no [Concept('concept_good','$concept_goods$')] [concept_good_production] and therefore no [concept_revenue], but produce a number of other resources crucial to running a [concept_country] such as [concept_bureaucracy], [concept_infrastructure], [concept_convoys], and [Concept('concept_unit','$concept_units$')]. The [concept_workforce] of non-military $concept_government_buildings$ get paid according to the [concept_government_wage], while [Concept('concept_military_building','$concept_military_buildings$')] get paid according to the [concept_military_wage]."
 
- concept_military_building:0 "Military Building"
- concept_military_buildings:1 "Military Buildings"
- concept_military_building_army_and_navy:0 "Army and Navy"
+ concept_military_building: "Військова Будівля"
+ concept_military_buildings: "Військові Будівлі"
+ concept_military_building_army_and_navy: "Військо та Флот"
  concept_military_building_desc:4 "[Concept('concept_government_building','$concept_government_buildings$')] used to train, maintain, and supply [Concept('concept_battalion','$concept_battalions$')] and [Concept('concept_flotilla','$concept_flotillas$')] for the [Concept('concept_country','$concept_country_possessive$')] army and navy respectively. The [concept_workforce] of $concept_military_buildings$ get paid according to the [concept_military_wage]."
  
  concept_incorporated_state: "Включений регіон"
@@ -338,8 +338,8 @@
  concept_incorporation:0 "Incorporation"
  concept_incorporated_state_desc:2 "[Concept('concept_state','$concept_states$')] that are fully integrated into a [concept_country]. [Concept('concept_pop', '$concept_pops$')] in $concept_incorporated_states$ pay taxes, gain access to benefits from [Concept('concept_institution', '$concept_institutions$')], and participate fully in the Country's political system. [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] can be $concept_incorporated$ through a sometimes lengthy process."
 
- concept_capacity:0 "Capacity"
- concept_capacities:0 "Capacities"
+ concept_capacity: "Ємність"
+ concept_capacities: "Ємності"
  concept_capacity_desc:0 "A measure of your [Concept('concept_country','$concept_country_possessive$')] capabilities in one of three areas: [concept_bureaucracy], [concept_authority], and [concept_influence]. $concept_capacities$ are not stored and used, but continuously generated from different sources and continually expended by the various projects you have going on. Your remaining balance in each area is displayed in the top bar. Having an excess of a $concept_capacity$ will yield a minor bonus for your $concept_country$, while having a lack of a $concept_capacity$ will inflict large penalties."
 
  concept_bureaucracy: "Бюрократія"
@@ -626,8 +626,8 @@
  concept_market_capital_desc:2 "The [concept_state] that serves as the nexus of a [concept_market], to which all other $concept_states$ in the $concept_market$ must connect lest they become [Concept('concept_isolated_state','$concept_isolated_state_short$')]. [Concept('concept_trade_route','$concept_trade_routes$')] are often, but not always, managed from the $concept_market_capital$. The $concept_market_capital$ is often the same $concept_state$ as the [Concept('concept_market_owner','$concept_market_owner_possessive$')] [concept_capital_state], but it is possible to keep these separate.[AddLocalizationIf(GetPlayer.IsValid,'concept_market_capital_desc_added')] "
  concept_market_capital_desc_added:0 "\nThe following effects apply:\n[GetStaticModifier('market_capital_state').GetDesc]"
 
- concept_ownership_share:0 "Ownership Share"
- concept_ownership_shares:1 "Ownership Shares"
+ concept_ownership_share: "Частка власности"
+ concept_ownership_shares: "Частки власности"
  concept_ownership_share_desc:1 "[Concept('concept_pop','$concept_pops$')] with $concept_ownership_shares$  in their [concept_building] gain a portion of its [Concept('concept_building_balance','$concept_building_balance_profit$')] as [concept_pop_income], in the form of [concept_dividends]. The amount they receive is based on their share of the $concept_building$'s total $concept_ownership_shares$. The $concept_pop$ is also considered to own that proportion of the $concept_building$'s current [concept_cash_reserves]. How $concept_ownership_shares$ are apportioned across the $concept_building$'s [concept_workforce] is determined by its $pmg_ownership$ [Concept('concept_production_method', '$concept_production_methods$')], which are strictly limited by [Concept('concept_law', '$concept_laws$')]."
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MAY 3, 2022
@@ -760,7 +760,7 @@
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MAY 1, 2022
 
- concept_war_reparations:0 "War Reparations"
+ concept_war_reparations: "Військове відшкодування"
  concept_war_reparations_desc:2 "A secondary [concept_war_goal] that can be added onto a [concept_diplomatic_play] and claimed as part of a [concept_peace_deal]. If enforced, the targeted [concept_country] is forced to transfer [GetDiplomaticActionType('war_reparations').GetIncomeTransfer|v%] of their [concept_treasury] income to the other for a duration of #v [GetDefine('NDiplomacy','WAR_GOAL_REPARATIONS_DURATION')|0] months#!."
 
  concept_open_market:0 "Market Opening"
@@ -1077,9 +1077,11 @@
  concept_market_desc:2 "All [Concept('concept_state', '$concept_states$')] in the same $concept_market$ will trade [Concept('concept_good', '$concept_goods$')] with each other, unless they are [Concept('concept_isolated_state','$concept_isolated_state_short$')]. How well connected these $concept_states$ are with each other is measured by their [concept_market_access]. $concept_markets$ may also trade with each other through [Concept('concept_trade_route','$concept_trade_routes$')].\n\nEach [concept_country] either controls its own $concept_market$ or participates in one other via a [concept_customs_union] or [concept_subject] relationship. "
 
  concept_market_access: "Доступ до ринку"
+ concept_market_access_access: "Доступ до"
  concept_market_access_desc:1 "A measure of how well-connected a [concept_state] is to the rest of its [concept_market]. It starts at 100% and is reduced proportionally whenever the $concept_state$'s [concept_infrastructure_usage] exceeds its [concept_infrastructure]. It impacts both how many [concept_sell_orders] and [concept_buy_orders] are generated due to the $concept_state$'s [concept_good_production] and [concept_good_consumption], and also how much the [concept_market_price] affects the [concept_local_price] of [Concept('concept_good','$concept_goods$')]."
 
  concept_infrastructure: "Інфраструктура"
+ concept_infrastructure_gen: "Інфраструктури"
  concept_infrastructure_desc:2 "$concept_infrastructure$ is provided by [Concept('concept_building','$concept_buildings$')] like [SelectLocalization(GetPlayer.IsValid,'concept_infrastructure_desc_added','Railway')] and [SelectLocalization(GetPlayer.IsValid,'concept_infrastructure_desc_added_2','Port')]. It influences how well connected a [concept_state] is to its [concept_market], and how rapidly [Concept('concept_battalion', '$concept_battalions$')] [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilize$')]."
  concept_infrastructure_desc_added:0 "[GetBuildingType('building_railway').GetName]"
  concept_infrastructure_desc_added_2:0 "[GetBuildingType('building_port').GetName]"
@@ -1106,7 +1108,9 @@
 
  concept_state: "Регіон"
  concept_state_gen: "Регіону"
+ concept_state_dat: "Регіонові"
  concept_state_acc: "Регіон"
+ concept_state_ins: "Регіоном"
  concept_state_loc: "Регіоні"
  concept_states: "Регіони"
  concept_state_or_states: "Регіон(-и)"

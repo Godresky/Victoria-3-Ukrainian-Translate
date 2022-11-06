@@ -312,7 +312,7 @@
  embargo_trigger_desc_third:0 "[COUNTRY.GetName] has an [concept_embargo] against [AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]"
  embargo_trigger_false_desc_third:0 "[COUNTRY.GetName] does #b not#! have an [concept_embargo] against [AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]"
  
- war_reparations:0 "War Reparations"
+ war_reparations: "Військове відшкодування"
  war_reparations_action_name:0 "[concept_war_reparations]"
  war_reparations_action_propose_name:0 "Demand [concept_war_reparations]"
  war_reparations_action_break_name:0 "End [concept_war_reparations]"

@@ -336,8 +336,8 @@
  war_goal_contain_threat_desc:0 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to release all States and Subjects they have gained through conquest in the last #v [GetDefine('NDiplomacy', 'WAR_GOAL_CONTAIN_THREAT_YEARS_SINCE_CONQUEST')]#! years."
  war_goal_contain_threat_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to release all their recent conquests."
   
- war_goal_war_reparations_type_name: "Військові репарації"
- war_goal_war_reparations_type_desc: "Змусити іншу державу заплатити [concept_war_reparations]."
+ war_goal_war_reparations_type_name: "Військове відшкодування"
+ war_goal_war_reparations_type_desc: "Змусити іншу державу заплатити [concept_war_reparations|l]."
  war_goal_war_reparations:2 "[WAR_GOAL.GetTarget.GetAdjectiveNoFormatting] [concept_war_reparations]"
  war_goal_war_reparations_desc:1 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to pay #variable 10%#! of their tax income in [concept_war_reparations] for 5 years."
  war_goal_war_reparations_sway_desc:1 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to pay them #variable 10%#! of their tax income in [concept_war_reparations] for 5 years."
@@ -348,7 +348,7 @@
  war_goal_unification_leadership_desc:0 "Force [WAR_GOAL.GetTarget.GetName] to renounce their ambitions to unify [WAR_GOAL.GetCountryFormation.GetName]"
  war_goal_unification_leadership_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetTarget.GetName] to renounce their ambitions to unify [WAR_GOAL.GetCountryFormation.GetName]"
  
- war_goal_humiliation_type_name:0 "Humiliation"
+ war_goal_humiliation_type_name: "Приниження"
  war_goal_humiliation_type_desc:1 "[Concept('concept_humiliation', '$concept_humiliate$')] another country."
  war_goal_humiliation:0 "Humiliate [WAR_GOAL.GetTarget.GetName]"
  war_goal_humiliation_desc:0 "Reduces the prestige of [WAR_GOAL.GetTarget.GetName] and prevents them from opposing [WAR_GOAL.GetHolder.GetName] in [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] for 5 years."
@@ -360,7 +360,7 @@
  war_goal_open_market_desc:1 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to adopt Free Trade laws and [Concept('concept_open_market', '$concept_open_market_short$')] up their market to foreign trade."
  war_goal_open_market_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetTarget.GetName] to adopt Free Trade laws and opening up their market to foreign trade."
 
- war_goal_regime_change_type_name:0 "Зміна режиму"
+ war_goal_regime_change_type_name: "Зміна ладу"
  war_goal_regime_change_type_desc:2 "Force another country to change their [concept_government] and [Concept('concept_law', '$concept_laws$')] to better align with your own [concept_government]."
  war_goal_regime_change:1 "Regime Change in [WAR_GOAL.GetTarget.GetName]"
  war_goal_regime_change_desc:2 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to change their [concept_government] and [Concept('concept_law', '$concept_laws$')] to better align with their own [concept_government]."
@@ -372,7 +372,7 @@
  war_goal_ban_slavery_desc:0 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to abolish slavery."
  war_goal_ban_slavery_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetTarget.GetName] to abolish slavery."
   
- war_goal_take_treaty_port_type_name: "Взяти договірний порт"
+ war_goal_take_treaty_port_type_name: "Захопити договірний приплав"
  war_goal_take_treaty_port_type_desc:1 "Force another country to cede a [concept_treaty_port] in a [concept_state]."
  war_goal_take_treaty_port:1 "[WAR_GOAL.GetTargetState.GetStateRegion.GetName] [concept_treaty_port]"
  war_goal_take_treaty_port_desc:1 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to cede a [concept_treaty_port] in the [WAR_GOAL.GetTargetState.GetStateRegion.GetName] [concept_state_region]."
@@ -408,25 +408,25 @@
  war_goal_transfer_subject_desc:0 "Transfer the Suzertainty of [WAR_GOAL.GetTarget.GetName] to [WAR_GOAL.GetHolder.GetName]."
  war_goal_transfer_subject_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to transfer them the Suzertainty of [WAR_GOAL.GetTarget.GetName]"
    
- war_goal_make_puppet_type_name:0 "Зробити маріонеткою"
+ war_goal_make_puppet_type_name: "Зробити лялькою"
  war_goal_make_puppet_type_desc:1 "Force another country to become a [concept_puppet]."
  war_goal_make_puppet:0 "Puppet [WAR_GOAL.GetTarget.GetName]"
  war_goal_make_puppet_desc:1 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to become a [concept_puppet]."
  war_goal_make_puppet_sway_desc:1 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetTarget.GetName] to become your [concept_puppet]."
  
- war_goal_make_dominion_type_name:0 "Зробити домінійоном"
+ war_goal_make_dominion_type_name: "Зробити домініоном"
  war_goal_make_dominion_type_desc:1 "Force another country to become a [concept_dominion]."
  war_goal_make_dominion:0 "Subjugate [WAR_GOAL.GetTarget.GetName]"
  war_goal_make_dominion_desc:1 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to become a [concept_dominion]."
  war_goal_make_dominion_sway_desc:1 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetTarget.GetName] to become your [concept_dominion]."
   
- war_goal_make_vassal_type_name:0 "Зробити васалом"
+ war_goal_make_vassal_type_name: "Зробити слушником"
  war_goal_make_vassal_type_desc:1 "Force another country to become a [concept_vassal]."
  war_goal_make_vassal:1 "[Concept('concept_vassal', '$concept_vassalize$')] [WAR_GOAL.GetTarget.GetName]"
  war_goal_make_vassal_desc:1 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to become a [concept_vassal]."
  war_goal_make_vassal_sway_desc:1 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetTarget.GetName] to become your [concept_vassal]."
   
- war_goal_unification_type_name:0 "об'єднання"
+ war_goal_unification_type_name: "Об'єднання"
  war_goal_unification_type_desc:1 "Attempt to annex all lesser countries sharing a culture with a nation formation."
  war_goal_unification:1 "Unify [WAR_GOAL.GetCountryFormation.GetName]"
  war_goal_unification_desc:1 "[WAR_GOAL.GetHolder.GetName] attempts to annex all lesser [WAR_GOAL.GetCountryFormation.GetAdjective] countries."
