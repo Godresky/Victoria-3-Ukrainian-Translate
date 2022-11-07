@@ -335,7 +335,7 @@
  law_per_capita_based_taxation_desc:0 "A tax system that disproportionally taxes the poor through a combination of income and per-capita taxes."
  law_proportional_taxation: "Пропорційне оподаткування"
  law_proportional_taxation_desc:0 "A mainly income-based tax system that tries to ensure everyone pays a roughly equal share of their income to the state."
- law_graduated_taxation: "Прогресивне оподаткування"
+ law_graduated_taxation: "Поступове оподаткування"
  law_graduated_taxation_desc:0 "A tax system that aims to put the burden of taxation primarily on the well-to-do through high Dividends taxes."
   
   # Education System group
