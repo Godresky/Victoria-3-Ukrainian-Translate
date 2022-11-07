@@ -13,7 +13,7 @@
   
  TICKTASK_PERSISTED:0 "Persisted in savegame"
   
- TICKTASK_SHOW_DETAILS:0 "Click to show details"
+ TICKTASK_SHOW_DETAILS: "Клацніть, щоб глянути детальніше"
   
  TICKTASK_GRAPH_ITEM_TOOLTIP:0 "#header $NAME$#!\nIndex: #v $INDEX$#!\n\nPersisted: #v $PERSISTED$#!\nPriority: #v $PRIORITY$#!\nRate: #v $RATE$#!\n\nExecutes after: #v $AFTER$#!\nExecutes before: #v $BEFORE$#!\nDepends on: $DEPENDENCIES$\nDependents: $DEPENDENTS$\n\n$TICKTASK_SHOW_DETAILS$"
 

@@ -268,7 +268,7 @@
  rivalry_desc:0 "#header $rivalry$#!\n$TOOLTIP_DELIMITER$\nAn [concept_ongoing_diplomatic_action] that creates a [concept_rivalry] with another [concept_country]."
  rivalry_action_notification_name:0 "[INITIATOR_COUNTRY.GetName] declared [concept_rivalry]"
  rivalry_action_notification_desc:4 "[INITIATOR_COUNTRY.GetName] have declared us their [Concept('concept_rivalry','$concept_rival$')]. Their [concept_attitude] towards us is #tooltippable #tooltip:[INITIATOR_COUNTRY.GetTooltipTag],COUNTRY_ATTITUDE_TOOLTIP [INITIATOR_COUNTRY.GetAttitudeTowards(GetPlayer).GetName]#!#!."
- rivalry_action_notification_third_party_name:1 "[INITIATOR_COUNTRY.GetAdjectiveNoFormatting]-[TARGET_COUNTRY.GetAdjectiveNoFormatting] [concept_rivalry] Declared"
+ rivalry_action_notification_third_party_name: "[INITIATOR_COUNTRY.GetAdjectiveNoFormatting]о-[TARGET_COUNTRY.GetAdjectiveNoFormatting|l]е [concept_rivalry|l] оголошено"
  rivalry_action_notification_third_party_desc:1 "[INITIATOR_COUNTRY.GetName] have declared [TARGET_COUNTRY.GetName] to be their [Concept('concept_rivalry', '$concept_rival$')]."
  rivalry_action_notification_break_name:0 "[INITIATOR_COUNTRY.GetName] ended [concept_rivalry]"
  rivalry_action_notification_break_desc:1 "[INITIATOR_COUNTRY.GetName] no longer view us as a [Concept('concept_rivalry', '$concept_rival$')]."

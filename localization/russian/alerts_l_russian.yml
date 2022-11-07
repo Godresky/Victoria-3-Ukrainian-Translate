@@ -13,7 +13,7 @@
  alert_country_default_hint:1 "You can improve your financial situation by increasing your income (which can be done by for instance increasing (or adding new) Taxes) or decreasing your expenses (which can be done by for instance reducing Government Wages or improving the prices for expensive Goods used in Government Buildings). If neither of these is enough, you also have the option to declare [concept_bankruptcy]."
  alert_country_default_action:0 "Budget Panel"
   
- alert_country_approaching_bureaucracy_shortage_name:0 "Bureaucratic Shortfall"
+ alert_country_approaching_bureaucracy_shortage_name: "Бюрократична нестача"
  alert_country_approaching_bureaucracy_shortage_desc:2 "Our [Concept('concept_country', '$concept_country_possessive$')] [Concept('concept_institution', '$concept_institutions$')] are growing out of bounds and we will eventually be overstretched. Until we are able to ensure sufficient $BUREAUCRACY$ for all of them, further [concept_institution] growth will halt."
  alert_country_approaching_bureaucracy_shortage_hint:0 "You can increase your capacity to generate Bureaucracy by building more Government Administation Buildings."
  alert_country_approaching_bureaucracy_shortage_action:0 "Politics Panel"
@@ -48,11 +48,11 @@
  alert_high_attrition_alert_hint:0 "Reduce [concept_attrition] by giving a different order to a [concept_commander] or returning them from the [concept_front]"
  alert_high_attrition_alert_action:0 "Military Panel"
 
- alert_has_navy_troops_in_reserve_alert_name:1 "[GetPlayer.GetWarshipsInReserve|0] @flotillas! [Concept('concept_flotilla', '$concept_flotillas$')] [concept_in_reserve]"
+ alert_has_navy_troops_in_reserve_alert_name: "@flotillas! [Concept('concept_flotilla', '$concept_flotillas_gen$')] [concept_in_reserve|l] - [GetPlayer.GetWarshipsInReserve|0]"
  alert_has_navy_troops_in_reserve_alert_hint:3 "Promote existing [Concept('concept_admiral', '$concept_admirals$')] in order to give them higher [concept_command_limit], which can be done on the details panel for that $concept_admiral$ (or by right-clicking the $concept_admiral$). You can also assign $concept_flotillas$ by recruiting more $concept_admirals$, which can be done on the Navy tab in the #b Military#! panel or through the [concept_military_lens].\n\nHowever, promoting an $concept_admiral$ is usually recommended over recruiting more."
  alert_has_navy_troops_in_reserve_alert_action:0 "Military Panel"
 
- alert_has_army_troops_in_reserve_alert_name:1 "[GetPlayer.GetBattalionsInReserve|0] @battalions! [Concept('concept_battalion', '$concept_battalions$')] [concept_in_reserve]"
+ alert_has_army_troops_in_reserve_alert_name: "@battalions! [Concept('concept_battalion', '$concept_battalions_gen$')] [concept_in_reserve|l] - [GetPlayer.GetBattalionsInReserve|0]"
  alert_has_army_troops_in_reserve_alert_hint:3 "Promote existing [Concept('concept_general', '$concept_generals$')] in order to give them higher [concept_command_limit], which can be done on the details panel for that $concept_general$ (or by right-clicking the $concept_general$). You can also assign $concept_battalions$ by recruiting more $concept_generals$, which can be done on the Army tab in the #b Military#! panel or through the [concept_military_lens].\n\nHowever, promoting a $concept_general$ is usually recommended over recruiting more."
  alert_has_army_troops_in_reserve_alert_action:0 "Military Panel"
 
@@ -213,7 +213,7 @@
  ag_inactive_trade_routes_desc:0 "We have [GetPlayer.GetNumInactiveTradeRoutes|v] inactive [Concept('concept_trade_route', '$concept_trade_routes$')]."
  ag_inactive_trade_routes_tooltip:0 "#header $ag_inactive_trade_routes_name$#!\n$TOOLTIP_DELIMITER$\n$ag_inactive_trade_routes_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
- ag_unproductive_trade_routes_name:0 "Unproductive [Concept('concept_trade_route', '$concept_trade_routes$')]"
+ ag_unproductive_trade_routes_name: "Непродуктивні [Concept('concept_trade_route', '$concept_trade_routes$')|l]"
  ag_unproductive_trade_routes_desc:0 "We have [GetPlayer.GetNumUnproductiveTradeRoutes|v] unproductive [Concept('concept_trade_route', '$concept_trade_routes$')]."
  ag_unproductive_trade_routes_tooltip:0 "#header $ag_unproductive_trade_routes_name$#!\n$TOOLTIP_DELIMITER$\n$ag_unproductive_trade_routes_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
