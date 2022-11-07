@@ -11,7 +11,7 @@
  concept_economy_health_healthy_short: "Здорова"
  concept_economy_health_unhealthy: "Нездорова економіка"
  concept_economy_health_unhealthy_short: "Нездорова"
- concept_economy_health_desc:0 "A [Concept('concept_country','$concept_country_possessive$')] economy is considered $concept_economy_health_healthy_short$ if #italic either#!:\n$TAB$@green_checkmark_box! its fixed incomes exceed its fixed expenses\n$TAB$@green_checkmark_box! its [concept_principal] is less than half their total [concept_credit]"
+ concept_economy_health_desc: "[Concept('concept_country','$concept_country_possessive$')] економіка вважається $concept_economy_health_healthy_short$ якщо #italic either#!:\n$TAB$@green_checkmark_box! її постійні доходи перевищують постійні витрати\n$TAB$@green_checkmark_box! її [concept_principal] становить менше половини їх загальної кількості [concept_credit]"
 
  concept_bankroll:0 "$bankroll$"
  concept_bankrolling:0 "Bankrolling"
@@ -1000,7 +1000,7 @@
  concept_war: "Війна"
  concept_wars: "Війни"
  concept_wars_gen: "Воєн"
- concept_war_desc:1 "An active armed conflict between two sides of co-belligerent [Concept('concept_country','$concept_countries$')] as a result of the failure to peacefully resolve a [concept_diplomatic_play]. During $concept_wars$, [Concept('concept_commander','$concept_commanders$')] on land and at sea will follow [Concept('concept_order','$concept_orders$')] to complete certain objectives, often resulting in [Concept('concept_battle','$concept_battles$')] between the two sides."
+ concept_war_desc: "Активне воєнне протистояння між двома [Concept('concept_country','$concept_countries$')] як результат [concept_diplomatic_play]. Під час $concept_wars$, [Concept('concept_commander','$concept_commanders$')] на суші та на морі будуть виконувати [Concept('concept_order','$concept_orders$')] для виконання певних завдань, що часто призводить до [Concept('concept_battle','$concept_battles$')] між двома сторонами."
 
  concept_war_goal:0 "War Goal"
  concept_war_goal_primary:0 "Primary War Goal"
