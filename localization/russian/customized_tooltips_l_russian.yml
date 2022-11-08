@@ -91,13 +91,13 @@
 
  POPULARITY_BREAKDOWN:1 "#header [Character.GetFullName]#! has #v [LabelingHelper.GetLabelForPopularityCFixedPoint(Character.GetPopularity)]#! ([Character.GetPopularity|0+=]) [concept_popularity][ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', Character.GetPopularityDesc)]"
 
- INTEREST_GROUP_SUPPORTED_BY_TITLE:0 "[InterestGroup.GetNameNoFormatting] is supported by:"
+ INTEREST_GROUP_SUPPORTED_BY_TITLE: "[Concept('concept_interest_group', '$concept_interest_group_short_acc$')] [InterestGroup.GetNameNoFormatting] підтримують:"
  INTEREST_GROUP_SUPPORTED_BY_SINGLE:0 "[PopType.GetName]: $SUPPORT_PERCENTAGE|%1v$"
  INTEREST_GROUP_SUPPORTED_BY_SINGLE_FORMAT:0 "$TAB$$INTEREST_GROUP_SUPPORTED_BY_SINGLE$"
  INTEREST_GROUP_SUPPORTED_BY_FORMAT:0 "$INTEREST_GROUP_SUPPORTED_BY_TITLE$\n$BODY$"
  INTEREST_GROUP_SUPPORTED_BY_NONE:0 "[InterestGroup.GetNameNoFormatting] is not supported by any [concept_profession]"
- INTEREST_GROUP_SUPPORTED_BY_OTHER_HEADER:0 "#title Other [Concept('concept_profession', '$concept_professions$')]#!"
- INTEREST_GROUP_SUPPORTED_BY_OTHER:0 "$TAB$Other [Concept('concept_profession', '$concept_professions$')]: #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] $OTHER_PERCENTAGE|%1v$#!#!"
+ INTEREST_GROUP_SUPPORTED_BY_OTHER_HEADER: "#title Інші [Concept('concept_profession', '$concept_professions$')|l]#!"
+ INTEREST_GROUP_SUPPORTED_BY_OTHER: "$TAB$Інші [Concept('concept_profession', '$concept_professions$')|l]: #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] $OTHER_PERCENTAGE|%1v$#!#!"
 
  CULTURE_POPULATION_CHANGE_IN_COUNTRY: "(#v #tooltippable #tooltip:CULTURE_POPULATION_CHANGE_IN_COUNTRY_BREAKDOWN [Culture.GetPopulationChange(GetPlayer.Self)|=+Т]#!#!#! / місяць)"
  CULTURE_POPULATION_CHANGE_IN_COUNTRY_BREAKDOWN:0 "[Culture.GetPopulationChangeDesc(GetPlayer.Self)]"

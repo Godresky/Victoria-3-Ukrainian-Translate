@@ -6,6 +6,8 @@
 #_loc - Місцевий
 
 #_many - Множина 
+
+#_feminine - Жіночий ріді 
  concept_economy_health: "Здоров'я економіки"
  concept_economy_health_healthy: "Здорова економіка"
  concept_economy_health_healthy_short: "Здорова"
@@ -418,6 +420,10 @@
  concept_interest_group_acc: "Зацікавлену групу"
  concept_interest_groups: "Зацікавлені групи"
  concept_interest_groups_gen: "Зацікавлених груп"
+
+ concept_interest_group_short: "Група"
+ concept_interest_group_short_acc: "Групу"
+
  concept_interest_group_possessive:1 "Interest Group\\'s"
  concept_interest_group_desc:3 "A political faction within your [concept_country] that share a common interest. They are supported by [Concept('concept_pop', '$concept_pops$')] in relation to their [Concept('concept_interest_group_attraction','$concept_interest_group_attraction_short$')] to them, and the [concept_clout] they enjoy is based directly on the supporting $concept_pops$' [concept_political_strength]. $concept_interest_groups$ have number of [Concept('concept_ideology', '$concept_ideologies$')], causing them to endorse or oppose different [Concept('concept_law', '$concept_laws$')].\n\nThey also have three [Concept('concept_interest_group_trait', '$concept_interest_group_traits$')] that are activated on different [concept_approval] levels. Their [Concept('concept_leader','$concept_leader_possessive$')] personal $concept_ideology$ also rubs off on the $concept_interest_group$."
 
@@ -517,14 +523,17 @@
 
  concept_powerful: "Потужний"
  concept_powerful_many: "Потужні"
+ concept_powerful_feminine_ins: "Потужною"
  concept_powerful_desc:1 "$concept_influential_powerful_common$ A $concept_powerful$ $concept_interest_group$'s [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] will have a [GetDefine('NPolitics','POWERFUL_IG_TRAIT_BONUS')|%0=+] greater effect than if they were merely $concept_influential$.\n\n$concept_interest_groups$ are considered $concept_powerful$ while their $concept_clout$ is above [GetDefine('NPolitics','POWERFUL_IG_THRESHOLD')|%0]."
  
  concept_influential: "Впливовий"
  concept_influential_many: "Впливові"
+ concept_influential_feminine_ins: "Впливовою"
  concept_influential_powerful_common:0 "The amount of [concept_clout] an [concept_interest_group] has decides whether it is [concept_powerful], $concept_influential$, or [concept_marginalized]."
  concept_influential_desc:1 "$concept_influential_powerful_common$ An $concept_influential$ $concept_interest_group$'s [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] will have a lesser effect than if they were $concept_powerful$.\n\n$concept_interest_groups$ are considered $concept_influential$ while their $concept_clout$ is below [GetDefine('NPolitics','POWERFUL_IG_THRESHOLD')|%0v]."
 
  concept_marginalized: "Маргіналізовані"
+ concept_marginalized_feminine_ins: "Маргіналізованою"
  concept_marginalized_desc:1 "$concept_marginalized$ [Concept('concept_interest_group', '$concept_interest_groups$')] have too little [concept_clout] to be politically noteworthy. They cannot join the [concept_government], [Concept('concept_political_movement','$concept_political_movements$')], or [Concept('concept_party','$concept_parties$')]. Their [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] are permanently deactivated for as long as they remain $concept_marginalized$.\n\nAlready $concept_marginalized$ $concept_interest_groups$ remain $concept_marginalized$ for as long as their $concept_clout$ is below [GetDefine('NPolitics','MARGINAL_IG_THRESHOLD')|%0v]. Non-$concept_marginalized$ $concept_interest_groups$ will become $concept_marginalized$ once their $concept_clout$ drops below [GetDefine('NPolitics','MARGINAL_IG_CUTOFF')|%0v], unless they are already [concept_in_government] in which case they do not become $concept_marginalized$ until removed."
  
  concept_politically_inactive_involved: "Політично неактивні/залучені"
@@ -1146,7 +1155,8 @@
  concept_production_methods:0 "Production Methods"
  concept_production_method_desc:3 "$concept_production_methods$ determine how [Concept('concept_building','$concept_buildings$')] operate. They impact\n\n- The [Concept('concept_good_consumption','$concept_input_goods$')] the $concept_building$ must purchase to operate\n- The [Concept('concept_good_production','$concept_output_goods$')] the $concept_building$ produces and sells\n- The distribution of [Concept('concept_profession','$concept_professions$')] among its [concept_workforce]\n\n$concept_production_methods$ can also have other effects, such as the generation of [Concept('concept_modifier','$concept_modifiers$')] or the distribution of [Concept('concept_ownership_share','$concept_ownership_shares$')]. $concept_production_methods$ are organized in groups, in which only one can be active at a time. You can switch which $concept_production_method$ is active in each group as long as you meet the [concept_technology] and/or [concept_law] requirement for it."
 
- concept_nation_formation:0 "Nation Formation"
+ concept_nation_formation: "Формування нації"
+ concept_nation_formation_acc: "Формування нації"
  concept_nation_formation_desc:0 "If a [concept_country] meets certain requirements, such as owning land in specific [Concept('concept_state_region','$concept_state_regions$')] and/or having discovered a certain $SOCIETY$ [concept_technology], they may be able to form a new $concept_country$ of a higher [concept_country_tier]. The possible $concept_countries$ are listed in the #b $NATION_FORMATION$#! tab in the #b $CULTURE$#! panel."
 
  concept_culture: "Культура"
@@ -1587,9 +1597,9 @@
  concept_unification_candidates:0 "Unification Candidates"
  concept_unification_candidate_desc:1 "A $concept_unification_candidate$ is a [concept_country] considered a viable candidate for unification. The conditions for who qualifies as a $concept_unification_candidate$ varies depending on which unified nation it is. "
 
- concept_unification:0 "Country Unification"
- concept_major_unification:0 "Major Unification"
- concept_minor_unification:0 "Minor Unification"
+ concept_unification: "Об`єднання держави"
+ concept_major_unification: "Велике об`єднання"
+ concept_minor_unification: "Мале об`єднання"
  concept_unification_desc:0 "The act of unifying and forming a new [concept_country] out of several $concept_countries$ is called Unification. A $concept_country$ can be formed by controlling a specific number of [Concept('concept_state','$concept_states$')] in the new $concept_country$'s region.\n\nA #b Major Unification#! allows $concept_countries$ to become [Concept('concept_unification_candidate','$concept_unification_candidates$')] which gives them access to the Unification [concept_diplomatic_play]. This $concept_diplomatic_play$ sets the [Concept('concept_war_goal','$concept_war_goals$')] to annex all the required $concept_states$ and $concept_countries$.\n\nWhile a #b Minor Unification#! do not allow any [Concept('concept_unification_candidate','$concept_unification_candidates$')] and can only form a $concept_country$ if the number of required $concept_states$ are controlled."
  
 
