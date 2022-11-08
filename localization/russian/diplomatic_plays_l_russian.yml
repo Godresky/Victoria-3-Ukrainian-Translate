@@ -209,7 +209,7 @@
  dp_make_puppet: "$war_goal_make_puppet_type_name$"
  dp_make_puppet_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_make_puppet$#!\n$TOOLTIP_DELIMITER$\n$dp_make_puppet_desc$"
  dp_make_puppet_desc:0 "Sets the initiating [concept_war_goal] to force the targeted [concept_country] to become your [concept_puppet]."
- «
+ 
  dp_make_dominion: "$war_goal_make_dominion_type_name$"
  dp_make_dominion_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_make_dominion$#!\n$TOOLTIP_DELIMITER$\n$dp_make_dominion_desc$"
  dp_make_dominion_desc:0 "Sets the initiating [concept_war_goal] to force the targeted [concept_country] to become your [concept_dominion]."

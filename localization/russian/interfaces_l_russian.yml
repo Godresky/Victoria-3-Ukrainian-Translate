@@ -5324,7 +5324,7 @@
  notification_diplo_play_back_down_notification_desc:0 "[SCOPE.sC('actor').GetName] backed down in our [concept_diplomatic_play], yielding the primary wargoal to us."
 
  notification_diplo_play_back_down_involved_notification_tooltip:0 "#header $notification_diplo_play_back_down_involved_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_back_down_involved_notification_desc$"
- notification_diplo_play_back_down_involved_notification_name:s "[SCOPE.sC('actor').GetName] відступає"
+ notification_diplo_play_back_down_involved_notification_name: "[SCOPE.sC('actor').GetName] відступає"
  notification_diplo_play_back_down_involved_notification_desc:0 "[SCOPE.sC('actor').GetName] backed down in the [concept_diplomatic_play] against [SCOPE.sC('target').GetName]."
 
  notification_diplo_play_join_side_notification_tooltip:0 "#header $notification_diplo_play_join_side_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_join_side_notification_desc$"
