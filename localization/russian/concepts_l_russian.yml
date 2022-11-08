@@ -20,6 +20,7 @@
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MAY 6, 2022
  
  concept_subject: "Підвладний"
+ concept_subject_feminine: "Підвладна"
  concept_subjects: "Підвладні"
  concept_subject_country: "Підвладна держава"
  concept_subject_country_acc: "Підвладну державу"
@@ -173,6 +174,7 @@
  concept_diplomatic_play_gen: "Дипломатичної гри"
  concept_diplomatic_play_acc: "Дипломатичну гру"
  concept_diplomatic_play_short: "Гра"
+ concept_diplomatic_play_short_gen: "Гри"
  concept_diplomatic_plays: "Дипломатичні ігри"
  concept_diplomatic_plays_gen: "Дипломатичних ігор"
  concept_diplomatic_plays_short: "Ігри"
@@ -192,13 +194,13 @@
  concept_maneuvers:1 "Maneuvers"
  concept_maneuver_desc:3 "$concept_maneuvers$ can be spent on taking actions in a [concept_diplomatic_play], including claiming additional [Concept('concept_war_goal', '$concept_war_goals$')] or [Concept('concept_sway','$concept_swaying$')] other [Concept('concept_country', '$concept_countries$')] to your side. The amount of $concept_maneuvers$ you have is limited by your [concept_rank]."
  
- concept_opening_moves:0 "Opening Moves"
+ concept_opening_moves: "Початкові дії"
  concept_opening_moves_desc:0 "The $concept_opening_moves$ phase is the first phase of a [concept_diplomatic_play]. In this phase the [concept_target] gets to set their primary  [concept_war_goal], and both [concept_initiator] and $concept_target$ can claim additional [Concept('concept_war_goal', '$concept_war_goals$')] using [Concept('concept_maneuver', '$concept_maneuvers$')]."
 
- concept_diplomatic_maneuvers:0 "Diplomatic Maneuvers"
+ concept_diplomatic_maneuvers: "Дипломатичні суви "
  concept_diplomatic_maneuvers_desc:0 "The $concept_diplomatic_maneuvers$ phase is the second phase of a [concept_diplomatic_play]. In this phase, the [concept_initiator] and [concept_target] can attempt to [concept_sway] other [Concept('concept_country', '$concept_countries$')] to their side or claim additional [Concept('concept_war_goal', '$concept_war_goals$')] for themselves, at the cost of [Concept('concept_maneuver', '$concept_maneuvers$')]."
 
- concept_countdown_to_war:0 "Countdown to War"
+ concept_countdown_to_war: "Відлік до війни"
  concept_countdown_to_war_desc:1 "The $concept_countdown_to_war$ phase is the third and last phase of a [concept_diplomatic_play]. [concept_war] might now be inevitable, with both sides frantically making preparations or considering any last-minute options to back down.\n\n@information! Typical preparations for $concept_war$ includes: [Concept('concept_mobilize_general','$concept_mobilize_general_mobilization$')] of [Concept('concept_general','$concept_generals$')], giving them [Concept('concept_order','$concept_orders$')]to advance or defend the [Concept('concept_front', '$concept_fronts$')], $concept_conscript_battalion_drafting$ [Concept('concept_conscript_battalion', '$concept_conscript_battalions$')], and promoting your $concept_generals$ to increase their [concept_command_limit] where necessary."
 
  concept_war_leader: "Провідник війни"
@@ -712,7 +714,7 @@
  concept_colony_desc:2 "Settlement efforts initiated by a colonizing [concept_country] in the lands of a [concept_decentralized_nation]. A would-be colonizer must have the [SelectLocalization(GetPlayer.IsValid,'concept_colony_desc_added','Institution Colonial Affairs')] [concept_institution] and an [concept_interest] in the [concept_strategic_region]. At first, a single [concept_province] will be taken. Adjacent $concept_provinces$ will be $concept_colonized$ at a rate depending on the $concept_country$'s [concept_colonial_growth], generating [concept_tension] as they do."
  concept_colony_desc_added:0 "[GetInstitutionType('institution_colonial_affairs').GetName]"
  
- concept_escalation:0 "Escalation"
+ concept_escalation: "Загострення"
  concept_escalate:0 "Escalate"
  concept_escalating:0 "Escalating"
  concept_escalates:0 "Escalates"
@@ -1002,13 +1004,16 @@
  concept_peace_deal_desc:0 "When a [concept_war_leader] wish to end a [concept_war] they may offer a $concept_peace_deal$. The deal must be agreed to by all negotiating $concept_countries$ remaining in the $concept_war$ to take effect. To increase the chance the $concept_peace_deal$ will be agreed to, the $concept_war_leader$ is allowed to include or exclude proposed [Concept('concept_war_goal','$concept_war_goals$')] from both sides."
 
  concept_war: "Війна"
+ concept_war_acc: "Війну"
  concept_wars: "Війни"
  concept_wars_gen: "Воєн"
  concept_war_desc: "Активне воєнне протистояння між двома [Concept('concept_country','$concept_countries$')] як результат [concept_diplomatic_play]. Під час $concept_wars$, [Concept('concept_commander','$concept_commanders$')] на суші та на морі будуть виконувати [Concept('concept_order','$concept_orders$')] для виконання певних завдань, що часто призводить до [Concept('concept_battle','$concept_battles$')] між двома сторонами."
 
- concept_war_goal:0 "War Goal"
- concept_war_goal_primary:0 "Primary War Goal"
- concept_war_goals:1 "War Goals"
+ concept_war_goal: "Воєнна ціль"
+ concept_war_goal_acc: "Воєнну ціль"
+ concept_war_goal_primary: "Основні воєнні цілі"
+ concept_war_goals: "Воєнні цілі"
+ concept_war_goals_gen: "Воєнних цілей"
  concept_war_goal_desc:2 "$concept_war_goals$ are the objectives a [concept_country] is fighting a [concept_war] over. They are determined during the [concept_diplomatic_play] and are fixed after the $concept_war$ has begun. Each $concept_war_goal$ claimed in a [concept_peace_deal] decreases the chance the opponent will accept it, and increases the degree by which their [concept_war_support] must be [Concept('concept_war_exhaustion','$concept_war_exhaustion_exhausted$')] before they will agree.\n\nThe first $concept_war_goal$ claimed as part of the $concept_diplomatic_play$ is considered your $concept_war_goal_primary$, and some $concept_diplomatic_plays$ require it to be included in all $concept_peace_deals$."
 
  concept_resource_potential: "Ресурсна мічність"
@@ -1380,9 +1385,10 @@
  concept_country_tier_possessive:1 "$concept_country$\\'s $concept_country_tier_short$"
  concept_country_tier_desc:3 "A [Concept('concept_country','$concept_country_possessive$')] $concept_country_tier_short$ is the inherent status and [concept_prestige] it is granted based on its history and significance. Forming a new $concept_country$ is only possible if its $concept_country_tier_short$ is higher than the $concept_country$'s current one."
 
- concept_claim:0 "Claim"
- concept_claims:1 "Claims"
- concept_claimed:1 "Claimed"
+ concept_claim: "Ремст"
+ concept_claims: "Ремстви"
+ concept_claims_gen: "Ремств"
+ concept_claimed: "Claimed"
  concept_claim_desc:1 "A territorial $concept_claim$ that a [concept_country] has on a [concept_state_region], usually because it once belonged to them. Having a $concept_claim$ permits use of the #v $war_goal_return_state_type_name$#! [concept_war_goal] which does not generate as much [concept_infamy] as the #v $war_goal_conquer_state_type_name$#! $concept_war_goal$ does.\n\nConquering an [concept_incorporated_state] will give the previous owner a $concept_claim$ on the $concept_state_region$."
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED APRIL 22, 2022

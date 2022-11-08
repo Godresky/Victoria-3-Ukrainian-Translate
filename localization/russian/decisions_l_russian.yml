@@ -18,11 +18,11 @@
  remove_opium_ban: "Зняти заборону на опіюм"
  remove_opium_ban_desc: "Може бути доцільно скасувати заборону на опіюм, якщо дипломатична чи економічна ситуація вимагатиме цього."
 
- establish_film_industry: "Створення кіноіндустрії"
+ establish_film_industry: "Створення кінопромисла"
  establish_film_industry_desc: "Нова плівкова технологія відкрила цілу нову можливу галузь, якщо ми звісно захочемо її підтримувати."
  gdp_higher_than_film_check: "ВВП перевищує 5 млн"
  custom_loc_hollywood: "Голівуд"
- custom_loc_film_industry_name_default: "Кіноіндустрія"
+ custom_loc_film_industry_name_default: "Кінопромисел"
 
 
  lowlands_land_reclamation: "Осушення низинних земель"
