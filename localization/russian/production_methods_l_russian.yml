@@ -29,8 +29,7 @@
  
  pmg_base_building_eiffel_tower: "$pm_base$"
  pmg_base_building_logging_camp: "$pm_base$"
- pmg_base_building_fishing_wharf: "$pm_base$"
- pmg_base_building_whaling_station: "$pm_base$"
+
  pmg_base_building_oil_rig: "$pm_base$"
  pmg_base_building_suez_canal: "$pm_base$"
  pmg_base_building_panama_canal: "$pm_base$"
@@ -286,27 +285,43 @@ pm_cartridge_crafting: "Виготовлення набоїв"
  pm_religious_academia: "Релігійна академія"
   
 # Fishing Wharf
+ pmg_base_building_fishing_wharf: "Тип рибальства"
+ pm_simple_fishing: "Проста риболовля"
+ pm_fishing_trawlers: "Рибальські тральщики"
+ pm_steam_trawlers: "Парові тральшики"
+
+ pmg_refrigeration_building_fishing_wharf: "Тип охолодження"
+ pm_unrefrigerated: "Без охолодження"
+ pm_refrigerated_storage_building_fishing_wharf: "Холодники"
+ pm_refrigerated_rail_cars_building_fishing_wharf: "Вагони-холодники"
+ pm_flash_freezing_building_fishing_wharf: "Миттєве заморожування"
+
+#Китобійня
+ pmg_base_building_whaling_station: "Тип китобійництва"
+ pm_wooden_whaling_ships: "Китобійний флот"
+ pm_steam_whaling_ships: "Парові китобої"
+
+ pmg_refrigeration_building_whaling_station: "Тип охолодження"
+ pm_refrigerated_storage_building_whaling_station: "Холодники"
+ pm_refrigerated_rail_cars_building_whaling_station: "Вагони-холодники"
+
+
  pm_fish_oil:0 "Fish Oil"
  pm_disabled_fish_oil:0 "Prioritize Fish Production"
  pm_oil_extraction:0 "Oil Extraction"
  pm_cod_liver_oil:0 "Cod Liver Oil"
- pm_simple_fishing:0 "Simple Fishing"
- pm_fishing_trawlers:0 "Fishing Trawlers"
- pm_steam_trawlers:0 "Steam Trawlers"
- pmg_refrigeration_building_livestock_ranch:0 "Refrigeration"
- pmg_refrigeration_building_fishing_wharf:0 "Refrigeration"
- pmg_refrigeration_building_whaling_station:0 "Refrigeration"
- pm_unrefrigerated:0 "Unrefrigerated"
- pm_refrigerated_storage_building_fishing_wharf:0 "Refrigerated Storage"
- pm_refrigerated_storage_building_whaling_station:0 "Refrigerated Storage"
- pm_refrigerated_storage_building_livestock_ranch:0 "Refrigerated Storage"
- pm_refrigerated_rail_cars_building_fishing_wharf:0 "Refrigerated Rail Cars"
- pm_refrigerated_rail_cars_building_whaling_station:0 "Refrigerated Rail Cars"
- pm_refrigerated_rail_cars_building_livestock_ranch:0 "Refrigerated Rail Cars"
- pm_flash_freezing_building_fishing_wharf:0 "Flash Freezing"
+ 
+ pmg_refrigeration_building_livestock_ranch:0 "Тип охолодження"
+ 
+ 
+ 
+ 
+ pm_refrigerated_storage_building_livestock_ranch:0 "Холодники"
+ 
+ 
+ pm_refrigerated_rail_cars_building_livestock_ranch:0 "Вагони-холодники"
+ 
  pm_flash_freezing_building_whaling_station:0 "Flash Freezing"
- pm_wooden_whaling_ships:0 "Whaling Fleet"
- pm_steam_whaling_ships:0 "Steam-Powered Whalers"
  
 # Grain Farms
  pm_simple_farming:0 "Simple Farming"
