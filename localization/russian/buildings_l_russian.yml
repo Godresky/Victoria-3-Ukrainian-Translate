@@ -15,7 +15,7 @@
  building_furniture_manufacturies_lens_option: "Розширити меблеві товарні"
  building_electrics_industry: "Електрична промисловість"
  building_electrics_industry_lens_option: "Розширити електричну промисловість"
- building_arms_industry: "Війскова ладня"
+ building_arms_industry: "Військова ладня"
  building_arms_industry_lens_option: "Розширити війскові ладні"
  building_war_machine_industry: "Промисел важких машин"
  building_war_machine_industry_lens_option: "Розширити промисел важких машин"
@@ -31,13 +31,13 @@
  building_glassworks_lens_option: "Розширити скловарні"
  building_coal_mine: "Вугільна копальня"
  building_coal_mine_lens_option: "Розширити вугільні копальні"
- building_coffee_plantation: "Кавове полище"     #або ланина
+ building_coffee_plantation: "Кавове полище"     
  building_coffee_plantation_lens_option: "Розширити кавові полища"
- building_cotton_plantation: "Бавовняне полище"   #або ланина
+ building_cotton_plantation: "Бавовняне полище"   
  building_cotton_plantation_lens_option: "Розширити бавовняні полища"
- building_silk_plantation: "Шовкове полище"   #або ланина
+ building_silk_plantation: "Шовкове полище"   
  building_silk_plantation_lens_option: "Розширити шовкові полища"
- building_dye_plantation: "Полище барвила"   #або ланина
+ building_dye_plantation: "Полище барвила"   
  building_dye_plantation_lens_option: "Розширити полища барвил"
  building_fishing_wharf: "Рибальська приплава"
  building_fishing_wharf_lens_option: "Розширити рибальські приплави"
@@ -62,7 +62,7 @@
  building_oil_rig: "Нафтова вишка"
  building_oil_rig_lens_option: "Розширити нафтові вишки"
  building_oil_rig_discovered_resource: "Нафта"
- building_opium_plantation: "Опіюмне полище"   #або ланина
+ building_opium_plantation: "Опіюмне полище"   
  building_opium_plantation_lens_option: "Розширити опіюмні полища"
  building_orchard: "Фруктовий сад"
  building_orchard_lens_option: "Розширити фруктові сади"
@@ -72,24 +72,24 @@
  building_gold_fields_lens_option: "Розширити золоті старальні"
  
  building_gold_fields_discovered_resource: "Золото"
- building_rubber_plantation: "Каучукове полище"    #або ланина
+ building_rubber_plantation: "Каучукове полище"    
  building_rubber_plantation_lens_option: "Розширити каучукові полища"
  building_rubber_plantation_discovered_resource: "Гума"
  building_livestock_ranch: "Тваринницька ферма"
  building_livestock_ranch_lens_option: "Розширити тваринницькі ферми"
- building_silkworm_plantation: "Шовкопрядне полище"    #або ланина
+ building_silkworm_plantation: "Шовкопрядне полище"    
  building_silkworm_plantation_lens_option: "Розширити шовкопрядні полища"
  building_sulfur_mine: "Сірчана копальня"
  building_sulfur_mine_lens_option: "Розширити сірчані копальні"
- building_tea_plantation: "Чайне полище"    #або ланина
+ building_tea_plantation: "Чайне полище"    
  building_tea_plantation_lens_option: "Розширити чайні полища"
  building_logging_camp: "Тартак"
  building_logging_camp_lens_option: "Розширити тартаки"
- building_tobacco_plantation: "Тютюнове полище"    #або ланина
+ building_tobacco_plantation: "Тютюнове полище"    
  building_tobacco_plantation_lens_option: "Розширити тютюнові полища"
  building_tropical_wood_lodge: "Тропічний тартак"
  building_tropical_wood_lodge_lens_option: "Розширити тропічні тартаки"
- building_sugar_plantation: "Цукрове полище"    #або ланина
+ building_sugar_plantation: "Цукрове полище"    
  building_sugar_plantation_lens_option: "Розширити цукрові полища"
  building_urban_center: "Міський центр"
  building_urban_center_lens_option: "Розширити міські центри"
@@ -99,11 +99,11 @@
  building_subsistence_orchards: "Натуральні сади"
  building_subsistence_pastures: "Підсобні пасовища"
  building_construction_sector: "Будівельний витинок"   #або сектор
- building_banana_plantation: "Бананове полище"    #або ланина
+ building_banana_plantation: "Бананове полище"
  building_banana_plantation_lens_option: "Розширити бананові полища"
- building_suez_canal: "Суецький водовід"   #або канал, крен
+ building_suez_canal: "Суецький водовід"
  building_suez_canal_lens_option: "Побудувати суецький водовід"
- building_panama_canal: "Панамський водовід"   #або канал, крен
+ building_panama_canal: "Панамський водовід"
  building_panama_canal_lens_option: "Побудувати панамський водовід"
  UNEMPLOYED: "[Concept('concept_unemployed', '$concept_unemployed_many$')]"
 
@@ -112,7 +112,7 @@
  bg_subsistence: "Натуральні господарства"
  bg_service: "Сфери послуг"
  bg_agriculture: "Сільське господарство"
- bg_plantations: "Полища"    #або ланина
+ bg_plantations: "Полища"
  bg_ranching: "Ферми"
  bg_mining: "Копальні"
  bg_gold_mining: "Золоті копальні"
@@ -131,7 +131,7 @@
  bg_government: "Урядові структури"
  bg_trade: "Торгові центри"
  bg_infrastructure: "Інфраструктура"
- bg_banana_plantations: "Бананові полища"    #або ланина
+ bg_banana_plantations: "Бананові полища"
  bg_light_industry: "Легка промисловість"
  bg_heavy_industry: "Важка промисловість"
  bg_rye_farms: "Житні хутори"
@@ -140,14 +140,14 @@
  bg_maize_farms: "Кукурудзяні хутори"
  bg_millet_farms: "Пшоні хутори"
  bg_livestock_ranches: "Тваринницькі ферми"
- bg_coffee_plantations: "Кавові полища"   #або ланина
- bg_cotton_plantations: "Бавовняні полища"   #або ланина
- bg_silk_plantations: "Шовкові полища"   #або ланина
- bg_dye_plantations: "Полища барвил"   #або ланина
- bg_opium_plantations: "Опіюмні полища"   #або ланина
- bg_tea_plantations: "Чайні полища"   #або ланина
- bg_tobacco_plantations: "Тютюнові полища"   #або ланина
- bg_sugar_plantations: "Цукрові полища"   #або ланина
+ bg_coffee_plantations: "Кавові полища"   
+ bg_cotton_plantations: "Бавовняні полища"   
+ bg_silk_plantations: "Шовкові полища"   
+ bg_dye_plantations: "Полища барвил"   
+ bg_opium_plantations: "Опіюмні полища"   
+ bg_tea_plantations: "Чайні полища"   
+ bg_tobacco_plantations: "Тютюнові полища"   
+ bg_sugar_plantations: "Цукрові полища"   
  bg_public_infrastructure: "Громадські споруди"
  bg_construction: "Будівництво"
  bg_private_infrastructure: "Приватні споруди"
@@ -172,12 +172,12 @@
   
   #Academies
  building_university: "Учильня"
- building_university_lens_option: "Розширити Учильні"
- building_arts_academy: "Війскова учильня"
- building_arts_academy_lens_option: "Розширити Війскові учильні"
+ building_university_lens_option: "Розширити учильні"
+ building_arts_academy: "Академія мистецтв"
+ building_arts_academy_lens_option: "Розширити академії мистецтв"
 
   #Colonies
- building_colony_military: "Військова осада"   #або колонія
+ building_colony_military: "Військова осада"
  building_colony_military_lens_option: "Встановити війскову осаду"
  building_colony_military_hover: "Встановити #variable війскову осаду#! у регіоні #variable [STATE.GetName]"
  building_colony_missionary: "Метарська осада"    #від метар(месіонер)

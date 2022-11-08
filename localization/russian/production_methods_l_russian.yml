@@ -1,229 +1,291 @@
 ﻿l_russian:
   
-  # Common
- pm_base:0 "Base"
- pmg_base_building_food_industry:1 "$pm_base$"
- pmg_base_building_textile_mills:1 "$pm_base$"
- pmg_base_building_furniture_manufacturies:1 "$pm_base$"
- pmg_base_building_glassworks:1 "$pm_base$"
- pmg_base_building_tooling_workshops:1 "$pm_base$"
- pmg_base_building_paper_mills:1 "$pm_base$"
- pmg_base_building_motor_industry:1 "$pm_base$"
- pmg_base_building_shipyards:1 "$pm_base$"
- pmg_base_building_munition_plants:1 "$pm_base$"
- pmg_base_building_power_plant:1 "$pm_base$"
- pmg_base_building_rye_farm:1 "$pm_base$"
- pmg_base_building_wheat_farm:1 "$pm_base$"
- pmg_base_building_rice_farm:1 "$pm_base$"
- pmg_base_building_maize_farm:1 "$pm_base$"
- pmg_base_building_millet_farm:1 "$pm_base$"
- pmg_base_building_livestock_ranch:1 "$pm_base$"
- pmg_base_building_gold_fields:1 "$pm_base$"
- pmg_base_building_coffee_plantation:1 "$pm_base$"
- pmg_base_building_cotton_plantation:1 "$pm_base$"
- pmg_base_building_dye_plantation:1 "$pm_base$"
- pmg_base_building_opium_plantation:1 "$pm_base$"
- pmg_base_building_tea_plantation:1 "$pm_base$"
- pmg_base_building_tobacco_plantation:1 "$pm_base$"
- pmg_base_building_sugar_plantation:1 "$pm_base$"
- pmg_base_building_banana_plantation:1 "$pm_base$"
- pmg_base_building_silk_plantation:1 "$pm_base$"
- pmg_base_building_rubber_plantation:1 "$pm_base$"
- pmg_base_building_construction_sector:1 "$pm_base$"
- pmg_base_building_port:1 "$pm_base$"
- pmg_base_building_trade_center:1 "$pm_base$"
- pmg_base_building_government_administration:1 "$pm_base$"
- pmg_base_building_arts_academy:1 "$pm_base$"
- pmg_base_building_university:1 "$pm_base$"
- pmg_base_building_eiffel_tower:1 "$pm_base$"
- pmg_base_building_logging_camp:1 "$pm_base$"
- pmg_base_building_fishing_wharf:1 "$pm_base$"
- pmg_base_building_whaling_station:1 "$pm_base$"
- pmg_base_building_oil_rig:1 "$pm_base$"
- pmg_base_building_suez_canal:1 "$pm_base$"
- pmg_base_building_panama_canal:1 "$pm_base$"
- pmg_base_building_railway:1 "$pm_base$"
- pmg_base_building_subsistence_farms:1 "$pm_base$"
- pmg_base_building_subsistence_orchards:1 "$pm_base$"
- pmg_base_building_subsistence_pastures:1 "$pm_base$"
+# Common
+ pm_base: "Первиний"
+ pmg_base_building_shipyards: "$pm_base$"
+ 
+ pmg_base_building_power_plant: "$pm_base$"
+ pmg_base_building_rye_farm: "$pm_base$"
+ pmg_base_building_wheat_farm: "$pm_base$"
+ pmg_base_building_rice_farm: "$pm_base$"
+ pmg_base_building_maize_farm: "$pm_base$"
+ pmg_base_building_millet_farm: "$pm_base$"
+ pmg_base_building_livestock_ranch: "$pm_base$"
+ pmg_base_building_gold_fields: "$pm_base$"
+ pmg_base_building_coffee_plantation: "$pm_base$"
+ pmg_base_building_cotton_plantation: "$pm_base$"
+ pmg_base_building_dye_plantation: "$pm_base$"
+ pmg_base_building_opium_plantation: "$pm_base$"
+ pmg_base_building_tea_plantation: "$pm_base$"
+ pmg_base_building_tobacco_plantation: "$pm_base$"
+ pmg_base_building_sugar_plantation: "$pm_base$"
+ pmg_base_building_banana_plantation: "$pm_base$"
+ pmg_base_building_silk_plantation: "$pm_base$"
+ pmg_base_building_rubber_plantation: "$pm_base$"
+ pmg_base_building_construction_sector: "$pm_base$"
+ pmg_base_building_port: "$pm_base$"
+ pmg_base_building_trade_center: "$pm_base$"
+ pmg_base_building_government_administration: "$pm_base$"
+ 
+ pmg_base_building_eiffel_tower: "$pm_base$"
+ pmg_base_building_logging_camp: "$pm_base$"
+ pmg_base_building_fishing_wharf: "$pm_base$"
+ pmg_base_building_whaling_station: "$pm_base$"
+ pmg_base_building_oil_rig: "$pm_base$"
+ pmg_base_building_suez_canal: "$pm_base$"
+ pmg_base_building_panama_canal: "$pm_base$"
+ pmg_base_building_railway: "$pm_base$"
+ pmg_base_building_subsistence_farms: "$pm_base$"
+ pmg_base_building_subsistence_orchards: "$pm_base$"
+ pmg_base_building_subsistence_pastures: "$pm_base$"
 
- pm_default_building_eiffel_tower:0 "Default Production"
- pmg_luxury_building_textile_mills:0 "Luxury Production"
- pmg_luxury_building_furniture_manufacturies:0 "Luxury Production"
- pmg_luxury_building_glassworks:0 "Luxury Production"
+ pm_default_building_eiffel_tower: "Звичайне виробництво"
 
- pm_disabled:0 "Disabled"
- pm_paused:0 "Construction Paused"
-  
- pm_pharmacies:0 "Pharmacies"
- pm_no_pharmacies:0 "No Medicine Production"
- pm_apothecaries:0 "Apothecaries"
- pm_no_amenities:0 "No Amenities"
- pm_market_stalls:0 "Market Stalls"
- pm_market_squares:0 "Market Squares"
- pm_covered_markets:0 "Covered Markets"
- pm_arcades:0 "Arcades"
- pm_no_maintenance:0 "Minimal Maintenance"
- pm_no_street_lighting:0 "Unlit Streets"
- pm_maintained_sewers:0 "Maintained Sewers"
- pm_gas_streetlights:0 "Gas Streelights"
- pm_electric_streetlights:0 "Electric Streetlights"
- pm_public_parks:0 "Public Parks"
- pm_no_public_transport:0 "Personal Transportation Only"
- pm_public_trams:0 "Public Trams"
- pm_public_motor_carriages:0 "Public Motor Carriages"
- pmg_urban_clergy:0 "Urban Churches"
- pm_state_urban_clergy:0 "State-Run Churches"
- pm_free_urban_clergy:0 "Free Churches"
-  
- pm_steam_power:0 "Steam Power"
- pm_disabled_steam_power:0 "No Steam Power"
- pm_watertube_boiler_building_furniture_manufacturies:0 "Water-tube Boiler"
- pm_watertube_boiler_building_tooling_workshops:0 "Water-tube Boiler"
- pm_watertube_boiler_building_paper_mills:0 "Water-tube Boiler"
- pm_watertube_boiler_building_steel_mills:0 "Water-tube Boiler"
- pm_watertube_boiler_building_motor_industry:0 "Water-tube Boiler"
- pm_rotary_valve_engine_building_furniture_manufacturies:0 "Rotary Valve Engine"
- pm_rotary_valve_engine_building_tooling_workshops:0 "Rotary Valve Engine"
- pm_rotary_valve_engine_building_paper_mills:0 "Rotary Valve Engine"
- pm_rotary_valve_engine_building_steel_mills:0 "Rotary Valve Engine"
- pm_rotary_valve_engine_building_motor_industry:0 "Rotary Valve Engine"
+ pm_disabled: "Вимкнено"
+ pm_paused: "Будівництво призупинено"
 
-  # Trains
- pm_no_passenger_trains:0 "Cargo Prioritization"
- pm_wooden_passenger_carriages:0 "Wooden Passenger Carriages"
- pm_steel_passenger_carriages:0 "Steel Passenger Carriages"
- pm_steam_trains:0 "Steam Trains"
- pm_electric_trains:0 "Electric Trains"
- pm_diesel_trains:0 "Diesel Trains"
- pm_non_standardized_gauges:0 "Non-Standardized Gauges"
- pm_broad_gauges:0 "Broad-Gauge Railway"
- pm_narrow_gauges:0 "Narrow-Gauge Railway"
- pm_no_military_trains:0 "Civilian Trains"
- pmg_armored_trains:0 "Armored Trains"
- pm_armored_trains:0 "Armored Trains"
- pm_railway_guns:0 "Railway Guns"
-  
-  # Food Industry
- pmg_canning:0 "Canning"
- pm_disabled_canning:0 "Jars"
- pm_cannery:0 "Canneries"
- pm_disabled_cannery:0 "No Canneries"
- pm_vacuum_canning:0 "Vacuum Canning"
-  
- pmg_distillery:0 "Distilleries"
- pm_disabled_distillery:0 "Prioritize Grocery Production"
- pm_pot_stills:0 "Pot Stills"
- pm_patent_stills:0 "Patent Stills"
- pm_bakery:0 "Bakeries"
- pm_sweeteners:0 "Sweeteners"
-  
-  # Textile Mills
- pm_cotton_gin:0 "Cotton Gins"
- pm_disabled_gin:0 "No Mechanical Gins"
- pm_system_gin:0 "System Gins"
-  
- pm_elastics:0 "Elastics"
- pm_disabled_elastics:0 "No Elastics"
- pm_masticators:0 "Masticators"
- pm_rubber_bands:0 "Rubber Bands"
-  
- pm_no_luxury_clothes:0 "Prioritize Non-Luxury Clothing"
- pm_luxury_clothes:0 "Luxury Clothing Production"
-  
-  # Furniture Manufacturies
- pm_textile_looms:0 "Textile Looms"
- pm_handcrafted_furniture:0 "Handcrafted Furniture"
- pm_machine_tools:0 "Machine Tools"
- pm_disabled_machine_tools:0 "No Machine Tools"
- pm_lathe:0 "Lathes"
- pm_mechanized_workshops:0 "Mechanized Workshops"
- pm_assembly_lines_building_furniture_manufacturies:0 "Assembly Lines"
- pm_assembly_lines_building_tooling_workshops:0 "Assembly Lines"
- pm_assembly_lines_building_motor_industry:0 "Assembly Lines"
- pm_no_luxuries:0 "Prioritize Non-Luxury Furniture"
- pm_luxury_furniture:0 "Luxury Furniture Production"
-  
-  # Glassworks
- pm_forest_glass:0 "Forest Glass"
- pmg_glassblowing:0 "Glassblowing"
- pm_disabled_glassblowing:0 "No Glassblowing"
- pm_crystal_glass:0 "Crystal Glass"
- pm_automatic_bottle_blowers:0 "Automatic Bottle Blowers"
-  
- pm_ceramics:0 "Ceramics"
- pm_disabled_ceramics:0 "Prioritize Glass Production"
- pm_bone_china:0 "Bone China"
-  
-  # Tooling Workshops
- pm_crude_tools:0 "Crude Tools"
- pm_pig_iron:0 "Pig Iron Tools"
- pm_steel:0 "Steel Tools"
- pm_muskets:0 "Muskets"
- pm_rifles:0 "Rifles"
- pm_repeaters:0 "Repeating Rifles"
- pm_bolt_action_rifles:0 "Bolt Action Rifles"
-  
-  # Paper Mills
- pm_pulp_pressing:0 "Pulp Pressing"
- pm_crude_paper:0 "Crude Paper"
- pm_sulfite_pulping:0 "Sulfite Pulping"
- pm_bleached_paper:0 "Paper Bleaching"
- pm_no_publishing:0 "No Publishing Industry"
- pm_newspapers:0 "Newspapers"
- pm_printing_presses:0 "Printing Presses"
-  
-  # Steel Mills
- pmg_steelmaking_process:0 "Steelmaking Process"
- pm_blister_steel_process:0 "Blister Steel Process"
- pm_bessemer_process:0 "Bessemer Process"
- pm_open_hearth_process:0 "Open Hearth Process"
- pm_electric_arc_process:0 "Electric Arc Process"
-  
- pm_munitions_plants:0 "Munitions Plants"
- pm_disabled_munitions_plants:0 "No Munition Plants"
- pm_cartridge_crafting:0 "Cartridge Crafting"
- pm_percussion_caps:0 "Percussion Caps"
- pm_explosive_shells:0 "Explosive Shells"
-  
-  # Motor Industry
- pm_steam_engines:0 "Steam Engines"
- pm_electric_engines:0 "Electric Engines"
- pm_diesel_engines:0 "Diesel Engines"
+#Міський центр
+ pm_pharmacies: "Аптеки"
+ pm_no_pharmacies: "Виробництво ліків відсутнє"
+ pm_apothecaries: "Аптекарі"
+ 
+ pmg_amenities: "Зручності"
+ pm_no_amenities: "Без зручностей"
+ pm_market_stalls: "Ринкові ятки"
+ pm_market_squares: "Ринкові площі"
+ pm_covered_markets: "Криті ринки"
+ pm_arcades: "Ринкові центри"
+ pm_no_maintenance: "Мінімальне обслуговування"
 
-  # War Machine Industry
- pmg_aeroplanes:0 "Aeroplanes"
- pm_no_aeroplane_production:0 "No Aeroplane Production"
- pm_aeroplane_production:0 "Aeroplane Production"
- pmg_tanks:0 "Tanks"
- pm_no_tank_production:0 "Prioritize Aeroplane Production"
- pm_tank_production:0 "Tank Production"
+ pmg_street_lighting: "Вуличне освітлення"
+ pm_no_street_lighting: "Неосвітлені вулиці"
+ pm_maintained_sewers: "Обслуговувана каналізація"
+ pm_gas_streetlights: "Вуличні ліхтарі"
+ pm_electric_streetlights: "Електричні ліхтарі"
+
+ pmg_public_transport: "Міські візниці"
+ pm_public_parks: "Громадські парки"
+ pm_no_public_transport: "Лише особисті візниці"
+ pm_public_trams: "Громадські колійніці"
+ pm_public_motor_carriages: "Громадські тороїзди"
+
+ pmg_urban_clergy: "Міські церкви"
+ pm_state_urban_clergy: "Державні церкви"
+ pm_free_urban_clergy: "Вільні церкви"
+
+pm_automation_disabled: "Ручна збірка"
+pm_automation_disabled: "Ручна збірка"
+pm_steam_power: "Парова потужність"
+pm_disabled_steam_power: "Без парової потужності"
+ 
+# Trains
+ pm_no_passenger_trains: "Пріоритезація вантажу"
+ pm_wooden_passenger_carriages: "Дерев'яні вагони"
+ pm_steel_passenger_carriages: "Сталеві вагони"
+ pm_steam_trains: "Парові патяги"
+ pm_electric_trains: "Електрічні потяги"
+ pm_diesel_trains: "Дізельні потяги"
+ pm_non_standardized_gauges: "Нестандартизовані калібри"
+ pm_broad_gauges: "Ширококолійна залізниця"
+ pm_narrow_gauges: "Вузькоколійна залізниця"
+ pm_no_military_trains: "Цивільні поїзди"
+ pmg_armored_trains: "Бронепоїзди"
+ pm_armored_trains: "Бронепоїзди"
+ pm_railway_guns: "Залізничні гармати"
   
-  # Foundries
+# Food Industry
+ pmg_canning: "Консервування"
+ pm_disabled_canning: "Закрутки"
+ pm_cannery: "Консервування"
+ pm_disabled_cannery: "Неконсервованне"
+ pm_vacuum_canning: "Вакуумне консервування"
+  
+ pmg_distillery: "Перепускання"
+ pm_disabled_distillery: "Пріоритет на бакалію"
+ pm_pot_stills: "Перепускання через горшики"
+ pm_patent_stills: "Перепускання через обладнання"
+
+ pmg_base_building_food_industry: "Тип випічки"
+ pm_bakery: "Варні"
+ pm_sweeteners: "Сластівниці"
+ pm_baking_powder: "Розпушувач"
+  
+# Textile Mills
+ pmg_base_building_textile_mills: "Обладнання"
+ pm_handsewn_clothes: "Ручна робота"
+ pm_dye_workshops: "Фарбні майстерні"
+ pm_sewing_machines: "Швейні машинки"
+ pm_electric_sewing_machines: "Електричні машинки"
+
+ pmg_luxury_building_textile_mills: "Розкішне виробництво"
+ pm_no_luxury_clothes: "Нерозкішний одяг"
+ pm_craftsman_sewing: "Швейні майстри"
+ pm_elastics: "Пружний одяг"
+
+ pmg_automation_building_textile_mills: "Тип ткацтва"
+ pm_traditional_looms: "Традиційне ткацтво"
+ pm_mechanized_looms: "Механізоване ткацтво"
+ pm_automatic_power_looms: "Автоматичне ткацтво"
+
+ pm_cotton_gin: "Бавовноочисники"
+ pm_system_gin: "Система бававноочистки"
+ #pm_disabled_gin: "Без бавовноочисників"
+ #pm_disabled_elastics: "Непружні"
+ #pm_masticators: "Мастикатори"
+ #pm_rubber_bands: "Ризиночки"
+ #pm_luxury_clothes: "Розкішний одяг"
+ 
+# Furniture Manufacturies
+ pmg_base_building_furniture_manufacturies: "Тип зборки"
+ pm_handcrafted_furniture: "Ручна зборка"
+ pm_lathe: "Токарні верстати"
+ pm_mechanized_workshops: "Механізовані майстерні"
+
+ pmg_luxury_building_furniture_manufacturies: "Розкішне виробництво"
+ pm_no_luxuries: "Не розкішна мебля"
+ pm_luxury_furniture: "Розкішна мебля"
+ pm_precision_tools: "Точні інструменти"
+
+ pmg_automation_building_furniture_manufacturies: "Автоматизація"
+ pm_watertube_boiler_building_furniture_manufacturies: "Водотрубні котли"
+ pm_rotary_valve_engine_building_furniture_manufacturies: "Роторні двигуни"
+ pm_assembly_lines_building_furniture_manufacturies: "Складальні лінії"
+
+ pm_textile_looms: "Ткацькі верстати"
+ pm_machine_tools: "Верстати"
+ pm_disabled_machine_tools: "Без верстатів"
+ 
+# Glassworks
+ pmg_base_building_glassworks: "Тип скла"
+ pm_forest_glass: "Кустарне скло"
+ pm_leaded_glass: "Свінцеве скло"
+ pm_crystal_glass: "Кришталеве скло"
+ pm_houseware_plastics: "Посуд із пластику"
+
+ pmg_luxury_building_glassworks: "Розкішне виробництво"
+ pm_disabled_ceramics: "Скляне виробництво"
+ pm_ceramics: "Паглине виробництво"
+ pm_bone_china: "Парцелянове виробництво"
+
+ 
+ pmg_glassblowing: "Масове виробництво"
+ pm_manual_glassblowing: "Ручне склодувство"
+ pm_automatic_bottle_blowers: "Автоматичні склодувки"
+ pm_disabled_glassblowing: "Без склодувства"
+ 
+# Tooling Workshops
+ pmg_base_building_tooling_workshops: "Тип інструментів"
+ pm_crude_tools: "Кустарні інструменти"
+ pm_pig_iron: "Залізні інструменти"
+ pm_steel: "Сталеві інструменти"
+
+ pmg_automation_building_tooling_workshops: "Автоматізація"
+ pm_watertube_boiler_building_tooling_workshops: "Водотрубний котел"
+ pm_rotary_valve_engine_building_tooling_workshops: "Роторний клапанний двигун"
+ pm_assembly_lines_building_tooling_workshops: "Складальні лінії"
+
+#Військова ладня
+ pmg_firearms_manufacturing: "Модель вогнепальної зброї"
+ pm_muskets: "Мушкет"
+ pm_rifles: "Гвинтівка"
+ pm_repeaters: "Гвинтівка Генрі"
+ pm_bolt_action_rifles: "Гвинтівка з затвором"
+
+ pmg_foundries: "Модель гармат"
+ pm_no_artillery_production: "Стрілецька зброя"
+ pm_cannons: "Гармата"
+ pm_smoothbores: "Гладкоствольно гармата"
+ pm_breech_loaders: "Казенна гармата"
+
+pm_artillery_production: "Виробництво артилерії"
+  
+# Paper Mills
+ pmg_base_building_paper_mills: "$pm_base$"
+ pm_pulp_pressing: "Пресування клітковини"
+ pm_sulfite_pulping: "Сірчана клітковина"
+ pm_bleached_paper: "Відбілювання паперу"
+ 
+ pmg_automation_building_paper_mills: "Автоматизація"
+ pm_watertube_boiler_building_paper_mills: "Водотрубні котли"
+ pm_rotary_valve_engine_building_paper_mills: "Роторні двигуни"
+
+pm_crude_paper: "Грубий папір"
+pm_no_publishing: "Відсутність видавничої справи"
+pm_newspapers: "Вісниці"
+pm_printing_presses: "Друкарські машини"
+  
+# Steel Mills
+ pmg_steelmaking_process: "Процеси виготовлення"
+ pm_blister_steel_process: "Блістерний процес"
+ pm_bessemer_process: "Бесемерівський процес"
+ pm_open_hearth_process: "Мартенівський процес"
+ pm_electric_arc_process: "Електродуговий процес"
+  
+ pmg_automation_building_steel_mills: "Автоматизація"
+ pm_watertube_boiler_building_steel_mills: "Водотрубний котел"
+ pm_rotary_valve_engine_building_steel_mills: "Роторний клапанний двигун"
+
+pm_munitions_plants: "Виробництво набоїв"
+pm_disabled_munitions_plants: "Без виробництва набоїв"
+pm_cartridge_crafting: "Виготовлення набоїв"
+
+#Виробня набоїв
+ pmg_base_building_munition_plants: "Тип набоїв"
+ pm_percussion_caps:0 "Капсюльні набої"
+ pm_explosive_shells:0 "Вибухові набої"
+  
+# Motor Industry
+ pmg_base_building_motor_industry: "Модель рушія"
+ pm_steam_engines: "Парові рушії"
+ pm_electric_engines: "Електрицні рушії"
+ pm_diesel_engines: "Дізельні рушії"
+
+ pmg_automobile_production: "Виробництво"
+ pm_automobiles_disabled: "Виробництво рушіїв"
+ pm_automobile_production: "Виробництво автомобілів"
+
+ pmg_automation_building_motor_industry: "Автоматизація"
+ pm_watertube_boiler_building_motor_industry: "Водотрубний котел"
+ pm_rotary_valve_engine_building_motor_industry: "Роторний клапанний двигун"
+ pm_assembly_lines_building_motor_industry: "Складальні лінії"
+
+# War Machine Industry
+ pmg_aeroplanes: "Літаки"
+ pm_no_aeroplane_production: "Без виробництва літаків"
+ pm_aeroplane_production: "Виробництво літаків"
+ pmg_tanks: "Тип техніки"
+ pm_no_tank_production: "Літаки"
+ pm_tank_production: "Танки"
+  
+# Foundries
  pm_civilian:0 "Civilian"
  pm_wartime:0 "Wartime"
 
-  # Arts Academy
- pmg_schools_of_art:0 "Schools of Art"
- pm_traditional_art:0 "Traditional Art"
- pm_realist_art:0 "Realist Art"
- pm_photographic_art:0 "Photographic Art"
- pm_film_art:0 "Film Art"
- pmg_ownership_building_arts_academy:0 "Patronage"
- pm_traditional_patronage:0 "Traditional Patronage"
- pm_bourgeoisie_patronage:0 "Bourgeoisie Patronage"
- pm_independent_artists:0 "Independent Artists"
+#Академія мистецтв
+ pmg_base_building_arts_academy: "Тип мистецтва"
+ pm_traditional_art: "Традиційне мистецтво"
+ pm_realist_art: "Реалістичне мистецтво"
+ pm_photographic_art: "Фотографічне мистецтво"
+ pm_film_art: "Кіномистецтво"
 
-  # University
- pm_analytical_philosophy_department:0 "Analytical Philosophy Department"
- pm_philosophy_department:0 "Philosophy Department"
- pm_scholastic_education:0 "Scholastic Education"
+ pmg_ownership_building_arts_academy: "Доброчинність"
+ pm_traditional_patronage: "Традиційна доброчинність"
+ pm_bourgeoisie_patronage: "Буржуазійна доброчинність"
+ pm_independent_artists: "Незалежні артисти"
+
+ pmg_schools_of_art: "Школа мистецтв"
+
+# University
+ pmg_base_building_university: "Тип освіти"
+ pm_scholastic_education: "Схоластична освіта"
+ pm_philosophy_department: "Кафедра філософії"
+ pm_analytical_philosophy_department: "Кафедра аналітичної філософії"
  
- pmg_university_academia:1 "Secularism"
- pm_secular_academia:0 "Secular Academia"
- pm_religious_academia:0 "Clerical Educators"
+ pmg_university_academia: "Світянство"
+ pm_secular_academia: "Світянська Академія"
+ pm_religious_academia: "Релігійна академія"
   
-  # Fishing Wharf
+# Fishing Wharf
  pm_fish_oil:0 "Fish Oil"
  pm_disabled_fish_oil:0 "Prioritize Fish Production"
  pm_oil_extraction:0 "Oil Extraction"
@@ -246,7 +308,7 @@
  pm_wooden_whaling_ships:0 "Whaling Fleet"
  pm_steam_whaling_ships:0 "Steam-Powered Whalers"
  
-  # Grain Farms
+# Grain Farms
  pm_simple_farming:0 "Simple Farming"
  pm_simple_farming_building_rice_farm:0 "Simple Farming"
  pm_intensive_farming:0 "Intensive Farming"
@@ -265,7 +327,7 @@
  pm_tractors:0 "Tractors"
  pm_compression_ignition_tractors:0 "Compression Ignition Tractors"
 
-  # Ranches
+# Ranches
  pm_simple_ranch:0 "Simple Ranch"
  pm_intensive_grazing_ranch:0 "Intensive Grazing Ranch"
  pm_butchering_tools:0 "Butchering Tools"
@@ -422,10 +484,6 @@
  pm_radios:0 "Radio Production"
  pm_telephones:0 "Telephone Production"
 
-  #Textile Mills
- pm_dye_workshops:0 "Dye Workshops"
- pm_handsewn_clothes:0 "Handsewn Clothes"
-  
   # Logging
  pm_no_equipment:0 "Horse Drawn"
  pm_simple_forestry:0 "Simple Forestry"
@@ -475,11 +533,11 @@
  pm_battlefleet_tactics:0 "Battlefleet Tactics"
 
   # Unsorted
- pmg_amenities:0 "Amenities"
+ 
  pm_publishing:0 "Publishing Industry"
  pm_maintenance:0 "Maintenance"
- pmg_street_lighting:0 "Street Lighting"
- pmg_public_transport:0 "Public Transport"
+ 
+ 
  pm_organisation:0 "Organization"
  pm_citizen_information:0 "Citizen Information"
  pm_railway_gauges:0 "Railway Gauges"
@@ -547,26 +605,24 @@
  pm_tanker_cars:0 "Tanker Cars"
  pm_dye_production:1 "Synthetic Dye"
  pmg_synthetic_silk:1 "Synthetic Silk"
- pm_cannons:0 "Cannons"
- pm_smoothbores:0 "Smoothbores"
- pm_breech_loaders:0 "Breech Loaders"
- pm_automation_disabled:0 "Hand Assembly"
- pm_automobiles_disabled:0 "Prioritize Engine Production"
+ 
+ 
+ 
  pm_hydroelectric_plant:0 "Hydroelectric Plant"
  pm_coal-fired_plant:0 "Coal-Fired Plant"
  pm_oil-fired_plant:0 "Oil-Fired Plant"
- pm_houseware_plastics:0 "Houseware Plastics"
- pm_baking_powder:0 "Baking Powder"
+ 
+ 
  pm_manual_dough_processing:0 "Manual Dough Processing"
  pm_automated_bakery:0 "Automated Bakery"
- pm_precision_tools:0 "Precision Tools"
+ 
  
  pm_munition_plants:0 "Munition Plants"
  pm_no_munitions:0 "No Munitions Production"
  pm_synthetics:0 "Synthetics"
  pm_no_synthetics:0 "No Synthetics Production"
- pmg_firearms_manufacturing:0 "Firearms Manufacturing"
- pmg_foundries:0 "Foundries"
+ 
+ 
   
   # Home Workshops
   
