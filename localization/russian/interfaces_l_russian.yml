@@ -700,7 +700,7 @@
 
  NO_ACTIVE_SEA_BATTLES:0 "No Active Sea Battles"
  NO_ENDED_SEA_BATTLES:0 "No Ended Sea Battles"
- SHIPPING_LANES:0 "Shipping Lanes"
+ SHIPPING_LANES: "Судноплавні шляхи"
  NO_CONVOY_RAIDING_ADMIRALS:0 "No [Concept('concept_admiral', '$concept_admirals$')] are [Concept('concept_raid_convoys', '$concept_convoy_raiding$')] here"
  NO_INTERCEPTING_ADMIRALS:0 "No [Concept('concept_admiral', '$concept_admirals$')] are patrolling here"
 
@@ -711,7 +711,7 @@
  ORIGIN_STATE_TOTAL_CONVOYS_USED_TOOLTIP:0 "Total number of [concept_convoys] used by [Concept('concept_shipping_lane', '$concept_shipping_lanes$')] to/from [State.GetName] through this sea region"
  ORIGIN_STATE_TOTAL_NUMBER_OF_PORT_CONNECTIONS:0 "#v [State.GetTotalPortConnectionsViaState]#! [SelectLocalization(GreaterThan_int32( State.GetTotalPortConnectionsViaState, '(int32)1'), Concept('concept_port_connection', '$concept_port_connections$'), concept_port_connection )]"
 
- COUNTRY_SHIPPING_LANES:0 "[Country.GetAdjectiveNoFlag] [Concept('concept_shipping_lane', '$concept_shipping_lanes$')]"
+ COUNTRY_SHIPPING_LANES: "[Country.GetAdjectiveNoFlag]і [Concept('concept_shipping_lane', '$concept_shipping_lanes$')|l]"
  COUNTRY_SHIPPING_LANES_NETWORK_STRENGTH:0 "#$SUPPLY_NETWORK_STRENGTH_COLOR$ [Country.GetSupplyNetworkStrength|%0]#!"
  SHIPPING_LANE_GOODS_TRADED:0 "[TradeRoute.GetGoods.GetName]"
  SHIPPING_LANE_NUMBER_GOODS_TRADED:0 "#v [TradeRoute.GetTradeQuantity|D]#! [TradeRoute.GetGoods.GetTextIcon]"
@@ -1707,7 +1707,7 @@
  CONSTRUCTION_QUEUE_ITEM_INVALID:0 "#header [Building.GetName] in [State.GetName]#!\n$TOOLTIP_DELIMITER$\n$INVALID_DESC$"
  CONSTRUCTION_SPEED_BASE_TOOLTIP:4 "#tooltip_header @construction![Nbsp][concept_construction]#![AddLocalizationIf(Country.IsConstructionPaused, '$CONSTRUCTION_IS_PAUSED$')]\nTotal: #v [Country.CalcBaseConstructionSpeed|2]#!\nBeing used: #v [Country.CalcUsedConstruction|0]/[Country.CalcBaseConstructionSpeed|0]#!\n$TOOLTIP_DELIMITER$\n[Country.GetBaseConstructionSpeedDesc]"
  CONSTRUCTION_QUEUE_TOOLTIP: "[Country.GetConstructionQueueDesc]"
- CONSTRUCTION_QUEUE_DESC: "#header [concept_construction]#! у [Concept('concept_country', '$concept_country_dat$')|l] [Country.GetName][AddLocalizationIf(Country.IsConstructionPaused, '$CONSTRUCTION_IS_PAUSED$')]\n$TOOLTIP_DELIMITER$\n[Country.GetName] is using #v #tooltippable #tooltip:[Country.GetTooltipTag],CONSTRUCTION_SPEED_USED_TOOLTIP [GetPlayer.CalcUsedConstruction|2]#!#!#! [concept_construction] each week and produces a total of #v #tooltippable #tooltip:[Country.GetTooltipTag],CONSTRUCTION_SPEED_BASE_TOOLTIP [Country.CalcBaseConstructionSpeed|2]#!#!#! $concept_construction$ each week.\n\nThere are #v #tooltippable #tooltip:[Country.GetTooltipTag],CONSTRUCTION_QUEUE_ACTIVE_PROJECTS [Country.GetNumActiveConstructionQueueElements]#!#!#! project(s) [concept_under_construction] and #v #tooltippable #tooltip:[Country.GetTooltipTag],CONSTRUCTION_QUEUE_INACTIVE_PROJECTS [Country.GetNumInactiveConstructionQueueElements]#!#!#! additional projects queued in the [concept_construction_queue]\n\n"
+ CONSTRUCTION_QUEUE_DESC: "#header [concept_construction]#! у [Concept('concept_country', '$concept_country_dat$')|l] [Country.GetName][AddLocalizationIf(Country.IsConstructionPaused, '$CONSTRUCTION_IS_PAUSED$')]\n$TOOLTIP_DELIMITER$\n[Country.GetName] щомісячно використовує #v #tooltippable #tooltip:[Country.GetTooltipTag],CONSTRUCTION_SPEED_USED_TOOLTIP [GetPlayer.CalcUsedConstruction|2]#!#!#! [Concept('concept_construction', '$concept_construction_gen$')|l] та виробляє #tooltippable #tooltip:[Country.GetTooltipTag],CONSTRUCTION_SPEED_BASE_TOOLTIP [Country.CalcBaseConstructionSpeed|2]#!#!#! [Concept('concept_construction', '$concept_construction_gen$')|l].\n\n[concept_under_construction] #v #tooltippable #tooltip:[Country.GetTooltipTag],CONSTRUCTION_QUEUE_ACTIVE_PROJECTS [Country.GetNumActiveConstructionQueueElements]#!#!#! проєкт(-ів) та #v #tooltippable #tooltip:[Country.GetTooltipTag],CONSTRUCTION_QUEUE_INACTIVE_PROJECTS [Country.GetNumInactiveConstructionQueueElements]#!#!#! додаткових проєкт(-ів) очікують у [Concept('concept_construction_queue', '$concept_construction_queue_loc$')|l]\n\n"
  CONSTRUCTION_IS_PAUSED:0 "\nAll $concept_construction$ is currently #b Paused#!"
  CONSTRUCTION_QUEUE_ACTIVE_PROJECTS:0 "[Country.GetActiveConstructionProjectsDesc]"
  CONSTRUCTION_QUEUE_INACTIVE_PROJECTS:0 "[Country.GetInactiveConstructionProjectsDesc]"

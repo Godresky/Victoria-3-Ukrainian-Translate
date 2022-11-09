@@ -458,6 +458,7 @@
  concept_character_trait_desc:1 "Personality $concept_character_traits_short$, Skill $concept_character_traits_short$, or Conditions that impact a [Concept('concept_character','$concept_character_possessive$')] ability to carry out their current [concept_character_role]. More or different $concept_character_traits$ may develop as the $concept_character$ gains [concept_life_experience]."
 
  concept_construction_queue: "Черга на будівництво"
+ concept_construction_queue_loc: "Черзі на будівництво"
  concept_construction_queue_desc:2 "Any [Concept('concept_building', '$concept_buildings$')] that have been set to be expanded, but are currently not using any [concept_construction], are placed in the $concept_construction_queue$. Whenever any $concept_construction$ becomes available, the first $concept_building$ in the $concept_construction_queue$ will start using that $concept_construction$ and then switch to being [concept_under_construction]."
 
  concept_under_construction: "Будується"
@@ -1325,6 +1326,7 @@
  concept_budget_diplomatic_pacts_desc:1 "[concept_money] collected from or remitted to the other party in a [concept_diplomatic_pact]."
 
  concept_construction: "Будівництво"
+ concept_construction_gen: "Будівництва"
  concept_construction_adj_many: "Будівельні"
  concept_construct: "Будувати"
  concept_construction_desc:3 "@construction! $concept_construction$ is produced by the [SelectLocalization(GetPlayer.IsValid,'concept_construction_desc_added','Construction Sector')] and is used to construct [Concept('concept_building', '$concept_buildings$')]."
@@ -1453,8 +1455,8 @@
  concept_convoys_desc:2 "$concept_convoys$ are produced by [SelectLocalization(GetPlayer.IsValid,'concept_convoys_desc_added','Port')] $concept_buildings$ and are required to operate [Concept('concept_shipping_lane','$concept_shipping_lanes$')]."
  concept_convoys_desc_added:0 "[GetBuildingType('building_port').GetName]"
 
- concept_shipping_lane:0 "Shipping Lane"
- concept_shipping_lanes:0 "Shipping Lanes"
+ concept_shipping_lane: "Судноплавний шлях"
+ concept_shipping_lanes: "Судноплавні шляхи"
  concept_shipping_lane_desc:1 "A $concept_shipping_lane$ is a naval connection of [concept_convoys] between two coastal [Concept('concept_state','$concept_states$')] to move [Concept('concept_good','$concept_goods$')] and [Concept('concept_pop','$concept_pops$')] from place to place. A $concept_shipping_lane$ can be either a [concept_trade_route], [concept_supply_route], or a [concept_port_connection]."
 
  concept_raid_convoys:0 "Raid Convoys"
@@ -1467,8 +1469,8 @@
  concept_convoy_cost_desc:2 "The $concept_convoy_cost$ of a [concept_shipping_lane] is determined by how many [Concept('concept_good','$concept_goods$')] a [concept_trade_route] moves, how many [Concept('concept_battalion','$concept_battalions$')] a [concept_supply_route] provides for, or how much [concept_infrastructure_usage] a [concept_port_connection] facilitates [concept_market_access] for. This more [Concept('concept_sea_node','$concept_sea_nodes$')] $concept_shipping_lane$ must pass through on its way to the destination, the higher the total $concept_convoy_cost$. The total $concept_convoy_cost$ of all $concept_shipping_lanes$ is compared to the total number of [concept_convoys] provided by [SelectLocalization(GetPlayer.IsValid,'concept_convoy_cost_desc_added','Port')] $concept_buildings$ to determine the strength of your [concept_supply_network]."
  concept_convoy_cost_desc_added:0 "[GetBuildingType('building_port').GetName]"
 
- concept_port_connection:0 "Port Connection"
- concept_port_connections:0 "Port Connections"
+ concept_port_connection: "Портове приєднання"
+ concept_port_connections: "Портові приєднання"
  concept_port_connection_desc:3 "A [concept_shipping_lane] connecting one or several [Concept('concept_state','$concept_states$')] otherwise unreachable overland to the [concept_market_capital], ensuring [concept_market_access] to remote regions. $concept_port_connections$ require a [SelectLocalization(GetPlayer.IsValid,'concept_port_connection_desc_added','Port')] in both ends. The [concept_convoy_cost] of a $concept_port_connection$ is dependent on the total [concept_infrastructure_usage] of the [Concept('concept_state','$concept_states$')] it's connecting."
  concept_port_connection_desc_added:0 "[GetBuildingType('building_port').GetName]"
 

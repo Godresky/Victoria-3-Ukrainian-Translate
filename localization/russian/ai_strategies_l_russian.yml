@@ -98,7 +98,7 @@
  ai_strategy_armed_isolationism_desc:0 "[COUNTRY.GetName] wants to keep the world at bay through armed isolationism."
  ai_strategy_maintain_mandate_of_heaven: "Збереження небесного мандату"
  ai_strategy_maintain_mandate_of_heaven_desc:0 "[COUNTRY.GetName] seeks to maintain their rule by preserving the Mandate of Heaven."
- ai_strategy_economic_imperialism: "Економічний імперіалізм"
+ ai_strategy_economic_imperialism: "Економічний імперіялізм"
  ai_strategy_economic_imperialism_desc:0 "[COUNTRY.GetName] wants to expand their [concept_market] and open up isolated [Concept('concept_country', '$concept_countries$')]."
  ai_strategy_unify_germany: "Об'єднання Німеччини"
  ai_strategy_unify_germany_desc:0 "[COUNTRY.GetName] wants to unite the German nations under their banner."
