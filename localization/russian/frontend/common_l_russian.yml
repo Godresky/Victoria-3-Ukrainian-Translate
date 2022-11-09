@@ -25,7 +25,7 @@
  DISMISS_CS_TT:0 "#T $DISMISS$#!\nDismiss this Event. Events of the same type will still appear, only this specific one will be hidden.\n\nYou can bring this event back by using the Reset button in this view."
  DISMISS_ALL_TT:0 "#T $DISMISS_ALL$#!"
  DISMISS_SUGGESTION_TT:0 "#T $DISMISS$#!\nDismiss this suggestion. A new suggestion will appear every [GetDefine('NSuggestions', 'PLAYER_SUGGESTION_MONTHS_UPDATE')] months."
- RIGHT_CLICK_DISMISS:0 "#I Right-click to dismiss#!"
+ RIGHT_CLICK_DISMISS: "#I Правий клац, щоб приховати#!"
  GLOBAL_OBSERVER:1 "[Concept('concept_observer_mode','$concept_observing$')]"
  PLAYER_OBSERVER:1 "[Concept('concept_observer_mode','$concept_observing$')] as [GetPlayer.GetShortUINameNotMeNoTooltip] ([SelectLocalization(GetPlayer.IsPlayer, 'OBSERVER_PLAYER_NAME', 'OBSERVER_AI')])"
  OBSERVER_PLAYER_NAME: "Грає [GetPlayer.PlayerName]"

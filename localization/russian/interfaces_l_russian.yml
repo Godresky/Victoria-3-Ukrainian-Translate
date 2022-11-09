@@ -3,7 +3,7 @@
  TAB:0 "   "
  DASH_WITH_SPACING:0 " - "
  POP_WORKPLACE_DAY_LABOURER:0 "Day Laborer"
- POP_WORKPLACE_UNEMPLOYED: "[Concept('concept_unemployed', '$concept_unemployed_many$')]"
+ POP_WORKPLACE_UNEMPLOYED: "[Concept('concept_unemployed', '$concept_unemployed$')]"
  POP_WORKPLACE_EMPLOYED:0 "$NAME$"
  POP_WORKPLACE_DAY_LABOURER_LIST_ENTRY:0 "$WORKPLACE$: $WORKERS|v$"
  POP_WORKPLACE_DAY_LABOURER_LIST: "Працює в:\n$LIST$"
@@ -120,7 +120,7 @@
  LACK:0 "lack of"
  INTEREST_IN: "[concept_interest]"
  PRESTIGE: "Престиж"
- RANK: "Чин"
+ RANK: "Ранґ"
  PROGRESS: "Поступ"
 
  INSTITUTION_EMPTY_STATE: "У вас немає [Concept('concept_law', '$concept_laws_gen$')|l], яких надають будь-яких [Concept('concept_institution', '$concept_institutions_gen$')|l]"
@@ -236,11 +236,11 @@
  NUM_STATES_TOOLTIP_treaty_port:0 "#header [SelectLocalization($MULTIPLE$,'[concept_treaty_port]','[Concept('concept_treaty_port','$concept_treaty_ports$')]')] in [Country.GetNameNoFlag]: $VAL|0v$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
  NUM_STATES_TOOLTIP_count:0 "#header [SelectLocalization($MULTIPLE$,'[concept_state]','[Concept('concept_state','$concept_states$')]')] in [Country.GetNameNoFlag]: $VAL|0v$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
 
- PROCESS_EXPENSES:0 "Expenses:"
- PROCESS_REVENUE:0 "Revenue:"
- PROCESS_BALANCE:1 "Weekly [concept_building_balance]:"
- VACANCIES:0 "Vacancies"
- NO_VACANCIES:0 "Building Is Fully Employed"
+ PROCESS_EXPENSES: "Витрати:"
+ PROCESS_REVENUE: "Виручка:"
+ PROCESS_BALANCE: "Щотижневий [concept_building_balance|l]:"
+ VACANCIES: "Вакансії"
+ NO_VACANCIES: "Будівля немає вакансій"
 
  NOTIFICATION_BUILDING_FULLY_EMPLOYED:0 "[Building.GetName|v] is fully employed in [State.GetName]"
  NOTIFICATION_STATE_AVERAGE_SOL_INCREASED:0 "[concept_sol|v] increased to $VAL|+$ in [State.GetName|v]"
@@ -1319,7 +1319,7 @@
  URBAN_CENTER: "Міський центр"
  LEVEL: "Розмір:"
  STANDARD_OF_LIVING_TITLE:0 "[concept_sol]:"
- UNEMPLOYED_TITLE: "[Concept('concept_unemployed', '$concept_unemployed_many$')]:"
+ UNEMPLOYED_TITLE: "[Concept('concept_unemployed', '$concept_unemployed$')]:"
  TOOLTIP_VIEW_GRID: "#header Перемкнути режим#!"
  TOOLTIP_VIEW_LIST: "#header Перемкнути режим#!"
 
@@ -1424,7 +1424,7 @@
  RADICALS_TOOLTIP: "#tooltip_header $RADICALS$#!\nНаразі у нас є #v [Country.GetNumRadicals|*2]#! [Concept('concept_radical','$concept_radicals_gen$')|l] серед #v [Country.GetTotalPopulation|*2]#! населення [Concept('concept_country','$concept_country_gen$')|l] [Country.GetName]\n\nКількість [Concept('concept_radical','$concept_radicals_gen$')|l] змінилася на #v #tooltippable #tooltip:[Country.GetTooltipTag],RADICALS_CHANGE_TOOLTIP [Country.GetTotalNumRadicalsChange|*=-]#!#!#! з [Country.GetRadicalsLoyalistsChangeStartDate|v][ConcatIfNeitherEmpty('\n\n',SelectLocalization( GreaterThan_int32(Country.CalcNumStatesInTurmoil, '(int32)0'), 'STATES_IN_TURMOIL', '' ))][ConcatIfNeitherEmpty('\n\n',SelectLocalization( Country.HasIGApprovalFromRadicals, 'RADICALS_IG_APPROVAL', '' ))]"
  LOYALISTS_TOOLTIP: "#tooltip_header $LOYALISTS$#!\nНаразі у нас є #v [Country.GetNumLoyalists|*2]#! [Concept('concept_loyalist','$concept_loyalists_gen$')|l] серед #v [Country.GetTotalPopulation|*2]#! населення [Concept('concept_country','$concept_country_gen$')|l] [Country.GetName]\n\nКількість [Concept('concept_loyalist','$concept_loyalists_gen$')|l] змінилася на #v #tooltippable #tooltip:[Country.GetTooltipTag],LOYALISTS_CHANGE_TOOLTIP [Country.GetTotalNumLoyalistsChange|*=+]#!#!#! з [Country.GetRadicalsLoyalistsChangeStartDate|v][ConcatIfNeitherEmpty('\n\n',SelectLocalization( Country.HasIGApprovalFromLoyalists, 'LOYALISTS_IG_APPROVAL', '' ))]"
  POP_TOOLTIP_DELAYED:0 "\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty( SelectLocalization( GreaterThan_int32( GetPlayer.GetPeopleAbroad, '(int32)0' ), 'INCORPORATED_POPULATION', ''), '\n')][ConcatIfNeitherEmpty( SelectLocalization( GreaterThan_int32( GetPlayer.GetPeopleAbroad, '(int32)0' ), 'UNINCORPORATED_POPULATION', ''), '\n\n')]$POP_TOOLTIP_DELAYED_EMPLOYMENT_DETAIL$"
- POP_TOOLTIP_DELAYED_EMPLOYMENT_DETAIL: "Працевлаштовані: #variable [Country.GetSalariedWorkingAdults|K]#!\nСеляни: [Country.GetSubsistingWorkingAdults|Kv]\n[Concept('concept_unemployed','$concept_unemployed_many$')]: [Country.GetUnemployedWorkingAdults|Kv]\n[concept_dependents]: #variable [Country.GetDependents|K]#!"
+ POP_TOOLTIP_DELAYED_EMPLOYMENT_DETAIL: "Працевлаштовані: #variable [Country.GetSalariedWorkingAdults|K]#!\nСеляни: [Country.GetSubsistingWorkingAdults|Kv]\n[Concept('concept_unemployed','$concept_unemployed$')]: [Country.GetUnemployedWorkingAdults|Kv]\n[concept_dependents]: #variable [Country.GetDependents|K]#!"
  COST_POLITICAL:0 "@aut!#BOLD #V $COST|1$#!#!"
  COST_DIPLOMATIC:0 "@inf!#BOLD #V $COST|1$#!#!"
  MISSING_RESOURCES_COLON:0 "#N Missing Resources:#! "
@@ -1590,7 +1590,7 @@
  ZOOM_TO_BUILDING_STATE: "Приблизити до [Building.AccessState.GetName]"
  ZOOM_TO_EVENT_WINDOW_STATE: "Приблизити до [EventWindow.GetEvent.GetState.GetName]"
  ZOOM_TO_COUNTRY_CAPITAL: "Приблизити до столиці [Country.AccessCapital.GetName]"
- ZOOM_TO_MARKET_CAPITAL: "Приблизити до [Concept('concept_market_capital','$concept_market_capitals$')] [Market.AccessMarketCapital.GetName]"
+ ZOOM_TO_MARKET_CAPITAL: "Приблизити до [Concept('concept_market_capital','$concept_market_capitals$')|l] [Market.AccessMarketCapital.GetName]"
  ZOOM_TO_STATE: "Приблизити до [Concept('concept_state', '$concept_state_gen$')|l] [State.GetName]"
  ZOOM_TO_LOCATION: "Приблизити до місцини"
 
@@ -1679,7 +1679,7 @@
 
  WARNING: "@warning! "
 
- BUILDING_POPULATION_STATUS:0 "Employees\n[Building.GetNoOfEmployed|Kv]"
+ BUILDING_POPULATION_STATUS: "Співробітники\n[Building.GetNoOfEmployed|Kv]"
 
  UNDER_COLONIZATION:0 "Growing [concept_colony]"
  BEING_COLONIZED:0 "Being [Concept('concept_colony', '$concept_colonized$')] by\n[SelectLocalization(EqualTo_int32(State.GetNumColonizers,'(int32)1'),State.GetColonizers('STATE_REGION_COLONIZER_SINGLE_WIDGET'),State.GetColonizers('STATE_COLONIZER_WIDGET_ITEM'))]"
@@ -1740,7 +1740,7 @@
  USED_VS_UNUSED_CONSTRUCTION:0 "#v [GetPlayer.CalcUsedConstruction|0]/[GetPlayer.CalcBaseConstructionSpeed|0]#!"
  IN_CONSTRUCTION_QUEUE:1 "#v [GetPlayer.GetNumInactiveConstructionQueueElements|=]#!"
  IN_CONSTRUCTION_QUEUE_TOOLTIP:1 "#header [GetPlayer.GetNumInactiveConstructionQueueElements|=] [Concept('concept_building', '$concept_buildings$')] in the [concept_construction_queue]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetInactiveConstructionProjectsDesc]"
- QUEUED:0 "Queued"
+ QUEUED: "У черзі"
 
  BUILDING_DETAILS_EMPLOYMENT_TOOLTIP:0 "#header [Building.GetName] in [Building.GetState.GetName]#!\nРозмір: [Building.GetExpansionLevelBreakdownDesc]\nEmployment: #tooltippable #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_EMPLOYMENT #variable [Building.GetNoOfEmployed|1*]#!#!#! / #maximum [Building.GetEmployeeCap|1*] Employees#! (#BOLD #V [Building.GetEmploymentPercentage|0%]#!#!)\n$TOOLTIP_DELIMITER$\n[Building.GetInputOutputTooltip]"
  BUILDING_EMPLOYMENT_UNCAPPED_TOOLTIP:0 "#header [Building.GetName]#!\n$BUILDING_EMPLOYMENT_UNCAPPED$"
@@ -1820,7 +1820,7 @@
  STATE_CONTESTED:0 "Control of #BOLD #V [State.GetName]#!#! is contested!"
 
  CHANGE_PRODUCTION_METHOD_TOOLTIP:0 "#header Change [ChangeProductionMethodMenuItem.GetProductionMethodGroup.GetName] [concept_production_method] to [ProductionMethod.GetName]#!\n[ChangeProductionMethodMenuItem.GetTooltip(GetPlayer.Self)]"
- CHANGE_FROM_CURRENT_PRODUCTION_METHOD_TOOLTIP:1 "#header [ProductionMethodGroup.GetName] [concept_production_method]#!\nCurrent: [ProductionMethod.GetName]\n[ProductionMethod.GetTooltipForBuilding(GetPlayer.Self, Building.Self)]\n\n#instruction #bold Left-click#! to see available options#!"
+ CHANGE_FROM_CURRENT_PRODUCTION_METHOD_TOOLTIP:1 "#header [concept_production_method] - [ProductionMethodGroup.GetName]#!\nCurrent: [ProductionMethod.GetName]\n[ProductionMethod.GetTooltipForBuilding(GetPlayer.Self, Building.Self)]\n\n#instruction #bold Left-click#! to see available options#!"
  CHANGE_PRODUCTION_METHOD_IMPACT_ON_BALANCE:0 "Predicted impact on Weekly Balance with full employment after [concept_goods_substitution]: #v @money!$VAL|D+=$#!"
  CHANGE_PRODUCTION_NO_EFFECT:0 "This Production Method currently has no effects"
  BULK_CHANGE:0 "#header Switch [ProductionMethodGroup.GetName] [concept_production_method] for all [BuildingType.GetName]#!"
@@ -2142,7 +2142,7 @@
  STATE_AVAILABLE_LABOR: "$STATE_UNEMPLOYED$\n$STATE_PEASANTS$"
  STATE_AVAILABLE_LABOR_TOOLTIP: "#header Доступна робоча сила#!\n$STATE_UNEMPLOYED$\n$STATE_PEASANTS$"
  STATE_INFRASTRUCTURE_PRODUCTION_MARKER: "$concept_infrastructure$: [State.GetInfrastructureBalance|0+=]"
- STATE_UNEMPLOYED: "$concept_unemployed_many$: #v [State.GetNumUnemployedWorkingAdults|D-]#!"
+ STATE_UNEMPLOYED: "$concept_unemployed$: #v [State.GetNumUnemployedWorkingAdults|D-]#!"
  STATE_PEASANTS: "[GetPopType('peasants').GetNameNoFormatting]: [State.GetNumSubsistenceWorkingAdults|Dv]"
  STATE_PRODUCTION_MARKER_TOOLTIP:0 "#header [State.GetName]#!\n$TOOLTIP_DELIMITER$\n[concept_infrastructure]: #tooltippable #tooltip:[State.GetTooltipTag],STATE_INFRASTRUCTURE_DESC [State.GetInfrastructureBalance|v0+=]#!#!\n[concept_unemployed]:#v [State.GetNumUnemployedWorkingAdults|D-]#!\n[GetPopType('peasants').GetName]:#v [State.GetNumSubsistenceWorkingAdults|D]#!"
  STATE_LITERACY:0 "#header [concept_literacy]#!\n[State.GetLiteracy|%1v] of the [Concept('concept_pop', '$concept_pops$')] in [State.GetName] are literate."
@@ -2570,7 +2570,7 @@
 
  POP_IG_POPULATION:0 "#variable [PopListPopEntry.GetIGTotalPops|D]#!"
  POP_WORK_INFO:0 "from [Pop.GetWorksAt]"
- POP_TOTAL_INFO:0 "([Pop.GetTotalSize|Dv] total)"
+ POP_TOTAL_INFO: "([Pop.GetTotalSize|Dv] всього)"
  POP_IG_POPULATION_TOOLTIP:0 "#header [concept_interest_group] Members#!\n$TOOLTIP_DELIMITER$\n$POP_IG_POPULATION_WORKING_ADULTS$\n$POP_IG_POPULATION_DEPENDENTS$"
  POP_IG_WORKING_ADULTS:0 "Working Adults: #variable [PopListPopEntry.GetIGWorkingAdults|D]#!"
  POP_IG_DEPENDENTS:0 "#header Dependents#!\nValue: #variable [PopListPopEntry.GetIGDependents|1D]#!\n$TOOLTIP_DELIMITER$\n[concept_dependents_desc]"
@@ -2673,7 +2673,7 @@
  POP_MONEY_BALANCE:0 "$INCOME$\n$EXPENSES$\n#bold Net Income: #variable @money!$VAL|+=D$#!#!"
  POP_LIST_SOL:0 "#variable [LabelingHelper.GetLabelForStandardOfLiving(Pop.GetCurrentStandardOfLiving)]#!  ([Pop.GetCurrentStandardOfLiving|v])"
  NEEDS_BREAKDOWN:0 "#header [concept_pop_needs]#!\n[Pop.GetNeedsDesc]"
- AVG_WAGE_POP_LIST:0 "Avg. Annual Wage: @money![PopListItem.GetAverageAnnualWage|vD]"
+ AVG_WAGE_POP_LIST: "Середьорічна зарплата: @money![PopListItem.GetAverageAnnualWage|vD]"
  AVG_WAGE_SUBSISTENCE_POP_LIST:0 "[concept_subsistence_output]: @money![PopListItem.GetAverageAnnualWage|vD]"
  TOOLTIP_POP_QOL_TURMOIL:0 "\nLow [concept_sol] increases [concept_turmoil_target] by #variable $VAL|-=D$ #!"
  TOOLTIP_POP_QOL:2 "#header [concept_sol]#!\nCurrent: #variable [LabelingHelper.GetLabelForStandardOfLiving(Pop.GetCurrentStandardOfLiving)]#! ([Pop.GetCurrentStandardOfLiving|v])\nMinimum Expected: #variable [LabelingHelper.GetLabelForStandardOfLiving(Pop.GetExpectedStandardOfLiving)]#! #tooltippable #tooltip:[Pop.GetTooltipTag],TOOLTIP_POP_EXPECTED_SOL ([Pop.GetExpectedStandardOfLiving|v])#!#!\n[concept_sol] affects Pop Growth rate, which is currently #tooltippable #tooltip:[Pop.GetTooltipTag],GROWTH_RATE_BREAKDOWN [Pop.GetNetGrowthRate|%=+]#!#!\nIf [concept_sol] is below the Minimum Expected, this [concept_pop] will become more [concept_radical] over time\n$TOOLTIP_DELIMITER$\nThis Pops [concept_sol] of #variable [LabelingHelper.GetLabelForStandardOfLiving(Pop.GetCurrentStandardOfLiving)]#! ([Pop.GetCurrentStandardOfLiving|v]) is due to:\n$TAB$Wealth: #variable #tooltippable #tooltip:[Pop.GetTooltipTag],TOOLTIP_WEALTH [Pop.GetCurrentWealth]#!#!#!\n[Pop.GetCurrentSoLModifiersDesc]\n[Pop.GetAdditionalSOLFactorsDesc]"
@@ -3172,7 +3172,7 @@
 
  IN_THIS_MARKET:1 "#title [Concept('concept_country', '$concept_countries$')] in this $concept_market$#!"
  PRODUCTION_METHODS:0 "#title [Concept('concept_production_method', '$concept_production_methods$')]#!"
- PROCESS:0 "Process"
+ PROCESS: "Процес"
 
  YOUR_IMPORT_ROUTE_HEADER:0 "#title Your Import Trade Routes#!"
  YOUR_EXPORT_ROUTE_HEADER:0 "#title Your Export Trade Routes#!"
@@ -4169,8 +4169,8 @@
  notification_institution_investment_decreased_desc:0 "Decreased Investment in the [SCOPE.GetRootScope.GetInstitution.GetName] Institution to [SCOPE.GetRootScope.GetInstitution.GetInvestmentLevel|v]"
  notification_institution_investment_decreased_tooltip:0 "$notification_institution_investment_decreased_name$\n$notification_institution_investment_decreased_desc$\n\n#i Effect:#!\n[SCOPE.GetRootScope.GetInstitution.GetModifier.GetDesc]"
 
- notification_rank_changed_notification_name: "Чин держави змінено"
- notification_rank_changed_notification_desc: "Ваш новий чин - [SCOPE.sC('actor').GetRank|v]"
+ notification_rank_changed_notification_name: "Ранґ держави змінено"
+ notification_rank_changed_notification_desc: "Ваш новий ранґ - [SCOPE.sC('actor').GetRank|v]"
  notification_rank_changed_notification_tooltip:0 "$notification_rank_changed_notification_name$\n$notification_rank_changed_notification_desc$"
 
  notification_heir_born_notification_name:0 "Heir Born"
@@ -4647,8 +4647,8 @@
  DOWNSIZING:0 "Tightening belt @arrow_down_down!"
  EARNINGS_BREAKDOWN:0 "#header Earnings#!\nValue: @money![Building.GetEarnings|vD=]\n$TOOLTIP_DELIMITER$\nRevenue: #BOLD #V @money![Building.GetLastRevenue|D+=]#!#![Building.GetLastMaterialExpensesDesc][Building.GetLastSlaveUpkeepDesc]"
  WORKFORCE: "#title Робоча сила #!"
- SORTED_BY:0 "Sorted by #BOLD Average Wage#!"
- WARS_LABEL:0 "#title Wars#!"
+ SORTED_BY: "Хухрене за #BOLD середньою зарплатою#!"
+ WARS_LABEL: "#title Війни#!"
  WARS: "[Concept('concept_war','$concept_wars$')]"
  NO_WARS: "Жодних [Concept('concept_war','$concept_wars_gen$')|l]"
  ACTIVE_DIPLOMATIC_PLAYS: "Активні [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')|l]"
@@ -4711,7 +4711,7 @@
  power:0 "Power"
  no_power:0 "No Power"
 
- RANK_HEADER: "#header Чин держави#!"
+ RANK_HEADER: "#header Ранґ держави#!"
  RANK_TOOLTIP_NEXT: "Якщо [concept_prestige|l] [Concept('concept_country','$concept_country_gen$')|l] [COUNTRY.GetName] буде принаймні [COUNTRY.GetPrestigeForNextRank|v], то [concept_rank|l] стане [COUNTRY.GetNextRank|v]"
  RANK_TOOLTIP_PREV: "Якщо [concept_prestige|l] [Concept('concept_country','$concept_country_gen$')|l] [COUNTRY.GetName] буде менше [COUNTRY.GetPrestigeToMaintainRank|v] протягом тривалого часу, то [concept_rank|l] стане [COUNTRY.GetPreviousRank|v]"
  RANK_TOOLTIP_MAX_SUBJECT: "@information! [COUNTRY.GetName] не може досягти вищого [Concept('concept_rank','$concept_rank_gen$')|l] ніж $HIGHEST_RANK|v$ через те, що вона [Concept('concept_subject','$concept_subject_feminine$')|l] [Concept('concept_country','$concept_country_gen$')|l] [Country.GetOverlord.GetName], може мати позицію з максимальним балом #v ##$HIGHEST_POSITION$#! у світі"
@@ -5477,7 +5477,7 @@
  SUBSIDIES_MANDATED_BY_MODIFIER:0 "$MODIFIERNAME$#indent_newline:3 \n$DESCRIPTION$#!"
 
  SUBSIDIZED_NO:3 "$SUBSIDIZED_NO_HEADER$\n[SelectLocalization(IsValid( Building.ToggleSubsidies ), 'SUBSIDIZE_POSSIBLE', GetDesc(Building.ToggleSubsidies))]"
- SUBSIDIZED_NO_HEADER:1 "#header Not [Concept('concept_subsidies', '$concept_subsidized$')]#!\n$TOOLTIP_DELIMITER$\nThis building is not $concept_subsidized$"
+ SUBSIDIZED_NO_HEADER: "#header Не [Concept('concept_subsidies', '$concept_subsidized$')|l]#!\n$TOOLTIP_DELIMITER$\nЦя будівля не [Concept('concept_subsidies', '$concept_subsidized$')|l]"
  SUBSIDIZE_POSSIBLE: "#instruction Клацніть, щоб надати субсидію#!"
  NOT_PERMITTED_TO_SUBSIDIZE_BUILDING_GROUP:0 "Subsidizing this building is not permitted in our country. This is usually determined by economic [Concept('concept_law', '$concept_laws$')]."
  CANNOT_SUBSIDIZE_GOVERNMENT_BUILDINGS:0 "[Concept('concept_government_building', '$concept_government_buildings$')] cannot be subsidized."
@@ -5820,9 +5820,9 @@
  CONSTRUCTION_DURATION_UNKNOWN:1 "Unknown"
  CONSTRUCTION_DURATION_PAUSED:0 "Paused"
  CONSTRUCTION_CAMP:0 "Construction Camp"
- MOVE_UP:1 "#I Click to move up in queue#!\n#I Alt-click to move to top#!"
- MOVE_DOWN:1 "#I Click to move down in queue#!\n#I Alt-click to move to bottom#!"
- CANCEL_CONSTRUCTION:0 "Cancel Construction"
+ MOVE_UP: "#I Клацніть, щоб пересунути вгору по черзі#!\n#I ALT + Клац, щоб зробити першим в черзі#!"
+ MOVE_DOWN: "#I Клацніть, щоб пересунути вниз по черзі#!\n#I ALT + Клац, щоб зробити останнім в черзі#!"
+ CANCEL_CONSTRUCTION: "Скасувати будівництво"
 
  PLAYED_BY_PLAYER_DESC: "Керується гравцем #v $PLAYER$#!"
  PLAYED_BY_AI_DESC: "Керується ШІ"

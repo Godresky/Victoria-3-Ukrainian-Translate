@@ -1,9 +1,9 @@
 ﻿l_russian:
- notification_tooltip_footer:1 "\n\n#instruction Right-click to dismiss#!"
+ notification_tooltip_footer: "\n\n#instruction Правий клац, щоб приховати#!"
  proposal_tooltip_footer:1 "\n\n#instruction Right-click to reject#!"
  zoom_to_tooltip_footer:0 "\n\n#instruction Right-click to zoom to location#!"
 
- MESSAGE_CLICK_TOOLTIP:1 "[SelectLocalization(FeedMessageItem.IsExpanded,'MESSAGE_CLICK_TO_HIDE','MESSAGE_CLICK_TO_SHOW')]\n$MESSAGE_CLICK_TO_DISMISS$\n#I SHIFT + правий клац, щоб приховати все.#!"
+ MESSAGE_CLICK_TOOLTIP: "[SelectLocalization(FeedMessageItem.IsExpanded,'MESSAGE_CLICK_TO_HIDE','MESSAGE_CLICK_TO_SHOW')]\n$MESSAGE_CLICK_TO_DISMISS$\n#I SHIFT + правий клац, щоб приховати все.#!"
  MESSAGE_CLICK_TO_HIDE: "#I Клацніть, що згорнути.#!"
  MESSAGE_CLICK_TO_SHOW: "#I Клацніть, що розгорнути.#!"
  MESSAGE_CLICK_TO_DISMISS: "#I Правий клац, щоб приховати.#!"

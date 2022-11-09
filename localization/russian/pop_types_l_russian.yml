@@ -25,7 +25,7 @@
  engineers_desc:0 "Inventors and designers of technical solutions, working with advanced machinery in sectors like manufacturing, mining and construction. Some support the Industrialists, while others join Trade Unions."
  farmers: "@farmers! $farmers_no_icon$"
  farmers_only_icon: "@farmers!"
- farmers_no_icon: "Рільники"
+ farmers_no_icon: "Хутірники"
  farmers_desc:0 "Sharecroppers, smallholders and others who make a stable but scant living producing food or growing cash crops. Most see their interests represented as the Rural Folk."
  peasants: "@peasants! $peasants_no_icon$"
  peasants_only_icon: "@peasants!"

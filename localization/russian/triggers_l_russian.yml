@@ -13,9 +13,9 @@
  TRIGGER_ALWAYS: "Завжди"
  TRIGGER_ALWAYS_NOT: "Ніколи"
  
- TRIGGER_HAS_STATE_TRAIT:0 "Є особливість [STATE_TRAIT.GetName]"
- TRIGGER_HAS_STATE_TRAIT_NOT:1 "Нема особливості #bold not #!have the [STATE_TRAIT.GetName] trait"
- 
+ TRIGGER_HAS_STATE_TRAIT: "Є особливість [STATE_TRAIT.GetName]"
+ TRIGGER_HAS_STATE_TRAIT_NOT: "Немає особливости [STATE_TRAIT.GetName]" #bold not #!have the [STATE_TRAIT.GetName] trait
+
  TRIGGER_IS_HOMELAND:1 "[concept_state] is a [TARGET_CULTURE.GetName] [concept_homeland]"
  TRIGGER_IS_HOMELAND_NOT:2 "[concept_state] is #bold not #!a [TARGET_CULTURE.GetName] [concept_homeland]"
  TRIGGER_IS_HOMELAND_THIRD:0 "[STATE_REGION.GetName] is a [TARGET_CULTURE.GetName] [concept_homeland]"
@@ -31,20 +31,20 @@
  TRIGGER_HAS_GAME_RULE_NOT: "#b Не#! встановлено правило: $SETTING$"
  
  TRIGGER_IS_PLAYER: "Під контролем гравця"
- TRIGGER_IS_PLAYER_NOT: "#bold не #! під контролем гравця"
+ TRIGGER_IS_PLAYER_NOT: "#bold Не #! під контролем гравця"
  TRIGGER_IS_PLAYER_FIRST:0 "[COUNTRY.GetNameNoFlag] is controlled by a player"
  TRIGGER_IS_PLAYER_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] is #bold not #!controlled by a player"
  TRIGGER_IS_PLAYER_THIRD:0 "[COUNTRY.GetName] is controlled by a player"
  TRIGGER_IS_PLAYER_THIRD_NOT:1 "[COUNTRY.GetName] is #bold not #!controlled by a player"
  
- TRIGGER_IS_LOCAL_PLAYER: "Контрольвано Локальним гравцем"
+ TRIGGER_IS_LOCAL_PLAYER: "Контролюється локальним гравцем"
  TRIGGER_IS_LOCAL_PLAYER_NOT:1 "Is #bold not #!controlled by the local player"
  TRIGGER_IS_LOCAL_PLAYER_FIRST:0 "[COUNTRY.GetNameNoFlag] is controlled by the local player"
  TRIGGER_IS_LOCAL_PLAYER_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] is #bold not #!controlled by the local player"
  TRIGGER_IS_LOCAL_PLAYER_THIRD:0 "[COUNTRY.GetName] is controlled by the local player"
  TRIGGER_IS_LOCAL_PLAYER_THIRD_NOT:1 "[COUNTRY.GetName] is #bold not #!controlled by the local player"
  
- TRIGGER_IS_AI: "Контрольвано ШІ"
+ TRIGGER_IS_AI: "Контролюється ШІ"
  TRIGGER_IS_AI_NOT:1 "Is #bold not #!not controlled by an AI"
  TRIGGER_IS_AI_FIRST:0 "[COUNTRY.GetNameNoFlag] is controlled by an AI"
  TRIGGER_IS_AI_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] is #bold not #!controlled by an AI"
@@ -156,7 +156,7 @@
  TRIGGER_TAKING_LOANS_THIRD_NOT:1 "[COUNTRY.GetName] is #bold not #!taking loans"
  
  TRIGGER_COUNTRY_THIS_EQUAL: "Держава — [TARGET_COUNTRY.GetName]"
- TRIGGER_COUNTRY_THIS_EQUAL_NOT: "Держава — #bold не#![TARGET_COUNTRY.GetName]"
+ TRIGGER_COUNTRY_THIS_EQUAL_NOT: "Держава — #bold не#! [TARGET_COUNTRY.GetName]"
 
  TRIGGER_INITIATOR_IS:0 "[TARGET_COUNTRY.GetName] is the initiator"
  TRIGGER_INITIATOR_IS_NOT:1 "[TARGET_COUNTRY.GetName] is #bold not #!the initiator"

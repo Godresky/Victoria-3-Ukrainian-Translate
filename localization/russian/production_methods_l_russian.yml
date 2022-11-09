@@ -25,8 +25,6 @@
  pmg_base_building_construction_sector: "$pm_base$"
  pmg_base_building_port: "$pm_base$"
  pmg_base_building_trade_center: "$pm_base$"
- 
- 
  pmg_base_building_eiffel_tower: "$pm_base$"
  pmg_base_building_logging_camp: "$pm_base$"
 
@@ -84,7 +82,7 @@ pm_disabled_steam_power: "Без парової потужності"
  pm_steam_trains: "Парові патяги"
  pm_electric_trains: "Електрічні потяги"
  pm_diesel_trains: "Дізельні потяги"
- pm_non_standardized_gauges: "Нестандартизовані калібри"
+ pm_non_standardized_gauges: "Нестандартизовані колії"
  pm_broad_gauges: "Ширококолійна залізниця"
  pm_narrow_gauges: "Вузькоколійна залізниця"
  pm_no_military_trains: "Цивільні поїзди"
@@ -107,7 +105,7 @@ pm_disabled_steam_power: "Без парової потужності"
  pmg_base_building_food_industry: "Тип випічки"
  pm_bakery: "Варні"
  pm_sweeteners: "Сластівниці"
- pm_baking_powder: "Розпушувач"
+ pm_baking_powder: "Розпушувачі"
   
 # Textile Mills
  pmg_base_building_textile_mills: "Обладнання"
@@ -127,7 +125,7 @@ pm_disabled_steam_power: "Без парової потужності"
  pm_automatic_power_looms: "Автоматичне ткацтво"
 
  pm_cotton_gin: "Бавовноочисники"
- pm_system_gin: "Система бававноочистки"
+ pm_system_gin: "Система бавовноочистки"
  #pm_disabled_gin: "Без бавовноочисників"
  #pm_disabled_elastics: "Непружні"
  #pm_masticators: "Мастикатори"
@@ -147,7 +145,7 @@ pm_disabled_steam_power: "Без парової потужності"
 
  pmg_automation_building_furniture_manufacturies: "Автоматизація"
  pm_watertube_boiler_building_furniture_manufacturies: "Водотрубні котли"
- pm_rotary_valve_engine_building_furniture_manufacturies: "Роторні двигуни"
+ pm_rotary_valve_engine_building_furniture_manufacturies: "Роторні рушії"
  pm_assembly_lines_building_furniture_manufacturies: "Складальні лінії"
 
  pm_textile_looms: "Ткацькі верстати"
@@ -156,10 +154,10 @@ pm_disabled_steam_power: "Без парової потужності"
  
 # Glassworks
  pmg_base_building_glassworks: "Тип скла"
- pm_forest_glass: "Кустарне скло"
- pm_leaded_glass: "Свінцеве скло"
+ pm_forest_glass: "Доморобницьке скло"
+ pm_leaded_glass: "Свинцеве скло"
  pm_crystal_glass: "Кришталеве скло"
- pm_houseware_plastics: "Посуд із пластику"
+ pm_houseware_plastics: "Посуд з пластику"
 
  pmg_luxury_building_glassworks: "Розкішне виробництво"
  pm_disabled_ceramics: "Скляне виробництво"
@@ -174,13 +172,13 @@ pm_disabled_steam_power: "Без парової потужності"
  
 # Tooling Workshops
  pmg_base_building_tooling_workshops: "Тип інструментів"
- pm_crude_tools: "Кустарні інструменти"
+ pm_crude_tools: "Доморобницькі інструменти"
  pm_pig_iron: "Залізні інструменти"
  pm_steel: "Сталеві інструменти"
 
  pmg_automation_building_tooling_workshops: "Автоматізація"
  pm_watertube_boiler_building_tooling_workshops: "Водотрубний котел"
- pm_rotary_valve_engine_building_tooling_workshops: "Роторний клапанний двигун"
+ pm_rotary_valve_engine_building_tooling_workshops: "Роторний клапанний рушій"
  pm_assembly_lines_building_tooling_workshops: "Складальні лінії"
 
 #Військова ладня
@@ -193,10 +191,10 @@ pm_disabled_steam_power: "Без парової потужності"
  pmg_foundries: "Модель гармат"
  pm_no_artillery_production: "Стрілецька зброя"
  pm_cannons: "Гармата"
- pm_smoothbores: "Гладкоствольно гармата"
+ pm_smoothbores: "Гладкоствольна гармата"
  pm_breech_loaders: "Казенна гармата"
 
- pm_artillery_production: "Виробництво артилерії"
+ pm_artillery_production: "Виробництво гарматні"
   
 # Paper Mills
  pmg_base_building_paper_mills: "$pm_base$"
@@ -206,7 +204,7 @@ pm_disabled_steam_power: "Без парової потужності"
  
  pmg_automation_building_paper_mills: "Автоматизація"
  pm_watertube_boiler_building_paper_mills: "Водотрубні котли"
- pm_rotary_valve_engine_building_paper_mills: "Роторні двигуни"
+ pm_rotary_valve_engine_building_paper_mills: "Роторні рушії"
 
  pm_crude_paper: "Грубий папір"
  pm_no_publishing: "Відсутність видавничої справи"
@@ -222,7 +220,7 @@ pm_disabled_steam_power: "Без парової потужності"
   
  pmg_automation_building_steel_mills: "Автоматизація"
  pm_watertube_boiler_building_steel_mills: "Водотрубний котел"
- pm_rotary_valve_engine_building_steel_mills: "Роторний клапанний двигун"
+ pm_rotary_valve_engine_building_steel_mills: "Роторний клапанний рушій"
 
 #Виробня набоїв
  pmg_base_building_munition_plants: "Тип набоїв"
@@ -245,7 +243,7 @@ pm_disabled_steam_power: "Без парової потужності"
 
  pmg_automation_building_motor_industry: "Автоматизація"
  pm_watertube_boiler_building_motor_industry: "Водотрубний котел"
- pm_rotary_valve_engine_building_motor_industry: "Роторний клапанний двигун"
+ pm_rotary_valve_engine_building_motor_industry: "Роторний клапанний рушій"
  pm_assembly_lines_building_motor_industry: "Складальні лінії"
 
 # War Machine Industry
@@ -306,9 +304,9 @@ pm_disabled_steam_power: "Без парової потужності"
  pm_refrigerated_rail_cars_building_whaling_station: "Вагони-холодники"
  pm_flash_freezing_building_whaling_station: "Миттєве заморожування"
 
-pm_fish_oil: "Рибій жир"
+pm_fish_oil: "Трін"
 pm_disabled_fish_oil: "Виробництво риби"
-pm_oil_extraction: "Видобуток нафти"
+pm_oil_extraction: "Видобуток олії"
 pm_cod_liver_oil: "Масло печінки тріски"
  
  pmg_refrigeration_building_livestock_ranch:0 "Тип охолодження"
@@ -318,7 +316,7 @@ pm_cod_liver_oil: "Масло печінки тріски"
  
 # Grain Farms
  
- pm_simple_farming:0 "Звичайне фермерство"
+ pm_simple_farming: "Звичайне хутірництво"
  
  pm_intensive_farming:0 "Intensive Farming"
  pm_soil_enriching_farming:0 "Soil-Enriching Farming"
@@ -338,7 +336,7 @@ pm_cod_liver_oil: "Масло печінки тріски"
 
 #Рисове полище
 
-pm_simple_farming_building_rice_farm:0 "Звичайне фермерство"
+pm_simple_farming_building_rice_farm:0 "Звичайне хутірництво"
 
 
 

@@ -831,10 +831,10 @@
  concept_morale_demoralized:0 "Demoralized"
  concept_morale_desc:1 "A [Concept('concept_unit','$concept_unit_possessive$')] $concept_morale$ measures how much of its remaining [concept_manpower] is ready for [concept_battle]. As a result of $concept_units$ taking and inflicting [concept_casualties] on each other in $concept_battle$, some of the remaining $concept_manpower$ will become $concept_morale_demoralized$ for the remainder of the $concept_battle$ and unable to take offensive action. As all $concept_units$ reach a critical threshold of low $concept_morale$ the [concept_commander] will retreat, leaving the other side victorious.\n\nAfter a $concept_battle$, $concept_units$ will regain their $concept_morale$ at a steady rate up to their $concept_commander$'s [concept_supply] rating."
 
- concept_rank: "Чин"
- concept_rank_gen: "Чину"
- concept_rank_ins: "Чином"
- concept_ranks: "Чини"
+ concept_rank: "Ранґ"
+ concept_rank_gen: "Ранґу"
+ concept_rank_ins: "Ранґом"
+ concept_ranks: "Ранґи"
  concept_rank_desc:3 "A [Concept('concept_country','$concept_country_possessive$')] $concept_rank$ is determined by measuring its [concept_prestige] relative to other $concept_countries$ worldwide. It determines what sorts of international activities you are permitted to engage in, what your people and the world expects of you, and where you stand in the global pecking order.[AddLocalizationIf( GetPlayer.IsValid, 'concept_rank_ingame_added' )]"
  concept_rank_ingame_added:1 "\n\nYour current $concept_rank$ is [GetPlayer.GetRank], which gives you the following benefits:\n[GetPlayer.GetRankModifier.GetDesc]"
 
@@ -922,7 +922,7 @@
  concept_turmoil: "Сум'яття"
  concept_turmoil_desc:2 "[Concept('concept_state', '$concept_states$')] and [Concept('concept_culture', '$concept_cultures$')] with $concept_turmoil$ contain [Concept('concept_radical', '$concept_radicals$')] that are unhappy with their current circumstances. The amount of $concept_turmoil$ is equal to the fraction of the $concept_state$'s or $concept_culture$'s [concept_workforce] that are $concept_radical$.\n\n$concept_turmoil$ can inflict a number of negative local status effects on a $concept_state$ if it gets high enough. [concept_cultural_turmoil] can impact a whole [concept_country] in very disruptive ways."
 
- concept_unemployed: "Безробітний"
+ concept_unemployed: "Безробітні"
  concept_unemployed_many: "Безробітні"
  concept_unemployment: "Безробіття"
  concept_unemployed_desc:2 "An $concept_unemployed$ [concept_pop] does not work in any of its [Concept('concept_state','$concept_state_possessive$')] [Concept('concept_building','$concept_buildings$')] and therefore does not collect a [concept_building_wage]. They are likely to take the next best job that comes along, and will likely [Concept('concept_migration','$concept_emigrate$')] if nothing comes along."
@@ -1152,8 +1152,8 @@
  concept_professions: "Ремесла"
  concept_profession_desc:2 "A [Concept('concept_pop','$concept_pop_possessive$')] $concept_profession$ determines which role they perform in their [concept_building], how large of a [concept_building_wage] they collect from it, and whether or not they get [Concept('concept_ownership_share','$concept_ownership_shares$')] in it. It also impacts which [Concept('concept_interest_group','$concept_interest_group$')] they're likely to support, how likely they are to remain [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')], and whether they are considered [concept_lower_strata], [concept_middle_strata], or [concept_upper_strata]. To switch $concept_professions$, a $concept_pop$ must have the appropriate [concept_pop_qualifications]."
 
- concept_production_method:0 "Production Method"
- concept_production_methods:0 "Production Methods"
+ concept_production_method: "Спосіб виробництва"
+ concept_production_methods: "Способи виробництва"
  concept_production_method_desc:3 "$concept_production_methods$ determine how [Concept('concept_building','$concept_buildings$')] operate. They impact\n\n- The [Concept('concept_good_consumption','$concept_input_goods$')] the $concept_building$ must purchase to operate\n- The [Concept('concept_good_production','$concept_output_goods$')] the $concept_building$ produces and sells\n- The distribution of [Concept('concept_profession','$concept_professions$')] among its [concept_workforce]\n\n$concept_production_methods$ can also have other effects, such as the generation of [Concept('concept_modifier','$concept_modifiers$')] or the distribution of [Concept('concept_ownership_share','$concept_ownership_shares$')]. $concept_production_methods$ are organized in groups, in which only one can be active at a time. You can switch which $concept_production_method$ is active in each group as long as you meet the [concept_technology] and/or [concept_law] requirement for it."
 
  concept_nation_formation: "Формування нації"
@@ -1383,7 +1383,7 @@
  concept_subsidies_gen: "Субсидій"
  concept_subsidies_acc: "Субсидії"
  concept_subsidize:1 "Subsidize"
- concept_subsidized: "Субсидійний"
+ concept_subsidized: "Під субсидією"
  concept_subsidizing:1 "Subsidizing"
  concept_subsidies_desc:2 "A $concept_subsidized$ [concept_building] is guaranteed by the [Concept('concept_country','$concept_country_possessive$')] [concept_government] to be funded enough to always by able to pay at least the [concept_subsidized_wage]. If the building cannot pay its employees according to this rate or higher, and/or if its cost of buying [Concept('concept_good_consumption','$concept_input_goods$')] exceeds its [concept_revenue] from selling [Concept('concept_good_production','$concept_output_goods$')], the [concept_treasury] will cover the difference. This guarantees the $concept_building$ can hire as many employees as it wants in order to maximize [concept_throughput] without concern for how financially viable that is."
 
@@ -1491,14 +1491,14 @@
  concept_popularity: "Знаність"
  concept_popularity_desc:2 "The $concept_popularity$ of a [concept_character] measures the willingness of [Concept('concept_pop','$concept_pops$')] to follow them. $concept_popularity$ can have different effects depending on the $concept_character$'s [concept_character_role]."
 
- concept_momentum:0 "Momentum"
+ concept_momentum: "Рин"
  concept_momentum_desc:1 "The success of a [Concept('concept_party','$concept_party_possessive$')] [concept_election] campaign. $concept_momentum$ increases the number of [concept_votes] a $concept_party$ gains on $concept_election$ day, and is nullified thereafter. $concept_momentum$ can be affected by random chance, special events, and the [concept_popularity] of its [concept_party_leader]."
 
  concept_government_expenses: "Державні витрати"
  concept_government_expenses_short: "Витрати"
  concept_government_expenses_desc:1 "The total weekly $concept_government_expenses_short$ accrued by the [concept_government], balanced against all its weekly revenues such as [concept_taxes], with the balance added to or removed from the [concept_treasury]."
 
- concept_sovereignty: "Самостайність"
+ concept_sovereignty: "Суверенітет"
  concept_sovereignty_desc:1 "A [Concept('concept_country','$concept_country_possessive$')] right to self-govern. When one $concept_country$ violates the $concept_sovereignty$ of another they openly disrespect this right. Should the other not respond in turn with an immediate military response enforcing the integrity of their borders, they submit to the violator and permit them military access through their territory."
 
  concept_average_wage: "Середньорічна зарплата"
@@ -1507,15 +1507,15 @@
  concept_subsidized_wage:0 "Subsidized Wage"
  concept_subsidized_wage_desc:1 "When a [Concept('concept_subsidies','$concept_subsidized$')] [concept_building] cannot pay their [concept_workforce] at least the [concept_normal_wage], the remainder is covered by government $concept_subsidies$ through the [concept_treasury]. In return the $concept_building$ will never fire its $concept_workforce$ and aim to keep [concept_throughput] maximized at all times."
 
- concept_government_wage:0 "Government Wage"
- concept_government_wages:0 "Government Wages"
+ concept_government_wage: "Government Wage"
+ concept_government_wages: "Урядові зарплати"
  concept_government_wage_desc:0 "All [Concept('concept_government_building','$concept_government_buildings$')] except [Concept('concept_military_building','$concept_military_buildings$')] pay their [concept_workforce] according to the same standardized $concept_government_wage$ rate. This rate is based on the [concept_normal_wage] in the [concept_country], with any adjustments set in the Budget panel."
 
- concept_military_wage:0 "Military Wage"
- concept_military_wages:0 "Military Wages"
+ concept_military_wage: "Військова зарплата"
+ concept_military_wages: "Військові зарплати"
  concept_military_wage_desc:0 "All [Concept('concept_military_building','$concept_military_buildings$')] pay their [concept_workforce] according to the same standardized $concept_military_wage$ rate. This rate is based on the [concept_normal_wage] in the [concept_country], with any adjustments set in the Budget panel."
 
- concept_normal_wage:0 "Normal Wage"
+ concept_normal_wage: "Звичайна зарплата"
  concept_normal_wage_desc:3 "The baseline [concept_building_wage] in a [concept_country] which many [Concept('concept_building','$concept_buildings$')] take into account. [Concept('concept_government_wage','$concept_government_wages$')] and [Concept('concept_military_wage','$concept_military_wages$')] are based on the $concept_normal_wage$. It is determined from the average $concept_building_wages$ paid by [Concept('concept_building','$concept_building_industries$')] across [Concept('concept_incorporated_state', '$concept_incorporated_states$')]."
 
  concept_in_reserve: "У запасі"
