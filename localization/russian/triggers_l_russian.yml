@@ -7,14 +7,14 @@
  TRIGGER_REDUNDANT:0 "@red_cross! $TEXT$"
  
  TRIGGER_RESULT_UNDEFINED:0 "  •  $TEXT$"
- TRIGGER_NAND:0 "Any of these:"
+ TRIGGER_NAND: "Будь-що з цього:"
  
- TRIGGER_OR_NOT:0 "None of these:"
- TRIGGER_ALWAYS:0 "Always"
- TRIGGER_ALWAYS_NOT:0 "Never"
+ TRIGGER_OR_NOT: "Нічого з цього:"
+ TRIGGER_ALWAYS: "Завжди"
+ TRIGGER_ALWAYS_NOT: "Ніколи"
  
- TRIGGER_HAS_STATE_TRAIT:0 "Has the [STATE_TRAIT.GetName] trait"
- TRIGGER_HAS_STATE_TRAIT_NOT:1 "Does #bold not #!have the [STATE_TRAIT.GetName] trait"
+ TRIGGER_HAS_STATE_TRAIT:0 "Є особливість [STATE_TRAIT.GetName]"
+ TRIGGER_HAS_STATE_TRAIT_NOT:1 "Нема особливості #bold not #!have the [STATE_TRAIT.GetName] trait"
  
  TRIGGER_IS_HOMELAND:1 "[concept_state] is a [TARGET_CULTURE.GetName] [concept_homeland]"
  TRIGGER_IS_HOMELAND_NOT:2 "[concept_state] is #bold not #!a [TARGET_CULTURE.GetName] [concept_homeland]"
@@ -24,27 +24,27 @@
  TRIGGER_HAS_HOMELAND:0 "[CULTURE.GetName] considers [TARGET_STATE_REGION.GetName] a homeland"
  TRIGGER_HAS_HOMELAND_NOT:1 "[CULTURE.GetName] does #bold not #!consider [TARGET_STATE_REGION.GetName] a homeland"
 
- TRIGGER_HAS_GAME_STARTED:0 "Game has started"
- TRIGGER_HAS_GAME_STARTED_NOT:0 "Game has #bold not #!started"
+ TRIGGER_HAS_GAME_STARTED: "Гра почалась"
+ TRIGGER_HAS_GAME_STARTED_NOT: "Гра #bold не #!почалась"
  
- TRIGGER_HAS_GAME_RULE:0 "Has game rule setting: $SETTING$"
- TRIGGER_HAS_GAME_RULE_NOT:0 "Does #b not#! have game rule setting: $SETTING$"
+ TRIGGER_HAS_GAME_RULE: "Встановлено правило: $SETTING$"
+ TRIGGER_HAS_GAME_RULE_NOT: "#b Не#! встановлено правило: $SETTING$"
  
- TRIGGER_IS_PLAYER:0 "Is controlled by a player"
- TRIGGER_IS_PLAYER_NOT:1 "Is #bold not #!controlled by a player"
+ TRIGGER_IS_PLAYER: "Під контролем гравця"
+ TRIGGER_IS_PLAYER_NOT: "#bold не #! під контролем гравця"
  TRIGGER_IS_PLAYER_FIRST:0 "[COUNTRY.GetNameNoFlag] is controlled by a player"
  TRIGGER_IS_PLAYER_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] is #bold not #!controlled by a player"
  TRIGGER_IS_PLAYER_THIRD:0 "[COUNTRY.GetName] is controlled by a player"
  TRIGGER_IS_PLAYER_THIRD_NOT:1 "[COUNTRY.GetName] is #bold not #!controlled by a player"
  
- TRIGGER_IS_LOCAL_PLAYER:0 "Is controlled by the local player"
+ TRIGGER_IS_LOCAL_PLAYER: "Контрольвано Локальним гравцем"
  TRIGGER_IS_LOCAL_PLAYER_NOT:1 "Is #bold not #!controlled by the local player"
  TRIGGER_IS_LOCAL_PLAYER_FIRST:0 "[COUNTRY.GetNameNoFlag] is controlled by the local player"
  TRIGGER_IS_LOCAL_PLAYER_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] is #bold not #!controlled by the local player"
  TRIGGER_IS_LOCAL_PLAYER_THIRD:0 "[COUNTRY.GetName] is controlled by the local player"
  TRIGGER_IS_LOCAL_PLAYER_THIRD_NOT:1 "[COUNTRY.GetName] is #bold not #!controlled by the local player"
  
- TRIGGER_IS_AI:0 "Is controlled by an AI"
+ TRIGGER_IS_AI: "Контрольвано ШІ"
  TRIGGER_IS_AI_NOT:1 "Is #bold not #!not controlled by an AI"
  TRIGGER_IS_AI_FIRST:0 "[COUNTRY.GetNameNoFlag] is controlled by an AI"
  TRIGGER_IS_AI_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] is #bold not #!controlled by an AI"
@@ -112,17 +112,17 @@
  TRIGGER_HAS_TECHNOLOGY_RESEARCHED_THIRD:0 "[TECHNOLOGY.GetName] has been researched by [COUNTRY.GetName]"
  TRIGGER_HAS_TECHNOLOGY_RESEARCHED_THIRD_NOT:1 "[TECHNOLOGY.GetName] has #bold not #!been researched by [COUNTRY.GetName]"
  
- TRIGGER_CAN_RESEARCH:0 "Can research [TECHNOLOGY.GetName] technology"
- TRIGGER_CAN_RESEARCH_NOT:1 "Can #bold not #!research [TECHNOLOGY.GetName] technology"
- TRIGGER_CAN_RESEARCH_FIRST:0 "[COUNTRY.GetNameNoFlag] can research [TECHNOLOGY.GetName] technology"
- TRIGGER_CAN_RESEARCH_FIRST_NOT:0 "[COUNTRY.GetNameNoFlag] CANNOT research [TECHNOLOGY.GetName] technology"
- TRIGGER_CAN_RESEARCH_THIRD:0 "[COUNTRY.GetName] can research [TECHNOLOGY.GetName] technology"
- TRIGGER_CAN_RESEARCH_THIRD_NOT:0 "[COUNTRY.GetName] CANNOT research [TECHNOLOGY.GetName] technology"
+ TRIGGER_CAN_RESEARCH: "Можна дослідити технологію [TECHNOLOGY.GetName]"
+ TRIGGER_CAN_RESEARCH_NOT: "Не можна дослідити технологію [TECHNOLOGY.GetName]"
+ TRIGGER_CAN_RESEARCH_FIRST: "Країна [COUNTRY.GetNameNoFlag] може дослідити технологію [TECHNOLOGY.GetName]"
+ TRIGGER_CAN_RESEARCH_FIRST_NOT: "Країна [COUNTRY.GetNameNoFlag] НЕ може дослідити технологію [TECHNOLOGY.GetName]"
+ TRIGGER_CAN_RESEARCH_THIRD: "Країна [COUNTRY.GetName] може дослідити технологію [TECHNOLOGY.GetName]"
+ TRIGGER_CAN_RESEARCH_THIRD_NOT: "Країна [COUNTRY.GetName] НЕ може дослідити технологію [TECHNOLOGY.GetName]"
  
  TRIGGER_IS_WAR_PARTICIPANT:0 "Has [TARGET_COUNTRY.GetName] Participating"
  TRIGGER_IS_WAR_PARTICIPANT_NOT:1 "Does #bold not #!have [TARGET_COUNTRY.GetName] Participating"
  
- TRIGGER_CAN_FORM_NATION:1 "Can form the nation of [COUNTRYFORMATION.GetName]"
+ TRIGGER_CAN_FORM_NATION: "Можна створити [COUNTRYFORMATION.GetName]"
  TRIGGER_CAN_FORM_NATION_NOT:2 "Can #bold not #!form the nation of [COUNTRYFORMATION.GetName]"
 
  TRIGGER_HAS_UNIFICATION_CANDIDATE:0 "There is a [concept_unification_candidate] for [COUNTRYFORMATION.GetName]"
@@ -155,8 +155,8 @@
  TRIGGER_TAKING_LOANS_THIRD:0 "[COUNTRY.GetName] is taking loans"
  TRIGGER_TAKING_LOANS_THIRD_NOT:1 "[COUNTRY.GetName] is #bold not #!taking loans"
  
- TRIGGER_COUNTRY_THIS_EQUAL:1 "Country is [TARGET_COUNTRY.GetName]"
- TRIGGER_COUNTRY_THIS_EQUAL_NOT:2 "Country is #bold not #![TARGET_COUNTRY.GetName]"
+ TRIGGER_COUNTRY_THIS_EQUAL: "Країна — [TARGET_COUNTRY.GetName]"
+ TRIGGER_COUNTRY_THIS_EQUAL_NOT: "Країна — #bold не#![TARGET_COUNTRY.GetName]"
 
  TRIGGER_INITIATOR_IS:0 "[TARGET_COUNTRY.GetName] is the initiator"
  TRIGGER_INITIATOR_IS_NOT:1 "[TARGET_COUNTRY.GetName] is #bold not #!the initiator"
@@ -251,14 +251,14 @@
  TRIGGER_HAS_TRAIT_THIRD:0 "Has the trait [CHARACTER_TRAIT.GetName]"
  TRIGGER_HAS_TRAIT_THIRD_NOT:0 "Does #bold not #!have the trait [CHARACTER_TRAIT.GetName]"
  
- TRIGGER_IS_FEMALE:0 "Is a woman"
+ TRIGGER_IS_FEMALE:0 "Є жінкою"
  TRIGGER_IS_FEMALE_NOT:1 "Is #bold not #!a woman"
  
  TRIGGER_IS_CHARACTER_ALIVE:0 "[CHARACTER.GetFullName] is alive"
  TRIGGER_IS_CHARACTER_ALIVE_NOT:0 "[CHARACTER.GetFullName] is dead"
  
- TRIGGER_IS_BUSY:0 "Is busy"
- TRIGGER_IS_BUSY_NOT:1 "Is #bold not #!busy"
+ TRIGGER_IS_BUSY:0 "Є зайнятим"
+ TRIGGER_IS_BUSY_NOT:1 "Є #bold not #!busy"
  
  TRIGGER_IS_IN_VOID:0 "Has vanished"
  TRIGGER_IS_IN_VOID_NOT:1 "Has #bold not #!vanished"
@@ -311,7 +311,7 @@
  TRIGGER_IN_ELECTION_CAMPAIGN_THIRD:0 "[Country.GetName] is in [concept_election] campaign period"
  TRIGGER_IN_ELECTION_CAMPAIGN_THIRD_NOT:1 "[Country.GetName] is #bold not #!in [concept_election] campaign period"
  
- TRIGGER_HAS_WAR_WITH:0 "Is at war with [TARGET_COUNTRY.GetName]"
+ TRIGGER_HAS_WAR_WITH:0 "У стані війни з [TARGET_COUNTRY.GetName]"
  TRIGGER_HAS_WAR_WITH_NOT:1 "Is #bold not #!at war with [TARGET_COUNTRY.GetName]"
  TRIGGER_IS_DIPLOMATIC_PLAY_ENEMY_OF:0 "Is opposing [TARGET_COUNTRY.GetName] in a [concept_diplomatic_play]"
  TRIGGER_IS_DIPLOMATIC_PLAY_ENEMY_OF_NOT:0 "Is #bold not #! opposing [TARGET_COUNTRY.GetName] in a [concept_diplomatic_play]"

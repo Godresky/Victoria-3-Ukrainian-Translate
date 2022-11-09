@@ -40,7 +40,7 @@
  mm_front_interaction:0 "Front Interaction"
  mm_recruit_generals_interaction:1 "Recruit Generals at an HQ"
  mm_recruit_admirals_interaction:1 "Recruit Admirals at an HQ"
- mm_construction_interaction:0 "Construction Interaction"
+ mm_construction_interaction: "Будівництво"
  mm_declare_interest_interaction: "Проявити руп"
  mm_issue_decree_interaction:0 "Issue Decree"
  mm_incorporate_state_interaction:0 "Incorporate State"
