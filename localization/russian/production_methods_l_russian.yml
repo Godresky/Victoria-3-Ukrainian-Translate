@@ -5,9 +5,9 @@
  pmg_base_building_shipyards: "$pm_base$"
  
  pmg_base_building_power_plant: "$pm_base$"
- pmg_base_building_rye_farm: "$pm_base$"
- pmg_base_building_wheat_farm: "$pm_base$"
- pmg_base_building_rice_farm: "$pm_base$"
+ pmg_base_building_rye_farm: "Тип вирощування"
+ pmg_base_building_wheat_farm: "Тип вирощування"
+ pmg_base_building_rice_farm: "Тип вирощування"
  pmg_base_building_maize_farm: "$pm_base$"
  pmg_base_building_millet_farm: "$pm_base$"
  pmg_base_building_livestock_ranch: "$pm_base$"
@@ -25,7 +25,7 @@
  pmg_base_building_construction_sector: "$pm_base$"
  pmg_base_building_port: "$pm_base$"
  pmg_base_building_trade_center: "$pm_base$"
- pmg_base_building_government_administration: "$pm_base$"
+ 
  
  pmg_base_building_eiffel_tower: "$pm_base$"
  pmg_base_building_logging_camp: "$pm_base$"
@@ -196,7 +196,7 @@ pm_disabled_steam_power: "Без парової потужності"
  pm_smoothbores: "Гладкоствольно гармата"
  pm_breech_loaders: "Казенна гармата"
 
-pm_artillery_production: "Виробництво артилерії"
+ pm_artillery_production: "Виробництво артилерії"
   
 # Paper Mills
  pmg_base_building_paper_mills: "$pm_base$"
@@ -208,10 +208,10 @@ pm_artillery_production: "Виробництво артилерії"
  pm_watertube_boiler_building_paper_mills: "Водотрубні котли"
  pm_rotary_valve_engine_building_paper_mills: "Роторні двигуни"
 
-pm_crude_paper: "Грубий папір"
-pm_no_publishing: "Відсутність видавничої справи"
-pm_newspapers: "Вісниці"
-pm_printing_presses: "Друкарські машини"
+ pm_crude_paper: "Грубий папір"
+ pm_no_publishing: "Відсутність видавничої справи"
+ pm_newspapers: "Вісниці"
+ pm_printing_presses: "Друкарські машини"
   
 # Steel Mills
  pmg_steelmaking_process: "Процеси виготовлення"
@@ -224,14 +224,14 @@ pm_printing_presses: "Друкарські машини"
  pm_watertube_boiler_building_steel_mills: "Водотрубний котел"
  pm_rotary_valve_engine_building_steel_mills: "Роторний клапанний двигун"
 
-pm_munitions_plants: "Виробництво набоїв"
-pm_disabled_munitions_plants: "Без виробництва набоїв"
-pm_cartridge_crafting: "Виготовлення набоїв"
-
 #Виробня набоїв
  pmg_base_building_munition_plants: "Тип набоїв"
- pm_percussion_caps:0 "Капсюльні набої"
- pm_explosive_shells:0 "Вибухові набої"
+ pm_percussion_caps: "Капсюльні набої"
+ pm_explosive_shells: "Вибухові набої"
+
+ pm_munitions_plants: "Виробництво набоїв"
+ pm_disabled_munitions_plants: "Без виробництва набоїв"
+ pm_cartridge_crafting: "Виготовлення набоїв"
   
 # Motor Industry
  pmg_base_building_motor_industry: "Модель рушія"
@@ -257,8 +257,8 @@ pm_cartridge_crafting: "Виготовлення набоїв"
  pm_tank_production: "Танки"
   
 # Foundries
- pm_civilian:0 "Civilian"
- pm_wartime:0 "Wartime"
+ pm_civilian: "Цівільний"
+ pm_wartime: "Воєний"
 
 #Академія мистецтв
  pmg_base_building_arts_academy: "Тип мистецтва"
@@ -304,28 +304,22 @@ pm_cartridge_crafting: "Виготовлення набоїв"
  pmg_refrigeration_building_whaling_station: "Тип охолодження"
  pm_refrigerated_storage_building_whaling_station: "Холодники"
  pm_refrigerated_rail_cars_building_whaling_station: "Вагони-холодники"
+ pm_flash_freezing_building_whaling_station: "Миттєве заморожування"
 
-
- pm_fish_oil:0 "Fish Oil"
- pm_disabled_fish_oil:0 "Prioritize Fish Production"
- pm_oil_extraction:0 "Oil Extraction"
- pm_cod_liver_oil:0 "Cod Liver Oil"
+pm_fish_oil: "Рибій жир"
+pm_disabled_fish_oil: "Виробництво риби"
+pm_oil_extraction: "Видобуток нафти"
+pm_cod_liver_oil: "Масло печінки тріски"
  
  pmg_refrigeration_building_livestock_ranch:0 "Тип охолодження"
- 
- 
- 
- 
  pm_refrigerated_storage_building_livestock_ranch:0 "Холодники"
- 
- 
  pm_refrigerated_rail_cars_building_livestock_ranch:0 "Вагони-холодники"
  
- pm_flash_freezing_building_whaling_station:0 "Flash Freezing"
  
 # Grain Farms
- pm_simple_farming:0 "Simple Farming"
- pm_simple_farming_building_rice_farm:0 "Simple Farming"
+ 
+ pm_simple_farming:0 "Звичайне фермерство"
+ 
  pm_intensive_farming:0 "Intensive Farming"
  pm_soil_enriching_farming:0 "Soil-Enriching Farming"
  pm_soil_enriching_farming_building_rice_farm:0 "Soil-Enriching Farming"
@@ -342,6 +336,18 @@ pm_cartridge_crafting: "Виготовлення набоїв"
  pm_tractors:0 "Tractors"
  pm_compression_ignition_tractors:0 "Compression Ignition Tractors"
 
+#Рисове полище
+
+pm_simple_farming_building_rice_farm:0 "Звичайне фермерство"
+
+
+
+
+
+
+
+
+
 # Ranches
  pm_simple_ranch:0 "Simple Ranch"
  pm_intensive_grazing_ranch:0 "Intensive Grazing Ranch"
@@ -355,85 +361,101 @@ pm_cartridge_crafting: "Виготовлення набоїв"
  pm_orchards:0 "Orchards"
  pm_orchards_no:0 "No Orchards"
   
-  # Mines
- pmg_mining_equipment_building_coal_mine:0 "Mining Equipment"
- pmg_mining_equipment_building_iron_mine:0 "Mining Equipment"
- pmg_mining_equipment_building_lead_mine:0 "Mining Equipment"
- pmg_mining_equipment_building_sulfur_mine:0 "Mining Equipment"
- pmg_mining_equipment_building_gold_mine:0 "Mining Equipment"
+# Копальні
+ pmg_mining_equipment_building_coal_mine: "Копальне обладнання"
+ pmg_mining_equipment_building_iron_mine: "Копальне обладнання"
+ pmg_mining_equipment_building_lead_mine: "Копальне обладнання"
+ pmg_mining_equipment_building_sulfur_mine: "Копальне обладнання"
+ pmg_mining_equipment_building_gold_mine: "Копальне обладнання"
+ pm_no_mining_equipment: "Без обладнання"
+ pm_picks_and_shovels_building_coal_mine: "Кайло та лопата"
+ pm_picks_and_shovels_building_iron_mine: "Кайло та лопата"
+ pm_picks_and_shovels_building_lead_mine: "Кайло та лопата"
+ pm_picks_and_shovels_building_sulfur_mine: "Кайло та лопата"
+ pm_picks_and_shovels_building_gold_mine: "Кайло та лопата"
+ pm_atmospheric_engine_pump_building_coal_mine: "Атмосферні смоки"
+ pm_atmospheric_engine_pump_building_iron_mine: "Атмосферні смоки"
+ pm_atmospheric_engine_pump_building_lead_mine: "Атмосферні смоки"
+ pm_atmospheric_engine_pump_building_sulfur_mine: "Атмосферні смоки"
+ pm_atmospheric_engine_pump_building_gold_mine: "Атмосферні смоки"
+ pm_condensing_engine_pump_building_coal_mine: "Конденсаційні смоки"
+ pm_condensing_engine_pump_building_iron_mine: "Конденсаційні смоки"
+ pm_condensing_engine_pump_building_lead_mine: "Конденсаційні смоки"
+ pm_condensing_engine_pump_building_sulfur_mine: "Конденсаційні смоки"
+ pm_condensing_engine_pump_building_gold_mine: "Конденсаційні смоки"
+ pm_diesel_pump_building_coal_mine: "Дізельні смоки"
+ pm_diesel_pump_building_iron_mine: "Дізельні смоки"
+ pm_diesel_pump_building_lead_mine: "Дізельні смоки"
+ pm_diesel_pump_building_sulfur_mine: "Дізельні смоки"
+ pm_diesel_pump_building_gold_mine: "Дізельні смоки"
 
- pm_no_mining_equipment:0 "No Equipment"
+ pmg_explosives_building_coal_mine: "Тип вибухівки"
+ pmg_explosives_building_iron_mine: "Тип вибухівки"
+ pmg_explosives_building_lead_mine: "Тип вибухівки"
+ pmg_explosives_building_sulfur_mine: "Тип вибухівки"
+ pmg_explosives_building_gold_mine: "Тип вибухівки"
+ pm_no_explosives: "Ручне буріння"
+ pm_nitroglycerin_building_coal_mine: "Нітроґліцерин"
+ pm_nitroglycerin_building_iron_mine: "Нітроґліцерин"
+ pm_nitroglycerin_building_lead_mine: "Нітроґліцерин"
+ pm_nitroglycerin_building_sulfur_mine: "Нітроґліцерин"
+ pm_nitroglycerin_building_gold_mine: "Нітроґліцерин"
+ pm_dynamite_building_coal_mine: "Вибухівка"
+ pm_dynamite_building_iron_mine: "Вибухівка"
+ pm_dynamite_building_lead_mine: "Вибухівка"
+ pm_dynamite_building_sulfur_mine: "Вибухівка"
+ pm_dynamite_building_gold_mine: "Вибухівка"
 
- pm_picks_and_shovels_building_coal_mine:0 "Picks and Shovels"
- pm_picks_and_shovels_building_iron_mine:0 "Picks and Shovels"
- pm_picks_and_shovels_building_lead_mine:0 "Picks and Shovels"
- pm_picks_and_shovels_building_sulfur_mine:0 "Picks and Shovels"
- pm_picks_and_shovels_building_gold_mine:0 "Picks and Shovels"
+ pmg_steam_automation: "Парова втоматизація"
+ pmg_steam_automation_building_coal_mine: "$pmg_steam_automation$"
+ pmg_steam_automation_building_iron_mine: "$pmg_steam_automation$"
+ pmg_steam_automation_building_lead_mine: "$pmg_steam_automation$"
+ pmg_steam_automation_building_sulfur_mine: "$pmg_steam_automation$"
+ pmg_steam_automation_building_gold_mine: "$pmg_steam_automation$"
+ pm_no_steam_automation: "Ручний кран"
+ pm_steam_donkey_mine: "Паровий віслюк"
+ pm_steam_donkey_building_logging_camp: "Паровий віслюк"
+ pm_steam_donkey_building_coal_mine: "Паровий віслюк"
 
- pm_atmospheric_engine_pump_building_coal_mine:0 "Atmospheric Engine Pump"
- pm_atmospheric_engine_pump_building_iron_mine:0 "Atmospheric Engine Pump"
- pm_atmospheric_engine_pump_building_lead_mine:0 "Atmospheric Engine Pump"
- pm_atmospheric_engine_pump_building_sulfur_mine:0 "Atmospheric Engine Pump"
- pm_atmospheric_engine_pump_building_gold_mine:0 "Atmospheric Engine Pump"
+ pmg_train_automation: "Перевезення"
+ pmg_train_automation_building_coal_mine: "$pmg_train_automation$"
+ pmg_train_automation_building_iron_mine: "$pmg_train_automation$"
+ pmg_train_automation_building_lead_mine: "$pmg_train_automation$"
+ pmg_train_automation_building_sulfur_mine: "$pmg_train_automation$"
+ pmg_train_automation_building_gold_mine: "$pmg_train_automation$"
+ pm_road_carts: "Дорожні візки"
+ pm_rail_transport: "Залізниці"
+ pm_rail_transport_mine: "$pm_rail_transport$"
+ pm_rail_transport_building_logging_camp: "$pm_rail_transport$"
+ pm_rail_transport_building_oil_rig: "$pm_rail_transport$"
+ pm_rail_transport_building_lead_mine: "$pm_rail_transport$"
+ pm_rail_transport_building_coal_mine: "$pm_rail_transport$"
 
- pm_steam_donkey_mine:0 "Steam Donkey"
- pm_steam_donkey_building_logging_camp:0 "Steam Donkey"
- pm_steam_donkey_building_coal_mine:0 "Steam Donkey"
- pmg_explosives_building_chemical_plants:0 "Explosives"
 
- pmg_explosives_building_coal_mine:0 "Explosives"
- pmg_explosives_building_iron_mine:0 "Explosives"
- pmg_explosives_building_lead_mine:0 "Explosives"
- pmg_explosives_building_sulfur_mine:0 "Explosives"
- pmg_explosives_building_gold_mine:0 "Explosives"
+pmg_explosives_building_chemical_plants: "Вибухівка"
 
- pm_no_explosives:0 "Manual Drilling"
+pm_steam_rail_transport: "Залізниця"
 
- pm_nitroglycerin_building_coal_mine:0 "Nitroglycerin"
- pm_nitroglycerin_building_iron_mine:0 "Nitroglycerin"
- pm_nitroglycerin_building_lead_mine:0 "Nitroglycerin"
- pm_nitroglycerin_building_sulfur_mine:0 "Nitroglycerin"
- pm_nitroglycerin_building_gold_mine:0 "Nitroglycerin"
-
- pm_dynamite_building_coal_mine:0 "Dynamite"
- pm_dynamite_building_iron_mine:0 "Dynamite"
- pm_dynamite_building_lead_mine:0 "Dynamite"
- pm_dynamite_building_sulfur_mine:0 "Dynamite"
- pm_dynamite_building_gold_mine:0 "Dynamite"
-
- pm_no_steam_automation:0 "Hand Cranked Crane"
- pm_steam_rail_transport:0 "Rail Transportation"
-
- pm_condensing_engine_pump_building_coal_mine:0 "Condensing Engine Pump"
- pm_condensing_engine_pump_building_iron_mine:0 "Condensing Engine Pump"
- pm_condensing_engine_pump_building_lead_mine:0 "Condensing Engine Pump"
- pm_condensing_engine_pump_building_sulfur_mine:0 "Condensing Engine Pump"
- pm_condensing_engine_pump_building_gold_mine:0 "Condensing Engine Pump"
-
- pm_diesel_pump_building_coal_mine:0 "Diesel Pump"
- pm_diesel_pump_building_iron_mine:0 "Diesel Pump"
- pm_diesel_pump_building_lead_mine:0 "Diesel Pump"
- pm_diesel_pump_building_sulfur_mine:0 "Diesel Pump"
- pm_diesel_pump_building_gold_mine:0 "Diesel Pump"
-
-  # Government Administration
- pm_simple_organization:0 "Simple Organization"
- pm_horizontal_drawer_cabinets:1 "Filing Cabinets"
- pm_vertical_filing_cabinets:1 "Standardized Filing System"
- pm_switch_boards:0 "Telephone Switchboards"
- pm_census:0 "Regular Census"
- pm_identification_documents:0 "Mandatory identification documents"
- pm_personal_files:0 "Individual Personnel Files"
+# Державна управа
+ pmg_base_building_government_administration: "Збереження даних"
+ pm_simple_organization: "Проста організація"
+ pm_horizontal_drawer_cabinets: "Шафи для документів"
+ pm_vertical_filing_cabinets: "Стандартизована система файлів"
+ pm_switch_boards: "Телекомунікація"
  
- pmg_government_administration_bureaucrat_professionalism:1 "Professionalism"
- pm_hereditary_bureaucrats:0 "Hereditary Bureaucrats"
- pm_professional_bureaucrats:0 "Professional Bureaucrats"
+ pmg_government_administration_bureaucrat_professionalism: "Професіоналізм"
+ pm_hereditary_bureaucrats: "Потомствені бюрократи"
+ pm_professional_bureaucrats: "Професійні бюрократи"
  
- pmg_government_administration_religious_administration:1 "Secularism"
- pm_secular_bureaucrats:0 "Secular Administration"
- pm_religious_bureaucrats:0 "Administrative Clergy"
-  
-  # Barracks
+ pmg_government_administration_religious_administration: "Світянство"
+ pm_religious_bureaucrats: "Адміністративне духовенство"
+ pm_secular_bureaucrats: "Світська адміністрація"
+
+pm_census:0 "Regular Census"
+pm_identification_documents:0 "Mandatory identification documents"
+pm_personal_files:0 "Individual Personnel Files"
+
+# Barracks
   
  pmg_organization:0 "Organization"
  pm_irregular_infantry:0 "Irregular Infantry"
@@ -576,19 +598,9 @@ pm_cartridge_crafting: "Виготовлення набоїв"
  pmg_slaughtering:0 "Slaughtering"
  pmg_fencing:0 "Fencing"
 
- pmg_steam_automation:0 "Steam Automation"
- pmg_steam_automation_building_coal_mine:1 "$pmg_steam_automation$"
- pmg_steam_automation_building_iron_mine:1 "$pmg_steam_automation$"
- pmg_steam_automation_building_lead_mine:1 "$pmg_steam_automation$"
- pmg_steam_automation_building_sulfur_mine:1 "$pmg_steam_automation$"
- pmg_steam_automation_building_gold_mine:1 "$pmg_steam_automation$"
+ 
 
- pmg_train_automation:0 "Train Automation"
- pmg_train_automation_building_coal_mine:1 "$pmg_train_automation$"
- pmg_train_automation_building_iron_mine:1 "$pmg_train_automation$"
- pmg_train_automation_building_lead_mine:1 "$pmg_train_automation$"
- pmg_train_automation_building_sulfur_mine:1 "$pmg_train_automation$"
- pmg_train_automation_building_gold_mine:1 "$pmg_train_automation$"
+ 
  pmg_train_automation_building_coffee_plantation:1 "$pmg_train_automation$"
  pmg_train_automation_building_cotton_plantation:1 "$pmg_train_automation$"
  pmg_train_automation_building_dye_plantation:1 "$pmg_train_automation$"
@@ -604,14 +616,7 @@ pm_cartridge_crafting: "Виготовлення набоїв"
  pmg_equipment:0 "Special Equipment"
  pmg_transportation_building_logging_camp:0 "Transportation"
  pmg_transportation_building_oil_rig:0 "Transportation"
- pm_road_carts:0 "Road Carts"
  
- pm_rail_transport:0 "Rail Transportation"
- pm_rail_transport_mine:1 "$pm_rail_transport$"
- pm_rail_transport_building_logging_camp:1 "$pm_rail_transport$"
- pm_rail_transport_building_oil_rig:1 "$pm_rail_transport$"
- pm_rail_transport_building_lead_mine:1 "$pm_rail_transport$"
- pm_rail_transport_building_coal_mine:1 "$pm_rail_transport$"
  
  pm_log_carts:0 "Rail Log Carts"
  pm_fish_press:0 "Fish Press"
@@ -639,24 +644,23 @@ pm_cartridge_crafting: "Виготовлення набоїв"
  
  
   
-  # Home Workshops
-  
- pmg_home_workshops:0 "Home Workshops"
- pmg_home_workshops_building_subsistence_farms:1 "$pmg_home_workshops$"
- pmg_home_workshops_building_subsistence_orchards:1 "$pmg_home_workshops$"
- pmg_home_workshops_building_subsistence_pastures:1 "$pmg_home_workshops$"
+# Home Workshops
+ pmg_home_workshops: "Домашні майстерні"
+ pmg_home_workshops_building_subsistence_farms: "$pmg_home_workshops$"
+ pmg_home_workshops_building_subsistence_orchards: "$pmg_home_workshops$"
+ pmg_home_workshops_building_subsistence_pastures: "$pmg_home_workshops$"
 
- pm_home_workshops:0 "Home Workshops"
- pm_home_workshops_building_subsistence_farms:1 "$pm_home_workshops$"
- pm_home_workshops_building_subsistence_orchards:1 "$pm_home_workshops$"
- pm_home_workshops_building_subsistence_pastures:1 "$pm_home_workshops$"
+ pm_home_workshops: "Домашні майстерні"
+ pm_home_workshops_building_subsistence_farms: "$pm_home_workshops$"
+ pm_home_workshops_building_subsistence_orchards: "$pm_home_workshops$"
+ pm_home_workshops_building_subsistence_pastures: "$pm_home_workshops$"
 
- pm_home_workshops_no:0 "No Home Workshops"
- pm_home_workshops_no_building_subsistence_farms:1 "$pm_home_workshops_no$"
- pm_home_workshops_no_building_subsistence_orchards:1 "$pm_home_workshops_no$"
- pm_home_workshops_no_building_subsistence_pastures:1 "$pm_home_workshops_no$"
+ pm_home_workshops_no: "Без домашніх майстерень"
+ pm_home_workshops_no_building_subsistence_farms: "$pm_home_workshops_no$"
+ pm_home_workshops_no_building_subsistence_orchards: "$pm_home_workshops_no$"
+ pm_home_workshops_no_building_subsistence_pastures: "$pm_home_workshops_no$"
 
-  # Serfdom
+# Serfdom
  pm_serfdom:2 "Serfdom"
  pmg_serfdom_building_subsistence_farms:1 "$pm_serfdom$"
  pmg_serfdom_building_subsistence_orchards:1 "$pm_serfdom$"
