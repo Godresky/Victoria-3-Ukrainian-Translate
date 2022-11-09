@@ -203,8 +203,8 @@
 
  COUNTRY_IN_MARKET_SUBTITLE: "[concept_country] входить в [CountryPanel.AccessCountry.AccessFirstMarket.GetName|l]"
  STATE_IN_COUNTRY_SUBTITLE: "[concept_state] [Concept('concept_country', '$concept_country_gen$')|l] [State.GetCountry.GetName]"
- BATTLE_ON_FRONT_SUBTITLE:0 "[concept_battle] on [Battle.GetFront.GetName]"
- FRONT_IN_WAR_SUBTITLE:0 "[concept_front] in [Front.AccessDiplomaticPlay.AccessWar.GetName]"
+ BATTLE_ON_FRONT_SUBTITLE: "[concept_battle] [Concept('concept_front', '$concept_front_gen$')|l] [Battle.GetFront.GetName]"
+ FRONT_IN_WAR_SUBTITLE: "[concept_front] [Concept('concept_war', '$concept_war_gen$')|l] [Front.AccessDiplomaticPlay.AccessWar.GetName]"
 
  INTEREST_GROUP_PANEL_MODIFIERS_TAB: "Змінювачі"
  INTEREST_GROUP_PANEL_MODIFIERS_TAB_SELECTED: "#bold Змінювачі#!"
@@ -1584,8 +1584,8 @@
 
  AND_SPACED: " і "
  COMMA_SPACED: ", "
- MAP_INFO: "#header Мапа#!\n$TOOLTIP_DELIMITER$\nНатисніть і утримуйте #bold "Tab"#!, щоб повністю зменшити масштаб. Відпустивши її, ви повернетеся до попереднього рівня масштабування."
- MAP_INFO_MAP_MODE_LOCKED:0 "$MAP_INFO$\n\n#instruction Click to clear locked Map Mode.#!"
+ MAP_INFO: "#header Мапа#!\n$TOOLTIP_DELIMITER$\nНатисніть та утримуйте #bold Tab#!, щоб повністю зменшити масштаб. Відпустивши її, ви повернетеся до попереднього рівня масштабування."
+ MAP_INFO_MAP_MODE_LOCKED: "$MAP_INFO$\n\n#instruction Клацніть, щоб зняти вибраний режим мапи.#!"
  LOCATION_FINDER: "#header Ськання місцин#!"
  ZOOM_TO_BUILDING_STATE: "Приблизити до [Building.AccessState.GetName]"
  ZOOM_TO_EVENT_WINDOW_STATE: "Приблизити до [EventWindow.GetEvent.GetState.GetName]"
@@ -1603,7 +1603,7 @@
  BUTTON_MILITARY: "#header Військо#!"
  BUTTON_TECHNOLOGY: "#header Технології#!\n[SelectLocalization( Technology.IsValid, 'RESEARCHING', 'NOT_RESEARCHING' )]"
  UNLOCK_MAP_MODE: "Зняти вибраний режим мапи"
- UNLOCK_MAP_MODE_TOOLTIP:0 "#header $UNLOCK_MAP_MODE$#!\n[GetSelectedMapModeName] Map Mode is currently locked."
+ UNLOCK_MAP_MODE_TOOLTIP: "#header $UNLOCK_MAP_MODE$#!\nРежим мапи [GetSelectedMapModeName] зараз вибраний."
 
  RESEARCHING: "[GetPlayer.GetName] зараз досліджує #variable [Technology.GetName]#!\nПоступ: $TECHNOLOGY_PROGRESS_WITH_GAIN_AND_TIME_LEFT$"
  NOT_RESEARCHING: "[GetPlayer.GetName] зараз нічого не досліджує."
@@ -2119,7 +2119,7 @@
  GO_TO_BUTTON_MARKET: "Показати [Market.GetName|l]"
  GO_TO_BUTTON_CONSTRUCTION_QUEUE:0 "Go to [concept_construction_queue]"
  GO_TO_BUTTON_INTEREST_GROUP: "Показати [Concept('concept_interest_group', '$concept_interest_group_acc$')|l] [InterestGroup.GetName]"
- GO_TO_BUTTON_WAR: "Показати війну [War.GetName|l]"
+ GO_TO_BUTTON_WAR: "Показати [Concept('concept_war', '$concept_war_acc$')|l] [War.GetName|l]"
 
  START_RESEARCHING:0 "Start Researching"
 
@@ -2989,7 +2989,7 @@
  FRONT_PANEL_SECOND_UNITS:0 "Second Side Units"
  FRONT_PANEL_NO_PRESENT_GENERALS:0 "No [Concept('concept_general', '$concept_generals$')] present on this side"
 
- SAVING_GAME:0 "Saving Game"
+ SAVING_GAME: "Збереження гри"
  BUILDING_COSTS:0 "Building costs"
  TARGET_STRENGTH:0 "Target Strength Points for army"
  STRATEGIC_GOODS:0 "Strategic Goods"
@@ -3003,7 +3003,7 @@
  KEY_ESCAPE:0 "Esc"
  KEY_KP_PLUS:0 "Keypad +"
  KEY_KP_MINUS:0 "Keypad -"
- KEY_MB4:0 "Мишка 4"
+ KEY_MB4: "Мишка 4"
 
  RAW_MATERIALS:0 "Raw mat."
  INDUSTRIAL_GOODS:0 "Industrial"
@@ -4993,7 +4993,7 @@
  TAX_LEVEL_NO_TAX_LAW:0 "Taxation Law: None"
  TAXED_GOODS:0 "Currently Taxed [Concept('concept_good', '$concept_goods$')]: $GOODSDESC$"
  TAX_OR_EXPENSE_LEVEL_EFFECTS_HEADER:0 "#header Effects:#!"
- TAX_OR_EXPENSE_LEVEL_CURRENT:0 "#i #b (Current Level)#!#!"
+ TAX_OR_EXPENSE_LEVEL_CURRENT: "#i #b (Поточний рівень)#!#!"
  GOVERNMENT_WAGES_LEVEL:0 "$GOVERNMENT_WAGES_LEVEL_HEADER$ $CURRENT$\n$TOOLTIP_DELIMITER$\n$TAX_OR_EXPENSE_LEVEL_EFFECTS_HEADER$"
  GOVERNMENT_WAGES_LEVEL_TITLE:0 "#title Government Wages#!"
  GOVERNMENT_WAGES_LEVEL_HEADER:0 "#variable $EXPENSE_LEVEL$ Government Wages#!"
@@ -5815,7 +5815,7 @@
  OTHER: "Інше"
  OTHER_TITLE_COLON: "#title Інше:#!"
 
- CONSTRUCTION_POINTS:1 "Requires $POINTS|0v$ @construction![concept_construction]"
+ CONSTRUCTION_POINTS: "Потребує $POINTS|0v$ @construction![concept_construction]"
  CONSTRUCTION_DURATION: "$WEEKS$ тижнів"
  CONSTRUCTION_DURATION_UNKNOWN:1 "Unknown"
  CONSTRUCTION_DURATION_PAUSED:0 "Paused"
@@ -6180,7 +6180,7 @@
  DIPLO_PLAY_CLICK_STANCES:0 "#instruction Click to set your stance#!"
  DIPLO_PLAY_STANCES:0 "#bold Current Stances#!"
  BELLIGERENTS:0 "Belligerents"
- TO_ARMS:0 "To Arms!"
+ TO_ARMS: "До зброї!"
  DIPLO_PLAY_MANEUVERS_TARGET:0 "[DiplomaticPlay.GetNumTargetManeuversRemaining|v]"
  DIPLO_PLAY_MANEUVERS_INITIATOR:0 "[DiplomaticPlay.GetNumInitiatorManeuversRemaining|v]"
 
@@ -6203,7 +6203,7 @@
  SINGLE_GOODS_OR_EMPLOYMENT_MORE:0 "more"
  SINGLE_GOODS_OR_EMPLOYMENT_LESS:0 "less"
  UNSCALED_MODIFIERS_COLON:0 "#title Unscaled Modifiers:#!"
- PER_LEVEL_MODIFIERS_COLON:0 "#title Per Level Modifiers:#!"
+ PER_LEVEL_MODIFIERS_COLON: "#title Змінювачі за рівень:#!"
  TOTAL_MODIFIERS_COLON:0 "#title Total Modifiers:#!"
  INCREASED_EMPLOYMENT_COLON: "#title Збільшить зайнятість:#!"
  DECREASED_EMPLOYMENT_COLON: "#title Зменшить зайнятість:#!"

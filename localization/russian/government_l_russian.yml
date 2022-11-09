@@ -89,7 +89,7 @@
  gov_bhutanese_monarchy_desc:0 "This is a [concept_government] form where the power rests with the [Concept('concept_ruler','$RULER_TITLE_DRAGON_KING$')] or [Concept('concept_ruler','$RULER_TITLE_DRAGON_QUEEN$')]."
  gov_mughal_empire: "Імперія Великих Моголів"
  gov_mughal_empire_desc:0 "This is a [concept_government] form where the power rests with the [Concept('concept_ruler','$RULER_TITLE_PADISHAH$')]."
- gov_shogunate: "Сьоґунат"
+ gov_shogunate: "Шьоґунат"
  gov_shogunate_desc:1 "This is a [concept_government] ruled by the [Concept('concept_ruler','$RULER_TITLE_SHOGUN$')], a powerful feudal lord who has secured the loyalty of the landed class. Though there is nominally an [Concept('concept_ruler','$RULER_TITLE_EMPEROR$')], the monarchy has no real power to govern the [concept_country]."
  gov_hm_gov: "Британська монархія"
  gov_hm_gov_desc: "[concept_government] його або її величности, величний та славний інститут."
@@ -281,7 +281,7 @@
  RULER_TITLE_KHATUN: "Хатун"
  RULER_TITLE_EMIR: "Емір"
  RULER_TITLE_EMIRA: "Еміра"
- RULER_TITLE_SHOGUN: "Сьоґун"
+ RULER_TITLE_SHOGUN: "Шьоґун"
 
  RULER_CHIEFTAIN: "Вождь"
  RULER_CHIEFTESS: "Вождь"

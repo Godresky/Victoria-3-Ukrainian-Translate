@@ -266,6 +266,7 @@
  concept_conscript_battalion_desc:4 "$concept_conscript_battalions$ are temporary [Concept('concept_battalion', '$concept_battalions$')] recruited and maintained from the civilian [Concept('concept_pop','$concept_population$')] by [Concept('concept_conscription_center','$concept_conscription_centers$')] activated during [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] or [Concept('concept_war','$concept_wars$')]."
  
  concept_front: "Фронт"
+ concept_front_gen: "Фронту"
  concept_fronts: "Фронти"
  concept_front_desc:2 "A collection of [Concept('concept_province', '$concept_provinces$')] on the border of [Concept('concept_theater','$concept_theaters$')] between two [Concept('concept_country', '$concept_countries$')] at [concept_war] with each other. [Concept('concept_general', '$concept_generals$')] can be [Concept('concept_order','$concept_ordered$')] to advance or defend $concept_fronts$, which can result in [Concept('concept_battle','$concept_battles$')] that change the size of the $concept_theaters$ and the location of the $concept_front$."
 
@@ -290,8 +291,8 @@
  concept_battle_condition_short:0 "Condition"
  concept_battle_condition_desc:0 "During [Concept('concept_battle','$concept_battles$')] each side will be affected by a $concept_battle_condition$ that influences the outcome. Which $concept_battle_condition_short$ applies depends on a number of factors, which often includes the [Concept('concept_character_trait','$concept_character_traits$')] of the [Concept('concept_commander','$concept_commanders$')] in charge of that side."
 
- concept_battle:0 "Battle"
- concept_battles:0 "Battles"
+ concept_battle: "Битва"
+ concept_battles: "Битви"
  concept_battle_desc:1 "When two [Concept('concept_commander','$concept_commanders$')] encounter each other and come into conflict during a [concept_war], they and their [Concept('concept_unit','$concept_units$')] will clash in an attempt to inflict [concept_casualties] and damage each others' [concept_morale]. The side whose [concept_manpower] has run out or become $concept_morale_demoralized$ first will withdraw, leaving the other side victorious.\n\nOn land, $concept_battles$ take place in [Concept('concept_province','$concept_provinces$')] adjacent to [Concept('concept_front','$concept_fronts$')] when one [concept_general] is advancing to take or regain $concept_province_land$. The winner will either conquer more $concept_provinces$ or prevent the enemy from doing so.\nAt sea, $concept_battles$ take place in Sea Nodes when one [concept_admiral] intercepts another due to conflicting [Concept('concept_order','$concept_orders$')]. The winner leaves their opponent damaged and forces them to return to port for repairs, leaving them unable to execute their $concept_order$ for a time."
 
  concept_timed_modifier: "Тимчасовий змінювач"
@@ -756,7 +757,7 @@
  concept_ai_strategies: "Стратегії"
  concept_ai_strategy_desc:1 "AI-controlled [Concept('concept_country','$concept_countries$')] have a set of three $concept_ai_strategies$ in areas corresponding with the [Concept('concept_capacity','$concept_capacities$')] which govern their long- and short-term goals, and how they will proceed when making decisions in regards to other $concept_countries$. Which $concept_ai_strategies$ are selected is influenced by a number of factors such as the $concept_country$'s size and [concept_rank], as well as its current [concept_government]."
 
- concept_strategic_desire:0 "Strategic Desire"
+ concept_strategic_desire: "Стратегічне бажання"
  concept_strategic_desire_desc:2 "AI-controlled [Concept('concept_country', '$concept_countries$')] may have a $concept_strategic_desire$ towards $concept_countries$ they deem geopolitically relevant. Their $concept_strategic_desire$ influence their [concept_attitude]."
 
  concept_attitude: "Ставлення"
@@ -1014,6 +1015,7 @@
  concept_peace_deal_desc:0 "When a [concept_war_leader] wish to end a [concept_war] they may offer a $concept_peace_deal$. The deal must be agreed to by all negotiating $concept_countries$ remaining in the $concept_war$ to take effect. To increase the chance the $concept_peace_deal$ will be agreed to, the $concept_war_leader$ is allowed to include or exclude proposed [Concept('concept_war_goal','$concept_war_goals$')] from both sides."
 
  concept_war: "Війна"
+ concept_war_gen: "Війни"
  concept_war_acc: "Війну"
  concept_wars: "Війни"
  concept_wars_gen: "Воєн"
@@ -1521,10 +1523,10 @@
  concept_in_reserve: "У запасі"
  concept_in_reserve_desc:1 "[Concept('concept_unit','$concept_units$')] that currently have no [concept_commander] are considered to be $concept_in_reserve$. They cannot be given [Concept('concept_order','$concept_orders$')] but will defend their homeland as part of a [concept_garrison] as needed."
 
- concept_dead: "Мертвий"
+ concept_dead: "Мертві"
  concept_dead_desc:2 "[concept_casualties] that end up $concept_dead$ due to [concept_battle] or [concept_attrition]."
 
- concept_wounded: "Поранений"
+ concept_wounded: "Поранені"
  concept_wounded_desc:2 "[concept_casualties] that are merely $concept_wounded$ in [concept_battle] or due to [concept_attrition]. Some $concept_wounded$ $concept_casualties$ recover and return to active service after some time, while others end up as [concept_dependents] of other [Concept('concept_pop','$concept_pops$')] in your [concept_country]."
 
  concept_attrition: "Виснаження"

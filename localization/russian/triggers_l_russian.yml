@@ -311,7 +311,7 @@
  TRIGGER_IN_ELECTION_CAMPAIGN_THIRD:0 "[Country.GetName] is in [concept_election] campaign period"
  TRIGGER_IN_ELECTION_CAMPAIGN_THIRD_NOT:1 "[Country.GetName] is #bold not #!in [concept_election] campaign period"
  
- TRIGGER_HAS_WAR_WITH:0 "У стані війни з [TARGET_COUNTRY.GetName]"
+ TRIGGER_HAS_WAR_WITH: "У стані війни з державою [TARGET_COUNTRY.GetName]"
  TRIGGER_HAS_WAR_WITH_NOT:1 "Is #bold not #!at war with [TARGET_COUNTRY.GetName]"
  TRIGGER_IS_DIPLOMATIC_PLAY_ENEMY_OF:0 "Is opposing [TARGET_COUNTRY.GetName] in a [concept_diplomatic_play]"
  TRIGGER_IS_DIPLOMATIC_PLAY_ENEMY_OF_NOT:0 "Is #bold not #! opposing [TARGET_COUNTRY.GetName] in a [concept_diplomatic_play]"
