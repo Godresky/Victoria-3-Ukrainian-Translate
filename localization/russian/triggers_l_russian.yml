@@ -114,15 +114,15 @@
  
  TRIGGER_CAN_RESEARCH: "Можна дослідити технологію [TECHNOLOGY.GetName]"
  TRIGGER_CAN_RESEARCH_NOT: "Не можна дослідити технологію [TECHNOLOGY.GetName]"
- TRIGGER_CAN_RESEARCH_FIRST: "Країна [COUNTRY.GetNameNoFlag] може дослідити технологію [TECHNOLOGY.GetName]"
- TRIGGER_CAN_RESEARCH_FIRST_NOT: "Країна [COUNTRY.GetNameNoFlag] НЕ може дослідити технологію [TECHNOLOGY.GetName]"
- TRIGGER_CAN_RESEARCH_THIRD: "Країна [COUNTRY.GetName] може дослідити технологію [TECHNOLOGY.GetName]"
- TRIGGER_CAN_RESEARCH_THIRD_NOT: "Країна [COUNTRY.GetName] НЕ може дослідити технологію [TECHNOLOGY.GetName]"
+ TRIGGER_CAN_RESEARCH_FIRST: "Держава [COUNTRY.GetNameNoFlag] може дослідити технологію [TECHNOLOGY.GetName]"
+ TRIGGER_CAN_RESEARCH_FIRST_NOT: "Держава [COUNTRY.GetNameNoFlag] НЕ може дослідити технологію [TECHNOLOGY.GetName]"
+ TRIGGER_CAN_RESEARCH_THIRD: "Держава [COUNTRY.GetName] може дослідити технологію [TECHNOLOGY.GetName]"
+ TRIGGER_CAN_RESEARCH_THIRD_NOT: "Держава [COUNTRY.GetName] НЕ може дослідити технологію [TECHNOLOGY.GetName]"
  
  TRIGGER_IS_WAR_PARTICIPANT:0 "Has [TARGET_COUNTRY.GetName] Participating"
  TRIGGER_IS_WAR_PARTICIPANT_NOT:1 "Does #bold not #!have [TARGET_COUNTRY.GetName] Participating"
  
- TRIGGER_CAN_FORM_NATION: "Можна створити [COUNTRYFORMATION.GetName]"
+ TRIGGER_CAN_FORM_NATION: "Можна створити державу [COUNTRYFORMATION.GetName]"
  TRIGGER_CAN_FORM_NATION_NOT:2 "Can #bold not #!form the nation of [COUNTRYFORMATION.GetName]"
 
  TRIGGER_HAS_UNIFICATION_CANDIDATE:0 "There is a [concept_unification_candidate] for [COUNTRYFORMATION.GetName]"
@@ -155,8 +155,8 @@
  TRIGGER_TAKING_LOANS_THIRD:0 "[COUNTRY.GetName] is taking loans"
  TRIGGER_TAKING_LOANS_THIRD_NOT:1 "[COUNTRY.GetName] is #bold not #!taking loans"
  
- TRIGGER_COUNTRY_THIS_EQUAL: "Країна — [TARGET_COUNTRY.GetName]"
- TRIGGER_COUNTRY_THIS_EQUAL_NOT: "Країна — #bold не#![TARGET_COUNTRY.GetName]"
+ TRIGGER_COUNTRY_THIS_EQUAL: "Держава — [TARGET_COUNTRY.GetName]"
+ TRIGGER_COUNTRY_THIS_EQUAL_NOT: "Держава — #bold не#![TARGET_COUNTRY.GetName]"
 
  TRIGGER_INITIATOR_IS:0 "[TARGET_COUNTRY.GetName] is the initiator"
  TRIGGER_INITIATOR_IS_NOT:1 "[TARGET_COUNTRY.GetName] is #bold not #!the initiator"
