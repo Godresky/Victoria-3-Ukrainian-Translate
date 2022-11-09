@@ -7,11 +7,11 @@
  TRIGGER_REDUNDANT:0 "@red_cross! $TEXT$"
  
  TRIGGER_RESULT_UNDEFINED:0 "  •  $TEXT$"
- TRIGGER_NAND:0 "Any of these:"
+ TRIGGER_NAND: "Будь-що з цього:"
  
- TRIGGER_OR_NOT:0 "None of these:"
- TRIGGER_ALWAYS:0 "Always"
- TRIGGER_ALWAYS_NOT:0 "Never"
+ TRIGGER_OR_NOT: "Нічого з цього:"
+ TRIGGER_ALWAYS: "Завжди"
+ TRIGGER_ALWAYS_NOT: "Ніколи"
  
  TRIGGER_HAS_STATE_TRAIT:0 "Has the [STATE_TRAIT.GetName] trait"
  TRIGGER_HAS_STATE_TRAIT_NOT:1 "Does #bold not #!have the [STATE_TRAIT.GetName] trait"
@@ -37,14 +37,14 @@
  TRIGGER_IS_PLAYER_THIRD:0 "[COUNTRY.GetName] is controlled by a player"
  TRIGGER_IS_PLAYER_THIRD_NOT:1 "[COUNTRY.GetName] is #bold not #!controlled by a player"
  
- TRIGGER_IS_LOCAL_PLAYER:0 "Is controlled by the local player"
+ TRIGGER_IS_LOCAL_PLAYER: "Контрольвано Локальним гравцем"
  TRIGGER_IS_LOCAL_PLAYER_NOT:1 "Is #bold not #!controlled by the local player"
  TRIGGER_IS_LOCAL_PLAYER_FIRST:0 "[COUNTRY.GetNameNoFlag] is controlled by the local player"
  TRIGGER_IS_LOCAL_PLAYER_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] is #bold not #!controlled by the local player"
  TRIGGER_IS_LOCAL_PLAYER_THIRD:0 "[COUNTRY.GetName] is controlled by the local player"
  TRIGGER_IS_LOCAL_PLAYER_THIRD_NOT:1 "[COUNTRY.GetName] is #bold not #!controlled by the local player"
  
- TRIGGER_IS_AI:0 "Is controlled by an AI"
+ TRIGGER_IS_AI: "Контрольвано ШІ"
  TRIGGER_IS_AI_NOT:1 "Is #bold not #!not controlled by an AI"
  TRIGGER_IS_AI_FIRST:0 "[COUNTRY.GetNameNoFlag] is controlled by an AI"
  TRIGGER_IS_AI_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] is #bold not #!controlled by an AI"
