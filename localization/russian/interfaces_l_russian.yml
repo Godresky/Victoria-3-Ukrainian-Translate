@@ -2114,7 +2114,7 @@
  GO_TO_BUTTON_FRONT: "Показати фронт [Front.GetName|l]"
  GO_TO_BUTTON_BUILDING: "Показати будівлю [Building.GetName|l] у [Concept('concept_state', '$concept_state_loc$')|l] [Building.GetState.GetName]"
  GO_TO_BUTTON_STATE: "Показати [Concept('concept_state', '$concept_state$')|l] [State.GetName]"
- GO_TO_BUTTON_COUNTRY: "Показати державу [Country.GetName]"
+ GO_TO_BUTTON_COUNTRY: "Показати [Concept('concept_country', '$concept_country_acc$')|l] [Country.GetName]"
  GO_TO_BUTTON_CHARACTER: "Показати персонажа [Character.GetFullName]" 
  GO_TO_BUTTON_MARKET: "Показати [Market.GetName|l]"
  GO_TO_BUTTON_CONSTRUCTION_QUEUE:0 "Go to [concept_construction_queue]"
