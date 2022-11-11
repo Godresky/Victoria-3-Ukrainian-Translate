@@ -99,9 +99,9 @@
  INTEREST_GROUP_SUPPORTED_BY_OTHER_HEADER: "#title Інші [Concept('concept_profession', '$concept_professions$')|l]#!"
  INTEREST_GROUP_SUPPORTED_BY_OTHER: "$TAB$Інші [Concept('concept_profession', '$concept_professions$')|l]: #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] $OTHER_PERCENTAGE|%1v$#!#!"
 
- CULTURE_POPULATION_CHANGE_IN_COUNTRY: "(#v #tooltippable #tooltip:CULTURE_POPULATION_CHANGE_IN_COUNTRY_BREAKDOWN [Culture.GetPopulationChange(GetPlayer.Self)|=+Т]#!#!#! / місяць)"
+ CULTURE_POPULATION_CHANGE_IN_COUNTRY: "(#v #tooltippable #tooltip:CULTURE_POPULATION_CHANGE_IN_COUNTRY_BREAKDOWN [Culture.GetPopulationChange(GetPlayer.Self)|=+Т]#!#!#! / в місяць)"
  CULTURE_POPULATION_CHANGE_IN_COUNTRY_BREAKDOWN:0 "[Culture.GetPopulationChangeDesc(GetPlayer.Self)]"
- RELIGION_POPULATION_CHANGE_IN_COUNTRY:0 "(#v #tooltippable #tooltip:RELIGION_POPULATION_CHANGE_IN_COUNTRY_BREAKDOWN [Religion.GetPopulationChange(GetPlayer.Self)|=+Т]#!#!#! / month)"
+ RELIGION_POPULATION_CHANGE_IN_COUNTRY: "(#v #tooltippable #tooltip:RELIGION_POPULATION_CHANGE_IN_COUNTRY_BREAKDOWN [Religion.GetPopulationChange(GetPlayer.Self)|=+Т]#!#!#! / в місяць)"
  RELIGION_POPULATION_CHANGE_IN_COUNTRY_BREAKDOWN:0 "[Religion.GetPopulationChangeDesc(GetPlayer.Self)]"
 
  DATA_COUNTRY_NAME_TOOLTIP_OVERLORD_ENTRY: "\nВладар: [COUNTRY.GetName]"
@@ -133,7 +133,7 @@
  PARTY_DESC:0 "[concept_party]: [InterestGroup.GetParty.GetName]\n"
  DATA_PARTY_NAME_LEADER_TOOLTIP: "На чолі з [Party.GetLeader.GetLeader.GetFullName] ([Party.GetLeader.GetName]).\n[Party.GetMembersBreakdown]"
  DATA_PARTY_NAME_TOOLTIP:2 "[SelectLocalization( Party.GetLeader.IsValid, 'DATA_PARTY_NAME_LEADER_TOOLTIP', 'concept_party_desc' )]"
- DATA_MARKET_NAME_TOOLTIP:1 "[concept_market_owner]: [Market.GetOwner.GetName]\n[concept_market_capital]: [Market.GetMarketCapital.GetName]\nBalance: #tooltippable #tooltip:MARKET_BALANCE_BREAKDOWN #bold @money![Market.GetBalance|+=D]#!#!#!\n[concept_gdp] Contribution: #tooltippable #tooltip:MARKET_GDP_PERCENTAGE_TOOLTIP [Market.GetGDPContributionPercentage( GetPlayer )|%1]#!#! \n[concept_gdp] Value: @money!#variable [Market.GetMarketGDPValue|D]#!"
+ DATA_MARKET_NAME_TOOLTIP:1 "[concept_market_owner]: [Market.GetOwner.GetName]\n[concept_market_capital]: [Market.GetMarketCapital.GetName]\nБаланс: #tooltippable #tooltip:MARKET_BALANCE_BREAKDOWN #bold @money![Market.GetBalance|+=D]#!#!#!\nВнесок у [concept_gdp|l]: #tooltippable #tooltip:MARKET_GDP_PERCENTAGE_TOOLTIP [Market.GetGDPContributionPercentage( GetPlayer )|%1]#!#! \nЗначення [Concept('concept_gdp', '$concept_gdp_gen$')|l]: @money!#variable [Market.GetMarketGDPValue|D]#!"
  DATA_DECREE_TYPE_NAME_TOOLTIP:0 "[DecreeType.GetTooltip(GetPlayer.Self)]"
  DATA_LAW_GROUP_NAME_TOOLTIP:1 "[LawGroup.GetDesc]\n\n$DATA_LAW_GROUP_NAME_TOOLTIP_ACTIVE_LAW$[ConcatIfNeitherEmpty( '\n', AddLocalizationIf( LawGroup.GetCurrentlyEnacting.IsValid, 'DATA_LAW_GROUP_NAME_TOOLTIP_ENACTING_LAW' ))]\nWe have [LawGroup.GetNumEnactable|v] available alternatives in this group."
  DATA_LAW_GROUP_NAME_TOOLTIP_ACTIVE_LAW:0 "Currently active [concept_law]: [LawGroup.GetCurrentlyActive.GetName]"

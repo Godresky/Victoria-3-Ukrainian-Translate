@@ -134,8 +134,8 @@
  je_acw_wild_wild_west:0 "The Wild, Wild West"
  je_acw_wild_wild_west_reason:0 "The western frontier has been set alight by the unrest in the rest of the nation. We must find a way to calm it down."
 
- je_acw_war:0 "The American Civil War"
- je_acw_war_reason:0 "War between the states is upon us. Now is the time to preserve the Union, or die trying."
+ je_acw_war: "Громадянська війна в ЗДА"
+ je_acw_war_reason: "На нас чекає війна між регіонами. Зараз час намагатися зберегти Злуку або померти."
  acw_war_tt_complete:0 "Secessionists have been defeated and reannexed."
 
  acw_je_events.1.t1:0 "The Southern Declaration of Secession"
@@ -216,11 +216,11 @@
  je_acw_countdown_goal: "Наступне має бути виконаним протягом 10 років:"
  acw_landowner_revolt:0 "Has a Civil War against the Southern Planters"
  acw_antislaver_revolt:0 "Has a Civil War while the Southern Planters are in government"
- acw_will_happen_tt:0 "The American Civil War breaks out"
- csa_revolt_name:0 "Confederate States of America"
- csa_revolt_name_adj:0 "Confederate"
- fsa_revolt_name:0 "Free States of America"
- fsa_revolt_name_adj:0 "Free American"
+ acw_will_happen_tt: "Розпочалася громадянська війна в ЗДА"
+ csa_revolt_name: "Конфедеративні Держави Америки"
+ csa_revolt_name_adj: "Конфедеративн"
+ fsa_revolt_name: "Вільні Держави Америки"
+ fsa_revolt_name_adj: "Вільноамериканськ"
 
  je_acw_wild_wild_west_goal: "Наступне має бути виконаним протягом 5 років:"
  missouri_compromise: "Міссурійський компроміс"

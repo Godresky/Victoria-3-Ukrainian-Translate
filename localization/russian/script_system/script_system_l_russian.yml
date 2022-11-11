@@ -55,6 +55,6 @@
  JOMINI_SCRIPTED_GUI_CONFIRM:0 "Ok"
  JOMINI_SCRIPTED_GUI_DECLINE:0 "Cancel"
  EFFECT_LIST_BULLET:0 "• "
- TRIGGER_AND:0 "All of these:"
- TRIGGER_OR:0 "At least one of these:"
- SUPPRESS:0 "" # empty
+ TRIGGER_AND: "Усе з цього:"
+ TRIGGER_OR: "Принаймні одне з цього:"
+ SUPPRESS: "" # empty

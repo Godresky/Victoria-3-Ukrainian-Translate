@@ -5,7 +5,7 @@
  LOAD: "Завантажити"
  CONTINUE: "Продовжити"
  HOST_GAME: "Грати за відника"
- SCAN_FOR_GAME: "Пошук ігор"
+ SCAN_FOR_GAME: "Ськання ігор"
  LOAD_AND_HOST_GAME: "Завантажити багатокор гру"
  JOIN: "Приєднатися за тезьбилом"
  SINGLE_PLAYER: "Гра наодинці"

@@ -260,6 +260,7 @@
 
  concept_conscript_battalion: "Призваний батальйон"
  concept_conscript_battalions: "Призвані батальйони"
+ concept_conscript_battalions_gen: "Призваних батальйонів"
  concept_conscript_battalion_short: "Призваний"
  concept_conscript_battalions_short: "Призвані"
  concept_conscript_battalion_drafting:0 "Drafting"
@@ -423,6 +424,7 @@
  concept_interest_groups_gen: "Зацікавлених груп"
 
  concept_interest_group_short: "Група"
+ concept_interest_group_short_gen: "Групи"
  concept_interest_group_short_acc: "Групу"
 
  concept_interest_group_possessive:1 "Interest Group\\'s"
@@ -641,6 +643,7 @@
  concept_legitimacy_desc:1 "A [Concept('concept_government','$concept_government_possessive$')] $concept_legitimacy$ measures how well the composition of the [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_government] fits with the [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_law', '$concept_laws$')]. The lower the $concept_legitimacy$, the longer the time between attempts to [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enact$')] new $concept_laws$. Raising or lowering [concept_taxes] also has an impact on $concept_legitimacy$."
 
  concept_market_capital: "Столиця ринку"
+ concept_market_capital_gen: "Столиці ринку"
  concept_market_capital_short: "Столиця"
  concept_market_capitals: "Столиці ринку"
  concept_market_capital_desc:2 "The [concept_state] that serves as the nexus of a [concept_market], to which all other $concept_states$ in the $concept_market$ must connect lest they become [Concept('concept_isolated_state','$concept_isolated_state_short$')]. [Concept('concept_trade_route','$concept_trade_routes$')] are often, but not always, managed from the $concept_market_capital$. The $concept_market_capital$ is often the same $concept_state$ as the [Concept('concept_market_owner','$concept_market_owner_possessive$')] [concept_capital_state], but it is possible to keep these separate.[AddLocalizationIf(GetPlayer.IsValid,'concept_market_capital_desc_added')] "
@@ -715,6 +718,7 @@
  concept_colonial_growth_ingame_added_2:0 "[GetInstitutionType('institution_colonial_affairs').GetName]"
 
  concept_colony: "Осада"
+ concept_colony_gen: "Осади"
  concept_colonies: "Осади"
  concept_colonize: "Colonize"
  concept_colonial:0 "Colonial"
@@ -863,6 +867,7 @@
  concept_market_impact_desc:0 "Market Impact is how much of an effect the current balance of a [concept_good] ([concept_buy_orders] - [concept_sell_orders]) has on a [concept_market]. It is not determined solely by [concept_market_price] of a $concept_good$ (being either cheap or expensive), but also takes into consideration the volume of that $concept_good$ which circulates through the $concept_market$, affecting [Concept('concept_pop', '$concept_pops$')] and Industries."
 
  concept_capital_state: "Столиця"
+ concept_capital_state_gen: "Столиці"
  concept_capital_state_short: "Столиця"
  concept_capital_state_desc:3 "The site of a [Concept('concept_country','$concept_country_possessive$')] central [concept_government]. Controlling the $concept_capital_state_short$ is of great importance during wartime, and [Concept('concept_pop','$concept_pops$')] who live there have a greater degree of [concept_political_strength] by which to influence politics.[AddLocalizationIf(GetPlayer.IsValid,'concept_capital_state_desc_added')]"
  concept_capital_state_desc_added:0 "\nThe following effects apply:\n[GetStaticModifier('market_capital_state').GetDesc]"
@@ -1078,6 +1083,7 @@
  concept_secession_desc_added:0 "[GetInstitutionType('institution_home_affairs').GetName]"
 
  concept_gdp: "Валовий внутрішній продукт"
+ concept_gdp_gen: "Валового внутрішнього продукту"
  concept_gdp_short: "ВВП"
  concept_gdp_desc:3 "Each unit of [Concept('concept_good','$concept_goods$')] [Concept('concept_good_production', '$concept_good_produced$')|l] in your [concept_country] contributes to your [concept_gdp]. The quantity produced is multiplied by the $concept_goods$ [concept_market_price], with the sum totalled across all $concept_goods$.\n\n$concept_gdp_short$ affects [concept_prestige] and [concept_budget_minting]."
 
@@ -1122,12 +1128,12 @@
  concept_goods_output: "Вихідні товари"
  concept_good_desc:1 "$concept_goods$ are [Concept('concept_good_production','$concept_good_produced$')] in [Concept('concept_building','$concept_buildings$')] by $concept_buildings$ and [Concept('concept_pop','$concept_pops$')]. $concept_goods$ have both a [concept_local_price] and a [concept_market_price]."
 
- concept_government_good:0 "Government Good"
- concept_government_goods:1 "Government Goods"
+ concept_government_good: "Державний товар"
+ concept_government_goods: "Державні товари"
  concept_government_good_desc:1 "[Concept('concept_good', '$concept_goods$')] [Concept('concept_good_consumption','$concept_good_consumed$')] by [Concept('concept_government_building', '$concept_government_buildings$')] using funds from the [concept_treasury]."
 
- concept_military_good:0 "Military Good"
- concept_military_goods:1 "Military Goods"
+ concept_military_good: "Військовий товар"
+ concept_military_goods: "Військові товари"
  concept_military_good_desc:1 "[Concept('concept_good', '$concept_goods$')] [Concept('concept_good_consumption','$concept_good_consumed$')] by [Concept('concept_military_building', '$concept_military_buildings$')] using funds from the [concept_treasury]."
 
  concept_state: "Регіон"
@@ -1421,6 +1427,7 @@
  concept_pop_qualifications_desc:1 "[Concept('concept_pop','$concept_pops$')] develop the $concept_pop_qualifications$ necessary to change into another [concept_profession] over time. If their current attributes match those of the $concept_profession$, or if they currently work in a related field, they will develop $concept_pop_qualifications$ for it sooner. [concept_literacy], [concept_wealth], and [concept_discrimination] are common deciding factors."
 
  concept_hq: "Голпровід"
+ concept_hq_gen: "Голпроводу"
  concept_hq_loc: "Голпроводі"
  concept_hqs: "Голпроводи"
  concept_hq_possessive:0 "HQ\\'s"
