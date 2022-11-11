@@ -406,8 +406,8 @@
 
  modifier_destroy_guerillas:0 "Destroying Guerrillas"
 
- dyn_c_confederate_state_of_america:0 "Confederate State of America"
- dyn_c_united_state:0 "United State of America"
+ dyn_c_confederate_state_of_america: "Конфедеративна Держава Америки"
+ dyn_c_united_state: "Злучена Держава Америки"
 
  congo_free_state_events.1.t:1 "The [SCOPE.sCountry('free_state').GetNameNoFlag]"
  congo_free_state_events.1.d:0 "[SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('free_state_monarch').GetFullName] has declared that this land will now be a free state under [SCOPE.sCharacter('free_state_monarch').GetHerHis] control in a personal union with our country."

@@ -163,7 +163,7 @@
  building_port: "Приплав"
  building_railway: "Залізниця"
  building_trade_center: "Торговий центр"
- building_link: "Торговий шлях"  #при перекладі виходить посилання, але мабуть воне має значення шлях 
+ building_link: "Торговий тор"  #при перекладі виходить посилання, але мабуть воне має значення шлях 
 
  building_port_lens_option: "Приплав"
  building_railway_lens_option: "Залізниця"

@@ -1001,9 +1001,9 @@
  concept_approval_indifferent: "Байдужість"
  concept_approval_desc:0 "An [Concept('concept_interest_group','$concept_interest_group_possessive$')] $concept_approval$ depends on two main factors: how much of their [concept_political_strength] comes from [Concept('concept_radical','$concept_radicals$')] compared to [Concept('concept_loyalist','$concept_loyalists$')], and how well the [Concept('concept_country','$concept_country_possessive$')] current [Concept('concept_law','$concept_laws$')] match with the $concept_interest_group_possessive$ [Concept('concept_ideology','$concept_ideologies$')]. In addition, if a new $concept_law$ is currently being [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')], $concept_approval$ will be affected by a larger temporary adjustment which will linger while [Concept('concept_decay','$concept_decaying$')] for up to #v [GetDefine('NPolitics','CHANGED_LAW_APPROVAL_MONTHS')|0] months#! after it has passed.\n\nAn $concept_interest_group$'s $concept_approval$ impacts which [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] they activate. [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_ANGRY'))] $concept_interest_groups$ contribute to the [Concept('concept_political_movement_radicalism','$concept_political_movement_radicalism_short$')] of [Concept('concept_political_movement','$concept_political_movements$')], while $concept_interest_groups$ that are at least [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_HAPPY'))] will refrain from joining $concept_political_movements_short$ in the first place."
 
- concept_revolution:0 "Revolution"
- concept_revolutions:1 "Revolutions"
- concept_revolutionary:0 "Revolutionary"
+ concept_revolution: "Революція"
+ concept_revolutions: "Революції"
+ concept_revolutionary: "Революційний"
  concept_revolution_desc:3 "A $concept_revolution$ is the result of a [concept_political_movement] that has grown too [Concept('concept_political_movement_radicalism','$concept_political_movement_radical$')]. If the $concept_political_movement_short$ starts an uprising, [Concept('concept_state','$concept_states$')] in which its supporting [Concept('concept_interest_group','$concept_interest_groups$')] and [Concept('concept_pop','$concept_pops$')] are relatively strong will separate from the rest of the $concept_country$ and start a [concept_diplomatic_play] to annex the loyalists.\n\nYou can lower the $concept_political_movement_short$'s [concept_political_movement_radicalism] by reducing the number of [Concept('concept_radical','$concept_radicals$')] in the supporting $concept_pops$ and increasing the [concept_approval] of supporting $concept_interest_groups$. You can also weaken and slow a $concept_revolution$ down using the [SelectLocalization(GetPlayer.IsValid,'concept_revolution_desc_added','Home Affairs')] [concept_institution]."
  concept_revolution_desc_added:0 "[GetInstitutionType('institution_home_affairs').GetName]"
 
@@ -1015,8 +1015,8 @@
  concept_civil_wars: "Громадянські війни"
  concept_civil_war_desc:1 "A $concept_war$ where a [concept_country] has split into two opposing sides. [Concept('concept_revolution','$concept_revolutions$')] and [Concept('concept_secession','$concept_secessions$')] are examples of $concept_civil_wars$."
 
- concept_peace_deal:0 "Peace Deal"
- concept_peace_deals:0 "Peace Deals"
+ concept_peace_deal: "Мирна угода"
+ concept_peace_deals: "Мирні угоди"
  concept_peace_deal_desc:0 "When a [concept_war_leader] wish to end a [concept_war] they may offer a $concept_peace_deal$. The deal must be agreed to by all negotiating $concept_countries$ remaining in the $concept_war$ to take effect. To increase the chance the $concept_peace_deal$ will be agreed to, the $concept_war_leader$ is allowed to include or exclude proposed [Concept('concept_war_goal','$concept_war_goals$')] from both sides."
 
  concept_war: "Війна"
@@ -1464,8 +1464,8 @@
  concept_convoys_desc:2 "$concept_convoys$ are produced by [SelectLocalization(GetPlayer.IsValid,'concept_convoys_desc_added','Port')] $concept_buildings$ and are required to operate [Concept('concept_shipping_lane','$concept_shipping_lanes$')]."
  concept_convoys_desc_added:0 "[GetBuildingType('building_port').GetName]"
 
- concept_shipping_lane: "Судноплавний шлях"
- concept_shipping_lanes: "Судноплавні шляхи"
+ concept_shipping_lane: "Судноплавний тор"
+ concept_shipping_lanes: "Судноплавні тори"
  concept_shipping_lane_desc:1 "A $concept_shipping_lane$ is a naval connection of [concept_convoys] between two coastal [Concept('concept_state','$concept_states$')] to move [Concept('concept_good','$concept_goods$')] and [Concept('concept_pop','$concept_pops$')] from place to place. A $concept_shipping_lane$ can be either a [concept_trade_route], [concept_supply_route], or a [concept_port_connection]."
 
  concept_raid_convoys:0 "Raid Convoys"
@@ -1487,8 +1487,8 @@
  concept_shipping_lane_effectiveness_short:0 "Effectiveness"
  concept_shipping_lane_effectiveness_desc:3 "The $concept_shipping_lane_effectiveness_short$ of a [concept_shipping_lane] is determined by the strength of a [Concept('concept_country','$concept_country_possessive$')] [concept_supply_network], reduced by any damage it has sustained from [concept_raid_convoys]. When $concept_shipping_lane_effectiveness_short$ is below #v 100%#!, the function of the $concept_shipping_lane$ is reduced to match."
 
- concept_supply_route:0 "Supply Route"
- concept_supply_routes:0 "Supply Routes"
+ concept_supply_route: "Тор постачання"
+ concept_supply_routes: "Тори постачання"
  concept_supply_route_possessive:0 "Supply Route\\'s"
  concept_supply_route_desc:2 "A [concept_shipping_lane] that supplies a [concept_general] [Concept('concept_order','$concept_ordered$')] to advance or defend a [concept_front] only accessible by sea. The $concept_general$'s [concept_supply] level is equal to the $concept_supply_route$'s [Concept('concept_shipping_lane_effectiveness','$concept_shipping_lane_effectiveness_short$')]."
 
@@ -1579,12 +1579,12 @@
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MARCH 30, 2022
 
- concept_head_of_state:0 "Head of State"
+ concept_head_of_state: "Глава держави"
  concept_head_of_state_desc:3 "A [Concept('concept_country','$concept_country_possessive$')] [concept_ruler] or highest representative. The [concept_government_type] determines who serves as the $concept_head_of_state$ and when they are replaced.[AddLocalizationIf(GetPlayer.IsValid, 'concept_head_of_state_ingame_added')]"
  concept_head_of_state_ingame_added:1 "\n\nThe [GetPlayer.GetAdjectiveNoFlag] $concept_head_of_state$ is [GetPlayer.GetRuler.GetFullNameWithTitle]."
 
- concept_government_type:0 "Government Type"
- concept_government_types:0 "Government Types"
+ concept_government_type: "Тип уряду"
+ concept_government_types: "Типи уряду"
  concept_government_type_transfer_of_power:0 "Transfer of Power"
  concept_government_type_desc:1 "A [Concept('concept_country','$concept_country_possessive$')] $concept_government_type$ is determined by its [Concept('concept_law','$concept_laws$')] and determines its $concept_government_type_transfer_of_power$, meaning who serves as its [concept_head_of_state].[AddLocalizationIf(GetPlayer.IsValid,'concept_government_type_ingame_added')]"
  concept_government_type_ingame_added:2 "\n\nThe $concept_government_type$ in [GetPlayer.GetNameNoFlag] is [GetPlayer.GetGovernment.GetName], for the following reasons:\n[GetPlayer.GetGovernment.GetPossibleTriggerDesc(AccessPlayer)]\n[GetPlayer.GetGovernment.GetDesc]"

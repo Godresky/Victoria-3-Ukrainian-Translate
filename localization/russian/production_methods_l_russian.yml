@@ -471,7 +471,7 @@ pm_steam_rail_transport: "Залізниця"
  pm_bicycle_messengers: "Велосепідні розвідники"
  pm_aerial_recon: "Повітряна розвідка"
 
- pmg_specialist_companies: "Спеціалізовані батальйони"
+ pmg_specialist_companies: "Спеціялізовані батальйони"
  pm_no_specialists: "Стандартизована піхота"
  pm_machine_gunners: "Кулеметники"
  pm_infiltrators: "Інфільтратори"
@@ -560,7 +560,7 @@ pm_steam_rail_transport: "Залізниця"
  
  pm_carriers: "Авіяносець"
  
- pm_no_secondary_vessels: "Неспеціалізовані судна"
+ pm_no_secondary_vessels: "Неспеціялізовані судна"
  pm_submarine: "Submarines"
  
  pmg_naval_theory: "Морська теорія"
@@ -595,7 +595,7 @@ pm_steam_rail_transport: "Залізниця"
 # Chemical Plants
  pm_leblanc_process: "Процес Леблана"
  pm_no_explosives_production: "Пріорітет на добрива"
- pm_ammonia-soda_process: "Аміачно-содовий процес"
+ pm_ammonia-soda_process: "Сопушецько-содовий процес"
  pm_vacuum_evaporation: "Вакуумне випаровування"
  pm_brine_electrolysis: "Електроліз розсолу"
  pmg_fertilizer_production: "Виробництво добрив"

@@ -1817,7 +1817,7 @@
  modifier_country_subsidies_bg_infrastructure_desc:0 "Legal permission to enact government subsidies of $bg_infrastructure$"
  modifier_country_subsidies_bg_trade:0 "Can Subsidize $bg_trade$"
  modifier_country_subsidies_bg_trade_desc:0 "Legal permission to enact government subsidies of $bg_trade$"
- modifier_market_disallow_trade_routes: "Вимкнуті торгові шляхи"
+ modifier_market_disallow_trade_routes: "Вимкнуті торгові тори"
  modifier_market_disallow_trade_routes_desc:0 "Disallow all import and export of goods in the market"
  modifier_country_ignores_landing_craft_penalty:0 "Ignore Difficult Landing Penalty"
  modifier_country_ignores_landing_craft_penalty_desc:0 "Ignores the offensive penalty to winning the landing battle during a naval invasion"

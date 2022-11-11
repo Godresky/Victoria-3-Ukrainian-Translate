@@ -275,9 +275,9 @@
  suffragist_trailblazer:0 "Suffragist Trailblazer"
  successful_suffragist:0 "Successful Suffragist"
 
- ideology_patriarchal_suffrage:0 "Modern Patriarchal"
+ ideology_patriarchal_suffrage: "Сучасний патріярхат"
  ideology_patriarchal_suffrage_desc:0 "#lore This group believes men should have political authority and that women should obey their fathers and husbands, but have accepted women's right to work and vote.#!"
- ideology_feminist_ig:0 "Feminist"
+ ideology_feminist_ig: "Фемінізм"
  ideology_feminist_ig_desc:0 "#lore This group holds that women are equal to men and strives for maintaining their rights as citizens.#!"
 
   # Secession Events

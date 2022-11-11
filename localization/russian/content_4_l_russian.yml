@@ -111,12 +111,12 @@
  PRA: "Ґран-Пара"
  PRA_ADJ: "Ґранпарськ"
  cabanagem_war: "Кабанґенська революція"
- PAL:0 "Palestine"
- PAL_ADJ:0 "Palestinian"
- dyn_c_mahdist_state:0 "Mahdist State"
- dyn_c_mahdist_state_adj:0 "Mahdist Sudanese"
- dyn_c_scandinavia_kalmar_union:0 "Kalmar Union"
- dyn_c_scandinavia_kalmar_union_adj:0 "Scandinavian"
+ PAL: "Палестина"
+ PAL_ADJ: "Палестинськ"
+ dyn_c_mahdist_state: "Магдистська держава"
+ dyn_c_mahdist_state_adj: "Магдистськосуданськ"
+ dyn_c_scandinavia_kalmar_union: "Кальмарська унія"
+ dyn_c_scandinavia_kalmar_union_adj: "Кальмарськ"
 
 #Republic of Hawaii Events/JE
  hawaii_events.1.t:0 "Death of the King"

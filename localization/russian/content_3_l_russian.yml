@@ -398,41 +398,41 @@
 
  malay_culture:0 "Malay Culture" # includes a lot of cultures that are not Malay. Might revise in future
 
- IDN:0 "Indonesia"
- IDN_ADJ:0 "Indonesian"
+ IDN: "Індонезія"
+ IDN_ADJ: "Індонезійськ"
 
- dyn_c_majapahit:0 "Majapahit"
- dyn_c_majapahit_adj:0 "Majapahit"
+ dyn_c_majapahit: "Імперія Маджапагіт"
+ dyn_c_majapahit_adj: "Маджапагітськ"
 
- dyn_c_srivijaya:0 "Srivijaya"
- dyn_c_srivijaya_adj:0 "Srivijayan"
+ dyn_c_srivijaya: "Шривіджайська імперія"
+ dyn_c_srivijaya_adj: "Шривіджайськ"
 
- dyn_c_sumatra:0 "Sumatra"
- dyn_c_sumatra_adj:0 "Sumatran"
+ dyn_c_sumatra: "Суматра"
+ dyn_c_sumatra_adj: "Суматранськ"
 
- dyn_c_kalimantan:0 "Kalimantan"
- dyn_c_kalimantan_adj:0 "Kalimantan"
+ dyn_c_kalimantan: "Калімантан"
+ dyn_c_kalimantan_adj: "Калімантанськ"
 
- dyn_c_boni:0 "Bo-Ni"
- dyn_c_boni_adj:0 "Bo-Ni"
+ dyn_c_boni: "Бо-ні"
+ dyn_c_boni_adj: "Бо-нійськ"
 
- dyn_c_mataram:0 "Mataram"
- dyn_c_mataram_adj:0 "Mataram"
+ dyn_c_mataram: "Матарамський султанат"
+ dyn_c_mataram_adj: "Матарамськ"
 
 ##################### Arabia
  yemenite:0 "Yemenite"
- dyn_c_qasimid_state:0 "Qasimid State"
- dyn_c_qasimid_state_adj:0 "Qasimid"
+ dyn_c_qasimid_state: "Держава Касимідів"
+ dyn_c_qasimid_state_adj: "Касимідськ"
 
 ##################### India
 
- BHT:0 "India"
- BHT_ADJ:0 "Indian"
+ BHT: "Індія"
+ BHT_ADJ: "Індійськ"
 
 #################### Sudan
 
- dyn_c_funj_state:0 "Funj"
- dyn_c_funj_state_adj:0 "Funj"
+ dyn_c_funj_state: "Сеннарський султанат"
+ dyn_c_funj_state_adj: "Сеннарськ"
 
 #################### Misc. Journal Entries
 

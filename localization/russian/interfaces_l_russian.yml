@@ -372,8 +372,8 @@
  TRADE_ROUTES_HEADER:1 "[GetPlayer.GetFlagTextIcon] [GetPlayer.GetAdjectiveNoFormatting] [Concept('concept_trade_route', '$concept_trade_routes$')]"
  MARKET_TRADE_ROUTES_SUMMARY:1 "#title $TRADE_ROUTES_HEADER$#!"
 
- NO_IMPORT_TRADE_ROUTES: "Зараз у вас немає ввозових торгових шляхів"
- NO_EXPORT_TRADE_ROUTES: "Зараз у вас немає вивозових торгових шляхів"
+ NO_IMPORT_TRADE_ROUTES: "Зараз у вас немає ввозових торгових торів"
+ NO_EXPORT_TRADE_ROUTES: "Зараз у вас немає вивозових торгових торів"
  NO_TRADE_ROUTES:0 "No Trade Routes Available"
  NO_TRADE_ROUTES_HINT:1 "@information! You can gain additional Trade Routes from building more Trade Centers"
 
@@ -700,7 +700,7 @@
 
  NO_ACTIVE_SEA_BATTLES:0 "No Active Sea Battles"
  NO_ENDED_SEA_BATTLES:0 "No Ended Sea Battles"
- SHIPPING_LANES: "Судноплавні шляхи"
+ SHIPPING_LANES: "Судноплавні тори"
  NO_CONVOY_RAIDING_ADMIRALS:0 "No [Concept('concept_admiral', '$concept_admirals$')] are [Concept('concept_raid_convoys', '$concept_convoy_raiding$')] here"
  NO_INTERCEPTING_ADMIRALS:0 "No [Concept('concept_admiral', '$concept_admirals$')] are patrolling here"
 
@@ -1384,9 +1384,9 @@
  show_supply_areas_lens_tab_tooltip:0 "Show Supply Areas\n$TOOLTIP_DELIMITER$\n#b DEBUG#!"
  trade_actions_lens_tab: "Торгові дії"
  trade_actions_lens_tab_tooltip:0 "Take actions pertaining to Trade"
- import_routes_lens_tab: "Ввозові торгові шляхи"
+ import_routes_lens_tab: "Ввозові торгові тори"
  import_routes_lens_tab_tooltip:0 "#header $import_routes_lens_tab$#!\n$TOOLTIP_DELIMITER$\nEstablish a semi-permanent trade route between two markets, importing goods to a market you own or control ports in"
- export_routes_lens_tab: "Вивозові торгові шляхи"
+ export_routes_lens_tab: "Вивозові торгові тори"
  export_routes_lens_tab_tooltip:0 "#header $export_routes_lens_tab$#!\n$TOOLTIP_DELIMITER$\nEstablish a semi-permanent trade route between two markets, exporting goods from a market you own or control ports in"
  interests_lens_tab: "Регіональні дії"
  interests_lens_tab_tooltip:1 "Interact with [Concept('concept_strategic_region','$concept_strategic_regions$')]"
@@ -3191,8 +3191,8 @@
 
  IMPORT: "Ввіз"
  EXPORT: "Вивіз"
- ESTABLISH_IMPORT_ROUTE: "Встановити ввозововий шлях"
- ESTABLISH_EXPORT_ROUTE: "Встановити Вивозовий шлях"
+ ESTABLISH_IMPORT_ROUTE: "Встановити ввозововий тор"
+ ESTABLISH_EXPORT_ROUTE: "Встановити вивозовий тор"
 
  ESTABLISH_IMPORT_ROUTE_TOOLTIP:0 "[ConcatIfNeitherEmpty( Goods.CanEstablishImportTradeRouteDesc, '\n$TOOLTIP_DELIMITER$\n' )]#header Import [Goods.GetTextIcon] #v [Goods.GetName]#! to [Goods.GetMarket.GetName]#!\n$TOOLTIP_DELIMITER$\n$BUY_ORDERS$: [Goods.GetMarketBuyOrdersWithTooltip]"
  ESTABLISH_EXPORT_ROUTE_TOOLTIP:0 "[ConcatIfNeitherEmpty( Goods.CanEstablishExportTradeRouteDesc, '\n$TOOLTIP_DELIMITER$\n' )]#header Export [Goods.GetTextIcon] #v [Goods.GetName]#! from [Goods.GetMarket.GetName]#!\n$TOOLTIP_DELIMITER$\n$SELL_ORDERS$: [Goods.GetMarketSellOrdersWithTooltip]"
@@ -3296,8 +3296,8 @@
  OTHER_COUNTRIES_TRADE_ROUTES:1 "Other Countries' Trade Routes with [MarketGoods.GetMarket.GetOwner.GetName] ([MarketGoods.GetNumOthersOwnedTradeRoutes]):"
 
  TRADE_ROUTE_EMPTY_STATE:0 "There are no [Concept('concept_trade_route', '$concept_trade_routes$')] in the [Market.GetName]"
- NEW_IMPORT_ROUTE: "Новий шлях ввозу"
- NEW_EXPORT_ROUTE: "Новий шлях вивозу"
+ NEW_IMPORT_ROUTE: "Новий тор ввозу"
+ NEW_EXPORT_ROUTE: "Новий тор вивозу"
 
  SUPPLY_NETWORK_EMPTY_STATE:0 "[Country.GetName] has no [concept_supply_network]"
 
