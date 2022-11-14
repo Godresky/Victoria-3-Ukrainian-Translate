@@ -64,8 +64,8 @@
  building_oil_rig_discovered_resource: "Нафта"
  building_opium_plantation: "Опіюмне полище"   
  building_opium_plantation_lens_option: "Розширити опіюмні полища"
- building_orchard: "Фруктовий сад"
- building_orchard_lens_option: "Розширити фруктові сади"
+ building_orchard: "Овочевий сад"
+ building_orchard_lens_option: "Розширити овочеві сади"
  
  #Золоте поле? чому потім викорестовується теґ копальні? потім подивлюся у грі щоб зрозуміти що це
  building_gold_fields: "Золота старальня"

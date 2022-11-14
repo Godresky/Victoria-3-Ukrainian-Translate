@@ -73,7 +73,7 @@ pm_disabled_steam_power: "Без парової потужності"
 # Trains
  pm_no_passenger_trains: "Пріоритезація вантажу"
  pm_wooden_passenger_carriages: "Дерев'яні вагони"
- pm_steel_passenger_carriages: "Сталеві вагони"
+ pm_steel_passenger_carriages: "Крицеві вагони"
  pm_steam_trains: "Парові патяги"
  pm_electric_trains: "Електрічні потяги"
  pm_diesel_trains: "Дизельні потяги"
@@ -169,7 +169,7 @@ pm_disabled_steam_power: "Без парової потужності"
  pmg_base_building_tooling_workshops: "Тип інструментів"
  pm_crude_tools: "Доморобницькі інструменти"
  pm_pig_iron: "Залізні інструменти"
- pm_steel: "Сталеві інструменти"
+ pm_steel: "Крицеві інструменти"
 
  pmg_automation_building_tooling_workshops: "Автоматізація"
  pm_watertube_boiler_building_tooling_workshops: "Водотрубний котел"
@@ -333,8 +333,8 @@ pm_disabled_steam_power: "Без парової потужності"
  pm_intensive_farming: "Інтенсивне землеробство"
  pm_chemical_fertilizer_building_maize_farm: "Хімічні добрива"
 
- pm_orchards: "Фруктові сади"
- pm_orchards_no: "Без фруктових садів"
+ pm_orchards: "Овочеві сади"
+ pm_orchards_no: "Без овочевих садів"
 
 
 #Твариницька ферма
@@ -512,7 +512,7 @@ pm_steam_rail_transport: "Залізниця"
 
 # Electrics
  pm_no_radios: "Виробництво телефонів"
- pm_radios: "Виробництво радіо"
+ pm_radios: "Виробництво віщателів"
  pm_telephones: "Виробництво телефонів"
 
 # Logging
@@ -628,7 +628,7 @@ pm_steam_rail_transport: "Залізниця"
  pmg_lightbulbs_category: "Лампочки"
  pm_best_lightbulbs: "Покращенні лампочки"
  pmg_telephones_category: "Телефони"
- pmg_radios_category: "Радіо"
+ pmg_radios_category: "Віщателі"
  
  
  pmg_harvesting_process_building_millet_farm: "$pmg_harvesting_process$"
@@ -731,7 +731,7 @@ pm_steam_rail_transport: "Залізниця"
  pmg_base_building_construction_sector: "Тип будівлі"
  pm_wooden_buildings: "Дерев'яні каркаси"
  pm_iron_frame_buildings: "Залізні каркаси"
- pm_steel_frame_buildings: "Сталеві каркаси"
+ pm_steel_frame_buildings: "Крицеві каркаси"
  pm_arc_welded_buildings: "Дугозварні каркаси"
 
  pm_basic_canal: "Базовий водовід"

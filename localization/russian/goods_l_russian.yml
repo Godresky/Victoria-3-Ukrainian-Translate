@@ -1,7 +1,7 @@
 ﻿l_russian:
  ammunition: "Боєприпаси"
  small_arms: "Кріси"
- radios: "Рації"
+ radios: "Віщателі"
  tanks: "Танки"
  artillery: "Гарматня"
  aeroplanes: "Літаки"
@@ -22,7 +22,7 @@
  oil: "Олія"
  gold: "Золото"
   
- steel: "Сталь"
+ steel: "Криця"
  glass: "Скло"
  fertilizer: "Добриво"
  explosives: "Вибухівка"
@@ -44,12 +44,12 @@
  opium: "Опіюм"
  sugar: "Цукор"
  automobiles: "Автомобілі"
- fine_art: "Образотворче мистецтво"
+ fine_art: "Вишукані мистецтва"
  
  grain: "Зерно"
  fish: "Риба"
  meat: "М'ясо"
- fruit: "Фрукти"
+ fruit: "Садовина"
  liquor: "Алкоголь"
  wine: "Вино"
  clothes: "Одяг"

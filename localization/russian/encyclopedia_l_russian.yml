@@ -3,19 +3,19 @@
 
  ENCYCLOPEDIA_PAGE_GAME_CONCEPTS: "Концепції гри"
 
- ENCYCLOPEDIA_PAGE_TUTORIAL_LESSONS:0 "Tutorial Lessons"
+ ENCYCLOPEDIA_PAGE_TUTORIAL_LESSONS: "Навчання"
 
- TOOLTIP_CLOSE_ENCYCLOPEDIA:0 "Close the Encyclopedia"
- ENCYCLOPEDIA_CONTENTS:0 "Contents"
+ TOOLTIP_CLOSE_ENCYCLOPEDIA: "Закрити енциклопедію"
+ ENCYCLOPEDIA_CONTENTS: "Вміст"
  ENCYCLOPEDIAGE_CURRENT_PAGE: "Поточна сторінка"
  ENCYCLOPEDIAGE_PREVIOUS_PAGE: "Попередня сторінка"
  ENCYCLOPEDIAGE_NEXT_PAGE: "Наступна сторінка"
  SEARCH_ENCYCLOPEDIA: "Ськання"
- SEARCH_ENCYCLOPEDIA_TOOLTIP:0 "#T $SEARCH_ENCYCLOPEDIA$\n#!Find entries in '[EncyclopediaPage.GetTitle]' whose headings match the text entered"
+ SEARCH_ENCYCLOPEDIA_TOOLTIP: "#T $SEARCH_ENCYCLOPEDIA$\n#!Знайде у вкладці '[EncyclopediaPage.GetTitle]' заголовки які відповідають введеному тексту"
   ### v3 replacement
  RESET_SEARCH_ENCYCLOPEDIA_TOOLTIP: "#T Очистити ськання#!"
   # RESET_SEARCH_ENCYCLOPEDIA_TOOLTIP: "$CHARACTER_LIST_CLEAR$"
   ### to here
- ENCYCLOPEDIA_ALL_PAGES:0 "All Pages"
- ENCYCLOPEDIA_PREVIOUS_SEARCH_TOOLTIP:0 "#T Backwards through Search History#!"
- ENCYCLOPEDIA_NEXT_SEARCH_TOOLTIP:0 "#T Forwards through Search History#!"
+ ENCYCLOPEDIA_ALL_PAGES: "Усі сторінки"
+ ENCYCLOPEDIA_PREVIOUS_SEARCH_TOOLTIP: "#T Назад в історії пошуку#!"
+ ENCYCLOPEDIA_NEXT_SEARCH_TOOLTIP: "#T Вперед в історії пошуку#!"
