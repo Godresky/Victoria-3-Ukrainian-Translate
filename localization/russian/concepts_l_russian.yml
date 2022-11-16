@@ -876,8 +876,8 @@
  concept_capital_state_desc:3 "The site of a [Concept('concept_country','$concept_country_possessive$')] central [concept_government]. Controlling the $concept_capital_state_short$ is of great importance during wartime, and [Concept('concept_pop','$concept_pops$')] who live there have a greater degree of [concept_political_strength] by which to influence politics.[AddLocalizationIf(GetPlayer.IsValid,'concept_capital_state_desc_added')]"
  concept_capital_state_desc_added:0 "\nThe following effects apply:\n[GetStaticModifier('market_capital_state').GetDesc]"
 
- concept_treaty_port:0 "Treaty Port"
- concept_treaty_ports:0 "Treaty Ports"
+ concept_treaty_port: "Договірний порт"
+ concept_treaty_ports: "Договірні порти"
  concept_treaty_port_desc:3 "A coastal [concept_state] that consists of a single [concept_province] taken as a [concept_war_goal] for purpose of opening [Concept('concept_trade_route','$concept_trade$')] with that [concept_country]. A $concept_treaty_port$ permits its owner to bypass [concept_tariffs] and [Concept('concept_embargo','$concept_embargoes$')] when trading with any [concept_market] in the same [concept_state_region]. $concept_treaty_ports$ that come under hostile occupation will not confer any of their benefits while the occupation lasts."
 
  concept_prestige: "Престиж"
@@ -950,6 +950,7 @@
  concept_commander_desc:1 "A [concept_character] in command of a part of a [Concept('concept_country','$concept_country_possessive$')] military forces. Their [concept_commander_rank] determines how many forces they are allotted from the $concept_country$'s available reserves."
 
  concept_general: "Генерал"
+ concept_general_gen: "Генерала"
  concept_generals: "Генерали"
  concept_generals_gen: "Генералів"
  concept_generals_ins: "Генералами"

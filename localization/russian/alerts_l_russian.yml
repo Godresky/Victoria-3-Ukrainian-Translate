@@ -28,7 +28,7 @@
  alert_insurrectionary_alert_hint:0 "You can de-radicalize them by improving their Approval, which can be done by enacting [Concept('concept_law', '$concept_laws$')] they approve of (or stop enacting Laws they disapprove of)."
  alert_insurrectionary_alert_action:0 "Politics Panel"
 
- alert_unused_interests_alert_name:0 "Can support more [Concept('concept_declared_interest','$concept_declared_interests$')]"
+ alert_unused_interests_alert_name: "Можна проявити більше [Concept('concept_declared_interest','$concept_interests_gen$')|l]"
  alert_unused_interests_alert_desc:0 "We are only using [GetPlayer.GetNumDeclaredInterests|v]/#tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#! of the [Concept('concept_declared_interest','$concept_declared_interests$')] we are able to support"
  alert_unused_interests_alert_hint:0 "You can [Concept('concept_declared_interest','$concept_declare_interests$')] in [Concept('concept_strategic_region','$concept_strategic_regions$')] through the [concept_diplomatic_lens]."
  alert_unused_interests_alert_action:0 "Diplomacy Panel"
@@ -233,7 +233,7 @@
  ag_low_market_access_states_desc:0 "We have [GetPlayer.GetNumLowMarketAccessStates] [Concept('concept_state', '$concept_states$')] with low [concept_market_access]"
  ag_low_market_access_states_tooltip:0 "#header $ag_low_market_access_states_name$#!\n$TOOLTIP_DELIMITER$\n$ag_low_market_access_states_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  
- ag_insufficient_tax_capacity_states_name:0 "Insufficient [concept_tax_capacity]"
+ ag_insufficient_tax_capacity_states_name: "Недостатня [concept_tax_capacity|l]"
  ag_insufficient_tax_capacity_states_desc:0 "We have [GetPlayer.GetNumInsufficientTaxCapacityStates] [Concept('concept_state', '$concept_states$')] with insufficient [concept_tax_capacity]"
  ag_insufficient_tax_capacity_states_tooltip:0 "#header $ag_insufficient_tax_capacity_states_name$#!\n$TOOLTIP_DELIMITER$\n$ag_insufficient_tax_capacity_states_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 

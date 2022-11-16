@@ -91,7 +91,7 @@
 
  POPULARITY_BREAKDOWN:1 "#header [Character.GetFullName]#! has #v [LabelingHelper.GetLabelForPopularityCFixedPoint(Character.GetPopularity)]#! ([Character.GetPopularity|0+=]) [concept_popularity][ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', Character.GetPopularityDesc)]"
 
- INTEREST_GROUP_SUPPORTED_BY_TITLE: "[Concept('concept_interest_group', '$concept_interest_group_short_acc$')] [InterestGroup.GetNameNoFormatting] підтримують:"
+ INTEREST_GROUP_SUPPORTED_BY_TITLE: "[Concept('concept_interest_group', '$concept_interest_group_short_acc$')] [InterestGroup.GetNameNoFormatting|l] підтримують:"
  INTEREST_GROUP_SUPPORTED_BY_SINGLE:0 "[PopType.GetName]: $SUPPORT_PERCENTAGE|%1v$"
  INTEREST_GROUP_SUPPORTED_BY_SINGLE_FORMAT:0 "$TAB$$INTEREST_GROUP_SUPPORTED_BY_SINGLE$"
  INTEREST_GROUP_SUPPORTED_BY_FORMAT:0 "$INTEREST_GROUP_SUPPORTED_BY_TITLE$\n$BODY$"

@@ -262,17 +262,17 @@
  decree_protests_handled:0 "Protests Allowed"
 
 #Devout Flavor event
- ideology_russian_patriarch:0 "Russian Orthodox Patriarchy"
+ ideology_russian_patriarch: "Російський православний патріярхат"
  ideology_russian_patriarch_desc:0 "#lore The Orthodox Patriarchy sees itself as one of the three pillars of the country, that the Tsar is above all and that the peasants deserve be serfs.#!"
- ideology_orthodox_patriarch:0 "Orthodox Patriarchy"
+ ideology_orthodox_patriarch: "Православний патріярхат"
  ideology_orthodox_patriarch_desc:0 "#lore The Orthodox Patriarchy sees itself as one of the three pillars of the country, and that the right to rule comes from God.#!"
- ideology_buddhist_moralist:0 "Buddhist Moralist"
+ ideology_buddhist_moralist: "Буддійський моралізм"
  ideology_buddhist_moralist_desc:0 "#lore The Buddhist path is clearly set out and that the theocracy is required to best guide the nation down the path it its teachings.#!"
- ideology_sikh_moralist:0 "Sikh Militancy"
+ ideology_sikh_moralist: "Сикхська войовничість"
  ideology_sikh_moralist_desc:0 "#lore The Sikh have a militarized movement that will support having a strong national army.#!"
- ideology_hindu_moralist:0 "Hindu Moralist"
+ ideology_hindu_moralist: "Індуський моралізм"
  ideology_hindu_moralist_desc:0 "#lore Hindu Priests believe that bureaucrats should adhere to the caste system..#!"
- ideology_oriental_orthodox_patriarch:1 "Oriental Orthodox Patriarchy"
+ ideology_oriental_orthodox_patriarch: "Східно-православний патріярхат"
  ideology_oriental_orthodox_patriarch_desc:1 "#lore The Oriental Orthodox Patriarchy believe that children's education should be a priority for the nation.#!"
 
 #Remove below later
