@@ -508,7 +508,7 @@
  alcoholic_insult_custom:0 "you drunkard scum."
  beetle_ear_insult_custom:0 "you bug-loving bastard."
 
- banned_duels_tt:0 "Duels will be banned in your country."
+ banned_duels_tt: "Дуелі будуть заборонені у вашій державі."
 
  character_events.4.t:0 "Devout Scandal"
  character_events.4.d:1 "It has been revealed that [SCOPE.sCharacter('devout_scandal').GetFullName] of the [SCOPE.sCharacter('devout_scandal').GetInterestGroup.GetName] has been having a secret affair with a member of the clergy. [SCOPE.sCharacter('devout_scandal').GetHerHis] resignation is being demanded."

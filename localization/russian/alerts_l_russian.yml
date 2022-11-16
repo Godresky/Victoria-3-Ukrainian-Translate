@@ -23,7 +23,7 @@
  alert_free_government_reform_hint:0 "You can Reform your Government on the Politics Panel"
  alert_free_government_reform_action:0 "Government Panel"
 
- alert_insurrectionary_alert_name:0 "[concept_revolution] Brewing"
+ alert_insurrectionary_alert_name: "Готується [concept_revolution|l]"
  alert_insurrectionary_alert_desc:0 "There are Insurrectionary Interest Groups plotting a [concept_revolution] in our country:\n\n#title Insurrectionary Interest Groups:#!\n[GetPlayer.GetInsurrectionaryIGsDesc]"
  alert_insurrectionary_alert_hint:0 "You can de-radicalize them by improving their Approval, which can be done by enacting [Concept('concept_law', '$concept_laws$')] they approve of (or stop enacting Laws they disapprove of)."
  alert_insurrectionary_alert_action:0 "Politics Panel"
@@ -253,11 +253,11 @@
  ag_expiring_obligations_desc:0 "We are owed [Concept('concept_obligation', '$concept_obligations$')] that will expire soon."
  ag_expiring_obligations_tooltip:0 "#header $ag_expiring_obligations_name$#!\n$TOOLTIP_DELIMITER$\n$ag_expiring_obligations_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
   
- ag_expensive_government_goods_name:0 "Expensive [Concept('concept_government_good', '$concept_government_goods$')]"
+ ag_expensive_government_goods_name: "Дорогі [Concept('concept_government_good', '$concept_government_goods$')|l]"
  ag_expensive_government_goods_desc:0 "We have expensive [Concept('concept_government_good', '$concept_government_goods$')] in at least one of our [Concept('concept_market', '$concept_markets$')]."
  ag_expensive_government_goods_tooltip:0 "#header $ag_expensive_government_goods_name$#!\n$TOOLTIP_DELIMITER$\n$ag_expensive_government_goods_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
- ag_expensive_military_goods_name:0 "Expensive [Concept('concept_military_good', '$concept_military_goods$')]"
+ ag_expensive_military_goods_name: "Дорогі [Concept('concept_military_good', '$concept_military_goods$')|l]"
  ag_expensive_military_goods_desc:0 "We have expensive [Concept('concept_military_good', '$concept_military_goods$')] in at least one of our [Concept('concept_market', '$concept_markets$')]."
  ag_expensive_military_goods_tooltip:0 "#header $ag_expensive_military_goods_name$#!\n$TOOLTIP_DELIMITER$\n$ag_expensive_military_goods_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
   

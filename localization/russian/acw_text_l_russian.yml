@@ -22,7 +22,7 @@
 
  acw_events.5.t: "Кровотеча у [SCOPE.sState('bleeding_kansas').GetName]"
  acw_events.5.d: "Аболіціоністи та прихильники рабства хлинули у [SCOPE.sState('bleeding_kansas').GetName], сподіваючись сформувати уряд території на свій смак. Воєнізовані угруповання почали вчиняти акти насильства один проти одного, та цивільних осіб."
- acw_events.5.f: "«Перед Богом і в присутності цих свідків, з цього часу, я присвячую своє життя знищенню рабства. Злочини цієї винної країни можуть бути очищені лише кров’ю»"
+ acw_events.5.f: "«Перед Богом і в присутності цих свідків, з цього часу, я присвячую своє життя знищенню рабства. Злочини цієї винної держави можуть бути очищені лише кров’ю»"
  acw_events.5.a: "Прикордонні бандити не можуть диктувати закони!"
  acw_events.5.b: "Джейхокери не вирішують, що є правильним!"
  acw_events_5_free_state_tt: "[SCOPE.sState('bleeding_kansas').GetName] залишиться вільною територією."
@@ -55,7 +55,7 @@
 
  acw_followup_events.1.t: "Замах на життя персонажа [SCOPE.sCharacter('lincoln_proxy').GetLastName]"
  acw_followup_events.1.d: "Симпатик нещодавнього повстання позбавив життя персонажа [SCOPE.sCharacter('lincoln_proxy').GetFullName]. Хоча він був схоплений після вчинку, а його співзмовники були викриті, смерть [SCOPE.sCharacter('lincoln_proxy').GetLastName] залишається похмурим кінцем цієї трагічної епохи в американській історії."
- acw_followup_events.1.f: "«[SCOPE.sCharacter('lincoln_proxy').GetFullNameNoFormatting] пішов за покликом служби на небезпечний пост, і, хоча й зазнав аварії, його життя аж ніяк не втрачено. Пляма на нашій країні, велика пляма на нашому національному характері, велике джерело чвар і суперечок серед нашого народу, [SCOPE.sCharacter('lincoln_proxy').GetHerHis] мужність і сила духу, було стерто та видалено. Ім'я персонажа [SCOPE.sCharacter('lincoln_proxy').GetFullNameNoFormatting] стало історичним»"
+ acw_followup_events.1.f: "«[SCOPE.sCharacter('lincoln_proxy').GetFullNameNoFormatting] пішов за покликом служби на небезпечний пост, і, хоча й зазнав аварії, його життя аж ніяк не втрачено. Пляма на нашій державі, велика пляма на нашому національному характері, велике джерело чвар і суперечок серед нашого народу, [SCOPE.sCharacter('lincoln_proxy').GetHerHis] мужність і сила духу, було стерто та видалено. Ім'я персонажа [SCOPE.sCharacter('lincoln_proxy').GetFullNameNoFormatting] стало історичним»"
  acw_followup_events.1.a: "Нація оплакуватиме цей день."
 
  acw_followup_events.2.t: "Замах на життя персонажа [SCOPE.sCharacter('lincoln_proxy').GetLastName]"

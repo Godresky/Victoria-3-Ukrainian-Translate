@@ -742,7 +742,7 @@
  HUB_NAME_STATE_LITHUANIA_port: "Паланга"
 
 #Латвія
- HUB_NAME_STATE_LATVIA_city: "Ріґа"
+ HUB_NAME_STATE_LATVIA_city: "Рига"
  HUB_NAME_STATE_LATVIA_port: "Лієпая"
  HUB_NAME_STATE_LATVIA_mine: "Єлґава"
  HUB_NAME_STATE_LATVIA_farm: "Дауґавпілс"
@@ -823,7 +823,7 @@
  HUB_NAME_STATE_SMOLENSK_mine: "Рославль"
  HUB_NAME_STATE_SMOLENSK_farm: "Ржев"
  HUB_NAME_STATE_SMOLENSK_wood: "Торопець"
- HUB_NAME_STATE_NOVGOROD_city: "Новгород"
+ HUB_NAME_STATE_NOVGOROD_city: "Новґород"
  HUB_NAME_STATE_NOVGOROD_mine: "Лодейне поле"
  HUB_NAME_STATE_NOVGOROD_farm: "Чюдово"
  HUB_NAME_STATE_NOVGOROD_wood: "Благоє"
@@ -851,7 +851,7 @@
  HUB_NAME_STATE_MOSCOW_wood: "Рязань"
  HUB_NAME_STATE_KAZAN_city: "Казань"
  HUB_NAME_STATE_KAZAN_mine: "Арзамас"
- HUB_NAME_STATE_KAZAN_farm: "Нижній Новгород"
+ HUB_NAME_STATE_KAZAN_farm: "Нижній Новґород"
  HUB_NAME_STATE_KAZAN_wood: "Вятка"
  HUB_NAME_STATE_TARTARIA_city: "Саратов"
  HUB_NAME_STATE_TARTARIA_mine: "Пенза"
