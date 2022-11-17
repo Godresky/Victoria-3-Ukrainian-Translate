@@ -45,15 +45,14 @@
  popular_support_for_law:0 "Popular Support for Law"
  renowned_playwright:0 "Renowned Playwright"
 
-
- generic_laws.5.t:0 "Bureaucratic Imbroglio"
- generic_laws.5.d:0 "Lawmakers working towards the enactment of [SCOPE.sLaw('current_law_scope').GetName] have found themselves mired in a particularly complex set of bureaucratic proceedings, grinding the work towards reform to a near halt."
- generic_laws.5.f:0 ""The fully developed bureaucratic apparatus compares with other organisations exactly as does the machine with the non-mechanical modes of production."" # Max Weber
- generic_laws.5.a:0 "Damn this labyrinthine legal system!"
- generic_laws.5.b:0 "Cut through at least some of the red tape."
- mired_in_bureaucracy:0 "Mired in Bureaucracy"
- mired_in_bureaucracy_minor:0 "Bureaucratic Obstacles"
- cutting_red_tape:0 "Working Against the System"
+ generic_laws.5.t: "Бюрократична заплутаність"
+ generic_laws.5.d: "Законодавці, які працюють над прийняттям [Concept('concept_law', '$concept_law_gen$')|l] [SCOPE.sLaw('current_law_scope').GetName], застрягли в особливо складній низці бюрократичних процедур, що майже повністю призупинило роботу над введенням в дію."
+ generic_laws.5.f: "«Повністю розвинений бюрократичний апарат порівнюється з іншими організаціями так само, як машина з немеханічним способом виробництва.»" # Max Weber
+ generic_laws.5.a: "До біса цю заплутану правову систему!"
+ generic_laws.5.b: "Подолайте хоч би частину тягаря."
+ mired_in_bureaucracy: "Занурений в бюрократію"
+ mired_in_bureaucracy_minor: "Бюрократичні перепони"
+ cutting_red_tape: "Робота проти системи"
 
  generic_laws.6.t:0 "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] Intervenes in Political Process"
  generic_laws.6.d:0 "The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] has taken a personal interest in the ongoing debate concerning [SCOPE.sLaw('current_law_scope').GetName], and have resolved to use [ROOT.GetCountry.GetRuler.GetHerHis] royal prerogative to ensure the law passes."

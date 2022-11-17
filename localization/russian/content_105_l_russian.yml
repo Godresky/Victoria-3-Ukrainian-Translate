@@ -941,11 +941,13 @@
  distribution_of_power_laws.9.f:0 ""Between you and me, there are far too many high-minded idealists involved in this. They find something noble in giving up their own influence, spreading it to the masses like alms to the poor. Perhaps they think it will save their souls, or their legacies. I am more practically inclined. I'm concerned with the immediate future of myself and my friends. I can count you among those. Can't I?""
  distribution_of_power_laws.9.a:0 "They must be ousted from their positions if they try to stop the new law!"
  distribution_of_power_laws.9.b:0 "Perhaps we can collaborate with them in the creation of the new system."
- distribution_of_power_laws.10.t:0 "Sins of the Past"
- distribution_of_power_laws.10.d:0 "Proponents of the [SCOPE.sLaw('current_law_scope').GetName] reform have called attention to past abuses of power by the current regime as a reason for why this change is urgently needed."
- distribution_of_power_laws.10.f:0 ""Well, I barely remember it myself. It was a different time. Things like that simply happened, and I never expected to be interrogated about them. That's not to say it went unquestioned, but there are always complainers. You couldn't listen to them if you wanted to get things done. Of course, this was all with the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s approval. Not officially, but I think you should know. That stays between us.""
- distribution_of_power_laws.10.a:0 "Power corrupts, which is why the powerful must be held to account by the voters."
- distribution_of_power_laws.10.b:0 "The past is in the past. These issues have nothing to do with the reform."
+
+ distribution_of_power_laws.10.t: "Гріхи минулого"
+ distribution_of_power_laws.10.d: "Прихильники [Concept('concept_law', '$concept_law_gen$')|l] [SCOPE.sLaw('current_law_scope').GetName|l] звернули увагу на минулі зловживання владою з боку нинішнього режиму, як на одну з причин термінової необхідности цього закону."
+ distribution_of_power_laws.10.f: "«Ну, я сам ледви це пам'ятаю. Тоді це був інший час. Таке було в межах норми, і я ніколи не думав, що мене будуть допитувати щодо цього. Звісно, це не означає, що це залишилося безсумніву, проте завжди будуть люди, які скаржаться. Ти не повинен їх слухати, якщо хочеш все зробити правильно. Звичайно, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] це все схвалив. Не офіційно, але я думаю, що ти повинен був це знати. Це все залишиться між нами.»"
+ distribution_of_power_laws.10.a: "Влада розбещує, тому можновладці повинні нести відповідальність перед виборцями."
+ distribution_of_power_laws.10.b: "Минуле залишиться в минулому. Ці питання не стосуються реформи."
+
  distribution_of_power_laws.11.t:0 "Democracy Without the People"
  distribution_of_power_laws.11.d:0 "Proponents of [SCOPE.sLawType('universal_suffrage_type').GetName] have argued that the ongoing reform to [SCOPE.sLaw('current_law_scope').GetName] is an insufficient compromise, excluding many people from their right to participate in democracy."
  distribution_of_power_laws.11.f:0 ""'[SCOPE.sLaw('current_law_scope').GetNameNoFormatting]'. Just the sound of it! As if that would mean we cast of the yoke of oppression, rather than shifting its burden. How are we supposed to rally in solidarity behind this reform when it still leaves so many without access to the franchise? As usual, they are expected to be glad that anything is happening at all. To have no expectations at all for their own lives. That is no way to treat a human being.""
@@ -982,9 +984,11 @@
  too_low_voting_age:0 "Too Low Voting Age"
  fresh_start:0 "Fresh Start"
  collaboration_with_old_leadership:0 "Collaboration With Old Leadership"
- admitted_abuses_of_power:0 "Admitted Abuses of Power"
- corrupted_by_power:0 "Corrupted by Power"
- downplayed_abuses_of_power:0 "Downplayed Abuses of Power"
+
+ admitted_abuses_of_power: "Визнані зловживання владою"
+ corrupted_by_power: "Зіпсований владою"
+ downplayed_abuses_of_power: "Применшені зловживання владою"
+
  current_election_focus:0 "Current Election Focus"
  democratic_compromise:0 "Democratic Compromise"
  fear_of_future_reforms:0 "Fear of Future Reforms"

@@ -2336,7 +2336,7 @@
  MAP_INTERACTION_ESC_TO_CANCEL: "#instruction Нажміть #bold ESC#!, щоб закрити поточну взаємодію з мапою#!"
  MAP_INTERACTION_BUILD_BUILDING_DESC: "Виберіть #V регіон#!, де Ви збудуєте будівлю #V [BUILDING_TYPE.GetName|l]#!"
  MAP_INTERACTION_BUILD_BUILDING_PERFORMED:0 "Building #V [BuildingType.GetName]#! started"
- MAP_INTERACTION_BUILDING_BUILT: "Будівля [Building.GetName|l] збудована у [Concept('concept_state', '$concept_state_loc$')] [Building.GetState.GetName]"
+ MAP_INTERACTION_BUILDING_BUILT: "Будівля [Building.GetName|l] збудована у [Concept('concept_state', '$concept_state_loc$')|l] [Building.GetState.GetName]"
  MAP_INTERACTION_BUILDING_EXPANDED:0 "[Building.GetName] expanded to level #v [Building.GetExpansionLevel]#! in [Building.GetState.GetName]"
  MAP_INTERACTION_CREATE_MARKET_DESC:0 "Select in which #V State#! to build a #V Market#!"
  MAP_INTERACTION_ESTABLISH_COLONY_DESC:0 "Select which #V State Region#! to create a #V Colony#!"
@@ -4138,7 +4138,7 @@
  notification_diplomatic_pact_third_party_auto_break_notification_tooltip:1 "#header $notification_diplomatic_pact_third_party_auto_break_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplomatic_pact_third_party_auto_break_notification_desc$"
 
  notification_character_died_notification_name: "[SCOPE.GetRootScope.GetCharacter.GetPrimaryRoleName] помер"
- notification_character_died_notification_desc: "Колишній [SCOPE.GetRootScope.GetCharacter.GetPrimaryRoleName] [SCOPE.GetRootScope.GetCharacter.GetFullName] помер."
+ notification_character_died_notification_desc: "Колишній [SCOPE.GetRootScope.GetCharacter.GetPrimaryRoleName|l] [SCOPE.GetRootScope.GetCharacter.GetFullName] помер."
  notification_character_died_notification_tooltip:0 "$notification_character_died_notification_name$\n$notification_character_died_notification_desc$"
 
  notification_character_died_war_office_notification_name:0 "$notification_character_died_notification_name$"
@@ -5715,7 +5715,7 @@
  TECHNOLOGY_RESEARCHED:0 "#i Already Researched#!"
  TOOLTIP_UNLOCKS: "#title Розблоковує#!"
  TOOLTIP_UNLOCK_PRODUCTION_METHOD: "Розблоковує [concept_production_method|l] $PRODUCTION_METHOD$ для [Concept('concept_building','$concept_building_gen$')|l] $BUILDING_TYPE$"
- TOOLTIP_DISALLOW_PRODUCTION_METHOD: "Забороняє [concept_production_method|l] $PRODUCTION_METHOD$ для [Concept('concept_building','$concept_building_gen$')|l] $BUILDING_TYPE$ ([concept_production_method])"
+ TOOLTIP_DISALLOW_PRODUCTION_METHOD: "Забороняє [concept_production_method|l] $PRODUCTION_METHOD$ для [Concept('concept_building','$concept_building_gen$')|l] $BUILDING_TYPE$"
  TOOLTIP_UNLOCK_BUILDING_TYPE: "Розблоковує [Concept('concept_building','$concept_building_acc$')|l] $BUILDING_TYPE$"
  TOOLTIP_UNLOCK_STATE_TRAIT_COLONIZATION:0 "Allows establishment of [Concept('concept_colony','$concept_colonies$')] in [Concept('concept_state', '$concept_states$')] with [STATE_TRAIT.GetName]"
  TOOLTIP_DISABLE_STATE_TRAIT:0 "Removs all effects from [STATE_TRAIT.GetName] in your owned [Concept('concept_colony','$concept_colonies$')] in [Concept('concept_state', '$concept_states$')]"

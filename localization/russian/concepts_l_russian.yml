@@ -1434,7 +1434,7 @@
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED APRIL 22, 2022
 
- concept_devastation:0 "Devastation"
+ concept_devastation: "Спустошення"
  concept_devastation_desc:2 "$concept_devastation$ is the damage done to a [concept_state_region] as a result of war or natural disasters. It increases from [Concept('concept_battle','$concept_battles$')] and when under hostile [concept_occupation]. It will decrease over time if no part of the $concept_state_region$ is at war.\n\n$concept_devastation$ has a negative impact on [concept_infrastructure], [Concept('concept_pop_growth','$concept_pop_growth_mortality$')], [concept_throughput], and [concept_migration_pull]."
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED APRIL 5, 2022

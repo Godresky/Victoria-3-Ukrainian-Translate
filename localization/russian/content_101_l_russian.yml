@@ -232,7 +232,7 @@
  natural_disaster_events.2.a:0 "The state will have to figure it out on their own."
  natural_disaster_events.2.b:0 "We should put some more money into relief."
 
- modifier_flood_relief:0 "Flood Relief"
+ modifier_flood_relief: "Допомога при повенях"
 
  local_river:0 "local river"
 
@@ -260,7 +260,7 @@
 
  modifier_crop_failure_relief:0 "Crop Failure Relief"
 
- modifier_mega_flood_relief:0 "Massive Flood Relief"
+ modifier_mega_flood_relief: "Масова допомога після повені"
 
  natural_disaster_events.6.t:0 "The [SCOPE.sState('cyclone_state').GetName] Cyclone"
  natural_disaster_events.6.d:0 "A cyclone has hit the state of [SCOPE.sState('cyclone_state').GetName] from the sea, tearing through homes and people alike."

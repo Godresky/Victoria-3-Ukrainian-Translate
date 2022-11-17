@@ -161,7 +161,7 @@
  alert_has_no_war_goal_alert_hint:1 "You can add a $concept_war_goal$ on a participating member of the $concept_diplomatic_play$ in its overview screen. You can expand your $concept_war_goal$ targets as more participants join a side in the $concept_diplomatic_play$, but that will be at the cost of [Concept('concept_maneuver', '$concept_maneuvers$')] you can spend to tempt other participants to join your side."
  alert_has_no_war_goal_alert_action:0 "Diplomatic Play"
 
- alert_stockpiling_gold_alert_name:1 "Stockpiling [GetGoods('gold').GetTextIcon] [GetGoods('gold').GetName]"
+ alert_stockpiling_gold_alert_name: "[GetGoods('gold').GetTextIcon] [GetGoods('gold').GetName] накопичується"
  alert_stockpiling_gold_alert_desc:0 "Your [concept_treasury] is stockpiling gold beyond its capacity."
  alert_stockpiling_gold_alert_hint:0 "Increase your expenditures or reduce your income to balance your budget better. Stockpiling gold extracts @money![concept_money] from your economy and [concept_pop] at diminishing returns, leading to reductions in [concept_wealth] over time."
  alert_stockpiling_gold_alert_action:0 "Budget Panel"
