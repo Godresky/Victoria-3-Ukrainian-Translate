@@ -125,7 +125,7 @@
  gov_catholic_theocracy_desc:1 "A [concept_government] ruled by the local hierarchy of the Catholic Church. The most senior [Concept('concept_ruler','$RULER_CARDINAL$')] takes the role of [concept_head_of_state]."
  gov_protestant_theocracy: "Протестанське боговладдя"
  gov_protestant_theocracy_desc:1 "A [concept_government] ruled by the state Protestant Church. Its highest authority is called the [Concept('concept_ruler','$RULER_PRIMATE$')], who wields both secular and spiritual authority."
- gov_oriental_orthodox_theocracy: "Східне православне боговладдя"
+ gov_oriental_orthodox_theocracy: "Орієнтальне Православне боговладдя"
  gov_oriental_orthodox_theocracy_desc:2 "A [concept_government] ruled by the Oriental Orthodox Church. Ruled by the [Concept('concept_ruler','$RULER_PATRIARCH$')], the Church controls all aspects of the state."
  gov_sunni_theocracy: "Імамат"
  gov_sunni_theocracy_desc:1 "A theocratic [concept_government] ruled by leaders of the Sunni Muslim faith. A senior [Concept('concept_ruler','$RULER_IMAM$')] takes the role of [concept_head_of_state]."

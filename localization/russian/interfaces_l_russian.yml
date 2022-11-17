@@ -285,7 +285,7 @@
  PRICE_ICON_ITEM_RANGE_SAME:0 "(#tooltippable #tooltip:COIN_STACK_TOOLTIP $ICON$#!#! in $NUM$ State Regions)"
  PRICE_ICON_ITEM_MARKET:0 "([Goods.GetCompareIconAgainstBasePrice( Goods.GetMarketPrice )] in [Goods.GetMarket.GetName])"
 
- DEFAULT_EVENT_OPTION:0 "This option will be picked automatically after $EVENT_REMAINING_DAYS$."
+ DEFAULT_EVENT_OPTION: "Цей параметр буде автоматично вибрано після $EVENT_REMAINING_DAYS$."
 
  NO_PROGRESS: "Немає поступу"
  INVALID_OPTIONS: "Недійсні параметри: [GetDataModelSize(MapListPanel.AccessInvalidOptions)|v]"
@@ -1747,8 +1747,8 @@
  BUILDING_EMPLOYMENT_TOOLTIP:0 "#header [Building.GetName]#!\n$BUILDING_EMPLOYMENT_CAPPED$"
  BUILDING_EMPLOYMENT_CAPPED: "Зайнятість: #tooltippable #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_EMPLOYMENT #variable [Building.GetNoOfEmployed|1*]#!#!#! / #maximum [Building.GetEmployeeCap|1*] працівників#! (#BOLD #V [Building.GetEmploymentPercentage|0%]#!#!)"
  BUILDING_EMPLOYMENT_UNCAPPED: "Зайнятість: #tooltippable #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_EMPLOYMENT #variable [Building.GetNoOfEmployed|1*]#!#!#! / #maximum [Building.GetEmployeeCap|1*] працівників#! (#BOLD #V [Building.GetEmploymentPercentage|0%]#!#!)"
- BUILDING_LEVEL:0 "[concept_building_level]"
- BUILDING_LEVEL_HEADER_TOOLTIP:0 "#header [concept_building_level]#!\n$TOOLTIP_DELIMITER$\nThe current $concept_building_level$."
+ BUILDING_LEVEL: "[concept_building_level]"
+ BUILDING_LEVEL_HEADER_TOOLTIP: "#header [concept_building_level]#!\n$TOOLTIP_DELIMITER$\nПоточний [Concept('concept_building_level', '$concept_building_level$')|l]."
  BUILDING_SIZE_TOOLTIP:0 "#header [Building.GetName]#!\nРозмір: [Building.GetExpansionLevel|v]"
  BUILDING_INFO_TOOLTIP:0 "$BUILDING_TOOLTIP_BASE_P1$\n[Building.GetTooltip]"
  BUILDING_TOOLTIP_BASE_P1:0 "#header [Building.GetName]#!"
@@ -1764,10 +1764,10 @@
  PRODUCTIVITY_SPAN_FORMAT_SAME:0 "@money!$MIN$"
  PRODUCTIVITY_SPAN_TOOLTIP:0 "#header [concept_productivity]#!\nThe [concept_productivity] in [BuildingType.GetName] in [GetPlayer.GetName] is [BuildingType.GetProductivitySpanDesc(GetPlayer.Self)]"
  EMPLOYMENT_BAR: "Працевлаштування: [Building.GetNoOfEmployed|1*v]"
- EARNINGS_PER_EMPLOYEE:0 "Earnings / Employee"
+ EARNINGS_PER_EMPLOYEE: "Заробіток / Працівник"
  WORLD_PROFITABILITY_HEADER:1 "$EARNINGS_PER_EMPLOYEE$ compared to all Buildings"
  BUILDING_PROFITABILITY_HEADER:1 "$EARNINGS_PER_EMPLOYEE$ compared to other [Building.GetName]"
- BUILDING_PROFITABILITY_HEADER_TOOLTIP:0 "#header [concept_productivity]#!\n$TOOLTIP_DELIMITER$\nYearly average $EARNINGS_PER_EMPLOYEE$ compared to other [Concept('concept_building', '$concept_buildings$')]."
+ BUILDING_PROFITABILITY_HEADER_TOOLTIP:0 "#header [concept_productivity]#!\n$TOOLTIP_DELIMITER$\nСередньорічне $EARNINGS_PER_EMPLOYEE$ порівняно з іншими [Concept('concept_building', '$concept_buildings_ins$')|l]."
  BUILDING_PRODUCTIVITY_HEADER:1 "Yearly Avg. $EARNINGS_PER_EMPLOYEE$"
  GOVERNMENTAL_EXPENSES:1 "Governmental Expenses: #tooltippable #tooltip:[Building.GetTooltipTag],BUILDING_GOVERNMENT_EXPENSES_DESC #N @money!-[Building.GetGovernmentExpenses|D-]#!#!#!"
  NOT_FULLY_EMPLOYED:2 "#header #red [Building.GetName] is unable to fully hire#!#!\n$TOOLTIP_DELIMITER$\nEmployment: #tooltippable #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_EMPLOYMENT #variable [Building.GetNoOfEmployed|1*]#!#!#! / #maximum [Building.GetEmployeeCap|1*] Employees#! (#BOLD #V [Building.GetEmploymentPercentage|0%]#!#!)\n[Building.GetAllFailedHiresDesc]"
@@ -2334,7 +2334,7 @@
  MAX_DECLARED_INTERESTS_TOOLTIP:0 "#header Maximum [Concept('concept_declared_interest','$concept_declared_interests$')] for [Country.GetName]#!\n$TOOLTIP_DELIMITER$\n[Country.GetMaxNumDeclaredInterestsBreakdown]"
 
  MAP_INTERACTION_ESC_TO_CANCEL: "#instruction Нажміть #bold ESC#!, щоб закрити поточну взаємодію з мапою#!"
- MAP_INTERACTION_BUILD_BUILDING_DESC: "Виберіть #V регіон#!, де Ви збудуєте будівлю #V [BUILDING_TYPE.GetName]#!"
+ MAP_INTERACTION_BUILD_BUILDING_DESC: "Виберіть #V регіон#!, де Ви збудуєте будівлю #V [BUILDING_TYPE.GetName|l]#!"
  MAP_INTERACTION_BUILD_BUILDING_PERFORMED:0 "Building #V [BuildingType.GetName]#! started"
  MAP_INTERACTION_BUILDING_BUILT: "Будівля [Building.GetName|l] збудована у [Concept('concept_state', '$concept_state_loc$')] [Building.GetState.GetName]"
  MAP_INTERACTION_BUILDING_EXPANDED:0 "[Building.GetName] expanded to level #v [Building.GetExpansionLevel]#! in [Building.GetState.GetName]"
@@ -2713,7 +2713,7 @@
  CREATE_MARKET:0 "#BOLD Create [concept_market] in #V $STATE$#!#!"
  MERGE_MARKET:0 "Link [STATE.GetName] to #V [MARKET.GetName]#!"
  SPLIT_MARKET:0 "Unlink [STATE.GetName] from #V [MARKET.GetName]#!"
- CANNOT_BUILD_BUILDING: "#BOLD #N Неможливо $BUILD_OR_EXPAND$ будівлю #V [BUILDING_TYPE.GetName]#! у регіоні [STATE.GetName]!#!#!"
+ CANNOT_BUILD_BUILDING: "#BOLD #N Неможливо $BUILD_OR_EXPAND|l$ будівлю #V [BUILDING_TYPE.GetName|l]#! у регіоні [STATE.GetName]!#!#!"
  CANNOT_BUILD_MARKET:0 "#BOLD #N Cannot build #V Market#! here!#!#!"
  CANNOT_MERGE_MARKET:0 "#BOLD #N Cannot link #V Market#! here!#!#!"
  CANNOT_MERGE_MARKET_STATE:0 "#BOLD #N Cannot link to #V [MARKET.GetName]#! market#!#!"
@@ -2732,7 +2732,7 @@
 
 
  
- CAN_EXPAND_BUILDING_TOOLTIP:0 "#header $BUILD_OR_EXPAND$ [BUILDING_TYPE.GetName] in [STATE.GetName]#! (Розмір: [BUILDING.GetExpansionLevelBreakdownDesc])\n#tooltippable #tooltip:[GetRawTextTooltipTag('$PROFIT_IMPACT_DESC$')] #v @money!$PROFIT_IMPACT|K+=$#!#!#! Прогнозований прибуток / щотижня\n[ConcatIfNeitherEmpty('$QUALIFICATIONS$', '\n')]$TOOLTIP_DELIMITER$\n@construction! $REQUIRED_CONSTRUCTION|v0$ [concept_construction] ($CONSTRUCTION_COST_CHANGE$)\n[ConcatIfNeitherEmpty('$INVESTMENT_FUND$', '\n')]\n[STATE.GetMarketAccessStatus]\nAvailable Labour: [State.GetNumSubsistenceWorkingAdults|Dv] [GetPopType('peasants').GetName] [SelectLocalization( GreaterThan_int32(State.GetNumUnemployedWorkingAdults, '(int32)0'), 'AND_UNEMPLOYED', '' )][ConcatIfNeitherEmpty('$MILITARY_INFO$', '\n')][ConcatIfNeitherEmpty('$PORT_INFO$', '\n')]\n\n$KEY_MODIFIER_INSTRUCTIONS$"
+ CAN_EXPAND_BUILDING_TOOLTIP:0 "#header $BUILD_OR_EXPAND$ [BUILDING_TYPE.GetName|l] у [Concept('concept_state', '$concept_state_loc$')|l] [STATE.GetName]#! (Розмір: [BUILDING.GetExpansionLevelBreakdownDesc])\n#tooltippable #tooltip:[GetRawTextTooltipTag('$PROFIT_IMPACT_DESC$')] #v @money!$PROFIT_IMPACT|K+=$#!#!#! Прогнозований прибуток / щотижня\n[ConcatIfNeitherEmpty('$QUALIFICATIONS$', '\n')]$TOOLTIP_DELIMITER$\n@construction! $REQUIRED_CONSTRUCTION|v0$ [concept_construction] ($CONSTRUCTION_COST_CHANGE$)\n[ConcatIfNeitherEmpty('$INVESTMENT_FUND$', '\n')]\n[STATE.GetMarketAccessStatus]\nAvailable Labour: [State.GetNumSubsistenceWorkingAdults|Dv] [GetPopType('peasants').GetName] [SelectLocalization( GreaterThan_int32(State.GetNumUnemployedWorkingAdults, '(int32)0'), 'AND_UNEMPLOYED', '' )][ConcatIfNeitherEmpty('$MILITARY_INFO$', '\n')][ConcatIfNeitherEmpty('$PORT_INFO$', '\n')]\n\n$KEY_MODIFIER_INSTRUCTIONS$"
 # $PRODUCTION_BREAKDOWN$ is currently not included, re-add to CAN_EXPAND_BUILDING_TOOLTIP if deeemed necessary 
 
  AND_UNEMPLOYED:0 "and [State.GetNumUnemployedWorkingAdults|Dv] [concept_unemployed]"
@@ -5605,13 +5605,13 @@
 
  BUILDING_MAP_LIST_PANEL_STATUS_HEADER: "Стан"
  BUILDING_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP: "#header Стан#!\n$TOOLTIP_DELIMITER$\n#concept Доступність розширення цієї [Concept('concept_building', '$concept_building_gen$')|l] у цьому [Concept('concept_state', '$concept_state_loc$')|l].\n\n@map_list_plus!: Ви можете вибрати це.\n@map_list_plus_and_checkmark!: Ви можете вибрати це і Ви це вже тут робите.\n@map_list_checkmark!: Ви вже робите це тут і можете скасувати вибір.\n@map_list_lock!: Ви вже робите це тут, але НЕ можете скасувати вибір.\n@map_list_cross!: Ви НЕ можете вибрати це.\n@map_list_cross_and_checkmark!: Ви вже робите це тут, але НЕ можете вибрати це.#!"
- BUILDING_MAP_LIST_PANEL_STATE_HEADER:0 "State"
- BUILDING_MAP_LIST_PANEL_STATE_HEADER_TOOLTIP:1 "#header [concept_state]#!\n$TOOLTIP_DELIMITER$\n#concept The $concept_state$ where the [concept_building] will be built.#!"
+ BUILDING_MAP_LIST_PANEL_STATE_HEADER: "Регіон"
+ BUILDING_MAP_LIST_PANEL_STATE_HEADER_TOOLTIP: "#header [concept_state]#!\n$TOOLTIP_DELIMITER$\n#concept Це [concept_state|l], де [concept_building|l] буде збудована.#!"
  BUILDING_MAP_LIST_PANEL_EFFICIENCY_HEADER:0 "Eff."
  BUILDING_MAP_LIST_PANEL_EFFICIENCY_HEADER_TOOLTIP:0 "#header @construction![Nbsp][concept_construction] Efficiency#!\n$TOOLTIP_DELIMITER$\n#concept The @construction! $concept_construction$ Efficiency where the [concept_building] will be built. A positive value reduces the amount of @construction![Nbsp][concept_construction] required per week and vice versa.#!"
 
- BUILDING_MAP_LIST_PANEL_PEASANTS_HEADER:0 "Peasants"
- BUILDING_MAP_LIST_PANEL_PEASANTS_HEADER_TOOLTIP:0 "#header Peasants#!"
+ BUILDING_MAP_LIST_PANEL_PEASANTS_HEADER: "Селяни"
+ BUILDING_MAP_LIST_PANEL_PEASANTS_HEADER_TOOLTIP: "#header Кількість селян#!"
 
  BUILDING_MAP_LIST_PANEL_CONSTRUCTION_HEADER:0 "@construction!"
  BUILDING_MAP_LIST_PANEL_CONSTRUCTION_HEADER_TOOLTIP:0 "#header @construction![Nbsp][concept_construction]#!\n$TOOLTIP_DELIMITER$\n#concept How much total @construction! $concept_construction$ the [concept_building] will require to complete.#!"
@@ -5619,8 +5619,8 @@
  BUILDING_MAP_LIST_PANEL_STATUS_EXPAND: "Розширити"
  BUILDING_MAP_LIST_PANEL_EFFICIENCY_TOOLTIP:0 "#header [concept_construction] Efficiency in [State.GetName]: $VAL|v%1$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
 
- BUILDING_MAP_LIST_PANEL_PROFIT_IMPACT_HEADER:0 "Profit Imp."
- BUILDING_MAP_LIST_PANEL_PROFIT_IMPACT_TOOLTIP:0 "#header Predicted Profit Impact of Expansion#!\n$TOOLTIP_DELIMITER$\nA prediction of how much expanding this Building would affect its' weekly Earnings."
+ BUILDING_MAP_LIST_PANEL_PROFIT_IMPACT_HEADER: "Прибуток"
+ BUILDING_MAP_LIST_PANEL_PROFIT_IMPACT_TOOLTIP: "#header Прогнозований вплив розширення на прибуток#!\n$TOOLTIP_DELIMITER$\nПрогноз щодо того, наскільки розширення цієї будівлі вплине на її щотижневий прибуток."
 
  COLONY_MAP_LIST_PANEL_STATUS_HEADER:0 "Status"
  COLONY_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP:1 "#header Status#!\n$TOOLTIP_DELIMITER$\n#concept The availability of colonizing each [concept_state_region].\n\n@map_list_plus!: You can select this.\n@map_list_plus_and_checkmark!: You can select this and you are already doing this here.\n@map_list_checkmark!: You are already doing this here and you can deselect this.\n@map_list_lock!: You are already doing this here, but you can NOT deselect this.\n@map_list_cross!: You can NOT select this.\n@map_list_cross_and_checkmark!: You are already doing this here, but you can NOT select this.#!"

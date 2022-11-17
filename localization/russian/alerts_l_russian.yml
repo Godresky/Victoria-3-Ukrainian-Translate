@@ -74,7 +74,7 @@
  alert_low_legitimacy_alert_hint:0 "Increase your [concept_legitimacy] by adding or removing [Concept('concept_interest_group', '$concept_interest_groups$')] from your [concept_government]. This can be done on the Politics Panel or on the details of an [concept_interest_group]. You can also change your [Concept('concept_law', '$concept_laws$')], which can be done from the Constitutional Laws tab in the Politics Panel."
  alert_low_legitimacy_alert_action:0 "Politics Panel"
 
- alert_unhealthy_economy_alert_name:0 "Unhealthy Economy"
+ alert_unhealthy_economy_alert_name: "Нездорова економіка"
  alert_unhealthy_economy_alert_desc:0 "[GetPlayer.PredictEconomyHealthDesc]"
  alert_unhealthy_economy_alert_hint:0 "You can improve your financial situation by increasing your income (which can be done by for instance increasing (or adding new) Taxes) or decreasing your expenses (which can be done by for instance reducing Government Wages or improving the prices for expensive Goods used in Government Buildings)."
  alert_unhealthy_economy_alert_action:0 "Budget Panel"

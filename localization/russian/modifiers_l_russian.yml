@@ -1864,7 +1864,7 @@
  modifier_country_radicals_from_conquest_mult:0 "Radicals from Conquest"
  modifier_country_radicals_from_conquest_mult_desc:0 "A bonus or penalty to the amount of [Concept('concept_pop', '$concept_pops$')] that will become [concept_radical] when we conquer [Concept('concept_state', '$concept_states$')] militarily"
 
- modifier_state_radicals_from_discrimination_mult:1 "[Concept('concept_radical', '$concept_radicals$')] from [concept_discrimination]"
+ modifier_state_radicals_from_discrimination_mult: "[Concept('concept_radical', '$concept_radicals$')] через [Concept('concept_discrimination','$concept_discrimination_acc$')|l]"
  modifier_state_radicals_from_discrimination_mult_desc:0 "A bonus or penalty to the rate at which [Concept('concept_pop', '$concept_pops$')] that is subjected to [concept_discrimination] become [concept_radical] over time"
  modifier_state_radicals_from_sol_change_mult:1 "[Concept('concept_radical', '$concept_radicals$')] from [concept_sol] decreases"
  modifier_state_radicals_from_sol_change_mult_desc:0 "A bonus or penalty to how many [Concept('concept_pop', '$concept_pops$')] will become [concept_radical] from decreases in [concept_sol]"

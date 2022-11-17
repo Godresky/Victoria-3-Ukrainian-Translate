@@ -101,9 +101,11 @@
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MAY 5, 2022
  
- concept_trade_route: "Торговий маршрут"
+ concept_trade_route: "Торговий тор"
  concept_trade: "Торгівля"
- concept_trade_routes: "Торгові маршрути"
+ concept_trade_routes: "Торгові тори"
+ concept_trade_routes: "Торгові тори"
+ concept_trade_routes_gen: "Торгових торів"
  concept_trade_route_desc:4 "$concept_trade_routes$ $concept_buy_order_short$ [Concept('concept_good', '$concept_goods$')] on one [concept_market], transport it to another using [concept_convoys] (or overland, if the $concept_markets$ are adjacent), and $concept_sell_order_short$ the $concept_goods$ there in order to make [concept_revenue] (from which [concept_tariffs] are subtracted) for the [SelectLocalization(GetPlayer.IsValid,'concept_trade_route_desc_added','Trade Center')] managing it. In the process it creates [Concept('concept_buy_orders','$concept_buy_order_short$')] and [concept_sell_orders] on the two $concept_markets$, making it more expensive in one and less in the other. The volume of $concept_goods$ moved will independently scale up and down to meet the $concept_market$ conditions in both, employing more or less [concept_workforce] to match. Each $concept_trade_route$ costs a fixed amount of [concept_bureaucracy] to maintain."
  concept_trade_route_desc_added:0 "[GetBuildingType('building_trade_center').GetName]"
 
@@ -161,6 +163,7 @@
  concept_building_gen: "Будівлі"
  concept_building_acc: "Будівлю"
  concept_buildings: "Будівлі"
+ concept_buildings_ins: "Будівлями"
  concept_building_industry:0 "Industry"
  concept_building_industries:0 "Industries"
  concept_building_possessive:1 "Building\\'s"
@@ -169,9 +172,9 @@
  concept_building_desc:2 "$concept_buildings$ drive your [Concept('concept_country','$concept_country_possessive$')] economy via the [concept_good_production] (and [concept_good_consumption]) of [Concept('concept_good','$concept_goods$')]. They can also produce a number of other useful effects, such as [concept_bureaucracy], [concept_infrastructure], and [concept_convoys].\n\nTo perform their functions they require a [concept_workforce] made up by [Concept('concept_pop', '$concept_pops$')] of different [Concept('concept_profession','$concept_professions$')], who receive a [concept_building_wage] in return for their labor.\n\nWhat functions a particular $concept_building$ serves is determined by its active [Concept('concept_production_method','$concept_production_methods$')], and the magnitude of its impact is determined by its [Concept('concept_building_level','$concept_building_level_short$')].[AddLocalizationIf(GetPlayer.IsValid,'concept_building_desc_added')]"
  concept_building_desc_added:1 "\n\nYou can [Concept('concept_construction','$concept_construct$')] new, or expand existing, $concept_buildings$ in each of your [Concept('concept_state','$concept_states$')] using your [GetBuildingType('building_construction_sector').GetName]."
 
- concept_building_level:0 "Building Level"
- concept_building_level_short:0 "Level"
- concept_building_levels:0 "Building Levels"
+ concept_building_level: "Рівень будівлі"
+ concept_building_level_short: "Рівень"
+ concept_building_levels: "Рівені будівлі"
  concept_building_level_desc:0 "A [Concept('concept_building', '$concept_building_possessive$')] $concept_building_level_short$ scales its current [concept_good_consumption], [concept_good_production], [concept_workforce] requirements, and may apply an [concept_economy_of_scale] bonus. The maximum $concept_building_level_short$ a $concept_building$ can be expanded to may depend on the [concept_resource_potential] or [concept_arable_land] in the [concept_state]. Expanding a $concept_building$'s $concept_building_level_short$ usually requires [concept_construction], though some $concept_building$'s $concept_building_level_short$ is automatically adjusted based on other factors such as [concept_infrastructure], [Concept('concept_trade_route','$concept_trade_routes$')], [Concept('concept_conscription_center','$concept_conscription$')] rate, or unused $concept_arable_land$."
  
  concept_diplomatic_play: "Дипломатична гра"
@@ -443,6 +446,7 @@
  concept_politician_desc:2 "A [concept_character_role] for those [Concept('concept_character','$concept_characters$')] whose influence is political rather than military. They can act as [concept_ruler], [concept_heir], or [concept_interest_group] [concept_leader]."
 
  concept_leader: "Провідник"
+ concept_leader_gen: "Провідника"
  concept_leaders: "Провідники"
  concept_leader_possessive:0 "Leader\\'s"
  concept_leader_desc:2 "The [concept_character] who leads an [concept_interest_group] has a set of [Concept('concept_character_trait', '$concept_character_traits$')] that affect it, and a personal [concept_ideology] that is added to the $concept_interest_group$'s $concept_ideologies$ for as long as that $concept_leader$ is in charge."
@@ -519,6 +523,7 @@
  concept_occupancy_desc:1 "How fully employed a [concept_building] is, which also determines how much of its maximum [Concept('concept_good_production','Productive')] capacity is utilized. If the $concept_building$ has room to hire a larger [concept_workforce], it will always try to do so. If its hiring is limited by the [concept_building_wage] it can offer, it will increase $concept_building_wages$ for as long as its [concept_building_balance] remains positive."
 
  concept_votes: "Голоса"
+ concept_votes_gen: "Голосів"
  concept_vote: "Голос"
  concept_voting_rights:0 "Voting Rights"
  concept_voting:0 "Voting"
@@ -991,6 +996,8 @@
  concept_native_uprising_desc:3 "A type of [concept_diplomatic_play] that can occur if the [concept_tension] between a colonizer and a [concept_decentralized_nation] rises to #b $tension_volatile$#! level. In this $concept_diplomatic_play_short$, the $concept_decentralized_nation$ will mobilize its warriors and attempt to seize the [concept_colony] from the colonizer."
 
  concept_discrimination: "Утиск"
+ concept_discrimination_gen: "Утиску"
+ concept_discrimination_acc: "Утиск"
  concept_discriminated: "Утиснений"
  concept_discriminated_against: "Утискають"
  concept_discrimination_desc:3 "[Concept('concept_pop', '$concept_pops$')] can be $concept_discriminated_against$ if their [concept_culture] and/or [concept_religion] are not accepted in their [concept_country]. $concept_discriminated$ $concept_pops$:\n- get paid less than their peers\n- have less [concept_political_strength]\n- are less likely to develop [concept_pop_qualifications] for certain [concept_profession]\n- naturally become [concept_radical] over time\n- and are more likely to [Concept('concept_migration','$concept_emigrate$')].\n\nIn addition, certain [Concept('concept_law', '$concept_laws$')] limit or expand national acceptance of $concept_culture$ and $concept_religions$."
@@ -1155,9 +1162,9 @@
  concept_state_possessive:1 "State\\'s"
  concept_state_desc:2 "A geographic region controlled by a [concept_country]. [Concept('concept_pop', '$concept_pops$')] live and work in the [Concept('concept_building', '$concept_buildings$')] in the $concept_state$. Unless it is a [concept_split_state] its territory is equivalent to a [concept_state_region]. Unless it is [Concept('concept_isolated_state', '$concept_isolated_state_short$')], it will trade any [Concept('concept_good','$concept_goods$')] locally [Concept('concept_good_consumption','$concept_good_consumed$')] and [Concept('concept_good_production','$concept_good_produced$')] with other $concept_states$ in the same [concept_market] in to a degree based on its [concept_market_access]."
 
- concept_pop: "Людина"
- concept_pops: "Людей"
- concept_pops_adj: "Людcьке"
+ concept_pop: "Народ"
+ concept_pops: "Народи"
+ concept_pops_adj: "Народн"
  concept_pop_possessive:1 "Pop\\'s"
  concept_pops_possessive:0 "Pops\\'"
  concept_population: "Населення"
@@ -1178,6 +1185,7 @@
 
  concept_culture: "Культура"
  concept_culture_gen: "Культури"
+ concept_culture_acc: "Культуру"
  concept_cultures: "Культури"
  concept_culture_possessive:1 "Culture\\'s"
  concept_culture_desc:2 "All [Concept('concept_pop', '$concept_pops$')] have a $concept_culture$, which can only change through [concept_assimilation]. Their $concept_culture$ determines which [Concept('concept_state_region','$concept_state_regions$')] they consider their [Concept('concept_homeland','$concept_homelands$')] and whether they are [Concept('concept_discrimination','$concept_discriminated_against$')] in their [concept_country] or not."
@@ -1203,6 +1211,7 @@
  concept_cultural_heritage_trait_desc_added:0 "[GetLawType('law_national_supremacy').GetGroup.GetName]"
 
  concept_religion: "Релігія"
+ concept_religion_gen: "Релігії"
  concept_religions: "Релігії"
  concept_religion_desc:1 "All [Concept('concept_pop', '$concept_pops$')] have a $concept_religion$, which can only change through [concept_conversion]. Their $concept_religion$ determines whether they are [Concept('concept_discrimination','$concept_discriminated_against$')] in their [concept_country] or not."
 
@@ -1284,6 +1293,8 @@
  concept_election: "Вибори"
  concept_election_gen: "Виборів"
  concept_elections: "Вибори"
+ concept_election_adj: "Виборч"
+
  concept_election_possessive:0 "Election\\'s"
  concept_election_voting_franchise:0 "Voting Franchise"
  concept_elect:0 "Elect"
@@ -1451,9 +1462,9 @@
  concept_tax_capacity_desc:2 "Each point of Taxation Capacity in a [concept_state] allows for the efficient taxation of [GetDefine('NPops','INDIVIDUALS_TAXED_PER_TAX_CAPACITY')|vK] [Concept('concept_pop','$concept_pops$')]. If the population of a [concept_state] outgrows its Taxation Capacity, the efficiency of all forms of taxation will be reduced. Taxation Capacity can be increased through researching certain $SOCIETY$ $concept_technologies$ or constructing [SelectLocalization(GetPlayer.IsValid, 'concept_tax_capacity_desc_added','Government Administration')] [Concept('concept_building','$concept_buildings$')] in the [concept_state]."
  concept_tax_capacity_desc_added:0 "[GetBuildingType('building_government_administration').GetName]"
 
- concept_assimilation:0 "Assimilation"
- concept_assimilating:1 "Assimilating"
- concept_assimilate:0 "Assimilating"
+ concept_assimilation: "Уподібнювання"
+ concept_assimilating: "Уподібнювати"
+ concept_assimilate: "Уподібнювати"
  concept_assimilation_desc:3 "Foreign [Concept('concept_pop','$concept_pops$')] whose [concept_culture] is [Concept('concept_accepted_culture','$concept_accepted_culture_short$')] in the [concept_country] they live, and who do not live in one of their [Concept('concept_homeland','$concept_homelands$')], may $concept_assimilate$ into one of the $concept_country$'s [concept_primary_cultures]."
 
  concept_conversion:0 "Conversion"
@@ -1511,8 +1522,8 @@
  concept_popularity: "Знаність"
  concept_popularity_desc:2 "The $concept_popularity$ of a [concept_character] measures the willingness of [Concept('concept_pop','$concept_pops$')] to follow them. $concept_popularity$ can have different effects depending on the $concept_character$'s [concept_character_role]."
 
- concept_momentum: "Рин"
- concept_momentum_desc:1 "The success of a [Concept('concept_party','$concept_party_possessive$')] [concept_election] campaign. $concept_momentum$ increases the number of [concept_votes] a $concept_party$ gains on $concept_election$ day, and is nullified thereafter. $concept_momentum$ can be affected by random chance, special events, and the [concept_popularity] of its [concept_party_leader]."
+ concept_momentum: "Імпульс"
+ concept_momentum_desc: "Показує успіх [Concept('concept_election','$concept_election_adj$ої')|l] кампанії [Concept('concept_party','$concept_party_gen$')|l]. $concept_momentum$ збільшує кількість [Concept('concept_votes','$concept_votes_gen$')|l] партії перед днем виборів, а після чого анулюється. На імпульс може вплинути випадковість, спеціяльні події та [concept_popularity|l] їх [Concept('concept_party_leader','$concept_party_leader_gen$')|l]."
 
  concept_government_expenses: "Державні витрати"
  concept_government_expenses_short: "Витрати"
@@ -1635,9 +1646,11 @@
  concept_party_acc: "Партію"
  concept_parties: "Партії"
  concept_party_possessive:0 "Party\\'s"
+ concept_party_adj: "Партійн"
  concept_party_desc:1 "A $concept_party$ is a political entity that participates in [Concept('concept_election','$concept_election$')]. They consist of one or more [Concept('concept_interest_group','$concept_interest_groups$')] whose [Concept('concept_ideology','$concept_ideologies$')] are at least somewhat compatible. These $concept_interest_groups$ are empowered by the [concept_votes] the $concept_party$ has won proportional to their [concept_clout]. Individual $concept_interest_groups$ cannot be included in [concept_government] without the rest of their $concept_party$ members."
 
  concept_party_leader: "Провідник партії"
+ concept_party_leader_gen: "Провідника партії"
  concept_party_leader_desc:0 "The [concept_leader] of the [concept_interest_group] in the [concept_party] with the most [concept_clout] is considered the $concept_party_leader$."
 
  concept_suppress: "Придушити"
