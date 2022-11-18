@@ -526,8 +526,8 @@
  concept_votes: "Голоса"
  concept_votes_gen: "Голосів"
  concept_vote: "Голос"
- concept_voting_rights:0 "Voting Rights"
- concept_voting:0 "Voting"
+ concept_voting_rights: "Виборчі права"
+ concept_voting: "Голосування"
  concept_votes_desc:1 "Your [Concept('concept_law', '$concept_laws$')] determine whether any given [concept_pop] gets to cast a $concept_vote$, and if so, how much [concept_political_strength] that $vote$ will count for. $concept_votes$ are cast for [Concept('concept_party','$concept_parties$')] during [concept_election] periods. $concept_pops$ will tend to vote for the $concept_party$ their [concept_interest_group] belongs to, but may be won over by another $concept_party$ with greater [concept_momentum]. After the $concept_election$ date, the number of total $concept_votes$ each $concept_party$ received will be fixed until the next $concept_election$, and will increase the [concept_clout] of any $concept_interest_groups$ that are members of the $concept_party$."
  
  concept_clout: "Вплив"
@@ -1300,7 +1300,7 @@
  concept_election_possessive:0 "Election\\'s"
  concept_election_voting_franchise:0 "Voting Franchise"
  concept_elect:0 "Elect"
- concept_elected:0 "Elected"
+ concept_elected: "Обраний"
  concept_election_desc:2 "[Concept('concept_country','$concept_countries$')] with a $concept_election_voting_franchise$ will hold $concept_elections$ every #v [GetDefine('NPolitics','ELECTION_INTERVAL_YEARS')|0] years#!. An $concept_election$ campaign period will commence #v [GetDefine('NPolitics','CAMPAIGN_PERIOD_MONTHS')|0] months#! prior to the date, during which [Concept('concept_party','$concept_parties$')] will vie for [concept_momentum] and [concept_votes].\n\nOn $concept_election$ day the final $concept_votes$ will be tallied, which will affect the [concept_political_strength] of the member [Concept('concept_interest_group','$concept_interest_groups$')] of each $concept_party$. Under certain [Concept('concept_government_type','$concept_government_types$')] a new [concept_head_of_state] may also be selected as a result of the $concept_election$'s outcome. Finally, a single [concept_government_reform] may be performed where any $concept_interest_groups$ may be removed from [concept_government] without generating any new [Concept('concept_radical','$concept_radicals$')]."
 
  concept_budget_minting: "Карбування"
@@ -1606,7 +1606,8 @@
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MARCH 30, 2022
 
  concept_head_of_state: "Глава держави"
- concept_head_of_state_desc:3 "A [Concept('concept_country','$concept_country_possessive$')] [concept_ruler] or highest representative. The [concept_government_type] determines who serves as the $concept_head_of_state$ and when they are replaced.[AddLocalizationIf(GetPlayer.IsValid, 'concept_head_of_state_ingame_added')]"
+ concept_head_of_state_ins: "Головою держави"
+   cept_head_of_state_desc:3 "A [Concept('concept_country','$concept_country_possessive$')] [concept_ruler] or highest representative. The [concept_government_type] determines who serves as the $concept_head_of_state$ and when they are replaced.[AddLocalizationIf(GetPlayer.IsValid, 'concept_head_of_state_ingame_added')]"
  concept_head_of_state_ingame_added:1 "\n\nThe [GetPlayer.GetAdjectiveNoFlag] $concept_head_of_state$ is [GetPlayer.GetRuler.GetFullNameWithTitle]."
 
  concept_government_type: "Тип уряду"
