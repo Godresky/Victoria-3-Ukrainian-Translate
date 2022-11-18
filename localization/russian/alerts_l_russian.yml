@@ -237,8 +237,8 @@
  ag_insufficient_tax_capacity_states_desc:0 "We have [GetPlayer.GetNumInsufficientTaxCapacityStates] [Concept('concept_state', '$concept_states$')] with insufficient [concept_tax_capacity]"
  ag_insufficient_tax_capacity_states_tooltip:0 "#header $ag_insufficient_tax_capacity_states_name$#!\n$TOOLTIP_DELIMITER$\n$ag_insufficient_tax_capacity_states_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
- ag_states_in_turmoil_name:0 "[Concept('concept_state', '$concept_states$')] in [concept_turmoil]"
- ag_states_in_turmoil_desc:0 "We have [GetPlayer.GetNumTurmoilStates] [Concept('concept_state', '$concept_states$')] in [concept_turmoil] in our country."
+ ag_states_in_turmoil_name: "[Concept('concept_state', '$concept_states$')] з [Concept('concept_turmoil', '$concept_turmoil_ins$')|l]"
+ ag_states_in_turmoil_desc:0 "Ми маємо [GetPlayer.GetNumTurmoilStates] [Concept('concept_state', '$concept_states$')|l] з [Concept('concept_turmoil', '$concept_turmoil_ins$')|l] у нашій державі."
  ag_states_in_turmoil_tooltip:0 "#header $ag_states_in_turmoil_name$#!\n$TOOLTIP_DELIMITER$\n$ag_states_in_turmoil_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  ag_high_tensions_name:0 "High [Concept('concept_tension', '$concept_tensions$')]"

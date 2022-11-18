@@ -378,6 +378,7 @@
  concept_law: "Закон"
  concept_law_gen: "Закону"
  concept_law_acc: "Закон"
+ concept_law_loc: "Законі"
  concept_laws: "Закони"
  concept_laws_gen: "Законів"
  concept_law_desc:3 "$concept_laws$ sets the ground rules for how your [concept_country] operates and is governed. Certain $concept_laws$ enable [Concept('concept_institution', '$concept_institutions$')] that provide further control. For a $concept_law$ to be able to be [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')] it must be [Concept('concept_endorse_oppose','$concept_endorsed$')] by at least one [concept_interest_group] [concept_in_government], or supported by a current [concept_political_movement]."
@@ -881,8 +882,8 @@
  concept_capital_state_desc:3 "The site of a [Concept('concept_country','$concept_country_possessive$')] central [concept_government]. Controlling the $concept_capital_state_short$ is of great importance during wartime, and [Concept('concept_pop','$concept_pops$')] who live there have a greater degree of [concept_political_strength] by which to influence politics.[AddLocalizationIf(GetPlayer.IsValid,'concept_capital_state_desc_added')]"
  concept_capital_state_desc_added:0 "\nThe following effects apply:\n[GetStaticModifier('market_capital_state').GetDesc]"
 
- concept_treaty_port: "Договірний порт"
- concept_treaty_ports: "Договірні порти"
+ concept_treaty_port: "Договірний приплав"
+ concept_treaty_ports: "Договірні приплави"
  concept_treaty_port_desc:3 "A coastal [concept_state] that consists of a single [concept_province] taken as a [concept_war_goal] for purpose of opening [Concept('concept_trade_route','$concept_trade$')] with that [concept_country]. A $concept_treaty_port$ permits its owner to bypass [concept_tariffs] and [Concept('concept_embargo','$concept_embargoes$')] when trading with any [concept_market] in the same [concept_state_region]. $concept_treaty_ports$ that come under hostile occupation will not confer any of their benefits while the occupation lasts."
 
  concept_prestige: "Престиж"
@@ -935,6 +936,7 @@
  concept_literacy_desc_added:0 "[GetInstitutionType('institution_schools').GetName]"
 
  concept_turmoil: "Сум'яття"
+ concept_turmoil_ins: "Сум'яттям"
  concept_turmoil_desc:2 "[Concept('concept_state', '$concept_states$')] and [Concept('concept_culture', '$concept_cultures$')] with $concept_turmoil$ contain [Concept('concept_radical', '$concept_radicals$')] that are unhappy with their current circumstances. The amount of $concept_turmoil$ is equal to the fraction of the $concept_state$'s or $concept_culture$'s [concept_workforce] that are $concept_radical$.\n\n$concept_turmoil$ can inflict a number of negative local status effects on a $concept_state$ if it gets high enough. [concept_cultural_turmoil] can impact a whole [concept_country] in very disruptive ways."
 
  concept_unemployed: "Безробітні"
@@ -1478,6 +1480,7 @@
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED APRIL 1, 2022
 
  concept_supply_network: "Мережа постачання"
+ concept_supply_network_acc: "Мережу постачання"
  concept_supply_network_desc:3 "Every seafaring [concept_country] maintains a $concept_supply_network$ of [concept_convoys] to maintain the transportation needs of their [Concept('concept_shipping_lane','$concept_shipping_lanes$')]. The total strength of your $concept_supply_network$ is determined by comparing the amount of $concept_convoys$ produced to the total [concept_convoy_cost] across all your $concept_shipping_lanes$. This strength is the baseline [Concept('concept_shipping_lane_effectiveness','$concept_shipping_lane_effectiveness_short$')] of all your $concept_shipping_lanes$."
 
  concept_convoys: "Конвої"
@@ -1500,8 +1503,8 @@
  concept_convoy_cost_desc:2 "The $concept_convoy_cost$ of a [concept_shipping_lane] is determined by how many [Concept('concept_good','$concept_goods$')] a [concept_trade_route] moves, how many [Concept('concept_battalion','$concept_battalions$')] a [concept_supply_route] provides for, or how much [concept_infrastructure_usage] a [concept_port_connection] facilitates [concept_market_access] for. This more [Concept('concept_sea_node','$concept_sea_nodes$')] $concept_shipping_lane$ must pass through on its way to the destination, the higher the total $concept_convoy_cost$. The total $concept_convoy_cost$ of all $concept_shipping_lanes$ is compared to the total number of [concept_convoys] provided by [SelectLocalization(GetPlayer.IsValid,'concept_convoy_cost_desc_added','Port')] $concept_buildings$ to determine the strength of your [concept_supply_network]."
  concept_convoy_cost_desc_added:0 "[GetBuildingType('building_port').GetName]"
 
- concept_port_connection: "Портове приєднання"
- concept_port_connections: "Портові приєднання"
+ concept_port_connection: "Приплавне приєднання"
+ concept_port_connections: "Приплавні приєднання"
  concept_port_connection_desc:3 "A [concept_shipping_lane] connecting one or several [Concept('concept_state','$concept_states$')] otherwise unreachable overland to the [concept_market_capital], ensuring [concept_market_access] to remote regions. $concept_port_connections$ require a [SelectLocalization(GetPlayer.IsValid,'concept_port_connection_desc_added','Port')] in both ends. The [concept_convoy_cost] of a $concept_port_connection$ is dependent on the total [concept_infrastructure_usage] of the [Concept('concept_state','$concept_states$')] it's connecting."
  concept_port_connection_desc_added:0 "[GetBuildingType('building_port').GetName]"
 
@@ -1515,6 +1518,7 @@
  concept_supply_route_desc:2 "A [concept_shipping_lane] that supplies a [concept_general] [Concept('concept_order','$concept_ordered$')] to advance or defend a [concept_front] only accessible by sea. The $concept_general$'s [concept_supply] level is equal to the $concept_supply_route$'s [Concept('concept_shipping_lane_effectiveness','$concept_shipping_lane_effectiveness_short$')]."
 
  concept_character: "Персонаж"
+ concept_character_gen: "Персонажа"
  concept_characters: "Персонажі"
  concept_character_possessive:0 "Character\\'s"
  concept_character_desc:2 "$concept_characters$ fulfill different [Concept('concept_character_role','$concept_character_roles$')] in your [concept_country]. Their ability to perform these duties depends on their [Concept('concept_character_trait','$concept_character_traits$')]. They always support an [concept_interest_group], and may have an [concept_ideology] that shapes their aspirations and outlook."

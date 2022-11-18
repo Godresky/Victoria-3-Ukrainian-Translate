@@ -686,7 +686,7 @@
 
  REQUIRED_CONVOYS_BREAKDOWN:1 "$TAB$[Concept('concept_supply_route', '$concept_supply_routes$')]: @convoys! #v $SUPPLY_ROUTE_CONVOYS$#!\n$TAB$[Concept('concept_trade_route', '$concept_trade_routes$')]: @convoys! #v $TRADE_ROUTE_CONVOYS$#!\n$TAB$[Concept('concept_port_connection', '$concept_port_connections$')]: @convoys! #v $PORT_CONNECTION_CONVOYS$#!"
 
- NO_SUPPLY_NETWORK:1 "No [Concept('concept_country', '$concept_countries$')] use this [concept_supply_network]"
+ NO_SUPPLY_NETWORK: "Немає [Concept('concept_country', '$concept_countries_gen$')|l], які використовують цю [Concept('concept_supply_network', '$concept_supply_network_acc$')|l]"
 
  CONVOYS_FROM_SUBJECT_DESC:0 "#v $CONTRIBUTION|%0$#! Contribution from [Country.GetName] (#v $SUBJECT_TYPE$#!): @convoys!$AMOUNT|+=$"
  CONVOYS_TO_OVERLORD_DESC:0 "#v $CONTRIBUTION|%0$#! Contribution to [Country.GetName] (#v $SUBJECT_TYPE$#!): @convoys!$AMOUNT|+=$"
@@ -702,7 +702,7 @@
  NO_ENDED_SEA_BATTLES: "Немає завершених морських боїв"
  SHIPPING_LANES: "Судноплавні тори"
  NO_CONVOY_RAIDING_ADMIRALS: "Немає [Concept('concept_admiral', '$concept_admirals_gen$')|l], що тут [Concept('concept_raid_convoys', '$concept_convoy_raiding_many$')|l]"
- NO_INTERCEPTING_ADMIRALS:0 "Немає [Concept('concept_admiral', '$concept_admirals_gen$')|l], що тут патрулюють"
+ NO_INTERCEPTING_ADMIRALS: "Немає [Concept('concept_admiral', '$concept_admirals_gen$')|l], що тут патрулюють"
 
  ORIGIN_STATE_NAME:0 "[State.GetName]"
  ORIGIN_STATE_NUMBER_OF_SHIPPING_LANES:0 "(#v [GetDataModelSize( State.AccessShippingLanesFromThisState )]#!)"
@@ -4153,9 +4153,9 @@
  notification_spreading_technology_notification_desc:0 "Knowledge of [SCOPE.sT('technology').GetName] has started to spread to us"
  notification_spreading_technology_notification_tooltip:0 "$notification_spreading_technology_notification_name$\n$notification_spreading_technology_notification_desc$"
 
- notification_price_report_name:0 "[SCOPE.GetRootScope.GetCountry.GetCapital.GetMarket.GetName] Monthly Price Report"
- notification_price_report_desc:0 "[SCOPE.GetRootScope.GetCountry.GetPriceReportDesc]"
- notification_price_report_tooltip:0 "$notification_price_report_name$\n$notification_price_report_desc$"
+ notification_price_report_name: "[SCOPE.GetRootScope.GetCountry.GetCapital.GetMarket.GetName] - Щомісячний звіт про ціни"
+ notification_price_report_desc: "[SCOPE.GetRootScope.GetCountry.GetPriceReportDesc]"
+ notification_price_report_tooltip: "$notification_price_report_name$\n$notification_price_report_desc$"
 
  notification_law_changed_notification_name:0 "[SCOPE.GetRootScope.GetLaw.GetName] passed"
  notification_law_changed_notification_desc:0 "We have finished enacting the [SCOPE.GetRootScope.GetLaw.GetName] Law"
@@ -5939,9 +5939,9 @@
  notification_wargoal_removed_desc:0 "A [concept_war_goal] for [SCOPE.sCountry('actor').GetName] has been removed."
  notification_wargoal_removed_tooltip:0 "#header $notification_wargoal_removed_name$#!\n$notification_wargoal_removed_desc$"
 
- notification_election_results_name:0 "[concept_election]!"
- notification_election_results_desc:0 "[concept_election] results in [SCOPE.GetRootScope.GetCountry.GetName] are in!\n[SCOPE.GetRootScope.GetCountry.GetLastElectionResultsTooltip]"
- notification_election_results_tooltip:0 "#header $notification_election_results_name$#!\n$notification_election_results_desc$"
+ notification_election_results_name: "[concept_election]!"
+ notification_election_results_desc: "Результати [Concept('concept_election','$concept_election_gen$')|l] у [Concept('concept_country','$concept_country_loc$')|l] [SCOPE.GetRootScope.GetCountry.GetName]!\n[SCOPE.GetRootScope.GetCountry.GetLastElectionResultsTooltip]"
+ notification_election_results_tooltip: "#header $notification_election_results_name$#!\n$notification_election_results_desc$"
 
  notification_new_trade_route_name:0 "[SCOPE.GetRootScope.GetTradeRoute.GetOwner.GetFlagTextIcon] [SCOPE.GetRootScope.GetTradeRoute.GetDirectionName] Route for [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetName]"
  notification_new_trade_route_desc:1 "[SCOPE.GetRootScope.GetTradeRoute.GetOwner.GetName] started an [SCOPE.GetRootScope.GetTradeRoute.GetDirectionName] Route for [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetName] from the [SCOPE.GetRootScope.GetTradeRoute.GetExportingMarket.GetName] to the [SCOPE.GetRootScope.GetTradeRoute.GetImportingMarket.GetName]. [SCOPE.GetRootScope.GetTradeRoute.GetPredictedFinalLevelShortDesc]"

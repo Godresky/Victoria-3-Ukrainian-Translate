@@ -250,15 +250,15 @@
 
  modifier_mega_earthquake_relief:0 "Cataclysmic Earthquake Relief"
 
- natural_disaster_events.5.t:0 "The [SCOPE.sState('crop_fail_state').GetName] Crop Failure"
- natural_disaster_events.5.d:0 "The state of [SCOPE.sState('crop_fail_state').GetName] has been struck by a blight. Crops are dying left and right and the harvest is sure to be less than expected this year."
- natural_disaster_events.5.f:0 ""We noticed some crops dying a few weeks ago, but we didn't think anything of it. We always lose a few. We didn't expect this.""
- natural_disaster_events.5.a:0 "This will affect the harvest."
- natural_disaster_events.5.b:0 "We will help how we can."
+ natural_disaster_events.5.t: "Неврожай в [Concept('concept_state','$concept_state_loc$')|l] [SCOPE.sState('crop_fail_state').GetName]"
+ natural_disaster_events.5.d: "[Concept('concept_state','$concept_state_loc$')] [SCOPE.sState('crop_fail_state').GetName] був уражений хворобою. Посіви гинуть направо і наліво, тому цього року врожай напевно буде меншим, ніж очікувалося."
+ natural_disaster_events.5.f: "«Кілька тижнів тому ми помітили, що деякі культури загинули, але ми нічого про це не думали. Ми завжди втрачаємо кілька. Ми не очікували саме цього.»"
+ natural_disaster_events.5.a: "Це позначиться на врожаї."
+ natural_disaster_events.5.b: "Чим зможемо, тим допоможемо."
 
- modifier_crop_failure:0 "Crop Failure"
+ modifier_crop_failure: "Неврожай"
 
- modifier_crop_failure_relief:0 "Crop Failure Relief"
+ modifier_crop_failure_relief: "Допомога після неврожаю"
 
  modifier_mega_flood_relief: "Масова допомога після повені"
 
@@ -510,15 +510,15 @@
 
  banned_duels_tt: "Дуелі будуть заборонені у вашій державі."
 
- character_events.4.t:0 "Devout Scandal"
- character_events.4.d:1 "It has been revealed that [SCOPE.sCharacter('devout_scandal').GetFullName] of the [SCOPE.sCharacter('devout_scandal').GetInterestGroup.GetName] has been having a secret affair with a member of the clergy. [SCOPE.sCharacter('devout_scandal').GetHerHis] resignation is being demanded."
- character_events.4.f:0 ""The very fact that this sneaky bastard thought [SCOPE.sCharacter('devout_scandal').GetSheHe] could get away with such a gross misuse of [SCOPE.sCharacter('devout_scandal').GetHerHis] power, shows everything wrong with the leadership of the [SCOPE.sCharacter('devout_scandal').GetInterestGroup.GetNameNoFormatting].""
- character_events.4.a:0 "Force [SCOPE.sCharacter('devout_scandal').GetHerHim] to step down."
- character_events.4.b:0 "Ignore it."
- character_events.4.c:0 "The people must know of [SCOPE.sCharacter('devout_scandal').GetHerHis] depravity."
- character_events.4.a.tt:0 "[SCOPE.sCharacter('devout_scandal').GetFullName] resigns in shame."
+ character_events.4.t: "Побожний скандал"
+ character_events.4.d: "Було виявлено, що [SCOPE.sCharacter('devout_scandal').GetFullName] з [Concept('concept_interest_group','$concept_interest_group_gen$')|l] [SCOPE.sCharacter('devout_scandal').GetInterestGroup.GetName] мав таємний зв’язок із представником духовенства. Тепер усі вимагають [SCOPE.sCharacter('devout_scandal').GetHerHis] відставки."
+ character_events.4.f: "«Сам факт того, що цей підступний виродок думав, що [SCOPE.sCharacter('devout_scandal').GetSheHe] міг уникнути покарання за таке грубе зловживання владою. Ця ситуація показує про те, що з керівництвом [Concept('concept_interest_group','$concept_interest_group_gen$')|l] [SCOPE.sCharacter('devout_scandal').GetInterestGroup.GetNameNoFormatting] щось не так.»"
+ character_events.4.a: "Змусити [SCOPE.sCharacter('devout_scandal').GetHerHis] піти у відставку."
+ character_events.4.b: "Ігнорувати це."
+ character_events.4.c: "Народ повинен знати про [SCOPE.sCharacter('devout_scandal').GetHerHis] розпусту."
+ character_events.4.a.tt: "[SCOPE.sCharacter('devout_scandal').GetFullName] з ганьбою йде у відставку."
 
- modifier_devout_in_scandal:0 "Devout caught in scandal"
+ modifier_devout_in_scandal: "Побожний потрапив у скандал"
 
  character_events.5.t:0 "Monument to the [SCOPE.sCharacter('statue_ruler').GetPrimaryRoleTitle]"
  character_events.5.d:0 "A statue of [SCOPE.sCharacter('statue_ruler').GetPrimaryRoleTitle] [SCOPE.sCharacter('statue_ruler').GetFullName] was commissioned and it has been suggested that it be displayed proudly in [SCOPE.sState('statue_state').GetName]. "

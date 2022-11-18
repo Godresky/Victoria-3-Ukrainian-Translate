@@ -803,11 +803,14 @@
  education_laws.1.f:0 ""There are certainly differences between teaching children the fundamentals and the more advanced education offered at our universities. Nevertheless, as architects of the upper floors of this towering structure of knowledge, we believe the least we can do is provide some insight into how the foundation should be built.""
  education_laws.1.a:0 "We'll be happy to have their help!"
  education_laws.1.b:0 "Their research work is more important."
- education_laws.2.t:0 "Discipline and Punish"
- education_laws.2.d:0 "The role of discipline in the new [SCOPE.sLaw('current_law_scope').GetName] has raised by the [SCOPE.gsInterestGroup('armed_forces_ig').GetName] as an area of improvement in the plans for this new education system."
- education_laws.2.f:0 ""This is not merely about keeping an orderly classroom so that knowledge can be imparted; it is about imparting character. After all, we have been given an enormous responsibility by the parents of these children, who do all they can to raise them as upstanding citizens. Too often, we find boys joining the military service whose character has already been almost irrevocably ruined by an unruly youth and a lack of respect for authority. It needn't be so!""
- education_laws.2.a:0 "We should focus on the curriculum."
- education_laws.2.b:0 "Working this into the school system is paramount."
+
+ education_laws.2.t: "Дисципліна та покарання"
+ education_laws.2.d: "[SCOPE.gsInterestGroup('armed_forces_ig').GetName] порушили питання при обговоренні нової реформи. Вони вважають, що завдяки [Concept('concept_law', '$concept_law_gen$')|l] про [SCOPE.sLaw('current_law_scope').GetName] учень повинен не лише вчитися, а йому мають прищеплювати сувору дисципліну."
+ education_laws.2.f: ""This is not merely about keeping an orderly classroom so that knowledge can be imparted; it is about imparting character. After all, we have been given an enormous responsibility by the parents of these children, who do all they can to raise them as upstanding citizens. Too often, we find boys joining the military service whose character has already been almost irrevocably ruined by an unruly youth and a lack of respect for authority. It needn't be so!""
+ education_laws.2.f: "«Йдеться не лише про підтримання порядку в класі, щоб можна було передавати знання, це й про надання характеру. Адже батьками цих дітей на нас покладена величезна відповідальність, які роблять усе можливе, щоб виховати їх чесними громадянами. Дуже часто ми зустрічаємо хлопців, які приходять на військову службу, чий характер уже майже безповоротно зіпсований некерованою молодістю та браком поваги до авторитету. Так не повинно бути!»"
+ education_laws.2.a: "Ми повинні зосередитися на навчальній програмі."
+ education_laws.2.b: "Впровадження цього в шкільну систему має першочергове значення."
+
  education_laws.3.t:0 "Curriculum Disagreements"
  education_laws.3.d:0 "Disagreements within the government about what should be taught in the new [SCOPE.sLaw('current_law_scope').GetName] have brought implementation of the reform to a standstill."
  education_laws.3.f:0 ""These classes may have been well suited for the tutoring of noblemen two centuries ago, but believing they would serve a broader range of students well in this day and age is outright lunacy!"\n"And you mean to say your 'modern' alternatives would serve them better? You would have the classical subjects phased out in favor of ignorance and poor grammar?""
@@ -832,8 +835,11 @@
   # Education Law Event Modifiers
  assisting_professors:0 "Assisting Professors"
  university_support:0 "University Support"
- curriculum_focus:0 "Curriculum Focus"
- discipline_focus:0 "Discipline Focus"
+
+ curriculum_focus: "Зосередження на шкільній програмі"
+ discipline_focus: "Зосередження на дисципліні"
+ undisciplined_children: "Недисципліновані діти"
+
  curriculum_compromise:0 "Curriculum Compromise"
  extended_curriculum_discussions:0 "Extended Curriculum Discussions"
  local_teachers:0 "Local Teachers"
@@ -842,7 +848,8 @@
  single_sex_education:0 "Single-Sex Education"
  church_school_organization:0 "Church-Supported School Organization"
  building_secular_school_organization:0 "Building Secular School Organization"
- undisciplined_children:0 "Undisciplined Children"
+
+
  compromised_on_schools:0 "Compromised on Schools"
  mixed_sex_education:0 "Mixed-Sex Education"
  public_school_responsibility:0 "Responsibility for Public Schools"

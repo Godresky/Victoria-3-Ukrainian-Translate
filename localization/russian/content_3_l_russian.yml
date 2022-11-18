@@ -3,7 +3,7 @@
 # Generic Law Passing Events
 
 
- generic_laws.1.t:0 "Rousing Speech Captivates the Public"
+ generic_laws.1.t: "Зворушлива промова захоплює публіку"
  generic_laws.1.d:0 "This afternoon, [SCOPE.sCharacter('orator_ig_leader_scope').GetFullName], leader of the [SCOPE.gsInterestGroup('orator_ig_scope').GetName], delivered a fiery speech advocating for the enactment of [SCOPE.sLaw('current_law_scope').GetName]."
  generic_laws.1.f:0 "Making an appearance before the public in [SCOPE.sCharacter('orator_ig_leader_scope').GetCountry.GetCapital.GetCityHubName]'s main square, [SCOPE.sCharacter('orator_ig_leader_scope').GetFullNameNoFormatting]'s powerful rethoric left even [SCOPE.sCharacter('orator_ig_leader_scope').GetHerHis] most embittered political opponents impressed. Excerpts from the speech are already being circulated across [ROOT.GetCountry.GetNameNoFormatting], fanning the fires of an already roaring debate."
  generic_laws.1.a:0 "This should ease the path to reform greatly."
@@ -46,7 +46,7 @@
  renowned_playwright:0 "Renowned Playwright"
 
  generic_laws.5.t: "Бюрократична заплутаність"
- generic_laws.5.d: "Законодавці, які працюють над прийняттям [Concept('concept_law', '$concept_law_gen$')|l] [SCOPE.sLaw('current_law_scope').GetName], застрягли в особливо складній низці бюрократичних процедур, що майже повністю призупинило роботу над введенням в дію."
+ generic_laws.5.d: "Законодавці, які працюють над прийняттям [Concept('concept_law', '$concept_law_loc$')|l] [SCOPE.sLaw('current_law_scope').GetName], застрягли в особливо складній низці бюрократичних процедур, що майже повністю призупинило роботу над введенням в дію."
  generic_laws.5.f: "«Повністю розвинений бюрократичний апарат порівнюється з іншими організаціями так само, як машина з немеханічним способом виробництва.»" # Max Weber
  generic_laws.5.a: "До біса цю заплутану правову систему!"
  generic_laws.5.b: "Подолайте хоч би частину тягаря."

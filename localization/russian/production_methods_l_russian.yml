@@ -660,7 +660,7 @@ pm_steam_rail_transport: "Залізниця"
  
  pm_hydroelectric_plant: "Гідроелектростанція"
  pm_coal-fired_plant: "Вугільна електростанція"
- pm_oil-fired_plant: "Навтоелектростанція"
+ pm_oil-fired_plant: "Нафтоелектростанція"
  
  pm_manual_dough_processing: "Ручна обробка тіста"
  pm_automated_bakery: "Автоматизована пекарня"
