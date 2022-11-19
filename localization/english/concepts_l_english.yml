@@ -105,8 +105,8 @@
  concept_trade_route: "Торговий тор"
  concept_trade: "Торгівля"
  concept_trade_routes: "Торгові тори"
- concept_trade_routes: "Торгові тори"
  concept_trade_routes_gen: "Торгових торів"
+ concept_trade_routes_dat: "Торговим торам"
  concept_trade_route_desc:4 "$concept_trade_routes$ $concept_buy_order_short$ [Concept('concept_good', '$concept_goods$')] on one [concept_market], transport it to another using [concept_convoys] (or overland, if the $concept_markets$ are adjacent), and $concept_sell_order_short$ the $concept_goods$ there in order to make [concept_revenue] (from which [concept_tariffs] are subtracted) for the [SelectLocalization(GetPlayer.IsValid,'concept_trade_route_desc_added','Trade Center')] managing it. In the process it creates [Concept('concept_buy_orders','$concept_buy_order_short$')] and [concept_sell_orders] on the two $concept_markets$, making it more expensive in one and less in the other. The volume of $concept_goods$ moved will independently scale up and down to meet the $concept_market$ conditions in both, employing more or less [concept_workforce] to match. Each $concept_trade_route$ costs a fixed amount of [concept_bureaucracy] to maintain."
  concept_trade_route_desc_added:0 "[GetBuildingType('building_trade_center').GetName]"
 
@@ -649,8 +649,8 @@
  concept_in_opposition_short: "Опозиція"
  concept_in_opposition_desc:2 "[Concept('concept_interest_group','$concept_interest_groups$')] not part of the [concept_government] are considered $concept_in_opposition$. Their only way to affect [concept_enactment_of_laws] is through [Concept('concept_political_movement','$concept_political_movements$')], but their [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] apply in full as usual."
 
- concept_legitimacy: "Легітимність"
- concept_legitimate: "Легітимний"
+ concept_legitimacy: "Законність"
+ concept_legitimate: "Законний"
  concept_legitimacy_desc:1 "A [Concept('concept_government','$concept_government_possessive$')] $concept_legitimacy$ measures how well the composition of the [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_government] fits with the [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_law', '$concept_laws$')]. The lower the $concept_legitimacy$, the longer the time between attempts to [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enact$')] new $concept_laws$. Raising or lowering [concept_taxes] also has an impact on $concept_legitimacy$."
 
  concept_market_capital: "Столиця ринку"
@@ -672,7 +672,7 @@
  concept_market_share_this_gen: "Частки цього ринку"
  concept_market_share_desc:3 "The $concept_market_share$ of each [concept_country] in a [concept_market] is determined by its [concept_gdp], with a bonus if they are the [concept_market_owner]. The higher a $concept_country$'s $concept_market_share$ the more [Concept('concept_consumption_tax', '$concept_consumption_taxes$')] they collect in the [concept_market]."
 
- concept_default:0 "Default"
+ concept_default: "Дефолт"
  concept_default_desc:4 "Once the [concept_treasury] accumulates [concept_loans] large enough that they exceed the [Concept('concept_country','$concept_country_possessive$')] total [concept_credit], the $concept_country$ is considered to be in $concept_default$. This will pause all ongoing [concept_construction] and will have a negative impact on the [concept_throughput] of [Concept('concept_building', '$concept_buildings$')], growing more severe as time passes. Penalties are removed as soon as the $concept_country$'s weekly balance becomes positive again, or if [concept_bankruptcy] is declared."
 
  concept_bankruptcy: "Зубожник"
@@ -1292,8 +1292,8 @@
  concept_law_group_gen: "Групи законів"
  concept_law_group_desc:3 "A $concept_law_group$ contains several [Concept('concept_law', '$concept_laws$')] that affect aspects of the [concept_country] in different ways. Each $concept_law_group$ can only have one $concept_law$ active at a time."
 
- concept_government_reform:0 "Government Reform"
- concept_government_reform_short:0 "Reform"
+ concept_government_reform: "Урядові зміни"
+ concept_government_reform_short: "Зміни"
  concept_government_reform_desc:0 "During a $concept_government_reform$ you may alter the composition of your [concept_government] freely by granting or removing [Concept('concept_interest_group','$concept_interest_groups$')] and/or [Concept('concept_party','$concept_parties$')] from power. $concept_interest_groups$ removed from power during such a $concept_government_reform_short$ will gain [Concept('concept_radical','$concept_radicals$')], unless the $concept_government_reform_short$ is performed shortly after a concluded $concept_election$."
 
  concept_election: "Вибори"

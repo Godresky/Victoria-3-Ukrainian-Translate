@@ -4153,7 +4153,7 @@
  notification_spreading_technology_notification_desc:0 "Knowledge of [SCOPE.sT('technology').GetName] has started to spread to us"
  notification_spreading_technology_notification_tooltip:0 "$notification_spreading_technology_notification_name$\n$notification_spreading_technology_notification_desc$"
 
- notification_price_report_name: "[SCOPE.GetRootScope.GetCountry.GetCapital.GetMarket.GetName] - Щомісячний звіт про ціни"
+ notification_price_report_name: "[SCOPE.GetRootScope.GetCountry.GetCapital.GetMarket.GetName] - щомісячний звіт про ціни"
  notification_price_report_desc: "[SCOPE.GetRootScope.GetCountry.GetPriceReportDesc]"
  notification_price_report_tooltip: "$notification_price_report_name$\n$notification_price_report_desc$"
 

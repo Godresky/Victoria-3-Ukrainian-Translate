@@ -8,7 +8,7 @@
 
  EXPANDABLE_IMPORTANT_ACTION_ITEM:0 "[Alert.GetToolTip]$notification_tooltip_footer$"
 
- alert_country_default_name:0 "In [concept_default]"
+ alert_country_default_name: "Оголошений [concept_default|l]"
  alert_country_default_desc:1 "[GetPlayer.GetName] is in [concept_default] due to not being able to pay back our loans. Until we are able to reach a positive balance, we will suffer penalties that grow increasingly harsh as time passes.\n\n#title Current Effects:#!\n[GetPlayer.GetInDefaultEffectsDesc]"
  alert_country_default_hint:1 "You can improve your financial situation by increasing your income (which can be done by for instance increasing (or adding new) Taxes) or decreasing your expenses (which can be done by for instance reducing Government Wages or improving the prices for expensive Goods used in Government Buildings). If neither of these is enough, you also have the option to declare [concept_bankruptcy]."
  alert_country_default_action:0 "Budget Panel"
@@ -18,7 +18,7 @@
  alert_country_approaching_bureaucracy_shortage_hint:0 "You can increase your capacity to generate Bureaucracy by building more Government Administation Buildings."
  alert_country_approaching_bureaucracy_shortage_action:0 "Politics Panel"
 
- alert_free_government_reform_name:0 "Free [concept_government_reform]"
+ alert_free_government_reform_name: "Безплатні [concept_government_reform|l]"
  alert_free_government_reform_desc:0 "[LabelingHelper.GetDaysLoc( SCOPE.GetRootScope.GetCountry.GetRemainingDaysForFreeGovernmentReformRaw, 'FREE_REFORM_DATE_PREFIX')] remaining.\n\nDue to the recent [concept_election] your next [concept_government_reform] will not result in any new [Concept('concept_radical','$concept_radicals$')], as long as it is done within the above time limit."
  alert_free_government_reform_hint:0 "You can Reform your Government on the Politics Panel"
  alert_free_government_reform_action:0 "Government Panel"
@@ -69,7 +69,7 @@
  alert_secession_possible_alert_hint:1 "You can alleviate the risk of a [concept_secession] by decreasing the [Concept('concept_radical','$concept_radicals$')] of the targeted [concept_culture] in your [concept_country]. This can be done by improving the [concept_sol] in [Concept('concept_state','$concept_states$')] they live in, ensuring they are not [Concept('concept_discrimination','$concept_discriminated_against$')] in the long term, or by issuing [Concept('concept_decree', '$concept_decrees$')] to mitigate these factors in the short term."
  alert_secession_possible_alert_action:0 "Culture Panel"
 
- alert_low_legitimacy_alert_name:0 "Low Government Legitimacy"
+ alert_low_legitimacy_alert_name: "Низька законність уряду"
  alert_low_legitimacy_alert_desc:0 "Your [concept_government] has [GetPlayer.GetGovernmentLegitimacy|0%v] [concept_legitimacy], which is considered low."
  alert_low_legitimacy_alert_hint:0 "Increase your [concept_legitimacy] by adding or removing [Concept('concept_interest_group', '$concept_interest_groups$')] from your [concept_government]. This can be done on the Politics Panel or on the details of an [concept_interest_group]. You can also change your [Concept('concept_law', '$concept_laws$')], which can be done from the Constitutional Laws tab in the Politics Panel."
  alert_low_legitimacy_alert_action:0 "Politics Panel"
@@ -134,12 +134,12 @@
  alert_secession_growing_alert_hint:1 "You can alleviate the risk of a [concept_secession] by decreasing the [Concept('concept_radical','$concept_radicals$')] of the targeted [concept_culture] in your [concept_country]. This can be done by improving the [concept_sol] in [Concept('concept_state','$concept_states$')] they live in, ensuring they are not [Concept('concept_discrimination','$concept_discriminated_against$')] in the long term, or by issuing [Concept('concept_decree', '$concept_decrees$')] to mitigate these factors in the short term."
  alert_secession_growing_alert_action:0 "Politics Panel"
 
- alert_revolution_alert_name:0 "[concept_revolution]"
+ alert_revolution_alert_name: "[concept_revolution]"
  alert_revolution_alert_desc:1 "A revolutionary play has started and as a result our country is about to be in a state of [concept_civil_war]."
  alert_revolution_alert_hint:1 "You can pick which side of the conflict you support in the $concept_civil_war$ and begin [Concept('concept_sway','$concept_swaying$')] other nations (if needed) to see your side to success."
  alert_revolution_alert_action:0 "Politics Panel"
 
- alert_secession_alert_name:0 "[concept_secession]"
+ alert_secession_alert_name: "[concept_secession]"
  alert_secession_alert_desc:0 "Our country is in a state of [concept_civil_war]!"
  alert_secession_alert_hint:1 "You can alleviate the risk of a [concept_secession] by decreasing the [Concept('concept_radical','$concept_radicals$')] of the targeted [concept_culture] in your [concept_country]. This can be done by improving the [concept_sol] in [Concept('concept_state','$concept_states$')] they live in, ensuring they are not [Concept('concept_discrimination','$concept_discriminated_against$')] in the long term, or by issuing [Concept('concept_decree', '$concept_decrees$')] to mitigate these factors in the short term."
  alert_secession_alert_action:0 "Politics Panel"
@@ -209,7 +209,7 @@
  ag_missing_war_goals_desc:0 "We are involved in [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] that have no primary [concept_war_goal] selected."
  ag_missing_war_goals_tooltip:0 "#header $ag_missing_war_goals_name$#!\n$TOOLTIP_DELIMITER$\n$ag_missing_war_goals_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
- ag_inactive_trade_routes_name:0 "Inactive [Concept('concept_trade_route', '$concept_trade_routes$')]"
+ ag_inactive_trade_routes_name: "Неактивні [Concept('concept_trade_route', '$concept_trade_routes$')|l]"
  ag_inactive_trade_routes_desc:0 "We have [GetPlayer.GetNumInactiveTradeRoutes|v] inactive [Concept('concept_trade_route', '$concept_trade_routes$')]."
  ag_inactive_trade_routes_tooltip:0 "#header $ag_inactive_trade_routes_name$#!\n$TOOLTIP_DELIMITER$\n$ag_inactive_trade_routes_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
@@ -217,15 +217,15 @@
  ag_unproductive_trade_routes_desc:0 "We have [GetPlayer.GetNumUnproductiveTradeRoutes|v] unproductive [Concept('concept_trade_route', '$concept_trade_routes$')]."
  ag_unproductive_trade_routes_tooltip:0 "#header $ag_unproductive_trade_routes_name$#!\n$TOOLTIP_DELIMITER$\n$ag_unproductive_trade_routes_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
- ag_trade_routes_need_convoys_name:0 "[Concept('concept_trade_route', '$concept_trade_routes$')] need [concept_convoys]"
+ ag_trade_routes_need_convoys_name: "[Concept('concept_trade_route', '$concept_trade_routes_dat$')] потрібні [concept_convoys|l]"
  ag_trade_routes_need_convoys_desc:0 "We have [Concept('concept_trade_route', '$concept_trade_routes$')] that need additional [concept_convoys] in order to grow"
  ag_trade_routes_need_convoys_tooltip:0 "#header $ag_trade_routes_need_convoys_name$#!\n$TOOLTIP_DELIMITER$\n$ag_trade_routes_need_convoys_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
- ag_market_goods_shortages_name:0 "[Concept('concept_input_goods_shortage', '$concept_input_goods_shortages$')]"
+ ag_market_goods_shortages_name: "[Concept('concept_input_goods_shortage', '$concept_input_goods_shortages$')]"
  ag_market_goods_shortages_desc:0 "There are [Concept('concept_input_goods_shortage', '$concept_input_goods_shortages$')] in our [concept_market]."
  ag_market_goods_shortages_tooltip:0 "#header $ag_market_goods_shortages_name$#!\n$TOOLTIP_DELIMITER$\n$ag_market_goods_shortages_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
- ag_isolated_states_name:0 "[Concept('concept_isolated_state', '$concept_isolated_states$')]"
+ ag_isolated_states_name: "[Concept('concept_isolated_state', '$concept_isolated_states$')]"
  ag_isolated_states_desc:0 "We have [GetPlayer.GetNumIsolatedStates] [Concept('concept_isolated_state', '$concept_isolated_states$')] in our country."
  ag_isolated_states_tooltip:0 "#header $ag_isolated_states_name$#!\n$TOOLTIP_DELIMITER$\n$ag_isolated_states_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
