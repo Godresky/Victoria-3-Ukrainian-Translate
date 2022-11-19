@@ -612,8 +612,8 @@
  BATTALION_SOURCES_BREAKDOWN_CLEAN:0 "[GetUnitStrengthHeader( '(int32)$CURRENT$', '(int32)$MAX$', '$ICON$' )] $UNIT_NAME$ from [BUILDING.GetState.GetName]"
  BATTALION_CAPACITY_DESC:1 "@battalions! $COUNT|v$ [Concept('concept_battalion', '$concept_battalions$')]"
  WARSHIPS_CAPACITY_DESC:3 "@flotillas! $COUNT|v$ [Concept('concept_flotilla','$concept_flotillas$')]"
- BATTALION_CAPACITY_SOURCES_BREAKDOWN:0 "@battalions! $COUNT|v$ in [STATE.GetName]"
- WARSHIPS_CAPACITY_SOURCES_BREAKDOWN:1 "@flotillas! $COUNT|v$ in [STATE.GetName]"
+ BATTALION_CAPACITY_SOURCES_BREAKDOWN: "@battalions! $COUNT|v$ у [Concept('concept_state','$concept_state_loc$')|l] [STATE.GetName]"
+ WARSHIPS_CAPACITY_SOURCES_BREAKDOWN: "@flotillas! $COUNT|v$ у [Concept('concept_state','$concept_state_loc$')|l] [STATE.GetName]"
  BATTALION_CAPACITY_SOURCES_BREAKDOWN_UNUSED:0 " (room for #variable @$ICON_STR$! $REMAINING_CAPACITY|1$#! more)"
 
  PANEL_MILITARY_FIELDED:0 "Fielded"
@@ -1827,7 +1827,7 @@
  BULK_CHANGE_MIXED:1 "$BULK_CHANGE$\n[BuildingType.GetName] in [GetPlayer.GetNameNoFlag] vary in the [ProductionMethodGroup.GetName] [Concept('concept_production_method','$concept_production_methods$')] they use"
  BULK_CHANGE_SAME:0 "$BULK_CHANGE$\nAll [BuildingType.GetName] currently has [ProductionMethod.GetName]\n$TOOLTIP$"
 
- SHOW_PER_LEVEL_VALUES:0 "Show per Level values"
+ SHOW_PER_LEVEL_VALUES: "Показати значення для кожного рівня"
  PER_LEVEL_VALUES_NESTED_TOOLTIP:0 "#tooltippable #tooltip:[GetRawTextTooltipTag('$PER_LEVEL_VALUES_OUTPUT$')] [AddTextIf(Not(StringIsEmpty('$PER_LEVEL_VALUES_OUTPUT$')), '$SHOW_PER_LEVEL_VALUES$')]#!#!"
  PRODUCTION_METHOD_TOOLTIP_FORMAT:0 "[ConcatIfNeitherEmpty('$PREDICTION$', '\n')][AddTextIf(Not(StringIsEmpty('$PREDICTION$')), '$TOOLTIP_DELIMITER$\n')][ConcatIfNeitherEmpty('$TOTAL_VALUES_OUTPUT$','\n')][AddTextIf(Not(StringIsEmpty('$TIMED_MODIFIERS$')),'\n')][ConcatIfNeitherEmpty('$TIMED_MODIFIERS$','\n')]\n$PER_LEVEL_VALUES_NESTED_TOOLTIP$"
  PRODUCTION_METHOD_WITH_REQUIREMENTS_TOOLTIP_FORMAT:1 "[ConcatIfNeitherEmpty('$PREDICTION$', '\n')][AddTextIf(Not(StringIsEmpty('$PREDICTION$')), '$TOOLTIP_DELIMITER$\n')][ConcatIfNeitherEmpty('$TOTAL_VALUES_OUTPUT$','\n')][AddTextIf(Not(StringIsEmpty('$TIMED_MODIFIERS$')),'\n')][ConcatIfNeitherEmpty('$TIMED_MODIFIERS$','\n')]\n$PER_LEVEL_VALUES_NESTED_TOOLTIP$\n\n[AddTextIf(Not(StringIsEmpty('$EMPTY_REQUIREMENTS$')), '\n$TOOLTIP_REQUIREMENTS_ANY$\n')]$REQUIREMENTS$[AddTextIf(Not(StringIsEmpty('$EMPTY_REQUIREMENTS$')), '\n')]$BUILDING_TYPE_INFO$"
@@ -5943,7 +5943,7 @@
  notification_election_results_desc: "Результати [Concept('concept_election','$concept_election_gen$')|l] у [Concept('concept_country','$concept_country_loc$')|l] [SCOPE.GetRootScope.GetCountry.GetName]!\n[SCOPE.GetRootScope.GetCountry.GetLastElectionResultsTooltip]"
  notification_election_results_tooltip: "#header $notification_election_results_name$#!\n$notification_election_results_desc$"
 
- notification_new_trade_route_name:0 "[SCOPE.GetRootScope.GetTradeRoute.GetOwner.GetFlagTextIcon] [SCOPE.GetRootScope.GetTradeRoute.GetDirectionName] Route for [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetName]"
+ notification_new_trade_route_name:0 "[SCOPE.GetRootScope.GetTradeRoute.GetOwner.GetFlagTextIcon] Тор на [SCOPE.GetRootScope.GetTradeRoute.GetDirectionName|l] [Concept('concept_good', '$concept_good_gen$')|l] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetName]"
  notification_new_trade_route_desc:1 "[SCOPE.GetRootScope.GetTradeRoute.GetOwner.GetName] started an [SCOPE.GetRootScope.GetTradeRoute.GetDirectionName] Route for [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetName] from the [SCOPE.GetRootScope.GetTradeRoute.GetExportingMarket.GetName] to the [SCOPE.GetRootScope.GetTradeRoute.GetImportingMarket.GetName]. [SCOPE.GetRootScope.GetTradeRoute.GetPredictedFinalLevelShortDesc]"
  notification_new_trade_route_tooltip:0 "#header $notification_new_trade_route_name$#!\n$notification_new_trade_route_desc$"
 
@@ -6048,7 +6048,7 @@
  DAY_TUESDAY: "Вівторок"
  DAY_WEDNESDAY: "Середа"
  DAY_THURSDAY: "Четвер"
- DAY_FRIDAY: "П'ятниця"
+ DAY_FRIDAY: "П\\'ятниця"
  DAY_SATURDAY: "Субота"
  DAY_SUNDAY: "Неділя"
 
