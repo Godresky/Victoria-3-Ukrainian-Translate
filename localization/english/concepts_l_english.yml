@@ -1575,6 +1575,7 @@
  concept_ruler_desc:2 "A $concept_ruler$ is usually the [concept_head_of_state] who represents the [Concept('concept_country','$concept_country_possessive$')] in domestic and world affairs. A $concept_ruler$'s [Concept('concept_character_trait','$concept_character_traits$')] affects the $concept_country$ directly. When a $concept_ruler$ dies a new one will take their place, either an [concept_heir] if one exists or another $concept_character$ depending on [concept_government_type]."
 
  concept_heir: "Спадкоємець"
+ concept_heir_gen: "Спадкоємця"
  concept_heir_desc:2 "The $concept_heir$ of a [concept_country] is a [concept_character]. They will take over the [concept_character_role] of [concept_ruler] upon the current $concept_ruler$'s death."
 
  concept_character_role: "Роль"
