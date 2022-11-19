@@ -1,0 +1,7 @@
+﻿l_english:
+ custom_loc_great_power: "Велика держава"
+ custom_loc_major_power: "Сильна держава"
+ custom_loc_minor_power: "Слабка держава"
+ custom_loc_insignificant_power: "Незначна держава"
+  
+ qualifications_officers_peasant_levies:0 "Most [GetPopType('officers').GetName] [concept_pop_qualifications] will originate from [GetPopType('aristocrats').GetName]"

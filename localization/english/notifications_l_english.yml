@@ -1,0 +1,14 @@
+﻿l_english:
+ notification_tooltip_footer: "\n\n#instruction Правий клац, щоб приховати#!"
+ proposal_tooltip_footer:1 "\n\n#instruction Right-click to reject#!"
+ zoom_to_tooltip_footer:0 "\n\n#instruction Right-click to zoom to location#!"
+
+ MESSAGE_CLICK_TOOLTIP: "[SelectLocalization(FeedMessageItem.IsExpanded,'MESSAGE_CLICK_TO_HIDE','MESSAGE_CLICK_TO_SHOW')]\n$MESSAGE_CLICK_TO_DISMISS$\n#I SHIFT + правий клац, щоб приховати все.#!"
+ MESSAGE_CLICK_TO_HIDE: "#I Клацніть, що згорнути.#!"
+ MESSAGE_CLICK_TO_SHOW: "#I Клацніть, що розгорнути.#!"
+ MESSAGE_CLICK_TO_DISMISS: "#I Правий клац, щоб приховати.#!"
+ MESSAGE_CLEAR_ALL_TOOLTIP: "#I Клацніть, щоб приховати. \nПравий клац, щоб приховати все.#!"
+
+ JOMINI_NOTIFICATION_TIMESTAMP_NOW:0 "Just now"
+ JOMINI_NOTIFICATION_TIMESTAMP_MINUTES:0 "$MINUTES$ minutes ago"
+ JOMINI_NOTIFICATION_TIMESTAMP:0 "$DATE$"
