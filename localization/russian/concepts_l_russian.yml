@@ -24,6 +24,7 @@
  concept_subject: "Підвладний"
  concept_subject_gen: "Підвладного"
  concept_subject_feminine: "Підвладна"
+ concept_subject_feminine_gen: "Підвладної"
  concept_subjects: "Підвладні"
  concept_subject_country: "Підвладна держава"
  concept_subject_country_acc: "Підвладну державу"
@@ -1164,9 +1165,12 @@
  concept_state_possessive:1 "State\\'s"
  concept_state_desc:2 "A geographic region controlled by a [concept_country]. [Concept('concept_pop', '$concept_pops$')] live and work in the [Concept('concept_building', '$concept_buildings$')] in the $concept_state$. Unless it is a [concept_split_state] its territory is equivalent to a [concept_state_region]. Unless it is [Concept('concept_isolated_state', '$concept_isolated_state_short$')], it will trade any [Concept('concept_good','$concept_goods$')] locally [Concept('concept_good_consumption','$concept_good_consumed$')] and [Concept('concept_good_production','$concept_good_produced$')] with other $concept_states$ in the same [concept_market] in to a degree based on its [concept_market_access]."
 
- concept_pop: "Народ"
- concept_pops: "Народи"
- concept_pops_adj: "Народн"
+ concept_pop: "Спільнота"
+ concept_pop_gen: "Спільноти"
+ concept_pop_ins: "Спільнотою"
+ concept_pops: "Спільноти"
+ concept_pops_dat: "Спільнотам"
+ concept_pops_adj: "Спільнотн"
  concept_pop_possessive:1 "Pop\\'s"
  concept_pops_possessive:0 "Pops\\'"
  concept_population: "Населення"
@@ -1274,8 +1278,8 @@
  concept_canals: "Водоводи"
  concept_canal_desc:1 "A $concept_canal$ is a [concept_building] that also includes the construction of an artificial connection between two sea nodes across a landmass. $concept_canals$ can only be constructed in particular places and typically require the completion of some sort of survey or other expedition first. $concept_canals$ can drastically shorten the distance [concept_convoys] need to travel when establishing [Concept('concept_shipping_lane','$concept_shipping_lanes$')], making trade with distant lands more affordable."
 
- concept_monument:0 "Monument"
- concept_monuments:1 "Monuments"
+ concept_monument: "Пам`ятка"
+ concept_monuments: "Пам`ятки"
  concept_monument_desc:1 "[Concept('concept_building','$concept_buildings$')] unique to a certain [concept_state] that can perform a variety of functions, often conferring [concept_prestige]."
 
  concept_productivity: "Продуктивність"
@@ -1607,7 +1611,7 @@
 
  concept_head_of_state: "Глава держави"
  concept_head_of_state_ins: "Головою держави"
-   cept_head_of_state_desc:3 "A [Concept('concept_country','$concept_country_possessive$')] [concept_ruler] or highest representative. The [concept_government_type] determines who serves as the $concept_head_of_state$ and when they are replaced.[AddLocalizationIf(GetPlayer.IsValid, 'concept_head_of_state_ingame_added')]"
+ concept_head_of_state_desc:3 "A [Concept('concept_country','$concept_country_possessive$')] [concept_ruler] or highest representative. The [concept_government_type] determines who serves as the $concept_head_of_state$ and when they are replaced.[AddLocalizationIf(GetPlayer.IsValid, 'concept_head_of_state_ingame_added')]"
  concept_head_of_state_ingame_added:1 "\n\nThe [GetPlayer.GetAdjectiveNoFlag] $concept_head_of_state$ is [GetPlayer.GetRuler.GetFullNameWithTitle]."
 
  concept_government_type: "Тип уряду"

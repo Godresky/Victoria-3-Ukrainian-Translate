@@ -473,8 +473,8 @@
 
  NO_DIPLO_INFO:0 "#bold No Active Diplomacy#!"
 
- FORMABLE_COUNTRIES: "#bold Formable Countries#!"
- NO_FORMABLE_COUNTRIES: "#bold Немає держав, які можна сформувати#!"
+ FORMABLE_COUNTRIES: "#bold Формування держав#!"
+ NO_FORMABLE_COUNTRIES: "#bold Немає [Concept('concept_country', '$concept_countries_gen$')|l], які можна сформувати#!"
 
  NO_JOURNAL_ENTRIES: "Зараз немає активних [Concept('concept_journal_entry', '$concept_journal_entries_gen$')|l]"
  NO_DECISIONS:0 "#bold No Decisions can be taken#!"
@@ -1964,7 +1964,7 @@
  GOODS_BUILDING_SELL_ORDERS:0 "[Building.GetName] in [Building.GetState.GetName]: #tooltippable #tooltip:$BREAKDOWN_TAG$ $ORDERS|=vD$#!#!"
  GOODS_BUILDING_BUY_ORDERS_BREAKDOWN:1 "#header [concept_buy_orders] of $GOODS_NAME$ from [Building.GetName] in [Building.GetState.GetName]: $ORDERS|=vD$#!\n$TOOLTIP_DELIMITER$\nConsumption of $BASE_AMOUNT|vD$ $GOODS_NAME$ modified by the local [concept_market_access] of $MARKET_ACCESS|%v$"
  GOODS_BUILDING_SELL_ORDERS_BREAKDOWN:1 "#header [concept_sell_orders] of $GOODS_NAME$ from [Building.GetName] in [Building.GetState.GetName]: $ORDERS|=vD$#!\n$TOOLTIP_DELIMITER$\nProduction of $BASE_AMOUNT|vD$ $GOODS_NAME$ modified by the local [concept_market_access] of $MARKET_ACCESS|%v$"
- GOODS_POP_CONSUMPTION_MARKET_ORDERS: "[Concept('concept_pop', '$concept_pops_adj$')] cпоживання: #tooltippable #tooltip:$BREAKDOWN_TAG$ $ORDERS|=vD$#!#!"
+ GOODS_POP_CONSUMPTION_MARKET_ORDERS: "Споживання [Concept('concept_pop', '$concept_pop_ins$')|l]: #tooltippable #tooltip:$BREAKDOWN_TAG$ $ORDERS|=vD$#!#!"
  GOODS_POP_CONSUMPTION_MARKET_ORDERS_HEADER:0 "#header [concept_buy_orders] of $GOODS_NAME$ from [concept_pop] Consumption in [Market.GetName]: $ORDERS|=vD$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
  GOODS_POP_TYPE_CONSUMPTION_MARKET_ORDERS:0 "[PopType.GetName]: $ORDERS|=vD$"
  GOODS_TRADE_ROUTE_MARKET_ORDERS:0 "[Concept('concept_trade_route', '$concept_trade_routes$')]: #tooltippable #tooltip:$BREAKDOWN_TAG$ $ORDERS|=vD$#!#!"

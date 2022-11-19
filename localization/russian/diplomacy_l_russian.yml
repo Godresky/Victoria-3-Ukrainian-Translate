@@ -109,8 +109,8 @@
  SUBJECT_NOT_VALID_CHANGE:1 " Not possible to change a $SUBJECT_TYPE_FROM|v$-type [concept_subject] into a $SUBJECT_TYPE|v$-type [concept_subject]"
  SUBJECT_OVERLORD_IS_SUBJECT:1 " [COUNTRY.GetName] cannot make their suzerain [TARGET_COUNTRY.GetName] into a [concept_subject]"
 
- protector:0 "Protector"
- suzerain:0 "Suzerain"
+ protector: "Покровитель"
+ suzerain: "Зверхник"
  obligation: "[concept_obligation]"
  RELEASE: "Звільнити"
  CONFIRM: "Підтвердити"
