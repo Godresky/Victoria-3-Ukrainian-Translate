@@ -1,3 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 flatmap.dds filter=lfs diff=lfs merge=lfs -text
+map_translate.zip filter=lfs diff=lfs merge=lfs -text
