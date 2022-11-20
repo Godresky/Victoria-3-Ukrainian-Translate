@@ -241,10 +241,10 @@
  concept_mobilize_battalion_mobilization:0 "Mobilization"
  concept_mobilize_battalion_desc:2 "[Concept('concept_battalion', '$concept_battalions$')] assigned to a [Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized$')] [concept_general] immediately start $concept_mobilize_battalion_mobilizing$ at a rate based on the [concept_infrastructure] of their [concept_state]. $concept_mobilize_battalion_mobilized$ and $concept_mobilize_battalion_mobilizing$ [Concept('concept_battalion', '$concept_battalions$')] consume more [Concept('concept_military_good','$concept_military_goods$')] but are fully prepared to follow their [concept_general] into [concept_battle]."
 
- concept_fully_mobilized_battalions:0 "Fully Mobilized Battalions"
+ concept_fully_mobilized_battalions: "Повністю призвані батальйони"
  concept_fully_mobilized_battalions_desc:0 "A [Concept('concept_country','$concept_country_possessive$')] fully mobilized [Concept('concept_battalion','$concept_battalions$')] include all $concept_battalions$ that have already undergone [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilization$')] and are fully prepared to follow their [concept_general] into [concept_battle]."
 
- concept_available_battalions:0 "Available Battalions"
+ concept_available_battalions: "Доступні батальйони"
  concept_available_battalions_desc:2 "A [Concept('concept_country','$concept_country_possessive$')] available [Concept('concept_battalion','$concept_battalions$')] include all $concept_battalions$ currently raised by [SelectLocalization(GetPlayer.IsValid,'concept_available_battalions_desc_added','barracks')] and/or [Concept('concept_conscription_center','$concept_conscription_centers$')]."
  concept_available_battalions_desc_added:0 "[GetBuildingType('building_barracks').GetName]"
 
@@ -300,6 +300,8 @@
 
  concept_battle: "Битва"
  concept_battles: "Битви"
+ concept_battles_gen: "Битв"
+ concept_battles_acc: "Битви"
  concept_battle_desc:1 "When two [Concept('concept_commander','$concept_commanders$')] encounter each other and come into conflict during a [concept_war], they and their [Concept('concept_unit','$concept_units$')] will clash in an attempt to inflict [concept_casualties] and damage each others' [concept_morale]. The side whose [concept_manpower] has run out or become $concept_morale_demoralized$ first will withdraw, leaving the other side victorious.\n\nOn land, $concept_battles$ take place in [Concept('concept_province','$concept_provinces$')] adjacent to [Concept('concept_front','$concept_fronts$')] when one [concept_general] is advancing to take or regain $concept_province_land$. The winner will either conquer more $concept_provinces$ or prevent the enemy from doing so.\nAt sea, $concept_battles$ take place in Sea Nodes when one [concept_admiral] intercepts another due to conflicting [Concept('concept_order','$concept_orders$')]. The winner leaves their opponent damaged and forces them to return to port for repairs, leaving them unable to execute their $concept_order$ for a time."
 
  concept_timed_modifier: "Тимчасовий змінювач"
@@ -1031,6 +1033,8 @@
  concept_civil_war_desc:1 "A $concept_war$ where a [concept_country] has split into two opposing sides. [Concept('concept_revolution','$concept_revolutions$')] and [Concept('concept_secession','$concept_secessions$')] are examples of $concept_civil_wars$."
 
  concept_peace_deal: "Мирна угода"
+ concept_peace_deal_gen: "Мирної угоди"
+ concept_peace_deal_acc: "Мирну угоду"
  concept_peace_deals: "Мирні угоди"
  concept_peace_deal_desc:0 "When a [concept_war_leader] wish to end a [concept_war] they may offer a $concept_peace_deal$. The deal must be agreed to by all negotiating $concept_countries$ remaining in the $concept_war$ to take effect. To increase the chance the $concept_peace_deal$ will be agreed to, the $concept_war_leader$ is allowed to include or exclude proposed [Concept('concept_war_goal','$concept_war_goals$')] from both sides."
 
@@ -1561,9 +1565,11 @@
  concept_in_reserve_desc:1 "[Concept('concept_unit','$concept_units$')] that currently have no [concept_commander] are considered to be $concept_in_reserve$. They cannot be given [Concept('concept_order','$concept_orders$')] but will defend their homeland as part of a [concept_garrison] as needed."
 
  concept_dead: "Мертві"
+ concept_dead_many_gen: "Мертвих"
  concept_dead_desc:2 "[concept_casualties] that end up $concept_dead$ due to [concept_battle] or [concept_attrition]."
 
  concept_wounded: "Поранені"
+ concept_wounded_many_gen: "Поранених"
  concept_wounded_desc:2 "[concept_casualties] that are merely $concept_wounded$ in [concept_battle] or due to [concept_attrition]. Some $concept_wounded$ $concept_casualties$ recover and return to active service after some time, while others end up as [concept_dependents] of other [Concept('concept_pop','$concept_pops$')] in your [concept_country]."
 
  concept_attrition: "Виснаження"
