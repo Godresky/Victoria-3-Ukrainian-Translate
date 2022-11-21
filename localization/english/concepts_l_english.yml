@@ -8,7 +8,7 @@
 #_many - Множина 
 
 #_feminine - Жіночий ріді 
- concept_economy_health: "Здоров`я економіки"
+ concept_economy_health: "Здоров‘я економіки"
  concept_economy_health_healthy: "Здорова економіка"
  concept_economy_health_healthy_short: "Здорова"
  concept_economy_health_unhealthy: "Нездорова економіка"
@@ -1283,8 +1283,8 @@
  concept_canals: "Водоводи"
  concept_canal_desc:1 "A $concept_canal$ is a [concept_building] that also includes the construction of an artificial connection between two sea nodes across a landmass. $concept_canals$ can only be constructed in particular places and typically require the completion of some sort of survey or other expedition first. $concept_canals$ can drastically shorten the distance [concept_convoys] need to travel when establishing [Concept('concept_shipping_lane','$concept_shipping_lanes$')], making trade with distant lands more affordable."
 
- concept_monument: "Пам`ятка"
- concept_monuments: "Пам`ятки"
+ concept_monument: "Пам‘ятка"
+ concept_monuments: "Пам‘ятки"
  concept_monument_desc:1 "[Concept('concept_building','$concept_buildings$')] unique to a certain [concept_state] that can perform a variety of functions, often conferring [concept_prestige]."
 
  concept_productivity: "Продуктивність"
@@ -1647,9 +1647,9 @@
  concept_unification_candidates:0 "Unification Candidates"
  concept_unification_candidate_desc:1 "A $concept_unification_candidate$ is a [concept_country] considered a viable candidate for unification. The conditions for who qualifies as a $concept_unification_candidate$ varies depending on which unified nation it is. "
 
- concept_unification: "Об`єднання держави"
- concept_major_unification: "Велике об`єднання"
- concept_minor_unification: "Мале об`єднання"
+ concept_unification: "Об‘єднання держави"
+ concept_major_unification: "Велике об‘єднання"
+ concept_minor_unification: "Мале об‘єднання"
  concept_unification_desc:0 "The act of unifying and forming a new [concept_country] out of several $concept_countries$ is called Unification. A $concept_country$ can be formed by controlling a specific number of [Concept('concept_state','$concept_states$')] in the new $concept_country$'s region.\n\nA #b Major Unification#! allows $concept_countries$ to become [Concept('concept_unification_candidate','$concept_unification_candidates$')] which gives them access to the Unification [concept_diplomatic_play]. This $concept_diplomatic_play$ sets the [Concept('concept_war_goal','$concept_war_goals$')] to annex all the required $concept_states$ and $concept_countries$.\n\nWhile a #b Minor Unification#! do not allow any [Concept('concept_unification_candidate','$concept_unification_candidates$')] and can only form a $concept_country$ if the number of required $concept_states$ are controlled."
  
 

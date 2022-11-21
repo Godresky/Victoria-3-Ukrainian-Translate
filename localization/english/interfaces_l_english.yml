@@ -2103,7 +2103,7 @@
  BUILDING_RANK: "[Building.GetProfitabilityCompareIconInType] ##[Building.GetProfitabilityRankInType|v] [Building.GetBuildingType.GetNameNoFormatting]"
  BUILDING_RANK_WORLD: "[Building.GetProfitabilityCompareIcon] ##[Building.GetProfitabilityRank|v] у світі"
 
- TOOLTIP_BUILDINGS_BUDGET: "#BOLD #V [Building.GetName]#!#!\n[Building.GetBuildingType.GetBuildingKindDesc(Building.GetOwner.Self)]\n[concept_government_expenses]: #variable @money! [Building.GetGovernmentExpenses|-Т]#!\n\nЗарплата (і можливі матеріальні витрати) будуть оплачуватися з вашої казни. Зарплата наблизиться до середньої по регіоні."
+ TOOLTIP_BUILDINGS_BUDGET: "#BOLD #V [Building.GetName]#!#!\n[Building.GetBuildingType.GetBuildingKindDesc(Building.GetOwner.Self)]\n[concept_government_expenses]: #variable @money! [Building.GetGovernmentExpenses|-Т]#!\n\nЗарплата (і можливі матеріяльні витрати) будуть оплачуватися з вашої казни. Зарплата наблизиться до середньої по регіоні."
 
  TOOLTIP_PRODUCTION_AMOUNT:0 "#BOLD #V [GoodsProductionInfo.GetName]#!#! in [ProductionMarker.AccessState.GetName]\n$TOOLTIP_DELIMITER$\nProduced: #BOLD #V [GoodsProductionInfo.GetAmount|D]#!#! units\n#BOLD #V [GoodsProductionInfo.GetMP|1%]#!#! of the total production of #variable [GoodsProductionInfo.GetName]#! in the #variable [ProductionMarker.AccessState.GetMarket.GetName]#!"
  TOOLTIP_PRODUCTION_PRICE:0 "#BOLD #V [GoodsProductionInfo.GetName]#!#!\n$TOOLTIP_DELIMITER$\nPrice: #BOLD #V @money![GoodsProductionInfo.GetPrice|1]#!#! / unit"
