@@ -252,7 +252,7 @@
  law_child_labor_allowed_desc:0 "No legal restrictions are placed on where children may work."
  law_restricted_child_labor: "Обмеження дитячої праці"
  law_restricted_child_labor_desc:0 "No child is permitted on the factory floor."
- law_compulsory_primary_school: "Обов'язкова початкова школа"
+ law_compulsory_primary_school: "Обов‘язкова початкова школа"
  law_compulsory_primary_school_desc:0 "All children must attend several years of primary school during which they're prohibited from working."
   
   # Slavery group
@@ -352,7 +352,7 @@
  law_public_schools_desc:0 "Schooling is the responsibility of the state, and should be standardized and equally accessible to all."
   
   # Health System group
- lawgroup_health_system: "Модель охорони здоров'я"
+ lawgroup_health_system: "Модель охорони здоров‘я"
  lawgroup_health_system_desc:1 "Laws about the government's involvement (or lack thereof) in providing healthcare for its citizens."
   
  law_no_health_system: "Без урядництва"

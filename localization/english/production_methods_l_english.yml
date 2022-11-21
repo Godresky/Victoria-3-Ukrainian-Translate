@@ -72,7 +72,7 @@ pm_disabled_steam_power: "Без парової потужності"
  
 # Trains
  pm_no_passenger_trains: "Пріоритезація вантажу"
- pm_wooden_passenger_carriages: "Дерев'яні вагони"
+ pm_wooden_passenger_carriages: "Дерев‘яні вагони"
  pm_steel_passenger_carriages: "Крицеві вагони"
  pm_steam_trains: "Парові патяги"
  pm_electric_trains: "Електрічні потяги"
@@ -506,7 +506,7 @@ pm_steam_rail_transport: "Залізниця"
  pm_chemical_weapons_specialists_conscription: "$pm_chemical_weapons_specialists$"
   
  pmg_medical_aid: "Медична допомога"
- pm_wound_dressing: "Перев'язка ран"
+ pm_wound_dressing: "Перев‘язка ран"
  pm_first_aid: "Перша допомога"
  pm_field_hospitals: "Польові госпіталі"
 
@@ -526,8 +526,8 @@ pm_steam_rail_transport: "Залізниця"
 
 #Корабельня
  pmg_base_building_shipyards: "Модель кораблів"
- pm_basic_shipbuilding: "Дерев'яні судна"
- pm_complex_shipbuilding: "Армовані дерев'яні судна"
+ pm_basic_shipbuilding: "Дерев‘яні судна"
+ pm_complex_shipbuilding: "Армовані дерев‘яні судна"
  pm_metal_shipbuilding: "Пароплави"
  pm_arc_welding_shipbuilding: "Дугозварні пароплави"
 
@@ -729,7 +729,7 @@ pm_steam_rail_transport: "Залізниця"
  
 # Construction Camp
  pmg_base_building_construction_sector: "Тип будівлі"
- pm_wooden_buildings: "Дерев'яні каркаси"
+ pm_wooden_buildings: "Дерев‘яні каркаси"
  pm_iron_frame_buildings: "Залізні каркаси"
  pm_steel_frame_buildings: "Крицеві каркаси"
  pm_arc_welded_buildings: "Дугозварні каркаси"
@@ -911,7 +911,7 @@ pm_steam_rail_transport: "Залізниця"
  pm_worker_cooperative_building_railway: "$pm_worker_cooperative$"
 
  pmg_base_building_skyscraper: "Хмарочос"
- pm_skyscraper_bureaucratic_nexus: "Бюрократичний зв'язок"
+ pm_skyscraper_bureaucratic_nexus: "Бюрократичний зв‘язок"
  pmg_airship_mooring_post: "Дирижаблі"
  pm_no_airships: "Без дирижаблів"
  pm_airship_mooring_post: "Причальний пост дирижабля"

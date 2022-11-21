@@ -47,7 +47,7 @@
  setting_plausible_releasable_nations: "Історично правдоподібне"
  setting_plausible_releasable_nations_desc: "Дозволено звільняти лише історично правдоподібні нації"
  
- rule_monument_effects: "Заподії пам'яток"
+ rule_monument_effects: "Заподії пам‘яток"
  setting_allow_monument_effects: "Увімкнені"
  setting_allow_monument_effects_desc: "[Concept('concept_monument', '$concept_monuments$')] можуть створювати багато різних ефектів залежно від їх природи, а іноді дає робочі місця [Concept('concept_pop', '$concept_pops_dat$')|l]."
  setting_prestige_only_monument_effects: "Тільки престиж"

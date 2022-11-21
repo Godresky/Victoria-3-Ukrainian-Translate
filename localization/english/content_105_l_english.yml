@@ -951,7 +951,7 @@
 
  distribution_of_power_laws.10.t: "Гріхи минулого"
  distribution_of_power_laws.10.d: "Прихильники [Concept('concept_law', '$concept_law_gen$')|l] [SCOPE.sLaw('current_law_scope').GetName|l] звернули увагу на минулі зловживання владою з боку нинішнього режиму, як на одну з причин термінової необхідности цього закону."
- distribution_of_power_laws.10.f: "«Ну, я сам ледви це пам'ятаю. Тоді це був інший час. Таке було в межах норми, і я ніколи не думав, що мене будуть допитувати щодо цього. Звісно, це не означає, що це залишилося безсумніву, проте завжди будуть люди, які скаржаться. Ти не повинен їх слухати, якщо хочеш все зробити правильно. Звичайно, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] це все схвалив. Не офіційно, але я думаю, що ти повинен був це знати. Це все залишиться між нами.»"
+ distribution_of_power_laws.10.f: "«Ну, я сам ледви це пам‘ятаю. Тоді це був інший час. Таке було в межах норми, і я ніколи не думав, що мене будуть допитувати щодо цього. Звісно, це не означає, що це залишилося безсумніву, проте завжди будуть люди, які скаржаться. Ти не повинен їх слухати, якщо хочеш все зробити правильно. Звичайно, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] це все схвалив. Не офіційно, але я думаю, що ти повинен був це знати. Це все залишиться між нами.»"
  distribution_of_power_laws.10.a: "Влада розбещує, тому можновладці повинні нести відповідальність перед виборцями."
  distribution_of_power_laws.10.b: "Минуле залишиться в минулому. Ці питання не стосуються реформи."
 
@@ -1149,12 +1149,14 @@
  diplomatic_flexibility:0 "Diplomatic Flexibility"
 
  # Liberal and Conservative Election Events
- election_liberal_events.1.t:0 "An Extreme Reaction"
+ election_liberal_events.1.t: "Надмімрна віддія"
  election_liberal_events.1.d:0 "In their campaign for the upcoming election, the [SCOPE.sParty('liberal_party').GetName] have directed criticism at the [SCOPE.sParty('conservative_party').GetName] for allowing [SCOPE.sCharacter('extremist_leader').GetFullName] among their ranks, pointing to [SCOPE.sCharacter('extremist_leader').GetHerHis] far-right views as an example of the party accommodating extremists."
+ election_liberal_events.1.d:0 "У своїй кампанії на майбутніх виборах [Concept('concept_party','$concept_party$')|l] [SCOPE.sParty('liberal_party').GetName] критикували [Concept('concept_party','$concept_party_acc$')|l] [SCOPE.sParty('conservative_party').GetName] за те, що вони дозволили [Concept('concept_party','$concept_party_acc$')|l] [SCOPE.sCharacter('extremist_leader').GetFullName] among their ranks, pointing to [SCOPE.sCharacter('extremist_leader').GetHerHis] far-right views as an example of the party accommodating extremists."
  election_liberal_events.1.f:0 ""They call themselves conservatives, in itself a void of values and ideals, but something even worse has grown within that void. Among their ranks there are those who would not only stand in the way of our country changing, but would want to shape its future to their own delusional ideas of a past that never existed — prepared to use any methods to achieve it. Do not cast your vote lightly, unless you want to take the first step on the road to war and genocide.""
  election_liberal_events.1.a:0 "Far from the traditional [ROOT.GetCountry.GetAdjective] values they claim."
  election_liberal_events.1.b:0 "[SCOPE.sCharacter('extremist_leader').GetLastName] is simply a dedicated patriot!"
  downplaying_fascism:0 "Allowed Discrimination"
+
  election_liberal_events.2.t:0 "Liberty Without Anarchy"
  election_liberal_events.2.d:0 "The anarchist political group [SCOPE.sParty('anarchist_party').GetName]'s rise to prominence has been invoked in the [SCOPE.sParty('liberal_party').GetName] election campaign, casting themselves as the more reasonable alternative."
  election_liberal_events.2.f:0 ""The people want freedom, but from what? From laws, from governance, from organized society itself? Of course not; merely from unnecessary laws, bad governance and byzantine bureaucracy. Too many governments allow themselves to grow their excesses unchecked, like trees reaching their sprawling branches into every home and pocket until the people arrive with torches to burn them down. All this can be avoided with sensible pruning.""

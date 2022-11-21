@@ -338,7 +338,7 @@
 
  POP_CULTURE_CHANGE_ENTRY_POSITIVE:0 "#v $CHANGE|=+$#! assimilating [Pop.GetName] in [Pop.GetState.GetName]"
  POP_CULTURE_CHANGE_ENTRY_NEGATIVE:0 "#v $CHANGE|=+$#! [Pop.GetName] in [Pop.GetState.GetName] assimilating to [Pop.GetAssimilatingCulture.GetName]"
- CULTURE_IN_COUNTRY_DESC: "\nНаселення в [Concept('concept_country', '$concept_country_gen$')|l] [GetPlayer.GetName]: [Culture.GetPopulation(GetPlayer.Self)|Kv] [SelectLocalization(NotEqualTo_int32(Culture.GetPopulationChange(GetPlayer.Self),'(int32)0'),'CULTURE_POPULATION_CHANGE_IN_COUNTRY','')]\nЦе [Concept('concept_primary_cultures', '$concept_primary_culture$')|l] у [Concept('concept_country', '$concept_country_dat$')|l] [GetPlayer.GetName]: [Culture.IsPrimaryCultureInYesNo(GetPlayer.Self)]\n[concept_migration_target]: [Culture.GetMigrationTargetsDesc]\n[concept_turmoil] [Concept('concept_culture', '$concept_culture_gen$')|l] [CULTURE.GetName]:\n$TAB$#variable [GetPlayer.CalcCulturalTurmoil( Culture.Self )|-0%]#! у [Concept('concept_country', '$concept_country_dat$')|l] [GetPlayer.GetName]\n$TAB$#variable [Culture.GetTurmoil|-0%]#! у світі"
+ CULTURE_IN_COUNTRY_DESC: "\nНаселення в [Concept('concept_country', '$concept_country_gen$')|l] [GetPlayer.GetName]: [Culture.GetPopulation(GetPlayer.Self)|Kv] [SelectLocalization(NotEqualTo_int32(Culture.GetPopulationChange(GetPlayer.Self),'(int32)0'),'CULTURE_POPULATION_CHANGE_IN_COUNTRY','')]\nЦе [Concept('concept_primary_cultures', '$concept_primary_culture$')|l] у [Concept('concept_country', '$concept_country_dat$')|l] [GetPlayer.GetName]: [Culture.IsPrimaryCultureInYesNo(GetPlayer.Self)]\n[concept_migration_target]: [Culture.GetMigrationTargetsDesc]\n[concept_turmoil] [Concept('concept_culture', '$concept_culture_gen$')|l] [Culture.GetName|l]:\n$TAB$#variable [GetPlayer.CalcCulturalTurmoil( Culture.Self )|-0%]#! у [Concept('concept_country', '$concept_country_dat$')|l] [GetPlayer.GetName]\n$TAB$#variable [Culture.GetTurmoil|-0%]#! у світі"
  CULTURE_POPULATION_CHANGE:0 "[Culture.GetName] in [Country.GetName] Monthly Change: #v $CHANGE|=+$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
 
  POP_RELIGION_CHANGE_ENTRY_POSITIVE:0 "#v $CHANGE|=+$#! converting [Pop.GetName] in [Pop.GetState.GetName]"
@@ -390,10 +390,10 @@
 
  GOVERNMENT_TRANSFER_OF_POWER_TOOLTIP: "#header [GovernmentType.GetTransferOfPowerName]#!\n[GovernmentType.GetTransferOfPowerDesc]"
 
- CUL_DISCRIMINATED_IN_COUNTRY: "Культура [CULTURE.GetName] утискається в [Concept('concept_country','$concept_country_dat$')|l] [COUNTRY.GetName]"
- CUL_NOT_DISCRIMINATED_IN_COUNTRY: "Культура [CULTURE.GetName] не утискається в [Concept('concept_country','$concept_country_dat$')|l] [COUNTRY.GetName]"
- CUL_DISCRIMINATED_NOT_IN_COUNTRY: "Культура [CULTURE.GetName] була б утиснена, але не присутня в [Concept('concept_country','$concept_country_dat$')|l] [COUNTRY.GetName]"
- CUL_NOT_DISCRIMINATED_NOT_IN_COUNTRY: "Культура [CULTURE.GetName] не була б утиснена, але не присутня в [Concept('concept_country','$concept_country_dat$')|l] [COUNTRY.GetName]"
+ CUL_DISCRIMINATED_IN_COUNTRY: "Культура [CULTURE.GetName|l] утискається в [Concept('concept_country','$concept_country_dat$')|l] [COUNTRY.GetName]"
+ CUL_NOT_DISCRIMINATED_IN_COUNTRY: "Культура [CULTURE.GetName|l] не утискається в [Concept('concept_country','$concept_country_dat$')|l] [COUNTRY.GetName]"
+ CUL_DISCRIMINATED_NOT_IN_COUNTRY: "Культура [CULTURE.GetName|l] була б утиснена, але не присутня в [Concept('concept_country','$concept_country_dat$')|l] [COUNTRY.GetName]"
+ CUL_NOT_DISCRIMINATED_NOT_IN_COUNTRY: "Культура [CULTURE.GetName|l] не була б утиснена, але не присутня в [Concept('concept_country','$concept_country_dat$')|l] [COUNTRY.GetName]"
  REL_DISCRIMINATED_IN_COUNTRY: "Релігія [RELIGION.GetName|l] утискається в [Concept('concept_country','$concept_country_dat$')|l] [COUNTRY.GetName]"
  REL_NOT_DISCRIMINATED_IN_COUNTRY: "Релігія [RELIGION.GetName|l] не утискається в [Concept('concept_country','$concept_country_dat$')|l] [COUNTRY.GetName]"
  REL_DISCRIMINATED_NOT_IN_COUNTRY: "Релігія [RELIGION.GetName|l] була б утиснена, але не присутня в [Concept('concept_country','$concept_country_dat$')|l] [COUNTRY.GetName]"
@@ -412,10 +412,10 @@
  CULTURAL_POSSIBLE_SECESSION_ICON_TOOLTIP:0 "Has a [Culture.GetChanceForSecessionMovement( GetPlayer.Self )|%1v] chance every week to start a #variable [concept_secession] movement#! due to being a non-[concept_primary_cultures] with high [concept_turmoil]!\n$TOOLTIP_DELIMITER$\n[concept_secession_desc]"
  CULTURAL_GROWING_SECESSION_ICON_TOOLTIP:0 "The [Culture.GetName] has started a #variable [concept_secession] movement#! against us!\n$TOOLTIP_DELIMITER$\n[concept_secession_desc]"
 
- CULTURAL_TURMOIL_TOOLTIP:1 "#header Cultural [concept_turmoil]#!\n$TOOLTIP_DELIMITER$\nGlobal [Culture.GetName] [concept_turmoil]: [Culture.GetTurmoil|-0%]\n[Culture.GetName] [concept_turmoil] in [GetPlayer.GetName]: [GetPlayer.CalcCulturalTurmoil( Culture.Self )|-%]"
+ CULTURAL_TURMOIL_TOOLTIP: "#header [concept_turmoil] культури#!\n$TOOLTIP_DELIMITER$\n[Culture.GetName] - [concept_turmoil|l] у світі: [Culture.GetTurmoil|-0%]\n[Culture.GetName] - [concept_turmoil|l] у [Concept('concept_country', '$concept_country_loc$')|l] [GetPlayer.GetName]: [GetPlayer.CalcCulturalTurmoil( Culture.Self )|-%]"
 
- STATE_POP_PANEL_HEADER:1 "#bold [Concept('concept_pop','$concept_population$')]#!"
- STATE_POP_PANEL_HEADER_LINE_TWO:0 "in [StatePopulationPanel.GetState.GetName]"
+ STATE_POP_PANEL_HEADER: "#bold [Concept('concept_pop','$concept_population$')]#!"
+ STATE_POP_PANEL_HEADER_LINE_TWO: "у [Concept('concept_state', '$concept_state_loc$')|l] [StatePopulationPanel.GetState.GetName]"
  POP_CULTURE_TEXT:0 "Pop Culture: #variable [Pop.GetCulture.GetName]#!"
  POP_RELIGION_TEXT:0 "Pop Religion: #variable [Pop.GetReligion.GetName]#!"
  POP_POL_STR_TEXT:0 "[concept_political_strength]: #variable [Pop.GetPoliticalStrength|1*]#!"
@@ -2616,7 +2616,7 @@
  PRODUCTION_NO_CONCEPT: "Виробництво"
 
  STATISTICS: "Статистика"
- TURMOIL: "Сум'яття:"
+ TURMOIL: "Сум‘яття:"
  MIGRATION_TARGETS: "Цілі міграції:"
  CULTURAL_TRAITS: "Культурні риси:"
  CULTURE_OBSESSIONS: "Одержимості:"
@@ -2879,7 +2879,7 @@
  trade_route_import_lens_option_ironclads_tooltip: "Встановити ввозовий тор броненосців"
  trade_route_import_lens_option_grain_tooltip: "Встановити ввозовий тор зерна"
  trade_route_import_lens_option_fish_tooltip: "Встановити ввозовий тор риби"
- trade_route_import_lens_option_meat_tooltip: "Встановити ввозовий тор м'яса"
+ trade_route_import_lens_option_meat_tooltip: "Встановити ввозовий тор м‘яса"
  trade_route_import_lens_option_fruit_tooltip: "Встановити ввозовий тор городини"
  trade_route_import_lens_option_fabric_tooltip: "Встановити ввозовий тор тканини"
  trade_route_import_lens_option_coal_tooltip: "Встановити ввозовий тор вугілля"
@@ -2929,7 +2929,7 @@
  trade_route_export_lens_option_ironclads_tooltip: "Встановити вивозовий тор броненосців"
  trade_route_export_lens_option_grain_tooltip: "Встановити вивозовий тор зерна"
  trade_route_export_lens_option_fish_tooltip: "Встановити вивозовий тор риби"
- trade_route_export_lens_option_meat_tooltip: "Встановити вивозовий тор м'яса"
+ trade_route_export_lens_option_meat_tooltip: "Встановити вивозовий тор м‘яса"
  trade_route_export_lens_option_fruit_tooltip: "Встановити вивозовий тор городини"
  trade_route_export_lens_option_fabric_tooltip: "Встановити вивозовий тор тканини"
  trade_route_export_lens_option_coal_tooltip: "Встановити вивозовий тор вугілля"
@@ -4661,7 +4661,7 @@
  DIPLOMATIC_PLAYS_TARGETING_COUNTRY: "[Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] з [Concept('concept_country', '$concept_country_ins$')|l] [Country.GetName]"
  NO_DIPLOMATIC_PLAYS_TARGETING_COUNTRY: "[Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] недоступні"
  DIPLOMATIC_STATUS_HEADER: "#title Дипломатія#!"
- TRUCES: "Перемир'я"
+ TRUCES: "Перемир‘я"
  OBLIGATIONS_OWED_FROM: "Має вяз від"
  OBLIGATIONS_OWED_TO: "Має вяз перед"
  INTEREST_MARKERS: "#title [Concept('concept_interest', '$concept_interests$')]#!"
@@ -4670,8 +4670,8 @@
  NOT_AVAILABLE: "Н/д"
  SOL_SHORT: "[Concept('concept_sol', '$concept_sol_short$')]"
 
- TRUCE_WITH: "Перемир'я з [Concept('concept_country','$concept_country_ins$')|l] [Country.GetName]"
- TRUCE_TOOLTIP: "#header Перемир'я з [Concept('concept_country','$concept_country_ins$')|l] [Country.GetName]#!\n$TOOLTIP_DELIMITER$\nПеремир'я до #variable [Truce.GetTruceDate]#!"
+ TRUCE_WITH: "Перемир‘я з [Concept('concept_country','$concept_country_ins$')|l] [Country.GetName]"
+ TRUCE_TOOLTIP: "#header Перемир‘я з [Concept('concept_country','$concept_country_ins$')|l] [Country.GetName]#!\n$TOOLTIP_DELIMITER$\nПеремир‘я до #variable [Truce.GetTruceDate]#!"
 
  BATTLE_LOSSES_ATTACKER_STATS:0 "Attacking Army losses: #v [Negate_int32(Battle.GetAttackerLostUnits)|+=]#!"
  BATTLE_LOSSES_DEFENDER_STATS:0 "Defending Army losses: #v [Negate_int32(Battle.GetDefenderLostUnits)|+=]#!"

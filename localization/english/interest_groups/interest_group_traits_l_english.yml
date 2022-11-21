@@ -1,9 +1,9 @@
 ﻿l_english:
 
   # Landowners IG Traits
- ig_trait_noblesse_oblige: "Шляхетність зобов'язує"
+ ig_trait_noblesse_oblige: "Шляхетність зобов‘язує"
  ig_trait_noblesse_oblige_desc:0 "We are better than the common folk, which means we have a duty to care for them. Their attempts to organize things for themselves are self-destructive and doomed to failure."
- ig_trait_family_ties: "Сімейні зв'язки"
+ ig_trait_family_ties: "Сімейні зв‘язки"
  ig_trait_family_ties_desc:0 "In these changing times, we still know the value of a good marriage. Our connections are older than the borders they surpass and will outlast both alliances and governments."
  ig_trait_noble_privileges: "Дворянські привілеї"
  ig_trait_noble_privileges_desc:0 "Whatever happened to the idea that the nobility should be left to perform its duties without being hounded by tax collectors? It is time to bring those days back."
@@ -49,7 +49,7 @@
  ig_trait_social_criticism_desc:0 "People in power often think they are beyond reproach, but authority does not make someone's ideas interesting. We have a lot of interesting things to say, and we know exactly who to say them about."
 
   # Petite-Bourgeoisie IG Traits
- ig_trait_treasury_bonds: "Казначейські зобов'язання"
+ ig_trait_treasury_bonds: "Казначейські зобов‘язання"
  ig_trait_treasury_bonds_desc:0 "As long as the government can be trusted to pay its debts, putting our hard-earned savings towards funding this great nation is not only patriotic, but a good investment."
  ig_trait_middle_managers: "Розпорядники середньої верстви"
  ig_trait_middle_managers_desc:0 "We can't make everyone do everything by the book, but we can at least keep what's done on the books. Someone needs to remember the proper way to do things around here."
