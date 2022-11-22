@@ -132,7 +132,7 @@
  modifier_ig_industrialists_urbanization: "Оміщенням задоволений."
  modifier_strong_urbanized_state: "Покращення оміщення"
 
- urbanization_events.4.t: "Викликати занепокоєння"
+ urbanization_events.4.t: "Викликані занепокоєння"
  urbanization_events.4.d: "[SCOPE.gsInterestGroup('opposing_ig').GetName] висловили своє занепокоєння щодо рішень уряду, які явно сприяють рупам [SCOPE.gsInterestGroup('industrialist_ig').GetName]."
  urbanization_events.4.f: "«Вибирати завжди важко; не тому, що прийняти рішення важко, а тому, що наслідки можуть бути дещо... незручними. Чутки поширюються, як заводський дим, заплямувавши чисте повітря [ROOT.GetCountry.GetNameNoFormatting] густа і злісна отрута.»"
  urbanization_events.4.a: "Це потрібно вирішити."

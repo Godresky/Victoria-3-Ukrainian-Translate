@@ -164,6 +164,7 @@
  concept_building_gen: "Будівлі"
  concept_building_acc: "Будівлю"
  concept_buildings: "Будівлі"
+ concept_buildings_gen: "Будівель"
  concept_buildings_ins: "Будівлями"
  concept_building_industry:0 "Industry"
  concept_building_industries:0 "Industries"
@@ -1528,6 +1529,7 @@
 
  concept_character: "Персонаж"
  concept_character_gen: "Персонажа"
+ concept_character_dat: "Персонажу"
  concept_characters: "Персонажі"
  concept_character_possessive:0 "Character\\'s"
  concept_character_desc:2 "$concept_characters$ fulfill different [Concept('concept_character_role','$concept_character_roles$')] in your [concept_country]. Their ability to perform these duties depends on their [Concept('concept_character_trait','$concept_character_traits$')]. They always support an [concept_interest_group], and may have an [concept_ideology] that shapes their aspirations and outlook."
@@ -1662,6 +1664,7 @@
  concept_party_gen: "Партії"
  concept_party_acc: "Партію"
  concept_parties: "Партії"
+ concept_parties_gen: "Партій"
  concept_party_possessive:0 "Party\\'s"
  concept_party_adj: "Партійн"
  concept_party_desc:1 "A $concept_party$ is a political entity that participates in [Concept('concept_election','$concept_election$')]. They consist of one or more [Concept('concept_interest_group','$concept_interest_groups$')] whose [Concept('concept_ideology','$concept_ideologies$')] are at least somewhat compatible. These $concept_interest_groups$ are empowered by the [concept_votes] the $concept_party$ has won proportional to their [concept_clout]. Individual $concept_interest_groups$ cannot be included in [concept_government] without the rest of their $concept_party$ members."

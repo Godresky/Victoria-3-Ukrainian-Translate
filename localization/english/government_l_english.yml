@@ -44,7 +44,7 @@
  gov_absolute_county: "Абсолютна грапщина"
  gov_absolute_county_desc:1 "Це форма [Concept('concept_government','$concept_government_gen$')|l], form where the power rests completely with the [Concept('concept_ruler','$RULER_TITLE_COUNT$')] or [Concept('concept_ruler','$RULER_TITLE_COUNTESS$')]."
  gov_tsardom: "Царcтво"
- gov_tsardom_desc: "[concept_government] форма, де [Concept('concept_ruler','$RULER_TITLE_TSAR$')] або [Concept('concept_ruler','$RULER_TITLE_TSARINA$')] керують владою."
+ gov_tsardom_desc: "Це форма [Concept('concept_government','$concept_government_gen$')|l], де [Concept('concept_ruler','$RULER_TITLE_TSAR$')|l] або [Concept('concept_ruler','$RULER_TITLE_TSARINA$')|l] керує владою."
  gov_sultanate: "Султанат"
  gov_sultanate_desc:1 "Це форма [Concept('concept_government','$concept_government_gen$')|l], form where the power rests with the [Concept('concept_ruler','$RULER_TITLE_SULTAN$')]."
  gov_khedive: "Хедиват"
