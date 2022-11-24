@@ -418,7 +418,7 @@
  free_state_mort:0 "Increased Freestate Mortality"
 
 #Player Objectives
- economic_dominance_welcome:0 "Economic Dominance"
+ economic_dominance_welcome: "Економічна домінація"
  economic_dominance_welcome_desc:2 "Through the course of this objective you will be given a series of [Concept('journal_entry','$Journal Entries$')] to complete. How you choose to complete these tasks will be left up to you, the player.\n\nNOTE: You will need to have an Iron or Coal mine in your country before getting your first Journal Entry."
  economic_dominance_lesson_button_skip:0 "Onwards!"
 
@@ -494,13 +494,13 @@
  liberalizing_the_government_complete:0 "Liberal Thought"
  liberalizing_the_government_complete_desc:0 "Now that you have completed your first Journal Entry you are well on your way to completing the remaining parts of this objective and creating your Egalitarian Society."
 
- egalitarian_society_welcome:0 "Egalitarian Society"
+ egalitarian_society_welcome: "Рівне суспільство"
  egalitarian_society_welcome_desc:0 "Welcome to the Egalitarian Society Player Objective. In this objective you will be given a series of [Concept('concept_journal_entry', '$concept_journal_entries$')] to complete that will guide you down a path towards an Egalitarian Society."
 
  liberalizing_the_government_complete_1:0 "Liberal Thinking"
  liberalizing_the_government_complete_1_desc:2 "Well done! You have just completed your first objective and now you are now well on the way to creating your Egalitarian Society."
 
- egalitarian_society_complete:0 "Egalitarian Society Completed"
+ egalitarian_society_complete: "Сформоване рівне суспільство"
  egalitarian_society_complete_desc:1 "Well done! You have completed the Egalitarian Society Objective. Feel free to continue playing the game or try a different objective."
 
  je_liberate_the_slaves_invalid_tooltip:0 "If [JournalEntry.GetTarget.GetCountry.GetName] is no longer exists."
@@ -533,7 +533,7 @@
  je_great_power:0 "Major Power"
  je_great_power_reason:1 "We have never been the strongest, but that changes now! We will show the world we aren't some tiny speck of land off in the distance whose tiny voice should be ignored."
 
- je_the_hegemon:0 "The Hegemon"
+ je_the_hegemon: "Геґемон"
  je_the_hegemon_reason:1 "We have shown the world what we are capable of. We have made great strides. Now however we should make sure we have the population to back our global standing."
  je_the_hegemon_final_tt:0 "Control half of the global $concept_population$."
 

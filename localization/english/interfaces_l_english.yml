@@ -5685,7 +5685,7 @@
  CLOUT_GRAPH_TITLE: "#title [concept_clout]#!"
  VOTES_GRAPH_TITLE: "#title [Concept('concept_votes', 'Поточні опитування')]#!"
 
- ELECTION_PANEL_ACTIVE_CAMPAIGN_TITLE: "Кампанія [Election.GetNextElectionYearRaw] року"
+ ELECTION_PANEL_ACTIVE_CAMPAIGN_TITLE: "Виправа [Election.GetNextElectionYearRaw] року"
  ELECTION_PANEL_ELECTION_RESULT_TITLE: "Результати виборів [Election.GetLastElectionYearRaw] року"
  ELECTION_PANEL_HEADER_LINE_ONE: "[Election.GetTitle]"
  ELECTION_PANEL_HEADER_LINE_TWO: "[concept_election] у [Concept('concept_country', '$concept_country_dat$')|l] [Election.GetCountryName]"
