@@ -1578,10 +1578,10 @@
  HUB_NAME_STATE_SHAN_STATES_wood: "Лашіо"
 
   # South east asia
- HUB_NAME_STATE_CHIANG_MAI_city: "Чіанґ Маі"
+ HUB_NAME_STATE_CHIANG_MAI_city: "Чіянґ Маі"
  HUB_NAME_STATE_CHIANG_MAI_mine: "Нан"
  HUB_NAME_STATE_CHIANG_MAI_farm: "Лампанг"
- HUB_NAME_STATE_CHIANG_MAI_wood: "Чіанґ Рай"
+ HUB_NAME_STATE_CHIANG_MAI_wood: "Чіянґ Рай"
  HUB_NAME_STATE_LAOS_city: "Луанґ Прабанґ"
  HUB_NAME_STATE_LAOS_mine: "В‘єнтьян"
  HUB_NAME_STATE_LAOS_farm: "Чампассак"
@@ -1648,7 +1648,7 @@
  HUB_NAME_STATE_WEST_JAVA_wood: "Банджар"
  HUB_NAME_STATE_EAST_JAVA_city: "Маланг"
  HUB_NAME_STATE_EAST_JAVA_port: "Сурабая"
- HUB_NAME_STATE_EAST_JAVA_mine: "Мадіун"
+ HUB_NAME_STATE_EAST_JAVA_mine: "Мадіюн"
  HUB_NAME_STATE_EAST_JAVA_farm: "Проболінґґо"
  HUB_NAME_STATE_EAST_JAVA_wood: "Пачітан"
  HUB_NAME_STATE_CENTRAL_JAVA_city: "Джок‘якарта"
@@ -1657,7 +1657,7 @@
  HUB_NAME_STATE_CENTRAL_JAVA_farm: "Пекалонган"
  HUB_NAME_STATE_CENTRAL_JAVA_wood: "Суракарта"
 
- HUB_NAME_STATE_WEST_BORNEO_city: "Понтіанак"
+ HUB_NAME_STATE_WEST_BORNEO_city: "Понтіянак"
  HUB_NAME_STATE_WEST_BORNEO_port: "Кендаваґан"
  HUB_NAME_STATE_WEST_BORNEO_mine: "Мандор"
  HUB_NAME_STATE_WEST_BORNEO_farm: "Синтанґ"

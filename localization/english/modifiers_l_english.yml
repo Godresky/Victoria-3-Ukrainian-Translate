@@ -1,7 +1,7 @@
 ﻿l_english:
- easy_difficulty:0 "Easy Difficulty"
- very_easy_difficulty:0 "Very Easy Difficulty"
- very_easy_difficulty_ai:0 "Very Easy Difficulty"
+ easy_difficulty: "Легка складність"
+ very_easy_difficulty: "Дуже легка складність"
+ very_easy_difficulty_ai: "Дуже легка складність"
  
  native_conscription_1: "Тубільні бойові загони"
  native_conscription_2: "$native_conscription_1$"
@@ -16,48 +16,65 @@
  native_conscription_11: "$native_conscription_1$"
  native_conscription_12: "$native_conscription_1$"
 
- modifier_country_war_exhaustion_casualties_mult:0 "[concept_war_exhaustion] from [concept_casualties]"
- modifier_country_war_exhaustion_casualties_mult_desc:0 "An increase or decrease to the amount of [concept_war_exhaustion] a [concept_country] suffers in [concept_war] due to [concept_casualties] inflicted on them"
+ modifier_country_war_exhaustion_casualties_mult: "[concept_war_exhaustion] через [Concept('concept_casualties','$concept_casualties_acc$')|l]"
+ modifier_country_war_exhaustion_casualties_mult_desc: "Збільшення або зменшення [concept_war_exhaustion|l] у [Concept('concept_country','$concept_country_loc$')|l], що перебуває у [Concept('concept_war','$concept_war_loc$')|l] через [concept_casualties|l]."
+
  modifier_country_minting_add: "Карбування"
- modifier_country_minting_add_desc:0 "A flat increase or decrease to [concept_budget_minting]"
+ modifier_country_minting_add_desc: "Постійне збільшення або зменшення [concept_budget_minting|l]."
  modifier_country_minting_mult: "Карбування"
- modifier_country_minting_mult_desc:0 "A bonus or penalty to the total amount of [concept_budget_minting]"
- modifier_country_tax_income_add:0 "Tax Income"
- modifier_country_tax_income_add_desc:0 "A flat bonus or penalty to tax income collected"
- modifier_country_expenses_add:0 "Government Expenses"
- modifier_country_expenses_add_desc:0 "A flat increase or reduction of government expenses"
+ modifier_country_minting_mult_desc: "Наддаток або карна до загальної кількости [concept_budget_minting|l]."
+
+ modifier_country_tax_income_add: "Податковий прибуток"
+ modifier_country_tax_income_add_desc: "Постійний наддаток або карна до зібраного податкового доходу."
+
+ modifier_country_expenses_add: "Урядові витрати"
+ modifier_country_expenses_add_desc: "Постійне збільшення або скорочення державних витрат."
+
  modifier_state_tax_waste_add: "Податкове марнотратство"
- modifier_state_tax_waste_add_desc:1 "An increase or decrease to the amount of [concept_tax_waste] in [Concept('concept_state', '$concept_states$')]"
- modifier_state_tax_capacity_add: "Податкова здатність"
- modifier_state_tax_capacity_add_desc:0 "An increase or decrease to the amount of [concept_tax_capacity] in [Concept('concept_state', '$concept_states$')]"
- modifier_state_tax_capacity_mult:0 "$modifier_state_tax_capacity_add$"
- modifier_state_tax_capacity_mult_desc:0 "$modifier_state_tax_capacity_add_desc$"
+ modifier_state_tax_waste_add_desc: "Збільшення або зменшення [Concept('concept_tax_waste','$concept_tax_waste_gen$')|l] у [Concept('concept_state', '$concept_states_loc$')|l]."
+
+ modifier_state_tax_capacity_add: "Податкова мічність"
+ modifier_state_tax_capacity_add_desc: "Збільшення або зменшення [Concept('concept_tax_capacity','$concept_tax_capacity_gen$')|l] у [Concept('concept_state', '$concept_states_loc$')|l]."
+ modifier_state_tax_capacity_mult: "$modifier_state_tax_capacity_add$"
+ modifier_state_tax_capacity_mult_desc: "$modifier_state_tax_capacity_add_desc$"
+
  modifier_state_tax_collection_mult: "Збір податків"
- modifier_state_tax_collection_mult_desc:0 "An increase or decrease to the final amount of all [concept_taxes] collected from [Concept('concept_pop','$concept_pops$')]."
- modifier_country_law_enactment_time_mult:0 "Enactment Time"
- modifier_country_law_enactment_success_add:0 "Enactment Success Chance"
- modifier_state_unincorporated_starting_wages_mult:0 "Starting Wages in Unincorporated States"
- modifier_state_unincorporated_starting_wages_mult_desc:0 "How much more or less [Concept('concept_pop', '$concept_pops$')] in [Concept('concept_unincorporated_state', '$concept_unincorporated_states$')] get as initial salaries."
- modifier_country_government_wages_mult:0 "Government Wages"
- modifier_country_government_wages_mult_desc:0 "How much more or less than the [concept_normal_wage] government employees get paid."
- modifier_country_military_wages_mult:0 "Military Wages"
- modifier_country_military_wages_mult_desc:0 "How much more or less than the [concept_normal_wage] military personnel get paid."
- modifier_country_military_goods_cost_mult:0 "Military Goods Cost"
- modifier_country_military_goods_cost_mult_desc:0 "A bonus or penalty to the monetary cost of military material necessities."
- modifier_country_law_enactment_time_mult_desc:0 "A reduction or increase to the time required for legislative enactments"
- modifier_country_law_enactment_success_add_desc:0 "A flat percentage point increase to the likelihood of enacting a law"
- modifier_country_opposition_ig_approval_add:0 "Opposition Interest Group Approval"
- modifier_country_opposition_ig_approval_add_desc:0 "A bonus or penalty to the Approval of Interest Groups in Opposition"
- modifier_country_infamy_decay_mult:0 "Infamy Decay"
- modifier_country_infamy_decay_mult_desc:0 "A bonus or penalty to [concept_infamy] decay"
- modifier_country_tension_decay_mult:0 "Tension Decay"
- modifier_country_tension_decay_mult_desc:0 "A bonus or penalty to [concept_tension] decay"
- modifier_country_relations_decay_add:0 "Relations Decay"
- modifier_country_relations_decay_add_desc:0 "A bonus or penalty to decay of good Relations"
- modifier_country_improve_relations_speed_mult:0 "Improve Relations Speed"
- modifier_country_improve_relations_speed_mult_desc:0 "A bonus or penalty to the efficiency of the Improve Relations diplomatic action."
- modifier_country_damage_relations_speed_mult:0 "Damage Relations Speed"
- modifier_country_damage_relations_speed_mult_desc:0 "A bonus or penalty to the efficiency of the Damage Relations diplomatic action."
+ modifier_state_tax_collection_mult_desc: "Збільшення або зменшення кінцевої кількости [Concept('concept_taxes','$concept_taxes_gen$')|l], зібраних з [Concept('concept_pop','$concept_population$')|l]."
+
+ modifier_country_law_enactment_time_mult: "Час введення в дію"
+ modifier_country_law_enactment_time_mult_desc: "Скорочення або збільшення часу, необхідного для прийняття законодавчих актів"
+
+ modifier_state_unincorporated_starting_wages_mult: "Початкові зарплати в невключених регіонах"
+ modifier_state_unincorporated_starting_wages_mult_desc: "Наскільки більше чи менше [Concept('concept_pop', '$concept_population$')|l] у [Concept('concept_unincorporated_state', '$concept_unincorporated_states_loc$')|l] отримає початкову зарплату."
+
+ modifier_country_government_wages_mult: "Урядові зарплати"
+ modifier_country_government_wages_mult_desc: "Наскільки більше або менше держслужбовці отримують коштів за [Concept('concept_normal_wage', '$concept_normal_wage_acc$')|l]."
+
+ modifier_country_military_wages_mult: "Військові зарплати"
+ modifier_country_military_wages_mult_desc: "Наскільки більше або менше військовослужбовці отримують коштів за [Concept('concept_normal_wage', '$concept_normal_wage_acc$')|l]."
+
+ modifier_country_military_goods_cost_mult: "Вартість військових товарів"
+ modifier_country_military_goods_cost_mult_desc: "Наддаток або карна до грошової вартости військово-матеріяльних потреб."
+
+ modifier_country_law_enactment_success_add: "Шанс на успішне введення в дію"
+ modifier_country_law_enactment_success_add_desc: "Постійний відсоток, що збільшує або зменшує ймовірність ухвалення закону."
+
+ modifier_country_opposition_ig_approval_add: "Схвалення опозиційної зацікавленої групи"
+ modifier_country_opposition_ig_approval_add_desc: "Наддаток або карна на схвалення опозиційних зацікавлених груп."
+
+ modifier_country_infamy_decay_mult: "Зниження ганьби"
+ modifier_country_infamy_decay_mult_desc: "Наддаток або карна до зниження [Concept('concept_infamy', '$concept_infamy_gen$')|l]."
+
+ modifier_country_tension_decay_mult: "Зниження напруги"
+ modifier_country_tension_decay_mult_desc: "Наддаток або карна до зниження [Concept('concept_tension', '$concept_tension_gen$')|l]."
+
+ modifier_country_relations_decay_add: "Припинення відносин"
+ modifier_country_relations_decay_add_desc: "Наддаток або карна на припинення хороших відносин."
+
+ modifier_country_improve_relations_speed_mult: "Темпи потепління відносин"
+ modifier_country_improve_relations_speed_mult_desc: "Наддаток або карна до ефективности дипломатичної дії «Покращення відносин»."
+ modifier_country_damage_relations_speed_mult: "Темпи погіршення відносин"
+ modifier_country_damage_relations_speed_mult_desc: "Наддаток або карна до ефективности дипломатичної дії «Погіршення відносин»."
 
  modifier_battle_plains_combat_effectiveness_mult:0 "Plains Terrain Expert"
  modifier_battle_plains_combat_effectiveness_mult_desc:0 "Plains Terrain Expert"
@@ -197,14 +214,18 @@
  modifier_building_production_mult_desc:0 "Affects production output of all the goods produced in the building"
  modifier_building_economy_of_scale_level_cap_add:0 "[concept_economy_of_scale] Building Level Cap"
  modifier_building_economy_of_scale_level_cap_add_desc:0 "The maximum number of [concept_building] levels that can confer [concept_economy_of_scale] effects."
- modifier_country_prestige_add:0 "Prestige"
- modifier_country_prestige_add_desc:0 "How much Prestige the country has."
- modifier_country_max_declared_interests_add:2 "Maximum Declared Interests"
- modifier_country_max_declared_interests_add_desc:1 "An increase or decrease to the number of [Concept('concept_interest', '$concept_interests$')] that a country can declare outside of its controlled territory"
- modifier_country_max_declared_interests_mult:0 "$modifier_country_max_declared_interests_add$"
- modifier_country_max_declared_interests_mult_desc:0 "$modifier_country_max_declared_interests_add_desc$"
- modifier_country_prestige_mult:0 "Prestige"
- modifier_country_prestige_mult_desc:0 "How much Prestige the country has."
+
+ modifier_country_prestige_add: "Престиж"
+ modifier_country_prestige_add_desc: "Скільки престижу держава має."
+
+ modifier_country_max_declared_interests_add: "Максимальна кількість проявлених рупів"
+ modifier_country_max_declared_interests_add_desc: "Збільшення або зменшення кількости [Concept('concept_interest', '$concept_interests_gen$')|l], що країна може оголосити за межами своїх контрольованих регіонів."
+ modifier_country_max_declared_interests_mult: "$modifier_country_max_declared_interests_add$"
+ modifier_country_max_declared_interests_mult_desc: "$modifier_country_max_declared_interests_add_desc$"
+
+ modifier_country_prestige_mult: "$modifier_country_prestige_add$"
+ modifier_country_prestige_mult_desc: "$modifier_country_prestige_add$"
+
  modifier_country_bureaucracy_add:2 "@bur![Nbsp][concept_bureaucracy]"
  modifier_country_bureaucracy_add_desc:2 "How much @bur![Nbsp][concept_bureaucracy] the country has"
  modifier_country_bureaucracy_mult:2 "@bur![Nbsp][concept_bureaucracy]"

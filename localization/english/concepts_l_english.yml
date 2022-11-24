@@ -510,6 +510,7 @@
  concept_unincorporated_state: "Невключений регіон"
  concept_unincorporated_state_short: "Невключений"
  concept_unincorporated_states: "Невключені регіони"
+ concept_unincorporated_states_loc: "Невключених регіонах"
  concept_unincorporated_state_desc:2 "A [concept_state] that is within a [Concept('concept_country','$concept_country_possessive$')] domain, but considered a territorial holding or frontier beyond the reach of [Concept('concept_institution','$concept_institutions$')] and [concept_government]. [Concept('concept_pop', '$concept_pops$')] who live in $concept_unincorporated_states$ are disenfranchised and do not contribute much [concept_political_strength] to their [Concept('concept_interest_group', '$concept_interest_groups$')], nor can they [Concept('concept_votes','$concept_vote$')] in [Concept('concept_election','$concept_elections$')]. On the upside (for them) they are exempt from [Concept('concept_taxes','$concept_taxation$')].\n\n$concept_unincorporated_states$ do not cost [concept_bureaucracy] to maintain, as $concept_taxes$ are not collected and $concept_institutions$ do not provide any benefits there. $concept_unincorporated_states$ can be [Concept('concept_incorporated_state','$concept_incorporated$')], which will put it under the direct management of the [Concept('concept_country','$concept_country_possessive$')] central authority.[AddLocalizationIf(GetPlayer.IsValid,'concept_unincorporated_state_desc_added')]"
  concept_unincorporated_state_desc_added:0 "\n$concept_unincorporated_states$ are subject to the following effects:\n[GetStaticModifier('unincorporated_state').GetDesc]#!"
 
@@ -625,7 +626,8 @@
  concept_recovery_rate:0 "Recovery Rate"
  concept_recovery_rate_desc:0 "The percentage of [concept_casualties] a [concept_unit] takes that survive, in some cases by becoming [concept_dependents]. Can be increased with #b $pmg_medical_aid$#! [Concept('concept_production_method','$concept_production_method$')] and [Concept('concept_technology','$concept_technologies$')]. $concept_recovery_rate$ is countered by the enemy $concept_unit$'s [concept_kill_rate]."
 
- concept_casualties:0 "Casualties"
+ concept_casualties: "Втрати"
+ concept_casualties_acc: "Втрати"
  concept_casualties_desc:0 "[concept_manpower] who fall in battle or through [concept_attrition] are considered $concept_casualties$. A proportion of $concept_casualties$ are killed outright while the remainder are [concept_wounded]. This ratio is dependent on the [Concept('concept_unit','$concept_unit_possessive$')] [concept_recovery_rate] compared to their enemy's [concept_kill_rate]."
 
  concept_offense:0 "Offense"
@@ -757,6 +759,7 @@
  concept_combat_width_desc:1 "The $concept_combat_width$ of a particular [concept_terrain] type determines the potential numeric advantage the larger side can have over the smaller side in [concept_battle]. A smaller force can hold out for longer against a larger force if $concept_combat_width$ is relatively low, and vice versa."
 
  concept_infamy: "Рівень ганьби"
+ concept_infamy_gen: "Рівня ганьби"
  concept_infamy_desc:1 "$concept_infamy$ reflects the degree by which the international community, particularly the reigning [Concept('concept_great_power','$concept_great_powers$')], see you as a threat to be contained in light of your past actions. It is accrued primarily from causing [Concept('concept_diplomatic_incident','$concept_diplomatic_incidents$')] and claiming [Concept('concept_war_goal','$concept_war_goals$')] in a [concept_peace_deal]. Your $concept_infamy$ affects $concept_countries$' [concept_attitude] towards you and increases the [concept_influence] cost of [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]. If it reaches the level of #b $infamy_pariah$#!, $concept_great_powers$ will be able to start the [GetDiplomaticPlayType('dp_contain_threat').GetName] [concept_diplomatic_play] against you."
 
  concept_diplomatic_incident:0 "Diplomatic Incident"
@@ -765,6 +768,7 @@
  concept_diplomatic_incident_desc:1 "A $concept_diplomatic_incident$ is typically the result of a [concept_country] starting a [concept_diplomatic_play]. $concept_diplomatic_incidents$ generate [concept_infamy] for the $concept_country$ who started it, and will cause [concept_relations] to fall with all $concept_countries$ with an [concept_interest] in the [concept_strategic_region], particularly the target of the $concept_diplomatic_play_short$. $concept_diplomatic_incidents$ can also be the result of other actions, for example decisions made during special events."
 
  concept_tension: "Напруга"
+ concept_tension_gen: "Напруги"
  concept_tensions: "Напруги"
  concept_tension_desc:3 "How strained the relationship is between a [Concept('concept_colony', '$concept_colonizing$')] [concept_country] and nearby [Concept('concept_decentralized_nation', '$concept_decentralized_nations$')]. $concept_tensions$ rise with all nearby $concept_decentralized_nations$ whenever a [concept_province] is taken over, and decreases over time as long as no new land is taken.\n\nIf the tension level rises to #b $tension_volatile$#!, continued colonization may trigger a [concept_native_uprising]."
 
@@ -919,13 +923,13 @@
  concept_war_support: "Підтримка війни"
  concept_war_support_desc:1 "A measure of how eager your [Concept('concept_country','$concept_country_possessive$')] is to remain in a [concept_war]. Positive values indicates a desire to stay in the $concept_war$ while negative values indicate a general opposition to it. Once $concept_war_support$ reaches [GetDefine('NWar','AUTO_CAPITULATE_WAR_SUPPORT')|v0] the $concept_country$ will immediately capitulate, allowing all [Concept('concept_war_goal','$concept_war_goals$')] to be pressed on them."
 
- concept_occupation:0 "Occupation"
+ concept_occupation: "Окупа"
  concept_occupied:0 "Occupied"
  concept_occupying:0 "Occupying"
  concept_occupation_desc:0 "Any [Concept('concept_province','$concept_provinces$')] the [concept_country] owns that is currently part of an enemy [concept_theater] is considered $concept_occupied$. $concept_occupation$ contributes to [concept_war_exhaustion]. $concept_occupying$ a [concept_war_goal] you hold on an enemy is usually required to bring their [concept_war_support] into the negatives."
 
- concept_war_exhaustion:0 "War Exhaustion"
- concept_war_exhaustion_exhausted:0 "Exhausted"
+ concept_war_exhaustion: "Виснаження від війни"
+ concept_war_exhaustion_exhausted: "Виснажений"
  concept_war_exhaustion_desc:1 "A [Concept('concept_pop','$concept_population$')] tends to suffer while their [concept_country] is at [concept_war]. The following factors contribute to $concept_war_exhaustion$:\n\n* how much [Concept('concept_province','$concept_province_land$')] has been [Concept('concept_occupation','$concept_occupied$')]\n* how many [Concept('concept_war_goal','$concept_war_goals$')] the enemy controls\n* how many [concept_casualties] have been taken\n* how much the $concept_country$ is suffering from [concept_turmoil]\n\n$concept_war_exhaustion$ reduces [concept_war_support] each week, bringing the $concept_country$ closer to agreeing to a [concept_peace_deal]."
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED APRIL 30, 2022
@@ -945,6 +949,7 @@
  concept_turmoil_desc:2 "[Concept('concept_state', '$concept_states$')] and [Concept('concept_culture', '$concept_cultures$')] with $concept_turmoil$ contain [Concept('concept_radical', '$concept_radicals$')] that are unhappy with their current circumstances. The amount of $concept_turmoil$ is equal to the fraction of the $concept_state$'s or $concept_culture$'s [concept_workforce] that are $concept_radical$.\n\n$concept_turmoil$ can inflict a number of negative local status effects on a $concept_state$ if it gets high enough. [concept_cultural_turmoil] can impact a whole [concept_country] in very disruptive ways."
 
  concept_unemployed: "Безробітні"
+ concept_unemployed_ins: "Безробітними"
  concept_unemployed_many: "Безробітні"
  concept_unemployment: "Безробіття"
  concept_unemployed_desc:2 "An $concept_unemployed$ [concept_pop] does not work in any of its [Concept('concept_state','$concept_state_possessive$')] [Concept('concept_building','$concept_buildings$')] and therefore does not collect a [concept_building_wage]. They are likely to take the next best job that comes along, and will likely [Concept('concept_migration','$concept_emigrate$')] if nothing comes along."
@@ -1021,6 +1026,7 @@
  concept_approval_desc:0 "An [Concept('concept_interest_group','$concept_interest_group_possessive$')] $concept_approval$ depends on two main factors: how much of their [concept_political_strength] comes from [Concept('concept_radical','$concept_radicals$')] compared to [Concept('concept_loyalist','$concept_loyalists$')], and how well the [Concept('concept_country','$concept_country_possessive$')] current [Concept('concept_law','$concept_laws$')] match with the $concept_interest_group_possessive$ [Concept('concept_ideology','$concept_ideologies$')]. In addition, if a new $concept_law$ is currently being [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')], $concept_approval$ will be affected by a larger temporary adjustment which will linger while [Concept('concept_decay','$concept_decaying$')] for up to #v [GetDefine('NPolitics','CHANGED_LAW_APPROVAL_MONTHS')|0] months#! after it has passed.\n\nAn $concept_interest_group$'s $concept_approval$ impacts which [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] they activate. [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_ANGRY'))] $concept_interest_groups$ contribute to the [Concept('concept_political_movement_radicalism','$concept_political_movement_radicalism_short$')] of [Concept('concept_political_movement','$concept_political_movements$')], while $concept_interest_groups$ that are at least [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_HAPPY'))] will refrain from joining $concept_political_movements_short$ in the first place."
 
  concept_revolution: "Революція"
+ concept_revolution_acc: "Революцію"
  concept_revolutions: "Революції"
  concept_revolutionary: "Революційний"
  concept_revolution_desc:3 "A $concept_revolution$ is the result of a [concept_political_movement] that has grown too [Concept('concept_political_movement_radicalism','$concept_political_movement_radical$')]. If the $concept_political_movement_short$ starts an uprising, [Concept('concept_state','$concept_states$')] in which its supporting [Concept('concept_interest_group','$concept_interest_groups$')] and [Concept('concept_pop','$concept_pops$')] are relatively strong will separate from the rest of the $concept_country$ and start a [concept_diplomatic_play] to annex the loyalists.\n\nYou can lower the $concept_political_movement_short$'s [concept_political_movement_radicalism] by reducing the number of [Concept('concept_radical','$concept_radicals$')] in the supporting $concept_pops$ and increasing the [concept_approval] of supporting $concept_interest_groups$. You can also weaken and slow a $concept_revolution$ down using the [SelectLocalization(GetPlayer.IsValid,'concept_revolution_desc_added','Home Affairs')] [concept_institution]."
@@ -1042,7 +1048,9 @@
 
  concept_war: "Війна"
  concept_war_gen: "Війни"
+ concept_war_dat: "Війні"
  concept_war_acc: "Війну"
+ concept_war_loc: "Війні"
  concept_wars: "Війни"
  concept_wars_gen: "Воєн"
  concept_war_desc: "Активне воєнне протистояння між двома [Concept('concept_country','$concept_countries$')] як результат [concept_diplomatic_play]. Під час $concept_wars$, [Concept('concept_commander','$concept_commanders$')] на суші та на морі будуть виконувати [Concept('concept_order','$concept_orders$')] для виконання певних завдань, що часто призводить до [Concept('concept_battle','$concept_battles$')] між двома сторонами."
@@ -1167,6 +1175,7 @@
  concept_state_ins: "Регіоном"
  concept_state_loc: "Регіоні"
  concept_states: "Регіони"
+ concept_states_loc: "Регіонах"
  concept_state_or_states: "Регіон(-и)"
  concept_state_possessive:1 "State\\'s"
  concept_state_desc:2 "A geographic region controlled by a [concept_country]. [Concept('concept_pop', '$concept_pops$')] live and work in the [Concept('concept_building', '$concept_buildings$')] in the $concept_state$. Unless it is a [concept_split_state] its territory is equivalent to a [concept_state_region]. Unless it is [Concept('concept_isolated_state', '$concept_isolated_state_short$')], it will trade any [Concept('concept_good','$concept_goods$')] locally [Concept('concept_good_consumption','$concept_good_consumed$')] and [Concept('concept_good_production','$concept_good_produced$')] with other $concept_states$ in the same [concept_market] in to a degree based on its [concept_market_access]."
@@ -1350,6 +1359,7 @@
  concept_budget_dividends_taxes_desc:1 "A [Concept('concept_taxes','$concept_tax$')] applied to the [concept_dividends] earned by [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_shares$')]."
 
  concept_taxes: "Податки"
+ concept_taxes_gen: "Податків"
  concept_tax: "Податок"
  concept_taxing: "Оподаткування"
  concept_taxation: "Оподаткування"
@@ -1467,10 +1477,12 @@
  concept_hq_long: "Головний провід"
  concept_hq_desc:4 "An $concept_hq$ ($concept_hq_long$) is the territory owned by a [concept_country] in a particular [concept_strategic_region]. All military [Concept('concept_unit','$concept_units$')] originating from an $concept_hq$ are pooled and assigned to those [Concept('concept_commander','$concept_commanders$')] who hails from that $concept_hq$. Any $concept_units$ not assigned or not [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilized$')] during [concept_war] are considered to be in that $concept_hq$'s [concept_garrison], where they will independently defend any [concept_front] in their $concept_hq$."
 
- concept_tax_waste:0 "Tax Waste"
+ concept_tax_waste: "Податкове марнотратство"
+ concept_tax_waste_gen: "Податкового марнотратства"
  concept_tax_waste_desc:1 "The amount of [concept_taxes] collected that are wasted, due to inefficiencies or corruption, prior to entering the government coffers."
 
- concept_tax_capacity: "Мічність податків"
+ concept_tax_capacity: "Податкова мічність"
+ concept_tax_capacity_gen: "Податкової мічности"
  concept_tax_capacity_desc:2 "Each point of Taxation Capacity in a [concept_state] allows for the efficient taxation of [GetDefine('NPops','INDIVIDUALS_TAXED_PER_TAX_CAPACITY')|vK] [Concept('concept_pop','$concept_pops$')]. If the population of a [concept_state] outgrows its Taxation Capacity, the efficiency of all forms of taxation will be reduced. Taxation Capacity can be increased through researching certain $SOCIETY$ $concept_technologies$ or constructing [SelectLocalization(GetPlayer.IsValid, 'concept_tax_capacity_desc_added','Government Administration')] [Concept('concept_building','$concept_buildings$')] in the [concept_state]."
  concept_tax_capacity_desc_added:0 "[GetBuildingType('building_government_administration').GetName]"
 
@@ -1562,6 +1574,7 @@
  concept_military_wage_desc:0 "All [Concept('concept_military_building','$concept_military_buildings$')] pay their [concept_workforce] according to the same standardized $concept_military_wage$ rate. This rate is based on the [concept_normal_wage] in the [concept_country], with any adjustments set in the Budget panel."
 
  concept_normal_wage: "Звичайна зарплата"
+ concept_normal_wage_acc: "Звичайну зарплату"
  concept_normal_wage_desc:3 "The baseline [concept_building_wage] in a [concept_country] which many [Concept('concept_building','$concept_buildings$')] take into account. [Concept('concept_government_wage','$concept_government_wages$')] and [Concept('concept_military_wage','$concept_military_wages$')] are based on the $concept_normal_wage$. It is determined from the average $concept_building_wages$ paid by [Concept('concept_building','$concept_building_industries$')] across [Concept('concept_incorporated_state', '$concept_incorporated_states$')]."
 
  concept_in_reserve: "У запасі"
@@ -1745,14 +1758,17 @@
  concept_migration_pull_desc:1 "$concept_migration_pull$ is a [concept_state]'s ability to attract migrants. It is based primarily on the average [concept_sol] among [Concept('concept_pop','$concept_pops$')] in the $concept_state$ but can be modified by a number of other factors. Any [Concept('concept_unemployed','$concept_unemployment$')] in the $concept_state$ will depress $concept_migration_pull$. The value is compared against other $concept_states$ between which migration may occur to determine in which direction migrants tend to flow."
 
  concept_lower_strata: "Нижня верства"
+ concept_lower_strata_gen: "Нижньої верстви"
  concept_lower_strata_desc:3 "The $concept_lower_strata$ consist of [Concept('concept_pop','$concept_pops$')] in [Concept('concept_profession','$concept_professions$')] that work with their hands or do repetitive labor which require little to no [concept_pop_qualifications] and result in low [Concept('concept_building_wage','$concept_building_wages$')].[AddLocalizationIf(GetPlayer.IsValid,'concept_lower_strata_ingame_added')]"
  concept_lower_strata_ingame_added:1 "\n\nConsists of the following $concept_professions$:\n[GetPopTypesInLowerStrataDesc]"
 
  concept_middle_strata: "Середня верства"
+ concept_middle_strata_gen: "Середньої верстви"
  concept_middle_strata_desc:3 "The $concept_middle_strata$ consist of [Concept('concept_pop','$concept_pops$')] with specialized [Concept('concept_profession','$concept_professions$')] that are harder to gain [concept_pop_qualifications] for. This provides them with more leverage on the labor market and thereby higher [Concept('concept_building_wage','$concept_building_wages$')].[AddLocalizationIf(GetPlayer.IsValid,'concept_middle_strata_ingame_added')]"
  concept_middle_strata_ingame_added:1 "\n\nConsists of the following $concept_professions$:\n[GetPopTypesInMiddleStrataDesc]"
 
  concept_upper_strata: "Верхня верства"
+ concept_upper_strata_gen: "Верхньої верстви"
  concept_upper_strata_desc:3 "The $concept_upper_strata$ consist of [Concept('concept_pop','$concept_pops$')] with [Concept('concept_profession','$concept_professions$')] they [Concept('concept_pop_qualifications','$concept_qualify$')] for mostly on the basis of [concept_wealth]. These $concept_professions$ are typically not available to $concept_pops$ subject to [concept_discrimination] either. They tend to hold [Concept('concept_ownership_share','$concept_ownership_shares$')] in their [Concept('concept_building','$concept_buildings$')] and draw [concept_dividends] and collect [concept_budget_interest] in addition to [Concept('concept_building_wage','$concept_building_wages$')].[AddLocalizationIf(GetPlayer.IsValid, 'concept_upper_strata_ingame_added')]"
  concept_upper_strata_ingame_added:1 "\n\nConsists of the following $concept_professions$:\n[GetPopTypesInUpperStrataDesc]"
 
