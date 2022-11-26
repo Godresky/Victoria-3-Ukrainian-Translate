@@ -1,6 +1,6 @@
 ﻿l_english:
- texan_war_of_independence.2.title:0 "Texan Revolution"
- texan_war_of_independence.2.desc:1 "Upon victory we will remove the Texan Interest. If we lose then Texas will reclaim the full extent of their borders."
- texan_war_of_independence.2.flavor:0 "The unruly Texans have finally shown their true colors and declared war against our great nation. They aim to seize control of our lands, no doubt with backing from the United States of America fanning the flames.\nWe will stand against these traitors!"
+ texan_war_of_independence.2.title:0 "Техаська революція"
+ texan_war_of_independence.2.desc:1 "Після перемоги ми втратимо інтерес до Техасу. Якщо ми програємо, то Техас повністю відновить контроль над своїми кордонами."
+ texan_war_of_independence.2.flavor:0 "Непокірні техасці нарешті показали своє справжнє обличчя та оголосили війну нашій великій нації. Вони прагнуть захопити контроль над нашими землями, безперечно, за підтримки Сполучених Штатів Америки, які розпалюють це полум'я.\nМи встоїмо проти цих зрадників!"
 
- modifier_texas_war_of_independence:0 "Texas War of Independence"
+ modifier_texas_war_of_independence:0 "Техаська війна за незалежність"
