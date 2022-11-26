@@ -662,6 +662,7 @@
  concept_market_capital: "Столиця ринку"
  concept_market_capital_gen: "Столиці ринку"
  concept_market_capital_short: "Столиця"
+ concept_market_capital_short_acc: "Столицю"
  concept_market_capitals: "Столиці ринку"
  concept_market_capital_desc:2 "The [concept_state] that serves as the nexus of a [concept_market], to which all other $concept_states$ in the $concept_market$ must connect lest they become [Concept('concept_isolated_state','$concept_isolated_state_short$')]. [Concept('concept_trade_route','$concept_trade_routes$')] are often, but not always, managed from the $concept_market_capital$. The $concept_market_capital$ is often the same $concept_state$ as the [Concept('concept_market_owner','$concept_market_owner_possessive$')] [concept_capital_state], but it is possible to keep these separate.[AddLocalizationIf(GetPlayer.IsValid,'concept_market_capital_desc_added')] "
  concept_market_capital_desc_added:0 "\nThe following effects apply:\n[GetStaticModifier('market_capital_state').GetDesc]"
@@ -887,6 +888,7 @@
 
  concept_capital_state: "Столиця"
  concept_capital_state_gen: "Столиці"
+ concept_capital_state_acc: "Столицю"
  concept_capital_state_short: "Столиця"
  concept_capital_state_desc:3 "The site of a [Concept('concept_country','$concept_country_possessive$')] central [concept_government]. Controlling the $concept_capital_state_short$ is of great importance during wartime, and [Concept('concept_pop','$concept_pops$')] who live there have a greater degree of [concept_political_strength] by which to influence politics.[AddLocalizationIf(GetPlayer.IsValid,'concept_capital_state_desc_added')]"
  concept_capital_state_desc_added:0 "\nThe following effects apply:\n[GetStaticModifier('market_capital_state').GetDesc]"
@@ -1133,6 +1135,7 @@
  concept_input_goods_shortage_desc:0 "[Concept('concept_building', '$concept_buildings$')] that consume [Concept('concept_good', '$concept_goods$')] will suffer an output penalty if less than [GetDefine('NEconomy', 'GOODS_SHORTAGE_PENALTY_THRESHOLD')|v%0] of the [concept_buy_orders] for those $concept_goods$ are satisfied. This is usually caused by insufficient availability of the [concept_good] in the [Concept('concept_building', '$concept_building_possessive$')] [concept_market], but may also be a result of low [concept_market_access] in the $concept_building$'s [concept_state_region]."
 
  concept_market: "Ринок"
+ concept_market_acc: "Ринку"
  concept_markets: "Ринки"
  concept_market_possessive:1 "Market\\'s"
  concept_market_desc:2 "All [Concept('concept_state', '$concept_states$')] in the same $concept_market$ will trade [Concept('concept_good', '$concept_goods$')] with each other, unless they are [Concept('concept_isolated_state','$concept_isolated_state_short$')]. How well connected these $concept_states$ are with each other is measured by their [concept_market_access]. $concept_markets$ may also trade with each other through [Concept('concept_trade_route','$concept_trade_routes$')].\n\nEach [concept_country] either controls its own $concept_market$ or participates in one other via a [concept_customs_union] or [concept_subject] relationship. "

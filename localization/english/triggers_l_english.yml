@@ -1006,7 +1006,7 @@
  
  TRIGGER_IS_COUNTRY_TYPE_NOCONTEXT_NOT:1 "Is #bold not #!#variable $COUNTRY_TYPE$#!"
  
- TRIGGER_ALWAYS_NOCONTEXT:0 "Always"
+ TRIGGER_ALWAYS_NOCONTEXT: "Завжди"
  
  TRIGGER_POLLUTION_AMOUNT:0 "Pollution in [STATE_REGION.GetName] is $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_POLLUTION_AMOUNT_NOT:1 "Pollution in [STATE_REGION.GetName] is #bold not #!$COMPARATOR$ #variable $NUM$#!"

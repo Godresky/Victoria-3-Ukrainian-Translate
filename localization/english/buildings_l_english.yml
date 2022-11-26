@@ -110,7 +110,7 @@
 
 # Building Groups
  bg_subsistence: "Натуральні господарства"
- bg_service: "Сфери послуг"
+ bg_service: "Царина послуг"
  bg_agriculture: "Сільське господарство"
  bg_plantations: "Полища"
  bg_ranching: "Хутори"

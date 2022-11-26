@@ -64,7 +64,7 @@
  acw_followup_events.2.a: "Трагедії вдалося запобігти!"
 
  acw_followup_events.3.t: "Замах на життя персонажа [SCOPE.sCharacter('lincoln_proxy').GetLastName]"
- acw_followup_events.3.d: "Симпатик нещодавнього повстання намагався вбити персонажа [SCOPE.sCharacter('lincoln_proxy').GetFullName]. Замах пійшов не за планом."
+ acw_followup_events.3.d: "Симпатик нещодавнього повстання намагався вбити персонажа [SCOPE.sCharacter('lincoln_proxy').GetFullName]. Замах пійшов не за пляном."
  acw_followup_events.3.f: "[SCOPE.sCharacter('lincoln_proxy').GetFullName] почув позаду скрип дошок. До того як він обернувся, вбивця вже витягнув пістоль, але не встиг направити його на персонажа [SCOPE.sCharacter('lincoln_proxy').GetLastName]. "Дієс! Кур! Немає у вас порядності?", кожне слово переривалося черговим ударом персонажа [SCOPE.sCharacter('lincoln_proxy').GetLastName] по макирі потенційного вбивці."
  acw_followup_events.3.a: "Так! Бий його!"
 

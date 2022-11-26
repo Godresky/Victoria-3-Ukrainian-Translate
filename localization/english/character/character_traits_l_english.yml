@@ -145,11 +145,11 @@
  pillager: "Грабіжник"
  pillager_desc:1 "This character maintains their armies by pillaging the countryside."
  
- basic_offensive_planner: "Планувальник наступу"
+ basic_offensive_planner: "Плянувальник наступу"
  basic_offensive_planner_desc:1 "This character is known for their clever military advances."
- experienced_offensive_planner: "Досвідчений планувальник наступу"
+ experienced_offensive_planner: "Досвідчений плянувальник наступу"
  experienced_offensive_planner_desc:1 "This character is renowned for their elaborate military advances."
- expert_offensive_planner: "Знаний планувальник наступу"
+ expert_offensive_planner: "Знаний плянувальник наступу"
  expert_offensive_planner_desc:1 "This character is famous around the world for their brilliant military advances."
  
  basic_defensive_strategist: "Оборонний стратег"

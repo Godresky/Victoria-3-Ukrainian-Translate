@@ -1,0 +1,36 @@
+[h1]Ukrainian translation for Victoria 3.[/h1]
+[b]To start the translation, select English in the launcher![/b]
+[b]Work on the translation is still in progress, so you can often find the English text![/b]
+
+
+[h1]Why "руп", "осада", "Швайцарія", etc?[/h1]
+We use outdated words to convey the atmosphere of the world at that time. We also use Skrypnykivka (wish of the authors).
+
+
+[h1]How to play with Ukrainian?[/h1]
+[olist]
+    [*]Download the translation
+    [*]Choose [b]English[/b] in the launcher
+    [*]Launch and enjoy the Ukrainian
+[/olist]
+
+
+[h1]Do you want to help?[/h1]
+Share the mod with your friends, download and play.
+You can write about errors or suggestions in a [url=https://steamcommunity.com/workshop/filedetails/discussion/2884178988/3489753940058555479/]special discussion[/url].
+
+[h1]Notes.[/h1]
+Work on the translation is still in progress, so you can often find the English text.
+They helped with the translation: [url=https://t.me/HeartsofUkraine4]пан Дмитро[/url], пані Меліса, пан Марк Хан (remark644@gmail.com), пан Андріян, Дружня спільнота та Греко-католицька церква.
+
+Useful:
+[list]
+[*]Supported game version: [b]1.0.6[/b]
+[*][url=https://github.com/Godresky/Victoria-3-Ukrainian-Translate]GitHub link[/url]
+[*][url=https://trello.com/b/uVKkSOop/%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%B4-%D0%B2%D1%96%D0%BA%D1%82%D0%BE%D1%80%D1%96%D1%97-3]Trello link[/url]
+[*][url=https://send.monobank.ua/jar/7H5RNWs4kw]Say "thank you" to the developers[/url]
+[*][url=https://www.buymeacoffee.com/godresky]Buymeacoffee[/url]
+[*][url=https://twitter.com/godresky]For communication[/url]
+[/list]
+
+[spoiler]Україна, Українська, Скрипниківка, Ukraine, ukr, ua, Клясичний правопис, Український переклад, Українська мова, Ukranian Translate, Віка 3, Вікторія 3[/spoiler]
