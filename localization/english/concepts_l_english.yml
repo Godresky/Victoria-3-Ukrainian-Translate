@@ -217,9 +217,11 @@
  concept_war_leader_desc:0 "One [concept_country] on each side of a [concept_war] is considered the $concept_war_leader$ for that side, usually (but not always) corresponding to the [concept_initiator] and [concept_target] of the [concept_diplomatic_play] that spawned it. They are the only ones who may propose [Concept('concept_peace_deal','$concept_peace_deals$')], though every $concept_peace_deal$ must be ratified by all negotiating members of the $concept_war$ to be accepted."
  
  concept_initiator: "Зачинатель"
+ concept_initiator_gen: "Зачинателя"
  concept_initiator_desc:0 "The [concept_country] that initiated a [concept_diplomatic_play]."
  
  concept_target: "Ціль"
+ concept_target_gen: "Цілі"
  concept_target_desc:0 "The [concept_country] targeted by a [concept_diplomatic_play]."
 
  concept_homeland: "Батьківщина"
@@ -1180,7 +1182,7 @@
  concept_states: "Регіони"
  concept_states_loc: "Регіонах"
  concept_state_or_states: "Регіон(-и)"
- concept_state_possessive:1 "State\\'s"
+ concept_state_possessive: "Регіональн"
  concept_state_desc:2 "A geographic region controlled by a [concept_country]. [Concept('concept_pop', '$concept_pops$')] live and work in the [Concept('concept_building', '$concept_buildings$')] in the $concept_state$. Unless it is a [concept_split_state] its territory is equivalent to a [concept_state_region]. Unless it is [Concept('concept_isolated_state', '$concept_isolated_state_short$')], it will trade any [Concept('concept_good','$concept_goods$')] locally [Concept('concept_good_consumption','$concept_good_consumed$')] and [Concept('concept_good_production','$concept_good_produced$')] with other $concept_states$ in the same [concept_market] in to a degree based on its [concept_market_access]."
 
  concept_pop: "Спільнота"

@@ -166,9 +166,9 @@
  gov_fascist_state: "Фашистська держава"
  gov_fascist_state_desc: "Це форма [Concept('concept_government','$concept_government_gen$')|l], визначена його прихильністю до фашистської [concept_ideology]. Це жорстокий і диктаторський режим."
  gov_chartered_company: "Хартійне товариство"
- gov_chartered_company_desc: "Це форма [Concept('concept_government','$concept_government_gen$')|l], керована монополістичною корпорацією, що зафрахтована своїм колоніальним володарем."
+ gov_chartered_company_desc: "Це форма [Concept('concept_government','$concept_government_gen$')|l], керована монополістичною корпорацією, що зафрахтована своїм осадним володарем."
  gov_colonial_administration: "Осадна управа"
- gov_colonial_administration_desc: "Це форма [Concept('concept_government','$concept_government_gen$')|l], керована призначеним осадним керівництвом від імені свого колоніального володаря."
+ gov_colonial_administration_desc: "Це форма [Concept('concept_government','$concept_government_gen$')|l], керована призначеним осадним керівництвом від імені свого осадного володаря."
 
 # Parliamentary Republics
  gov_parliamentary_dictatorship: "Виборна диктатура"
