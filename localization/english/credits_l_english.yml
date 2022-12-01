@@ -226,9 +226,9 @@
 
  HEADER_LICENSES:0 "#credits_header LICENSES#!"
 
- CREDITS_CLOSE: "Закрити"
- CREDITS_PAUSE: "Павза"
- CREDITS_CONTINUE: "Продовжити"
- CREDITS_SLOWER: "Повільніше"
- CREDITS_FASTER: "Швидше"
- CREDITS_BACK: "Назад"
+ CREDITS_CLOSE: " Закрити"
+ CREDITS_PAUSE: " Павза"
+ CREDITS_CONTINUE: " Продовжити"
+ CREDITS_SLOWER: " Повільніше"
+ CREDITS_FASTER: " Швидше"
+ CREDITS_BACK: " Назад"

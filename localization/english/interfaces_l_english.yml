@@ -4908,7 +4908,7 @@
  PREDICTED_LAWS_WITHOUT_GVT_SUPPORT:0 "$LAWS_WITHOUT_GVT_SUPPORT$ ($PREDICTION$)"
 
  TOOLTIP_CHANGE_FROM_LAW: "#header Змінити [concept_law|l] в розряді [LawGroup.GetName]#!\nВи маєте #variable [LawGroup.GetNumEnactable|+]#! доступних альтернатив в розряді [LawGroup.GetName]" # [Concept('concept_law', '$concept_law_gen$')|l] [Law.GetName]
- TOOLTIP_CHANGE_FROM_LAW_CURRENTLY_ENACTING:0 "#header Change [LawGroup.GetName] [concept_law]#!\nYou are currently enacting [GetPlayer.GetLawBeingEnacted.GetName] in [GetPlayer.GetLawBeingEnacted.GetGroup.GetName]\nIf you were not, you would have #variable [LawGroup.GetNumPotentialEnactable|+]#! available alternatives to [LawGroup.GetName] in [Law.GetName]"
+ TOOLTIP_CHANGE_FROM_LAW_CURRENTLY_ENACTING:0 "#header Змінити [concept_law|l] в розряді [LawGroup.GetName]#!\nYou are currently enacting [GetPlayer.GetLawBeingEnacted.GetName] in [GetPlayer.GetLawBeingEnacted.GetGroup.GetName]\nIf you were not, you would have #variable [LawGroup.GetNumPotentialEnactable|+]#! available alternatives to [LawGroup.GetName] in [Law.GetName]"
  PREDICT_LEGITIMACY_TO_ENACT:0 "Once enacted, this Law would change the current Government's Legitimacy by #variable $VAL|=+0$#!"
  LAW_BEING_ENACTED:0 "Being Enacted"
  ENACTING_TO_LAW: "Введення [Concept('concept_law', '$concept_law_gen$')|l] [GetPlayer.GetLawBeingEnacted.GetName]"
@@ -4940,8 +4940,8 @@
  LAW_ABOLITION_PREMIUM:0 "Premium from government resistance: #N #bold +$VAL$#!#!"
 
  SWITCHING_TO: "Реформа триває:"
- ACTIVE_LAWS_TITLE:0 "#title [Concept('concept_law', '$concept_laws$')]#!"
- ACTIVE_INSTITUTIONS_TITLE:0 "#title Institutions#!"
+ ACTIVE_LAWS_TITLE: "#title [Concept('concept_law', '$concept_laws$')]#!"
+ ACTIVE_INSTITUTIONS_TITLE: "#title Установи#!"
  REFORM: "Реформи"
 
  tariff_import_priority:1 "Protect Domestic Supply"
@@ -4994,7 +4994,7 @@
  TAXED_GOODS:0 "Currently Taxed [Concept('concept_good', '$concept_goods$')]: $GOODSDESC$"
  TAX_OR_EXPENSE_LEVEL_EFFECTS_HEADER:0 "#header Effects:#!"
  TAX_OR_EXPENSE_LEVEL_CURRENT: "#i #b (Поточний рівень)#!#!"
- GOVERNMENT_WAGES_LEVEL:0 "$GOVERNMENT_WAGES_LEVEL_HEADER$ $CURRENT$\n$TOOLTIP_DELIMITER$\n$TAX_OR_EXPENSE_LEVEL_EFFECTS_HEADER$"
+ GOVERNMENT_WAGES_LEVEL: "$GOVERNMENT_WAGES_LEVEL_HEADER$ $CURRENT$\n$TOOLTIP_DELIMITER$\n$TAX_OR_EXPENSE_LEVEL_EFFECTS_HEADER$"
  GOVERNMENT_WAGES_LEVEL_TITLE: "#title Зарплати урядовцям#!"
  GOVERNMENT_WAGES_LEVEL_HEADER: "#variable $EXPENSE_LEVEL$ зарплати урядовцям#!"
  GOVERNMENT_WAGES_WEEKLY_EXPENSES_CURRENT:0 "The average annual government wage of @money!$CURRENT_AVERAGE_ANNUAL_WAGE|v2$ costs @money!$CURRENT_WEEKLY_EXPENSES|vD$ weekly"
@@ -5817,8 +5817,8 @@
 
  CONSTRUCTION_POINTS: "Потребує $POINTS|0v$ @construction![concept_construction]"
  CONSTRUCTION_DURATION: "$WEEKS$ тижнів"
- CONSTRUCTION_DURATION_UNKNOWN:1 "Unknown"
- CONSTRUCTION_DURATION_PAUSED:0 "Paused"
+ CONSTRUCTION_DURATION_UNKNOWN: "Невідомо"
+ CONSTRUCTION_DURATION_PAUSED: "На павзі"
  CONSTRUCTION_CAMP:0 "Construction Camp"
  MOVE_UP: "#I Клацніть, щоб пересунути вгору по черзі#!\n#I ALT + Клац, щоб зробити першим в черзі#!"
  MOVE_DOWN: "#I Клацніть, щоб пересунути вниз по черзі#!\n#I ALT + Клац, щоб зробити останнім в черзі#!"
