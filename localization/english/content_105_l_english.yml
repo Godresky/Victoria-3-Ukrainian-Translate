@@ -106,11 +106,13 @@
  trade_route_events.4.f:0 ""My business associates abroad say I run my business with an iron fist. It may sound intimidating, but it is in fact a rather humiliating joke at my expense; they're looking to imply that I am getting rusty!""
  trade_route_events.4.a:0 "We will find a source of this vital material for the modern age."
  trade_route_events.4.b:0 "Their ambitions should first be to make steel, not use it."
- trade_route_events.5.t:0 "The Canvas of Ideas"
- trade_route_events.5.d:0 "The $ig_intelligentsia$ find it difficult to find the cheap $paper$ they need to immortalize their thoughts."
- trade_route_events.5.f:0 ""The only upside of this wretched state of affairs," the professor said with an exasperated sigh, "is that when someone says an idea is not worth the paper it's printed on, they at least mean it!""
- trade_route_events.5.a:0 "We will secure the pages of tomorrow's classics!"
- trade_route_events.5.b:0 "Learn brevity."
+
+ trade_route_events.5.t: "Полотно ідей"
+ trade_route_events.5.d: "$ig_intelligentsia$ важко знайти дешевий папір, який потрібний для увічнення своїх думок."
+ trade_route_events.5.f: "«Єдина перевага цього жалюгідного стану речей, — сказав професор, роздратовано зітхнувши, — полягає в тому, що коли хтось каже, що ідея не варта паперу, на якому вона надрукована, він принаймні має на увазі це!»"
+ trade_route_events.5.a: "Ми захистимо сторінки завтрашньої клясики!"
+ trade_route_events.5.b: "Навчіться стислости."
+
   # Trade Route Events: Journal Entries
  je_build_local_arms_industry:0 "Build Local Arms Industry"
  je_build_local_arms_industry_status:0 "Construct a domestic $building_arms_industry$."
@@ -121,14 +123,16 @@
  je_set_up_steel_import:0 "Set Up Steel Import"
  je_set_up_steel_import_status:0 "Start importing $steel$ to the capital."
  je_set_up_steel_import_reason:0 "At the request of the $ig_industrialists$, we have promised to import $steel$ to reduce steel prices for industrial purposes."
- je_set_up_paper_import:0 "Set Up Paper Import"
- je_set_up_paper_import_status:0 "Start importing $paper$ to the capital."
- je_set_up_paper_import_reason:0 "At the request of the $ig_intelligentsia$, we have promised to import $paper$ to reduce material costs for their literary ambitions."
+
+ je_set_up_paper_import: "Налаштувати ввіз паперу"
+ je_set_up_paper_import_status: "Почати ввіз паперу до столиці."
+ je_set_up_paper_import_reason: "На прохання розумоти ми пообіцяли ввозити папір для зменшення матеріяльних витрат на їхні літературні амбіції."
+
   # Trade Route Events: Modifiers
  ig_domestic_weapons_manufacturing:0 "Domestic Weapons Manufacturing"
  ig_unreliable_weapon_imports:0 "Unreliable Weapon Imports"
  ig_secured_desired_imports:0 "Secured Desired Imports"
- ig_refused_desired_imports:0 "Refused Desired Imports"
+ ig_refused_desired_imports: "Відмовлено в бажаному ввозі"
  modifier_researching_imported_weapons:0 "Researching Imported Weapons"
 
   # Manifest Destiny Decision

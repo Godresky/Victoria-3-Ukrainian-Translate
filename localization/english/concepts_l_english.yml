@@ -122,8 +122,8 @@
  concept_trade_route_competitiveness_short:0 "Competitiveness"
  concept_trade_route_competitiveness_desc:1 "If a [Concept('concept_market','$concept_market_possessive$')] pool of [Concept('concept_good','$concept_goods$')] available for [Concept('concept_trade_route','$concept_trade$')] is depleted due to too many $concept_trade$ partners, the $concept_trade_route_competitiveness_short$ of each competing $concept_trade_route$ determines how large a share they get access to. A $concept_trade_route$'s $concept_trade_route_competitiveness_short$ increases over time."
 
- concept_market_good_policy:0 "Market Good Policy"
- concept_market_good_policies:0 "Market Good Policies"
+ concept_market_good_policy: "Товарна політика ринку"
+ concept_market_good_policies: "Товарні політики ринку"
  concept_market_good_policy_short:0 "Policy"
  concept_market_good_policy_desc:3 "The [concept_market_owner] may set a $concept_market_good_policy$ for each [concept_good] in their [concept_market]. The default $concept_market_good_policy_short$ is #b $tariff_no_priority$#!, which collects [concept_tariffs] on both Imports and Exports at a $concept_tariff_rate$ according to the [Concept('concept_country','$concept_country_possessive$')] current [SelectLocalization(GetPlayer.IsValid,'concept_market_good_policy_desc_added','Trade Policy')] [concept_law].\n\n#b $tariff_import_priority$#! eliminates Import $concept_tariffs$ to encourage others to [Concept('concept_sell_orders','$concept_sell_order_short$')|l] to you, and to let your own Import [Concept('concept_trade_route','$concept_trade_routes$')] flourish at the expense of your [concept_treasury], while Export $concept_tariffs$ remain in effect to discourage those who might otherwise [Concept('concept_buy_orders','$concept_buy_order_short$')|l] up your supply.\n\n#b $tariff_export_priority$#! does the opposite: eliminates Export $concept_tariffs$ to encourage others to [Concept('concept_buy_orders','$concept_buy_order_short$')|l] from you, and to let your own Export [Concept('concept_trade_route','$concept_trade_routes$')] grow, while Import $concept_tariffs$ remain in effect to discourage other $concept_countries$ to [Concept('concept_sell_orders','$concept_sell_order_short$')|l] their $concept_goods$ in your $concept_market$."
  concept_market_good_policy_desc_added:0 "[GetLawGroup('lawgroup_trade_policy').GetName]"
@@ -1238,6 +1238,7 @@
 
  concept_religion: "Релігія"
  concept_religion_gen: "Релігії"
+ concept_religion_acc: "Релігію"
  concept_religions: "Релігії"
  concept_religion_desc:1 "All [Concept('concept_pop', '$concept_pops$')] have a $concept_religion$, which can only change through [concept_conversion]. Their $concept_religion$ determines whether they are [Concept('concept_discrimination','$concept_discriminated_against$')] in their [concept_country] or not."
 
@@ -1413,9 +1414,11 @@
  concept_budget_goods_for_military_buildings: "$concept_goods$ для військових будівель"
  concept_budget_goods_for_military_buildings_desc:1 "[Concept('concept_good','$concept_goods$')] [Concept('concept_good_consumption','$concept_good_consumed$')] by a [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_military_building','$concept_military_buildings$')]."
 
- concept_slavery:2 "Slavery"
- concept_slaves:1 "Slaves"
- concept_enslaved:2 "Enslaved"
+ concept_slavery: "Рабство"
+ concept_slaves: "Раби"
+ concept_enslaved: "Поневолений"
+ concept_enslaved_ins: "Поневоленим"
+ concept_enslaved_many: "Поневолені"
  concept_slavery_desc:3 "A practice where one person is permitted legal ownership over another. [SelectLocalization(GetPlayer.IsValid,'concept_slavery_desc_added', 'Slaves')] will be substituted for other [Concept('concept_pop','$concept_pops$')] in different [concept_building] types based on the [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_law','$concept_laws$')]. $concept_laws$ also determine how existing $concept_pops$ become $concept_enslaved$ and how $concept_slaves$ are uprooted and transported to the $concept_country$."
  concept_slavery_desc_added:0 "[GetPopType('slaves').GetName]"
 

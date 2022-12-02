@@ -38,9 +38,9 @@
  FRONTEND_AUTO_SAVE: "Гра буде збережена #high [GetAutosaveName]#!"
  FRONTEND_AUTO_SAVE_IRONMAN:  "Гра буде збережена як #high [GetAutosaveName]#!"
  FRONTEND_SWITCH_COUNTRY: "Змінити державу"
- FRONTEND_LOBBY_UNAVAILABLE_IRONMAN:0 "@warning! #X Multiplayer is unavailable in Ironman#!"
- FRONTEND_LOBBY_UNAVAILABLE_LOGIN:0 "@warning! #X Log in to your Paradox Account to play Multiplayer#!"
- FRONTEND_LOBBY_UNAVAILABLE_USERNAME:0 "@warning! #X You need to set a Username in order to play Multiplayer. You can do that in the Account Window.#!"
+ FRONTEND_LOBBY_UNAVAILABLE_IRONMAN: "@warning! #X Багатокор гра недоступна у режимі залізної волі.#!"
+ FRONTEND_LOBBY_UNAVAILABLE_LOGIN: "@warning! #X Увійдіть у свою обліковку парадокс, щоб грати в багатокор гру.#!"
+ FRONTEND_LOBBY_UNAVAILABLE_USERNAME: "@warning! #X Вам потрібно вказати прозивку, щоб грати в багатокор гру. Ви можете зробити це у вікні обліковки.#!"
  FRONTEND_LOGIN_PROMPT:0 "Open Login window"
  FRONTEND_OBSERVER_DESC:0 "Play as an Observer, seeing the game unfold without directly participating.\n\nOnce in the game, you can Control+click a Country to see the game from their perspective.\n\nYou can return to this lobby later if you want to play as a Country instead."
  # FRONTEND_SAVE_EXIT_TEXT is intentionally empty

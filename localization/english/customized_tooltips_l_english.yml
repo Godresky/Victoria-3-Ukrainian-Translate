@@ -129,7 +129,7 @@
  DATA_GOODS_USAGE_DESC:0 "[Goods.GetBuildingsProducingThisDesc][ConcatIfNeitherEmpty('\n', Goods.GetBuildingsUsingThisDesc)][ConcatIfNeitherEmpty('\n', Goods.GetBuyPackagesContainingThisDesc)]"
  DATA_IDEOLOGY_NAME_TOOLTIP:0 "[Ideology.GetLawStanceDesc]\n\n#lore [Ideology.GetDesc]#!"
  DATA_GAME_CONCEPT_TYPE_NAME_TOOLTIP:0 "[GameConceptType.GetDescNoFormatting]"
- DATA_INTEREST_GROUP_NAME_TOOLTIP:4 "[concept_clout]: #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_CLOUT_BREAKDOWN,IGCloutTooltip [InterestGroup.GetClout|%1]#!#![InterestGroup.GetInfluenceDesc]\n[AddLocalizationIf(InterestGroup.HasParty, 'PARTY_DESC')][Concept('concept_ideology', '$concept_ideologies$')]: [InterestGroup.GetIdeologyDesc]\n[concept_leader]: [InterestGroup.GetLeader.GetFullName] ([InterestGroup.GetLeaderIdeologyDesc])\n\n[concept_approval]: #tooltippable #tooltip:IG_APPROVAL_BREAKDOWN [InterestGroup.GetApprovalRating] #bold ([InterestGroup.GetApprovalValue|+=])#!#!#!\n[Concept('concept_interest_group_trait', '$concept_interest_group_traits$')]:\n[InterestGroup.GetTraitsDesc]\n\nPopulation: [InterestGroup.GetPopulation|Kv]\n[InterestGroup.GetSupportingPopTypesDesc][ConcatIfNeitherEmpty('\n\n',InterestGroup.GetPoliticalMovementDesc)]"
+ DATA_INTEREST_GROUP_NAME_TOOLTIP:4 "[concept_clout]: #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_CLOUT_BREAKDOWN,IGCloutTooltip [InterestGroup.GetClout|%1]#!#![InterestGroup.GetInfluenceDesc]\n[AddLocalizationIf(InterestGroup.HasParty, 'PARTY_DESC')][Concept('concept_ideology', '$concept_ideologies$')]: [InterestGroup.GetIdeologyDesc]\n[concept_leader]: [InterestGroup.GetLeader.GetFullName] ([InterestGroup.GetLeaderIdeologyDesc])\n\n[concept_approval]: #tooltippable #tooltip:IG_APPROVAL_BREAKDOWN [InterestGroup.GetApprovalRating] #bold ([InterestGroup.GetApprovalValue|+=])#!#!#!\n[Concept('concept_interest_group_trait', '$concept_interest_group_traits$')]:\n[InterestGroup.GetTraitsDesc]\n\nНаселення: [InterestGroup.GetPopulation|Kv]\n[InterestGroup.GetSupportingPopTypesDesc][ConcatIfNeitherEmpty('\n\n',InterestGroup.GetPoliticalMovementDesc)]"
  PARTY_DESC:0 "[concept_party]: [InterestGroup.GetParty.GetName]\n"
  DATA_PARTY_NAME_LEADER_TOOLTIP: "На чолі з [Party.GetLeader.GetLeader.GetFullName] ([Party.GetLeader.GetName]).\n[Party.GetMembersBreakdown]"
  DATA_PARTY_NAME_TOOLTIP:2 "[SelectLocalization( Party.GetLeader.IsValid, 'DATA_PARTY_NAME_LEADER_TOOLTIP', 'concept_party_desc' )]"
@@ -193,7 +193,7 @@
 
   # BREAKDOWNS
  COUNTRY_RANK_BREAKDOWN:0 "[Country.GetRankTooltip]"
- IG_CLOUT_BREAKDOWN:0 "#BOLD #V [concept_clout]#!#!\n$POL_STR_RATIO$\n$TOOLTIP_DELIMITER$\n$RAW_POL_STR$\n\nPopulation: #variable [InterestGroup.GetPopulation|D*]#!"
+ IG_CLOUT_BREAKDOWN: "#BOLD #V [concept_clout]#!#!\n$POL_STR_RATIO$\n$TOOLTIP_DELIMITER$\n$RAW_POL_STR$\n\nНаселення: #variable [InterestGroup.GetPopulation|D*]#!"
  IG_APPROVAL_BREAKDOWN:1 "#header [concept_approval]#!\nThe [InterestGroup.GetName]'s [concept_approval] is [InterestGroup.GetApprovalRating|v] (#bold [InterestGroup.GetApprovalValue|+=]#!)\n$TOOLTIP_DELIMITER$\n[InterestGroup.GetApprovalValueDesc]"
  IG_POL_STR_BREAKDOWN:0 "[InterestGroup.GetPoliticalStrengthDesc]"
  MARKET_BALANCE_BREAKDOWN:0 "[Market.GetBalanceDesc]"

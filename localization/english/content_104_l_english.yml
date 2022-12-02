@@ -320,11 +320,11 @@
  founded_fear:0 "Suppression Terror"
  founded_fear_legitimacy:0 "A Tranquil State"
 
- je_famine:0 "The Great Hunger"
- je_famine_reason:0 "A great crop failure has brought immeasurable suffering to our people, who beg for our government to take special measures in this matter."
- je_famine_goal:1 "Wait for the Famine to expire or raise the [concept_sol] in your nation by 3 points."
- je_major_famines_success:1 "Wait for the Famine to expire or raise the [concept_sol] in your nation by 3 points."
- natural_disaster_variable:0 "Has suffered a natural disaster"
+ je_famine: "Великий голод"
+ je_famine_reason: "Великий неврожай приніс незмірні страждання нашому народу, який благає наш уряд вжити особливих заходів щодо цієї біди."
+ je_famine_goal: "Зачекайте, поки голод закінчиться, або підніміть [concept_sol|l] у вашій державі на 3 бали."
+ je_major_famines_success: "Зачекайте, поки голод закінчиться, або підніміть [concept_sol|l] у вашій державі на 3 бали."
+ natural_disaster_variable: "Постраждав від стихійного лиха" #регіон
  
  natural_disaster_events.7.t:0 "The [SCOPE.sState('volcanic_state').GetName] Eruption"
  natural_disaster_events.7.d:0 "A violent eruption has shaken the state of [SCOPE.sState('volcanic_state').GetName]. Fragments of tephra and volcanic ash have destroyed buildings and crops, taking some of the lives of our people."

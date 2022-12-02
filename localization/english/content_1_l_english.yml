@@ -1375,25 +1375,30 @@
  je_peru_bolivia_goal:0 "Retain Peru as a subject for 10 years"
  dyn_c_peru_bolivia: "Перуано-болівійська конфедерація"
  dyn_c_peru_bolivia_adj: "Перуано-болівійськ"
- je_autocracy:0 "Religion, Autocracy, Nationality"
- je_autocracy_reason:1 "Our nation is defined by the absolute authority of our beloved ruler. We are one family, with one father and one fatherland; united and strong. If we wish to preserve these values, the Autocracy must be maintained."
- je_autocracy_goal:1 "The following must be true for 30 total years:"
+
+ je_autocracy: "Релігія, самодержавство, національність"
+ je_autocracy_reason:1 "Наша держава визначається абсолютним авторитетом нашого улюбленого правителя. Ми одна родина, у нас один батько та одна батьківщина. Ми згуртовані та сильні. Якщо ми хочемо зберегти ці цінності, самодержав‘я потрібно зберегти."
+ je_autocracy_goal: "Наступне має бути активним протягом 30 років:"
+
  autocracy.1.t:0 "Official Nationality"
  autocracy.1.d:0 "The state policy of Religion, Autocracy, and Nationality has become the ubiquitous ideology of the [ROOT.GetCountry.GetAdjective] people. There are few who dare to question the absolute authority of the [SCOPE.sCharacter('monarch_scope').GetPrimaryRoleTitle]."
  autocracy.1.f:0 ""In a state where love for [SCOPE.sCharacter('monarch_scope').GetPrimaryRoleTitle]s and devotion to the throne are based on the native characteristics of the people, where there are laws of the fatherland and firmness in administration, all efforts of the evil-intentioned will be in vain and insane."" # Tsar Nicholas I
  autocracy.1.a:0 "All hail the [SCOPE.sCharacter('monarch_scope').GetPrimaryRoleTitle]!"
  autocracy.1.b:0 "The [SCOPE.sCulture('primary_culture_scope').GetName] people are supreme."
  autocracy.1.c:0 "The [SCOPE.gsInterestGroup('church_scope').GetName] shows us the way."
+
  autocracy.2.t:0 "Secret Societies"
  autocracy.2.d:1 "Clandestine groups of academics in [SCOPE.sState('secret_societies_state').GetName] are plotting against the state to advance the misguided cause of the [SCOPE.gsInterestGroup('secret_society_ig').GetName]."
  autocracy.2.f:1 ""We have found your blasphemous and treasonous books. Your pamphlets. The shops you used to run as a front. Your houses. The meeting places you thought you had kept secret. We have set them all to flame. All that is left now is your confession.""
  autocracy.2.a:0 "Leave them be, they pose no threat."
  autocracy.2.b:0 "Dissent must be punished."
+
  autocracy.3.t:0 "Blessed are the Meek"
  autocracy.3.d:0 "The [SCOPE.gsInterestGroup('church_scope').GetName] in [SCOPE.sState('religious_serfs_state').GetName] are assuring [SCOPE.sPop('religious_serf_pop').GetName] that despite the harsh conditions of their lives, they are serving the greater good of the [ROOT.GetCountry.GetAdjective] nation. Serfs shall be rewarded in the hereafter for their service."
  autocracy.3.f:0 ""Blessed are the meek,\nfor they will inherit the earth,\nBlessed are those who hunger and thirst for righteousness\nfor they will be filled,\nBlessed are the merciful\nfor they will be shown mercy."" # Sermon on the Mount
  autocracy.3.a:0 "Imbue them with loyalty to the state."
  autocracy.3.b:0 "Absolve yourselves of impure thoughts."
+
  popular_autocrat:0 "Popular Autocrat"
  popular_autocrat_ig:0 "Favorites of the Autocracy"
  russification_modifier:0 "National Assimilation"
@@ -1402,6 +1407,7 @@
  suppressed_secret_societies:0 "Suppressed Secret Societies"
  loyal_religious_serfs:0 "Loyalty through Faith"
  less_radical_religious_serfs:0 "Cleansed of Impure Thoughts"
+
  generals.1.t:0 "Due a Promotion"
  generals.1.d:0 "The [SCOPE.gsInterestGroup('low_rank_general_ig').GetName] demand the promotion of [SCOPE.sCharacter('low_rank_general').GetRankName] [SCOPE.sCharacter('low_rank_general').GetFullName], touting [SCOPE.sCharacter('low_rank_general').GetHerHis] history of loyal and effective service."
  generals.1.f:1 "So many medals adorned [SCOPE.sCharacter('low_rank_general').GetHerHis] jacket that one could scarcely see the fabric beneath, but it was not yet enough. Chest puffed out with pride, the General smiled as [SCOPE.sCharacter('low_rank_general').GetSheHe] imagined the look on [SCOPE.sCharacter('high_rank_general').GetLastName]'s face when the [SCOPE.sCharacter('high_rank_general').GetRankName] learned of [SCOPE.sCharacter('low_rank_general').GetHerHis] imminent ascension; their rivalry was legendary among the officers.\n\nAt last [SCOPE.sCharacter('low_rank_general').GetSheHe] would have [SCOPE.sCharacter('low_rank_general').GetHerHis] due."
