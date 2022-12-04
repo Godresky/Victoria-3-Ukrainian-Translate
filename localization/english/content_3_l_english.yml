@@ -275,9 +275,9 @@
 
 ##################### Contextual Election Events
 
- election_contextual_events.1.t: "Голоса за гречку" # High Food Prices
+ election_contextual_events.1.t: "Голоси за гречку" # High Food Prices
  election_contextual_events.1.d: "Оскільки ціни на [SCOPE.sGoods('basic_foodstuff').GetName] стрімко зростають по всій державі, [SCOPE.sParty('high_food_price_party').GetName] перебуває під невпинним тиском з боку опозиції, яку звинувачують у безрозсудній грі з добробутом своїх громадян."
- election_contextual_events.1.f: ""Висока ціна [SCOPE.sGoods('basic_foodstuff').GetNameNoFormatting]? Брехня! У моїй молодості ми обходилися вдвічі меншим, ніж ви маєте зараз! Ці «захмарні» ціни на їжу — не що інше, як міркування істеричних домогосподарок!""
+ election_contextual_events.1.f: "«Висока ціна [SCOPE.sGoods('basic_foodstuff').GetNameNoFormatting]? Брехня! У моїй молодості ми обходилися вдвічі меншим, ніж ви маєте зараз! Ці «захмарні» ціни на їжу — не що інше, як міркування істеричних домогосподарок!»"
  election_contextual_events.1.a: "Тоді їм просто доведеться їсти щось інше!"
  election_contextual_events.1.b: "Фінансувати народні кухні. Ситий робить менше помилок."
  alms_for_the_poor: "Милостиня для нужденних"
@@ -291,7 +291,7 @@
 
  election_contextual_events.3.t: "Пацифіст засуджує війну" # Waging a War of Aggression
  election_contextual_events.3.d: "[SCOPE.sCharacter('pacifist_ig_leader').GetFullName], відомий пацифіст і провідник [SCOPE.gsInterestGroup('opposition_pacifist_ig').GetName], розпочав різку атаку на активну [SCOPE.sParty('government_war_party').GetName], стверджуючи, що війська [ROOT.GetCountry.GetAdjectiveNoFormatting] які брали участь у війні [SCOPE.sWar('pacifist_war').GetNameNoFormatting] під їхнім наглядом скоїли серйозні звірства."
- election_contextual_events.3.f: ""Ми... Я отримав наказ зібрати заручників, сер. Старі обличчя, молоді обличчя — деякі не старші мого власного сина. Наші лінії турбували так звані вільні стрільці. «Вбивцями» назвав їх мій командир. «Розбійники» зі злобою в серцях і рушницями в руках. Заручники мали їх стримати!\n\nBut після того, як того вечора впав третій солдат, командир сказав мені взяти заручників... він сказав завести їх у сарай... і... Господи, прости мене.""
+ election_contextual_events.3.f: "«Ми... Я отримав наказ зібрати заручників, сер. Старі обличчя, молоді обличчя — деякі не старші мого власного сина. Наші лінії турбували так звані вільні стрільці. «Вбивцями» назвав їх мій командир. «Розбійники» зі злобою в серцях і рушницями в руках. Заручники мали їх стримати!\n\nBut після того, як того вечора впав третій солдат, командир сказав мені взяти заручників... він сказав завести їх у сарай... і... Господи, прости мене.»"
  election_contextual_events.3.a: "Що зробили наші війська!? Кому!?"
  election_contextual_events.3.b: "Цікавий знімок. Нумо зацензуримо."
  election_contextual_events.3.c: "Цікавий знімок. Нумо зацензуримо."
@@ -419,7 +419,7 @@
  dyn_c_mataram_adj: "Матарамськ"
 
 ##################### Arabia
- yemenite:0 "Yemenite"
+ yemenite: "Єменець"
  dyn_c_qasimid_state: "Держава Касимідів"
  dyn_c_qasimid_state_adj: "Касимідськ"
 

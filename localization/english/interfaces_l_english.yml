@@ -5960,7 +5960,7 @@
  notification_naval_invasion_failed_tooltip:0 "#header $notification_naval_invasion_failed_name$#!\n$notification_naval_invasion_failed_desc$"
 
  notification_journal_entry_activated_name: "Новий [concept_journal_entry|l]: [SCOPE.GetRootScope.GetJournalEntry.GetName]"
- notification_journal_entry_activated_desc: "[Concept('concept_journal_entry', '$concept_journal_entry_short$')] [SCOPE.GetRootScope.GetJournalEntry.GetName] додано до часопису"
+ notification_journal_entry_activated_desc: "[Concept('concept_journal_entry', '$concept_journal_entry_short$')] «[SCOPE.GetRootScope.GetJournalEntry.GetName]» додано до часопису"
  notification_journal_entry_activated_tooltip:1 "#header $notification_journal_entry_activated_name$#!\n$notification_journal_entry_activated_desc$"
 
  notification_journal_entry_deactivated_name:0 "[SCOPE.GetRootScope.GetJournalEntry.GetName] Closed"
@@ -6127,7 +6127,7 @@
  BUILDING_KIND_USES_MILITARY_SLAVES:0 "Uses [concept_budget_military_slaves][SelectLocalization( ObjectsEqual(Country.Self, GetPlayer.Self), '', 'IN_COUNTRY' )]"
  BUILDING_KIND_USES_SLAVES:0 "Uses [POP_TYPE.GetName] as [TARGET_POP_TYPE.GetName][SelectLocalization( ObjectsEqual(Country.Self, GetPlayer.Self), '', 'IN_COUNTRY' )]"
  BUILDING_KIND_NON_GOVERNMENT:0 "[concept_building]"
- IN_COUNTRY:0 " in [Country.GetName]"
+ IN_COUNTRY: "У [Concept('concept_country', '$concept_country_loc$')|l] [Country.GetName]"
 
  BUILDING_STATUS_ESTABLISHED:0 "This building was established on [BUILDING.GetEstablishmentDate]"
  BUILDING_STATUS_UNDER_CONSTRUCTION:0 "This building is currently under construction"
@@ -6253,10 +6253,10 @@
  SELECT_ANY_COUNTRY: "Вибрати будь-яку державу"
  START_GAME: "Почати гру"
 
- HAS_SELECTED_COUNTRY_TOOLTIP:0 "A [concept_country] has already been selected"
- NO_SELECTED_COUNTRY_TOOLTIP:0 "No [concept_country] has been selected yet"
- START_ANY_COUNTRY_TOOLTIP:0 "Start a new game and pick any [concept_country] on the map"
- START_GAME_TOOLTIP:0 "Start a new game as #variable [CountryDefinition.GetName]#!"
+ HAS_SELECTED_COUNTRY_TOOLTIP: "[concept_country] вже вибрана"
+ NO_SELECTED_COUNTRY_TOOLTIP: "Невибрана ніяка [Concept('concept_country', '$concept_country_gen$')|l]"
+ START_ANY_COUNTRY_TOOLTIP: "Почніть нову гру та виберіть будь-яку [Concept('concept_country', '$concept_country_acc$')|l] на мапі"
+ START_GAME_TOOLTIP: "Почати гру за [Concept('concept_country', '$concept_country_acc$')|l] #variable [CountryDefinition.GetName]#!"
 
  SELECTABLE_COUNTRY_TOOLTIP: "#header [Country.GetName]#!\n$DATA_COUNTRY_NAME_TOOLTIP$\n\n#instruction Клацніть, щоб вибрати державу [Country.GetName]#!"
  RIGHT_CLICK_TO_OPEN_CONTEXT_MENU: "@rightclick! #instruction #bold Правий клац#!, щоб відкрити грясть#!"

@@ -25,7 +25,7 @@
  ACHIEVEMENTS_DISABLED_NO_HEADER: "#N Недоступні#!"
  GAME_RULE_BLOCKS_ACHIEVEMENTS: "Це правило гри вимикає досягнення"
  START_IRONMAN_SAVE: "Почати гру"
- IRONMAN_PAUSE_MENU_EXPLANATION: "Гра зберігається автоматично. Зміна держави заборонена, а режим спостерігача недоступний."
+ IRONMAN_PAUSE_MENU_EXPLANATION: "Гра зберігається самостійно. Зміна держави заборонена, а режим спостерігача недоступний."
  GAME_SETUP_IRONMAN_SINGLEPLAYER_ONLY: "У режимі залізної волі можна грати лише в одиночній грі"
  IRONMAN_PAUSE_MENU_TOOLTIP: "#T $IRONMAN_LABEL$ #!\n$IRONMAN_PAUSE_MENU_EXPLANATION$"
  ACHIEVEMENT_FILTER_ALL_TOOLTIP: "Показати повний перелік досягнень"
@@ -39,13 +39,13 @@
  ACHIEVEMENT_FILTER_BUTTON_UNLOCKED: "Здобуті"
  ACHIEVEMENT_FILTER_BUTTON_LOCKED: "Нездобуті"
  ACHIEVEMENT_FILTER_BUTTON_POSSIBLE: "Доступні"
- ACHIEVEMENT_FILTER_SHOW: "Показати досягення:"
+ ACHIEVEMENT_FILTER_SHOW: "Показати досягнення:"
   
   ## Rename difficulties?
- ACHIEVEMENT_GROUP_easy_group: "Легкі досягення"
- ACHIEVEMENT_GROUP_medium_group: "Середні досягення"
- ACHIEVEMENT_GROUP_hard_group: "Складні досягення"
- ACHIEVEMENT_GROUP_very_hard_group: "Дуже складні досягення"
+ ACHIEVEMENT_GROUP_easy_group: "Легкі досягнення"
+ ACHIEVEMENT_GROUP_medium_group: "Середні досягнення"
+ ACHIEVEMENT_GROUP_hard_group: "Складні досягнення"
+ ACHIEVEMENT_GROUP_very_hard_group: "Дуже складні досягнення"
   ## Test Achievement LOC (remove)
   ##ACHIEVEMENT_NEW_ACHIEVEMENT_1_0: "Its over 9000!"
   ##ACHIEVEMENT_NEW_ACHIEVEMENT_2_0: "Swedish Plutonium"
@@ -149,10 +149,10 @@
  own_all_andes_tt: "Заволодійте всіма регіонами в стратегічному регіоні Анди"
  own_all_la_plata_tt: "Заволодійте всіма регіонами в стратегічному регіоні Ла-Плата"
 
- ACHIEVEMENT_UNLOCKED: " Досягнення здобуте!"
- ACHIEVEMENT_LOCKED: " Досягнення нездобуте"
- ACHIEVEMENT_NOT_POSSIBLE: " Досягнення недоступні у цій грі"
- ACHIEVEMENTS: " Досягнення "
+ ACHIEVEMENT_UNLOCKED: "$ACHIEVEMENT_UNLOCKED_UA$"
+ ACHIEVEMENT_LOCKED: "$ACHIEVEMENT_LOCKED_UA$"
+ ACHIEVEMENT_NOT_POSSIBLE: "$ACHIEVEMENT_NOT_POSSIBLE_UA$"
+ ACHIEVEMENTS: "$ACHIEVEMENTS_UA$"
  ACHIEVEMENT_FILTER_POSSIBLE: "Показати доступні"
  ACHIEVEMENT_FILTER_NOT_POSSIBLE: "Показати недоступні"
  ACHIEVEMENT_FILTER_UNLOCKED: "Показати здобуті досягнення"
@@ -161,4 +161,10 @@
  ACHIEVEMENT_GROUP_TOOLTIP: "#V [Group.CalcNumberOfUnlockedVisibleAchievements]#! з #V [Group.GetNumberOfVisibleAchievements]#! здобуті у групі [Group.GetName|l]" #досягненнь(-я) 
  ACHIEVEMENT_FILTER_ALL: "Показати усі досягнення"
  ACHIEVEMENT_UNAVAILABLE_TT: "Не вдалося завантажити досягнення: перевірте підключення до всемережжя"
- ACHIEVEMENT_UNAVAILABLE_PLAZA_TT: "Не вдалося завантажити досягнення: увійдіть у Парадокс плазу"
+ ACHIEVEMENT_UNAVAILABLE_PLAZA_TT: "Не вдалося завантажити досягнення: увійдіть у парадокс плазу"
+
+#UA
+ ACHIEVEMENT_UNLOCKED_UA: "Досягнення здобуте!"
+ ACHIEVEMENT_LOCKED_UA: "Досягнення нездобуте"
+ ACHIEVEMENT_NOT_POSSIBLE_UA: "Досягнення недоступні у цій грі"
+ ACHIEVEMENTS_UA: "Досягнення"

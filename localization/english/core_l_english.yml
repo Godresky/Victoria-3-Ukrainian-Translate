@@ -54,9 +54,9 @@
  EMPTY_KEY:0 ""
  NOCONTEXT:0 "No Context"
 
- MP_UNKNOWN_PLAYER:0 "Unknown"
- GAME_STARTDATE:0 "[GetGameStartDate.GetString]"
- GAME_STARTDATE_DESC:0 "Smoke rises from the factories, concealing industrial progress under a layer of threatening dimness. With young Queen Victoria preparing for the throne of an ever-changing Britain, European powers face their brightest and darkest of times, empires are but a cough in the long breath of time.\n\nIt is a time of unparalleled exploration, of voracious curiosity, of hesitant greed. Political movements are born and spread, with socialism, liberalism and organized feminism placing the focus on human rights. Meanwhile, explorers all around the world race against time in the desperate pursuit of the last frontier."
+ MP_UNKNOWN_PLAYER: "Невідомий"
+ GAME_STARTDATE: "[GetGameStartDate.GetString]"
+ GAME_STARTDATE_DESC: "Над виробнями здіймається дим, зховавши промисловий поступ під шаром загрозливої темряви. З молодою королевою Вікторією, яка готується до трону Британії, що постійно змінюється, европейські держави стикаються зі своїми найяскравішими та найтемнішими часами, імперії – це лише кашель у довгому подиху часу.\n\nЦе час неперевершених досліджень, ненажерливої цікавости, нерішучої жадібности. Народжуються та поширюються політичні рухи, при цьому соціялізм, лібералізм та організований фемінізм приділяють увагу правам людини. Тим часом дослідники по всьому світу змагаються з часом у відчайдушній гонитві за останнім кордоном."
  MISSING_SAVE_GAME_FILE:0 "@warning! #X Missing Savegame#!"
 
  YOU_CANNOT_PLAY_AS_DECENTRALIZED:0 "You cannot play as a $decentralized_nation$"
