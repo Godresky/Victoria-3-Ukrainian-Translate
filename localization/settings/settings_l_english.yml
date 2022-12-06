@@ -63,6 +63,7 @@
  SETTINGS_CATEGORY_ADVANCED_GRAPHICS: "$SETTINGS_CATEGORY_ADVANCED_GRAPHICS_UA$"
  SETTINGS_CATEGORY_AUDIO_GENERAL: "$SETTINGS_CATEGORY_AUDIO_GENERAL_UA$"
  SETTINGS_CATEGORY_SFX: "$SETTINGS_CATEGORY_SFX_UA$"
+ SETTINGS_CATEGORY_MFX: "$SETTINGS_CATEGORY_MFX_UA$Music"
  SETTINGS_CATEGORY_LANGUAGE: "$SETTINGS_CATEGORY_LANGUAGE_UA$"
  SETTINGS_CATEGORY_SAVE_GAMES: "$SETTINGS_CATEGORY_SAVE_GAMES_UA$"
  SETTINGS_CATEGORY_TOOLTIPS: "$SETTINGS_CATEGORY_TOOLTIPS_UA$"
@@ -71,12 +72,20 @@
  SETTING_SHADER_QUALITY_TOOLTIP:1 "#T Shader Quality\n#!Determines the quality of various shaders and effects.\n\n#T High:#! Improves quality of some shader effects at the cost of performance.\n\n#T Medium:#! Default setting for the intended graphical experience.\n\n#T Low:#! This setting is made for low-end machines and is not recommended due to the loss in visual quality. Multiple shaders are simplified to push graphical performance."
  SETTING_SHOW_NUDITY:0 "Show nudity"
  SETTING_SHOW_NUDITY_TOOLTIP:0 "#T $SETTING_SHOW_NUDITY$#!\nSets whether characters can be shown nude."
- SETTINGS_CATEGORY_GAME_PORTRAITS: "Портрети"
+ SETTINGS_CATEGORY_GAME_PORTRAITS: "$SETTINGS_CATEGORY_GAME_PORTRAITS_UA$"
+ SETTING_SOUNDTRACK:0 "Background Music"
+ SETTING_SOUNDTRACK_TOOLTIP:0 "General background music"
+ SETTING_MUSIC_STINGERS:0 "Music Stingers"
+ SETTING_MUSIC_STINGERS_TOOLTIP:0 "Short musical phrases to enhance gameplay"
+
   # Audio - These are copies of clausewitz keys due to case sensitivity
  SETTING_MUSIC: "Музика"
  SETTING_AMBIENT: "Ембієнт"
  SETTING_MUSIC_TOOLTIP:0 "#T Music Volume\n#!Sets the volume of the music."
  SETTING_AMBIENT_TOOLTIP:0 "#T Ambient Volume\n#!Sets the volume of environmental ambience."
+ 
+ SETTING_MAP_TOOLTIP_DELAY:0 "Map Tooltip Delay"
+ SETTING_MAP_TOOLTIP_DELAY_TOOLTIP:0 "#T $SETTING_MAP_TOOLTIP_DELAY$#!\nSets the delay before the map tooltip is shown."
 
  color_blind_mode_test:0 "Test"
 
@@ -98,10 +107,12 @@
  SETTINGS_CATEGORY_CONTROLS_UA: "Управління"
  SETTINGS_CATEGORY_ADVANCED_GRAPHICS_UA: "Просунуті"
  SETTINGS_CATEGORY_AUDIO_GENERAL_UA: "Загальні"
- SETTINGS_CATEGORY_SFX_UA: "Спеціяльні звукові ефекти"
+ SETTINGS_CATEGORY_SFX_UA: "Звукові ефекти"
+ SETTINGS_CATEGORY_MFX_UA: "Музика"
  SETTINGS_CATEGORY_LANGUAGE_UA: "Мова"
  SETTINGS_CATEGORY_SAVE_GAMES_UA: "Збереження гри"
  SETTINGS_CATEGORY_TOOLTIPS_UA: "Параметри підказок"
  SETTINGS_CATEGORY_MAP_CONTROLS_UA: "Керування мапою"
+ SETTINGS_CATEGORY_GAME_PORTRAITS_UA: "Портрети"
 
  SETTING_SHADER_QUALITY_UA: "Якість шейдерів"

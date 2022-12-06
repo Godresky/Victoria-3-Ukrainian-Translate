@@ -30,4 +30,4 @@
  PLAYER_OBSERVER:1 "[Concept('concept_observer_mode','$concept_observing$')] as [GetPlayer.GetShortUINameNotMeNoTooltip] ([SelectLocalization(GetPlayer.IsPlayer, 'OBSERVER_PLAYER_NAME', 'OBSERVER_AI')])"
  OBSERVER_PLAYER_NAME: "Грає [GetPlayer.PlayerName]"
  OBSERVER_AI: "ШІ"
- SORT_BY: "Сортувати за: "
+ SORT_BY: "Хухрити за: "

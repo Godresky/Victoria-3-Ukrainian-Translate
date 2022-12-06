@@ -422,7 +422,7 @@
  
  congo_free_state_events.3.t:0 "Alarming Population Decline"
  congo_free_state_events.3.d:0 "Both missionaries and laymen have expressed their deepest concern about the increasing number of deaths in the [SCOPE.sCountry('free_state').GetNameNoFlag]."
- congo_free_state_events.3.f:0 ""It's everything at this point. It's the illnesses, the starvation, the war, the bad water. Oh, it's always the war, isn't it? It's the officiers. Aren't all the other things the officiers too? And, above all, it's the [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle].""
+ congo_free_state_events.3.f:0 ""It's everything at this point. It's the illnesses, the starvation, the war, the bad water. Oh, it's always the war, isn't it? It's the officers. Aren't all the other things the officers too? And, above all, it's the [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle].""
  congo_free_state_events.3.a:0 "We cannot go against the rule of the [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle]."
  congo_free_state_events.3.b:0 "This is a massacre! The world must know!"
  congo_massacre_mortality_modifier:0 "Free State Massacre"
@@ -451,7 +451,7 @@
  congo_free_state_events.5.t:0 "Free State Question"
  congo_free_state_events.5.d:2 "After the disappearance of the monarchy, it has become clear that the [SCOPE.sCountry('free_state').GetNameNoFlag] is a relic of the past. We could reintegrate the state now following a new direction under the [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle]."
  congo_free_state_events.5.d2:0 "International opinion of the [SCOPE.sCountry('free_state').GetNameNoFlag] has turned very sour after its atrocities have been revealed. We could reintegrate the state now with very little push back from the [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle]."
- congo_free_state_events.5.f:1 ""It is terrifying to even think that something like this could happen. Deaths and massacres and famines. All in the name of profit ⁠— and joy. Officiers competing over who's the most brutal one, exhibiting the marks on the locals like war trophies.\n\nThey have trespassed all laws of mankind. Intruders from the deepest of hells whose even association with humanity is an affront to us all.""
+ congo_free_state_events.5.f:1 ""It is terrifying to even think that something like this could happen. Deaths and massacres and famines. All in the name of profit ⁠— and joy. Officers competing over who's the most brutal one, exhibiting the marks on the locals like war trophies.\n\nThey have trespassed all laws of mankind. Intruders from the deepest of hells whose even association with humanity is an affront to us all.""
  congo_free_state_events.5.f2:0 "That all of this has happened under the approval of the [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle] is blatantly ridiculous. To think that a [SCOPE.sCharacter('free_state_monarch').GetManWoman] can own a whole nation like [SCOPE.sCharacter('free_state_monarch').GetSheHe] owns a house in the countryside is our deepest and most ludicrous error.\n\nDeaths and massacres and famines. All in the name of personal profit — and morbid joy."
  congo_free_state_events.5.a:0 "We will integrate the state."
  congo_free_state_events.5.b:0 "Perhaps it is time for it to be a truly 'Free' state."
@@ -511,7 +511,7 @@
  banned_duels_tt: "Дуелі будуть заборонені у вашій державі."
 
  character_events.4.t: "Побожний скандал"
- character_events.4.d: "Було виявлено, що [SCOPE.sCharacter('devout_scandal').GetFullName] з [Concept('concept_interest_group','$concept_interest_group_gen$')|l] [SCOPE.sCharacter('devout_scandal').GetInterestGroup.GetName] мав таємний зв’язок із представником духовенства. Тепер усі вимагають [SCOPE.sCharacter('devout_scandal').GetHerHis] відставки."
+ character_events.4.d: "Було виявлено, що [SCOPE.sCharacter('devout_scandal').GetFullName] з [Concept('concept_interest_group','$concept_interest_group_gen$')|l] [SCOPE.sCharacter('devout_scandal').GetInterestGroup.GetName] мав таємний зв’язок із представником духовенства. Тепер усі вимагають [SCOPE.sCharacter('devout_scandal').GetHerHis|U] відставки."
  character_events.4.f: "«Сам факт того, що цей підступний виродок думав, що [SCOPE.sCharacter('devout_scandal').GetSheHe] міг уникнути покарання за таке грубе зловживання владою. Ця ситуація показує про те, що з керівництвом [Concept('concept_interest_group','$concept_interest_group_gen$')|l] [SCOPE.sCharacter('devout_scandal').GetInterestGroup.GetNameNoFormatting] щось не так.»"
  character_events.4.a: "Змусити [SCOPE.sCharacter('devout_scandal').GetHerHis] піти у відставку."
  character_events.4.b: "Ігнорувати це."
@@ -676,7 +676,7 @@
 
  nursing_events.1.t:0 "Disease Among the Wounded"
  nursing_events.1.d:0 "The deaths from disease amongst the wounded soldiers has skyrocketed."
- nursing_events.1.f:0 ""Imagine a quart, you know how much a quart is right? No? Well picture two cups of tea, now imagine instead of tea they're full of maggots. Thats how many we pulled out of this one poor fella after he was left to fester.""
+ nursing_events.1.f:0 ""Imagine a quart, you know how much a quart is right? No? Well picture two cups of tea, now imagine instead of tea they're full of maggots. That's how many we pulled out of this one poor fella after he was left to fester.""
  nursing_events.1.a:0 "This is troubling."
  nursing_events.1.b:0 "Offload some of the strain to the civilian medical sector."
 

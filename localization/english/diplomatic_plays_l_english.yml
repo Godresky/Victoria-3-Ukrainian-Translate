@@ -79,7 +79,7 @@
  WARGOAL_NOT_SOLE_UNIFICATION_CANDIDATE:1 " [Country.GetName] must be the only [concept_unification_candidate] for [CountryFormation.GetName]"
  WARGOAL_COUNTRY_HAS_SLAVERY:1 " [COUNTRY.GetName] practices some form of [concept_slavery]"
  WARGOAL_COUNTRY_NO_SLAVERY:1 " [COUNTRY.GetName] does not practice [concept_slavery] in any form"
- WARGOAL_COUNTRY_HAS_LAW:0 "[COUNTRY.GetName] has enacted# [LAW_TYPE.GetName]!#!"
+ WARGOAL_COUNTRY_HAS_LAW:1 "[COUNTRY.GetName] has enacted [LAW_TYPE.GetName]"
  WARGOAL_COUNTRY_HAS_NOT_LAW:0 " [COUNTRY.GetName] have #b not#! enacted [LAW_TYPE.GetName]"
  WARGOAL_STAKEHOLDER_DOES_NOT_EXIST:1 " This [concept_war_goal] does not have a valid stakeholder!"
  WARGOAL_TARGET_DOES_NOT_OWN_STATE:1 " #variable $COUNTRY_NAME$#! does not own #variable $STATE_NAME$#!"
@@ -382,7 +382,7 @@
  war_goal_independence_type_desc:0 "Force your suzerain to grant independence to your country."
  war_goal_independence: "Незалежність"
  war_goal_independence_desc:0 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetWarGoalStakeholder.GetName] to grant independence to [WAR_GOAL.GetHolder.GetName]."
- war_goal_independence_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to grant them independece."
+ war_goal_independence_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to grant them independence."
   
  war_goal_liberate_subject_type_name: "Звільнення підвладного"
  war_goal_liberate_subject_type_desc:1 "Force a country to grant independence to one of its [Concept('concept_subject', '$concept_subjects$')]."
@@ -405,9 +405,9 @@
  war_goal_transfer_subject_type_name: "Передача підвладного"
  war_goal_transfer_subject_type_desc:0 "Make ourselves the Suzerain of one of their subjects."
  war_goal_transfer_subject:0 "Transfer [WAR_GOAL.GetTarget.GetName]"
- war_goal_transfer_subject_desc:0 "Transfer the Suzertainty of [WAR_GOAL.GetTarget.GetName] to [WAR_GOAL.GetHolder.GetName]."
- war_goal_transfer_subject_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to transfer them the Suzertainty of [WAR_GOAL.GetTarget.GetName]"
-   
+ war_goal_transfer_subject_desc:0 "Transfer the Suzerainty of [WAR_GOAL.GetTarget.GetName] to [WAR_GOAL.GetHolder.GetName]."
+ war_goal_transfer_subject_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to transfer them the Suzerainty of [WAR_GOAL.GetTarget.GetName]"
+
  war_goal_make_puppet_type_name: "Перетворення на ляльку"
  war_goal_make_puppet_type_desc:1 "Force another country to become a [concept_puppet]."
  war_goal_make_puppet:0 "Puppet [WAR_GOAL.GetTarget.GetName]"
