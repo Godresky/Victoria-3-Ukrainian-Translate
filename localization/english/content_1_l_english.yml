@@ -1161,7 +1161,7 @@
  je_dual_monarchy: "Угорське питання"
  je_dual_monarchy_reason: "Угорський націоналізм зростає з кожним днем та їх еліти проводять рухи, щоб отримати більше представництво в уряді. Якщо ми дозволимо цим рухам стати надто потужними, можливо, нам доведеться піти на незручний компроміс."
  austria_hungary_tt:0 "Country will become known as Austria-Hungary"
- ideology_austrian_hegemony:0 "Austrian Hegemonists"
+ ideology_austrian_hegemony: "Австрійські геґемоністи"
  ideology_austrian_hegemony_desc:0 "#lore This group believes that Austrians alone should form the social and political elite of the country."
  austrian_aristocracy: "Австрійські вельможі"
  dual_monarchy_compromise:0 "Austro-Hungarian Compromise"

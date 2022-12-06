@@ -214,7 +214,7 @@
  custom_strangled:0 "the killer strangles each of them as they sleep, then they're discovered the next morning."
  custom_stabbed:0 "stabbed hundreds of times, until they're almost unrecognizable."
 
- ACTIVE_LAWS_DESC:0 "Your country's current active laws."
+ ACTIVE_LAWS_DESC: "Чинні закони вашої держави."
  Decentralized_Power: "Decentralized Power"
  decentralized_power: "[Concept('concept_decentralized_nation', '$concept_decentralized_power$')]"
 
