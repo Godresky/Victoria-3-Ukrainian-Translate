@@ -163,20 +163,20 @@
 
   # Government Principles group
  lawgroup_governance_principles: "Принципи управління"
- lawgroup_governance_principles_desc:0 "The foundational principles and authority by which your country is governed. Determines who the Head of State is."
+ lawgroup_governance_principles_desc:0 "Ґрунтовні принципи управління державою. Визначає ким є голова держави."
   
  law_chiefdom: "Вождівство"
  law_chiefdom_desc:0 "A hierarchical pre-industrial political system based on kinship, with a warlord or elder of a prominent family at the head. It is incapable of efficient centralized control over entire states."
  law_monarchy: "Монархія"
- law_monarchy_desc:0 "A form of governance where an aristocratic dynasty represents the country's national identity and yields executive powers to the royal head of the dynasty."
+ law_monarchy_desc:0 "Тип правління, при якому шляхецька династія відображає національну ідентичність держави і передає виконавчу владу в руки голови династії."
  law_presidential_republic: "Президентська республіка"
- law_presidential_republic_desc:0 "A political system where power is held by the people and their elected representatives. Republics have an elected or nominated $RULER_TITLE_PRESIDENT$ as Head of State."
+ law_presidential_republic_desc:0 "Політична система, при якій влада знаходиться в руках людей та їхніх представників. Головою держави є номінований, або обраний $RULER_TITLE_PRESIDENT$."
  law_parliamentary_republic: "Парламентська республіка"
- law_parliamentary_republic_desc:0 "A political system where power is held by the people and their elected representatives. The leader of the legislature acts as the Head of State and is referred to as $RULER_TITLE_CHANCELLOR$."
+ law_parliamentary_republic_desc:0 "Політична система, при якій влада знаходиться в руках людей та їхніх представників. Голова держави та висунення законодавчих актів називається $RULER_TITLE_CHANCELLOR$."
  law_theocracy: "Боговладдя"
- law_theocracy_desc:0 "The government is ruled by a clergy and their interpretation of holy scripture. The Head of State is nominally the person of worship, though in practice a worldly representative selected by merit, status, or birth."
+ law_theocracy_desc:0 "Урядом править духовенство та їх інтерпретація святого письма. Голова держави номінально являється суб'єктом поклоніння, хоча фактично є світським представником, вибраним через свої досягнення, статус, або за фактом народження."
  law_council_republic: "Рада республіки"
- law_council_republic_desc:0 "A political system where workers elect delegates to local councils. Extends concepts of workplace organization to general governance."
+ law_council_republic_desc:0 "Політична система, при якій робітники вибирають делегатів у місцеві ради. Розширює концепт робітничої організації до загального управління державою."
   
   # Free speech group
  lawgroup_free_speech: "Свобода слова"
@@ -206,24 +206,24 @@
   
   # Distribution of Power group
  lawgroup_distribution_of_power: "Розподіл влади"
- lawgroup_distribution_of_power_desc:0 "How political power is distributed. Determines who the Head of State is accountable to."
+ lawgroup_distribution_of_power_desc:0 "Яким чином розподілена політична влада. Визначає з ким повинен рахуватися голова держави."
   
  law_autocracy: "Самодержавство"
- law_autocracy_desc:0 "The Head of State's power is absolute and they are held accountable to no earthly power."
+ law_autocracy_desc:0 "Голова держави має абсолютну владу та нікому не підпорядковується."
  law_oligarchy: "Олігархія"
- law_oligarchy_desc:1 "The Head of State shares power and responsibility with a small group of powerful, unelected individuals."
+ law_oligarchy_desc:1 "Голова держави ділить владу та відповідальність разом із малою групою впливових людей."
  law_landed_voting: "Голосують землевласники"
- law_landed_voting_desc:0 "Those who own land or capital property are given a vote."
+ law_landed_voting_desc:0 "Ті хто мають в своєму володінні земельну власність мають право на голос."
  law_wealth_voting: "Голосують багаті"
- law_wealth_voting_desc:1 "Wealthy citizens are granted a vote. Men of more wealth are granted more votes."
+ law_wealth_voting_desc:1 "Багаті громадяни мають право на голос. Голоси багатших громадян мають більший вплив."
  law_census_voting: "Майновий ценз"
- law_census_voting_desc:0 "Literate men of particular status is given a vote."
+ law_census_voting_desc:0 "Грамотні люди певного соціального статусу мають право на голос."
  law_universal_suffrage: "Загальне виборче право"
- law_universal_suffrage_desc:0 "Every adult man is given an equal vote."
+ law_universal_suffrage_desc:0 "Кожен дорослий чоловік має право на рівний голос з іншими виборцями."
  law_elder_council: "Старшинська рада"
- law_elder_council_desc:0 "The most venerated men have a say in the nation's governance."
+ law_elder_council_desc:0 "Найбільш поважні з чоловіків мають право висказатися в державі."
  law_anarchy: "Безвладдя"
- law_anarchy_desc:1 "Local communities govern their own affairs and send representatives to serve limited terms on larger cooperative councils. With no formal hierarchies central authority is difficult to exercise."
+ law_anarchy_desc:1 "Місцеві громади керуються самостійно, при тому посилаючи своїх представників у ради на обмежений термін. Без формальної ієрархії ніхто в державі не має великого авторитету."
   
   # Voting System group
  law_first_past_the_post:0 "First Past The Post"
