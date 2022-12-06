@@ -10,7 +10,7 @@
  IRONMAN_DISABLED_NO_HEADER: "Вимкнута"
  BOOKMARK_IRONMAN_ENABLED: "Режим залізної волі"
  BOOKMARK_IRONMAN_DISABLED: "Режим залізної волі"
- ACHIEVEMENTS_LABEL: "Досягнення"
+ ACHIEVEMENTS_LABEL: "Досягення"
  ACHIEVEMENTS_EXPLANATION: "#indent_newline:2 Досягнення можна здобути, лише якщо:\n$EFFECT_LIST_BULLET$Ви граєте в одиночну гру\n$EFFECT_LIST_BULLET$Ви НЕ граєте з правилами гри, які блокують досягнення\n$EFFECT_LIST_BULLET$Ви НЕ граєте у режимі спостерігача"
  ACHIEVEMENTS_ENABLED: "#T Досягнення доступні#!\nНаразі досягнення можна здобути під час проходження.\n\n$ACHIEVEMENTS_EXPLANATION$"
  ACHIEVEMENTS_DISABLED: "#T Досягнення недоступні#!\nНаразі досягнення неможливо здобути під час проходження.\n\n$ACHIEVEMENTS_EXPLANATION$"
@@ -149,10 +149,10 @@
  own_all_andes_tt: "Заволодійте всіма регіонами в стратегічному регіоні Анди"
  own_all_la_plata_tt: "Заволодійте всіма регіонами в стратегічному регіоні Ла-Плата"
 
- ACHIEVEMENT_UNLOCKED: "$ACHIEVEMENT_UNLOCKED_UA$"
- ACHIEVEMENT_LOCKED: "$ACHIEVEMENT_LOCKED_UA$"
- ACHIEVEMENT_NOT_POSSIBLE: "$ACHIEVEMENT_NOT_POSSIBLE_UA$"
- ACHIEVEMENTS: "$ACHIEVEMENTS_UA$"
+ ACHIEVEMENT_UNLOCKED: "Досягнення здобуте!"
+ ACHIEVEMENT_LOCKED: "Досягнення нездобуте"
+ ACHIEVEMENT_NOT_POSSIBLE: "Досягнення недоступні у цій грі"
+ ACHIEVEMENTS: "Досягення"
  ACHIEVEMENT_FILTER_POSSIBLE: "Показати доступні"
  ACHIEVEMENT_FILTER_NOT_POSSIBLE: "Показати недоступні"
  ACHIEVEMENT_FILTER_UNLOCKED: "Показати здобуті досягнення"
@@ -162,9 +162,3 @@
  ACHIEVEMENT_FILTER_ALL: "Показати усі досягнення"
  ACHIEVEMENT_UNAVAILABLE_TT: "Не вдалося завантажити досягнення: перевірте підключення до всемережжя"
  ACHIEVEMENT_UNAVAILABLE_PLAZA_TT: "Не вдалося завантажити досягнення: увійдіть у парадокс плазу"
-
-#UA
- ACHIEVEMENT_UNLOCKED_UA: "Досягнення здобуте!"
- ACHIEVEMENT_LOCKED_UA: "Досягнення нездобуте"
- ACHIEVEMENT_NOT_POSSIBLE_UA: "Досягнення недоступні у цій грі"
- ACHIEVEMENTS_UA: "Досягнення"

@@ -246,9 +246,11 @@
  concept_mobilize_battalion_desc:2 "[Concept('concept_battalion', '$concept_battalions$')] assigned to a [Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized$')] [concept_general] immediately start $concept_mobilize_battalion_mobilizing$ at a rate based on the [concept_infrastructure] of their [concept_state]. $concept_mobilize_battalion_mobilized$ and $concept_mobilize_battalion_mobilizing$ [Concept('concept_battalion', '$concept_battalions$')] consume more [Concept('concept_military_good','$concept_military_goods$')] but are fully prepared to follow their [concept_general] into [concept_battle]."
 
  concept_fully_mobilized_battalions: "Повністю призвані батальйони"
+ concept_fully_mobilized_battalions_gen: "Повністю призваних батальйонів"
  concept_fully_mobilized_battalions_desc:0 "A [Concept('concept_country','$concept_country_possessive$')] fully mobilized [Concept('concept_battalion','$concept_battalions$')] include all $concept_battalions$ that have already undergone [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilization$')] and are fully prepared to follow their [concept_general] into [concept_battle]."
 
  concept_available_battalions: "Доступні батальйони"
+ concept_available_battalions_gen: "Доступних батальйонів"
  concept_available_battalions_desc:2 "A [Concept('concept_country','$concept_country_possessive$')] available [Concept('concept_battalion','$concept_battalions$')] include all $concept_battalions$ currently raised by [SelectLocalization(GetPlayer.IsValid,'concept_available_battalions_desc_added','barracks')] and/or [Concept('concept_conscription_center','$concept_conscription_centers$')]."
  concept_available_battalions_desc_added:0 "[GetBuildingType('building_barracks').GetName]"
 
@@ -540,8 +542,8 @@
  concept_voting: "Голосування"
  concept_votes_desc:1 "Your [Concept('concept_law', '$concept_laws$')] determine whether any given [concept_pop] gets to cast a $concept_vote$, and if so, how much [concept_political_strength] that $vote$ will count for. $concept_votes$ are cast for [Concept('concept_party','$concept_parties$')] during [concept_election] periods. $concept_pops$ will tend to vote for the $concept_party$ their [concept_interest_group] belongs to, but may be won over by another $concept_party$ with greater [concept_momentum]. After the $concept_election$ date, the number of total $concept_votes$ each $concept_party$ received will be fixed until the next $concept_election$, and will increase the [concept_clout] of any $concept_interest_groups$ that are members of the $concept_party$."
  
- concept_clout: "Вплив"
- concept_clout_gen: "Впливу"
+ concept_clout: "Сила"
+ concept_clout_gen: "Сили"
  concept_clout_desc:1 "An [Concept('concept_interest_group','$concept_interest_group_possessive$')] share of the total [concept_political_strength] that [Concept('concept_pop', '$concept_pops$')] across their [concept_country] generate. $concept_clout$ is the final word on how influential an $concept_interest_group$ is, and affects everything from [concept_legitimacy] and [concept_enactment_of_laws] if the $concept_interest_group$ is [concept_in_government], to [concept_political_movement_support] and [Concept('concept_political_movement_radicalism','$concept_political_movement_radicalism_short$')] if it is [concept_in_opposition]. It also affects whether the $concept_interest_group$ is considered [concept_powerful], [concept_influential], or [concept_marginalized]."
 
  concept_powerful: "Потужний"
@@ -635,10 +637,10 @@
  concept_casualties_acc: "Втрати"
  concept_casualties_desc:0 "[concept_manpower] who fall in battle or through [concept_attrition] are considered $concept_casualties$. A proportion of $concept_casualties$ are killed outright while the remainder are [concept_wounded]. This ratio is dependent on the [Concept('concept_unit','$concept_unit_possessive$')] [concept_recovery_rate] compared to their enemy's [concept_kill_rate]."
 
- concept_offense:0 "Offense"
+ concept_offense: "Атака"
  concept_offense_desc:0 "A [Concept('concept_unit','$concept_unit_possessive$')] fighting ability in [concept_battle] while advancing into enemy territory."
 
- concept_defense:0 "Defense"
+ concept_defense: "Захист"
  concept_defense_desc:0 "A [Concept('concept_unit','$concept_unit_possessive$')] fighting ability in [concept_battle] while defending from enemy incursions."
 
  concept_battalion: "Батальйон"
@@ -1117,9 +1119,9 @@
  concept_obligated: "Вязиний"
  concept_obligation_desc:1 "One [concept_country] can become $concept_obligated$ to another as a result of agreements made during [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] or when one $concept_country$ buys out another's [concept_loans]. While $concept_obligated$ to a $concept_country$ you are unable to start $concept_diplomatic_plays$ against them or even join a $concept_diplomatic_play_short$ on the other side as them. The other $concept_country$ may use an $concept_obligation$ they hold over you to force you into a [concept_diplomatic_pact], or may absolve it to [concept_sway] you into supporting them in a $concept_diplomatic_play$ or increase [concept_relations] with you."
 
- concept_secession:0 "Secession"
- concept_secessions:0 "Secessions"
- concept_secessionist:0 "Secessionist"
+ concept_secession: "Сецесія"
+ concept_secessions: "Сецесія"
+ concept_secessionist: "Сепаратист"
  concept_secession_desc:4 "A $concept_secession$ is the result of excessive [concept_cultural_turmoil] in a [concept_country] that controls any of that [Concept('concept_culture','$concept_culture_possessive$')] [Concept('concept_homeland','$concept_homelands$')]. If $concept_cultural_turmoil$ in a $concept_country$ exceeds [GetDefine( 'NPolitics', 'SECESSION_TURMOIL_CUTOFF')|v0], $concept_secessionist$ [Concept('concept_pop','$concept_pops$')] may begin an uprising. Once complete, the $concept_homelands$ will separate from the rest of the $concept_country$, which will automatically start a [concept_diplomatic_play] to return them to the fold.\n\nYou can stop a $concept_secessionist$ uprising by reducing [concept_turmoil] among $concept_pops$ of that $concept_culture$ in your $concept_country$, and you can slow it down using the [SelectLocalization(GetPlayer.IsValid,'concept_secession_desc_added','Home Affairs')] [concept_institution]."
  concept_secession_desc_added:0 "[GetInstitutionType('institution_home_affairs').GetName]"
 

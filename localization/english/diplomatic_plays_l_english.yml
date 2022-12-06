@@ -160,7 +160,7 @@
  WAR_PEACE_ALREADY_WHITE_PEACE:0 "Our proposed [concept_peace_deal] is already White Peace"
  WAR_PEACE_PROPOSAL_COOLDOWN:0 "We must wait until #v $DATE$#! to propose another [concept_peace_deal]"
  WAR_PEACE_MUST_PRESS_INDEPENDENCE:0 "$COUNTRY_NAME$ #bold does not agree#! to a [concept_peace_deal] that prevents its independence."
- WAR_NAME_FORMAT_DEFAULT:0 "$INITIATOR$ vs. $TARGET$"
+ WAR_NAME_FORMAT_DEFAULT: "$INITIATOR$ vs $TARGET$"
   
  dp_open_market: "$war_goal_open_market_type_name$"
  dp_open_market_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_open_market$#!\n$TOOLTIP_DELIMITER$\n$dp_open_market_desc$"
