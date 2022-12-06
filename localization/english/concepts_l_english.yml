@@ -1724,7 +1724,7 @@
  concept_suppress_desc_added:0 "[GetLawGroup('lawgroup_free_speech').GetName]"
 
  concept_bolster: "Підтримати"
- concept_bolstered: "Підтриматі"
+ concept_bolstered: "Підтримані"
  concept_bolsters: "Підтримати"
  concept_bolstering: "Підтримання"
  concept_bolster_desc:0 "A $concept_bolstered$ [concept_interest_group] is more attractive for [Concept('concept_pop','$concept_pops$')] to support. Your base $concept_bolstering$ ability is determined by your [SelectLocalization(GetPlayer.IsValid,'concept_bolster_desc_added','Free Speech')] [concept_law]. $concept_bolstering$ $concept_interest_groups$ costs [concept_authority]."
