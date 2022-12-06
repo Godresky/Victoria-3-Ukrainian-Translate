@@ -50,7 +50,7 @@
   ##ACHIEVEMENT_NEW_ACHIEVEMENT_1_0: "Its over 9000!"
   ##ACHIEVEMENT_NEW_ACHIEVEMENT_2_0: "Swedish Plutonium"
   ## Test Achievement Desc (remove)
-  ##ACHIEVEMENT_DESC_NEW_ACHIEVEMENT_1_0: "Have atleast 9000 cash reserves"
+  ##ACHIEVEMENT_DESC_NEW_ACHIEVEMENT_1_0: "Have at least 9000 cash reserves"
   ##ACHIEVEMENT_DESC_NEW_ACHIEVEMENT_2_0: "As Sweden, own Sjaelland and Denmark must not exist"
   
  ACHIEVEMENT_peccavi: "Я згрішив"
@@ -133,7 +133,7 @@
  ACHIEVEMENT_DESC_enlightened_despot: "Майте електричні вуличні ліхтарі в усіх регіонах, доки Ви є самодержав'ям"
  ACHIEVEMENT_DESC_mightier_than_the_sword: "Змусьте іншу сторону відступити в дипломатичній грі"
  ACHIEVEMENT_DESC_revolutionary: "Перейдіть на бік революціонерів у громадянській війні та виграйте цей конфлікт"
- ACHIEVEMENT_DESC_reading_campaign: "Почавши за націю з менш ніж 20% грамотности та дійдіть до 100%"
+ ACHIEVEMENT_DESC_reading_campaign: "Почавши за націю з менш ніж 20% грамотности та дійдіть до 95%"
  ACHIEVEMENT_DESC_we_are_not_amused: "Почавши за Велику Британію, виженіть французьких дипломатів, маючи приємні або кращі стосунки"
  ACHIEVEMENT_DESC_institutional: "Ваша установа має максимальний рівень інвестицій"
  ACHIEVEMENT_DESC_poppydock: "Майте корабельню принаймні 8 рівня і вивозіть щонайменше 2500 одиниць опіюму на зовнішні ринки"

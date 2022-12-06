@@ -22,7 +22,7 @@
  ig_armed_forces_desc:0 "Professional soldiers and others whose interest are tied strongly to the country's military."
  ig_trade_unions: "Профспілки"
  ig_trade_unions_only_icon: "@trade_unions!"
- ig_trade_unions_desc:0 "Organized labor seeking to organise workers in the mines, factories and fields and in so doing pool the strengths of the disparate interests into one voice."
+ ig_trade_unions_desc:0 "Organized labor seeking to organize workers in the mines, factories and fields and in so doing pool the strengths of the disparate interests into one voice."
 
   # Religious IGs
  ig_catholic_church: "Католицька церква"
@@ -34,7 +34,7 @@
  ig_anglican_church: "Англіканська церква"
  ig_anglican_church_desc:0 "The Anglican Church was created by King Henry VIII during the Protestant Reformation. Anglicans believe that the Bible is the main authority on Christian dogma, rejecting the Pope while being less radical than other Evangelical churches."
  ig_evangelical_church: "Євангельська церква"
- ig_evangelical_church_desc:0 "The Evangelical churches were created mostly in Northern Europe during the Protestant Reformation. Evangelicals believe that the Bible is the sole authority on Christian dogma, rejecting the Pope and seeing the Catholic veneration of the saints as bordering on idolotry."
+ ig_evangelical_church_desc:0 "The Evangelical churches were created mostly in Northern Europe during the Protestant Reformation. Evangelicals believe that the Bible is the sole authority on Christian dogma, rejecting the Pope and seeing the Catholic veneration of the saints as bordering on idolatry."
  ig_rabbinical_council: "Рабинська рада"
  ig_rabbinical_council_desc:0 "The leadership of a country's Jewish populace tend to be well-educated Rabbis with strong traditions of debate and scholarship."
  ig_sunni_madrasahs: "Сунітський Улем"
@@ -42,13 +42,13 @@
  ig_shia_madrasahs: "Шиїтський Улем"
  ig_shia_madrasahs_desc:1 "Shi'ism is the second largest sect of Islam. Believers hold that Muhammad was succeeded as Caliph of Islam by his son-in-law, Ali, as opposed to the Sunni view that his uncle Abu Bakr was the legitimate successor."
  ig_hindu_priesthood: "Індуїстське духовенство"
- ig_hindu_priesthood_desc:0 "Probably the oldest organised religion still in existence, Hinduism holds that breaking the cycle of reincarnation and achieving Nirvana requires adherence to a caste system whereby individuals serve a role to improve their karma, just as the many gods worshipped by Hindus serve different roles."
+ ig_hindu_priesthood_desc:0 "Probably the oldest organized religion still in existence, Hinduism holds that breaking the cycle of reincarnation and achieving Nirvana requires adherence to a caste system whereby individuals serve a role to improve their karma, just as the many gods worshiped by Hindus serve different roles."
  ig_sikh_priesthood: "Сикхcьке духовенство"
  ig_sikh_priesthood_desc:0 "A relatively young religion, founded in the 16th century in Punjab, Sikhism is a monotheistic faith holding that worldly pursuits are distractions from the oneness of God."
  ig_vajrayana_monks: "Ваджраянові ченці"
- ig_vajrayana_monks_desc:0 "Vajrayana Buddhism is strongest in Tibet and Mongolia. It emphasises the use of meditation and self-discipline."
+ ig_vajrayana_monks_desc:0 "Vajrayana Buddhism is strongest in Tibet and Mongolia. It emphasizes the use of meditation and self-discipline."
  ig_mahayana_monks: "Магаянові ченці"
- ig_mahayana_monks_desc:0 "Mahayana Buddhism is strongest in China, Vietnam and Korea. It emphasises that everyone in society should be encouraged to seek enlightenment through perfection. Mahayana sees Buddha as a God-like figure."
+ ig_mahayana_monks_desc:0 "Mahayana Buddhism is strongest in China, Vietnam and Korea. It emphasizes that everyone in society should be encouraged to seek enlightenment through perfection. Mahayana sees Buddha as a God-like figure."
  ig_theravada_monks: "Тгеравадові ченці"
  ig_theravada_monks_desc:0 "Theravada Buddhism is strongest in Burma, Siam, Cambodia and Ceylon. It places great emphasis on individuals seeking Nirvana to break the cycle of reincarnation. Theravada sees Buddha not as a God, but as an enlightened man who showed the rest of mankind the path to perfection."
  ig_shinto_monks: "Синтоїські ченці"
@@ -60,17 +60,17 @@
  ig_fleet_street: "Фліт-стріт"
  ig_fleet_street_desc:0 "A region in the Square Mile of London where the country's newspapers are written and printed. Journalists operating from Fleet Street are known to be tenacious muckrakers who will let little stand in their way of a story."
  ig_east_india_company: "Ост-Індійська компанія"
- ig_east_india_company_desc:0 "The East India Company is a vast corporation owned by British investors. It operates private armies to protect its interests in the colonies, growing tea for the home market and opium to trade for Chinese silver. It trains British officers in how to suppress native rebellions and Princely nobles in how to act in a civilised manner."
+ ig_east_india_company_desc:0 "The East India Company is a vast corporation owned by British investors. It operates private armies to protect its interests in the colonies, growing tea for the home market and opium to trade for Chinese silver. It trains British officers in how to suppress native rebellions and Princely nobles in how to act in a civilized manner."
  ig_landed_gentry: "Поміщицька шляхта"
  ig_landed_gentry_desc:0 "The owners of great estates and vast properties, the landed gentry are custodians of tradition and old money."
 
   # Prussian IGs
  ig_junkers: "Юнкери"
- ig_junkers_desc:0 "Descended from the 'jung herrs' (young lords) who followed in the wake of Teutonic conquests of the pagan Baltic to settle and Christianise the Prussian lands, the Junkers are Prussia's nobility and major landlords. They tend to oppose movements towards democracy as a threat to elite rule."
+ ig_junkers_desc:0 "Descended from the 'jung herrs' (young lords) who followed in the wake of Teutonic conquests of the pagan Baltic to settle and Christianize the Prussian lands, the Junkers are Prussia's nobility and major landlords. They tend to oppose movements towards democracy as a threat to elite rule."
  ig_junker_landowners: "Юнкери-землевласники"
  ig_junker_landowners_desc:0 "Descended from the 'jung herrs' (young lords) who followed in the wake of Teutonic conquests of the pagan Baltic to settle and Christianise the Prussian lands, the Junkers are Prussia's nobility and major landlords. Even as Prussia moves towards an ostensibly more constitutional system, they retain power thanks to systems of agricultural subsidies and their domination of the bureaucracy and senior military positions."
  ig_junker_industrialists: "Юнкери-промисловці"
- ig_junker_industrialists_desc:0 "Descended from the 'jung herrs' (young lords) who followed in the wake of Teutonic conquests of the pagan Baltic to settle and Christianise the Prussian lands, the Junkers are Prussia's nobility and major landlords. The wealth they have extracted from rents on their tenants and the connexions they have forged within the court has also allowed them to seize the role as Prussia's industrialists, located especially in the Rheinland."
+ ig_junker_industrialists_desc:0 "Descended from the 'jung herrs' (young lords) who followed in the wake of Teutonic conquests of the pagan Baltic to settle and Christianize the Prussian lands, the Junkers are Prussia's nobility and major landlords. The wealth they have extracted from rents on their tenants and the connections they have forged within the court has also allowed them to seize the role as Prussia's industrialists, located especially in the Rheinland."
   
   # Spanish IGs
  ig_carlists: "Карлісти"
@@ -88,11 +88,11 @@
  ig_railway_tycoons: "Залізничні магнати"
  ig_railway_tycoons_desc:0 "The railway interests are a major driver in America's push to the West. Backers from the East Coast and Europe invest in new lines which will open up new markets. These markets may need to be created from scratch amongst the mines, forests and vast prairies."
  ig_evangelicals: "Євангелісти"
- ig_evangelicals_desc:0 "Ardent Christians from a suprisingly wide variety of Protestant denominations, the Evanglicals all agree that the nation needs to find its own spiritual awakening in order to save itself."
+ ig_evangelicals_desc:0 "Ardent Christians from a surprisingly wide variety of Protestant denominations, the Evangelicals all agree that the nation needs to find its own spiritual awakening in order to save itself."
 
   # Turkey IGs
- ig_imperial_harem: "Харем-і Хумаюн"
- ig_imperial_harem_desc:0 "The imperial household has a reputation for decadent oppulence thanks to the overactive imaginations of European artists. It is the mainstay of the Sultan's power in the court, consisting of family, advisors, servants, and assorted hangers-on. Loyalists to the imperial household tend to support policies of centralisation and modernisation."
+ ig_imperial_harem: "Гарем-і Хумаюн"
+ ig_imperial_harem_desc:0 "The imperial household has a reputation for decadent opulence thanks to the overactive imaginations of European artists. It is the mainstay of the Sultan's power in the court, consisting of family, advisors, servants, and assorted hangers-on. Loyalists to the imperial household tend to support policies of centralization and modernization."
  ig_local_governors: "Місцеві губернатори"
  ig_local_governors_desc:0 "The rulers of the provinces can acquire huge influence by building up local patronage networks. Dynasties can become so powerful they are effectively independent states only nominally tied to the empire."
 
@@ -104,7 +104,7 @@
 
   # Austrian IGs
  ig_centralisers: "Централізатори"
- ig_centralisers_desc:0 "The Centraliser faction of the Austrian empire see technological and economic modernisation as the most vital factors in preserving the state against revolution and invasion. They tend to be drawn from cultures already incorporated into the machinery of the state."
+ ig_centralisers_desc:0 "The Centralizer faction of the Austrian empire see technological and economic modernization as the most vital factors in preserving the state against revolution and invasion. They tend to be drawn from cultures already incorporated into the machinery of the state."
  ig_federalists: "Федералісти"
  ig_federalists_desc:0 "The Federalist faction of the Austrian empire demand recognition of traditional rights and obligations of national minorities within the empire. By lifting minority groups up to equal status with the German leadership, the empire will become more powerful as internal tensions dissipate."
 

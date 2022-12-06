@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  ai_secret_goal_befriend:0 "Befriend"
  ai_secret_goal_befriend_desc:0 "Befriend [TARGET_COUNTRY.GetName]"
  ai_secret_goal_reconcile:0 "Reconcile"

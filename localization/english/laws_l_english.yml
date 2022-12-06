@@ -262,7 +262,7 @@
  law_slavery_banned: "Рабство заборонене"
  law_slavery_banned_desc:0 "No human being may be owned by another."
  law_debt_slavery: "Довгове рабство"
- law_debt_slavery_desc:0 "Those who cannot clear their debts instead forefeits their person as their creditor's property."
+ law_debt_slavery_desc: "Держава не робить особливих спроб зупинити заворушення чи повстання."
  law_slave_trade: "Работоргівля"
  law_slave_trade_desc:0 "Demand for cheap labor is fulfilled through a dehumanizing trade in foreign bodies."
  law_legacy_slavery: "Спадкове рабство"
@@ -410,7 +410,7 @@
  lawgroup_bureaucracy_desc:0 "How your country is administered."
 
  law_hereditary_bureaucrats: "Спадкові бюрократи"
- law_hereditary_bureaucrats_desc:0 "Bureacrats hold their position through traditional inheritance, passing on the responsiblities to their children."
+ law_hereditary_bureaucrats_desc: "Бюрократи утримують свою посаду через спадковість та передають обов’язки своїм дітям."
  law_appointed_bureaucrats: "Призначені бюрократи"
  law_appointed_bureaucrats_desc:0 "Bureacrats are appointed by rulers to serve the country's best interests in exchange for high wages."
  law_meritocratic_bureaucracy: "Гідні бюрократи"

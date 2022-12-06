@@ -69,7 +69,5 @@
  SAVE_TO_CLOUD_LABEL: "Зберегти в хмару"
  FILE_NAME_INVALID: "@warning!#X Недоступна назва для збереження#! "
  CLOUDSAVE_QUOTA_EXCEEDED_TOOLTIP:0 "Cloud save storage quota exceeded. Try to free some space by removing older cloud save files."
-
-# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  EFFECT_LIST_BULLET: "• "
  GAME_CHECKSUM_CHANGED_FROM_SAVE_FILE: "@warning! #X Недійсна контрсума досягнення#!\nЦей запис дійсний для досягнень, які створюють іншу контрсуму. Його завантаження призведе до вимкнення досягнень у збереженій грі."
