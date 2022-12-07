@@ -812,7 +812,6 @@
 
  education_laws.2.t: "Дисципліна та покарання"
  education_laws.2.d: "[SCOPE.gsInterestGroup('armed_forces_ig').GetName] порушили питання при обговоренні нової реформи. Вони вважають, що завдяки [Concept('concept_law', '$concept_law_gen$')|l] про [SCOPE.sLaw('current_law_scope').GetName] учень повинен не лише вчитися, а йому мають прищеплювати сувору дисципліну."
- education_laws.2.f: ""This is not merely about keeping an orderly classroom so that knowledge can be imparted; it is about imparting character. After all, we have been given an enormous responsibility by the parents of these children, who do all they can to raise them as upstanding citizens. Too often, we find boys joining the military service whose character has already been almost irrevocably ruined by an unruly youth and a lack of respect for authority. It needn't be so!""
  education_laws.2.f: "«Йдеться не лише про підтримання порядку в класі, щоб можна було передавати знання, це й про надання характеру. Адже батьками цих дітей на нас покладена величезна відповідальність, які роблять усе можливе, щоб виховати їх чесними громадянами. Дуже часто ми зустрічаємо хлопців, які приходять на військову службу, чий характер уже майже безповоротно зіпсований некерованою молодістю та браком поваги до авторитету. Так не повинно бути!»"
  education_laws.2.a: "Ми повинні зосередитися на навчальній програмі."
  education_laws.2.b: "Впровадження цього в шкільну систему має першочергове значення."
