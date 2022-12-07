@@ -1,5 +1,5 @@
 ﻿l_english:
- SET_CHARACTER_EFFECT: "#V $CHARACTER|v$#! приєдняється до #V $COMMAND$#! команди"
+ SET_CHARACTER_EFFECT: "#V $CHARACTER|v$#! приєднається до #V $COMMAND$#! команди"
  SET_CHARACTER_NONE_EFFECT: "Персонаж з #V $COMMAND$ не призначено"
 
  ADD_TREASURY_EFFECT_POSITIVE: "Держава отримає @money!$VALUE|+=$"

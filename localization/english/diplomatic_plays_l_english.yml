@@ -342,9 +342,9 @@
  war_goal_war_reparations_desc:1 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to pay #variable 10%#! of their tax income in [concept_war_reparations] for 5 years."
  war_goal_war_reparations_sway_desc:1 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to pay them #variable 10%#! of their tax income in [concept_war_reparations] for 5 years."
  
- war_goal_unification_leadership_type_name: "Відник об'єднання"
+ war_goal_unification_leadership_type_name: "Відник об’єднання"
  war_goal_unification_leadership_type_desc:0 "Force another country to renounce their ambitions to unify a nation."
- war_goal_unification_leadership:0 "[WAR_GOAL.GetCountryFormation.GetAdjective] Leadership"
+ war_goal_unification_leadership: "[WAR_GOAL.GetCountryFormation.GetAdjective]е провідництво"
  war_goal_unification_leadership_desc:0 "Force [WAR_GOAL.GetTarget.GetName] to renounce their ambitions to unify [WAR_GOAL.GetCountryFormation.GetName]"
  war_goal_unification_leadership_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetTarget.GetName] to renounce their ambitions to unify [WAR_GOAL.GetCountryFormation.GetName]"
  

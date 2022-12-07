@@ -185,6 +185,7 @@
  concept_diplomatic_play_acc: "Дипломатичну гру"
  concept_diplomatic_play_short: "Гра"
  concept_diplomatic_play_short_gen: "Гри"
+ concept_diplomatic_play_short_acc: "Гру"
  concept_diplomatic_plays: "Дипломатичні ігри"
  concept_diplomatic_plays_gen: "Дипломатичних ігор"
  concept_diplomatic_plays_short: "Ігри"
@@ -530,6 +531,7 @@
 
  concept_state_region: "Державний регіон"
  concept_state_regions: "Державні регіони"
+ concept_state_regions_gen: "Державних регіонів"
  concept_state_region_desc:3 "A part of the world corresponding with a certain fixed set of [Concept('concept_province', '$concept_provinces$')]. A $concept_state_region$ is usually equivalent to a [concept_state]. In certain cases a $concept_state_region$ can become a [concept_split_state], where two or more [Concept('concept_country','$concept_countries$')] each hold a $concept_state$ in the same $concept_state_region$."
 
  concept_occupancy:0 "Occupancy"
@@ -594,6 +596,8 @@
  concept_country_dat: "Державі"
  concept_country_ins: "Державою"
  concept_country_loc: "Державі"
+
+ concept_country_adj: "Державн"
 
  concept_countries: "Держави"
  concept_countries_gen: "Держав"
@@ -1681,15 +1685,17 @@
  concept_recognized_power_short:0 "Recognized"
  concept_recognized_power_desc:1 "A $concept_recognized_power$ is considered a valid nation-state capable of self-determination by consensus of the [Concept('concept_great_power','$concept_great_powers$')], which sets them apart from [Concept('concept_unrecognized_power','$concept_unrecognized_powers$')]."
 
- concept_unification_supporter:0 "Unification Supporter"
- concept_unification_supporters:0 "Unification Supporters"
- concept_unification_support:0 "Support"
- concept_unification_supporting:0 "Supporting"
+ concept_unification_supporter: "Прихильник об'єднання"
+ concept_unification_supporters: "Прихильники об'єднання"
+ concept_unification_suppor_noun: "Підтримка"
+ concept_unification_support: "Підтримати"
+ concept_unification_no_support: "Підтримувати"
+ concept_unification_supporting: "Підтримання"
  concept_unification_supporter_desc:1 "A $concept_unification_supporter$ is a [concept_country] that favors a particular [concept_unification_candidate]. Should the unification be successful, the $concept_unification_supporter$ will become a part of the union."
 
- concept_unification_candidate:0 "Unification Candidate"
- concept_unification_candidate_short:0 "Candidate"
- concept_unification_candidates:0 "Unification Candidates"
+ concept_unification_candidate:0 "Кандидат на об‘єднання"
+ concept_unification_candidate_short:0 "Кандидат"
+ concept_unification_candidates:0 "Кандидати на об‘єднання"
  concept_unification_candidate_desc:1 "A $concept_unification_candidate$ is a [concept_country] considered a viable candidate for unification. The conditions for who qualifies as a $concept_unification_candidate$ varies depending on which unified nation it is. "
 
  concept_unification: "Об‘єднання держави"

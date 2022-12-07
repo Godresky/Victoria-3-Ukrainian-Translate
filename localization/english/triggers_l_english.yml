@@ -107,8 +107,8 @@
  
  TRIGGER_HAS_TECHNOLOGY_RESEARCHED:0 "Has researched [TECHNOLOGY.GetName] technology"
  TRIGGER_HAS_TECHNOLOGY_RESEARCHED_NOT:1 "Has #bold not #!researched [TECHNOLOGY.GetName] technology"
- TRIGGER_HAS_TECHNOLOGY_RESEARCHED_FIRST:0 "[COUNTRY.GetNameNoFlag] has researched [TECHNOLOGY.GetName]"
- TRIGGER_HAS_TECHNOLOGY_RESEARCHED_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] has #bold not #!researched [TECHNOLOGY.GetName]"
+ TRIGGER_HAS_TECHNOLOGY_RESEARCHED_FIRST: "[COUNTRY.GetNameNoFlag] дослідила технологію «[TECHNOLOGY.GetName]»"
+ TRIGGER_HAS_TECHNOLOGY_RESEARCHED_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold не #!дослідила технологію «[TECHNOLOGY.GetName]»"
  TRIGGER_HAS_TECHNOLOGY_RESEARCHED_THIRD:0 "[TECHNOLOGY.GetName] has been researched by [COUNTRY.GetName]"
  TRIGGER_HAS_TECHNOLOGY_RESEARCHED_THIRD_NOT:1 "[TECHNOLOGY.GetName] has #bold not #!been researched by [COUNTRY.GetName]"
  
