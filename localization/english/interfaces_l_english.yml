@@ -1623,7 +1623,7 @@
  COMMA_SPACED: ", "
  MAP_INFO: "#header Мапа#!\n$TOOLTIP_DELIMITER$\nНатисніть та утримуйте #bold Tab#!, щоб повністю зменшити масштаб. Відпустивши її, ви повернетеся до попереднього рівня масштабування."
  MAP_INFO_MAP_MODE_LOCKED: "$MAP_INFO$\n\n#instruction Клацніть, щоб зняти вибраний режим мапи.#!"
- LOCATION_FINDER: "#header Ськання місцин#!"
+ LOCATION_FINDER: "#header Шукання місцин#!"
  ZOOM_TO_BUILDING_STATE: "Приблизити до [Building.AccessState.GetName]"
  ZOOM_TO_EVENT_WINDOW_STATE: "Приблизити до [EventWindow.GetEvent.GetState.GetName]"
  ZOOM_TO_COUNTRY_CAPITAL: "Приблизити до [Concept('concept_capital_state','$concept_capital_state_gen$')|l] [Concept('concept_country','$concept_country_gen$')|l] [Country.AccessCapital.GetName]"
