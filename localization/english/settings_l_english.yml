@@ -69,7 +69,7 @@
  SETTINGS_CATEGORY_TOOLTIPS: "$SETTINGS_CATEGORY_TOOLTIPS_UA$"
  SETTINGS_CATEGORY_MAP_CONTROLS: "$SETTINGS_CATEGORY_MAP_CONTROLS_UA$"
  SETTING_SHADER_QUALITY: "$SETTING_SHADER_QUALITY_UA$"
- SETTING_SHADER_QUALITY_TOOLTIP: "#T $SETTING_SHADER_QUALITY$#!\nВизначає якість різних шейдерів і ефектів.\n\n#T Висока:#! Покращує якість деяких шейдерних ефектів за рахунок продуктивності.\n\n#T Середня:#! Налаштування за замовчуванням.\n\n#T Низька:#! Цей параметр призначений для компів низького класу та не рекомендований через втрату візуальної якості. Кілька шейдерів спрощено для підвищення графічної продуктивності."
+ SETTING_SHADER_QUALITY_TOOLTIP: "#T $SETTING_SHADER_QUALITY$#!\nВизначає якість різних шейдерів і ефектів.\n\n#T Високі:#! Покращує якість деяких шейдерних ефектів за рахунок продуктивності.\n\n#T Середні:#! Налаштування за замовчуванням.\n\n#T Низькі:#! Цей параметр призначений для компів низького класу та не рекомендований через втрату візуальної якости. Кілька шейдерів спрощено для підвищення графічної продуктивності."
  SETTING_SHOW_NUDITY: "Показати наготу"
  SETTING_SHOW_NUDITY_TOOLTIP: "#T $SETTING_SHOW_NUDITY$#!\nВстановлює, чи можна показувати наготу."
  SETTINGS_CATEGORY_GAME_PORTRAITS: "$SETTINGS_CATEGORY_GAME_PORTRAITS_UA$"
@@ -85,7 +85,7 @@
  SETTING_AMBIENT_TOOLTIP: "#T Гучність ембієнту\n#!Встановлює гучність навколишнього середовища."
 
  SETTING_MAP_TOOLTIP_DELAY: "Затримка підказки мапи"
- SETTING_MAP_TOOLTIP_DELAY_TOOLTIP: "#T $SETTING_MAP_TOOLTIP_DELAY$#!\nВстановлює затримку перед показом підказки карти."
+ SETTING_MAP_TOOLTIP_DELAY_TOOLTIP: "#T $SETTING_MAP_TOOLTIP_DELAY$#!\nВстановлює затримку перед показом підказки мапи."
 
  color_blind_mode_test: "Тест"
 

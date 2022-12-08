@@ -1,5 +1,5 @@
 ﻿l_english:
  SETTING_VALUE_WARNING: "$VALUE|0X$"
  SETTING_VALUE_PERCENTAGE_WARNING: "$VALUE|%0X$"
- RECOMMENDED_GUI_SCALE_TOO_HIGH: "#X Scaling above $VALUE|%0$ призведе до появи інтерфейсів поза екраном#!"
- RECOMMENDED_GUI_SCALE: "Scaling above $VALUE|%0$ призведе до появи інтерфейсів поза екраном"
+ RECOMMENDED_GUI_SCALE_TOO_HIGH: "#X Через масштабування вище $VALUE|%0$ інтерфейс буде поза екраном#!"
+ RECOMMENDED_GUI_SCALE: "Через масштабування вище $VALUE|%0$ інтерфейс буде поза екраном"
