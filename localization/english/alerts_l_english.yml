@@ -172,6 +172,10 @@ alert_stockpiling_gold_alert_name: "[GetGoods('gold').GetTextIcon] [GetGoods('go
  alert_expensive_military_goods_alert_hint:1 "$alert_expensive_goods_alert_hint_common$"
  alert_expensive_military_goods_alert_action:0 "Goods Panel for [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] on the [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]"
 
+ alert_has_army_troops_in_reserve_alert_name:1 "[GetPlayer.GetBattalionsInReserve|0] @battalions! [Concept('concept_battalion', '$concept_battalions$')] [concept_in_reserve]"
+ alert_has_army_troops_in_reserve_alert_hint:3 "Promote existing [Concept('concept_general', '$concept_generals$')] in order to give them higher [concept_command_limit], which can be done on the details panel for that $concept_general$ (or by right-clicking the $concept_general$). You can also assign $concept_battalions$ by recruiting more $concept_generals$, which can be done on the Army tab in the #b Military#! panel or through the [concept_military_lens].\n\nHowever, promoting a $concept_general$ is usually recommended over recruiting more."
+ alert_has_army_troops_in_reserve_alert_action:0 "Military Panel"
+
  alert_has_navy_troops_in_reserve_alert_name:1 "[GetPlayer.GetWarshipsInReserve|0] @flotillas! [Concept('concept_flotilla', '$concept_flotillas$')] [concept_in_reserve]"
  alert_has_navy_troops_in_reserve_alert_hint:3 "Promote existing [Concept('concept_admiral', '$concept_admirals$')] in order to give them higher [concept_command_limit], which can be done on the details panel for that $concept_admiral$ (or by right-clicking the $concept_admiral$). You can also assign $concept_flotillas$ by recruiting more $concept_admirals$, which can be done on the Navy tab in the #b Military#! panel or through the [concept_military_lens].\n\nHowever, promoting an $concept_admiral$ is usually recommended over recruiting more."
  alert_has_navy_troops_in_reserve_alert_action:0 "Military Panel"

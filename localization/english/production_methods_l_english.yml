@@ -66,7 +66,6 @@
  pm_free_urban_clergy: "Вільні церкви"
 
 pm_automation_disabled: "Ручна збірка"
-pm_automation_disabled: "Ручна збірка"
 pm_steam_power: "Парова потужність"
 pm_disabled_steam_power: "Без парової потужності"
  
@@ -625,8 +624,8 @@ pm_steam_rail_transport: "Залізниця"
  pmg_secondary_vessels: "Вторинні судини"
  
  pmg_military_base: "Військова база"
- pmg_lightbulbs_category: "Лампочки"
- pm_best_lightbulbs: "Покращенні лампочки"
+ pmg_lightbulbs_category: "Лямпочки"
+ pm_best_lightbulbs: "Покращенні лямпочки"
  pmg_telephones_category: "Телефони"
  pmg_radios_category: "Віщателі"
  
