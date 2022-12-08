@@ -152,7 +152,7 @@
  gov_presidential_democracy: "Республіка"
  gov_presidential_democracy_desc: "Це [concept_government_type|l], де [Concept('concept_election','$concept_elected$')|l] [Concept('concept_ruler','$RULER_TITLE_PRESIDENT$')|l] керує [Concept('concept_country','$concept_country_ins$')|l].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_banana_republic: "Бананова республіка"
- gov_banana_republic_desc: "Це [concept_government_type|l], де [concept_country|l] керована особою [Concept('concept_ruler','диктатор')|l] і активно експортує фрукти.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_banana_republic_desc: "Це [concept_government_type|l], де [concept_country|l] керована особою [Concept('concept_ruler','диктатор')|l] і активно ввозить садовину.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_military_dictatorship: "Військова диктатура"
  gov_military_dictatorship_desc: "Це [concept_government_type|l], де [Concept('concept_ruler','диктатор')|l] керує [Concept('concept_country','$concept_country_ins$')|l].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_bhutanese_dual_system_temporal: "Бутанська діярхія"
