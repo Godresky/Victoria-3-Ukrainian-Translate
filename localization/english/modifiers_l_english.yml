@@ -395,8 +395,8 @@
  modifier_state_mortality_turmoil_mult_desc:1 "An increase or decrease to pop [Concept('concept_pop_growth','$concept_pop_growth_mortality$')] per [concept_turmoil]"
  modifier_state_mortality_wealth_mult:1 "$concept_pop_growth_mortality$ per $concept_wealth$"
  modifier_state_mortality_wealth_mult_desc:1 "An increase or decrease to pop [Concept('concept_pop_growth','$concept_pop_growth_mortality$')] per [concept_wealth]"
- modifier_state_education_access_add:0 "Education Access"
- modifier_state_education_access_add_desc:0 "A bonus or penalty to education access for all pops"
+ modifier_state_education_access_add: "Доступ до навчання"
+ modifier_state_education_access_add_desc: "Наддаток або карна до доступу навчання для усього населення"
  modifier_state_education_access_wealth_add:0 "Education Access (Wealth-based)"
  modifier_state_education_access_wealth_add_desc:0 "A bonus or penalty per Wealth level to pop education access"
   
