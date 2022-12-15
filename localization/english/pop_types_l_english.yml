@@ -14,7 +14,7 @@
  clergymen: "@clergymen! $clergymen_no_icon$"
  clergymen_only_icon: "@clergymen!"
  clergymen_no_icon: "Священнослужителі"
- clergymen_desc: "Священики, вчені та інші релігійні діячі, які піклуються про духовні потреби сільського населення. У політичному плані вони є опорою Благочестивих."
+ clergymen_desc: "Священики, вчені та інші релігійні діячі, які піклуються про духовні потреби сільського населення. У політичному плані вони є опорою благочестивих."
  clerks: "@clerks! $clerks_no_icon$"
  clerks_only_icon: "@clerks!"
  clerks_no_icon: "Службовці"

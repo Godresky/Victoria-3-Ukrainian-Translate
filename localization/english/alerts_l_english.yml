@@ -127,7 +127,8 @@ alert_stockpiling_gold_alert_name: "[GetGoods('gold').GetTextIcon] [GetGoods('go
  alert_low_legitimacy_alert_desc:1 "Your [concept_government] has [GetPlayer.GetGovernmentLegitimacy|v] [concept_legitimacy], which is having an effect on the radicalization of your pops."
  alert_low_legitimacy_alert_hint:0 "Increase your [concept_legitimacy] by adding or removing [Concept('concept_interest_group', '$concept_interest_groups$')] from your [concept_government]. This can be done on the Politics Panel or on the details of an [concept_interest_group]. You can also change your [Concept('concept_law', '$concept_laws$')], which can be done from the Constitutional Laws tab in the Politics Panel."
  alert_low_legitimacy_alert_action:0 "Politics Panel"
- alert_unused_interests_alert_name:0 "Can support more [Concept('concept_declared_interest','$concept_declared_interests$')]"
+
+ alert_unused_interests_alert_name: "Можна підтримати більше [Concept('concept_declared_interest','$concept_declared_interests_gen$')|l]"
  alert_unused_interests_alert_desc:0 "We are only using [GetPlayer.GetNumDeclaredInterests|v]/#tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#! of the [Concept('concept_declared_interest','$concept_declared_interests$')] we are able to support"
  alert_unused_interests_alert_hint:0 "You can [Concept('concept_declared_interest','$concept_declare_interests$')] in [Concept('concept_strategic_region','$concept_strategic_regions$')] through the [concept_diplomatic_lens]."
  alert_unused_interests_alert_action:0 "Diplomacy Panel"

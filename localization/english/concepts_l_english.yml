@@ -28,6 +28,9 @@
  concept_subjects: "Підвладні"
  concept_subject_country: "Підвладна держава"
  concept_subject_country_acc: "Підвладну державу"
+
+ concept_subject_adj: "Підвладн"
+
  concept_subject_possessive:0 "Subject\\'s"
  concept_subject_desc:1 "A [concept_country] whose autonomy and right to self-determination is limited to varying degree by an [concept_overlord]. $concept_subject$ relationships are a type of [concept_diplomatic_pact] that $concept_countries$ can be asked to join or forced into with a [concept_diplomatic_play]. The precise effects depends on the type of $concept_subject$ but tend to include being forced into their $concept_overlord$'s [concept_market], having to give up a part of their [Concept('concept_treasury','$concept_treasury_possessive$')] income, decreased [concept_prestige], the inability to start your own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] or freely decide which side to support in them, and inheriting the $concept_overlord$'s [concept_ruler] as your [concept_head_of_state].\n\n$concept_subjects$ can be liberated with a $concept_diplomatic_play$ started by themselves or a third party. Some $concept_subject$ types can also be targeted by a $concept_diplomatic_play_short$ by their $concept_overlord$ to reduce their autonomy further, or even become fully #b Annexed#! by them."
 
@@ -966,6 +969,7 @@
  concept_unemployed: "Безробітні"
  concept_unemployed_ins: "Безробітними"
  concept_unemployed_many: "Безробітні"
+ concept_unemployed_adj: "Безробітн"
  concept_unemployment: "Безробіття"
  concept_unemployed_desc:2 "An $concept_unemployed$ [concept_pop] does not work in any of its [Concept('concept_state','$concept_state_possessive$')] [Concept('concept_building','$concept_buildings$')] and therefore does not collect a [concept_building_wage]. They are likely to take the next best job that comes along, and will likely [Concept('concept_migration','$concept_emigrate$')] if nothing comes along."
 
@@ -1112,6 +1116,7 @@
   
  concept_declared_interest: "Проявлений руп"
  concept_declared_interests: "Проявлені рупи"
+ concept_declared_interests_gen: "Проявлених рупів"
  concept_declare_interests: "Проявити руп"
  concept_declared_interest_declare: "Проявити"
  concept_declared_interest_declared: "Проявлений"
