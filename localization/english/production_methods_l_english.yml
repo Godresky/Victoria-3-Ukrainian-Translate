@@ -781,7 +781,7 @@ pm_steam_rail_transport: "Залізниця"
  pmg_ownership_land_building_maize_farm: "$pmg_ownership$"
  pmg_ownership_land_building_millet_farm: "$pmg_ownership$"
  pmg_ownership_land_building_dye_plantation: "$pmg_ownership$"
- pmg_ownership_land_building_silk_plantation: ""
+ pmg_ownership_land_building_silk_plantation: "$pmg_ownership$"
  pmg_ownership_building_subsistence: "$pmg_ownership$"
 
  pmg_ownership_capital_building_railway: "$pmg_ownership$"
