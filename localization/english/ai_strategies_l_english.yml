@@ -163,10 +163,10 @@
  ai_attitude_rebellious_desc: "[COUNTRY.GetName] бачить [Concept('concept_country', '$concept_country_acc$')|l] [TARGET_COUNTRY.GetName], як їхнього #N #bold тиранічного гнобителя#!#! в геополітичних справах. Вони, ймовірно, спробують [concept_diplomatic_play] за незалежність, якщо вірять, що можуть перемогти."
  ai_attitude_rebellious_tooltip: "#header $ai_attitude_rebellious$ [concept_attitude|l]#!\n$ai_attitude_rebellious_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
   
- ATTITUDE_SCORE_NEUTRAL_FORMAT:0 "#v $SCORE|=0$#!"
- ATTITUDE_SCORE_FORMAT:0 "#v $SCORE|=0+$#!"
- AI_STRATEGIC_DESIRE:1 "[COUNTRY.GetAdjectiveNoFormatting] [concept_strategic_desire] towards [TARGET_COUNTRY.GetNameNoFormatting]: #v $STRATEGIC_DESIRE$#!"
- AI_ATTITUDE_SCORE:0 "This is derived from [COUNTRY.GetName]'s [concept_attitude|l] score of  $ATTITUDE_SCORE$ towards [TARGET_COUNTRY.GetName]:"
+ ATTITUDE_SCORE_NEUTRAL_FORMAT: "#v $SCORE|=0$#!"
+ ATTITUDE_SCORE_FORMAT: "#v $SCORE|=0+$#!"
+ AI_STRATEGIC_DESIRE: "[COUNTRY.GetAdjectiveNoFormatting]е [concept_strategic_desire|l] відносно [Concept('concept_country', '$concept_country_gen$')|l] [TARGET_COUNTRY.GetNameNoFormatting]: #v $STRATEGIC_DESIRE$#!"
+ AI_ATTITUDE_SCORE: "Воно отримано з оцінки [COUNTRY.GetAdjective|l]ого [concept_attitude|l] в $ATTITUDE_SCORE$ відносно [Concept('concept_country', '$concept_country_gen$')|l] [TARGET_COUNTRY.GetName]:"
   
  AI_REASON_FORMAT:0 "$DESC$: $SCORE|=0+$"
  AI_REASON_NEUTRALITY:0 "[TARGET_COUNTRY.GetName] lacks diplomatic significance for [COUNTRY.GetName]"
