@@ -2,455 +2,455 @@
   
   # Leader Ideologies
  ideology_moderate: "Помірний"
- ideology_moderate_desc:0 "#lore This leader is considered a moderate in their Interest Group, with no particular ideology of their own.#!"
+ ideology_moderate_desc: "#lore Цей лідер вважається помірним у їхній Групі інтересів і не має власної ідеології.#!"
  
  ideology_traditionalist: "Звийчаїст"
- ideology_traditionalist_desc:0 "#lore This leader believes in maintaining traditional customs, viewing them as an extension of natural laws. #!"
+ ideology_traditionalist_desc: "#lore Цей лідер вірить у збереження традиційних звичаїв, розглядаючи їх як продовження природних законів.#!"
 
  ideology_atheist: "Ніцтник"
- ideology_atheist_desc:0 "#lore This leader disavows organized religion, viewing it as a form of authoritarian superstition. #!"
+ ideology_atheist_desc: "#lore Цей лідер відкидає організовану релігію, розглядаючи її як форму авторитарних марновірств.#!"
 
  ideology_republican_leader: "Республіканець"
- ideology_republican_leader_desc:0 "#lore This leader seeks to establish a republic ruled by elected officials. #!"
+ ideology_republican_leader_desc: "#lore Цей лідер прагне встановити республіку, якою керуватимуть обрані посадовці.#!"
 
  ideology_radical: "Радикал"
- ideology_radical_desc:0 "#lore This leader strives for radical liberal reforms advancing democratic ideals. #!"
+ ideology_radical_desc: "#lore Цей лідер прагне до радикальних ліберальних реформ, які просувають демократичні ідеали.#!"
 
  ideology_abolitionist: "Аболіціоніст"
- ideology_abolitionist_desc:0 "#lore This leader finds slavery an abhorrent violation of human rights and seeks to abolish it from the world. #!"
+ ideology_abolitionist_desc: "#lore Цей лідер вважає рабство огидним порушенням прав людини та прагне знищити його у всьому світу.#!"
 
  ideology_slaver: "Рабовласник"
- ideology_slaver_desc:0 "#lore This leader views slavery as a natural part of their way of life and opposes its abolition. #!"
+ ideology_slaver_desc: "#lore Цей лідер вважає рабство природним і виступає проти його скасування.#!"
 
  ideology_feminist: "Фемініст"
- ideology_feminist_desc:0 "#lore This leader holds that women are equal to men and strives for the extension of their rights as citizens.#!"
+ ideology_feminist_desc: "#lore Цей лідер вважає, що жінки рівні з чоловіками, і прагне до розширення їхніх громадянських прав.#!"
  
  ideology_reformer: "Реформатор"
- ideology_reformer_desc:0 "#lore This leader wants to make a few incremental changes to make society just a bit more equal. But not too much.#!"
+ ideology_reformer_desc: "#lore Цей лідер хоче зробити кілька поступових змін, щоб зробити суспільство трохи більш рівноправним. Але не надто багато.#!"
 
  ideology_pacifist: "Пацифіст"
- ideology_pacifist_desc:0 "#lore This leader believes in non-violence as their method and peace as their goal.#!"
+ ideology_pacifist_desc: "#lore Цей лідер вірить у те, що ненасильство є їхнім методом, а мир – своєю метою.#!"
 
  ideology_jingoist_leader: "Шовініст"
- ideology_jingoist_leader_desc:0 "#lore This leader advocates an aggressive foreign policy, emphasizing readiness to go to war to advance its ambitions. #!"
+ ideology_jingoist_leader_desc: "#lore Цей лідер виступає за агресивну зовнішню політику, наголошуючи на готовності почати війну для просування своїх амбіцій.#!"
 
  ideology_royalist: "Рояліст"
- ideology_royalist_desc:0 "#lore This leader's loyalties are to the monarchy and its rightful ruler.#!"
+ ideology_royalist_desc: "#lore Цей лідер відданий монархії та її законному правителю.#!"
  
  ideology_social_democrat: "Соціял-демократ"
- ideology_social_democrat_desc:0 "#lore This leader believes in achieving a socialist society through parliamentary reform. #!"
+ ideology_social_democrat_desc: "#lore Цей лідер вірить у досягнення соціалістичного суспільства шляхом парламентської реформи.#!"
 
  ideology_communist: "Комуніст"
- ideology_communist_desc:0 "#lore This leader believes in the working class seizing political power through whatever means necessary. #!"
+ ideology_communist_desc: "#lore Цей лідер вірить у захоплення робітничим класом політичної влади будь-якими необхідними засобами.#!"
 
  ideology_vanguardist: "Авангардист"
- ideology_vanguardist_desc:0 "#lore This leader believes in achieving a socialist society through a vanguard party of dedicated radicals. #!"
+ ideology_vanguardist_desc: "#lore Цей лідер вірить у досягнення соціалістичного суспільства через авангардну партію відданих радикалів.#!"
 
  ideology_fascist: "Фашист"
- ideology_fascist_desc:0 "#lore This leader is an ultranationalist who espouses the revival of perceived traditional, authoritarian values in a modern context. #!"
+ ideology_fascist_desc: "#lore Цей лідер є ультранаціоналістом, який виступає за відродження традиційних авторитарних цінностей у сучасному контексті.#!"
 
  ideology_anarchist: "Анархіст"
- ideology_anarchist_desc:0 "#lore This leader seeks the abolishment of hierarchy, authority and the state, leaving people to govern themselves. #!"
+ ideology_anarchist_desc: "#lore Цей лідер прагне скасування ієрархії, влади та держави, залишивши людей керувати собою.#!"
 
  ideology_ethno_nationalist: "Етнонаціоналіст"
- ideology_ethno_nationalist_desc:0 "#lore This leader believes in a nation defined on ethnic grounds. #!"
+ ideology_ethno_nationalist_desc: "#lore Цей лідер вірить у націю, визначену за етнічною ознакою.#!"
 
  ideology_theocrat: "Боговлад"
- ideology_theocrat_desc:0 "#lore This leader believes in a state run by the church in line with doctrinal values.#!"
+ ideology_theocrat_desc: "#lore Цей лідер вірить у державу, керовану церквою, яка відповідає доктринальним цінностям.#!"
 
  ideology_market_liberal: "Ринковий ліберал"
- ideology_market_liberal_desc:0 "#lore This leader believes that the invisible hand of the free market should be the guiding force of the nation's economy."
+ ideology_market_liberal_desc: "#lore Цей лідер вважає, що невидима рука вільного ринку має бути керівною силою економіки.#!"
 
   # Interest Group Ideologies
 
  ideology_paternalistic: "Патерналізм"
- ideology_paternalistic_desc:0 "#lore This group has little faith in the populus attempting to govern itself, believing they need the guidance of a traditional aristocracy.#!"
+ ideology_paternalistic_desc: "#lore Ця група сунівається у тому, що простолюди здатні керувати собою, вважаючи, що їм потрібне керівництво традиційної аристократії.#!"
   
  ideology_patriarchal: "Патріярхат"
- ideology_patriarchal_desc:0 "#lore This group believes men should have political authority and that women should obey their fathers and husbands.#!"
+ ideology_patriarchal_desc: "#lore Ця група вважає, що чоловіки повинні мати політичну владу, а жінки повинні підкорятися своїм батькам і чоловікам.#!"
    
  ideology_republican: "Республіканство"
- ideology_republican_desc:0 "#lore This group believes the best leaders are elected by public vote and supports a republican form of government.#!"
+ ideology_republican_desc: "#lore Ця група вважає, що найкращі лідери обираються публічним голосуванням у республіканській формі правління.#!"
   
  ideology_populist: "Популізм"
- ideology_populist_desc:0 "#lore This group believes in governance by the people and seeks to expand the franchise to all social classes.#!"
+ ideology_populist_desc: "#lore Ця група вірить в управління людьми та прагне розширити право власності на всі соціальні класи.#!"
   
  ideology_stratocratic: "За військову диктатуру"
- ideology_stratocratic_desc:0 "#lore This group favors maintaining a hierarchy in society through traditional forms of taxation and labor relations.#!"
+ ideology_stratocratic_desc: "#lore Ця група виступає за збереження ієрархії в суспільстві за допомогою традиційних форм оподаткування та трудових відносин.#!"
   
  ideology_laissez_faire: "За принцип невтручання"
- ideology_laissez_faire_desc:0 "#lore This group believes in the free flow of trade and labor forces, favoring the judgment of markets over that of governments.#!"
+ ideology_laissez_faire_desc: "#lore Ця група вірить у вільний потік товарів та робочої сили, віддаючи перевагу механізму ринків над рішеннями урядів.#!"
   
  ideology_individualist: "Індивідуалізм"
- ideology_individualist_desc:0 "#lore This group believes each person is responsible for their own fate and opposes government programs to provide services that can be paid for by the individual.#!"
+ ideology_individualist_desc: "#lore Ця група вважає, що кожна людина відповідальна за власну долю, і виступає проти державних програм надання послуг, які можуть бути виплачені індивідуяльно.#!"
   
  ideology_pious: "Благочестя"
- ideology_pious_desc:0 "#lore This group believes religious principles are paramount moral truths and that they should permeate all of society.#!"
+ ideology_pious_desc: "#lore Ця група вважає, що релігійні принципи є першочерговими моральними істинами і що вони повинні пронизувати все суспільство.#!"
   
  ideology_particularist: "Партикуляризм"
- ideology_particularist_desc:0 "#lore This group wants local autonomy in their work, free of feudal provisions of indentured servitude.#!"
+ ideology_particularist_desc: "#lore Ця група хоче місцевої автономії у своїй роботі, вільної від феодальних положень кабального рабства.#!"
   
  ideology_isolationist: "Відокремство"
- ideology_isolationist_desc:0 "#lore This group wants the state to focus on domestic matters, opposing ambitions to expand into foreign lands as well as immigration from them.#!"
+ ideology_isolationist_desc: "#lore Ця група хоче, щоб держава зосередилася на внутрішніх справах, протистоячи амбіціям розширити території, а також іммігрувати черех них.#!"
   
  ideology_moralist: "Моралізм"
- ideology_moralist_desc:0 "#lore This group has a strong belief in a religious moral order and views diversity of opinion and cultures as a threat to this order.#!"
+ ideology_moralist_desc: "#lore Ця група твердо вірить у релігійний моральний порядок і розглядає різноманітність думок та культур як загрозу цьому порядку.#!"
   
  ideology_jingoist: "Джингоїзм"
- ideology_jingoist_desc:0 "#lore This group believes in an aggressive foreign policy and maintaining an army to back it up.#!"
+ ideology_jingoist_desc: "#lore Ця група вірить в агресивну зовнішню політику та підтримку армії.#!"
 
  ideology_loyalist: "Прихильництво"
- ideology_loyalist_desc:0 "#lore This group believes each citizen should pay their dues to fund the vital functions of the state.#!"
+ ideology_loyalist_desc: "#lore Ця група вважає, що кожен громадянин повинен платити свої внески для фінансування життєво важливих функцій держави.#!"
  
  ideology_meritocratic: "Меритократія"
- ideology_meritocratic_desc:0 "#lore This group believes success is earned and that those who have achieved it deserve the accompanying responsibility and wealth.#!"
+ ideology_meritocratic_desc: "#lore Ця група вірить, що успіх заслуговується і що ті, хто його досяг, заслуговують на супутню відповідальність і багатство.#!"
    
  ideology_patriotic: "Патріотизм"
- ideology_patriotic_desc:0 "#lore This group is fiercely devoted to its country and wants harsh measures against those who would spread dissent.#!"
+ ideology_patriotic_desc: "#lore Ця група щиро віддана своїй країні і хоче вжити жорстких заходів проти тих, хто поширює інакомислення.#!"
   
  ideology_liberal: "Лібералізм"
- ideology_liberal_desc:0 "#lore This group views liberty and legal equality as important values to be safeguarded.#!"
+ ideology_liberal_desc: "#lore Ця група вважає свободу та правову рівність важливими цінностями, які слід захищати.#!"
   
  ideology_anti_clerical: "Антиклерикалізм"
- ideology_anti_clerical_desc:1 "#lore This group opposes the influence of organized religion on the political and education system. They believe that rational minds should be at the forefront of governance.#!"
+ ideology_anti_clerical_desc: "#lore Ця група виступає проти впливу організованої релігії на політичну та освітню систему. Вони вважають, що раціональні уми мають бути на передку управління.#!"
   
  ideology_proletarian: "Пролетаріятство"
- ideology_proletarian_desc:0 "#lore This group views politics through the lens of class struggle and sides with the workers in this conflict.#!"
+ ideology_proletarian_desc: "#lore Ця група розглядає політику через призму класової боротьби та стає на сторону робітників у цьому конфлікті.#!"
   
  ideology_egalitarian: "Рівництво"
- ideology_egalitarian_desc:0 "#lore This group believes that equal and humane treatment of people should be a cornerstone of political policy.#!"
+ ideology_egalitarian_desc: "#lore Ця група вважає, що рівне та гуманне ставлення до людей має бути наріжним каменем політичної політики.#!"
    
  ideology_anti_slavery: "Протирабство"
- ideology_anti_slavery_desc:0 "#lore This group abhors slavery and views it as a feature of a barbarous past.#!"
+ ideology_anti_slavery_desc: "#lore Ця група ненавидить рабство і розглядає його як ознаку барбарського минулого.#!"
  
  ideology_pro_slavery: "За рабство"
- ideology_pro_slavery_desc:0 "#lore This group views slavery as a necessary part of a well-functioning society.#!"
+ ideology_pro_slavery_desc: "#lore Ця група розглядає рабство як необхідну частину добре функціонуючого суспільства.#!"
   
  ideology_reactionary: "Реакціонерство"
- ideology_reactionary_desc:0 "#lore This group is nostalgic for a past, real or imagined, where just kings ruled over a uniform society.#!"
+ ideology_reactionary_desc: "#lore Ця група ностальгує за минулим, реальним чи уявним, де справедливі королі правили єдиним суспільством.#!"
  
  ideology_plutocratic: "Плутократія"
- ideology_plutocratic_desc:0 "#lore This group believes that the wealthy have proven their worth as decision-makers and form an intellectual elite well suited to set the course of society.#!"
+ ideology_plutocratic_desc: "#lore Ця група вірить, що заможні люди довели свою цінність як особи, що приймають рішення, і формують інтелектуальну еліту, яка добре підходить для визначення курсу суспільства.#!"
 
  ideology_agrarian: "Рільництво"
- ideology_agrarian_desc:0 "#lore This group believes the focus of economic policy should be on agriculture and the interests of farmers.#!"
+ ideology_agrarian_desc: "#lore Ця група вважає, що фокус економічної політики має бути на сільському господарстві та інтересах хутірників.#!"
 
   # flavor ideologies
-
  ideology_republican_paternalistic: "Елітаризм"
- ideology_republican_paternalistic_desc:0 "#lore This group favors rule by the landed elite, but still supports a republican form of government.#!"
+ ideology_republican_paternalistic_desc: "#lore Ця група віддає перевагу правлінню земельної еліти, але все ще підтримує республіканську форму правління.#!"
 
  ideology_scholar_paternalistic: "За вченів-урядників"
- ideology_scholar_paternalistic_desc:0 "#lore This group would prefer to see the country ruled by a monarch advised by the wise and educated.#!"
+ ideology_scholar_paternalistic_desc: "#lore Ця група воліла б бачити країну під керівництвом монарха, якому б радили мудрі й освічені люди.#!"
 
  ideology_junker_paternalistic: "Юнкерство"
- ideology_junker_paternalistic_desc:0 "#lore This group believes the landed nobility are best suited to lead the country to its future.#!"
+ ideology_junker_paternalistic_desc: "#lore Ця група вважає, що земельне дворянство найкраще підходить, щоб вести країну до її майбутнього.#!"
 
  ideology_papal_paternalistic: "За папу"
- ideology_papal_paternalistic_desc:0 "#lore This group supports the authority of the Pope and the traditional hierarchy of the Holy See.#!"
+ ideology_papal_paternalistic_desc: "#lore Ця група підтримує авторитет Папи та традиційну ієрархію Святого Престолу.#!"
 
  ideology_confucian: "Конфуціянство"
- ideology_confucian_desc:0 "#lore This group believes in the teachings of Confucius, supporting a social order they view as rooted in the laws of Heaven.#!"
+ ideology_confucian_desc: "#lore Ця група вірить у вчення Конфуція, підтримуючи соціальний порядок, який, на їхню думку, ґрунтується на законах Небес.#!"
 
  ideology_bakufu: "Бакуфу"
- ideology_bakufu_desc:0 "#lore This group supports the shogunate and believes power belongs in the hands of the warrior class.#!"
+ ideology_bakufu_desc: "#lore Ця група підтримує сьоґунат і вірить, що влада належить класу воїнів.#!"
  
  ideology_shinto_moralist: "Синтоїстське побожнество"
- ideology_shinto_moralist_desc:0 "#lore This group believes in the divinity of the Emperor and ties this belief to the old worship of gods and spirits.#!"
+ ideology_shinto_moralist_desc: "#lore Ця група вірить у божественність Імператора і пов’язує цю віру зі старим поклонінням Богам та духам.#!"
 
  ideology_caudillismo: "Каудилізм"
- ideology_caudillismo_desc:0 "#lore This group tends to support strongman leaders with military backgrounds over constitutional rule of law.#!"
+ ideology_caudillismo_desc: "#lore Ця група схильна підтримувати сильних лідерів із військовим минулим над конституційним верховенством права.#!"
 
   # Government Principles group
  lawgroup_governance_principles: "Принципи управління"
- lawgroup_governance_principles_desc:0 "Ґрунтовні принципи управління державою. Визначає ким є голова держави."
+ lawgroup_governance_principles_desc: "Ґрунтовні принципи управління державою. Визначає ким є голова держави."
   
  law_chiefdom: "Вождівство"
- law_chiefdom_desc:0 "A hierarchical pre-industrial political system based on kinship, with a warlord or elder of a prominent family at the head. It is incapable of efficient centralized control over entire states."
+ law_chiefdom_desc: "A hierarchical pre-industrial political system based on kinship, with a warlord or elder of a prominent family at the head. It is incapable of efficient centralized control over entire states."
  law_monarchy: "Монархія"
- law_monarchy_desc:0 "Тип правління, при якому шляхецька династія відображає національну ідентичність держави і передає виконавчу владу в руки голови династії."
+ law_monarchy_desc: "Тип правління, при якому шляхецька династія відображає національну ідентичність держави і передає виконавчу владу в руки голови династії."
  law_presidential_republic: "Президентська республіка"
- law_presidential_republic_desc:0 "Політична система, при якій влада знаходиться в руках людей та їхніх представників. Головою держави є номінований, або обраний $RULER_TITLE_PRESIDENT$."
+ law_presidential_republic_desc: "Політична система, при якій влада знаходиться в руках людей та їхніх представників. Головою держави є номінований, або обраний $RULER_TITLE_PRESIDENT$."
  law_parliamentary_republic: "Парламентська республіка"
- law_parliamentary_republic_desc:0 "Політична система, при якій влада знаходиться в руках людей та їхніх представників. Голова держави та висунення законодавчих актів називається $RULER_TITLE_CHANCELLOR$."
+ law_parliamentary_republic_desc: "Політична система, при якій влада знаходиться в руках людей та їхніх представників. Голова держави та висунення законодавчих актів називається $RULER_TITLE_CHANCELLOR$."
  law_theocracy: "Боговладдя"
- law_theocracy_desc:0 "Урядом править духовенство та їх інтерпретація святого письма. Голова держави номінально являється суб'єктом поклоніння, хоча фактично є світським представником, вибраним через свої досягнення, статус, або за фактом народження."
+ law_theocracy_desc: "Урядом править духовенство та їх інтерпретація святого письма. Голова держави номінально являється суб'єктом поклоніння, хоча фактично є світським представником, вибраним через свої досягнення, статус, або за фактом народження."
  law_council_republic: "Рада республіки"
- law_council_republic_desc:0 "Політична система, при якій робітники вибирають делегатів у місцеві ради. Розширює концепт робітничої організації до загального управління державою."
+ law_council_republic_desc: "Політична система, при якій робітники вибирають делегатів у місцеві ради. Розширює концепт робітничої організації до загального управління державою."
   
   # Free speech group
  lawgroup_free_speech: "Свобода слова"
- lawgroup_free_speech_desc:0 "Laws regulating free speech and right to public assembly."
+ lawgroup_free_speech_desc: "Закони, що регулюють свободу слова та право на публічні зібрання."
   
  law_outlawed_dissent: "Заборона інакодумства"
- law_outlawed_dissent_desc:0 "Criticizing the government is considered treasonous and illegal."
+ law_outlawed_dissent_desc: "Критика уряду вважається зрадою та незаконною."
  law_censorship: "Цензура"
- law_censorship_desc:0 "There is active censorship of the press and no guaranteed right of assembly."
+ law_censorship_desc: "Існує активна цензура преси і немає гарантій права на зібрання."
  law_right_of_assembly: "Право зборів"
- law_right_of_assembly_desc:0 "Citizens enjoy the right to public assembly."
+ law_right_of_assembly_desc: "Громадяни мають право на публічні збори."
  law_protected_speech: "Свобода слова"
- law_protected_speech_desc:0 "The protection of free speech is enshrined in law."
+ law_protected_speech_desc: "Захист свободи слова закріплено законом."
   
   # Army Model group
  lawgroup_army_model: "Тип війська"
- lawgroup_army_model_desc:0 "How your army is organized and regulated."
+ lawgroup_army_model_desc: "Як ваша армія організована та регламентована."
   
  law_peasant_levies: "Селянські збори"
- law_peasant_levies_desc:0 "The army's main force comes from conscripted infantry with zero to basic training."
+ law_peasant_levies_desc: "Основна сила армії складається з військовозобов’язаної піхоти, яка має ґрунтовну підготовку."
  law_national_militia: "Народна міліція"
- law_national_militia_desc:0 "The standing army is small, but local militias can be activated to defend their homes."
+ law_national_militia_desc: "Постійна армія невелика, але місцеві ополченці можуть бути задіяні для захисту своїх домівок."
  law_mass_conscription: "Масовий призов"
- law_mass_conscription_desc:0 "Large numbers of infantry conscripts can be activated as needed to supplement the professional army."
+ law_mass_conscription_desc: "Велику кількість військовозобов’язаних піхоти можна активувати за потреби, щоб доповнити професійну армію."
  law_professional_army: "Професійне військо"
- law_professional_army_desc:0 "The army consists of well-trained, professional regulars."
+ law_professional_army_desc: "Армія складається з добре підготовлених, професійних кадрів."
   
   # Distribution of Power group
  lawgroup_distribution_of_power: "Розподіл влади"
- lawgroup_distribution_of_power_desc:0 "Яким чином розподілена політична влада. Визначає з ким повинен рахуватися голова держави."
+ lawgroup_distribution_of_power_desc: "Яким чином розподілена політична влада. Визначає з ким повинен рахуватися голова держави."
   
  law_autocracy: "Самодержавство"
- law_autocracy_desc:0 "Голова держави має абсолютну владу та нікому не підпорядковується."
+ law_autocracy_desc: "Голова держави має абсолютну владу та нікому не підпорядковується."
  law_oligarchy: "Олігархія"
- law_oligarchy_desc:1 "Голова держави ділить владу та відповідальність разом із малою групою впливових людей."
+ law_oligarchy_desc: "Голова держави ділить владу та відповідальність разом із малою групою впливових людей."
  law_landed_voting: "Голосують землевласники"
- law_landed_voting_desc:0 "Ті хто мають в своєму володінні земельну власність мають право на голос."
+ law_landed_voting_desc: "Ті хто мають в своєму володінні земельну власність мають право на голос."
  law_wealth_voting: "Голосують багаті"
- law_wealth_voting_desc:1 "Багаті громадяни мають право на голос. Голоси багатших громадян мають більший вплив."
+ law_wealth_voting_desc: "Багаті громадяни мають право на голос. Голоси багатших громадян мають більший вплив."
  law_census_voting: "Майновий ценз"
- law_census_voting_desc:0 "Грамотні люди певного соціяльного статусу мають право на голос."
+ law_census_voting_desc: "Грамотні люди певного соціяльного статусу мають право на голос."
  law_universal_suffrage: "Загальне виборче право"
- law_universal_suffrage_desc:0 "Кожен дорослий чоловік має право на рівний голос з іншими виборцями."
+ law_universal_suffrage_desc: "Кожен дорослий чоловік має право на рівний голос з іншими виборцями."
  law_elder_council: "Старшинська рада"
- law_elder_council_desc:0 "Найбільш поважні з чоловіків мають право висказатися в державі."
+ law_elder_council_desc: "Найбільш поважні з чоловіків мають право висказатися в державі."
  law_anarchy: "Безвладдя"
- law_anarchy_desc:1 "Місцеві громади керуються самостійно, при тому посилаючи своїх представників у ради на обмежений термін. Без формальної ієрархії ніхто в державі не має великого авторитету."
+ law_anarchy_desc: "Місцеві громади керуються самостійно, при тому посилаючи своїх представників у ради на обмежений термін. Без формальної ієрархії ніхто в державі не має великого авторитету."
   
   # Voting System group
- law_first_past_the_post:0 "First Past The Post"
- law_first_past_the_post_desc:0 "Also known as Winner Takes All, this system elects the single candidate who wins the most number of seats in regional sub-elections. It tends to create single-party governments with strong mandates but is vulnerable to gerrymandering."
- law_proportional_representation:0 "Proportional Representation"
- law_proportional_representation_desc:0 "This system distributes parliamentary seats in proportion to the number of votes cast. It tends to create multi-party coalition governments where compromise is key to getting anything done."
+ law_first_past_the_post: "Система більшості"
+ law_first_past_the_post_desc: "Також відома як «Переможець отримує все», ця система обирає єдиного кандидата, який отримує найбільшу кількість місць на регіональних виборах. Він має тенденцію створювати однопартійні уряди з сильними мандатами, але є вразливим до фальсифікації."
+ law_proportional_representation: "Пропорційна виборча система"
+ law_proportional_representation_desc: "Ця система розподіляє місця в парламенті пропорційно кількості поданих голосів. Він має тенденцію до створення багатопартійних коаліційних урядів, де компроміс є ключовим для досягнення будь-яких результатів."
   
   # Workplace Safety group
  lawgroup_labor_rights: "Права робочих"
- lawgroup_labor_rights_desc:0 "The rights of workers."
+ lawgroup_labor_rights_desc: "Права працівників."
   
  law_serfdom: "Кріпацтво"
- law_serfdom_desc:0 "Peasants are tied to their land and must perform labor for their feudal masters."
+ law_serfdom_desc: "Селяни прив'язані до своєї землі і повинні працювати на своїх феодалів."
  law_serfdom_banned: "Кріпацтво скасовано"
- law_serfdom_banned_desc:0 "The feudal practice of serfdom has been abolished."
+ law_serfdom_banned_desc: "Феодальну практику кріпацтва скасовано."
  law_regulatory_bodies: "Регулюючі органи"
- law_regulatory_bodies_desc:0 "Government institutions have been created to regulate the excesses of employers."
+ law_regulatory_bodies_desc: "Створено державні інституції для регулювання надмірностей роботодавців."
  law_worker_protections: "Захист працівників"
- law_worker_protections_desc:0 "Workers enjoy extensive protections that are enshrined in law."
+ law_worker_protections_desc: "Працівники користуються широким захистом, закріпленим законом."
   
   # Children's Rights group
  lawgroup_childrens_rights: "Права дітей"
- lawgroup_childrens_rights_desc:0 "The rights and protections afforded to children."
+ lawgroup_childrens_rights_desc: "Права та захист, які надаються дітям."
   
  law_child_labor_allowed: "Дитяча праця дозволена"
- law_child_labor_allowed_desc:0 "No legal restrictions are placed on where children may work."
+ law_child_labor_allowed_desc: "Жодних законодавчих обмежень щодо того, де діти можуть працювати, немає."
  law_restricted_child_labor: "Обмеження дитячої праці"
- law_restricted_child_labor_desc:0 "No child is permitted on the factory floor."
+ law_restricted_child_labor_desc: "Дітям не дозволяється перебувати на території заводу."
  law_compulsory_primary_school: "Обов‘язкова початкова школа"
- law_compulsory_primary_school_desc:0 "All children must attend several years of primary school during which they're prohibited from working."
+ law_compulsory_primary_school_desc: "Усі діти повинні відвідувати кілька років початкової школи, протягом яких їм заборонено працювати."
   
   # Slavery group
  lawgroup_slavery: "Рабство"
- lawgroup_slavery_desc:0 "People as property."
+ lawgroup_slavery_desc: "Люди як власність."
   
  law_slavery_banned: "Рабство заборонене"
- law_slavery_banned_desc:0 "No human being may be owned by another."
+ law_slavery_banned_desc: "Жодна людина не може належати іншій."
  law_debt_slavery: "Довгове рабство"
  law_debt_slavery_desc: "Держава не робить особливих спроб зупинити заворушення чи повстання."
  law_slave_trade: "Работоргівля"
- law_slave_trade_desc:0 "Demand for cheap labor is fulfilled through a dehumanizing trade in foreign bodies."
+ law_slave_trade_desc: "Попит на дешеву робочу силу задовольняється через дегуманну торгівлю чужорідними тілами."
  law_legacy_slavery: "Спадкове рабство"
- law_legacy_slavery_desc:0 "As a compromise between abolitionists and slaveholders, the institution of slavery may continue as long as it does not expand."
+ law_legacy_slavery_desc: "Як компроміс між аболіціоністами та рабовласниками, інститут рабства може тривати до тих пір, доки він не розшириться."
   
   # Church and State group
  lawgroup_church_and_state: "Церква та держава"
- lawgroup_church_and_state_desc:0 "The relationship between physical and spiritual governors."
+ lawgroup_church_and_state_desc: "Відносини між фізичними та духовними правителями."
   
  law_state_religion: "Державна релігія"
- law_state_religion_desc:0 "The church is an official organ of the state. All minority religions are discriminated against."
+ law_state_religion_desc: "Церква є офіційним органом держави. Усі релігії меншин зазнають дискримінації."
  law_freedom_of_conscience: "Свобода совісті"
- law_freedom_of_conscience_desc:0 "The state has an official state religion but the people may choose what to believe. Only particularly exotic religions are discriminated against."
+ law_freedom_of_conscience_desc: "У державі є офіційна державна релігія, але люди можуть вибирати, у що вірити. Дискримінуються лише особливо екзотичні релігії."
  law_total_separation: "Повне відокремлення"
- law_total_separation_desc:0 "No church or faith may interfere in government functions. No religion may be discriminated against."
+ law_total_separation_desc: "Жодна церква чи релігія не можуть втручатися у виконання функцій уряду. Жодна релігія не може бути дискримінована."
  law_atheist_state: "Атеїстична держава"
- law_atheist_state_desc:0 "Preaching religious belief is prohibited, and practicing one is frowned upon. All religions are discriminated against."
+ law_atheist_state_desc: "Проповідування релігійних переконань заборонено, а їхнє сповідування не сприймається. Усі релігії піддаються дискримінації."
   
   # Citizenship group
  lawgroup_citizenship: "Громадянство"
- lawgroup_citizenship_desc:0 "Extending the rights of citizenship."
+ lawgroup_citizenship_desc: "Розширення прав громадянства."
   
  law_ethnostate: "Чаднодержава"
- law_ethnostate_desc:0 "All foreign cultures are discriminated against."
+ law_ethnostate_desc: "Усі чужі культури піддаються дискримінації."
  law_national_supremacy: "Національна перевага"
- law_national_supremacy_desc:0 "Foreign cultures are discriminated against unless they share both heritage and language (or other customs)."
+ law_national_supremacy_desc: "Іноземні культури піддаються дискримінації, якщо вони не мають спільної спадщини та мови (або інших звичаїв)."
  law_racial_segregation: "Расовий поділ"
- law_racial_segregation_desc:0 "Foreign cultures of different heritage are discriminated against."
+ law_racial_segregation_desc: "Чужі культури різної спадщини зазнають дискримінації."
  law_cultural_exclusion: "Культурне відчуження"
- law_cultural_exclusion_desc:0 "Foreign cultures with nothing in common with your primary cultures are discriminated against."
+ law_cultural_exclusion_desc: "Іноземні культури, які не мають нічого спільного з вашими первинними культурами, піддаються дискримінації."
  law_multicultural: "Мультикультуралізм"
- law_multicultural_desc:0 "No cultures are discriminated against."
+ law_multicultural_desc: "Жодна культура не дискримінується."
   
   # Economic System group
  lawgroup_economic_system: "Економічна модель"
- lawgroup_economic_system_desc:0 "The fundamental principles of your economy."
+ lawgroup_economic_system_desc: "Основні принципи вашої економіки."
 
  law_traditionalism: "Звичайство"
- law_traditionalism_desc:0 "Pre-industrial subsistence economy with little central control."
+ law_traditionalism_desc: "Доіндустріальне натуральне господарство з невеликим центральним контролем."
  law_agrarianism: "Земельство"
- law_agrarianism_desc:0 "A rural economy emphasizing agricultural development and community."
+ law_agrarianism_desc: "Сільська економіка з упором на розвиток сільського господарства та громади."
  law_command_economy: "Командна економіка"
- law_command_economy_desc:0 "An inward-focused interventionist economy where the government directly manages most aspects of production."
+ law_command_economy_desc: "Орієнтована на внутрішнє середовище інтервенціоністська економіка, де уряд безпосередньо керує більшістю аспектів виробництва."
  law_laissez_faire: "Принцип невтручання"
- law_laissez_faire_desc:0 "A liberal economy founded on the principles of comparative advantage and that fewer government interventions means greater growth"
+ law_laissez_faire_desc: "Ліберальна економіка, заснована на принципах порівняльних переваг і тому, чим менше державного втручання, тим більше зростання"
  law_interventionism: "Державне втручання"
- law_interventionism_desc:0 "To ensure the stability of our nation, government must curb the worst excesses of private businesses."
+ law_interventionism_desc: "Щоб забезпечити стабільність нашої країни, уряд має стримувати прояви приватного бізнесу."
 
  # Trade Policy group
  lawgroup_trade_policy: "Торгова політика"
- lawgroup_trade_policy_desc:0 "Laws governing trade and the exchange of goods across borders."
+ lawgroup_trade_policy_desc: "Закони, що регулюють торгівлю та обмін товарами через кордон."
  
  law_free_trade: "Вільна торгівля"
- law_free_trade_desc:1 "The free exchange of goods must not be impeded, as trade is for the benefit of all."
+ law_free_trade_desc: "Не можна перешкоджати вільному обміну товарами, оскільки торгівля йде на користь усім."
  law_protectionism: "Захисття"
- law_protectionism_desc:0 "Our industries must be protected from the depredations of foreign market actors."
+ law_protectionism_desc: "Наші галузі повинні бути захищені від грабіжництва іноземних суб’єктів ринку."
  law_isolationism: "Відокремство"
- law_isolationism_desc:0 "An economy focused on supplying the nation's needs internally, while keeping out of the affairs of others."
+ law_isolationism_desc: "Економіка, зосереджена на внутрішньому забезпеченні потреб нації, водночас не втручаючись у справи інших."
  law_mercantilism: "Глитайство"
- law_mercantilism_desc:0 "An export-focused economy with an emphasis on keeping a positive current account and competing with other nations."
+ law_mercantilism_desc: "Орієнтована на вивіз економіка з наголосом на збереженні позитивного поточного рахунку та конкуренції з іншими країнами."
 
   # Taxation Group
  lawgroup_taxation: "Оподаткування"
- lawgroup_taxation_desc:0 "How the state raises revenue by taxing its citizens."
+ lawgroup_taxation_desc: "Як держава отримує доходи, оподатковуючи своїх громадян."
+
  law_consumption_based_taxation: "Споживче оподаткування"
- law_consumption_based_taxation_desc:0 "A tax system where there are no direct income or per-capita taxes and instead revenue is raised through taxing the consumption of goods."
+ law_consumption_based_taxation_desc: "Податкова система, де немає прямих податків на дохід або податків на душу населення, а натомість дохід отримується шляхом оподаткування споживання товарів."
  law_land_based_taxation: "Земельне оподаткування"
- law_land_based_taxation_desc:0 "A traditional form of land-based taxation, collected mainly from the peasantry."
+ law_land_based_taxation_desc: "Традиційна форма поземельного оподаткування, що стягується переважно з селянства."
  law_per_capita_based_taxation: "Подушне оподаткування"
- law_per_capita_based_taxation_desc:0 "A tax system that disproportionally taxes the poor through a combination of income and per-capita taxes."
+ law_per_capita_based_taxation_desc: "Податкова система, яка непропорційно оподатковує бідних через поєднання доходів і податків на душу населення."
  law_proportional_taxation: "Пропорційне оподаткування"
- law_proportional_taxation_desc:0 "A mainly income-based tax system that tries to ensure everyone pays a roughly equal share of their income to the state."
+ law_proportional_taxation_desc: "Основна система оподаткування доходів, яка намагається гарантувати, що кожен платить державі приблизно рівну частку свого доходу."
  law_graduated_taxation: "Поступове оподаткування"
- law_graduated_taxation_desc:0 "A tax system that aims to put the burden of taxation primarily on the well-to-do through high Dividends taxes."
+ law_graduated_taxation_desc: "Податкова система, яка має на меті покласти тягар оподаткування переважно на заможних верств населення через високі податки на дивіденди."
   
   # Education System group
  lawgroup_education_system: "Освітня модель"
- lawgroup_education_system_desc:0 "For when the children are done with chimney sweeping chores."
+ lawgroup_education_system_desc: "На той час, коли діти закінчать чистити димарі."
   
  law_no_schools: "Без шкіл"
- law_no_schools_desc:0 "Education is the parents' responsibility. Only the most leisurely citizens learn to read and write."
+ law_no_schools_desc: "Навчання – обов’язок батьків. Лише найбільш неквапливі громадяни вчаться читати і писати."
  law_religious_schools: "Релігійні школи"
- law_religious_schools_desc:0 "Letting the church take care of state education ensures a loyal and morally healthy population."
+ law_religious_schools_desc: "Якщо церква опікується державною освітою, це забезпечує лояльне і морально здорове населення."
  law_private_schools: "Приватні школи"
- law_private_schools_desc:0 "Schooling is best left to private interests who can assure freedom of choice in one's education."
+ law_private_schools_desc: "Шкільне навчання краще залишити приватним інтересам, які можуть забезпечити свободу вибору освіти."
  law_public_schools: "Державні школи"
- law_public_schools_desc:0 "Schooling is the responsibility of the state, and should be standardized and equally accessible to all."
+ law_public_schools_desc: "Шкільне навчання є обов’язком держави, воно має бути стандартизованим і однаково доступним для всіх."
   
   # Health System group
  lawgroup_health_system: "Модель охорони здоров‘я"
- lawgroup_health_system_desc:1 "Laws about the government's involvement (or lack thereof) in providing healthcare for its citizens."
+ lawgroup_health_system_desc: "Закони про участь (або відсутність) уряду в наданні медичної допомоги своїм громадянам."
   
  law_no_health_system: "Без урядництва"
- law_no_health_system_desc:1 "The government does not fund any system of healthcare."
+ law_no_health_system_desc: "Держава не фінансує жодну систему охорони здоров’я."
  law_charitable_health_system: "Благодійні лікарні"
- law_charitable_health_system_desc:0 "Charitable organizations — often religious ones — provide some help to anyone who's sick or dying, to the degree they are able."
+ law_charitable_health_system_desc: "Благодійні організації — часто релігійні — надають певну допомогу будь-кому, хто хворіє або помирає, в міру своїх можливостей."
  law_private_health_insurance: "Приватне медичне страхування"
- law_private_health_insurance_desc:0 "Population health is managed through a system of privately owned hospitals paid through private health insurance programs, ensuring the well-being of those who can afford it with minimal impact on the government treasury."
+ law_private_health_insurance_desc: "Здоров'ям населення керують через систему приватних лікарень, які оплачуються через приватні програми медичного страхування, що забезпечує добробут тих, хто може собі це дозволити, з мінімальним впливом на державну скарбницю."
  law_public_health_insurance: "Державне медичне страхування"
- law_public_health_insurance_desc:0 "The government provides a publicly funded health insurance program ensuring equal access to care for all."
+ law_public_health_insurance_desc: "Уряд забезпечує фінансовану державою програму медичного страхування, яка забезпечує рівний доступ до медичної допомоги для всіх."
  
   # Welfare group
  lawgroup_welfare: "Соціяльне забезпечення"
- lawgroup_welfare_desc:0 "Government assistance for the income deprived."
+ lawgroup_welfare_desc: "Державна допомога для людей, позбавлених доходів."
   
  law_no_social_security: "Без забезпечення"
- law_no_social_security_desc:0 "It is not the state's role to provide for those who cannot provide for themselves."
+ law_no_social_security_desc: "У завдання держави не входить забезпечення тих, хто не може забезпечити себе сам."
  law_poor_laws: "Закони про бідняків"
- law_poor_laws_desc:0 "Getting the tramps and hobos off our streets and into the workhouses is well worth the cost."
+ law_poor_laws_desc: "Витягти волоцюг і бродяг з наших вулиць у робітні будинки цілком варте цих витрат."
  law_wage_subsidies: "Мінімальна зарплата"
- law_wage_subsidies_desc:1 "All who are willing to work have a right to eat. No man should lack the means to provide for his family."
+ law_wage_subsidies_desc: "Кожен, хто хоче працювати, має право на їжу. Жодній людині не повинно бракувати коштів для забезпечення своєї сім’ї."
  law_old_age_pension: "Пенсія за віком"
- law_old_age_pension_desc:0 "There is a practical limit to the age where our workforce is no longer efficient and their subsequent welfare must fall under the purview of government."
+ law_old_age_pension_desc: "Існує практична межа віку, коли наша робоча сила вже неефективна, і її наступний добробут має підпадати під сферу компетенції уряду."
  law_disability_insurance: "Зебезпечення інвалідів"
- law_disability_insurance_desc:0 "It is the state's responsibility to care for those who, through no fault of their own, find themselves unable to work."
+ law_disability_insurance_desc: "Обов'язок держави піклуватися про тих, хто не з власної вини виявився непрацездатним."
   
   # Rights of Women group
  lawgroup_rights_of_women: "Права жінок"
- lawgroup_rights_of_women_desc:0 "The legal regulations of the fairer sex."
+ lawgroup_rights_of_women_desc: "Правове регулювання представниць прекрасної статі."
   
  law_no_womens_rights: "Юридичний захист"
- law_no_womens_rights_desc:0 "Women are legally under the guardianship of men and enjoy very few rights."
+ law_no_womens_rights_desc: "Жінки законно перебувають під опікою чоловіків і мають небагато прав."
  law_women_own_property: "Жінки з майном"
- law_women_own_property_desc:0 "Whether inherited or otherwise earned, even women have the right and duty to own and cherish their possessions."
+ law_women_own_property_desc: "Незалежно від того, успадковано чи зароблено іншим способом, навіть жінки мають право й обов’язок володіти своїм майном і берегти його."
  law_women_in_the_workplace: "Жінки на роботі"
- law_women_in_the_workplace_desc:0 "How will we be able to keep the furnaces of progress aflame with only half the potential workforce?"
+ law_women_in_the_workplace_desc: "Як ми зможемо підтримувати горна прогресу лише з половиною потенційної робочої сили?"
  law_womens_suffrage: "Виборче право жінок"
- law_womens_suffrage_desc:0 "In the adjustment of the new order of things, we women demand an equal voice; we shall accept nothing less."
+ law_womens_suffrage_desc: "У пристосуванні нового порядку речей ми, жінки, вимагаємо рівного голосу; ми не приймемо нічого меншого."
   
   # Policing
  lawgroup_policing: "Поліція"
- lawgroup_policing_desc:0 "The priorities of the national police force."
+ lawgroup_policing_desc: "Пріоритети національної поліції."
 
  law_no_police: "Без поліції"
- law_no_police_desc:0 "Any sort of structured police force does not exist in this country."
+ law_no_police_desc: "У цій країні не існує будь-якої структурованої поліції."
  law_local_police: "Місцева поліція"
- law_local_police_desc:0 "This country has local police forces operating."
+ law_local_police_desc: "У цій країні діє місцева поліція."
  law_dedicated_police: "Щогла поліція"
- law_dedicated_police_desc:0 "This country has a dedicated police force with standardized training."
+ law_dedicated_police_desc: "У цій країні є спеціяльна поліція зі стандартизованою підготовкою."
  law_militarized_police: "Воєнізована поліція"
- law_militarized_police_desc:0 "By giving your police force military equipment and military training, their effectiveness at carrying out your will increases."
+ law_militarized_police_desc: "Якщо надати вашій поліції військову техніку та військову підготовку, її ефективність у виконанні вашої волі підвищується."
   
   # Bureaucracy
  lawgroup_bureaucracy: "Бюрократія"
- lawgroup_bureaucracy_desc:0 "How your country is administered."
+ lawgroup_bureaucracy_desc: "Як керують вашою країною."
 
  law_hereditary_bureaucrats: "Спадкові бюрократи"
  law_hereditary_bureaucrats_desc: "Бюрократи утримують свою посаду через спадковість та передають обов’язки своїм дітям."
  law_appointed_bureaucrats: "Призначені бюрократи"
- law_appointed_bureaucrats_desc:0 "Bureacrats are appointed by rulers to serve the country's best interests in exchange for high wages."
+ law_appointed_bureaucrats_desc: "Бюрократи призначаються правителями, щоб служити найкращим інтересам країни в обмін на високу зарплатню."
  law_meritocratic_bureaucracy: "Гідні бюрократи"
- law_meritocratic_bureaucracy_desc:0 "Bureaucrats vie for positions of power through merit. Over time this creates enormous, byzantine administrations."
+ law_meritocratic_bureaucracy_desc: "Бюрократи змагаються за владні позиції через заслуги. З часом це створює величезні візантійські адміністрації."
  law_elected_bureaucrats: "Виборні бюрократи"
- law_elected_bureaucrats_desc:0 "Local governors are elected by their constitutents, decentralizing power while making citizens easier to manage."
+ law_elected_bureaucrats_desc: "Місцеві губернатори обираються виборцями, що децентралізує владу та полегшує управління громадянами."
   
   # Colonization
  lawgroup_colonization: "Осадництво"
- lawgroup_colonization_desc:0 "Your stance on establishing colonies to supplant and conquer [concept_decentralized_nation]."
+ lawgroup_colonization_desc: "Ваша позиція щодо створення осад для витіснення та завоювання [concept_decentralized_nation]."
   
  law_no_colonial_affairs: "Без урядництва"
- law_no_colonial_affairs_desc:0 "The country does not engage in any formal type of colonization and cannot establish colonies."
+ law_no_colonial_affairs_desc: "Країна не бере участі в жодному формальному типі осадництва та не може створювати осади."
  law_colonial_resettlement: "Переселення до осад"
- law_colonial_resettlement_desc:0 "Colonies are established to provide land to settlers from the country's incorporated states."
+ law_colonial_resettlement_desc: "Осади засновуються для забезпечення землею поселенців з інкорпорованих штатів країни."
  law_colonial_exploitation: "Визиск осад"
- law_colonial_exploitation_desc:0 "Colonies are established to exploit the area for their natural resources and cheap labor."
+ law_colonial_exploitation_desc: "Осади засновуються, щоб використовувати територію для отримання природних ресурсів і дешевої робочої сили."
   
   # Internal Security
  lawgroup_internal_security: "Внутрішня безпека"
- lawgroup_internal_security_desc:0 "Keeping your own affairs in order."
+ lawgroup_internal_security_desc: "Тримати внутрішні справи в пріоритеті."
   
  law_no_home_affairs: "Без урядництва"
- law_no_home_affairs_desc:0 "The state makes no special attemps to put a stop to unrest and uprisings."
+ law_no_home_affairs_desc: "Держава не робить особливих спроб зупинити заворушення та повстання."
  law_national_guard: "Національна сердючина"
- law_national_guard_desc:0 "The state may use military force to suppress domestic unrest."
+ law_national_guard_desc: "Держава може використовувати військову силу щоб запобігти внутрішніх заворушень."
  law_secret_police: "Таємна поліція"
- law_secret_police_desc:0 "The secret police keep close track of radical elements and dissenters."
+ law_secret_police_desc: "Таємна поліція пильно стежить за радикальними елементами та інакомислячими."
  law_guaranteed_liberties: "Гарантія свободи"
- law_guaranteed_liberties_desc:1 "The state's home affairs bureau is solely focused on addressing the grievances of the citizens, and is forbidden from investigating or arresting them without due cause."
+ law_guaranteed_liberties_desc: "Бюро внутрішніх справ штату зосереджено виключно на розгляді скарг громадян, і йому заборонено розслідувати чи заарештовувати їх без належної причини."
   
   # Migration
  lawgroup_migration: "Міграція"
- lawgroup_migration_desc:0 "Controlling the flow of people."
+ lawgroup_migration_desc: "Контроль потоку людей."
   
  law_no_migration_controls: "Жодного міграційного контролю"
- law_no_migration_controls_desc:0 "The country makes no attempt to control movement across its borders."
+ law_no_migration_controls_desc: "Країна не намагається контролювати пересування через свої кордони."
  law_migration_controls: "Міграційний контроль"
- law_migration_controls_desc:0 "Only people of cultures and religions not discriminated against may migrate."
+ law_migration_controls_desc: "Мігрувати можуть лише люди культур і релігій, які не піддаються дискримінації."
  law_closed_borders: "Закриті кордони"
- law_closed_borders_desc:0 "No internal or external migration is permitted."
+ law_closed_borders_desc: "Ні внутрішня, ні зовнішня міграція не допускається."
 
- liberate_slaves_tt: "All [GetPopType('slaves').GetName] will be liberated"
+ liberate_slaves_tt: "Всі [GetPopType('slaves').GetName] отримають свободу"
