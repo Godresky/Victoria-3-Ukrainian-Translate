@@ -649,9 +649,9 @@ pm_steam_rail_transport: "Залізниця"
  
  
  pm_log_carts: "Залізничні візки"
- pm_fish_press: "Рибний прес"
- pm_steam_derricks: "Парові вишки"
- pm_combustion_derricks: "Вишки двигуна внутрішнього згоряння"
+ pm_fish_press: "Рибна гнятівня"
+ pm_steam_derricks: "Парові вежі"
+ pm_combustion_derricks: "Вежі рушія внутрішнього згоряння"
  pm_tanker_cars: "Автоцистерни"
  pm_dye_production: "Синтетичний барвник"
  pmg_synthetic_silk: "Синтетичний шовк"
