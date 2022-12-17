@@ -4373,10 +4373,10 @@
  GAME_PAUSED: "Гра на павзі. #instruction Клацніть#!, щоб продовжити"
  GAME_RUNNING: "Гра йде. #instruction Клацніть#! поставити на павзу"
  TOGGLE_PAUSE_NOT_HOST_OR_LOCAL:0 "#N Only host is allowed to toggle pause#!"
- PAUSED_BY_PLAYER_MP:0 "Paused by #v [TimeKeeper.GetPausedBy]#!"
+ PAUSED_BY_PLAYER_MP: "Призупинено гравцем #v [TimeKeeper.GetPausedBy]#!"
  PAUSED_BY_UNPAUSE_ONLY_ME:0 "Only you can unpause the game for [TimeKeeper.GetTimeAnyoneUnpause] more seconds"
  PAUSED_BY_UNPAUSE_ONLY_PAUSED_BY:0 "Only #v [TimeKeeper.GetPausedBy]#! can unpause for [TimeKeeper.GetTimeAnyoneUnpause] more seconds"
- PAUSED_BY_UNPAUSE_ANYONE:0 "Anyone can unpause"
+ PAUSED_BY_UNPAUSE_ANYONE: "Будь-хто може зняти з павзи"
 
  ESTABLISH_COLONY_BUILDING_TOOLTIP:0 "#variable [BUILDING_TYPE.GetName]#!"
 
@@ -5101,7 +5101,7 @@
  TARIFF_LEVEL_TARIFF_LAW: "Торгова політика: [LawType.GetName]"
  TARIFF_LEVEL_NO_TARIFF_LAW: "Торгова політика: Немає"
 
- LAW_FROM_TO: "[GetPlayer.GetActiveLawFromGroup(Law.GetGroup.GetKey).GetName] на «[Law.GetName]»"
+ LAW_FROM_TO: "«[GetPlayer.GetActiveLawFromGroup(Law.GetGroup.GetKey).GetName]» на «[Law.GetName]»"
  GROW_INSTITUTION: "#header Збільшити рівень установи «[INSTITUTION.GetName]#!»"
  SHRINK_INSTITUTION: "#header Зменшити рівень установи «[INSTITUTION.GetName]#!»"
  INSTITUTION_CHANGE_TITLE: "#bold Заподія для $LEVEL|v$-го рівня:#!"
