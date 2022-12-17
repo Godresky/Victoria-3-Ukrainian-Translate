@@ -9,8 +9,8 @@
  ADD_TREASURY_EFFECT_THIRD_POSITIVE: "[COUNTRY.GetName] отримує @money!$VALUE|+=$"
  ADD_TREASURY_EFFECT_THIRD_NEGATIVE: "[COUNTRY.GetName] втратить @money!$VALUE|+=$"
 
- SET_COUNTRY_ARMY_SP_TARGET: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! військові очки сили(@army_SP!) встановляться на #variable $VALUE$#!"
- SET_COUNTRY_NAVY_SP_TARGET: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! корабельські очки сили(@navy_SP!) встановляться на #variable $VALUE$#!"
+ SET_COUNTRY_ARMY_SP_TARGET: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! військові бали сили(@army_SP!) встановляться на #variable $VALUE$#!"
+ SET_COUNTRY_NAVY_SP_TARGET: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! корабельські бали сили(@navy_SP!) встановляться на #variable $VALUE$#!"
  SET_RELATIONS: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! відносини до #variable [TARGET_COUNTRY.GetName]#! встановиться на #variable $VALUE|0$#!"
  SET_TENSION: "[Concept('concept_tension', '$concept_tensions$')|l] між [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] встановиться на #variable $VALUE|0$#!"
  SET_STRATEGY: "[COUNTRY.GetName] затверджує #variable [AIStrategy.GetName]#! стратегію"
