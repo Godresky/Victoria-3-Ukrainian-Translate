@@ -2399,7 +2399,7 @@
  MAX_DECLARED_INTERESTS_TOOLTIP:0 "#header Maximum [Concept('concept_declared_interest','$concept_declared_interests$')] for [Country.GetName]#!\n$TOOLTIP_DELIMITER$\n[Country.GetMaxNumDeclaredInterestsBreakdown]"
 
  MAP_INTERACTION_ESC_TO_CANCEL: "#instruction Нажміть #bold ESC#!, щоб закрити поточну взаємодію з мапою#!"
- MAP_INTERACTION_BUILD_BUILDING_DESC: "Виберіть #V регіон#!, де Ви збудуєте будівлю #V [BUILDING_TYPE.GetName|l]#!"
+ MAP_INTERACTION_BUILD_BUILDING_DESC: "Виберіть #V регіон#!, де ви збудуєте будівлю #V [BUILDING_TYPE.GetName|l]#!"
  MAP_INTERACTION_BUILD_BUILDING_PERFORMED: "Будівництво споруди #V [BuildingType.GetName|l]#! почалося"
  MAP_INTERACTION_BUILDING_BUILT: "Будівля [Building.GetName|l] збудована у [Concept('concept_state', '$concept_state_loc$')|l] [Building.GetState.GetName]"
  MAP_INTERACTION_BUILDING_EXPANDED: "[Building.GetName] розширено до розміру #v [Building.GetExpansionLevel]#! у [Concept('concept_state', '$concept_state_loc$')|l] [Building.GetState.GetName]"
@@ -2694,7 +2694,7 @@
  POP_NEEDS_HEADER:0 "Consists of the following [Concept('concept_good', '$concept_goods$')] that are mutually substitutable through [concept_goods_substitution]:"
  POP_NEEDS_ENTRY_DEFAULT:1 "[Goods.GetTextIcon][Nbsp][Goods.GetName] - Default [Concept('concept_good', '$concept_goods$')] for [POP_NEED.GetName]"
  POP_NEEDS_ENTRY:1 "[Goods.GetTextIcon][Nbsp][Goods.GetName] - Equivalent to $MULT|2v$ unit(s) of [POP_NEED.GetDefaultGoods.GetName]"
- BUY_PACKAGE_POP_CONSUMPTION_WEALTH_SPECIFIC:0 "Consumed by [Concept('concept_pop', '$concept_pops$')] of [concept_wealth] Levels $LEVEL|v$"
+ BUY_PACKAGE_POP_CONSUMPTION_WEALTH_SPECIFIC: "Consumed by [Concept('concept_pop', '$concept_pops$')] of [concept_wealth] Levels $LEVEL|v$"
  BUY_PACKAGE_POP_CONSUMPTION_WEALTH_TO_LEVEL:0 "Consumed by [Concept('concept_pop', '$concept_pops$')] of [concept_wealth] Level $LEVEL|v$ and below"
  BUY_PACKAGE_POP_CONSUMPTION_WEALTH_FROM_LEVEL:0 "Consumed by [Concept('concept_pop',  '$concept_pops$')] of [concept_wealth] Level $LEVEL|v$ and above"
  BUY_PACKAGE_POP_CONSUMPTION_WEALTH_BETWEEN_LEVELS:0 "Consumed by [Concept('concept_pop', '$concept_pops$')] between [concept_wealth] Levels $FROM|v$ to $TO|v$"
@@ -2901,7 +2901,7 @@
  BUDGET_GOODS_FOR_MILITARY_BUILDINGS:0 "[concept_budget_goods_for_military_buildings]"
  BUDGET_GOVERNMENT_WAGES:0 "[concept_budget_government_wages]"
  BUDGET_MILITARY_WAGES:0 "[concept_budget_military_wages]"
- BUDGET_GOVERNMENT_SLAVES:0 "[concept_budget_government_slaves]"
+ BUDGET_GOVERNMENT_SLAVES: "[concept_budget_government_slaves]"
  BUDGET_MILITARY_SLAVES:0 "[concept_budget_military_slaves]"
  BUDGET_SUBSIDIES:0 "[concept_subsidies]"
  BUDGET_WELFARE_PAYMENTS:0 "[concept_welfare_payments]"
@@ -4277,8 +4277,8 @@
  HQ_PANEL_FLOTILLAS_IN_RESERVE:0 "#header @flotillas! [Concept('concept_flotilla', '$concept_flotillas$')] [concept_in_reserve]#!\n$TOOLTIP_DELIMITER$\nThere are [Hq.GetCombatUnitsIcon] #variable [Hq.GetReserveUnitsRaw]#! [concept_in_reserve] at [Hq.GetNameNoFlag]"
  HQ_IN_RESERVE:1 "#variable [Hq.GetReserveUnitsRaw]#!"
 
- HQ_PANEL_HOME_GENERALS: "#title [Concept('concept_hq', 'Генерали голпровода')]#!"
- HQ_PANEL_HOME_ADMIRALS: "#title [Concept('concept_hq', 'Адмірали голпровода')]#!"
+ HQ_PANEL_HOME_GENERALS: "#title [Concept('concept_hq', 'Генерали голпроводу')]#!"
+ HQ_PANEL_HOME_ADMIRALS: "#title [Concept('concept_hq', 'Адмірали голпроводу')]#!"
 
  FRONT_SUPPLIED_BY_HQ_ITEM:0 "$TAB$@battalions! #v $NUM$#! to [Front.GetName]\n"
 
@@ -4297,7 +4297,7 @@
  TOTAL_VOTES_TITLE: "#title Загальна кількість голосів#!"
  LOCATION_TITLE: "#title Місцина#!"
  COUNTRY_TITLE: "#title Держава#!"
- TOTAL_POLITICAL_STRENGTH_TITLE:0 "#title Total [concept_political_strength]#!"
+ TOTAL_POLITICAL_STRENGTH_TITLE: "#title Загальна [concept_political_strength|l]#!"
  TOTAL_CAPITAL_GAIN_TITLE:0 "#title [concept_authority] Gain#!"
  POPULATION_TITLE: "#title Населення#!"
  WORKING_ADULTS_TITLE:0 "#title Workforce#!"
@@ -4346,7 +4346,7 @@
  PEOPLE_ABROAD_TITLE:0 "#title Unincorporated Population#!"
  POLITICAL_INACTIVE_TITLE:1 "#title [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')]#!"
  POLITICAL_INACTIVE_TITLE_NO_FORMATTING:0 "#title Politically Inactive#!" # Don't turn this into a concept, it will break some IG tooltips
- TRAIT_INACTIVE: "(Неактивний)"
+ TRAIT_INACTIVE: "(Недієвий)"
 
  POLITICALLY_INACTIVE_POPULATION: "[Concept('concept_politically_inactive_involved', '$concept_politically_inactive_gender_gen$')] населення: [Country.GetInactivePopulation|kv]"
  POLITICALLY_INACTIVE_POPULATION_TOOLTIP: "#header [Concept('concept_politically_inactive_involved', '$concept_politically_inactive_gender_gen$')] населення#!\nTotal: [GetPlayer.GetInactivePopulation|kv]\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetInactivePopulationDesc]"
@@ -4890,8 +4890,8 @@
 
  NUM_BUILDINGS_WITH_PROD_METHOD_ACTIVE:0 "[ProductionMethod.GetNumOfBuildingsUsingThis(GetPlayer.Self)|v] [Concept('concept_building', '$concept_buildings$')] currently have [ProductionMethod.GetName] active:\n[ProductionMethod.GetBuildingTypesUsingThisDesc(GetPlayer.Self)]"
  BUILDING_TYPE_USING_PM_ENTRY:0 "[BuildingType.GetName]: #variable $NUM$#!"
- ACTIVE_PRODUCTION_METHODS_PRODUCING:1 "[Concept('concept_production_method', '$concept_production_methods$')] producing [Goods.GetTextIcon][Nbsp][Goods.GetName] in [GetPlayer.GetName]"
- ACTIVE_PRODUCTION_METHODS_CONSUMING:1 "[Concept('concept_production_method', '$concept_production_methods$')] using [Goods.GetTextIcon][Nbsp][Goods.GetName] in [GetPlayer.GetName]"
+ ACTIVE_PRODUCTION_METHODS_PRODUCING: "[Concept('concept_production_method', '$concept_production_methods_short$')], що виробляють [Goods.GetTextIcon][Nbsp][Goods.GetName] у [Concept('concept_country','$concept_country_loc$')|l] [GetPlayer.GetName]"
+ ACTIVE_PRODUCTION_METHODS_CONSUMING: "[Concept('concept_production_method', '$concept_production_methods_short$')], що використовують [Goods.GetTextIcon][Nbsp][Goods.GetName] у [Concept('concept_country','$concept_country_loc$')|l] [GetPlayer.GetName]"
  INACTIVE_PRODUCTION_METHODS: "Зараз недіяльні"
  PRODUCTION_METHOD_ITEM:0 "#variable [ProductionMethod.GetName]#!"
 
@@ -6216,14 +6216,14 @@
 
  RESET_TECH_TREE_VIEW: "Скинути"
 
- BUILDING_KIND_GOVERNMENT:0 "[concept_government_building]"
- BUILDING_KIND_MILITARY:0 "[concept_military_building]"
- BUILDING_KIND_SUBSISTENCE:0 "[concept_subsistence_building]"
- BUILDING_KIND_URBAN_CENTER:1 "[GetBuildingType('building_urban_center').GetName]"
- BUILDING_KIND_USES_GOVERNMENT_SLAVES:0 "Uses [concept_budget_government_slaves][SelectLocalization( ObjectsEqual(Country.Self, GetPlayer.Self), '', 'IN_COUNTRY' )]"
- BUILDING_KIND_USES_MILITARY_SLAVES:0 "Uses [concept_budget_military_slaves][SelectLocalization( ObjectsEqual(Country.Self, GetPlayer.Self), '', 'IN_COUNTRY' )]"
- BUILDING_KIND_USES_SLAVES:0 "Uses [POP_TYPE.GetName] as [TARGET_POP_TYPE.GetName][SelectLocalization( ObjectsEqual(Country.Self, GetPlayer.Self), '', 'IN_COUNTRY' )]"
- BUILDING_KIND_NON_GOVERNMENT:0 "[concept_building]"
+ BUILDING_KIND_GOVERNMENT: "[concept_government_building]"
+ BUILDING_KIND_MILITARY: "[concept_military_building]"
+ BUILDING_KIND_SUBSISTENCE: "[concept_subsistence_building]"
+ BUILDING_KIND_URBAN_CENTER: "[GetBuildingType('building_urban_center').GetName]"
+ BUILDING_KIND_USES_GOVERNMENT_SLAVES: "Використовуються [concept_budget_government_slaves|l][SelectLocalization( ObjectsEqual(Country.Self, GetPlayer.Self), '', 'IN_COUNTRY' )|l]"
+ BUILDING_KIND_USES_MILITARY_SLAVES: "Використовуються [concept_budget_military_slaves][SelectLocalization( ObjectsEqual(Country.Self, GetPlayer.Self), '', 'IN_COUNTRY' )|l]"
+ BUILDING_KIND_USES_SLAVES: "Використовуються [POP_TYPE.GetName] як [TARGET_POP_TYPE.GetName][SelectLocalization( ObjectsEqual(Country.Self, GetPlayer.Self), '', 'IN_COUNTRY' )|l]"
+ BUILDING_KIND_NON_GOVERNMENT: "[concept_building]"
  IN_COUNTRY: "У [Concept('concept_country', '$concept_country_loc$')|l] [Country.GetName]"
 
  BUILDING_STATUS_ESTABLISHED:0 "This building was established on [BUILDING.GetEstablishmentDate]"

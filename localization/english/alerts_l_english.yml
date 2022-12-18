@@ -197,7 +197,7 @@ alert_stockpiling_gold_alert_name: "[GetGoods('gold').GetTextIcon] [GetGoods('go
  ag_isolated_states_desc:0 "We have [GetPlayer.GetNumIsolatedStates] [Concept('concept_isolated_state', '$concept_isolated_states$')] in our country."
  ag_isolated_states_tooltip:0 "#header $ag_isolated_states_name$#!\n$TOOLTIP_DELIMITER$\n$ag_isolated_states_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
- ag_inactive_trade_routes_name: "Неактивні [Concept('concept_trade_route', '$concept_trade_routes$')|l]"
+ ag_inactive_trade_routes_name: "Недієві [Concept('concept_trade_route', '$concept_trade_routes$')|l]"
  ag_inactive_trade_routes_desc:0 "We have [GetPlayer.GetNumInactiveTradeRoutes|v] inactive [Concept('concept_trade_route', '$concept_trade_routes$')]."
  ag_inactive_trade_routes_tooltip:0 "#header $ag_inactive_trade_routes_name$#!\n$TOOLTIP_DELIMITER$\n$ag_inactive_trade_routes_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 

@@ -1380,7 +1380,7 @@
 
  je_autocracy: "Релігія, самодержавство, національність"
  je_autocracy_reason:1 "Наша держава визначається абсолютним авторитетом нашого улюбленого правителя. Ми одна родина, у нас один батько та одна батьківщина. Ми згуртовані та сильні. Якщо ми хочемо зберегти ці цінності, самодержав‘я потрібно зберегти."
- je_autocracy_goal: "Наступне має бути активним протягом 30 років:"
+ je_autocracy_goal: "Наступне має бути дієвим протягом 30 років:"
 
  autocracy.1.t:0 "Official Nationality"
  autocracy.1.d:0 "The state policy of Religion, Autocracy, and Nationality has become the ubiquitous ideology of the [ROOT.GetCountry.GetAdjective] people. There are few who dare to question the absolute authority of the [SCOPE.sCharacter('monarch_scope').GetPrimaryRoleTitle]."

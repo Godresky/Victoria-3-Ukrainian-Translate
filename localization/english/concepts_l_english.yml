@@ -567,10 +567,10 @@
  concept_marginalized_feminine_ins: "Маргіналізованою"
  concept_marginalized_desc:2 "$concept_marginalized$ [Concept('concept_interest_group', '$concept_interest_groups$')] have too little [concept_clout] to be politically noteworthy. They cannot be included in the [concept_government], nor do they join [Concept('concept_party','$concept_parties$')]. Their [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] are permanently deactivated for as long as they remain $concept_marginalized$.\n\nAlready $concept_marginalized$ $concept_interest_groups$ remain $concept_marginalized$ for as long as their $concept_clout$ is below [GetDefine('NPolitics','MARGINAL_IG_THRESHOLD')|%0v]. Non-$concept_marginalized$ $concept_interest_groups$ will become $concept_marginalized$ once their $concept_clout$ drops below [GetDefine('NPolitics','MARGINAL_IG_CUTOFF')|%0v], unless they are already [concept_in_government] in which case they do not become $concept_marginalized$ until removed."
  
- concept_politically_inactive_involved: "Політично неактивні/залучені"
- concept_politically_inactive: "Політично неактивні"
+ concept_politically_inactive_involved: "Політично недієві/залучені"
+ concept_politically_inactive: "Політично недієві"
  concept_politically_involved: "Політично залучені"
- concept_politically_inactive_gender_gen: "Політично неактивне"
+ concept_politically_inactive_gender_gen: "Політично недієве"
  concept_politically_involved_gender_gen: "Політично залучене"
  concept_politically_inactive_involved_desc:3 "The part of a [concept_pop] that does not support an [concept_interest_group] is called #b $concept_politically_inactive$#!. This is often due to low [concept_literacy] or [concept_sol]. $concept_politically_inactive$ parts of $concept_pops$ do not participate in the political process and any [concept_political_strength] they possess is wasted.\n\nThe opposite of this is #b Politically Involved#!. Which means the $concept_pop$ is part of one of your [Concept('concept_country', '$concept_country_possessive$')] [Concept('concept_interest_group', '$concept_interest_groups$')] and the $concept_pop$'s $concept_political_strength$ is attributed to that $concept_interest_group$."
  
@@ -1228,6 +1228,7 @@
 
  concept_production_method: "Спосіб виробництва"
  concept_production_methods: "Способи виробництва"
+ concept_production_methods_short: "Способи"
  concept_production_method_desc:3 "$concept_production_methods$ determine how [Concept('concept_building','$concept_buildings$')] operate. They impact\n\n- The [Concept('concept_good_consumption','$concept_input_goods$')] the $concept_building$ must purchase to operate\n- The [Concept('concept_good_production','$concept_output_goods$')] the $concept_building$ produces and sells\n- The distribution of [Concept('concept_profession','$concept_professions$')] among its [concept_workforce]\n\n$concept_production_methods$ can also have other effects, such as the generation of [Concept('concept_modifier','$concept_modifiers$')] or the distribution of [Concept('concept_ownership_share','$concept_ownership_shares$')]. $concept_production_methods$ are organized in groups, in which only one can be active at a time. You can switch which $concept_production_method$ is active in each group as long as you meet the [concept_technology] and/or [concept_law] requirement for it."
 
  concept_nation_formation: "Формування нації"
@@ -1436,7 +1437,7 @@
  concept_budget_goods_for_government_buildings: "$concept_goods$ для урядових будівель"
  concept_budget_goods_for_government_buildings_desc:1 "[Concept('concept_good','$concept_goods$')] [Concept('concept_good_consumption','$concept_good_consumed$')] by a [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_government_building','$concept_government_buildings$')]."
 
- concept_budget_government_slaves:0 "Government Slaves"
+ concept_budget_government_slaves: "Урядові раби"
  concept_budget_government_slaves_desc:2 "The upkeep of [Concept('concept_slavery','$concept_slaves$')] laboring directly for a [Concept('concept_country','$concept_country_possessive$')] government."
 
  concept_budget_military_wages: "Військові зарплати"
