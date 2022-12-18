@@ -331,6 +331,7 @@
  concept_strategic_region_gen: "Стратегічного регіону"
  concept_strategic_region_loc: "Стратегічному регіоні"
  concept_strategic_regions: "Стратегічні регіони"
+ concept_strategic_regions_ins: "Стратегічними регіонами"
  concept_strategic_regions_short: "Стр. регіони"
  concept_strategic_region_desc:1 "A collection of [Concept('concept_state_region', '$concept_state_regions$')] considered a region of strategic importance. [Concept('concept_country','$concept_countries$')] have an [concept_interest] in all $concept_strategic_regions_short$ where they own [Concept('concept_province','$concept_province_land$')], and may project additional [Concept('concept_interest','$concept_interests$')] in other $concept_strategic_regions$ if their [concept_rank] is high enough to do so.\n\nMaintaining an [concept_active_interest] in a $concept_strategic_region$ is a prerequisite to participate in [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] taking place there."
 
@@ -1202,6 +1203,7 @@
  concept_state_ins: "Регіоном"
  concept_state_loc: "Регіоні"
  concept_states: "Регіони"
+ concept_states_ins: "Регіонами"
  concept_states_loc: "Регіонах"
  concept_state_or_states: "Регіон(-и)"
  concept_state_possessive: "Регіональн"
