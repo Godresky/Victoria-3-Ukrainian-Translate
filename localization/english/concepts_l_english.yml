@@ -896,6 +896,7 @@
  concept_migration_target_explainer:0 "One $concept_migration_target$ may be created for every [GetDefine('NPops','MIGRATION_CULTURE_TARGET_TURMOIL')|v0] $concept_turmoil$ in a $concept_culture$."
 
  concept_base_price: "Базисна ціна"
+ concept_base_price_ins: "Базисною ціною"
  concept_base_price_desc:1 "The price of a [concept_good] when its [Concept('concept_sell_orders','$concept_sell_orders_supply$')] exactly equal its [Concept('concept_buy_orders','$concept_buy_orders_demand$')]."
 
  concept_market_impact: "Вплив на ринок"
@@ -1085,7 +1086,7 @@
 
  concept_resource_potential: "Ресурсна мічність"
  concept_resource_potentials: "Ресурсні мічності"
- concept_resource_potentials_short: "Мічности"
+ concept_resource_potentials_short: "Мічність"
  concept_resource_potential_desc:3 "A $concept_resource_potential$ grants the ability to construct and expand a specific [concept_building] type in the state, usually a resource industry such as fisheries, mines, or plantations. The maximum [concept_building_level] you can expand the $concept_building$ to is limited either to a fixed amount per resources, or by the $concept_state$'s amount of [concept_arable_land]."
 
  concept_government: "Уряд"
@@ -1462,7 +1463,7 @@
  concept_output_goods:0 "Output Goods"
  concept_good_production_desc:1 "The amount of a [concept_good] produced by a [concept_building] to be sold for [concept_revenue]."
 
- concept_good_consumption:0 "Consumption"
+ concept_good_consumption: "Споживання"
  concept_good_consumed:0 "Consumed"
  concept_input_goods:0 "Input Goods"
  concept_good_consumption_desc:1 "The amount of a [concept_good] consumed by a [concept_building] or [concept_pop] in the process of maintaining its [concept_throughput] or [concept_wealth]."
