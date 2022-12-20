@@ -136,7 +136,7 @@
  ai_attitude_genial_tooltip: "#header $ai_attitude_genial$ [concept_attitude|l]#!\n$ai_attitude_genial_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
 
  ai_attitude_loyal: "#V #P Вірні#!#!"
- ai_attitude_loyal_desc: "[COUNTRY.GetName] бачить [Concept('concept_country', '$concept_country_acc$')|l] [TARGET_COUNTRY.GetName], як їхнього #P #bold легітимного володаря#!#! в геополітичних справах. Ймовірно, вони допоможуть [TARGET_COUNTRY.GetName] у [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] і не намагатимуться здобути незалежність."
+ ai_attitude_loyal_desc: "[COUNTRY.GetName] бачить [Concept('concept_country', '$concept_country_acc$')|l] [TARGET_COUNTRY.GetName], як їхнього #P #bold законного володаря#!#! в геополітичних справах. Ймовірно, вони допоможуть [TARGET_COUNTRY.GetName] у [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] і не намагатимуться здобути незалежність."
  ai_attitude_loyal_tooltip: "#header $ai_attitude_loyal$ [concept_attitude|l]#!\n$ai_attitude_loyal_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
   
  ai_attitude_protective: "#V #P Захисне#!#!"
