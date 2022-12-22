@@ -1,5 +1,5 @@
 ﻿l_english:
- SET_CHARACTER_EFFECT: "#V $CHARACTER|v$#! приєдняється до #V $COMMAND$#! команди"
+ SET_CHARACTER_EFFECT: "#V $CHARACTER|v$#! приєднається до #V $COMMAND$#! команди"
  SET_CHARACTER_NONE_EFFECT: "Персонаж з #V $COMMAND$ не призначено"
 
  ADD_TREASURY_EFFECT_POSITIVE: "Держава отримає @money!$VALUE|+=$"
@@ -9,8 +9,8 @@
  ADD_TREASURY_EFFECT_THIRD_POSITIVE: "[COUNTRY.GetName] отримує @money!$VALUE|+=$"
  ADD_TREASURY_EFFECT_THIRD_NEGATIVE: "[COUNTRY.GetName] втратить @money!$VALUE|+=$"
 
- SET_COUNTRY_ARMY_SP_TARGET: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! військові Очки Сили(@army_SP!) встановляться на #variable $VALUE$#!"
- SET_COUNTRY_NAVY_SP_TARGET: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! корабельські Очки Сили(@navy_SP!) встановляться на #variable $VALUE$#!"
+ SET_COUNTRY_ARMY_SP_TARGET: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! військові бали сили(@army_SP!) встановляться на #variable $VALUE$#!"
+ SET_COUNTRY_NAVY_SP_TARGET: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! корабельські бали сили(@navy_SP!) встановляться на #variable $VALUE$#!"
  SET_RELATIONS: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! відносини до #variable [TARGET_COUNTRY.GetName]#! встановиться на #variable $VALUE|0$#!"
  SET_TENSION: "[Concept('concept_tension', '$concept_tensions$')|l] між [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] встановиться на #variable $VALUE|0$#!"
  SET_STRATEGY: "[COUNTRY.GetName] затверджує #variable [AIStrategy.GetName]#! стратегію"
@@ -24,9 +24,9 @@
  SET_GOVERNMENT_WAGE_LEVEL: "[COUNTRY.GetName] встановить свою [concept_government_wage] на рівень #v $WAGE_LEVEL$#!"
  SET_MILITARY_WAGE_LEVEL: "[COUNTRY.GetName] встановить свою [concept_military_wage] на рівень #v $WAGE_LEVEL$#!"
  ADD_CHANGE_RELATIONS_PROGRESS: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! змінить поступ відносин #variable $VALUE$#! з [TARGET_COUNTRY.GetName]"
- ADD_TECHNOLOGY_PROGRESS: "[COUNTRY.GetName] получить $VALUE|+D$ поступу для дослідження [TECHNOLOGY.GetName]"
+ ADD_TECHNOLOGY_PROGRESS: "[COUNTRY.GetName] отримає $VALUE|+D$ поступу для дослідження [TECHNOLOGY.GetName]"
  ADD_TECHNOLOGY_PROGRESS_NEG: "[COUNTRY.GetName] втратить $VALUE|+$ поступу для дослідження [TECHNOLOGY.GetName]"
- ADD_TECHNOLOGY_PROGRESS_FIRST: "[COUNTRY.GetNameNoFlag] получить $VALUE|+D$ поступу для дослідження [TECHNOLOGY.GetName]"
+ ADD_TECHNOLOGY_PROGRESS_FIRST: "[COUNTRY.GetNameNoFlag] отримає $VALUE|+D$ поступу для дослідження [TECHNOLOGY.GetName]"
  ADD_TECHNOLOGY_PROGRESS_FIRST_NEG: "[COUNTRY.GetNameNoFlag] втратить $VALUE|+$ поступу для дослідження [TECHNOLOGY.GetName]"
  SET_ARMY_STOCKPILE: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! запас війська встановлено на $VALUE|+$"
  SET_NAVY_STOCKPILE: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! запас флоту встановлено на $VALUE|+$"

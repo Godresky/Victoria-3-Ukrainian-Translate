@@ -83,9 +83,9 @@
  expedition_events.512.f:1 ""We sat on the top of a mountain. Briefly we stopped. The water was running low, and so was the food. The jungle couldn't possibly end; it wasn't in its nature. Monstrous trees bit the last fragments of sky. We were so tired. So tired.""
  expedition_events.512.a:0 "Damnation!"
 
- central_africa_expedition:0 "Expedition to Find the Source of the Nile"
- central_africa_expedition_desc:0 "The center of the African continent holds the secret to the source of the Nile."
- central_africa_expedition_tooltip:0 "Requirements:"
+ central_africa_expedition: "Експедиція з шуканням витоку Нілу"
+ central_africa_expedition_desc: "У центрі африканського континенту зберігається таємниця витоку Нілу."
+ central_africa_expedition_tooltip: "Вимоги:"
 
  modifier_central_africa_expedition_complete:0 "Found the Source of the Nile"
 

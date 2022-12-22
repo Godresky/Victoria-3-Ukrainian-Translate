@@ -1,0 +1,14 @@
+﻿l_english:
+ ACHIEVEMENT_UNLOCKED: "Досягнення здобуте!"
+ ACHIEVEMENT_LOCKED: "Досягнення нездобуте"
+ ACHIEVEMENT_NOT_POSSIBLE: "Досягнення недоступні у цій грі"
+ ACHIEVEMENTS: "Досягнення"
+ ACHIEVEMENT_FILTER_POSSIBLE: "Показати доступні"
+ ACHIEVEMENT_FILTER_NOT_POSSIBLE: "Показати недоступні"
+ ACHIEVEMENT_FILTER_UNLOCKED: "Показати здобуті досягнення"
+ ACHIEVEMENT_FILTER_LOCKED: "Показати досягнення, які залишилися"
+ ACHIEVEMENT_GROUP_TITLE: "[Group.GetName] - [Group.CalcNumberOfUnlockedVisibleAchievements] / [Group.GetNumberOfVisibleAchievements]"
+ ACHIEVEMENT_GROUP_TOOLTIP: "#V [Group.CalcNumberOfUnlockedVisibleAchievements]#! з #V [Group.GetNumberOfVisibleAchievements]#! здобуті у групі [Group.GetName|l]" #досягненнь(-я) 
+ ACHIEVEMENT_FILTER_ALL: "Показати усі досягнення"
+ ACHIEVEMENT_UNAVAILABLE_TT: "Не вдалося завантажити досягнення: перевірте підключення до всемережжя"
+ ACHIEVEMENT_UNAVAILABLE_PLAZA_TT: "Не вдалося завантажити досягнення: увійдіть у парадокс плазу"

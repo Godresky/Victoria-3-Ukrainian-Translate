@@ -123,11 +123,12 @@ alert_stockpiling_gold_alert_name: "[GetGoods('gold').GetTextIcon] [GetGoods('go
  alert_stockpiling_gold_alert_desc:0 "Your [concept_treasury] is stockpiling gold beyond its capacity."
  alert_stockpiling_gold_alert_hint:0 "Increase your expenditures or reduce your income to balance your budget better. Stockpiling gold extracts @money![concept_money] from your economy and [concept_pop] at diminishing returns, leading to reductions in [concept_wealth] over time."
  alert_stockpiling_gold_alert_action:0 "Budget Panel"
- alert_low_legitimacy_alert_name:0 "Low Government Legitimacy"
- alert_low_legitimacy_alert_desc:1 "Your [concept_government] has [GetPlayer.GetGovernmentLegitimacy|v] [concept_legitimacy], which is having an effect on the radicalization of your pops."
+ alert_low_legitimacy_alert_name: "Низька законність уряду"
+ alert_low_legitimacy_alert_desc:1 "Ваш [concept_government|l] має [GetPlayer.GetGovernmentLegitimacy|v] [Concept('concept_legitimacy','$concept_legitimacy_gen$')|l], що впливає радикалізацію вашого населення."
  alert_low_legitimacy_alert_hint:0 "Increase your [concept_legitimacy] by adding or removing [Concept('concept_interest_group', '$concept_interest_groups$')] from your [concept_government]. This can be done on the Politics Panel or on the details of an [concept_interest_group]. You can also change your [Concept('concept_law', '$concept_laws$')], which can be done from the Constitutional Laws tab in the Politics Panel."
  alert_low_legitimacy_alert_action:0 "Politics Panel"
- alert_unused_interests_alert_name:0 "Can support more [Concept('concept_declared_interest','$concept_declared_interests$')]"
+
+ alert_unused_interests_alert_name: "Можна підтримати більше [Concept('concept_declared_interest','$concept_declared_interests_gen$')|l]"
  alert_unused_interests_alert_desc:0 "We are only using [GetPlayer.GetNumDeclaredInterests|v]/#tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#! of the [Concept('concept_declared_interest','$concept_declared_interests$')] we are able to support"
  alert_unused_interests_alert_hint:0 "You can [Concept('concept_declared_interest','$concept_declare_interests$')] in [Concept('concept_strategic_region','$concept_strategic_regions$')] through the [concept_diplomatic_lens]."
  alert_unused_interests_alert_action:0 "Diplomacy Panel"
@@ -140,7 +141,7 @@ alert_stockpiling_gold_alert_name: "[GetGoods('gold').GetTextIcon] [GetGoods('go
  alert_trade_route_needs_convoys_alert_hint:1 "You can increase the number of [concept_convoys] available by constructing additional Ports, altering the Production Methods of those Ports, or cancelling unproductive trade routes"
  alert_trade_route_needs_convoys_alert_action:0 "Market Panel for the [SCOPE.GetRootScope.GetTradeRoute.GetActingMarket.GetName]"
 
- alert_market_goods_shortage_alert_name:0 "[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] [concept_input_goods_shortage] in the [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]"
+ alert_market_goods_shortage_alert_name: "[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] [concept_input_goods_shortage] - [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]"
  alert_market_goods_shortage_alert_desc:0 "There are #tooltippable #tooltip:[SCOPE.GetRootScope.GetMarketGoods.GetTooltipTag],alert_market_goods_shortage_affected_buildings_breakdown [SCOPE.GetRootScope.GetMarketGoods.GetNumBuildingsAffectedByShortage|v]#!#! buildings affected by this shortage."
  alert_market_goods_shortage_alert_hint:0 "You can resolve the shortages by increasing the number of [concept_sell_orders] for [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] in [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]. This can be done by either producing more [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName], improving [concept_infrastructure] in [Concept('concept_state', '$concept_states$')] with low [concept_market_access] producing it, or setting up a [concept_trade_route] to get it from another [concept_market]."
  alert_market_goods_shortage_alert_hint_data_version:1 "@information! There are #tooltippable #tooltip:[Goods.GetTooltipTag],alert_market_goods_shortage_affected_buildings_breakdown_data_version [Goods.GetNumBuildingsAffectedByShortageInMarket|v]#!#! buildings affected by this shortage.\n\nYou can resolve the shortages by increasing the number of [concept_sell_orders] for [Goods.GetTextIcon][Nbsp][Goods.GetName] in [Goods.GetMarket.GetName]. This can be done by either producing more [Goods.GetTextIcon][Nbsp][Goods.GetName], improving [concept_infrastructure] in [Concept('concept_state', '$concept_states$')]  with low [concept_market_access] producing it, or setting up a [concept_trade_route] to get it from another [concept_market]."
@@ -162,7 +163,7 @@ alert_stockpiling_gold_alert_name: "[GetGoods('gold').GetTextIcon] [GetGoods('go
   
  alert_expensive_goods_alert_hint_common:0 "You can influence the price of a [concept_good] in several ways. For instance, you can increase the availability of the good by upping its production through Buildings or Production methods, or Trade for it from another nation. You can ensure that its not effected by any input shortage or high cost of materials if its an end product good. You can also alter your tariff policy or consumption taxes on its (or its composite goods to hopefully reduce the price)."
 
- alert_expensive_government_goods_alert_name:0 "[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] in the [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]"
+ alert_expensive_government_goods_alert_name: "[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] - [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]"
  alert_expensive_government_goods_alert_desc:1 "#header [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] is expensive#!"
  alert_expensive_government_goods_alert_hint:1 "$alert_expensive_goods_alert_hint_common$"
  alert_expensive_government_goods_alert_action:0 "Goods Panel for [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] on the [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]"
@@ -172,11 +173,15 @@ alert_stockpiling_gold_alert_name: "[GetGoods('gold').GetTextIcon] [GetGoods('go
  alert_expensive_military_goods_alert_hint:1 "$alert_expensive_goods_alert_hint_common$"
  alert_expensive_military_goods_alert_action:0 "Goods Panel for [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] on the [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]"
 
+ alert_has_army_troops_in_reserve_alert_name:1 "[GetPlayer.GetBattalionsInReserve|0] @battalions! [Concept('concept_battalion', '$concept_battalions$')] [concept_in_reserve]"
+ alert_has_army_troops_in_reserve_alert_hint:3 "Promote existing [Concept('concept_general', '$concept_generals$')] in order to give them higher [concept_command_limit], which can be done on the details panel for that $concept_general$ (or by right-clicking the $concept_general$). You can also assign $concept_battalions$ by recruiting more $concept_generals$, which can be done on the Army tab in the #b Military#! panel or through the [concept_military_lens].\n\nHowever, promoting a $concept_general$ is usually recommended over recruiting more."
+ alert_has_army_troops_in_reserve_alert_action:0 "Military Panel"
+
  alert_has_navy_troops_in_reserve_alert_name:1 "[GetPlayer.GetWarshipsInReserve|0] @flotillas! [Concept('concept_flotilla', '$concept_flotillas$')] [concept_in_reserve]"
  alert_has_navy_troops_in_reserve_alert_hint:3 "Promote existing [Concept('concept_admiral', '$concept_admirals$')] in order to give them higher [concept_command_limit], which can be done on the details panel for that $concept_admiral$ (or by right-clicking the $concept_admiral$). You can also assign $concept_flotillas$ by recruiting more $concept_admirals$, which can be done on the Navy tab in the #b Military#! panel or through the [concept_military_lens].\n\nHowever, promoting an $concept_admiral$ is usually recommended over recruiting more."
  alert_has_navy_troops_in_reserve_alert_action:0 "Military Panel"
 
- ALERT_TOOLTIP_FORMAT:2 "#header [Alert.GetName]#!\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty(Alert.GetDescription, '\n\n')]@information! [Alert.GetHint]\n\n#instruction Click to open the [Alert.GetAction]#!"
+ ALERT_TOOLTIP_FORMAT:2 "#header [Alert.GetName]#!\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty(Alert.GetDescription, '\n\n')]@information! [Alert.GetHint]\n\n#instruction Клацніть, щоб відкрити [Alert.GetAction]#!"
  EXPANDABLE_IMPORTANT_ACTION_ITEM:0 "[Alert.GetToolTip]$notification_tooltip_footer$"
  ALERT_GROUP_TOOLTIP_FOOTER: "#instruction Клацніть, щоб розгорнути#!"
 
@@ -192,7 +197,7 @@ alert_stockpiling_gold_alert_name: "[GetGoods('gold').GetTextIcon] [GetGoods('go
  ag_isolated_states_desc:0 "We have [GetPlayer.GetNumIsolatedStates] [Concept('concept_isolated_state', '$concept_isolated_states$')] in our country."
  ag_isolated_states_tooltip:0 "#header $ag_isolated_states_name$#!\n$TOOLTIP_DELIMITER$\n$ag_isolated_states_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
- ag_inactive_trade_routes_name: "Неактивні [Concept('concept_trade_route', '$concept_trade_routes$')|l]"
+ ag_inactive_trade_routes_name: "Недієві [Concept('concept_trade_route', '$concept_trade_routes$')|l]"
  ag_inactive_trade_routes_desc:0 "We have [GetPlayer.GetNumInactiveTradeRoutes|v] inactive [Concept('concept_trade_route', '$concept_trade_routes$')]."
  ag_inactive_trade_routes_tooltip:0 "#header $ag_inactive_trade_routes_name$#!\n$TOOLTIP_DELIMITER$\n$ag_inactive_trade_routes_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
@@ -250,3 +255,20 @@ alert_stockpiling_gold_alert_name: "[GetGoods('gold').GetTextIcon] [GetGoods('go
  ag_expensive_military_goods_name: "Дорогі [Concept('concept_military_good', '$concept_military_goods$')|l]"
  ag_expensive_military_goods_desc:0 "We have expensive [Concept('concept_military_good', '$concept_military_goods$')] in at least one of our [Concept('concept_market', '$concept_markets$')]."
  ag_expensive_military_goods_tooltip:0 "#header $ag_expensive_military_goods_name$#!\n$TOOLTIP_DELIMITER$\n$ag_expensive_military_goods_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
+
+ alert_has_navy_troops_in_reserve_peace_time_alert_name:0 "$alert_has_navy_troops_in_reserve_alert_name$"
+ alert_has_navy_troops_in_reserve_peace_time_alert_hint:0 "$alert_has_navy_troops_in_reserve_alert_hint$"
+ alert_has_navy_troops_in_reserve_peace_time_alert_action:0 "$alert_has_navy_troops_in_reserve_alert_action$"
+ alert_has_army_troops_in_reserve_peace_time_alert_name:0 "$alert_has_army_troops_in_reserve_alert_name$"
+ alert_has_army_troops_in_reserve_peace_time_alert_hint:0 "$alert_has_army_troops_in_reserve_alert_hint$"
+ alert_has_army_troops_in_reserve_peace_time_alert_action:0 "$alert_has_army_troops_in_reserve_alert_action$"
+ alert_secession_possible_alert_name:0 "Możliwe ruchy [Concept('concept_secession', 'secesjonistyczne')]"
+ alert_secession_possible_alert_desc:0 "Co tydzień istnieje ryzyko, że w naszym państwie zorganizują się separatyści:\n\n#title [Concept('concept_culture', '$concept_cultures$')] separatystyczne:#!\n[GetPlayer.GetPossibleSecessionistsDesc]"
+ alert_secession_possible_alert_hint:1 "Aby zmniejszyć ryzyko [Concept('concept_secession', 'secesji')], zmniejsz liczbę [Concept('concept_radical', 'radykałów')] w szeregach docelowej [Concept('concept_culture', 'kultury')] w swoim [Concept('concept_country', 'państwie')]. Możesz to zrobić, podnosząc [concept_sol|l] w [Concept('concept_state', 'obszarach administracyjnych')], w których żyją przedstawiciele tej kultury, dbając o to, aby nie byli oni [Concept('concept_discrimination', 'dyskryminowani')] w perspektywie długoterminowej lub wydając [Concept('concept_decree', '$concept_decrees$')|l] łagodzące negatywne czynniki w perspektywie krótkoterminowej."
+ alert_secession_possible_alert_action:0 "Panel Kultura"
+ ag_missing_war_goals_name:0 "Brakujące [Concept('concept_war_goal', '$concept_war_goals$')|l]"
+ ag_missing_war_goals_desc:0 "Uczestniczymy w [Concept('concept_diplomatic_play', 'posunięciach dyplomatycznych')], w których nie wybrano głównego [Concept('concept_war_goal', 'celu wojennego')]."
+ ag_missing_war_goals_tooltip:0 "#header $ag_missing_war_goals_name$#!\n$TOOLTIP_DELIMITER$\n$ag_missing_war_goals_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
+ ag_high_attrition_name:0 "Wysoki poziom [Concept('concept_attrition', 'wyniszczenia')]"
+ ag_high_attrition_desc:0 "Wskaźnik [Concept('concept_attrition', 'wyniszczenia')] co najmniej jednego z naszych [Concept('concept_commander', 'dowódców')] jest wysoki."
+ ag_high_attrition_tooltip:0 "#header $ag_high_attrition_name$#!\n$TOOLTIP_DELIMITER$\n$ag_high_attrition_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"

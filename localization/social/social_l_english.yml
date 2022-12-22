@@ -11,7 +11,7 @@
  SOCIAL_UNAVAILABLE:0 "Unavailable"
  SOCIAL_AWAY:0 "Away"
  SOCIAL_DO_NOT_DISTURB:0 "Do not disturb"
- REFRESH:0 "Refresh"
+ REFRESH: "Оновити"
  SEND:0 "Send"
  SEARCH:0 "Search"
  SOCIAL_NAME:0 "Username"

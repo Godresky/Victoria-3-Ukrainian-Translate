@@ -2,7 +2,7 @@
  congo_river_expedition: "Експедиція по річці Конґо"
  congo_river_expedition_desc: "Серце африканського континенту залишається для багатьох загадкою. Ми розпочнемо експедицію для визначення русла річки Конґо."
  congo_river_expedition_tooltip: "Вимоги:"
- modifier_congo_river_expedition_complete: "Нанесли на мапу русло річки Конґо"
+ modifier_congo_river_expedition_complete: "Нанесено на мапу русло річки Конґо"
  
  expedition_events.601.t: "Експедиція по річці Конґо"
  expedition_events.601.d: "Була призначена експедиція для дослідження річок Луалаба і Конґо."
@@ -22,7 +22,7 @@
  expedition_events.603.c: "Велику кількість."
  
  expedition_events.604.t: "Експедиція починається"
- expedition_events.604.d: "Після кількох тижнів підготовки та подорожі експедиція на чолі з [SCOPE.sCharacter('expedition_leader').GetFullName] прибув до гирла Конґо. Звідси вони почнуть свою подорож, щоб визначити русло цієї невловимої річки."
+ expedition_events.604.d: "Після кількох тижнів підготовки та подорожі експедиція на чолі з [SCOPE.sCharacter('expedition_leader').GetFullName] прибула до гирла Конґо. Звідси вони почнуть свою подорож, щоб визначити русло цієї невловимої річки."
  expedition_events.604.f: "«Піднятися цією річкою було наче подорожувати назад до найдавніших початків світу, коли рослинність буйствувала на землі, а великі дерева були королями. Порожній потік, велика тиша, непроникний ліс. Повітря було теплим, густим, важким, млявим. Не було радості в блиску сонця. Довгі відрізки водного тору бігли далі, безлюдно, у морок затьмарених відстаней»" #Joseph Conrad
  expedition_events.604.a: "Вперед!"
  
@@ -32,7 +32,7 @@
  expedition_events.611.a: "Чудова новина!"
  congo_expedition_modifier: "Успішна експедиція в Конґо"
  
- expedition_events.612.t:0 "Failed Expedition"
+ expedition_events.612.t: "Провал експедиції"
  expedition_events.612.d:0 "After not receiving any reports for many months, it has become clear that the expedition to plot the course of the Congo River has failed and [SCOPE.sCharacter('expedition_leader').GetFullName] has been lost along with it."
  expedition_events.612.d2:0 "After not receiving any reports for many months, the fate of the expedition seemed clear; however, a letter from [SCOPE.sCharacter('expedition_leader').GetFullName] finally arrived this morning, confessing that the only way to live was to come back."
  expedition_events.612.f:0 ""Do you see the story? Do you see anything? It seems to me that I am trying to tell you a dream — making a vain attempt, because no relation of a dream can convey the dream-sensation, that commingling of absurdity, surprise, and bewilderment in a tremor of struggling revolt, that notion of being captured by the incredible which is the very essence of dreams...""
@@ -104,7 +104,7 @@
  waterfalls_modifier: "Назвали Водоспади"
  
  expedition_events.690.t: "Щедрий подарунок"
- expedition_events.690.d:0 "Експедиція припинила свій тор у [SCOPE.sState('current_expedition_location').GetName] у місцевому селі, де [SCOPE.sCharacter('local_ruler').GetPrimaryRoleTitle] [SCOPE.sCharacter('local_ruler').GetFullName] люб‘язно запропонував обмін подарунками на знак миру."
+ expedition_events.690.d: "Експедиція припинила свій тор у [SCOPE.sState('current_expedition_location').GetName] у місцевому селі, де [SCOPE.sCharacter('local_ruler').GetPrimaryRoleTitle] [SCOPE.sCharacter('local_ruler').GetFullName] люб‘язно запропонував обмін подарунками на знак миру."
  expedition_events.690.f: "«Приїхали на світанку. Посеред джунглів ми почули звуки й, на нашу думку, людські голоси. Наші втомлені тіла могли зосереджуватися лише на цих голосах, будь-яких голосах, крім нашого власного.\n\nМи приїхали на світанку, і вони нас не чекали, але вони вже бачили деяких наших. [SCOPE.sCharacter('local_ruler').GetManWoman] який виглядав як їхній провідник, прийшов до нас, оголосивши про [SCOPE.sCharacter('local_ruler').GetHerHis] ім‘я якого було [SCOPE.sCharacter('local_ruler').GetFullNameNoFormatting] і лаконічними дружніми жестами запросив нас провести з ними день, вручивши намисто здивованому мені»"
  expedition_events.690.a: "Ми відповідатимемо на цей уважний подарунок."
  expedition_events.690.b: "Ми не маємо часу на спілкування з місцевими жителями."

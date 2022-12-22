@@ -79,7 +79,7 @@
  POPS_LOGIN_RESET_PASSWORD_EMAIL_SENT:0 "Email sent to [POPSLoginView.GetEmail]. To reset password follow the instruction in the email"
  POPS_LOGIN_ADD_USER_NAME:0 "Add User Name"
  POPS_LOGIN_CHANGE_USER_NAME_DESC:0 "In order to play Multiplayer, you must choose a Username for your Paradox Account. This Username is how you will appear to other players across all Paradox games."
- POPS_LOGIN_BIND_STEAM: "Використовувати Стім для автоматичного входу"
+ POPS_LOGIN_BIND_STEAM: "Використовувати стим для автоматичного входу"
  POPS_LOGIN_DISCONNECT_STEAM_FAILURE:0 "Failed to disconnect account from Steam"
  POPS_LOGIN_CONNECT_STEAM_FAILURE:0 "Failed to connect account to Steam"
  POPS_LOGIN_MESSAGE:0 "$MESSAGE$"

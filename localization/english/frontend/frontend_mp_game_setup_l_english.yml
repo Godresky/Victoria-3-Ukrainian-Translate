@@ -4,4 +4,4 @@
  FRONTEND_MP_GAME_SETUP_HOST_SAVED_GAME: "Завантажити збереження"
  FRONTEND_MP_GAME_SETUP_GAME_SETTINGS: "Налаштування гри"
  FRONTEND_MP_GAME_SETUP_VERSION: "Версія: [GetGameVersionInfoShort]"
- MULTIPLAYER_GUI_PUBLIC_MICROSOFT_ONLY_TT:0 "Microsoft Store Only"
+ MULTIPLAYER_GUI_PUBLIC_MICROSOFT_ONLY_TT: "Лише крамниця «Майкрософт»"
