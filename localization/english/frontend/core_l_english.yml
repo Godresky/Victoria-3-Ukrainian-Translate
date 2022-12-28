@@ -6,7 +6,7 @@
  SAVE: "Зберегти"
  DELETE: "Видалити"
  OVERWRITE: "Переписати"
- DELETE_CONFIRMATION_DESC: "Чи бажаєте Ви видалити $NAME|V$ збереження?"
+ DELETE_CONFIRMATION_DESC: "Чи бажаєте ви видалити $NAME|V$ збереження?"
  CLOUDSAVE_UNVAVAILABLE_TOOLTIP: "Хмарне сховище недоступне"
  SAVE_ENABLE_CLOUDSAVE_TOOLTIP: "Зберегти в хмарному сховищі"
  LOAD_CLOUDSAVE_TOOLTIP: "Збереження в хмарному сховищі"

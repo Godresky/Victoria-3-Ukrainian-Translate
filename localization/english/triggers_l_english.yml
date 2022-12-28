@@ -783,7 +783,7 @@
  
  TRIGGER_HAS_LAW:1 "Has enacted [TARGET_LAW_TYPE.GetName]"
  TRIGGER_HAS_LAW_NOT:2 "Has #bold not #!enacted [TARGET_LAW_TYPE.GetName]"
- TRIGGER_HAS_LAW_FIRST: "[COUNTRY.GetNameNoFlag] ввела в дію [Concept('concept_law', '$concept_law_acc$')|l] [TARGET_LAW_TYPE.GetName]"
+ TRIGGER_HAS_LAW_FIRST: "[COUNTRY.GetNameNoFlag] ввела в дію [Concept('concept_law', '$concept_law_acc$')|l] «[TARGET_LAW_TYPE.GetName]»"
  TRIGGER_HAS_LAW_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] does #bold not #!have [TARGET_LAW_TYPE.GetName] enacted"
  TRIGGER_HAS_LAW_THIRD:1 "[TARGET_LAW_TYPE.GetName] has been enacted by [COUNTRY.GetName]"
  TRIGGER_HAS_LAW_THIRD_NOT:2 "[TARGET_LAW_TYPE.GetName] has #bold not #!been enacted by [COUNTRY.GetName]"

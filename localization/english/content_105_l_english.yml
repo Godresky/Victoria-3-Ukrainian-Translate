@@ -1179,8 +1179,8 @@
  election_liberal_events.4.a: "Це доба світового ринку!"
  election_liberal_events.4.b: "Наша нинішня політика необхідна для збереження стабільности економіки."
 
- election_conservative_events.1.t: "Невірні лідери"
- election_conservative_events.1.d: " [SCOPE.sCharacter('atheist_leader').GetFullName] який був схвалений партією: [SCOPE.sParty('liberal_party').GetName], піддався нападу з боку представника партії: [SCOPE.sParty('conservative_party').GetName], який стверджував, що лідеру, який відкидає релігію, не можна довіряти виконання обіцянок або збереження здорового морального компасу."
+ election_conservative_events.1.t: "Невірні провідники"
+ election_conservative_events.1.d: " [SCOPE.sCharacter('atheist_leader').GetFullName] який був схвалений партією: [SCOPE.sParty('liberal_party').GetName], піддався нападу з боку представника партії: [SCOPE.sParty('conservative_party').GetName], який стверджував, що провіднику, який відкидає релігію, не можна довіряти виконання обіцянок або збереження здорового морального компасу."
  election_conservative_events.1.f: "«На чому клянеться такий [SCOPE.sCharacter('atheist_leader').GetManWoman]? Яке покарання очікує [SCOPE.sCharacter('atheist_leader').GetSheHe|l] за порушення Його слова? Схоже, що [SCOPE.sParty('liberal_party').GetName] у своєму прагненні до свободи забула чесноти, необхідні для притягнення вільних до відповідальності»"
  election_conservative_events.1.a: "Такі бідні духом не можуть керувати такою державою як [ROOT.GetCountry.GetName]."
  election_conservative_events.1.b: "Можливо, [SCOPE.sCharacter('atheist_leader').GetLastName] бачить речі ясніше, не обмежено релігійними догмами."
