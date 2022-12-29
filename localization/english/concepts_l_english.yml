@@ -385,6 +385,7 @@
  concept_influence_desc:3 "@inf! Influence is a [concept_capacity] used for [Concept('concept_diplomatic_action', '$concept_diplomatic_actions$')] and [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts_short$')] targeting another [concept_country]. You gain @inf! based on your [concept_rank]."
 
  concept_institution: "Установа"
+ concept_institution_gen: "Установи"
  concept_institutions: "Установи"
  concept_institutions_gen: "Установ"
  concept_institution_possessive:0 "Institution\\'s"
@@ -696,11 +697,12 @@
  concept_market_share_this_gen: "Частки цього ринку"
  concept_market_share_desc:3 "The $concept_market_share$ of each [concept_country] in a [concept_market] is determined by its [concept_gdp], with a bonus if they are the [concept_market_owner]. The higher a $concept_country$'s $concept_market_share$ the more [Concept('concept_consumption_tax', '$concept_consumption_taxes$')] they collect in the [concept_market]."
 
- concept_default: "Дефолт"
+ concept_default: "Неплатоспроможність"
  concept_default_desc:4 "Once the [concept_treasury] accumulates [concept_loans] large enough that they exceed the [Concept('concept_country','$concept_country_possessive$')] total [concept_credit], the $concept_country$ is considered to be in $concept_default$. This will pause all ongoing [concept_construction] and will have a negative impact on the [concept_throughput] of [Concept('concept_building', '$concept_buildings$')], growing more severe as time passes. Penalties are removed as soon as the $concept_country$'s weekly balance becomes positive again, or if [concept_bankruptcy] is declared."
 
- concept_bankruptcy: "Зубожник"
+ concept_bankruptcy: "Звід"
  concept_bankruptcy_acc: "Звід"
+ concept_bankruptcy_ins: "Зводом"
  concept_bankruptcy_desc:2 "If a [concept_country] is in [concept_default] and unable to pay back its [concept_loans], it may opt to declare $concept_bankruptcy$. This will clear the debt but wipe out all [concept_cash_reserves] the $concept_country$ had borrowed from, and will greatly anger any [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_shares$')].[AddLocalizationIf(GetPlayer.IsValid,'concept_bankruptcy_desc_added')] "
  concept_bankruptcy_desc_added:0 "In addition, the following effects are applied for #v [GetDefine('NEconomy','DECLARE_BANKRUPTCY_PENALTY_DURATION_YEARS')|0] years#!:\n[GetStaticModifier('declared_bankruptcy').GetDesc]"
 
@@ -1059,6 +1061,7 @@
  concept_revolution_progression_speed_desc:0 "The rate by which [Concept('concept_revolution','$concept_revolutions$')] progress. Might be affected by [Concept('concept_law', '$concept_laws$')]."
 
  concept_civil_war: "Громадянська війна"
+ concept_civil_war_acc: "Громадянську війну"
  concept_civil_war_loc: "Громадянській війні"
  concept_civil_wars: "Громадянські війни"
  concept_civil_war_desc:1 "A $concept_war$ where a [concept_country] has split into two opposing sides. [Concept('concept_revolution','$concept_revolutions$')] and [Concept('concept_secession','$concept_secessions$')] are examples of $concept_civil_wars$."
@@ -1345,8 +1348,8 @@
  concept_law_group_gen: "Групи законів"
  concept_law_group_desc:3 "A $concept_law_group$ contains several [Concept('concept_law', '$concept_laws$')] that affect aspects of the [concept_country] in different ways. Each $concept_law_group$ can only have one $concept_law$ active at a time."
 
- concept_government_reform: "Урядові зміни"
- concept_government_reform_short: "Зміни"
+ concept_government_reform: "Урядова зміна"
+ concept_government_reform_short: "Зміна"
  concept_government_reform_desc:0 "During a $concept_government_reform$ you may alter the composition of your [concept_government] freely by granting or removing [Concept('concept_interest_group','$concept_interest_groups$')] and/or [Concept('concept_party','$concept_parties$')] from power. $concept_interest_groups$ removed from power during such a $concept_government_reform_short$ will gain [Concept('concept_radical','$concept_radicals$')], unless the $concept_government_reform_short$ is performed shortly after a concluded $concept_election$."
 
  concept_election: "Вибори"

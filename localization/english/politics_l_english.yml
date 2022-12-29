@@ -20,7 +20,7 @@
  IG_CLOUT:0 "#title [concept_clout]#!"
  IG_POP:1 "#title [Concept('concept_pop','$concept_population$')]#!"
  
- FREE_REFORM_DATE_PREFIX:0 "Last day for free reform: "
+ FREE_REFORM_DATE_PREFIX:0 "Останній день безплатної зміни: "
  LESS_THAN_ONE_DAY:0 "less than one day"
  ONE_DAY:0 "#tooltippable #tooltip:$BREAKDOWN_TAG$ #v 1#!#!#! day"
  GREATER_THAN_ONE_DAY:0 "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|v$#!#! days"
