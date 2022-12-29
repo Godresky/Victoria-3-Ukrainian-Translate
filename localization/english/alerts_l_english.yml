@@ -62,10 +62,12 @@
  alert_active_peace_deal_alert_hint:1 "If you are a negotiating partner of the $concept_war$ you can signal your favor with the peace deal to end the $concept_war$ or continue the conflict towards another round of negotiations."
  alert_active_peace_deal_alert_action:0 "War Panel"
  ALERT_PEACE_PROPOSED_ENTRY:0 "[WAR.GetName|b] - [WAR.GetDaysUntilPeaceDealFails|v] day(s) until peace deal is rejected"
- alert_wasted_construction_name: "Незадіяні [Concept('concept_construction', '$concept_construction_adj_many$')|l] потужності"
- alert_wasted_construction_desc:0 "We have available [concept_construction] production that is not being used to construct any [Concept('concept_building', '$concept_buildings$')]."
- alert_wasted_construction_hint:0 "You can queue up building constructions to make use of the available [concept_construction] production."
- alert_wasted_construction_action:0 "Construction Panel"
+
+ alert_wasted_construction_name: "Незадіяні [Concept('concept_construction', '$concept_construction_adj$і')|l] потужності"
+ alert_wasted_construction_desc: "Ми виробляємо [Concept('concept_construction', '$concept_construction_adj$у')|l] продукцію, яка не використовується для зведення будь-яких [Concept('concept_building', '$concept_buildings_gen$')|l]."
+ alert_wasted_construction_hint: "Ви можете поставити в чергу зведення будівлі, щоб використати [Concept('concept_construction', '$concept_construction_adj$у')|l] продукцію."
+ alert_wasted_construction_action: "Панель будівництва"
+
  alert_isolated_state_alert_name:1 "[SCOPE.GetRootScope.GetState.GetName] is [Concept('concept_isolated_state', '$concept_isolated_state_short$')]"
  alert_isolated_state_alert_desc:0 "An [Concept('concept_isolated_state', '$concept_isolated_state_short$')] is unable to buy and sell goods with the larger market, this pops will have to source their needs from the local supply within the state and this may have a significant effect on a Pop's [concept_sol] due to the resulting price changes."
  alert_isolated_state_alert_hint:0 "You can connect [SCOPE.GetRootScope.GetState.GetName] to the [SCOPE.GetRootScope.GetState.GetMarket.GetName] by increasing [concept_infrastructure], which can be done by building Buildings that provide [concept_infrastructure] like Ports or Railroads, or by using the #v $decree_road_maintenance$#! [concept_decree]."
@@ -119,7 +121,7 @@ alert_high_tension_alert_name:0 "High [Concept('concept_tension', '$concept_tens
  alert_unhealthy_economy_alert_hint:0 "You can improve your financial situation by increasing your income or decreasing your expenses. For increasing your income, in the short term you can raise the current tax rate, levy new consumption taxes, or increase tariffs to generate new revenue. For decreasing your expenses you can look towards reducing the wages of either your Military or Government run buildings, decreasing the prices of the goods they consume, or pausing construction until your finances recover."
  alert_unhealthy_economy_alert_action:0 "Budget Panel"
 
-alert_stockpiling_gold_alert_name: "[GetGoods('gold').GetTextIcon] [GetGoods('gold').GetName] накопичується"
+ alert_stockpiling_gold_alert_name: "[GetGoods('gold').GetTextIcon] [GetGoods('gold').GetName] накопичується"
  alert_stockpiling_gold_alert_desc:0 "Your [concept_treasury] is stockpiling gold beyond its capacity."
  alert_stockpiling_gold_alert_hint:0 "Increase your expenditures or reduce your income to balance your budget better. Stockpiling gold extracts @money![concept_money] from your economy and [concept_pop] at diminishing returns, leading to reductions in [concept_wealth] over time."
  alert_stockpiling_gold_alert_action:0 "Budget Panel"
@@ -129,8 +131,8 @@ alert_stockpiling_gold_alert_name: "[GetGoods('gold').GetTextIcon] [GetGoods('go
  alert_low_legitimacy_alert_action:0 "Politics Panel"
 
  alert_unused_interests_alert_name: "Можна підтримати більше [Concept('concept_declared_interest','$concept_declared_interests_gen$')|l]"
- alert_unused_interests_alert_desc:0 "We are only using [GetPlayer.GetNumDeclaredInterests|v]/#tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#! of the [Concept('concept_declared_interest','$concept_declared_interests$')] we are able to support"
- alert_unused_interests_alert_hint:0 "You can [Concept('concept_declared_interest','$concept_declare_interests$')] in [Concept('concept_strategic_region','$concept_strategic_regions$')] through the [concept_diplomatic_lens]."
+ alert_unused_interests_alert_desc: "Ми зараз використали [GetPlayer.GetNumDeclaredInterests|v]/#tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#! [Concept('concept_declared_interest','$concept_declared_interests_gen$')|l], які ми можемо зараз підтримувати."
+ alert_unused_interests_alert_hint: "Ви можете [Concept('concept_declared_interest','$concept_declare_interests$')|l] у [Concept('concept_strategic_region','$concept_strategic_regions_loc$')|l] завдяки [Concept('concept_diplomatic_lens','$concept_diplomatic_lens_dat$')|l]."
  alert_unused_interests_alert_action:0 "Diplomacy Panel"
  alert_unproductive_trade_route_alert_name:0 "The [concept_trade_route] [SCOPE.GetRootScope.GetTradeRoute.GetDescriptionForActingMarket] is unproductive"
  alert_unproductive_trade_route_alert_desc:0 "Your trade centers are currently conducting trade routes which are no longer profitable, they will continue to do this so long as they have cash reserves to maintain it."
@@ -150,7 +152,7 @@ alert_stockpiling_gold_alert_name: "[GetGoods('gold').GetTextIcon] [GetGoods('go
  alert_market_goods_shortage_affected_buildings_breakdown_data_version:0 "[Goods.GetBreakdownOfBuildingsAffectedByShortageInMarket]"
  alert_market_goods_shortage_affected_building_entry:0 "[Building.GetName] in [Building.GetState.GetName]"
 
- alert_low_market_access_alert_name:1 "[concept_market_access] in [SCOPE.GetRootScope.GetState.GetName] is at [SCOPE.GetRootScope.GetState.GetMarketAccess|%0v]"
+ alert_low_market_access_alert_name: "[SCOPE.GetRootScope.GetState.GetMarketAccess|%0v] [Concept('concept_market_access', '$concept_market_access_gen$')|l] в [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetState.GetName]"
  alert_low_market_access_alert_hint:1 "You can improve the [concept_market_access] of [SCOPE.GetRootScope.GetState.GetName] by either increasing its [concept_infrastructure] (which can be done by building [GetBuildingType('building_port').GetName] or [GetBuildingType('building_railway').GetName]), by [Concept('concept_decree', '$concept_decrees$')] like [GetDecreeType('decree_road_maintenance').GetName], or ensuring that there are enough [Concept('concept_convoy', '$concept_convoys$')] to connect [SCOPE.GetRootScope.GetState.GetName] to its [concept_market_capital] overseas."
  alert_low_market_access_alert_action:0 "State Panel for [SCOPE.GetRootScope.GetState.GetName]"
  
@@ -164,12 +166,12 @@ alert_stockpiling_gold_alert_name: "[GetGoods('gold').GetTextIcon] [GetGoods('go
  alert_expensive_goods_alert_hint_common:0 "You can influence the price of a [concept_good] in several ways. For instance, you can increase the availability of the good by upping its production through Buildings or Production methods, or Trade for it from another nation. You can ensure that its not effected by any input shortage or high cost of materials if its an end product good. You can also alter your tariff policy or consumption taxes on its (or its composite goods to hopefully reduce the price)."
 
  alert_expensive_government_goods_alert_name: "[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] - [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]"
- alert_expensive_government_goods_alert_desc:1 "#header [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] is expensive#!"
+ alert_expensive_government_goods_alert_desc: "#header Товар [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName|l] дорогий#!"
  alert_expensive_government_goods_alert_hint:1 "$alert_expensive_goods_alert_hint_common$"
  alert_expensive_government_goods_alert_action:0 "Goods Panel for [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] on the [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]"
 
- alert_expensive_military_goods_alert_name:0 "[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] on the [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]"
- alert_expensive_military_goods_alert_desc:1 "#header [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] is expensive#!"
+ alert_expensive_military_goods_alert_name: "[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] - [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]"
+ alert_expensive_military_goods_alert_desc: "#header Товар [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName|l] дорогий#!"
  alert_expensive_military_goods_alert_hint:1 "$alert_expensive_goods_alert_hint_common$"
  alert_expensive_military_goods_alert_action:0 "Goods Panel for [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] on the [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]"
 
@@ -181,7 +183,7 @@ alert_stockpiling_gold_alert_name: "[GetGoods('gold').GetTextIcon] [GetGoods('go
  alert_has_navy_troops_in_reserve_alert_hint:3 "Promote existing [Concept('concept_admiral', '$concept_admirals$')] in order to give them higher [concept_command_limit], which can be done on the details panel for that $concept_admiral$ (or by right-clicking the $concept_admiral$). You can also assign $concept_flotillas$ by recruiting more $concept_admirals$, which can be done on the Navy tab in the #b Military#! panel or through the [concept_military_lens].\n\nHowever, promoting an $concept_admiral$ is usually recommended over recruiting more."
  alert_has_navy_troops_in_reserve_alert_action:0 "Military Panel"
 
- ALERT_TOOLTIP_FORMAT:2 "#header [Alert.GetName]#!\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty(Alert.GetDescription, '\n\n')]@information! [Alert.GetHint]\n\n#instruction Клацніть, щоб відкрити [Alert.GetAction]#!"
+ ALERT_TOOLTIP_FORMAT:2 "#header [Alert.GetName]#!\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty(Alert.GetDescription, '\n\n')]@information! [Alert.GetHint]\n\n#instruction Клацніть, щоб відкрити [Alert.GetAction|l]#!"
  EXPANDABLE_IMPORTANT_ACTION_ITEM:0 "[Alert.GetToolTip]$notification_tooltip_footer$"
  ALERT_GROUP_TOOLTIP_FOOTER: "#instruction Клацніть, щоб розгорнути#!"
 
@@ -241,20 +243,20 @@ alert_stockpiling_gold_alert_name: "[GetGoods('gold').GetTextIcon] [GetGoods('go
  ag_market_goods_shortages_tooltip:0 "#header $ag_market_goods_shortages_name$#!\n$TOOLTIP_DELIMITER$\n$ag_market_goods_shortages_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  ag_low_market_access_states_name: "Низький [concept_market_access|l]"
- ag_low_market_access_states_desc:0 "We have [GetPlayer.GetNumLowMarketAccessStates] [Concept('concept_state', '$concept_states$')] with low [concept_market_access]"
- ag_low_market_access_states_tooltip:0 "#header $ag_low_market_access_states_name$#!\n$TOOLTIP_DELIMITER$\n$ag_low_market_access_states_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
+ ag_low_market_access_states_desc: "У нас [GetPlayer.GetNumLowMarketAccessStates] [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumLowMarketAccessStates, '(int32)0'),SelectLocalization(GreaterThan_int32(GetPlayer.GetNumLowMarketAccessStates, '(int32)4'),Concept('concept_state', '$concept_states_gen$'),Concept('concept_state', '$concept_states$')),Concept('concept_state', '$concept_state$'))|l] з низьким [Concept('concept_market_access', '$concept_market_access_ins$')|l]"
+ ag_low_market_access_states_tooltip: "#header $ag_low_market_access_states_name$#!\n$TOOLTIP_DELIMITER$\n$ag_low_market_access_states_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  ag_insufficient_tax_capacity_states_name: "Недостатня [concept_tax_capacity|l]"
- ag_insufficient_tax_capacity_states_desc:0 "We have [GetPlayer.GetNumInsufficientTaxCapacityStates] [Concept('concept_state', '$concept_states$')] with insufficient [concept_tax_capacity]"
- ag_insufficient_tax_capacity_states_tooltip:0 "#header $ag_insufficient_tax_capacity_states_name$#!\n$TOOLTIP_DELIMITER$\n$ag_insufficient_tax_capacity_states_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
+ ag_insufficient_tax_capacity_states_desc: "У нас [GetPlayer.GetNumInsufficientTaxCapacityStates] [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumInsufficientTaxCapacityStates, '(int32)0'),SelectLocalization(GreaterThan_int32(GetPlayer.GetNumInsufficientTaxCapacityStates, '(int32)4'),Concept('concept_state', '$concept_states_gen$'),Concept('concept_state', '$concept_states$')),Concept('concept_state', '$concept_state$'))|l] з недостатньою [Concept('concept_tax_capacity', '$concept_tax_capacity_ins$')|l]."
+ ag_insufficient_tax_capacity_states_tooltip: "#header $ag_insufficient_tax_capacity_states_name$#!\n$TOOLTIP_DELIMITER$\n$ag_insufficient_tax_capacity_states_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
   
  ag_expensive_government_goods_name: "Дорогі [Concept('concept_government_good', '$concept_government_goods$')|l]"
- ag_expensive_government_goods_desc:0 "We have expensive [Concept('concept_government_good', '$concept_government_goods$')] in at least one of our [Concept('concept_market', '$concept_markets$')]."
- ag_expensive_government_goods_tooltip:0 "#header $ag_expensive_government_goods_name$#!\n$TOOLTIP_DELIMITER$\n$ag_expensive_government_goods_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
+ ag_expensive_government_goods_desc: "У нас дорогі [Concept('concept_government_good', '$concept_government_goods$')|l], принаймні на одному з наших [Concept('concept_market', '$concept_markets_gen$')|l]."
+ ag_expensive_government_goods_tooltip: "#header $ag_expensive_government_goods_name$#!\n$TOOLTIP_DELIMITER$\n$ag_expensive_government_goods_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  ag_expensive_military_goods_name: "Дорогі [Concept('concept_military_good', '$concept_military_goods$')|l]"
- ag_expensive_military_goods_desc:0 "We have expensive [Concept('concept_military_good', '$concept_military_goods$')] in at least one of our [Concept('concept_market', '$concept_markets$')]."
- ag_expensive_military_goods_tooltip:0 "#header $ag_expensive_military_goods_name$#!\n$TOOLTIP_DELIMITER$\n$ag_expensive_military_goods_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
+ ag_expensive_military_goods_desc: "У нас дорогі [Concept('concept_military_good', '$concept_military_goods$')|l], принаймні на одному з наших [Concept('concept_market', '$concept_markets_gen$')|l]."
+ ag_expensive_military_goods_tooltip: "#header $ag_expensive_military_goods_name$#!\n$TOOLTIP_DELIMITER$\n$ag_expensive_military_goods_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  alert_has_navy_troops_in_reserve_peace_time_alert_name:0 "$alert_has_navy_troops_in_reserve_alert_name$"
  alert_has_navy_troops_in_reserve_peace_time_alert_hint:0 "$alert_has_navy_troops_in_reserve_alert_hint$"

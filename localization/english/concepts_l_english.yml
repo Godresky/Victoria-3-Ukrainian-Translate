@@ -332,6 +332,7 @@
  concept_strategic_region_loc: "Стратегічному регіоні"
  concept_strategic_regions: "Стратегічні регіони"
  concept_strategic_regions_ins: "Стратегічними регіонами"
+ concept_strategic_regions_loc: "Стратегічних регіонах"
  concept_strategic_regions_short: "Стр. регіони"
  concept_strategic_region_desc:1 "A collection of [Concept('concept_state_region', '$concept_state_regions$')] considered a region of strategic importance. [Concept('concept_country','$concept_countries$')] have an [concept_interest] in all $concept_strategic_regions_short$ where they own [Concept('concept_province','$concept_province_land$')], and may project additional [Concept('concept_interest','$concept_interests$')] in other $concept_strategic_regions$ if their [concept_rank] is high enough to do so.\n\nMaintaining an [concept_active_interest] in a $concept_strategic_region$ is a prerequisite to participate in [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] taking place there."
 
@@ -588,6 +589,7 @@
  concept_political_lens_desc:1 "View [Concept('concept_interest_group','$concept_interest_groups$')] and [Concept('concept_incorporated_state','$concept_incorporated_states$')], construct [Concept('concept_government_building','$concept_government_buildings$')], issue [Concept('concept_decree','$concept_decrees$')], and manage matters of domestic political importance to your [concept_country]."
 
  concept_diplomatic_lens: "Сочка дипломатії"
+ concept_diplomatic_lens_dat: "Сочці дипломатії"
  concept_diplomatic_lens_desc:1 "View the [concept_attitude] of other [Concept('concept_country','$concept_countries$')] and monitor your [Concept('concept_interest','$concept_interests$')] and their [Concept('concept_strategic_region','$concept_strategic_regions$')], establish [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] and take [Concept('concept_diplomatic_action','$concept_diplomatic_actions_short$')], and start [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]."
 
  concept_military_lens: "Сочка війська"
@@ -1163,6 +1165,7 @@
  concept_market: "Ринок"
  concept_market_acc: "Ринку"
  concept_markets: "Ринки"
+ concept_markets_gen: "Ринків"
 
  concept_market_adj: "Ринков"
 
@@ -1170,6 +1173,8 @@
  concept_market_desc:2 "All [Concept('concept_state', '$concept_states$')] in the same $concept_market$ will trade [Concept('concept_good', '$concept_goods$')] with each other, unless they are [Concept('concept_isolated_state','$concept_isolated_state_short$')]. How well connected these $concept_states$ are with each other is measured by their [concept_market_access]. $concept_markets$ may also trade with each other through [Concept('concept_trade_route','$concept_trade_routes$')].\n\nEach [concept_country] either controls its own $concept_market$ or participates in one other via a [concept_customs_union] or [concept_subject] relationship. "
 
  concept_market_access: "Доступ до ринку"
+ concept_market_access_gen: "Доступу до ринку"
+ concept_market_access_ins: "Доступом до ринку"
  concept_market_access_access: "Доступ до"
  concept_market_access_desc:1 "A measure of how well-connected a [concept_state] is to the rest of its [concept_market]. It starts at 100% and is reduced proportionally whenever the $concept_state$'s [concept_infrastructure_usage] exceeds its [concept_infrastructure]. It impacts both how many [concept_sell_orders] and [concept_buy_orders] are generated due to the $concept_state$'s [concept_good_production] and [concept_good_consumption], and also how much the [concept_market_price] affects the [concept_local_price] of [Concept('concept_good','$concept_goods$')]."
 
@@ -1207,6 +1212,7 @@
  concept_state_ins: "Регіоном"
  concept_state_loc: "Регіоні"
  concept_states: "Регіони"
+ concept_states_gen: "Регіонів"
  concept_states_ins: "Регіонами"
  concept_states_loc: "Регіонах"
  concept_state_or_states: "Регіон(-и)"
@@ -1422,7 +1428,7 @@
 
  concept_construction: "Будівництво"
  concept_construction_gen: "Будівництва"
- concept_construction_adj_many: "Будівельні"
+ concept_construction_adj: "Будівельн"
  concept_construct: "Будувати"
  concept_construction_desc:3 "@construction! $concept_construction$ is produced by the [SelectLocalization(GetPlayer.IsValid,'concept_construction_desc_added','Construction Sector')] and is used to construct [Concept('concept_building', '$concept_buildings$')]."
  concept_construction_desc_added:0 "[GetBuildingType('building_construction_sector').GetName]"
@@ -1529,6 +1535,7 @@
 
  concept_tax_capacity: "Податкова мічність"
  concept_tax_capacity_gen: "Податкової мічности"
+ concept_tax_capacity_ins: "Податковою мічністю"
  concept_tax_capacity_desc:2 "Each point of Taxation Capacity in a [concept_state] allows for the efficient taxation of [GetDefine('NPops','INDIVIDUALS_TAXED_PER_TAX_CAPACITY')|vK] [Concept('concept_pop','$concept_pops$')]. If the population of a [concept_state] outgrows its Taxation Capacity, the efficiency of all forms of taxation will be reduced. Taxation Capacity can be increased through researching certain $SOCIETY$ $concept_technologies$ or constructing [SelectLocalization(GetPlayer.IsValid, 'concept_tax_capacity_desc_added','Government Administration')] [Concept('concept_building','$concept_buildings$')] in the [concept_state]."
  concept_tax_capacity_desc_added:0 "[GetBuildingType('building_government_administration').GetName]"
 
