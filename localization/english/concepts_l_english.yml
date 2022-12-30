@@ -11,8 +11,10 @@
  concept_economy_health: "Здоров‘я економіки"
  concept_economy_health_healthy: "Здорова економіка"
  concept_economy_health_healthy_short: "Здорова"
+ concept_economy_health_healthy_short_je: "Здоровою"
  concept_economy_health_unhealthy: "Нездорова економіка"
  concept_economy_health_unhealthy_short: "Нездорова"
+ concept_economy_health_unhealthy_short_je: "Нездоровою"
  concept_economy_health_desc: "[Concept('concept_country','$concept_country_possessive$')] економіка вважається $concept_economy_health_healthy_short$ якщо #italic either#!:\n$TAB$@green_checkmark_box! її постійні доходи перевищують постійні витрати\n$TAB$@green_checkmark_box! її [concept_principal] становить менше половини їх загальної кількості [concept_credit]"
 
  concept_bankroll:0 "$bankroll$"
@@ -592,6 +594,7 @@
 
  concept_diplomatic_lens: "Сочка дипломатії"
  concept_diplomatic_lens_dat: "Сочці дипломатії"
+ concept_diplomatic_lens_loc: "Сочці дипломатії"
  concept_diplomatic_lens_desc:1 "View the [concept_attitude] of other [Concept('concept_country','$concept_countries$')] and monitor your [Concept('concept_interest','$concept_interests$')] and their [Concept('concept_strategic_region','$concept_strategic_regions$')], establish [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] and take [Concept('concept_diplomatic_action','$concept_diplomatic_actions_short$')], and start [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]."
 
  concept_military_lens: "Сочка війська"
@@ -822,6 +825,7 @@
  concept_ongoing_diplomatic_action_desc:2 "A type of [concept_diplomatic_pact] that can be both initiated and ended at will, with no approval required nor costs incurred by the target [concept_country]."
 
  concept_diplomatic_pact: "Дипломатичний пакт"
+ concept_diplomatic_pacts: "Дипломатичні пакти"
  concept_diplomatic_pacts: "Дипломатичні пакти"
  concept_diplomatic_pact_short: "Пакт"
  concept_diplomatic_pacts_short: "Пакти"
@@ -1156,6 +1160,7 @@
  concept_isolated_state: "Ізольований державний регіон"
  concept_isolated_states: "Ізольовані державні регіони"
  concept_isolated_state_short: "Ізольований"
+ concept_isolated_state_short_adj: "Ізольован"
  concept_isolated_state_desc:2 "A [concept_state_region] is considered $concept_isolated_state_short$ from its [concept_market] if it is not connected by land to its [concept_market_capital], and is not connected by land to a [SelectLocalization(GetPlayer.IsValid,'concept_isolated_state_desc_added','Port')] that can make a [concept_port_connection] to its $concept_market_capital$. $concept_isolated_states$ do not generate any [concept_buy_orders] and [concept_sell_orders], nor is the [concept_local_price] of [Concept('concept_good', '$concept_goods$')] affected by their [concept_market_price]."
  concept_isolated_state_desc_added:0 "[GetBuildingType('building_port').GetName]"
 
@@ -1182,6 +1187,7 @@
 
  concept_infrastructure: "Інфраструктура"
  concept_infrastructure_gen: "Інфраструктури"
+ concept_infrastructure_acc: "Інфраструктуру"
  concept_infrastructure_desc:2 "$concept_infrastructure$ is provided by [Concept('concept_building','$concept_buildings$')] like [SelectLocalization(GetPlayer.IsValid,'concept_infrastructure_desc_added','Railway')] and [SelectLocalization(GetPlayer.IsValid,'concept_infrastructure_desc_added_2','Port')]. It influences how well connected a [concept_state] is to its [concept_market], and how rapidly [Concept('concept_battalion', '$concept_battalions$')] [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilize$')]."
  concept_infrastructure_desc_added:0 "[GetBuildingType('building_railway').GetName]"
  concept_infrastructure_desc_added_2:0 "[GetBuildingType('building_port').GetName]"
@@ -1225,8 +1231,12 @@
  concept_pop_gen: "Спільноти"
  concept_pop_ins: "Спільнотою"
  concept_pops: "Спільноти"
+ concept_pops_gen: "Спільнот"
  concept_pops_dat: "Спільнотам"
  concept_pops_adj: "Спільнотн"
+ concept_person: "Особа"
+ concept_persons: "Особи"
+ concept_persons_gen: "Осіб"
  concept_people: "Люди"
  concept_people_gen: "Людей"
  concept_people_dat: "Людям"
@@ -1313,6 +1323,7 @@
  concept_dependent_income_desc_added:0 "[GetInstitutionType('institution_social_security').GetName]"
 
  concept_wealth: "Багатство"
+ concept_wealth_gen: "Багатства"
  concept_wealthy: "Багатий"
  concept_wealth_desc:1 "A measure of a [Concept('concept_pop','$concept_pop_possessive$')] material assets. To sustain a certain level of $concept_wealth$ the $concept_pop$ has a set of [Concept('concept_pop_needs','$concept_pop_needs_short$')] it must satisfy each week. If their [Concept('concept_pop_income','$concept_pop_income_short$')] does not cover the cost of these $concept_pop_needs_short$, their $concept_wealth$ will eventually decrease. If they have [concept_money] left over after purchasing the necessary $concept_goods$, $concept_wealth$ will soon increase.\n\n$concept_wealth$ is the main factor contributing to a $concept_pop$'s [concept_sol], and under certain [Concept('concept_law','$concept_laws$')] it may affect other aspects of their life such as [concept_literacy] and [Concept('concept_votes','$concept_voting_rights$')]."
 
@@ -1537,6 +1548,7 @@
 
  concept_tax_capacity: "Податкова мічність"
  concept_tax_capacity_gen: "Податкової мічности"
+ concept_tax_capacity_acc: "Податкову мічність"
  concept_tax_capacity_ins: "Податковою мічністю"
  concept_tax_capacity_desc:2 "Each point of Taxation Capacity in a [concept_state] allows for the efficient taxation of [GetDefine('NPops','INDIVIDUALS_TAXED_PER_TAX_CAPACITY')|vK] [Concept('concept_pop','$concept_pops$')]. If the population of a [concept_state] outgrows its Taxation Capacity, the efficiency of all forms of taxation will be reduced. Taxation Capacity can be increased through researching certain $SOCIETY$ $concept_technologies$ or constructing [SelectLocalization(GetPlayer.IsValid, 'concept_tax_capacity_desc_added','Government Administration')] [Concept('concept_building','$concept_buildings$')] in the [concept_state]."
  concept_tax_capacity_desc_added:0 "[GetBuildingType('building_government_administration').GetName]"
