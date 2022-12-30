@@ -765,7 +765,7 @@
  je_texas_tex_reason:0 "After years of cultural and political turmoil between us and Mexico, with the rights of our citizens having been increasingly curtailed, it is time for us to rise up!\nThe days of our glorious lands being beholden to the tyrannical Mexican regime is coming to an end."
  je_texas_usa: "Техаська державність"
  je_texas_usa_reason: "Ми з великим рупом спостерігаємо за конфліктом між Мексикою та Техасом. Якщо Техаська республіка переможе, ми повинні спробувати схилити їх до приєднання до нашої справедливої злуки."
- texas_je_tt: "Техас вирішуватиме, чи приймати статус держави в складі ЗДА"
+ texas_je_tt: "Техас вирішуватиме, чи одержувати статус держави в складі ЗДА"
  texan_war_of_independence.1.t:0 "The Lone Star State"
  texan_war_of_independence.1.d:0 "[ROOT.GetCountry.GetName] stands, after a hard-fought and bloody war, independent. There are many within the Republic that advocate for statehood within the [SCOPE.sCountry('usa_scope').GetName]. The [SCOPE.sCountry('usa_scope').GetAdjectiveNoFormatting]s, by all accounts, would welcome us into their union."
  texan_war_of_independence.1.f:0 "The war with Mexico has ended, and our brave citizens have begun to lay down their arms and return to peacetime life. But what good is independence if we must spend every day watching our backs, waiting for the return of our oppressors? Texas can be stronger still as part of a greater union, one of like-minded states that will not infringe upon our God-given rights."

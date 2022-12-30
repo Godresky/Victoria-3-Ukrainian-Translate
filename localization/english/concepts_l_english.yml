@@ -400,6 +400,7 @@
  concept_laws: "Закони"
  concept_laws_gen: "Законів"
  concept_laws_acc: "Закони"
+ concept_laws_dat: "Законам"
  concept_law_desc:3 "$concept_laws$ sets the ground rules for how your [concept_country] operates and is governed. Certain $concept_laws$ enable [Concept('concept_institution', '$concept_institutions$')] that provide further control. For a $concept_law$ to be able to be [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')] it must be [Concept('concept_endorse_oppose','$concept_endorsed$')] by at least one [concept_interest_group] [concept_in_government], or supported by a current [concept_political_movement]."
 
  concept_money: "Гроші"

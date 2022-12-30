@@ -75,8 +75,8 @@
  modifier_country_improve_relations_speed_mult_desc: "Наддаток або карна до ефективности дипломатичної дії «Покращення відносин»."
  modifier_country_damage_relations_speed_mult: "Темпи погіршення відносин"
  modifier_country_damage_relations_speed_mult_desc: "Наддаток або карна до ефективности дипломатичної дії «Погіршення відносин»."
- modifier_country_cannot_enact_laws: "Не може приймати закони"
- modifier_country_cannot_enact_laws_desc: "Покарання, яке перешкоджає країні вводити будь-які [Concept('concept_law','$concept_laws_acc$')|l]"
+ modifier_country_cannot_enact_laws: "Не може надавати сили законам"
+ modifier_country_cannot_enact_laws_desc: "Покарання, яке перешкоджає країні надавати сили будь-яким [Concept('concept_law','$concept_laws_dat$')|l]"
 
  modifier_battle_plains_combat_effectiveness_mult:0 "Plains Terrain Expert"
  modifier_battle_plains_combat_effectiveness_mult_desc:0 "Plains Terrain Expert"
