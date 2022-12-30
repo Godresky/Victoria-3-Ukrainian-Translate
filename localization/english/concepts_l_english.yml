@@ -286,6 +286,7 @@
  
  concept_front: "Фронт"
  concept_front_gen: "Фронту"
+ concept_front_acc: "Фронт"
  concept_fronts: "Фронти"
  concept_front_desc:2 "A collection of [Concept('concept_province', '$concept_provinces$')] on the border of [Concept('concept_theater','$concept_theaters$')] between two [Concept('concept_country', '$concept_countries$')] at [concept_war] with each other. [Concept('concept_general', '$concept_generals$')] can be [Concept('concept_order','$concept_ordered$')] to advance or defend $concept_fronts$, which can result in [Concept('concept_battle','$concept_battles$')] that change the size of the $concept_theaters$ and the location of the $concept_front$."
 
