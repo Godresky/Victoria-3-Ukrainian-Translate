@@ -1148,8 +1148,8 @@
  concept_obligated: "Вязиний"
  concept_obligation_desc:1 "One [concept_country] can become $concept_obligated$ to another as a result of agreements made during [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] or when one $concept_country$ buys out another's [concept_loans]. While $concept_obligated$ to a $concept_country$ you are unable to start $concept_diplomatic_plays$ against them or even join a $concept_diplomatic_play_short$ on the other side as them. The other $concept_country$ may use an $concept_obligation$ they hold over you to force you into a [concept_diplomatic_pact], or may absolve it to [concept_sway] you into supporting them in a $concept_diplomatic_play$ or increase [concept_relations] with you."
 
- concept_secession: "Сецесія"
- concept_secessions: "Сецесія"
+ concept_secession: "Сепаратизм"
+ concept_secessions: "Сепаратизм"
  concept_secessionist: "Сепаратист"
  concept_secession_desc:4 "A $concept_secession$ is the result of excessive [concept_cultural_turmoil] in a [concept_country] that controls any of that [Concept('concept_culture','$concept_culture_possessive$')] [Concept('concept_homeland','$concept_homelands$')]. If $concept_cultural_turmoil$ in a $concept_country$ exceeds [GetDefine( 'NPolitics', 'SECESSION_TURMOIL_CUTOFF')|v0], $concept_secessionist$ [Concept('concept_pop','$concept_pops$')] may begin an uprising. Once complete, the $concept_homelands$ will separate from the rest of the $concept_country$, which will automatically start a [concept_diplomatic_play] to return them to the fold.\n\nYou can stop a $concept_secessionist$ uprising by reducing [concept_turmoil] among $concept_pops$ of that $concept_culture$ in your $concept_country$, and you can slow it down using the [SelectLocalization(GetPlayer.IsValid,'concept_secession_desc_added','Home Affairs')] [concept_institution]."
  concept_secession_desc_added:0 "[GetInstitutionType('institution_home_affairs').GetName]"

@@ -34,7 +34,7 @@
  alert_revolution_alert_hint: "Ви можете вибрати, яку сторону конфлікту ви підтримаєте в [Concept('concept_civil_war','$concept_civil_war_loc$')|l] та почати [Concept('concept_sway','$concept_sway$')|l] на свою сторону інші держави (якщо потрібно), щоб досягти успіху."
  alert_revolution_alert_action: "Панель політики"
 
- alert_secession_alert_name: "[concept_secession]"
+ alert_secession_alert_name: "[concept_secession]!"
  alert_secession_alert_desc: "Наша держава була в втягнута у [Concept('concept_civil_war','$concept_civil_war_acc$')|l]!"
  alert_secession_alert_hint: "Ви можете вибрати, яку сторону конфлікту ви підтримаєте в [Concept('concept_civil_war','$concept_civil_war_loc$')|l] та почати [Concept('concept_sway','$concept_sway$')|l] на свою сторону інші держави (якщо потрібно), щоб досягти успіху."
  alert_secession_alert_action: "Панель політики"
