@@ -44,19 +44,19 @@
  alert_is_losing_rank_alert_hint:1 "You can gain more [concept_prestige] by increasing the [concept_gdp] of your nation, increasing the [concept_power_projection] of your army and navy (by increasing their size or giving them more powerful equipment) or by being the leading producer of a [concept_good]. You also gain a proportion of your [Concept('concept_subject', '$concept_subject_possessive$')] $concept_prestige$ in this way."
  alert_is_losing_rank_alert_action: "Панель дипломатії"
 
- alert_has_no_war_goal_alert_name:0 "No Primary [concept_war_goal] against [SCOPE.GetRootScope.GetDiplomaticPlay.GetInitiator.GetName]"
+ alert_has_no_war_goal_alert_name:0 "Немає головної [Concept('concept_war_goal','$concept_war_goal_gen$')|l] проти [Concept('concept_war_goal','$concept_war_goal_gen$')|l] [SCOPE.GetRootScope.GetDiplomaticPlay.GetInitiator.GetName]"
  alert_has_no_war_goal_alert_desc:1 "We currently do not have any [Concept('concept_war_goal', '$concept_war_goals$')] set in one of our [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')].\n\nIf do not add any $concept_war_goals$ during the [concept_opening_moves] phase, a primary [concept_war_goal] will automatically be generated for us."
  alert_has_no_war_goal_alert_hint:1 "You can add a $concept_war_goal$ on a participating member of the $concept_diplomatic_play$ in its overview screen. You can expand your $concept_war_goal$ targets as more participants join a side in the $concept_diplomatic_play$, but that will be at the cost of [Concept('concept_maneuver', '$concept_maneuvers$')] you can spend to tempt other participants to join your side."
- alert_has_no_war_goal_alert_action:0 "Diplomatic Play"
+ alert_has_no_war_goal_alert_action: "Дипломатичну гру"
 
  alert_vulnerable_front_name: "Вразливий [concept_front|l]: [SCOPE.GetRootScope.GetFront.GetName]"
  alert_vulnerable_front_desc:0 "Ми не маємо жодних [Concept('concept_general', '$concept_generals_gen$')|l] чи [Concept('concept_battalion', '$concept_battalions_gen$')|l], які б захищали [Concept('concept_front', '$concept_front_acc$')|l] [SCOPE.GetRootScope.GetFront.GetName], а принаймні один ворожий [Concept('concept_general', '$concept_general$')|l] призначений туди."
  alert_vulnerable_front_hint: "Ви можете найняти [Concept('concept_general', '$concept_generals_gen$')|l] чи дати їм накази на панелі війська."
  alert_vulnerable_front_action: "Панель фронту"
 
- alert_high_attrition_alert_name:0 "[SCOPE.GetRootScope.GetCharacter.GetFullName] has [SCOPE.GetRootScope.GetCharacter.GetAttritionRaw|0%-] [concept_attrition]"
- alert_high_attrition_alert_desc:0 "Units of [SCOPE.GetRootScope.GetCharacter.GetFullName] have a high risk of casualties due to attrition"
- alert_high_attrition_alert_hint:0 "Reduce [concept_attrition] by giving a different order to a [concept_commander] or returning them from the [concept_front]"
+ alert_high_attrition_alert_name: "[SCOPE.GetRootScope.GetCharacter.GetFullName] має [SCOPE.GetRootScope.GetCharacter.GetAttritionRaw|0%-] [Concept('concept_attrition', '$concept_attrition_gen$')|l]"
+ alert_high_attrition_alert_desc: "Військо [Concept('concept_commander', '$concept_commander_gen$')|l] [SCOPE.GetRootScope.GetCharacter.GetFullName] може зазнати багато втрат через виснаження."
+ alert_high_attrition_alert_hint: "Щоб зменшити [Concept('concept_attrition', '$concept_attrition_acc$')|l] слід віддати інший наказ [Concept('concept_commander', '$concept_commander_dat$')|l] чи повернути їх з [Concept('concept_front', '$concept_front_gen$')|l]."
  alert_high_attrition_alert_action:0 "Панель війська"
 
  alert_active_peace_deal_alert_name: "Запропонована [concept_peace_deal|l]"
@@ -71,11 +71,11 @@
  alert_wasted_construction_action: "Панель будівництва"
 
  alert_isolated_state_alert_name: "[Concept('concept_state', '$concept_state$')] [SCOPE.GetRootScope.GetState.GetName] є [Concept('concept_isolated_state', '$concept_isolated_state_short_adj$им')|l]"
- alert_isolated_state_alert_desc: "[Concept('concept_isolated_state', '$concept_isolated_state$')] не може закуповувати та продавати товари на більшому ринку, this pops will have to source their needs from the local supply within the state and this may have a significant effect on a Pop's [concept_sol] due to the resulting price changes."
- alert_isolated_state_alert_hint:0 "You can connect [SCOPE.GetRootScope.GetState.GetName] to the [SCOPE.GetRootScope.GetState.GetMarket.GetName] by increasing [concept_infrastructure], which can be done by building Buildings that provide [concept_infrastructure] like Ports or Railroads, or by using the #v $decree_road_maintenance$#! [concept_decree]."
+ alert_isolated_state_alert_desc: "[Concept('concept_isolated_state', '$concept_isolated_state$')] не дозволяє населенню закуповувати та продавати товари на більшому ринку, вони отримують ресурси, які їм потрібні, безпосередньо з регіону, але це має значний вплив на їх [Concept('concept_sol', '$concept_sol_acc$')|l] через зміни цін."
+ alert_isolated_state_alert_hint: "Ви можете з‘єднати [Concept('concept_state', '$concept_state_acc$')|l] [SCOPE.GetRootScope.GetState.GetName] до [Concept('concept_market', '$concept_market_gen$')|l] ([SCOPE.GetRootScope.GetState.GetMarket.GetName]), збільшивши рівень [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l] за допомогою зведення будівель, які її покращують. Наприклад, приплав, чи залізниця, чи ухваливши [Concept('concept_decree', '$concept_decree_acc$')|l] #v «$decree_road_maintenance$»#! [concept_decree]." #[concept_infrastructure]
  alert_isolated_state_alert_action: "Панель регіону [SCOPE.GetRootScope.GetState.GetName]"
 
- alert_inactive_trade_route_alert_name:0 "The [concept_trade_route] [SCOPE.GetRootScope.GetTradeRoute.GetDescriptionForActingMarket] is inactive"
+ alert_inactive_trade_route_alert_name:0 "[concept_trade_route] - [SCOPE.GetRootScope.GetTradeRoute.GetDescriptionForActingMarket]  є недієвим"
  alert_inactive_trade_route_alert_hint_desc:0 "Trade Routes are currently inactive between your market and others due to geographic or diplomatic limitations. Your traders may no longer be able to reach the destination market, or their access may be denied due to an [concept_embargo] or war between your two countries."
  alert_inactive_trade_route_alert_hint:0 "You can remove existing [Concept('concept_trade_route', '$concept_trade_routes$')] from either the Market Panel or using the Trade Lens."
  alert_inactive_trade_route_alert_action:1 "Market Panel for the [SCOPE.GetRootScope.GetTradeRoute.GetActingMarket.GetName]"
@@ -96,7 +96,7 @@ alert_high_tension_alert_name:0 "High [Concept('concept_tension', '$concept_tens
  alert_secession_growing_alert_name:0 "[concept_secession] Movements Growing"
  alert_secession_growing_alert_desc:0 "There are separatists organizing in our country:\n\n#title Separatist [Concept('concept_culture', '$concept_cultures$')]:#!\n[GetPlayer.GetGrowingSecessionistsDesc]"
  alert_secession_growing_alert_hint:1 "You can alleviate the risk of a [concept_secession] by decreasing the [Concept('concept_radical','$concept_radicals$')] of the targeted [concept_culture] in your [concept_country]. This can be done by improving the [concept_sol] in [Concept('concept_state','$concept_states$')] they live in, ensuring they are not [Concept('concept_discrimination','$concept_discriminated_against$')] in the long term, or by issuing [Concept('concept_decree', '$concept_decrees$')] to mitigate these factors in the short term."
- alert_secession_growing_alert_action:0 "Politics Panel"
+ alert_secession_growing_alert_action: "Панель політики"
 
  alert_diplomatic_pact_in_danger_name: "[SCOPE.GetRootScope.GetDiplomaticPact.GetName] з [Concept('concept_country', '$concept_country_ins$')|l] [AddTextIf(SCOPE.GetRootScope.GetDiplomaticPact.IsFirstCountry(GetPlayer), SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName)][AddTextIf(SCOPE.GetRootScope.GetDiplomaticPact.IsSecondCountry(GetPlayer), SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName)]"
  alert_diplomatic_pact_in_danger_desc: "Розірвиться, якщо:\n$TAB$[SCOPE.GetRootScope.GetDiplomaticPact.ShouldAutoBreakDesc]"

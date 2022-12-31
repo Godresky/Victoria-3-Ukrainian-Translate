@@ -147,6 +147,7 @@
  
  concept_sol: "Рівень життя"
  concept_sol_gen: "Рівня життя"
+ concept_sol_acc: "Рівень життя"
  concept_sol_loc: "Рівенях життя"
  concept_sol_short: "РіЖи"
  concept_sol_desc:1 "$concept_sol$ measures a [Concept('concept_pop','$concept_pop_possessive$')] living conditions, with their material [concept_wealth] as the baseline. It governs [Concept('concept_pop_growth','$concept_pop_growth_birthrate_and_mortality$')], and every time it changes it can cause $concept_pops$ to become more [concept_radical] or [Concept('concept_loyalist','$concept_loyal$')]. The average $concept_sol$ in a [concept_state] affects its [concept_migration_pull]."
@@ -996,6 +997,9 @@
  concept_commander_rank_desc:0 "A [Concept('concept_commander','$concept_commander_possessive$')] $concept_commander_rank_short$ determines their [concept_command_limit], as well as how much [concept_clout] they confer to their [concept_interest_group]. Retiring a $concept_commander$ will cause their $concept_interest_group$'s [concept_approval] to fall by a factor depending on their $concept_commander_rank_short$."
 
  concept_commander: "Командир"
+ concept_commander_gen: "Командира"
+ concept_commander_dat: "Командиру"
+ concept_commander_acc: "Командира"
  concept_commanders: "Командири"
  concept_commander_possessive:0 "Commander\\'s"
  concept_commander_desc:1 "A [concept_character] in command of a part of a [Concept('concept_country','$concept_country_possessive$')] military forces. Their [concept_commander_rank] determines how many forces they are allotted from the $concept_country$'s available reserves."
@@ -1171,6 +1175,7 @@
  concept_input_goods_shortage_desc:0 "[Concept('concept_building', '$concept_buildings$')] that consume [Concept('concept_good', '$concept_goods$')] will suffer an output penalty if less than [GetDefine('NEconomy', 'GOODS_SHORTAGE_PENALTY_THRESHOLD')|v%0] of the [concept_buy_orders] for those $concept_goods$ are satisfied. This is usually caused by insufficient availability of the [concept_good] in the [Concept('concept_building', '$concept_building_possessive$')] [concept_market], but may also be a result of low [concept_market_access] in the $concept_building$'s [concept_state_region]."
 
  concept_market: "Ринок"
+ concept_market_gen: "Ринку"
  concept_market_acc: "Ринку"
  concept_markets: "Ринки"
  concept_markets_gen: "Ринків"
@@ -1658,6 +1663,7 @@
  concept_wounded_desc:2 "[concept_casualties] that are merely $concept_wounded$ in [concept_battle] or due to [concept_attrition]. Some $concept_wounded$ $concept_casualties$ recover and return to active service after some time, while others end up as [concept_dependents] of other [Concept('concept_pop','$concept_pops$')] in your [concept_country]."
 
  concept_attrition: "Виснаження"
+ concept_attrition_acc: "Виснаження"
  concept_attrition_desc:2 "[concept_casualties] inflicted on [concept_manpower] outside of [concept_battle] is referred to as $concept_attrition$. It is frequently experienced when [Concept('concept_battalion','$concept_battalions$')] are [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilized$')] and can be the result of disease, accidents, exposure, or even desertion. $concept_attrition$ can be counteracted with using military $pmg_medical_aid$ [Concept('concept_production_method','$concept_production_methods$')]."
 
  concept_ruler: "Правитель"
