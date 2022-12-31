@@ -138,14 +138,14 @@
  BUILDING_GROUP_ENTRY_CAPPED:0 "$BUILDING$ (Max: #variable $NUM$#!)"
  MILITARY_PANEL_MUNITION_CONTENTS:0 "#title Contents of [Country.GetAcquiredMunitionCrates|1] Munition Crates#!"
 
- YEARS_COUNT_RANGE: "#V $MIN$-$MAX$ років(-и)#!"
- YEARS_COUNT_RANGE_NO_FORMAT: "$MIN$-$MAX$ років(-и)"
- MONTHS_COUNT_RANGE: "#V $MIN$-$MAX$ місяців(-ці)#!"
- MONTHS_COUNT_RANGE_NO_FORMAT: "$MIN$-$MAX$ місяців(-ці)"
- WEEKS_COUNT_RANGE: "#V $MIN$-$MAX$ тижнів(-я)#!"
- WEEKS_COUNT_RANGE_NO_FORMAT: "$MIN$-$MAX$ тижнів(-я)"
- DAYS_COUNT_RANGE: "#V $MIN$-$MAX$ днів(-я)#!"
- DAYS_COUNT_RANGE_NO_FORMAT: "$MIN$-$MAX$ днів(-я)"
+ YEARS_COUNT_RANGE: "#V $MIN$-$MAX$ років#!"
+ YEARS_COUNT_RANGE_NO_FORMAT: "$MIN$-$MAX$ років"
+ MONTHS_COUNT_RANGE: "#V $MIN$-$MAX$ місяців#!"
+ MONTHS_COUNT_RANGE_NO_FORMAT: "$MIN$-$MAX$ місяців"
+ WEEKS_COUNT_RANGE: "#V $MIN$-$MAX$ тижнів#!"
+ WEEKS_COUNT_RANGE_NO_FORMAT: "$MIN$-$MAX$ тижнів"
+ DAYS_COUNT_RANGE: "#V $MIN$-$MAX$ днів#!"
+ DAYS_COUNT_RANGE_NO_FORMAT: "$MIN$-$MAX$ днів"
  YEARS_COUNT_SINGULAR: "#V 1 рік#!"
  YEARS_COUNT_PLURAL: "#V $VALUE$ років(-и)#!"
  YEARS_COUNT_SINGULAR_NO_FORMAT: "1 рік"
@@ -3847,7 +3847,7 @@
  REVOLUTIONS_HEADER: "#BOLD Революція#!"
  REVOLUTIONS_HEADER_TOOLTIP: "Існують [Concept('concept_interest_group', '$concept_interest_groups$')|l], які активно намагаються повалити уряд!"
  SECESSION_HEADER: "#BOLD Розкол народу [CivilWar.GetCulture.GetName]#!"
- SECESSION_HEADER_TOOLTIP:0 "The [CivilWar.GetCulture.GetName] population is trying to break away!"
+ SECESSION_HEADER_TOOLTIP: "[CivilWar.GetCulture.GetName] намагаються розколоти нашу державу!"
 
  REVOLUTIONS_PROGRESS_TOOLTIP: "#header [concept_revolution] [Concept('concept_political_movement', '$concept_political_movement_short_gen$')|l] [CivilWar.GetPoliticalMovement.GetName|l]#!\nПоточний поступ: #v [Multiply_CFixedPoint(CivilWar.GetProgress,'(CFixedPoint)100')|0]/100#!\n$TOOLTIP_DELIMITER$\n[concept_revolution_progression_speed]: #tooltippable #tooltip:[CivilWar.GetTooltipTag],CIVIL_WAR_PROGRESS_TOOLTIP [Multiply_CFixedPoint(CivilWar.GetWeeklyProgress,'(CFixedPoint)100')|0-=]#!#! / week\n\n[concept_revolution] progression can increase up to a maximum of [concept_political_movement_radicalism] of the [concept_political_movement] to [CivilWar.GetPoliticalMovement.GetName]: #tooltippable #tooltip:[CivilWar.GetPoliticalMovement.GetTooltipTag],POLITICAL_MOVEMENT_RADICALISM_TOOLTIP,PoliticalMovementRadicalismTooltip [Multiply_CFixedPoint(CivilWar.GetMaxProgress,'(CFixedPoint)100')|0-=]#!#!\nIf it reaches #v 100#! a $concept_revolution$ will break out. [AddLocalizationIf(And(GreaterThan_CFixedPoint(CivilWar.GetWeeklyProgress, '(CFixedPoint)0'),GreaterThan_CFixedPoint(CivilWar.GetMaxProgress, '(CFixedPoint)1')), 'REVOLUTION_WARNING')]\n\n[CivilWar.GetUprisingStatesString]"
  REVOLUTION_WARNING:0 "\n\n@warning! $concept_revolution$ is impending in #v [CivilWar.GetNumWeeksToBreakOut]#! week(s)!"
@@ -4996,7 +4996,7 @@
  PREDICTED_LAWS_WITH_GVT_SUPPORT:0 "$LAWS_WITH_GVT_SUPPORT$ ($PREDICTION$)"
  PREDICTED_LAWS_WITHOUT_GVT_SUPPORT:0 "$LAWS_WITHOUT_GVT_SUPPORT$ ($PREDICTION$)"
 
- TOOLTIP_CHANGE_FROM_LAW: "#header Змінити «[concept_law|l]» в розряді «[LawGroup.GetName]»#!\nВи маєте #variable [LawGroup.GetNumEnactable|+]#! доступних альтернатив в розряді [LawGroup.GetName]" # [Concept('concept_law', '$concept_law_gen$')|l] [Law.GetName]
+ TOOLTIP_CHANGE_FROM_LAW: "#header Змінити «[concept_law|l]» в розряді «[LawGroup.GetName]»#!\nВи маєте #variable [LawGroup.GetNumEnactable|+]#! доступних иншин в розряді [LawGroup.GetName]" # [Concept('concept_law', '$concept_law_gen$')|l] [Law.GetName]
  TOOLTIP_CHANGE_FROM_LAW_CURRENTLY_ENACTING:0 "#header Змінити [concept_law|l] в розряді [LawGroup.GetName]#!\nYou are currently enacting [GetPlayer.GetLawBeingEnacted.GetName] in [GetPlayer.GetLawBeingEnacted.GetGroup.GetName]\nIf you were not, you would have #variable [LawGroup.GetNumPotentialEnactable|+]#! available alternatives to [LawGroup.GetName] in [Law.GetName]"
  PREDICT_LEGITIMACY_TO_ENACT:0 "Once enacted, this Law would change the current Government's Legitimacy by #variable $VAL|=+0$#!"
  LAW_BEING_ENACTED:0 "Being Enacted"
