@@ -4244,7 +4244,7 @@
 
  notification_rank_changed_notification_name: "Ранґ держави змінено"
  notification_rank_changed_notification_desc: "Ваш новий ранґ - [SCOPE.sC('actor').GetRank|v]"
- notification_rank_changed_notification_tooltip:0 "$notification_rank_changed_notification_name$\n$notification_rank_changed_notification_desc$"
+ notification_rank_changed_notification_tooltip: "$notification_rank_changed_notification_name$\n$notification_rank_changed_notification_desc$"
 
  notification_heir_born_notification_name:0 "Heir Born"
  notification_heir_born_notification_desc:0 "[SCOPE.GetRootScope.GetCharacter.GetFullName], [concept_heir] to the throne of [SCOPE.GetRootScope.GetCharacter.GetCountry.GetName] has been born"
