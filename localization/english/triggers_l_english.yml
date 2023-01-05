@@ -185,12 +185,12 @@
  TRIGGER_HAS_WAR_GOAL:0 "Has a war goal [WAR_GOAL_TYPE.GetName]"
  TRIGGER_HAS_WAR_GOAL_NOT:1 "Does #bold not #!have a war goal [WAR_GOAL_TYPE.GetName]"
  
- TRIGGER_IS_SUBJECT:1 "Is a [concept_subject] of another nation"
- TRIGGER_IS_SUBJECT_NOT:2 "Is #bold not #!a [concept_subject] of another nation"
- TRIGGER_IS_SUBJECT_FIRST:1 "[COUNTRY.GetNameNoFlag] is a [concept_subject] of another nation"
- TRIGGER_IS_SUBJECT_FIRST_NOT:2 "[COUNTRY.GetNameNoFlag] is #bold not #!a [concept_subject] of another nation"
- TRIGGER_IS_SUBJECT_THIRD:1 "[COUNTRY.GetName] is a [concept_subject] of another nation"
- TRIGGER_IS_SUBJECT_THIRD_NOT:2 "[COUNTRY.GetName] is #bold not #!a [concept_subject] of another nation"
+ TRIGGER_IS_SUBJECT: "Є [Concept('concept_subject', '$concept_subject_ins$')|l] іншої нації"
+ TRIGGER_IS_SUBJECT_NOT: "#bold Не#! є [Concept('concept_subject', '$concept_subject_ins$')|l] іншої нації"
+ TRIGGER_IS_SUBJECT_FIRST: "[concept_country] [COUNTRY.GetNameNoFlag] є [Concept('concept_subject', '$concept_subject_feminine_ins$')|l] іншої нації"
+ TRIGGER_IS_SUBJECT_FIRST_NOT: "[concept_country] [COUNTRY.GetNameNoFlag] #bold не#! є [Concept('concept_subject', '$concept_subject_feminine_ins$')|l] іншої нації"
+ TRIGGER_IS_SUBJECT_THIRD: "[concept_country] [COUNTRY.GetName] є [Concept('concept_subject', '$concept_subject_feminine_ins$')|l] іншої нації"
+ TRIGGER_IS_SUBJECT_THIRD_NOT: "[concept_country] [COUNTRY.GetName] #bold не#! є [Concept('concept_subject', '$concept_subject_feminine_ins$')|l] іншої нації"
  
  TRIGGER_IS_JUNIOR_IN_CUSTOMS_UNION:0 "Is a junior member of a [concept_customs_union]"
  TRIGGER_IS_JUNIOR_IN_CUSTOMS_UNION_NOT:0 "Is #bold not #!a junior member of a [concept_customs_union]"

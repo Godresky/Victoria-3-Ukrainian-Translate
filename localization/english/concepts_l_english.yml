@@ -25,8 +25,10 @@
  
  concept_subject: "Підвладний"
  concept_subject_gen: "Підвладного"
+ concept_subject_ins: "Підвладним"
  concept_subject_feminine: "Підвладна"
  concept_subject_feminine_gen: "Підвладної"
+ concept_subject_feminine_ins: "Підвладною"
  concept_subjects: "Підвладні"
  concept_subject_country: "Підвладна держава"
  concept_subject_country_acc: "Підвладну державу"
@@ -108,6 +110,8 @@
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MAY 5, 2022
  
  concept_trade_route: "Торговий тор"
+ concept_trade_route_dat: "Торговому тору"
+ concept_trade_route_acc: "Торговий тор"
  concept_trade: "Торгівля"
  concept_trade_routes: "Торгові тори"
  concept_trade_routes_gen: "Торгових торів"
@@ -636,6 +640,7 @@
  concept_decree: "Постанова"
  concept_decree_acc: "Постанову"
  concept_decrees: "Постанови"
+ concept_decrees_gen: "Постанов"
  concept_decrees_acc: "Постанови"
  concept_decrees_dat: "Постановам"
  concept_decree_desc:2 "$concept_decrees$ are demands made by a [Concept('concept_country','$concept_country_possessive$')] [concept_ruler] to effect changes in a [concept_state] under their control. $concept_decrees$ cost [concept_authority] for as long as they are active. Once issued, the $concept_decree$ will provide a certain bonus to the $concept_state$ until it is removed."
@@ -952,13 +957,13 @@
  concept_dividends_desc:2 "While [Concept('concept_building','$concept_buildings$')] have a positive balance, some of these profits are paid out to [Concept('concept_pop', '$concept_pops$')] with [Concept('concept_ownership_share', '$concept_ownership_shares$')] as $concept_dividends$. This source of [concept_pop_income] is subject to [concept_budget_dividends_taxes]. Depending on the [Concept('concept_country','$concept_country_possessive$')] current [SelectLocalization(GetPlayer.IsValid,'concept_dividends_desc_added','Economic System')] [concept_law] some part of these $concept_dividends$ may be allocated to the [concept_investment_pool] while the remainder goes towards [concept_pop_needs] and [concept_wealth]."
  concept_dividends_desc_added:0 "[GetLawType('law_traditionalism').GetGroup.GetName]"
 
- concept_credit: "Спосуда"
- concept_credit_gen: "Спосуди"
+ concept_credit: "Кредит"
+ concept_credit_gen: "Кредиту"
  concept_credit_debt: "Довг"
- concept_credit_limit: "Межа спосуди"
+ concept_credit_limit: "Межа кредиту"
  concept_credit_desc:2 "The national $concept_credit$ is the amount of [concept_money] the [concept_treasury] can borrow from its economy, equal to the sum of all domestic [concept_cash_reserves] plus a base value determined by [concept_gdp]. If the [concept_principal] exceeds the $concept_credit_limit$ the [concept_country] goes into [concept_default]."
 
- concept_principal: "Розмір позики"
+ concept_principal: "Розмір кредиту"
  concept_principal_desc:2 "The total size of [concept_loans] the [concept_treasury] has accrued, not including the [concept_budget_interest] it owes. If the [concept_principal] exceeds your [concept_credit] you will go into [concept_default]."
 
  concept_loans: "Позики"
@@ -967,7 +972,7 @@
  concept_war_support: "Підтримка війни"
  concept_war_support_desc:1 "A measure of how eager your [Concept('concept_country','$concept_country_possessive$')] is to remain in a [concept_war]. Positive values indicates a desire to stay in the $concept_war$ while negative values indicate a general opposition to it. Once $concept_war_support$ reaches [GetDefine('NWar','AUTO_CAPITULATE_WAR_SUPPORT')|v0] the $concept_country$ will immediately capitulate, allowing all [Concept('concept_war_goal','$concept_war_goals$')] to be pressed on them."
 
- concept_occupation: "Окупа"
+ concept_occupation: "Окупація"
  concept_occupied:0 "Occupied"
  concept_occupying:0 "Occupying"
  concept_occupation_desc:0 "Any [Concept('concept_province','$concept_provinces$')] the [concept_country] owns that is currently part of an enemy [concept_theater] is considered $concept_occupied$. $concept_occupation$ contributes to [concept_war_exhaustion]. $concept_occupying$ a [concept_war_goal] you hold on an enemy is usually required to bring their [concept_war_support] into the negatives."
@@ -1158,9 +1163,9 @@
  concept_declared_interest_desc:2 "If you do not own at least one non-colonial [concept_state] in a [concept_state_region], but wish to maintain an [concept_interest] there anyway, you may choose to $concept_declared_interest_declare$ an $concept_interest$ there. The number of $concept_interests$ you can $concept_declared_interest_declare$ in such $concept_state_regions$ depends on your [concept_rank].[AddLocalizationIf(GetPlayer.IsValid, 'concept_declared_interest_ingame_added')]"
  concept_declared_interest_ingame_added:1 "\n\nYour current number of $concept_declared_interests$ is [GetPlayer.GetNumDeclaredInterests]. Due to your $concept_rank$ of [GetPlayer.GetRank], the most you can $concept_declared_interest_declare$ is #tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#!"
 
- concept_obligation: "Вяз"
- concept_obligations: "Вязи"
- concept_obligated: "Вязиний"
+ concept_obligation: "В‘яз"
+ concept_obligations: "В‘язи"
+ concept_obligated: "В‘язиний"
  concept_obligation_desc:1 "One [concept_country] can become $concept_obligated$ to another as a result of agreements made during [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] or when one $concept_country$ buys out another's [concept_loans]. While $concept_obligated$ to a $concept_country$ you are unable to start $concept_diplomatic_plays$ against them or even join a $concept_diplomatic_play_short$ on the other side as them. The other $concept_country$ may use an $concept_obligation$ they hold over you to force you into a [concept_diplomatic_pact], or may absolve it to [concept_sway] you into supporting them in a $concept_diplomatic_play$ or increase [concept_relations] with you."
 
  concept_secession: "Розкол"
@@ -1187,8 +1192,9 @@
  concept_isolated_state_desc_added:0 "[GetBuildingType('building_port').GetName]"
 
  concept_input_goods_shortage: "Нестача вхідних товарів"
- concept_input_goods_shortage_acc: "Недостачу вхідних товарів"
+ concept_input_goods_shortage_acc: "Нестачу вхідних товарів"
  concept_input_goods_shortages: "Нестача вхідних товарів"
+ concept_input_goods_shortages_single: "Нестача вхідного товару"
  concept_input_goods_shortage_desc:0 "[Concept('concept_building', '$concept_buildings$')] that consume [Concept('concept_good', '$concept_goods$')] will suffer an output penalty if less than [GetDefine('NEconomy', 'GOODS_SHORTAGE_PENALTY_THRESHOLD')|v%0] of the [concept_buy_orders] for those $concept_goods$ are satisfied. This is usually caused by insufficient availability of the [concept_good] in the [Concept('concept_building', '$concept_building_possessive$')] [concept_market], but may also be a result of low [concept_market_access] in the $concept_building$'s [concept_state_region]."
 
  concept_market: "Ринок"
@@ -1277,6 +1283,7 @@
 
  concept_production_method: "Спосіб виробництва"
  concept_production_methods: "Способи виробництва"
+ concept_production_methods_gen: "Способів виробництва"
  concept_production_methods_short: "Способи"
  concept_production_method_desc:3 "$concept_production_methods$ determine how [Concept('concept_building','$concept_buildings$')] operate. They impact\n\n- The [Concept('concept_good_consumption','$concept_input_goods$')] the $concept_building$ must purchase to operate\n- The [Concept('concept_good_production','$concept_output_goods$')] the $concept_building$ produces and sells\n- The distribution of [Concept('concept_profession','$concept_professions$')] among its [concept_workforce]\n\n$concept_production_methods$ can also have other effects, such as the generation of [Concept('concept_modifier','$concept_modifiers$')] or the distribution of [Concept('concept_ownership_share','$concept_ownership_shares$')]. $concept_production_methods$ are organized in groups, in which only one can be active at a time. You can switch which $concept_production_method$ is active in each group as long as you meet the [concept_technology] and/or [concept_law] requirement for it."
 
@@ -1713,16 +1720,16 @@
  concept_building_wages:0 "Wages"
  concept_building_wage_desc:3 "$concept_building_wages$ paid to [Concept('concept_pop','$concept_pops$')] by the [concept_building] they work in depends on several factors, the most prominent being the $concept_pop$'s [concept_profession] and the $concept_building$'s financial situation. If a $concept_building$'s [concept_building_balance] allows for raising $concept_building_wages$ at all, the $concept_building$ will only do so if it needs to in order to attract more $concept_pops$ to its [concept_workforce]. If a $concept_building$'s $concept_building_balance$ is negative, it will consider lowering $concept_building_wages$ to return to profitability.\n\nYou can guarantee that the $concept_workforce$ is paid a competitive $concept_building_wage$ by [Concept('concept_subsidies', '$concept_subsidizing$')] the building. This will keep it afloat with funds from the [concept_treasury] if necessary."
 
- concept_sell_orders: "Продаж"
- concept_sell_orders_gen: "Продажу"
- concept_sell_order: "Продаж"
+ concept_sell_orders: "Пропозиції продажу"
+ concept_sell_orders_gen: "Пропозицій продажу"
+ concept_sell_order: "Пропозиція продажу"
  concept_sell_order_short: "Продаж"
  concept_sell_orders_supply:0 "Supply"
  concept_sell_orders_desc:2 "The number of orders to sell a [concept_good] on the central [concept_market] is used in combination with [concept_buy_orders] to determine its [concept_market_price]. $concept_sell_orders$ are generated by the production of the $concept_good$ in each of the $concept_market$'s [Concept('concept_state','$concept_states$')]. The higher the [concept_market_access] a $concept_state$ has, the closer the number of $concept_sell_orders$ generated will be to the total production."
 
- concept_buy_orders: "Покупка"
- concept_buy_orders_gen: "Покупки"
- concept_buy_order: "Покупка"
+ concept_buy_orders: "Пропозиції покупки"
+ concept_buy_orders_gen: "Пропозицій покупки"
+ concept_buy_order: "Пропозиція покупки"
  concept_buy_order_short: "Покупка"
  concept_buy_orders_demand:0 "Demand"
  concept_buy_orders_desc:2 "The number of orders to buy a [concept_good] on the central [concept_market] is used in combination with [concept_sell_orders] to determine its [concept_market_price]. $concept_buy_orders$ are generated by the consumption of the $concept_good$ in each of the $concept_market$'s [Concept('concept_state','$concept_states$')]. The higher the [concept_market_access] a $concept_state$ has, the closer the number of $concept_buy_orders$ generated will be to the total consumption."

@@ -248,7 +248,7 @@
  damage_relations_trigger_desc_third:0 "[COUNTRY.GetName] is damaging [concept_relations] with [AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]"
  damage_relations_trigger_false_desc_third:0 "[COUNTRY.GetName] is #b not#! damaging [concept_relations] with [AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]"
  
- redeem_obligation: "Зняти вяз"
+ redeem_obligation: "Зняти в‘яз"
  redeem_obligation_action_name: "Зняти [concept_obligation|l]"
  redeem_obligation_desc:3 "#header $redeem_obligation$#!\n$TOOLTIP_DELIMITER$\nAn [concept_instant_diplomatic_action] that removes the [concept_obligation] a [concept_country] owes another in exchange for an instant increase of [concept_relations]."
  redeem_obligation_action_notification_name:1 "[concept_obligation] Absolved"

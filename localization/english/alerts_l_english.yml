@@ -5,12 +5,12 @@
   # alert_xyz_action = Where does clicking this take you?
 
  alert_country_default_name: "Оголошена [concept_default|l]"
- alert_country_default_desc: "[GetPlayer.GetName] оголосила [concept_default|l] через те, що ми не можемо повернути наші спосуди. Поки ми не зможемо досягти позитивного балансу, ми будемо зазнавати карн, які з часом ставатимуть дедалі суворішими.\n\n#title Поточні заподії:#!\n[GetPlayer.GetInDefaultEffectsDesc]"
+ alert_country_default_desc: "[GetPlayer.GetName] оголосила [concept_default|l] через те, що ми не можемо повернути ваші кредити. Поки ми не зможемо досягти позитивного балансу, ми будемо зазнавати карн, які з часом ставатимуть дедалі суворішими.\n\n#title Поточні заподії:#!\n[GetPlayer.GetInDefaultEffectsDesc]"
  alert_country_default_hint: "Ви можете покращити своє матеріяльне становище, збільшивши прибутки або зменшивши витрати. Щоб збільшити свій дохід, у короткостроковій перспективі ви можете підвищити поточну ставку податку, почати стягувати нові податки на споживання чи підвищити тарифи для отримання нових прибутків. Щоб зменшити свої витрати, ви можете зменшити заробітну плату у своїх військових або державних будівлях, знизити ціни на товари, які вони споживають чи призупинити будівництво, доки ваші фінанси не відновляться. Якщо нічого з цього недостатньо, то у вас також є можливість оголосити про [Concept('concept_bankruptcy','$concept_bankruptcy_ins$')|l]"
  alert_country_default_action: "Панель бюджету"
 
  alert_is_construction_paused_name: "Будівництво призупинено"
- alert_is_construction_paused_desc: "Наша [concept_construction_queue|l] зупинилася та нові будівлі не зводяться в нашій державі."
+ alert_is_construction_paused_desc: "Наша [concept_construction_queue|l] зупинилася та нові будівлі не зводяться у вашій державі."
  alert_is_construction_paused_hint: "Ви можете відновити будівництво або в черзі на будівництво, або в часописі у верхньому правому куті. Це не можна зробити, якщо ваша держава оголосила [concept_default|l]."
  alert_is_construction_paused_action: "Черга на будівництво"
   
@@ -20,7 +20,7 @@
  alert_country_approaching_bureaucracy_shortage_action: "Панель політики"
 
  alert_has_no_research_alert_name: "Немає активних досліджень"
- alert_has_no_research_alert_desc: "Наразі ми не ведемо активних досліджень будь-якої [Concept('concept_technology', '$concept_technology_gen$')|l]. Таким чином, будь-яка [concept_innovation|l], яку ми створюємо, буде спрямована на поширення наших пасивних технологій."
+ alert_has_no_research_alert_desc: "Наразі ми не ведемо активних досліджень будь-якої [Concept('concept_technology', '$concept_technology_gen$')|l]. Таким чином, будь-яка [concept_innovation|l], яку ми створюємо, буде спрямована на поширення ваших пасивних технологій."
  alert_has_no_research_alert_hint: "Ви можете вибрати технологію, яку будете вивчати, серед трьох гілок досліджень на панелі технологій."
  alert_has_no_research_alert_action: "Панель технологій" 
 
@@ -40,7 +40,7 @@
  alert_secession_alert_action: "Панель політики"
 
  alert_is_losing_rank_alert_name: "Втрата [Concept('concept_rank','$concept_rank_gen$')|l]"
- alert_is_losing_rank_alert_desc: "У нас нехватає [Concept('concept_prestige','$concept_prestige_gen$')|l], щоб підтримувати [Concept('concept_rank','$concept_rank_acc$')|l] [GetPlayer.GetRank|v]. Тому наш [Concept('concept_rank','$concept_rank$')|l] стане: [GetPlayer.GetTargetRank|v] через [GetPlayer.GetDaysUntilRankLoss|v] днів(-нь), якщо ми не відновимося.\n\nНам потрібно #P #b [GetPlayer.GetPrestigeToMaintainRank]#!#! [Concept('concept_prestige','$concept_prestige_gen$')|l], щоб підтримувати [Concept('concept_rank','$concept_rank_acc$')|l], а зараз у нас є #b #N [GetPlayer.GetPrestige]#!#!."
+ alert_is_losing_rank_alert_desc: "У вас нехватає [Concept('concept_prestige','$concept_prestige_gen$')|l], щоб підтримувати [Concept('concept_rank','$concept_rank_acc$')|l] [GetPlayer.GetRank|v]. Тому наш [Concept('concept_rank','$concept_rank$')|l] стане: [GetPlayer.GetTargetRank|v] через [GetPlayer.GetDaysUntilRankLoss|v] днів(-нь), якщо ми не відновимося.\n\nНам потрібно #P #b [GetPlayer.GetPrestigeToMaintainRank]#!#! [Concept('concept_prestige','$concept_prestige_gen$')|l], щоб підтримувати [Concept('concept_rank','$concept_rank_acc$')|l], а зараз у вас є #b #N [GetPlayer.GetPrestige]#!#!."
  alert_is_losing_rank_alert_hint: "Ви можете отримати більше [Concept('concept_prestige','$concept_prestige_gen$')|l], збільшивши [Concept('concept_gdp','$concept_gdp_acc$')|l] нації, підвищивши [Concept('concept_power_projection','$concept_power_projection_acc$')|l] війська та флоту (це можна зробити збільшивши чисельність війська або давши краще оснащення) чи ставши провідником виробництва [Concept('concept_good','$concept_good_gen$')|l]. Таким чином ви отримуєте частку [Concept('concept_prestige','$concept_prestige_gen$')|l] від свого [Concept('concept_subject', '$concept_subject_gen$')|l]."
  alert_is_losing_rank_alert_action: "Панель дипломатії"
 
@@ -75,7 +75,7 @@
  alert_isolated_state_alert_hint: "Ви можете з‘єднати [Concept('concept_state', '$concept_state_acc$')|l] [SCOPE.GetRootScope.GetState.GetName] до [Concept('concept_market', '$concept_market_gen$')|l] ([SCOPE.GetRootScope.GetState.GetMarket.GetName]), збільшивши рівень [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l] за допомогою зведення будівель, які її покращують. Наприклад, приплав, чи залізниця, чи ухваливши [Concept('concept_decree', '$concept_decree_acc$')|l] #v «$decree_road_maintenance$»#! [concept_decree]." #[concept_infrastructure]
  alert_isolated_state_alert_action: "Панель регіону [SCOPE.GetRootScope.GetState.GetName]"
 
- alert_inactive_trade_route_alert_name: "[concept_trade_route] - [SCOPE.GetRootScope.GetTradeRoute.GetDescriptionForActingMarket] є недієвим"
+ alert_inactive_trade_route_alert_name: "[concept_trade_route] «[SCOPE.GetRootScope.GetTradeRoute.GetDescriptionForActingMarket]» недієвий"
  alert_inactive_trade_route_alert_hint_desc: "Через географічні чи дипломатичні обмеження торговельні тори між вашим ринком та іншими наразі недієві. Можливо, ваші торговці більше не зможуть досягти цільового ринку. Їм може бути заборонено доступ або через [Concept('concept_embargo', '$concept_embargo_acc$')|l], або через війну через двома державами."
  alert_inactive_trade_route_alert_hint: "Ви можете видалити ці [Concept('concept_trade_route', '$concept_trade_routes_acc$')|l] з панелі ринку або з соки торгівлі."
  alert_inactive_trade_route_alert_action: "Панель «[SCOPE.GetRootScope.GetTradeRoute.GetActingMarket.GetName]»"
@@ -86,17 +86,17 @@
  alert_state_in_turmoil_alert_action: "Панель регіону [SCOPE.GetRootScope.GetState.GetName]"
 
  alert_high_tension_alert_name: "Висока [Concept('concept_tension', '$concept_tension$')|l] між [Concept('concept_country', '$concept_countries_ins$')|l] [SCOPE.GetRootScope.GetDiplomaticRelations.GetFirstCountry.GetName] та [SCOPE.GetRootScope.GetDiplomaticRelations.GetSecondCountry.GetName]"
- alert_high_tension_alert_desc: "[Concept('concept_tension', '$concept_tension$')] росте, коли наші [Concept('concept_colony', '$concept_colonies_acc$')|l] зазіхають на землі тубільців [SCOPE.GetRootScope.GetDiplomaticRelations.GetSecondCountry.GetName]. Якщо [Concept('concept_tension', '$concept_tension$')|l] буде і надалі рости, то це може спровокувати [Concept('concept_native_uprising', '$concept_native_uprising_acc$')|l]."
+ alert_high_tension_alert_desc: "[Concept('concept_tension', '$concept_tension$')] росте, коли ваші [Concept('concept_colony', '$concept_colonies_acc$')|l] зазіхають на землі тубільців [SCOPE.GetRootScope.GetDiplomaticRelations.GetSecondCountry.GetName]. Якщо [Concept('concept_tension', '$concept_tension$')|l] буде і надалі рости, то це може спровокувати [Concept('concept_native_uprising', '$concept_native_uprising_acc$')|l]."
  alert_high_tension_alert_hint: "Щоб зменшити завелику [Concept('concept_tension', '$concept_tension_acc$')|l], ви можете тимчасово зупинити [Concept('concept_colony', '$concept_colonial$е')|l] розширення, щоб не дражнити [Concept('concept_pop', '$concept_population$')|l] сильніше та зменшити ймовірність [Concept('concept_native_uprising', '$concept_native_uprising_gen$')|l] або ви можете збільшити [Concept('concept_garrison', '$concept_garrison_acc$')|l] у [Concept('concept_hq', '$concept_hq_loc$')|l] [Concept('concept_colony', '$concept_colonial$ого')|l] [Concept('concept_strategic_region', '$concept_strategic_region_gen$')|l], щоб підготуватися до повстання."
  alert_high_tension_alert_action: "Панель дипломатії"
 
  alert_insurrectionary_alert_name: "Назріває [concept_revolution|l]"
- alert_insurrectionary_alert_desc: "Існують зацікавлені партизанські групи, які плянують [Concept('concept_revolution','$concept_revolutions_acc$')|l] в нашій державі:\n\n#title Зацікавлені партизанські групи:#!\n[GetPlayer.GetInsurrectionaryIGsDesc]"
+ alert_insurrectionary_alert_desc: "Існують зацікавлені партизанські групи, які плянують [Concept('concept_revolution','$concept_revolutions_acc$')|l] у вашій державі:\n\n#title Зацікавлені партизанські групи:#!\n[GetPlayer.GetInsurrectionaryIGsDesc]"
  alert_insurrectionary_alert_hint: "Ви можете дерадикалізувати їх, збільшивши їх схвалення, за допомогою надання чинности [Concept('concept_law', '$concept_laws_dat$')|l], які вони підтримують (чи зупинити надання сили законам, які вони не підтримують)."
  alert_insurrectionary_alert_action: "Панель політики"
 
  alert_secession_growing_alert_name: "Назріває [Concept('concept_secession', '$concept_secession_adj$ий')|l] рух"
- alert_secession_growing_alert_desc: "В нашій державі організовуються розкольники:\n\n#title Розкольні [Concept('concept_culture', '$concept_cultures$')|l]:#!\n[GetPlayer.GetGrowingSecessionistsDesc]"
+ alert_secession_growing_alert_desc: "У вашій державі організовуються розкольники:\n\n#title Розкольні [Concept('concept_culture', '$concept_cultures$')|l]:#!\n[GetPlayer.GetGrowingSecessionistsDesc]"
  alert_secession_growing_alert_hint:1 "You can alleviate the risk of a [concept_secession] by decreasing the [Concept('concept_radical','$concept_radicals$')] of the targeted [concept_culture] in your [concept_country]. This can be done by improving the [concept_sol] in [Concept('concept_state','$concept_states$')] they live in, ensuring they are not [Concept('concept_discrimination','$concept_discriminated_against$')] in the long term, or by issuing [Concept('concept_decree', '$concept_decrees$')] to mitigate these factors in the short term."
  alert_secession_growing_alert_action: "Панель політики"
 
@@ -106,7 +106,7 @@
 
  alert_diplomatic_pact_in_danger_action: "Панель дипломатії"
  alert_has_decreasing_interests_alert_name: "Втрата [Concept('concept_interest', '$concept_interests_gen$')|l]"
- alert_has_decreasing_interests_alert_desc: "У нас є [Concept('concept_interest', '$concept_interests$')|l], які ми скоро можемо втратити:\n[GetPlayer.GetDecreasingInterestsDesc]"
+ alert_has_decreasing_interests_alert_desc: "У вас є [Concept('concept_interest', '$concept_interests$')|l], які ми скоро можемо втратити:\n[GetPlayer.GetDecreasingInterestsDesc]"
  alert_has_decreasing_interests_alert_hint: "Ви можете запобігти цьому, скориставшись дією «[Concept('concept_declared_interest','$concept_declare_interests$')]» у [Concept('concept_diplomatic_lens','$concept_diplomatic_lens_dat$')|l], якщо ви ще не досягли максимуму проявлених рупів, або можете змінити пріоритети проявлених рупів відповідно до поточних дипломатичних цілей."
  alert_has_decreasing_interests_alert_action: "Панель дипломатії"
 
@@ -138,7 +138,7 @@
 
  alert_low_legitimacy_alert_name: "Низька законність уряду"
  alert_low_legitimacy_alert_desc: "Ваш [concept_government|l] має [GetPlayer.GetGovernmentLegitimacy|v] [Concept('concept_legitimacy','$concept_legitimacy_gen$')|l], що впливає радикалізацію вашого населення."
- alert_low_legitimacy_alert_hint: "Ви можете збільшити свій рівень [Concept('concept_legitimacy','$concept_legitimacy_gen$')|l], додавши чи забравши [Concept('concept_interest_group', '$concept_interest_groups$')|l] з вашого [Concept('concept_government','$concept_government_gen$')|l]. Це можна зробити на панелі політики. Ви також можете змінити [Concept('concept_law', '$concept_laws$')], це можна зробити у вкладці конституційних законів на панелі політики." #або на панелі подробиць [Concept('concept_interest_group','$concept_interest_group_gen$')|l]
+ alert_low_legitimacy_alert_hint: "Ви можете збільшити свій рівень [Concept('concept_legitimacy','$concept_legitimacy_gen$')|l], додавши чи забравши [Concept('concept_interest_group', '$concept_interest_groups$')|l] з вашого [Concept('concept_government','$concept_government_gen$')|l]. Це можна зробити на панелі політики. Ви також можете змінити [Concept('concept_law', '$concept_laws_acc$')|l], для цього відкрийте вкладку конституції на панелі політики." #або на панелі подробиць [Concept('concept_interest_group','$concept_interest_group_gen$')|l]
  alert_low_legitimacy_alert_action: "Панель політики"
 
  alert_unused_interests_alert_name: "Можна підтримати більше [Concept('concept_declared_interest','$concept_declared_interests_gen$')|l]"
@@ -151,19 +151,19 @@
  alert_unproductive_trade_route_alert_hint: "Ви можете скасувати дієві [Concept('concept_trade_route', '$concept_trade_routes$')|l] на будь-якій панелі ринку чи використавши сочку торгівлі. Якщо ви хочете зберегти цей тор, але не маєте інших продуктивних торів для підтримки прибутковости торгових центрів, подумайте про субсидування будівлі." #[Concept('concept_subsidize','$concept_subsidizing$')|l]
  alert_unproductive_trade_route_alert_action: "Панель «[SCOPE.GetRootScope.GetTradeRoute.GetActingMarket.GetName]»"
 
- alert_trade_route_needs_convoys_alert_name:0 "The [concept_trade_route] [SCOPE.GetRootScope.GetTradeRoute.GetDescriptionForActingMarket] needs additional [concept_convoys] to increase its level"
- alert_trade_route_needs_convoys_alert_desc:0 "Your trade routes are profitable but unable to grow as they are limited due to the number of convoys available to your merchant fleet, this is limiting the amount of goods flowing between the two markets and the potential tariff revenue on both sides."
- alert_trade_route_needs_convoys_alert_hint:1 "You can increase the number of [concept_convoys] available by constructing additional Ports, altering the Production Methods of those Ports, or cancelling unproductive trade routes"
+ alert_trade_route_needs_convoys_alert_name: "[Concept('concept_trade_route','$concept_trade_route_dat$')] «[SCOPE.GetRootScope.GetTradeRoute.GetDescriptionForActingMarket]» потрібні додаткові [Concept('concept_convoys','$concept_convoys_acc$')|l], щоб підвищити його рівень"
+ alert_trade_route_needs_convoys_alert_desc: "Ваші торгові тори є прибутковими, але вони не можуть розвиватися, через обмеження кількости конвоїв, які доступні вам. Це обмежує кількість товарів, що протікають між двома ринками й потенційний дохід від тарифів з обох сторін."
+ alert_trade_route_needs_convoys_alert_hint: "Ви можете збільшити кількість доступних [Concept('concept_convoys','$concept_convoys_gen$')|l], збудувавши додаткові приплави, змінивши методи виробництва цих приплавів або непродуктивні торгові тори."
  alert_trade_route_needs_convoys_alert_action: "Панель «[SCOPE.GetRootScope.GetTradeRoute.GetActingMarket.GetName]»"
 
- alert_market_goods_shortage_alert_name: "[concept_input_goods_shortage] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] - [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]"
- alert_market_goods_shortage_alert_desc:0 "There are #tooltippable #tooltip:[SCOPE.GetRootScope.GetMarketGoods.GetTooltipTag],alert_market_goods_shortage_affected_buildings_breakdown [SCOPE.GetRootScope.GetMarketGoods.GetNumBuildingsAffectedByShortage|v]#!#! buildings affected by this shortage."
- alert_market_goods_shortage_alert_hint:0 "You can resolve the shortages by increasing the number of [concept_sell_orders] for [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] in [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]. This can be done by either producing more [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName], improving [concept_infrastructure] in [Concept('concept_state', '$concept_states$')] with low [concept_market_access] producing it, or setting up a [concept_trade_route] to get it from another [concept_market]."
- alert_market_goods_shortage_alert_hint_data_version:1 "@information! There are #tooltippable #tooltip:[Goods.GetTooltipTag],alert_market_goods_shortage_affected_buildings_breakdown_data_version [Goods.GetNumBuildingsAffectedByShortageInMarket|v]#!#! buildings affected by this shortage.\n\nYou can resolve the shortages by increasing the number of [concept_sell_orders] for [Goods.GetTextIcon][Nbsp][Goods.GetName] in [Goods.GetMarket.GetName]. This can be done by either producing more [Goods.GetTextIcon][Nbsp][Goods.GetName], improving [concept_infrastructure] in [Concept('concept_state', '$concept_states$')]  with low [concept_market_access] producing it, or setting up a [concept_trade_route] to get it from another [concept_market]."
- alert_market_goods_shortage_alert_action:0 "Market Panel for [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] in [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]"
- alert_market_goods_shortage_affected_buildings_breakdown:0 "[MarketGoods.GetBreakdownOfBuildingsAffectedByShortage]"
- alert_market_goods_shortage_affected_buildings_breakdown_data_version:0 "[Goods.GetBreakdownOfBuildingsAffectedByShortageInMarket]"
- alert_market_goods_shortage_affected_building_entry:0 "[Building.GetName] in [Building.GetState.GetName]"
+ alert_market_goods_shortage_alert_name: "[Concept('concept_input_goods_shortage','$concept_input_goods_shortages_single$')] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] ([SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName])"
+ alert_market_goods_shortage_alert_desc: "У вас є #tooltippable #tooltip:[SCOPE.GetRootScope.GetMarketGoods.GetTooltipTag],alert_market_goods_shortage_affected_buildings_breakdown [SCOPE.GetRootScope.GetMarketGoods.GetNumBuildingsAffectedByShortage|v]#!#! [SelectLocalization(GreaterThan_int32(SCOPE.GetRootScope.GetMarketGoods.GetNumBuildingsAffectedByShortage, '(int32)1'),SelectLocalization(GreaterThan_int32(SCOPE.GetRootScope.GetMarketGoods.GetNumBuildingsAffectedByShortage, '(int32)4'),'будівель, що страждають від нестачі','будівлі, що страждають від нестачі'),'будівля, що страждає від нестачі')|l]."
+ alert_market_goods_shortage_alert_hint: "Ви можете усунути нестачу, збільшивши кількість [Concept('concept_sell_orders','$concept_sell_orders_gen$')|l] для [Concept('concept_good','$concept_good_gen$')|l] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] ([SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]). Це можна зробити наступним чином: виробляти більше [Concept('concept_good','$concept_good_gen$')|l] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName], покращити [Concept('concept_infrastructure','$concept_infrastructure_acc$')|l] в [Concept('concept_state', '$concept_states_loc$')|l] з низьким [Concept('concept_market_access','$concept_market_access_ins$')|l], де його виробляють, чи прокласти [Concept('concept_trade_route','$concept_trade_route_acc$')|l] з іншого [Concept('concept_market', '$concept_market_gen$')|l]."
+ alert_market_goods_shortage_alert_hint_data_version: "@information! У вас є #tooltippable #tooltip:[SCOPE.GetRootScope.GetMarketGoods.GetTooltipTag],alert_market_goods_shortage_affected_buildings_breakdown [SCOPE.GetRootScope.GetMarketGoods.GetNumBuildingsAffectedByShortage|v]#!#! [SelectLocalization(GreaterThan_int32(SCOPE.GetRootScope.GetMarketGoods.GetNumBuildingsAffectedByShortage, '(int32)1'),SelectLocalization(GreaterThan_int32(SCOPE.GetRootScope.GetMarketGoods.GetNumBuildingsAffectedByShortage, '(int32)4'),'будівель, що страждають від нестачі','будівлі, що страждають від нестачі'),'будівля, що страждає від нестачі')|l].\n\nВи можете усунути нестачу, збільшивши кількість [Concept('concept_sell_orders','$concept_sell_orders_gen$')|l] для [Concept('concept_good','$concept_good_gen$')|l] [Goods.GetTextIcon][Nbsp][Goods.GetName] ([Goods.GetMarket.GetName]). Це можна зробити наступним чином: виробляти більше [Concept('concept_good','$concept_good_gen$')|l] [Goods.GetTextIcon][Nbsp][Goods.GetName], покращити [Concept('concept_infrastructure','$concept_infrastructure_acc$')|l] в [Concept('concept_state', '$concept_states_loc$')|l] з низьким [Concept('concept_market_access','$concept_market_access_ins$')|l], де його виробляють, чи прокласти [Concept('concept_trade_route','$concept_trade_route_acc$')|l] з іншого [Concept('concept_market', '$concept_market_gen$')|l]."
+ alert_market_goods_shortage_alert_action: "Панель «[SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]» для товару [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName|l]"
+ alert_market_goods_shortage_affected_buildings_breakdown: "[MarketGoods.GetBreakdownOfBuildingsAffectedByShortage]"
+ alert_market_goods_shortage_affected_buildings_breakdown_data_version: "[Goods.GetBreakdownOfBuildingsAffectedByShortageInMarket]"
+ alert_market_goods_shortage_affected_building_entry: "[Building.GetName] в [Concept('concept_state', '$concept_state_loc$')|l] [Building.GetState.GetName]"
 
  alert_low_market_access_alert_name: "[SCOPE.GetRootScope.GetState.GetMarketAccess|%0v] [Concept('concept_market_access', '$concept_market_access_gen$')|l] в [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetState.GetName]"
  alert_low_market_access_alert_hint: "Ви можете покращити [Concept('concept_market_access', '$concept_market_access_acc$')|l] в [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetState.GetName], завдяки збільшеню рівня [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l] (звівши будівлі [GetBuildingType('building_port').GetName|l] чи [GetBuildingType('building_railway').GetName|l]), завдяки [Concept('concept_decree', '$concept_decrees_dat$')|l] «[GetDecreeType('decree_road_maintenance').GetName]» чи забезпечивши достатню кількість [Concept('concept_convoys', '$concept_convoys_gen$')|l] для з‘єднання морським тором [Concept('concept_state', '$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetName] зі [Concept('concept_market_capital', '$concept_market_capital_ins$')|l]."
@@ -176,15 +176,15 @@
   
  alert_expensive_goods_alert_hint_common: "Ви можете впливати на ціну [Concept('concept_good', '$concept_good_gen$')|l] кількома способами. Наприклад, ви можете підвищити доступність товару, збільшивши його виробництво за допомогою методів будівництва або виробництва, або купити його в іншій державі. Якщо кінцевий продукт хороший, то ви можете бути впевненим, що на це не впливає дефіцит ресурсів або висока вартість матеріялів. Ви також можете змінити свою тарифну політику або податки на споживання на товар (або на товари з яких він складається, щоб, ймовірно, знизити ціну)."
 
- alert_expensive_government_goods_alert_name: "[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] - [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]"
+ alert_expensive_government_goods_alert_name: "[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] ([SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName])"
  alert_expensive_government_goods_alert_desc: "#header Товар [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] дорогий#!"
  alert_expensive_government_goods_alert_hint: "$alert_expensive_goods_alert_hint_common$"
- alert_expensive_government_goods_alert_action: "Панель товару [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] - [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]"
+ alert_expensive_government_goods_alert_action: "Панель товару [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] ([SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName])"
 
- alert_expensive_military_goods_alert_name: "[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] - [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]"
+ alert_expensive_military_goods_alert_name: "[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] ([SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName])"
  alert_expensive_military_goods_alert_desc: "#header Товар [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] дорогий#!"
  alert_expensive_military_goods_alert_hint: "$alert_expensive_goods_alert_hint_common$"
- alert_expensive_military_goods_alert_action: "Панель товару [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] - [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]" 
+ alert_expensive_military_goods_alert_action: "Панель товару [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] ([SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName])" 
 
  alert_has_army_troops_in_reserve_alert_name:1 "[GetPlayer.GetBattalionsInReserve|0] @battalions! [Concept('concept_battalion', '$concept_battalions$')] [concept_in_reserve]"
  alert_has_army_troops_in_reserve_alert_hint:3 "Promote existing [Concept('concept_general', '$concept_generals$')] in order to give them higher [concept_command_limit], which can be done on the details panel for that $concept_general$ (or by right-clicking the $concept_general$). You can also assign $concept_battalions$ by recruiting more $concept_generals$, which can be done on the Army tab in the #b Military#! panel or through the [concept_military_lens].\n\nHowever, promoting a $concept_general$ is usually recommended over recruiting more."
@@ -207,15 +207,15 @@
 
   # Alert groups
  ag_isolated_states_name: "[Concept('concept_isolated_state', '$concept_isolated_states$')]"
- ag_isolated_states_desc: "У нас є [GetPlayer.GetNumIsolatedStates] [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumIsolatedStates, '(int32)1'),Concept('concept_isolated_state', '$concept_isolated_states_gen$'),Concept('concept_isolated_state', '$concept_isolated_state$'))|l]."
+ ag_isolated_states_desc: "У вас є [GetPlayer.GetNumIsolatedStates] [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumIsolatedStates, '(int32)1'),Concept('concept_isolated_state', '$concept_isolated_states_gen$'),Concept('concept_isolated_state', '$concept_isolated_state$'))|l]."
  ag_isolated_states_tooltip: "#header $ag_isolated_states_name$#!\n$TOOLTIP_DELIMITER$\n$ag_isolated_states_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  ag_inactive_trade_routes_name: "Недієві [Concept('concept_trade_route', '$concept_trade_routes$')|l]"
- ag_inactive_trade_routes_desc: "У нас є [GetPlayer.GetNumInactiveTradeRoutes|v] [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumInactiveTradeRoutes, '(int32)1'),'недієвих','недієвий')|l] [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumInactiveTradeRoutes, '(int32)1'),Concept('concept_trade_route', '$concept_trade_routes_gen$'),Concept('concept_trade_route', '$concept_trade_route$'))|l]."
+ ag_inactive_trade_routes_desc: "У вас є [GetPlayer.GetNumInactiveTradeRoutes|v] [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumInactiveTradeRoutes, '(int32)1'),'недієвих','недієвий')|l] [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumInactiveTradeRoutes, '(int32)1'),Concept('concept_trade_route', '$concept_trade_routes_gen$'),Concept('concept_trade_route', '$concept_trade_route$'))|l]."
  ag_inactive_trade_routes_tooltip: "#header $ag_inactive_trade_routes_name$#!\n$TOOLTIP_DELIMITER$\n$ag_inactive_trade_routes_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  ag_states_in_turmoil_name: "[Concept('concept_state', '$concept_states$')] з [Concept('concept_turmoil', '$concept_turmoil_ins$')|l]"
- ag_states_in_turmoil_desc: "У нас є [GetPlayer.GetNumTurmoilStates] [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumTurmoilStates, '(int32)1'),Concept('concept_state', '$concept_states_gen$'),Concept('concept_state', '$concept_state$'))|l] з [Concept('concept_turmoil', '$concept_turmoil_ins$')|l]."
+ ag_states_in_turmoil_desc: "У вас є [GetPlayer.GetNumTurmoilStates] [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumTurmoilStates, '(int32)1'),Concept('concept_state', '$concept_states_gen$'),Concept('concept_state', '$concept_state$'))|l] з [Concept('concept_turmoil', '$concept_turmoil_ins$')|l]."
  ag_states_in_turmoil_tooltip: "#header $ag_states_in_turmoil_name$#!\n$TOOLTIP_DELIMITER$\n$ag_states_in_turmoil_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  ag_high_tensions_name: "Висока [Concept('concept_tension', '$concept_tension$')|l]"
@@ -223,15 +223,15 @@
  ag_high_tensions_tooltip:0 "#header $ag_high_tensions_name$#!\n$TOOLTIP_DELIMITER$\n$ag_high_tensions_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  ag_insurrectionary_alerts_name: "Назрівають [Concept('concept_revolution','$concept_revolutions$')|l]"
- ag_insurrectionary_alerts_desc: "Існують зацікавлені партизанські групи, які плянують [Concept('concept_revolution','$concept_revolutions_acc$')|l] в нашій державі!"
+ ag_insurrectionary_alerts_desc: "Існують зацікавлені партизанські групи, які плянують [Concept('concept_revolution','$concept_revolutions_acc$')|l] в вашій державі!"
  ag_insurrectionary_alerts_tooltip: "#header $ag_insurrectionary_alerts_name$#!\n$TOOLTIP_DELIMITER$\n$ag_insurrectionary_alerts_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
- ag_secession_growing_name:0 "Ростуть [Concept('concept_secession', '$concept_secession_adj$і')|l] рухи"
- ag_secession_growing_desc:0 "У нашій державі є декілька [Concept('concept_secession', '$concept_secession_adj$их')|l] рухів, які ростуть."
- ag_secession_growing_tooltip:0 "#header $ag_secession_growing_name$#!\n$TOOLTIP_DELIMITER$\n$ag_secession_growing_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
+ ag_secession_growing_name: "Ростуть [Concept('concept_secession', '$concept_secession_adj$і')|l] рухи"
+ ag_secession_growing_desc: "У вашій державі є декілька [Concept('concept_secession', '$concept_secession_adj$их')|l] рухів, які ростуть."
+ ag_secession_growing_tooltip: "#header $ag_secession_growing_name$#!\n$TOOLTIP_DELIMITER$\n$ag_secession_growing_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  ag_diplomatic_pact_in_danger_name: "[concept_diplomatic_pact] під загрозою розриву"
- ag_diplomatic_pact_in_danger_desc: "У нас є [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')|l], які можуть розірватися, якщо [concept_relations|l] погіршаться"
+ ag_diplomatic_pact_in_danger_desc: "У вас є [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')|l], які можуть розірватися, якщо [concept_relations|l] погіршаться"
  ag_diplomatic_pact_in_danger_tooltip: "#header $ag_diplomatic_pact_in_danger_name$#!\n$TOOLTIP_DELIMITER$\n$ag_diplomatic_pact_in_danger_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  ag_expiring_obligations_name:0 "Expiring [Concept('concept_obligation', '$concept_obligations$')]"
@@ -243,31 +243,31 @@
  ag_idle_mobilized_general_tooltip:0 "#header $ag_idle_mobilized_general_name$#!\n$TOOLTIP_DELIMITER$\n$ag_idle_mobilized_general_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  ag_unproductive_trade_routes_name: "Непродуктивні [Concept('concept_trade_route', '$concept_trade_routes$')|l]"
- ag_unproductive_trade_routes_desc: "У нас є [GetPlayer.GetNumUnproductiveTradeRoutes|v] [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumUnproductiveTradeRoutes, '(int32)1'),'непродуктивних','непродуктивний')|l] [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumUnproductiveTradeRoutes, '(int32)1'),Concept('concept_trade_route', '$concept_trade_routes_gen$'),Concept('concept_trade_route', '$concept_trade_route$'))|l]."
+ ag_unproductive_trade_routes_desc: "У вас є [GetPlayer.GetNumUnproductiveTradeRoutes|v] [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumUnproductiveTradeRoutes, '(int32)1'),'непродуктивних','непродуктивний')|l] [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumUnproductiveTradeRoutes, '(int32)1'),Concept('concept_trade_route', '$concept_trade_routes_gen$'),Concept('concept_trade_route', '$concept_trade_route$'))|l]."
  ag_unproductive_trade_routes_tooltip: "#header $ag_unproductive_trade_routes_name$#!\n$TOOLTIP_DELIMITER$\n$ag_unproductive_trade_routes_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  ag_trade_routes_need_convoys_name: "[Concept('concept_trade_route', '$concept_trade_routes_dat$')] потрібні [concept_convoys|l]"
- ag_trade_routes_need_convoys_desc: "У нас є [Concept('concept_trade_route', '$concept_trade_routes_acc$')|l], яким потрібні додаткові [Concept('concept_convoys', '$concept_convoys_acc$')|l], щоб розвиватися"
+ ag_trade_routes_need_convoys_desc: "У вас є [Concept('concept_trade_route', '$concept_trade_routes_acc$')|l], яким потрібні додаткові [Concept('concept_convoys', '$concept_convoys_acc$')|l], щоб розвиватися"
  ag_trade_routes_need_convoys_tooltip: "#header $ag_trade_routes_need_convoys_name$#!\n$TOOLTIP_DELIMITER$\n$ag_trade_routes_need_convoys_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  ag_market_goods_shortages_name: "[Concept('concept_input_goods_shortage', '$concept_input_goods_shortages$')]"
- ag_market_goods_shortages_desc: "На нашому [Concept('concept_market', '$concept_market_loc$')|l] є [Concept('concept_input_goods_shortage', '$concept_input_goods_shortages$')|l]."
+ ag_market_goods_shortages_desc: "На вашому [Concept('concept_market', '$concept_market_loc$')|l] є [Concept('concept_input_goods_shortage', '$concept_input_goods_shortages$')|l]."
  ag_market_goods_shortages_tooltip:0 "#header $ag_market_goods_shortages_name$#!\n$TOOLTIP_DELIMITER$\n$ag_market_goods_shortages_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  ag_low_market_access_states_name: "Низький [concept_market_access|l]"
- ag_low_market_access_states_desc: "У нас є [GetPlayer.GetNumLowMarketAccessStates] [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumLowMarketAccessStates, '(int32)1'),SelectLocalization(GreaterThan_int32(GetPlayer.GetNumLowMarketAccessStates, '(int32)4'),Concept('concept_state', '$concept_states_gen$'),Concept('concept_state', '$concept_states$')),Concept('concept_state', '$concept_state$'))|l] з низьким [Concept('concept_market_access', '$concept_market_access_ins$')|l]"
+ ag_low_market_access_states_desc: "У вас є [GetPlayer.GetNumLowMarketAccessStates] [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumLowMarketAccessStates, '(int32)1'),SelectLocalization(GreaterThan_int32(GetPlayer.GetNumLowMarketAccessStates, '(int32)4'),Concept('concept_state', '$concept_states_gen$'),Concept('concept_state', '$concept_states$')),Concept('concept_state', '$concept_state$'))|l] з низьким [Concept('concept_market_access', '$concept_market_access_ins$')|l]"
  ag_low_market_access_states_tooltip: "#header $ag_low_market_access_states_name$#!\n$TOOLTIP_DELIMITER$\n$ag_low_market_access_states_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  ag_insufficient_tax_capacity_states_name: "Недостатня [concept_tax_capacity|l]"
- ag_insufficient_tax_capacity_states_desc: "У нас є [GetPlayer.GetNumInsufficientTaxCapacityStates] [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumInsufficientTaxCapacityStates, '(int32)1'),SelectLocalization(GreaterThan_int32(GetPlayer.GetNumInsufficientTaxCapacityStates, '(int32)4'),Concept('concept_state', '$concept_states_gen$'),Concept('concept_state', '$concept_states$')),Concept('concept_state', '$concept_state$'))|l] з недостатньою [Concept('concept_tax_capacity', '$concept_tax_capacity_ins$')|l]."
+ ag_insufficient_tax_capacity_states_desc: "У вас є [GetPlayer.GetNumInsufficientTaxCapacityStates] [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumInsufficientTaxCapacityStates, '(int32)1'),SelectLocalization(GreaterThan_int32(GetPlayer.GetNumInsufficientTaxCapacityStates, '(int32)4'),Concept('concept_state', '$concept_states_gen$'),Concept('concept_state', '$concept_states$')),Concept('concept_state', '$concept_state$'))|l] з недостатньою [Concept('concept_tax_capacity', '$concept_tax_capacity_ins$')|l]."
  ag_insufficient_tax_capacity_states_tooltip: "#header $ag_insufficient_tax_capacity_states_name$#!\n$TOOLTIP_DELIMITER$\n$ag_insufficient_tax_capacity_states_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
   
  ag_expensive_government_goods_name: "Дорогі [Concept('concept_government_good', '$concept_government_goods$')|l]"
- ag_expensive_government_goods_desc: "У нас є дорогі [Concept('concept_government_good', '$concept_government_goods$')|l], принаймні на одному з наших [Concept('concept_market', '$concept_markets_gen$')|l]."
+ ag_expensive_government_goods_desc: "У вас є дорогі [Concept('concept_government_good', '$concept_government_goods$')|l], принаймні на одному з ваших [Concept('concept_market', '$concept_markets_gen$')|l]."
  ag_expensive_government_goods_tooltip: "#header $ag_expensive_government_goods_name$#!\n$TOOLTIP_DELIMITER$\n$ag_expensive_government_goods_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  ag_expensive_military_goods_name: "Дорогі [Concept('concept_military_good', '$concept_military_goods$')|l]"
- ag_expensive_military_goods_desc: "У нас є дорогі [Concept('concept_military_good', '$concept_military_goods$')|l], принаймні на одному з наших [Concept('concept_market', '$concept_markets_gen$')|l]."
+ ag_expensive_military_goods_desc: "У вас є дорогі [Concept('concept_military_good', '$concept_military_goods$')|l], принаймні на одному з ваших [Concept('concept_market', '$concept_markets_gen$')|l]."
  ag_expensive_military_goods_tooltip: "#header $ag_expensive_military_goods_name$#!\n$TOOLTIP_DELIMITER$\n$ag_expensive_military_goods_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  alert_has_navy_troops_in_reserve_peace_time_alert_name:0 "$alert_has_navy_troops_in_reserve_alert_name$"
