@@ -226,8 +226,8 @@
  ag_insurrectionary_alerts_desc: "Існують зацікавлені партизанські групи, які плянують [Concept('concept_revolution','$concept_revolutions_acc$')|l] в нашій державі!"
  ag_insurrectionary_alerts_tooltip: "#header $ag_insurrectionary_alerts_name$#!\n$TOOLTIP_DELIMITER$\n$ag_insurrectionary_alerts_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
- ag_secession_growing_name:0 "[Concept('concept_secession','$concept_secessions$')] Growing"
- ag_secession_growing_desc:0 "There are multiple separatists organizing in our country"
+ ag_secession_growing_name:0 "Ростуть [Concept('concept_secession', '$concept_secession_adj$і')|l] рухи"
+ ag_secession_growing_desc:0 "У нашій державі є декілька [Concept('concept_secession', '$concept_secession_adj$их')|l] рухів, які ростуть."
  ag_secession_growing_tooltip:0 "#header $ag_secession_growing_name$#!\n$TOOLTIP_DELIMITER$\n$ag_secession_growing_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  ag_diplomatic_pact_in_danger_name: "[concept_diplomatic_pact] під загрозою розриву"
