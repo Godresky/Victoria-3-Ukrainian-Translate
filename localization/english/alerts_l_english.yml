@@ -200,10 +200,10 @@
 
  MP_CLIENT_LAGGING_SLOWDOWN:0 "$NAME$ is lagging behind. Slowing gamespeed."
  MP_CLIENT_LAGGING_PAUSE:0 "$NAME$ has lagged more than $DAYS$ behind. Pausing."
- MP_CLIENT_GRACEFUL_EXIT:0 "$NAME$ left the game"
- MP_CLIENT_UNGRACEFUL_EXIT:0 "$NAME$ has lost connection to the game"
- MP_HOST_DATE:0 "$NAME$(#V Host#!): $DATE_STR$"
- MP_CLIENT_DATE:0 "$NAME$: $DATE_STR$"
+ MP_CLIENT_GRACEFUL_EXIT: "$NAME$ вийшов(-ла) з гри"
+ MP_CLIENT_UNGRACEFUL_EXIT: "$NAME$ втратив(-ла) з‘єднання з грою"
+ MP_HOST_DATE: "$NAME$(#V Відник#!): $DATE_STR$"
+ MP_CLIENT_DATE: "$NAME$: $DATE_STR$"
 
   # Alert groups
  ag_isolated_states_name: "[Concept('concept_isolated_state', '$concept_isolated_states$')]"
