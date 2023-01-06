@@ -10,28 +10,28 @@
 [h1]Як з українською грати?[/h1]
 [olist]
     [*]Скачайте переклад
-    [*]Виберіть англійську в лавнчері
+    [*]Виберіть [b]англійську[/b] в лавнчері
     [*]Запустіть та насолоджуйтеся солов'їною
 [/olist]
 
 
 [h1]Бажаєте допомогти?[/h1]
 Діліться модом з друзями, скачуйте та грайте.
-Про помилки або пропозиції можете писати в [url=https://steamcommunity.com/workshop/filedetails/discussion/2884178988/3489753940058555479/]спеціяльному обговоренні[/url].
+Про помилки або пропозиції можете писати в [url=https://t.me/HeartsofUkraine4]групу тґ[/url] або [url=https://steamcommunity.com/workshop/filedetails/discussion/2884178988/3489753940058555479/]спеціяльному обговоренні[/url].
 
 
 [h1]Примітки.[/h1]
 Робота над переклад все ще йде, тому можна часто зустріти англійський текст.
-З перекладом допомагали: [url=https://t.me/HeartsofUkraine4]пан Дмитро[/url], пані Меліса, пан Марк Хан (remark644@gmail.com), пан Андріян, _rlly_, Дружня спільнота та Греко-католицька церква.
+З перекладом допомагали: [url=https://t.me/HeartsofUkraine4]пан Дмитро[/url], [url=https://t.me/melisa_arts]пані Меліса[/url], пан Марк Хан (remark644@gmail.com), пан Андріян, _rlly_, [url=https://steamcommunity.com/id/leton_ostislavic]Letōn[/url] (дяка за шрифти), Дружня спільнота та Греко-католицька церква.
  
 Корисне:
 [list]
 [*]Підтримується версія гри: [b]1.1.2[/b]
-[*][url=https://github.com/Godresky/Victoria-3-Ukrainian-Translate]Посилання на ґітхаб[/url]
+[*][url=https://github.com/Godresky/Victoria-3-Ukrainian-Translate]Посилання на ґітгаб[/url]
 [*][url=https://trello.com/b/uVKkSOop/%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%B4-%D0%B2%D1%96%D0%BA%D1%82%D0%BE%D1%80%D1%96%D1%97-3]Посилання на трелло[/url]
 [*][url=https://send.monobank.ua/jar/7H5RNWs4kw]Сказати "дякую" розробникам[/url]
 [*][url=https://www.buymeacoffee.com/godresky]Купити мені кави[/url]
-[*][url=https://twitter.com/godresky]Для зв'язку[/url]
+[*][url=https://twitter.com/godresky]Мій твітер[/url]
 [/list]
 
 [spoiler]Україна, Українська, Скрипниківка, Ukraine, ukr, ua, Клясичний правопис, Український переклад, Українська мова, Ukranian Translate, Віка 3, Вікторія 3[/spoiler]
