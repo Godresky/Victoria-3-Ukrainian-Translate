@@ -758,6 +758,7 @@
  concept_loyalist_desc:2 "$concept_loyalist$ [Concept('concept_individual','$concept_individuals$')] within a [concept_pop] are pleased with the state of their [concept_country] and are willing to defend it from dissident elements, both verbally and with violence if necessary. The [concept_approval] of [Concept('concept_interest_group','$concept_interest_groups$')] supported by $concept_loyalist$ $concept_pops$ is improved.\n\n$concept_loyalists$ are created whenever a $concept_pop$'s [concept_sol] increases and due to decisions made during special events.\n\nThe opposite of a $concept_loyalist$ is a [concept_radical]. Whenever a $concept_radical$ would be created in a $concept_pop$ that already has $concept_loyalists$, one $concept_loyalist$ is removed instead."
 
  concept_radical: "Радикал"
+ concept_radical_adj: "Радикальн"
  concept_radicals: "Радикали"
  concept_radicals_gen: "Радикалів"
  concept_radicals_ins: "Радикалами"

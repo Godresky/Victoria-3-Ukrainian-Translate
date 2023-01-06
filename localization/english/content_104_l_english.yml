@@ -109,7 +109,7 @@
  expedition_events.690.a: "Ми відповідатимемо на цей уважний подарунок."
  expedition_events.690.b: "Ми не маємо часу на спілкування з місцевими жителями."
  
- urbanization_events.1.t: "Шлях до поступу"
+ urbanization_events.1.t: "Путь до поступу"
  urbanization_events.1.d: "[SCOPE.gsInterestGroup('industrialist_ig').GetName] висловили своє задоволення напрямком розвитку держави та її новозбудованими виробнями."
  urbanization_events.1.f: "«Є тільки один можливий напрямок: вперед! Поступ, як потяг, який не зупиняється, нікого не чекає, ти або в ньому, або вийде.»"
  urbanization_events.1.a: "Ми зробили це для наших людей."

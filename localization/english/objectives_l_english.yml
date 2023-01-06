@@ -15,7 +15,7 @@
  
  objective_economic_dominance: "Економічна домінація"
  objective_economic_dominance_desc: "Ваша мета розширити своє виробництво, охоплення ринку та вплив на торгівлю, доки світова економіка не стане під вашим контролем. Вашою кінцевою ціллю буде контроль над левовою часткою світового ВВП."
- objective_economic_dominance_idle_header: "Продовжуйте йти своїм шляхом"
+ objective_economic_dominance_idle_header: "Продовжуйте йти своєю дорогою"
  objective_economic_dominance_idle_hint: "З часом з’явиться більше викликів"
  
  objective_economic_dominance_name_USA: "#v Злучені Держави#!"
@@ -29,7 +29,7 @@
  
  objective_hegemon: "Геґемонія"
  objective_hegemon_desc: "Ніщо, окрім повного панування над світовим населенням, вас не задовольнить. Підкорюйте, завойовуйте або просто збільшуйте власне населення, доки більша частина світу не житиме у ваших кордонах"
- objective_hegemon_idle_header: "Продовжуйте йти своїм шляхом"
+ objective_hegemon_idle_header: "Продовжуйте йти своєю дорогою"
  objective_hegemon_idle_hint: "З часом з’явиться більше викликів"
 
  objective_hegemon_name_PRU: "#v $PRU$#!"
@@ -43,7 +43,7 @@
  
  objective_egalitarian_society: "Рівне суспільство"
  objective_egalitarian_society_desc: "Владу народу! Станьте дороговказним маяком свободи та рівности для всього світу, забезпечуючи можливості та підвищуючи рівень життя вашої нації."
- objective_egalitarian_society_idle_header: "Продовжуйте йти своїм шляхом"
+ objective_egalitarian_society_idle_header: "Продовжуйте йти своєю дорогою"
  objective_egalitarian_society_idle_hint: "З часом з’явиться більше викликів"
 
  objective_egalitarian_society_name_RUS: "#v $RUS$#!"

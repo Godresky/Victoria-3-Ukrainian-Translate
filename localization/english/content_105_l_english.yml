@@ -760,7 +760,7 @@
  welfare_for_the_world:0 "Welfare for the World"
  anti_free_trade_rhetoric:0 "Anti-Free Trade Rhetoric"
   # Path to Liberalism
- je_liberalism_1: "Шлях до лібералізму"
+ je_liberalism_1: "Путь до лібералізму"
  je_liberalism_1_reason: "Більш демократичне суспільство з правильними ідеалами закладе основу для держави, де свобода всіх громадян є першорядною."
  je_liberalism_2: "Свобода торгівлі"
  je_liberalism_2_reason: "Відкрита держава, яка торгує як із сусідами, так і з далекими націями, є ключем до майбутнього економічного лібералізму."
@@ -1007,7 +1007,7 @@
  administrative_assistance_for_elections:0 "Administrative Assistance for Elections"
  setting_up_election_system:0 "Setting Up Election System"
   # Warlord China
- je_warlord_china:0 "Fragile Unity"
+ je_warlord_china: "Fragile Unity"
  je_warlord_china_reason:0 "Various local military powers within [SCOPE.GetRootScope.GetCountry.GetName] may tear the country apart if given the opportunity."
  je_warlord_china_goal:0 "A number of factors risk fracturing [SCOPE.GetRootScope.GetCountry.GetName]"
  warlord_china_criteria:2 "Each of the following will contribute #red 20%#! to the fracturing of [SCOPE.GetRootScope.GetCountry.GetName]:\n- Losing the #BOLD Opium Wars#!\n- Failing to stop the appearance of the #BOLD Heavenly Kingdom#!\n- Failing to retake the #BOLD Heavenly Kingdom#!\n- Failing the #BOLD Boxer Rebellion#!\n- Going into [concept_default]\n- Having a [concept_civil_war]\n- Becoming a [concept_subject] under another country\n- Abolishing the [SCOPE.sLaw('monarchy_scope').GetName]\n\nEach of the following will detract #green -20%#! from the fracturing of [SCOPE.GetRootScope.GetCountry.GetName]:\n- Winning the #BOLD Opium Wars#!\n- Ceasing to be an [concept_unrecognized_power]\n- Finishing the #BOLD Stamp Out Monarchism#! [concept_journal_entry]"
