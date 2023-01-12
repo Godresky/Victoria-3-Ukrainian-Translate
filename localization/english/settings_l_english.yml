@@ -37,7 +37,7 @@
  SETTINGS_INPUT_LOAD_INPUT_PROFILE: "Завантажити профіль"
  SETTINGS_INPUT_RESET_INPUT_PROFILE: "Скинути до значень за замовчуванням"
  SETTINGS_INPUT_BINDING_TEXT: "Виберіть прив’язку введення для дії '$INPUT_ACTION$':\n\n$INPUT_NAME$"
- SETTINGS_INPUT_BINDING_WARNING_TEXT: "Увага: "Це прив’язування введення вже існує для '$INPUT_ACTION$'!\nКлацніть '$SETTINGS_INPUT_CONFIRM$', щоб очистити стару прив'язку"
+ SETTINGS_INPUT_BINDING_WARNING_TEXT: "Увага: Це прив’язування введення вже існує для '$INPUT_ACTION$'!\nКлацніть '$SETTINGS_INPUT_CONFIRM$', щоб очистити стару прив'язку"
  SETTING_AUTOSAVE_TO_CLOUD: "Автозбереження в хмару"
  SETTING_SAVE_FILE_FORMAT: "Стандартний формат збереження"
  SETTING_SAVE_FILE_FORMAT_TOOLTIP: "Цей параметр замінюється в режимах залізної волі, хмарі і режим розробника"
