@@ -1,17 +1,17 @@
 ﻿l_english:
  TICKTASK_NAME:0 "#v $NAME$#!"
 
- TICKTASK_RATE_TICK:0 "Every tick"
- TICKTASK_RATE_DAY:0 "Once per day"
- TICKTASK_RATE_WEEK:0 "Once per week"
- TICKTASK_RATE_MONTH:0 "Once per month"
- TICKTASK_RATE_YEAR:0 "Once per year"
+ TICKTASK_RATE_TICK: "Кожен тік"
+ TICKTASK_RATE_DAY: "Один раз на день"
+ TICKTASK_RATE_WEEK: "Один раз на тиждень"
+ TICKTASK_RATE_MONTH: "Один раз на місяць"
+ TICKTASK_RATE_YEAR: "Один раз на рік"
   
  TICKTASK_PRIO_EARLY:0 "Early"
  TICKTASK_PRIO_DEFAULT:0 "Default"
  TICKTASK_PRIO_LATE:0 "Late"
   
- TICKTASK_PERSISTED:0 "Persisted in savegame"
+ TICKTASK_PERSISTED: "Зберігся в збереженій грі"
   
  TICKTASK_SHOW_DETAILS: "Клацніть, щоб глянути детальніше"
   
