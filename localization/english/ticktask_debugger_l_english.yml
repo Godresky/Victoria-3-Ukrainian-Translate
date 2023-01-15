@@ -11,7 +11,7 @@
  TICKTASK_PRIO_DEFAULT:0 "Default"
  TICKTASK_PRIO_LATE:0 "Late"
   
- TICKTASK_PERSISTED: "Зберігся в збереженій грі"
+ TICKTASK_PERSISTED: "Залишився у збереженій грі"
   
  TICKTASK_SHOW_DETAILS: "Клацніть, щоб глянути детальніше"
   

@@ -1580,10 +1580,10 @@
  concept_tax_waste_gen: "Податкового марнотратства"
  concept_tax_waste_desc:1 "The amount of [concept_taxes] collected that are wasted, due to inefficiencies or corruption, prior to entering the government coffers."
 
- concept_tax_capacity: "Податкова мічність"
- concept_tax_capacity_gen: "Податкової мічности"
- concept_tax_capacity_acc: "Податкову мічність"
- concept_tax_capacity_ins: "Податковою мічністю"
+ concept_tax_capacity: "Податкова спроможність"
+ concept_tax_capacity_gen: "Податкової спроможности"
+ concept_tax_capacity_acc: "Податкову спроможність"
+ concept_tax_capacity_ins: "Податковою спроможністю"
  concept_tax_capacity_desc:2 "Each point of Taxation Capacity in a [concept_state] allows for the efficient taxation of [GetDefine('NPops','INDIVIDUALS_TAXED_PER_TAX_CAPACITY')|vK] [Concept('concept_pop','$concept_pops$')]. If the population of a [concept_state] outgrows its Taxation Capacity, the efficiency of all forms of taxation will be reduced. Taxation Capacity can be increased through researching certain $SOCIETY$ $concept_technologies$ or constructing [SelectLocalization(GetPlayer.IsValid, 'concept_tax_capacity_desc_added','Government Administration')] [Concept('concept_building','$concept_buildings$')] in the [concept_state]."
  concept_tax_capacity_desc_added:0 "[GetBuildingType('building_government_administration').GetName]"
 
