@@ -380,12 +380,12 @@
  MILITARY: "Військо"
  NAVY: "Флот"
 
- PRICE_REPORT_SHORT:0 "$DETAILS$"
- PRICE_REPORT_LONG:0 "$DETAILS$\n#tooltippable #tooltip:$BREAKDOWN_TAG$ Hover to see $NUM_ADDITIONAL|v$ more significant [concept_market_price] changes#!#!"
- PRICE_REPORT_NO_CHANGES:0 "There were no significant [concept_market_price] changes in the [GetPlayer.GetCapital.GetMarket.GetName] over the last month."
- PRICE_REPORT_GOODS_ENTRY:0 "$DIRECTION$ [Goods.GetTextIcon] @money!$PREV_PRICE|v1$ ($PREV_ICON$) @arrow_right! @money!$CUR_PRICE|v1$ ($CUR_ICON$) for [Goods.GetName]"
- PRICE_REPORT_DIRECTION_INCREASE:0 "@arrow_up!"
- PRICE_REPORT_DIRECTION_DECREASE:0 "@arrow_down!"
+ PRICE_REPORT_SHORT: "$DETAILS$"
+ PRICE_REPORT_LONG: "$DETAILS$\n#tooltippable #tooltip:$BREAKDOWN_TAG$ Наведіть, щоб побачити ще $NUM_ADDITIONAL|v$ [SelectLocalization(GreaterThan_int32('(int32)$NUM_ADDITIONAL|v$', '(int32)1'),SelectLocalization(GreaterThan_int32('(int32)$NUM_ADDITIONAL|v$', '(int32)4'),'значних змін','значні зміни'),'значну зміну')|l] [Concept('concept_market_price','$concept_market_price_gen$')|l]#!#!"
+ PRICE_REPORT_NO_CHANGES: "Цього разу немає значних змін [Concept('concept_market_price','$concept_market_price_gen$')|l] за останній місяць ([GetPlayer.GetCapital.GetMarket.GetName])."
+ PRICE_REPORT_GOODS_ENTRY: "$DIRECTION$ [Goods.GetTextIcon] @money!$PREV_PRICE|v1$ ($PREV_ICON$) @arrow_right! @money!$CUR_PRICE|v1$ ($CUR_ICON$) за товар [Goods.GetName|l]"
+ PRICE_REPORT_DIRECTION_INCREASE: "@arrow_up!"
+ PRICE_REPORT_DIRECTION_DECREASE: "@arrow_down!"
 
  MAP_MODE: "Режим мапи"
  LOCAL_PRICE_IN: "[GoodsPanel.GetGoods.GetMarket.GetName] - місцеві ціни"
@@ -799,9 +799,9 @@
  SUPPLY_NETWORK_DELTA_REMOVED:0 "Will remove [StrategicRegion.GetName]"
  SUPPLY_NETWORK_DELTA_STRENGTH:0 "Supply Network Strength: $NEW_STRENGTH|%0v$ ($STRENGTH_DELTA|%0+=$)"
 
- EVENT_REMAINING_DAYS:1 "#v [Event.GetRemainingDays]#! days"
+ EVENT_REMAINING_DAYS:1 "#v [Event.GetRemainingDays]#! днів"
  DAYS_UNTIL_ELECTION:0 "[concept_election]"
- ELECTION_REMAINING_DAYS:0 "@clock! #v [AccessPlayer.GetDaysUntilElection]#! days"
+ ELECTION_REMAINING_DAYS:0 "@clock! #v [AccessPlayer.GetDaysUntilElection]#! днів"
 
  ADVANCEMENT_COMMANDER_CONTRIBUTION_ADD:0 "#tooltippable #tooltip:$BREAKDOWN_TAG$ #v $ADVANCEMENT_CONTRIBUTION|2+=$#!#!#!"
  ADVANCEMENT_COMMANDER_CONTRIBUTION_MULT:0 "#tooltippable #tooltip:$BREAKDOWN_TAG$ #v $ADVANCEMENT_CONTRIBUTION|%0=$#!#!#!"
@@ -1110,9 +1110,9 @@
  FRONT_NO_ENDED_BATTLES:0 "No ended [Concept('concept_battle', '$concept_battles$')]"
  FRONT_PRESENT_GENERALS_PLAYER: "Наших [Concept( 'concept_general', '$concept_generals_gen$' )|l]: #variable [GetDataModelSize(Front.AccessLeftParticipants)]#!"
  FRONT_PRESENT_GENERALS_ENEMY: "Ворожих [Concept( 'concept_general', '$concept_generals_gen$' )|l]: #variable [GetDataModelSize(Front.AccessRightParticipants)]#!"
- FRONT_PRESENT_GENERALS_INITIATOR:1 "#variable [GetDataModelSize(Front.AccessLeftParticipants)]#! [Concept( 'concept_general', '$concept_generals$' )] (Initiator)"
- FRONT_PRESENT_GENERALS_TARGET:1 "#variable [GetDataModelSize(Front.AccessRightParticipants)]#! [Concept( 'concept_general', '$concept_generals$' )] (Target)"
- NO_ACTIVE_FRONTS:0 "Currently no active [Concept('concept_front', '$concept_fronts$')]"
+ FRONT_PRESENT_GENERALS_INITIATOR: "#variable [GetDataModelSize(Front.AccessLeftParticipants)]#! [Concept( 'concept_general', '$concept_generals$' )] (Зачинатель)"
+ FRONT_PRESENT_GENERALS_TARGET: "#variable [GetDataModelSize(Front.AccessRightParticipants)]#! [Concept( 'concept_general', '$concept_generals$' )] (Ціль)"
+ NO_ACTIVE_FRONTS: "Наразі активних [Concept('concept_front', '$concept_fronts_gen$')|l] немає"
  FRONT_PANEL_BATTLES: "Битви"
 
  FIRST_GARRISONED_UNITS: "@battalions! #variable [Front.GetNumFirstGarrisonUnitsRaw]#! у залозі"
@@ -1697,10 +1697,10 @@
  MARKET_INFRASTRUCTURE_INFO:0 "[concept_infrastructure] to [MARKET.GetName]: #variable $VAL|+$#!"
 
  MARKET_STATE_REGION_LIST_IN:0 "In?"
- STATE_REGION:1 "[concept_state_region]"
+ STATE_REGION: "[concept_state_region]"
  MARKET_ACCESS: "[concept_market_access]"
 
- GDP_CONTRIBUTION:0 "[Concept('concept_gdp','$concept_gdp_short$')] Contribution"
+ GDP_CONTRIBUTION: "Внесок у [Concept('concept_gdp','$concept_gdp_short$')]"
 
  TOTAL_URBAN_CENTERS: "[GetBuildingType('building_urban_center').GetName] розмір:"
  TOTAL_URBANIZATION: "([concept_urbanization]: [Building.GetState.CalcTotalUrbanization|v])"
@@ -1709,7 +1709,7 @@
  AGRICULTURE: "Сільське господарство"
 
  BUILDINGS_USING_THIS_LIST:0 "#title Used in#!\n$LIST$"
- BUILDINGS_PRODUCING_THIS_LIST:0 "#title Produced in#!\n$LIST$"
+ BUILDINGS_PRODUCING_THIS_LIST: "#title Виробляється#!\n$LIST$"
  OPEN_EXPANSION_LENS:0 "Expand in other State(s)"
 
  STATE_INFRASTRUCTURE:3 "[concept_infrastructure]\n$STATE_INFRASTRUCTURE_CONDENSED$"
@@ -2174,7 +2174,7 @@
  START_DIPLO_PLAY:0 "Start [concept_diplomatic_play] (Declare War)"
  PRICE: "Ринкова ціна"
 
- GO_TO_BUTTON_FRONT: "Показати фронт [Front.GetName|l]"
+ GO_TO_BUTTON_FRONT: "Показати фронт [Front.GetName]"
  GO_TO_BUTTON_BUILDING: "Показати будівлю [Building.GetName|l] у [Concept('concept_state', '$concept_state_loc$')|l] [Building.GetState.GetName]"
  GO_TO_BUTTON_STATE: "Показати [Concept('concept_state', '$concept_state$')|l] [State.GetName]"
  GO_TO_BUTTON_COUNTRY: "Показати [Concept('concept_country', '$concept_country_acc$')|l] [Country.GetName]"
@@ -2630,8 +2630,8 @@
  MARKET_GOODS_BALANCE_TOOLTIP_BALANCE: "#header Баланс [Concept('concept_good', '$concept_good_gen$')|l] [Goods.GetName]#!\nПоточний баланс: #v [FixedPointToInt(Goods.GetMarketBuyAndSellOrdersBalance)|=D+]#!\n$TOOLTIP_DELIMITER$\n[concept_sell_orders]: [Goods.GetMarketSellOrdersWithTooltip]\n[concept_buy_orders]: [Goods.GetMarketBuyOrdersWithTooltip]\n\nСмужка показує [Concept('concept_market_impact', '$concept_market_impact_short$')|l] поточного балансу [Concept('concept_good', '$concept_good_gen$')|l] [Goods.GetTextIcon] [Goods.GetName] на [Goods.GetMarket.GetName|l]. Чим більше #blue синього#! або #gold золотого#! кольорів смужки, тим вищий [Concept('concept_market_impact', '$concept_market_impact_short$')|l] цей [Concept('concept_good', '$concept_good$')|l] має."
  MARKET_GOODS_BALANCE_TOOLTIP_IMBALANCE: "#header Дисбаланс [Concept('concept_good', '$concept_good_gen$')|l] [Goods.GetName]#!\nПоточний дисбаланс: #v [FixedPointToInt(Goods.GetMarketBuyAndSellOrdersBalance)|=D+]#!\n$TOOLTIP_DELIMITER$\n[concept_sell_orders]: [Goods.GetMarketSellOrdersWithTooltip]\n[concept_buy_orders]: [Goods.GetMarketBuyOrdersWithTooltip]\n\nСмужка показує [Concept('concept_market_impact', '$concept_market_impact_short$')|l] поточного дисбалансу [Concept('concept_good', '$concept_good_gen$')|l] [Goods.GetTextIcon] [Goods.GetName] на [Goods.GetMarket.GetName|l]. Чим більше #blue синього#! або #gold золотого#! кольорів смужки, тим вищий [Concept('concept_market_impact', '$concept_market_impact_short$')|l] цей [Concept('concept_good', '$concept_good$')|l] має"
 
- PRODUCED_IN:0 "Produced in"
- CONSUMED_IN:0 "Consumed in"
+ PRODUCED_IN: "Виробляється"
+ CONSUMED_IN: "Споживається"
 
  POP_IG_POPULATION:0 "#variable [PopListPopEntry.GetIGTotalPops|D]#!"
  POP_WORK_INFO:0 "from [Pop.GetWorksAt]"
@@ -2694,7 +2694,7 @@
  POP_NEEDS_HEADER:0 "Consists of the following [Concept('concept_good', '$concept_goods$')] that are mutually substitutable through [concept_goods_substitution]:"
  POP_NEEDS_ENTRY_DEFAULT:1 "[Goods.GetTextIcon][Nbsp][Goods.GetName] - Default [Concept('concept_good', '$concept_goods$')] for [POP_NEED.GetName]"
  POP_NEEDS_ENTRY:1 "[Goods.GetTextIcon][Nbsp][Goods.GetName] - Equivalent to $MULT|2v$ unit(s) of [POP_NEED.GetDefaultGoods.GetName]"
- BUY_PACKAGE_POP_CONSUMPTION_WEALTH_SPECIFIC: "Consumed by [Concept('concept_pop', '$concept_pops$')] of [concept_wealth] Levels $LEVEL|v$"
+ BUY_PACKAGE_POP_CONSUMPTION_WEALTH_SPECIFIC:0 "Consumed by [Concept('concept_pop', '$concept_pops$')] of [concept_wealth] Levels $LEVEL|v$"
  BUY_PACKAGE_POP_CONSUMPTION_WEALTH_TO_LEVEL:0 "Consumed by [Concept('concept_pop', '$concept_pops$')] of [concept_wealth] Level $LEVEL|v$ and below"
  BUY_PACKAGE_POP_CONSUMPTION_WEALTH_FROM_LEVEL:0 "Consumed by [Concept('concept_pop',  '$concept_pops$')] of [concept_wealth] Level $LEVEL|v$ and above"
  BUY_PACKAGE_POP_CONSUMPTION_WEALTH_BETWEEN_LEVELS:0 "Consumed by [Concept('concept_pop', '$concept_pops$')] between [concept_wealth] Levels $FROM|v$ to $TO|v$"
@@ -2743,7 +2743,7 @@
  POP_GOODS_BUDGET_EXPENDITURE_PERCENTAGE:0 "#header [Goods.GetTextIcon] [Goods.GetName] Expenditure Percentage#!\n#v [PopConsumptionGoods.GetConsumptionRatio|1%v]#! of this [Concept('concept_pop','$concept_pop_possessive$')] budget is spent on [Goods.GetName].\nPart of the [PopConsumptionGoods.GetPopNeedsDesc] [concept_pop_needs]."
  POP_GOODS_AMOUNT_CONSUMED:0 "Amount of [Goods.GetTextIcon] [Goods.GetName] [Concept('concept_good_consumption','$concept_good_consumed$')] by [Pop.GetName]"
  POP_LIST_SOL:0 "#variable [LabelingHelper.GetLabelForStandardOfLiving(Pop.GetCurrentStandardOfLiving)]#!  ([Pop.GetCurrentStandardOfLiving|v])"
- NEEDS_BREAKDOWN:0 "#header [concept_pop_needs]#!\n[Pop.GetNeedsDesc]"
+ NEEDS_BREAKDOWN: "#header [concept_pop_needs]#!\n[Pop.GetNeedsDesc]"
  AVG_WAGE_POP_LIST: "Середьорічна зарплата: @money![PopListItem.GetAverageAnnualWage|vD]"
  AVG_WAGE_SUBSISTENCE_POP_LIST:0 "[concept_subsistence_output]: @money![PopListItem.GetAverageAnnualWage|vD]"
  TOOLTIP_POP_QOL_TURMOIL:0 "\nLow [concept_sol] increases [concept_turmoil_target] by #variable $VAL|-=D$ #!"
@@ -3092,7 +3092,7 @@
  RELATIONS_TOOLTIP: "#header [concept_relations]#!\n[concept_relations] між [Concept('concept_country', '$concept_countries_ins$')|l] [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] - #BOLD $LABEL$#! (#variable $VAL|+=$#!)$PROGRESS$"
  INFAMY_TOOLTIP:2 "#header [COUNTRY.GetAdjective]ий [concept_infamy|l]: #BOLD $INFAMY_LABEL$#! (#variable $INFAMY|-1$#!)#!\n$TOOLTIP_DELIMITER$\n$INFAMY_DECAY$[ConcatIfNeitherEmpty('\n\nEffects:\n','$INFAMY_EFFECTS$')]"
  INFAMY_DECAY_RATE:0 "[concept_infamy] decay: #P #bold -$VAL|3$#!#! / week\n$TAB$Base decay: #P #bold -$YEARLYBASE|3$#!#!  / year$MITIGATION$"
- TENSION_TOOLTIP:0 "The [concept_tension] level between us and [COUNTRY.GetName] is #BOLD $LABEL$#! (#variable $VAL|-$#!)$DECAY$"
+ TENSION_TOOLTIP: "[concept_tension] між нами та тубільцями [COUNTRY.GetName] - #BOLD $LABEL$#! (#variable $VAL|-$#!)$DECAY$"
  TENSION_DECAY_RATE:0 "[concept_tension] decay: #P #bold -$VAL|3$#!#! / week\n$TAB$Base decay: #P #bold -$YEARLYBASE|3$#!#!  / year$MITIGATION$"
 
  RELATIONS_PROGRESS:0 "Progress towards improved relations: $VAL|v%0$"
@@ -3319,9 +3319,9 @@
  TRADE_ROUTE_PREDICTED_FINAL_LEVEL_INCREASE:0 "This [concept_trade_route] is predicted to grow to level #v #tooltippable #tooltip:$BREAKDOWN_TAG$ $FINAL_LEVEL$#!#!#! under current [concept_market] conditions, assuming the Trade Center can maintain high employment"
  TRADE_ROUTE_PREDICTED_FINAL_LEVEL_DECREASE:0 "This [concept_trade_route] is predicted to shrink to level #v #tooltippable #tooltip:$BREAKDOWN_TAG$ $FINAL_LEVEL$#!#!#! under current [concept_market] conditions"
  TRADE_ROUTE_PREDICTED_FINAL_LEVEL_NO_CHANGE:0 "This [concept_trade_route] is predicted to remain at level #v #tooltippable #tooltip:$BREAKDOWN_TAG$ $CUR_LEVEL$#!#!#! under current [concept_market] conditions"
- TRADE_ROUTE_PREDICTED_FINAL_LEVEL_INCREASE_SHORT:1 "It's currently predicted to grow to level #v #tooltippable #tooltip:$BREAKDOWN_TAG$ $FINAL_LEVEL$#!#!#!."
- TRADE_ROUTE_PREDICTED_FINAL_LEVEL_DECREASE_SHORT:1 "It's currently predicted to shrink to level #v #tooltippable #tooltip:$BREAKDOWN_TAG$ $FINAL_LEVEL$#!#!#!."
- TRADE_ROUTE_PREDICTED_FINAL_LEVEL_NO_CHANGE_SHORT:1 "It's currently predicted to remain at level #v #tooltippable #tooltip:$BREAKDOWN_TAG$ $CUR_LEVEL$#!#!#!."
+ TRADE_ROUTE_PREDICTED_FINAL_LEVEL_INCREASE_SHORT: "Наразі прогнозується, що він виросте до рівня - #v #tooltippable #tooltip:$BREAKDOWN_TAG$ $FINAL_LEVEL$#!#!#!."
+ TRADE_ROUTE_PREDICTED_FINAL_LEVEL_DECREASE_SHORT: "Наразі прогнозується, що він скоротиться до рівня - #v #tooltippable #tooltip:$BREAKDOWN_TAG$ $FINAL_LEVEL$#!#!#!."
+ TRADE_ROUTE_PREDICTED_FINAL_LEVEL_NO_CHANGE_SHORT: "Наразі прогнозується, що він залишиться на рівні - #v #tooltippable #tooltip:$BREAKDOWN_TAG$ $CUR_LEVEL$#!#!#!."
  TRADE_ROUTE_PREDICTED_FINAL_LEVEL_IMPACT:0 "#header Effects of Predicted [concept_trade_route] Level $LEVEL$#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
  TRADE_ROUTE_PREDICTED_VOLUME:0 "Predicted Units of [Goods.GetName] Traded: #tooltippable #tooltip:$BREAKDOWN_TAG$ #v $VOLUME|0$#!#!#!"
  TRADE_ROUTE_REVENUE_AFTER_TARIFF:0 "[concept_trade_revenue] after [concept_tariffs]: #tooltippable #tooltip:$BREAKDOWN_TAG$ @money!$REVENUE_AFTER_TARIFF|D+$#!#! (@money!$PRODUCTIVITY|D+$/employee annually)"
@@ -3751,11 +3751,11 @@
  IDEOLOGY_LAW_STANCE_NEUTRAL: "#V Нейтральний#! до $LAWS$"
 
  POL_PANEL_IG_STATUS_HEADER: "#title Схвалення#!"
- ig_approval_loyal: "#bold #P Підтримуюче#!#!"
- ig_approval_happy: "#bold #P Щасливе#!#!"
- ig_approval_neutral: "#bold Нейтральне#!"
- ig_approval_unhappy: "#bold #N Нещасливе#!#!"
- ig_approval_angry: "#bold #N Вороже#!#!"
+ ig_approval_loyal: "#bold #P Прихильність#!#!"
+ ig_approval_happy: "#bold #P Щастя#!#!"
+ ig_approval_neutral: "#bold Нейтральність#!"
+ ig_approval_unhappy: "#bold #N Нещастя#!#!"
+ ig_approval_angry: "#bold #N Ворожість#!#!"
 
  WILL_RADICALIZE_WARNING:1 "@warning! This will [Concept('concept_political_movement_radicalism', '$concept_political_movement_radicalize$')] the [INTEREST_GROUP.GetName]"
 
@@ -3837,9 +3837,9 @@
  SECESSION_ALERT_ENTRY_CHANCE:0 "[CULTURE.GetName] [CULTURE.GetChanceForSecessionMovement( GetPlayer.Self )|%1v]"
  SECESSION_ALERT_ENTRY_GROWING:0 "[CULTURE.GetName]"
 
- COST_OF_WAR_ENTRY:0 "[Country.GetName] $TYPE$: @money!$COST|vD$"
- COST_OF_WAR_TYPE_MATERIEL:0 "Military Goods"
- COST_OF_WAR_TYPE_WAGES:0 "Conscript Wages"
+ COST_OF_WAR_ENTRY:0 "$TYPE$ держави [Country.GetName]: @money!$COST|vD$"
+ COST_OF_WAR_TYPE_MATERIEL:0 "Військові товари"
+ COST_OF_WAR_TYPE_WAGES:0 "Зарплати призовикам"
  COST_OF_WAR_TOOLTIP:0 "#header Total Cost of War: @money!$COST|vD$#!\n$COST_OF_WAR_TYPE_MATERIEL$: @money!$MATERIEL_COST|vD$\n$COST_OF_WAR_TYPE_WAGES$: @money!$WAGES_COST|vD$\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
 
  FILTERS: "Цідила"
@@ -4222,11 +4222,11 @@
  notification_acquired_technology_notification_desc:0 "We have acquired [SCOPE.sT('technology').GetName]"
  notification_acquired_technology_notification_tooltip:0 "$notification_acquired_technology_notification_name$\n$notification_acquired_technology_notification_desc$"
 
- notification_spreading_technology_notification_name:0 "[SCOPE.sT('technology').GetName] spreading"
- notification_spreading_technology_notification_desc:0 "Knowledge of [SCOPE.sT('technology').GetName] has started to spread to us"
- notification_spreading_technology_notification_tooltip:0 "$notification_spreading_technology_notification_name$\n$notification_spreading_technology_notification_desc$"
+ notification_spreading_technology_notification_name: "Технологія [SCOPE.sT('technology').GetName|l] поширюється"
+ notification_spreading_technology_notification_desc:0 "Знання [SCOPE.sT('technology').GetName|l] почало поширюватися в нашій країні."
+ notification_spreading_technology_notification_tooltip: "$notification_spreading_technology_notification_name$\n$notification_spreading_technology_notification_desc$"
 
- notification_price_report_name: "[SCOPE.GetRootScope.GetCountry.GetCapital.GetMarket.GetName] - щомісячний звіт про ціни"
+ notification_price_report_name: "[SCOPE.GetRootScope.GetCountry.GetCapital.GetMarket.GetName] - щомісячний звіт про ціни."
  notification_price_report_desc: "[SCOPE.GetRootScope.GetCountry.GetPriceReportDesc]"
  notification_price_report_tooltip: "$notification_price_report_name$\n$notification_price_report_desc$"
 
@@ -4660,8 +4660,8 @@
  MISSING_CHARACTER:0 "#N There is no Character assigned to this Command#!"
  DETACHMENTS:0 "#title Detachments#!"
 
- MARKET_STATUS_MARKET_CAPITAL: "[Concept('concept_market_capital', '$concept_market_capital_short$')] цього ринку (#variable [STATE.GetMarketAccess|%0v]#! [concept_market_access], [State.GetInfrastructureBalance|0+=] [concept_infrastructure])" #[MARKET.GetName]
- MARKET_STATUS_CONNECTED_STATE: "[MARKET.GetName] (#variable [STATE.GetMarketAccess|%0v]#! [concept_market_access], [State.GetInfrastructureBalance|0+=] [concept_infrastructure])"
+ MARKET_STATUS_MARKET_CAPITAL: "[Concept('concept_market_capital', '$concept_market_capital_short$')] цього ринку (#variable [STATE.GetMarketAccess|%0v]#! [Concept('concept_market_access', '$concept_market_access_gen$')|l], [State.GetInfrastructureBalance|0+=] [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l])" #[MARKET.GetName]
+ MARKET_STATUS_CONNECTED_STATE: "[MARKET.GetName] (#variable [STATE.GetMarketAccess|%0v]#! [Concept('concept_market_access', '$concept_market_access_gen$')|l], [State.GetInfrastructureBalance|0+=] [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l])"
  MARKET_STATUS_ISOLATED:0 "Part of the [MARKET.GetName] ([concept_isolated_state])"
 
  MARKET_ACCESS_DESC_HEADER: "[concept_market_access] [Concept('concept_state', '$concept_state_gen$')|l] [State.GetName]: $MARKET_ACCESS|%0v$\n$TOOLTIP_DELIMITER$\n"
@@ -4794,7 +4794,7 @@
  RANK_TOOLTIP_MAX_COUNTRY_TYPE: "@information! [COUNTRY.GetName] не може досягти вищого [Concept('concept_rank','$concept_rank_gen$')|l] ніж $HIGHEST_RANK|v$ через свій статус $COUNTRY_TYPE|v$, який обмежує її позицію з максимальним балом #v ##$HIGHEST_POSITION$#! у світі"
 
  COUNTRY_RANK_TOOLTIP: "#header [concept_rank]#!\n$TOOLTIP_DELIMITER$\n[COUNTRY.GetName] має [Concept('concept_rank','$concept_rank$')|l] #variable [COUNTRY.GetRank]#! із загальною позицією #variable ##[COUNTRY.GetCountryScorePositionDesc]#! у світі.\n\nПоточний [concept_prestige|l]: #tooltippable #tooltip:[COUNTRY.GetTooltipTag],COUNTRY_PRESTIGE_BREAKDOWN [COUNTRY.GetPrestige|v]#!#!"
- COUNTRY_PRESTIGE_BREAKDOWN:0 "#header [concept_prestige] of [Country.GetName]: [Country.GetPrestige|v]#!\n$TOOLTIP_DELIMITER$\n[Country.GetPrestigeDesc]"
+ COUNTRY_PRESTIGE_BREAKDOWN: "#header [concept_prestige] [Concept('concept_country','$concept_country_gen$')|l] [Country.GetName]: [Country.GetPrestige|v]#!\n$TOOLTIP_DELIMITER$\n[Country.GetPrestigeDesc]"
  OBSERVER_RANK_TOOLTIP:0 "#header [concept_rank]#!\n#v ##0 #!$OBSERVER_NO_COUNTRY_SELECTED$"
 
  HOMELAND_MAP_MARKER_TOOLTIP:0 "The [HomelandMarker.GetCulture.GetName] people considers [State.GetName] their [concept_homeland].\nOwner: [State.GetOwner.GetName]"
@@ -4950,12 +4950,12 @@
  OUTCOME_DEBATE:1 "[Concept('concept_enactment_debate', '$concept_enactment_debate_short$')]: #tooltippable #tooltip:[Law.GetTooltipTag],CHECKPOINT_DEBATE_CHANCE_BREAKDOWN [Law.GetCheckpointDebateChance|v%1]#!#!"
  OUTCOME_STALL:1 "[Concept('concept_enactment_stall', '$concept_enactment_stall_short$')]: #tooltippable #tooltip:[Law.GetTooltipTag],CHECKPOINT_STALL_CHANCE_BREAKDOWN [Law.GetCheckpointStallChance|v%1]#!#!"
 
- CHECKPOINT_SUCCESS_CHANCE_BREAKDOWN:1 "#header [concept_enactment_success] Chance#!\nThe current [concept_enactment_success] chance is [Law.GetCheckpointSuccessChance|v%1] due to:\n$TOOLTIP_DELIMITER$\n[Law.GetCheckpointSuccessBreakdown]"
+ CHECKPOINT_SUCCESS_CHANCE_BREAKDOWN: "#header Шанс [Concept('concept_enactment_success', '$concept_enactment_success_gen$')|l]#!\nПоточний шанс [Concept('concept_enactment_success', '$concept_enactment_success_gen$')|l] - [Law.GetCheckpointSuccessChance|v%1] через:\n$TOOLTIP_DELIMITER$\n[Law.GetCheckpointSuccessBreakdown]"
  CHECKPOINT_ADVANCE_CHANCE_BREAKDOWN:1 "#header [concept_enactment_advance] Chance#!\nThe current [concept_enactment_advance] chance is [Law.GetCheckpointAdvanceChance|v%1] due to:\n$TOOLTIP_DELIMITER$\n[Law.GetCheckpointAdvanceBreakdown]"
  CHECKPOINT_DEBATE_CHANCE_BREAKDOWN:1 "#header [concept_enactment_debate] Chance#!\nThe current [concept_enactment_debate] chance is [Law.GetCheckpointDebateChance|v%1] due to:\n$TOOLTIP_DELIMITER$\n[Law.GetCheckpointDebateBreakdown]"
  CHECKPOINT_STALL_CHANCE_BREAKDOWN:1 "#header [concept_enactment_stall] Chance#!\nThe current [concept_enactment_stall] chance is [Law.GetCheckpointStallChance|v%1] due to:\n$TOOLTIP_DELIMITER$\n[Law.GetCheckpointStallBreakdown]"
 
- ENACTMENT_SUPPORTING_IGS_BREAKDOWN_HEADER:0 "From supporting [Concept('concept_interest_group', '$concept_interest_groups$')]:"
+ ENACTMENT_SUPPORTING_IGS_BREAKDOWN_HEADER: "From supporting [Concept('concept_interest_group', '$concept_interest_groups$')]:"
  ENACTMENT_SUPPORTING_IGS_BREAKDOWN_ITEM:0 "$TAB$[InterestGroup.GetName]: [InterestGroup.GetClout|=v%1]"
 
  ENACTMENT_OPPOSING_IGS_BREAKDOWN_HEADER:0 "From opposing [Concept('concept_interest_group', '$concept_interest_groups$')]:"
@@ -4974,7 +4974,7 @@
  ENACTMENT_DEBATE_CHANCE_EFFECTS_BREAKDOWN:0 "[concept_enactment_debate] chance of $DEBATE_CHANCE|v%1$ results in:\n$TAB$$DESC$"
  ENACTMENT_FACTOR_ENTRY:0 "[concept_end_of_discussion_factor]: x$VAL|v2$"
 
- ENACTMENT_BREAKDOWNS_BASE_CHANCE_ENTRY:0 "Base: $VAL|v%1$"
+ ENACTMENT_BREAKDOWNS_BASE_CHANCE_ENTRY:0 "Базовий: $VAL|v%1$"
  ENACTMENT_BASE_SUCCESS_CHANCE_ENTRY:0 "[concept_base_success_chance]: $VAL|=v%1$"
  ENACTMENT_SUCCESS_CHANCE_ENTRY:0 "[concept_enactment_success] chance: $VAL|=v%1$"
  ENACTMENT_ADVANCE_CHANCE_ENTRY:0 "[concept_enactment_advance] chance: $VAL|=v%1$"
@@ -4991,10 +4991,10 @@
  CHEAPEST_LAWS_HEADER_REFORM:0 "$LAWS_WITH_GVT_SUPPORT$ ([GetDataModelSize(ReformGovernment.GetPredictedLawsWithGovernmentOrMovementSupport)|v])"
  LAWS_WITHOUT_SUPPORT_REFORM:0 "$LAWS_WITHOUT_GVT_SUPPORT$ ([GetDataModelSize(ReformGovernment.GetPredictedLawsWithoutGovernmentOrMovementSupport)|v])"
  LAWS_HAS_CHANGED: "Зміняться!"
- CHEAPEST_LAWS_IG_HEADER:0 "#bold Закони, які [InterestGroup.GetName|l] хочуть прийняти#!"
+ CHEAPEST_LAWS_IG_HEADER: "#bold Закони, які [InterestGroup.GetName|l] хочуть прийняти#!"
 
- PREDICTED_LAWS_WITH_GVT_SUPPORT:0 "$LAWS_WITH_GVT_SUPPORT$ ($PREDICTION$)"
- PREDICTED_LAWS_WITHOUT_GVT_SUPPORT:0 "$LAWS_WITHOUT_GVT_SUPPORT$ ($PREDICTION$)"
+ PREDICTED_LAWS_WITH_GVT_SUPPORT: "$LAWS_WITH_GVT_SUPPORT$ ($PREDICTION$)"
+ PREDICTED_LAWS_WITHOUT_GVT_SUPPORT: "$LAWS_WITHOUT_GVT_SUPPORT$ ($PREDICTION$)"
 
  TOOLTIP_CHANGE_FROM_LAW: "#header Змінити «[concept_law|l]» в розряді «[LawGroup.GetName]»#!\nВи маєте #variable [LawGroup.GetNumEnactable|+]#! доступних иншин в розряді [LawGroup.GetName]" # [Concept('concept_law', '$concept_law_gen$')|l] [Law.GetName]
  TOOLTIP_CHANGE_FROM_LAW_CURRENTLY_ENACTING:0 "#header Змінити [concept_law|l] в розряді [LawGroup.GetName]#!\nYou are currently enacting [GetPlayer.GetLawBeingEnacted.GetName] in [GetPlayer.GetLawBeingEnacted.GetGroup.GetName]\nIf you were not, you would have #variable [LawGroup.GetNumPotentialEnactable|+]#! available alternatives to [LawGroup.GetName] in [Law.GetName]"
@@ -5491,9 +5491,9 @@
  notification_interest_deactivated_name:1 "[SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName] [concept_interest] deactivated"
  notification_interest_deactivated_desc:1 "We may no longer be able to participate in [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')], conduct diplomacy, create [Concept('concept_trade_route', '$concept_trade_routes$')] with [Concept('concept_country', '$concept_countries$')] in the [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName] region."
  
- notification_interest_activated_third_party_tooltip:0 "#header $notification_interest_activated_third_party_name$#!\n$TOOLTIP_DELIMITER$\n$notification_interest_activated_third_party_desc$"
- notification_interest_activated_third_party_name:0 "[SCOPE.sCountry('actor').GetAdjective] [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName] [concept_interest] activated"
- notification_interest_activated_third_party_desc:0 "[SCOPE.sCountry('actor').GetName] will now be able to participate in [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')], conduct diplomacy, create [Concept('concept_trade_route', '$concept_trade_routes$')] with [Concept('concept_country', '$concept_countries$')] in the [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName] region."
+ notification_interest_activated_third_party_tooltip: "#header $notification_interest_activated_third_party_name$#!\n$TOOLTIP_DELIMITER$\n$notification_interest_activated_third_party_desc$"
+ notification_interest_activated_third_party_name: "[SCOPE.sCountry('actor').GetAdjective]ий [concept_interest|l] - [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName] проявлений"
+ notification_interest_activated_third_party_desc: "[SCOPE.sCountry('actor').GetName] тепер зможе брати участь у [Concept('concept_diplomatic_play', '$concept_diplomatic_plays_loc$')|l], вести дипломатію, створювати [Concept('concept_trade_route', '$concept_trade_routes_acc$')|l] з [Concept('concept_country', '$concept_countries_ins$')|l] у [Concept('concept_strategic_region', '$concept_strategic_region_gen$')|l] [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName]."
 
  notification_interest_deactivated_third_party_tooltip:0 "#header $notification_interest_deactivated_third_party_name$#!\n$TOOLTIP_DELIMITER$\n$notification_interest_deactivated_third_party_desc$"
  notification_interest_deactivated_third_party_name:0 "[SCOPE.sCountry('actor').GetAdjective] [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName] [concept_interest] removed."
@@ -5511,9 +5511,9 @@
  notification_colony_complete_third_party_name:0 "[SCOPE.sCountry('actor').GetAdjective] colonization of [SCOPE.GetRootScope.GetState.GetStateRegion.GetName] completed"
  notification_colony_complete_third_party_desc:0 "The [SCOPE.sCountry('actor').GetName] colonization of [SCOPE.GetRootScope.GetState.GetName] has completed, and the former [concept_colony] is now a proper [concept_state]."
 
- notification_ig_trait_activated_tooltip:0 "#header $notification_ig_trait_activated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_trait_activated_desc$"
- notification_ig_trait_activated_name:0 "[SCOPE.GetRootScope.GetInterestGroup.GetName] - [SCOPE.sInterestGroupTrait('target').GetName(SCOPE.GetRootScope.GetInterestGroup.Self)] activated"
- notification_ig_trait_activated_desc:1 "This is due to their [concept_approval] of [SCOPE.GetRootScope.GetInterestGroup.GetApprovalRating] (#tooltippable #tooltip:[SCOPE.GetRootScope.GetInterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [SCOPE.GetRootScope.GetInterestGroup.GetApprovalValue|=+]#!#!)\n\n#title Effects#!\n[SCOPE.sInterestGroupTrait('target').GetModifiersDesc(SCOPE.GetRootScope.GetInterestGroup.Self)]"
+ notification_ig_trait_activated_tooltip: "#header $notification_ig_trait_activated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_trait_activated_desc$"
+ notification_ig_trait_activated_name: "[SCOPE.GetRootScope.GetInterestGroup.GetName] - риса «[SCOPE.sInterestGroupTrait('target').GetName(SCOPE.GetRootScope.GetInterestGroup.Self)]» дієва"
+ notification_ig_trait_activated_desc: "Це сталося, тому що їх [concept_approval|l] - [SCOPE.GetRootScope.GetInterestGroup.GetApprovalRating|l] (#tooltippable #tooltip:[SCOPE.GetRootScope.GetInterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [SCOPE.GetRootScope.GetInterestGroup.GetApprovalValue|=+]#!#!)\n\n#title Заподії:#!\n[SCOPE.sInterestGroupTrait('target').GetModifiersDesc(SCOPE.GetRootScope.GetInterestGroup.Self)]"
 
  notification_ig_became_influential_tooltip:0 "#header $notification_ig_became_influential_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_became_influential_desc$"
  notification_ig_became_influential_name: "[SCOPE.GetRootScope.GetInterestGroup.GetName] тепер [Concept('concept_influential', '$concept_influential_many$')|l]"
@@ -5531,9 +5531,9 @@
  notification_ig_no_longer_influential_name:0 "[SCOPE.GetRootScope.GetInterestGroup.GetName] is no longer [concept_influential]"
  notification_ig_no_longer_influential_desc:0 "[SCOPE.GetRootScope.GetInterestGroup.GetName] used to be [concept_influential], and now they are [concept_marginalized]."
 
- notification_ig_trait_deactivated_tooltip:0 "#header $notification_ig_trait_deactivated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_trait_deactivated_desc$"
- notification_ig_trait_deactivated_name:0 "[SCOPE.GetRootScope.GetInterestGroup.GetName] - [SCOPE.sInterestGroupTrait('target').GetName(SCOPE.GetRootScope.GetInterestGroup.Self)] deactivated"
- notification_ig_trait_deactivated_desc:1 "This is due to their [concept_approval] of [SCOPE.GetRootScope.GetInterestGroup.GetApprovalRating] (#tooltippable #tooltip:[SCOPE.GetRootScope.GetInterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [SCOPE.GetRootScope.GetInterestGroup.GetApprovalValue|=+]#!#!)\n\n#title Effects (no longer being provided)#!\n[SCOPE.sInterestGroupTrait('target').GetModifiersDesc(SCOPE.GetRootScope.GetInterestGroup.Self)]"
+ notification_ig_trait_deactivated_tooltip: "#header $notification_ig_trait_deactivated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_trait_deactivated_desc$"
+ notification_ig_trait_deactivated_name: "[SCOPE.GetRootScope.GetInterestGroup.GetName] - риса «[SCOPE.sInterestGroupTrait('target').GetName(SCOPE.GetRootScope.GetInterestGroup.Self)]» недієва"
+ notification_ig_trait_deactivated_desc: "Це сталося, тому що їх [concept_approval|l] - [SCOPE.GetRootScope.GetInterestGroup.GetApprovalRating|l] (#tooltippable #tooltip:[SCOPE.GetRootScope.GetInterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [SCOPE.GetRootScope.GetInterestGroup.GetApprovalValue|=+]#!#!).\n\n#title Заподії (більше не діють):#!\n[SCOPE.sInterestGroupTrait('target').GetModifiersDesc(SCOPE.GetRootScope.GetInterestGroup.Self)]"
 
  notification_ig_movement_left_marginal_name:0 "[SCOPE.GetRootScope.GetInterestGroup.GetName] - left [SCOPE.sPoliticalMovement('political_movement').GetName]"
  notification_ig_movement_left_marginal_desc:0 "This is due to interest group becoming marginal"
@@ -5649,7 +5649,7 @@
  STATE_RIGHT_CLICK_MENU_COLONIZE: "Осадити"
  STATE_RIGHT_CLICK_MENU_CREATE_MARKET: "Створити ринок"
  STATE_RIGHT_CLICK_MENU_INCORPORATE: "$INCORPORATE$"
- STATE_RIGHT_CLICK_MENU_CANCEL_INCORPORATION:0 "Cancel Incorporation ([State.GetIncorporationProgress|v%0] complete)"
+ STATE_RIGHT_CLICK_MENU_CANCEL_INCORPORATION: "Скасувати включення ([State.GetIncorporationProgress|v%0] виконано)"
 
  BUILD_URBAN_BUILDINGS: "Збудувати міські будівлі"
  ADD_CONSUMPTION_TAX: "Додати податок на споживання"
@@ -5658,17 +5658,17 @@
  BUDGET_CONSUMPTION_TAX_TOOLTIP: "#header [concept_consumption_tax] для [Concept('concept_good', '$concept_good_gen$')|l] [Goods.GetName]#!\nCurrent cost: @aut! [Multiply_CFixedPoint(Goods.CalcConsumptionTaxAuthorityCost(GetPlayer),'(CFixedPoint)-1')|v0+]\nCurrent Revenue: #v [Goods.CalcConsumptionTaxAmount(GetPlayer)|+Т]#!"
  GOODS_ADD_REMOVE_CONSUMPTION_TAX_TOOLTIP:0 "#header [SelectLocalization(GreaterThan_CFixedPoint(Goods.CalcConsumptionTaxAmount(GetPlayer), '(CFixedPoint)0'), 'Remove', 'Add')] [concept_consumption_tax] on [Goods.GetName]#!\n$TOOLTIP_DELIMITER$\nCurrent Revenue: #v [Goods.CalcConsumptionTaxAmount(GetPlayer)|+Т]#!"
 
- COUNTRY_RIGHT_CLICK_MENU_OBSERVE:1 "[SelectLocalization(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, Country.Self), 'COUNTRY_RIGHT_CLICK_MENU_STOP_OBSERVING', 'COUNTRY_RIGHT_CLICK_MENU_START_OBSERVING')]"
- COUNTRY_RIGHT_CLICK_MENU_START_OBSERVING:0 "Observe [Country.GetName]"
- COUNTRY_RIGHT_CLICK_MENU_STOP_OBSERVING:0 "Stop observing [Country.GetName]"
- COUNTRY_RIGHT_CLICK_MENU_OBSERVE_TOOLTIP:1 "[SelectLocalization(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, Country.Self), 'COUNTRY_RIGHT_CLICK_MENU_STOP_OBSERVE_TOOLTIP', 'COUNTRY_RIGHT_CLICK_MENU_START_OBSERVE_TOOLTIP')]"
- COUNTRY_RIGHT_CLICK_MENU_START_OBSERVE_TOOLTIP:0 "Start observing this country"
- COUNTRY_RIGHT_CLICK_MENU_STOP_OBSERVE_TOOLTIP:0 "Stop observing this country"
+ COUNTRY_RIGHT_CLICK_MENU_OBSERVE: "[SelectLocalization(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, Country.Self), 'COUNTRY_RIGHT_CLICK_MENU_STOP_OBSERVING', 'COUNTRY_RIGHT_CLICK_MENU_START_OBSERVING')]"
+ COUNTRY_RIGHT_CLICK_MENU_START_OBSERVING: "Спостерігати за державою [Country.GetName]"
+ COUNTRY_RIGHT_CLICK_MENU_STOP_OBSERVING: "Припинити спостереження за державою [Country.GetName]"
+ COUNTRY_RIGHT_CLICK_MENU_OBSERVE_TOOLTIP: "[SelectLocalization(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, Country.Self), 'COUNTRY_RIGHT_CLICK_MENU_STOP_OBSERVE_TOOLTIP', 'COUNTRY_RIGHT_CLICK_MENU_START_OBSERVE_TOOLTIP')]"
+ COUNTRY_RIGHT_CLICK_MENU_START_OBSERVE_TOOLTIP: "Спостерігати за цією державою"
+ COUNTRY_RIGHT_CLICK_MENU_STOP_OBSERVE_TOOLTIP: "Припинити спостереження за цією державою"
  OBSERVER_NO_COUNTRY_SELECTED: "\n$TOOLTIP_DELIMITER$\n@red_cross! Держава не вибрана"
- OBSERVER_NO_COUNTRY_SELECTED_TOOLTIP:0 "#header You are in observer mode!#!\n$TOOLTIP_DELIMITER$\n@red_cross! No country selected to be observed"
+ OBSERVER_NO_COUNTRY_SELECTED_TOOLTIP: "#header Ви у режимі спостерігача!#!\n$TOOLTIP_DELIMITER$\n@red_cross! Держава не вибрана для спостерігання."
 
- GOODS_RIGHT_CLICK_MENU_TITLE:1 "[Goods.GetTextIcon][Nbsp][Goods.GetName]"
- GOODS_IN_MARKET_RIGHT_CLICK_MENU_TITLE:1 "[Goods.GetTextIcon][Nbsp][Goods.GetName] in [Goods.GetMarket.GetName]"
+ GOODS_RIGHT_CLICK_MENU_TITLE: "[Goods.GetTextIcon][Nbsp][Goods.GetName]"
+ GOODS_IN_MARKET_RIGHT_CLICK_MENU_TITLE: "[Goods.GetTextIcon][Nbsp][Goods.GetName] ([Goods.GetMarket.GetName])"
 
  MAP_INTERACTION_SHOW_SUPPLY_AREAS_DESC:0 "Click on a state to show its supply area"
  MAP_INTERACTION_SHOW_SUPPLY_AREAS_PERFORMED:0 "Supply area is shown"
@@ -5707,7 +5707,7 @@
  BUILDING_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP: "#header Стан#!\n$TOOLTIP_DELIMITER$\n#concept Доступність розширення цієї [Concept('concept_building', '$concept_building_gen$')|l] у цьому [Concept('concept_state', '$concept_state_loc$')|l].\n\n@map_list_plus!: Ви можете вибрати це.\n@map_list_plus_and_checkmark!: Ви можете вибрати це і Ви це вже тут робите.\n@map_list_checkmark!: Ви вже робите це тут і можете скасувати вибір.\n@map_list_lock!: Ви вже робите це тут, але НЕ можете скасувати вибір.\n@map_list_cross!: Ви НЕ можете вибрати це.\n@map_list_cross_and_checkmark!: Ви вже робите це тут, але НЕ можете вибрати це.#!"
  BUILDING_MAP_LIST_PANEL_STATE_HEADER: "Регіон"
  BUILDING_MAP_LIST_PANEL_STATE_HEADER_TOOLTIP: "#header [concept_state]#!\n$TOOLTIP_DELIMITER$\n#concept Це [concept_state|l], де [concept_building|l] буде збудована.#!"
- BUILDING_MAP_LIST_PANEL_EFFICIENCY_HEADER:0 "Eff."
+ BUILDING_MAP_LIST_PANEL_EFFICIENCY_HEADER: "Ефект."
  BUILDING_MAP_LIST_PANEL_EFFICIENCY_HEADER_TOOLTIP:0 "#header @construction![Nbsp][concept_construction] Efficiency#!\n$TOOLTIP_DELIMITER$\n#concept The @construction! $concept_construction$ Efficiency where the [concept_building] will be built. A positive value reduces the amount of @construction![Nbsp][concept_construction] required per week and vice versa.#!"
 
  BUILDING_MAP_LIST_PANEL_PEASANTS_HEADER: "Селяни"
@@ -6045,13 +6045,13 @@
  notification_election_results_desc: "Результати [Concept('concept_election','$concept_election_gen$')|l] у [Concept('concept_country','$concept_country_loc$')|l] [SCOPE.GetRootScope.GetCountry.GetName]!\n[SCOPE.GetRootScope.GetCountry.GetLastElectionResultsTooltip]"
  notification_election_results_tooltip: "#header $notification_election_results_name$#!\n$notification_election_results_desc$"
 
- notification_new_trade_route_name:0 "[SCOPE.GetRootScope.GetTradeRoute.GetOwner.GetFlagTextIcon] Тор на [SCOPE.GetRootScope.GetTradeRoute.GetDirectionName|l] [Concept('concept_good', '$concept_good_gen$')|l] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetName]"
- notification_new_trade_route_desc:1 "[SCOPE.GetRootScope.GetTradeRoute.GetOwner.GetName] started an [SCOPE.GetRootScope.GetTradeRoute.GetDirectionName] Route for [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetName] from the [SCOPE.GetRootScope.GetTradeRoute.GetExportingMarket.GetName] to the [SCOPE.GetRootScope.GetTradeRoute.GetImportingMarket.GetName]. [SCOPE.GetRootScope.GetTradeRoute.GetPredictedFinalLevelShortDesc]"
- notification_new_trade_route_tooltip:0 "#header $notification_new_trade_route_name$#!\n$notification_new_trade_route_desc$"
+ notification_new_trade_route_name: "[SCOPE.GetRootScope.GetTradeRoute.GetOwner.GetFlagTextIcon] Тор на [SCOPE.GetRootScope.GetTradeRoute.GetDirectionName|l] [Concept('concept_good', '$concept_good_gen$')|l] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetName]"
+ notification_new_trade_route_desc: "[SCOPE.GetRootScope.GetTradeRoute.GetOwner.GetName] почала тор на [SCOPE.GetRootScope.GetTradeRoute.GetDirectionName|l] [Concept('concept_good', '$concept_good_gen$')|l] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetName] ([SCOPE.GetRootScope.GetTradeRoute.GetExportingMarket.GetName] -> [SCOPE.GetRootScope.GetTradeRoute.GetImportingMarket.GetName]). [SCOPE.GetRootScope.GetTradeRoute.GetPredictedFinalLevelShortDesc]"
+ notification_new_trade_route_tooltip: "#header $notification_new_trade_route_name$#!\n$notification_new_trade_route_desc$"
 
- notification_canceled_trade_route_name:0 "[SCOPE.GetRootScope.GetTradeRoute.GetOwner.GetFlagTextIcon] [SCOPE.GetRootScope.GetTradeRoute.GetDirectionName] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetName] Route Canceled"
- notification_canceled_trade_route_desc:0 "[SCOPE.GetRootScope.GetTradeRoute.GetOwner.GetName] cancelled their [SCOPE.GetRootScope.GetTradeRoute.GetDirectionName] Route for [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetName] from the [SCOPE.GetRootScope.GetTradeRoute.GetExportingMarket.GetName] to the [SCOPE.GetRootScope.GetTradeRoute.GetImportingMarket.GetName]"
- notification_canceled_trade_route_tooltip:0 "#header $notification_canceled_trade_route_name$#!\n$notification_canceled_trade_route_desc$"
+ notification_canceled_trade_route_name: "[SCOPE.GetRootScope.GetTradeRoute.GetOwner.GetFlagTextIcon] Скасовано тор на [SCOPE.GetRootScope.GetTradeRoute.GetDirectionName|l] [Concept('concept_good', '$concept_good_gen$')|l] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetName] скасовано"
+ notification_canceled_trade_route_desc: "[SCOPE.GetRootScope.GetTradeRoute.GetOwner.GetName] скасувала їх тор на [SCOPE.GetRootScope.GetTradeRoute.GetDirectionName|l] [Concept('concept_good', '$concept_good_gen$')|l] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetName] ([SCOPE.GetRootScope.GetTradeRoute.GetExportingMarket.GetName] -> [SCOPE.GetRootScope.GetTradeRoute.GetImportingMarket.GetName])."
+ notification_canceled_trade_route_tooltip: "#header $notification_canceled_trade_route_name$#!\n$notification_canceled_trade_route_desc$"
 
  notification_commander_move_name:0 "[SCOPE.GetRootScope.GetCharacter.GetFullName] moved"
  notification_commander_move_desc:0 "[SCOPE.GetRootScope.GetCharacter.GetFullName] and [SCOPE.GetRootScope.GetCharacter.GetHerHis] #variable [SCOPE.GetRootScope.GetCharacter.GetCombatUnitsTypeIcon][SCOPE.GetRootScope.GetCharacter.GetNumCombatUnits]#! has moved to the [SCOPE.GetRootScope.GetCharacter.GetLocationHQ.GetName]"
@@ -6062,7 +6062,7 @@
  notification_naval_invasion_failed_tooltip:0 "#header $notification_naval_invasion_failed_name$#!\n$notification_naval_invasion_failed_desc$"
 
  notification_journal_entry_activated_name: "Новий [concept_journal_entry|l]: [SCOPE.GetRootScope.GetJournalEntry.GetName]"
- notification_journal_entry_activated_desc: "[Concept('concept_journal_entry', '$concept_journal_entry_short$')] «[SCOPE.GetRootScope.GetJournalEntry.GetName]» додано до часопису"
+ notification_journal_entry_activated_desc: "[Concept('concept_journal_entry', '$concept_journal_entry_short$')] «[SCOPE.GetRootScope.GetJournalEntry.GetName]» додано до часопису."
  notification_journal_entry_activated_tooltip:1 "#header $notification_journal_entry_activated_name$#!\n$notification_journal_entry_activated_desc$"
 
  notification_journal_entry_deactivated_name:0 "[SCOPE.GetRootScope.GetJournalEntry.GetName] Closed"
@@ -6077,9 +6077,9 @@
  notification_native_uprising_notification_desc:0 "[SCOPE.sCountry('actor').GetName] have launched a [concept_native_uprising] against us!"
  notification_native_uprising_notification_tooltip:0 "#header $notification_native_uprising_notification_name$#!\n$notification_native_uprising_notification_desc$"
 
- notification_political_movement_formed_name:0 "[SCOPE.GetRootScope.GetPoliticalMovement.GetName] [concept_political_movement]"
- notification_political_movement_formed_desc:1 "A new [concept_political_movement] to [SCOPE.GetRootScope.GetPoliticalMovement.GetName] has formed. Their [Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] is [SCOPE.GetRootScope.GetPoliticalMovement.GetSupport|v0] and their [Concept('concept_political_movement_radicalism', '$concept_political_movement_radicalism_short$')] is [SCOPE.GetRootScope.GetPoliticalMovement.GetRadicalism|v0]."
- notification_political_movement_formed_tooltip:0 "#header $notification_political_movement_formed_name$#!\n$notification_political_movement_formed_desc$"
+ notification_political_movement_formed_name: "[SCOPE.GetRootScope.GetPoliticalMovement.GetName] - [concept_political_movement|l]"
+ notification_political_movement_formed_desc: "Новий [concept_political_movement|l], [SCOPE.GetRootScope.GetPoliticalMovement.GetName|l], утворенно. Їх [Concept('concept_political_movement_support', '$concept_political_movement_support_short$')|l] - [SCOPE.GetRootScope.GetPoliticalMovement.GetSupport|v0], а їх [Concept('concept_political_movement_radicalism', '$concept_political_movement_radicalism_short$')|l] - [SCOPE.GetRootScope.GetPoliticalMovement.GetRadicalism|v0]."
+ notification_political_movement_formed_tooltip: "#header $notification_political_movement_formed_name$#!\n$notification_political_movement_formed_desc$"
 
  notification_political_movement_disbanded_name:0 "[concept_political_movement] Disbanded"
  notification_political_movement_disbanded_desc:0 "The [concept_political_movement] to [SCOPE.GetRootScope.GetPoliticalMovement.GetName] has disbanded"
@@ -6181,7 +6181,7 @@
  TOOLTIP_TYPE_COMMANDER_RANK: "Звання"
  TOOLTIP_TYPE_PRODUCTION_METHOD: "[concept_production_method]"
  TOOLTIP_TYPE_TECHNOLOGY: "Технологія"
- TOOLTIP_TYPE_INTEREST_GROUP_TRAIT: "Риса ЗЦ"
+ TOOLTIP_TYPE_INTEREST_GROUP_TRAIT: "Риса ЗГ"
  TOOLTIP_TYPE_STRATEGIC_REGION: "[concept_strategic_region]"
  TOOLTIP_TYPE_WAR: "[concept_war]"
  TOOLTIP_TYPE_CANAL_TYPE: "Типа водоводу"

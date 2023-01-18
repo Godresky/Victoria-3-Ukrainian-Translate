@@ -1190,7 +1190,7 @@
  election_conservative_events.2.a: "Ми повинні об’єднатися в цей важкий час."
  election_conservative_events.2.b: "Це схоже на холоднокровний опортунізм."
  election_conservative_events.3.t: "Правопорядок"
- election_conservative_events.3.d: "Вказуючи на нестримну радикальну діяльність у регіоні [SCOPE.sState('turmoil_state').GetName], [SCOPE.sParty('conservative_party').GetName] проводить кампанію на платформі посилення поліцейської діяльності."
+ election_conservative_events.3.d: "Вказуючи на нестримну радикальну діяльність у регіоні [SCOPE.sState('turmoil_state').GetName], [SCOPE.sParty('conservative_party').GetName] проводить кампанію на платформі посилення поліцянської діяльности."
  election_conservative_events.3.f: "«Люди, схоже, вважають, що для виправдання хаосу, який ми бачимо в регіоні [SCOPE.sState('turmoil_state').GetName], можна використати найнезначніші політичні приводи. Якщо вони ще не придумали приводу, наші противники з радістю нададуть їм це. Ми не будемо! Ми повинні надіслати рішуче повідомлення тим, хто хоче висміяти [ROOT.GetCountry.GetAdjective}l] закон, що вони не можуть уникнути правосуддя»"
  election_conservative_events.3.a: "Ця рана занадто довго гноїлася."
  election_conservative_events.3.b: "Ключ до запобігання злочинності – запобігання бідності."

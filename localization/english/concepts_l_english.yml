@@ -30,6 +30,7 @@
  concept_subject_feminine_gen: "Підвладної"
  concept_subject_feminine_ins: "Підвладною"
  concept_subjects: "Підвладні"
+ concept_subjects_gen: "Підвладних"
  concept_subject_country: "Підвладна держава"
  concept_subject_country_acc: "Підвладну державу"
 
@@ -200,6 +201,7 @@
  concept_diplomatic_play_short_acc: "Гру"
  concept_diplomatic_plays: "Дипломатичні ігри"
  concept_diplomatic_plays_gen: "Дипломатичних ігор"
+ concept_diplomatic_plays_loc: "Дипломатичних іграх"
  concept_diplomatic_plays_short: "Ігри"
  concept_diplomatic_play_negotiated:0 "Negotiated"
  concept_diplomatic_play_desc:3 "A $concept_diplomatic_play$ is a period of hostile diplomatic negotiations between two or more [Concept('concept_country','$concept_countries$')] that follows after one $concept_country$ makes a demand for a concession by another. To start a $concept_diplomatic_play$ you must have an [concept_active_interest] in the relevant [concept_strategic_region], which also entitles you to participate in $concept_diplomatic_plays_short$ as a third party in that $concept_strategic_region$.\n\nThe $concept_diplomatic_play$ will [Concept('concept_escalation', '$concept_escalate$')] through three phases: [concept_opening_moves], [concept_diplomatic_maneuvers], and [concept_countdown_to_war]. These phases set the terms for a possible [concept_peace_deal] should the $concept_diplomatic_play$ $concept_escalate$ into a [concept_war]. A $concept_war$ can be averted if either the [concept_initiator] or [concept_target] of the $concept_diplomatic_play_short$ backs down and grants the other their primary [concept_war_goal]."
@@ -295,6 +297,7 @@
  concept_front_gen: "Фронту"
  concept_front_acc: "Фронт"
  concept_fronts: "Фронти"
+ concept_fronts_gen: "Фронтів"
  concept_front_desc:2 "A collection of [Concept('concept_province', '$concept_provinces$')] on the border of [Concept('concept_theater','$concept_theaters$')] between two [Concept('concept_country', '$concept_countries$')] at [concept_war] with each other. [Concept('concept_general', '$concept_generals$')] can be [Concept('concept_order','$concept_ordered$')] to advance or defend $concept_fronts$, which can result in [Concept('concept_battle','$concept_battles$')] that change the size of the $concept_theaters$ and the location of the $concept_front$."
 
  concept_garrison: "Залога"
@@ -438,6 +441,7 @@
  concept_goods_substitution_desc:2 "[Concept('concept_good','$concept_goods$')] that are part of the same [concept_pop_needs] category are mutually substitutable to [Concept('concept_pop','$concept_pops$')] based on availability. For example, the Basic Food group contains both Grain and Meat, and $concept_pops$ will consume more Grain and less Meat, increasing their Meat consumption (and thus reducing Grain consumption) if Meat becomes more available in the market at a later point. In some cases, a Good may be substituted entirely if there are no [concept_sell_orders] for that Good in the [concept_market].\n\nHow much of a $concept_good$ a $concept_pop$ will buy compared to other $concept_goods$ in the same category will change substantially if the $concept_good$ is an [concept_obsession] of their [concept_culture] or a [concept_taboo] in their [concept_religion]. $concept_goods$ that have a higher [concept_base_price] count more towards fulfilling a $concept_pop$'s $concept_pop_needs$ within a particular $concept_pop_needs$ category, so a single unit of Groceries is equivalent to several units of Grain."
 
  concept_market_price: "Ринкова ціна"
+ concept_market_price_gen: "Ринкової ціни"
  concept_market_prices: "Ринкові ціни"
  concept_market_price_desc:1 "The price of a [concept_good] in the [concept_market]. It is based on [concept_buy_orders] and [concept_sell_orders], and affect the [concept_local_price] of [Concept('concept_good','$concept_goods$')] in all participating [Concept('concept_state','$concept_states$')] depending on their [concept_market_access]."
  
@@ -772,6 +776,7 @@
  concept_rivalry: "Суперництво"
  concept_rivals: "Суперники"
  concept_rival: "Суперник"
+ concept_rival_ins: "Суперником"
  concept_rivalries:1 "Rivalries"
  concept_rivalry_desc:3 "A [concept_diplomatic_pact] established by one [concept_country] targeting another of similar [concept_rank], and which generates @inf! [concept_influence] for the [concept_country] declaring the rivalry. The two $concept_countries$ must have overlapping [Concept('concept_interest','$concept_interests$')] to be valid rivals. The $concept_diplomatic_pact_short$ will also limit the range of [concept_relations] that can be established between the two $concept_countries$ for as long as the $concept_diplomatic_pact_short$ is active."
 
@@ -822,6 +827,7 @@
 
  concept_relations: "Відносини"
  concept_relations_gen: "Відносин"
+ concept_relations_acc: "Відносини"
  concept_relations_desc:0 "The current stance of diplomatic $concept_relations$ between two [Concept('concept_country', '$concept_countries$')]. Both sides can influence this mutual score using the [GetDiplomaticActionType('increase_relations').GetName], [GetDiplomaticActionType('damage_relations').GetName], and [GetDiplomaticActionType('expel_diplomats').GetName] [Concept('concept_diplomatic_action','$concept_diplomatic_actions$')] by spending [concept_influence]. $concept_relations$ impact which $concept_diplomatic_actions$ and [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts_short$')] are valid interaction options for the $concept_countries$, and also impact the likelihood they will accept diplomatic overtures or take your side in a [concept_diplomatic_play]."
 
  concept_ai_strategy: "Стратегія"
@@ -953,6 +959,7 @@
  concept_prestige_desc_gamestate:0 "[GetBuildingType('building_arts_academy').GetName]"
 
  concept_power_projection: "Проєкція сили"
+ concept_power_projection_gen: "Проєкції сили"
  concept_power_projection_acc: "Проєкцію сили"
  concept_power_projection_desc:3 "How intimidating a [Concept('concept_country','$concept_country_possessive$')] military forces appear to other [Concept('concept_country', '$concept_countries$')]. It forms the basis for the amount of [concept_prestige] that a [concept_country] gains from its army and navy, and also affects how powerful other $concept_countries$ perceive them to be when deciding to start or take sides in a [concept_diplomatic_play]."
 
@@ -1544,8 +1551,9 @@
  concept_budget_interest_rates: "Відсоткові ставки"
  concept_budget_interest_desc:0 "The $concept_budget_interest$ paid by a [concept_country] on its [concept_loans]. It is calculated by multiplying the [concept_principal] with the annual $concept_budget_interest_rate$, and is paid out to lending [Concept('concept_pop','$concept_pops$')] weekly. The $concept_budget_interest_rate$ paid is affected primarily by [concept_technology]."
 
- concept_country_tier:0 "Country Tier"
- concept_country_tier_short:0 "Tier"
+ concept_country_tier: "Щабель держави"
+ concept_country_tier_gen: "Щабелю держави"
+ concept_country_tier_short: "Щабель"
  concept_country_tier_possessive:1 "$concept_country$\\'s $concept_country_tier_short$"
  concept_country_tier_desc:3 "A [Concept('concept_country','$concept_country_possessive$')] $concept_country_tier_short$ is the inherent status and [concept_prestige] it is granted based on its history and significance. Forming a new $concept_country$ is only possible if its $concept_country_tier_short$ is higher than the $concept_country$'s current one."
 
@@ -1846,6 +1854,7 @@
  concept_enactment_of_laws_desc:0 "The act of attempting to push a new [concept_law] through the [Concept('concept_country','$concept_country_possessive$')] legislature. At regular intervals the $concept_law$'s [concept_enactment_success] chance will be tested. The time between tests is dependent on the [Concept('concept_government','$concept_government_possessive$')] [concept_legitimacy]. If the $concept_law$ does not pass, it will either [Concept('concept_enactment_advance','$concept_enactment_advance_short$')], be [Concept('concept_enactment_debate','$concept_enactment_debate_short_debated$')], or [Concept('concept_enactment_stall','$concept_enactment_stall_short$')] which affects its chances to pass the next test or introduce other consequences to your $concept_country$."
 
  concept_enactment_success: "Успіх введення в дію"
+ concept_enactment_success_gen: "Успіху введення в дію"
  concept_enactment_success_short: "Успіх"
  concept_enactment_success_desc:1 "$concept_enactment_success$ indicates the percentage chance that a [concept_law] will be enacted at the next checkpoint. It is equal to the [concept_base_success_chance] plus any effects accumulated during the enactment process."
 
