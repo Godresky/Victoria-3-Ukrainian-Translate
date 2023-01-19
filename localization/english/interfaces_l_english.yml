@@ -414,14 +414,14 @@
 
  GOVERNMENT_TRANSFER_OF_POWER_TOOLTIP: "#header [GovernmentType.GetTransferOfPowerName]#!\n[GovernmentType.GetTransferOfPowerDesc]"
 
- CUL_DISCRIMINATED_IN_COUNTRY: "Культура [CULTURE.GetName|l] утискається в [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
- CUL_NOT_DISCRIMINATED_IN_COUNTRY: "Культура [CULTURE.GetName|l] не утискається в [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
- CUL_DISCRIMINATED_NOT_IN_COUNTRY: "Культура [CULTURE.GetName|l] була б утиснена, але не присутня в [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
- CUL_NOT_DISCRIMINATED_NOT_IN_COUNTRY: "Культура [CULTURE.GetName|l] не була б утиснена та не присутня в [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
- REL_DISCRIMINATED_IN_COUNTRY: "Релігія [RELIGION.GetName|l] утискається в [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
- REL_NOT_DISCRIMINATED_IN_COUNTRY: "Релігія [RELIGION.GetName|l] не утискається в [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
- REL_DISCRIMINATED_NOT_IN_COUNTRY: "Релігія [RELIGION.GetName|l] була б утиснена, але не присутня в [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
- REL_NOT_DISCRIMINATED_NOT_IN_COUNTRY: "Релігія [RELIGION.GetName|l] не була б утиснена та не присутня в [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
+ CUL_DISCRIMINATED_IN_COUNTRY: "Культура [CULTURE.GetName|l] утискається у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
+ CUL_NOT_DISCRIMINATED_IN_COUNTRY: "Культура [CULTURE.GetName|l] не утискається у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
+ CUL_DISCRIMINATED_NOT_IN_COUNTRY: "Культура [CULTURE.GetName|l] була б утиснена, але не присутня у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
+ CUL_NOT_DISCRIMINATED_NOT_IN_COUNTRY: "Культура [CULTURE.GetName|l] не була б утиснена та не присутня у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
+ REL_DISCRIMINATED_IN_COUNTRY: "Релігія [RELIGION.GetName|l] утискається у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
+ REL_NOT_DISCRIMINATED_IN_COUNTRY: "Релігія [RELIGION.GetName|l] не утискається у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
+ REL_DISCRIMINATED_NOT_IN_COUNTRY: "Релігія [RELIGION.GetName|l] була б утиснена, але не присутня у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
+ REL_NOT_DISCRIMINATED_NOT_IN_COUNTRY: "Релігія [RELIGION.GetName|l] не була б утиснена та не присутня у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
  DISCRIMINATION_TOOLTIP: "#header Цей прошарок утискається у [Concept('concept_country','$concept_country_loc$')|l] [Pop.GetCountry.GetName]#!\n$TOOLTIP_DELIMITER$\n[AddLocalizationIf(Pop.IsSlave, 'DISCRIMINATION_TOOLTIP_SLAVE_DISCRIMINATION')][AddLocalizationIf(Pop.GetCulture.IsDiscriminatedIn(Pop.GetCountry.Self), 'DISCRIMINATION_TOOLTIP_CULTURAL_DISCRIMINATION')][AddLocalizationIf(Pop.GetReligion.IsDiscriminatedIn(Pop.GetCountry.Self), 'DISCRIMINATION_TOOLTIP_RELIGIOUS_DISCRIMINATION')]"
  DISCRIMINATION_TOOLTIP_RELIGIOUS_DISCRIMINATION: "\n[Concept('concept_religion','$concept_religion_acc$')] [Pop.GetReligion.GetName|l] [Concept('concept_discrimination','$concept_discriminated_against$')|l] через [concept_law|l] [Pop.GetCountry.GetActiveLawFromGroup('lawgroup_church_and_state').GetName|l] у розряді [Pop.GetCountry.GetActiveLawFromGroup('lawgroup_church_and_state').GetGroup.GetName|l]\n"
  DISCRIMINATION_TOOLTIP_CULTURAL_DISCRIMINATION: "[Concept('concept_culture','$concept_culture_acc$')] [Pop.GetCulture.GetName|l] [Concept('concept_discrimination','$concept_discriminated_against$')|l] через [concept_law|l] [Pop.GetCountry.GetActiveLawFromGroup('lawgroup_citizenship').GetName|l] у розряді [Pop.GetCountry.GetActiveLawFromGroup('lawgroup_church_and_state').GetGroup.GetName|l]\n"
@@ -4223,7 +4223,7 @@
  notification_acquired_technology_notification_tooltip:0 "$notification_acquired_technology_notification_name$\n$notification_acquired_technology_notification_desc$"
 
  notification_spreading_technology_notification_name: "Технологія [SCOPE.sT('technology').GetName|l] поширюється"
- notification_spreading_technology_notification_desc:0 "Знання [SCOPE.sT('technology').GetName|l] почало поширюватися в нашій країні."
+ notification_spreading_technology_notification_desc: "Знання [SCOPE.sT('technology').GetName|l] почало поширюватися в нашій країні."
  notification_spreading_technology_notification_tooltip: "$notification_spreading_technology_notification_name$\n$notification_spreading_technology_notification_desc$"
 
  notification_price_report_name: "[SCOPE.GetRootScope.GetCountry.GetCapital.GetMarket.GetName] - щомісячний звіт про ціни."

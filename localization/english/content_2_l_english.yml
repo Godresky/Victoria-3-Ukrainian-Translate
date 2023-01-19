@@ -488,8 +488,8 @@
  war_hero_cult:0 "Homefront War Hero"
  war_hero_fighter:0 "Flying War Hero"
 
- je_trench_warfare:0 "War in the Mud"
- je_trench_warfare_reason:0 "Soldiers have discovered a new weapon in this age of scientific warfare: the shovel."
+ je_trench_warfare: "Війна в багнюці"
+ je_trench_warfare_reason: "Солдати відкрили нову зброю у цю добу наукової війни: лопату."
  trench_warfare.1.t:0 "The Entrenched Front"
  trench_warfare.1.d:1 "Heavy usage of trenches in [SCOPE.sState('trench_warfare_state').GetName] by [SCOPE.sCharacter('trench_warfare_general').GetFullName] has turned the land into a blasted hellscape. The stalemate cannot last forever, but it's not clear what the best way forward is."
  trench_warfare.1.f:1 ""Have you ever been there, in the trenches? It's less lonely than you'd think. You have friends everywhere — the rats will be with you every day and night, and even when your mates die, they'll stay right there with you, just down below in the mud.""

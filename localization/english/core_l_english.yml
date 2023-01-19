@@ -84,7 +84,7 @@
  DURATION_DATE_RANGE: "$[DATE_MIN.GetStringShort|V]$ - $[DATE_MAX.GetStringShort|V]$"
  DURATION_NO_DATE: "за #variable $DURATION$#!"
  DURATION_NO_DATE_RANGE: "між $DURATION_MIN$ та $DURATION_MAX$"
- PROVTIP_NAVAL_BASE:0 "Closest Naval Base: "
+ PROVTIP_NAVAL_BASE: "Найближча морська база: "
  REGION_NAME: "$NAME$ регіон"
  BACK: "Назад"
  YES: "Так"
