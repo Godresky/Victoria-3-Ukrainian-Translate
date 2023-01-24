@@ -55,7 +55,7 @@
  LOADSCREEN_INITIALIZING_GAME: "Започатковування гри..."
  SERVER_NAME: "Гра $NAME$"
  PLAYERS_ON_SERVER:0 "Players on server: NAME — TITLE — PING"
- PLAYER_ON_SERVER:0 "$NAME$ - $TITLE$ - $PING$"
+ PLAYER_ON_SERVER: "$NAME$ - $TITLE$ - $PING$"
  NAME_NOT_FOUND:0 "Name not found."
  KICK_NAME:0 "$NAME$ was kicked from the game."
  MODIFIED:0 "Modified: $DATE$"

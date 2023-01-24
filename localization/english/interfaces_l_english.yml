@@ -1295,8 +1295,8 @@
  STATE_TAX_CAPACITY_DESC: "#header Баланс [Concept('concept_tax_capacity', '$concept_tax_capacity_gen$')|l]#!\nБаланс [Concept('concept_tax_capacity', '$concept_tax_capacity_gen$')|l] у [Concept('concept_state', '$concept_state_loc$')|l] [State.GetName]: [State.CalcTaxCapacityBalance|1+=]\n$TOOLTIP_DELIMITER$\n[concept_tax_capacity]: #tooltippable #tooltip:[State.GetTooltipTag],STATE_TAX_CAPACITY_TOOLTIP [State.CalcTaxCapacity|1+]#!#!\nВикористано [Concept('concept_tax_capacity', '$concept_tax_capacity_gen$')|l]: #tooltippable #tooltip:[State.GetTooltipTag],STATE_TAX_CAPACITY_USAGE_TOOLTIP [State.CalcTaxCapacityUsage|1-]#!#![SelectLocalization(GreaterThan_CFixedPoint(State.CalcTaxCapacityUsage, State.CalcTaxCapacity), 'STATE_TAX_CAPACITY_INSUFFICIENT_LONG', '')]"
  STATE_TAX_CAPACITY_USAGE_TOOLTIP: "[State.GetTaxCapacityUsageDesc]"
  STATE_TAX_CAPACITY_TOOLTIP: "#header [concept_tax_capacity]#!\n[State.GetName] має [Concept('concept_tax_capacity', '$concept_tax_capacity_acc$')|l]: [State.CalcTaxCapacity|+0]\n$TOOLTIP_DELIMITER$\n[State.GetTaxCapacityDesc]"
- STATE_TAX_CAPACITY_INSUFFICIENT:0 "\n[State.GetTaxCapacityEffectsDesc]"
- STATE_TAX_CAPACITY_INSUFFICIENT_LONG:0 "\n\n@warning! Because usage is higher than capacity, the following effects are applied to the [concept_state]:\n[State.GetTaxCapacityEffectsDesc]"
+ STATE_TAX_CAPACITY_INSUFFICIENT: "\n[State.GetTaxCapacityEffectsDesc]"
+ STATE_TAX_CAPACITY_INSUFFICIENT_LONG: "\n\n@warning! Тому що використання більше за спроможність, тому наступні заподії діють у [Concept('concept_state', '$concept_state_loc$')|l]:\n[State.GetTaxCapacityEffectsDesc]"
 
  EVENT_OPTION_TOOLTIP:0 "#header "[EventOption.GetText]"#!\n$TOOLTIP_DELIMITER$\n[EventOption.GetDesc]"
 
@@ -1745,7 +1745,8 @@
  STATE_INFRASTRUCTURE_USAGE_TOOLTIP: "#header [concept_infrastructure_usage]#!\n[State.GetName] використовує [Concept('concept_infrastructure', '$concept_infrastructure_acc$')|l]: #v [Multiply_CFixedPoint(State.GetInfrastructureUsage,'(CFixedPoint)-1')|0+]#!\n$TOOLTIP_DELIMITER$\n[State.GetInfrastructureUsageDesc]"
  STATE_INFRASTRUCTURE_TOOLTIP:2 "#header [concept_infrastructure]#!\n[State.GetName] має [Concept('concept_infrastructure', '$concept_infrastructure_acc$')|l]: [State.GetInfrastructure|+0]\n$TOOLTIP_DELIMITER$\n[State.GetInfrastructureDesc]"
 
- STATE_INFRASTRUCTURE_DESC: "#header Баланс [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l]#!\nБаланс [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l] у [Concept('concept_state', '$concept_state_loc$')|l] [State.GetName]: [State.GetInfrastructureBalance|0+=]\n$TOOLTIP_DELIMITER$\nThe [concept_infrastructure] of #v [State.GetInfrastructure|0+]#! is due to:\n[State.GetInfrastructureDesc]\n\nThe [concept_infrastructure_usage] of #v [Multiply_CFixedPoint(State.GetInfrastructureUsage,'(CFixedPoint)-1')|0+]#! is due to:\n[State.GetInfrastructureUsageDesc]"
+ STATE_INFRASTRUCTURE_DESC: "#header Баланс [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l]#!\nБаланс [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l] у [Concept('concept_state', '$concept_state_loc$')|l] [State.GetName]: [State.GetInfrastructureBalance|0+=]\n$TOOLTIP_DELIMITER$\n[concept_infrastructure] - #v [State.GetInfrastructure|0+]#! через:\n[State.GetInfrastructureDesc]\n\n
+ [concept_infrastructure_usage] - #v [Multiply_CFixedPoint(State.GetInfrastructureUsage,'(CFixedPoint)-1')|0+]#! через:\n[State.GetInfrastructureUsageDesc]"
  STATE_PANEL_INFRASTRUCTURE_DESC: "#header [concept_infrastructure]#!\n[concept_infrastructure] у [Concept('concept_state', '$concept_state_loc$')|l] [State.GetName]: #v [State.GetInfrastructure|0]#!\n$TOOLTIP_DELIMITER$\n[State.GetInfrastructureDesc]"
  STATE_PANEL_INFRASTRUCTURE_USAGE_DESC: "#header [concept_infrastructure_usage]#!\n[concept_infrastructure_usage] у [Concept('concept_state', '$concept_state_loc$')|l] [State.GetName]: #v [Multiply_CFixedPoint(State.GetInfrastructureUsage,'(CFixedPoint)-1')|0+]#!\n$TOOLTIP_DELIMITER$\n[State.GetInfrastructureUsageDesc]"
  STATE_TRAIT_STATE_MODIFIER: "Змінювачі:"
