@@ -1281,7 +1281,7 @@
  ELECTION_TITLE: "#title Вибори#!"
  MARGINAL_TITLE: "#title [concept_marginalized] [Concept('concept_interest_group', '$concept_interest_groups$')|l]#!"
  MARGINAL_TITLE_ACCORDION: "[concept_marginalized] [Concept('concept_interest_group', '$concept_interest_groups$')|l] (#v [GetDataModelSize( AccessPlayer.AccessMarginalInterestGroups)]#!)"
- LAWS_TITLE: "#title Введені в дію [Concept('concept_law', '$concept_laws$')|l]#!"
+ LAWS_TITLE: "#title [Concept('concept_law', '$concept_laws$')], яким надано чинности#!"
  ABOLISHED_LAWS_TITLE: "#title Скасовані [Concept('concept_law', '$concept_laws$')|l]#!"
  STATE_TITLE: "#title [concept_state]#!"
 
@@ -4920,7 +4920,7 @@
  TOOLTIP_CANCEL_LAW: "#header Припинити зміну [Law.GetName]#!\nВи втратите весь поступ."
  TOOLTIP_CANCEL_LAW_COOLDOWN:0 "@warning! You will be unable to make another enaction attempt for [GetDefine('NPolitics','LAW_ENACTMENT_COOLDOWN_DAYS')|0] days."
  TOOLTIP_ENACT_COMMON:0 "\n$TOOLTIP_DELIMITER$\n[JoinText('\n\n', Law.CannotEnactDesc, JoinText('\n\n', Law.GetReplacedLawEffect, JoinText('\n\n', Law.PredictLegitimacyChangeToEnactDesc, Law.PredictApprovalChangesDuringEnactmentDesc)))]"
- PREDICT_APPROVAL_WHILE_ENACT: "#bold Прогнозована зміна схвалення від введення в дію:#!\n$BREAKDOWN$"
+ PREDICT_APPROVAL_WHILE_ENACT: "#bold Прогнозована зміна схвалення від надання чинности:#!\n$BREAKDOWN$"
  CLICK_TO_OPEN_LAW_GROUP:0 "#instruction Click to view [concept_law_group]#!"
 
  LAW_ENACTMENT_PROGRESS_TOPBAR:0 "[SelectLocalization( GetPlayer.IsEnactingLaw, 'ENACTING_LAW', 'NOT_ENACTING_LAW' )]\n[GetPlayer.GetLawEnactmentProgressDesc]"

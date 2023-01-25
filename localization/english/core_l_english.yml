@@ -152,5 +152,5 @@
  FRONT_ADVANTAGE_SAME_SP: "#header $NAME$#!\nОбидві сторони [Concept('concept_front', '$concept_front_gen$')|l] мають одинакову силу, через:"
  FRONT_ADVANTAGE_BREAKDOWN_UNITS: "$TAB$Солдати - ми маємо: $US|v$ , вони мають: $THEM|v$"
  FRONT_ADVANTAGE_BREAKDOWN_CE: "$TAB$Середнє захист/оборона - ми маємо: $US|v0$, вони мають: $THEM|v0$"
- law_enactment_chance: "Шанс введення в дію закону"
+ law_enactment_chance: "Шанс надання сили закону"
  OBSERVER: "[Concept('concept_observer_mode','$concept_observer$')]"

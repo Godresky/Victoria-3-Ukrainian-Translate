@@ -41,8 +41,8 @@
  modifier_state_tax_collection_mult: "Збір податків"
  modifier_state_tax_collection_mult_desc: "Збільшення або зменшення кінцевої кількости [Concept('concept_taxes','$concept_taxes_gen$')|l], зібраних з [Concept('concept_pop','$concept_population$')|l]."
 
- modifier_country_law_enactment_time_mult: "Час введення в дію"
- modifier_country_law_enactment_time_mult_desc: "Скорочення або збільшення часу, необхідного для прийняття законодавчих актів"
+ modifier_country_law_enactment_time_mult: "Час для надання чинности"
+ modifier_country_law_enactment_time_mult_desc: "Скорочення або збільшення часу, необхідного для ухвалення законодавчих актів"
 
  modifier_state_unincorporated_starting_wages_mult: "Початкові зарплати в невключених регіонах"
  modifier_state_unincorporated_starting_wages_mult_desc: "Наскільки більше чи менше [Concept('concept_pop', '$concept_population$')|l] у [Concept('concept_unincorporated_state', '$concept_unincorporated_states_loc$')|l] отримає початкову зарплату."
@@ -56,7 +56,7 @@
  modifier_country_military_goods_cost_mult: "Вартість військових товарів"
  modifier_country_military_goods_cost_mult_desc: "Наддаток або карна до грошової вартости військово-матеріяльних потреб."
 
- modifier_country_law_enactment_success_add: "Шанс на успішне введення в дію"
+ modifier_country_law_enactment_success_add: "Шанс на надання чинности"
  modifier_country_law_enactment_success_add_desc: "Постійний відсоток, що збільшує або зменшує ймовірність ухвалення закону."
 
  modifier_country_opposition_ig_approval_add: "Схвалення опозиційної зацікавленої групи"
