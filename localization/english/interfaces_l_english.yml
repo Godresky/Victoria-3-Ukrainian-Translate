@@ -3607,7 +3607,7 @@
 
  COMMANDER_ORDER_CONVOY_RAIDING_INVALID_TARGET:1 "#N No hostile [Concept('concept_supply_network', '$concept_supply_networks$')] present#!"
 
- COMMANDER_PANEL_CURRENT_ORDER:1 "Current [concept_order]: #b [Character.GetCommanderOrder.GetType.GetNameGerund]#! [AddLocalizationIf(Not(Or(Character.IsAdmiral, Character.GetCommanderOrder.GetType.IsStandBy)), Character.GetCommanderOrder.GetFrontTarget.GetName)]"
+ COMMANDER_PANEL_CURRENT_ORDER:1 "Поточний [concept_order|l]: #b [Character.GetCommanderOrder.GetType.GetNameGerund]#! [AddLocalizationIf(Not(Or(Character.IsAdmiral, Character.GetCommanderOrder.GetType.IsStandBy)), Character.GetCommanderOrder.GetFrontTarget.GetName)]"
  COMMANDER_PANEL_ORDER_TOOLTIP:0 "[Character.GetSwitchOrderButtonDesc( CommanderOrderType.Self )][ConcatIfNeitherEmpty('\n\n', Character.CanSelectOrderDesc( CommanderOrderType.Self ))]"
  COMMANDER_PANEL_ORDER_TOGGLE_DEFEND_TOOLTIP:0 "Changes current [concept_order] to #b Defend#! while remaining on [Character.GetCommanderOrder.GetFrontTarget.GetName]."
  COMMANDER_PANEL_ORDER_TOGGLE_ADVANCE_TOOLTIP:0 "Changes current [concept_order] to #b Advance#! while remaining on [Character.GetCommanderOrder.GetFrontTarget.GetName]."
@@ -3648,8 +3648,8 @@
  AGE_VALUE: "#title Вік:#! #BOLD [Character.GetAge]#!"
  INTEREST_GROUP_VALUE: "#title [concept_interest_group]:#! #BOLD #underline [Character.GetInterestGroup.GetName]#!#!"
  INTEREST_GROUP_VALUE_TWO_ROWS: "#title [concept_interest_group]:#!\n#BOLD #underline [InterestGroup.GetName]#!#!"
- RULER_OF_COUNTRY:0 "Head of State in #variable [Character.GetCountry.GetName]"
- HEIR_OF_COUNTRY:0 "Heir Apparent in #variable [Character.GetCountry.GetName]#!"
+ RULER_OF_COUNTRY: "Глава в [Concept('concept_country','$concept_country_loc$')|l] #variable [Character.GetCountry.GetName]"
+ HEIR_OF_COUNTRY: "Спадкоємець в [Concept('concept_country','$concept_country_loc$')|l] #variable [Character.GetCountry.GetName]#!"
  AT_THE_WAR_OFFICE: "Непризначений"
  RECRUIT_CHARACTER_GENERAL: "Найняти генерала"
  RECRUIT_CHARACTER_ADMIRAL: "Найняти адмірала"

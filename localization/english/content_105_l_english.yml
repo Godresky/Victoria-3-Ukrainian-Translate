@@ -406,8 +406,8 @@
  discrimination_events.2.b: "Ми повинні прийняти цю невдачу, як свою власну."
 
  discrimination_events.3.t: "Мова у шкільному класі"
- discrimination_events.3.d: "Учні-[SCOPE.sCulture('discriminated_culture').GetName|l] іноді використовують свою мову в [ROOT.GetCountry.GetAdjectiveNoFormatting|l]их школах. Деякі закликали вчителів карати за використання цих мов, змушуючи дітей говорити офіційною мовою [Concept('concept_country','$concept_country_gen$')|l] [ROOT.GetCountry.GetName]."
- discrimination_events.3.f: "«Ти теж це помітив, правда? Він злиться, коли хтось говорить у класі, але він завжди злиться більше, коли розмовляємо ми. Можливо, він думає, що ми говоримо про нього.»\n\n«Я думаю, він просто не любить, коли йому нагадують, що ми знаємо те, чого він не знає.»"
+ discrimination_events.3.d: "Учні-[SCOPE.sCulture('discriminated_culture').GetName|l] іноді використовують свою мову в [ROOT.GetCountry.GetAdjectiveNoFormatting|l]их школах. Деякі закликають вчителів карати за використання цієї мови, змушуючи дітей говорити офіційною мовою [Concept('concept_country','$concept_country_gen$')|l] [ROOT.GetCountry.GetName]."
+ discrimination_events.3.f: "-Ти теж це помітив, правда? Він злиться, коли хтось говорить у класі, але він завжди злиться більше, коли розмовляємо ми. Можливо, він думає, що ми говоримо про нього.\n\n-Я думаю, він просто не любить, коли йому нагадують, що ми знаємо те, чого він не знає.»"
  discrimination_events.3.a: "Школа повинна навчити їх говорити правильною мовою!"
  discrimination_events.3.b: "Їхня мова є частиною їхньої спадщини."
 
