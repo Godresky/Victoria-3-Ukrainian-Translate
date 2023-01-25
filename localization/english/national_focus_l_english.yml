@@ -24,5 +24,5 @@
  move_capital_lens_option_tooltip: "#header $move_capital_lens_option$#!\n$TOOLTIP_DELIMITER$\n#concept Ви можете перемістити вашу [Concept('concept_capital_state', '$concept_capital_state_acc$')|l], що надасть вибраному регіону певні переваги.#!"
  
  move_market_capital_lens_option: "Перемістити ринкову столицю"
- move_market_capital_lens_option_tooltip: "#header $move_market_capital_lens_option$#!\n$TOOLTIP_DELIMITER$\n#concept Ви можете перемістити [Concept('concept_market_capital', '$concept_market_capital_short_acc$')|l] вашого національного [Concept('concept_market', '$concept_market_acc$')|l].#!"
+ move_market_capital_lens_option_tooltip: "#header $move_market_capital_lens_option$#!\n$TOOLTIP_DELIMITER$\n#concept Ви можете перемістити [Concept('concept_market_capital', '$concept_market_capital_short_acc$')|l] вашого національного [Concept('concept_market', '$concept_market_gen$')|l].#!"
   

@@ -549,6 +549,7 @@
 
  concept_decentralized_power: "Децентралізована держава"
  concept_decentralized_nation: "Децентралізовані нація"
+ concept_decentralized_nation_acc: "Децентралізовану націю"
  concept_decentralized_nations: "Децентралізовані нації"
  concept_decentralized_nations_ins: "Децентралізованими націями"
  concept_decentralized_nation_desc:1 "A [Concept('concept_country','$concept_country_nation$')] that share most properties of $concept_countries$ - [Concept('concept_pop','$concept_pops$')], a [concept_ruler], [Concept('concept_building','$concept_buildings$')], [Concept('concept_law','$concept_laws$')] and so on - but with a lack of centralized power (and/or will) to enforce borders. This makes them prone to [Concept('concept_colony','$concept_colonization$')] by $concept_countries$ who do not see them as equals to be properly [Concept('concept_diplomatic_play','$concept_diplomatic_play_negotiated$')] with for land rights.\n\n$concept_decentralized_nations$ are AI controlled and are not playable by humans."
@@ -1001,6 +1002,7 @@
 
  concept_literacy: "Грамотність"
  concept_literacy_gen: "Грамотности"
+ concept_literacy_acc: "Грамотність"
  concept_literate: "Грамотн"
  concept_literacy_desc:2 "The percentage or absolute number of individuals in a [concept_pop] who can read and write. Certain [Concept('concept_profession', '$concept_professions$')] demand higher $concept_literacy$ than others, limiting the [concept_pop_qualifications] for $concept_pops$ in other $concept_professions$ unless their $concept_literacy$ is high enough. You can invest in your [SelectLocalization(GetPlayer.IsValid,'concept_literacy_desc_added','Education')] in order to develop higher $concept_literacy$ in your $concept_population$ over time."
  concept_literacy_desc_added:0 "[GetInstitutionType('institution_schools').GetName]"
@@ -1212,7 +1214,7 @@
 
  concept_market: "Ринок"
  concept_market_gen: "Ринку"
- concept_market_acc: "Ринку"
+ concept_market_acc: "Ринок"
  concept_market_loc: "Ринку"
  concept_markets: "Ринки"
  concept_markets_gen: "Ринків"
@@ -1518,6 +1520,7 @@
  concept_budget_goods_for_military_buildings_desc:1 "[Concept('concept_good','$concept_goods$')] [Concept('concept_good_consumption','$concept_good_consumed$')] by a [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_military_building','$concept_military_buildings$')]."
 
  concept_slavery: "Рабство"
+ concept_slavery_gen: "Рабства"
  concept_slaves: "Раби"
  concept_enslaved: "Поневолений"
  concept_enslaved_ins: "Поневоленим"
@@ -1616,6 +1619,7 @@
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED APRIL 1, 2022
 
  concept_supply_network: "Мережа постачання"
+ concept_supply_network_gen: "Мережі постачання"
  concept_supply_network_acc: "Мережу постачання"
  concept_supply_networks: "Мережі постачання"
  concept_supply_network_desc:3 "Every seafaring [concept_country] maintains a $concept_supply_network$ of [concept_convoys] to maintain the transportation needs of their [Concept('concept_shipping_lane','$concept_shipping_lanes$')]. The total strength of your $concept_supply_network$ is determined by comparing the amount of $concept_convoys$ produced to the total [concept_convoy_cost] across all your $concept_shipping_lanes$. This strength is the baseline [Concept('concept_shipping_lane_effectiveness','$concept_shipping_lane_effectiveness_short$')] of all your $concept_shipping_lanes$."

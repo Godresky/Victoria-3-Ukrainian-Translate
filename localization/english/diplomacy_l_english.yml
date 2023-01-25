@@ -6,7 +6,7 @@
  PRESTIGE_FROM_SUBJECT_GDP: "#variable $VALUE|+=$#! завдяки [Concept('concept_gdp', '$concept_gdp_gen$')|l] [Concept('concept_subject', '$concept_subjects_gen$')|l]"
  PRESTIGE_FROM_SUBJECT_ARMY_POWER_PROJECTION: "#variable $VALUE|+=$#! завдяки військової [Concept('concept_power_projection', '$concept_power_projection_gen$')|l] [Concept('concept_subject', '$concept_subjects_gen$')|l]"
  PRESTIGE_FROM_SUBJECT_NAVY_POWER_PROJECTION: "#variable $VALUE|+=$#! завдяки морської [Concept('concept_power_projection', '$concept_power_projection_gen$')|l] [Concept('concept_subject', '$concept_subjects_gen$')|l]"
- PRESTIGE_FROM_GOODS_LEADERBOARDS:1 "#tooltippable #tooltip:[Country.GetTooltipTag],PRESTIGE_FROM_GOODS_LEADERBOARDS_BREAKDOWN #v $VAL|+=$#!#!#! завдяки статусу провідного виробника товарів"
+ PRESTIGE_FROM_GOODS_LEADERBOARDS: "#tooltippable #tooltip:[Country.GetTooltipTag],PRESTIGE_FROM_GOODS_LEADERBOARDS_BREAKDOWN #v $VAL|+=$#!#!#! завдяки статусу провідного виробника товарів"
  PRESTIGE_FROM_GOODS_LEADERBOARDS_BREAKDOWN: "[Country.GetGoodsLeaderboardDesc]"
  NO_PRESTIGE_RANKING: "Ця [concept_country|l] не має [Concept('concept_prestige', '$concept_prestige_gen$')|l] через свій статус #variable $COUNTRY_TYPE$#!"
  ARMY_POWER_PROJECTION_DESC: "#header $ADJECTIVE$а військова [concept_power_projection|l]: $VALUE|v0$#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
@@ -28,10 +28,10 @@
  unrecognized_major_power: "[Concept('concept_unrecognized_power','$concept_unrecognized_major_power$')]"
  unrecognized_major_power_desc: "[concept_unrecognized_power_desc]"
  
- country_humiliated:2 "Humiliated by Rival"
- forced_market_opening:0 "Forced [concept_open_market]"
- forced_slavery_ban:0 "Forced [concept_slavery] Ban"
- forced_regime_change:0 "Forced Regime Change"
+ country_humiliated: "Принижений суперником"
+ forced_market_opening: "Примусове [concept_open_market|l]"
+ forced_slavery_ban: "Примусова заборона [Concept('concept_slavery','$concept_slavery_gen$')|l]"
+ forced_regime_change: "Примусова зміна режиму"
  
  centralized: "Централізована держава"
  colonial: "Осадна держава"
