@@ -179,6 +179,7 @@
  concept_building_acc: "Будівлю"
  concept_buildings: "Будівлі"
  concept_buildings_gen: "Будівель"
+ concept_buildings_aсс: "Будівлі"
  concept_buildings_ins: "Будівлями"
  concept_building_industry:0 "Industry"
  concept_building_industries:0 "Industries"
@@ -1298,8 +1299,11 @@
  concept_profession_desc:2 "A [Concept('concept_pop','$concept_pop_possessive$')] $concept_profession$ determines which role they perform in their [concept_building], how large of a [concept_building_wage] they collect from it, and whether or not they get [Concept('concept_ownership_share','$concept_ownership_shares$')] in it. It also impacts which [Concept('concept_interest_group','$concept_interest_group$')] they're likely to support, how likely they are to remain [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')], and whether they are considered [concept_lower_strata], [concept_middle_strata], or [concept_upper_strata]. To switch $concept_professions$, a $concept_pop$ must have the appropriate [concept_pop_qualifications]."
 
  concept_production_method: "Спосіб виробництва"
+ concept_production_method_gen: "Способу виробництва"
+ concept_production_method_acc: "Спосіб виробництва"
  concept_production_methods: "Способи виробництва"
  concept_production_methods_gen: "Способів виробництва"
+ concept_production_methods_ins: "Способами виробництва"
  concept_production_methods_short: "Способи"
  concept_production_method_desc:3 "$concept_production_methods$ determine how [Concept('concept_building','$concept_buildings$')] operate. They impact\n\n- The [Concept('concept_good_consumption','$concept_input_goods$')] the $concept_building$ must purchase to operate\n- The [Concept('concept_good_production','$concept_output_goods$')] the $concept_building$ produces and sells\n- The distribution of [Concept('concept_profession','$concept_professions$')] among its [concept_workforce]\n\n$concept_production_methods$ can also have other effects, such as the generation of [Concept('concept_modifier','$concept_modifiers$')] or the distribution of [Concept('concept_ownership_share','$concept_ownership_shares$')]. $concept_production_methods$ are organized in groups, in which only one can be active at a time. You can switch which $concept_production_method$ is active in each group as long as you meet the [concept_technology] and/or [concept_law] requirement for it."
 

@@ -739,7 +739,7 @@ pm_steam_rail_transport: "Залізниця"
  pm_modern_canal: "Сучасний водовід"
 
 # Ownership
- pmg_ownership: "Право власності"
+ pmg_ownership: "Право власности"
  pmg_ownership_capital_building_food_industry: "$pmg_ownership$"
  pmg_ownership_capital_building_textile_mills: "$pmg_ownership$"
  pmg_ownership_capital_building_furniture_manufacturies: "$pmg_ownership$"
