@@ -179,7 +179,7 @@
  concept_building_acc: "Будівлю"
  concept_buildings: "Будівлі"
  concept_buildings_gen: "Будівель"
- concept_buildings_aсс: "Будівлі"
+ concept_buildings_acc: "Будівлі"
  concept_buildings_ins: "Будівлями"
  concept_building_industry:0 "Industry"
  concept_building_industries:0 "Industries"
@@ -197,6 +197,7 @@
  concept_diplomatic_play: "Дипломатична гра"
  concept_diplomatic_play_gen: "Дипломатичної гри"
  concept_diplomatic_play_acc: "Дипломатичну гру"
+ concept_diplomatic_play_loc: "Дипломатичній грі"
  concept_diplomatic_play_short: "Гра"
  concept_diplomatic_play_short_gen: "Гри"
  concept_diplomatic_play_short_acc: "Гру"
@@ -223,7 +224,7 @@
  concept_opening_moves: "Початкові дії"
  concept_opening_moves_desc:0 "The $concept_opening_moves$ phase is the first phase of a [concept_diplomatic_play]. In this phase the [concept_target] gets to set their primary  [concept_war_goal], and both [concept_initiator] and $concept_target$ can claim additional [Concept('concept_war_goal', '$concept_war_goals$')] using [Concept('concept_maneuver', '$concept_maneuvers$')]."
 
- concept_diplomatic_maneuvers: "Дипломатичні суви "
+ concept_diplomatic_maneuvers: "Дипломатичні суви"
  concept_diplomatic_maneuvers_desc:0 "The $concept_diplomatic_maneuvers$ phase is the second phase of a [concept_diplomatic_play]. In this phase, the [concept_initiator] and [concept_target] can attempt to [concept_sway] other [Concept('concept_country', '$concept_countries$')] to their side or claim additional [Concept('concept_war_goal', '$concept_war_goals$')] for themselves, at the cost of [Concept('concept_maneuver', '$concept_maneuvers$')]."
 
  concept_countdown_to_war: "Відлік до війни"
@@ -362,6 +363,7 @@
  concept_diplomatic_action: "Дипломатична дія"
  concept_diplomatic_action_acc: "Дипломатичну дію"
  concept_diplomatic_actions: "Дипломатичні дії"
+ concept_diplomatic_actions_acc: "Дипломатичні дії"
  concept_diplomatic_actions_short: "Дії"
  concept_diplomatic_action_desc:2 "A broad term for interactions between two [Concept('concept_country','$concept_countries$')] that includes [Concept('concept_instant_diplomatic_action','$concept_instant_diplomatic_actions$')], [Concept('concept_ongoing_diplomatic_action','$concept_ongoing_diplomatic_actions$')], and [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]. They differ from [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] in that no third party is allowed to have a say in its outcome, and there is no risk the action on its own might escalate into [concept_war]."
 
@@ -414,6 +416,7 @@
  concept_law_gen: "Закону"
  concept_law_acc: "Закон"
  concept_law_loc: "Законі"
+ concept_law_ins: "Законом"
  concept_laws: "Закони"
  concept_laws_gen: "Законів"
  concept_laws_acc: "Закони"
@@ -556,6 +559,11 @@
  concept_decentralized_nation_desc:1 "A [Concept('concept_country','$concept_country_nation$')] that share most properties of $concept_countries$ - [Concept('concept_pop','$concept_pops$')], a [concept_ruler], [Concept('concept_building','$concept_buildings$')], [Concept('concept_law','$concept_laws$')] and so on - but with a lack of centralized power (and/or will) to enforce borders. This makes them prone to [Concept('concept_colony','$concept_colonization$')] by $concept_countries$ who do not see them as equals to be properly [Concept('concept_diplomatic_play','$concept_diplomatic_play_negotiated$')] with for land rights.\n\n$concept_decentralized_nations$ are AI controlled and are not playable by humans."
 
  concept_arable_land: "Рілля"
+ concept_arable_land_gen: "Рілля"
+ concept_arable_land_dat: "Ріллю"
+ concept_arable_land_acc: "Рілля"
+ concept_arable_land_ins: "Ріллем"
+ concept_arable_land_loc: "Ріллі"
  concept_arable_land_desc:1 "The amount of land in a [concept_state] that can be used for cultivating crops or raising cattle. Unlike [Concept('concept_building','$concept_buildings$')] that require certain [Concept('concept_resource_potential','$concept_resource_potentials$')] to be constructed, $concept_arable_land$ must be shared between the $concept_building$ types that require it.\n\nThe amount of $concept_arable_land$ that stands unused by other $concept_buildings$ may be used for [Concept('concept_subsistence_building','$concept_subsistence_buildings$')], letting [Concept('concept_pop','$concept_pops$')] eke out a meager living even if not gainfully employed."
 
  concept_state_region: "Державний регіон"
@@ -589,6 +597,7 @@
  concept_influential_desc:1 "$concept_influential_powerful_common$ An $concept_influential$ $concept_interest_group$'s [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] will have a lesser effect than if they were $concept_powerful$.\n\n$concept_interest_groups$ are considered $concept_influential$ while their $concept_clout$ is below [GetDefine('NPolitics','POWERFUL_IG_THRESHOLD')|%0v]."
 
  concept_marginalized: "Маргіналізовані"
+ concept_marginalized_adj: "Маргіналізован"
  concept_marginalized_feminine_ins: "Маргіналізованою"
  concept_marginalized_desc:2 "$concept_marginalized$ [Concept('concept_interest_group', '$concept_interest_groups$')] have too little [concept_clout] to be politically noteworthy. They cannot be included in the [concept_government], nor do they join [Concept('concept_party','$concept_parties$')]. Their [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] are permanently deactivated for as long as they remain $concept_marginalized$.\n\nAlready $concept_marginalized$ $concept_interest_groups$ remain $concept_marginalized$ for as long as their $concept_clout$ is below [GetDefine('NPolitics','MARGINAL_IG_THRESHOLD')|%0v]. Non-$concept_marginalized$ $concept_interest_groups$ will become $concept_marginalized$ once their $concept_clout$ drops below [GetDefine('NPolitics','MARGINAL_IG_CUTOFF')|%0v], unless they are already [concept_in_government] in which case they do not become $concept_marginalized$ until removed."
  
@@ -1138,6 +1147,7 @@
  concept_war_goal_desc:2 "$concept_war_goals$ are the objectives a [concept_country] is fighting a [concept_war] over. They are determined during the [concept_diplomatic_play] and are fixed after the $concept_war$ has begun. Each $concept_war_goal$ claimed in a [concept_peace_deal] decreases the chance the opponent will accept it, and increases the degree by which their [concept_war_support] must be [Concept('concept_war_exhaustion','$concept_war_exhaustion_exhausted$')] before they will agree.\n\nThe first $concept_war_goal$ claimed as part of the $concept_diplomatic_play$ is considered your $concept_war_goal_primary$, and some $concept_diplomatic_plays$ require it to be included in all $concept_peace_deals$."
 
  concept_resource_potential: "Ресурсна мічність"
+ concept_resource_potential_gen: "Ресурсної мічности"
  concept_resource_potentials: "Ресурсні мічності"
  concept_resource_potentials_short: "Мічність"
  concept_resource_potential_desc:3 "A $concept_resource_potential$ grants the ability to construct and expand a specific [concept_building] type in the state, usually a resource industry such as fisheries, mines, or plantations. The maximum [concept_building_level] you can expand the $concept_building$ to is limited either to a fixed amount per resources, or by the $concept_state$'s amount of [concept_arable_land]."
@@ -1179,9 +1189,10 @@
  concept_declared_interest_desc:2 "If you do not own at least one non-colonial [concept_state] in a [concept_state_region], but wish to maintain an [concept_interest] there anyway, you may choose to $concept_declared_interest_declare$ an $concept_interest$ there. The number of $concept_interests$ you can $concept_declared_interest_declare$ in such $concept_state_regions$ depends on your [concept_rank].[AddLocalizationIf(GetPlayer.IsValid, 'concept_declared_interest_ingame_added')]"
  concept_declared_interest_ingame_added:1 "\n\nYour current number of $concept_declared_interests$ is [GetPlayer.GetNumDeclaredInterests]. Due to your $concept_rank$ of [GetPlayer.GetRank], the most you can $concept_declared_interest_declare$ is #tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#!"
 
- concept_obligation: "В‘яз"
- concept_obligations: "В‘язи"
- concept_obligated: "В‘язиний"
+ concept_obligation: "Зобов‘язання"
+ concept_obligation_acc: "Зобов‘язання"
+ concept_obligations: "Зобов‘язання"
+ concept_obligated: "Зобов‘язан"
  concept_obligation_desc:1 "One [concept_country] can become $concept_obligated$ to another as a result of agreements made during [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] or when one $concept_country$ buys out another's [concept_loans]. While $concept_obligated$ to a $concept_country$ you are unable to start $concept_diplomatic_plays$ against them or even join a $concept_diplomatic_play_short$ on the other side as them. The other $concept_country$ may use an $concept_obligation$ they hold over you to force you into a [concept_diplomatic_pact], or may absolve it to [concept_sway] you into supporting them in a $concept_diplomatic_play$ or increase [concept_relations] with you."
 
  concept_secession: "Розкол"

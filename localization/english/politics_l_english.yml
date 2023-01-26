@@ -41,12 +41,12 @@
  POLITICAL_MOVEMENT_POP_SUPPORT_TOOLTIP:3 "#header [concept_pop] Support#!\nSupported by [PoliticalMovement.GetNumSupportingPops|Dv] [Concept('concept_individual','$concept_individuals$')] across [Concept('concept_pop', '$concept_pops$')]\n$TOOLTIP_DELIMITER$\n[PoliticalMovement.GetNumIGSupporters|Dv] [Concept('concept_individual','$concept_individuals$')] support this [concept_political_movement] because they belong to an [concept_interest_group] that approves of [PoliticalMovement.GetActionName] [PoliticalMovement.GetLaw.GetName]\n[PoliticalMovement.GetNumNonIGSupporters|Dv] [Concept('concept_individual','$concept_individuals$')] support this [concept_political_movement] because they believe [PoliticalMovement.GetActionName] [PoliticalMovement.GetLaw.GetName] improves their [concept_wealth] or [concept_political_strength]\n\nAmong all supporters, [PoliticalMovement.GetNumSupportingRadicals|Dv] are [Concept('concept_radical', '$concept_radicals$')] that contribute [Concept('concept_political_movement_radicalism', '$concept_political_movement_radicalism_short$')] to the movement."
  POLITICAL_MOVEMENT_SUPPORT_THRESHOLDS_DESC:0 "#title Thresholds:#!\n$TAB$Low: #v 0 - 20#!\n$TAB$Medium: #v 20 - 40#!\n$TAB$High: #v 40 - 60#!\n$TAB$Very High: #v 60 - 80#!\n$TAB$#r Extreme#!: #v 80 - 100#!\n$TAB$#r Critical#!: #v 100+#!"
    
- movement_to_enact: "[Concept('concept_political_movement','$concept_political_movement_short$')] за прийняття"
+ movement_to_enact: "[Concept('concept_political_movement','$concept_political_movement_short$')] за ухвалення"
  movement_to_preserve: "[Concept('concept_political_movement','$concept_political_movement_short$')] за збереження"
  movement_to_restore: "[Concept('concept_political_movement','$concept_political_movement_short$')] за відновлення"
   
  POLITICAL_MOVEMENT_FULL_NAME: "[Concept('concept_political_movement','$concept_political_movement_short$')] $MOVEMENT_NAME$"
- POLITICAL_MOVEMENT_TO_ENACT_NAME: "За прийняття [Concept('concept_law','$concept_law_gen$')|l] «[LawType.GetName]»"
+ POLITICAL_MOVEMENT_TO_ENACT_NAME: "За ухвалення [Concept('concept_law','$concept_law_gen$')|l] «[LawType.GetName]»"
  POLITICAL_MOVEMENT_TO_PRESERVE_NAME: "За збереження [Concept('concept_law','$concept_law_gen$')|l] «[LawType.GetName]»"
  POLITICAL_MOVEMENT_TO_RESTORE_NAME: "За відновлення [Concept('concept_law','$concept_law_gen$')|l] «[LawType.GetName]»"
 

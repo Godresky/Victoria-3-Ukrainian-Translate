@@ -146,7 +146,7 @@
  alert_unused_interests_alert_hint: "Ви можете [Concept('concept_declared_interest','$concept_declare_interests$')|l] у [Concept('concept_strategic_region','$concept_strategic_regions_loc$')|l] завдяки [Concept('concept_diplomatic_lens','$concept_diplomatic_lens_dat$')|l]."
  alert_unused_interests_alert_action: "Панель дипломатії"
  
- alert_unproductive_trade_route_alert_name: "[concept_trade_route] «[SCOPE.GetRootScope.GetTradeRoute.GetDescriptionForActingMarket]» непродуктивний"
+ alert_unproductive_trade_route_alert_name: "[concept_trade_route] «[SCOPE.GetRootScope.GetTradeRoute.GetDescriptionForActingMarket]» - непродуктивний"
  alert_unproductive_trade_route_alert_desc: "Ваші торгові центри наразі ведуть торгові тори, які більше не приносять прибутку, вони продовжуватимуть це робити, доки у них є грошові резерви для їх підтримки."
  alert_unproductive_trade_route_alert_hint: "Ви можете скасувати дієві [Concept('concept_trade_route', '$concept_trade_routes$')|l] на будь-якій панелі ринку чи використавши сочку торгівлі. Якщо ви хочете зберегти цей тор, але не маєте інших продуктивних торів для підтримки прибутковости торгових центрів, подумайте про субсидування будівлі." #[Concept('concept_subsidize','$concept_subsidizing$')|l]
  alert_unproductive_trade_route_alert_action: "Панель «[SCOPE.GetRootScope.GetTradeRoute.GetActingMarket.GetName]»"
