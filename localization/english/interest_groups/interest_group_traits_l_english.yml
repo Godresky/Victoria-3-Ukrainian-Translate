@@ -2,64 +2,64 @@
 
   # Landowners IG Traits
  ig_trait_noblesse_oblige: "Шляхетність зобов‘язує"
- ig_trait_noblesse_oblige_desc:0 "We are better than the common folk, which means we have a duty to care for them. Their attempts to organize things for themselves are self-destructive and doomed to failure."
+ ig_trait_noblesse_oblige_desc: "Ми кращі за звичайних людей, а це означає, що ми зобов’язані піклуватися про них. Їхні спроби організувати щось для себе є саморуйнівними та приреченими на поразку."
  ig_trait_family_ties: "Сімейні зв‘язки"
- ig_trait_family_ties_desc:0 "In these changing times, we still know the value of a good marriage. Our connections are older than the borders they surpass and will outlast both alliances and governments."
+ ig_trait_family_ties_desc: "У ці мінливі часи ми все ще знаємо цінність хорошого шлюбу. Наші зв’язки старші за кордони, які вони перетинають, і переживуть як альянси, так і уряди."
  ig_trait_noble_privileges: "Дворянські привілеї"
- ig_trait_noble_privileges_desc:0 "Whatever happened to the idea that the nobility should be left to perform its duties without being hounded by tax collectors? It is time to bring those days back."
+ ig_trait_noble_privileges_desc: "Що трапилося з ідеєю про те, що шляхту слід залишити виконувати свої обов’язки, не переслідуючи її збирачами податків? Пора повернути ті дні."
 
   # Industrialists IG Traits
  ig_trait_job_creators: "Творці робочих місць"
- ig_trait_job_creators_desc:0 "One must spend money to make money. As long as the government can be trusted not to interfere with our investments, there's nowhere we'd rather put our profits than towards economic growth."
+ ig_trait_job_creators_desc: "Треба витрачати гроші, щоб заробити гроші. Поки уряд, втручається у наші інвестиції, краще направив наші прибутки на економічне зростання."
  ig_trait_engines_of_progress: "Рушії поступу"
- ig_trait_engines_of_progress_desc:0 "Behold the marvels of the modern age! There is no time for hesitation. If it can be thought, designed and patented, it should be built, tested and put to immediate use."
+ ig_trait_engines_of_progress_desc: "Погляньте на дива сучасності! Часу на вагання немає. Якщо це можна придумати, спроектувати та запатентувати, його слід створити, перевірити та негайно використовувати."
  ig_trait_tax_avoidance: "Уникнення сплати податків"
- ig_trait_tax_avoidance_desc:0 "Who knows best where our money should be spent? Not the government, and certainly not the current one. Fortunately, their incompetence has left tax loopholes that can be put to good use."
+ ig_trait_tax_avoidance_desc: "Хто найкраще знає, куди мають бути витрачені наші гроші? Не уряд, і вже точно не нинішній. На щастя, їхня некомпетентність залишила податкові лазівки, якими можна з користю скористатися."
 
   # Armed Forces IG Traits
  ig_trait_patriotic_fervor: "Патріотичний запал"
- ig_trait_patriotic_fervor_desc:0 "No matter how brilliant the strategy and how advanced the weapons, some battles can only be won with hard work and guts. Soldiers who truly believe in what their country stands for will fight bravely regardless of the odds."
+ ig_trait_patriotic_fervor_desc: "Незалежно від того, наскільки блискучою є стратегія та наскільки передовою зброя, деякі битви можна виграти лише важкою працею та мужністю. Солдати, які справді вірять у те, що стоїть за їхньою країною, боротимуться відважно, незважаючи на труднощі."
  ig_trait_veteran_consultation: "Консультація ветеранів"
- ig_trait_veteran_consultation_desc:0 "Technological advancements are changing the face of war, but we can only make use of them if we understand how. Fortunately, those of us with firsthand experience should have an idea."
+ ig_trait_veteran_consultation_desc: "Технологічний прогрес змінює обличчя війни, але ми можемо скористатися цим, лише якщо зрозуміємо, як це зробити. На щастя, ті з нас, хто має нажитий досвід війн, повинні мати певні ідеї."
  ig_trait_materiel_waste: "Марні витрати"
- ig_trait_materiel_waste_desc:0 "Loyalty to the nation is not loyalty to the government. If we can't trust the people in charge, we might as well use what we're given as we see fit."
+ ig_trait_materiel_waste_desc: "Вірність наріду – це не вірність до уряду. Якщо ми не можемо довіряти відповідальним людям, ми можемо використовувати дане нам, як вважаємо за потрібне."
 
   # Rural Folk IG Traits
  ig_trait_farmers_markets: "Хутірницькі ринки"
- ig_trait_farmers_markets_desc:0 "Getting the goods we produce out to the people who need them seems to be a big concern these days. Under good circumstances, we're quite capable of getting them where they need to be ourselves."
+ ig_trait_farmers_markets_desc: "Доставка товарів, які ми виробляємо, до людей, які їх потребують, нині здається серйозною проблемою. За сприятливих обставин ми цілком спроможні доставити їх туди, куди вони мають бути доставлені."
  ig_trait_honest_work: "Чесна праця"
- ig_trait_honest_work_desc:0 "We make our living by honest work and honest sweat. If that means we produce more than we need, so much better."
+ ig_trait_honest_work_desc: "Ми заробляємо на життя чесною працею і чесним потом. Якщо це означає, що ми виробляємо більше, ніж повинні, то тим ліпше."
  ig_trait_old_ways: "Старі тори"
- ig_trait_old_ways_desc:0 "These people running the country seem to have all sorts of ideas about what the future should look like. Why should we trust them when they're the ones who made the present what it is?"
+ ig_trait_old_ways_desc: "Здається, ці люди, які керують державою, мають усілякі уявлення про те, яким має бути наше майбутнє. Чому ми повинні їм довіряти, коли саме вони зробили сьогодення таким, яким воно є?"
 
   # Trade Unions IG Traits
  ig_trait_solidarity: "Солідарність"
- ig_trait_solidarity_desc:0 "All those who want work should have work! No one will be excluded or left out. We must support each other's right to fairly compensated labor."
+ ig_trait_solidarity_desc: "Усі, хто хоче працювати, повинні мати роботу! Ніхто не буде виключений або полишений. Ми повинні підтримувати право один одного на справедливо оплачувану працю."
  ig_trait_industrial_organizers: "Промислові організатори"
- ig_trait_industrial_organizers_desc:0 "No matter who is in charge, the way workers collaborate ultimately has a larger impact on how well a factory works than any rules handed down from on high."
+ ig_trait_industrial_organizers_desc: "Незалежно від того, хто керує, те, як працівники співпрацюють, зрештою, має більший вплив на те, наскільки добре працює рукоділля, ніж будь-які правила, передані згори."
  ig_trait_work_to_rule: "Італійський страйк"
- ig_trait_work_to_rule_desc:0 "It seems like the people in charge want us to just shut up and do what we're told rather than think for ourselves. Let's see how they like it if we actually apply that philosophy to our 'unskilled' labor."
+ ig_trait_work_to_rule_desc: "Здається, що відповідальні люди хочуть, щоб ми просто замовкли і робили те, що нам говорять, а не думали самостійно. Подивимося, як їм це сподобається, якщо ми дійсно замовкнемо, але стосовно  нашої 'некваліфікованої' праці."
 
   # Intelligentsia IG Traits
  ig_trait_propagandists: "Пропаґандисти"
- ig_trait_propagandists_desc:0 "In our poetry, our letters and our political manifestos, we must above all uphold the progress achieved in our home country as an example of what this new age has to bring to less fortunate parts of the world."
+ ig_trait_propagandists_desc: "У нашій поезії, наших листах і наших політичних маніфестах ми повинні передусім підтримувати прогрес, досягнутий у нашій рідній державі, як приклад того, що наше громадянство може дати іншоземцям."
  ig_trait_avant_garde: "Авангард"
- ig_trait_avant_garde_desc:0 "What others dare not even think, we will already be speaking aloud. Our art and ideas will cut directly to hearts and force open eyes, if not in astonishment, then in shock!"
+ ig_trait_avant_garde_desc: "Те, про що інші не сміють навіть подумати, ми будемо говорити вголос. Наше мистецтво та ідеї вразять серця і змусять відкрити очі якщо не в подиві, то в шоці!"
  ig_trait_social_criticism: "Соціокритика"
- ig_trait_social_criticism_desc:0 "People in power often think they are beyond reproach, but authority does not make someone's ideas interesting. We have a lot of interesting things to say, and we know exactly who to say them about."
+ ig_trait_social_criticism_desc: "Люди при владі часто думають, що вони бездоганні, але влада не робить чиїсь ідеї ідеальними. У нас є багато цікавого, що можна розказати, і ми точно знаємо про кого."
 
   # Petite-Bourgeoisie IG Traits
  ig_trait_treasury_bonds: "Казначейські зобов‘язання"
- ig_trait_treasury_bonds_desc:0 "As long as the government can be trusted to pay its debts, putting our hard-earned savings towards funding this great nation is not only patriotic, but a good investment."
+ ig_trait_treasury_bonds_desc: "Поки можна довіряти уряду, який сплачуватиме свої борги, вкладання наших важко зароблених заощадженнь на фінансування в користь цієї великої нації є не лише патріотизмом, але й гарним вкладенням."
  ig_trait_middle_managers: "Розпорядники середньої верстви"
- ig_trait_middle_managers_desc:0 "We can't make everyone do everything by the book, but we can at least keep what's done on the books. Someone needs to remember the proper way to do things around here."
+ ig_trait_middle_managers_desc: "Ми не можемо змусити всіх робити все згідно з підручниками, але ми можемо принаймні зберегти те, що нашкрябано в підручниках. Люди мають пам’ятати, як тут правильно діяти."
  ig_trait_xenophobia: "Ксенофобія"
- ig_trait_xenophobia_desc:0 "We all know who's to blame for the state of our country, people are just afraid to say it. Meanwhile, they're laughing behind our backs at what we let them get away with. Someone needs to act."
+ ig_trait_xenophobia_desc: "Ми всі знаємо, хто винен у стані нашої країни, просто люди бояться про це говорити. А тим часом вони сміються за нашими спинами з того, що ми їм дозволили зійти з рук. Хтось має діяти."
 
   # Devout IG Traits
  ig_trait_be_fruitful_and_multiply: "Плодючість та розмноження"
- ig_trait_be_fruitful_and_multiply_desc:0 "Asceticism is fine for the few who dedicate their life to spiritual pursuits, but in the common people, the most important values to instill are those of building a family and caring for children."
+ ig_trait_be_fruitful_and_multiply_desc: "Аскетизм підходить для тих небагатьох, хто присвячує своє життя духовним пошукам, але для простих людей найважливішими цінностями, які слід прищепити, є побудова сім’ї та турбота про дітей."
  ig_trait_divine_right: "Боже право"
- ig_trait_divine_right_desc:0 "We believe that there is an order to our lives. Society can reflect that order better or worse. As long as the rulers are virtuous and their decrees just, we can ensure the people know why."
+ ig_trait_divine_right_desc: "Ми віримо в те, що в нашому житті є порядок. Суспільство може відображати цей порядок краще чи гірше. Поки правителі чеснотні, а їхні укази справедливі, ми можемо переконатися, що люди знають, чому."
  ig_trait_pious_fiction: "Побожна література"
- ig_trait_pious_fiction_desc:0 "The values of today are so poisoned and the literature so corrupting that education itself has an eroding effect on morals. Better than teaching people whatever the current establishment considers 'true' is to teach them what ought to be true."
+ ig_trait_pious_fiction_desc: "Сучасні цінності настільки отруєні, а література настільки розбещена, що сама освіта руйнує мораль. Ніж вчити людей тому, що нинішній уряд вважає «істинним», краще вчити їх тому, що є правдою."
