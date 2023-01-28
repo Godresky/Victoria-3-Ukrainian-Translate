@@ -15,7 +15,7 @@
  concept_economy_health_unhealthy: "Нездорова економіка"
  concept_economy_health_unhealthy_short: "Нездорова"
  concept_economy_health_unhealthy_short_je: "Нездоровою"
- concept_economy_health_desc: "Економіка [Concept('concept_country','$concept_country_gen$')|l] вважається здоровою, якщо #italic будь-що з наступного#!:\n$TAB$@green_checkmark_box! її постійні прибутки перевищують постійні витрати\n$TAB$@green_checkmark_box! її [concept_principal] становить менше половини їх загальної кількості [concept_credit]"
+ concept_economy_health_desc: "Економіка [Concept('concept_country','$concept_country_gen$')|l] вважається здоровою, якщо #italic будь-що з наступного#!:\n$TAB$@green_checkmark_box! її постійні прибутки перевищують постійні витрати\n$TAB$@green_checkmark_box! її [concept_principal] становить менше половини їхньої загальної кількості [concept_credit]"
 
  concept_bankroll: "$bankroll$"
  concept_bankrolling:0 "Bankrolling"
@@ -44,6 +44,7 @@
  concept_overlord_desc:0 "The dominant [concept_country] in a [concept_subject] relationship, who derive a number of benefits from the [concept_diplomatic_pact] while (usually) having to pay [concept_influence] for it."
 
  concept_great_power: "Велика держава"
+ concept_great_power_ins: "Великою державою"
  concept_great_powers: "Великі держави"
  concept_great_power_desc:3 "Those few [Concept('concept_country', '$concept_countries$')] that run the world through global empires or absolute local dominance are considered to be $concept_great_power$ [concept_rank]. They are in a constant standoff with other $concept_great_powers$ for an edge, and always wary of plucky [Concept('concept_major_power','$concept_major_powers$')] trying to ascend to greatness at their expense.[AddLocalizationIf(GetPlayer.IsValid,'concept_great_power_desc_added')]"
  concept_great_power_desc_added:0 "\n\n$concept_great_powers$ gain the following benefits:\n[GetRankModifier('great_power').GetDesc]"
@@ -85,7 +86,9 @@
  concept_puppet_desc:2 "[Concept('concept_recognized_power','$concept_recognized_powers$')] may turn a weaker [concept_country] into their $concept_puppet$. A $concept_puppet$ is a [concept_subject] type that cannot start their own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] yet are forced to join their [Concept('concept_overlord','$concept_overlord_possessive$')] [Concept('concept_war','$concept_wars$')], and must also pay #v 20%#! of their [concept_treasury] income to their $concept_overlord$ each week. A $concept_puppet$'s [concept_rank] cannot increase to match or exceed their $concept_overlord$'s, and their $concept_overlord$ may target them with the #b Annexation#! $concept_diplomatic_play$."
  
  concept_personal_union: "Особиста унія"
+ concept_personal_union_dat: "Особистій унії"
  concept_personal_union_acc: "Особисту унію"
+ concept_personal_union_short: "Унія"
  concept_personal_union_desc:4 "Two [Concept('concept_country', '$concept_countries$')] with the [SelectLocalization(GetPlayer.IsValid,'concept_personal_union_desc_added','Monarchy')] [concept_law] may be joined together in a $concept_personal_union$, a [concept_subject] relationship where the [Concept('concept_overlord','$concept_overlord_possessive$')] [concept_ruler] is the [concept_head_of_state] in both $concept_countries$. The subject cannot start their own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')], yet are forced to join their $concept_overlord$'s [Concept('concept_war','$concept_wars$')]. The [concept_diplomatic_pact] will break if the $concept_overlord$ abolishes the $law_monarchy$."
  concept_personal_union_desc_added:0 "[GetLawType('law_monarchy').GetName]"
 
@@ -161,6 +164,7 @@
 
  concept_expected_sol: "Очікуваний мінімум рівня життя"
  concept_expected_sol_short: "Очікуваний мінімум"
+ concept_expected_sol_short_gen: "Очікуваного мінімуму"
  concept_expected_sol_desc:0 "$concept_expected_sol$ is the lowest [concept_sol] that a [concept_pop] is willing to tolerate. This number is based on whether the $concept_pop$ is [concept_lower_strata], [concept_middle_strata], or [concept_upper_strata] and adjusted by [concept_literacy], and can be modified by certain [Concept('concept_technology', '$concept_technologies$')]. If a $concept_pop$ has a lower $concept_sol$ than the $concept_expected_sol_short$ they will gradually become more [concept_radical]. $concept_pops$ with a $concept_sol$ above the $concept_expected_sol_short$ will still become more $concept_radical$ each time their $concept_sol$ is reduced."
 
  concept_pop_growth: "Ріст населення"
@@ -181,6 +185,7 @@
  concept_buildings_gen: "Будівель"
  concept_buildings_acc: "Будівлі"
  concept_buildings_ins: "Будівлями"
+ concept_buildings_loc: "Будівлях"
  concept_building_industry:0 "Industry"
  concept_building_industries:0 "Industries"
  concept_building_possessive:1 "Building\\'s"
@@ -217,8 +222,8 @@
  concept_confidence:0 "Confidence"
  concept_confidence_desc:0 "An AI-controlled [Concept('concept_country','$concept_countries$')] that is one of the main participants in a [concept_diplomatic_play] has a level of of $concept_confidence$ based on their internal conditions and how likely they believe it is that they will be able to win any ensuing war. The chance that the AI [concept_country] will decide to back down is directly determined by their confidence, though this is not guaranteed even at low $concept_confidence$ levels, especially if backing down would lead to their annexation."
 
- concept_maneuver:0 "Maneuver"
- concept_maneuvers:1 "Maneuvers"
+ concept_maneuver: "Маневр"
+ concept_maneuvers: "Маневри"
  concept_maneuver_desc:3 "$concept_maneuvers$ can be spent on taking actions in a [concept_diplomatic_play], including claiming additional [Concept('concept_war_goal', '$concept_war_goals$')] or [Concept('concept_sway','$concept_swaying$')] other [Concept('concept_country', '$concept_countries$')] to your side. The amount of $concept_maneuvers$ you have is limited by your [concept_rank]."
  
  concept_opening_moves: "Початкові дії"
@@ -712,6 +717,7 @@
 
  concept_legitimacy: "Законність"
  concept_legitimacy_gen: "Законности"
+ concept_legitimacy_acc: "Законність"
  concept_legitimate: "Законний"
  concept_legitimacy_desc:1 "A [Concept('concept_government','$concept_government_possessive$')] $concept_legitimacy$ measures how well the composition of the [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_government] fits with the [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_law', '$concept_laws$')]. The lower the $concept_legitimacy$, the longer the time between attempts to [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enact$')] new $concept_laws$. Raising or lowering [concept_taxes] also has an impact on $concept_legitimacy$."
 
@@ -726,6 +732,7 @@
 
  concept_ownership_share: "Частка власности"
  concept_ownership_shares: "Частки власности"
+ concept_ownership_shares_acc: "Частки власности"
  concept_ownership_share_desc:1 "[Concept('concept_pop','$concept_pops$')] with $concept_ownership_shares$  in their [concept_building] gain a portion of its [Concept('concept_building_balance','$concept_building_balance_profit$')] as [concept_pop_income], in the form of [concept_dividends]. The amount they receive is based on their share of the $concept_building$'s total $concept_ownership_shares$. The $concept_pop$ is also considered to own that proportion of the $concept_building$'s current [concept_cash_reserves]. How $concept_ownership_shares$ are apportioned across the $concept_building$'s [concept_workforce] is determined by its $pmg_ownership$ [Concept('concept_production_method', '$concept_production_methods$')], which are strictly limited by [Concept('concept_law', '$concept_laws$')]."
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MAY 3, 2022
@@ -739,9 +746,10 @@
  concept_default: "Неплатоспроможність"
  concept_default_desc:4 "Once the [concept_treasury] accumulates [concept_loans] large enough that they exceed the [Concept('concept_country','$concept_country_possessive$')] total [concept_credit], the $concept_country$ is considered to be in $concept_default$. This will pause all ongoing [concept_construction] and will have a negative impact on the [concept_throughput] of [Concept('concept_building', '$concept_buildings$')], growing more severe as time passes. Penalties are removed as soon as the $concept_country$'s weekly balance becomes positive again, or if [concept_bankruptcy] is declared."
 
- concept_bankruptcy: "Звід"
- concept_bankruptcy_acc: "Звід"
- concept_bankruptcy_ins: "Зводом"
+ concept_bankruptcy: "Банкротство"
+ concept_bankruptcy_gen: "Банкротства"
+ concept_bankruptcy_acc: "Банкротство"
+ concept_bankruptcy_ins: "Банкротством"
  concept_bankruptcy_desc:2 "If a [concept_country] is in [concept_default] and unable to pay back its [concept_loans], it may opt to declare $concept_bankruptcy$. This will clear the debt but wipe out all [concept_cash_reserves] the $concept_country$ had borrowed from, and will greatly anger any [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_shares$')].[AddLocalizationIf(GetPlayer.IsValid,'concept_bankruptcy_desc_added')] "
  concept_bankruptcy_desc_added:0 "In addition, the following effects are applied for #v [GetDefine('NEconomy','DECLARE_BANKRUPTCY_PENALTY_DURATION_YEARS')|0] years#!:\n[GetStaticModifier('declared_bankruptcy').GetDesc]"
 
@@ -1157,9 +1165,11 @@
  concept_government: "Уряд"
  concept_government_gen: "Уряду"
  concept_government_dat: "Урядові"
+ concept_government_loc: "Уряді"
  concept_governments: "Уряди"
  concept_governments_gen: "Урядів"
  concept_governments_dat: "Урядам"
+ concept_governments_loc: "Урядах"
  concept_government_possessive:0 "Government\\'s"
  concept_government_desc:1 "A [Concept('concept_country','$concept_country_possessive$')] $concept_government$ consists of one or several [Concept('concept_interest_group','$concept_interest_groups$')]. If the $concept_country$ has [Concept('concept_votes','$concept_voting_rights$')] these $concept_interest_groups$ may be organized into [Concept('concept_party','$concept_parties$')]. Depending on the $concept_country$'s [Concept('concept_law','$concept_laws$')], this mix of $concept_interest_groups$ will result in higher or lower $concept_government$ [concept_legitimacy].\n\nAny new $concept_law$ you wish to [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enact$')] must have some support among $concept_interest_groups$ that make up the $concept_government$, unless it is supported by an active [concept_political_movement]. The ability to quickly and painlessly push the $concept_law$ through the legislature depends on how unified the $concept_government$'s support of it is."
 
@@ -1307,7 +1317,9 @@
  concept_pop_desc:3 "The world's population are organized into $concept_pops$, groups of individuals who work in the same [concept_building] as a certain [concept_profession], and share the same [concept_culture] and [concept_religion]. They use the [Concept('concept_pop_income','$concept_pop_income_short$')] they earn to buy [Concept('concept_good', '$concept_goods$')] to satisfy their [Concept('concept_pop_needs','$concept_pop_needs_short$')], which decides their [concept_wealth] and [concept_sol]. They can support [Concept('concept_interest_group', '$concept_interest_groups$')] and [Concept('concept_political_movement','$concept_political_movements$')], or be [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')]. A $concept_pop$ has a number of [concept_working_adults] and a number of [concept_dependents]. Some number of them are [Concept('concept_literacy','$concept_literate$')], and they might have a number of either [Concept('concept_loyalist','$concept_loyalists$')] or [Concept('concept_radical','$concept_radicals$')]."
 
  concept_profession: "Ремесло"
+ concept_profession: "Ремесло"
  concept_profession_jobs: "Робота"
+ concept_profession_jobs_gen: "Роботи"
  concept_professions: "Ремесла"
  concept_profession_desc:2 "A [Concept('concept_pop','$concept_pop_possessive$')] $concept_profession$ determines which role they perform in their [concept_building], how large of a [concept_building_wage] they collect from it, and whether or not they get [Concept('concept_ownership_share','$concept_ownership_shares$')] in it. It also impacts which [Concept('concept_interest_group','$concept_interest_group$')] they're likely to support, how likely they are to remain [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')], and whether they are considered [concept_lower_strata], [concept_middle_strata], or [concept_upper_strata]. To switch $concept_professions$, a $concept_pop$ must have the appropriate [concept_pop_qualifications]."
 
@@ -1433,6 +1445,7 @@
  concept_law_group_desc:3 "A $concept_law_group$ contains several [Concept('concept_law', '$concept_laws$')] that affect aspects of the [concept_country] in different ways. Each $concept_law_group$ can only have one $concept_law$ active at a time."
 
  concept_government_reform: "Урядова зміна"
+ concept_government_reform_acc: "Урядову зміну" 
  concept_government_reform_short: "Зміна"
  concept_government_reform_desc:0 "During a $concept_government_reform$ you may alter the composition of your [concept_government] freely by granting or removing [Concept('concept_interest_group','$concept_interest_groups$')] and/or [Concept('concept_party','$concept_parties$')] from power. $concept_interest_groups$ removed from power during such a $concept_government_reform_short$ will gain [Concept('concept_radical','$concept_radicals$')], unless the $concept_government_reform_short$ is performed shortly after a concluded $concept_election$."
 
@@ -1539,9 +1552,9 @@
  concept_slavery: "Рабство"
  concept_slavery_gen: "Рабства"
  concept_slaves: "Раби"
+ concept_slaves_gen: "Рабів"
  concept_enslaved: "Поневолений"
- concept_enslaved_ins: "Поневоленим"
- concept_enslaved_many: "Поневолені"
+ concept_enslaved_adj: "Поневолен"
  concept_slavery_desc:3 "A practice where one person is permitted legal ownership over another. [SelectLocalization(GetPlayer.IsValid,'concept_slavery_desc_added', 'Slaves')] will be substituted for other [Concept('concept_pop','$concept_pops$')] in different [concept_building] types based on the [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_law','$concept_laws$')]. $concept_laws$ also determine how existing $concept_pops$ become $concept_enslaved$ and how $concept_slaves$ are uprooted and transported to the $concept_country$."
  concept_slavery_desc_added:0 "[GetPopType('slaves').GetName]"
 
@@ -1689,7 +1702,7 @@
  concept_popularity_desc:2 "The $concept_popularity$ of a [concept_character] measures the willingness of [Concept('concept_pop','$concept_pops$')] to follow them. $concept_popularity$ can have different effects depending on the $concept_character$'s [concept_character_role]."
 
  concept_momentum: "Імпульс"
- concept_momentum_desc: "Показує успіх [Concept('concept_election','$concept_election_adj$ої')|l] кампанії [Concept('concept_party','$concept_party_gen$')|l]. $concept_momentum$ збільшує кількість [Concept('concept_votes','$concept_votes_gen$')|l] партії перед днем виборів, а після чого анулюється. На імпульс може вплинути випадковість, спеціяльні події та [concept_popularity|l] їх [Concept('concept_party_leader','$concept_party_leader_gen$')|l]."
+ concept_momentum_desc: "Показує успіх [Concept('concept_election','$concept_election_adj$ої')|l] кампанії [Concept('concept_party','$concept_party_gen$')|l]. $concept_momentum$ збільшує кількість [Concept('concept_votes','$concept_votes_gen$')|l] партії перед днем виборів, а після чого анулюється. На імпульс може вплинути випадковість, спеціяльні події та [concept_popularity|l] їхнього [Concept('concept_party_leader','$concept_party_leader_gen$')|l]."
 
  concept_government_expenses: "Державні витрати"
  concept_government_expenses_short: "Витрати"
@@ -1863,6 +1876,7 @@
  concept_political_movement_support_desc:1 "The $concept_political_movement_support_short$ of a [concept_political_movement] is based on the [concept_political_strength] of its supporting  [Concept('concept_pop','$concept_pops$')]. A $concept_political_movement$ with a high degree of $concept_political_movement_support_short$ increases the [concept_enactment_success] chance if you pursue the [concept_law] they desire, or reduces it if they oppose it. Should the $concept_political_movement$ lead to a [concept_revolution], $concept_political_movement_support$ will determine how many [Concept('concept_state','$concept_states$')] it will start with."
 
  concept_political_movement: "Політичний рух"
+ concept_political_movement_gen: "Політичного руху"
  concept_political_movement_short: "Рух"
  concept_political_movement_short_gen: "Руху"
  concept_political_movements_short: "Рухи"

@@ -2,7 +2,7 @@
  aristocrats: "@aristocrats! $aristocrats_no_icon$"
  aristocrats_only_icon: "@aristocrats!"
  aristocrats_no_icon: "Вельможі"
- aristocrats_desc: "Заможні пани, старі багатії зі старими зв’язками. Як власники хуторів і полищ, вони вносять частину своїх прибутків до [Concept('concept_investment_pool', '$concept_investment_pool_loc$')|l]. Їх політичні інтереси представлені землевласниками."
+ aristocrats_desc: "Заможні пани, старі багатії зі старими зв’язками. Як власники хуторів і полищ, вони вносять частину своїх прибутків до [Concept('concept_investment_pool', '$concept_investment_pool_loc$')|l]. Їхні політичні інтереси представлені землевласниками."
  bureaucrats: "@bureaucrats! $bureaucrats_no_icon$"
  bureaucrats_only_icon: "@bureaucrats!"
  bureaucrats_no_icon: "Бюрократи"

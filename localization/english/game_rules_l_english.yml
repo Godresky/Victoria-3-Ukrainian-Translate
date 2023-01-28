@@ -49,11 +49,11 @@
  
  rule_monument_effects: "Заподії пам‘яток"
  setting_allow_monument_effects: "Увімкнені"
- setting_allow_monument_effects_desc: "[Concept('concept_monument', '$concept_monuments$')] можуть створювати багато різних ефектів залежно від їх природи, а іноді дає робочі місця [Concept('concept_pop', '$concept_pops_dat$')|l]."
+ setting_allow_monument_effects_desc: "[Concept('concept_monument', '$concept_monuments$')] можуть давати багато різних заподій залежно від їхньої природи, а іноді вони дають робочі місця [Concept('concept_pop', '$concept_pops_dat$')|l]."
  setting_prestige_only_monument_effects: "Тільки престиж"
  setting_prestige_only_monument_effects_desc: "Усі [Concept('concept_monument', '$concept_monuments$')|l] дають певну кількість [Concept('concept_prestige', '$concept_prestige_gen$')|l] для цієї держави. $concept_monument$ не дає робочі місця [Concept('concept_pop', '$concept_pops_dat$')|l]."
  setting_no_monument_effects: "Вимкнені"
- setting_no_monument_effects_desc: "[Concept('concept_monument', '$concept_monuments$')]мають виключно декоративний характер. Винагорода за їх створення суто візуальна."
+ setting_no_monument_effects_desc: "[Concept('concept_monument', '$concept_monuments$')] мають виключно декоративний характер. Винагорода за їхнє створення суто візуальна."
 
  DELETE_SELECTED_PRESET_BUTTON_TOOLTIP: "Видалити цей преднабір"
  SAVE_PRESET_BUTTON_TOOLTIP: "Зберегти цей преднабір"

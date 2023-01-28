@@ -6,7 +6,7 @@
 
  alert_country_default_name: "Оголошена [concept_default|l]"
  alert_country_default_desc: "[GetPlayer.GetName] оголосила [concept_default|l] через те, що ми не можемо повернути ваші кредити. Поки ми не зможемо досягти позитивного балансу, ми будемо зазнавати карн, які з часом ставатимуть дедалі суворішими.\n\n#title Поточні заподії:#!\n[GetPlayer.GetInDefaultEffectsDesc]"
- alert_country_default_hint: "Ви можете покращити своє матеріяльне становище, збільшивши прибутки або зменшивши витрати. Щоб збільшити свій прибуток у короткостроковій перспективі, ви можете підвищити поточну ставку податку, почати стягувати нові податки на споживання чи підвищити тарифи для отримання нових прибутків. Щоб зменшити свої витрати, ви можете зменшити заробітну плату у своїх військових або державних будівлях, знизити ціни на товари, які вони споживають чи призупинити будівництво, доки ваші фінанси не відновляться. Якщо нічого з цього недостатньо, то у вас також є можливість оголосити про [Concept('concept_bankruptcy','$concept_bankruptcy_ins$')|l]"
+ alert_country_default_hint: "Ви можете покращити своє матеріяльне становище, збільшивши прибутки або зменшивши витрати. Щоб збільшити свій прибуток у короткостроковій перспективі, ви можете підвищити поточну ставку податку, почати стягувати нові податки на споживання чи підвищити тарифи для отримання нових прибутків. Щоб зменшити свої витрати, ви можете зменшити заробітну плату у своїх військових або державних будівлях, знизити ціни на товари, які вони споживають чи призупинити будівництво, доки ваші фінанси не відновляться. Якщо нічого з цього недостатньо, то у вас також є можливість оголосити про [Concept('concept_bankruptcy','$concept_bankruptcy_acc$')|l]"
  alert_country_default_action: "Панель бюджету"
 
  alert_is_construction_paused_name: "Будівництво призупинено"
@@ -71,7 +71,7 @@
  alert_wasted_construction_action: "Панель будівництва"
 
  alert_isolated_state_alert_name: "[Concept('concept_state', '$concept_state$')] [SCOPE.GetRootScope.GetState.GetName] є [Concept('concept_isolated_state', '$concept_isolated_state_short_adj$им')|l]"
- alert_isolated_state_alert_desc: "[Concept('concept_isolated_state', '$concept_isolated_state$')] не дозволяє населенню закуповувати та продавати товари на більшому ринку, вони отримують ресурси, які їм потрібні, безпосередньо з регіону, але це має значний вплив на їх [Concept('concept_sol', '$concept_sol_acc$')|l] через зміни цін."
+ alert_isolated_state_alert_desc: "[Concept('concept_isolated_state', '$concept_isolated_state$')] не дозволяє населенню закуповувати та продавати товари на більшому ринку, вони отримують ресурси, які їм потрібні, безпосередньо з регіону, але це має значний вплив на їхнє [Concept('concept_sol', '$concept_sol_acc$')|l] через зміни цін."
  alert_isolated_state_alert_hint: "Ви можете з‘єднати [Concept('concept_state', '$concept_state_acc$')|l] [SCOPE.GetRootScope.GetState.GetName] до [Concept('concept_market', '$concept_market_gen$')|l] ([SCOPE.GetRootScope.GetState.GetMarket.GetName]), збільшивши рівень [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l] за допомогою зведення будівель, які її покращують. Наприклад, приплав, чи залізниця, чи ухваливши [Concept('concept_decree', '$concept_decree_acc$')|l] #v «$decree_road_maintenance$»#! [concept_decree]." #[concept_infrastructure]
  alert_isolated_state_alert_action: "Панель регіону [SCOPE.GetRootScope.GetState.GetName]"
 
@@ -92,7 +92,7 @@
 
  alert_insurrectionary_alert_name: "Назріває [concept_revolution|l]"
  alert_insurrectionary_alert_desc: "Існують зацікавлені партизанські групи, які плянують [Concept('concept_revolution','$concept_revolutions_acc$')|l] у вашій державі:\n\n#title Зацікавлені партизанські групи:#!\n[GetPlayer.GetInsurrectionaryIGsDesc]"
- alert_insurrectionary_alert_hint: "Ви можете дерадикалізувати їх, збільшивши їх схвалення, за допомогою надання чинности [Concept('concept_law', '$concept_laws_dat$')|l], які вони підтримують (чи зупинити надання сили законам, які вони не підтримують)."
+ alert_insurrectionary_alert_hint: "Ви можете дерадикалізувати їх, збільшивши їхнє схвалення, за допомогою надання чинности [Concept('concept_law', '$concept_laws_dat$')|l], які вони підтримують (чи зупинити надання сили законам, які вони не підтримують)."
  alert_insurrectionary_alert_action: "Панель політики"
 
  alert_secession_growing_alert_name: "Назріває [Concept('concept_secession', '$concept_secession_adj$ий')|l] рух"
@@ -133,7 +133,7 @@
 
  alert_stockpiling_gold_alert_name: "[GetGoods('gold').GetTextIcon] [GetGoods('gold').GetName] накопичується"
  alert_stockpiling_gold_alert_desc: "Ваше [concept_treasury|l] накопичує забагато золота."
- alert_stockpiling_gold_alert_hint: "Збільште свої витрати або зменшіть прибутки, щоб краще збалансувати свій бюджет. Накопичення золота витягує @money![concept_money|l] з вашої економіки, а [Concept('concept_pop', '$concept_population$')|l] буде мати менше прибутків, що з часом призводе до падіння їх [Concept('concept_wealth', '$concept_wealth_gen$')|l]."
+ alert_stockpiling_gold_alert_hint: "Збільште свої витрати або зменшіть прибутки, щоб краще збалансувати свій бюджет. Накопичення золота витягує @money![concept_money|l] з вашої економіки, а [Concept('concept_pop', '$concept_population$')|l] буде мати менше прибутків, що з часом призводе до падіння їхнього [Concept('concept_wealth', '$concept_wealth_gen$')|l]."
  alert_stockpiling_gold_alert_action: "Панель бюджету"
 
  alert_low_legitimacy_alert_name: "Низька законність уряду"
@@ -147,7 +147,7 @@
  alert_unused_interests_alert_action: "Панель дипломатії"
  
  alert_unproductive_trade_route_alert_name: "[concept_trade_route] «[SCOPE.GetRootScope.GetTradeRoute.GetDescriptionForActingMarket]» - непродуктивний"
- alert_unproductive_trade_route_alert_desc: "Ваші торгові центри наразі ведуть торгові тори, які більше не приносять прибутку, вони продовжуватимуть це робити, доки у них є грошові резерви для їх підтримки."
+ alert_unproductive_trade_route_alert_desc: "Ваші торгові центри наразі ведуть торгові тори, які більше не приносять прибутку, вони продовжуватимуть це робити, доки у них є грошові резерви для їхньої підтримки."
  alert_unproductive_trade_route_alert_hint: "Ви можете скасувати дієві [Concept('concept_trade_route', '$concept_trade_routes$')|l] на будь-якій панелі ринку чи використавши сочку торгівлі. Якщо ви хочете зберегти цей тор, але не маєте інших продуктивних торів для підтримки прибутковости торгових центрів, подумайте про субсидування будівлі." #[Concept('concept_subsidize','$concept_subsidizing$')|l]
  alert_unproductive_trade_route_alert_action: "Панель «[SCOPE.GetRootScope.GetTradeRoute.GetActingMarket.GetName]»"
 
