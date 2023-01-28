@@ -588,19 +588,16 @@
  concept_clout_desc:1 "An [Concept('concept_interest_group','$concept_interest_group_possessive$')] share of the total [concept_political_strength] that [Concept('concept_pop', '$concept_pops$')] across their [concept_country] generate. $concept_clout$ is the final word on how influential an $concept_interest_group$ is, and affects everything from [concept_legitimacy] and [concept_enactment_of_laws] if the $concept_interest_group$ is [concept_in_government], to [concept_political_movement_support] and [Concept('concept_political_movement_radicalism','$concept_political_movement_radicalism_short$')] if it is [concept_in_opposition]. It also affects whether the $concept_interest_group$ is considered [concept_powerful], [concept_influential], or [concept_marginalized]."
 
  concept_powerful: "Потужний"
- concept_powerful_many: "Потужні"
- concept_powerful_feminine_ins: "Потужною"
+ concept_powerful_adj: "Потужн"
  concept_powerful_desc:1 "$concept_influential_powerful_common$ A $concept_powerful$ $concept_interest_group$'s [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] will have a [GetDefine('NPolitics','POWERFUL_IG_TRAIT_BONUS')|%0=+] greater effect than if they were merely $concept_influential$.\n\n$concept_interest_groups$ are considered $concept_powerful$ while their $concept_clout$ is above [GetDefine('NPolitics','POWERFUL_IG_THRESHOLD')|%0]."
  
  concept_influential: "Впливовий"
- concept_influential_many: "Впливові"
- concept_influential_feminine_ins: "Впливовою"
+ concept_influential_adj: "Впливов"
  concept_influential_powerful_common:0 "The amount of [concept_clout] an [concept_interest_group] has decides whether it is [concept_powerful], $concept_influential$, or [concept_marginalized]."
  concept_influential_desc:1 "$concept_influential_powerful_common$ An $concept_influential$ $concept_interest_group$'s [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] will have a lesser effect than if they were $concept_powerful$.\n\n$concept_interest_groups$ are considered $concept_influential$ while their $concept_clout$ is below [GetDefine('NPolitics','POWERFUL_IG_THRESHOLD')|%0v]."
 
  concept_marginalized: "Маргіналізовані"
  concept_marginalized_adj: "Маргіналізован"
- concept_marginalized_feminine_ins: "Маргіналізованою"
  concept_marginalized_desc:2 "$concept_marginalized$ [Concept('concept_interest_group', '$concept_interest_groups$')] have too little [concept_clout] to be politically noteworthy. They cannot be included in the [concept_government], nor do they join [Concept('concept_party','$concept_parties$')]. Their [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] are permanently deactivated for as long as they remain $concept_marginalized$.\n\nAlready $concept_marginalized$ $concept_interest_groups$ remain $concept_marginalized$ for as long as their $concept_clout$ is below [GetDefine('NPolitics','MARGINAL_IG_THRESHOLD')|%0v]. Non-$concept_marginalized$ $concept_interest_groups$ will become $concept_marginalized$ once their $concept_clout$ drops below [GetDefine('NPolitics','MARGINAL_IG_CUTOFF')|%0v], unless they are already [concept_in_government] in which case they do not become $concept_marginalized$ until removed."
  
  concept_politically_inactive_involved: "Політично недієві/залучені"
@@ -659,6 +656,7 @@
  concept_country_desc:3 "A $concept_country$ consists of one or several parcels of [Concept('concept_province','$concept_province_land$')] organized into [Concept('concept_state','$concept_states$')], in which a [Concept('concept_pop','$concept_population$')] resides under the rule of a [concept_government] and its [concept_head_of_state]. In Victoria 3, both human and AI players each control a $concept_country$.\n\nAside from the nature of their $concept_pops$, which $concept_states$ they own, and how they been developed, a $concept_country$ is defined also by their [concept_country_tier], [concept_primary_cultures], and [concept_state_religion], and whether they are [Concept('concept_recognized_power','$concept_recognized_power_short$')] or [Concept('concept_unrecognized_power','$concept_unrecognized_power_short$')]. $concept_countries$ also have different [Concept('concept_law','$concept_laws$')] and access to different [Concept('concept_technology','$concept_technologies$')]."
 
  concept_decree: "Постанова"
+ concept_decree_gen: "Постанови"
  concept_decree_acc: "Постанову"
  concept_decrees: "Постанови"
  concept_decrees_gen: "Постанов"
