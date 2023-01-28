@@ -189,9 +189,9 @@
  concept_building_desc:2 "$concept_buildings$ drive your [Concept('concept_country','$concept_country_possessive$')] economy via the [concept_good_production] (and [concept_good_consumption]) of [Concept('concept_good','$concept_goods$')]. They can also produce a number of other useful effects, such as [concept_bureaucracy], [concept_infrastructure], and [concept_convoys].\n\nTo perform their functions they require a [concept_workforce] made up by [Concept('concept_pop', '$concept_pops$')] of different [Concept('concept_profession','$concept_professions$')], who receive a [concept_building_wage] in return for their labor.\n\nWhat functions a particular $concept_building$ serves is determined by its active [Concept('concept_production_method','$concept_production_methods$')], and the magnitude of its impact is determined by its [Concept('concept_building_level','$concept_building_level_short$')].[AddLocalizationIf(GetPlayer.IsValid,'concept_building_desc_added')]"
  concept_building_desc_added:1 "\n\nYou can [Concept('concept_construction','$concept_construct$')] new, or expand existing, $concept_buildings$ in each of your [Concept('concept_state','$concept_states$')] using your [GetBuildingType('building_construction_sector').GetName]."
 
- concept_building_level: "Рівень будівлі"
- concept_building_level_short: "Рівень"
- concept_building_levels: "Рівені будівлі"
+ concept_building_level: "Розмір будівлі"
+ concept_building_level_short: "Розмір"
+ concept_building_levels: "Розмір будівлі"
  concept_building_level_desc:0 "A [Concept('concept_building', '$concept_building_possessive$')] $concept_building_level_short$ scales its current [concept_good_consumption], [concept_good_production], [concept_workforce] requirements, and may apply an [concept_economy_of_scale] bonus. The maximum $concept_building_level_short$ a $concept_building$ can be expanded to may depend on the [concept_resource_potential] or [concept_arable_land] in the [concept_state]. Expanding a $concept_building$'s $concept_building_level_short$ usually requires [concept_construction], though some $concept_building$'s $concept_building_level_short$ is automatically adjusted based on other factors such as [concept_infrastructure], [Concept('concept_trade_route','$concept_trade_routes$')], [Concept('concept_conscription_center','$concept_conscription$')] rate, or unused $concept_arable_land$."
  
  concept_diplomatic_play: "Дипломатична гра"
@@ -363,6 +363,7 @@
  concept_diplomatic_action: "Дипломатична дія"
  concept_diplomatic_action_acc: "Дипломатичну дію"
  concept_diplomatic_actions: "Дипломатичні дії"
+ concept_diplomatic_actions_gen: "Дипломатичних дій"
  concept_diplomatic_actions_acc: "Дипломатичні дії"
  concept_diplomatic_actions_short: "Дії"
  concept_diplomatic_action_desc:2 "A broad term for interactions between two [Concept('concept_country','$concept_countries$')] that includes [Concept('concept_instant_diplomatic_action','$concept_instant_diplomatic_actions$')], [Concept('concept_ongoing_diplomatic_action','$concept_ongoing_diplomatic_actions$')], and [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]. They differ from [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] in that no third party is allowed to have a say in its outcome, and there is no risk the action on its own might escalate into [concept_war]."
@@ -385,12 +386,12 @@
  concept_incorporate: "Включити"
  concept_incorporated: "Включений"
  concept_incorporating: "Включення"
- concept_incorporation:0 "Incorporation"
+ concept_incorporation: "Включення"
  concept_incorporated_state_desc:2 "[Concept('concept_state','$concept_states$')] that are fully integrated into a [concept_country]. [Concept('concept_pop', '$concept_pops$')] in $concept_incorporated_states$ pay taxes, gain access to benefits from [Concept('concept_institution', '$concept_institutions$')], and participate fully in the Country's political system. [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] can be $concept_incorporated$ through a sometimes lengthy process."
 
- concept_capacity: "Ємність"
- concept_capacities: "Ємності"
- concept_capacity_desc:0 "A measure of your [Concept('concept_country','$concept_country_possessive$')] capabilities in one of three areas: [concept_bureaucracy], [concept_authority], and [concept_influence]. $concept_capacities$ are not stored and used, but continuously generated from different sources and continually expended by the various projects you have going on. Your remaining balance in each area is displayed in the top bar. Having an excess of a $concept_capacity$ will yield a minor bonus for your $concept_country$, while having a lack of a $concept_capacity$ will inflict large penalties."
+ concept_capacity: "Cпроможність"
+ concept_capacities: "Спроможності"
+ concept_capacity_desc: "Мірило, що показує [Concept('concept_country','$concept_country_adj$і')|l] можливості у одній з трьох царин: [concept_bureaucracy|l], [concept_authority|l] та [concept_influence|l]. Спроможність не зберігається і не використовується, а постійно утворюється з різних джерел та весь час витрачається на різні проєкти, які ви реалізуєте. Ваш залишок кожної царини відображається у верхній панелі. Коли ви маєте надлишок спроможности, то отримуєте наддатки. Тоді як нестача спроможности призведе до великих карн."
 
  concept_bureaucracy: "Бюрократія"
  concept_bureaucracy_gen: "Бюрократії"
@@ -399,11 +400,11 @@
  
  concept_authority: "Авторитет"
  concept_authority_gen: "Авторитету"
- concept_authority_desc:3 "@aut! Authority is a [concept_capacity] used to effect internal change to your [concept_country], like issuing [Concept('concept_decree', '$concept_decrees$')] or managing [Concept('concept_interest_group', '$concept_interest_groups$')]. You gain @aut! from [Concept('concept_law', '$concept_laws$')]."
+ concept_authority_desc: "@aut! Авторитет - це [Concept('concept_capacity','$concept_capacity$')|l], яка використовується для здійснення внутрішніх змін у вашій [Concept('concept_country','$concept_country_loc$')|l], таких як видання [Concept('concept_decree', '$concept_decrees_gen$')|l] чи управління [Concept('concept_interest_group', '$concept_interest_groups_ins$')|l]. Ви отримуєте @aut! з [Concept('concept_law', '$concept_laws_gen$')|l]."
  
  concept_influence: "Вплив"
  concept_influence_gen: "Впливу"
- concept_influence_desc:3 "@inf! Influence is a [concept_capacity] used for [Concept('concept_diplomatic_action', '$concept_diplomatic_actions$')] and [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts_short$')] targeting another [concept_country]. You gain @inf! based on your [concept_rank]."
+ concept_influence_desc: "@inf! Вплив - це [Concept('concept_capacity','$concept_capacity$')|l], яка використовується для [Concept('concept_diplomatic_action', '$concept_diplomatic_actions_gen$')|l] та [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts_short_gen$')|l] націлені на [Concept('concept_country','$concept_country_acc$')|l]. Ви отримуєте @inf! залежно від [Concept('concept_rank','$concept_rank_gen$')|l]."
 
  concept_institution: "Установа"
  concept_institution_gen: "Установи"
@@ -470,6 +471,7 @@
  concept_interest_group_acc: "Зацікавлену групу"
  concept_interest_groups: "Зацікавлені групи"
  concept_interest_groups_gen: "Зацікавлених груп"
+ concept_interest_groups_ins: "Зацікавленими групами"
 
  concept_interest_group_short: "Група"
  concept_interest_group_short_gen: "Групи"
@@ -866,7 +868,9 @@
  concept_diplomatic_pacts: "Дипломатичні пакти"
  concept_diplomatic_pacts: "Дипломатичні пакти"
  concept_diplomatic_pact_short: "Пакт"
+ concept_diplomatic_pact_short_gen: "Пакту"
  concept_diplomatic_pacts_short: "Пакти"
+ concept_diplomatic_pacts_short_gen: "Пактів"
  concept_diplomatic_pact_desc:3 "Unilateral or bilateral understandings between two [Concept('concept_country', '$concept_countries$')]. They may have a maintenance cost in [concept_influence] for one or both parties, and can have a wide range of effects including [concept_subject] relationships. $concept_diplomatic_pacts_short$ can break for a number of different reasons, including [concept_relations] deviating too far in either direction, one side or another explicitly breaking it, or a time limit running out."
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MAY 1, 2022

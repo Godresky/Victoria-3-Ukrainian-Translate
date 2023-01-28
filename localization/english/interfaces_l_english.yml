@@ -1304,7 +1304,7 @@
  POP_VOTING_POWER_WEALTH_TOO_LOW:0 "@warning! Not eligible to vote due to [concept_wealth] $WEALTH|v0$ below the cutoff of $THRESHOLD|v0$\n$TAB$$BREAKDOWN$"
  POP_VOTING_POWER_WEALTH_SUFFICIENT:0 "[concept_wealth] $WEALTH|v0$ meets the voting cutoff of $THRESHOLD|v0$\n$TAB$$BREAKDOWN$"
  POP_VOTING_POWER_POPULATION:0 "x$NUM|v0$ potentially eligible voters"
- POP_VOTING_INCORPORATION_LEVEL:0 "x$INCORPORATION|v%$ [Concept('concept_incorporated_state','$concept_incorporation$')] of [State.GetName]"
+ POP_VOTING_INCORPORATION_LEVEL: "x$INCORPORATION|v%$ [Concept('concept_incorporated_state','$concept_incorporation$')|l] [Concept('concept_state','$concept_state_gen$')|l] [State.GetName]"
  POP_VOTING_POWER:0 "Number of [concept_votes]: #v $VAL|+D0$#!\n$BREAKDOWN$"
 
  NEXT_ELECTION_DATE: "Наступні [concept_election|l]: [AccessPlayer.GetNextElectionDate|v]"
@@ -2215,8 +2215,8 @@
  TOOLTIP_MASS_MIGRATION_TARGET:0 "#header [concept_migration_target]#!\n$TOOLTIP_DELIMITER$\nThis state and its surrounding states are the targets of extensive migration from people of #variable [State.GetMassMigrationCulture.GetName]#! culture. This migration will continue until #variable [State.GetMassMigrationEndDate]#!."
  TOOLTIP_UNDISCOVERED_RESOURCES: "#header Можна відкрити ресурси#!\n$TOOLTIP_DELIMITER$\nThere are undiscovered resource deposits in this state. These resources have a chance to be discovered each day if the state is part of a non-[concept_isolated_state]."
  DISCOVERABLE_RESOURCES: "Можна відкрити ресурси"
- MARKET_ACCESS_WARNING:1 "@warning!\n#bold [StateInfraMarker.GetState.GetMarketAccess|0%]#!"
- MARKET_ACCESS_WARNING_SEA:1 "@warning!\n#bold [SeaRegionInfraMarker.GetStateRegion.GetSeaInfrastructure(GetPlayer)|0]%#!"
+ MARKET_ACCESS_WARNING: "@warning!\n#bold [StateInfraMarker.GetState.GetMarketAccess|0%]#!"
+ MARKET_ACCESS_WARNING_SEA: "@warning!\n#bold [SeaRegionInfraMarker.GetStateRegion.GetSeaInfrastructure(GetPlayer)|0]%#!"
  ISOLATED:0 "@warning!"
  MIGRATION_TARGET_ENTRY:0 "#variable $TARGET$#!"
  INFLUENTIAL_CULTURE_FORMAT:0 "[Culture.GetNameNoFormatting]"
@@ -2401,7 +2401,7 @@
  MAX_DECLARED_INTERESTS_TOOLTIP:0 "#header Maximum [Concept('concept_declared_interest','$concept_declared_interests$')] for [Country.GetName]#!\n$TOOLTIP_DELIMITER$\n[Country.GetMaxNumDeclaredInterestsBreakdown]"
 
  MAP_INTERACTION_ESC_TO_CANCEL: "#instruction Нажміть #bold ESC#!, щоб закрити поточну взаємодію з мапою#!"
- MAP_INTERACTION_BUILD_BUILDING_DESC: "Виберіть #V регіон#!, де ви збудуєте будівлю #V [BUILDING_TYPE.GetName|l]#!"
+ MAP_INTERACTION_BUILD_BUILDING_DESC: "Виберіть #V регіон#!, де ви збудуєте споруду #V [BUILDING_TYPE.GetName|l]#!"
  MAP_INTERACTION_BUILD_BUILDING_PERFORMED: "Будівництво споруди #V [BuildingType.GetName|l]#! почалося"
  MAP_INTERACTION_BUILDING_BUILT: "Будівля [Building.GetName|l] збудована у [Concept('concept_state', '$concept_state_loc$')|l] [Building.GetState.GetName]"
  MAP_INTERACTION_BUILDING_EXPANDED: "[Building.GetName] розширено до розміру #v [Building.GetExpansionLevel]#! у [Concept('concept_state', '$concept_state_loc$')|l] [Building.GetState.GetName]"
@@ -2456,7 +2456,7 @@
  MAP_INTERACTION_RECRUIT_GENERALS_FAIL_LAND:1 "[Concept( 'concept_general', '$concept_generals$' )] can only be recruited for land HQs"
  MAP_INTERACTION_RECRUIT_GENERALS_VALID:2 "#header Recruit General#!\n@battalions! [HQ.GetReserveUnitsRaw|v] [concept_in_reserve] at the [HQ.GetName]"
 
- MAP_INTERACTION_RECRUIT_ADMIRALS_DESC: "Select #V [concept_hq|l]#!, щоб найняти [Concept( 'concept_admiral', '$concept_admirals_gen$' )|l]"
+ MAP_INTERACTION_RECRUIT_ADMIRALS_DESC: "Виберіть #V [concept_hq|l]#!, щоб найняти [Concept( 'concept_admiral', '$concept_admirals_gen$' )|l]"
  MAP_INTERACTION_RECRUIT_ADMIRALS_FAIL_NAVAL:0 "[Concept( 'concept_admiral', '$concept_admirals$' )] can only be recruited for naval HQs"
  MAP_INTERACTION_RECRUIT_ADMIRALS_VALID:0 "Recruit [Concept( 'concept_admiral', '$concept_admirals$' )] for [HQ.GetName]"
 
@@ -2466,13 +2466,13 @@
  TRAVEL_TIME_DESC:1 "Traveling there will take #tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|v$#!#! "
  TRAVEL_HOME_HQ_DESC:0 "Traveling to [Concept('concept_hq', 'Home HQ')] will take #tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|v$#!#! "
 
- DECREE_TOOLTIP:1 "#header Issue $NAME$[AddTextIf(State.IsValid,' in ')][AddTextIf(State.IsValid,State.GetName)]#![ConcatIfNeitherEmpty('\n','$ERRORS$')]\n$EFFECT$\n\n#title Cost:#! #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] #variable $COST|0$#!#!#! $AUTHORITY$\n\n#lore $DESC$#!" #
- DECREE_REMOVE:0 "#header Cancel#! [Decree.GetName] in [Decree.GetState.GetName]"
- CANNOT_SET_DECREE:0 "#header #N Cannot set [concept_decree] in [State.GetName]#!#!"
- DECREE_ALREADY_ACTIVE:0 "[DECREE.GetName] [concept_decree] is already set in [STATE.GetName]"
+ DECREE_TOOLTIP: "#header Видати [Concept('concept_decree','$concept_decree_acc$')|l] «$NAME$»[AddTextIf(State.IsValid,' у регіоні ')][AddTextIf(State.IsValid, State.GetName)]#![ConcatIfNeitherEmpty('\n','$ERRORS$')]\n$EFFECT$\n\n#title Вартість:#! #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] #variable $COST|0$#!#!#! $AUTHORITY$\n\n#lore $DESC$#!" #
+ DECREE_REMOVE: "#header Скасувати#! [Concept('concept_decree','$concept_decree_acc$')|l] «[Decree.GetName]» у [Concept('concept_state','$concept_state_loc$')|l] [Decree.GetState.GetName]"
+ CANNOT_SET_DECREE: "#header #N Неможливо видати [Concept('concept_decree','$concept_decree_acc$')|l] для [Concept('concept_state','$concept_state_gen$')|l] [State.GetName]#!#!"
+ DECREE_ALREADY_ACTIVE: "[concept_decree] «[DECREE.GetName]» уже видана для [Concept('concept_state','$concept_state_gen$')|l] [STATE.GetName]"
  DECREE_CANNOT_AFFORD:1 "Have at least @aut!$COST|vD$ [concept_authority] to spend on this [concept_decree]"
- DISABLE_DECREE_TOOLTIP:0 "#header Cancel#! [DecreeType.GetName] in [State.GetName]#!"
- DECREE_COST_ENTRY:1 "[DECREE.GetName] in [DECREE.GetState.GetName]: #variable #N -[DECREE.GetCost|0]#!#!"
+ DISABLE_DECREE_TOOLTIP: "#header Скасувати#! [Concept('concept_decree','$concept_decree_acc$')|l] «[DecreeType.GetName]» у [Concept('concept_state','$concept_state_loc$')|l] [State.GetName]#!"
+ DECREE_COST_ENTRY: "«[DECREE.GetName]» у [Concept('concept_state','$concept_state_loc$')|l] [DECREE.GetState.GetName]: #variable #N -[DECREE.GetCost|0]#!#!"
 
  START_DIPLOMATIC_PLAY_SUMMARY: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l]: [WarGoal.GetName] #!"
  START_DIPLOMATIC_PLAY_TOOLTIP: "$START_DIPLOMATIC_PLAY_SUMMARY$\n[ConcatIfNeitherEmpty('$ERRORS$', '\n')]$TOOLTIP_DELIMITER$\n#b Початкові цілі війни#!\n[WAR_GOAL.GetDesc]\n[ConcatIfNeitherEmpty('$INCIDENT$', '\n')]\n$TARGETS$\n\n$PARTICIPANTS$"
@@ -2481,7 +2481,7 @@
  DIPLO_PLAY_TOOLTIP_BACKERS_HEADER: "На початку [Concept('concept_diplomatic_play', '$concept_diplomatic_play_short_gen$')|l], ми будемо #p мати таких союзників:#!"
  DIPLO_PLAY_TOOLTIP_LIKELY_OUR_SIDE_HEADER: "Ми думаємо, що ці [Concept('concept_country', '$concept_countries$')|l] займуть #p нашу сторону:#!"
  DIPLO_PLAY_TOOLTIP_LIKELY_ENEMY_SIDE_HEADER: "Ми думаємо, що ці [Concept('concept_country', '$concept_countries$')|l] займуть #n сторону ворога:#!"
- DIPLO_PLAY_TOOLTIP_FENCE_SITTERS_HEADER:1 "Ми думаємо, що ці [Concept('concept_country', '$concept_countries$')|l] #b приєднаються до будь-якої сторони#! або #b залишуться нейтральними#!:"
+ DIPLO_PLAY_TOOLTIP_FENCE_SITTERS_HEADER: "Ми думаємо, що ці [Concept('concept_country', '$concept_countries$')|l] #b приєднаються до будь-якої сторони#! або #b залишуться нейтральними#!:"
  DIPLO_PLAY_TOOLTIP_COUNTRY_ENTRY:1 "[COUNTRY.GetName] (#variable @battalions![COUNTRY.GetBattalions|0]#! + #v [Country.CalcConscriptableBattalions]#!)"
 
  UNPRESSED_WAR_GOALS: "Невисунуті цілі війни:"
@@ -2560,7 +2560,7 @@
  CLOCK_TEXT: "#BOLD [TimeKeeper.GetCurrentDate.GetString]#!"
  CLOCK_DEBUG_TEXT: "[TimeKeeper.GetDayOfWeek] [TimeKeeper.GetTimeOfDay|l]"
  CLOCK_PAUSED: "(На павзі)"
- CLOCK_PLAYING:0 "Playing"
+ CLOCK_PLAYING: "Гра продовжується"
 
  POLITICAL_ACTION_EFFECT:0 "#!This is a Political Action\nCost:  $POWER_COST$\n$DEMANDING_IGS$Will give you #variable $TRUST|+=$#! Trust#! $IG_EFFECTS$"
  POLITICAL_ACTION_EFFECT_IG_LINE:0 "\n#header $NAME$:#!"
@@ -2591,8 +2591,8 @@
  TOOLTIP_MINIMIZE_WINDOW: "#BOLD #V Згорнути#!#!"
 
  FOUND_IN_BUY_PACKAGES:0 "$TYPE|v$ Pops with Wealth #variable $LOW$ - $HIGH$#!"
- rural:0 "Rural"
- urban:0 "Urban"
+ rural: "Сільська місцевість"
+ urban: "Міська місцевість"
 
  TOOLTIP_WAR_SUMMARY:0 "#HEADER [War.GetName]#!\n#BOLD Attackers#!:\n#V [War.GetAttackerListString]#!\n#BOLD Defenders#!:\n#V [War.GetDefenderListString]#!"
  TOOLTIP_REVOLUTION_SUMMARY: "#HEADER Революція#!"
@@ -5701,7 +5701,7 @@
  MAP_MODE_RELATIONS_COUNTRY: "Показати [concept_relations|l] з [Concept('concept_country', '$concept_country_ins$')|l] [CountryPanel.GetCountry.GetName] на мапі"
 
  DEFAULT_MAP_LIST_PANEL_STATUS_HEADER: "Стан"
- DEFAULT_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP: "#header Стан#!\n$TOOLTIP_DELIMITER$\n#concept Доступність цієї взаємодії для кожного запису.\n\n@map_list_plus!: Ви можете вибрати це.\n@map_list_plus_and_checkmark!: Ви можете вибрати це і Ви це вже тут робите.\n@map_list_checkmark!: Ви вже робите це тут і можете скасувати вибір.\n@map_list_lock!: Ви вже робите це тут, але НЕ можете скасувати вибір.\n@map_list_cross!: Ви НЕ можете вибрати це.\n@map_list_cross_and_checkmark!: Ви вже робите це тут, але НЕ можете вибрати це.#!"
+ DEFAULT_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP: "#header Стан#!\n$TOOLTIP_DELIMITER$\n#concept Доступність цієї взаємодії для кожного запису.\n\n@map_list_plus!: Ви можете вибрати це.\n@map_list_plus_and_checkmark!: Ви можете вибрати це і ви це вже тут робите.\n@map_list_checkmark!: Ви вже робите це тут і можете скасувати вибір.\n@map_list_lock!: Ви вже робите це тут, але НЕ можете скасувати вибір.\n@map_list_cross!: Ви НЕ можете вибрати це.\n@map_list_cross_and_checkmark!: Ви вже робите це тут, але НЕ можете вибрати це.#!"
  DEFAULT_MAP_LIST_PANEL_TITLE_HEADER: "Назва"
  DEFAULT_MAP_LIST_PANEL_TITLE_HEADER_TOOLTIP: "#header Назва#!\n$TOOLTIP_DELIMITER$\n#concept Назва цього параметра.#!"
 
@@ -5758,7 +5758,7 @@
  GOODS_NAME_WITH_TRADE_ROUTES:1 "#header [Goods.GetNameNoFormatting]#! $GOODS_NAME_WITH_TRADE_ROUTES_OWNED$"
  GOODS_NAME_WITH_TRADE_ROUTES_OWNED:0 "[SelectLocalization(EqualTo_int32(MarketGoods.GetNumPlayerOwnedTradeRoutes, '(int32)0'), '', 'GOODS_NAME_WITH_TRADE_ROUTES_NUMBER')]"
  GOODS_NAME_WITH_TRADE_ROUTES_NUMBER:0 "([MarketGoods.GetNumPlayerOwnedTradeRoutes|v] [GetPlayer.GetAdjectiveNoFormatting][SelectLocalization(EqualTo_int32(MarketGoods.GetNumPlayerOwnedTradeRoutes, '(int32)1'), 'ий тор', 'і тори')])"
- GOODS_NUMBER_WITH_TRADE_LEVEL: "[TradeRoute.GetTradeQuantity|Dv]  (Рівень [TradeRoute.GetLevel|v])"
+ GOODS_NUMBER_WITH_TRADE_LEVEL: "[TradeRoute.GetTradeQuantity|Dv] (Рівень [TradeRoute.GetLevel|v])"
 
  NOT_PLAYER_MARKET_CONSUMPTION_TAXES:1 "@red_cross! Can #b not#! set [Concept('concept_consumption_tax','$concept_consumption_taxes$')] on [Goods.GetName] in the [Goods.GetMarket.GetName] since you are not part of this [concept_market]"
  NOT_PLAYER_MARKET_PRIORITY:1 "@red_cross! Can #b not#! set priority on [Goods.GetName] in the [Goods.GetMarket.GetName] since you are not part of this [concept_market]"
@@ -6006,8 +6006,8 @@
  CANNOT_ACTIVATE_CONSCRIPTION_CENTERS_NO_CONSCRIPTION_CENTER:2 "You do not have any available [Concept('concept_conscription_center','$concept_conscription_center$')]"
  CANNOT_ACTIVATE_CONSCRIPTION_CENTERS_ALREADY_ACTIVE:1 "All [Concept('concept_conscription_center', '$concept_conscription_centers$')] already active"
  CONSCRIPTION_COST_WITH_BREAKDOWN:0 "#tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] @money!$COST|K+=$#!#!"
- CONSCRIPTION_COST_NO_BREAKDOWN:0 "@money!$COST|K+=$"
- CONSCRIPTION_COST_ITEM:0 "[Building.GetName] in [Building.GetState.GetName]: #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] @money!$COST|K+=$#!#!"
+ CONSCRIPTION_COST_NO_BREAKDOWN: "@money!$COST|K+=$"
+ CONSCRIPTION_COST_ITEM: "[Building.GetName] у [Concept('concept_state', '$concept_state_loc$')|l] [Building.GetState.GetName|l]: #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] @money!$COST|K+=$#!#!"
 
  activate_conscription_centers_lens_option: "Активувати призовні пункти"
  activate_conscription_centers_lens_option_tooltip:1 "#header Activate Conscription Centers#!\n$TOOLTIP_DELIMITER$\nSelect [Concept('concept_state', '$concept_states$')] where you would like to activate [Concept('concept_conscription_center', '$concept_conscription_centers$')]"

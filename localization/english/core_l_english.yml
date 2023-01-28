@@ -61,10 +61,10 @@
 
  YOU_CANNOT_PLAY_AS_DECENTRALIZED: "Ви не можете грати за [Concept('concept_decentralized_nation','$concept_decentralized_nation_acc$')|l]"
  LAUNCHER_SAVE_DESCRIPTION: "Грати за державу $COUNTRY$"
- LAUNCHER_SAVE_DESCRIPTION_OBSERVER:1 "[Concept('concept_observer_mode','$concept_observing$')] $COUNTRY$"
+ LAUNCHER_SAVE_DESCRIPTION_OBSERVER: "[Concept('concept_observer_mode','$concept_observe$')] за державою $COUNTRY$"
 
- BASE_VALUE_YELLOW: "Базовий приріст: #BOLD $VAL|Dv$#!"
- BASE_VALUE_YELLOW_PERC: "Базовий приріст: $VAL|2%v$"
+ BASE_VALUE_YELLOW: "Базове значення: #BOLD $VAL|Dv$#!"
+ BASE_VALUE_YELLOW_PERC: "Базове значення: $VAL|2%v$"
  terrain: "Рельєф"
  INFRASTRUCTURE_FROM_SUPPLY_NETWORK: "Від #variable [COUNTRY.GetAdjectiveNoFormatting|l]ої#! [Concept('concept_supply_network','$concept_supply_network_gen$')|l]: #variable $VALUE|+=$#!"
  INFRASTRUCTURE_FROM_MARKET_CAPITAL:0 "From [concept_market_capital]: #variable $VALUE|+=$#!"
