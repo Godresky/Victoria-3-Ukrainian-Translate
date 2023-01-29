@@ -76,6 +76,7 @@
  
 
  concept_protectorate: "Покровительство"
+ concept_protectorate_gen: "Покровительства"
  concept_protector: "Покровитель"
  concept_protector_ins: "Покровителем"
  concept_protectorate_desc:2 "A $concept_protectorate$ is an autonomous [concept_subject] type able to start their own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]. A [concept_country] may ask, or be asked, to become a $concept_protectorate$ under an [concept_overlord] without risk of [concept_war] if the offer is declined."
@@ -860,6 +861,7 @@
 
  concept_attitude: "Ставлення"
  concept_attitude_gen: "Ставлення"
+ concept_attitude_acc: "Ставлення"
  concept_attitude_desc:1 "An indication of how another [concept_country] feels about you, based on [concept_relations], [concept_infamy], [concept_strategic_desire], and factors such as how large your military is and which $concept_countries$ you have [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] with. $concept_attitude$ affects what sorts of actions a $concept_country$ is likely to take towards you and what role you play in their plans."
 
  concept_instant_diplomatic_action: "Миттєва дипломатична дія"
@@ -902,19 +904,23 @@
  concept_customs_union_gen: "Митної спілки"
  concept_customs_union_desc:1 "A [concept_diplomatic_pact] between a [concept_senior_partner] and one or several [Concept('concept_junior_partner','$concept_junior_partners$')] to share a single [concept_market], under the leadership of the $concept_senior_partner$. All [concept_subject] $concept_diplomatic_pacts_short$ also act as a $concept_customs_union$ $concept_diplomatic_pact_short$."
 
- concept_senior_partner:0 "Senior Partner"
+ concept_senior_partner: "Старший учасник"
  concept_senior_partner_desc:2 "A $concept_senior_partner$ in a [concept_customs_union] gains control of their [Concept('concept_junior_partner','$concept_junior_partners_possessive$')] [Concept('concept_market','$concept_markets$')]. While the $concept_junior_partners$ may continue to [Concept('concept_trade_route','$concept_trade$')] with other $concept_markets$, only the $concept_senior_partner$ may issue [Concept('concept_embargo','$concept_embargoes$')] and control [Concept('concept_tariffs','$concept_tariff$')] levels. In exchange the $concept_senior_partner$ shares a minor portion of the $concept_market$'s $concept_tariff$ income, while both [Concept('concept_country','$concept_countries_possessive$')] [Concept('concept_building','$concept_building_industries$')] benefit from participating in a more powerful and mature $concept_market$."
 
- concept_junior_partner:0 "Junior Partner"
- concept_junior_partners:0 "Junior Partners"
+ concept_junior_partner: "Молодший учасник"
+ concept_junior_partners: "Молодші учасники"
  concept_junior_partners_possessive:0 "Junior Partners\\'"
  concept_junior_partner_desc:2 "A $concept_junior_partner$ in a [concept_customs_union] yields control of their [concept_market] to the [concept_senior_partner]. While the $concept_junior_partner$ may continue to [Concept('concept_trade_route','$concept_trade$')] with other $concept_markets$, they may not issue [Concept('concept_embargo','$concept_embargoes$')] or control [Concept('concept_tariffs','$concept_tariff$')] levels. In exchange they collect a minor portion of the $concept_market$'s $concept_tariff$ income and their [Concept('concept_building','$concept_building_industries$')] benefit from participating in a more powerful and mature $concept_market$."
 
  concept_alliance: "Альянс"
+ concept_alliance_gen: "Альянсу"
+ concept_alliance_acc: "Альянс"
  concept_alliances: "Альянси"
  concept_alliance_desc:1 "A [concept_diplomatic_pact] between two [Concept('concept_country','$concept_countries$')]. $concept_countries$ engaged in an $concept_alliance$ may always side with each other in [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] regardless of if the other side maintains an [concept_active_interest] in the affected [concept_strategic_region]. This applies no matter if the other $concept_country$ is the initiator or target of the $concept_diplomatic_play_short$."
 
  concept_defensive_pact: "Оборонний пакт"
+ concept_defensive_pact_gen: "Оборонного пакту"
+ concept_defensive_pact_acc: "Оборонний пакт"
  concept_defensive_pacts: "Оборонні пакти"
  concept_defensive_pact_desc:0 "A [concept_diplomatic_pact] between two [Concept('concept_country','$concept_countries$')]. $concept_countries$ engaged in a $concept_defensive_pact$ may always side with each other in [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] in which they are the primary target, regardless of if the other side maintains an active [concept_active_interest] in the affected [concept_strategic_region]. This does not extend to $concept_diplomatic_plays$ where the other party is the initiator, or where they are backing a third $concept_country$ as a primary target."
 
@@ -1239,6 +1245,7 @@
  concept_market: "Ринок"
  concept_market_gen: "Ринку"
  concept_market_acc: "Ринок"
+ concept_market_ins: "Ринком"
  concept_market_loc: "Ринку"
  concept_markets: "Ринки"
  concept_markets_gen: "Ринків"
@@ -1252,12 +1259,15 @@
  concept_market_access_gen: "Доступу до ринку"
  concept_market_access_acc: "Доступ до ринку"
  concept_market_access_ins: "Доступом до ринку"
+ concept_market_access_loc: "Доступі до ринку"
  concept_market_access_access: "Доступ до"
  concept_market_access_desc:1 "A measure of how well-connected a [concept_state] is to the rest of its [concept_market]. It starts at 100% and is reduced proportionally whenever the $concept_state$'s [concept_infrastructure_usage] exceeds its [concept_infrastructure]. It impacts both how many [concept_sell_orders] and [concept_buy_orders] are generated due to the $concept_state$'s [concept_good_production] and [concept_good_consumption], and also how much the [concept_market_price] affects the [concept_local_price] of [Concept('concept_good','$concept_goods$')]."
 
  concept_infrastructure: "Інфраструктура"
  concept_infrastructure_gen: "Інфраструктури"
+ concept_infrastructure_dat: "Інфраструктурі"
  concept_infrastructure_acc: "Інфраструктуру"
+ concept_infrastructure_acc_alt: "Інфраструктура"
  concept_infrastructure_desc:2 "$concept_infrastructure$ is provided by [Concept('concept_building','$concept_buildings$')] like [SelectLocalization(GetPlayer.IsValid,'concept_infrastructure_desc_added','Railway')] and [SelectLocalization(GetPlayer.IsValid,'concept_infrastructure_desc_added_2','Port')]. It influences how well connected a [concept_state] is to its [concept_market], and how rapidly [Concept('concept_battalion', '$concept_battalions$')] [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilize$')]."
  concept_infrastructure_desc_added:0 "[GetBuildingType('building_railway').GetName]"
  concept_infrastructure_desc_added_2:0 "[GetBuildingType('building_port').GetName]"
@@ -1693,6 +1703,7 @@
  concept_character: "Персонаж"
  concept_character_gen: "Персонажа"
  concept_character_dat: "Персонажу"
+ concept_character_ins: "Персонажем"
  concept_characters: "Персонажі"
  concept_characters_gen: "Персонажів"
  concept_character_possessive:0 "Character\\'s"
