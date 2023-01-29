@@ -854,7 +854,7 @@
  advance_tooltip:0 "#header $advance$#!\nIs targeting [SCOPE.GetRootScope.GetFront.GetName]"
  stand_by: "Очікувати"
  stand_by_gerund: "Очікує"
- stand_by_desc:4 "#header Очікує#!\nOrder [Character.GetFullName] to leave the [concept_front] and move back to the [Character.GetHomeHQ.GetName|v].\n\nTheir [Concept('concept_battalion', '$concept_battalions$')] will still be able to participate in defensive [Concept('concept_battle', '$concept_battles$')], but without the benefit of their General. While at the [concept_hq] the troops will not take any [concept_attrition].[ConcatIfNeitherEmpty( '\n\n', Character.GetDaysToTravelHomeHQFormatted )]"
+ stand_by_desc: "#header Очікує#!\nНаказ [Concept('concept_character','$concept_character_dat$')|l] [Character.GetFullName] - покинути [Concept('concept_front','$concept_front_acc$')|l] та повернутися назад до [Character.GetHomeHQ.GetName|v].\n\nЇхні [Concept('concept_battalion', '$concept_battalions$')] will still be able to participate in defensive [Concept('concept_battle', '$concept_battles$')], but without the benefit of their General. While at the [concept_hq] the troops will not take any [concept_attrition].[ConcatIfNeitherEmpty( '\n\n', Character.GetDaysToTravelHomeHQFormatted )]"
  patrol_coast: "Патрулювати берег"
  patrol_coast_gerund: "Патрулює берег"
  patrol_coast_desc:0 "#header $patrol_coast$#!\nSeek out and destroy any enemy vessels along the coastline."
