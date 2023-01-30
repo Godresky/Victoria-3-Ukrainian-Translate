@@ -225,6 +225,7 @@
 
  concept_maneuver: "Маневр"
  concept_maneuvers: "Маневри"
+ concept_maneuvers_gen: "Маневрів"
  concept_maneuver_desc:3 "$concept_maneuvers$ can be spent on taking actions in a [concept_diplomatic_play], including claiming additional [Concept('concept_war_goal', '$concept_war_goals$')] or [Concept('concept_sway','$concept_swaying$')] other [Concept('concept_country', '$concept_countries$')] to your side. The amount of $concept_maneuvers$ you have is limited by your [concept_rank]."
  
  concept_opening_moves: "Початкові дії"
@@ -255,7 +256,8 @@
  concept_mobilize_general: "Призов генералів"
  concept_mobilize_general_mobilize: "Призвати"
  concept_mobilize_general_mobilizing: "Призивати"
- concept_mobilize_general_mobilized:0 "Mobilized"
+ concept_mobilize_general_mobilized: "Призвані"
+ concept_mobilize_general_mobilized_adj: "Призван"
  concept_mobilize_general_mobilization: "Призов"
  concept_mobilize_general_desc:3 "$concept_mobilize_general_mobilizing$ a [concept_general] will immediately begin the process of $concept_mobilize_general_mobilization$ for all [Concept('concept_battalion', '$concept_battalions$')] assigned to them. Once $concept_mobilize_general_mobilized$, a $concept_general$ cannot be demobilized manually but will automatically stand down once the [concept_country] is no longer at [concept_war]."
 
@@ -263,7 +265,8 @@
  concept_mobilize_battalion_demobilized: "Знепризвані"
  concept_mobilize_battalion_mobilize:0 "Mobilize"
  concept_mobilize_battalion_mobilizing:0 "Mobilizing"
- concept_mobilize_battalion_mobilized:0 "Mobilized"
+ concept_mobilize_battalion_mobilized: "Призвані"
+ concept_mobilize_battalion_mobilized_adj: "Призван"
  concept_mobilize_battalions_mobilized:0 "Mobilized Battalions"
  concept_mobilize_battalion_mobilization:0 "Mobilization"
  concept_mobilize_battalion_desc:2 "[Concept('concept_battalion', '$concept_battalions$')] assigned to a [Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized$')] [concept_general] immediately start $concept_mobilize_battalion_mobilizing$ at a rate based on the [concept_infrastructure] of their [concept_state]. $concept_mobilize_battalion_mobilized$ and $concept_mobilize_battalion_mobilizing$ [Concept('concept_battalion', '$concept_battalions$')] consume more [Concept('concept_military_good','$concept_military_goods$')] but are fully prepared to follow their [concept_general] into [concept_battle]."
@@ -366,6 +369,7 @@
 
  concept_sway: "Перетягнути"
  concept_swaying: "Перетягнення"
+ concept_swaying_gen: "Перетягування"
  concept_swayed: "Перетягнений"
  concept_sway_adj: "Перетягнен"
  concept_sway_desc:1 "The [concept_initiator] or [concept_target] in a [concept_diplomatic_play] can attempt to $concept_sway$ any other [concept_country] with an [concept_active_interest] in the [concept_strategic_region] to their side, by offering a [concept_war_goal] or other promise such as an [concept_obligation]. Attempting to $concept_sway$ a $concept_country$ costs [Concept('concept_maneuver','$concept_maneuvers$')], and the chance an AI $concept_country$ will accept the offer depends on your [concept_relations] and their [concept_attitude] to you as well as your opponent."
@@ -635,6 +639,7 @@
  concept_diplomatic_lens_desc:1 "View the [concept_attitude] of other [Concept('concept_country','$concept_countries$')] and monitor your [Concept('concept_interest','$concept_interests$')] and their [Concept('concept_strategic_region','$concept_strategic_regions$')], establish [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] and take [Concept('concept_diplomatic_action','$concept_diplomatic_actions_short$')], and start [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]."
 
  concept_military_lens: "Сочка війська"
+ concept_military_lens_ins: "Сочкою війська"
  concept_military_lens_desc:1 "View the progress of ongoing [Concept('concept_war','$concept_wars$')], construct [Concept('concept_military_building','$concept_military_buildings$')], and recruit [Concept('concept_commander','$concept_commanders$')]."
 
  concept_trade_lens: "Сочка торгівлі"
@@ -801,6 +806,7 @@
  concept_radical_desc:1 "$concept_radical$ [Concept('concept_individual','$concept_individuals$')] within a [concept_pop] are disillusioned with the state of their [concept_country]. The presence of $concept_radicals$ in a [concept_state] contributes to [concept_turmoil], and the $concept_radicalism$ of $concept_pops$ contribute to [concept_political_movement_radicalism]. The [concept_approval] of [Concept('concept_interest_group','$concept_interest_groups$')] supported by $concept_radical$ $concept_pops$ will also be impacted.\n\n$concept_radicals$ are created continuously while a $concept_pop$ is subjected to [concept_discrimination] or when their [concept_sol] falls below their [concept_expected_sol], whenever a $concept_pop$'s [concept_sol] decreases, and due to decisions made during special events. $concept_radicals$ are also created in $concept_pops$ that support $concept_political_movements$ whose demands go unfulfilled, and when $concept_pops$ are fired from a [Concept('concept_building','$concept_building_possessive$')] [concept_workforce] (particularly if they held [Concept('concept_ownership_share','$concept_ownership_shares$')]).\n\nThe opposite of a $concept_radical$ is a [concept_loyalist]. Whenever a $concept_loyalist$ would be created in a $concept_pop$ that already has $concept_radicals$, one $concept_radical$ is removed instead."
 
  concept_rivalry: "Суперництво"
+ concept_rivalry_acc: "Суперництво"
  concept_rivals: "Суперники"
  concept_rival: "Суперник"
  concept_rival_ins: "Суперником"
@@ -888,7 +894,7 @@
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MAY 1, 2022
 
- concept_war_reparations: "Військове відшкодування"
+ concept_war_reparations: "Воєнне відшкодування"
  concept_war_reparations_desc:2 "A secondary [concept_war_goal] that can be added onto a [concept_diplomatic_play] and claimed as part of a [concept_peace_deal]. If enforced, the targeted [concept_country] is forced to transfer [GetDiplomaticActionType('war_reparations').GetIncomeTransfer|v%] of their [concept_treasury] income to the other for a duration of #v [GetDefine('NDiplomacy','WAR_GOAL_REPARATIONS_MONTHS')|0] months#!."
 
  concept_open_market: "Відкриття ринку"

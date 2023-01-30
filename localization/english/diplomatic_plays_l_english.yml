@@ -40,9 +40,9 @@
  ADD_WARGOAL_HEADER: "#bold Додати [Concept('concept_war_goal','$concept_war_goal_acc$')|l]#!"
  SWAY_COUNTRY: "[concept_sway]"
  SWAY_COUNTRY_HEADER: "#bold [concept_sway] [SwayCountryPanel.GetCountry.GetName]#!"
- DIPLO_PLAY_MANEUVERS_INITIATOR_TOOLTIP:1 "#header Initiator [Concept('concept_maneuver', '$concept_maneuvers$')]#!\n[DiplomaticPlay.GetInitiator.GetName|v] has [DiplomaticPlay.GetNumInitiatorManeuversRemaining|v] [Concept('concept_maneuver', '$concept_maneuvers$')] remaining."
- DIPLO_PLAY_MANEUVERS_TARGET_TOOLTIP:1 "#header Target [Concept('concept_maneuver', '$concept_maneuvers$')]#!\n[DiplomaticPlay.GetTarget.GetName|v] has [DiplomaticPlay.GetNumTargetManeuversRemaining|v] [Concept('concept_maneuver', '$concept_maneuvers$')] remaining."
- DIPLO_PLAY_JOIN_WRONG_PHASE:0 "#N It is only possible to take sides in a [concept_diplomatic_play] during the #variable $DIPLO_PLAY_MIDDLE_PHASE$#! phase#!"
+ DIPLO_PLAY_MANEUVERS_INITIATOR_TOOLTIP: "#header [Concept('concept_maneuver', '$concept_maneuvers$')] зачинателя#!\nУ [Concept('concept_country', '$concept_country_gen$')|l] [DiplomaticPlay.GetInitiator.GetName|v] залишилося [DiplomaticPlay.GetNumInitiatorManeuversRemaining|v] [SelectLocalization(GreaterThan_int32(DiplomaticPlay.GetNumInitiatorManeuversRemaining, '(int32)1'),SelectLocalization(GreaterThan_int32(DiplomaticPlay.GetNumInitiatorManeuversRemaining, '(int32)4'),Concept('concept_maneuver', '$concept_maneuvers_gen$'),Concept('concept_maneuver', '$concept_maneuvers$')),Concept('concept_maneuver', '$concept_maneuver$'))|l]."
+ DIPLO_PLAY_MANEUVERS_TARGET_TOOLTIP: "#header [Concept('concept_maneuver', '$concept_maneuvers$')] цілі#!\nУ [Concept('concept_country', '$concept_country_gen$')|l] [DiplomaticPlay.GetTarget.GetName|v] залишилося [DiplomaticPlay.GetNumTargetManeuversRemaining|v] [SelectLocalization(GreaterThan_int32(DiplomaticPlay.GetNumTargetManeuversRemaining, '(int32)1'),SelectLocalization(GreaterThan_int32(DiplomaticPlay.GetNumTargetManeuversRemaining, '(int32)4'),Concept('concept_maneuver', '$concept_maneuvers_gen$'),Concept('concept_maneuver', '$concept_maneuvers$')),Concept('concept_maneuver', '$concept_maneuver$'))|l]."
+ DIPLO_PLAY_JOIN_WRONG_PHASE: "#N Єдиний спосіб стати на чиюсь сторону у [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l], це під час віхи «#variable $DIPLO_PLAY_MIDDLE_PHASE$#!»#!"
  DIPLO_PLAY_SWAY_WRONG_PHASE:0 "#N It is only possible to sway undecided participants in a [concept_diplomatic_play] during the #variable $DIPLO_PLAY_MIDDLE_PHASE$#! phase#!"
  DIPLO_PLAY_OVERLORD_JOIN_WRONG_PHASE:0 "#N The suzerain of one of the primary participants in a [concept_diplomatic_play] can only take sides during the #variable $DIPLO_PLAY_OPENING_PHASE$#! phase#!"
  DIPLO_PLAY_YIELD_WRONG_PHASE:0 "#N It is not possible to back down in a [concept_diplomatic_play] during the #variable $DIPLO_PLAY_OPENING_PHASE$#! phase#!"
@@ -52,9 +52,9 @@
  DIPLOMATIC_PLAY_ESCALATION_PAUSE:0 "Escalation paused for [DiplomaticPlay.GetEscalationPause|v] day(s)"
  DIPLOMATIC_PLAY_ESCALATION_NO_PAUSE: "Загострення продовжується..."
   
- DIPLO_PLAY_OPENING_PHASE:1 "[concept_opening_moves]"
- DIPLO_PLAY_MIDDLE_PHASE:1 "[concept_diplomatic_maneuvers]"
- DIPLO_PLAY_CLOSING_PHASE:1 "[concept_countdown_to_war]"
+ DIPLO_PLAY_OPENING_PHASE: "[concept_opening_moves]"
+ DIPLO_PLAY_MIDDLE_PHASE: "[concept_diplomatic_maneuvers]"
+ DIPLO_PLAY_CLOSING_PHASE: "[concept_countdown_to_war]"
 
  DIPLO_PLAY_SWAY_OFFER_OBLIGATION_DESC:1 "Try to convince [COUNTRY.GetName] to join your side by offering them an [concept_obligation].[ConcatIfNeitherEmpty( '\n$TOOLTIP_DELIMITER$\n', '$ERRORS$' )]"
  DIPLO_PLAY_SWAY_OFFER_WAR_GOAL_DESC:0 "[WAR_GOAL.GetSwayDesc][ConcatIfNeitherEmpty( '\n$TOOLTIP_DELIMITER$\n', '$ERRORS$' )]"
@@ -336,9 +336,9 @@
  war_goal_contain_threat_desc:0 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to release all States and Subjects they have gained through conquest in the last #v [GetDefine('NDiplomacy', 'WAR_GOAL_CONTAIN_THREAT_YEARS_SINCE_CONQUEST')]#! years."
  war_goal_contain_threat_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to release all their recent conquests."
   
- war_goal_war_reparations_type_name: "Військове відшкодування"
+ war_goal_war_reparations_type_name: "Воєнне відшкодування"
  war_goal_war_reparations_type_desc: "Змусити іншу державу заплатити [concept_war_reparations|l]."
- war_goal_war_reparations:2 "[WAR_GOAL.GetTarget.GetAdjectiveNoFormatting] [concept_war_reparations]"
+ war_goal_war_reparations: "[WAR_GOAL.GetTarget.GetAdjectiveNoFormatting]е [concept_war_reparations|l]"
  war_goal_war_reparations_desc:1 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to pay #variable 10%#! of their tax income in [concept_war_reparations] for 5 years."
  war_goal_war_reparations_sway_desc:1 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to pay them #variable 10%#! of their tax income in [concept_war_reparations] for 5 years."
  
