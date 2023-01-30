@@ -57,7 +57,7 @@
  alert_high_attrition_alert_name: "[SCOPE.GetRootScope.GetCharacter.GetFullName] має [SCOPE.GetRootScope.GetCharacter.GetAttritionRaw|0%-] [Concept('concept_attrition', '$concept_attrition_gen$')|l]"
  alert_high_attrition_alert_desc: "Військо [Concept('concept_commander', '$concept_commander_gen$')|l] [SCOPE.GetRootScope.GetCharacter.GetFullName] може зазнати багато втрат через виснаження."
  alert_high_attrition_alert_hint: "Щоб зменшити [Concept('concept_attrition', '$concept_attrition_acc$')|l] слід віддати інший наказ [Concept('concept_commander', '$concept_commander_dat$')|l] чи повернути їх з [Concept('concept_front', '$concept_front_gen$')|l]."
- alert_high_attrition_alert_action:0 "Панель війська"
+ alert_high_attrition_alert_action: "Панель війська"
 
  alert_active_peace_deal_alert_name: "Запропонована [concept_peace_deal|l]"
  alert_active_peace_deal_alert_desc: "Була запропонована мирна угода для цієї [Concept('concept_war', '$concept_war_gen$')|l] [concept_war], ви як її частина можете або #b відхилити#!, або #b прийняти#! залежно від реакції усіх учасників перемовин.\n[GetPlayer.GetActivePeaceDealDesc]"

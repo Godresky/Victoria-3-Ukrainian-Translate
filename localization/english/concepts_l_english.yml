@@ -252,14 +252,14 @@
  concept_homelands: "Батьківщина"
  concept_homeland_desc:2 "A [Concept('concept_culture','$concept_culture_possessive$')] $concept_homelands$ consist of those [Concept('concept_state_region','$concept_state_regions$')] that [Concept('concept_pop', '$concept_pops$')] of that $concept_culture$ feel are historically or naturally their territory. $concept_pops$ are more prone to [Concept('concept_migration','$concept_migrate$')] to their $concept_homelands$ than other [Concept('concept_state','$concept_states$')], and $concept_pops$ who reside there will never consider [Concept('concept_assimilation','$concept_assimilating$')].\n\nLaunching a [concept_diplomatic_play] to conquer a $concept_state$ considered a $concept_homeland$ of one of your [concept_primary_cultures] is considered relatively legitimate, and will generate substantially less [concept_infamy] than usual."
 
- concept_mobilize_general:0 "Mobilize General"
+ concept_mobilize_general: "Призов генералів"
  concept_mobilize_general_mobilize: "Призвати"
- concept_mobilize_general_mobilizing:0 "Mobilizing"
+ concept_mobilize_general_mobilizing: "Призивати"
  concept_mobilize_general_mobilized:0 "Mobilized"
- concept_mobilize_general_mobilization:0 "Mobilization"
+ concept_mobilize_general_mobilization: "Призов"
  concept_mobilize_general_desc:3 "$concept_mobilize_general_mobilizing$ a [concept_general] will immediately begin the process of $concept_mobilize_general_mobilization$ for all [Concept('concept_battalion', '$concept_battalions$')] assigned to them. Once $concept_mobilize_general_mobilized$, a $concept_general$ cannot be demobilized manually but will automatically stand down once the [concept_country] is no longer at [concept_war]."
 
- concept_mobilize_battalion:0 "Mobilize Battalion"
+ concept_mobilize_battalion: "Призов батальйонів"
  concept_mobilize_battalion_demobilized: "Знепризвані"
  concept_mobilize_battalion_mobilize:0 "Mobilize"
  concept_mobilize_battalion_mobilizing:0 "Mobilizing"
@@ -285,11 +285,12 @@
  concept_potential_battalions_desc_added:0 "[GetBuildingType('building_barracks').GetName]"
  concept_potential_battalions_desc_additional:0 "[GetBuildingType('building_conscription_center').GetName]"
 
- concept_conscription_center:0 "Conscription Center"
- concept_conscription_centers:0 "Conscription Centers"
- concept_conscription_center_conscription:0 "Conscription"
+ concept_conscription_center: "Центр набору"
+ concept_conscription_centers: "Центри набору"
+ concept_conscription_centers_acc: "Центри набору"
+ concept_conscription_center_conscription: "Набір"
  concept_conscripted:0 "Conscripted"
- concept_conscription:0 "Conscription"
+ concept_conscription: "Набір"
  concept_conscription_center_desc:2 "When a [concept_state] is $concept_conscripted$ during a [concept_diplomatic_play] or [concept_war], a [SelectLocalization(GetPlayer.IsValid,'concept_conscription_center_desc_added','conscription center')] appears with a [concept_building_level] depending on its #v $modifier_state_conscription_rate_add$#! and $concept_state$ [Concept('concept_pop','$concept_population$')] size. This [concept_military_building] will recruit civilian [concept_workforce] into [Concept('concept_conscript_battalion','$concept_conscript_battalions$')] that will be automatically assigned to [Concept('concept_general','$concept_generals$')] in their [concept_hq] as they are raised.\n\nAfter the $concept_war$, all $concept_conscription_centers$ will deactivate and the $concept_conscript_battalions$ will disband. $concept_pops$ who return to civilian life are not guaranteed to return to their old [concept_profession] but must seek new employment opportunities."
  concept_conscription_center_desc_added:0 "[GetBuildingType('building_conscription_center').GetName]"
 
@@ -335,6 +336,7 @@
  concept_battles: "Битви"
  concept_battles_gen: "Битв"
  concept_battles_acc: "Битви"
+ concept_battles_loc: "Битвах"
  concept_battle_desc:1 "When two [Concept('concept_commander','$concept_commanders$')] encounter each other and come into conflict during a [concept_war], they and their [Concept('concept_unit','$concept_units$')] will clash in an attempt to inflict [concept_casualties] and damage each others' [concept_morale]. The side whose [concept_manpower] has run out or become $concept_morale_demoralized$ first will withdraw, leaving the other side victorious.\n\nOn land, $concept_battles$ take place in [Concept('concept_province','$concept_provinces$')] adjacent to [Concept('concept_front','$concept_fronts$')] when one [concept_general] is advancing to take or regain $concept_province_land$. The winner will either conquer more $concept_provinces$ or prevent the enemy from doing so.\nAt sea, $concept_battles$ take place in Sea Nodes when one [concept_admiral] intercepts another due to conflicting [Concept('concept_order','$concept_orders$')]. The winner leaves their opponent damaged and forces them to return to port for repairs, leaving them unable to execute their $concept_order$ for a time."
 
  concept_timed_modifier: "Тимчасовий змінювач"
@@ -351,6 +353,7 @@
 
  concept_strategic_region: "Стратегічний регіон"
  concept_strategic_region_gen: "Стратегічного регіону"
+ concept_strategic_region_acc: "Стратегічний регіон"
  concept_strategic_region_loc: "Стратегічному регіоні"
  concept_strategic_regions: "Стратегічні регіони"
  concept_strategic_regions_ins: "Стратегічними регіонами"
@@ -924,13 +927,13 @@
  concept_defensive_pacts: "Оборонні пакти"
  concept_defensive_pact_desc:0 "A [concept_diplomatic_pact] between two [Concept('concept_country','$concept_countries$')]. $concept_countries$ engaged in a $concept_defensive_pact$ may always side with each other in [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] in which they are the primary target, regardless of if the other side maintains an active [concept_active_interest] in the affected [concept_strategic_region]. This does not extend to $concept_diplomatic_plays$ where the other party is the initiator, or where they are backing a third $concept_country$ as a primary target."
 
- concept_supply:0 "Supply"
+ concept_supply: "Постачання"
  concept_supply_desc:1 "A [Concept('concept_commander','$concept_commander_possessive$')] $concept_supply$ sets the baseline [concept_supply] for [Concept('concept_unit','$concept_units$')] under their command. $concept_supply$ is usually 100%, but can be lower if a [concept_general] is overseas and supplied by a compromised [concept_shipping_lane], and will be zero if the $concept_general$ is completely cut off from its [concept_hq]. [Concept('concept_character_trait','$concept_character_traits$')] and [Concept('concept_modifier','$concept_modifiers$')] can also apply in some cases."
 
- concept_escort_convoys:0 "Escort Convoys"
+ concept_escort_convoys: "Супровід конвоїв"
  concept_escort_convoys_desc:0 "$concept_escort_convoys$ through their [Concept('concept_shipping_lane','$concept_shipping_lanes$')] safely, engaging enemy vessels as needed."
 
- concept_manpower:0 "Manpower"
+ concept_manpower: "Людський ресурс"
  concept_manpower_desc:3 "The amount of [SelectLocalization(GetPlayer.IsValid,'concept_manpower_desc_added','Soldiers')] and [SelectLocalization(GetPlayer.IsValid,'concept_manpower_desc_added_2','Officers')] in a [concept_unit]. The greater the $concept_manpower$ the more [concept_casualties] the $concept_unit$ will be able to deal and take."
  concept_manpower_desc_added:0 "[GetPopType('soldiers').GetName]"
  concept_manpower_desc_added_2:0 "[GetPopType('officers').GetName]"
@@ -1022,8 +1025,8 @@
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED APRIL 30, 2022
 
- concept_theater:0 "Theater"
- concept_theaters:0 "Theaters"
+ concept_theater: "Театр"
+ concept_theaters: "Театри"
  concept_theater_desc:1 "A region of adjacent [Concept('concept_province','$concept_provinces$')] under the control of a single [concept_country]. [Concept('concept_front','$concept_fronts$')] are created on the border between two $concept_theaters$ controlled by $concept_countries$ hostile to each other in a [concept_war] or [concept_diplomatic_play]."
 
  concept_literacy: "Грамотність"
@@ -1061,6 +1064,7 @@
 
  concept_general: "Генерал"
  concept_general_gen: "Генерала"
+ concept_general_dat: "Генералу"
  concept_generals: "Генерали"
  concept_generals_gen: "Генералів"
  concept_generals_ins: "Генералами"
@@ -1069,6 +1073,7 @@
  concept_general_desc:2 "An army [concept_commander] [concept_character] who leads a [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_battalion','$concept_battalions$')]. To issue an [concept_order] to a $concept_general$, it must be [Concept('concept_mobilize_general','$concept_mobilize_general_mobilized$')]. Effects from a $concept_general$'s [Concept('concept_character_trait','$concept_character_traits$')] are conferred onto $concept_battalions$ under their direct command."
 
  concept_admiral: "Адмірал"
+ concept_admiral_dat: "Адміралу"
  concept_admirals: "Адмірали"
  concept_admirals_gen: "Адміралів"
  concept_admiral_possessive:0 "Admiral\\'s"
@@ -1078,8 +1083,8 @@
  concept_political_strengths: "Політичні сили"
  concept_political_strength_desc:3 "The degree of power a [concept_pop], and consequently the [Concept('concept_interest_group','$concept_interest_groups$')] it supports, have over the [Concept('concept_country','$concept_country_possessive$')] politics. It is derived from its supporting $concept_pops$' [concept_wealth]. $concept_pops$ who live in [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] have much less $concept_political_strength$, while $concept_pops$ in the [concept_capital_state] have more.\n\n$concept_pops$ distribute their $concept_political_strength$ to the $concept_interest_groups$ it supports proportionate to how many of its members support it. If an $concept_interest_group$ is a member of a [concept_party], they also gain $concept_political_strength$ from the [concept_votes] that $concept_party$ received in the last [concept_election]. An $concept_interest_group$'s [concept_clout] is equal to their share of the $concept_country$'s total $concept_political_strength$."
 
- concept_working_adults:0 "Working Adults"
- concept_working_adult:1 "Working Adult"
+ concept_working_adults: "Дорослі, що працюють"
+ concept_working_adult: "Дорослий, що працює"
  concept_working_adults_desc:1 "The part of a [concept_pop] that make up the [concept_workforce] that work in [Concept('concept_building', '$concept_buildings$')] for [Concept('concept_building_wage', '$concept_building_wages$')]. They are the main source of a $concept_pop$'s [Concept('concept_pop_income','$concept_pop_income_short$')] and [concept_political_strength]."
 
  concept_dependents: "Утриманці"
