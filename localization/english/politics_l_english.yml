@@ -23,7 +23,7 @@
  FREE_REFORM_DATE_PREFIX: "Останній день безплатної зміни: "
  LESS_THAN_ONE_DAY: "менше одного дня"
  ONE_DAY: "#tooltippable #tooltip:$BREAKDOWN_TAG$ #v 1#!#!#! день"
- GREATER_THAN_ONE_DAY: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|v$#!#! днів(-ня)"
+ GREATER_THAN_ONE_DAY: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|v$#!#! дн."
   
  POLITICAL_MOVEMENT_ENACTING:0 "enacting"
  POLITICAL_MOVEMENT_RESTORING:0 "restoring"
