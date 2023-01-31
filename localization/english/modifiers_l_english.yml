@@ -911,8 +911,8 @@
  modifier_country_legitimacy_govt_leader_clout_add_desc:1 "The amount of [concept_legitimacy] the [concept_government] gains or loses based on the [concept_clout] of the [concept_interest_group] leading the government."
  modifier_country_legitimacy_govt_total_clout_add:0 "[concept_legitimacy] from Government Clout"
  modifier_country_legitimacy_govt_total_clout_add_desc:1 "The amount of [concept_legitimacy] the [concept_government] gains or loses based on the total [concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] in the government."
- modifier_country_legitimacy_govt_total_votes_add:0 "[concept_legitimacy] from [concept_votes]"
- modifier_country_legitimacy_govt_total_votes_add_desc:0 "The amount of [concept_legitimacy] the [concept_government] gains or loses based on the total percentage of [concept_votes] of [Concept('concept_party','$concept_parties$')] in the government."
+ modifier_country_legitimacy_govt_total_votes_add: "[concept_legitimacy] завдяки [Concept('concept_votes','$concept_votes_dat$')|l]"
+ modifier_country_legitimacy_govt_total_votes_add_desc: "Рівень [Concept('concept_legitimacy','$concept_legitimacy_gen$')|l], який отримає або втрачає [concept_government|l], виходячи зі загального відсотку [Concept('concept_votes','$concept_votes_gen$')|l] [Concept('concept_party','$concept_parties_gen$')|l] в уряді."
   
  modifier_stockpile_army_requirement_small_arms_add:0 "Army @small_arms! Consumption"
  modifier_stockpile_army_requirement_small_arms_add_desc:0 "Increases how much @small_arms! Small Arms the army consumes"
@@ -2038,8 +2038,8 @@
  battle_navy_defense:0 "$modifier_unit_navy_defense_add$"
  battle_navy_defense_desc:0 "$modifier_unit_navy_defense_add_desc$"
 
- modifier_unit_morale_loss_add:0 "[concept_morale] Loss"
- modifier_unit_morale_loss_add_desc:0 "The amount of [concept_morale] a [concept_unit] loses during battle"
+ modifier_unit_morale_loss_add: "Втрата [Concept('concept_morale','$concept_morale_gen$')|l]"
+ modifier_unit_morale_loss_add_desc: "The amount of [concept_morale] a [concept_unit] loses during battle"
  modifier_unit_morale_loss_mult:0 "$modifier_unit_morale_loss_add$"
  modifier_unit_morale_loss_mult_desc:0 "$modifier_unit_morale_loss_add_desc$"
 

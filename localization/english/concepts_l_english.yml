@@ -596,8 +596,9 @@
  concept_occupancy: "Зайнятість"
  concept_occupancy_desc:1 "How fully employed a [concept_building] is, which also determines how much of its maximum [Concept('concept_good_production','Productive')] capacity is utilized. If the $concept_building$ has room to hire a larger [concept_workforce], it will always try to do so. If its hiring is limited by the [concept_building_wage] it can offer, it will increase $concept_building_wages$ for as long as its [concept_building_balance] remains positive."
 
- concept_votes: "Голоса"
+ concept_votes: "Голоси"
  concept_votes_gen: "Голосів"
+ concept_votes_dat: "Голосам"
  concept_vote: "Голос"
  concept_voting_rights: "Виборчі права"
  concept_voting: "Голосування"
@@ -952,6 +953,7 @@
  concept_manpower_desc_added_2:0 "[GetPopType('officers').GetName]"
 
  concept_morale: "Моральний дух"
+ concept_morale_gen: "Морального духу"
  concept_morale_demoralized:0 "Demoralized"
  concept_morale_desc:1 "A [Concept('concept_unit','$concept_unit_possessive$')] $concept_morale$ measures how much of its remaining [concept_manpower] is ready for [concept_battle]. As a result of $concept_units$ taking and inflicting [concept_casualties] on each other in $concept_battle$, some of the remaining $concept_manpower$ will become $concept_morale_demoralized$ for the remainder of the $concept_battle$ and unable to take offensive action. As all $concept_units$ reach a critical threshold of low $concept_morale$ the [concept_commander] will retreat, leaving the other side victorious.\n\nAfter a $concept_battle$, $concept_units$ will regain their $concept_morale$ at a steady rate up to their $concept_commander$'s [concept_supply] rating."
 
