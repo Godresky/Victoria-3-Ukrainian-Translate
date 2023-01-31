@@ -548,7 +548,7 @@
  FORM_COUNTRY_STATE_REGIONS_HEADER: "Ми контролюємо #v [CountryFormation.GetNumControlledStates(GetPlayer)]#!/#v [CountryFormation.GetTotalNumStates]#! [CountryFormation.GetAdjective|l]их [Concept('concept_state_region', '$concept_state_regions_gen$')|l]"
 
  FORM_COUNTRY_STATE_REGIONS_REQUIRED: "[CountryFormation.GetNumRequiredStates|v] - потрібно стільки [Concept('concept_state_region', '$concept_state_regions_gen$')|l], щоб утворити націю" #[CountryFormation.GetName]
- FORM_COUNTRY_CULTURE_COUNTRIES_HEADER: "[Concept('concept_country', '$concept_country_adj$і')] [Concept('concept_culture', '$concept_culture_gen$')|l]: [CountryFormation.ListCultures]"
+ FORM_COUNTRY_CULTURE_COUNTRIES_HEADER: "[Concept('concept_country', '$concept_country_possessive$і')] [Concept('concept_culture', '$concept_culture_gen$')|l]: [CountryFormation.ListCultures]"
 
  FORM_COUNTRY_SUPPORT_CANDIDATE: "Підтримати"
  FORM_COUNTRY_SUPPORT_CANDIDATE_TOOLTIP: "#header [Concept('concept_unification_supporter', '$concept_unification_support$')] [Concept('concept_country', '$concept_country_acc$')|l] [Country.GetName]#!\n$TOOLTIP_DELIMITER$\nОголосити, що ви прихильник [Concept('concept_country', '$concept_country_gen$')|l] [Country.GetName], як кандидата на об’єднання нації [CountryFormation.GetName][ConcatIfNeitherEmpty('\n',CountryFormation.GetSupportCandidateDesc(GetPlayer, Country.Self))]"
@@ -1684,10 +1684,10 @@
  TECHNOLOGY_LORE_TEXT: "#lore [Technology.GetDesc]#!"
  NA: "Недоступний"
 
- JOURNAL_ENTRY_ON_ACTIVATION: "#title Якщо активується:#!\n$EFFECT$"
+ JOURNAL_ENTRY_ON_ACTIVATION: "#title Якщо ожвавиться:#!\n$EFFECT$"
  JOURNAL_ENTRY_ON_COMPLETION: "#title Якщо виконається:#!\n$EFFECT$"
  JOURNAL_ENTRY_ON_FAILURE: "#title Якщо провалиться:#!\n$EFFECT$"
- JOURNAL_ENTRY_ON_INVALIDATION: "#title Якщо стане недійсне:#!\n$EFFECT$"
+ JOURNAL_ENTRY_ON_INVALIDATION: "#title Якщо стане недійсним:#!\n$EFFECT$"
  JOURNAL_ENTRY_ON_TIMEOUT: "#title Якщо час вийде:#!\n$EFFECT$"
  
  HAS_ON_PULSE:0 "#debug Debug: This Journal Entry has some sort of OnPulse#!"
@@ -2534,7 +2534,7 @@
  POL_STR_FROM_WEALTH:0 "From [concept_wealth]: #variable $VAL|+=D$#!\n$TAB$Wealth #tooltippable #tooltip:[POP.GetTooltipTag],TOOLTIP_WEALTH #v $WEALTH|0$#!#!#!: #bold $VALPERPOP|+=$#! per Politically Active Pop"
  POL_STR_FROM_WEALTH_AVERAGE:0 "From [concept_wealth]: #variable $VAL|+=K$#!\n$TAB$Average Wealth #variable $WEALTH|1$#!: #bold $VALPERPOP|+=2$#! per Politically Active Pop"
 
- NO_ACTIVE_TRAITS: "Немає [Concept('concept_interest_group', '$concept_interest_groups_gen$')|l], що дають активні [Concept('concept_interest_group_trait', '$concept_interest_group_traits$')|l]"
+ NO_ACTIVE_TRAITS: "Немає [Concept('concept_interest_group', '$concept_interest_groups_gen$')|l], що дають дієві [Concept('concept_interest_group_trait', '$concept_interest_group_traits$')|l]"
  NO_ACTIVE_TRAITS_EXPLAIN:2 "#header [concept_interest_group] Traits#!\nEach [concept_interest_group] has a number of [Concept('concept_interest_group_trait', '$concept_interest_group_traits$')] that will be activated depending on the [concept_interest_group]'s [concept_approval]. These Traits have either negative or positive effects on your Country."
 
  PRODUCTION_METHOD_DISABLED_BY_GAME_RULE:0 "$concept_production_method$ disabled by a game rule"
@@ -4561,7 +4561,7 @@
  JOURNAL_ENTRY_TOOLTIP: "#header [JournalEntry.GetName]#![SelectLocalization(Not(StringIsEmpty(JournalEntry.GetStatusDesc)), 'JOURNAL_ENTRY_STATUS', '' )][SelectLocalization(StringIsEmpty(JournalEntry.GetStatusDesc), 'JOURNAL_ENTRY_TOOLTIP_WITH_LINE', JournalEntry.GetTooltip )]"
  JOURNAL_ENTRY_STATUS: "\n$TOOLTIP_DELIMITER$\n[JournalEntry.GetStatusDesc]\n\n"
  JOURNAL_ENTRY_TOOLTIP_WITH_LINE: "\n$TOOLTIP_DELIMITER$\n[JournalEntry.GetTooltip]"
- JOURNAL_ENTRY_ACTIVATION_HEADER: "#title Буде активовано, якщо:\n#!"
+ JOURNAL_ENTRY_ACTIVATION_HEADER: "#title Буде ожвавленно, якщо:\n#!"
  JOURNAL_ENTRY_COMPLETION_HEADER: "#title Буде виконано, якщо:\n#!"
  JOURNAL_ENTRY_FAILURE_HEADER: "#title Буде провалено, якщо:\n#!"
  JOURNAL_ENTRY_INVALIDATION_HEADER: "#title Стане недійсним, якщо:\n#!"
@@ -4735,7 +4735,7 @@
  DIPLO_ACTIONS: "[Concept('concept_diplomatic_action', '$concept_diplomatic_actions$')] з [Concept('concept_country', '$concept_country_ins$')|l] [Country.GetName]"
  NO_DIPLO_ACTIONS: "Неможливо використати [Concept('concept_diplomatic_action', '$concept_diplomatic_action_acc$')|l]"
  NO_DIPLO_PLAYS: "Неможливо почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l]"
- NO_ACTIVE_DIPLOMACY: "Жодної активної дипломатії"
+ NO_ACTIVE_DIPLOMACY: "Жодної дійової дипломатії"
  DIPLOMATIC_PLAYS_TARGETING_COUNTRY: "[Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] з [Concept('concept_country', '$concept_country_ins$')|l] [Country.GetName]"
  NO_DIPLOMATIC_PLAYS_TARGETING_COUNTRY: "[Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] недоступні"
  DIPLOMATIC_STATUS_HEADER: "#title Дипломатія#!"
@@ -5997,7 +5997,7 @@ notification_interest_activated_third_party_desc: "[SCOPE.sCountry('actor').GetN
  GENERAL_TRAVEL_DAY: "день"
  GENERAL_TRAVEL_DAYS: "дн."
 
- ACTIVATE_CONSCRIPTION_CENTER: "Активувати призовний пункт"
+ ACTIVATE_CONSCRIPTION_CENTER: "Ожвавити призовний пункт"
  ACTIVATE_CONSCRIPTION_CENTER_TOOLTIP:0 "#header Activate [concept_conscription_center]#!\n$TOOLTIP_DELIMITER$\nРозмір: [Building.GetExpansionLevel|v]\nUnit Capacity: [Building.GetCombatUnitCapacityDesc]$TROOP_ALLOCATION_CHANGES_ACTIVATE_CONSCRIPTION_CENTER$"
  CANNOT_ACTIVATE_CONSCRIPTION_CENTERS_NO_LAW:0 "[concept_country] must have a conscription law"
  CANNOT_ACTIVATE_CONSCRIPTION_CENTERS_NO_DIPLO_PLAY: "[concept_country] повинна бути частиною [Concept('concept_diplomatic_play','$concept_diplomatic_play_gen$')|l]"
@@ -6010,7 +6010,7 @@ notification_interest_activated_third_party_desc: "[SCOPE.sCountry('actor').GetN
  CONSCRIPTION_COST_NO_BREAKDOWN: "@money!$COST|K+=$"
  CONSCRIPTION_COST_ITEM: "[Building.GetName] у [Concept('concept_state', '$concept_state_loc$')|l] [Building.GetState.GetName|l]: #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] @money!$COST|K+=$#!#!"
 
- activate_conscription_centers_lens_option: "Активувати призовні пункти"
+ activate_conscription_centers_lens_option: "Ожвавити призовні пункти"
  activate_conscription_centers_lens_option_tooltip:1 "#header Activate Conscription Centers#!\n$TOOLTIP_DELIMITER$\nSelect [Concept('concept_state', '$concept_states$')] where you would like to activate [Concept('concept_conscription_center', '$concept_conscription_centers$')]"
 
  recruit_generals_lens_option: "Найняти генералів"

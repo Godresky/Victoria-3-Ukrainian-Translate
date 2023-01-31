@@ -408,11 +408,11 @@
 
  concept_capacity: "Cпроможність"
  concept_capacities: "Спроможності"
- concept_capacity_desc: "Мірило, що показує [Concept('concept_country','$concept_country_adj$і')|l] можливості у одній з трьох царин: [concept_bureaucracy|l], [concept_authority|l] та [concept_influence|l]. Спроможність не зберігається і не використовується, а постійно утворюється з різних джерел та весь час витрачається на різні проєкти, які ви реалізуєте. Ваш залишок кожної царини відображається у верхній панелі. Коли ви маєте надлишок спроможности, то отримуєте наддатки. Тоді як нестача спроможности призведе до великих карн."
+ concept_capacity_desc: "Мірило, що показує [Concept('concept_country','$concept_country_possessive$і')|l] можливості у одній з трьох царин: [concept_bureaucracy|l], [concept_authority|l] та [concept_influence|l]. Спроможність не зберігається і не використовується, а постійно утворюється з різних джерел та весь час витрачається на різні проєкти, які ви реалізуєте. Ваш залишок кожної царини відображається у верхній панелі. Коли ви маєте надлишок спроможности, то отримуєте наддатки. Тоді як нестача спроможности призведе до великих карн."
 
  concept_bureaucracy: "Бюрократія"
  concept_bureaucracy_gen: "Бюрократії"
- concept_bureaucracy_desc: "@bur! Бюрократія - це [Concept('concept_capacity','$concept_capacity$')|l], яка використовується для підтримки роботи ваших [Concept('concept_country','$concept_country_adj$их')|l] установ та повсякденної діяльности. Вартість підтримки росте в залежности від населення у [Concept('concept_incorporated_state', '$concept_incorporated_states_loc$')|l], кожного рівня розвитку [Concept('concept_institution', '$concept_institutions_gen$')|l]. Також використовується для керування [Concept('concept_commander','$concept_commanders_ins$')|l] та [Concept('concept_trade_route','$concept_trade_routes_ins$')|l]. Ви отримуєте @bur! від роботи [Concept('concept_building','$concept_buildings_gen$')|l]-[SelectLocalization(GetPlayer.IsValid,'concept_bureaucracy_desc_added','державна управа')|l] ."
+ concept_bureaucracy_desc: "@bur! Бюрократія - це [Concept('concept_capacity','$concept_capacity$')|l], яка використовується для підтримки роботи ваших [Concept('concept_country','$concept_country_possessive$их')|l] установ та повсякденної діяльности. Вартість підтримки росте в залежности від населення у [Concept('concept_incorporated_state', '$concept_incorporated_states_loc$')|l], кожного рівня розвитку [Concept('concept_institution', '$concept_institutions_gen$')|l]. Також використовується для керування [Concept('concept_commander','$concept_commanders_ins$')|l] та [Concept('concept_trade_route','$concept_trade_routes_ins$')|l]. Ви отримуєте @bur! від роботи [Concept('concept_building','$concept_buildings_gen$')|l]-[SelectLocalization(GetPlayer.IsValid,'concept_bureaucracy_desc_added','державна управа')|l] ."
  concept_bureaucracy_desc_added: "[GetBuildingType('building_government_administration').GetName]"
  
  concept_authority: "Авторитет"
@@ -658,8 +658,6 @@
  concept_country_ins: "Державою"
  concept_country_loc: "Державі"
 
- concept_country_adj: "Державн"
-
  concept_countries: "Держави"
  concept_countries_gen: "Держав"
  concept_countries_acc: "Держави"
@@ -672,7 +670,7 @@
  concept_country_polity: "Політика"
  concept_country_polities: "Політики"
  
- concept_country_possessive:1 "Country\\'s"
+ concept_country_possessive: "Державн"
  concept_countries_possessive:0 "Countries\\'"
 
  concept_country_desc:3 "A $concept_country$ consists of one or several parcels of [Concept('concept_province','$concept_province_land$')] organized into [Concept('concept_state','$concept_states$')], in which a [Concept('concept_pop','$concept_population$')] resides under the rule of a [concept_government] and its [concept_head_of_state]. In Victoria 3, both human and AI players each control a $concept_country$.\n\nAside from the nature of their $concept_pops$, which $concept_states$ they own, and how they been developed, a $concept_country$ is defined also by their [concept_country_tier], [concept_primary_cultures], and [concept_state_religion], and whether they are [Concept('concept_recognized_power','$concept_recognized_power_short$')] or [Concept('concept_unrecognized_power','$concept_unrecognized_power_short$')]. $concept_countries$ also have different [Concept('concept_law','$concept_laws$')] and access to different [Concept('concept_technology','$concept_technologies$')]."
