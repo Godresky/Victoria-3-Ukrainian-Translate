@@ -163,9 +163,9 @@
  alert_market_goods_shortage_alert_action: "Панель «[SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]» для товару [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName|l]"
  alert_market_goods_shortage_affected_buildings_breakdown: "[MarketGoods.GetBreakdownOfBuildingsAffectedByShortage]"
  alert_market_goods_shortage_affected_buildings_breakdown_data_version: "[Goods.GetBreakdownOfBuildingsAffectedByShortageInMarket]"
- alert_market_goods_shortage_affected_building_entry: "[Building.GetName] в [Concept('concept_state', '$concept_state_loc$')|l] [Building.GetState.GetName]"
+ alert_market_goods_shortage_affected_building_entry: "[Building.GetName] у [Concept('concept_state', '$concept_state_loc$')|l] [Building.GetState.GetName]"
 
- alert_low_market_access_alert_name: "[SCOPE.GetRootScope.GetState.GetMarketAccess|%0v] [Concept('concept_market_access', '$concept_market_access_gen$')|l] в [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetState.GetName]"
+ alert_low_market_access_alert_name: "[SCOPE.GetRootScope.GetState.GetMarketAccess|%0v] [Concept('concept_market_access', '$concept_market_access_gen$')|l] у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetState.GetName]"
  alert_low_market_access_alert_hint: "Ви можете покращити [Concept('concept_market_access', '$concept_market_access_acc$')|l] в [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetState.GetName], завдяки збільшеню рівня [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l] (звівши будівлі [GetBuildingType('building_port').GetName|l] чи [GetBuildingType('building_railway').GetName|l]), завдяки [Concept('concept_decree', '$concept_decrees_dat$')|l] «[GetDecreeType('decree_road_maintenance').GetName]» чи забезпечивши достатню кількість [Concept('concept_convoys', '$concept_convoys_gen$')|l] для з‘єднання морським тором [Concept('concept_state', '$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetName] зі [Concept('concept_market_capital', '$concept_market_capital_ins$')|l]."
  alert_low_market_access_alert_action: "Панель регіону [SCOPE.GetRootScope.GetState.GetName]"
  

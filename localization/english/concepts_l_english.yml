@@ -39,7 +39,7 @@
  concept_subject_possessive:0 "Subject\\'s"
  concept_subject_desc:1 "A [concept_country] whose autonomy and right to self-determination is limited to varying degree by an [concept_overlord]. $concept_subject$ relationships are a type of [concept_diplomatic_pact] that $concept_countries$ can be asked to join or forced into with a [concept_diplomatic_play]. The precise effects depends on the type of $concept_subject$ but tend to include being forced into their $concept_overlord$'s [concept_market], having to give up a part of their [Concept('concept_treasury','$concept_treasury_possessive$')] income, decreased [concept_prestige], the inability to start your own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] or freely decide which side to support in them, and inheriting the $concept_overlord$'s [concept_ruler] as your [concept_head_of_state].\n\n$concept_subjects$ can be liberated with a $concept_diplomatic_play$ started by themselves or a third party. Some $concept_subject$ types can also be targeted by a $concept_diplomatic_play_short$ by their $concept_overlord$ to reduce their autonomy further, or even become fully #b Annexed#! by them."
 
- concept_overlord:0 "Overlord"
+ concept_overlord: "Overlord"
  concept_overlord_possessive:0 "Overlord\\'s"
  concept_overlord_desc:0 "The dominant [concept_country] in a [concept_subject] relationship, who derive a number of benefits from the [concept_diplomatic_pact] while (usually) having to pay [concept_influence] for it."
 
@@ -122,7 +122,7 @@
  concept_trade_routes_gen: "Торгових торів"
  concept_trade_routes_dat: "Торговим торам"
  concept_trade_routes_acc: "Торгові тори"
- concept_trade_route_desc: "[Concept('concept_trade_routes', '$concept_trade_routes$')] купують [Concept('concept_good', '$concept_goods_acc$')] на одному [Concept('concept_market', '$concept_market_loc$')], transport it to another using [concept_convoys] (or overland, if the $concept_markets$ are adjacent), and $concept_sell_order_short$ the $concept_goods$ there in order to make [concept_revenue] (from which [concept_tariffs] are subtracted) for the [SelectLocalization(GetPlayer.IsValid,'concept_trade_route_desc_added','Trade Center')] managing it. In the process it creates [Concept('concept_buy_orders','$concept_buy_order_short$')] and [concept_sell_orders] on the two $concept_markets$, making it more expensive in one and less in the other. The volume of $concept_goods$ moved will independently scale up and down to meet the $concept_market$ conditions in both, employing more or less [concept_workforce] to match. Each $concept_trade_route$ costs a fixed amount of [concept_bureaucracy] to maintain."
+ concept_trade_route_desc:0 "[Concept('concept_trade_routes', '$concept_trade_routes$')] купують [Concept('concept_good', '$concept_goods_acc$')] на одному [Concept('concept_market', '$concept_market_loc$')], transport it to another using [concept_convoys] (or overland, if the $concept_markets$ are adjacent), and $concept_sell_order_short$ the $concept_goods$ there in order to make [concept_revenue] (from which [concept_tariffs] are subtracted) for the [SelectLocalization(GetPlayer.IsValid,'concept_trade_route_desc_added','Trade Center')] managing it. In the process it creates [Concept('concept_buy_orders','$concept_buy_order_short$')] and [concept_sell_orders] on the two $concept_markets$, making it more expensive in one and less in the other. The volume of $concept_goods$ moved will independently scale up and down to meet the $concept_market$ conditions in both, employing more or less [concept_workforce] to match. Each $concept_trade_route$ costs a fixed amount of [concept_bureaucracy] to maintain."
  concept_trade_route_desc_added:0 "[GetBuildingType('building_trade_center').GetName]"
 
  concept_trade_revenue:0 "Trade Revenue"
@@ -457,8 +457,9 @@
  concept_taboo: "Табу"
  concept_taboo_desc:1 "A [concept_religion] can be have a $concept_taboo$ against specific [Concept('concept_good','$concept_goods$')]. [Concept('concept_pop', '$concept_pops$')] of that $concept_religion$ will spend significantly less on $concept_goods$ they consider $concept_taboo$ compared to other $concept_goods$ in the same [concept_pop_needs] category."
 
- concept_goods_substitution:0 "Goods Substitution"
- concept_goods_substitutes_short:0 "Substitutes"
+ concept_goods_substitution: "Заміщення товарів"
+ concept_goods_substitution_acc: "Заміщення товарів"
+ concept_goods_substitutes_short: "Замінники"
  concept_goods_substitution_desc:2 "[Concept('concept_good','$concept_goods$')] that are part of the same [concept_pop_needs] category are mutually substitutable to [Concept('concept_pop','$concept_pops$')] based on availability. For example, the Basic Food group contains both Grain and Meat, and $concept_pops$ will consume more Grain and less Meat, increasing their Meat consumption (and thus reducing Grain consumption) if Meat becomes more available in the market at a later point. In some cases, a Good may be substituted entirely if there are no [concept_sell_orders] for that Good in the [concept_market].\n\nHow much of a $concept_good$ a $concept_pop$ will buy compared to other $concept_goods$ in the same category will change substantially if the $concept_good$ is an [concept_obsession] of their [concept_culture] or a [concept_taboo] in their [concept_religion]. $concept_goods$ that have a higher [concept_base_price] count more towards fulfilling a $concept_pop$'s $concept_pop_needs$ within a particular $concept_pop_needs$ category, so a single unit of Groceries is equivalent to several units of Grain."
 
  concept_market_price: "Ринкова ціна"
@@ -466,7 +467,7 @@
  concept_market_prices: "Ринкові ціни"
  concept_market_price_desc:1 "The price of a [concept_good] in the [concept_market]. It is based on [concept_buy_orders] and [concept_sell_orders], and affect the [concept_local_price] of [Concept('concept_good','$concept_goods$')] in all participating [Concept('concept_state','$concept_states$')] depending on their [concept_market_access]."
  
- concept_local_price:0 "Local Price"
+ concept_local_price: "Місцеві ціни"
  concept_local_price_desc:1 "The price of a [concept_good] in a [concept_state]. It is determined by the local [concept_good_consumption] and [concept_good_production], moderated by the [concept_market_price] depending on the [Concept('concept_state','$concept_state_possessive$')] [concept_market_access]. All transactions except [Concept('concept_trade_route','$concept_trade$')] occur in the $concept_local_price$, with purchases and sales creating [Concept('concept_buy_orders','$concept_buy_order_short$')] and [concept_sell_orders] on the [concept_market]."
  
  concept_subsistence_building: "Житловий будинок"
@@ -1104,7 +1105,7 @@
  concept_disenfranchised:0 "Disenfranchised"
  concept_disenfranchised_desc:1 "A $concept_disenfranchised$ [concept_pop] is prohibited from participating in the [Concept('concept_country','$concept_country_possessive$')] politics. As a result they cannot support any [Concept('concept_interest_group','$concept_interest_groups$')]. The most common reason for a $concept_pop$ to be $concept_disenfranchised$ is [concept_discrimination]."
 
- concept_input_mult:1 "Goods Input"
+ concept_input_mult: "Надходження товарів"
  concept_input_mult_desc:2 "An adjustment to the amount of [Concept('concept_good','$concept_goods$')] [Concept('concept_good_consumption','$concept_good_consumed$')] by a [concept_building]."
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED APRIL 29, 2022
