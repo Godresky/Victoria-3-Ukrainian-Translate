@@ -5806,7 +5806,7 @@ notification_interest_activated_third_party_desc: "[SCOPE.sCountry('actor').GetN
  PROJECTED_VOTES: "$VOTING_POWER|K$ ($SHARE|%0$)"
  PARTY_AFFILIATION_TOOLTIP:0 "#header [InterestGroup.GetName] Affiliation with [Party.GetName]: $SCORE|v0$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
 
- CULTURE_IN_STATE_ITEM:1 "[STATE.GetPopulationForCulture( CULTURE.Self )|vD] [CULTURE.GetName] ([STATE.GetPolStrForCulture( CULTURE.Self )|vD] [concept_political_strength])"
+ CULTURE_IN_STATE_ITEM: "[STATE.GetPopulationForCulture( CULTURE.Self )|vD] [CULTURE.GetName] ([STATE.GetPolStrForCulture( CULTURE.Self )|vD] [Concept('concept_political_strength', '$concept_political_strength_gen$')|l])"
  CULTURE_IN_STATE_FORMAT: "#header Культури в [Concept('concept_state', '$concept_state_loc$')|l] [STATE.GetName]#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
 
  IG_IN_STATE_ITEM: "$VAL|vD$ - [INTEREST_GROUP.GetName]"
