@@ -122,6 +122,7 @@
  concept_trade_routes_gen: "Торгових торів"
  concept_trade_routes_dat: "Торговим торам"
  concept_trade_routes_acc: "Торгові тори"
+ concept_trade_routes_ins: "Торговими торами"
  concept_trade_route_desc:0 "[Concept('concept_trade_routes', '$concept_trade_routes$')] купують [Concept('concept_good', '$concept_goods_acc$')] на одному [Concept('concept_market', '$concept_market_loc$')], transport it to another using [concept_convoys] (or overland, if the $concept_markets$ are adjacent), and $concept_sell_order_short$ the $concept_goods$ there in order to make [concept_revenue] (from which [concept_tariffs] are subtracted) for the [SelectLocalization(GetPlayer.IsValid,'concept_trade_route_desc_added','Trade Center')] managing it. In the process it creates [Concept('concept_buy_orders','$concept_buy_order_short$')] and [concept_sell_orders] on the two $concept_markets$, making it more expensive in one and less in the other. The volume of $concept_goods$ moved will independently scale up and down to meet the $concept_market$ conditions in both, employing more or less [concept_workforce] to match. Each $concept_trade_route$ costs a fixed amount of [concept_bureaucracy] to maintain."
  concept_trade_route_desc_added:0 "[GetBuildingType('building_trade_center').GetName]"
 
@@ -221,7 +222,8 @@
  concept_neutrality:0 "Neutrality"
  concept_neutrality_desc:0 "All AI-controlled [Concept('concept_country','$concept_countries$')] involved in a [concept_diplomatic_play] have a level of $concept_neutrality$ based on their internal conditions and their general level of interest in the participants of the play. The higher their $concept_neutrality$, the more difficult it will be to convince that [concept_country] to get involved in the play."
  
- concept_confidence:0 "Confidence"
+ concept_confidence: "Впевненість"
+ concept_confidence_acc: "Впевненість"
  concept_confidence_desc:0 "An AI-controlled [Concept('concept_country','$concept_countries$')] that is one of the main participants in a [concept_diplomatic_play] has a level of of $concept_confidence$ based on their internal conditions and how likely they believe it is that they will be able to win any ensuing war. The chance that the AI [concept_country] will decide to back down is directly determined by their confidence, though this is not guaranteed even at low $concept_confidence$ levels, especially if backing down would lead to their annexation."
 
  concept_maneuver: "Маневр"
@@ -410,8 +412,8 @@
 
  concept_bureaucracy: "Бюрократія"
  concept_bureaucracy_gen: "Бюрократії"
- concept_bureaucracy_desc:4 "@bur! Bureaucracy is a [concept_capacity] used to maintain your [Concept('concept_country','$concept_country_possessive$')] administrative cohesion and day-to-day operations. The cost increases with the population across your [Concept('concept_incorporated_state', '$concept_incorporated_states$')] and with every [concept_institution] investment level, and is also used to administer [Concept('concept_commander','$concept_commanders$')] and [Concept('concept_trade_route','$concept_trade_routes$')]. You gain @bur! from operating [SelectLocalization(GetPlayer.IsValid,'concept_bureaucracy_desc_added','Government Administration')] [Concept('concept_building','$concept_buildings$')]."
- concept_bureaucracy_desc_added:0 "[GetBuildingType('building_government_administration').GetName]"
+ concept_bureaucracy_desc: "@bur! Бюрократія - це [Concept('concept_capacity','$concept_capacity$')|l], яка використовується для підтримки роботи ваших [Concept('concept_country','$concept_country_adj$их')|l] установ та повсякденної діяльности. Вартість підтримки росте в залежности від населення у [Concept('concept_incorporated_state', '$concept_incorporated_states_loc$')|l], кожного рівня розвитку [Concept('concept_institution', '$concept_institutions_gen$')|l]. Також використовується для керування [Concept('concept_commander','$concept_commanders_ins$')|l] та [Concept('concept_trade_route','$concept_trade_routes_ins$')|l]. Ви отримуєте @bur! від роботи [Concept('concept_building','$concept_buildings_gen$')|l]-[SelectLocalization(GetPlayer.IsValid,'concept_bureaucracy_desc_added','державна управа')|l] ."
+ concept_bureaucracy_desc_added: "[GetBuildingType('building_government_administration').GetName]"
  
  concept_authority: "Авторитет"
  concept_authority_gen: "Авторитету"
@@ -446,6 +448,7 @@
  concept_workforce_desc:1 "The $concept_workforce$ of a [concept_building] consists of [Concept('concept_pop', '$concept_pops$')] of different [Concept('concept_profession', '$concept_professions$')] depending on the currently active [Concept('concept_production_method', '$concept_production_methods$')]."
 
  concept_gold_reserves: "Золотий запас"
+ concept_gold_reserves_gen: "Золотого запасу"
  concept_gold_reserves_desc:1 "A [Concept('concept_country','$concept_country_possessive$')] weekly budget surplus is accumulated in its $concept_gold_reserves$. If the budget balance becomes negative, any [concept_money] in the $concept_gold_reserves$ will be depleted first before the $concept_country$ starts taking [concept_loans]. The $concept_gold_reserves$ can only accumulate up to a fraction of your [concept_gdp] before diminishing returns set in. Stockpiling gold will eventually lead to depleting your economic engine."
 
  concept_cash_reserves: "Грошові резерви"
@@ -1070,6 +1073,7 @@
  concept_commander_dat: "Командиру"
  concept_commander_acc: "Командира"
  concept_commanders: "Командири"
+ concept_commanders_ins: "Командирами"
  concept_commander_possessive:0 "Commander\\'s"
  concept_commander_desc:1 "A [concept_character] in command of a part of a [Concept('concept_country','$concept_country_possessive$')] military forces. Their [concept_commander_rank] determines how many forces they are allotted from the $concept_country$'s available reserves."
 
@@ -1177,6 +1181,7 @@
  concept_war_goal_primary: "Основні воєнні цілі"
  concept_war_goals: "Воєнні цілі"
  concept_war_goals_gen: "Воєнних цілей"
+ concept_war_goals_acc: "Воєнні цілі"
  concept_war_goal_desc:2 "$concept_war_goals$ are the objectives a [concept_country] is fighting a [concept_war] over. They are determined during the [concept_diplomatic_play] and are fixed after the $concept_war$ has begun. Each $concept_war_goal$ claimed in a [concept_peace_deal] decreases the chance the opponent will accept it, and increases the degree by which their [concept_war_support] must be [Concept('concept_war_exhaustion','$concept_war_exhaustion_exhausted$')] before they will agree.\n\nThe first $concept_war_goal$ claimed as part of the $concept_diplomatic_play$ is considered your $concept_war_goal_primary$, and some $concept_diplomatic_plays$ require it to be included in all $concept_peace_deals$."
 
  concept_resource_potential: "Ресурсна мічність"
