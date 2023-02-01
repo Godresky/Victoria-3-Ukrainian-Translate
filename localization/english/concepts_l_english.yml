@@ -39,7 +39,7 @@
  concept_subject_possessive:0 "Subject\\'s"
  concept_subject_desc:1 "A [concept_country] whose autonomy and right to self-determination is limited to varying degree by an [concept_overlord]. $concept_subject$ relationships are a type of [concept_diplomatic_pact] that $concept_countries$ can be asked to join or forced into with a [concept_diplomatic_play]. The precise effects depends on the type of $concept_subject$ but tend to include being forced into their $concept_overlord$'s [concept_market], having to give up a part of their [Concept('concept_treasury','$concept_treasury_possessive$')] income, decreased [concept_prestige], the inability to start your own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] or freely decide which side to support in them, and inheriting the $concept_overlord$'s [concept_ruler] as your [concept_head_of_state].\n\n$concept_subjects$ can be liberated with a $concept_diplomatic_play$ started by themselves or a third party. Some $concept_subject$ types can also be targeted by a $concept_diplomatic_play_short$ by their $concept_overlord$ to reduce their autonomy further, or even become fully #b Annexed#! by them."
 
- concept_overlord: "Overlord"
+ concept_overlord: "Повелитель"
  concept_overlord_possessive:0 "Overlord\\'s"
  concept_overlord_desc:0 "The dominant [concept_country] in a [concept_subject] relationship, who derive a number of benefits from the [concept_diplomatic_pact] while (usually) having to pay [concept_influence] for it."
 
@@ -126,7 +126,7 @@
  concept_trade_route_desc:0 "[Concept('concept_trade_routes', '$concept_trade_routes$')] купують [Concept('concept_good', '$concept_goods_acc$')] на одному [Concept('concept_market', '$concept_market_loc$')], transport it to another using [concept_convoys] (or overland, if the $concept_markets$ are adjacent), and $concept_sell_order_short$ the $concept_goods$ there in order to make [concept_revenue] (from which [concept_tariffs] are subtracted) for the [SelectLocalization(GetPlayer.IsValid,'concept_trade_route_desc_added','Trade Center')] managing it. In the process it creates [Concept('concept_buy_orders','$concept_buy_order_short$')] and [concept_sell_orders] on the two $concept_markets$, making it more expensive in one and less in the other. The volume of $concept_goods$ moved will independently scale up and down to meet the $concept_market$ conditions in both, employing more or less [concept_workforce] to match. Each $concept_trade_route$ costs a fixed amount of [concept_bureaucracy] to maintain."
  concept_trade_route_desc_added:0 "[GetBuildingType('building_trade_center').GetName]"
 
- concept_trade_revenue:0 "Trade Revenue"
+ concept_trade_revenue: "Виручка від торгівлі"
  concept_trade_revenue_desc:2 "A [concept_trade_route] generates revenue for the [SelectLocalization(GetPlayer.IsValid,'concept_trade_revenue_desc_added','Trade Center')]  managing it, depending on the [concept_market_price] difference and the volume traded. [concept_tariffs] reduce the $concept_trade_revenue$ generated, effectively decreasing the maximum volume a [concept_trade_route] can move before it becomes unprofitable and stagnates."
  concept_trade_revenue_desc_added:0 "[GetBuildingType('building_trade_center').GetName]"
  
@@ -134,8 +134,8 @@
  concept_trade_agreement_acc: "Торгову угоду"
  concept_trade_agreement_desc:2 "A type of [concept_diplomatic_pact] between two [Concept('concept_country', '$concept_countries$')] that eliminates [concept_tariffs] and [concept_bureaucracy] cost of [Concept('concept_trade_route','$concept_trade_routes$')] between them."
 
- concept_trade_route_competitiveness:0 "Trade Route Competitiveness"
- concept_trade_route_competitiveness_short:0 "Competitiveness"
+ concept_trade_route_competitiveness: "Конкурентоспроможність торговельних торів"
+ concept_trade_route_competitiveness_short: "Конкурентоспроможність"
  concept_trade_route_competitiveness_desc:1 "If a [Concept('concept_market','$concept_market_possessive$')] pool of [Concept('concept_good','$concept_goods$')] available for [Concept('concept_trade_route','$concept_trade$')] is depleted due to too many $concept_trade$ partners, the $concept_trade_route_competitiveness_short$ of each competing $concept_trade_route$ determines how large a share they get access to. A $concept_trade_route$'s $concept_trade_route_competitiveness_short$ increases over time."
 
  concept_market_good_policy: "Товарна політика ринку"
@@ -1365,8 +1365,8 @@
  concept_production_methods_short: "Способи"
  concept_production_method_desc:3 "$concept_production_methods$ determine how [Concept('concept_building','$concept_buildings$')] operate. They impact\n\n- The [Concept('concept_good_consumption','$concept_input_goods$')] the $concept_building$ must purchase to operate\n- The [Concept('concept_good_production','$concept_output_goods$')] the $concept_building$ produces and sells\n- The distribution of [Concept('concept_profession','$concept_professions$')] among its [concept_workforce]\n\n$concept_production_methods$ can also have other effects, such as the generation of [Concept('concept_modifier','$concept_modifiers$')] or the distribution of [Concept('concept_ownership_share','$concept_ownership_shares$')]. $concept_production_methods$ are organized in groups, in which only one can be active at a time. You can switch which $concept_production_method$ is active in each group as long as you meet the [concept_technology] and/or [concept_law] requirement for it."
 
- concept_nation_formation: "Формування нації"
- concept_nation_formation_acc: "Формування нації"
+ concept_nation_formation: "Утворення нації"
+ concept_nation_formation_acc: "Утворення нації"
  concept_nation_formation_desc:0 "If a [concept_country] meets certain requirements, such as owning land in specific [Concept('concept_state_region','$concept_state_regions$')] and/or having discovered a certain $SOCIETY$ [concept_technology], they may be able to form a new $concept_country$ of a higher [concept_country_tier]. The possible $concept_countries$ are listed in the #b $NATION_FORMATION$#! tab in the #b $CULTURE$#! panel."
 
  concept_culture: "Культура"

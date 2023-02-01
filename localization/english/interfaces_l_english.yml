@@ -2481,7 +2481,7 @@
  DIPLO_PLAY_TOOLTIP_BACKERS_HEADER: "На початку [Concept('concept_diplomatic_play', '$concept_diplomatic_play_short_gen$')|l], ми будемо #p мати таких союзників:#!"
  DIPLO_PLAY_TOOLTIP_LIKELY_OUR_SIDE_HEADER: "Ми думаємо, що ці [Concept('concept_country', '$concept_countries$')|l] займуть #p нашу сторону:#!"
  DIPLO_PLAY_TOOLTIP_LIKELY_ENEMY_SIDE_HEADER: "Ми думаємо, що ці [Concept('concept_country', '$concept_countries$')|l] займуть #n сторону ворога:#!"
- DIPLO_PLAY_TOOLTIP_FENCE_SITTERS_HEADER: "Ми думаємо, що ці [Concept('concept_country', '$concept_countries$')|l] #b приєднаються до будь-якої сторони#! або #b залишуться нейтральними#!:"
+ DIPLO_PLAY_TOOLTIP_FENCE_SITTERS_HEADER: "Ми думаємо, що ці [Concept('concept_country', '$concept_countries$')|l] #b приєднаються до будь-якої сторони#! або #b залишуться невтральними#!:"
  DIPLO_PLAY_TOOLTIP_COUNTRY_ENTRY:1 "[COUNTRY.GetName] (#variable @battalions![COUNTRY.GetBattalions|0]#! + #v [Country.CalcConscriptableBattalions]#!)"
 
  UNPRESSED_WAR_GOALS: "Невисунуті цілі війни:"
@@ -3712,7 +3712,7 @@
 
  POPULARITY_HATED: "#r Ненависна#!"
  POPULARITY_DISLIKED: "Невподобна"
- POPULARITY_NEUTRAL: "Нейтральна"
+ POPULARITY_NEUTRAL: "Невтральна"
  POPULARITY_LIKED: "Вподобна"
  POPULARITY_LOVED: "#g Уподобна#!"
 
@@ -3740,7 +3740,7 @@
 
  IDEOLOGY_STRONG_APPROVAL: "#P Сильне схвалення#!"
  IDEOLOGY_APPROVAL: "#P Схвалення#!"
- IDEOLOGY_NEUTRAL: "#V Нейтральне#!"
+ IDEOLOGY_NEUTRAL: "#V Невтральне#!"
  IDEOLOGY_DISAPPROVAL: "#N Несхвалення#!"
  IDEOLOGY_STRONG_DISAPPROVAL: "#N Сильне несхвалення#!"
 
@@ -3750,12 +3750,12 @@
  IDEOLOGY_LAW_STANCE_APPROVE: "#P $concept_endorse$#! законів: $LAWS$"
  IDEOLOGY_LAW_STANCE_DISAPPROVE: "#N $concept_oppose$#! законам: $LAWS$"
  IDEOLOGY_LAW_STANCE_STRONGLY_DISAPPROVE: "#N Сильна протидія#! законам: $LAWS$"
- IDEOLOGY_LAW_STANCE_NEUTRAL: "#V Нейтральні#! до законів: $LAWS$"
+ IDEOLOGY_LAW_STANCE_NEUTRAL: "#V Невтральні#! до законів: $LAWS$"
 
  POL_PANEL_IG_STATUS_HEADER: "#title Схвалення#!"
  ig_approval_loyal: "#bold #P Прихильність#!#!"
  ig_approval_happy: "#bold #P Щастя#!#!"
- ig_approval_neutral: "#bold Нейтральність#!"
+ ig_approval_neutral: "#bold Невтральність#!"
  ig_approval_unhappy: "#bold #N Нещастя#!#!"
  ig_approval_angry: "#bold #N Ворожість#!#!"
 
@@ -4575,7 +4575,7 @@
  LEAN_TOWARDS_INITIATOR_DIPLOMATIC_PLAY_TOOLTIP: "Стати #b на сторону#! держави #VARIABLE [DiplomaticPlay.GetInitiator.GetName]#! у цій [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l].\n\n[DiplomaticPlay.GetLeanTowardsInitiatorValidTooltip(GetPlayer)]"
  BE_ON_THE_FENCE_DIPLOMATIC_PLAY_TOOLTIP: "Перейти на сторону #b тих, хто не вирішили#! у цій [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l].\n\n[DiplomaticPlay.GetBeOnTheFenceValidTooltip(GetPlayer)]"
  YIELD_DIPLOMATIC_PLAY_TOOLTIP:0 "#HEADER Yield#! your position in this [concept_diplomatic_play][ConcatIfNeitherEmpty('\n\n', DiplomaticPlay.GetYieldValidTooltip(GetPlayer))]"
- DECLARE_NEUTRALITY_DIPLOMATIC_PLAY_TOOLTIP: "Оголосити свій нейтралітет у цій [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l] [ConcatIfNeitherEmpty(DiplomaticPlay.GetDeclareNeutralityValidTooltip(GetPlayer),'\n\n')]"
+ DECLARE_NEUTRALITY_DIPLOMATIC_PLAY_TOOLTIP: "Оголосити свій невтралітет у цій [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l] [ConcatIfNeitherEmpty(DiplomaticPlay.GetDeclareNeutralityValidTooltip(GetPlayer),'\n\n')]"
  DIPLOMATIC_PLAY_INITIATOR_TOOLTIP:0 "#variable [DiplomaticPlay.GetInitiator.GetName]#! is the initiator of this [concept_diplomatic_play]"
  DIPLOMATIC_PLAY_DESCRIPTION_TOOLTIP:0 "This [concept_diplomatic_play] is to force #variable [DiplomaticPlay.GetTarget.GetName]#! to #variable [DiplomaticPlay.GetDiplomaticPlayType.GetName]#!"
  DIPLOMATIC_PLAY_INTEREST_MARKER_TOOLTIP:0 "#variable [DiplomaticPlay.GetTarget.GetName]#! has a Level #variable [DiplomaticPlay.GetInterestMarker(DiplomaticPlay.GetTarget).GetInterestStatus]#! [concept_interest] in the [concept_strategic_region] of this [concept_diplomatic_play]"
@@ -5442,8 +5442,8 @@
  notification_diplo_play_subject_released_overlord_notification_desc:0 "Due to our failure to protect our subject of [SCOPE.sC('target').GetName] they have become independent."
 
  notification_diplo_play_declare_neutrality_notification_tooltip: "#header $notification_diplo_play_declare_neutrality_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_declare_neutrality_notification_desc$"
- notification_diplo_play_declare_neutrality_notification_name: "[SCOPE.sC('actor').GetName] проголосила нейтралітет"
- notification_diplo_play_declare_neutrality_notification_desc: "[SCOPE.sC('actor').GetName] проголосила їхній нейтралітет у цій [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l] між [Concept('concept_country', '$concept_countries_ins$')|l] [SCOPE.sC('initiator').GetName] та [SCOPE.sC('target').GetName]."
+ notification_diplo_play_declare_neutrality_notification_name: "[SCOPE.sC('actor').GetName] проголосила невтралітет"
+ notification_diplo_play_declare_neutrality_notification_desc: "[SCOPE.sC('actor').GetName] проголосила їхній невтралітет у цій [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l] між [Concept('concept_country', '$concept_countries_ins$')|l] [SCOPE.sC('initiator').GetName] та [SCOPE.sC('target').GetName]."
 
  notification_resource_discovered_tooltip:0 "#header $notification_resource_discovered_name$#!\n$TOOLTIP_DELIMITER$\n$notification_resource_discovered_desc$"
  notification_resource_discovered_name:1 "[SCOPE.sBT('target').GetDiscoveredResourceName] discovered in [SCOPE.GetRootScope.GetStateRegion.GetName]"

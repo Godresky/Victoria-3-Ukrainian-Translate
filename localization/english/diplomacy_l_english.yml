@@ -75,7 +75,7 @@
  relations_friendly: "#P Дружні#!"
  relations_amicable: "#P Теплі#!"
  relations_cordial: "#P Приємні#!"
- relations_neutral: "#V Нейтральні#!"
+ relations_neutral: "#V Невтральні#!"
  relations_poor: "#N Погані#!"
  relations_cold: "#N Холодні#!"
  relations_hostile: "#N Ворожі#!"
