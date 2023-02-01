@@ -1502,6 +1502,7 @@
  concept_budget_poll_taxes_desc:2 "A flat [Concept('concept_taxes','$concept_tax$')] collected on every [Concept('concept_working_adults', '$concept_working_adult$')] it applies to. Since $concept_budget_poll_taxes$ do not scale with the $concept_pop$'s income it tends to impact the [concept_lower_strata] the most."
 
  concept_budget_land_taxes: "Земельні податки"
+ concept_budget_land_taxes_gen: "Земельних податків"
  concept_budget_land_taxes_desc:4 "A type of [Concept('concept_budget_poll_taxes', '$concept_budget_poll_tax$')] collected from [SelectLocalization(GetPlayer.IsValid,'concept_budget_land_taxes_desc_added','Peasants')] only."
  concept_budget_land_taxes_desc_added:0 "[GetPopType('peasants').GetName]"
 
@@ -1668,11 +1669,13 @@
  concept_tax_capacity_desc_added:0 "[GetBuildingType('building_government_administration').GetName]"
 
  concept_assimilation: "Уподібнювання"
+ concept_assimilation_gen: "Уподібнювання"
  concept_assimilating: "Уподібнювати"
  concept_assimilate: "Уподібнювати"
  concept_assimilation_desc:3 "Foreign [Concept('concept_pop','$concept_pops$')] whose [concept_culture] is [Concept('concept_accepted_culture','$concept_accepted_culture_short$')] in the [concept_country] they live, and who do not live in one of their [Concept('concept_homeland','$concept_homelands$')], may $concept_assimilate$ into one of the $concept_country$'s [concept_primary_cultures]."
 
- concept_conversion:0 "Conversion"
+ concept_conversion: "Перехід"
+ concept_conversion_gen: "Переходу"
  concept_converting:1 "Converting"
  concept_convert:0 "Convert"
  concept_conversion_desc:2 "[Concept('concept_pop','$concept_pops$')] whose [concept_religion] is [Concept('concept_discrimination','$concept_discriminated_against$')] in the [concept_country] they live may instead $concept_convert$ to an [concept_accepted_religion]."

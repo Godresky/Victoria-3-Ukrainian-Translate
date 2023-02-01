@@ -2555,7 +2555,7 @@
  INCORPORATED_POPULATION_LAW_COST:1 "Incorporated Population of $POPULATION|vK$ costs #v $COST|1+$#! per Investment\n$TAB$Base Cost: #v $BASECOST|1+$#! $MODIFIER$"
  INSTITUTION_INVESTMENT_FACTOR:1 "#title $COST_PER_INVESTMENT_TITLE$: #v $VAL|1+$#!#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
  INSTITUTION_INVESTMENT_TOTAL:1 "#header Total policy investment#!\nCurrent: #variable @ins! $VAL$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
- INSTITUTION_INVESTMENT_LIST_ITEM:0 "#title [Institution.GetName]:#! #variable [Institution.GetInvestmentLevel]#!"
+ INSTITUTION_INVESTMENT_LIST_ITEM: "#title [Institution.GetName]:#! #variable [Institution.GetInvestmentLevel]#!"
 
  CLOCK_TEXT: "#BOLD [TimeKeeper.GetCurrentDate.GetString]#!"
  CLOCK_DEBUG_TEXT: "[TimeKeeper.GetDayOfWeek] [TimeKeeper.GetTimeOfDay|l]"
