@@ -278,20 +278,20 @@
  ANNEX_EFFECT_FIRST:0 "[COUNTRY.GetNameNoFlag] will annex [TARGET_COUNTRY.GetName]"
  ANNEX_EFFECT_THIRD:0 "[COUNTRY.GetName] will annex [TARGET_COUNTRY.GetName]"
   
- ADD_JOURNAL_ENTRY:0 "Adds #variable $JOURNAL_ENTRY_NAME$#! to the Journal of [COUNTRY.GetName|v]"
- ADD_JOURNAL_ENTRY_FIRST:0 "Adds #variable $JOURNAL_ENTRY_NAME$#! to the Journal of [COUNTRY.GetNameNoFlag|v]"
- ADD_JOURNAL_ENTRY_THIRD:0 "Adds #variable $JOURNAL_ENTRY_NAME$#! to the Journal of [COUNTRY.GetName|v]"
+ ADD_JOURNAL_ENTRY: "Додасть запис «#variable $JOURNAL_ENTRY_NAME$#!» до часопису державі [COUNTRY.GetName|v]"
+ ADD_JOURNAL_ENTRY_FIRST: "Додасть запис «#variable $JOURNAL_ENTRY_NAME$#!» до часопису державі [COUNTRY.GetNameNoFlag|v]"
+ ADD_JOURNAL_ENTRY_THIRD: "Додасть запис «#variable $JOURNAL_ENTRY_NAME$#!» до часопису державі [COUNTRY.GetName|v]"
  START_TUTORIAL_LESSON:0 "Starts the #variable $TUTORIAL_NAME$#! tutorial"
   
  ADD_RULING_INTEREST_GROUP:0 "[INTEREST_GROUP.GetName] becomes part of the government"
  REMOVE_RULING_INTEREST_GROUP:0 "[INTEREST_GROUP.GetName] is removed from the government"
  SET_RULING_INTEREST_GROUPS:0 "The specified set of Interest Groups are added to the government while everyone else are removed"
  
- ADD_MODIFIER: "$SUBJECT_NAME$ отримає #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
+ ADD_MODIFIER: "$SUBJECT_NAME$ отримає «#tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#!» $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
  ADD_MODIFIER_NEG: "$ADD_MODIFIER$"
- ADD_MODIFIER_FIRST: "$SUBJECT_NAME$ отримає #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
+ ADD_MODIFIER_FIRST: "$SUBJECT_NAME$ отримає «#tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#!» $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
  ADD_MODIFIER_FIRST_NEG: "$ADD_MODIFIER_FIRST$"
- ADD_MODIFIER_THIRD: "$SUBJECT_NAME$ отримає #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
+ ADD_MODIFIER_THIRD: "$SUBJECT_NAME$ отримає «#tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#!» $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
  ADD_MODIFIER_THIRD_NEG:0 "$ADD_MODIFIER_THIRD$"
  
  ADD_MODIFIER_BREAKDOWN:0 "#header $MODIFIER_NAME$#!\n$MODIFIER_DESC$"
@@ -303,9 +303,9 @@
  ADD_ENACTMENT_MODIFIER_THIRD:1 "$ADD_ENACTMENT_MODIFIER$"
  ADD_ENACTMENT_MODIFIER_THIRD_NEG:1 "$ADD_ENACTMENT_MODIFIER$"
  
- REMOVE_MODIFIER:0 "$SUBJECT_NAME$ loses #tooltippable #tooltip:[GetRawTextTooltipTag('$REMOVE_MODIFIER_BREAKDOWN$')] #variable $MODIFIER_NAME$#!#!#!\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
- REMOVE_MODIFIER_FIRST:0 "$SUBJECT_NAME$ loses #tooltippable #tooltip:[GetRawTextTooltipTag('$REMOVE_MODIFIER_BREAKDOWN$')] #variable $MODIFIER_NAME$#!#!#!\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
- REMOVE_MODIFIER_THIRD:0 "$SUBJECT_NAME$ loses #tooltippable #tooltip:[GetRawTextTooltipTag('$REMOVE_MODIFIER_BREAKDOWN$')] #variable $MODIFIER_NAME$#!#!#!\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
+ REMOVE_MODIFIER: "$SUBJECT_NAME$ втратить «#tooltippable #tooltip:[GetRawTextTooltipTag('$REMOVE_MODIFIER_BREAKDOWN$')] #variable $MODIFIER_NAME$#!#!#!»\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
+ REMOVE_MODIFIER_FIRST: "$SUBJECT_NAME$ втратить «#tooltippable #tooltip:[GetRawTextTooltipTag('$REMOVE_MODIFIER_BREAKDOWN$')] #variable $MODIFIER_NAME$#!#!#!»\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
+ REMOVE_MODIFIER_THIRD: "$SUBJECT_NAME$ втратить «#tooltippable #tooltip:[GetRawTextTooltipTag('$REMOVE_MODIFIER_BREAKDOWN$')] #variable $MODIFIER_NAME$#!#!#!»\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
  REMOVE_MODIFIER_BREAKDOWN:0 "#header $MODIFIER_NAME$#!\n$MODIFIER_DESC$"
  REMOVE_ENACTMENT_MODIFIER:0 "$REMOVE_MODIFIER$"
 

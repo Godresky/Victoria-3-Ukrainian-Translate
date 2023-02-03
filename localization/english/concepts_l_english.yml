@@ -139,6 +139,7 @@
  concept_trade_route_competitiveness_desc:1 "If a [Concept('concept_market','$concept_market_possessive$')] pool of [Concept('concept_good','$concept_goods$')] available for [Concept('concept_trade_route','$concept_trade$')] is depleted due to too many $concept_trade$ partners, the $concept_trade_route_competitiveness_short$ of each competing $concept_trade_route$ determines how large a share they get access to. A $concept_trade_route$'s $concept_trade_route_competitiveness_short$ increases over time."
 
  concept_market_good_policy: "Товарна політика ринку"
+ concept_market_good_policy_acc: "Товарну політику ринку"
  concept_market_good_policies: "Товарні політики ринку"
  concept_market_good_policy_short:0 "Політика"
  concept_market_good_policy_desc:3 "The [concept_market_owner] may set a $concept_market_good_policy$ for each [concept_good] in their [concept_market]. The default $concept_market_good_policy_short$ is #b $tariff_no_priority$#!, which collects [concept_tariffs] on both Imports and Exports at a $concept_tariff_rate$ according to the [Concept('concept_country','$concept_country_possessive$')] current [SelectLocalization(GetPlayer.IsValid,'concept_market_good_policy_desc_added','Trade Policy')] [concept_law].\n\n#b $tariff_import_priority$#! eliminates Import $concept_tariffs$ to encourage others to [Concept('concept_sell_orders','$concept_sell_order_short$')|l] to you, and to let your own Import [Concept('concept_trade_route','$concept_trade_routes$')] flourish at the expense of your [concept_treasury], while Export $concept_tariffs$ remain in effect to discourage those who might otherwise [Concept('concept_buy_orders','$concept_buy_order_short$')|l] up your supply.\n\n#b $tariff_export_priority$#! does the opposite: eliminates Export $concept_tariffs$ to encourage others to [Concept('concept_buy_orders','$concept_buy_order_short$')|l] from you, and to let your own Export [Concept('concept_trade_route','$concept_trade_routes$')] grow, while Import $concept_tariffs$ remain in effect to discourage other $concept_countries$ to [Concept('concept_sell_orders','$concept_sell_order_short$')|l] their $concept_goods$ in your $concept_market$."
@@ -846,7 +847,7 @@
  concept_escalates:0 "Escalates"
  concept_escalation_desc:2 "Once a [concept_diplomatic_play] has been initiated, it steadily $concept_escalates$ through three distinct phases: [concept_opening_moves], [concept_diplomatic_maneuvers], and [concept_countdown_to_war]. The phase limits which actions are available to participants. If the $concept_diplomatic_play_short$ does not resolve prior to $concept_escalation$ progressing all the way through the $concept_countdown_to_war$, [concept_war] will break out."
 
- concept_revenue:0 "Revenue"
+ concept_revenue: "Виручка"
  concept_revenue_desc:0 "After a [concept_building] has [Concept('concept_good_production','$concept_good_produced$')] [Concept('concept_good','$concept_goods$')], they are sold at the [concept_local_price]. The amount of [concept_money] made in the sale is the $concept_building$'s $concept_revenue$, the positive factor of its [concept_building_balance]."
 
  concept_combat_width:0 "Combat Width"
@@ -856,9 +857,9 @@
  concept_infamy_gen: "Рівня ганьби"
  concept_infamy_desc:1 "$concept_infamy$ reflects the degree by which the international community, particularly the reigning [Concept('concept_great_power','$concept_great_powers$')], see you as a threat to be contained in light of your past actions. It is accrued primarily from causing [Concept('concept_diplomatic_incident','$concept_diplomatic_incidents$')] and claiming [Concept('concept_war_goal','$concept_war_goals$')] in a [concept_peace_deal]. Your $concept_infamy$ affects $concept_countries$' [concept_attitude] towards you and increases the [concept_influence] cost of [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]. If it reaches the level of #b $infamy_pariah$#!, $concept_great_powers$ will be able to start the [GetDiplomaticPlayType('dp_contain_threat').GetName] [concept_diplomatic_play] against you."
 
- concept_diplomatic_incident:0 "Diplomatic Incident"
- concept_diplomatic_incident_short:0 "Incident"
- concept_diplomatic_incidents:0 "Diplomatic Incidents"
+ concept_diplomatic_incident: "Дипломатичний інцидент"
+ concept_diplomatic_incident_short: "Інцидент"
+ concept_diplomatic_incidents: "Дипломатичний інцидент"
  concept_diplomatic_incident_desc:1 "A $concept_diplomatic_incident$ is typically the result of a [concept_country] starting a [concept_diplomatic_play]. $concept_diplomatic_incidents$ generate [concept_infamy] for the $concept_country$ who started it, and will cause [concept_relations] to fall with all $concept_countries$ with an [concept_interest] in the [concept_strategic_region], particularly the target of the $concept_diplomatic_play_short$. $concept_diplomatic_incidents$ can also be the result of other actions, for example decisions made during special events."
 
  concept_tension: "Напруга"
@@ -1406,6 +1407,7 @@
  concept_religion: "Релігія"
  concept_religion_gen: "Релігії"
  concept_religion_acc: "Релігію"
+ concept_religion_ins: "Релігією"
  concept_religions: "Релігії"
  concept_religion_desc:1 "All [Concept('concept_pop', '$concept_pops$')] have a $concept_religion$, which can only change through [concept_conversion]. Their $concept_religion$ determines whether they are [Concept('concept_discrimination','$concept_discriminated_against$')] in their [concept_country] or not."
 
@@ -1801,7 +1803,7 @@
  concept_heir_gen: "Спадкоємця"
  concept_heir_desc:2 "The $concept_heir$ of a [concept_country] is a [concept_character]. They will take over the [concept_character_role] of [concept_ruler] upon the current $concept_ruler$'s death."
 
- concept_character_role: "Роль"
+ concept_character_role: "Роля"
  concept_character_roles: "Ролі"
  concept_character_role_desc:2 "$concept_character_roles$ determine what areas of your [concept_country] a particular [concept_character] has influence over. A $concept_character$ can have one or several $concept_character_roles$.\n\nThe list of $concept_character_roles$ are:\n[concept_ruler] (usually also a [concept_politician])\n[concept_heir]\n[concept_politician]\n[concept_general]\n[concept_admiral]"
 
@@ -1913,7 +1915,7 @@
  concept_journal: "Часопис"
  concept_journal_entries: "Записи у часописі"
  concept_journal_entries_gen: "Записів у часописі"
- concept_journal_entry_desc:1 "$concept_journal_entries$ track ongoing events in your country. They can present opportunities or challenges, remind you of promises you have made, or warn of potential crises that may occur.\n\n$concept_journal_entries$ usually resolve and are removed from your $concept_journal$ when they are considered #bold Complete#!. Not all $concept_journal_entries$ can be #bold Completed#! - some can only #bold Fail#!, #bold Time Out#!, or will be removed under some condition."
+ concept_journal_entry_desc: "$concept_journal_entries$ відстежують події, що відбуваються у вашій державі. Вони можуть представляти можливості або виклики, нагадувати про дані вами обіцянки або попереджати про потенційні кризи, які можуть виникнути.\n\nЗаписи у часописі зазвичай вирішуються й видаляються з вашого []часопису, коли вони вважаються #bold виконаними#!. Проте не усі записи у часописі можуть бути #bold виконаними#!. Деякі з них можуть бути #bold проваленими#!, #bold час вийшов#! або видалені за певних умов."
 
  concept_political_movement_placated: "Заспокоєні"
  concept_political_movement_placated_desc:1 "A $concept_political_movement_placated$ [concept_political_movement] is currently satisfied with the changes you are making to the $concept_country$, and will put their [concept_revolution] on hold for now. They will resume organizing in the event that you abandon that course."

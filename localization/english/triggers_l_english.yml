@@ -31,7 +31,7 @@
  TRIGGER_HAS_GAME_RULE_NOT: "#b Не#! встановлено правило: $SETTING$"
  
  TRIGGER_IS_PLAYER: "Під контролем гравця"
- TRIGGER_IS_PLAYER_NOT: "#bold Не #! під контролем гравця"
+ TRIGGER_IS_PLAYER_NOT: "#bold Не#! під контролем гравця"
  TRIGGER_IS_PLAYER_FIRST: "[COUNTRY.GetNameNoFlag] під контролем гравця"
  TRIGGER_IS_PLAYER_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold не#! під контролем гравця"
  TRIGGER_IS_PLAYER_THIRD: "[COUNTRY.GetName] під контролем гравця"
@@ -156,7 +156,7 @@
  TRIGGER_TAKING_LOANS_THIRD_NOT:1 "[COUNTRY.GetName] is #bold not #!taking loans"
  
  TRIGGER_COUNTRY_THIS_EQUAL: "Держава — [TARGET_COUNTRY.GetName]"
- TRIGGER_COUNTRY_THIS_EQUAL_NOT: "Держава — #bold не#! [TARGET_COUNTRY.GetName]"
+ TRIGGER_COUNTRY_THIS_EQUAL_NOT: "Держава #bold не#! [TARGET_COUNTRY.GetName]"
 
  TRIGGER_INITIATOR_IS:0 "[TARGET_COUNTRY.GetName] is the initiator"
  TRIGGER_INITIATOR_IS_NOT:1 "[TARGET_COUNTRY.GetName] is #bold not #!the initiator"
@@ -276,9 +276,9 @@
  TRIGGER_HAS_MODIFIER:1 "Has [SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]"
  TRIGGER_HAS_MODIFIER_NOT:2 "Does #bold not#! have [SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]"
  TRIGGER_HAS_MODIFIER_FIRST:1 "[COUNTRY.GetNameNoFlag] has [SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]"
- TRIGGER_HAS_MODIFIER_FIRST_NOT:2 "[COUNTRY.GetNameNoFlag] does #bold not#! have [SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]"
+ TRIGGER_HAS_MODIFIER_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold не#! має «[SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]»"
  TRIGGER_HAS_MODIFIER_THIRD:2 "[COUNTRY.GetName] has [SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]"
- TRIGGER_HAS_MODIFIER_THIRD_NOT:3 "[COUNTRY.GetName] does #bold not#! have [SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]"
+ TRIGGER_HAS_MODIFIER_THIRD_NOT: "[COUNTRY.GetName] #bold не#! має «[SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]»"
  
  TRIGGER_HAS_EMPLOYEE_SLOTS_FILLED:0 "Has filled its employee slots"
  TRIGGER_HAS_EMPLOYEE_SLOTS_FILLED_NOT:1 "Has #bold not #!filled its employee slots"
@@ -830,7 +830,7 @@
  TRIGGER_IS_MOBILIZED:0 "Is [Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized$')]"
  TRIGGER_IS_MOBILIZED_NOT:1 "Is #bold not #![Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized$')]"
  
- TRIGGER_HAS_GOVERNMENT_TYPE:1 "Has the [GOVERNMENT_TYPE.GetName] [concept_government_type]"
+ TRIGGER_HAS_GOVERNMENT_TYPE:1 "Має [concept_government_type|l] [GOVERNMENT_TYPE.GetName|l]"
  TRIGGER_HAS_GOVERNMENT_TYPE_NOT:2 "Does #bold not #!have the [GOVERNMENT_TYPE.GetName] government type"
  TRIGGER_HAS_GOVERNMENT_TYPE_FIRST:0 "[COUNTRY.GetNameNoFlag] has the [GOVERNMENT_TYPE.GetName] [concept_government_type]"
  TRIGGER_HAS_GOVERNMENT_TYPE_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] does #bold not #!have the [GOVERNMENT_TYPE.GetName] [concept_government_type]"
@@ -1740,9 +1740,9 @@
  
  TRIGGER_ANY_SUBJECT_OR_BELOW:2 "Any [concept_subject] or their $concept_subjects$:"
  TRIGGER_ANY_SUBJECT_OR_BELOW_NOT:3 "No [concept_subject] or their $concept_subjects$:"
- TRIGGER_ANY_SUBJECT_OR_BELOW_FIRST:3 "Any [COUNTRY.GetAdjectiveNoFlag] [concept_subject] or their $concept_subjects$:"
+ TRIGGER_ANY_SUBJECT_OR_BELOW_FIRST: "Будь-який [COUNTRY.GetAdjectiveNoFlag|l]ий [concept_subject|l] або їх підвладні:"
  TRIGGER_ANY_SUBJECT_OR_BELOW_FIRST_NOT:3 "No [COUNTRY.GetAdjectiveNoFlag] [concept_subject] or their $concept_subjects$:"
- TRIGGER_ANY_SUBJECT_OR_BELOW_THIRD:3 "Any [COUNTRY.GetAdjective] [concept_subject] or their $concept_subjects$:"
+ TRIGGER_ANY_SUBJECT_OR_BELOW_THIRD: "Будь-який [COUNTRY.GetAdjective|l]ий [concept_subject|l] або їх підвладні:"
  TRIGGER_ANY_SUBJECT_OR_BELOW_THIRD_NOT:3 "No [COUNTRY.GetAdjective] [concept_subject] or their $concept_subjects$:"
   
  TRIGGER_ANY_SUBJECT_OR_BELOW_ALL:1 "All [Concept('concept_subject','$concept_subjects$')] or their $concept_subjects$:"

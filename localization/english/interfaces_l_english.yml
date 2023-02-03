@@ -191,8 +191,8 @@
  DATA_TIMED_MODIFIER_REMAINING: "Залишилося часу: $DURATION$$MAYBE_DECAYING_WITH_SPACE_BEFORE$"
  DATA_TIMED_MODIFIER_ONELINE:1 "$MODIFIERDESC$ from #title $NAME$#! ($DURATION$)$MAYBE_DECAYING_WITH_SPACE_BEFORE$"
  MODIFIERS_PANEL_MODIFIER_ENTRIES: "#bold Записи змінювачів#!"
- RELIGION_INFO_PANEL_SHOW_GLOBAL:1 "Listing [ReligionInfoPanel.GetReligion.GetName] [Concept('concept_pop', '$concept_pops$')] Globally"
- RELIGION_INFO_PANEL_SHOW_NATIONAL_ONLY:1 "Listing [ReligionInfoPanel.GetReligion.GetName] [Concept('concept_pop', '$concept_pops$')] in [GetPlayer.GetName]"
+ RELIGION_INFO_PANEL_SHOW_GLOBAL: "[Concept('concept_pop', '$concept_pops$')] з [Concept('concept_religion', '$concept_religion_ins$')|l] [ReligionInfoPanel.GetReligion.GetName] у світі"
+ RELIGION_INFO_PANEL_SHOW_NATIONAL_ONLY: "[Concept('concept_pop', '$concept_pops$')] з [Concept('concept_religion', '$concept_religion_ins$')|l] [ReligionInfoPanel.GetReligion.GetName] у [Concept('concept_country', '$concept_country_loc$')|l] [GetPlayer.GetName]"
  BUILDING_DETAILS_PANEL_INFORMATION_TAB: "Відомості"
  BUILDING_DETAILS_PANEL_INFORMATION_TAB_SELECTED: "#bold Відомості#!"
  BUILDING_DETAILS_PANEL_MODIFIERS_TAB: "Змінювачі"
@@ -3159,9 +3159,9 @@
  IMPORT_TARIFFS_FROM_GOODS_DETAIL: "#N #variable @money!$VAL|D+$#!#! від ввозу [Concept('concept_good','$concept_good_gen$')|l] [Goods.GetName|l]"
  EXPORT_TARIFFS_FROM_GOODS_DETAIL: "#N #variable @money!$VAL|D+$#!#! від вивозу [Concept('concept_good','$concept_good_gen$')|l] [Goods.GetName|l]"
  
- SET_GOODS_TARIFF_NO_PRIORITY:1 "Set [concept_market_good_policy] to $tariff_no_priority$"
- SET_GOODS_TARIFF_IMPORT_PRIORITY:1 "Set [concept_market_good_policy] to $tariff_import_priority$"
- SET_GOODS_TARIFF_EXPORT_PRIORITY:1 "Set [concept_market_good_policy] to $tariff_export_priority$"
+ SET_GOODS_TARIFF_NO_PRIORITY: "Встановити [Concept('concept_market_good_policy','$concept_market_good_policy_acc$')|l] «$tariff_no_priority$»"
+ SET_GOODS_TARIFF_IMPORT_PRIORITY: "Встановити [Concept('concept_market_good_policy','$concept_market_good_policy_acc$')|l] «Захист внутрішніх виробників»"
+ SET_GOODS_TARIFF_EXPORT_PRIORITY: "Встановити [Concept('concept_market_good_policy','$concept_market_good_policy_acc$')|l] «Заохочування ввозу»"
  
  TRADE_ROUTE_OPEN_EXPORTING_MARKET:0 "View [TradeRoute.GetExportingMarket.GetName] (Exporter)"
  TRADE_ROUTE_OPEN_IMPORTING_MARKET:0 "View [TradeRoute.GetImportingMarket.GetName] (Importer)"
