@@ -1824,12 +1824,12 @@
  PRODUCTIVITY_SPAN_FORMAT_SAME: "@money!$MIN$"
  PRODUCTIVITY_SPAN_TOOLTIP: "#header [concept_productivity]#!\n[concept_productivity] [Concept('concept_building', '$concept_building_gen$')|l] [BuildingType.GetName|l] in [GetPlayer.GetName] is [BuildingType.GetProductivitySpanDesc(GetPlayer.Self)]"
  EMPLOYMENT_BAR: "Працевлаштування: [Building.GetNoOfEmployed|1*v]"
- EARNINGS_PER_EMPLOYEE: "Заробіток / Працівник"
+ EARNINGS_PER_EMPLOYEE: "Заробіток / працівник"
  WORLD_PROFITABILITY_HEADER:1 "$EARNINGS_PER_EMPLOYEE$ compared to all Buildings"
  BUILDING_PROFITABILITY_HEADER:1 "$EARNINGS_PER_EMPLOYEE$ compared to other [Building.GetName]"
  BUILDING_PROFITABILITY_HEADER_TOOLTIP:0 "#header [concept_productivity]#!\n$TOOLTIP_DELIMITER$\nСередньорічне $EARNINGS_PER_EMPLOYEE$ порівняно з іншими [Concept('concept_building', '$concept_buildings_ins$')|l]."
- BUILDING_PRODUCTIVITY_HEADER:1 "Yearly Avg. $EARNINGS_PER_EMPLOYEE$"
- GOVERNMENTAL_EXPENSES:1 "Governmental Expenses: #tooltippable #tooltip:[Building.GetTooltipTag],BUILDING_GOVERNMENT_EXPENSES_DESC #N @money!-[Building.GetGovernmentExpenses|D-]#!#!#!"
+ BUILDING_PRODUCTIVITY_HEADER: "Середньоріч. заробіток / працівник"
+ GOVERNMENTAL_EXPENSES: "Урядові витрати: #tooltippable #tooltip:[Building.GetTooltipTag],BUILDING_GOVERNMENT_EXPENSES_DESC #N @money!-[Building.GetGovernmentExpenses|D-]#!#!#!"
  NOT_FULLY_EMPLOYED: "#header #red [Building.GetName] – повна зайнятість неможлива#!#!\n$TOOLTIP_DELIMITER$\nЗайнятість: #tooltippable #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_EMPLOYMENT #variable [Building.GetNoOfEmployed|1*]#!#!#! / #maximum [Building.GetEmployeeCap|1*] працівників#! (#BOLD #V [Building.GetEmploymentPercentage|0%]#!#!)\n[Building.GetAllFailedHiresDesc]"
  NOT_HIRING:0 "#header #red [Building.GetName] is unable to hire!#!#!\n$TOOLTIP_DELIMITER$\nEmployment: #tooltippable #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_EMPLOYMENT #variable [Building.GetNoOfEmployed|1*]#!#!#! / #maximum [Building.GetEmployeeCap|1*] Employees#! (#BOLD #V [Building.GetEmploymentPercentage|0%]#!#!)\n\nThis [concept_building] does not have the funds to hire anyone.\n\nCurrent Productivity: [Building.GetAverageAnnualEarningsPerEmployeeFormatted]"
  EMPLOYMENT_HINT:1 "\n\n@information! The [Concept('concept_building_wage', '$concept_building_wages$')] in the [Building.GetName] are based on its economic situation. In order to afford to attract more [Concept('concept_pop', '$concept_pops$')] to the Workforce its Weekly [concept_building_balance] should be improved. You can influence this by either making the [Concept('concept_good', '$concept_goods$')] it consumes cheaper, or by making the Goods it produces more expensive. This is done by increasing or decreasing supply and demand on the [Building.GetState.GetMarket.GetName]. You can guarantee that the Workforce is paid a competitive [concept_building_wage] by [Concept('concept_subsidies', '$concept_subsidizing$')] the building. This will keep it afloat by using [concept_money] from the [GetPlayer.GetAdjectiveNoFormatting] [concept_treasury], if necessary."
@@ -2622,7 +2622,7 @@
  BUILDING_URBANIZATION_WITH_VALUE: "$VALUE|0v=$ через [Concept('concept_building', '$concept_building_acc$')|l] [BUILDING.GetName]"
  BUILDING_INFRA_USAGE_WITH_VALUE: "#v $VALUE|0-$#! через [Concept('concept_building', '$concept_building_acc$')|l] [BUILDING.GetName]"
 
- BUILDING_COMBAT_UNIT_PRODUCTION:0 "Provides $UNIT_ICON$ $UNIT_COUNT|v$"
+ BUILDING_COMBAT_UNIT_PRODUCTION: "Забезпечує $UNIT_ICON$ $UNIT_COUNT|v$"
 
  IMPORT_SUGGESTIONS_TITLE: "Товари зі значним ввозовим попитом"
  EXPORT_SUGGESTIONS_TITLE: "Товари зі значною мічністю для вивозу"
@@ -2763,7 +2763,7 @@
  SOL_FACTOR_SLAVES:0 "$POP_FRACTION|%1v$ of these [Concept('concept_pop', '$concept_pops$')] are [Concept('concept_slavery', '$concept_enslaved$')], forcing them into a very low [concept_sol]"
  SOL_FACTOR_PEASANTS:0 "$POP_FRACTION|%1v$ of these [Concept('concept_pop', '$concept_pops$')] are [GetPopType('peasants').GetName] in [Concept('concept_subsistence_building', '$concept_subsistence_buildings$')], limiting them to a low [concept_sol]"
  SOL_FACTOR_TAX_ENTRY:0 "$TAX_LEVEL|%1v$ of income paid in $TAX_TYPE$"
- SOL_FACTOR_GOODS_ENTRY:1 "[Goods.GetTextIcon][Nbsp][Goods.GetName]: @money!$PRICE|v1$ #tooltippable #tooltip:COIN_STACK_TOOLTIP $PRICEICON$#!#! ($RELATIVE_PRICE|=-%1$ relative price, $RELATIVE_EXPENDITURES|v1%$ of expenditures)"
+ SOL_FACTOR_GOODS_ENTRY: "[Goods.GetTextIcon][Nbsp][Goods.GetName]: @money!$PRICE|v1$ #tooltippable #tooltip:COIN_STACK_TOOLTIP $PRICEICON$#!#! ($RELATIVE_PRICE|=-%1$ відносно ціни, $RELATIVE_EXPENDITURES|v1%$ витрат)"
  SOL_FACTOR_GOODS_BREAKDOWN:0 "#header [concept_pop_needs]#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
  SOL_FACTOR_TAX_BREAKDOWN:0 "#header [Concept('concept_taxes','$concept_taxation$')]#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
 
@@ -3689,7 +3689,7 @@
  THROUGHPUT_TOOLTIP:0 "[SelectLocalization(EqualTo_CFixedPoint(Building.GetThroughputBonusCurrent, Building.GetThroughputBonusTarget), 'THROUGHPUT_TOOLTIP_CONSTANT', 'THROUGHPUT_TOOLTIP_CHANGING')]"
  THROUGHPUT_TOOLTIP_CONSTANT:0 "#header Throughput Bonus#!\n[Building.GetThroughputDesc]"
  THROUGHPUT_TOOLTIP_CHANGING:0 "The Building's [concept_throughput] is changing.\n\n#header Throughput Bonus#!\n[Building.GetThroughputDesc]"
- EXPAND_ECONOMY_OF_SCALE_EFFECT_PER_LEVEL:0 "$EFFECT$ per Level (capped at Level $MAX_LEVEL|v$)"
+ EXPAND_ECONOMY_OF_SCALE_EFFECT_PER_LEVEL: "$EFFECT$ за один розмір (обмежено $MAX_LEVEL|v$-м розміром)"
  EXPAND_ECONOMY_OF_SCALE_EFFECT_TOTAL:0 "$EFFECT$ Total (capped at $MAX_EFFECT$)"
  BUILDING_ECONOMY_OF_SCALE_CAP_TOOLTIP:0 "[Building.GetName] in [Building.GetState.GetName] is subject to [concept_economy_of_scale] effects up to level [Building.GetModifier.GetValueWithBreakdownFor('building_economy_of_scale_level_cap_add')]"
 
@@ -4670,9 +4670,9 @@
  MARKET_ACCESS_DESC_BASE_MIN: "Тому що [concept_infrastructure|l] дорівнює #b 0#!, основний [concept_market_access|l] - #P $MARKET_ACCESS|%0v$#!"
  MARKET_ACCESS_DESC_BASE_MAX: "Тому що [concept_infrastructure_usage|l] менше або дорівнює [Concept('concept_infrastructure', '$concept_infrastructure_dat$')|l] (#tooltippable #tooltip:[State.GetTooltipTag],STATE_INFRASTRUCTURE_DESC [State.GetInfrastructureBalance|0+=]#!#!), основний [concept_market_access|l] - #P $MARKET_ACCESS|%0v$#!"
  MARKET_ACCESS_DESC_BASE: "@warning! Тому що [concept_infrastructure_usage|l] більше ніж [Concept('concept_infrastructure', '$concept_infrastructure_acc_alt$')|l] (#tooltippable #tooltip:[State.GetTooltipTag],STATE_INFRASTRUCTURE_DESC [State.GetInfrastructureBalance|0+=]#!#!), основний [concept_market_access|l] зменшений до #N $MARKET_ACCESS|%0v$#!"
- MARKET_ACCESS_DESC_CONNECTED_LAND: "З‘єднана з [Concept('concept_market', '$concept_market_ins$')|l] ([State.GetMarket.GetName]) сухопутним тором"
- MARKET_ACCESS_DESC_CONNECTED_OVERSEAS: "З‘єднана з [Concept('concept_market', '$concept_market_ins$')|l] ([State.GetMarket.GetName]) через порти [ShippingLane.GetBeginState.GetName] та [ShippingLane.GetEndState.GetName] при повному основному [Concept('concept_market_access', '$concept_market_access_loc$')|l] - #P $MARKET_ACCESS|%0v$#!"
- MARKET_ACCESS_DESC_CONNECTED_OVERSEAS_INEFFICIENT: "З‘єднана з ('concept_market', '$concept_market_ins$')|l] ([State.GetMarket.GetName]) via [ShippingLane.GetCountry.GetAdjectiveNoFormatting] [concept_shipping_lane] through the ports of [ShippingLane.GetBeginState.GetName] and [ShippingLane.GetEndState.GetName], with [concept_market_access] reduced to #N $MARKET_ACCESS|%0v$#! due to low [concept_shipping_lane_effectiveness]"
+ MARKET_ACCESS_DESC_CONNECTED_LAND: "З‘єднаний з [Concept('concept_market', '$concept_market_ins$')|l] ([State.GetMarket.GetName]) сухопутним тором"
+ MARKET_ACCESS_DESC_CONNECTED_OVERSEAS: "З‘єднаний з [Concept('concept_market', '$concept_market_ins$')|l] ([State.GetMarket.GetName]) через порти [ShippingLane.GetBeginState.GetName] та [ShippingLane.GetEndState.GetName] при повному основному [Concept('concept_market_access', '$concept_market_access_loc$')|l] - #P $MARKET_ACCESS|%0v$#!"
+ MARKET_ACCESS_DESC_CONNECTED_OVERSEAS_INEFFICIENT: "З‘єднаний з ('concept_market', '$concept_market_ins$')|l] ([State.GetMarket.GetName]) via [ShippingLane.GetCountry.GetAdjectiveNoFormatting] [concept_shipping_lane] through the ports of [ShippingLane.GetBeginState.GetName] and [ShippingLane.GetEndState.GetName], with [concept_market_access] reduced to #N $MARKET_ACCESS|%0v$#! due to low [concept_shipping_lane_effectiveness]"
  MARKET_ACCESS_DESC_DISCONNECTED_OVERSEAS:1 "Unable to connect to [State.GetMarket.GetName] through either land route or ports"
 
  MARKET_PANEL_DETAILS_TAB_LABEL: "Деталі"
@@ -4754,7 +4754,7 @@
  BATTLE_LOSSES_ATTACKER_STATS:0 "Attacking Army losses: #v [Negate_int32(Battle.GetAttackerLostUnits)|+=]#!"
  BATTLE_LOSSES_DEFENDER_STATS:0 "Defending Army losses: #v [Negate_int32(Battle.GetDefenderLostUnits)|+=]#!"
 
- THEATER:0 "Theater"
+ THEATER: "Театр"
  show_supply_areas_lens_option:0 "Show Supply Areas"
  show_supply_areas_lens_option_tooltip:0 "Show Supply Areas"
  planned_advance:0 "Planned Advance"
@@ -5912,8 +5912,8 @@ notification_interest_activated_third_party_desc: "[SCOPE.sCountry('actor').GetN
  ACCEPTANCE: "Прийняття"
 
  INSTITUTION_NAME_AND_LEVEL: "[Institution.GetName] (Рівень [Institution.GetInvestmentLevel])"
- EXPAND_BUILDING_TYPE:0 "Expand #BOLD [BuildingType.GetNameNoFormatting]#!"
- YEARLY_AVERAGE_EARNINGS_PER_EMPLOYEE:0 "Yearly Avg. Earnings / Employee"
+ EXPAND_BUILDING_TYPE: "Розширити #BOLD [BuildingType.GetNameNoFormatting]#!"
+ YEARLY_AVERAGE_EARNINGS_PER_EMPLOYEE: "Середньоріч. заробіток / працівник "
 
  SOCIETY: "Cуспільство"
  OTHER: "Інше"

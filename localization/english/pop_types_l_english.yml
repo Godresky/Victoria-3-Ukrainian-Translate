@@ -30,7 +30,7 @@
  peasants: "@peasants! $peasants_no_icon$"
  peasants_only_icon: "@peasants!"
  peasants_no_icon: "Селяни"
- peasants_desc: "Хутірники, які займаються натуральним господарством, зустрічаються лише в [Concept('concept_subsistence_building', '$concept_subsistence_buildings_loc$')|l], де вони виробляють сільськогосподарські та прості промислові продукти, які використовують переважно для власних потреб. Вони покладаються на [concept_subsistence_output|l] для виживання та відіграють лише обмежену роль в [Concept('concept_market', '$concept_market_adj$ій')|l] економіці. Вони, як правило, [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')|l]."
+ peasants_desc: "Хутірники, які займаються натуральним господарством, зустрічаються лише в [Concept('concept_subsistence_building', '$concept_subsistence_buildings_loc$')|l], де вони виробляють сільськогосподарські та прості промислові продукти, які використовують переважно для власних потреб. Вони покладаються на [concept_subsistence_output|l] для виживання та відіграють лише обмежену ролю в [Concept('concept_market', '$concept_market_adj$ій')|l] економіці. Вони, як правило, [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')|l]."
  laborers: "@laborers! $laborers_no_icon$"
  laborers_only_icon: "@laborers!"
  laborers_no_icon: "Чорнороби"

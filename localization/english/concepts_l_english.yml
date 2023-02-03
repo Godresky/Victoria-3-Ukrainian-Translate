@@ -355,7 +355,7 @@
  concept_modifiers: "Змінювачі"
  concept_modifier_desc:1 "Any adjustment of a value away from its norm is considered a $concept_modifier$. These can be permanent or [Concept('concept_timed_modifier','$concept_timed$')], and their origin can always be sourced back to something like a [concept_law], [concept_technology], [concept_institution], [concept_building], [concept_character_trait], or even an option selected during a special event. Values adjusted by $concept_modifiers$ all have tooltips that explain the full list of sources and their values."
 
- concept_terrain:0 "Terrain"
+ concept_terrain: "Рельєф місцевости"
  concept_terrain_desc:3 "A [Concept('concept_province','$concept_province_possessive$')] $concept_terrain$ determines its [concept_combat_width] and how volatile and unpredictable [Concept('concept_battle','$concept_battles$')] in that $concept_province$ is. [Concept('concept_general','$concept_generals$')] can also be more or less versed in fighting in different types of $concept_terrain$.\n\nThe $concept_terrain$ of a given $concept_province$ can change as a result of the [Concept('concept_building','$concept_buildings$')] constructed in the [concept_state]."
 
  concept_strategic_region: "Стратегічний регіон"
@@ -389,10 +389,12 @@
 
  concept_government_building: "Урядова будівля"
  concept_government_buildings: "Урядові будівлі"
+ concept_government_buildings_ins: "Урядовими будівлями"
  concept_government_building_desc:1 "A [concept_building] owned and operated by the [concept_government] using funds from the [concept_treasury]. $concept_government_buildings$ have no [Concept('concept_good','$concept_goods$')] [concept_good_production] and therefore no [concept_revenue], but produce a number of other resources crucial to running a [concept_country] such as [concept_bureaucracy], [concept_infrastructure], [concept_convoys], and [Concept('concept_unit','$concept_units$')]. The [concept_workforce] of non-military $concept_government_buildings$ get paid according to the [concept_government_wage], while [Concept('concept_military_building','$concept_military_buildings$')] get paid according to the [concept_military_wage]."
 
  concept_military_building: "Військова будівля"
  concept_military_buildings: "Військові будівлі"
+ concept_military_buildings_ins: "Військовими будівлями"
  concept_military_building_army_and_navy: "Військо та флот"
  concept_military_building_desc:4 "[Concept('concept_government_building','$concept_government_buildings$')] used to train, maintain, and supply [Concept('concept_battalion','$concept_battalions$')] and [Concept('concept_flotilla','$concept_flotillas$')] for the [Concept('concept_country','$concept_country_possessive$')] army and navy respectively. The [concept_workforce] of $concept_military_buildings$ get paid according to the [concept_military_wage]."
  
@@ -1315,11 +1317,10 @@
 
  concept_government_good: "Державний товар"
  concept_government_goods: "Державні товари"
- concept_government_good_desc:1 "[Concept('concept_good', '$concept_goods$')] [Concept('concept_good_consumption','$concept_good_consumed$')] by [Concept('concept_government_building', '$concept_government_buildings$')] using funds from the [concept_treasury]."
 
  concept_military_good: "Військовий товар"
  concept_military_goods: "Військові товари"
- concept_military_good_desc:1 "[Concept('concept_good', '$concept_goods$')] [Concept('concept_good_consumption','$concept_good_consumed$')] by [Concept('concept_military_building', '$concept_military_buildings$')] using funds from the [concept_treasury]."
+ concept_military_good_desc:1 "[Concept('concept_good', '$concept_goods$')], які [Concept('concept_good_consumption','споживаються')|l] [Concept('concept_military_building', '$concept_military_buildings_ins$')|l] за рахунок [Concept('concept_treasury', 'бюджетних')] коштів."
 
  concept_state: "Регіон"
  concept_state_gen: "Регіону"
@@ -1433,7 +1434,7 @@
  concept_pop_income_expenses_short: "Витрати"
  concept_pop_income_desc:0 "At the end of each week, [Concept('concept_pop','$concept_pops$')] receive an $concept_pop_income_short$ based on the size of their [concept_workforce] and the current [concept_building_wage] offered to them, plus the size of their [concept_dependents] and the amount of [concept_dependent_income] they collect. This $concept_pop_income_short$ is spent on [concept_pop_needs] which impact the $concept_pop$'s [concept_wealth]."
 
- concept_dependent_income: "Dependent Income"
+ concept_dependent_income:0 "Dependent Income"
  concept_dependent_income_desc:1 "At the end of each week, [Concept('concept_pop','$concept_pops$')] receive a $concept_dependent_income$ based on their number of [concept_dependents] and the amount of income they qualify for. Most $concept_dependents$ receive a base amount from odd jobs depending on the $concept_pop$'s [concept_profession], which can be supplemented by the [SelectLocalization(GetPlayer.IsValid,'concept_dependent_income_desc_added','Social Security')] [concept_institution]."
  concept_dependent_income_desc_added:0 "[GetInstitutionType('institution_social_security').GetName]"
 
@@ -1452,7 +1453,7 @@
  concept_technology_spread: "Поширення технологій"
  concept_technology_spread_desc:2 "One [concept_technology] that you have not yet acquired from each category ($PRODUCTION_NO_CONCEPT$, $MILITARY$, and $SOCIETY$) is always spreading to you from [Concept('concept_country','$concept_countries$')] that have acquired them. The progress you get in spreading $concept_technologies$ is randomized each week around a base value depending on your $concept_country$'s [concept_literacy]. If no $concept_country$ has invented a certain $concept_technology$ yet it cannot spread to you, so you are more likely to acquire early [Concept('concept_technology_era','$concept_technology_era_short$')] $concept_technologies$ from $concept_technology_spread$ than later ones."
 
- concept_technology_era: "Technology Era"
+ concept_technology_era:0 "Technology Era"
  concept_technology_era_short:0 "Era"
  concept_technology_eras_short:0 "Eras"
  concept_technology_era_ahead_of_time_penalty_desc:0 "If you have not yet acquired all $concept_technologies$ from previous $concept_technology_eras_short$, the amount required will increase further."
@@ -1606,12 +1607,12 @@
  concept_good_produced_adj: "Вироблен"
  concept_good_produce:1 "Produce"
  concept_good_produces:0 "Produces"
- concept_output_goods:0 "Output Goods"
+ concept_output_goods: "Вихідні товари"
  concept_good_production_desc:1 "The amount of a [concept_good] produced by a [concept_building] to be sold for [concept_revenue]."
 
  concept_good_consumption: "Споживання"
- concept_good_consumed:0 "Consumed"
- concept_input_goods:0 "Input Goods"
+ concept_good_consumed: "Спожито"
+ concept_input_goods: "Вхідні товари"
  concept_good_consumption_desc:1 "The amount of a [concept_good] consumed by a [concept_building] or [concept_pop] in the process of maintaining its [concept_throughput] or [concept_wealth]."
 
  concept_subsidy: "Субсидія"

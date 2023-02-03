@@ -462,7 +462,7 @@
  insufficient_urbanization:0 "Insufficient [concept_urbanization]"
  insufficient_urbanization_desc:0 "A penalty to the building's throughput due to a lack of available [concept_urbanization] in the state."
   
- per_wealth: " / Багатство"
+ per_wealth: " / багатство"
   
  modifier_country_trade_route_quantity_mult:0 "Trade Route Volume"
  modifier_country_trade_route_quantity_mult_desc:0 "An increase or decrease in the amount of goods imported or exported for each [concept_trade_route] level"
