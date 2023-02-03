@@ -1864,7 +1864,7 @@
  UNDISCOURAGE_GOODS:0 "End Discouragements"
  TAX_GOODS: "Додати податок на споживання"
  NO_GOODS_TO_TAX:0 "There are no goods on which you can collect [Concept('concept_consumption_tax', '$concept_consumption_taxes$')]"
- UNTAX_GOODS:0 "Remove Consumption Tax"
+ UNTAX_GOODS: "Прибрати податок на споживання"
  SUBSIDIZE_SHORT:0 "Subsi:"
 
  TAX_WASTE:0 "[concept_tax_waste]: #v $VAL|-%$#!"
@@ -5191,7 +5191,7 @@
  TOOLTIP_DOMESTIC_LOANS:1 "#header [concept_loans]#!\n$TOOLTIP_DELIMITER$\n[concept_loans_desc]"
 
  INTEREST_RATE: "Відсоткова ставка: #variable [GetPlayer.GetYearlyInterestRate|1%]#!"
- TOOLTIP_INTEREST_RATE:0 "#header Interest rate#!\nLast week you paid @money!#variable [GetPlayer.GetInterestPayment|1]#! in interest at a yearly interest rate of #variable [GetPlayer.GetYearlyInterestRate|2%]#!\n$TOOLTIP_DELIMITER$\n"
+ TOOLTIP_INTEREST_RATE: "#header Відсоткова ставка#!\nМинулого тижня ви сплатили @money!#variable [GetPlayer.GetInterestPayment|1]#! через річну відсоткову ставку у #variable [GetPlayer.GetYearlyInterestRate|2%]#!\n$TOOLTIP_DELIMITER$\n"
  TOOLTIP_INTEREST_RATE_ADD:0 "#BOLD #V Additive Interest Rate Modifiers#!#!"
  TOOLTIP_INTEREST_RATE_PER_LOAN:0 "#BOLD #V Interest Rate Per Loan Modifiers#!#!"
  TOOLTIP_INTEREST_RATE_MULT:0 "#BOLD #V Multiplicative Interest Rate Modifiers#!#!"
@@ -5658,7 +5658,7 @@ notification_interest_activated_third_party_desc: "[SCOPE.sCountry('actor').GetN
  ADD_CONSUMPTION_TAX: "Додати податок на споживання"
  ADD_CONSUMPTION_TAX_ENTRY: "[Goods.GetNameNoFormatting]"
  ADD_CONSUMPTION_TAX_ENTRY_COST:0 "@money!#v [Goods.CalcPotentialConsumptionTaxAmount(GetPlayer)|+=D]#! ( @aut! [Multiply_CFixedPoint(Goods.CalcConsumptionTaxAuthorityCost(GetPlayer),'(CFixedPoint)-1')|v0+])"
- BUDGET_CONSUMPTION_TAX_TOOLTIP: "#header [concept_consumption_tax] для [Concept('concept_good', '$concept_good_gen$')|l] [Goods.GetName]#!\nCurrent cost: @aut! [Multiply_CFixedPoint(Goods.CalcConsumptionTaxAuthorityCost(GetPlayer),'(CFixedPoint)-1')|v0+]\nCurrent Revenue: #v [Goods.CalcConsumptionTaxAmount(GetPlayer)|+Т]#!"
+ BUDGET_CONSUMPTION_TAX_TOOLTIP: "#header [concept_consumption_tax] для [Concept('concept_good', '$concept_good_gen$')|l] [Goods.GetName]#!\nПоточна вартість: @aut! [Multiply_CFixedPoint(Goods.CalcConsumptionTaxAuthorityCost(GetPlayer),'(CFixedPoint)-1')|v0+]\nПоточний дохід: #v [Goods.CalcConsumptionTaxAmount(GetPlayer)|+Т]#!"
  GOODS_ADD_REMOVE_CONSUMPTION_TAX_TOOLTIP:0 "#header [SelectLocalization(GreaterThan_CFixedPoint(Goods.CalcConsumptionTaxAmount(GetPlayer), '(CFixedPoint)0'), 'Remove', 'Add')] [concept_consumption_tax] on [Goods.GetName]#!\n$TOOLTIP_DELIMITER$\nCurrent Revenue: #v [Goods.CalcConsumptionTaxAmount(GetPlayer)|+Т]#!"
 
  COUNTRY_RIGHT_CLICK_MENU_OBSERVE: "[SelectLocalization(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, Country.Self), 'COUNTRY_RIGHT_CLICK_MENU_STOP_OBSERVING', 'COUNTRY_RIGHT_CLICK_MENU_START_OBSERVING')]"

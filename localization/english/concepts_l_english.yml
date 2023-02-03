@@ -794,6 +794,7 @@
  concept_discourage_consumption_desc:2 "$concept_discourage_consumption$ of a [concept_good] will decrease the tendency for [Concept('concept_pop','$concept_pops$')] to buy it as part of their [concept_pop_needs], and will favor [Concept('concept_goods_substitution','$concept_goods_substitutes_short$')] instead. $concept_discouraging_consumption$ costs [concept_authority]."
 
  concept_consumption_tax: "Податок на споживання"
+ concept_consumption_tax_acc: "Податок на споживання"
  concept_consumption_taxes: "Податки на споживання"
  concept_consumption_tax_desc:3 "A [Concept('concept_taxes','$concept_tax$')] collected on specific [Concept('concept_good','$concept_goods$')] purchased by [Concept('concept_pop','$concept_pop$')] to meet their [concept_pop_needs]. Each $concept_good$ subject to $concept_consumption_taxes$ costs a certain amount of [concept_authority]. When applied to a $concept_good$, its [concept_market_price] increases by the $concept_consumption_tax$ rate at point of sale to $concept_pops$ only, with all [concept_buy_orders] generated in this manner resulting in the surcharge being collected by the [concept_treasury]. Since the surcharge is applied on the [concept_market] level, the $concept_tax$ is ineffective in [Concept('concept_state','$concept_states$')] with low [concept_market_access]."
 
@@ -1513,6 +1514,7 @@
 
  concept_budget_land_taxes: "Земельні податки"
  concept_budget_land_taxes_gen: "Земельних податків"
+ concept_budget_land_tax_gen: "Земельного податку"
  concept_budget_land_taxes_desc:4 "A type of [Concept('concept_budget_poll_taxes', '$concept_budget_poll_tax$')] collected from [SelectLocalization(GetPlayer.IsValid,'concept_budget_land_taxes_desc_added','Peasants')] only."
  concept_budget_land_taxes_desc_added:0 "[GetPopType('peasants').GetName]"
 
@@ -1579,6 +1581,7 @@
 
  concept_budget_wages: "Зарплати"
  concept_budget_wage: "Зарплата"
+ concept_budget_wage_gen: "Зарплати"
  concept_budget_wages_desc:1 "[Concept('concept_pop','$concept_pops$')] in the employ of a [Concept('concept_country', '$concept_country_possessive$')] [Concept('concept_government_building','$concept_government_buildings$')] and [Concept('concept_military_building','$concept_military_buildings$')] get paid $concept_budget_wages$ from the [concept_treasury] each week, according to the [concept_government_wage] and [concept_military_wage] respectively."
 
  concept_budget_goods_for_government_buildings: "$concept_goods$ для урядових будівель"

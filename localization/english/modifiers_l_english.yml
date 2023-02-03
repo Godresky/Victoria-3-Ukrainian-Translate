@@ -344,7 +344,7 @@
  modifier_interest_group_ig_trade_unions_pop_attraction_mult_desc:1 "A bonus or penalty to the how attracted Pops are to the $ig_variant_trade_unions$ [concept_interest_group]"
   
  modifier_tax_land_add: "@money! Земельний податок"
- modifier_tax_land_add_desc: "Кількість [concept_budget_land_taxes] collected from [GetPopType('peasants').GetName]"
+ modifier_tax_land_add_desc: "Кількість [Concept('concept_budget_land_taxes', '$concept_budget_land_taxes_gen$')|l] зібраних з [GetPopType('peasants').GetName]"
  modifier_tax_heathen_add:1 "@money! Religious Tax"
  modifier_tax_heathen_add_desc:0 "The amount of [concept_budget_heathen_taxes] collected from [Concept('concept_pop','$concept_pops$')] each year for following a [concept_religion] that is [Concept('concept_discrimination','$concept_discriminated$')] against"
  modifier_tax_per_capita_add: "@money! Подушний податок"
@@ -369,8 +369,8 @@
  modifier_state_middle_expected_sol_desc:0 "An increase or decrease to the minimum [concept_sol] that [concept_middle_strata] [Concept('concept_pop', '$concept_pops$')] expect to enjoy"
  modifier_state_rich_expected_sol:0 "Minimum Expected [concept_sol] for the [concept_upper_strata]"
  modifier_state_rich_expected_sol_desc:0 "An increase or decrease to the minimum [concept_sol] that [concept_upper_strata] [Concept('concept_pop', '$concept_pops$')] expect to enjoy"
- modifier_tax_income_add:0 "Income Tax Rate"
- modifier_tax_income_add_desc:0 "The portion of their [concept_budget_wages] that [Concept('concept_pop', '$concept_pops$')] must pay in taxes"
+ modifier_tax_income_add: "Ставка податку на прибуток"
+ modifier_tax_income_add_desc: "Частка [Concept('concept_budget_wages', '$concept_budget_wage_gen$')|l], яку [Concept('concept_pop', '$concept_population$')|l] мусить заплатити податку"
  modifier_state_urbanization_add:0 "$urban_capacity$"
  modifier_state_urbanization_add_desc:0 "How many urban buildings the state can support"
  modifier_state_urbanization_mult:0 "$urban_capacity$ Multiplier"
@@ -894,8 +894,8 @@
  voting_power_gain:0 "s' Political Strength from Votes"
  MODIFIER_COUNTRY_DISCRIMINATED_POLSTR_MULT:0 "Discriminated against"
   
- modifier_tax_consumption_add:0 "Consumption Tax Rate"
- modifier_tax_consumption_add_desc:1 "The rate at which goods that have a [concept_consumption_tax] placed on them are taxed"
+ modifier_tax_consumption_add: "Ставка споживчого податку"
+ modifier_tax_consumption_add_desc: "Ставка, за якою оподатковуються товари, на які встановлено [Concept('concept_consumption_tax', '$concept_consumption_tax_acc$')|l]"
   
  modifier_country_legitimacy_base_add:0 "[concept_legitimacy]"
  modifier_country_legitimacy_base_add_desc:2 "An increase or decrease of the [concept_government]'s [concept_legitimacy]"
@@ -1888,11 +1888,11 @@
  modifier_country_radicals_from_conquest_mult_desc:0 "A bonus or penalty to the amount of [Concept('concept_pop', '$concept_pops$')] that will become [concept_radical] when we conquer [Concept('concept_state', '$concept_states$')] militarily"
 
  modifier_state_radicals_from_discrimination_mult: "[Concept('concept_radical', '$concept_radicals$')] через [Concept('concept_discrimination','$concept_discrimination_acc$')|l]"
- modifier_state_radicals_from_discrimination_mult_desc: "Наддаток або карна до кількости [Concept('concept_pop', '$concept_people_gen$')|l], які стануть [Concept('concept_radical', '$concept_radicals_ins$')] з часом через [Concept('concept_discrimination', '$concept_discrimination_acc$')|l]"
+ modifier_state_radicals_from_discrimination_mult_desc: "Наддаток або карна до кількости [Concept('concept_pop', '$concept_people_gen$')|l], які стануть [Concept('concept_radical', '$concept_radicals_ins$')|l] з часом через [Concept('concept_discrimination', '$concept_discrimination_acc$')|l]"
  modifier_state_radicals_from_sol_change_mult: "Кількість [Concept('concept_radical', '$concept_radicals_gen$')|l] через зниження [Concept('concept_sol', '$concept_sol_gen$')|l]"
- modifier_state_radicals_from_sol_change_mult_desc: "Наддаток або карна до кількости [Concept('concept_pop', '$concept_people_gen$')|l], які стануть [Concept('concept_radical', '$concept_radicals_ins$')] через зниження [Concept('concept_sol', '$concept_sol_gen$')|l]"
+ modifier_state_radicals_from_sol_change_mult_desc: "Наддаток або карна до кількости [Concept('concept_pop', '$concept_people_gen$')|l], які стануть [Concept('concept_radical', '$concept_radicals_ins$')|l] через зниження [Concept('concept_sol', '$concept_sol_gen$')|l]"
  modifier_state_loyalists_from_sol_change_mult: "Кількість [Concept('concept_loyalist', '$concept_loyalists_gen$')|l] через ріст [Concept('concept_sol', '$concept_sol_gen$')|l]"
- modifier_state_loyalists_from_sol_change_mult_desc: "Наддаток або карна до кількости [Concept('concept_pop', '$concept_people_gen$')|l], які стануть [Concept('concept_loyalist', '$concept_loyalists_ins$')] через ріст [Concept('concept_sol', '$concept_sol_gen$')|l]"
+ modifier_state_loyalists_from_sol_change_mult_desc: "Наддаток або карна до кількости [Concept('concept_pop', '$concept_people_gen$')|l], які стануть [Concept('concept_loyalist', '$concept_loyalists_ins$')|l] через ріст [Concept('concept_sol', '$concept_sol_gen$')|l]"
 
  modifier_state_turmoil_effects_mult:0 "[concept_state] Penalties from [concept_turmoil]"
  modifier_state_turmoil_effects_mult_desc:0 "An increase or decrease of the negative effects Pop [concept_turmoil] has on the [concept_state] they live in"
