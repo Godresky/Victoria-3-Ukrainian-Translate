@@ -219,7 +219,7 @@
  concept_sympathy:0 "Sympathy"
  concept_sympathy_desc:0 "All AI-controlled [Concept('concept_country','$concept_countries$')] involved in a [concept_diplomatic_play] begin the play with a level of $concept_sympathy$ for each side, which influences how likely they are to support that side in the conflict. AI [Concept('concept_country','$concept_countries$')] tend to have higher $concept_sympathy$ for the [concept_target], for countries they have [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] with, and for those are opposing a [concept_country] with high [concept_infamy]. $concept_sympathy$ can also increase over the course of the [concept_diplomatic_play], as a side that gains powerful backers or accrues [concept_infamy] through adding [Concept('concept_war_goal', '$concept_war_goals$')] tends to generate $concept_sympathy$ for the opposing side."
  
- concept_neutrality:0 "Neutrality"
+ concept_neutrality: "Невтралітет"
  concept_neutrality_desc:0 "All AI-controlled [Concept('concept_country','$concept_countries$')] involved in a [concept_diplomatic_play] have a level of $concept_neutrality$ based on their internal conditions and their general level of interest in the participants of the play. The higher their $concept_neutrality$, the more difficult it will be to convince that [concept_country] to get involved in the play."
  
  concept_confidence: "Впевненість"
@@ -468,10 +468,13 @@
 
  concept_market_price: "Ринкова ціна"
  concept_market_price_gen: "Ринкової ціни"
+ concept_market_price_acc: "Ринкову ціну"
  concept_market_prices: "Ринкові ціни"
  concept_market_price_desc:1 "The price of a [concept_good] in the [concept_market]. It is based on [concept_buy_orders] and [concept_sell_orders], and affect the [concept_local_price] of [Concept('concept_good','$concept_goods$')] in all participating [Concept('concept_state','$concept_states$')] depending on their [concept_market_access]."
  
- concept_local_price: "Місцеві ціни"
+ concept_local_price: "Місцева ціна"
+ concept_local_price_acc: "Місцеву ціну"
+ concept_local_prices: "Місцеві ціни"
  concept_local_price_desc:1 "The price of a [concept_good] in a [concept_state]. It is determined by the local [concept_good_consumption] and [concept_good_production], moderated by the [concept_market_price] depending on the [Concept('concept_state','$concept_state_possessive$')] [concept_market_access]. All transactions except [Concept('concept_trade_route','$concept_trade$')] occur in the $concept_local_price$, with purchases and sales creating [Concept('concept_buy_orders','$concept_buy_order_short$')] and [concept_sell_orders] on the [concept_market]."
  
  concept_subsistence_building: "Житловий будинок"
@@ -1000,6 +1003,7 @@
 
  concept_prestige: "Престиж"
  concept_prestige_gen: "Престижу"
+ concept_prestige_acc: "Престиж"
  concept_prestige_desc:3 "Your [concept_rank] is determined by comparing your $concept_prestige$ to all other [Concept('concept_country','$concept_countries$')] in the world. $concept_prestige$ originates primarily from how impressive your economy is as measured by your [concept_gdp], how much [concept_power_projection] your military forces generate, and your [concept_country_tier]. It can also be affected by other factors such as your [SelectLocalization(GetPlayer.IsValid,'concept_prestige_desc_gamestate','Arts Academy')] and [Concept('concept_monument','$concept_monuments$')], and if you are a world leader in the production of a certain [concept_good]."
  concept_prestige_desc_gamestate:0 "[GetBuildingType('building_arts_academy').GetName]"
 
@@ -1247,7 +1251,7 @@
  concept_gdp_gen: "Валового внутрішнього продукту"
  concept_gdp_acc: "Валовий внутрішній продукт"
  concept_gdp_short: "ВВП"
- concept_gdp_desc:3 "Each unit of [Concept('concept_good','$concept_goods$')] [Concept('concept_good_production', '$concept_good_produced$')|l] in your [concept_country] contributes to your [concept_gdp]. The quantity produced is multiplied by the $concept_goods$ [concept_market_price], with the sum totalled across all $concept_goods$.\n\n$concept_gdp_short$ affects [concept_prestige] and [concept_budget_minting]."
+ concept_gdp_desc: "Кожна одиниця [Concept('concept_good_production', '$concept_good_produced_adj$ого')|l] [Concept('concept_good','$concept_good_gen$')|l] у вашій [Concept('concept_country','$concept_country_loc$')|l] впливає на ваш [Concept('concept_gdp','$concept_gdp_acc$')|l]. Створена кількість товару множиться на [Concept('concept_market_price','$concept_market_price_acc$')|l] та підсумовується серед усіх товарів.\n\n$concept_gdp_short$ впливає на [Concept('concept_prestige','$concept_prestige_acc$')|l] та [Concept('concept_budget_minting','$concept_budget_minting_acc$')|l]."
 
  concept_education_access: "Доступ до освіти"
  concept_education_access_desc:1 "The degree by which a [concept_pop] is able to access education for their children. As new generations are born and raised, the $concept_pop$'s [concept_literacy] will move towards its level of $concept_education_access$."
@@ -1304,10 +1308,10 @@
  concept_goods_acc: "Товари"
  concept_goods_gen: "Товарів"
  concept_goods_ins: "Товарами"
- concept_good_possessive:0 "Good\\'s"
+ concept_good_possessive: "Товарн"
  concept_goods_input: "Вхідні товари"
  concept_goods_output: "Вихідні товари"
- concept_good_desc:1 "$concept_goods$ are [Concept('concept_good_production','$concept_good_produced$')] in [Concept('concept_building','$concept_buildings$')] by $concept_buildings$ and [Concept('concept_pop','$concept_pops$')]. $concept_goods$ have both a [concept_local_price] and a [concept_market_price]."
+ concept_good_desc: "$concept_goods$ [Concept('concept_good_production','виробляються')|l] у [Concept('concept_building','$concept_buildings_loc$')|l] спорудами та [Concept('concept_pop','$concept_people_ins$')|l]. Товари мають як [Concept('concept_local_price','$concept_local_price_acc$')|l], так й [Concept('concept_market_price','$concept_market_price_acc$')|l]."
 
  concept_government_good: "Державний товар"
  concept_government_goods: "Державні товари"
@@ -1344,6 +1348,7 @@
  concept_people: "Люди"
  concept_people_gen: "Людей"
  concept_people_dat: "Людям"
+ concept_people_ins: "Людьми"
  concept_pop_possessive:1 "Pop\\'s"
  concept_pops_possessive:0 "Pops\\'"
  concept_population: "Населення"
@@ -1494,6 +1499,7 @@
  concept_election_desc:2 "[Concept('concept_country','$concept_countries$')] with a $concept_election_voting_franchise$ will hold $concept_elections$ every #v [GetDefine('NPolitics','ELECTION_INTERVAL_YEARS')|0] years#!. An $concept_election$ campaign period will commence #v [GetDefine('NPolitics','CAMPAIGN_PERIOD_MONTHS')|0] months#! prior to the date, during which [Concept('concept_party','$concept_parties$')] will vie for [concept_momentum] and [concept_votes].\n\nOn $concept_election$ day the final $concept_votes$ will be tallied, which will affect the [concept_political_strength] of the member [Concept('concept_interest_group','$concept_interest_groups$')] of each $concept_party$. Under certain [Concept('concept_government_type','$concept_government_types$')] a new [concept_head_of_state] may also be selected as a result of the $concept_election$'s outcome. Finally, a single [concept_government_reform] may be performed where any $concept_interest_groups$ may be removed from [concept_government] without generating any new [Concept('concept_radical','$concept_radicals$')]."
 
  concept_budget_minting: "Карбування"
+ concept_budget_minting_acc: "Карбування"
  concept_budget_minted:0 "Minted"
  concept_budget_minting_desc:2 "A form of income that all [Concept('concept_country', '$concept_countries$')] generate through the printing or casting of new [concept_money]. The greater a [Concept('concept_country','$concept_country_possessive$')] [concept_gdp], the more $concept_money$ can be $concept_budget_minted$ without compromising the economy."
 
@@ -1596,7 +1602,8 @@
  concept_budget_military_slaves_desc:3 "The upkeep of [Concept('concept_slavery','$concept_slaves$')] in the service of a [Concept('concept_country','$concept_country_possessive$')] military."
 
  concept_good_production: "Виробництво"
- concept_good_produced:0 "Produced"
+ concept_good_produced: "Вироблений"
+ concept_good_produced_adj: "Вироблен"
  concept_good_produce:1 "Produce"
  concept_good_produces:0 "Produces"
  concept_output_goods:0 "Output Goods"
