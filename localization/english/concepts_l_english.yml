@@ -1317,6 +1317,7 @@
 
  concept_government_good: "Державний товар"
  concept_government_goods: "Державні товари"
+ concept_government_good_desc: "[Concept('concept_good', '$concept_goods$')], які [Concept('concept_good_consumption','споживаються')|l] [Concept('concept_government_building', '$concept_government_buildings_ins$')|l] за рахунок [Concept('concept_treasury', 'бюджетних')] коштів."
 
  concept_military_good: "Військовий товар"
  concept_military_goods: "Військові товари"
