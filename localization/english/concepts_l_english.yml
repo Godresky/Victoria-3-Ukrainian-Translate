@@ -430,6 +430,7 @@
  concept_institution_gen: "Установи"
  concept_institutions: "Установи"
  concept_institutions_gen: "Установ"
+ concept_institutions_acc: "Установи"
  concept_institution_possessive:0 "Institution\\'s"
  concept_institution_desc:2 "$concept_institutions$ provide benefits to [Concept('concept_incorporated_state', '$concept_incorporated_states$')] across your [concept_country]. They cost [concept_bureaucracy] to maintain in proportion to the number of [Concept('concept_pop', '$concept_pops$')] living in your $concept_incorporated_states$ and the $concept_institution$'s investment level. Higher levels increase both the cost and the effect. Adjusting investment levels take a set amount of time."
  
@@ -1547,6 +1548,7 @@
  concept_tax: "Податок"
  concept_taxing: "Оподаткування"
  concept_taxation: "Оподаткування"
+ concept_taxation_gen: "Оподаткування"
  concept_tax_rate:0 "Tax Rate"
  concept_tax_level: "Рівень податку"
  concept_taxes_desc:1 "[Concept('concept_country', '$concept_countries$')] can tap into their market economies in various ways. The most common is to tax its populace's private sector incomes, or charge duties on the sales, purchase, or trade of [Concept('concept_good', '$concept_goods$')]."
