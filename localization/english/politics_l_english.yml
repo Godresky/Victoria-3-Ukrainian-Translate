@@ -1,5 +1,5 @@
 ﻿l_english:
- IG_TRAIT_CONDITIONS_TITLE:0 "#title Conditions:#!"
+ IG_TRAIT_CONDITIONS_TITLE: "#title Умови:#!"
  IG_TRAIT_APPROVAL_MIN:1 "[concept_approval] of [InterestGroup.GetName] is at least #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN #variable $MIN_RATING$#! (#variable $MIN_VALUE|0+=$#!)#!#!"
  IG_TRAIT_APPROVAL_MAX:1 "[concept_approval] of [InterestGroup.GetName] is #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN #variable $MAX_RATING$#! (#variable $MAX_VALUE|0+=$#!)#!#! or worse"
  IG_TRAIT_MARGINAL:0 "[InterestGroup.GetName] is NOT [concept_marginalized]"
@@ -11,19 +11,19 @@
  IG_TRAIT_EFFECTS_TITLE: ""
  IG_TRAIT_EFFECTS_NO_EFFECT: "#italic Жодних змінювачів#!"
 
- ACTIVE_IG_GROUP_TRAITS: "#title Риси дієвої групи населення#!"
+ ACTIVE_IG_GROUP_TRAITS: "#title Риси дієвих груп населення#!"
  ELECTION: "Вибори"
  CIVIL_WARS: "Громадянські війни"
  OPPOSITION: "Опозиція"
  RESET: "Скинути"
  GOVERNMENT_NEW_RULER: "Новий правитель!"
- IG_CLOUT:0 "#title [concept_clout]#!"
- IG_POP:1 "#title [Concept('concept_pop','$concept_population$')]#!"
+ IG_CLOUT: "#title [concept_clout]#!"
+ IG_POP: "#title [Concept('concept_pop','$concept_population$')]#!"
  
  FREE_REFORM_DATE_PREFIX: "Останній день безплатної зміни: "
  LESS_THAN_ONE_DAY: "менше одного дня"
  ONE_DAY: "#tooltippable #tooltip:$BREAKDOWN_TAG$ #v 1#!#!#! день"
- GREATER_THAN_ONE_DAY: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|v$#!#! днів(-ня)"
+ GREATER_THAN_ONE_DAY: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|v$#!#! дн."
   
  POLITICAL_MOVEMENT_ENACTING:0 "enacting"
  POLITICAL_MOVEMENT_RESTORING:0 "restoring"
@@ -50,7 +50,7 @@
  POLITICAL_MOVEMENT_TO_PRESERVE_NAME: "За збереження [Concept('concept_law','$concept_law_gen$')|l] «[LawType.GetName]»"
  POLITICAL_MOVEMENT_TO_RESTORE_NAME: "За відновлення [Concept('concept_law','$concept_law_gen$')|l] «[LawType.GetName]»"
 
- CLOUT:0 "$concept_clout$"
+ CLOUT: "$concept_clout$"
   
  POLITICAL_MOVEMENT_SUPPORT_FROM_IG_CLOUT:1 "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|v=0$#!#! from [concept_clout] of supporting [Concept('concept_interest_group', '$concept_interest_groups$')]"
  POLITICAL_MOVEMENT_SUPPORT_FROM_IG_CLOUT_BREAKDOWN:0 "#header [concept_interest_group] Support#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
