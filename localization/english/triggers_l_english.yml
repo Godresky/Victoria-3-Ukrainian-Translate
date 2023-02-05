@@ -1,5 +1,5 @@
 ﻿l_english:
- ANY_TRIGGER_FILTER_TEXT:2 "#tooltippable #tooltip:[GetRawTextTooltipTag('$FILTER$')] eligible#!#! "
+ ANY_TRIGGER_FILTER_TEXT: "#tooltippable #tooltip:[GetRawTextTooltipTag('$FILTER$')] придатні#!#! "
  TRIGGER_PASSED:1 "@green_checkmark_box! $TEXT$"
  TRIGGER_POTENTIAL:0 "@simple_box! $TEXT$"
  TRIGGER_FAILED:1 "@red_cross! $TEXT$"
@@ -70,11 +70,11 @@
  TRIGGER_IS_PROVINCE_LAND:1 "Province in [PROVINCE.GetStateRegion.GetName] is land"
  TRIGGER_IS_PROVINCE_LAND_NOT:2 "Province in [PROVINCE.GetStateRegion.GetName] is #bold not #!land"
  
- TRIGGER_HAS_BUILDING:0 "Has [BuildingType.GetName]"
+ TRIGGER_HAS_BUILDING: "Має [Concept('concept_building', '$concept_building_acc$')|l] [BuildingType.GetName|l]"
  TRIGGER_HAS_BUILDING_NOT:1 "Does #bold not #!have [BuildingType.GetName]"
- TRIGGER_HAS_BUILDING_FIRST:0 "Has [BuildingType.GetName]"
+ TRIGGER_HAS_BUILDING_FIRST: "Має [Concept('concept_building', '$concept_building_acc$')|l] [BuildingType.GetName]"
  TRIGGER_HAS_BUILDING_FIRST_NOT:1 "Does #bold not #![BuildingType.GetName]"
- TRIGGER_HAS_BUILDING_THIRD:0 "Has [BuildingType.GetName]"
+ TRIGGER_HAS_BUILDING_THIRD: "Має [Concept('concept_building', '$concept_building_acc$')|l] [BuildingType.GetName]"
  TRIGGER_HAS_BUILDING_THIRD_NOT:1 "Does #bold not #![BuildingType.GetName]"
  
  TRIGGER_HAS_ACTIVE_BUILDING:0 "Has active [BuildingType.GetName] building"
@@ -465,7 +465,7 @@
  TRIGGER_WEEKLY_PROFIT_THIRD:0 "Weekly profit $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_WEEKLY_PROFIT_THIRD_NOT:0 "Weekly profit #bold not #!$COMPARATOR$ #variable $NUM$#!"
 
- TRIGGER_OCCUPANCY:2 "The workforce [concept_occupancy] is $COMPARATOR$ #variable $NUM|%0v$#!"
+ TRIGGER_OCCUPANCY:2 "[concept_occupancy] робочої - $COMPARATOR$ #variable $NUM|%0v$#!"
  TRIGGER_OCCUPANCY_NOT:3 "The workforce [concept_occupancy] is #bold not #!$COMPARATOR$ #variable $NUM|%0v$#!"
  TRIGGER_OCCUPANCY_THIRD:1 "The workforce [concept_occupancy] of [BUILDING.GetName] is $COMPARATOR$ #variable $NUM|%0v$#! (currently: $CURRENT_VALUE|%0v$)"
  TRIGGER_OCCUPANCY_THIRD_NOT:2 "The workforce [concept_occupancy] of [BUILDING.GetName] is #bold not #!$COMPARATOR$ #variable $NUM|%0v$#! (currently: $CURRENT_VALUE|%0v$)"
@@ -1288,7 +1288,7 @@
  TRIGGER_HAS_HIGH_ATTRITION:1 "[Character.GetFullName] has a high [concept_attrition]"
  TRIGGER_HAS_HIGH_ATTRITION_NOT:2 "[Character.GetFullName] does #bold not #!have a high [concept_attrition]"
  
- TRIGGER_HAS_ACTIVE_PRODUCTION_METHOD:1 "Has activated [PRODUCTION_METHOD.GetName]"
+ TRIGGER_HAS_ACTIVE_PRODUCTION_METHOD: "Вибраний [Concept('concept_production_method', '$concept_production_method$')|l] «[PRODUCTION_METHOD.GetName]»"
  TRIGGER_HAS_ACTIVE_PRODUCTION_METHOD_NOT:2 "Has #bold not #!activated [PRODUCTION_METHOD.GetName]"
 
  TRIGGER_HAS_ACTIVE_PRODUCTION_METHOD_THIRD:0 "[Building.GetName] has activated [PRODUCTION_METHOD.GetName]"
@@ -1811,7 +1811,7 @@
  TRIGGER_ANY_SCOPE_STATE_COUNT:3 "$PARAMETERS$ $FILTER$[Concept('concept_state', '$concept_states$')]:"
  TRIGGER_ANY_SCOPE_STATE_COUNT_FIRST:0 "$PARAMETERS$ $FILTER$[Country.GetAdjectiveNoFlag] [Concept('concept_state', '$concept_states$')]:"
  TRIGGER_ANY_SCOPE_STATE_COUNT_THIRD:0 "$PARAMETERS$ $FILTER$[Concept('concept_state', '$concept_states$')] in [Country.GetName]:"
- TRIGGER_ANY_SCOPE_STATE_FIRST:1 "Any [Country.GetAdjectiveNoFlag] [concept_state]"
+ TRIGGER_ANY_SCOPE_STATE_FIRST: "Будь-який [Country.GetAdjectiveNoFlag|l]ий [concept_state|l]"
  TRIGGER_ANY_SCOPE_STATE_FIRST_NOT:2 "No [Country.GetAdjectiveNoFlag] [concept_state]"
  TRIGGER_ANY_SCOPE_STATE_THIRD:1 "Any [concept_state] in [Country.GetName]"
  TRIGGER_ANY_SCOPE_STATE_THIRD_NOT:1 "Any [concept_state] not controlled by [Country.GetName]"
