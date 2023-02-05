@@ -1357,6 +1357,7 @@
  concept_pop_possessive:1 "Pop\\'s"
  concept_pops_possessive:0 "Pops\\'"
  concept_population: "Населення"
+ concept_population_ins: "Населенням"
  concept_pop_desc:3 "The world's population are organized into $concept_pops$, groups of individuals who work in the same [concept_building] as a certain [concept_profession], and share the same [concept_culture] and [concept_religion]. They use the [Concept('concept_pop_income','$concept_pop_income_short$')] they earn to buy [Concept('concept_good', '$concept_goods$')] to satisfy their [Concept('concept_pop_needs','$concept_pop_needs_short$')], which decides their [concept_wealth] and [concept_sol]. They can support [Concept('concept_interest_group', '$concept_interest_groups$')] and [Concept('concept_political_movement','$concept_political_movements$')], or be [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')]. A $concept_pop$ has a number of [concept_working_adults] and a number of [concept_dependents]. Some number of them are [Concept('concept_literacy','$concept_literate$')], and they might have a number of either [Concept('concept_loyalist','$concept_loyalists$')] or [Concept('concept_radical','$concept_radicals$')]."
 
  concept_profession: "Ремесло"
