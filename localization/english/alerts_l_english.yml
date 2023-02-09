@@ -5,7 +5,7 @@
   # alert_xyz_action = Where does clicking this take you?
 
  alert_country_default_name: "Оголошена [concept_default|l]"
- alert_country_default_desc: "[GetPlayer.GetName] оголосила [concept_default|l] через те, що ми не можемо повернути ваші кредити. Поки ми не зможемо досягти позитивного балансу, ми будемо зазнавати карн, які з часом ставатимуть дедалі суворішими.\n\n#title Поточні заподії:#!\n[GetPlayer.GetInDefaultEffectsDesc]"
+ alert_country_default_desc: "[GetPlayer.GetName] оголосила [concept_default|l] через те, що ми не можемо повернути ваші кредити. Поки ми не зможемо досягти позитивного балянсу, ми будемо зазнавати карн, які з часом ставатимуть дедалі суворішими.\n\n#title Поточні заподії:#!\n[GetPlayer.GetInDefaultEffectsDesc]"
  alert_country_default_hint: "Ви можете покращити своє матеріяльне становище, збільшивши прибутки або зменшивши витрати. Щоб збільшити свій прибуток у короткостроковій перспективі, ви можете підвищити поточну ставку податку, почати стягувати нові податки на споживання чи підвищити тарифи для отримання нових прибутків. Щоб зменшити свої витрати, ви можете зменшити заробітну плату у своїх військових або державних будівлях, знизити ціни на товари, які вони споживають чи призупинити будівництво, доки ваші фінанси не відновляться. Якщо нічого з цього недостатньо, то у вас також є можливість оголосити про [Concept('concept_bankruptcy','$concept_bankruptcy_acc$')|l]"
  alert_country_default_action: "Панель бюджету"
 
@@ -133,7 +133,7 @@
 
  alert_stockpiling_gold_alert_name: "[GetGoods('gold').GetTextIcon] [GetGoods('gold').GetName] накопичується"
  alert_stockpiling_gold_alert_desc: "Ваше [concept_treasury|l] накопичує забагато золота."
- alert_stockpiling_gold_alert_hint: "Збільште свої витрати або зменшіть прибутки, щоб краще збалансувати свій бюджет. Накопичення золота витягує @money![concept_money|l] з вашої економіки, а [Concept('concept_pop', '$concept_population$')|l] буде мати менше прибутків, що з часом призводе до падіння їхнього [Concept('concept_wealth', '$concept_wealth_gen$')|l]."
+ alert_stockpiling_gold_alert_hint: "Збільште свої витрати або зменшіть прибутки, щоб краще збалянсувати свій бюджет. Накопичення золота витягує @money![concept_money|l] з вашої економіки, а [Concept('concept_pop', '$concept_population$')|l] буде мати менше прибутків, що з часом призводе до падіння їхнього [Concept('concept_wealth', '$concept_wealth_gen$')|l]."
  alert_stockpiling_gold_alert_action: "Панель бюджету"
 
  alert_low_legitimacy_alert_name: "Низька законність уряду"

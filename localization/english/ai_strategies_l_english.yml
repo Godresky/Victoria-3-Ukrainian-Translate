@@ -92,7 +92,7 @@
  ai_strategy_territorial_expansion_desc: "[COUNTRY.GetName] хоче розширити свої основні території за рахунок своїх сусідів."
  ai_strategy_colonial_expansion: "Здобування осад"
  ai_strategy_colonial_expansion_desc: "[COUNTRY.GetName] хоче надбати осад та місце під сонцем будь-якими способами."
- ai_strategy_maintain_power_balance: "Підтримування балансу сил"
+ ai_strategy_maintain_power_balance: "Підтримування балянсу сил"
  ai_strategy_maintain_power_balance_desc: "[COUNTRY.GetName] хоче обережно нарощувати власну потужність, гарантуючи, що жоден із її суперників не стане надто сильним."
  ai_strategy_armed_isolationism: "Захист кордонів"
  ai_strategy_armed_isolationism_desc: "[COUNTRY.GetName] хоче тримати світ на відстані через озброєний ізоляціонізм."

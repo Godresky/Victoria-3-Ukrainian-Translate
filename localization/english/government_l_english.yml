@@ -206,7 +206,7 @@
  transfer_of_power_default: "Випадково"
  transfer_of_power_default_desc: "За умов випадкової [Concept('concept_transfer_of_power', '$concept_transfer_of_power_gen$')|l], [Concept('concept_ruler', '$concept_ruler$')|l] царюватиме все життя. Після смерти старого, новий [concept_ruler|l] обирається випадковим способом."
 
- TRANSFER_OF_POWER_NAME_DESC: "Цей [concept_government_type|l] використовує [Concept('concept_transfer_of_power', '$concept_transfer_of_power_acc$')|l]: #tooltippable #tooltip:[GovernmentType.GetTooltipTag],TRANSFER_OF_POWER_TOOLTIP_DESC [GovernmentType.GetTransferOfPowerName]#!#!"
+ TRANSFER_OF_POWER_NAME_DESC: "Цей [concept_government_type|l] використовує [Concept('concept_transfer_of_power', '$concept_transfer_of_power_acc$')|l]: #tooltippable #tooltip:[GovernmentType.GetTooltipTag],TRANSFER_OF_POWER_TOOLTIP_DESC [GovernmentType.GetTransferOfPowerName|l]#!#!"
  TRANSFER_OF_POWER_TOOLTIP_DESC: "[GovernmentType.GetTransferOfPowerDesc]"
 
 # Titles

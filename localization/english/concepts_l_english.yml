@@ -1462,6 +1462,8 @@
  concept_innovation: "Інновація"
  concept_innovation_gen: "Інновації"
  concept_innovation_dat: "Інноваціям"
+ concept_innovations: "Інновації"
+ concept_innovations_gen: "Інновацій"
  concept_innovation_desc:3 "@innovation!$concept_innovation$ is produced by [SelectLocalization(GetPlayer.IsValid,'concept_innovation_desc_added','University')] $concept_buildings$ and contributes to active research progress for [Concept('concept_technology', '$concept_technologies$')]. Unspent @innovation!$concept_innovation$ will increase the [concept_technology_spread] you're currently benefiting from, if any."
  concept_innovation_desc_added:0 "[GetBuildingType('building_university').GetName]"
 

@@ -1152,7 +1152,7 @@
  dreadnought_hoax.1.b:0 "Bunga bunga."
  battleship_hoax:0 "Battleship Hoax"
  dual_monarchy.1.t: "Дуалістична монархія"
- dual_monarchy.1.d: "Ми дійшли згоди з нацією [SCOPE.sCulture('hungarian_culture').GetName|l]. Після століть незбалансованого правління вони тепер відіграватимуть рівну ролю у Австро-Угорській державі."
+ dual_monarchy.1.d: "Ми дійшли згоди з нацією [SCOPE.sCulture('hungarian_culture').GetName|l]. Після століть незбалянсованого правління вони тепер відіграватимуть рівну ролю у Австро-Угорській державі."
  dual_monarchy.1.d2: "Ситуація в Угорщині досягла критичної точки. Якщо ми не дамо нації [SCOPE.sCulture('hungarian_culture').GetName|l] рівні права у [ROOT.GetCountry.GetAdjectiveNoFormatting]ій державі, то ми ризикуємо відчинити скриню пандори."
  dual_monarchy.1.f: "«Якщо б тільки [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] міг бачити причину, [ROOT.GetCountry.GetRuler.GetSheHe] би зрозумів, що союз Австрії та Угорщини піде на користь обом сторонам. Австрія може бути впевнена, що мадярські еліти, які зараз задоволені своїм місцем при дворі, будуть вірно служити імперії.»"
  dual_monarchy.1.a: "Австрія та Угорщина тепер разом."
