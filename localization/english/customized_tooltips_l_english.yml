@@ -204,7 +204,7 @@
   # BREAKDOWNS
  COUNTRY_RANK_BREAKDOWN:0 "[Country.GetRankTooltip]"
  IG_CLOUT_BREAKDOWN: "#BOLD #V [concept_clout]#!#!\n$POL_STR_RATIO$\n$TOOLTIP_DELIMITER$\n$RAW_POL_STR$\n\nНаселення: #variable [InterestGroup.GetPopulation|D*]#!"
- IG_APPROVAL_BREAKDOWN:1 "#header [concept_approval]#!\nThe [InterestGroup.GetName]'s [concept_approval] is [InterestGroup.GetApprovalRating|v] (#bold [InterestGroup.GetApprovalValue|+=]#!)\n$TOOLTIP_DELIMITER$\n[InterestGroup.GetApprovalValueDesc]"
+ IG_APPROVAL_BREAKDOWN: "#header [concept_approval]#!\n[concept_approval] [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l] [InterestGroup.GetName] - [InterestGroup.GetApprovalRating|v|l] (#bold [InterestGroup.GetApprovalValue|+=]#!)\n$TOOLTIP_DELIMITER$\n[InterestGroup.GetApprovalValueDesc]"
  IG_POL_STR_BREAKDOWN:0 "[InterestGroup.GetPoliticalStrengthDesc]"
  MARKET_BALANCE_BREAKDOWN:0 "[Market.GetBalanceDesc]"
  COUNTRY_MOBILIZATION_BREAKDOWN:0 "#header Mobilization Potential#!\n[Country.GetMobilizationBreakdownByState]"

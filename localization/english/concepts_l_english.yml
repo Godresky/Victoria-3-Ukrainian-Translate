@@ -430,6 +430,7 @@
  concept_institution_gen: "Установи"
  concept_institutions: "Установи"
  concept_institutions_gen: "Установ"
+ concept_institutions_acc: "Установи"
  concept_institution_possessive:0 "Institution\\'s"
  concept_institution_desc:2 "$concept_institutions$ provide benefits to [Concept('concept_incorporated_state', '$concept_incorporated_states$')] across your [concept_country]. They cost [concept_bureaucracy] to maintain in proportion to the number of [Concept('concept_pop', '$concept_pops$')] living in your $concept_incorporated_states$ and the $concept_institution$'s investment level. Higher levels increase both the cost and the effect. Adjusting investment levels take a set amount of time."
  
@@ -494,6 +495,7 @@
  concept_interest_group: "Зацікавлена група"
  concept_interest_group_gen: "Зацікавленої групи"
  concept_interest_group_acc: "Зацікавлену групу"
+ concept_interest_group_ins: "Зацікавленою групою"
  concept_interest_groups: "Зацікавлені групи"
  concept_interest_groups_gen: "Зацікавлених груп"
  concept_interest_groups_ins: "Зацікавленими групами"
@@ -537,6 +539,7 @@
  concept_character_trait_desc:1 "Personality $concept_character_traits_short$, Skill $concept_character_traits_short$, or Conditions that impact a [Concept('concept_character','$concept_character_possessive$')] ability to carry out their current [concept_character_role]. More or different $concept_character_traits$ may develop as the $concept_character$ gains [concept_life_experience]."
 
  concept_construction_queue: "Черга на будівництво"
+ concept_construction_queue_acc: "Чергу на будівництво"
  concept_construction_queue_loc: "Черзі на будівництво"
  concept_construction_queue_desc:2 "Any [Concept('concept_building', '$concept_buildings$')] that have been set to be expanded, but are currently not using any [concept_construction], are placed in the $concept_construction_queue$. Whenever any $concept_construction$ becomes available, the first $concept_building$ in the $concept_construction_queue$ will start using that $concept_construction$ and then switch to being [concept_under_construction]."
 
@@ -730,10 +733,11 @@
  concept_flotilla_desc_added:0 "[GetBuildingType('building_naval_base').GetName]"
 
  concept_in_government: "В уряді"
- concept_in_government_desc:0 "[Concept('concept_interest_group','$concept_interest_groups$')] included in the [concept_government] affects which [Concept('concept_law','$concept_laws$')] can be [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')] and sets the [concept_country] [concept_legitimacy]. They will never support [Concept('concept_political_movement','$concept_political_movements$')] unless their [concept_approval] drops low enough that they leave to join the [Concept('concept_in_opposition','$concept_in_opposition_short$')]."
+ concept_in_government_desc: "[Concept('concept_interest_group','$concept_interest_groups$')], що входять в [Concept('concept_government','$concept_government_acc$')|l] впливають на те, яким [Concept('concept_law','$concept_laws_dat$')] можна буде [Concept('concept_enactment_of_laws','надати чинности')|l] та встановлює [Concept('concept_legitimacy','$concept_legitimacy_acc$')|l] [Concept('concept_country','$concept_country_gen$')|l]. Вони ніколи не підтримають [Concept('concept_political_movement','$concept_political_movements_acc$')|l], якщо тільки їхнє [concept_approval|l] не впаде настільки низько, що вони приєднаються до [Concept('concept_in_opposition','$concept_in_opposition_short_gen$')|l]."
 
  concept_in_opposition: "В опозиції"
  concept_in_opposition_short: "Опозиція"
+ concept_in_opposition_short_gen: "Опозиції"
  concept_in_opposition_desc:2 "[Concept('concept_interest_group','$concept_interest_groups$')] not part of the [concept_government] are considered $concept_in_opposition$. Their only way to affect [concept_enactment_of_laws] is through [Concept('concept_political_movement','$concept_political_movements$')], but their [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] apply in full as usual."
 
  concept_legitimacy: "Законність"
@@ -831,6 +835,7 @@
 
  concept_colony: "Осада"
  concept_colony_gen: "Осади"
+ concept_colony_acc: "Осаду"
  concept_colonies: "Осади"
  concept_colonies_acc: "Осади"
  concept_colonize: "Colonize"
@@ -1105,6 +1110,7 @@
 
  concept_political_strength: "Політична сила"
  concept_political_strength_gen: "Політичної сили"
+ concept_political_strength_acc: "Політичну силу"
  concept_political_strengths: "Політичні сили"
  concept_political_strength_desc:3 "The degree of power a [concept_pop], and consequently the [Concept('concept_interest_group','$concept_interest_groups$')] it supports, have over the [Concept('concept_country','$concept_country_possessive$')] politics. It is derived from its supporting $concept_pops$' [concept_wealth]. $concept_pops$ who live in [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] have much less $concept_political_strength$, while $concept_pops$ in the [concept_capital_state] have more.\n\n$concept_pops$ distribute their $concept_political_strength$ to the $concept_interest_groups$ it supports proportionate to how many of its members support it. If an $concept_interest_group$ is a member of a [concept_party], they also gain $concept_political_strength$ from the [concept_votes] that $concept_party$ received in the last [concept_election]. An $concept_interest_group$'s [concept_clout] is equal to their share of the $concept_country$'s total $concept_political_strength$."
 
@@ -1201,6 +1207,7 @@
 
  concept_government: "Уряд"
  concept_government_gen: "Уряду"
+ concept_government_acc: "Уряд"
  concept_government_dat: "Урядові"
  concept_government_loc: "Уряді"
  concept_governments: "Уряди"
@@ -1356,6 +1363,7 @@
  concept_pop_possessive:1 "Pop\\'s"
  concept_pops_possessive:0 "Pops\\'"
  concept_population: "Населення"
+ concept_population_ins: "Населенням"
  concept_pop_desc:3 "The world's population are organized into $concept_pops$, groups of individuals who work in the same [concept_building] as a certain [concept_profession], and share the same [concept_culture] and [concept_religion]. They use the [Concept('concept_pop_income','$concept_pop_income_short$')] they earn to buy [Concept('concept_good', '$concept_goods$')] to satisfy their [Concept('concept_pop_needs','$concept_pop_needs_short$')], which decides their [concept_wealth] and [concept_sol]. They can support [Concept('concept_interest_group', '$concept_interest_groups$')] and [Concept('concept_political_movement','$concept_political_movements$')], or be [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')]. A $concept_pop$ has a number of [concept_working_adults] and a number of [concept_dependents]. Some number of them are [Concept('concept_literacy','$concept_literate$')], and they might have a number of either [Concept('concept_loyalist','$concept_loyalists$')] or [Concept('concept_radical','$concept_radicals$')]."
 
  concept_profession: "Ремесло"
@@ -1393,6 +1401,7 @@
 
  concept_primary_cultures: "Головні культури"
  concept_primary_culture: "Головна культура"
+ concept_primary_culture_acc: "Головна культура"
  concept_primary_cultures_desc:4 "The [concept_culture] or $concept_cultures$ a [Concept('concept_country','$concept_country_nation_state$')] is primarily associated with. If a $concept_country$ [Concept('concept_nation_formation','forms a different')] $concept_country$ its $concept_primary_cultures$ may change, but will otherwise remain the same.[AddLocalizationIf(GetPlayer.IsValid,'concept_primary_cultures_ingame_added')]"
  concept_primary_cultures_ingame_added:1 "\n\nThe $concept_primary_cultures$ in [GetPlayer.GetName] are [GetPlayer.GetPrimaryCulturesDesc]."
 
@@ -1451,10 +1460,12 @@
 
  concept_innovation: "Інновація"
  concept_innovation_gen: "Інновації"
+ concept_innovation_dat: "Інноваціям"
  concept_innovation_desc:3 "@innovation!$concept_innovation$ is produced by [SelectLocalization(GetPlayer.IsValid,'concept_innovation_desc_added','University')] $concept_buildings$ and contributes to active research progress for [Concept('concept_technology', '$concept_technologies$')]. Unspent @innovation!$concept_innovation$ will increase the [concept_technology_spread] you're currently benefiting from, if any."
  concept_innovation_desc_added:0 "[GetBuildingType('building_university').GetName]"
 
  concept_technology_spread: "Поширення технологій"
+ concept_technology_spread_dat: "Поширенню технології"
  concept_technology_spread_desc:2 "One [concept_technology] that you have not yet acquired from each category ($PRODUCTION_NO_CONCEPT$, $MILITARY$, and $SOCIETY$) is always spreading to you from [Concept('concept_country','$concept_countries$')] that have acquired them. The progress you get in spreading $concept_technologies$ is randomized each week around a base value depending on your $concept_country$'s [concept_literacy]. If no $concept_country$ has invented a certain $concept_technology$ yet it cannot spread to you, so you are more likely to acquire early [Concept('concept_technology_era','$concept_technology_era_short$')] $concept_technologies$ from $concept_technology_spread$ than later ones."
 
  concept_technology_era:0 "Technology Era"
@@ -1547,6 +1558,7 @@
  concept_tax: "Податок"
  concept_taxing: "Оподаткування"
  concept_taxation: "Оподаткування"
+ concept_taxation_gen: "Оподаткування"
  concept_tax_rate:0 "Tax Rate"
  concept_tax_level: "Рівень податку"
  concept_taxes_desc:1 "[Concept('concept_country', '$concept_countries$')] can tap into their market economies in various ways. The most common is to tax its populace's private sector incomes, or charge duties on the sales, purchase, or trade of [Concept('concept_good', '$concept_goods$')]."
@@ -1934,6 +1946,7 @@
  concept_political_movements_short: "Рухи"
  concept_political_movements: "Політичні рухи"
  concept_political_movements_gen: "Політичних рухів"
+ concept_political_movements_acc: "Політичні рухи"
  concept_political_movements_loc: "Політичних рухах"
  concept_political_movement_desc:1 "A $concept_political_movement$ champions a particular [concept_law], either to enact it, preserve it, or restore it. Both individual [Concept('concept_pop','$concept_pops$')] and [Concept('concept_interest_group','$concept_interest_groups$')] can join $concept_political_movements$, which provide it with both [Concept('concept_political_movement_support','$concept_political_movement_support_short$')] and [Concept('concept_political_movement_radicalism','$concept_political_movement_radicalism_short$')].  Pursuing the change a $concept_political_movement$ desires will be easier as you have its $concept_political_movement_support_short$. Failing to pursue the change could lead to a [concept_revolution]."
 
