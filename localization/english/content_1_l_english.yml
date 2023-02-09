@@ -550,8 +550,7 @@
  lesser_opium_addiction_state_mod:0 "Treating Opium Addiction"
  je_sick_man_main: "Хвора людина Европи"
  je_sick_man_main_reason: "Ми повинні модернізувати та відновити Османську імперію."
- je_sick_man_main_goal: "Виконайте 4 «Танзимати»
- ([Concept('concept_journal_entry', '$concept_journal_entries$')])"
+ je_sick_man_main_goal: "Виконайте 4 «Танзимати» ([Concept('concept_journal_entry', '$concept_journal_entries$')])"
  je_sick_man_syria: "Танзимат: Повернути Сирію"
  je_sick_man_syria_reason:0 "Syria has been lost to the tyrant of Egypt, who stole his dominion from our rightful hands. We must reclaim it!"
  je_sick_man_syria_status:0 "Starting a diplomatic play against Egypt will give European [Concept('concept_great_power', '$concept_great_powers$')] an [concept_active_interest] in the region."

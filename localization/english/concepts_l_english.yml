@@ -214,7 +214,6 @@
  concept_diplomatic_plays_loc: "Дипломатичних іграх"
  concept_diplomatic_plays_short: "Ігри"
  concept_diplomatic_play_negotiated:0 "Negotiated"
- concept_diplomatic_play_desc: "$concept_diplomatic_play$ is a period of hostile diplomatic negotiations between two or more [Concept('concept_country','$concept_countries$')] that follows after one $concept_country$ makes a demand for a concession by another. To start a $concept_diplomatic_play$ you must have an [concept_active_interest] in the relevant [concept_strategic_region], which also entitles you to participate in $concept_diplomatic_plays_short$ as a third party in that $concept_strategic_region$.\n\nThe $concept_diplomatic_play$ will [Concept('concept_escalation', '$concept_escalate$')] through three phases: [concept_opening_moves], [concept_diplomatic_maneuvers], and [concept_countdown_to_war]. These phases set the terms for a possible [concept_peace_deal] should the $concept_diplomatic_play$ $concept_escalate$ into a [concept_war]. A $concept_war$ can be averted if either the [concept_initiator] or [concept_target] of the $concept_diplomatic_play_short$ backs down and grants the other their primary [concept_war_goal]."
  concept_diplomatic_play_desc: "Дипломатична гра - це is a period of hostile diplomatic negotiations between two or more [Concept('concept_country','$concept_countries$')] that follows after one $concept_country$ makes a demand for a concession by another. To start a $concept_diplomatic_play$ you must have an [concept_active_interest] in the relevant [concept_strategic_region], which also entitles you to participate in $concept_diplomatic_plays_short$ as a third party in that $concept_strategic_region$.\n\nThe $concept_diplomatic_play$ will [Concept('concept_escalation', '$concept_escalate$')] through three phases: [concept_opening_moves], [concept_diplomatic_maneuvers], and [concept_countdown_to_war]. These phases set the terms for a possible [concept_peace_deal] should the $concept_diplomatic_play$ $concept_escalate$ into a [concept_war]. A $concept_war$ can be averted if either the [concept_initiator] or [concept_target] of the $concept_diplomatic_play_short$ backs down and grants the other their primary [concept_war_goal]."
 
  concept_sympathy:0 "Sympathy"
@@ -901,7 +900,6 @@
 
  concept_diplomatic_pact: "Дипломатичний пакт"
  concept_diplomatic_pacts: "Дипломатичні пакти"
- concept_diplomatic_pacts: "Дипломатичні пакти"
  concept_diplomatic_pact_short: "Пакт"
  concept_diplomatic_pact_short_gen: "Пакту"
  concept_diplomatic_pacts_short: "Пакти"
@@ -1366,7 +1364,6 @@
  concept_population_ins: "Населенням"
  concept_pop_desc:3 "The world's population are organized into $concept_pops$, groups of individuals who work in the same [concept_building] as a certain [concept_profession], and share the same [concept_culture] and [concept_religion]. They use the [Concept('concept_pop_income','$concept_pop_income_short$')] they earn to buy [Concept('concept_good', '$concept_goods$')] to satisfy their [Concept('concept_pop_needs','$concept_pop_needs_short$')], which decides their [concept_wealth] and [concept_sol]. They can support [Concept('concept_interest_group', '$concept_interest_groups$')] and [Concept('concept_political_movement','$concept_political_movements$')], or be [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')]. A $concept_pop$ has a number of [concept_working_adults] and a number of [concept_dependents]. Some number of them are [Concept('concept_literacy','$concept_literate$')], and they might have a number of either [Concept('concept_loyalist','$concept_loyalists$')] or [Concept('concept_radical','$concept_radicals$')]."
 
- concept_profession: "Ремесло"
  concept_profession: "Ремесло"
  concept_profession_jobs: "Робота"
  concept_profession_jobs_gen: "Роботи"

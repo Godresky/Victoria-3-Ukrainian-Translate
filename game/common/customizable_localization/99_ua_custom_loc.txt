@@ -20,13 +20,13 @@
 
 UA_vin_vona = {		
 	type = character
-	log_loc_errors = no
+	log_loc_errors = yes
 	text = {	
-		localization_key = CustomLoc_UA_vin_vona_male
+		localization_key = CustomLoc_UA_vin
 		trigger = { is_female = no }
 	}	
 	text = {	
-		localization_key = CustomLoc_UA_vin_vona_female
+		localization_key = CustomLoc_UA_vona
 		trigger = { is_female = yes }
 	}	
 }

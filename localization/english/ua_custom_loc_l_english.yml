@@ -1,3 +1,26 @@
 ﻿l_polish:
- CustomLoc_UA_vin_vona_male: "він"
- CustomLoc_UA_vin_vona_female: "вона"
+ CustomLoc_UA_vin: "він"
+ CustomLoc_UA_vin_noho: "нього"
+ CustomLoc_UA_vin_joho: "його"
+ CustomLoc_UA_vin_jomu: "йому"
+ CustomLoc_UA_vin_nym: "ним"
+ CustomLoc_UA_vin_nomu: "ньому"
+
+ CustomLoc_UA_vona: "вона"
+ CustomLoc_UA_vona_neji: "неї"
+ CustomLoc_UA_vona_jiji: "її"
+ CustomLoc_UA_vona_jij: "їй"
+ CustomLoc_UA_vona_neju: "нею"
+ CustomLoc_UA_vona_nij: "ній"
+
+ CustomLoc_UA_vony: "вони"
+ CustomLoc_UA_vony_nykh: "них"
+ CustomLoc_UA_vony_jikh: "їх"
+ CustomLoc_UA_vony_jim: "їм"
+ CustomLoc_UA_vony_nymy: "ними"
+
+#_gen - Родовий
+#_dat - Давальний
+#_acc - Знахідний
+#_ins - Орудний
+#_loc - Місцевий
