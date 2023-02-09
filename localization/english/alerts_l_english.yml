@@ -15,7 +15,7 @@
  alert_is_construction_paused_action: "Черга на будівництво"
   
  alert_country_approaching_bureaucracy_shortage_name: "Бюрократична нестача"
- alert_country_approaching_bureaucracy_shortage_desc: "Наші [Concept('concept_country', '$concept_country_possessive$і')|l] [Concept('concept_institution', '$concept_institutions$')|l] виросли на занадто високий рівень, що може привести до перенапруження системи. Доки ми не зможемо забезпечити достатню кількість $sBUREAUCRACY_gen$, то подальший ріст [Concept('concept_institution', '$concept_institution_gen$')|l] зупиниться."
+ alert_country_approaching_bureaucracy_shortage_desc: "Наші [Concept('concept_country', '$concept_country_possessive$і')|l] [Concept('concept_institution', '$concept_institutions$')|l] виросли на занадто високий рівень, що може привести до перенапруження системи. Доки ми не зможемо забезпечити достатню кількість $sBUREAUCRACY_gen$, то подальший приріст [Concept('concept_institution', '$concept_institution_gen$')|l] зупиниться."
  alert_country_approaching_bureaucracy_shortage_hint: "Ви можете збільшити кількість бюрократії, звівши нові державні управи."
  alert_country_approaching_bureaucracy_shortage_action: "Панель політики"
 
@@ -166,7 +166,7 @@
  alert_market_goods_shortage_affected_building_entry: "[Building.GetName] у [Concept('concept_state', '$concept_state_loc$')|l] [Building.GetState.GetName]"
 
  alert_low_market_access_alert_name: "[SCOPE.GetRootScope.GetState.GetMarketAccess|%0v] [Concept('concept_market_access', '$concept_market_access_gen$')|l] у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetState.GetName]"
- alert_low_market_access_alert_hint: "Ви можете покращити [Concept('concept_market_access', '$concept_market_access_acc$')|l] в [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetState.GetName], завдяки збільшеню рівня [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l] (звівши будівлі [GetBuildingType('building_port').GetName|l] чи [GetBuildingType('building_railway').GetName|l]), завдяки [Concept('concept_decree', '$concept_decrees_dat$')|l] «[GetDecreeType('decree_road_maintenance').GetName]» чи забезпечивши достатню кількість [Concept('concept_convoys', '$concept_convoys_gen$')|l] для з‘єднання морським тором [Concept('concept_state', '$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetName] зі [Concept('concept_market_capital', '$concept_market_capital_ins$')|l]."
+ alert_low_market_access_alert_hint: "Ви можете покращити [Concept('concept_market_access', '$concept_market_access_acc$')|l] у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetState.GetName], завдяки збільшеню рівня [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l] (звівши будівлі [GetBuildingType('building_port').GetName|l] чи [GetBuildingType('building_railway').GetName|l]), завдяки [Concept('concept_decree', '$concept_decrees_dat$')|l] «[GetDecreeType('decree_road_maintenance').GetName]» чи забезпечивши достатню кількість [Concept('concept_convoys', '$concept_convoys_gen$')|l] для з‘єднання морським тором [Concept('concept_state', '$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetName] зі [Concept('concept_market_capital', '$concept_market_capital_ins$')|l]."
  alert_low_market_access_alert_action: "Панель регіону [SCOPE.GetRootScope.GetState.GetName]"
  
  alert_insufficient_tax_capacity_alert_name: "[SCOPE.GetRootScope.GetState.GetName] ([SCOPE.GetRootScope.GetState.CalcTaxCapacityBalance|+0v])"

@@ -1357,10 +1357,10 @@
  TRIGGER_IS_CIVIL_WAR_TYPE:0 "[concept_civil_war] is a #v $CIVIL_WAR_TYPE$#!"
  TRIGGER_IS_CIVIL_WAR_TYPE_NOT:1 "[concept_civil_war] is #bold not #!a #v $CIVIL_WAR_TYPE$#!"
 
- TRIGGER_IS_TREATY_PORT:1 "Is a [concept_treaty_port]"
- TRIGGER_IS_TREATY_PORT_NOT:2 "Is #bold not #!a [concept_treaty_port]"
- TRIGGER_IS_TREATY_PORT_THIRD:0 "[STATE.GetName] is a [concept_treaty_port]"
- TRIGGER_IS_TREATY_PORT_THIRD_NOT:1 "[STATE.GetName] is #bold not #!a [concept_treaty_port]"
+ TRIGGER_IS_TREATY_PORT: "Є [Concept('concept_treaty_port', '$concept_treaty_port_ins$')|l]"
+ TRIGGER_IS_TREATY_PORT_NOT: "#bold Не#! є [Concept('concept_treaty_port', '$concept_treaty_port_ins$')|l]"
+ TRIGGER_IS_TREATY_PORT_THIRD: "[STATE.GetName] - [Concept('concept_treaty_port', '$concept_treaty_port$')|l]"
+ TRIGGER_IS_TREATY_PORT_THIRD_NOT: "[STATE.GetName] не #bold є#! [Concept('concept_treaty_port', '$concept_treaty_port_ins$')|l]"
  
  TRIGGER_AVAILABLE_JOBS:0 "Has $COMPARATOR$ $NUM|v$ available jobs"
  TRIGGER_AVAILABLE_JOBS_NOT:1 "Does #bold not #!have $COMPARATOR$ $NUM|v$ available jobs"
@@ -1800,7 +1800,7 @@
  TRIGGER_ANY_STATE_PERCENT:3 "$PARAMETERS$ of $FILTER$[Concept('concept_state', '$concept_states$')] worldwide"
  TRIGGER_ANY_STATE_COUNT:3 "$PARAMETERS$ $FILTER$[Concept('concept_state', '$concept_states$')] worldwide"
  
- TRIGGER_ANY_SCOPE_STATE:1 "Any [concept_state]:"
+ TRIGGER_ANY_SCOPE_STATE: "Будь-який [concept_state|l]:"
  TRIGGER_ANY_SCOPE_STATE_ALL:2 "All [Concept('concept_state', '$concept_states$')]:"
  TRIGGER_ANY_SCOPE_STATE_ALL_NOT:1 "No [Concept('concept_state', '$concept_states$')]:"
  TRIGGER_ANY_SCOPE_STATE_ALL_FIRST:2 "All [Country.GetAdjectiveNoFlag] [Concept('concept_state', '$concept_states$')]"
@@ -2368,12 +2368,12 @@
  TRIGGER_ANY_SCOPE_STATE_PERCENT_FIRST:1 "$PARAMETERS$ of all $FILTER$[COUNTRY.GetAdjectiveNoFlag] [Concept('concept_state', '$concept_states$')]"
  TRIGGER_ANY_SCOPE_STATE_PERCENT_THIRD:1 "$PARAMETERS$ of all $FILTER$[Concept('concept_state', '$concept_states$')] in [COUNTRY.GetName]"
 
- TRIGGER_STATE_OWNER_EQUAL:0 "[concept_state] is owned by [TARGET_COUNTRY.GetName]"
- TRIGGER_STATE_OWNER_EQUAL_NOT:1 "[concept_state] is #bold not #!owned by [TARGET_COUNTRY.GetName]"
- TRIGGER_STATE_OWNER_EQUAL_THIRD:0 "[concept_state] is owned by [TARGET_COUNTRY.GetName]"
- TRIGGER_STATE_OWNER_EQUAL_THIRD_NOT:0 "[concept_state] is not owned by [TARGET_COUNTRY.GetName]"
- TRIGGER_STATE_OWNER_EQUAL_FIRST:0 "[TARGET_COUNTRY.GetNameNoFlag] owns [concept_state]"
- TRIGGER_STATE_OWNER_EQUAL_FIRST_NOT:0 "[TARGET_COUNTRY.GetNameNoFlag] does not own [concept_state]"
+ TRIGGER_STATE_OWNER_EQUAL: "[concept_state] належить державі [TARGET_COUNTRY.GetName]"
+ TRIGGER_STATE_OWNER_EQUAL_NOT: "[concept_state] #bold не#! належить державі [TARGET_COUNTRY.GetName]"
+ TRIGGER_STATE_OWNER_EQUAL_THIRD: "[concept_state] належить державі [TARGET_COUNTRY.GetName]"
+ TRIGGER_STATE_OWNER_EQUAL_THIRD_NOT: "[concept_state] не належить державі [TARGET_COUNTRY.GetName]"
+ TRIGGER_STATE_OWNER_EQUAL_FIRST:0 "[TARGET_COUNTRY.GetNameNoFlag] володіє [Concept('concept_state', '$concept_state_ins$')|l]"
+ TRIGGER_STATE_OWNER_EQUAL_FIRST_NOT:0 "[TARGET_COUNTRY.GetNameNoFlag] не володіє [Concept('concept_state', '$concept_state_ins$')|l]"
 
  TRIGGER_MARKET_OWNER_EQUAL:0 "[concept_market] is controlled by [TARGET_COUNTRY.GetName]"
  TRIGGER_MARKET_OWNER_EQUAL_NOT:0 "[concept_market] is #bold not#! controlled by [TARGET_COUNTRY.GetName]"

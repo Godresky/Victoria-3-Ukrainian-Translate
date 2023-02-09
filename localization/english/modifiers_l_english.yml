@@ -1891,8 +1891,8 @@
  modifier_state_radicals_from_discrimination_mult_desc: "Наддаток або карна до кількости [Concept('concept_pop', '$concept_people_gen$')|l], які стануть [Concept('concept_radical', '$concept_radicals_ins$')|l] з часом через [Concept('concept_discrimination', '$concept_discrimination_acc$')|l]"
  modifier_state_radicals_from_sol_change_mult: "Кількість [Concept('concept_radical', '$concept_radicals_gen$')|l] через зниження [Concept('concept_sol', '$concept_sol_gen$')|l]"
  modifier_state_radicals_from_sol_change_mult_desc: "Наддаток або карна до кількости [Concept('concept_pop', '$concept_people_gen$')|l], які стануть [Concept('concept_radical', '$concept_radicals_ins$')|l] через зниження [Concept('concept_sol', '$concept_sol_gen$')|l]"
- modifier_state_loyalists_from_sol_change_mult: "Кількість [Concept('concept_loyalist', '$concept_loyalists_gen$')|l] через ріст [Concept('concept_sol', '$concept_sol_gen$')|l]"
- modifier_state_loyalists_from_sol_change_mult_desc: "Наддаток або карна до кількости [Concept('concept_pop', '$concept_people_gen$')|l], які стануть [Concept('concept_loyalist', '$concept_loyalists_ins$')|l] через ріст [Concept('concept_sol', '$concept_sol_gen$')|l]"
+ modifier_state_loyalists_from_sol_change_mult: "Кількість [Concept('concept_loyalist', '$concept_loyalists_gen$')|l] через приріст [Concept('concept_sol', '$concept_sol_gen$')|l]"
+ modifier_state_loyalists_from_sol_change_mult_desc: "Наддаток або карна до кількости [Concept('concept_pop', '$concept_people_gen$')|l], які стануть [Concept('concept_loyalist', '$concept_loyalists_ins$')|l] через приріст [Concept('concept_sol', '$concept_sol_gen$')|l]"
 
  modifier_state_turmoil_effects_mult:0 "[concept_state] Penalties from [concept_turmoil]"
  modifier_state_turmoil_effects_mult_desc:0 "An increase or decrease of the negative effects Pop [concept_turmoil] has on the [concept_state] they live in"
