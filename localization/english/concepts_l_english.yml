@@ -1193,7 +1193,7 @@
  concept_war_desc: "Активне воєнне протистояння між двома [Concept('concept_country','$concept_countries_ins$')|l] як результат [Concept('concept_diplomatic_play','$concept_diplomatic_play_gen$')|l]. Під час [Concept('concept_war','$concept_wars_gen$')|l], [Concept('concept_commander','$concept_commanders$')|l] на суші та на морі будуть виконувати [Concept('concept_order','$concept_orders_acc$')|l] для досягнення певних цілей, що часто призводить до [Concept('concept_battle','$concept_battles_gen$')|l] між двома сторонами."
 
  concept_war_goal: "Воєнна ціль"
- concept_war_goal_gen: "Воєнних цілей"
+ concept_war_goal_gen: "Воєнної цілі"
  concept_war_goal_acc: "Воєнну ціль"
  concept_war_goal_primary: "Основні воєнні цілі"
  concept_war_goals: "Воєнні цілі"
@@ -1437,8 +1437,10 @@
  concept_religious_trait_desc:2 "Aspects of a [concept_religion], such as its major religion group. The similarity between the $concept_religious_traits$ of a [Concept('concept_country','$concept_country_possessive$')] [concept_state_religion] and the $concept_religion$ adhered to by a [concept_pop], combined with the $concept_country$'s current [SelectLocalization(GetPlayer.IsValid,'concept_religious_trait_desc_added','Church and State')] [concept_law], determines whether the $concept_pop$ is [Concept('concept_discrimination','$concept_discriminated_against$')] or not."
  concept_religious_trait_desc_added:0 "[GetLawType('law_state_religion').GetGroup.GetName]"
  
- concept_investment_pool: "Розмір вкладу"
- concept_investment_pool_loc: "Розміру вкладу"
+ concept_investment_pool: "Пул вкладів"
+ concept_investment_pool_gen: "Пулу вкладів"
+ concept_investment_pool_acc: "Пул вкладів"
+ concept_investment_pool_loc: "Інвестиційному пулі"
  concept_investment_pool_desc:2 "A portion of the [concept_dividends] collected by [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_shares$')] is deposited into the $concept_investment_pool$, where it becomes available to [Concept('concept_construction','$concept_construct$')] [Concept('concept_building','$concept_buildings$')] the [Concept('concept_country','$concept_country_possessive$')] current [SelectLocalization(GetPlayer.IsValid,'concept_investment_pool_desc_added','Economic System')] [concept_law] permits to be built with these funds. As $concept_construction$ of such $concept_buildings$ take place, the funds required to build them are deducted from the $concept_investment_pool$ and deposited in the [concept_treasury] as an [concept_budget_investment_income]."
  concept_investment_pool_desc_added:0 "[GetLawType('law_traditionalism').GetGroup.GetName]"
 

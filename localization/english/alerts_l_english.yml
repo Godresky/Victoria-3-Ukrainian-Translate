@@ -20,7 +20,7 @@
  alert_country_approaching_bureaucracy_shortage_action: "Панель політики"
 
  alert_has_no_research_alert_name: "Немає активних досліджень"
- alert_has_no_research_alert_desc: "Наразі ми не ведемо активних досліджень будь-якої [Concept('concept_technology', '$concept_technology_gen$')|l]. Таким чином, будь-яка [concept_innovation|l], яку ми створюємо, буде спрямована на поширення ваших пасивних технологій."
+ alert_has_no_research_alert_desc: "Наразі ми не ведемо активних досліджень будь-якої [Concept('concept_technology', '$concept_technology_gen$')|l]. Таким чином, будь-яка [concept_innovation|l], яку ми створюємо, буде спрямована на [Concept('concept_technology_spread', 'поширення ваших пасивних технологій')|l]."
  alert_has_no_research_alert_hint: "Ви можете вибрати технологію, яку будете вивчати, серед трьох гілок досліджень на панелі технологій."
  alert_has_no_research_alert_action: "Панель технологій" 
 
@@ -44,8 +44,8 @@
  alert_is_losing_rank_alert_hint: "Ви можете отримати більше [Concept('concept_prestige','$concept_prestige_gen$')|l], збільшивши [Concept('concept_gdp','$concept_gdp_acc$')|l] нації, підвищивши [Concept('concept_power_projection','$concept_power_projection_acc$')|l] війська та флоту (це можна зробити збільшивши чисельність війська або давши краще оснащення) чи ставши провідником виробництва [Concept('concept_good','$concept_good_gen$')|l]. Таким чином ви отримуєте частку [Concept('concept_prestige','$concept_prestige_gen$')|l] від свого [Concept('concept_subject', '$concept_subject_gen$')|l]."
  alert_is_losing_rank_alert_action: "Панель дипломатії"
 
- alert_has_no_war_goal_alert_name: "Немає головної [Concept('concept_war_goal','$concept_war_goal_gen$')|l] проти [Concept('concept_war_goal','$concept_war_goal_gen$')|l] [SCOPE.GetRootScope.GetDiplomaticPlay.GetInitiator.GetName]"
- alert_has_no_war_goal_alert_desc:1 "We currently do not have any [Concept('concept_war_goal', '$concept_war_goals$')] set in one of our [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')].\n\nIf do not add any $concept_war_goals$ during the [concept_opening_moves] phase, a primary [concept_war_goal] will automatically be generated for us."
+ alert_has_no_war_goal_alert_name: "Немає [Concept('concept_war_goal','$concept_war_goal_gen$')|l] проти [Concept('concept_war_goal','$concept_war_goal_gen$')|l] [SCOPE.GetRootScope.GetDiplomaticPlay.GetInitiator.GetName]"
+ alert_has_no_war_goal_alert_desc:2 "We currently do not have any [Concept('concept_war_goal', '$concept_war_goals$')] set in one of our [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')].\n\nIf do not add any $concept_war_goals$ during the [concept_opening_moves] phase, a [concept_war_reparations] [concept_war_goal] will automatically be generated for us."
  alert_has_no_war_goal_alert_hint:1 "You can add a $concept_war_goal$ on a participating member of the $concept_diplomatic_play$ in its overview screen. You can expand your $concept_war_goal$ targets as more participants join a side in the $concept_diplomatic_play$, but that will be at the cost of [Concept('concept_maneuver', '$concept_maneuvers$')] you can spend to tempt other participants to join your side."
  alert_has_no_war_goal_alert_action: "Дипломатичну гру"
 
@@ -63,12 +63,17 @@
  alert_active_peace_deal_alert_desc: "Була запропонована мирна угода для цієї [Concept('concept_war', '$concept_war_gen$')|l] [concept_war], ви як її частина можете або #b відхилити#!, або #b прийняти#! залежно від реакції усіх учасників перемовин.\n[GetPlayer.GetActivePeaceDealDesc]"
  alert_active_peace_deal_alert_hint: "Якщо ви є партнером з перемовин у [Concept('concept_war', '$concept_war_loc$')|l], то можете показати прихильність до мирної угоди або продовжити сутичку до наступних раундів перемовин."
  alert_active_peace_deal_alert_action: "Панель війни"
- ALERT_PEACE_PROPOSED_ENTRY:0 "[WAR.GetName|b] - [WAR.GetDaysUntilPeaceDealFails|v] day(s) until peace deal is rejected"
+ ALERT_PEACE_PROPOSED_ENTRY: "[WAR.GetName|b] - [WAR.GetDaysUntilPeaceDealFails|v] дн. до відхилення мирної угоди"
 
  alert_wasted_construction_name: "Незадіяні [Concept('concept_construction', '$concept_construction_adj$і')|l] потужності"
  alert_wasted_construction_desc: "Ми виробляємо [Concept('concept_construction', '$concept_construction_adj$у')|l] продукцію, яка не використовується для зведення будь-яких [Concept('concept_building', '$concept_buildings_gen$')|l]."
  alert_wasted_construction_hint: "Ви можете поставити в чергу зведення будівлі, щоб використати [Concept('concept_construction', '$concept_construction_adj$у')|l] продукцію."
  alert_wasted_construction_action: "Панель будівництва"
+
+ alert_insufficient_construction_for_investment_name:0 "Insufficient [concept_construction] for [concept_investment_pool]"
+ alert_insufficient_construction_for_investment_desc:0 "We do not produce enough [concept_construction] to fully utilize the funds that are coming into the [concept_investment_pool]."
+ alert_insufficient_construction_for_investment_hint:0 "You can construct additional [GetBuildingType('building_construction_sector').GetName] [Concept('concept_building', '$concept_buildings$')] or switch to more advanced [Concept('concept_production_method','$concept_production_methods$')] to produce more [concept_construction]."
+ alert_insufficient_construction_for_investment_action: "Панель будівництва"
 
  alert_isolated_state_alert_name: "[Concept('concept_state', '$concept_state$')] [SCOPE.GetRootScope.GetState.GetName] є [Concept('concept_isolated_state', '$concept_isolated_state_short_adj$им')|l]"
  alert_isolated_state_alert_desc: "[Concept('concept_isolated_state', '$concept_isolated_state$')] не дозволяє населенню закуповувати та продавати товари на більшому ринку, вони отримують ресурси, які їм потрібні, безпосередньо з регіону, але це має значний вплив на їхнє [Concept('concept_sol', '$concept_sol_acc$')|l] через зміни цін."

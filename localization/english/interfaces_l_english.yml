@@ -401,7 +401,7 @@
  NO_EXPORT_TRADE_ROUTES: "Зараз у вас немає вивозових торгових торів"
  NO_TRADE_ROUTES: "[MarketGoods.GetGoods.GetName] - немає торгових торів"
 
- OUTLINER_PANEL_DESCRIPTION: "Закріпіть будь-який із наведених нижче списків або елементів списку у плянувальник праворуч на екрані, навівши курсор на абиякий із них і клацнувши на @unpinned_star! у правому куті.\n\nКлацніть на @pinned_star! ще раз, щоб відкріпити."
+ OUTLINER_PANEL_DESCRIPTION: "Закріпіть будь-який із наведених нижче списків або елементів списку у плянувальник праворуч на екрані, навівши вказівник на абиякий із них і клацнувши на @unpinned_star! у правому куті.\n\nКлацніть на @pinned_star! ще раз, щоб відкріпити."
 
  COUNTRY_LITERACY: "#title [concept_literacy]:#!\n#variable [Country.GetIncorporatedLiteracyRate|%1]#!"
  COUNTRY_LITERACY_ONE_LINE: "#title [concept_literacy]#!"
@@ -6372,9 +6372,9 @@
  NULL_OBJ_DESC: "#NULL_OBJ_DESC#!"
  NULL_OBJ_TOOLTIP: "#NULL_OBJ_TOOLTIP#!"
 
- color_blind_mode_deuteranopia:0 "Deuteranopia"
- color_blind_mode_protanopia:0 "Protanopia"
- color_blind_mode_tritanopia:0 "Tritanopia"
+ color_blind_mode_deuteranopia: "Дейтеранопія"
+ color_blind_mode_protanopia: "Протанопія"
+ color_blind_mode_tritanopia: "Тританопія"
 
  CANNOT_START_MULTIPLE_TUTORIALS:0 "You must close your current lesson before starting a new one"
 

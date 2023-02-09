@@ -102,9 +102,9 @@
 
  lesson_basics: "вступ"
 
- TRIGGER_LESSON_BASICS_NESTED_TOOLTIPS_CONTINUE: "Наведіть курсор на $tooltip_hinter$ всередині підказки"
+ TRIGGER_LESSON_BASICS_NESTED_TOOLTIPS_CONTINUE: "Наведіть вказівник на $tooltip_hinter$ всередині підказки"
  TOOLTIPS_EXPLAINER: "Це #tooltippable #tooltip:[GetPlayer.GetTooltipTag],NESTED_TOOLTIPS_EXPLAINER Tooltip#!#!"
- NESTED_TOOLTIPS_EXPLAINER: "Спливаючі підказки зазвичай надають детальну інформацію, що стосується того, на що вказує ваш курсор, і часто містять вкладені спливаючі підказки, як ця."
+ NESTED_TOOLTIPS_EXPLAINER: "Спливаючі підказки зазвичай надають детальну інформацію, що стосується того, на що вказує ваш вказівник, і часто містять вкладені спливаючі підказки, як ця."
  
  tooltip_hinter: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],TOOLTIPS_EXPLAINER underlined text#!#!"
  tooltip_hinter_name: "#tooltippable_name #tooltip:[GetPlayer.GetTooltipTag],TOOLTIPS_EXPLAINER Name#!#!"
