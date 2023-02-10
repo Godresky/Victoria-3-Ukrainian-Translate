@@ -25,6 +25,7 @@
  SETTINGS_CATEGORY_GUI: "ГІК"
  SETTINGS_CATEGORY_INPUT_BINDINGS: "Прив’язки вводу"
  DISCARD: "Скасувати"
+ APPLY: "Застосовувати"
  SAVE_AND_CLOSE: "Гаразд"
  SETTINGS: "Налаштування"
  REQUIRES_RESTART: "Потрібен перезапуск"

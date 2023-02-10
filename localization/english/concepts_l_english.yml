@@ -1278,6 +1278,7 @@
  concept_inactive_interest_desc:1 "When a new [concept_interest] is first [Concept('concept_declared_interest','$concept_declared_interest_declared$')], it remains $concept_inactive_interest_short$ for a period of #v [GetDefine('NDiplomacy','INTEREST_NUM_DAYS_CHANGE')|0] days#! before it becomes [Concept('concept_active_interest','$concept_active_interest_short$')]."
 
  concept_active_interest: "Активний руп"
+ concept_active_interest_gen: "Активний руп"
  concept_active_interest_ins: "Активним рупом"
  concept_active_interests: "Активні рупи"
  concept_active_interest_short: "Активний"

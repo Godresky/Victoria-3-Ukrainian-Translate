@@ -1,5 +1,5 @@
 ﻿l_english:
- SETTING_INPUT_CONTEXT_COMMON:0 "Common"
+ SETTING_INPUT_CONTEXT_COMMON: "Загальне"
  SETTING_INPUT_CONTEXT_COMMON_TOOLTIP:0 "Keybinds for the common input context"
 
  SETTING_INPUT_ACTION_PAUSE:0 "Pause / Unpause"
