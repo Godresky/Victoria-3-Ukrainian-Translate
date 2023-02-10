@@ -272,12 +272,12 @@
  TRIGGER_EXPECTED_QUALITY_OF_LIFE:0 "Expected Standard of Living $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_EXPECTED_QUALITY_OF_LIFE_NOT:1 "Expected Standard of Living #bold not #!$COMPARATOR$ #variable $NUM$#!"
  
- TRIGGER_HAS_MODIFIER_TOOLTIPPABLE_MODIFIER_NAME:0 "#tooltippable #tooltip:[GetRawTextTooltipTag('$MODIFIER_DESC$')] $MODIFIER_NAME|v$#!#!"
- TRIGGER_HAS_MODIFIER:1 "Has [SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]"
- TRIGGER_HAS_MODIFIER_NOT:2 "Does #bold not#! have [SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]"
- TRIGGER_HAS_MODIFIER_FIRST:1 "[COUNTRY.GetNameNoFlag] has [SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]"
+ TRIGGER_HAS_MODIFIER_TOOLTIPPABLE_MODIFIER_NAME: "#tooltippable #tooltip:[GetRawTextTooltipTag('$MODIFIER_DESC$')] $MODIFIER_NAME|v$#!#!"
+ TRIGGER_HAS_MODIFIER: "Має «[SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]»"
+ TRIGGER_HAS_MODIFIER_NOT: "#bold Не#! має «[SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]»"
+ TRIGGER_HAS_MODIFIER_FIRST: "[COUNTRY.GetNameNoFlag] має «[SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]»"
  TRIGGER_HAS_MODIFIER_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold не#! має «[SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]»"
- TRIGGER_HAS_MODIFIER_THIRD:2 "[COUNTRY.GetName] has [SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]"
+ TRIGGER_HAS_MODIFIER_THIRD: "[COUNTRY.GetName] має «[SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]»"
  TRIGGER_HAS_MODIFIER_THIRD_NOT: "[COUNTRY.GetName] #bold не#! має «[SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]»"
  
  TRIGGER_HAS_EMPLOYEE_SLOTS_FILLED:0 "Has filled its employee slots"
@@ -2372,8 +2372,8 @@
  TRIGGER_STATE_OWNER_EQUAL_NOT: "[concept_state] #bold не#! належить державі [TARGET_COUNTRY.GetName]"
  TRIGGER_STATE_OWNER_EQUAL_THIRD: "[concept_state] належить державі [TARGET_COUNTRY.GetName]"
  TRIGGER_STATE_OWNER_EQUAL_THIRD_NOT: "[concept_state] не належить державі [TARGET_COUNTRY.GetName]"
- TRIGGER_STATE_OWNER_EQUAL_FIRST:0 "[TARGET_COUNTRY.GetNameNoFlag] володіє [Concept('concept_state', '$concept_state_ins$')|l]"
- TRIGGER_STATE_OWNER_EQUAL_FIRST_NOT:0 "[TARGET_COUNTRY.GetNameNoFlag] не володіє [Concept('concept_state', '$concept_state_ins$')|l]"
+ TRIGGER_STATE_OWNER_EQUAL_FIRST: "[TARGET_COUNTRY.GetNameNoFlag] володіє [Concept('concept_state', '$concept_state_ins$')|l]"
+ TRIGGER_STATE_OWNER_EQUAL_FIRST_NOT: "[TARGET_COUNTRY.GetNameNoFlag] не володіє [Concept('concept_state', '$concept_state_ins$')|l]"
 
  TRIGGER_MARKET_OWNER_EQUAL:0 "[concept_market] is controlled by [TARGET_COUNTRY.GetName]"
  TRIGGER_MARKET_OWNER_EQUAL_NOT:0 "[concept_market] is #bold not#! controlled by [TARGET_COUNTRY.GetName]"

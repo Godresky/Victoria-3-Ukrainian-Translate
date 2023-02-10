@@ -91,7 +91,7 @@
  expedition_event_decreasing_peril_tt:1 "This will #tooltippable;TOOLTIP:expedition_peril_explanation_tt reduce #!the current peril of the expedition."
  
  expedition_events.670.t: "В джунглях"
- expedition_events.670.d: "Наші оцінки не враховували труднощі, які виникли у [SCOPE.sState('current_expedition_location').GetName]. Ці два місяці, які ми присвятили цьому регіону Конго, швидше за все, буде подвоєно."
+ expedition_events.670.d: "Наші оцінки не враховували труднощі, які виникли у [SCOPE.sState('current_expedition_location').GetName]. Ці два місяці, які ми присвятили цьому реґіону Конго, швидше за все, буде подвоєно."
  expedition_events.670.f: "«Ми не могли зрозуміти, що ми вже надто далеко. Я намагався поговорити про це з нашими офіцерами, але вони просто відхиляли це, кажучи, що ми не так глибоко в джунглях. Вони не могли зрозуміти, що ми вже надто далеко — від джунглів, від річки, навіть від цієї бездоганної ночі, зоряного небосхилу й глибокої тиші...\n\nМи мандруємо до кінця часів, до початку часів, тих перших епох, цих останніх епох, тут для нас навряд чи є будь-який знак: вперед, назад, тиша на тлі ревучих джунглів — просто тиша»"
  expedition_events.670.a: "Нам необхідно нормувати їжу."
  expedition_events.670.b: "Ми майже дійшли."
@@ -151,7 +151,7 @@
  modifier_urban_centers: "Ефективність міського центру"
  
  urbanization_events.6.t: "Неефективне сільське господарство"
- urbanization_events.6.d: "[SCOPE.gsInterestGroup('industrialist_ig').GetName] почали скаржитися на існування натуральних господарств у регіоні [SCOPE.sState('subsistence_state').GetName], заявляючи, що їхню незаперечну неефективність слід негайно розглянути."
+ urbanization_events.6.d: "[SCOPE.gsInterestGroup('industrialist_ig').GetName] почали скаржитися на існування натуральних господарств у реґіоні [SCOPE.sState('subsistence_state').GetName], заявляючи, що їхню незаперечну неефективність слід негайно розглянути."
  urbanization_events.6.f: "«Родючий ґрунт нашого народу страждає, відданий у втомлені та черстві руки, надто виснажений фізичною працею, щоб працювати на гідному рівні. Надто бідний, щоб мати змогу використовувати більш досконалі інструменти, які зробили б їх більш прибутковими... Ця галузь є просто марна інвестиція.»"
  urbanization_events.6.a: "Ми повинні дотримуватися їхніх порад."
  urbanization_events.6.b: "Вони служать нашим цілям."
@@ -324,7 +324,7 @@
  je_famine_reason: "Великий неврожай приніс незмірні страждання нашому народу, який благає наш уряд вжити особливих заходів щодо цієї біди."
  je_famine_goal: "Зачекайте, поки голод закінчиться, або підніміть [concept_sol|l] у вашій державі на 3 бали."
  je_major_famines_success: "Зачекайте, поки голод закінчиться, або підніміть [concept_sol|l] у вашій державі на 3 бали."
- natural_disaster_variable: "Постраждав від стихійного лиха" #регіон
+ natural_disaster_variable: "Постраждав від стихійного лиха" #реґіон
  
  natural_disaster_events.7.t:0 "The [SCOPE.sState('volcanic_state').GetName] Eruption"
  natural_disaster_events.7.d:0 "A violent eruption has shaken the state of [SCOPE.sState('volcanic_state').GetName]. Fragments of tephra and volcanic ash have destroyed buildings and crops, taking some of the lives of our people."
@@ -371,15 +371,15 @@
  great_famine_migration_modifier:0 "Great Famine Migration"
  famine_migration_modifier:0 "Famine Migration"
  
- famine_events.4.t:0 "Generous Donations"
- famine_events.4.d:0 "After receiving notice of the horrors that the citizens of [SCOPE.sState('famine_state').GetName] have been enduring, solidarity among the nations has been raised, and there are many who want to donate to the cause."
- famine_events.4.f:1 ""And behold! Before us lies a once beautiful and prosperous city! Fertile lands, happy faces, simple lives. Alas, those times have long passed, people of my people, and now hunger harries their peace, as dreadful as the wolf itself! It is our duty to try to alleviate their suffering.\n\nI see that this will make us hold a sanctuary in their hearts, and in the heart of their country, and in the heart of mankind. This will bring our nations closer!""
- famine_events.4.a:0 "We should accept the donations of [SCOPE.sC('neighbor_country_1').GetName]."
- famine_events.4.b:0 "We should accept the donations of [SCOPE.sC('neighbor_country_2').GetName]."
- famine_events.4.c:0 "We shall relay on internal donations."
- famine_donations_modifier:0 "Famine Donations"
- famine_internal_donations_modifier:0 "Famine Donations"
- donations_ig_modifier:0 "Famine Donations"
+ famine_events.4.t: "Щедрі пожертви"
+ famine_events.4.d: "Отримавши повідомлення про жахіття, з якими зіткнулися громадяни [Concept('concept_state','$concept_state_gen$')|l] [SCOPE.sState('famine_state').GetName] солідарність між народами зросла, і з'явилося багато охочих пожертвувати кошти на порятунок."
+ famine_events.4.f:1 "«І ось! Перед нами видніється колись красиве і квітисте місто! Родючі землі, щасливі обличчя, просте життя. На жаль, ті часи давно минули, спокій людей мого народу тепер порушує голод, страшний, як сам вовк! Наш обов'язок - спробувати полегшити їхні страждання.\n\nЯ бачу, що став за святиню в їхніх серцях, і в серці їхньої країни, і в серці людства. Це зблизить наші народи!»"
+ famine_events.4.a: "Ми приймаємо пожертви від [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sC('neighbor_country_1').GetName]."
+ famine_events.4.b:0 "Ми приймаємо пожертви від [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sC('neighbor_country_2').GetName]."
+ famine_events.4.c: "Ми будемо покладатися на внутрішніх меценатів."
+ famine_donations_modifier: "Пожертви на боротьбу з голодом"
+ famine_internal_donations_modifier: "Пожертви на боротьбу з голодом"
+ donations_ig_modifier: "Пожертви на боротьбу з голодом"
  
  ig_suppression_events.5.t:0 "A Surprise Visit"
  ig_suppression_events.5.d:1 "We have heard that the [SCOPE.gsInterestGroup('target').GetName] have been holding some very interesting meetings in their headquarters, which we happen to know extremely well. We could certainly pay them a visit."
@@ -853,7 +853,7 @@
  
  expedition_events.120.t:0 "Dr. [SCOPE.sCharacter('old_expedition_leader').GetLastName], I Presume"
  expedition_events.120.d:0 "At their arrival to a village by the riverside, one of its habitants quickly runs to the expedition, mumbling something about "one of their kind"."
- expedition_events.120.f:1 ""The jungle and its noises, its strident inhabitants, their thundering clamor. Reaching another settlement is always a source of joy and tranquility.\n\nWhen they saw us approaching, one young man ran towards our group, pointing at the town and stating that one of us was there, or that we could guess. And there we found him. A shadow of a man, blurred around the edges, colorless.\n\n"Dr. [SCOPE.sCharacter('old_expedition_leader').GetLastName], I presume?".\\"
+ expedition_events.120.f:2 ""The jungle and its noises, its strident inhabitants, their thundering clamor. Reaching another settlement is always a source of joy and tranquility.\n\nWhen they saw us approaching, one young man ran towards our group, pointing at the town and stating that one of us was there, or that we could guess. And there we found him. A shadow of a man, blurred around the edges, colorless.\n\n"Dr. [SCOPE.sCharacter('old_expedition_leader').GetLastNameNoFormatting], I presume?"."
  expedition_events.120.f2:2 ""The jungle and its noises, its strident inhabitants, their thundering clamor. Reaching another settlement is always a source of joy and tranquility.\n\nWhen they saw us approaching, one young man ran towards our group, pointing at the town and stating that one of us was there, or that we could guess. And there we found him. A shadow of a man, blurred around the edges, colorless. He started screaming at us, his eyes had lost all sign of the man he used to be.\n\n"Dr. [SCOPE.sCharacter('old_expedition_leader').GetLastName], I presume?""
  expedition_events.120.a:0 "We found him!"
  expedition_events.120.b:0 "He seems happy here."

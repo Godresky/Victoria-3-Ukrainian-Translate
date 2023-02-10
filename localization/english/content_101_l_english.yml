@@ -472,17 +472,17 @@
  
  free_state_immediate_tooltip:0 "Triggers the Event #bold The Free State#!."
 
- modifier_tangena_ordeal:0 "Tangena Ordeal"
+ modifier_tangena_ordeal: "Випробування танґендою"
 
- abolish_tangena_ordeal:0 "Abolish the Tangena Ordeal"
- abolish_tangena_ordeal_desc:0 "The Tangena ordeal consists of consuming poison to prove ones innocence. Regardless of the veracity of the practice, it claims a significant number of lives every year and should be abolished."
- ranavalona_tt:0 "Your ruler is #bold not#! Ranavalona"
+ abolish_tangena_ordeal: "Заборонити випробування танґендою"
+ abolish_tangena_ordeal_desc: "Випробування танґендою полягає у вживанні отрути, щоб довести свою невинуватість. Незалежно від правдивости практики, вона щороку забирає значну кількість життів і має бути заборонена."
+ ranavalona_tt: "Ваш правитель #bold не#! Ранавалуна"
 
  modifier_french_independence_payments: "Виплати за незалежність від Франції"
  modifier_haitian_independence_payments: "Платежі Гаїті за незалежність"
 
- stop_paying_france:0 "Stop paying France"
- stop_paying_france_desc:0 "We made a deal with France years ago to pay them for our independence but if we stop paying, what are they going to do?"
+ stop_paying_france: "Перестати виплачувати Франції"
+ stop_paying_france_desc: "Після французької військової експедиції на Гаїті 1825 року Сенат уклав угоду з Францією про виплату компенсації за визнання нашої незалежности. Однак, якщо ми перестанемо платити, що вони зможуть зробити?"
 
  character_events.2.t:0 "A Donation of Knowledge"
  character_events.2.d:0 "[SCOPE.sCharacter('university_benefactor').GetFullName] has offered to spend some of their personal wealth to fund the creation of a University in [SCOPE.sState('university_state').GetName]. Though this will likely give the [SCOPE.sCharacter('university_benefactor').GetInterestGroup.GetName] some influence."

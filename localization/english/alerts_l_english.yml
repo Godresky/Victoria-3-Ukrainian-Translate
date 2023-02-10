@@ -45,8 +45,8 @@
  alert_is_losing_rank_alert_action: "Панель дипломатії"
 
  alert_has_no_war_goal_alert_name: "Немає [Concept('concept_war_goal','$concept_war_goals_gen$')|l] проти [Concept('concept_country','$concept_country_gen$')|l] [SCOPE.GetRootScope.GetDiplomaticPlay.GetInitiator.GetName]"
- alert_has_no_war_goal_alert_desc: "Наразі у нас немає жодних [Concept('concept_war_goal', '$concept_war_goals_gen$')|l] в одній із наших [Concept('concept_diplomatic_play', '$concept_diplomatic_plays_gen$')|l].\n\nЯкщо ви не задасьте воєнних цілей під час віхи «[concept_opening_moves]», то [concept_war_goal|l] «[concept_war_reparations]» буде самостійно додана від вас."
- alert_has_no_war_goal_alert_hint:1 "You can add a $concept_war_goal$ on a participating member of the $concept_diplomatic_play$ in its overview screen. You can expand your $concept_war_goal$ targets as more participants join a side in the $concept_diplomatic_play$, but that will be at the cost of [Concept('concept_maneuver', '$concept_maneuvers$')] you can spend to tempt other participants to join your side."
+ alert_has_no_war_goal_alert_desc: "Наразі у нас немає жодних [Concept('concept_war_goal', '$concept_war_goals_gen$')|l] в одній із наших [Concept('concept_diplomatic_play', '$concept_diplomatic_plays_gen$')|l].\n\nЯкщо ви не задасьте воєнні цілі під час віхи «[concept_opening_moves]», то [Concept('concept_war_goal', 'ціль')|l] «[concept_war_reparations]» буде самостійно додана для вас."
+ alert_has_no_war_goal_alert_hint: "Ви можете додати військову ціль для учасника дипломатичної гри на його оглядовому екрані. Ви можете збільшити кількість цілей по мірі того, як все більше держав стають на чийсь бік у дипломатичній грі, проте це коштуватиме [Concept('concept_maneuver', '$concept_maneuvers_gen$')|l], які ви можете витратити, щоб схилити інших учасників на свій бік."
  alert_has_no_war_goal_alert_action: "Дипломатичну гру"
 
  alert_vulnerable_front_name: "Вразливий [concept_front|l]: [SCOPE.GetRootScope.GetFront.GetName]"
@@ -70,15 +70,15 @@
  alert_wasted_construction_hint: "Ви можете поставити в чергу зведення будівлі, щоб використати [Concept('concept_construction', '$concept_construction_adj$у')|l] продукцію."
  alert_wasted_construction_action: "Панель будівництва"
 
- alert_insufficient_construction_for_investment_name:0 "Insufficient [concept_construction] for [concept_investment_pool]"
- alert_insufficient_construction_for_investment_desc:0 "We do not produce enough [concept_construction] to fully utilize the funds that are coming into the [concept_investment_pool]."
- alert_insufficient_construction_for_investment_hint:0 "You can construct additional [GetBuildingType('building_construction_sector').GetName] [Concept('concept_building', '$concept_buildings$')] or switch to more advanced [Concept('concept_production_method','$concept_production_methods$')] to produce more [concept_construction]."
+ alert_insufficient_construction_for_investment_name: "Недостатньо [Concept('concept_construction', '$concept_construction_gen$')|l] для [Concept('concept_investment_pool', '$concept_investment_pool_gen$')|l]"
+ alert_insufficient_construction_for_investment_desc:0 "Ми не виробляємо достатньо [Concept('concept_construction', '$concept_construction_gen$')|l], щоб повністю використати кошти, які надходять до [Concept('concept_investment_pool', '$concept_investment_pool_gen$')|l]."
+ alert_insufficient_construction_for_investment_hint: "Ви можете звести додаткові [GetBuildingType('building_construction_sector').GetName|l]-[Concept('concept_building', '$concept_buildings_acc$')|l] або встановити кращі [Concept('concept_production_method','$concept_production_methods_acc$')|l], щоб виробляти більше [concept_construction|l]."
  alert_insufficient_construction_for_investment_action: "Панель будівництва"
 
  alert_isolated_state_alert_name: "[Concept('concept_state', '$concept_state$')] [SCOPE.GetRootScope.GetState.GetName] є [Concept('concept_isolated_state', '$concept_isolated_state_short_adj$им')|l]"
- alert_isolated_state_alert_desc: "[Concept('concept_isolated_state', '$concept_isolated_state$')] не дозволяє населенню закуповувати та продавати товари на більшому ринку, вони отримують ресурси, які їм потрібні, безпосередньо з регіону, але це має значний вплив на їхнє [Concept('concept_sol', '$concept_sol_acc$')|l] через зміни цін."
+ alert_isolated_state_alert_desc: "[Concept('concept_isolated_state', '$concept_isolated_state$')] не дозволяє населенню закуповувати та продавати товари на більшому ринку, вони отримують ресурси, які їм потрібні, безпосередньо з реґіону, але це має значний вплив на їхнє [Concept('concept_sol', '$concept_sol_acc$')|l] через зміни цін."
  alert_isolated_state_alert_hint: "Ви можете з‘єднати [Concept('concept_state', '$concept_state_acc$')|l] [SCOPE.GetRootScope.GetState.GetName] до [Concept('concept_market', '$concept_market_gen$')|l] ([SCOPE.GetRootScope.GetState.GetMarket.GetName]), збільшивши рівень [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l] за допомогою зведення будівель, які її покращують. Наприклад, приплав, чи залізниця, чи ухваливши [Concept('concept_decree', '$concept_decree_acc$')|l] #v «$decree_road_maintenance$»#! [concept_decree]." #[concept_infrastructure]
- alert_isolated_state_alert_action: "Панель регіону [SCOPE.GetRootScope.GetState.GetName]"
+ alert_isolated_state_alert_action: "Панель реґіону [SCOPE.GetRootScope.GetState.GetName]"
 
  alert_inactive_trade_route_alert_name: "[concept_trade_route] «[SCOPE.GetRootScope.GetTradeRoute.GetDescriptionForActingMarket]» недієвий"
  alert_inactive_trade_route_alert_hint_desc: "Через географічні чи дипломатичні обмеження торговельні тори між вашим ринком та іншими наразі недієві. Можливо, ваші торговці більше не зможуть досягти цільового ринку. Їм може бути заборонено доступ або через [Concept('concept_embargo', '$concept_embargo_acc$')|l], або через війну через двома державами."
@@ -88,7 +88,7 @@
  alert_state_in_turmoil_alert_name: "[SCOPE.GetRootScope.GetState.GetName] з [Concept('concept_turmoil', '$concept_turmoil_ins$')|l]"
  alert_state_in_turmoil_alert_desc: "В [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetState.GetName] [Concept('concept_turmoil', '$concept_turmoil$')|l] через наявність [Concept('concept_radical', '$concept_radicals_gen$')|l]."
  alert_state_in_turmoil_alert_hint: "Ви можете зменшити кількість [Concept('concept_radical', '$concept_radicals_gen$')|l], забезпечивши задоволення потреб вашого [Concept('concept_pop', '$concept_population$')|l]. Найкращий спосіб - це переконайтися, що ваше [Concept('concept_pop', '$concept_population$')|l] має роботу та може досягнути [concept_expected_sol|l]. Також, групи [Concept('concept_pop', '$concept_population$')|l], які [Concept('concept_discrimination','утискаються')] або нереалізували себе в [Concept('concept_political_movement','$concept_political_movements_loc$')|l] також будуть [Concept('concept_political_movement_radicalism','радикалізовуватися')].\n\nЯк короткострокова иншина вирішення цього питання, ви можете ухвалити [Concept('concept_decree', '$concept_decrees_acc$')|l] «[GetDecreeType('decree_emergency_relief').GetName]» чи «[GetDecreeType('decree_violent_suppression').GetName]» у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetState.GetName] або додатково, коли ви працюєте над довгостроковими рішеннями."
- alert_state_in_turmoil_alert_action: "Панель регіону [SCOPE.GetRootScope.GetState.GetName]"
+ alert_state_in_turmoil_alert_action: "Панель реґіону [SCOPE.GetRootScope.GetState.GetName]"
 
  alert_high_tension_alert_name: "Висока [Concept('concept_tension', '$concept_tension$')|l] між [Concept('concept_country', '$concept_countries_ins$')|l] [SCOPE.GetRootScope.GetDiplomaticRelations.GetFirstCountry.GetName] та [SCOPE.GetRootScope.GetDiplomaticRelations.GetSecondCountry.GetName]"
  alert_high_tension_alert_desc: "[Concept('concept_tension', '$concept_tension$')] росте, коли ваші [Concept('concept_colony', '$concept_colonies_acc$')|l] зазіхають на землі тубільців [SCOPE.GetRootScope.GetDiplomaticRelations.GetSecondCountry.GetName]. Якщо [Concept('concept_tension', '$concept_tension$')|l] буде і надалі рости, то це може спровокувати [Concept('concept_native_uprising', '$concept_native_uprising_acc$')|l]."
@@ -141,10 +141,22 @@
  alert_stockpiling_gold_alert_hint: "Збільште свої витрати або зменшіть прибутки, щоб краще збалянсувати свій бюджет. Накопичення золота витягує @money![concept_money|l] з вашої економіки, а [Concept('concept_pop', '$concept_population$')|l] буде мати менше прибутків, що з часом призводе до падіння їхнього [Concept('concept_wealth', '$concept_wealth_gen$')|l]."
  alert_stockpiling_gold_alert_action: "Панель бюджету"
 
- alert_low_legitimacy_alert_name: "Низька законність уряду"
- alert_low_legitimacy_alert_desc: "Ваш [concept_government|l] має [GetPlayer.GetGovernmentLegitimacy|v] [Concept('concept_legitimacy','$concept_legitimacy_gen$')|l], що впливає радикалізацію вашого населення."
- alert_low_legitimacy_alert_hint: "Ви можете збільшити свій рівень [Concept('concept_legitimacy','$concept_legitimacy_gen$')|l], додавши чи забравши [Concept('concept_interest_group', '$concept_interest_groups$')|l] з вашого [Concept('concept_government','$concept_government_gen$')|l]. Це можна зробити на панелі політики. Ви також можете змінити [Concept('concept_law', '$concept_laws_acc$')|l], для цього відкрийте вкладку конституції на панелі політики." #або на панелі подробиць [Concept('concept_interest_group','$concept_interest_group_gen$')|l]
- alert_low_legitimacy_alert_action: "Панель політики"
+ alert_low_legitimacy_alert_hint: "Ви можете збільшити свою законність, додавши чи забравши [Concept('concept_interest_group', '$concept_interest_groups$')|l] з вашого [Concept('concept_government','$concept_government_gen$')|l]. Це можна зробити на панелі або політики, або подробиць зацікавленої групи. Ви також можете змінити [Concept('concept_law', '$concept_laws_acc$')|l], для цього відкрийте вкладку конституції на панелі політики."
+
+ alert_legitimacy_level_illegitimate_alert_name: "Незаконний уряд"
+ alert_legitimacy_level_illegitimate_alert_desc: "Ваш [concept_government|l] має [Concept('concept_legitimacy', '$concept_legitimacy_acc$')|l] [GetPlayer.GetGovernmentLegitimacy|v]. Це означає, що його стан - [GetPlayer.GetGovernmentLegitimacyLevel.GetName|l]. Що має серйозний вплив на [Concept('concept_radical', '$concept_radicalization_acc$')|l] вашого [Concept('concept_pop', '$concept_population_acc$')|l] й заважає вам ухвалювати [Concept('concept_law','$concept_laws_acc$')|l]."
+ alert_legitimacy_level_illegitimate_alert_hint: "$alert_low_legitimacy_alert_hint$"
+ alert_legitimacy_level_illegitimate_alert_action: "Панель політики"
+
+ alert_legitimacy_level_unacceptable_alert_name: "Неприйнятний уряд"
+ alert_legitimacy_level_unacceptable_alert_desc: "Ваш [concept_government|l] має [Concept('concept_legitimacy', '$concept_legitimacy_acc$')|l] [GetPlayer.GetGovernmentLegitimacy|v]. Це означає, що його стан - [GetPlayer.GetGovernmentLegitimacyLevel.GetName|l]. Що має серйозний вплив на [Concept('concept_radical', '$concept_radicalization_acc$')|l] вашого [Concept('concept_pop', '$concept_population_acc$')|l]."
+ alert_legitimacy_level_unacceptable_alert_hint: "$alert_low_legitimacy_alert_hint$"
+ alert_legitimacy_level_unacceptable_alert_action: "Панель політики"
+ 
+ alert_legitimacy_level_contested_alert_name: "Оспорюваний уряд"
+ alert_legitimacy_level_contested_alert_desc: "Ваш [concept_government|l] має [Concept('concept_legitimacy', '$concept_legitimacy_acc$')|l] [GetPlayer.GetGovernmentLegitimacy|v]. Це означає, що його стан - [GetPlayer.GetGovernmentLegitimacyLevel.GetName|l]."
+ alert_legitimacy_level_contested_alert_hint: "$alert_low_legitimacy_alert_hint$"
+ alert_legitimacy_level_contested_alert_action: "Панель політики"
 
  alert_unused_interests_alert_name: "Можна підтримати більше [Concept('concept_declared_interest','$concept_declared_interests_gen$')|l]"
  alert_unused_interests_alert_desc: "Ми зараз використали [GetPlayer.GetNumDeclaredInterests|v]/#tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#! [Concept('concept_declared_interest','$concept_declared_interests_gen$')|l], які ми можемо зараз підтримувати."
@@ -153,7 +165,7 @@
  
  alert_unproductive_trade_route_alert_name: "[concept_trade_route] «[SCOPE.GetRootScope.GetTradeRoute.GetDescriptionForActingMarket]» - непродуктивний"
  alert_unproductive_trade_route_alert_desc: "Ваші торгові центри наразі ведуть торгові тори, які більше не приносять прибутку, вони продовжуватимуть це робити, доки у них є грошові резерви для їхньої підтримки."
- alert_unproductive_trade_route_alert_hint: "Ви можете скасувати дієві [Concept('concept_trade_route', '$concept_trade_routes$')|l] на будь-якій панелі ринку чи використавши сочку торгівлі. Якщо ви хочете зберегти цей тор, але не маєте інших продуктивних торів для підтримки прибутковости торгових центрів, подумайте про субсидування будівлі." #[Concept('concept_subsidize','$concept_subsidizing$')|l]
+ alert_unproductive_trade_route_alert_hint: "Ви можете скасувати дієві [Concept('concept_trade_route', '$concept_trade_routes$')|l] на будь-якій панелі ринку чи використавши сочку торгівлі. Якщо ви хочете зберегти цей тор, але не маєте інших продуктивних торів для підтримки прибутковости торгових центрів, подумайте про [Concept('concept_subsidize','$concept_subsidizing$')|l] будівлі." #
  alert_unproductive_trade_route_alert_action: "Панель «[SCOPE.GetRootScope.GetTradeRoute.GetActingMarket.GetName]»"
 
  alert_trade_route_needs_convoys_alert_name: "[Concept('concept_trade_route','$concept_trade_route_dat$')] «[SCOPE.GetRootScope.GetTradeRoute.GetDescriptionForActingMarket]» потрібні додаткові [Concept('concept_convoys','$concept_convoys_acc$')|l], щоб підвищити його рівень"
@@ -172,12 +184,12 @@
 
  alert_low_market_access_alert_name: "[SCOPE.GetRootScope.GetState.GetMarketAccess|%0v] [Concept('concept_market_access', '$concept_market_access_gen$')|l] у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetState.GetName]"
  alert_low_market_access_alert_hint: "Ви можете покращити [Concept('concept_market_access', '$concept_market_access_acc$')|l] у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetState.GetName], завдяки збільшеню рівня [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l] (звівши будівлі [GetBuildingType('building_port').GetName|l] чи [GetBuildingType('building_railway').GetName|l]), завдяки [Concept('concept_decree', '$concept_decrees_dat$')|l] «[GetDecreeType('decree_road_maintenance').GetName]» чи забезпечивши достатню кількість [Concept('concept_convoys', '$concept_convoys_gen$')|l] для з‘єднання морським тором [Concept('concept_state', '$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetName] зі [Concept('concept_market_capital', '$concept_market_capital_ins$')|l]."
- alert_low_market_access_alert_action: "Панель регіону [SCOPE.GetRootScope.GetState.GetName]"
+ alert_low_market_access_alert_action: "Панель реґіону [SCOPE.GetRootScope.GetState.GetName]"
  
  alert_insufficient_tax_capacity_alert_name: "[SCOPE.GetRootScope.GetState.GetName] ([SCOPE.GetRootScope.GetState.CalcTaxCapacityBalance|+0v])"
- alert_insufficient_tax_capacity_alert_desc: "Місцеве керівництво вашого регіону не має можливости в повній мірі керувати оподаткуванням, яке ви встановили для вашої держави, через це вони стягують з вашого населення менше податків, ніж очікувалося."
+ alert_insufficient_tax_capacity_alert_desc: "Місцеве керівництво вашого реґіону не має можливости в повній мірі керувати оподаткуванням, яке ви встановили для вашої держави, через це вони стягують з вашого населення менше податків, ніж очікувалося."
  alert_insufficient_tax_capacity_alert_hint: "Ви можете покращити [Concept('concept_tax_capacity','$concept_tax_capacity_acc$')|l] [Concept('concept_state', '$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetName], звівши [Concept('concept_building','$concept_building_acc$')|l] ([GetBuildingType('building_government_administration').GetName]) у [Concept('concept_state', '$concept_state_loc$')|l]. Ви також можете додатково змінювати методи виробництва, щоб збільшити мічність оподаткування, яка створена місцевими будівлями.\n\nУ вашій державі можна змінити закони та досліджувати нові технології, щоб модернізувати свій бюрократичний апарат і збільшити його вроджену податкову мічність."
- alert_insufficient_tax_capacity_alert_action: "Панель регіону [SCOPE.GetRootScope.GetState.GetName]"
+ alert_insufficient_tax_capacity_alert_action: "Панель реґіону [SCOPE.GetRootScope.GetState.GetName]"
   
  alert_expensive_goods_alert_hint_common: "Ви можете впливати на ціну [Concept('concept_good', '$concept_good_gen$')|l] кількома способами. Наприклад, ви можете підвищити доступність товару, збільшивши його виробництво за допомогою методів будівництва або виробництва, або купити його в іншій державі. Якщо кінцевий продукт хороший, то ви можете бути впевненим, що на це не впливає дефіцит ресурсів або висока вартість матеріялів. Ви також можете змінити свою тарифну політику або податки на споживання на товар (або на товари з яких він складається, щоб, ймовірно, знизити ціну)."
 
@@ -209,6 +221,7 @@
  MP_CLIENT_UNGRACEFUL_EXIT: "$NAME$ втратив(-ла) з‘єднання з грою"
  MP_HOST_DATE: "$NAME$(#V Відник#!): $DATE_STR$"
  MP_CLIENT_DATE: "$NAME$: $DATE_STR$"
+
 
   # Alert groups
  ag_isolated_states_name: "[Concept('concept_isolated_state', '$concept_isolated_states$')]"
@@ -245,7 +258,8 @@
   
  ag_idle_mobilized_general_name: "Бездіяльні призвані генерали"
  ag_idle_mobilized_general_desc:0 "[SCOPE.GetRootScope.GetCharacter.GetFullName] are mobilized and is idling without a front assignment. They will defend the [concept_hq] from attacking forces while they await further orders"
- ag_idle_mobilized_general_tooltip:0 "#header $ag_idle_mobilized_general_name$#!\n$TOOLTIP_DELIMITER$\n$ag_idle_mobilized_general_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
+ ag_idle_mobilized_general_tooltip: "#header $ag_idle_mobilized_general_name$#!\n$TOOLTIP_DELIMITER$\n$ag_idle_mobilized_general_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
+
 
  ag_unproductive_trade_routes_name: "Непродуктивні [Concept('concept_trade_route', '$concept_trade_routes$')|l]"
  ag_unproductive_trade_routes_desc: "У вас є [GetPlayer.GetNumUnproductiveTradeRoutes|v] [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumUnproductiveTradeRoutes, '(int32)1'),'непродуктивних','непродуктивний')|l] [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumUnproductiveTradeRoutes, '(int32)1'),Concept('concept_trade_route', '$concept_trade_routes_gen$'),Concept('concept_trade_route', '$concept_trade_route$'))|l]."

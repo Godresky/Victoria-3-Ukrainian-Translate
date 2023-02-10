@@ -44,7 +44,7 @@
  modifier_country_law_enactment_time_mult: "Час для надання чинности"
  modifier_country_law_enactment_time_mult_desc: "Скорочення або збільшення часу, необхідного для ухвалення законодавчих актів"
 
- modifier_state_unincorporated_starting_wages_mult: "Початкові зарплати в невключених регіонах"
+ modifier_state_unincorporated_starting_wages_mult: "Початкові зарплати в невключених реґіонах"
  modifier_state_unincorporated_starting_wages_mult_desc: "Наскільки більше чи менше [Concept('concept_pop', '$concept_population$')|l] у [Concept('concept_unincorporated_state', '$concept_unincorporated_states_loc$')|l] отримає початкову зарплату."
 
  modifier_country_government_wages_mult: "Урядові зарплати"
@@ -215,7 +215,7 @@
  modifier_country_prestige_add_desc: "Скільки престижу держава має."
 
  modifier_country_max_declared_interests_add: "Максимальна кількість проявлених рупів"
- modifier_country_max_declared_interests_add_desc: "Збільшення або зменшення кількости [Concept('concept_interest', '$concept_interests_gen$')|l], що країна може оголосити за межами своїх контрольованих регіонів."
+ modifier_country_max_declared_interests_add_desc: "Збільшення або зменшення кількости [Concept('concept_interest', '$concept_interests_gen$')|l], що країна може оголосити за межами своїх контрольованих реґіонів."
  modifier_country_max_declared_interests_mult: "$modifier_country_max_declared_interests_add$"
  modifier_country_max_declared_interests_mult_desc: "$modifier_country_max_declared_interests_add_desc$"
 
@@ -1614,7 +1614,7 @@
 
  modifier_country_construction_add:1 "@construction![Nbsp][concept_construction]"
  modifier_country_construction_add_desc:0 "The amount of @construction! Construction produced by a $building_construction_sector$"
- modifier_state_construction_mult: "Ефективність будівництва в регіоні"
+ modifier_state_construction_mult: "Ефективність будівництва в реґіоні"
  modifier_state_construction_mult_desc:1 "A bonus or penalty to the weekly [concept_construction] progress in a [concept_state]"
 
  modifier_country_production_weekly_innovation_mult:0 "Weekly [concept_innovation] Gain Multiplier for Production"
