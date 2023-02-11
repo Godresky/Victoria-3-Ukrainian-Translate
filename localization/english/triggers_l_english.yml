@@ -1098,12 +1098,12 @@
  TRIGGER_IS_TAXING_GOODS:0 "[COUNTRY.GetName] is taxing [GOODS.GetName]"
  TRIGGER_IS_TAXING_GOODS_NOT:1 "[COUNTRY.GetName] is #bold not #!taxing [GOODS.GetName]"
  
- TRIGGER_INSTITUTION_INVESTMENT_LEVEL:0 "Investment Level for [INSTITUTION_TYPE.GetName] $COMPARATOR$ $NUM$"
- TRIGGER_INSTITUTION_INVESTMENT_LEVEL_NOT:1 "Investment Level for [INSTITUTION_TYPE.GetName] #bold not #!$COMPARATOR$ $NUM$"
- TRIGGER_INSTITUTION_INVESTMENT_LEVEL_FIRST:0 "[COUNTRY.GetAdjectiveNoFlag] Investment Level for [INSTITUTION_TYPE.GetName] $COMPARATOR$ $NUM$"
- TRIGGER_INSTITUTION_INVESTMENT_LEVEL_FIRST_NOT:1 "[COUNTRY.GetAdjectiveNoFlag] Investment Level for [INSTITUTION_TYPE.GetName] #bold not #!$COMPARATOR$ $NUM$"
- TRIGGER_INSTITUTION_INVESTMENT_LEVEL_THIRD:1 "[COUNTRY.GetAdjective] Investment Level for [INSTITUTION_TYPE.GetName] $COMPARATOR$ $NUM$"
- TRIGGER_INSTITUTION_INVESTMENT_LEVEL_THIRD_NOT:2 "[COUNTRY.GetAdjective] Investment Level for [INSTITUTION_TYPE.GetName] #bold not #!$COMPARATOR$ $NUM$"
+ TRIGGER_INSTITUTION_INVESTMENT_LEVEL: "Рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» $COMPARATOR$ $NUM$"
+ TRIGGER_INSTITUTION_INVESTMENT_LEVEL_NOT: "Рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» #bold не #!$COMPARATOR$ $NUM$"
+ TRIGGER_INSTITUTION_INVESTMENT_LEVEL_FIRST: "[COUNTRY.GetAdjectiveNoFlag]ий рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» $COMPARATOR$ $NUM$"
+ TRIGGER_INSTITUTION_INVESTMENT_LEVEL_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag]ий рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» #bold не #!$COMPARATOR$ $NUM$"
+ TRIGGER_INSTITUTION_INVESTMENT_LEVEL_THIRD: "[COUNTRY.GetAdjective]ий рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» $COMPARATOR$ $NUM$"
+ TRIGGER_INSTITUTION_INVESTMENT_LEVEL_THIRD_NOT: "[COUNTRY.GetAdjective]ий рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» #bold не #!$COMPARATOR$ $NUM$"
  
  TRIGGER_TAX_LEVEL:0 "Tax level $COMPARATOR$ $LEVEL$"
  TRIGGER_TAX_LEVEL_NOT:1 "Tax level #bold not #!$COMPARATOR$ $LEVEL$"

@@ -15,7 +15,7 @@
  alert_is_construction_paused_action: "Черга на будівництво"
   
  alert_country_approaching_bureaucracy_shortage_name: "Бюрократична нестача"
- alert_country_approaching_bureaucracy_shortage_desc: "Наші [Concept('concept_country', '$concept_country_possessive$і')|l] [Concept('concept_institution', '$concept_institutions$')|l] виросли на занадто високий рівень, що може привести до перенапруження системи. Доки ми не зможемо забезпечити достатню кількість $sBUREAUCRACY_gen$, то подальший приріст [Concept('concept_institution', '$concept_institution_gen$')|l] зупиниться."
+ alert_country_approaching_bureaucracy_shortage_desc: "Наші [Concept('concept_country', '$concept_country_possessive$і')|l] [Concept('concept_institution', '$concept_institutions$')|l] виросли на занадто високий рівень, що може привести до перенапруження системи. Доки ми не зможемо забезпечити достатню кількість $sBUREAUCRACY_gen$, то подальше покращення [Concept('concept_institution', '$concept_institutions_gen$')|l] зупиниться."
  alert_country_approaching_bureaucracy_shortage_hint: "Ви можете збільшити кількість бюрократії, звівши нові державні управи."
  alert_country_approaching_bureaucracy_shortage_action: "Панель політики"
 

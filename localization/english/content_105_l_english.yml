@@ -429,10 +429,11 @@
  language_acceptance: "Прийняття мови меншин"
 
   # African Colonial Events
- africa_colonial_events.1.t:0 "Joining the Scramble for Africa"
- africa_colonial_events.1.d:0 "[ROOT.GetCountry.GetName]'s growing colonial empire in Africa along with new means to prevent malaria has made us a serious contender for colonial control of the continent."
+ africa_colonial_events.1.t: "Приєднання до Боротьби за Африку"
+ africa_colonial_events.1.d: "Зростальна колоніальна імперія держави [ROOT.GetCountry.GetName] в Африці разом з новими засобами профілактики малярії зробила нас серйозним претендентом на колоніальний контроль над континентом."
  africa_colonial_events.1.f:0 ""When I see this continent, I see a raw, unworked material from which anything could be carved. But, as often when working with rough materials, mishaps are inevitable. Something breaks, blood is spilled. [ROOT.GetCountry.GetNameNoFormatting] isn't so squeamish as to let a bit of blood get in the way of ambition, are we?""
  africa_colonial_events.1.a:0 "Bring out the maps and the straightedges!"
+
  africa_colonial_events.2.t:0 "Our Place in the Sun"
  africa_colonial_events.2.d:0 "Our colonial efforts in Africa have borne fruit, claiming a sizeable part of the continent for our own designs."
  africa_colonial_events.2.f:0 ""Some may yet dispute the exact reach of our colonial empire, but none can dispute its presence. To those who want to argue over borders, I say what I have always said: History, now as before, it written by the cartographers.""

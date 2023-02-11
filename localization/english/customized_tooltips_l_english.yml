@@ -139,7 +139,7 @@
  PARTY_DESC:0 "[concept_party]: [InterestGroup.GetParty.GetName]\n"
  DATA_PARTY_NAME_LEADER_TOOLTIP: "На чолі з [Party.GetLeader.GetLeader.GetFullName] ([Party.GetLeader.GetName]).\n[Party.GetMembersBreakdown]"
  DATA_PARTY_NAME_TOOLTIP:2 "[SelectLocalization( Party.GetLeader.IsValid, 'DATA_PARTY_NAME_LEADER_TOOLTIP', 'concept_party_desc' )]"
- DATA_MARKET_NAME_TOOLTIP:1 "[concept_market_owner]: [Market.GetOwner.GetName]\n[concept_market_capital]: [Market.GetMarketCapital.GetName]\nБаланс: #tooltippable #tooltip:MARKET_BALANCE_BREAKDOWN #bold @money![Market.GetBalance|+=D]#!#!#!\nВнесок у [concept_gdp|l]: #tooltippable #tooltip:MARKET_GDP_PERCENTAGE_TOOLTIP [Market.GetGDPContributionPercentage( GetPlayer )|%1]#!#! \nЗначення [Concept('concept_gdp', '$concept_gdp_gen$')|l]: @money!#variable [Market.GetMarketGDPValue|D]#!"
+ DATA_MARKET_NAME_TOOLTIP:1 "[concept_market_owner]: [Market.GetOwner.GetName]\n[concept_market_capital]: [Market.GetMarketCapital.GetName]\nБалянс: #tooltippable #tooltip:MARKET_BALANCE_BREAKDOWN #bold @money![Market.GetBalance|+=D]#!#!#!\nВнесок у [concept_gdp|l]: #tooltippable #tooltip:MARKET_GDP_PERCENTAGE_TOOLTIP [Market.GetGDPContributionPercentage( GetPlayer )|%1]#!#! \nЗначення [Concept('concept_gdp', '$concept_gdp_gen$')|l]: @money!#variable [Market.GetMarketGDPValue|D]#!"
  DATA_DECREE_TYPE_NAME_TOOLTIP:0 "[DecreeType.GetTooltip(GetPlayer.Self)]"
  DATA_LAW_GROUP_NAME_TOOLTIP:1 "[LawGroup.GetDesc]\n\n$DATA_LAW_GROUP_NAME_TOOLTIP_ACTIVE_LAW$[ConcatIfNeitherEmpty( '\n', AddLocalizationIf( LawGroup.GetCurrentlyEnacting.IsValid, 'DATA_LAW_GROUP_NAME_TOOLTIP_ENACTING_LAW' ))]\nWe have [LawGroup.GetNumEnactable|v] available alternatives in this group."
  DATA_LAW_GROUP_NAME_TOOLTIP_ACTIVE_LAW:0 "Currently active [concept_law]: [LawGroup.GetCurrentlyActive.GetName]"
@@ -194,7 +194,7 @@
  DATA_DISCRIMINATION_TRAIT_NAME_TOOLTIP:0 "[SelectLocalization(DiscriminationTrait.IsCulturalTrait, 'DISCRIMINATION_TRAIT_CULTURES', 'DISCRIMINATION_TRAIT_RELIGIONS')]"
  DATA_LEGITIMACY_LEVEL_TOOLTIP:0 "$LEGITIMACY_LEVEL_BOUNDS_DESC$\n$TOOLTIP_DELIMITER$\n[LegitimacyLevel.GetEffects]"
 
- DATA_GOODS_MARKET_CONTEXT_BALANCE_LABEL: "([Market.GetName]) Баланс"
+ DATA_GOODS_MARKET_CONTEXT_BALANCE_LABEL: "([Market.GetName]) Балянс"
  DATA_GOODS_MARKET_CONTEXT_PRICE_LABEL: "([Market.GetName]) Ціна"
  DATA_GOODS_STATE_CONTEXT_PRODUCTION_LABEL:0 "[State.GetName] Production"
  DATA_GOODS_STATE_CONTEXT_CONSUMPTION_LABEL:0 "[State.GetName] Consumption"
