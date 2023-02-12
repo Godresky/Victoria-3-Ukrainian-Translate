@@ -511,6 +511,7 @@
  concept_interest_group_gen: "Зацікавленої групи"
  concept_interest_group_acc: "Зацікавлену групу"
  concept_interest_group_ins: "Зацікавленою групою"
+ concept_interest_group_loc: "Зацікавлених групах"
  concept_interest_groups: "Зацікавлені групи"
  concept_interest_groups_gen: "Зацікавлених груп"
  concept_interest_groups_ins: "Зацікавленими групами"
@@ -655,6 +656,7 @@
  
  concept_politically_inactive_involved: "Політично недієві/залучені"
  concept_politically_inactive: "Політично недієві"
+ concept_politically_inactive_gen: "Політично недієвих"
  concept_politically_involved: "Політично залучені"
  concept_politically_inactive_gender_gen: "Політично недієве"
  concept_politically_involved_gender_gen: "Політично залучене"
@@ -813,20 +815,22 @@
  concept_embargo_acc: "Ембарґо"
  concept_embargoed: "Під ембарго"
  concept_embargoes: "Ембарґо"
- concept_embargoing:1 "Embargoing"
+ concept_embargoing: "Введення ембарґо"
  concept_embargo_desc:6 "An [concept_ongoing_diplomatic_action] established by one [concept_country] targeting another, which completely blocks the target [concept_country] from importing or exporting [Concept('concept_good','$concept_goods$')] in the [concept_market] belonging to the country enforcing the embargo. $concept_countries$ that are at [concept_war] will automatically Embargo each other."
  
- concept_encourage_consumption:1 "Encourage Consumption"
- concept_encouraging_consumption:1 "Encouraging Consumption"
+ concept_encourage_consumption: "Захочення споживання"
+ concept_encouraging_consumption: "Захочення споживання"
  concept_encourage_consumption_desc:3 "$concept_encouraging_consumption$ of a [concept_good] will increase the tendency for [Concept('concept_pop','$concept_pops$')] to buy it as part of their [concept_pop_needs], and will favor it over its [Concept('concept_goods_substitution','$concept_goods_substitutes_short$')]. $concept_encouraging_consumption$ costs [concept_authority]."
 
- concept_discourage_consumption:1 "Discourage Consumption"
- concept_discouraging_consumption:1 "Discouraging Consumption"
+ concept_discourage_consumption: "Стримування споживання"
+ concept_discouraging_consumption: "Стримування споживання"
  concept_discourage_consumption_desc:2 "$concept_discourage_consumption$ of a [concept_good] will decrease the tendency for [Concept('concept_pop','$concept_pops$')] to buy it as part of their [concept_pop_needs], and will favor [Concept('concept_goods_substitution','$concept_goods_substitutes_short$')] instead. $concept_discouraging_consumption$ costs [concept_authority]."
 
- concept_consumption_tax: "Податок на споживання"
- concept_consumption_tax_acc: "Податок на споживання"
- concept_consumption_taxes: "Податки на споживання"
+ concept_consumption_tax: "Споживчий податок"
+ concept_consumption_tax_gen: "Споживчого податку"
+ concept_consumption_tax_acc: "Споживчий податок"
+ concept_consumption_taxes: "Споживчі податки"
+ concept_consumption_taxes_gen: "Споживчих податків"
  concept_consumption_tax_desc:3 "A [Concept('concept_taxes','$concept_tax$')] collected on specific [Concept('concept_good','$concept_goods$')] purchased by [Concept('concept_pop','$concept_pop$')] to meet their [concept_pop_needs]. Each $concept_good$ subject to $concept_consumption_taxes$ costs a certain amount of [concept_authority]. When applied to a $concept_good$, its [concept_market_price] increases by the $concept_consumption_tax$ rate at point of sale to $concept_pops$ only, with all [concept_buy_orders] generated in this manner resulting in the surcharge being collected by the [concept_treasury]. Since the surcharge is applied on the [concept_market] level, the $concept_tax$ is ineffective in [Concept('concept_state','$concept_states$')] with low [concept_market_access]."
 
  concept_loyalist: "Прихильник"
@@ -1363,6 +1367,7 @@
   
  concept_good: "Товар"
  concept_good_gen: "Товару"
+ concept_good_acc: "Товар"
  concept_goods: "Товари"
  concept_goods_acc: "Товари"
  concept_goods_gen: "Товарів"
@@ -1417,9 +1422,11 @@
  concept_pop_desc:3 "The world's population are organized into $concept_pops$, groups of individuals who work in the same [concept_building] as a certain [concept_profession], and share the same [concept_culture] and [concept_religion]. They use the [Concept('concept_pop_income','$concept_pop_income_short$')] they earn to buy [Concept('concept_good', '$concept_goods$')] to satisfy their [Concept('concept_pop_needs','$concept_pop_needs_short$')], which decides their [concept_wealth] and [concept_sol]. They can support [Concept('concept_interest_group', '$concept_interest_groups$')] and [Concept('concept_political_movement','$concept_political_movements$')], or be [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')]. A $concept_pop$ has a number of [concept_working_adults] and a number of [concept_dependents]. Some number of them are [Concept('concept_literacy','$concept_literate$')], and they might have a number of either [Concept('concept_loyalist','$concept_loyalists$')] or [Concept('concept_radical','$concept_radicals$')]."
 
  concept_profession: "Ремесло"
+ concept_profession_ins: "Ремеслом"
  concept_profession_jobs: "Робота"
  concept_profession_jobs_gen: "Роботи"
  concept_professions: "Ремесла"
+ concept_professions_acc: "Ремесла"
  concept_profession_desc:2 "A [Concept('concept_pop','$concept_pop_possessive$')] $concept_profession$ determines which role they perform in their [concept_building], how large of a [concept_building_wage] they collect from it, and whether or not they get [Concept('concept_ownership_share','$concept_ownership_shares$')] in it. It also impacts which [Concept('concept_interest_group','$concept_interest_group$')] they're likely to support, how likely they are to remain [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')], and whether they are considered [concept_lower_strata], [concept_middle_strata], or [concept_upper_strata]. To switch $concept_professions$, a $concept_pop$ must have the appropriate [concept_pop_qualifications]."
 
  concept_production_method: "Спосіб виробництва"
@@ -1600,8 +1607,8 @@
  concept_budget_investment_income_desc:2 "When [concept_money] from the [concept_treasury] is used in the [concept_construction] of [Concept('concept_building','$concept_buildings$')] that may be funded by the [concept_investment_pool] under the [Concept('concept_country','$concept_country_possessive$')] current [SelectLocalization(GetPlayer.IsValid,'concept_budget_investment_income_desc_added','Economic System')] [concept_law], the $concept_treasury$ is compensated by an equal transfer of funds from the $concept_investment_pool$."
  concept_budget_investment_income_desc_added:1 "$ECONOMIC_SYSTEM_LAW_GROUP$"
 
- concept_budget_consumption_taxes: "Податки на споживання"
- concept_budget_consumption_tax: "Податок на споживання"
+ concept_budget_consumption_taxes: "Споживчі податки"
+ concept_budget_consumption_tax: "Споживчий податок"
  concept_budget_consumption_tax_rate:0 "$concept_budget_consumption_tax$ Rate"
  concept_budget_consumption_taxes_desc:2 "A [Concept('concept_taxes','$concept_tax$')] collected on the [Concept('concept_good_consumption','$concept_good_consumption$')] of [Concept('concept_good','$concept_goods$')]. $concept_goods$ subject to $concept_budget_consumption_taxes$ will have its [concept_market_price] increased by the $concept_budget_consumption_tax_rate$, and whenever [Concept('concept_pop','$concept_pops$')] buy it this increase will be collected by the [concept_treasury]. [Concept('concept_building','$concept_buildings$')] are exempt from paying $concept_budget_consumption_taxes$."
 

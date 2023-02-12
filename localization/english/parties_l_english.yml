@@ -234,7 +234,7 @@
  party_italian_syndicalist_union: "Італійський синдикалістський союз"
 
  # Party weight descriptions
- base_value: "Базова вартість"
+ base_value: "Базисна вартість"
  from_liberal_leader:0 "Liberal Leader Ideology"
  from_liberalism:0 "Liberal or Laissez-Faire Ideology"
  from_progressivism:0 "Progressive Leader Ideology"

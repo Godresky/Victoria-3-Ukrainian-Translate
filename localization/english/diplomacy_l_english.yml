@@ -8,7 +8,7 @@
  PRESTIGE_FROM_SUBJECT_NAVY_POWER_PROJECTION: "#variable $VALUE|+=$#! завдяки морської [Concept('concept_power_projection', '$concept_power_projection_gen$')|l] [Concept('concept_subject', '$concept_subjects_gen$')|l]"
  PRESTIGE_FROM_GOODS_LEADERBOARDS: "#tooltippable #tooltip:[Country.GetTooltipTag],PRESTIGE_FROM_GOODS_LEADERBOARDS_BREAKDOWN #v $VAL|+=$#!#!#! завдяки статусу провідного виробника товарів"
  PRESTIGE_FROM_GOODS_LEADERBOARDS_BREAKDOWN: "[Country.GetGoodsLeaderboardDesc]"
- NO_PRESTIGE_RANKING: "Ця [concept_country|l] не має [Concept('concept_prestige', '$concept_prestige_gen$')|l] через свій статус #variable $COUNTRY_TYPE$#!"
+ NO_PRESTIGE_RANKING: "Ця [concept_country|l] не має [Concept('concept_prestige', '$concept_prestige_gen$')|l] через свій статус #variable «$COUNTRY_TYPE$»#!"
  ARMY_POWER_PROJECTION_DESC: "#header $ADJECTIVE$а військова [concept_power_projection|l]: $VALUE|v0$#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
  NAVY_POWER_PROJECTION_DESC: "#header $ADJECTIVE$а морська [concept_power_projection|l]: $VALUE|v0$#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
  great_power: "[concept_great_power]"
