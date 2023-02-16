@@ -1,4 +1,6 @@
 ﻿l_english:
+
+ # Base IGs
  ig_rural_folk: "Селяни"
  ig_rural_folk_only_icon: "@rural_folk!"
  ig_rural_folk_desc: "Люди, що живуть у сільській місцевості, чиї політичні рупи спрямовані найбільше на хутірничий спосіб життя."
@@ -56,59 +58,29 @@
  ig_pagan_shamans: "Язичницькі шамани"
  ig_pagan_shamans_desc: "Анімізм - це поклоніння природним духам і заспокоєння їх. Ритуали, які проводять анімісти, включають жертвопринесення їжі та худоби, а також споживання галюциногенних наркотиків для духовних подорожей самопізнання."
 
+  # Taiping IGs
+ ig_taiping_god_worshippers: "Товариство поклоніння Богу"
+ ig_taiping_god_worshippers_desc: "Товариство поклоніння Богу, або Товариство поклоніння імператору - синкретичною християнською вірою, що займає чільне місце в Небесному Царстві, підтримуючи інтерпретацію християнства, яка розглядає всіх вірян як синів і дочок Божих."
+
   # British IGs
- ig_fleet_street: "Фліт-стріт"
- ig_fleet_street_desc: "Реґіон на Сквер-Майл у Лондоні, де пишуть і друкують газети країни. Журналісти, які працюють з Фліт-стріт, відомі як вперті журналюги, які зроблять будь-що для гучного заголовку."
- ig_east_india_company: "Ост-Індійська компанія"
- ig_east_india_company_desc: "Ост-Індська компанія — велика корпорація, що належить британським інвесторам. Вона керує приватними арміями, щоб захистити свої інтереси в осадах, вирощуючи чай для внутрішнього ринку та опіюм для обміну на хінське срібло. Вона навчає британських офіцерів тому, як придушувати повстання місцевих жителів, а князів навчає діяти цивілізовано."
  ig_landed_gentry: "Поміщицька шляхта"
  ig_landed_gentry_desc: "Власники великих маєтків і великої власності, поміщицька шляхта є охоронцями традицій і успадкованих грошей."
 
   # Prussian IGs
  ig_junkers: "Юнкери"
  ig_junkers_desc: "Похідні від 'jung herrs' (молоді лорди). Юнкери з'явилися в результаті тевтонського завоювання язичницької Прибалтики з метою заселення пруських земель та поширення на них християнства. Юнкери представлені пруськими аристократією та великими землевласниками. Вони протистоять рухам, які виступають за демократію та загрожують правлячій еліті."
- ig_junker_landowners: "Юнкери-землевласники"
- ig_junker_landowners_desc: "Похідні від 'jung herrs' (молодих лордів). Юнкери з'явилися в результаті тевтонського завоювання язичницької Прибалтики з метою заселення пруських земель та поширення на них християнства. Юнкери представлені пруськими аристократією та великими землевласниками. Незважаючи на те, що Прусія рухається у бік конституційного правління, вони зберігають владу завдяки системі сільськогосподарських субсидій та переважання серед чиновників і старших офіцерів."
- ig_junker_industrialists: "Юнкери-промисловці"
- ig_junker_industrialists_desc: "Похідні від 'jung herrs' (молодих лордів). Юнкери з'явилися в результаті тевтонського завоювання язичницької Прибалтики з метою заселення пруських земель та поширення на них християнства. Юнкери представлені пруськими аристократією та великими землевласниками. Багатство, отримане завдяки оренді та придворним зв'язкам, дозволило їм зайняти ролю пруських промисловців, особливо в Райнланді."
-  
-  # Spanish IGs
- ig_carlists: "Карлісти"
- ig_carlists_desc: "Прихильники конкуруючої гілки Бурбонів та інфанта Карлоса, самопроголошеного короля Карла V, другого сина Карла IV. Наприкінці XVIII століття закони спадкоємства престолу Еспанії були переглянуті, щоб запобігти можливій унії Іспанії та Франції, і в позбавленої спадщини гілки вистачає прихильників, щоб створити проблеми для прихильників Ізабелли II та її спадкоємців."
- ig_isabelinos: "Єлизаветники"
- ig_isabelinos_desc: "Прихильники конкуруючої гілки Бурбонів та Ізабелли II, дочки еспанського короля Фердинанда VII та Марії Крістіни, принцеси обох Сицилій. Впливові христиноси, діючи від імені королеви-регента та її малолітньої дочки, щосили намагалися не допустити до влади своїх суперників-карлистів. Вони досі зберігають великий вплив в еспанському суспільстві завдяки своїй прогресивній політиці та кайданам патронажу."
 
   # USA IGs
  ig_southern_planters: "Південні полищатори"
  ig_southern_planters_desc: "Багато батьків-засновників вважали незалежних фермерів-йоменів Півночі основним будівельним блоком громадян, але неможливо заперечити величезне багатство південних тютюнових і бавовняних полищ. Це багатство дає південним полищаторам право брати участь в управлінні державою."
- ig_fire_eaters: "Вогнежери"
- ig_fire_eaters_desc: "Вогнежери - затяті прихильники південного способу життя. Злука може бути політично необхідним для запобігання поверненню европейського панування в Америку, але янкі повинні навчитися поважати Південь та його кольорит."
- ig_prohibitionists: "Прогібіціоністи"
- ig_prohibitionists_desc: "Чи то з релігійних, політичних чи особистих причин, прогібіціоністи вважають, що вживання наркотиків та алкоголю є проблемою для суспільства, яку слід викорінити на нівець"
- ig_railway_tycoons: "Залізничні магнати"
- ig_railway_tycoons_desc: "Залізниці є головною рушійною силою просування Америки на Захід. Вкладники із Східного узбережжя та Европи вкладають кошти у нові тори, які відкриють нові ринки. Можливо, ці ринки доведеться створювати з нуля серед копалень, лісів і величезних прерій."
  ig_evangelicals: "Євангелісти"
  ig_evangelicals_desc: "Палкі християни з напрочуд великого розмаїття протестантських деномінацій, євангелісти вважають, що нація повинна досягти духовного пробудження, щоб врятуватися."
 
-  # Turkey IGs
- ig_imperial_harem: "Гарем-і Хумаюн"
- ig_imperial_harem_desc: "Гарем має репутацію неймовірної розкоші завдяки надмірній уяві европейських митців. Це опора влади султана при дворі, що складається з родини, радників, слуг та інших. Прихильники гарему, як правило, підтримують політику централізації та осучаснення."
+  # Ottoman IGs
  ig_local_governors: "Місцеві губернатори"
  ig_local_governors_desc: "Місцеві губернатори можуть отримати величезний вплив, створюючи локальні мережі патронажу. вони можуть стати настільки могутніми, що фактично стають незалежними від султана, лише номінально підтримуючи зв'язки з імперією."
 
-  # French IGs
- ig_bonapartists: "Бонапартисти"
- ig_bonapartists_desc: "Наполеон Бонапарт прийшов до влади на останньому етапі Французької революції, захопивши сталі режими Европи й підбуривши народи. Його наступники прагнуть відновити добу французьких військових завоювань та імперського правління."
- ig_ultraroyalists: "Ультрароялісти"
- ig_ultraroyalists_desc: "Династія Бурбонів панувала у Королівстві Франція майже тисячу років з короткою, але нищівною перервою в часи Революції. Зовсім недавно, у 1824 році, абсолютист Карл Х був скинутий з престолу республіканцями, але прихильники Луї Філіпа I змогли привести нового монарха до влади в липні 1830 року в обмін на впровадження деяких ліберальних реформ, відомих як Липнева монархія. Монархія є одним із стовпів традицій у суспільстві, але що станеться, коли монарх сам виступить проти традиції? У разі примусу ми повинні бути готові підтримати інститут монархії попри дурощі монарха."
-
-  # Austrian IGs
- ig_centralisers: "Централізатори"
- ig_centralisers_desc: "Фракція централізаторів Австрійської імперії бачить технологічну та економічну модернізацію як найважливіший фактор для збереження держави від революції та вторгнення. Вони, як правило, походять із культур, які вже включені в механізм держави."
- ig_federalists: "Федералісти"
- ig_federalists_desc: "Фракція федералістів Австрійської імперії вимагає визнання традиційних прав і обов'язків національних меншин у межах імперії. Піднявши групи меншин до рівного статусу з німецьким керівництвом, імперія стане могутнішою, бо внутрішня напруга розвіється."
-
-  # China IGs
+  # Chinese IGs
  ig_literati: "Літератори"
  ig_literati_desc: "Науковці у Хіні відіграють важливу ролю, вони як прихильники уряду та як його критики."
  ig_scholar_officials: "Вчені-урядники"
@@ -116,19 +88,21 @@
  ig_confucian: "Вчені-конфуціянці"
  ig_confucian_desc: "Більше народня традиція, конфуціянство комфортно співіснує з багатьма віросповіданнями, але, незважаючи на це, воно вимагає соціяльної гармонії та міцної моралі від тих, хто його дотримується."
 
-  # misc
+  # Papal IGs
  ig_roman_landowners: "Римські землевласники"
- ig_roman_landowners_desc: "Власники великих маєтків, римські землевласники є охоронцями традицій і нажитого ними майна, міцно переплетених з папством."
- ig_chieftains: "Вожді"
- ig_chieftains_desc: "Власники великих стад і величезних краялів, вожді є охоронцями традицій і порядку."
+ ig_roman_landowners_desc:0 "The owners of great estates, Roman landowners are custodians of tradition and old money firmly intertwined with the Papacy."
+ ig_roman_curia:0 "Roman Curia"
+ ig_roman_curia_desc:0 "The Roman Curia, or "Court of Rome" as it is sometimes known, is the administrative institution of the Holy See, exercising both ecclesiastical and temporal powers."
 
-  #Japanese IGs
- ig_daimyo: "Даймьо"
- ig_daimyo_desc:0 ""
+  # Japanese IGs
+ ig_samurai:0 "Samurai"
+ ig_samurai_desc:0 "The Samurai are the hereditary military nobility of Japan, serving as privileged retainers to the powerful landowning Daimyo, and as enforcers of their feudal masters' wills."
  ig_shogunate: "Шьоґуни"
- ig_shogunate_desc:0 ""
- ig_peasants: "Селяни"
- ig_peasants_desc:0 ""
+ ig_shogunate_desc:0 "The Shogunate refers to the military government that has ruled Japan in the Emperor's name since the 12th century. Anchored in the support of powerful feudal lords, the Daimyo, the insitution is dedicated to the upholding of Japan's traditional order."
+ ig_peasants: "Гейміни"
+ ig_peasants_desc:0 "Heimin denotes the Japanese class of commoners, born without any kind of social privileges, and with political interests primarily reflecting those of rural farmers."
+ ig_buddhist_monks:0 "Buddhist Monks"
+ ig_buddhist_monks_desc:0 "Existing alongside, and often at odds with the native Japanese belief in kami, by the 19th century Buddhism has been present in Japan for over a millennium. The Buddhist schools patronized by the state throughout the Edo era emphasize the syncretic relationship between kami and buddhas."
 
   # Hawaiian IGs
  ig_christian_missionaries: "Місіонери"
@@ -140,7 +114,16 @@
  ig_hawaiian_democrats: "Демократи"
  ig_hawaiian_democrats_desc: "Демократи представляють ліберальних реформаторів Гаваїв. Вони виступають за усунення абсолютної влади монарха на користь демократичного режиму та продовження торгових відносин із західними державами."
 
-
-
+  # Swedish IGs
  ig_church_of_sweden: "Церква Шведчинни"
- ig_church_of_sweden_desc:0 ""
+ ig_church_of_sweden_desc:0 "The Church of Sweden was instigated by King Gustav Vasa in the 16th century and is the official State Church of Sweden. Being a Lutheran institution, the Church holds that the Bible is the sole authority on Christian dogma, thus rejecting the authority of the Pope and traditions such as the veneration of saints."
+  # Korean IGs
+ ig_yangban:0 "Yangban Officials"
+ ig_yangban_desc:0 "The Yangban represents the landed and unlanded gentry of Korea, who derive their titles and influence from positions within the country's bureaucratic apparatus. Exemplifying the Confucian ideals of the Scholar-Official, they are staunch defenders of Korea's traditional order."
+
+  # Russian IGs
+ ig_gentry_assembly:0 "Gentry Assembly"
+ ig_gentry_assembly_desc:0 "The Gentry Assembly is the self-governing body representing the Russian Aristocracy. Granted official status in 1785, the Assembly has ever since advocated for the retention or expansion of the nobles' traditional powers and privileges."
+  # Misc Igs
+ ig_red_army:0 "Red Army"
+ ig_red_army_desc:0 "The Red Army is an institution dedicated to the defence and propagation of the Revolution, born through the amalgamation of the traditional armed forces with the proletariat and Communist ideology."

@@ -125,6 +125,9 @@
  TRIGGER_CAN_FORM_NATION: "Можна створити державу [COUNTRYFORMATION.GetName]"
  TRIGGER_CAN_FORM_NATION_NOT:2 "Can #bold not #!form the nation of [COUNTRYFORMATION.GetName]"
 
+ TRIGGER_WAS_FORMED_FROM:0 "Was formed from [COUNTRYDEFINITION.GetName]"
+ TRIGGER_WAS_FORMED_FROM_NOT:0 "Were #bold not#! formed from [COUNTRYFORMATION.GetName]"
+
  TRIGGER_HAS_UNIFICATION_CANDIDATE:0 "There is a [concept_unification_candidate] for [COUNTRYFORMATION.GetName]"
  TRIGGER_HAS_UNIFICATION_CANDIDATE_NOT:1 "There is #bold not #!a [concept_unification_candidate] for [COUNTRYFORMATION.GetName]"
 
@@ -163,6 +166,13 @@
 
  TRIGGER_IS_TARGET_OF_WARGOAL:0 "[TARGET_COUNTRY.GetName] has a [concept_war_goal] targeting [STATE.GetName]"
  TRIGGER_IS_TARGET_OF_WARGOAL_NOT:0 "[TARGET_COUNTRY.GetName] does #b not#! have a [concept_war_goal] targeting [STATE.GetName]"
+
+ TRIGGER_IS_STRATEGIC_OBJECTIVE:0 "Is a [concept_strategic_objective]"
+ TRIGGER_IS_STRATEGIC_OBJECTIVE_NOT:0 "Is #b not#! a [concept_strategic_objective]"
+ TRIGGER_IS_STRATEGIC_OBJECTIVE_FIRST:0 "[STATE.GetName] is a [concept_strategic_objective] of [TARGET_COUNTRY.GetNameNoFlag]"
+ TRIGGER_IS_STRATEGIC_OBJECTIVE_FIRST_NOT:0 "[STATE.GetName] is #b not#! a [concept_strategic_objective] of [TARGET_COUNTRY.GetNameNoFlag]"
+ TRIGGER_IS_STRATEGIC_OBJECTIVE_THIRD:0 "[STATE.GetName] is a [concept_strategic_objective] of [TARGET_COUNTRY.GetName]"
+ TRIGGER_IS_STRATEGIC_OBJECTIVE_THIRD_NOT:0 "[STATE.GetName] is #b not#! a [concept_strategic_objective] of [TARGET_COUNTRY.GetName]"
  
  TRIGGER_TARGET_IS:0 "[TARGET_COUNTRY.GetName] is the target"
  TRIGGER_TARGET_IS_NOT:1 "[TARGET_COUNTRY.GetName] is #bold not #!the target"
@@ -178,6 +188,9 @@
  
  TRIGGER_IS_DIPLOMATIC_PLAY_TYPE:0 "The Diplomatic Play is [DIPLOMATIC_PLAY_TYPE.GetName]"
  TRIGGER_IS_DIPLOMATIC_PLAY_TYPE_NOT:1 "The Diplomatic Play is #bold not #![DIPLOMATIC_PLAY_TYPE.GetName]"
+
+ TRIGGER_IS_DIPLOMATIC_ACTION_TYPE:0 "The Diplomatic Pact is [DIPLOMATIC_ACTION_TYPE.GetName]"
+ TRIGGER_IS_DIPLOMATIC_ACTION_TYPE_NOT:0 "The Diplomatic Pact is #bold not #![DIPLOMATIC_ACTION_TYPE.GetName]"
  
  TRIGGER_HAS_PLAY_GOAL:0 "Has a war goal [WAR_GOAL_TYPE.GetName]"
  TRIGGER_HAS_PLAY_GOAL_NOT:1 "Does #bold not #!have a war goal [WAR_GOAL_TYPE.GetName]"
@@ -191,6 +204,13 @@
  TRIGGER_IS_SUBJECT_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold не#! є [Concept('concept_subject', '$concept_subject_feminine_ins$')|l] іншої нації"
  TRIGGER_IS_SUBJECT_THIRD: "[COUNTRY.GetName] є [Concept('concept_subject', '$concept_subject_feminine_ins$')|l] іншої нації"
  TRIGGER_IS_SUBJECT_THIRD_NOT: "[COUNTRY.GetName] #bold не#! є [Concept('concept_subject', '$concept_subject_feminine_ins$')|l] іншої нації"
+
+ TRIGGER_IS_JUNIOR_IN_PERSONAL_UNION:0 "Is a junior member of a [concept_personal_union]"
+ TRIGGER_IS_JUNIOR_IN_PERSONAL_UNION_NOT:0 "Is #bold not #!a junior member of a [concept_personal_union]"
+ TRIGGER_IS_JUNIOR_IN_PERSONAL_UNION_FIRST:0 "[COUNTRY.GetNameNoFlag] is a junior member of a [concept_personal_union]"
+ TRIGGER_IS_JUNIOR_IN_PERSONAL_UNION_FIRST_NOT:0 "[COUNTRY.GetNameNoFlag] is #bold not #!a junior member of a [concept_personal_union]"
+ TRIGGER_IS_JUNIOR_IN_PERSONAL_UNION_THIRD:0 "[COUNTRY.GetName] is a junior member of a [concept_personal_union]"
+ TRIGGER_IS_JUNIOR_IN_PERSONAL_UNION_THIRD_NOT:0 "[COUNTRY.GetName] is #bold not #!a junior member of a [concept_personal_union]"
  
  TRIGGER_IS_JUNIOR_IN_CUSTOMS_UNION:0 "Is a junior member of a [concept_customs_union]"
  TRIGGER_IS_JUNIOR_IN_CUSTOMS_UNION_NOT:0 "Is #bold not #!a junior member of a [concept_customs_union]"
@@ -225,6 +245,10 @@
  
  TRIGGER_IS_SUBJECT_TYPE:0 "Is a $SUBJECT_TYPE|v$-type [concept_subject]"
  TRIGGER_IS_SUBJECT_TYPE_NOT:1 "Is #bold not #!a $SUBJECT_TYPE|v$-type [concept_subject]"
+ TRIGGER_IS_SUBJECT_TYPE_FIRST:0 "[COUNTRY.GetNameNoFlag] is #variable $SUBJECT_TYPE$#!"
+ TRIGGER_IS_SUBJECT_TYPE_FIRST_NOT:0 "[COUNTRY.GetNameNoFlag] is #bold not #!#variable $SUBJECT_TYPE$#!"
+ TRIGGER_IS_SUBJECT_TYPE_THIRD:0 "[COUNTRY.GetNameNoFlag] is #variable $SUBJECT_TYPE$#!"
+ TRIGGER_IS_SUBJECT_TYPE_THIRD_NOT:0 "[COUNTRY.GetNameNoFlag] is #bold not #!#variable $SUBJECT_TYPE$#!"
  
  TRIGGER_CONTEXT_MARKET:0 "$NAME|v$"
  
@@ -955,6 +979,9 @@
  
  TRIGGER_HAS_WASTED_CONSTRUCTION:0 "Has unused [concept_construction]"
  TRIGGER_HAS_WASTED_CONSTRUCTION_NOT:1 "Does #bold not #!have unused [concept_construction]"
+
+ TRIGGER_HAS_SUFFICIENT_CONSTRUCTION_CAPACITY_FOR_INVESTMENT:0 "Has enough [concept_construction] production to fully utilize the [concept_investment_pool]"
+ TRIGGER_HAS_SUFFICIENT_CONSTRUCTION_CAPACITY_FOR_INVESTMENT_NOT:0 "Does #b not#! have enough [concept_construction] production to fully utilize the [concept_investment_pool]"
  
  TRIGGER_HAS_DISCRIMINATION_TRAIT:0 "$SUBJECT$ has trait $TRAIT|v$"
  TRIGGER_HAS_DISCRIMINATION_TRAIT_NOT:1 "$SUBJECT$ does #bold not #!have trait $TRAIT|v$"
@@ -1767,6 +1794,16 @@
  TRIGGER_ANY_RIVAL_COUNTRY_ALL:3 "All rival [Concept('concept_country', '$concept_countries$')]:"
  TRIGGER_ANY_RIVAL_COUNTRY_PERCENT:4 "$PARAMETERS$ of $FILTER$rival [Concept('concept_country', '$concept_countries$')]:"
  TRIGGER_ANY_RIVAL_COUNTRY_COUNT:4 "$PARAMETERS$ $FILTER$rival [Concept('concept_country', '$concept_countries$')]:"
+
+ TRIGGER_ANY_SCOPE_DIPLOMATIC_PACT:0 "Any [concept_diplomatic_pact]:"
+ TRIGGER_ANY_SCOPE_DIPLOMATIC_PACT_ALL:0 "All [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]:"
+ TRIGGER_ANY_SCOPE_DIPLOMATIC_PACT_PERCENT:0 "$PARAMETERS$ of $FILTER$[Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]:"
+ TRIGGER_ANY_SCOPE_DIPLOMATIC_PACT_COUNT:0 "$PARAMETERS$ $FILTER$[Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]:"
+
+ TRIGGER_ANY_SCOPE_DIPLOMATIC_PACT_PARTICIPANT:0 "Any [concept_diplomatic_pact] participant:"
+ TRIGGER_ANY_SCOPE_DIPLOMATIC_PACT_PARTICIPANT_ALL:0 "All [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] participants:"
+ TRIGGER_ANY_SCOPE_DIPLOMATIC_PACT_PARTICIPANT_PERCENT:0 "$PARAMETERS$ of $FILTER$[Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] participants:"
+ TRIGGER_ANY_SCOPE_DIPLOMATIC_PACT_PARTICIPANT_COUNT:0 "$PARAMETERS$ $FILTER$[Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] participants:"
  
  TRIGGER_ANY_SCOPE_CULTURE:1 "Any [concept_culture]:"
  TRIGGER_ANY_SCOPE_CULTURE_ALL:2 "All [Concept('concept_culture', '$concept_cultures$')]:"
@@ -1799,6 +1836,13 @@
  TRIGGER_ANY_STATE_ALL_FIRST:2 "All [Concept('concept_state', '$concept_states$')] worldwide"
  TRIGGER_ANY_STATE_PERCENT:3 "$PARAMETERS$ of $FILTER$[Concept('concept_state', '$concept_states$')] worldwide"
  TRIGGER_ANY_STATE_COUNT:3 "$PARAMETERS$ $FILTER$[Concept('concept_state', '$concept_states$')] worldwide"
+
+ TRIGGER_ANY_STRATEGIC_OBJECTIVE:0 "Any [concept_strategic_objective]:"
+ TRIGGER_ANY_STRATEGIC_OBJECTIVE_FIRST:0 "$TRIGGER_ANY_STRATEGIC_OBJECTIVE$"
+ TRIGGER_ANY_STRATEGIC_OBJECTIVE_ALL:0 "All [Concept('concept_strategic_objective', '$concept_strategic_objectives$')]"
+ TRIGGER_ANY_STRATEGIC_OBJECTIVE_ALL_FIRST:0 "$TRIGGER_ANY_STRATEGIC_OBJECTIVE_ALL$"
+ TRIGGER_ANY_STRATEGIC_OBJECTIVE_PERCENT:0 "$PARAMETERS$ of $FILTER$[Concept('concept_strategic_objective', '$concept_strategic_objectives$')]"
+ TRIGGER_ANY_STRATEGIC_OBJECTIVE_COUNT:0 "$PARAMETERS$ $FILTER$[Concept('concept_strategic_objective', '$concept_strategic_objectives$')]"
  
  TRIGGER_ANY_SCOPE_STATE: "Будь-який [concept_state|l]:"
  TRIGGER_ANY_SCOPE_STATE_ALL:2 "All [Concept('concept_state', '$concept_states$')]:"
@@ -1815,6 +1859,26 @@
  TRIGGER_ANY_SCOPE_STATE_FIRST_NOT:2 "No [Country.GetAdjectiveNoFlag] [concept_state]"
  TRIGGER_ANY_SCOPE_STATE_THIRD:1 "Any [concept_state] in [Country.GetName]"
  TRIGGER_ANY_SCOPE_STATE_THIRD_NOT:1 "Any [concept_state] not controlled by [Country.GetName]"
+
+ TRIGGER_ANY_SCOPE_STATE_IN_STATE_REGION_FIRST:0 "Any [StateRegion.GetName] [concept_state]"
+ TRIGGER_ANY_SCOPE_STATE_IN_STATE_REGION_FIRST_NOT:0 "No [StateRegion.GetName] [concept_state]"
+ TRIGGER_ANY_SCOPE_STATE_IN_STATE_REGION_THIRD:0 "Any [concept_state] in [StateRegion.GetName]:"
+ TRIGGER_ANY_SCOPE_STATE_IN_STATE_REGION_THIRD_NOT:0 "No [concept_state] in [StateRegion.GetName]:"
+
+ TRIGGER_ANY_SCOPE_STATE_IN_STRATEGIC_REGION_FIRST:0 "Any [StrategicRegion.GetName] [concept_state]"
+ TRIGGER_ANY_SCOPE_STATE_IN_STRATEGIC_REGION_FIRST_NOT:0 "No [StrategicRegion.GetName] [concept_state]"
+ TRIGGER_ANY_SCOPE_STATE_IN_STRATEGIC_REGION_THIRD:0 "Any [concept_state] in [StrategicRegion.GetName]:"
+ TRIGGER_ANY_SCOPE_STATE_IN_STRATEGIC_REGION_THIRD_NOT:0 "No [concept_state] in [StrategicRegion.GetName]:"
+
+ TRIGGER_ANY_SCOPE_STATE_IN_THEATER_FIRST:0 "Any [Theater.GetName] [concept_state]"
+ TRIGGER_ANY_SCOPE_STATE_IN_THEATER_FIRST_NOT:0 "No [Theater.GetName] [concept_state]"
+ TRIGGER_ANY_SCOPE_STATE_IN_THEATER_THIRD:0 "Any [concept_state] in [Theater.GetName]:"
+ TRIGGER_ANY_SCOPE_STATE_IN_THEATER_THIRD_NOT:0 "No [concept_state] in [Theater.GetName]:"
+
+ TRIGGER_ANY_SCOPE_STATE_IN_FRONT_FIRST:0 "Any [Front.GetName] [concept_state]"
+ TRIGGER_ANY_SCOPE_STATE_IN_FRONT_FIRST_NOT:0 "No [Front.GetName] [concept_state]"
+ TRIGGER_ANY_SCOPE_STATE_IN_FRONT_THIRD:0 "Any [concept_state] in [Front.GetName]:"
+ TRIGGER_ANY_SCOPE_STATE_IN_FRONT_THIRD_NOT:0 "No [concept_state] in [Front.GetName]:"
  
  TRIGGER_ANY_NEIGHBOURING_STATE:1 "Any neighboring [concept_state]:"
  TRIGGER_ANY_NEIGHBOURING_STATE_ALL:2 "All neighboring [Concept('concept_state', '$concept_states$')]:"

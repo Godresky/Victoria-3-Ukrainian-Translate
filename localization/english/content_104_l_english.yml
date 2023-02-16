@@ -134,7 +134,7 @@
 
  urbanization_events.4.t: "Викликані занепокоєння"
  urbanization_events.4.d: "[SCOPE.gsInterestGroup('opposing_ig').GetName] висловили своє занепокоєння щодо рішень уряду, які явно сприяють рупам [Concept('concept_interest_group', '$concept_interest_group_gen$')|l] [SCOPE.gsInterestGroup('industrialist_ig').GetName]."
- urbanization_events.4.f: "«Вибирати завжди важко; не тому, що прийняти рішення важко, а тому, що наслідки можуть бути дещо... незручними. Чутки поширюються, як заводський дим, заплямувавши чисте [ROOT.GetCountry.GetAdjectiveNoFormatting|l]е повітря, це густа і злісна отрута.»"
+ urbanization_events.4.f: "«Вибирати завжди важко; не тому, що прийняти рішення важко, а тому, що наслідки можуть бути дещо... незручними. Чутки поширюються, як виробничий дим, заплямувавши чисте [ROOT.GetCountry.GetAdjectiveNoFormatting|l]е повітря, це густа і злісна отрута.»"
  urbanization_events.4.a: "Це потрібно вирішити."
  urbanization_events.4.b: "Їм потрібно визнати, що ми не можемо догодити всім."
  modifier_ig_happy_urbanization: "Розглянуто проблеми оміщення"

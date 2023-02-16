@@ -9,6 +9,7 @@
  mm_peace_deal: "Воєнна та мирна угода"
 
  mm_interest_group: "Зацікавлені групи"
+ mm_population_nationally: "Населення держави"
  mm_population: "Населення"
  mm_culture: "Культури"
  mm_religion: "Релігії"
@@ -29,6 +30,8 @@
  mm_migration: "Міграція"
  mm_gdp: "Світовий ВВП"
  mm_gdp_nationally: "Національний ВВП"
+ mm_literacy: "Грамотність"
+ mm_infamy: "Рівень ганьби"
 
  mm_theater_interaction: "Взаємодія з театром"
  mm_state_interaction: "Взаємодія з реґіоном"
@@ -47,6 +50,7 @@
  mm_move_capital_interaction: "Перенести столицю"
  mm_move_market_capital_interaction: "Перенести ринкову столицю"
  mm_activate_conscripts_interaction: "Ожвавити призовні пункти"
+ mm_designate_strategic_objective: "Визначити стратегічні цілі"
  mm_diplomatic_play_country_interaction: "Дипломатична гра в державі"
  mm_diplomatic_play_state_interaction: "Дипломатична гра в реґіоні"
  mm_diplomatic_action_interaction: "Дипломатичні дії"

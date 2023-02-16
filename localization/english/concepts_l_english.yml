@@ -560,11 +560,19 @@
  concept_construction_queue_desc:2 "Any [Concept('concept_building', '$concept_buildings$')] that have been set to be expanded, but are currently not using any [concept_construction], are placed in the $concept_construction_queue$. Whenever any $concept_construction$ becomes available, the first $concept_building$ in the $concept_construction_queue$ will start using that $concept_construction$ and then switch to being [concept_under_construction]."
 
  concept_government_construction: "Урядове будівництво"
- concept_government_constructions:0 "Урядові будівництва"
+ concept_government_construction_gen: "Урядового будівництва"
+ concept_government_construction_acc: "Урядове будівництво"
+ concept_government_constructions: "Урядові будівництва"
+ concept_government_constructions_gen: "Урядових будівництв"
+ concept_government_constructions_acc: "Урядові будівництва"
  concept_government_construction_desc:0 "A $concept_government_construction$ is a [concept_building] that is being expanded on the direct orders of a [Concept('concept_country','$concept_country_possessive$')] [concept_government]. It can draw funds directly from the state treasury and can be reprioritized or removed from the [concept_construction_queue]."
  
  concept_private_construction: "Приватне будівництво"
+ concept_private_construction_gen: "Приватного будівництва"
+ concept_private_construction_acc: "Приватне будівництво"
  concept_private_constructions: "Приватні будівництва"
+ concept_private_constructions_gen: "Приватних будівництв"
+ concept_private_constructions_acc: "Приватні будівництва"
  concept_private_construction_desc:0 "A $concept_private_construction$ is a [concept_building] that is being expanded on the orders of private actors. It is always funded by the [concept_investment_pool] and cannot be can be reprioritized or removed from the [concept_construction_queue]."
 
  concept_under_construction: "Споруджується"
@@ -726,6 +734,7 @@
 
  concept_unit: "Військовий підрозділ"
  concept_units: "Військові підрозділи"
+ concept_units_short: "Підрозділи"
  concept_unit_possessive:0 "Military Unit\\'s"
  concept_unit_desc:0 "$concept_units$ perform military operations under the guidance of [Concept('concept_general','$concept_generals$')] and [Concept('concept_admiral','$concept_admirals$')]. They can be either land-based [Concept('concept_battalion','$concept_battalions$')] or naval [Concept('concept_flotilla','$concept_flotillas$')]."
 
@@ -1025,7 +1034,7 @@
  concept_migration_target: "Ціль міграції"
  concept_migration_targets: "Цілі міграції"
  concept_migration_target_desc:1 "A [concept_state] selected as a suitable target for mass [concept_migration] by a [concept_culture] subject to considerable [concept_cultural_turmoil]. $concept_migration_target_explainer$ Surrounding $concept_states$ may also see some degree of $concept_immigration$ from a $concept_migration_target$."
- concept_migration_target_explainer:0 "One $concept_migration_target$ may be created for every [GetDefine('NPops','MIGRATION_CULTURE_TARGET_TURMOIL')|v0] $concept_turmoil$ in a $concept_culture$."
+ concept_migration_target_explainer:1 "A $concept_migration_target$ may appear when the [concept_turmoil] of a [concept_culture] in a [concept_country] is at least [GetDefine('NPops','MASS_MIGRATION_ORIGIN_MIN_TURMOIL')|v%0]."
 
  concept_base_price: "Базисна ціна"
  concept_base_price_ins: "Базисною ціною"
@@ -1399,14 +1408,14 @@
  concept_state_possessive: "Реґіональн"
  concept_state_desc:2 "A geographic region controlled by a [concept_country]. [Concept('concept_pop', '$concept_pops$')] live and work in the [Concept('concept_building', '$concept_buildings$')] in the $concept_state$. Unless it is a [concept_split_state] its territory is equivalent to a [concept_state_region]. Unless it is [Concept('concept_isolated_state', '$concept_isolated_state_short$')], it will trade any [Concept('concept_good','$concept_goods$')] locally [Concept('concept_good_consumption','$concept_good_consumed$')] and [Concept('concept_good_production','$concept_good_produced$')] with other $concept_states$ in the same [concept_market] in to a degree based on its [concept_market_access]."
 
- concept_pop: "Спільнота"
- concept_pop_gen: "Спільноти"
- concept_pop_ins: "Спільнотою"
- concept_pop_loc: "Спільноті"
- concept_pops: "Спільноти"
- concept_pops_gen: "Спільнот"
- concept_pops_dat: "Спільнотам"
- concept_pops_adj: "Спільнотн"
+ concept_pop: "Громада"
+ concept_pop_gen: "Громади"
+ concept_pop_ins: "Громадою"
+ concept_pop_loc: "Громаді"
+ concept_pops: "Громади"
+ concept_pops_gen: "Громад"
+ concept_pops_dat: "Громадам"
+ concept_pops_adj: "Громадськ"
  concept_person: "Особа"
  concept_persons: "Особи"
  concept_persons_gen: "Осіб"
@@ -1418,6 +1427,7 @@
  concept_pops_possessive:0 "Pops\\'"
  concept_population: "Населення"
  concept_population_acc: "Населення"
+ concept_population_gen: "Населення"
  concept_population_ins: "Населенням"
  concept_pop_desc:3 "The world's population are organized into $concept_pops$, groups of individuals who work in the same [concept_building] as a certain [concept_profession], and share the same [concept_culture] and [concept_religion]. They use the [Concept('concept_pop_income','$concept_pop_income_short$')] they earn to buy [Concept('concept_good', '$concept_goods$')] to satisfy their [Concept('concept_pop_needs','$concept_pop_needs_short$')], which decides their [concept_wealth] and [concept_sol]. They can support [Concept('concept_interest_group', '$concept_interest_groups$')] and [Concept('concept_political_movement','$concept_political_movements$')], or be [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')]. A $concept_pop$ has a number of [concept_working_adults] and a number of [concept_dependents]. Some number of them are [Concept('concept_literacy','$concept_literate$')], and they might have a number of either [Concept('concept_loyalist','$concept_loyalists$')] or [Concept('concept_radical','$concept_radicals$')]."
 
@@ -1747,7 +1757,7 @@
  concept_hqs: "Голпроводи"
  concept_hq_possessive:0 "HQ\\'s"
  concept_hq_long: "Головний провід"
- concept_hq_desc:4 "An $concept_hq$ ($concept_hq_long$) is the territory owned by a [concept_country] in a particular [concept_strategic_region]. All military [Concept('concept_unit','$concept_units$')] originating from an $concept_hq$ are pooled and assigned to those [Concept('concept_commander','$concept_commanders$')] who hails from that $concept_hq$. Any $concept_units$ not assigned or not [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilized$')] during [concept_war] are considered to be in that $concept_hq$'s [concept_garrison], where they will independently defend any [concept_front] in their $concept_hq$."
+ concept_hq_desc:5 "An $concept_hq$ ($concept_hq_long$) is the territory owned by a [concept_country] in a particular [concept_strategic_region]. All [Concept('concept_unit','$concept_units$')] originating from an $concept_hq$ are pooled and assigned to those [Concept('concept_commander','$concept_commanders$')] who hails from that $concept_hq$. Any $concept_units$ not assigned or not [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilized$')] during [concept_war] are considered to be in that $concept_hq$'s [concept_garrison], where they will independently defend any [concept_front] in their $concept_hq$."
 
  concept_tax_waste: "Податкове марнотратство"
  concept_tax_waste_gen: "Податкового марнотратства"
@@ -1975,7 +1985,8 @@
 
  concept_party_leader: "Провідник партії"
  concept_party_leader_gen: "Провідника партії"
- concept_party_leader_desc:0 "The [concept_leader] of the [concept_interest_group] in the [concept_party] with the most [concept_clout] is considered the $concept_party_leader$."
+ concept_party_leader_short: "Провідник"
+ concept_party_leader_desc:1 "The [concept_leader] of the [concept_interest_group] in the [concept_party] with the most [concept_clout] is considered the $concept_party_leader$. The $concept_party_leader_short$ acts as a [concept_party_whip]."
 
  concept_suppress: "Придушити"
  concept_suppressed: "Придушені"
@@ -2003,7 +2014,7 @@
 
  concept_political_movement_support: "Підтримка політичного руху"
  concept_political_movement_support_short: "Підтримка"
- concept_political_movement_support_desc:1 "The $concept_political_movement_support_short$ of a [concept_political_movement] is based on the [concept_political_strength] of its supporting  [Concept('concept_pop','$concept_pops$')]. A $concept_political_movement$ with a high degree of $concept_political_movement_support_short$ increases the [concept_enactment_success] chance if you pursue the [concept_law] they desire, or reduces it if they oppose it. Should the $concept_political_movement$ lead to a [concept_revolution], $concept_political_movement_support$ will determine how many [Concept('concept_state','$concept_states$')] it will start with."
+ concept_political_movement_support_desc:2 "The $concept_political_movement_support_short$ of a [concept_political_movement] is based on the [concept_political_strength] of its supporting  [Concept('concept_pop','$concept_pops$')]. A $concept_political_movement$ with a high degree of $concept_political_movement_support_short$ increases the [concept_enactment_success] chance if you pursue the [concept_law] they desire, or increases the [concept_enactment_stall] chance if they oppose it. Should the $concept_political_movement$ lead to a [concept_revolution], $concept_political_movement_support$ will determine how many [Concept('concept_state','$concept_states$')] it will start with."
 
  concept_political_movement: "Політичний рух"
  concept_political_movement_gen: "Політичного руху"

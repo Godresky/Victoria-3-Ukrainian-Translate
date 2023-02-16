@@ -5,3 +5,4 @@
  SETTING_MAP_SSAO: "Мапа SSAO"
  SETTING_DOF: "Глибина різкости"
  SETTING_LENS_FLARE: "Відблиск об'єктива"
+ SETTING_SECONDARY_LENS_FLARE: "Вторинний відблиск об‘єктива"

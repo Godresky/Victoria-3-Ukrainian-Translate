@@ -87,6 +87,10 @@
  CLEAR_DEBT:1 "#variable [COUNTRY.GetAdjectiveNoFormatting]#! financial debts are cleared"
  CLEAR_DEBT_NEG:1 "#variable [COUNTRY.GetAdjectiveNoFormatting]#! financial debts are NOT cleared"
  CLEAR_SCALED_DEBT:1 "#variable [COUNTRY.GetAdjectiveNoFormatting]#! financial debts are cleared by a factor of #variable $VALUE$#! of GDP"
+
+ SEIZE_INVESTMENT_POOL:0 "Seize all funds in the [concept_investment_pool] for the [concept_treasury]"
+ SEIZE_INVESTMENT_POOL_FIRST:0 "$SEIZE_INVESTMENT_POOL$"
+ SEIZE_INVESTMENT_POOL_THIRD:0 "[Country.GetName] seizes all funds in the [concept_investment_pool] for the [concept_treasury]"
  
  TAKE_ON_SCALED_DEBT:1 "Takes on [TARGET_COUNTRY.GetAdjective] [Concept('concept_credit','$concept_credit_debt$')] of @money!#variable $VALUE|vD$#!"
  TAKE_ON_SCALED_DEBT_FIRST:0 "[COUNTRY.GetNameNoFlag] takes on [TARGET_COUNTRY.GetAdjective] [Concept('concept_credit','$concept_credit_debt$')] of @money!#variable $VALUE|vD$#!"
@@ -183,6 +187,7 @@
  SET_WAR_NEG:0 "[DIPLOMATIC_PLAY.GetName] does NOT break out into war"
  
  CREATE_TRUCE:1 "[COUNTRY.GetName] and [TARGET_COUNTRY.GetName] gets a #variable truce for $MONTHS|0v$ months#!"
+ END_TRUCE:0 "[COUNTRY.GetName] and [TARGET_COUNTRY.GetName] end their #variable truce in $MONTHS|0v$ months#!"
  
  VIOLATE_SOVEREIGNTY_JOIN:2 "[COUNTRY.GetName] joins the [concept_war] on the side of [TARGET_COUNTRY.GetName]"
  VIOLATE_SOVEREIGNTY_JOIN_FIRST:0 "[TARGET_COUNTRY.GetName] joins the [concept_war] on the side of [COUNTRY.GetName]"
@@ -225,6 +230,7 @@
  CREATE_BUILDING:0 "Creates a Size $LEVEL|v$ [BuildingType.GetName] in [State.GetName]"
  ADD_BUILDING_LEVEL:0 "Change [BuildingType.GetName] level by $LEVEL|v$ in [State.GetName]"
  START_BUILDING_CONSTRUCTION:0 "Start building [BuildingType.GetName] in [State.GetName]"
+ START_PRIVATELY_FUNDED_BUILDING_CONSTRUCTION:0 "Start building [BuildingType.GetName] in [State.GetName] as a [concept_private_construction]"
  CREATE_POP:0 "[STATE.GetName] gets $SIZE|+$ #variable [POP_TYPE.GetName]#!"
  ADD_HOMELAND:0 "[STATE_REGION.GetName] becomes an #variable [CULTURE.GetName]#! [concept_homeland]"
  REMOVE_HOMELAND:0 "[STATE_REGION.GetName] is no longer an #variable [CULTURE.GetName]#! [concept_homeland]"
@@ -285,6 +291,7 @@
   
  ADD_RULING_INTEREST_GROUP:0 "[INTEREST_GROUP.GetName] becomes part of the government"
  REMOVE_RULING_INTEREST_GROUP:0 "[INTEREST_GROUP.GetName] is removed from the government"
+ SET_RULING_PARTY:0 "[PARTY.GetName] is added to the government while everyone else are removed"
  SET_RULING_INTEREST_GROUPS:0 "The specified set of Interest Groups are added to the government while everyone else are removed"
  
  ADD_MODIFIER: "$SUBJECT_NAME$ отримає «#tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#!» $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
