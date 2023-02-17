@@ -95,7 +95,7 @@
  ig_roman_curia_desc:0 "The Roman Curia, or "Court of Rome" as it is sometimes known, is the administrative institution of the Holy See, exercising both ecclesiastical and temporal powers."
 
   # Japanese IGs
- ig_samurai:0 "Samurai"
+ ig_samurai: "Самураї"
  ig_samurai_desc:0 "The Samurai are the hereditary military nobility of Japan, serving as privileged retainers to the powerful landowning Daimyo, and as enforcers of their feudal masters' wills."
  ig_shogunate: "Шьоґуни"
  ig_shogunate_desc:0 "The Shogunate refers to the military government that has ruled Japan in the Emperor's name since the 12th century. Anchored in the support of powerful feudal lords, the Daimyo, the insitution is dedicated to the upholding of Japan's traditional order."

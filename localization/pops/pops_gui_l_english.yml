@@ -20,7 +20,7 @@
  COUNTRY: "Держава"
  ADDRESS: "Адреса"
  CITY: "Місто"
- STATE: "Штат/Реґіон/Область"
+ STATE: "Реґіон"
  ZIP_CODE: "Поштовий покажчик"
  PHONE:0 "Phone"
  CREATE_ACCOUNT: "Створити обліковку"
