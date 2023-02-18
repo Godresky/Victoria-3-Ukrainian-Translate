@@ -26,3 +26,5 @@
  move_market_capital_lens_option: "Перемістити ринкову столицю"
  move_market_capital_lens_option_tooltip: "#header $move_market_capital_lens_option$#!\n$TOOLTIP_DELIMITER$\n#concept Ви можете перемістити [Concept('concept_market_capital', '$concept_market_capital_short_acc$')|l] вашого національного [Concept('concept_market', '$concept_market_gen$')|l].#!"
   
+ reset_production_methods_lens_option: "Скинути способи виробництва"
+ reset_production_methods_lens_option_tooltip:0 "#header $reset_production_methods_lens_option$#!\n$TOOLTIP_DELIMITER$\n#concept Reset [Concept('concept_production_method','$concept_production_methods$')] of [Concept('concept_building','$concept_buildings$')] in a [concept_state] to match your most common national standards.#!"

@@ -1130,6 +1130,7 @@
  concept_turmoil_desc:2 "[Concept('concept_state', '$concept_states$')] and [Concept('concept_culture', '$concept_cultures$')] with $concept_turmoil$ contain [Concept('concept_radical', '$concept_radicals$')] that are unhappy with their current circumstances. The amount of $concept_turmoil$ is equal to the fraction of the $concept_state$'s or $concept_culture$'s [concept_workforce] that are $concept_radical$.\n\n$concept_turmoil$ can inflict a number of negative local status effects on a $concept_state$ if it gets high enough. [concept_cultural_turmoil] can impact a whole [concept_country] in very disruptive ways."
 
  concept_unemployed: "Безробітні"
+ concept_unemployed_gen: "Безробітніх"
  concept_unemployed_ins: "Безробітними"
  concept_unemployed_many: "Безробітні"
  concept_unemployed_adj: "Безробітн"
@@ -1184,6 +1185,7 @@
  concept_working_adults_desc:1 "The part of a [concept_pop] that make up the [concept_workforce] that work in [Concept('concept_building', '$concept_buildings$')] for [Concept('concept_building_wage', '$concept_building_wages$')]. They are the main source of a $concept_pop$'s [Concept('concept_pop_income','$concept_pop_income_short$')] and [concept_political_strength]."
 
  concept_dependents: "Утриманці"
+ concept_dependents_gen: "Утриманці"
  concept_dependent: "Утриманець"
  concept_dependents_desc:2 "The part of a [concept_pop] not considered part of the [concept_workforce]. They represent the families of the [concept_working_adults] and normally constitute the majority of the population. $concept_dependents$ usually generate [concept_dependent_income] that is typically smaller than the [Concept('concept_building_wage','$concept_building_wages$')] collected by $concept_working_adults$, but they also have lower [concept_pop_needs]. While they are able to support [Concept('concept_interest_group','$concept_interest_groups$')] their [concept_political_strength] typically count for less. They are only granted [Concept('concept_votes','$concept_voting_rights$')] under very specific [Concept('concept_law', '$concept_laws$')].\n\nEnacting different $concept_laws$ or maintaining certain [Concept('concept_institution', '$concept_institutions$')] may convert $concept_dependents$ into $concept_working_adults$ over time, increase their [concept_political_strength], or supplement their $concept_dependent_income$."
 
@@ -1207,6 +1209,7 @@
  concept_discrimination_gen: "Утиску"
  concept_discrimination_acc: "Утиск"
  concept_discriminated: "Утиснений"
+ concept_discriminated_adj: "Утиснен"
  concept_discriminated_against: "Утискають"
  concept_discrimination_desc:3 "[Concept('concept_pop', '$concept_pops$')] can be $concept_discriminated_against$ if their [concept_culture] and/or [concept_religion] are not accepted in their [concept_country]. $concept_discriminated$ $concept_pops$:\n- get paid less than their peers\n- have less [concept_political_strength]\n- are less likely to develop [concept_pop_qualifications] for certain [concept_profession]\n- naturally become [concept_radical] over time\n- and are more likely to [Concept('concept_migration','$concept_emigrate$')].\n\nIn addition, certain [Concept('concept_law', '$concept_laws$')] limit or expand national acceptance of $concept_culture$ and $concept_religions$."
 
