@@ -1177,6 +1177,7 @@
  concept_political_strength: "Політична сила"
  concept_political_strength_gen: "Політичної сили"
  concept_political_strength_acc: "Політичну силу"
+ concept_political_strength_ins: "Політичною силою"
  concept_political_strengths: "Політичні сили"
  concept_political_strength_desc:3 "The degree of power a [concept_pop], and consequently the [Concept('concept_interest_group','$concept_interest_groups$')] it supports, have over the [Concept('concept_country','$concept_country_possessive$')] politics. It is derived from its supporting $concept_pops$' [concept_wealth]. $concept_pops$ who live in [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] have much less $concept_political_strength$, while $concept_pops$ in the [concept_capital_state] have more.\n\n$concept_pops$ distribute their $concept_political_strength$ to the $concept_interest_groups$ it supports proportionate to how many of its members support it. If an $concept_interest_group$ is a member of a [concept_party], they also gain $concept_political_strength$ from the [concept_votes] that $concept_party$ received in the last [concept_election]. An $concept_interest_group$'s [concept_clout] is equal to their share of the $concept_country$'s total $concept_political_strength$."
 
@@ -1475,6 +1476,7 @@
  concept_culture_gen: "Культури"
  concept_culture_acc: "Культуру"
  concept_cultures: "Культури"
+ concept_cultures_gen: "Культур"
  concept_culture_possessive:1 "Culture\\'s"
  concept_culture_desc:2 "All [Concept('concept_pop', '$concept_pops$')] have a $concept_culture$, which can only change through [concept_assimilation]. Their $concept_culture$ determines which [Concept('concept_state_region','$concept_state_regions$')] they consider their [Concept('concept_homeland','$concept_homelands$')] and whether they are [Concept('concept_discrimination','$concept_discriminated_against$')] in their [concept_country] or not."
 
@@ -1504,6 +1506,7 @@
  concept_religion_acc: "Релігію"
  concept_religion_ins: "Релігією"
  concept_religions: "Релігії"
+ concept_religions_gen: "Релігій"
  concept_religion_desc:1 "All [Concept('concept_pop', '$concept_pops$')] have a $concept_religion$, which can only change through [concept_conversion]. Their $concept_religion$ determines whether they are [Concept('concept_discrimination','$concept_discriminated_against$')] in their [concept_country] or not."
 
  concept_accepted_religion: "Прийнята релігія"
