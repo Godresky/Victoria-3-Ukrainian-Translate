@@ -1543,6 +1543,7 @@
 
  concept_wealth: "Багатство"
  concept_wealth_gen: "Багатства"
+ concept_wealth_acc: "Багатство"
  concept_wealthy: "Багатий"
  concept_wealth_desc:1 "A measure of a [Concept('concept_pop','$concept_pop_possessive$')] material assets. To sustain a certain level of $concept_wealth$ the $concept_pop$ has a set of [Concept('concept_pop_needs','$concept_pop_needs_short$')] it must satisfy each week. If their [Concept('concept_pop_income','$concept_pop_income_short$')] does not cover the cost of these $concept_pop_needs_short$, their $concept_wealth$ will eventually decrease. If they have [concept_money] left over after purchasing the necessary $concept_goods$, $concept_wealth$ will soon increase.\n\n$concept_wealth$ is the main factor contributing to a $concept_pop$'s [concept_sol], and under certain [Concept('concept_law','$concept_laws$')] it may affect other aspects of their life such as [concept_literacy] and [Concept('concept_votes','$concept_voting_rights$')]."
 
