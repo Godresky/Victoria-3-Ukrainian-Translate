@@ -90,19 +90,19 @@
 
   # Papal IGs
  ig_roman_landowners: "Римські землевласники"
- ig_roman_landowners_desc:0 "The owners of great estates, Roman landowners are custodians of tradition and old money firmly intertwined with the Papacy."
- ig_roman_curia:0 "Roman Curia"
- ig_roman_curia_desc:0 "The Roman Curia, or "Court of Rome" as it is sometimes known, is the administrative institution of the Holy See, exercising both ecclesiastical and temporal powers."
+ ig_roman_landowners_desc: "Власники великих володінь, Римські землевласники є охоронцями традицій та cтарих засобів заробіку грошей, та є тісно переплетені з Папством."
+ ig_roman_curia: "Римська Курія"
+ ig_roman_curia_desc: "Римська Курія, або як вона ще відома - "Римський Суд" - це адміністративна інституція Святого Престолу, маюча церковні та тимчасові повноваженя."
 
   # Japanese IGs
  ig_samurai: "Самураї"
- ig_samurai_desc:0 "The Samurai are the hereditary military nobility of Japan, serving as privileged retainers to the powerful landowning Daimyo, and as enforcers of their feudal masters' wills."
+ ig_samurai_desc: "Самураї та наслідницьке військове дворянство Японії служать як привілейовані хранителі правлячого клану Даймьо, та як ті, що насаджають волю їхнього феодального лорда."
  ig_shogunate: "Шьоґуни"
- ig_shogunate_desc:0 "The Shogunate refers to the military government that has ruled Japan in the Emperor's name since the 12th century. Anchored in the support of powerful feudal lords, the Daimyo, the insitution is dedicated to the upholding of Japan's traditional order."
+ ig_shogunate_desc: "Шьоґунат являється воєнним урядом, який правивив Японією від імені імператора починаючи з 12 століття. Стримуваний міццю могутніх феодальних лордів, Даймьо. Інституція націлена на збереження Японського традиційного порядку."
  ig_peasants: "Гейміни"
- ig_peasants_desc:0 "Heimin denotes the Japanese class of commoners, born without any kind of social privileges, and with political interests primarily reflecting those of rural farmers."
- ig_buddhist_monks:0 "Buddhist Monks"
- ig_buddhist_monks_desc:0 "Existing alongside, and often at odds with the native Japanese belief in kami, by the 19th century Buddhism has been present in Japan for over a millennium. The Buddhist schools patronized by the state throughout the Edo era emphasize the syncretic relationship between kami and buddhas."
+ ig_peasants_desc: "Геймін визначає Японску версвту простолюдин, як народжену без будь-яких соціальних привілейів, та з політичними інтересами, які співвідносяться з інтересами сільских фермерів."
+ ig_buddhist_monks: "Буддистські монахи"
+ ig_buddhist_monks_desc: "Існуюючи поруч, та часто в смутних відносинах з традиційною японською вірою в Камі, в 19 столітті Буддизм був в Японії більше тисячоліття. Буддистські школи, підтримувані державою в період Едо наголошують на синкретичних відносинах між віруючими в Камі та Будду."
 
   # Hawaiian IGs
  ig_christian_missionaries: "Місіонери"
@@ -116,14 +116,14 @@
 
   # Swedish IGs
  ig_church_of_sweden: "Церква Шведчинни"
- ig_church_of_sweden_desc:0 "The Church of Sweden was instigated by King Gustav Vasa in the 16th century and is the official State Church of Sweden. Being a Lutheran institution, the Church holds that the Bible is the sole authority on Christian dogma, thus rejecting the authority of the Pope and traditions such as the veneration of saints."
+ ig_church_of_sweden_desc: "Церква Шведчини була підбурювана королем Ґуставом Вазою в 16 столітті  та є офіційною церквою Шведчини. Будучи Лютеранською інституцією, церква каже, що Біблія являється єдиним авторитетом над церковною догмою, тому відмовляючи авторитету Папи та традиціям, як наприклад шанування святих."
   # Korean IGs
- ig_yangban:0 "Yangban Officials"
- ig_yangban_desc:0 "The Yangban represents the landed and unlanded gentry of Korea, who derive their titles and influence from positions within the country's bureaucratic apparatus. Exemplifying the Confucian ideals of the Scholar-Official, they are staunch defenders of Korea's traditional order."
+ ig_yangban: "Чиновники Янбан"
+ ig_yangban_desc: "Янбан відображає землевласників - дворян, та безземельну шляхту, які виводять свій вплив та титули зі своїх позицій в бюрократичному апараті. Відображаючи Конфуціанські ідеали вченого-чиновника, вони є стійкими захисниками Корейського традиційного порядку."
 
   # Russian IGs
- ig_gentry_assembly:0 "Gentry Assembly"
- ig_gentry_assembly_desc:0 "The Gentry Assembly is the self-governing body representing the Russian Aristocracy. Granted official status in 1785, the Assembly has ever since advocated for the retention or expansion of the nobles' traditional powers and privileges."
+ ig_gentry_assembly: "Велика Асамблея"
+ ig_gentry_assembly_desc: "Шляхецька Асамблея - це самоврядний орган, репрезентуючий російську аристократію. Заполучивши офіційний статус в 1785 році, Асамблея завжди виступала за збереження або збільшення традиційних привілеїв."
   # Misc Igs
- ig_red_army:0 "Red Army"
- ig_red_army_desc:0 "The Red Army is an institution dedicated to the defence and propagation of the Revolution, born through the amalgamation of the traditional armed forces with the proletariat and Communist ideology."
+ ig_red_army: "Червона Армія"
+ ig_red_army_desc: "Червона Армія - це інституція відповідаюча за оборону та пропагування революції. Створена внаслідок об'єднання традиційних збройних сил з пролетаріятом та Комуністичною ідеологією."
