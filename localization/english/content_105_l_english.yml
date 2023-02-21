@@ -431,7 +431,7 @@
 
   # African Colonial Events
  africa_colonial_events.1.t: "Приєднання до Боротьби за Африку"
- africa_colonial_events.1.d: "Зростальна колоніальна імперія держави [ROOT.GetCountry.GetName] в Африці разом з новими засобами профілактики малярії зробила нас серйозним претендентом на колоніальний контроль над континентом."
+ africa_colonial_events.1.d: "Зростальна осадна імперія держави [ROOT.GetCountry.GetName] в Африці разом з новими засобами профілактики малярії зробила нас серйозним претендентом на осадний контроль над континентом."
  africa_colonial_events.1.f:0 ""When I see this continent, I see a raw, unworked material from which anything could be carved. But, as often when working with rough materials, mishaps are inevitable. Something breaks, blood is spilled. [ROOT.GetCountry.GetNameNoFormatting] isn't so squeamish as to let a bit of blood get in the way of ambition, are we?""
  africa_colonial_events.1.a:0 "Bring out the maps and the straightedges!"
 
@@ -771,7 +771,7 @@
  je_liberalism_3: "Свобода думки"
  je_liberalism_3_reason: "Дозволяючи слову бути вільним, думка звільняється разом із ним, відкриваючи нову еру радикальних інновацій та реформ."
  je_liberalism_4: "Новий Колос"
- je_liberalism_4_reason: "Люди будь-якої раси та віросповідання будуть раді у нашому вільному та відкритому суспільстві!"
+ je_liberalism_4_reason: "Люди будь-якої раси та віровизнання будуть раді у нашому вільному та відкритому суспільстві!"
  liberalism.1.t: "Свобода, рівність і братерство"
  liberalism.1.d: "[SCOPE.sCharacter('liberal_leader').GetInterestGroup.GetName], під керівництвом [Concept('concept_leader', '$concept_leader_gen$')|l] [SCOPE.sCharacter('liberal_leader').GetFullName], відкрив добу ліберальної політики, яка обіцяє вільніше суспільство, де всі громадяни беруть участь у політичному процесі."
  liberalism.1.f: "«Ви знайдете багато ідеологів, які стверджують, що представляють волю народу, але насправді заглушують його голос, коли він кричить проти їхньої політики. Проте це не ми! Ми будемо знімати з людей кайдани один за одним, поки вони не звільняться від ярма минулого. Тільки тоді ми зможемо побачити, якою є справжня воля народу, і дозволити їй формувати майбутнє!»"
