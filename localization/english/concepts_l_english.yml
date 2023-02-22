@@ -362,6 +362,7 @@
  concept_battle_condition_desc:0 "During [Concept('concept_battle','$concept_battles$')] each side will be affected by a $concept_battle_condition$ that influences the outcome. Which $concept_battle_condition_short$ applies depends on a number of factors, which often includes the [Concept('concept_character_trait','$concept_character_traits$')] of the [Concept('concept_commander','$concept_commanders$')] in charge of that side."
 
  concept_battle: "Битва"
+ concept_battle_loc: "Битві"
  concept_battles: "Битви"
  concept_battles_gen: "Битв"
  concept_battles_acc: "Битви"
@@ -1023,8 +1024,8 @@
 
  concept_morale: "Моральний дух"
  concept_morale_gen: "Морального духу"
- concept_morale_demoralized: "Деморалізовані"
- concept_morale_demoralized_adj: "Деморалізован"
+ concept_morale_demoralized: "Знеморалізовані"
+ concept_morale_demoralized_adj: "Знеморалізован"
  concept_morale_demoralized_desc: "$concept_morale_desc$"
  concept_morale_desc:1 "A [Concept('concept_unit','$concept_unit_possessive$')] $concept_morale$ measures how much of its remaining [concept_manpower] is ready for [concept_battle]. As a result of $concept_units$ taking and inflicting [concept_casualties] on each other in $concept_battle$, some of the remaining $concept_manpower$ will become $concept_morale_demoralized$ for the remainder of the $concept_battle$ and unable to take offensive action. As all $concept_units$ reach a critical threshold of low $concept_morale$ the [concept_commander] will retreat, leaving the other side victorious.\n\nAfter a $concept_battle$, $concept_units$ will regain their $concept_morale$ at a steady rate up to their $concept_commander$'s [concept_supply] rating."
 
@@ -1529,7 +1530,8 @@
  concept_investment_pool: "Пул вкладів"
  concept_investment_pool_gen: "Пулу вкладів"
  concept_investment_pool_acc: "Пул вкладів"
- concept_investment_pool_loc: "Інвестиційному пулі"
+ concept_investment_pool_ins: "Пулом вкладів"
+ concept_investment_pool_loc: "Пулі вкладів"
  concept_investment_pool_desc:3 "[concept_reinvestment] from [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_shares$')] is deposited into the $concept_investment_pool$, where it becomes available to [Concept('concept_construction','$concept_construct$')] [Concept('concept_building','$concept_buildings$')] the [Concept('concept_country','$concept_country_possessive$')] current [SelectLocalization(GetPlayer.IsValid,'concept_investment_pool_desc_added','Economic System')] [concept_law] permits to be built with these funds. As $concept_construction$ of such $concept_buildings$ take place, the funds required to build them are deducted from the $concept_investment_pool$ and deposited in the [concept_treasury] as an [concept_budget_investment_income]."
  concept_investment_pool_desc_added:1 "$ECONOMIC_SYSTEM_LAW_GROUP$"
 
@@ -1574,7 +1576,9 @@
 
  concept_technology: "Технологія"
  concept_technology_gen: "Технології"
+ concept_technology_acc: "Технологію"
  concept_technologies: "Технології"
+ concept_technologies_gen: "Технологій"
  concept_technology_desc:3 "$concept_technology$ covers all innovation in the fields of $PRODUCTION_NO_CONCEPT$, $MILITARY$, and $SOCIETY$. $concept_technologies$ have nation-wide effects, which can range from changing the [Concept('concept_country','$concept_country_possessive$')] operating parameters via [Concept('concept_modifier','$concept_modifiers$')] to unlocking new [Concept('concept_production_method','$concept_production_methods$')], [Concept('concept_building','$concept_buildings$')], [Concept('concept_law','$concept_laws$')], [Concept('concept_decree','$concept_decrees$')], and [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')].\n\nProgress is made towards new $concept_technologies$ through [concept_innovation], which is primarily produced by [SelectLocalization(GetPlayer.IsValid,'concept_technology_desc_added','University')] $concept_buildings$. In addition to progress from $concept_innovation$, $concept_technologies$ may propagate from $concept_countries$ who already have them to those who do not via [concept_technology_spread].\n\nThe amount of progress required in a $concept_technology$ to acquire it depends on its [Concept('concept_technology_era','$concept_technology_era_short$')]. $concept_technology_era_ahead_of_time_penalty_desc$"
  concept_technology_desc_added:0 " [GetBuildingType('building_university').GetName]"
 
@@ -1681,6 +1685,7 @@
  concept_construction_desc_added:0 "[GetBuildingType('building_construction_sector').GetName]"
 
  concept_budget_construction_goods: "Будівельні товари"
+ concept_budget_construction_goods_gen: "Будівельних товарів"
  concept_budget_construction_goods_desc:2 "[Concept('concept_good','$concept_goods$')] [Concept('concept_good_consumption','$concept_good_consumed$')] by [SelectLocalization(GetPlayer.IsValid,'concept_budget_construction_goods_desc_added','Construction Sector')] [Concept('concept_building','$concept_buildings$')] in order to [Concept('concept_construction','$concept_construct$')] new $concept_buildings$."
  concept_budget_construction_goods_desc_added:0 "[GetBuildingType('building_construction_sector').GetName]"
 
@@ -1735,7 +1740,7 @@
  concept_subsidies: "Субсидії"
  concept_subsidies_gen: "Субсидій"
  concept_subsidies_acc: "Субсидії"
- concept_subsidize:1 "Subsidize"
+ concept_subsidize: "Субсидувати"
  concept_subsidized: "Під субсидією"
  concept_subsidizing: "Субсидування"
  concept_subsidies_desc:2 "A $concept_subsidized$ [concept_building] is guaranteed by the [Concept('concept_country','$concept_country_possessive$')] [concept_government] to be funded enough to always by able to pay at least the [concept_subsidized_wage]. If the building cannot pay its employees according to this rate or higher, and/or if its cost of buying [Concept('concept_good_consumption','$concept_input_goods$')] exceeds its [concept_revenue] from selling [Concept('concept_good_production','$concept_output_goods$')], the [concept_treasury] will cover the difference. This guarantees the $concept_building$ can hire as many employees as it wants in order to maximize [concept_throughput] without concern for how financially viable that is."
@@ -1771,6 +1776,7 @@
  concept_command_limit_desc:5 "$concept_command_limit$ determines how many [Concept('concept_battalion', '$concept_battalions$')] or [Concept('concept_flotilla','$concept_flotillas$')] a [concept_commander] can command. You can increase a $concept_commander$'s $concept_command_limit$ by giving them a promotion to the next [concept_commander_rank]."
 
  concept_pop_qualifications: "Вправність"
+ concept_pop_qualifications_gen: "Вправности"
  concept_qualifying: "Вправний"
  concept_qualify: "Вчитися"
  concept_pop_qualifications_desc:1 "[Concept('concept_pop','$concept_pops$')] develop the $concept_pop_qualifications$ necessary to change into another [concept_profession] over time. If their current attributes match those of the $concept_profession$, or if they currently work in a related field, they will develop $concept_pop_qualifications$ for it sooner. [concept_literacy], [concept_wealth], and [concept_discrimination] are common deciding factors."

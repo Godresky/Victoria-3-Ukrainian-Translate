@@ -71,11 +71,11 @@
  TRIGGER_IS_PROVINCE_LAND_NOT:2 "Province in [PROVINCE.GetStateRegion.GetName] is #bold not #!land"
  
  TRIGGER_HAS_BUILDING: "Має [Concept('concept_building', '$concept_building_acc$')|l] [BuildingType.GetName|l]"
- TRIGGER_HAS_BUILDING_NOT:1 "Does #bold not #!have [BuildingType.GetName]"
+ TRIGGER_HAS_BUILDING_NOT: "#bold Не#! має [Concept('concept_building', '$concept_building_acc$')|l] [BuildingType.GetName|l]"
  TRIGGER_HAS_BUILDING_FIRST: "Має [Concept('concept_building', '$concept_building_acc$')|l] [BuildingType.GetName]"
- TRIGGER_HAS_BUILDING_FIRST_NOT:1 "Does #bold not #![BuildingType.GetName]"
+ TRIGGER_HAS_BUILDING_FIRST_NOT: "#bold Не#! має [Concept('concept_building', '$concept_building_acc$')|l] [BuildingType.GetName|l]"
  TRIGGER_HAS_BUILDING_THIRD: "Має [Concept('concept_building', '$concept_building_acc$')|l] [BuildingType.GetName]"
- TRIGGER_HAS_BUILDING_THIRD_NOT:1 "Does #bold not #![BuildingType.GetName]"
+ TRIGGER_HAS_BUILDING_THIRD_NOT: "#bold Не#! має [Concept('concept_building', '$concept_building_acc$')|l] [BuildingType.GetName|l]"
  
  TRIGGER_HAS_ACTIVE_BUILDING:0 "Has active [BuildingType.GetName] building"
  TRIGGER_HAS_ACTIVE_BUILDING_NOT:1 "Does #bold not #!have an active [BuildingType.GetName] building"
