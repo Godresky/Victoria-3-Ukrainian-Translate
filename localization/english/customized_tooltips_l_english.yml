@@ -51,7 +51,7 @@
   # "Regular" info used in fancier tooltips
  COMMANDER_LOCATION_UNKNOWN:0 "#v Unknown#!"
  COMMANDER_CURRENT_ORDERS: "Місцина: [Character.GetLocationFormatted]"
- DATA_CHARACTER_COMMANDER_LOCATION_TOOLTIP: ""\n\nДомашній голпровід: [Character.GetHomeHQ.GetNameNoFlag|v][AddTextIf(And( Character.GetHomeHQ.IsValid, Not(Character.IsOffer)), '\nМісцина:' )] [AddTextIf( And( Character.GetHomeHQ.IsValid, Not(Character.IsOffer)), Character.GetLocationFormatted )]"
+ DATA_CHARACTER_COMMANDER_LOCATION_TOOLTIP: "\n\nДомашній голпровід: [Character.GetHomeHQ.GetNameNoFlag|v][AddTextIf(And( Character.GetHomeHQ.IsValid, Not(Character.IsOffer)), '\nМісцина:' )] [AddTextIf( And( Character.GetHomeHQ.IsValid, Not(Character.IsOffer)), Character.GetLocationFormatted )]"
  DATA_BUILDING_NAME_TOOLTIP:1 "[Building.GetTooltip]\n\n[Building.GetBuildingType.GetTooltipForBuilding(Building.Self)][Building.GetDebugTooltip]"
  DATA_BUILDING_TYPE_NAME_TOOLTIP: "[BuildingType.GetTooltip]"
  DATA_BUILDING_TYPE_NAME_TOOLTIP_NO_STATES:0 "[BuildingType.GetTooltip]\n #warning No available states for building#!"
