@@ -1045,7 +1045,7 @@
  BATTLE_DEFENDING:0 "Defending"
  BATTLE_OFFENSE_TITLE:0 "Offense"
  BATTLE_DEFENSE_TITLE:0 "Defense"
- ADVANCEMENT_PROGRESS_HEADER:0 "Advancement"
+ ADVANCEMENT_PROGRESS_HEADER:0 "Просування"
  BATTLE_DAYS_DURATION:0 "The battle lasted [Battle.GetDurationInDaysRaw] days"
  SUCCESSFUL_ADVANCE:0 "#G Successful attack#!"
  SUCCESSFUL_DEFENSE:0 "#G Successful defense#!"
