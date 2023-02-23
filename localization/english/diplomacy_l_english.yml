@@ -282,11 +282,11 @@
  redeem_obligation_action_name: "Зняти [concept_obligation|l]"
  redeem_obligation_desc:3 "#header $redeem_obligation$#!\n$TOOLTIP_DELIMITER$\nAn [concept_instant_diplomatic_action] that removes the [concept_obligation] a [concept_country] owes another in exchange for an instant increase of [concept_relations]."
  redeem_obligation_action_notification_name:1 "[concept_obligation] Absolved"
- redeem_obligation_action_notification_desc:1 "[INITIATOR_COUNTRY.GetName] have absolved us of the [concept_obligation] we owe them, increasing our mutual relations."
+ redeem_obligation_action_notification_desc:2 "[INITIATOR_COUNTRY.GetName] have absolved us of the [concept_obligation] we owe them, increasing our mutual $concept_relations$."
 
  expel_diplomats: "Вигнати дипломатів"
  expel_diplomats_action_name: "Вигнати дипломатів"
- expel_diplomats_desc:2 "#header $expel_diplomats$#!\n$TOOLTIP_DELIMITER$\nAn [concept_instant_diplomatic_action] that damages [concept_relations] with the target country and prevents all imporvement of relations for #b 5 years#!, at the cost of gaining [concept_infamy]."
+ expel_diplomats_desc:3 "#header $expel_diplomats$#!\n$TOOLTIP_DELIMITER$\nAn [concept_instant_diplomatic_action] that damages [concept_relations] with the target country and prevents all improvement of $concept_relations$ for #v 5 years#!, at the cost of gaining [concept_infamy]."
  expel_diplomats_action_notification_name:0 "Diplomats Expelled"
  expel_diplomats_action_notification_desc:2 "[INITIATOR_COUNTRY.GetName] has expelled our diplomats, damaging our mutual [concept_relations], resulting in a relation of #BOLD [INITIATOR_COUNTRY.GetRelationsWithDesc( GetPlayer )]#! ([INITIATOR_COUNTRY.GetRelationsWith(GetPlayer)|+]). Their [concept_attitude] towards us is #tooltippable #tooltip:[INITIATOR_COUNTRY.GetTooltipTag],COUNTRY_ATTITUDE_TOOLTIP [INITIATOR_COUNTRY.GetAttitudeTowards(GetPlayer).GetName]#!#!."
  

@@ -107,6 +107,7 @@
  WARGOAL_RECENT_REGIME_CHANGE:0 "[TARGET_COUNTRY.GetName] was recently the target of a Regime Change"
  WARGOAL_COUNTRY_IDEOLOGICAL_DIFFERENCE_TOO_SMALL:0 "The [Concept('concept_government','$concept_governments$')] of [COUNTRY.GetName] and [TARGET_COUNTRY.GetName] are too ideologically similar"
  WARGOAL_COUNTRY_IS_NOT_COLONIZABLE:0 "[COUNTRY.GetName] is not a [concept_decentralized_nation]"
+ WARGOAL_TARGET_IS_COLONIZABLE:0 "[COUNTRY.GetName] is a [concept_decentralized_nation]"
   
  YESMEN_ALWAYS_ACCEPT:0 "Will accept due to Yesmen"
  JOIN_DIPLO_PLAY_DESC:0 "#header Attempt to [concept_sway]#!\n$WILL_ACCEPT$\n$TOOLTIP_DELIMITER$\n$DETAILS$"
@@ -151,6 +152,7 @@
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_LOYALISTS:0 "Number of [Concept('concept_loyalist','$concept_loyalists$')] in [Country.GetName]: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_CIVIL_WAR_OR_UPRISING:0 "[concept_civil_war] or [concept_native_uprising]: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_SHORT_WAR:1 "Short duration of [concept_war]: #bold $VALUE|+=$#!"
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_EXISTENTIAL_PLAY:0 "Would be annexed if they back down: #bold $VALUE|+=$#!"
  
  DIPLO_PLAY_CONFIDENCE_PLAYER: "#v Гравець#!"
  DIPLO_PLAY_CONFIDENCE_PLAYER_DESC: "[Country.GetName] контролюється гравцем та його [Concept('concept_confidence','$concept_confidence_acc$')|l] відома лише Богу."

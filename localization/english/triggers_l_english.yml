@@ -29,6 +29,9 @@
  
  TRIGGER_HAS_GAME_RULE: "Встановлено правило: $SETTING$"
  TRIGGER_HAS_GAME_RULE_NOT: "#b Не#! встановлено правило: $SETTING$"
+
+ TRIGGER_NUMBER_OF_POSSIBLE_DECISIONS:0 "[COUNTRY.GetName] can take $COMPARATOR$ $NUM|v$ decisions"
+ TRIGGER_NUMBER_OF_POSSIBLE_DECISIONS_NOT:0 "[COUNTRY.GetName] can #b not#! take $COMPARATOR$ $NUM|v$ decisions"
  
  TRIGGER_IS_PLAYER: "Під контролем гравця"
  TRIGGER_IS_PLAYER_NOT: "#bold Не#! під контролем гравця"
@@ -79,6 +82,9 @@
  
  TRIGGER_HAS_ACTIVE_BUILDING:0 "Has active [BuildingType.GetName] building"
  TRIGGER_HAS_ACTIVE_BUILDING_NOT:1 "Does #bold not #!have an active [BuildingType.GetName] building"
+
+ TRIGGER_HAS_POSSIBLE_DECISIONS:0 "Has possible Decisions"
+ TRIGGER_HAS_POSSIBLE_DECISIONS_NOT:0 "Does #bold not#! have any possible Decisions"
  
  EVENT_TARGET_NO_CUSTOM_NAME:0 "$SPECIFIC|v$"
  EVENT_TARGET_CUSTOM_NAME:0 "$GENERAL|v$ ($SPECIFIC|V$)"
@@ -1923,6 +1929,14 @@
  TRIGGER_MARKET_ACCESS_EQUAL:0 "[concept_market_access] in [State.GetName] is $NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
  TRIGGER_MARKET_ACCESS_NOT_EQUAL:1 "[concept_market_access] in [State.GetName] is #bold not #!$NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
 
+ TRIGGER_MARKET_GOODS_SHORTAGE_EQUAL:0 "The [concept_input_goods_shortage] level of [MARKET_GOODS.GetGoods.GetTextIcon] [MARKET_GOODS.GetGoods.GetName] in [MARKET_GOODS.GetMarket.GetName] is !$NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
+ TRIGGER_MARKET_GOODS_SHORTAGE_EQUAL_NOT:0 "The [concept_input_goods_shortage] level of [MARKET_GOODS.GetGoods.GetTextIcon] [MARKET_GOODS.GetGoods.GetName] in [MARKET_GOODS.GetMarket.GetName] is #b not#! !$NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
+ TRIGGER_MARKET_GOODS_SHORTAGE_GREATER_THAN:0 "The [concept_input_goods_shortage] level of [MARKET_GOODS.GetGoods.GetTextIcon] [MARKET_GOODS.GetGoods.GetName] in [MARKET_GOODS.GetMarket.GetName] is greater than !$NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
+ TRIGGER_MARKET_GOODS_SHORTAGE_LESS_THAN:0 "The [concept_input_goods_shortage] level of [MARKET_GOODS.GetGoods.GetTextIcon] [MARKET_GOODS.GetGoods.GetName] in [MARKET_GOODS.GetMarket.GetName] is less than !$NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
+ TRIGGER_MARKET_GOODS_SHORTAGE_LESS_THAN_OR_EQUAL:0 "The [concept_input_goods_shortage] level of [MARKET_GOODS.GetGoods.GetTextIcon] [MARKET_GOODS.GetGoods.GetName] in [MARKET_GOODS.GetMarket.GetName] is less than or equal to !$NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
+ TRIGGER_MARKET_GOODS_SHORTAGE_GREATER_THAN_OR_EQUAL:0 "The [concept_input_goods_shortage] level of [MARKET_GOODS.GetGoods.GetTextIcon] [MARKET_GOODS.GetGoods.GetName] in [MARKET_GOODS.GetMarket.GetName] is greater than or equal to !$NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
+
+
  TRIGGER_CONSTRUCTION_QUEUE_SIZE_GREATER_THAN:0 "Number of projects in [concept_construction_queue] is greater than $NUM|0v$"
  TRIGGER_CONSTRUCTION_QUEUE_SIZE_LESS_THAN:0 "Number of projects in [concept_construction_queue] is greater than, or equal to $NUM|0v$"
  TRIGGER_CONSTRUCTION_QUEUE_SIZE_GREATER_OR_EQUAL:0 "Number of projects in [concept_construction_queue] is less than $NUM|0v$"
@@ -2128,6 +2142,27 @@
  TRIGGER_STATE_AVERAGE_EXPECTED_SOL_LESS_OR_EQUAL:0 "Average [concept_expected_sol] of [STATE.GetName] is less than, or equal to $TARGET_VALUE|0v$"
  TRIGGER_STATE_AVERAGE_EXPECTED_SOL_EQUAL:0 "Average [concept_expected_sol] of [STATE.GetName] is $TARGET_VALUE|0v$"
  TRIGGER_STATE_AVERAGE_EXPECTED_SOL_NOT_EQUAL:0 "Average [concept_expected_sol] of [STATE.GetName] is #bold not #!$TARGET_VALUE|0v$"
+
+ TRIGGER_NUM_QUEUED_CONSTRUCTIONS_GREATER_THAN:0 "Number of projects in the [concept_construction_queue] is greater than $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_CONSTRUCTIONS_GREATER_OR_EQUAL:0 "Number of projects in the [concept_construction_queue] is greater than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_CONSTRUCTIONS_LESS_THAN:0 "Number of projects in the [concept_construction_queue] is less than $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_CONSTRUCTIONS_LESS_OR_EQUAL:0 "Number of projects in the [concept_construction_queue] is less than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_CONSTRUCTIONS_EQUAL:0 "Number of projects in the [concept_construction_queue] is $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_CONSTRUCTIONS_NOT_EQUAL:0 "Number of projects in the [concept_construction_queue] is #bold not #!$TARGET_VALUE|0v$"
+
+ TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_GREATER_THAN:0 "Number of [Concept('concept_private_construction', '$concept_gprivate_constructions$')] in the [concept_construction_queue] is greater than $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_GREATER_OR_EQUAL:0 "Number of [Concept('concept_private_construction', '$concept_gprivate_constructions$')]  in the [concept_construction_queue] is greater than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_LESS_THAN:0 "Number of [Concept('concept_private_construction', '$concept_gprivate_constructions$')]  in the [concept_construction_queue] is less than $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_LESS_OR_EQUAL:0 "Number of [Concept('concept_private_construction', '$concept_gprivate_constructions$')]  in the [concept_construction_queue] is less than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_EQUAL:0 "Number of [Concept('concept_private_construction', '$concept_gprivate_constructions$')]  in the [concept_construction_queue] is $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_NOT_EQUAL:0 "Number of [Concept('concept_private_construction', '$concept_gprivate_constructions$')]  in the [concept_construction_queue] is #bold not #!$TARGET_VALUE|0v$"
+
+ TRIGGER_NUM_QUEUED_GOVERNMENT_CONSTRUCTIONS_GREATER_THAN:0 "Number of [Concept('concept_government_construction', '$concept_government_constructions$')] in the [concept_construction_queue] is greater than $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_GOVERNMENT_CONSTRUCTIONS_GREATER_OR_EQUAL:0 "Number of [Concept('concept_government_construction', '$concept_government_constructions$')] in the [concept_construction_queue] is greater than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_GOVERNMENT_CONSTRUCTIONS_LESS_THAN:0 "Number of [Concept('concept_government_construction', '$concept_government_constructions$')] in the [concept_construction_queue] is less than $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_GOVERNMENT_CONSTRUCTIONS_LESS_OR_EQUAL:0 "Number of [Concept('concept_government_construction', '$concept_government_constructions$')] in the [concept_construction_queue] is less than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_GOVERNMENT_CONSTRUCTIONS_EQUAL:0 "Number of [Concept('concept_government_construction', '$concept_government_constructions$')] in the [concept_construction_queue] is $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_GOVERNMENT_CONSTRUCTIONS_NOT_EQUAL:0 "Number of [Concept('concept_government_construction', '$concept_government_constructions$')] in the [concept_construction_queue] is #bold not #!$TARGET_VALUE|0v$"
 
  TRIGGER_PARTICIPANTS_GREATER_THAN:0 "The number of countries in [MARKET.GetName] is greater than $TARGET_VALUE|0v$"
  TRIGGER_PARTICIPANTS_GREATER_THAN_NOT:0 "The number of countries in [MARKET.GetName] is #b not#! greater than $TARGET_VALUE|0v$"

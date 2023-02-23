@@ -155,7 +155,7 @@
  bg_private_infrastructure: "Приватні споруди"
  bg_military: "Військові споруди"
  bg_special: "Спеціяльні споруди"
- bg_conscription: "Призовні будівлі"
+ bg_conscription: "Будівлі призви"
 
 #Factories
 
@@ -194,7 +194,7 @@
  building_barracks_lens_option: "Розширити курені"
  building_naval_base: "Морська база"
  building_naval_base_lens_option: "Розширити морські бази"
- building_conscription_center: "Призовний пункт"
+ building_conscription_center: "Осередок призви"
 
   #National Buildings
  building_government_administration: "Державна управа"

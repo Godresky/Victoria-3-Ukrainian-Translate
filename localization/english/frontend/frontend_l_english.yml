@@ -53,6 +53,7 @@
  ACHIEVEMENTS_UNAVAILABLE_TT:0 "Unable to load achievements: please check your internet connection"
  ACHIEVEMENTS_UNAVAILABLE_PLAZA_TT:0 "Unable to load achievements: please sign into your Paradox Account"
  GAME_RULES_RESET_TO_DEFAULTS_TEXT: "За замовчуванням"
+ SHOW_ALL_MESSAGE_SETTINGS: "Показати усі налаштування"
  GAME_RULES_APPLY_TEXT: "Прийняти"
  GAME_RULES_PRESET_DROPDOWN_NO_SELECTED: "Преднабір не вибраний"
  SAVE_PRESET_HEADER: "Зберегти преднабір"

@@ -50,7 +50,7 @@
  mm_move_capital_interaction: "Перенести столицю"
  mm_move_market_capital_interaction: "Перенести ринкову столицю"
  mm_reset_production_methods_interaction: "Скинути способи виробництва"
- mm_activate_conscripts_interaction: "Ожвавити призовні пункти"
+ mm_activate_conscripts_interaction: "Ожвавити осередки призви"
  mm_designate_strategic_objective: "Визначити стратегічні цілі"
  mm_diplomatic_play_country_interaction: "Дипломатична гра в державі"
  mm_diplomatic_play_state_interaction: "Дипломатична гра в реґіоні"

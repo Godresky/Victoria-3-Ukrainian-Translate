@@ -287,7 +287,7 @@
  
  lesson_expand_building_why_4:1 "$lesson_expand_building_why_1$"
  lesson_expand_building_why_4_desc:3 "Under the #v Process#! section we find the [Concept('concept_building','$concept_building_possessive$')] #v Weekly [concept_building_balance]#!. A positive $concept_building_balance$ means the $concept_building$ is profitable, and you can see how that profit is allocated in the tooltip.\n\nIf an $concept_building_industry$ has a negative #v Weekly $concept_building_balance$#! it loses money, which is generally bad. This will be covered in an upcoming Tutorial challenge."
- lesson_expand_building_why_4_back:0 "[GetTutorialJournalEntry.GetTarget.GetBuilding.GetName] panel must be closed to backtrack"
+ lesson_expand_building_why_4_back:1 "The [GetTutorialJournalEntry.GetTarget.GetBuilding.GetName]'s #b Information#! panel must be closed to backtrack"
 
  lesson_expand_building_why_5:1 "$lesson_expand_building_why_1$"
  lesson_expand_building_why_5_desc:2 "These are the [Concept('concept_building', '$concept_building_possessive$')] Expenses. Expenses always includes the [Concept('concept_building_wage','$concept_building_wages$')] of the $concept_building$'s [concept_workforce]. It may also include other Expenses, in @money![concept_money] or other currencies, such as [Concept('concept_good', '$concept_goods$')] required in the manufacturing process or [concept_infrastructure_usage] levied on its [concept_state]."
@@ -650,7 +650,7 @@
  lesson_market_access_by_decree_how_2:0 "$lesson_market_access_by_decree_how_1$"
  lesson_market_access_by_decree_how_2_desc:0 "There are many different types of [Concept('concept_decree', '$concept_decrees$')] for you to issue. Decrees are always issued in a [concept_state] and cost [concept_authority] to maintain."
  lesson_market_access_by_decree_how_2_continue:0 "Issue a Road Maintenance Decree in [GetTutorialJournalEntry.GetTarget.GetState.GetName]"
- lesson_market_access_by_decree_how_2_back:0 "Close the $concept_decrees$ tab in the[concept_political_lens] to backtrack"
+ lesson_market_access_by_decree_how_2_back:0 "Close the $concept_decrees$ tab in the [concept_political_lens] to backtrack"
 
  lesson_market_access_by_decree_how_3:0 "$lesson_market_access_by_decree_how_1$"
  lesson_market_access_by_decree_how_3_desc:0 "Great job! You have now issued a [GetDecreeType('decree_road_maintenance').GetName] [concept_decree] in [GetTutorialJournalEntry.GetTarget.GetState.GetName] at a cost of @aut![Nbsp]#v [GetDecreeType('decree_road_maintenance').GetCost( GetPlayer.Self )|-0]#! [concept_authority]."
@@ -721,7 +721,7 @@
  ### Increase Immigration
  ### HOW
  lesson_increase_immigration_how_1:0 "How to Increase $concept_immigration$"
- lesson_increase_immigration_how_1_desc:0 "A [concept_state] will be an attractive target for [concept_migration] if the average [concept_sol] is high. [Concept('concept_pop', '$concept_pops$')] will move from States with lower [concept_migration_pull] to those with higher $concept_migration_pull$l in the same [concept_market]."
+ lesson_increase_immigration_how_1_desc:0 "A [concept_state] will be an attractive target for [concept_migration] if the average [concept_sol] is high. [Concept('concept_pop', '$concept_pops$')] will move from States with lower [concept_migration_pull] to those with higher $concept_migration_pull$ in the same [concept_market]."
  lesson_increase_immigration_how_1_continue:0 "Activate the $concept_migration$ map mode"
 
  lesson_increase_immigration_how_2:0 "$lesson_increase_immigration_how_1$"
@@ -815,6 +815,7 @@
 
  lesson_enact_institution_law_why_2:0 "$lesson_enact_institution_law_why_1$"
  lesson_enact_institution_law_why_2_desc:0 "[Concept('concept_law','$concept_laws$')] determine your [Concept('concept_country','$concept_country_possessive$')] fundamental operating principles, everything from who holds the power and how your bureaucracies are organized, to how it gains and spends its [concept_money], to what rights the different segments of the [Concept('concept_pop','$concept_population$')] enjoys. Transforming your $concept_laws$ to keep up with the times is a necessity both due to practical reasons and to dodge your $concept_population$ rising up against you."
+ lesson_enact_institution_law_why_2_back:0 "Close the $concept_laws$ tab on the Politics Panel"
 
  lesson_enact_institution_law_why_3:0 "$lesson_enact_institution_law_why_1$"
  lesson_enact_institution_law_why_3_desc:0 "You can see your current [Concept('concept_institution','$concept_institutions$')] on the $concept_institution$ tab."
@@ -1351,7 +1352,7 @@
  ### WHY
  lesson_establish_trade_route_why_1:0 "Why Trade?"
  lesson_establish_trade_route_why_1_desc:2 "Few advanced economies can be entirely self-sufficient. Perhaps you can sustain your [Concept('concept_pop','$concept_pops$')] with simple farming and cottage industries for some time, and perhaps you have access to a valuable resource or two you can focus your industry around, but an industrializing nation will find before long that certain [Concept('concept_good','$concept_goods$')] are just not available in sufficient quantities at home.\n\nIt is similarly possible to run out of demand for the $concept_goods$ you are able to produce in excess. Exporting these $concept_goods$ to [Concept('concept_market','$concept_markets$')] that need them can provide your producers with higher [Concept('concept_building_wage','$concept_building_wages$')], profit for employees of your [GetBuildingType('building_trade_center').GetName]s, and even export [concept_tariffs] for your [concept_treasury]. Making others dependent on your products gives you a certain degree of soft power over them, to boot."
- lesson_establish_trade_route_why_1_continue:0 "Open the #b Market#! panel on the #b Overview#! tab and select any [concept_good] from the list"
+ lesson_establish_trade_route_why_1_continue:1 "Open the #b Market#! panel on the #b Goods#! tab and select any [concept_good] from the list"
  
  lesson_establish_trade_route_why_2:0 "$lesson_establish_trade_route_why_1$"
  lesson_establish_trade_route_why_2_desc:0 "In addition to starting your own [Concept('concept_trade_route','$concept_trade_routes$')], you can entice or discourage others from trading a certain [concept_good] with you by setting a [concept_market_good_policy]. This affects your [concept_tariffs] for that $concept_good$, which will increase or reduce the potential profit [GetBuildingType('building_trade_center').GetName]s can make off their managed routes. Low $concept_tariffs$ encourage trade, while high $concept_tariffs$ discourage them."

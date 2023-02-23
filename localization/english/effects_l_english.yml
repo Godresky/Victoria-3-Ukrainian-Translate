@@ -88,9 +88,9 @@
  CLEAR_DEBT_NEG:1 "#variable [COUNTRY.GetAdjectiveNoFormatting]#! financial debts are NOT cleared"
  CLEAR_SCALED_DEBT:1 "#variable [COUNTRY.GetAdjectiveNoFormatting]#! financial debts are cleared by a factor of #variable $VALUE$#! of GDP"
 
- SEIZE_INVESTMENT_POOL:0 "Seize all funds in the [concept_investment_pool] for the [concept_treasury]"
+ SEIZE_INVESTMENT_POOL:1 "Seize all funds in the [concept_investment_pool] for the [concept_treasury] and convert any [Concept('concept_private_construction', '$concept_private_constructions$') into [Concept('concept_government_construction', '$concept_government_constructions$')]"
  SEIZE_INVESTMENT_POOL_FIRST:0 "$SEIZE_INVESTMENT_POOL$"
- SEIZE_INVESTMENT_POOL_THIRD:0 "[Country.GetName] seizes all funds in the [concept_investment_pool] for the [concept_treasury]"
+ SEIZE_INVESTMENT_POOL_THIRD:1 "[Country.GetName] seizes all funds in the [concept_investment_pool] for the [concept_treasury] and converts any [Concept('concept_private_construction', '$concept_private_constructions$') into [Concept('concept_government_construction', '$concept_government_constructions$')]"
  
  TAKE_ON_SCALED_DEBT:1 "Takes on [TARGET_COUNTRY.GetAdjective] [Concept('concept_credit','$concept_credit_debt$')] of @money!#variable $VALUE|vD$#!"
  TAKE_ON_SCALED_DEBT_FIRST:0 "[COUNTRY.GetNameNoFlag] takes on [TARGET_COUNTRY.GetAdjective] [Concept('concept_credit','$concept_credit_debt$')] of @money!#variable $VALUE|vD$#!"
@@ -399,9 +399,9 @@
  ADD_RADICALS_FIRST:2 "#variable $NUM|-=1%$#! of$FILTER$ [Concept('concept_pop', '$concept_pops$')] in $SUBJECT_NAME$ become more [concept_radical]"
  ADD_RADICALS_THIRD:2 "#variable $NUM|-=1%$#! of$FILTER$ [Concept('concept_pop', '$concept_pops$')] in $SUBJECT_NAME$ become more [concept_radical]"
  
- ADD_LOYALISTS:2 "#variable $NUM|+=1%$#! of$FILTER$ [Concept('concept_pop', '$concept_pops$')] in $SUBJECT_NAME$ become more [concept_loyalist]"
- ADD_LOYALISTS_FIRST:2 "#variable $NUM|+=1%$#! of$FILTER$ [Concept('concept_pop', '$concept_pops$')] in $SUBJECT_NAME$ become more [concept_loyalist]"
- ADD_LOYALISTS_THIRD:2 "#variable $NUM|+=1%$#! of$FILTER$ [Concept('concept_pop', '$concept_pops$')] in $SUBJECT_NAME$ become more [concept_loyalist]"
+ ADD_LOYALISTS:3 "#variable $NUM|+=1%$#! of$FILTER$ [Concept('concept_pop', '$concept_pops$')] in $SUBJECT_NAME$ become more [Concept('concept_loyalist', '$concept_loyal$')]"
+ ADD_LOYALISTS_FIRST:3 "#variable $NUM|+=1%$#! of$FILTER$ [Concept('concept_pop', '$concept_pops$')] in $SUBJECT_NAME$ become more [Concept('concept_loyalist', '$concept_loyal$')]"
+ ADD_LOYALISTS_THIRD:3 "#variable $NUM|+=1%$#! of$FILTER$ [Concept('concept_pop', '$concept_pops$')] in $SUBJECT_NAME$ become more [Concept('concept_loyalist', '$concept_loyal$')]"
 
  ADD_CIVIL_WAR_PROGRESS:0 "Change progress of civil war by $VALUE|%$"
  ADD_LAW_PROGRESS:0 "Change progress of law [Law.GetName] by $VALUE|0%$"

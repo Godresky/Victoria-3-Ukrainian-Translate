@@ -233,7 +233,7 @@
  concept_diplomatic_play_negotiated:0 "Negotiated"
  concept_diplomatic_play_desc: "Дипломатична гра - це is a period of hostile diplomatic negotiations between two or more [Concept('concept_country','$concept_countries$')] that follows after one $concept_country$ makes a demand for a concession by another. To start a $concept_diplomatic_play$ you must have an [concept_active_interest] in the relevant [concept_strategic_region], which also entitles you to participate in $concept_diplomatic_plays_short$ as a third party in that $concept_strategic_region$.\n\nThe $concept_diplomatic_play$ will [Concept('concept_escalation', '$concept_escalate$')] through three phases: [concept_opening_moves], [concept_diplomatic_maneuvers], and [concept_countdown_to_war]. These phases set the terms for a possible [concept_peace_deal] should the $concept_diplomatic_play$ $concept_escalate$ into a [concept_war]. A $concept_war$ can be averted if either the [concept_initiator] or [concept_target] of the $concept_diplomatic_play_short$ backs down and grants the other their [Concept('concept_primary_demand','$concept_primary_demands$')]."
 
- concept_sympathy:0 "Sympathy"
+ concept_sympathy: "Співчуття"
  concept_sympathy_desc:0 "All AI-controlled [Concept('concept_country','$concept_countries$')] involved in a [concept_diplomatic_play] begin the play with a level of $concept_sympathy$ for each side, which influences how likely they are to support that side in the conflict. AI [Concept('concept_country','$concept_countries$')] tend to have higher $concept_sympathy$ for the [concept_target], for countries they have [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] with, and for those are opposing a [concept_country] with high [concept_infamy]. $concept_sympathy$ can also increase over the course of the [concept_diplomatic_play], as a side that gains powerful backers or accrues [concept_infamy] through adding [Concept('concept_war_goal', '$concept_war_goals$')] tends to generate $concept_sympathy$ for the opposing side."
  
  concept_neutrality: "Невтралітет"
@@ -273,47 +273,50 @@
  concept_homelands: "Батьківщина"
  concept_homeland_desc:2 "A [Concept('concept_culture','$concept_culture_possessive$')] $concept_homelands$ consist of those [Concept('concept_state_region','$concept_state_regions$')] that [Concept('concept_pop', '$concept_pops$')] of that $concept_culture$ feel are historically or naturally their territory. $concept_pops$ are more prone to [Concept('concept_migration','$concept_migrate$')] to their $concept_homelands$ than other [Concept('concept_state','$concept_states$')], and $concept_pops$ who reside there will never consider [Concept('concept_assimilation','$concept_assimilating$')].\n\nLaunching a [concept_diplomatic_play] to conquer a $concept_state$ considered a $concept_homeland$ of one of your [concept_primary_cultures] is considered relatively legitimate, and will generate substantially less [concept_infamy] than usual."
 
- concept_mobilize_general: "Призов генералів"
- concept_mobilize_general_mobilize: "Призвати"
- concept_mobilize_general_mobilizing: "Призивати"
- concept_mobilize_general_mobilized: "Призвані"
- concept_mobilize_general_mobilized_adj: "Призван"
- concept_mobilize_general_mobilization: "Призов"
- concept_mobilize_general_desc:3 "$concept_mobilize_general_mobilizing$ a [concept_general] will immediately begin the process of $concept_mobilize_general_mobilization$ for all [Concept('concept_battalion', '$concept_battalions$')] assigned to them. Once $concept_mobilize_general_mobilized$, a $concept_general$ cannot be demobilized manually but will automatically stand down once the [concept_country] is no longer at [concept_war]."
+ concept_mobilize_general: "Збір генералів"
+ concept_mobilize_general_mobilize: "Збирати"
+ concept_mobilize_general_mobilizing: "Збір"
+ concept_mobilize_general_mobilized: "Зібрані"
+ concept_mobilize_general_mobilized_adj: "Зібран"
+ concept_mobilize_general_mobilization: "Збір"
+ concept_mobilize_general_desc: "[Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized_adj$ий')] [Concept('concept_general', '$concept_general$')|l] негайно почне процес збору усіх [Concept('concept_battalion', '$concept_battalions_gen$')], які призначені до них. Після збору генерал не може бути бути знятий з військової служби вручну, проте піде самостійно, якщо [concept_country|l] більше не перебуватиме у стані [Concept('concept_war', '$concept_war_gen$')|l]."
 
- concept_mobilize_battalion: "Призов батальйонів"
- concept_mobilize_battalion_demobilized: "Знепризвані"
- concept_mobilize_battalion_mobilize:0 "Mobilize"
- concept_mobilize_battalion_mobilizing:0 "Mobilizing"
- concept_mobilize_battalion_mobilized: "Призвані"
- concept_mobilize_battalion_mobilized_adj: "Призван"
- concept_mobilize_battalions_mobilized:0 "Mobilized Battalions"
- concept_mobilize_battalion_mobilization:0 "Mobilization"
- concept_mobilize_battalion_desc:2 "[Concept('concept_battalion', '$concept_battalions$')] assigned to a [Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized$')] [concept_general] immediately start $concept_mobilize_battalion_mobilizing$ at a rate based on the [concept_infrastructure] of their [concept_state]. $concept_mobilize_battalion_mobilized$ and $concept_mobilize_battalion_mobilizing$ [Concept('concept_battalion', '$concept_battalions$')] consume more [Concept('concept_military_good','$concept_military_goods$')] but are fully prepared to follow their [concept_general] into [concept_battle]."
+ concept_mobilize_battalion: "Збір батальйонів"
+ concept_mobilize_battalion_demobilized: "Знятий зі служби"
+ concept_mobilize_battalions_demobilized: "Зняті зі служби"
+ concept_mobilize_battalion_demobilized_adj: "Знят"
+ concept_mobilize_battalion_mobilize: "Збирати"
+ concept_mobilize_battalion_mobilizing: "Збір"
+ concept_mobilize_battalion_mobilized: "Зібрані"
+ concept_mobilize_battalion_mobilized_adj: "Зібран"
+ concept_mobilize_battalions_mobilized: "Зібрані батальйони"
+ concept_mobilize_battalion_mobilization: "Збір"
+ concept_mobilize_battalion_desc: "[Concept('concept_battalion', '$concept_battalions$')], які призначені до [Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized_adj$ого')|l] [Concept('concept_general', '$concept_general_gen$')|l] негайно почнуть збір зі швидкістю, яка залежить від [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l] [Concept('concept_state', '$concept_state_gen$')|l]. Зібрані та ті, що у процесі збору, [Concept('concept_battalion', '$concept_battalions$')|l] споживають більше [Concept('concept_military_good','$concept_military_goods_gen$')|l], але повністю готові йти у [Concept('concept_battle','$concept_battle_acc$')|l] за їхнім [Concept('concept_general','$concept_general_ins$')|l]."
 
- concept_fully_mobilized_battalions: "Повністю призвані батальйони"
- concept_fully_mobilized_battalions_gen: "Повністю призваних батальйонів"
- concept_fully_mobilized_battalions_desc:0 "A [Concept('concept_country','$concept_country_possessive$')] fully mobilized [Concept('concept_battalion','$concept_battalions$')] include all $concept_battalions$ that have already undergone [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilization$')] and are fully prepared to follow their [concept_general] into [concept_battle]."
+ concept_fully_mobilized_battalions: "Повністю зібрані батальйони"
+ concept_fully_mobilized_battalions_gen: "Повністю зібраних батальйонів"
+ concept_fully_mobilized_battalions_desc: "Повністю зібрані [Concept('concept_battalion','$concept_battalions$')|l] [Concept('concept_country','$concept_country_gen$')|l] - це усі батальйони, які вже пройшли [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilization$')|l] та повністю готові йти за своїм [Concept('concept_general','$concept_general_ins$')|l]."
 
  concept_available_battalions: "Доступні батальйони"
  concept_available_battalions_gen: "Доступних батальйонів"
- concept_available_battalions_desc:2 "A [Concept('concept_country','$concept_country_possessive$')] available [Concept('concept_battalion','$concept_battalions$')] include all $concept_battalions$ currently raised by [SelectLocalization(GetPlayer.IsValid,'concept_available_battalions_desc_added','barracks')] and/or [Concept('concept_conscription_center','$concept_conscription_centers$')]."
- concept_available_battalions_desc_added:0 "[GetBuildingType('building_barracks').GetName]"
+ concept_available_battalions_desc: "Доступні [Concept('concept_battalion','$concept_battalions$')|l] [Concept('concept_country','$concept_country_gen$')|l] - це $concept_battalions$, які наразі підняті [SelectLocalization(GetPlayer.IsValid,'будівлями','')|l] [SelectLocalization(GetPlayer.IsValid,'concept_available_battalions_desc_added','куренями')|l] та/або [Concept('concept_conscription_center','$concept_conscription_centers$')]."
+ concept_available_battalions_desc_added: "[GetBuildingType('building_barracks').GetName]"
 
- concept_potential_battalions: "Можебні батальйони"
- concept_potential_battalions_gen: "Можебних батальйонів"
- concept_potential_regulars:0 "Potential Regulars"
- concept_potential_conscripts:0 "Potential Conscripts"
+ concept_potential_battalions: "Можливі батальйони"
+ concept_potential_battalions_gen: "Можливих батальйонів"
+ concept_potential_regulars: "Можливі дійові"
+ concept_potential_conscripts: "Можливі призвані"
  concept_potential_battalions_desc:2 "A [Concept('concept_country','$concept_country_possessive$')] maximum potential [Concept('concept_battalion','$concept_battalions$')] is the sum of the its Potential Regular $concept_battalions$ and Potential [Concept('concept_conscript_battalion','$concept_conscript_battalions$')].\n\n#b Potential Regular $concept_battalions$#!: the number of $concept_battalions$ the $concept_country$'s currently constructed [SelectLocalization(GetPlayer.IsValid,'concept_potential_battalions_desc_added','barracks')] are able to support\n\n#b Potential $concept_conscript_battalions$#!: the number of $concept_conscript_battalions$ the $concept_country$'s [SelectLocalization(GetPlayer.IsValid,'concept_potential_battalions_desc_additional','conscription center')]s would create if [Concept('concept_conscription_center','$concept_conscription$')] had been activated across all [Concept('concept_state','$concept_states$')]"
  concept_potential_battalions_desc_added:0 "[GetBuildingType('building_barracks').GetName]"
  concept_potential_battalions_desc_additional:0 "[GetBuildingType('building_conscription_center').GetName]"
 
- concept_conscription_center: "Центр набору"
- concept_conscription_centers: "Центри набору"
- concept_conscription_centers_acc: "Центри набору"
- concept_conscription_center_conscription: "Набір"
- concept_conscripted:0 "Conscripted"
- concept_conscription: "Набір"
+ concept_conscription_center: "Осередок призви"
+ concept_conscription_centers: "Осередки призви"
+ concept_conscription_centers_acc: "Осередки призви"
+ concept_conscription_centers_ins: "Осередками призви"
+ concept_conscription_center_conscription: "Призва"
+ concept_conscripted: "Призван"
+ concept_conscription: "Призва"
  concept_conscription_center_desc:2 "When a [concept_state] is $concept_conscripted$ during a [concept_diplomatic_play] or [concept_war], a [SelectLocalization(GetPlayer.IsValid,'concept_conscription_center_desc_added','conscription center')] appears with a [concept_building_level] depending on its #v $modifier_state_conscription_rate_add$#! and $concept_state$ [Concept('concept_pop','$concept_population$')] size. This [concept_military_building] will recruit civilian [concept_workforce] into [Concept('concept_conscript_battalion','$concept_conscript_battalions$')] that will be automatically assigned to [Concept('concept_general','$concept_generals$')] in their [concept_hq] as they are raised.\n\nAfter the $concept_war$, all $concept_conscription_centers$ will deactivate and the $concept_conscript_battalions$ will disband. $concept_pops$ who return to civilian life are not guaranteed to return to their old [concept_profession] but must seek new employment opportunities."
  concept_conscription_center_desc_added:0 "[GetBuildingType('building_conscription_center').GetName]"
 
@@ -327,8 +330,8 @@
  concept_conscript_battalions_gen: "Призваних батальйонів"
  concept_conscript_battalion_short: "Призваний"
  concept_conscript_battalions_short: "Призвані"
- concept_conscript_battalion_drafting:0 "Drafting"
- concept_conscript_battalion_desc:4 "$concept_conscript_battalions$ are temporary [Concept('concept_battalion', '$concept_battalions$')] recruited and maintained from the civilian [Concept('concept_pop','$concept_population$')] by [Concept('concept_conscription_center','$concept_conscription_centers$')] activated during [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] or [Concept('concept_war','$concept_wars$')]."
+ concept_conscript_battalion_drafting: "Призва до війська"
+ concept_conscript_battalion_desc: "$concept_conscript_battalions$ - це тимчасові [Concept('concept_battalion', '$concept_battalions$')|l] набрані та поповнюються з цивільного [Concept('concept_pop','$concept_population_gen$')|l] [Concept('concept_conscription_center','$concept_conscription_centers_ins$')|l], що активізувалися під час [Concept('concept_diplomatic_play','$concept_diplomatic_plays_gen$')|l] або [Concept('concept_war','$concept_wars_gen$')|l]."
  
  concept_front: "Фронт"
  concept_front_gen: "Фронту"
@@ -363,6 +366,7 @@
  concept_battle_condition_desc:0 "During [Concept('concept_battle','$concept_battles$')] each side will be affected by a $concept_battle_condition$ that influences the outcome. Which $concept_battle_condition_short$ applies depends on a number of factors, which often includes the [Concept('concept_character_trait','$concept_character_traits$')] of the [Concept('concept_commander','$concept_commanders$')] in charge of that side."
 
  concept_battle: "Битва"
+ concept_battle_acc: "Битву"
  concept_battle_loc: "Битві"
  concept_battles: "Битви"
  concept_battles_gen: "Битв"
@@ -627,7 +631,7 @@
  concept_unincorporated_states: "Невключені реґіони"
  concept_unincorporated_states_loc: "Невключених реґіонах"
  concept_unincorporated_state_desc:2 "A [concept_state] that is within a [Concept('concept_country','$concept_country_possessive$')] domain, but considered a territorial holding or frontier beyond the reach of [Concept('concept_institution','$concept_institutions$')] and [concept_government]. [Concept('concept_pop', '$concept_pops$')] who live in $concept_unincorporated_states$ are disenfranchised and do not contribute much [concept_political_strength] to their [Concept('concept_interest_group', '$concept_interest_groups$')], nor can they [Concept('concept_votes','$concept_vote$')] in [Concept('concept_election','$concept_elections$')]. On the upside (for them) they are exempt from [Concept('concept_taxes','$concept_taxation$')].\n\n$concept_unincorporated_states$ do not cost [concept_bureaucracy] to maintain, as $concept_taxes$ are not collected and $concept_institutions$ do not provide any benefits there. $concept_unincorporated_states$ can be [Concept('concept_incorporated_state','$concept_incorporated$')], which will put it under the direct management of the [Concept('concept_country','$concept_country_possessive$')] central authority.[AddLocalizationIf(GetPlayer.IsValid,'concept_unincorporated_state_desc_added')]"
- concept_unincorporated_state_desc_added:0 "\n$concept_unincorporated_states$ are subject to the following effects:\n[GetStaticModifier('unincorporated_state').GetDesc]#!"
+ concept_unincorporated_state_desc_added:0 "\n\n$concept_unincorporated_states$ are subject to the following effects:\n[GetStaticModifier('unincorporated_state').GetDesc]#!"
 
  concept_decentralized_power: "Децентралізована держава"
  concept_decentralized_nation: "Децентралізовані нація"
@@ -688,9 +692,11 @@
  concept_politically_inactive_involved_desc:3 "The part of a [concept_pop] that does not support an [concept_interest_group] is called #b $concept_politically_inactive$#!. This is often due to low [concept_literacy] or [concept_sol]. $concept_politically_inactive$ parts of $concept_pops$ do not participate in the political process and any [concept_political_strength] they possess is wasted.\n\nThe opposite of this is #b Politically Involved#!. Which means the $concept_pop$ is part of one of your [Concept('concept_country', '$concept_country_possessive$')] [Concept('concept_interest_group', '$concept_interest_groups$')] and the $concept_pop$'s $concept_political_strength$ is attributed to that $concept_interest_group$."
  
  concept_investment_level: "Рівень розвитку"
+ concept_investment_level_acc: "Рівень розвитку"
  concept_investment_levels: "Рівні розвитку"
+ concept_investment_levels_gen: "Рівнів розвитку"
  concept_investment_level_desc:4 "The current level of an [concept_institution]. Each level costs an amount of [concept_bureaucracy] depending on the [Concept('concept_pop','$concept_population$')] size of your [Concept('concept_incorporated_state','$concept_incorporated_states$')], and its effects scale with the level.[AddLocalizationIf(GetPlayer.IsValid,'concept_investment_level_ingame_added')]"
- concept_investment_level_ingame_added:0 "\n\nYou currently pay @bur! [GetPlayer.GetInstitutionInvestmentBureaucracyCost|v0] [concept_bureaucracy] for [GetPlayer.GetInstitutionInvestment|v0] $concept_investment_levels$, or @bur! [GetPlayer.GetInstitutionInvestmentBureaucracyFactor] [concept_bureaucracy] per level."
+ concept_investment_level_ingame_added:0 "\n\nYou currently pay @bur! #v [Multiply_CFixedPoint(GetPlayer.GetInstitutionInvestmentBureaucracyCost,'(CFixedPoint)-1')|0+]#! [concept_bureaucracy] for [GetPlayer.GetInstitutionInvestment|v0] $concept_investment_levels$, or @bur! #v [GetPlayer.GetInstitutionInvestmentBureaucracyFactor|+0]#! [concept_bureaucracy] per level."
 
  concept_production_lens: "Сочка виробництва"
  concept_production_lens_desc:1 "View [Concept('concept_state','$concept_states$')] and construct [concept_good_production] [Concept('concept_building','$concept_buildings$')]."
@@ -813,7 +819,7 @@
  
  concept_government_ownership_share: "Урядова частка"
  concept_government_ownership_shares: "Урядові частки"
- concept_government_ownership_share_desc:0 "A [concept_building] with $concept_government_ownership_shares$ pays a portion of its [Concept('concept_building_balance','$concept_building_balance_profit$')] directly into the [Concept('concept_country','$concept_country_possessive$')] [concept_treasury]. The amount paid is based on the number of $concept_government_ownership_shares$ compared to shares held by [Concept('concept_pop','$concept_pops$')]. No [concept_interest] is paid on [concept_loans] against [concept_cash_reserves] held by $government_ownership_shares$."
+ concept_government_ownership_share_desc:0 "A [concept_building] with $concept_government_ownership_shares$ pays a portion of its [Concept('concept_building_balance','$concept_building_balance_profit$')] directly into the [Concept('concept_country','$concept_country_possessive$')] [concept_treasury]. The amount paid is based on the number of $concept_government_ownership_shares$ compared to shares held by [Concept('concept_pop','$concept_pops$')]. No [concept_interest] is paid on [concept_loans] against [concept_cash_reserves] held by $concept_government_ownership_shares$."
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MAY 3, 2022
 
@@ -1417,6 +1423,7 @@
 
  concept_military_good: "Військовий товар"
  concept_military_goods: "Військові товари"
+ concept_military_goods_gen: "Військових товарів"
  concept_military_good_desc:1 "[Concept('concept_good', '$concept_goods$')], які [Concept('concept_good_consumption','споживаються')|l] [Concept('concept_military_building', '$concept_military_buildings_ins$')|l] за рахунок [Concept('concept_treasury', 'бюджетних')] коштів."
 
  concept_state: "Реґіон"
@@ -2122,3 +2129,15 @@
  concept_sea_node:0 "Sea Node"
  concept_sea_nodes:0 "Sea Nodes"
  concept_sea_node_desc:0 "An intersection or point along a naval [concept_shipping_lane] representing a part of the ocean. $concept_shipping_lanes$ always take the route between two coastal [Concept('concept_state','$concept_states$')] that pass through the fewest number of $concept_sea_nodes$. Each additional $concept_sea_node$ beyond the first adds #v [GetDefine('NEconomy','SHIPPING_LANE_CONVOY_COST_SCALING')|=-%0]#! to the [concept_convoy_cost]."
+
+ concept_message_settings_feed: "Стрічка"
+ concept_message_settings_feed_desc: "Сповіщення будуть відображатися в хронологічному порядку у стрічці в правому нижньому куті екрана."
+ 
+ concept_message_settings_toast: "Тост"
+ concept_message_settings_toast_desc: "Сповіщення будуть відображатися по одному посередині екрана."
+ 
+ concept_message_settings_popup: "Виринач"
+ concept_message_settings_popup_desc: "Прилаштовані сповіщення будуть відображатися посередині екрана та мають бути закриті вручну. Ця опція доступна, тільки якщо у типі сповіщень вказано прилаштований виринач."
+ 
+ concept_message_settings_none: "Немає"
+ concept_message_settings_none_desc: "Сповіщення не будуть відображатися ніде в інтерфейсі користувача."
