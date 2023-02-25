@@ -64,7 +64,7 @@
  gov_bey: "Бейлік"
  gov_bey_desc: "Це [concept_government_type|l], де [Concept('concept_ruler','$RULER_TITLE_BEY$')|l] керує [Concept('concept_country','$concept_country_ins$')|l].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_caliphate: "Халіфат"
- gov_caliphate_desc: "Це [concept_government_type|l], де [concept_country|l] керує глава духівництва.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_caliphate_desc: "Це [concept_government_type|l], де [Concept('concept_country','$concept_country_ins$')|l] керує голова духівництва.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_sharif: "Шаріфат"
  gov_sharif_desc: "Це [concept_government_type|l], де [Concept('concept_ruler','$RULER_TITLE_SHARIF$')|l] керує [Concept('concept_country','$concept_country_ins$')|l].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_kaiser: "Кайзеррайх"
