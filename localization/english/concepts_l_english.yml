@@ -50,6 +50,7 @@
  concept_great_power: "Велика держава"
  concept_great_power_ins: "Великою державою"
  concept_great_powers: "Великі держави"
+ concept_great_powers_gen: "Великих держав"
  concept_great_power_desc:3 "Those few [Concept('concept_country', '$concept_countries$')] that run the world through global empires or absolute local dominance are considered to be $concept_great_power$ [concept_rank]. They are in a constant standoff with other $concept_great_powers$ for an edge, and always wary of plucky [Concept('concept_major_power','$concept_major_powers$')] trying to ascend to greatness at their expense.[AddLocalizationIf(GetPlayer.IsValid,'concept_great_power_desc_added')]"
  concept_great_power_desc_added:0 "\n\n$concept_great_powers$ gain the following benefits:\n[GetRankModifier('great_power').GetDesc]"
  
@@ -97,8 +98,8 @@
  concept_personal_union_dat: "Особистій унії"
  concept_personal_union_acc: "Особисту унію"
  concept_personal_union_short: "Унія"
- concept_personal_union_desc:4 "Two [Concept('concept_country', '$concept_countries$')] with the [SelectLocalization(GetPlayer.IsValid,'concept_personal_union_desc_added','Monarchy')] [concept_law] may be joined together in a $concept_personal_union$, a [concept_subject] relationship where the [Concept('concept_overlord','$concept_overlord_possessive$')] [concept_ruler] is the [concept_head_of_state] in both $concept_countries$. The subject cannot start their own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')], yet are forced to join their $concept_overlord$'s [Concept('concept_war','$concept_wars$')]. The [concept_diplomatic_pact] will break if the $concept_overlord$ abolishes the $law_monarchy$."
- concept_personal_union_desc_added:0 "[GetLawType('law_monarchy').GetName]"
+ concept_personal_union_desc: "Дві [Concept('concept_country', '$concept_countries$')|l] з [Concept('concept_law', '$concept_law_ins$')|l] «[SelectLocalization(GetPlayer.IsValid,'concept_personal_union_desc_added','Монархія')]» можуть об’єднатися у особисту унію. Це тип [Concept('concept_subject','$concept_subject_gen$')|l], де [concept_ruler|l] [Concept('concept_overlord','$concept_overlord_gen$')|l] - [concept_head_of_state|l] в обох країнах. Підвладний не може починати [Concept('concept_diplomatic_play','$concept_diplomatic_plays_acc$')|l], але змушений приєднюватися до [Concept('concept_war','$concept_wars_gen$')|l] [Concept('concept_overlord','$concept_overlord_gen$')|l]. [concept_diplomatic_pact] розірветься, якщо повелитель скасує монархію."
+ concept_personal_union_desc_added: "[GetLawType('law_monarchy').GetName]"
 
  concept_dominion: "Домініон"
  concept_dominion_desc: "[Concept('concept_recognized_power','$concept_recognized_powers$')] можуть перетворити слабшу [Concept('concept_country','країну')] у свого домініона. Домініон - це більш самостійний тип [Concept('concept_subject','$concept_subject_gen$')|l], який може починати власні [Concept('concept_diplomatic_play','$concept_diplomatic_plays_acc$')|l] і не змушений приєднюватися до [Concept('concept_war','$concept_wars_gen$')|l] [Concept('concept_overlord','$concept_overlord_gen$')|l]. Проте він повинен щотижня платити #v 25%#! від своїх доходів зі [Concept('concept_treasury','$concept_treasury_gen$')|l] повелителю."
@@ -1957,7 +1958,7 @@
  concept_character_role_desc:2 "$concept_character_roles$ determine what areas of your [concept_country] a particular [concept_character] has influence over. A $concept_character$ can have one or several $concept_character_roles$.\n\nThe list of $concept_character_roles$ are:\n[concept_ruler] (usually also a [concept_politician])\n[concept_heir]\n[concept_politician]\n[concept_general]\n[concept_admiral]"
 
  concept_treasury: "Скарбівниця"
- concept_treasury_gen: "Скарбівниця"
+ concept_treasury_gen: "Скарбівниці"
  concept_treasury_possessive:0 "Treasury\\'s"
  concept_treasury_desc:1 "The $concept_treasury$ keeps track of your [Concept('concept_country','$concept_country_possessive$')] assets. Each week your budget balance will result in the $concept_treasury$ taking out more [concept_loans] to cover a [concept_money] deficit, or depositing $concept_money$ into the [concept_gold_reserves]."
 
