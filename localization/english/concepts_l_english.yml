@@ -368,6 +368,7 @@
  concept_battle_condition_desc:0 "During [Concept('concept_battle','$concept_battles$')] each side will be affected by a $concept_battle_condition$ that influences the outcome. Which $concept_battle_condition_short$ applies depends on a number of factors, which often includes the [Concept('concept_character_trait','$concept_character_traits$')] of the [Concept('concept_commander','$concept_commanders$')] in charge of that side."
 
  concept_battle: "Битва"
+ concept_battle_gen: "Битви"
  concept_battle_acc: "Битву"
  concept_battle_loc: "Битві"
  concept_battles: "Битви"
@@ -813,7 +814,7 @@
  concept_legitimacy_gen: "Законности"
  concept_legitimacy_acc: "Законність"
  concept_legitimate: "Законний"
- concept_legitimacy_desc:1 "A [Concept('concept_government','$concept_government_possessive$')] $concept_legitimacy$ measures how well the composition of the [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_government] fits with the [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_law', '$concept_laws$')]. The lower the $concept_legitimacy$, the longer the time between attempts to [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enact$')] new $concept_laws$. Raising or lowering [concept_taxes] also has an impact on $concept_legitimacy$."
+ concept_legitimacy_desc: "Законність [Concept('concept_government','$concept_government_gen$')|l] вимірює, наскільки [Concept('concept_interest_group','$concept_interest_groups$')|l] [concept_in_government|l] відповідають [Concept('concept_law', '$concept_laws_dat$')|l] [Concept('concept_country','$concept_country_gen$')|l]. Чим нижча законність, тим довший проміжок часу між спробами [Concept('concept_enactment_of_laws','надання чинности')] новим законам. Збільшення або зменшення [Concept('concept_taxes','$concept_taxes_gen$')|l] також впливають на законність."
 
  concept_market_capital: "Столиця ринку"
  concept_market_capital_gen: "Столиці ринку"
@@ -1296,13 +1297,13 @@
  concept_war_goal_short: "Ціль"
  concept_war_goal_desc:2 "$concept_war_goals$ are the objectives a [concept_country] is fighting a [concept_war] over. They are determined during the [concept_diplomatic_play] and are fixed after the $concept_war$ has begun. Each $concept_war_goal$ claimed in a [concept_peace_deal] decreases the chance the opponent will accept it, and increases the degree by which their [concept_war_support] must be [Concept('concept_war_exhaustion','$concept_war_exhaustion_exhausted$')] before they will agree.\n\nThe first $concept_war_goal$ claimed as part of the $concept_diplomatic_play$ is considered your $concept_war_goal_primary$, and some $concept_diplomatic_plays$ require it to be included in all $concept_peace_deals$."
  
- concept_primary_demand: "Основна ціль"
+ concept_primary_demand: "Основна вимога"
  concept_primary_demand_short: "Основна"
- concept_primary_demands: "Основні цілі"
+ concept_primary_demands: "Основні вимоги"
  concept_primary_demand_desc: "$concept_primary_demands$ are [Concept('concept_war_goal','$concept_war_goals$')] that will be enforced on the opposing side of a [concept_diplomatic_play] if they decide to back down. The first [concept_war_goal] added on each side is always a $concept_primary_demand$, as are any [Concept('concept_war_goal','$concept_war_goals$')] added against the leader of the opposing side through [Concept('concept_sway','$concept_swaying$')]."
  
- concept_secondary_demand: "Другорядна ціль"
- concept_secondary_demands: "Другорядні цілі"
+ concept_secondary_demand: "Другорядна вимога"
+ concept_secondary_demands: "Другорядні вимоги"
  concept_secondary_demand_desc: "$concept_secondary_demands$ are [Concept('concept_war_goal','$concept_war_goals$')] that will NOT be enforced in a [concept_diplomatic_play] if they decide to back down, but can be taken in a [concept_peace_deal] or through capitulation if the play escalates into a [concept_war]. A $concept_secondary_demand$ that is targeting the leader of the opposing side can be turned into a $concept_primary_demand$ by spending [concept_diplomatic_maneuvers], though doing so might result in a [concept_diplomatic_incident]."
 
  concept_resource_potential: "Ресурсна мічність"
@@ -1572,7 +1573,7 @@
  concept_pop_income_expenses_short: "Витрати"
  concept_pop_income_desc:0 "At the end of each week, [Concept('concept_pop','$concept_pops$')] receive an $concept_pop_income_short$ based on the size of their [concept_workforce] and the current [concept_building_wage] offered to them, plus the size of their [concept_dependents] and the amount of [concept_dependent_income] they collect. This $concept_pop_income_short$ is spent on [concept_pop_needs] which impact the $concept_pop$'s [concept_wealth]."
 
- concept_dependent_income:0 "Dependent Income"
+ concept_dependent_income: "Прибуток утриманців"
  concept_dependent_income_desc:1 "At the end of each week, [Concept('concept_pop','$concept_pops$')] receive a $concept_dependent_income$ based on their number of [concept_dependents] and the amount of income they qualify for. Most $concept_dependents$ receive a base amount from odd jobs depending on the $concept_pop$'s [concept_profession], which can be supplemented by the [SelectLocalization(GetPlayer.IsValid,'concept_dependent_income_desc_added','Social Security')] [concept_institution]."
  concept_dependent_income_desc_added:0 "[GetInstitutionType('institution_social_security').GetName]"
 
@@ -1596,9 +1597,9 @@
  concept_technology_spread_dat: "Поширенню технології"
  concept_technology_spread_desc:2 "One [concept_technology] that you have not yet acquired from each category ($PRODUCTION_NO_CONCEPT$, $MILITARY$, and $SOCIETY$) is always spreading to you from [Concept('concept_country','$concept_countries$')] that have acquired them. The progress you get in spreading $concept_technologies$ is randomized each week around a base value depending on your $concept_country$'s [concept_literacy]. If no $concept_country$ has invented a certain $concept_technology$ yet it cannot spread to you, so you are more likely to acquire early [Concept('concept_technology_era','$concept_technology_era_short$')] $concept_technologies$ from $concept_technology_spread$ than later ones."
 
- concept_technology_era:0 "Technology Era"
- concept_technology_era_short:0 "Era"
- concept_technology_eras_short:0 "Eras"
+ concept_technology_era: "Технологічна ера"
+ concept_technology_era_short: "Ера"
+ concept_technology_eras_short: "Ери"
  concept_technology_era_ahead_of_time_penalty_desc:0 "If you have not yet acquired all $concept_technologies$ from previous $concept_technology_eras_short$, the amount required will increase further."
  concept_technology_era_desc:1 "[concept_technology] $concept_technology_eras_short$ are a rough classification of which time period a certain idea was first discovered or developed.\n\n$concept_technology_era_short$ I inventions were well-known in many parts of the world prior to 1836.\n$concept_technology_era_short$ II inventions are associated with the First Industrial Revolution (1836 to mid-19th century).\n$concept_technology_era_short$ III is a period of evolution, stabilization, and standardization that runs until late 19th century.\n$concept_technology_era_short$ IV corresponds with the Second Industrial Revolution around the turn of the century.\n$concept_technology_era_short$ V inventions are transformative, modern ideas.\n\n$concept_technologies$ require more [concept_innovation] to discover the later $concept_technology_era_short$ it appears in. $concept_technology_era_ahead_of_time_penalty_desc$"
 
@@ -1731,7 +1732,7 @@
  concept_budget_goods_for_government_buildings_desc:1 "[Concept('concept_good','$concept_goods$')] [Concept('concept_good_consumption','$concept_good_consumed$')] by a [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_government_building','$concept_government_buildings$')]."
 
  concept_budget_government_slaves: "Урядові раби"
- concept_budget_government_slaves_desc:2 "The upkeep of [Concept('concept_slavery','$concept_slaves$')] laboring directly for a [Concept('concept_country','$concept_country_possessive$')] government."
+ concept_budget_government_slaves_desc: "Утримання [Concept('concept_slavery','$concept_slaves_gen$')|l], які працюють безпосередньо на уряд [Concept('concept_country','$concept_country_gen$')|l]."
 
  concept_budget_military_wages: "Військові зарплати"
  concept_budget_military_wages_desc:1 "[Concept('concept_building_wage','$concept_building_wages$')] paid to [Concept('concept_pop','$concept_pops$')] by [Concept('concept_military_building','$concept_military_buildings$')]. The rate is based on the [Concept('concept_country','$concept_country_possessive$')] [concept_normal_wage]. You can adjust it up and down in the $BUDGET_PANEL_TITLE$ panel."
@@ -1748,8 +1749,8 @@
  concept_slavery_desc:3 "A practice where one person is permitted legal ownership over another. [SelectLocalization(GetPlayer.IsValid,'concept_slavery_desc_added', 'Slaves')] will be substituted for other [Concept('concept_pop','$concept_pops$')] in different [concept_building] types based on the [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_law','$concept_laws$')]. $concept_laws$ also determine how existing $concept_pops$ become $concept_enslaved$ and how $concept_slaves$ are uprooted and transported to the $concept_country$."
  concept_slavery_desc_added:0 "[GetPopType('slaves').GetName]"
 
- concept_budget_military_slaves:0 "Military Slaves"
- concept_budget_military_slaves_desc:3 "The upkeep of [Concept('concept_slavery','$concept_slaves$')] in the service of a [Concept('concept_country','$concept_country_possessive$')] military."
+ concept_budget_military_slaves: "Військові раби"
+ concept_budget_military_slaves_desc: "Утримання [Concept('concept_slavery','$concept_slaves_gen$')|l] на військовій службі [Concept('concept_country','$concept_country_gen$')|l]."
 
  concept_good_production: "Виробництво"
  concept_good_production_adj: "Виробнич"
@@ -1933,17 +1934,20 @@
 
  concept_dead: "Мертві"
  concept_dead_adj: "Мертв"
- concept_dead_desc:2 "[concept_casualties] that end up $concept_dead$ due to [concept_battle] or [concept_attrition]."
+ concept_dead_desc: "[concept_casualties], які закінчуються смертю в результаті [Concept('concept_battle','$concept_battle_gen$')|l] або [Concept('concept_attrition','$concept_attrition_gen$')|l]."
 
  concept_wounded: "Поранені"
  concept_wounded_adj: "Поранен"
  concept_wounded_desc:2 "[concept_casualties] that are merely $concept_wounded$ in [concept_battle] or due to [concept_attrition]. Some $concept_wounded$ $concept_casualties$ recover and return to active service after some time, while others end up as [concept_dependents] of other [Concept('concept_pop','$concept_pops$')] in your [concept_country]."
 
  concept_attrition: "Виснаження"
+ concept_attrition_gen: "Виснаження"
  concept_attrition_acc: "Виснаження"
  concept_attrition_desc:2 "[concept_casualties] inflicted on [concept_manpower] outside of [concept_battle] is referred to as $concept_attrition$. It is frequently experienced when [Concept('concept_battalion','$concept_battalions$')] are [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilized$')] and can be the result of disease, accidents, exposure, or even desertion. $concept_attrition$ can be counteracted with using military $pmg_medical_aid$ [Concept('concept_production_method','$concept_production_methods$')]."
 
  concept_ruler: "Правитель"
+ concept_ruler_gen: "Правителя"
+ concept_ruler_acc: "Правителя"
  concept_rulers_ins: "Правителем"
  concept_rulers: "Правителі"
  concept_ruler_possessive:1 "Ruler\\'s"
@@ -1951,9 +1955,12 @@
 
  concept_heir: "Спадкоємець"
  concept_heir_gen: "Спадкоємця"
- concept_heir_desc:2 "The $concept_heir$ of a [concept_country] is a [concept_character]. They will take over the [concept_character_role] of [concept_ruler] upon the current $concept_ruler$'s death."
+ concept_heir_desc:2 "Спадкоємець [Concept('concept_country','$concept_country_gen$')|l] - це [concept_character|l], який перебирає на себе [Concept('concept_character_role','$concept_character_role_acc$')|l] [Concept('concept_ruler','$concept_ruler_gen$')|l] після смерти чинного."
 
  concept_character_role: "Роля"
+ concept_character_role_gen: "Ролі"
+ concept_character_role_dat: "Ролі"
+ concept_character_role_acc: "Ролю"
  concept_character_roles: "Ролі"
  concept_character_role_desc:2 "$concept_character_roles$ determine what areas of your [concept_country] a particular [concept_character] has influence over. A $concept_character$ can have one or several $concept_character_roles$.\n\nThe list of $concept_character_roles$ are:\n[concept_ruler] (usually also a [concept_politician])\n[concept_heir]\n[concept_politician]\n[concept_general]\n[concept_admiral]"
 
@@ -1993,7 +2000,7 @@
 
  concept_government_type: "Тип уряду"
  concept_government_types: "Типи уряду"
- concept_government_type_transfer_of_power:0 "Transfer of Power"
+ concept_government_type_transfer_of_power: "Передача влади"
  concept_government_type_desc:1 "A [Concept('concept_country','$concept_country_possessive$')] $concept_government_type$ is determined by its [Concept('concept_law','$concept_laws$')] and determines its $concept_government_type_transfer_of_power$, meaning who serves as its [concept_head_of_state].[AddLocalizationIf(GetPlayer.IsValid,'concept_government_type_ingame_added')]"
  concept_government_type_ingame_added:2 "\n\nThe $concept_government_type$ in [GetPlayer.GetNameNoFlag] is [GetPlayer.GetGovernment.GetName], for the following reasons:\n[GetPlayer.GetGovernment.GetPossibleTriggerDesc(AccessPlayer)]\n[GetPlayer.GetGovernment.GetDesc]"
 
