@@ -306,7 +306,7 @@
 
  concept_potential_battalions: "Можливі батальйони"
  concept_potential_battalions_gen: "Можливих батальйонів"
- concept_potential_regulars: "Можливі дійові"
+ concept_potential_regulars: "Можливі постійні"
  concept_potential_conscripts: "Можливі призвані"
  concept_potential_battalions_desc:2 "A [Concept('concept_country','$concept_country_possessive$')] maximum potential [Concept('concept_battalion','$concept_battalions$')] is the sum of the its Potential Regular $concept_battalions$ and Potential [Concept('concept_conscript_battalion','$concept_conscript_battalions$')].\n\n#b Potential Regular $concept_battalions$#!: the number of $concept_battalions$ the $concept_country$'s currently constructed [SelectLocalization(GetPlayer.IsValid,'concept_potential_battalions_desc_added','barracks')] are able to support\n\n#b Potential $concept_conscript_battalions$#!: the number of $concept_conscript_battalions$ the $concept_country$'s [SelectLocalization(GetPlayer.IsValid,'concept_potential_battalions_desc_additional','conscription center')]s would create if [Concept('concept_conscription_center','$concept_conscription$')] had been activated across all [Concept('concept_state','$concept_states$')]"
  concept_potential_battalions_desc_added:0 "[GetBuildingType('building_barracks').GetName]"
@@ -1544,7 +1544,7 @@
  concept_accepted_religion: "Прийнята релігія"
  concept_accepted_religions: "Прийняті релігії"
  concept_accepted_religion_short: "Прийнята"
- concept_accepted_religion_desc:2 "A [Concept('concept_country','$concept_country_possessive$')] $concept_accepted_religions$ consists of its [concept_state_religion], plus any other [Concept('concept_religion','$concept_religions$')] considered $concept_accepted_religion_short$ due to the $concept_country$'s current [SelectLocalization(GetPlayer.IsValid,'concept_accepted_religion_desc_added','Church and State')] [concept_law]."
+ concept_accepted_religion_desc: "A [Concept('concept_country','$concept_country_possessive$')] $concept_accepted_religions$ consists of its [concept_state_religion], plus any other [Concept('concept_religion','$concept_religions$')] considered $concept_accepted_religion_short$ due to the $concept_country$'s current [SelectLocalization(GetPlayer.IsValid,'concept_accepted_religion_desc_added','Church and State')] [concept_law]."
  concept_accepted_religion_desc_added:0 "[GetLawType('law_state_religion').GetGroup.GetName]"
 
  concept_state_religion: "Державна релігія"

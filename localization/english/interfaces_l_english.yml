@@ -631,10 +631,10 @@
  PANEL_MILITARY_ARMY_CURRENT_CONSCRIPTS: "@battalions![Country.GetConscriptedBattalions|0v]/[Country.CalcConscriptableBattalions|0]"
  PANEL_MILITARY_ARMY_CURRENT_BATTALIONS: "@battalions![Country.GetBattalions|0v]"
  PANEL_MILITARY_NATIVE_POTENTIAL_BATTALIONS_TOOLTIP: "Коли висока [Concept('concept_tension', '$concept_tension$')|l] спричинить [Concept('concept_native_uprising','$concept_native_uprising_acc$')|l], то [Country.GetName] зможе розгорнути @battalions![Country.CalcConscriptableBattalions|0] [SelectLocalization(GreaterThan_int32(Country.CalcConscriptableBattalions, '(int32)1'),SelectLocalization(GreaterThan_int32(Country.CalcConscriptableBattalions, '(int32)4'),Concept('concept_battalion', '$concept_battalions_gen$'),Concept('concept_battalion', '$concept_battalions$')),Concept('concept_battalion', '$concept_battalion$'))|l] воїнів."
- PANEL_MILITARY_ARMY_OVERVIEW_TOOLTIP: "#header [Country.GetAdjective]і [Concept('concept_battalion', '$concept_battalions$')|l] та [Concept('concept_conscript_battalion','$concept_conscript_battalions$')|l]#!\n$TOOLTIP_DELIMITER$\n[Country.GetName] наразі має @battalions!#tooltippable #tooltip:[Country.GetTooltipTag],PANEL_MILITARY_ARMY_CURRENT_BATTALIONS_TOOLTIP  [Country.GetRegularBattalions|v]#!#! регулярних [Concept('concept_battalion', '$concept_battalions_gen$')|l] та може вирости на @battalions!#tooltippable #tooltip:[Country.GetTooltipTag],PANEL_MILITARY_ARMY_CURRENT_CONSCRIPTS_TOOLTIP [Country.CalcConscriptableBattalions|v]#!#! [Concept('concept_conscript_battalion','$concept_conscript_battalions_gen$')|l]\n$PANEL_MILITARY_ARMY_POWER_PROJECTION$"
+ PANEL_MILITARY_ARMY_OVERVIEW_TOOLTIP: "#header [Country.GetAdjective]і [Concept('concept_battalion', '$concept_battalions$')|l] та [Concept('concept_conscript_battalion','$concept_conscript_battalions$')|l]#!\n$TOOLTIP_DELIMITER$\n[Country.GetName] наразі має @battalions!#tooltippable #tooltip:[Country.GetTooltipTag],PANEL_MILITARY_ARMY_CURRENT_BATTALIONS_TOOLTIP  [Country.GetRegularBattalions|v]#!#! постійних [Concept('concept_battalion', '$concept_battalions_gen$')|l] та може вирости на @battalions!#tooltippable #tooltip:[Country.GetTooltipTag],PANEL_MILITARY_ARMY_CURRENT_CONSCRIPTS_TOOLTIP [Country.CalcConscriptableBattalions|v]#!#! [Concept('concept_conscript_battalion','$concept_conscript_battalions_gen$')|l]\n$PANEL_MILITARY_ARMY_POWER_PROJECTION$"
  PANEL_MILITARY_ARMY_CURRENT_BATTALIONS_TOOLTIP: "#header Загальна кількість [Concept('concept_battalion', '$concept_battalions_gen$')|l]: [Country.GetBattalions|v]#!\n$TOOLTIP_DELIMITER$\n[Country.GetBattalionsDesc]\n[Country.GetBattalionsBreakdown]"
  PANEL_MILITARY_ARMY_CURRENT_CONSCRIPTS_TOOLTIP:2 "#header Total amount of [Concept('concept_conscript_battalion','$concept_conscript_battalions$')]: [Country.CalcConscriptableBattalions|v]#!\n$TOOLTIP_DELIMITER$\n[Country.GetConscriptsDesc]\n\n[Country.GetConscriptsBreakdown]"
- PANEL_MILITARY_ARMY_CURRENT_REGULARS_TOOLTIP:1 "#header Total amount of Regular [Concept('concept_battalion','$concept_battalions$')]#!\n$TOOLTIP_DELIMITER$\n[Country.GetRegularsDesc]\n\n[Country.GetRegularsBreakdown]"
+ PANEL_MILITARY_ARMY_CURRENT_REGULARS_TOOLTIP: "#header Загальна кількість постійних [Concept('concept_battalion','$concept_battalions_gen$')|l]#!\n$TOOLTIP_DELIMITER$\n[Country.GetRegularsDesc]\n\n[Country.GetRegularsBreakdown]"
  PANEL_MILITARY_ARMY_CURRENT_TOTAL_BATTALIONS_DESC: "$COUNTRY$ наразі має @battalions!$BATTALIONS|v$ [Country.GetBattalionsRanking]\n$PANEL_MILITARY_ARMY_POWER_PROJECTION$\n\nВони можуть виставити вцілому $POTENTIAL|v$ [Concept('concept_potential_battalions','$concept_potential_battalions_gen$')|l]"
  PANEL_MILITARY_ARMY_CURRENT_CONSCRIPTS_DESC:1 "$COUNTRY$ has raised @battalions!$CONSCRIPTS|v$ Conscripts out of their maximum of $POTENTIAL|v$ [Concept('concept_potential_battalions','$concept_potential_conscripts$')]."
  PANEL_MILITARY_ARMY_CURRENT_REGULARS_DESC:1 "$COUNTRY$ currently has @battalions!$REGULAR_BATTALIONS|v$ out of their maximum of $POTENTIAL|v$ [Concept('concept_potential_battalions','$concept_potential_regulars$')]."
@@ -909,10 +909,10 @@
  commander_status_attacking_in_battle:0 "Is Attacking in the [Character.GetBattle.GetName|v] on the [Character.GetBattle.GetFront.GetName]"
  commander_status_defending_in_battle:0 "Is Defending in the [Character.GetBattle.GetName|v] on the [Character.GetBattle.GetFront.GetName]"
 
- troop_name_regular: "Регулярні війська"
+ troop_name_regular: "Постійні війська"
  troop_name_conscript: "Призвані війська"
 
- combat_unit_regular: "Регулярні"
+ combat_unit_regular: "Постійні"
  combat_unit_conscript: "Призвані"
  combat_unit_flotilla: "Флотилія"
  
@@ -1866,11 +1866,11 @@
  STATE_PANEL_INFRASTRUCTURE_USAGE_DESC: "#header [concept_infrastructure_usage]#!\n[concept_infrastructure_usage] у [Concept('concept_state', '$concept_state_loc$')|l] [State.GetName]: #v [Multiply_CFixedPoint(State.GetInfrastructureUsage,'(CFixedPoint)-1')|0+]#!\n$TOOLTIP_DELIMITER$\n[State.GetInfrastructureUsageDesc]"
  STATE_TRAIT_STATE_MODIFIER: "Змінювачі:"
  STATE_TRAIT_STATE_REGION_MODIFIER: "Змінювачі реґіону"
- BUILDING_PROGRESS_TOOLTIP:1 "#header [Building.GetName]#!\nПоступ будівництва: #VARIABLE [Building.GetConstructionProgressPercentage|%]#!\nЩотижневе [Concept('concept_construction', '$concept_construction$')|l]: #v #tooltippable #tooltip:[Building.GetTooltipTag],CONSTRUCTION_SPEED_TOOLTIP [Building.GetConstructionSpeedPerWeek|2]#!#!#!\nДо завершення будівництва: #VARIABLE [Building.GetConstructionRemainingWeeksDesc]#!"
+ BUILDING_PROGRESS_TOOLTIP: "#header [Building.GetName]#!\nПоступ будівництва: #VARIABLE [Building.GetConstructionProgressPercentage|%]#!\nЩотижневе [Concept('concept_construction', '$concept_construction$')|l]: #v #tooltippable #tooltip:[Building.GetTooltipTag],CONSTRUCTION_SPEED_TOOLTIP [Building.GetConstructionSpeedPerWeek|2]#!#!#!\nДо завершення будівництва: #VARIABLE [Building.GetConstructionRemainingWeeksDesc]#!"
  BUILDING_PROGRESS_TOOLTIP_QUEUED:0 "#header [Building.GetName]#!\nIn Construction Queue in [Country.GetName]"
  
- INFRASTRUCTURE_FROM_STATE:0 "$VALUE|+=1$ from [concept_state]\n$BREAKDOWN$"
- INFRASTRUCTURE_FROM_POPS:2 "$VALUE|+=1$ from [Concept('concept_pop', '$concept_pops$')]\n$BREAKDOWN$[ConcatIfNeitherEmpty('\n','$CAP_BREAKDOWN$')]"
+ INFRASTRUCTURE_FROM_STATE: "$VALUE|+=1$ завдяки [Concept('concept_state', '$concept_state_dat$')|l]\n$BREAKDOWN$"
+ INFRASTRUCTURE_FROM_POPS: "$VALUE|+=1$ завдяки [Concept('concept_pop', '$concept_pops_dat$')|l]\n$BREAKDOWN$[ConcatIfNeitherEmpty('\n','$CAP_BREAKDOWN$')]"
  INFRASTRUCTURE_FROM_POPS_CAPPED:2 "$VALUE|+=1$ (capped at maximum value of $CAP|1v$)"
 
  NEXT_PAGE: "Наступна сторінка"
@@ -2757,8 +2757,8 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  MARKET_GOOD_CONSUMESTATS: "[GOODS.GetTextIcon] #variable $AMOUNT|D$#! купили за #variable @money!$VAL|D$#! ([GOODS.GetName])"
  AND_X_MORE_MONEY_VAL: "... і ще #variable $NUM$#! вартістю #variable @money!$VAL|D$#!"
 
- BUILDING_URBANIZATION_WITH_VALUE: "$VALUE|0v=$ через [Concept('concept_building', '$concept_building_acc$')|l] [BUILDING.GetName]"
- BUILDING_INFRA_USAGE_WITH_VALUE: "#v $VALUE|0-$#! через [Concept('concept_building', '$concept_building_acc$')|l] [BUILDING.GetName]"
+ BUILDING_URBANIZATION_WITH_VALUE: "$VALUE|0v=$ через [Concept('concept_building', '$concept_building_acc$')|l] [BUILDING.GetName|l]"
+ BUILDING_INFRA_USAGE_WITH_VALUE: "#v $VALUE|0-$#! через [Concept('concept_building', '$concept_building_acc$')|l] [BUILDING.GetName|l]"
 
  BUILDING_COMBAT_UNIT_PRODUCTION: "Забезпечує $UNIT_ICON$ $UNIT_COUNT|v$"
 
@@ -3768,7 +3768,7 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
 
  MILITARY_PANEL_COMMAND_LIMIT_BREAKDOWN_TOOLTIP: "#header Підрозділи#!\n[Character.GetFullName] командує [GetUnitStrengthHeader( Character.GetNumCombatUnits, Character.GetMaxNumCombatUnits, Character.GetCombatUnitsTypeIcon )]\n$TOOLTIP_DELIMITER$\nЙого звання [Character.GetRankName|l] дає йому [Concept('concept_command_limit', '$concept_command_limit_acc$')|l] у #v [Character.GetStrengthPointsIcon][Character.GetTotalCommandLimit]#!:\n[Character.GetCommandLimitDesc]"
 
- REGULARS: "Регулярні"
+ REGULARS: "Постійні"
  CONSCRIPTS: "Призвані"
  IN_GARRISON: "У [Concept('concept_garrison', '$concept_garrison_loc$')|l]"
  WITH_GENERALS: "З [Concept('concept_general', '$concept_generals_ins$')|l]"
