@@ -545,9 +545,9 @@
  concept_interest_group_possessive:1 "Interest Group\\'s"
  concept_interest_group_desc:3 "A political faction within your [concept_country] that share a common interest. They are supported by [Concept('concept_pop', '$concept_pops$')] in relation to their [Concept('concept_interest_group_attraction','$concept_interest_group_attraction_short$')] to them, and the [concept_clout] they enjoy is based directly on the supporting $concept_pops$' [concept_political_strength]. $concept_interest_groups$ have number of [Concept('concept_ideology', '$concept_ideologies$')], causing them to endorse or oppose different [Concept('concept_law', '$concept_laws$')].\n\nThey also have three [Concept('concept_interest_group_trait', '$concept_interest_group_traits$')] that are activated on different [concept_approval] levels. Their [Concept('concept_leader','$concept_leader_possessive$')] personal $concept_ideology$ also rubs off on the $concept_interest_group$."
 
- concept_interest_group_attraction: "Привабливість зацікавленої групи"
- concept_interest_group_attraction_short: "Привабливість"
- concept_interest_group_attractions: "Привабливості зацікавленої групи"
+ concept_interest_group_attraction: "Залученість у зацікавлену групу"
+ concept_interest_group_attraction_short: "Залученість"
+ concept_interest_group_attractions: "Залученості у зацікавлену групу"
  concept_attracted:0 "Attracted"
  concept_interest_group_attraction_desc:4 "How likely a [Concept('concept_pop', '$concept_pops$')] are to support a particular [concept_interest_group]. Influenced by the $concept_pop$'s properties, such as [concept_profession], [concept_wealth], and [concept_education_access], a high $concept_interest_group_attraction_short$ means the $concept_pop$ feels it's likely this $concept_interest_group$ represents their political interests."
 

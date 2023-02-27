@@ -117,11 +117,11 @@
  REMOVE_CULTURAL_OBSESSION_FIRST:0 "[CULTURE.GetName] stops being [Concept('concept_obsession', '$concept_obsessed$')] with [GOODS.GetName] in [COUNTRY.GetNameNoFlag]"
  REMOVE_CULTURAL_OBSESSION_THIRD:0 "[CULTURE.GetName] stops being [Concept('concept_obsession', '$concept_obsessed$')] with [GOODS.GetName] in [COUNTRY.GetName]"
  
- CREATE_RANDOM_CHARACTER_NAME:0 "A Character"
+ CREATE_RANDOM_CHARACTER_NAME: "Персонаж"
  
- CREATE_CHARACTER:0 "$CHARACTER_NAME$ appears in [COUNTRY.GetName]"
- CREATE_CHARACTER_FIRST:0 "$CHARACTER_NAME$ appears in [COUNTRY.GetNameNoFlag]"
- CREATE_CHARACTER_THIRD:0 "$CHARACTER_NAME$ appears in [COUNTRY.GetName]"
+ CREATE_CHARACTER: "$CHARACTER_NAME$ зʼявиться у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
+ CREATE_CHARACTER_FIRST: "$CHARACTER_NAME$ зʼявиться у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetNameNoFlag]"
+ CREATE_CHARACTER_THIRD: "$CHARACTER_NAME$ зʼявиться у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
  
  ADD_INNOVATION:0 "#variable [COUNTRY.GetAdjectiveNoFormatting]#! [concept_innovation] increased by $VALUE|+$"
  ADD_INNOVATION_NEG:0 "#variable [COUNTRY.GetAdjectiveNoFormatting]#! [concept_innovation] decreased by $VALUE|+$"

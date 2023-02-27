@@ -160,7 +160,7 @@
   
  marx_events.1.t: "Маніфест комуністів"
  marx_events.1.d: "Зростання майнової нерівности в нашому суспільстві стало таким же болісним і чітким, як вістря коси. Памфлет під назвою «Маніфест комуністичної партії», написаний соціялістом-революціонером, привернув увагу мас."
- marx_events.1.f: "«Історія всїх дотеперішних суспільств — се історія класової боротьби.\n\nВільний і невільник, патрицій і плебей, пан і кріпак, цеховий майстер і челядник, або кажучи просто: пригноблювач і пригноблений, ворогуючи завжди поміж собою, провадили безупинну та скриту, то отверту боротьбу, — боротьбу, що раз-у-раз кінчала ся або революційною перебудовою цїлого суспільства, або спільною погибеллю тих кляс, що боролися.»" #цитата з Клівленд: Українська федерація Американської соціялістичної партії, 1917
+ marx_events.1.f: "«Історія всіх дотеперішних суспільств — се історія клясової боротьби.\n\nВільний і невільник, патрицій і плебей, пан і кріпак, цеховий майстер і челядник, або кажучи просто: пригноблювач і пригноблений, ворогуючи завжди поміж собою, провадили безупинну та скриту, та отверту боротьбу, — боротьбу, що раз-у-раз кінчалася або революційною перебудовою цілого суспільства, або спільною погибеллю тих кляс, що боролися.»" #цитата з Клівленд: Українська федерація Американської соціялістичної партії, 1917
  marx_events.1.a: "Наші люди могли б отримати користь від цього вчення."
  marx_events.1.b: "Справді, обʼєднаймося! Нам нема чого втрачати, окрім наших ланцюгів!"
  marx_events.1.c: "Ми не хочемо мати нічого спільного з цим бунтівником."
@@ -188,15 +188,15 @@
  disapproves_of_poverty_dismissed_modifier: "Проігнорована бідність"
  poverty_relief_modifier: "Боротьба з бідністю"
  
- sol_events.2.t:0 "A Tale of Hope"
- sol_events.2.desc:0 "The living conditions of our people have been steadily increasing during these past times, bringing hope to the most dispirited parts of our cities — even so, we still have a long way to go."
- sol_events.2.f:0 ""It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of light, it was the season of darkness, it was the spring of hope, it was the winter of despair."" #Dickens
- sol_events.2.a:0 "Our people shall never forget what we've done for them."
- sol_events.2.b:0 "This will help us advance even further!"
- sol_events.2.c:0 "The satisfaction of their welfare is enough for us."
- sol_improved_modifier:0 "Improved Standard of Living"
- sol_increased_modifier:0 "Loyal Citizens"
- sol_institution_modifier:0 "Advancing Institutions"
+ sol_events.2.t: "Повість про надію"
+ sol_events.2.desc: "Умови життя наших людей неухильно поліпшувалися протягом останніх років, приносячи надію в найбільш зневірені райони наших міст - але навіть попри це, нам ще належить пройти довгий путь."
+ sol_events.2.f: "«То був найкращий час, то був найгірший час, то був вік мудрости, то був вік дурости, то була доба віри, то була доба невірства, то була година світла, то була година тьми, то була весна надії, то була зима безнадії.»" #Цитовано з Повість про двоє міст від М. Сагарди
+ sol_events.2.a: "Наш народ ніколи не забуде, що ми для нього зробили."
+ sol_events.2.b: "Це допоможе нам просунутися ще далі!"
+ sol_events.2.c: "Задоволення їхнього добробуту вже є достатнім для нас."
+ sol_improved_modifier: "Покращення рівня життя"
+ sol_increased_modifier: "Віддані громадяни"
+ sol_institution_modifier: "Установи, що розвиваються"
  
  sol_events.3.t:0 "The Bitter Cry"
  sol_events.3.d:0 "Members of the [SCOPE.gsInterestGroup('ig_devout').GetName] have been seen walking around the slums of [ROOT.GetCountry.GetCapital.GetCityHubName], offering some charity food to the poor. However, they now request state funding for their efforts."

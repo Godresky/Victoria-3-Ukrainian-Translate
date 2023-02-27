@@ -560,7 +560,7 @@ pm_steam_rail_transport: "Залізниця"
  pm_trade_center: "Торговий центр"
  
 #Naval Base
- pmg_ship_class: "Клас кораблів"
+ pmg_ship_class: "Кляс кораблів"
  pm_man_o_wars: "Мановари"
  pm_ironclads: "Панцерник"
  pm_monitors: "Монітор"

@@ -2483,7 +2483,7 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  LITERACY_80_90: "Грамотність між #variable 80%#! та #variable 90%#!"
  LITERACY_90_100: "Грамотність вище #variable 90%#!"
  LEADER_POPULARITY: "[concept_popularity] [SCOPE.gsInterestGroup('interest_group').GetLeader.GetFullNameWithTitle]"
- IN_GOVERNMENT_ATTRACTION: "Вплив оподаткування на привабливість зацікавленої групи"
+ IN_GOVERNMENT_ATTRACTION: "Вплив оподаткування на залученість у зацікавлену групу"
 
  EMPLOYEE_TRANSFERS:0 "\n\n#header Latest Employee changes:#!\n"
  EMPLOYEE_TRANSFER_FROM:0 "#b #tooltippable #tooltip:[EMPLOYEE_TRANSFER.GetTooltipTag],EMPLOYEE_TRANSFER_TOTAL_BREAKDOWN [EMPLOYEE_TRANSFER.GetTotal|+=]#!#!#! [EMPLOYEE_TRANSFER.GetNewPopType.GetName] (used to be [EMPLOYEE_TRANSFER.GetOldPopType.GetName] in the [EMPLOYEE_TRANSFER.GetOldEmployment.GetName])"
