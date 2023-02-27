@@ -190,7 +190,7 @@
  
  sol_events.2.t: "Повість про надію"
  sol_events.2.desc: "Умови життя наших людей неухильно поліпшувалися протягом останніх років, приносячи надію в найбільш зневірені райони наших міст - але навіть попри це, нам ще належить пройти довгий путь."
- sol_events.2.f: "«То був найкращий час, то був найгірший час, то був вік мудрости, то був вік дурости, то була доба віри, то була доба невірства, то була година світла, то була година тьми, то була весна надії, то була зима безнадії.»" #Цитовано з Повість про двоє міст від М. Сагарди
+ sol_events.2.f: "«То був найкращий час, то був найгірший час, то був вік мудрости, то був вік дурости, то була доба віри, то була доба невірства, то була година світла, то була година тьми, то була весна надії, то була зима безнадії.»" #Цитовано з повісті про двоє міст від М. Сагарди
  sol_events.2.a: "Наш народ ніколи не забуде, що ми для нього зробили."
  sol_events.2.b: "Це допоможе нам просунутися ще далі!"
  sol_events.2.c: "Задоволення їхнього добробуту вже є достатнім для нас."
@@ -342,8 +342,8 @@
  
  natural_disaster_variable_tt:0 "There is a chance that a famine will occur in the upcoming months."
  
- famine_events.1.t:0 "The Hard Times"
- famine_events.1.d:0 "Hunger has become a dangerous problem for our nation, as people from the state of [SCOPE.sState('famine_state').GetName] report that they have absolutely nothing to eat. An Emergency Relief measure has been requested."
+ famine_events.1.t: "Тяжкі часи"
+ famine_events.1.d: "Голод став небезпечною проблемою для нашої нації, оскільки люди зі [Concept('concept_state', '$concept_state_gen$')|l] [SCOPE.sState('famine_state').GetName] повідомляють, що їм абсолютно нічого їсти. Ними було зроблено запит на надання надзвичайної допомоги."
  famine_events.1.f:0 ""It would be impossible adequately to describe the privations which they habitually and silently endure... In many districts their only food is the potato, their only beverage water, their cabins are seldom a protection against the weather; a bed or a blanket is a rare luxury and nearly in all their pig and a manure heap constitute their only property."" #Devon
  famine_events.1.a:0 "We cannot afford that expenditure."
  famine_events.1.b:0 "An Emergency Relief focus will be raised in [SCOPE.sState('famine_state').GetName]."
@@ -426,9 +426,9 @@
  romantic_building_modifier:0 "Romantic Architecture"
  preraphaelites_modifier:0 "Funded Artists"
  
- je_fascism_1:0 "Path to Fascism"
- je_fascism_1_reason:0 "We must all march under the same banner. We cannot forget who our leaders are, and how they're our only defense against foreign threat."
- fascism_1_tt:0 "Has a #bold Fascist#! leader"
+ je_fascism_1: "Путь до фашизму"
+ je_fascism_1_reason: "Ми всі повинні йти під одним стягом. Ми не можемо забувати, хто наші провідники, і що вони є нашим єдиним захистом від зовнішньої загрози."
+ fascism_1_tt: "Має провідника #bold фашиста#!"
  
  fascism_events.1.t:0 "Night of the Long Knives"
  fascism_events.1.d:0 "Suspicions about an internal threat within our own generals and leaders have been on the rise, reaching [SCOPE.sCharacter('fascist_leader').GetFullName]'s ears, and the necessity of exterminating threats against the fascist regime is palpable. Hasty words, elusive looks, they are everywhere. Everywhere."
@@ -647,7 +647,7 @@
  cold.102.c:0 "[SCOPE.sCharacter('expedition_leader_3').GetFullName] has never let us down before."
  cold.102.e:0 "[SCOPE.sCharacter('expedition_leader_4').GetFullName] is the most prepared one."
  
- cold.1.t:0 "At the Mountains of Madness"
+ cold.1.t: "На стрімчаках божевілля"
  cold.1.d:0 "The expedition spots the twin volcanic peaks of Erebus and Terror on the horizon. When they were first discovered by James Clark Ross, Erebus was observed to be in eruption. Thankfully we find the mountains at peace."
  cold.1.f:0 ""They rose grimly into the western sky; allowing us to distinguish various bare, bleak, blackish summits, and to catch the curious sense of phantasy which they inspired as seen in the reddish antarctic light against the provocative background of iridescent ice-dust clouds."" #Lovecraft
  cold.1.a:0 "We should move on quickly."
