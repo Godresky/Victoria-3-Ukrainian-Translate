@@ -35,7 +35,7 @@
  HOVER_DEBUG_ANNEX: "#instruction Ctrl + Alt + Клац, щоб анексувати реґіон #V [State.GetName]#!#!"
  HOVER_STATE_LOYALISTS: "[STATE.GetNumLoyalists] [Concept('concept_loyalist', '$concept_loyalists_gen$')|l] у [Concept('concept_state', '$concept_state_loc$')|l] [STATE.GetName]"
  HOVER_STATE_RADICALS: "[STATE.GetNumRadicals] [Concept('concept_radical', '$concept_radicals_gen$')|l] у [Concept('concept_state', '$concept_state_loc$')|l] [STATE.GetName]"
- INTEREST_GROUP_STATE_TOOLTIP:1 "#variable The [INTEREST_GROUP.GetName]#! in #variable [STATE.GetName]#!\n[concept_political_strength]: #variable [INTEREST_GROUP.GetPoliticalStrengthInState(STATE.Self)|D]#!\n$TOOLTIP_DELIMITER$\n[Concept('concept_pop','$concept_population$')]: #variable [INTEREST_GROUP.GetPopulationInState(STATE.Self)|D]#!"
+ INTEREST_GROUP_STATE_TOOLTIP: "#variable [INTEREST_GROUP.GetName]#! у [Concept('concept_state','$concept_state_loc$')|l] #variable [STATE.GetName]#!\n[concept_political_strength]: #variable [INTEREST_GROUP.GetPoliticalStrengthInState(STATE.Self)|D]#!\n$TOOLTIP_DELIMITER$\n[Concept('concept_pop','$concept_population$')]: #variable [INTEREST_GROUP.GetPopulationInState(STATE.Self)|D]#!"
  INTEREST_GROUP_WILL_JOIN_PARTY: "Бажає приєднатися до партії «$PARTY_NAME$»"
  INTEREST_GROUP_WILL_JOIN_PARTY_TOOLTIP: "$IG_NAME$ приєднається до партії «$PARTY_NAME$» під час наступних урядових змін"
  INTEREST_GROUP_AFFILIATION_TOOLTIP: "#HEADER Поточна приналежність до [Concept('concept_party','$concept_party_gen$')|l]: «[PARTY.GetName]»#!\n$TOOLTIP_DELIMITER$\n$AFFILIATION_DETAILS$"

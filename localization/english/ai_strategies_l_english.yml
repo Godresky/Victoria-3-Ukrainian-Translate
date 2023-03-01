@@ -67,7 +67,7 @@
  ai_expense_influence: "Вплив"
 
  ai_strategy_conservative_agenda: "Консервативний пропис"
- ai_strategy_conservative_agenda_desc: "[COUNTRY.GetName] має обережну консервативну політичну програму, пропагуючи повільні темпи реформ."
+ ai_strategy_conservative_agenda_desc: "[COUNTRY.GetName] має обережну консервативну політичну програму, пропаґуючи повільні темпи реформ."
  ai_strategy_reactionary_agenda: "Підтримка звичайства"
  ai_strategy_reactionary_agenda_desc: "[COUNTRY.GetName] прагне сприяти владі та програмі реформ землевласників та набожних."
  ai_strategy_progressive_agenda: "Підтримка ліберальних реформ"

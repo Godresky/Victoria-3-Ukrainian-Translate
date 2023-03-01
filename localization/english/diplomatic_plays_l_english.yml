@@ -278,7 +278,7 @@
  dp_unify_indonesia: "Об’єднання Архіпелагу"
  dp_unify_indonesia_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_unify_indonesia$#!\n$TOOLTIP_DELIMITER$\n$dp_unify_indonesia_desc$"
  dp_unify_indonesia_desc:0 "Sets the initiating [concept_war_goal] to annex all lesser Indonesian countries."
- IDN_tt:0 "[SCOPE.sCountry('target_country').GetName] може утворити Індонезію"
+ IDN_tt: "[SCOPE.sCountry('target_country').GetName] може утворити Індонезію"
 
  dp_southern_secession: "Південний розкол"
  dp_southern_secession_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_southern_secession$#!\n$TOOLTIP_DELIMITER$\n$dp_southern_secession_desc$"

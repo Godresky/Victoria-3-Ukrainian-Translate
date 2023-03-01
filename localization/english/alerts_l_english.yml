@@ -203,18 +203,18 @@
  alert_expensive_goods_alert_hint_common: "Ви можете впливати на ціну [Concept('concept_good', '$concept_good_gen$')|l] кількома способами. Наприклад, ви можете підвищити доступність товару, збільшивши його виробництво за допомогою методів будівництва або виробництва, або купити його в іншій державі. Якщо кінцевий продукт хороший, то ви можете бути впевненим, що на це не впливає дефіцит ресурсів або висока вартість матеріялів. Ви також можете змінити свою тарифну політику або податки на споживання на товар (або на товари з яких він складається, щоб, ймовірно, знизити ціну)."
 
  alert_expensive_government_goods_alert_name: "[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] ([SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName])"
- alert_expensive_government_goods_alert_desc: "#header Товар [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] дорогий#!"
+ alert_expensive_government_goods_alert_desc: "#header Товар [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName|l] дорогий#!"
  alert_expensive_government_goods_alert_hint: "$alert_expensive_goods_alert_hint_common$"
- alert_expensive_government_goods_alert_action: "Панель товару [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] ([SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName])"
+ alert_expensive_government_goods_alert_action: "Панель товару [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName|l] ([SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName])"
 
  alert_expensive_military_goods_alert_name: "[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] ([SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName])"
- alert_expensive_military_goods_alert_desc: "#header Товар [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] дорогий#!"
+ alert_expensive_military_goods_alert_desc: "#header Товар [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName|l] дорогий#!"
  alert_expensive_military_goods_alert_hint: "$alert_expensive_goods_alert_hint_common$"
- alert_expensive_military_goods_alert_action: "Панель товару [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] ([SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName])" 
+ alert_expensive_military_goods_alert_action: "Панель товару [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName|l] ([SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName])" 
 
- alert_can_take_decisions_name:0 "Available Decisions"
- alert_can_take_decisions_hint:0 "You can see both available and unavailable Decisions on the Decisions tab in the Journal panel"
- alert_can_take_decisions_action:0 "the Decisions tab in the Journal panel"
+ alert_can_take_decisions_name: "Доступні рішення"
+ alert_can_take_decisions_hint: "Ви можете бачити як доступні, так і недоступні рішення на вкладці рішень на панелі часопису"
+ alert_can_take_decisions_action: "вкладку рішень на панелі часопису"
 
  alert_has_army_troops_in_reserve_alert_name: "[GetPlayer.GetBattalionsInReserve|0] @battalions! [SelectLocalization(GreaterThan_int32(GetPlayer.GetBattalionsInReserve, '(int32)1'),SelectLocalization(GreaterThan_int32(GetPlayer.GetBattalionsInReserve, '(int32)4'),Concept('concept_battalion', '$concept_battalions_gen$'),Concept('concept_battalion', '$concept_battalions$')),Concept('concept_battalion', '$concept_battalion$'))|l] [concept_in_reserve|l]"
  alert_has_army_troops_in_reserve_alert_hint: "Просувайте наявних [Concept('concept_general', '$concept_generals_gen$')|l] для того, щоб підвищити [Concept('concept_command_limit', '$concept_command_limit_acc$')|l]. Це можна зробити на панелі подробиць для цього генерала (чи клацнувши правою кнопкою на нього). Ви також можете призначити батальйони, найнявши більше генералів на панелі #b війська#! або скориставшись [Concept('concept_military_lens','$concept_military_lens_ins$')|l].\n\nОднак, зазвичай рекомендують просувати генерала по службі, а не набирати більше."
@@ -228,8 +228,8 @@
  EXPANDABLE_IMPORTANT_ACTION_ITEM: "[Alert.GetToolTip]$notification_tooltip_footer$"
  ALERT_GROUP_TOOLTIP_FOOTER: "#instruction Клацніть, щоб розгорнути#!"
 
- MP_CLIENT_LAGGING_SLOWDOWN:0 "$NAME$ is lagging behind. Slowing gamespeed."
- MP_CLIENT_LAGGING_PAUSE:0 "$NAME$ has lagged more than $DAYS$ behind. Pausing."
+ MP_CLIENT_LAGGING_SLOWDOWN: "$NAME$ відстає. Уповільніть швидкість гри."
+ MP_CLIENT_LAGGING_PAUSE: "$NAME$ відстає більш ніж на $DAYS$. Поставте на павзу."
  MP_CLIENT_GRACEFUL_EXIT: "$NAME$ вийшов(-ла) з гри"
  MP_CLIENT_UNGRACEFUL_EXIT: "$NAME$ втратив(-ла) з‘єднання з грою"
  MP_HOST_DATE: "$NAME$(#V Відник#!): $DATE_STR$"

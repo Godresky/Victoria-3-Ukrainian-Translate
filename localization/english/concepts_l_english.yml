@@ -201,6 +201,7 @@
  
  concept_building: "Будівля"
  concept_building_gen: "Будівлі"
+ concept_building_dat: "Будівлі"
  concept_building_acc: "Будівлю"
  concept_buildings: "Будівлі"
  concept_buildings_gen: "Будівель"
@@ -532,7 +533,7 @@
  concept_interest_group_gen: "Зацікавленої групи"
  concept_interest_group_acc: "Зацікавлену групу"
  concept_interest_group_ins: "Зацікавленою групою"
- concept_interest_group_loc: "Зацікавлених групах"
+ concept_interest_group_loc: "Зацікавленій групі"
  concept_interest_groups: "Зацікавлені групи"
  concept_interest_groups_gen: "Зацікавлених груп"
  concept_interest_groups_acc: "Зацікавлені групи"
@@ -1515,6 +1516,7 @@
  concept_accepted_culture: "Прийнята культура"
  concept_accepted_cultures: "Прийняті культури"
  concept_accepted_culture_short: "Прийнята"
+ concept_accepted_culture_short_adj: "Прийнят"
  concept_accepted_culture_desc:2 "A [Concept('concept_country','$concept_country_possessive$')] $concept_accepted_cultures$ consists of its [concept_primary_cultures], plus any other [Concept('concept_culture','$concept_cultures$')]  considered $concept_accepted_culture_short$ due to the $concept_country$'s current [SelectLocalization(GetPlayer.IsValid, 'concept_accepted_culture_desc_added','Citizenship')] [concept_law]."
  concept_accepted_culture_desc_added:0 " [GetLawType('law_national_supremacy').GetGroup.GetName]"
 
@@ -1544,6 +1546,7 @@
  concept_accepted_religion: "Прийнята релігія"
  concept_accepted_religions: "Прийняті релігії"
  concept_accepted_religion_short: "Прийнята"
+ concept_accepted_religion_short_adj: "Прийнят"
  concept_accepted_religion_desc: "A [Concept('concept_country','$concept_country_possessive$')] $concept_accepted_religions$ consists of its [concept_state_religion], plus any other [Concept('concept_religion','$concept_religions$')] considered $concept_accepted_religion_short$ due to the $concept_country$'s current [SelectLocalization(GetPlayer.IsValid,'concept_accepted_religion_desc_added','Church and State')] [concept_law]."
  concept_accepted_religion_desc_added:0 "[GetLawType('law_state_religion').GetGroup.GetName]"
 
