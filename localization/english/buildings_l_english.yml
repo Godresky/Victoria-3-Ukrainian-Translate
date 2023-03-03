@@ -98,6 +98,8 @@
  building_subsistence_farms: "Натуральні господарства"
  building_subsistence_orchards: "Натуральні сади"
  building_subsistence_pastures: "Натуральні пасовища"
+ building_subsistence_fishing_villages: "Натуральні рибальські поселення"
+ building_subsistence_rice_paddies: "Натуральні рисові поля"
  building_construction_sector: "Будівельний витинок"   #або сектор
  building_banana_plantation: "Бананове полище"
  building_banana_plantation_lens_option: "Розширити бананові полища"
@@ -153,7 +155,7 @@
  bg_private_infrastructure: "Приватні споруди"
  bg_military: "Військові споруди"
  bg_special: "Спеціяльні споруди"
- bg_conscription: "Призовні будівлі"
+ bg_conscription: "Будівлі призви"
 
 #Factories
 
@@ -179,7 +181,7 @@
   #Colonies
  building_colony_military: "Військова осада"
  building_colony_military_lens_option: "Встановити війскову осаду"
- building_colony_military_hover: "Встановити #variable війскову осаду#! у регіоні #variable [STATE.GetName]"
+ building_colony_military_hover: "Встановити #variable війскову осаду#! у реґіоні #variable [STATE.GetName]"
  building_colony_missionary: "Метарська осада"    #від метар(месіонер)
  building_colony_missionary_lens_option: "Встановити метарську осаду"
  building_colony_missionary_hover: "Встановити #variable метарську осаду#! у #variable [STATE.GetName]#!"
@@ -192,7 +194,7 @@
  building_barracks_lens_option: "Розширити курені"
  building_naval_base: "Морська база"
  building_naval_base_lens_option: "Розширити морські бази"
- building_conscription_center: "Призовний пункт"
+ building_conscription_center: "Осередок призви"
 
   #National Buildings
  building_government_administration: "Державна управа"

@@ -94,7 +94,7 @@
  kurdish: "Курди"
  tatar: "Татари"
  central_asian_culture_group: "Середньоазійці"
- mongol: "Монголи"
+ mongol: "Монґоли"
  siberian: "Сибірці"
  yakut: "Якути"
  tibetan: "Тибетці"
@@ -303,3 +303,4 @@
  assyrian: "Ассирійці"
  iroquoian: "Ірокези"
  kalmyk: "Калмики"
+ circassian: "Черкеси"

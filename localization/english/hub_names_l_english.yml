@@ -682,7 +682,7 @@
  HUB_NAME_STATE_BULGARIA_farm: "Шумен"
  HUB_NAME_STATE_BULGARIA_wood: "Плевен"
 
-#Румунія
+#Румунщина
  HUB_NAME_STATE_WALLACHIA_city: "Бухарест"
  HUB_NAME_STATE_WALLACHIA_mine: "Крайова"
  HUB_NAME_STATE_WALLACHIA_farm: "Бузев"
@@ -703,7 +703,7 @@
  HUB_NAME_STATE_MOLDAVIA_wood: "Бакеу"
  
 #Польща
- HUB_NAME_STATE_SILESIA_city: "Бреслау"
+ HUB_NAME_STATE_SILESIA_city: "Бреслав"
  HUB_NAME_STATE_SILESIA_mine: "Гербіц"
  HUB_NAME_STATE_SILESIA_farm: "Кеніґсхюте"
  HUB_NAME_STATE_SILESIA_wood: "Кройцбурґ"
@@ -1329,7 +1329,7 @@
  HUB_NAME_STATE_DIYARBAKIR_mine: "Хаккарі"
  HUB_NAME_STATE_DIYARBAKIR_farm: "Урфа"
  HUB_NAME_STATE_DIYARBAKIR_wood: "Діярбакир"
-  #Аравія
+  #Арабія
  HUB_NAME_STATE_DEIR_EZ_ZOR_city: "Дайр"
  HUB_NAME_STATE_DEIR_EZ_ZOR_mine: "Абу Камал"
  HUB_NAME_STATE_DEIR_EZ_ZOR_farm: "Рас аль-Айн"
@@ -1413,7 +1413,7 @@
  HUB_NAME_STATE_LURISTAN_farm: "Ілам"
  HUB_NAME_STATE_LURISTAN_wood: "Керманшах"
  HUB_NAME_STATE_KHUZESTAN_city: "Ахваз"
- HUB_NAME_STATE_KHUZESTAN_port: "Бандар махшахр"
+ HUB_NAME_STATE_KHUZESTAN_port: "Бандар Махшахр"
  HUB_NAME_STATE_KHUZESTAN_mine: "Дезфул"
  HUB_NAME_STATE_KHUZESTAN_farm: "Хоррамшахр"
  HUB_NAME_STATE_KHUZESTAN_wood: "Масджед Солейман"
@@ -2356,7 +2356,7 @@
  HUB_NAME_STATE_ACRE_mine: "Тарауака"
  HUB_NAME_STATE_ACRE_farm: "Родріґес Алвес"
  HUB_NAME_STATE_ACRE_wood: "Сена Мадурейра"
- HUB_NAME_STATE_PARAIBA_city: "Кампіна Гранде"
+ HUB_NAME_STATE_PARAIBA_city: "Кампіна-Ґранде"
  HUB_NAME_STATE_PARAIBA_port: "Парагіба"
  HUB_NAME_STATE_PARAIBA_wood: "П'янко"
  HUB_NAME_STATE_PARAIBA_farm: "Жуазейріньо"
@@ -2569,7 +2569,7 @@
  HUB_NAME_STATE_MARRAKECH_wood: "Сафі"
  HUB_NAME_STATE_INNER_MOROCCO_city: "Ґельмім"
  HUB_NAME_STATE_INNER_MOROCCO_port: "Аґадір"
- HUB_NAME_STATE_INNER_MOROCCO_mine: "Еррахідія"
+ HUB_NAME_STATE_INNER_MOROCCO_mine: "Ксар-ес-Сук"
  HUB_NAME_STATE_INNER_MOROCCO_farm: "Уарзазат"
  HUB_NAME_STATE_INNER_MOROCCO_wood: "Тизніт"
  HUB_NAME_STATE_WEST_SAHARA_city: "Лааюн"
