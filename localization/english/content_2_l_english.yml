@@ -420,9 +420,9 @@
  election_neutral.4.a:0 "Perhaps the speaker from [SCOPE.sParty('opposition_party')] has a point."
  election_neutral.4.b:1 "If the government distances itself from [SCOPE.sCountry('midlothian_campaign_ally_country').GetName], the [SCOPE.sParty('opposition_party').GetName]'s argument will be undercut."
 
- election_neutral.5.t:0 "Overly-Enthusiastic Partisans"
- election_neutral.5.d:0 "Supporters of [SCOPE.sParty('campaign_club_party').GetName] have gone beyond simply campaigning for their own party, harassing and sometimes physically attacking opposing partisans."
- election_neutral.5.f:0 ""I'm a simple party man, that's all. I know who I like, and I know who I don't like, and I know I want my people to win and their people to lose.""
+ election_neutral.5.t: "Надто запальні партизани"
+ election_neutral.5.d: "Прихильники [Concept('concept_party', '$concept_party_gen$')|l] «[SCOPE.sParty('campaign_club_party').GetName]» вийшли за рамки простої аґітації за власну партію, ереслідуючи, а іноді й фізично нападаючи на опозиціонерів."
+ election_neutral.5.f:0 "«I'm a simple party man, that's all. I know who I like, and I know who I don't like, and I know I want my people to win and their people to lose.»"
  election_neutral.5.a:0 "Crack down on [SCOPE.sParty('campaign_club_party').GetName] activities."
  election_neutral.5.b:0 "Let the [SCOPE.sParty('campaign_club_party').GetName] partisans continue unmolested."
  election_neutral.5.c:0 "Why should they limit who they target? Go forth and fight the good fight!"

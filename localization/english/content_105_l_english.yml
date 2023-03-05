@@ -402,7 +402,7 @@
  discrimination_events.2.t: "Ніж у спину"
  discrimination_events.2.d.culture: "Принижені громадяни, нашою нещодавньою поразкою, скинули всю вину на [Concept('concept_culture','$concept_culture_acc$')|l] [SCOPE.sPop('discriminated_culture_pop').GetCulture.GetName|l] у [Concept('concept_country','$concept_country_loc$')|l] [ROOT.GetCountry.GetName], стверджуючи, що через них провалилися усі наші військові зусилля на внутрішньому фронті."
  discrimination_events.2.d.religion: "Принижені нашою нещодавньою військовою поразкою, багато людей звинуватили [ROOT.GetCountry.GetAdjectiveNoFormatting|l]их прихильників [Concept('concept_religion','$concept_religion_gen$')|l] [SCOPE.sPop('discriminated_religion_pop').GetReligion.GetName|l], стверджуючи, що через них провалилися усі наші військові зусилля на внутрішньому фронті."
- discrimination_events.2.f: "Він грюкнув склом. Раптом на його обличчі змінилася емоція з гіркоти на повномасштабну лють.\n\n«Ми добре билися, кожен із нас. Фронт не хитався! Ні ми, ні наша [Concept('concept_country','$concept_country$')|l] [ROOT.GetCountry.GetName] ніколи не підводили один одного. Ніхто б не підвів. Але хтось це зробив. Дозвольте сказати вам хто це був.»"
+ discrimination_events.2.f: "Він грюкнув склом. Раптом на його обличчі змінилася емоція з гіркоти на повнорозмірну лють:\n\n«Ми добре билися, кожен із нас. Фронт не хитався! Ні ми, ні наша [Concept('concept_country','$concept_country$')|l] [ROOT.GetCountry.GetName] ніколи не підводили один одного. Ніхто б не підвів. Але хтось це зробив. Дозвольте сказати вам хто це був.»"
  discrimination_events.2.a: "Так не повинно бути! [ROOT.GetCountry.GetName] ніколи б не програла у чесному бою!"
  discrimination_events.2.b: "Ми повинні прийняти цю невдачу, як свою власну."
 

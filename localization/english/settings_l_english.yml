@@ -5,7 +5,7 @@
  SETTINGS_PAGE_CONTROLS: "Управління"
  SETTINGS_PAGE_EDITOR: "Редактор"
  SETTINGS_PAGE_INTERFACE: "Інтерфейс"
- SETTINGS_PAGE_AUDIO: "Авдіо"
+ SETTINGS_PAGE_AUDIO: "Звук"
  SETTINGS_CATEGORY_SCREEN: "Екран"
  SETTINGS_CATEGORY_QUALITY: "Якість"
  OPTION_EASY: "Легко"
@@ -21,7 +21,7 @@
  SETTINGS_CATEGORY_SYSTEM: "Система"
  SETTINGS_CATEGORY_CONTROLS: "Управління"
  SETTINGS_CATEGORY_CAMERA: "Знімач"
- SETTINGS_CATEGORY_AUDIO: "Авдіо"
+ SETTINGS_CATEGORY_AUDIO: "Звук"
  SETTINGS_CATEGORY_GUI: "ГІК"
  SETTINGS_CATEGORY_INPUT_BINDINGS: "Прив’язки вводу"
  DISCARD: "Скасувати"
@@ -71,7 +71,7 @@
  SETTINGS_CATEGORY_MAP_CONTROLS: "Керування мапою"
  SETTINGS_CATEGORY_MAPMODES: "Режими мапи"
  SETTING_SHADER_QUALITY: "Якість шейдерів"
- SETTING_SHADER_QUALITY_TOOLTIP: "#T $SETTING_SHADER_QUALITY$#!\nВизначає якість різних шейдерів й ефектів.\n\n#T Висока:#! Покращує якість деяких шейдерних ефектів за рахунок продуктивності.\n\n#T Середня:#! Налаштування за замовчуванням.\n\n#T Низька:#! Цей параметр призначений для компів низького клясу та не рекомендований через втрату візуальної якости. Кілька шейдерів спрощено для підвищення графічної продуктивности."
+ SETTING_SHADER_QUALITY_TOOLTIP: "#T $SETTING_SHADER_QUALITY$#!\nВизначає якість різних шейдерів й ефектів.\n\n#T Висока:#! Покращує якість деяких шейдерних ефектів за рахунок продуктивности.\n\n#T Середня:#! Налаштування за замовчуванням.\n\n#T Низька:#! Цей параметр призначений для компів низького клясу та не рекомендований через втрату візуальної якости. Кілька шейдерів спрощено для підвищення графічної продуктивности."
  SETTING_SHOW_NUDITY: "Показати наготу"
  SETTING_SHOW_NUDITY_TOOLTIP: "#T $SETTING_SHOW_NUDITY$#!\nВстановлює, чи можна показувати наготу."
  SETTINGS_CATEGORY_GAME_PORTRAITS: "Портрети"
@@ -82,9 +82,9 @@
 
   # Audio - These are copies of clausewitz keys due to case sensitivity
  SETTING_MUSIC: "Музика"
- SETTING_AMBIENT: "Ембієнт"
+ SETTING_AMBIENT: "Довкілля"
  SETTING_MUSIC_TOOLTIP: "#T Гучність музики\n#!Встановлює гучність музики."
- SETTING_AMBIENT_TOOLTIP: "#T Гучність ембієнту\n#!Встановлює гучність навколишнього середовища."
+ SETTING_AMBIENT_TOOLTIP: "#T Гучність довкілля\n#!Встановлює гучність довкілля."
 
  SETTING_MAP_TOOLTIP_DELAY: "Затримка підказки мапи"
  SETTING_MAP_TOOLTIP_DELAY_TOOLTIP: "#T $SETTING_MAP_TOOLTIP_DELAY$#!\nВстановлює затримку перед показом підказки мапи."

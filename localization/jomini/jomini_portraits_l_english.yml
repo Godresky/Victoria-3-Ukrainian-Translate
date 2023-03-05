@@ -2,5 +2,5 @@
  SETTING_ANIMATED_PORTRAITS: "Анімовані персонажі"
  SETTING_ANIMATED_PORTRAITS_TOOLTIP: "#T $SETTING_ANIMATED_PORTRAITS$\n#!Визначає, чи мають бути анімовані помітні персонажі.\n\nВимкнення може збільшити продуктивність."
  SETTING_PORTRAITS_SSAO: "Персонажі SSAO"
- SETTING_PORTRAITS_SSAO_TOOLTIP: "#T $SETTING_PORTRAITS_SSAO$\n#!Визначає, чи слід застосовувати навколишнє оклюзію екранного простору до портретів.\n\nВимкнення може збільшити продуктивність."
+ SETTING_PORTRAITS_SSAO_TOOLTIP: "#T $SETTING_PORTRAITS_SSAO$\n#!Визначає, чи слід застосовувати затінення навколишнього світла у екранному просторі до портретів.\n\nВимкнення може збільшити продуктивність."
  

@@ -289,7 +289,7 @@
  fiscally_irresponsible:0 "Fiscally Irresponsible"
 
  election_contextual_events.3.t: "Пацифіст засуджує війну" # Waging a War of Aggression
- election_contextual_events.3.d: "[SCOPE.sCharacter('pacifist_ig_leader').GetFullName], відомий пацифіст і провідник [SCOPE.gsInterestGroup('opposition_pacifist_ig').GetName], розпочав різку атаку на активну [SCOPE.sParty('government_war_party').GetName], стверджуючи, що війська [ROOT.GetCountry.GetAdjectiveNoFormatting] які брали участь у війні [SCOPE.sWar('pacifist_war').GetNameNoFormatting] під їхнім наглядом скоїли серйозні звірства."
+ election_contextual_events.3.d: "[SCOPE.sCharacter('pacifist_ig_leader').GetFullName], відомий пацифіст і провідник [SCOPE.gsInterestGroup('opposition_pacifist_ig').GetName], розпочав різкий напад на активну [SCOPE.sParty('government_war_party').GetName], стверджуючи, що війська [ROOT.GetCountry.GetAdjectiveNoFormatting] які брали участь у війні [SCOPE.sWar('pacifist_war').GetNameNoFormatting] під їхнім наглядом скоїли серйозні звірства."
  election_contextual_events.3.f: "«Ми... Я отримав наказ зібрати заручників, сер. Старі обличчя, молоді обличчя — деякі не старші мого власного сина. Наші лінії турбували так звані вільні стрільці. «Вбивцями» назвав їх мій командир. «Розбійники» зі злобою в серцях і рушницями в руках. Заручники мали їх стримати!\n\nBut після того, як того вечора впав третій солдат, командир сказав мені взяти заручників... він сказав завести їх у сарай... і... Господи, прости мене.»"
  election_contextual_events.3.a: "Що зробили наші війська!? Кому!?"
  election_contextual_events.3.b: "Цікавий знімок. Нумо зацензуримо."
