@@ -243,8 +243,8 @@
  law_serfdom_banned_desc: "Феодальну практику кріпацтва скасовано."
  law_regulatory_bodies: "Регулювальні органи"
  law_regulatory_bodies_desc: "Створено державні інституції для регулювання надмірностей роботодавців."
- law_worker_protections: "Захист працівників"
- law_worker_protections_desc: "Працівники користуються широким захистом, закріпленим законом."
+ law_worker_protections: "Захист робітників"
+ law_worker_protections_desc: "Робітники мають широкий захист, закріпленим законом."
   
   # Children's Rights group
  lawgroup_childrens_rights: "Права дітей"

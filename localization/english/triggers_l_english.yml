@@ -1274,8 +1274,8 @@
  
  TRIGGER_CULTURE_IS_DISCRIMINATED_IN:1 "Is [Concept('concept_discrimination','$concept_discriminated_against$')] in [Country.GetName]"
  TRIGGER_CULTURE_IS_DISCRIMINATED_IN_NOT:2 "Is #bold not #![Concept('concept_discrimination','$concept_discriminated_against$')] in [Country.GetName]"
- TRIGGER_CULTURE_IS_DISCRIMINATED_IN_THIRD: "Культуру [CULTURE.GetName] [Concept('concept_discrimination','$concept_discriminated_against$')|l] у [Concept('concept_country','$concept_country_dat$')|l] [Country.GetName]"
- TRIGGER_CULTURE_IS_DISCRIMINATED_IN_NOT_THIRD: "Культуру [CULTURE.GetName] #bold не #![Concept('concept_discrimination','$concept_discriminated_against$')|l] у [Concept('concept_country','$concept_country_dat$')|l] [Country.GetName]"
+ TRIGGER_CULTURE_IS_DISCRIMINATED_IN_THIRD: "Культуру [CULTURE.GetName|l] [Concept('concept_discrimination','$concept_discriminated_against$')|l] у [Concept('concept_country','$concept_country_dat$')|l] [Country.GetName]"
+ TRIGGER_CULTURE_IS_DISCRIMINATED_IN_NOT_THIRD: "Культуру [CULTURE.GetName|l] #bold не #![Concept('concept_discrimination','$concept_discriminated_against$')|l] у [Concept('concept_country','$concept_country_dat$')|l] [Country.GetName]"
  
  TRIGGER_CULTURE_SECESSION_PROGRESS:0 "[CULTURE.GetName] in [TARGET_COUNTRY.GetName]: [concept_secession] progress ($CURRENT_VALUE$) is $COMPARATOR$ $NUM|v$"
  TRIGGER_CULTURE_SECESSION_PROGRESS_NOT:0 "[CULTURE.GetName] in [TARGET_COUNTRY.GetName]: [concept_secession] progress ($CURRENT_VALUE$) is $COMPARATOR$ $NUM|v$"
