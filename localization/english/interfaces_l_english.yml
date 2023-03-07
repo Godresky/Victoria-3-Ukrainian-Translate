@@ -438,9 +438,9 @@
  REL_DISCRIMINATED_NOT_IN_COUNTRY: "Релігія [RELIGION.GetName|l] була б утиснена, але не присутня у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
  REL_NOT_DISCRIMINATED_NOT_IN_COUNTRY: "Релігія [RELIGION.GetName|l] не була б утиснена та не присутня у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
  DISCRIMINATION_TOOLTIP: "#header Цей прошарок утискається у [Concept('concept_country','$concept_country_loc$')|l] [Pop.GetCountry.GetName]#!\n$TOOLTIP_DELIMITER$\n[AddLocalizationIf(Pop.IsSlave, 'DISCRIMINATION_TOOLTIP_SLAVE_DISCRIMINATION')][AddLocalizationIf(Pop.GetCulture.IsDiscriminatedIn(Pop.GetCountry.Self), 'DISCRIMINATION_TOOLTIP_CULTURAL_DISCRIMINATION')][AddLocalizationIf(Pop.GetReligion.IsDiscriminatedIn(Pop.GetCountry.Self), 'DISCRIMINATION_TOOLTIP_RELIGIOUS_DISCRIMINATION')]"
- DISCRIMINATION_TOOLTIP_RELIGIOUS_DISCRIMINATION: "\n[Concept('concept_religion','$concept_religion_acc$')] [Pop.GetReligion.GetName|l] [Concept('concept_discrimination','$concept_discriminated_against$')|l] через [concept_law|l] «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_church_and_state').GetName]» у розряді «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_church_and_state').GetGroup.GetName]»\n"
- DISCRIMINATION_TOOLTIP_CULTURAL_DISCRIMINATION: "[Concept('concept_culture','$concept_culture_acc$')] [Pop.GetCulture.GetName|l] [Concept('concept_discrimination','$concept_discriminated_against$')|l] через [concept_law|l] «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_citizenship').GetName]» у розряді «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_church_and_state').GetGroup.GetName]»\n"
- DISCRIMINATION_TOOLTIP_SLAVE_DISCRIMINATION: "Цей прошарок суспільства є [Concept('concept_slavery', '$concept_enslaved_adj$им')|l], і вони завжди будуть утисненими, незалежно від прийнятих законів у розрядах «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_church_and_state').GetGroup.GetName]» чи «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_citizenship').GetGroup.GetName]»\n\n"
+ DISCRIMINATION_TOOLTIP_RELIGIOUS_DISCRIMINATION: "\n[Concept('concept_religion','$concept_religion_acc$')] [Pop.GetReligion.GetName|l] [Concept('concept_discrimination','$concept_discriminated_against$')|l] через [concept_law|l] «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_church_and_state').GetName]» у групі «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_church_and_state').GetGroup.GetName]»\n"
+ DISCRIMINATION_TOOLTIP_CULTURAL_DISCRIMINATION: "[Concept('concept_culture','$concept_culture_acc$')] [Pop.GetCulture.GetName|l] [Concept('concept_discrimination','$concept_discriminated_against$')|l] через [concept_law|l] «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_citizenship').GetName]» у групі «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_church_and_state').GetGroup.GetName]»\n"
+ DISCRIMINATION_TOOLTIP_SLAVE_DISCRIMINATION: "Цей прошарок суспільства є [Concept('concept_slavery', '$concept_enslaved_adj$им')|l], і вони завжди будуть утисненими, незалежно від прийнятих законів у групах «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_church_and_state').GetGroup.GetName]» чи «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_citizenship').GetGroup.GetName]»\n\n"
  ACCEPTED_TOOLTIP:2 "#header This Pop is Accepted in [Pop.GetCountry.GetName]#!\n$TOOLTIP_DELIMITER$\n[AddLocalizationIf(Pop.GetCulture.IsPrimaryCultureIn(Pop.GetCountry.Self), 'ACCEPTED_TOOLTIP_PRIMARY_CUTULRE')][AddLocalizationIf(Not(Pop.GetCulture.IsDiscriminatedIn(Pop.GetCountry.Self)), 'ACCEPTED_TOOLTIP_CULTURAL_ACCEPTANCE')][AddLocalizationIf(Not(Pop.GetReligion.IsDiscriminatedIn(Pop.GetCountry.Self)), 'ACCEPTED_TOOLTIP_RELIGIOUS_ACCEPTANCE')]"
  ACCEPTED_TOOLTIP_RELIGIOUS_ACCEPTANCE:0 "\n[Pop.GetReligion.GetName] is [Concept('concept_accepted_religion','$concept_accepted_religion_short$')] due to the [concept_law] [Pop.GetCountry.GetActiveLawFromGroup('lawgroup_church_and_state').GetName] for [Pop.GetCountry.GetActiveLawFromGroup('lawgroup_church_and_state').GetGroup.GetName]\n"
  ACCEPTED_TOOLTIP_CULTURAL_ACCEPTANCE:0 "[Pop.GetCulture.GetName] is [Concept('concept_accepted_culture','$concept_accepted_culture_short$')] due to the [concept_law] [Pop.GetCountry.GetActiveLawFromGroup('lawgroup_citizenship').GetName] for [Pop.GetCountry.GetActiveLawFromGroup('lawgroup_citizenship').GetGroup.GetName]\n"
@@ -3974,7 +3974,7 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  IDEOLOGY_STRONG_DISAPPROVAL: "#N Сильне несхвалення#!"
 
  IDEOLOGY_NO_LAW_STANCES: "#bold Без жодної думки#!"
- IDEOLOGY_LAW_STANCE_GROUP: "#title Думка щодо розряду «$LAW_GROUP$»#!"
+ IDEOLOGY_LAW_STANCE_GROUP: "#title Думка щодо групи «$LAW_GROUP$»#!"
  IDEOLOGY_LAW_STANCE_STRONGLY_APPROVE: "#P Сильна підтримка#! законів: $LAWS$"
  IDEOLOGY_LAW_STANCE_APPROVE: "#P $concept_endorse$#! законів: $LAWS$"
  IDEOLOGY_LAW_STANCE_DISAPPROVE: "#N $concept_oppose$#! законам: $LAWS$"
@@ -5257,8 +5257,8 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  PREDICTED_LAWS_WITH_GVT_SUPPORT: "$LAWS_WITH_GVT_SUPPORT$ ($PREDICTION$)"
  PREDICTED_LAWS_WITHOUT_GVT_SUPPORT: "$LAWS_WITHOUT_GVT_SUPPORT$ ($PREDICTION$)"
 
- TOOLTIP_CHANGE_FROM_LAW: "#header Змінити «[concept_law|l]» в розряді «[LawGroup.GetName]»#!\nВи маєте #variable [LawGroup.GetNumEnactable|+]#! доступних иншин в розряді [LawGroup.GetName]" # [Concept('concept_law', '$concept_law_gen$')|l] [Law.GetName]
- TOOLTIP_CHANGE_FROM_LAW_CURRENTLY_ENACTING:0 "#header Змінити [concept_law|l] в розряді [LawGroup.GetName]#!\nYou are currently enacting [GetPlayer.GetLawBeingEnacted.GetName] in [GetPlayer.GetLawBeingEnacted.GetGroup.GetName]\nIf you were not, you would have #variable [LawGroup.GetNumPotentialEnactable|+]#! available alternatives to [LawGroup.GetName] in [Law.GetName]"
+ TOOLTIP_CHANGE_FROM_LAW: "#header Змінити [concept_law|l] в групі «[LawGroup.GetName]»#!\nВи маєте #variable [LawGroup.GetNumEnactable|+]#! доступних иншин в групі «[LawGroup.GetName]»" # [Concept('concept_law', '$concept_law_gen$')|l] [Law.GetName]
+ TOOLTIP_CHANGE_FROM_LAW_CURRENTLY_ENACTING:0 "#header Змінити [concept_law|l] в групі [LawGroup.GetName]#!\nYou are currently enacting [GetPlayer.GetLawBeingEnacted.GetName] in [GetPlayer.GetLawBeingEnacted.GetGroup.GetName]\nIf you were not, you would have #variable [LawGroup.GetNumPotentialEnactable|+]#! available alternatives to [LawGroup.GetName] in [Law.GetName]"
  PREDICT_LEGITIMACY_TO_ENACT:0 "Once enacted, this Law would change the current Government's Legitimacy by #variable $VAL|=+0$#!"
  LAW_BEING_ENACTED:0 "Being Enacted"
  ENACTING_TO_LAW: "Введення [Concept('concept_law', '$concept_law_gen$')|l] [GetPlayer.GetLawBeingEnacted.GetName]"
@@ -5619,10 +5619,10 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  OUR_COUNTRY_TEXT:0 "We are playing as #variable [Country.GetName]#!"
  RELATION_WITH:0 "Our relations are #BOLD [Country.GetRelationsWithDesc( GetPlayer )]#! ([Country.GetRelationsWith(GetPlayer)|+])"
 
- CULTURALLY_ACCEPTED_TOOLTIP: "#header Культура громади#!\n[Culture.GetName] - [Concept('concept_accepted_culture','$concept_accepted_culture_short_adj$і')|l] у [Concept('concept_country','$concept_country_loc$')|l] [Pop.GetCountry.GetName]\nЦе через [Concept('concept_law','$concept_law_acc$')|l] «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_citizenship').GetName]» у розряді «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_citizenship').GetGroup.GetName]»"
- CULTURALLY_DISCRIMINATED_TOOLTIP: "#header Культура громади#!\n[Culture.GetName] - [Concept('concept_discrimination','$concept_discriminated_against$')|l] у [Concept('concept_country','$concept_country_loc$')|l] [Pop.GetCountry.GetName]\nЦе через [Concept('concept_law','$concept_law_acc$')|l] «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_citizenship').GetName]» у розряді «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_citizenship').GetGroup.GetName]»"
- RELIGIOUSLY_ACCEPTED_TOOLTIP: "#header Релігія громади#!\n[Religion.GetName] - [Concept('concept_accepted_religion','$concept_accepted_religion_short_adj$е')|l] у [Concept('concept_country','$concept_country_loc$')|l] [Pop.GetCountry.GetName]\nЦе через [Concept('concept_law','$concept_law_acc$')|l] «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_church_and_state').GetName]» у розряді «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_church_and_state').GetGroup.GetName]»"
- RELIGIOUSLY_DISCRIMINATED_TOOLTIP: "#header Релігія громади#!\n[Religion.GetName] - [Concept('concept_discrimination','$concept_discriminated_against$')|l] у [Concept('concept_country','$concept_country_loc$')|l] [Pop.GetCountry.GetName]\nЦе через [Concept('concept_law','$concept_law_acc$')|l] «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_church_and_state').GetName]» у розряді «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_church_and_state').GetGroup.GetName]»"
+ CULTURALLY_ACCEPTED_TOOLTIP: "#header Культура громади#!\n[Culture.GetName] - [Concept('concept_accepted_culture','$concept_accepted_culture_short_adj$і')|l] у [Concept('concept_country','$concept_country_loc$')|l] [Pop.GetCountry.GetName]\nЦе через [Concept('concept_law','$concept_law_acc$')|l] «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_citizenship').GetName]» в групі «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_citizenship').GetGroup.GetName]»"
+ CULTURALLY_DISCRIMINATED_TOOLTIP: "#header Культура громади#!\n[Culture.GetName] - [Concept('concept_discrimination','$concept_discriminated_against$')|l] у [Concept('concept_country','$concept_country_loc$')|l] [Pop.GetCountry.GetName]\nЦе через [Concept('concept_law','$concept_law_acc$')|l] «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_citizenship').GetName]» в групі «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_citizenship').GetGroup.GetName]»"
+ RELIGIOUSLY_ACCEPTED_TOOLTIP: "#header Релігія громади#!\n[Religion.GetName] - [Concept('concept_accepted_religion','$concept_accepted_religion_short_adj$е')|l] у [Concept('concept_country','$concept_country_loc$')|l] [Pop.GetCountry.GetName]\nЦе через [Concept('concept_law','$concept_law_acc$')|l] «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_church_and_state').GetName]» в групі «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_church_and_state').GetGroup.GetName]»"
+ RELIGIOUSLY_DISCRIMINATED_TOOLTIP: "#header Релігія громади#!\n[Religion.GetName] - [Concept('concept_discrimination','$concept_discriminated_against$')|l] у [Concept('concept_country','$concept_country_loc$')|l] [Pop.GetCountry.GetName]\nЦе через [Concept('concept_law','$concept_law_acc$')|l] «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_church_and_state').GetName]» в групі «[Pop.GetCountry.GetActiveLawFromGroup('lawgroup_church_and_state').GetGroup.GetName]»"
 
  CANNOT_MOVE_COMMANDER_NON_FRIENDLY_HQ:0 "#N [Hq.GetName] is not own or ally [concept_hq]#!"
  MOVE_COMMANDER_ALREADY_THERE_TOOLTIP:0 "#N [Character.GetFullName] is already at [Hq.GetName]#!"
@@ -6197,14 +6197,14 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  STANDARD_PMS_DESC:0 "#header Reset to Standard [Concept('concept_production_method', '$concept_production_methods$')]#!$LIST$"
 
  CURRENTLY_ACTIVE_LAW: "#b Чинний закон#!"
- CURRENTLY_ACTIVE_LAW_IN_LAWGROUP: "Чинний закон розряду «[Law.GetGroup.GetName]»"
+ CURRENTLY_ACTIVE_LAW_IN_LAWGROUP: "Чинний закон групи «[Law.GetGroup.GetName]»"
  LAW_CURRENTLY_BEING_ENACTED:0 "#b Trying to enact this#!"
  CURRENT_LAW_BEING_ENACTED: "#b Надавання чинности закону#!"
- NO_LAW_IN_THIS_LAWGROUP_IS_BEING_ENACTED: "Не надається сили [Concept('concept_law', '$concept_law_gen$')|l] розряду «[LawGroup.GetName]»"
+ NO_LAW_IN_THIS_LAWGROUP_IS_BEING_ENACTED: "Не надається сили [Concept('concept_law', '$concept_law_gen$')|l] групи «[LawGroup.GetName]»"
  ACTIVE_LAW: "@green_checkmark! Є частиною наших [Concept('concept_law', '$concept_laws_gen$')|l]"
  BEING_ENACTED_LAW: "#v Наразі надається чинности#! (Через #tooltippable #tooltip:[Law.GetTooltipTag],LAW_NEXT_CHECKPOINT_TIME_DESC [Law.GetCheckpointRemainingDays|v] дн. позір-точка#!#!)"
  INACTIVE_LAW: "@red_cross! Не є частиною наших [Concept('concept_law', '$concept_laws_gen$')|l]"
- LAW_FULL_NAME: "«$LAW_TYPE$» у розряді «$LAW_GROUP$»"
+ LAW_FULL_NAME: "«$LAW_TYPE$» групи «$LAW_GROUP$»"
  LAW_TYPE_TYPE_DESC_LAW: "[concept_law]"
  LAW_TYPE_TYPE_DESC_INSTITUTION: "Установа"
 

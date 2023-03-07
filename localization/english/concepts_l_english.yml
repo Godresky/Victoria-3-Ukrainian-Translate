@@ -1642,7 +1642,7 @@
 
  concept_law_group: "Група законів"
  concept_law_group_gen: "Групи законів"
- concept_law_group_desc:3 "A $concept_law_group$ contains several [Concept('concept_law', '$concept_laws$')] that affect aspects of the [concept_country] in different ways. Each $concept_law_group$ can only have one $concept_law$ active at a time."
+ concept_law_group_desc: "Група законів містить декілько [Concept('concept_law', '$concept_laws_gen$')|l], які впливають на різні сторони [Concept('concept_country', '$concept_country_gen$')|l] у різний спосіб. Кожна група законів, одночасно, може мати в дії лише один закон."
 
  concept_government_reform: "Урядова зміна"
  concept_government_reform_acc: "Урядову зміну" 
