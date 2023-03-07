@@ -314,6 +314,7 @@
  concept_potential_battalions_desc_additional:0 "[GetBuildingType('building_conscription_center').GetName]"
 
  concept_conscription_center: "Осередок призви"
+ concept_conscription_center_acc: "Осередок призви"
  concept_conscription_centers: "Осередки призви"
  concept_conscription_centers_acc: "Осередки призви"
  concept_conscription_centers_ins: "Осередками призви"
@@ -324,6 +325,8 @@
  concept_conscription_center_desc_added:0 "[GetBuildingType('building_conscription_center').GetName]"
 
  concept_strategic_objective: "Стратегічна ціль"
+ concept_strategic_objective_acc: "Стратегічну ціль"
+ concept_strategic_objective_ins: "Стратегічною ціллю"
  concept_strategic_objectives: "Стратегічні цілі"
  concept_strategic_objective_desc:0 "One of your own [Concept('concept_state','$concept_states$')] or a [concept_state] in an enemy [concept_theater]. When a [concept_general] is advancing into a [concept_front] in which the enemy [concept_theater] contains a Strategic Objective, he will be more likely to advance towards that objective."
 
@@ -1466,6 +1469,7 @@
  concept_state_loc: "Реґіоні"
  concept_states: "Реґіони"
  concept_states_gen: "Реґіонів"
+ concept_states_acc: "Реґіони"
  concept_states_ins: "Реґіонами"
  concept_states_loc: "Реґіонах"
  concept_state_or_states: "Реґіон(-и)"
