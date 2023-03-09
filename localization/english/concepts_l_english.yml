@@ -478,6 +478,7 @@
  
  concept_law: "Закон"
  concept_law_gen: "Закону"
+ concept_law_dat: "Закону"
  concept_law_acc: "Закон"
  concept_law_loc: "Законі"
  concept_law_ins: "Законом"
@@ -832,7 +833,7 @@
  concept_flotilla_desc_added:0 "[GetBuildingType('building_naval_base').GetName]"
 
  concept_in_government: "В уряді"
- concept_in_government_desc: "[Concept('concept_interest_group','$concept_interest_groups$')], що входять в [Concept('concept_government','$concept_government_acc$')|l] впливають на те, яким [Concept('concept_law','$concept_laws_dat$')] можна буде [Concept('concept_enactment_of_laws','надати чинности')|l] та встановлює [Concept('concept_legitimacy','$concept_legitimacy_acc$')|l] [Concept('concept_country','$concept_country_gen$')|l]. Вони ніколи не підтримають [Concept('concept_political_movement','$concept_political_movements_acc$')|l], якщо тільки їхнє [concept_approval|l] не впаде настільки низько, що вони приєднаються до [Concept('concept_in_opposition','$concept_in_opposition_short_gen$')|l]."
+ concept_in_government_desc: "[Concept('concept_interest_group','$concept_interest_groups$')], що входять в [Concept('concept_government','$concept_government_acc$')|l] впливають на те, яким [Concept('concept_law','$concept_laws_dat$')|l] можна буде [Concept('concept_enactment_of_laws','надати чинности')|l] та встановлює [Concept('concept_legitimacy','$concept_legitimacy_acc$')|l] [Concept('concept_country','$concept_country_gen$')|l]. Вони ніколи не підтримають [Concept('concept_political_movement','$concept_political_movements_acc$')|l], якщо тільки їхнє [concept_approval|l] не впаде настільки низько, що вони приєднаються до [Concept('concept_in_opposition','$concept_in_opposition_short_gen$')|l]."
 
  concept_in_opposition: "В опозиції"
  concept_in_opposition_short: "Опозиція"
@@ -2136,30 +2137,32 @@
  concept_end_of_discussion_factor:0 "End-of-Discussion Factor"
  concept_end_of_discussion_factor_desc:1 "The presence of a $concept_end_of_discussion_factor$ represents that [Concept('concept_interest_group', '$concept_interest_groups$')] in [concept_government] consider further discussion of the merits of the [concept_law] currently being enacted no longer useful. The lower this factor gets, the more negative pressure it puts on the possibility that the enactment may $concept_enactment_advance_short$ or $concept_enactment_stall_short$."
 
- concept_enactment_of_laws: "Надання чинности законам"
- concept_enactment_of_laws_enact: "Надати чинности"
- concept_enactment_of_laws_enacted: "Надано чинности"
+ concept_enactment_of_laws: "Ухвалення законів"
+ concept_enactment_of_laws_enact: "Ухвалити"
+ concept_enactment_of_laws_enacted: "Ухвалений"
+ concept_enactment_of_laws_enacted_adj: "Ухвален"
  concept_enactment_of_laws_desc:0 "The act of attempting to push a new [concept_law] through the [Concept('concept_country','$concept_country_possessive$')] legislature. At regular intervals the $concept_law$'s [concept_enactment_success] chance will be tested. The time between tests is dependent on the [Concept('concept_government','$concept_government_possessive$')] [concept_legitimacy]. If the $concept_law$ does not pass, it will either [Concept('concept_enactment_advance','$concept_enactment_advance_short$')], be [Concept('concept_enactment_debate','$concept_enactment_debate_short_debated$')], or [Concept('concept_enactment_stall','$concept_enactment_stall_short$')] which affects its chances to pass the next test or introduce other consequences to your $concept_country$."
 
- concept_enactment_success: "Успіх надання чинности"
- concept_enactment_success_gen: "Успіху надання чинности"
+ concept_enactment_success: "Успіх на ухвалення"
+ concept_enactment_success_gen: "Успіху на ухвалення"
  concept_enactment_success_short: "Успіх"
- concept_enactment_success_desc:1 "$concept_enactment_success$ indicates the percentage chance that a [concept_law] will be enacted at the next checkpoint. It is equal to the [concept_base_success_chance] plus any effects accumulated during the enactment process."
+ concept_enactment_success_desc: "$concept_enactment_success$ показує відсоток шансу того, що [Concept('concept_law','$concept_law_dat$')|l] нададуть сили на наступній прозір-точці. Він дорівнює [Concept('concept_base_success_chance','$concept_base_success_chance_dat$')|l] плюс заподії, накопичені в процесі надання чинности законові."
 
- concept_enactment_advance: "Попереднє надання чинности"
- concept_enactment_advance_short: "Попереднє"
- concept_enactment_advance_desc:1 "$concept_enactment_advance$ indicates the percentage chance that the enactment process of a [concept_law] will advance somehow at the next checkpoint, even if it will not meet with a full [Concept('concept_enactment_success','$concept_enactment_success_short$')] yet. It is derived from the enactment's [concept_base_success_chance]."
+ concept_enactment_advance: "Поступ в ухвалені"
+ concept_enactment_advance_short: "Поступ"
+ concept_enactment_advance_desc: "$concept_enactment_advance$ indicates the percentage chance that the enactment process of a [concept_law] will advance somehow at the next checkpoint, even if it will not meet with a full [Concept('concept_enactment_success','$concept_enactment_success_short$')] yet. It is derived from the enactment's [concept_base_success_chance]."
 
- concept_enactment_debate: "Правдування щодо надання чинности"
+ concept_enactment_debate: "Правдування щодо ухвалення"
  concept_enactment_debate_short: "Правдування"
  concept_enactment_debate_short_debated: "Обговорений"
  concept_enactment_debate_desc:1 "$concept_enactment_debate$ indicates the percentage chance that the enactment process of a [concept_law] will meet with some kind of complication at the next checkpoint. The lower the total chances of [Concept('concept_enactment_success','$concept_enactment_success_short$')], [Concept('concept_enactment_advance','$concept_enactment_advance_short$')], and [Concept('concept_enactment_stall','$concept_enactment_stall_short$')] the greater the chance of $concept_enactment_debate_short$."
 
- concept_enactment_stall: "Припинення надання чинности"
+ concept_enactment_stall: "Припинення ухвалення"
  concept_enactment_stall_short: "Припинення"
  concept_enactment_stall_desc:1 "$concept_enactment_stall$ indicates the percentage chance that the enactment process of a [concept_law] will be substantially hindered at the next checkpoint. Its base chance is equal to the total [concept_clout] of opposing [Concept('concept_interest_group','$concept_interest_groups$')] in [concept_government]."
 
- concept_base_success_chance:0 "Base Success chance"
+ concept_base_success_chance: "Базовий шанс на успіх"
+ concept_base_success_chance_dat: "Базовому шансу на успіх"
  concept_base_success_chance_desc:0 "$concept_base_success_chance$ is equal to the total [concept_clout] of supporting [Concept('concept_interest_group','$concept_interest_groups$')] in [concept_government] plus or minus [Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] gained from any relevant [Concept('concept_political_movement', '$concept_political_movements$')]."
 
  concept_advance_factor:0 "Advance Factor"

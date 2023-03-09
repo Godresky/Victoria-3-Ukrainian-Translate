@@ -958,7 +958,7 @@
  distribution_of_power_laws.9.b:0 "Perhaps we can collaborate with them in the creation of the new system."
 
  distribution_of_power_laws.10.t: "Гріхи минулого"
- distribution_of_power_laws.10.d: "Прихильники [Concept('concept_law', '$concept_law_gen$')|l] [SCOPE.sLaw('current_law_scope').GetName|l] звернули увагу на минулі зловживання владою з боку нинішнього режиму, як на одну з причин термінової необхідности цього закону."
+ distribution_of_power_laws.10.d: "Прихильники [Concept('concept_law', '$concept_law_gen$')|l] «[SCOPE.sLaw('current_law_scope').GetName]» звернули увагу на минулі зловживання владою з боку нинішнього режиму, як на одну з причин термінової необхідности цього закону."
  distribution_of_power_laws.10.f: "«Ну, я сам ледви це пам‘ятаю. Тоді це був інший час. Таке було в межах норми, і я ніколи не думав, що мене будуть допитувати щодо цього. Звісно, це не означає, що це залишилося безсумніву, проте завжди будуть люди, які скаржаться. Ти не повинен їх слухати, якщо хочеш все зробити правильно. Звичайно, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] це все схвалив. Не офіційно, але я думаю, що ти повинен був це знати. Це все залишиться між нами.»"
  distribution_of_power_laws.10.a: "Влада розбещує, тому можновладці повинні нести відповідальність перед виборцями."
  distribution_of_power_laws.10.b: "Минуле залишиться в минулому. Ці питання не стосуються реформи."
