@@ -422,7 +422,7 @@
  customs_union_action_notification_name: "[concept_customs_union] з [Concept('concept_country','$concept_country_ins$')|l] [INITIATOR_COUNTRY.GetName]"
  customs_union_action_notification_desc:0 "We have entered into a [concept_customs_union] with [INITIATOR_COUNTRY.GetName]."
  customs_union_desc: "#header $customs_union$#!\n$TOOLTIP_DELIMITER$\n[concept_diplomatic_pact], який встановлює [Concept('concept_customs_union', '$concept_customs_union_acc$')|l] між двома [Concept('concept_country', '$concept_countries_ins$')|l]."
- customs_union_pact_desc:0 "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] - [concept_senior_partner|l] [Concept('concept_customs_union', '$concept_customs_union_gen$')|l] з [Concept('concept_country', '$concept_country_ins$')|l] [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName]."
+ customs_union_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] - [concept_senior_partner|l] [Concept('concept_customs_union', '$concept_customs_union_gen$')|l] з [Concept('concept_country', '$concept_country_ins$')|l] [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName]."
  customs_union_proposal_notification_name: "Пропозиція [Concept('concept_customs_union','$concept_customs_union_gen$')|l]"
  customs_union_proposal_notification_desc: "[INITIATOR_COUNTRY.GetName] хоче, щоб ми увійшли до їхньої #variable [Concept('concept_customs_union','$concept_customs_union_gen$')|l]#!."
  customs_union_proposal_notification_effects_desc: "$customs_union_desc$"

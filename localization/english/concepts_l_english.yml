@@ -235,7 +235,7 @@
  concept_diplomatic_plays_loc: "Дипломатичних іграх"
  concept_diplomatic_plays_short: "Ігри"
  concept_diplomatic_play_negotiated:0 "Negotiated"
- concept_diplomatic_play_desc: "Дипломатична гра - це is a period of hostile diplomatic negotiations between two or more [Concept('concept_country','$concept_countries$')] that follows after one $concept_country$ makes a demand for a concession by another. To start a $concept_diplomatic_play$ you must have an [concept_active_interest] in the relevant [concept_strategic_region], which also entitles you to participate in $concept_diplomatic_plays_short$ as a third party in that $concept_strategic_region$.\n\nThe $concept_diplomatic_play$ will [Concept('concept_escalation', '$concept_escalate$')] through three phases: [concept_opening_moves], [concept_diplomatic_maneuvers], and [concept_countdown_to_war]. These phases set the terms for a possible [concept_peace_deal] should the $concept_diplomatic_play$ $concept_escalate$ into a [concept_war]. A $concept_war$ can be averted if either the [concept_initiator] or [concept_target] of the $concept_diplomatic_play_short$ backs down and grants the other their [Concept('concept_primary_demand','$concept_primary_demands$')]."
+ concept_diplomatic_play_desc: "Дипломатична гра - це ворожі дипломатичні перемовини між двома або більше [Concept('concept_country','$concept_countries_ins$')|l], що приходить, коли одна країна висуває вимоги до іншої. Щоб почати дипломатичну гру, ви повинні мати [Concept('concept_active_interest','$concept_active_interest_acc$')|l] у відповідному [Concept('concept_strategic_region','$concept_strategic_region_loc$')|l], що також дає право на участь у грі третій стороні.\n\nДипломатична гра може [Concept('concept_escalation', 'загостритися')|l] під час трьох віх: «[concept_opening_moves]», «[concept_diplomatic_maneuvers]», та «[concept_countdown_to_war]». Ці три віхи визначають умови можливої [Concept('concept_peace_deal','$concept_peace_deal_gen$')|l], якщо дипломатична гра переросте у [Concept('concept_war','$concept_war_acc$')|l]. Війні можна запобігти, якщо [concept_initiator|l] або [concept_target|l] гри відступить та виконає [Concept('concept_primary_demand','$concept_primary_demands_acc$')|l] іншої сторони."
 
  concept_sympathy: "Співчуття"
  concept_sympathy_desc:0 "All AI-controlled [Concept('concept_country','$concept_countries$')] involved in a [concept_diplomatic_play] begin the play with a level of $concept_sympathy$ for each side, which influences how likely they are to support that side in the conflict. AI [Concept('concept_country','$concept_countries$')] tend to have higher $concept_sympathy$ for the [concept_target], for countries they have [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] with, and for those are opposing a [concept_country] with high [concept_infamy]. $concept_sympathy$ can also increase over the course of the [concept_diplomatic_play], as a side that gains powerful backers or accrues [concept_infamy] through adding [Concept('concept_war_goal', '$concept_war_goals$')] tends to generate $concept_sympathy$ for the opposing side."
@@ -422,7 +422,7 @@
  concept_diplomatic_actions_acc: "Дипломатичні дії"
  concept_diplomatic_actions_short: "Дії"
  concept_diplomatic_actions_short_acc: "Дії"
- concept_diplomatic_action_desc:2 "A broad term for interactions between two [Concept('concept_country','$concept_countries$')] that includes [Concept('concept_instant_diplomatic_action','$concept_instant_diplomatic_actions$')], [Concept('concept_ongoing_diplomatic_action','$concept_ongoing_diplomatic_actions$')], and [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]. They differ from [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] in that no third party is allowed to have a say in its outcome, and there is no risk the action on its own might escalate into [concept_war]."
+ concept_diplomatic_action_desc:2 "Широкий термін для позначення взаємодії між двома [Concept('concept_country','$concept_countries_ins$')|l] у що входить: [Concept('concept_instant_diplomatic_action','$concept_instant_diplomatic_actions_acc$')|l], [Concept('concept_ongoing_diplomatic_action','$concept_ongoing_diplomatic_actions_acc$')|l], та [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts_acc$')|l]. Вони відрізняються від [Concept('concept_diplomatic_play','$concept_diplomatic_plays_gen$')|l] тим, що жодна третя сторона не може впливати на результати і немає ризику, що дія сама собою може перерости у [Concept('concept_war','$concept_war_acc$')|l]."
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MAY 4, 2022
 
@@ -525,6 +525,7 @@
  concept_local_price_desc:1 "The price of a [concept_good] in a [concept_state]. It is determined by the local [concept_good_consumption] and [concept_good_production], moderated by the [concept_market_price] depending on the [Concept('concept_state','$concept_state_possessive$')] [concept_market_access]. All transactions except [Concept('concept_trade_route','$concept_trade$')] occur in the $concept_local_price$, with purchases and sales creating [Concept('concept_buy_orders','$concept_buy_order_short$')] and [concept_sell_orders] on the [concept_market]."
  
  concept_subsistence_building: "Житловий будинок"
+ concept_subsistence_building_gen: "Житлового будинку"
  concept_subsistence_buildings: "Житлові будинки"
  concept_subsistence_buildings_loc: "Житлових будинках"
  concept_subsistence_building_farming: "Натуральне господарство"
@@ -964,9 +965,9 @@
  concept_colony_desc_added: "[GetInstitutionType('institution_colonial_affairs').GetName]"
  
  concept_escalation: "Загострення"
- concept_escalate:0 "Escalate"
- concept_escalating:0 "Escalating"
- concept_escalates:0 "Escalates"
+ concept_escalate: "Загостритися"
+ concept_escalating: "Загострення"
+ concept_escalates: "Загостритися"
  concept_escalation_desc:2 "Once a [concept_diplomatic_play] has been initiated, it steadily $concept_escalates$ through three distinct phases: [concept_opening_moves], [concept_diplomatic_maneuvers], and [concept_countdown_to_war]. The phase limits which actions are available to participants. If the $concept_diplomatic_play_short$ does not resolve prior to $concept_escalation$ progressing all the way through the $concept_countdown_to_war$, [concept_war] will break out."
 
  concept_revenue: "Виручка"
@@ -1008,11 +1009,13 @@
  concept_attitude_desc:1 "An indication of how another [concept_country] feels about you, based on [concept_relations], [concept_infamy], [concept_strategic_desire], and factors such as how large your military is and which $concept_countries$ you have [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] with. $concept_attitude$ affects what sorts of actions a $concept_country$ is likely to take towards you and what role you play in their plans."
 
  concept_instant_diplomatic_action: "Миттєва дипломатична дія"
- concept_instant_diplomatic_actions: "Миттєві дипломатичні дії"
+ concept_ongoing_diplomatic_actions: "Тривалі дипломатичні дії"
+ concept_instant_diplomatic_actions_acc: "Миттєві дипломатичні дії"
  concept_instant_diplomatic_action_desc:2 "An action with an instant effect on the [Concept('concept_country','$concept_countries$')] involved. They typically require a certain condition to be true in order to be taken but do not cost any [concept_influence]."
 
  concept_ongoing_diplomatic_action: "Тривала дипломатична дія"
  concept_ongoing_diplomatic_actions: "Тривалі дипломатичні дії"
+ concept_ongoing_diplomatic_actions_acc: "Тривалі дипломатичні дії"
  concept_ongoing_diplomatic_action_desc:2 "A type of [concept_diplomatic_pact] that can be both initiated and ended at will, with no approval required nor costs incurred by the target [concept_country]."
 
  concept_diplomatic_pact: "Дипломатичний пакт"
@@ -1338,6 +1341,7 @@
  concept_primary_demand: "Основна вимога"
  concept_primary_demand_short: "Основна"
  concept_primary_demands: "Основні вимоги"
+ concept_primary_demands_acc: "Основні вимоги"
  concept_primary_demand_desc:0 "$concept_primary_demands$ are [Concept('concept_war_goal','$concept_war_goals$')] that will be enforced on the opposing side of a [concept_diplomatic_play] if they decide to back down. The first [concept_war_goal] added on each side is always a $concept_primary_demand$, as are any [Concept('concept_war_goal','$concept_war_goals$')] added against the leader of the opposing side through [Concept('concept_sway','$concept_swaying$')]."
  
  concept_secondary_demand: "Другорядна вимога"
@@ -1347,6 +1351,7 @@
  concept_resource_potential: "Ресурсна мічність"
  concept_resource_potential_gen: "Ресурсної мічности"
  concept_resource_potentials: "Ресурсні мічності"
+ concept_resource_potentials_acc: "Ресурсні мічності"
  concept_resource_potentials_short: "Мічність"
  concept_resource_potential_desc:3 "A $concept_resource_potential$ grants the ability to construct and expand a specific [concept_building] type in the state, usually a resource industry such as fisheries, mines, or plantations. The maximum [concept_building_level] you can expand the $concept_building$ to is limited either to a fixed amount per resources, or by the $concept_state$'s amount of [concept_arable_land]."
 
@@ -1377,7 +1382,8 @@
  concept_inactive_interest_desc:1 "When a new [concept_interest] is first [Concept('concept_declared_interest','$concept_declared_interest_declared$')], it remains $concept_inactive_interest_short$ for a period of #v [GetDefine('NDiplomacy','INTEREST_NUM_DAYS_CHANGE')|0] days#! before it becomes [Concept('concept_active_interest','$concept_active_interest_short$')]."
 
  concept_active_interest: "Активний руп"
- concept_active_interest_gen: "Активний руп"
+ concept_active_interest_gen: "Активного рупу"
+ concept_active_interest_acc: "Активний руп"
  concept_active_interest_ins: "Активним рупом"
  concept_active_interests: "Активні рупи"
  concept_active_interest_short: "Активний"

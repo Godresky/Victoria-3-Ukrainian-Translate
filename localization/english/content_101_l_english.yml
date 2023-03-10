@@ -656,16 +656,16 @@
  notification_ig_leader_assassination_failed_desc:1 "The attempt to assassinate the leader of the [SCOPE.gsInterestGroup('target').GetName] has failed."
  notification_ig_leader_assassination_failed_tooltip:0 "#header $notification_ig_leader_assassination_failed_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_leader_assassination_failed_desc$"
 
- je_central_archives:0 "Central Archives"
- je_central_archives_reason:0 "By making a change as simple as how we store documents it is possible to revolutionize our entire organizational system."
+ je_central_archives: "Центральний архів"
+ je_central_archives_reason: "Внісши таку просту зміну, як спосіб зберігання документів, можна зробити революцію в усій нашій організаційній системі."
 
- dan_society_tech_events.1.t:1 "Filing Cabinets"
- dan_society_tech_events.1.d:1 "The use of filing cabinets in the [SCOPE.sBuilding('government_building').GetName] has drastically increased the effectiveness of state bureaucracy."
- dan_society_tech_events.1.f:0 ""The future isn't in flying like a bird, nor in roaring along in a train. No... the future is in filing.""
- dan_society_tech_events.1.a:0 "I love bureaucracy."
- dan_society_tech_events.1.b:0 "Store information about our citizens."
+ dan_society_tech_events.1.t: "Картотечні шафи"
+ dan_society_tech_events.1.d: "Використання картотек у будівлі [SCOPE.sBuilding('government_building').GetName|l] різко підвищило ефективність державної бюрократії."
+ dan_society_tech_events.1.f: "«Майбутнє не в тому, щоб літати, як птах, і не в тому, щоб мчати в поїзді з гуркотом. Ні... майбутнє - у тому, щоб зберігати документи.»"
+ dan_society_tech_events.1.a: "Обожнюю бюрократію."
+ dan_society_tech_events.1.b: "Зберігайте інформацію про наших громадян."
 
- horizontal_filing_cabinets_modifier:0 "Horizontal Filing Cabinets Boost"
+ horizontal_filing_cabinets_modifier: "Покращення поземних картотек"
 
  border_cowardice:0 "Border Cowardice"
 
