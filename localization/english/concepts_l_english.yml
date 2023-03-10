@@ -643,7 +643,13 @@
  concept_endorse_oppose_desc:0 "An [Concept('concept_interest_group','$concept_interest_group_possessive$')] $concept_endorsement$ or $concept_opposition$ of a [concept_law] is determined by their [Concept('concept_ideology','$concept_ideologies$')]. For a $concept_law$ to be able to be [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')] it must be $concept_endorsed$ by #b at least one#! $concept_interest_group$ [concept_in_government], or supported by a current [concept_political_movement]."
 
  concept_ideology: "Ідеологія"
+ concept_ideology_gen: "Ідеології"
+ concept_ideology_dat: "Ідеології"
+ concept_ideology_acc: "Ідеологію"
  concept_ideologies: "Ідеології"
+ concept_ideologies_gen: "Ідеологій"
+ concept_ideologies_dat: "Ідеологіям"
+ concept_ideologies_acc: "Ідеології"
  concept_ideology_desc:2 "An [Concept('concept_interest_group','$concept_interest_group_possessive$')] $concept_ideology$ influences which [Concept('concept_law','$concept_laws$')] it [Concept('concept_endorse_oppose','$concept_endorses_and_opposes$')]. Their stance on the $concept_laws$ which are currently in effect in the [concept_country] have small, permanent effects on the $concept_interest_group$'s $concept_approval$. While a $concept_country$ is trying to [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enact$')] a new $concept_law$, a larger but temporary effect applies relative to which $concept_law$ is being removed and which is coming into effect. This temporary effect will eventually [concept_decay], leaving only the permanent, objective effect on $concept_approval$."
 
  concept_subsistence_output: "Прожитковий мінімум"
@@ -1662,6 +1668,7 @@
 
  concept_law_group: "Група законів"
  concept_law_group_gen: "Групи законів"
+ concept_law_group_acc: "Групу законів"
  concept_law_group_desc: "Група законів містить декілько [Concept('concept_law', '$concept_laws_gen$')|l], які впливають на різні сторони [Concept('concept_country', '$concept_country_gen$')|l] у різний спосіб. Кожна група законів, одночасно, може мати в дії лише один закон."
 
  concept_government_reform: "Урядова зміна"
@@ -1671,6 +1678,7 @@
 
  concept_election: "Вибори"
  concept_election_gen: "Виборів"
+ concept_election_loc: "Виборах"
  concept_elections: "Вибори"
  concept_election_adj: "Виборч"
  concept_election_possessive:0 "Election\\'s"
@@ -2084,6 +2092,7 @@
  concept_party: "Партія"
  concept_party_gen: "Партії"
  concept_party_acc: "Партію"
+ concept_party_acc_alt: "Партії"
  concept_parties: "Партії"
  concept_parties_gen: "Партій"
  concept_party_possessive:0 "Party\\'s"
@@ -2134,7 +2143,7 @@
  concept_political_movements_loc: "Політичних рухах"
  concept_political_movement_desc:1 "A $concept_political_movement$ champions a particular [concept_law], either to enact it, preserve it, or restore it. Both individual [Concept('concept_pop','$concept_pops$')] and [Concept('concept_interest_group','$concept_interest_groups$')] can join $concept_political_movements$, which provide it with both [Concept('concept_political_movement_support','$concept_political_movement_support_short$')] and [Concept('concept_political_movement_radicalism','$concept_political_movement_radicalism_short$')].  Pursuing the change a $concept_political_movement$ desires will be easier as you have its $concept_political_movement_support_short$. Failing to pursue the change could lead to a [concept_revolution]."
 
- concept_end_of_discussion_factor:0 "End-of-Discussion Factor"
+ concept_end_of_discussion_factor:0 "Чинник завершення правдування"
  concept_end_of_discussion_factor_desc:1 "The presence of a $concept_end_of_discussion_factor$ represents that [Concept('concept_interest_group', '$concept_interest_groups$')] in [concept_government] consider further discussion of the merits of the [concept_law] currently being enacted no longer useful. The lower this factor gets, the more negative pressure it puts on the possibility that the enactment may $concept_enactment_advance_short$ or $concept_enactment_stall_short$."
 
  concept_enactment_of_laws: "Ухвалення законів"
@@ -2165,7 +2174,7 @@
  concept_base_success_chance_dat: "Базовому шансу на успіх"
  concept_base_success_chance_desc:0 "$concept_base_success_chance$ is equal to the total [concept_clout] of supporting [Concept('concept_interest_group','$concept_interest_groups$')] in [concept_government] plus or minus [Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] gained from any relevant [Concept('concept_political_movement', '$concept_political_movements$')]."
 
- concept_advance_factor:0 "Advance Factor"
+ concept_advance_factor: "Чинник поступу"
  concept_advance_factor_desc:0 "$concept_advance_factor$ is a static factor used to determine [concept_enactment_advance] by scaling the [concept_base_success_chance]."
 
  concept_migration_pull: "Міграційна привабливість"

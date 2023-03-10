@@ -1368,8 +1368,8 @@
  POP_VOTING_POWER:0 "Number of [concept_votes]: #v $VAL|+D0$#!\n$BREAKDOWN$"
 
  NEXT_ELECTION_DATE: "Наступні [concept_election|l]: [AccessPlayer.GetNextElectionDate|v]"
- PREVIOUS_ELECTION_RESULTS: "Результати минулих [Concept('concept_election', '$concept_election_gen$')|l]:"
- PARTY_ELECTION_TOOLTIP:0 "Candidates from [Party.GetNameNoFormatting|v] received [Party.GetCurrentVotingPower|Kv] votes last [concept_election] ([Party.GetCurrentVotingPowerShare|%1v])"
+ PREVIOUS_ELECTION_RESULTS: "Результати попередніх [Concept('concept_election', '$concept_election_gen$')|l]:"
+ PARTY_ELECTION_TOOLTIP: "Висуванці від [Concept('concept_party', '$concept_party_acc_alt$')|l] «[Party.GetNameNoFormatting|v]» отримали [Party.GetCurrentVotingPower|Kv] голосів на останніх [Concept('concept_election', '$concept_election_loc$')|l] ([Party.GetCurrentVotingPowerShare|%1v])"
  ELECTION_ENTRY:0 "[Party.GetName]\n[concept_votes]: $VOTING_POWER|Kv$ ($VOTING_POWER_SHARE|%1v$)"
  ELECTION_POLL_ENTRY:0 "$ELECTION_ENTRY$\n[concept_momentum]: #tooltippable #tooltip:[Party.GetTooltipTag],MOMENTUM_BREAKDOWN [Party.GetMomentum|%=+0]#!#!\n\n"
  MOMENTUM_BREAKDOWN: "[Party.GetMomentumDesc]"
@@ -1749,7 +1749,7 @@
 
  AND_SPACED: " i "
  COMMA_SPACED: ", "
- MAP_INFO: "#header Мапа#!\n$TOOLTIP_DELIMITER$\nНатисніть та утримуйте #bold Tab#!, щоб повністю зменшити розмір. Відпустивши її, ви повернетеся до попереднього рівня розміру."
+ MAP_INFO: "#header Мапа#!\n$TOOLTIP_DELIMITER$\nНатисніть та утримуйте #bold Tab#!, щоб повністю зменшити розмір. Відпустивши її, ви повернетеся до попереднього розміру."
  MAP_INFO_MAP_MODE_LOCKED: "$MAP_INFO$\n\n#instruction Клацніть, щоб зняти вибраний режим мапи.#!"
  LOCATION_FINDER: "#header Шукання місцин#!"
  ZOOM_TO_BUILDING_STATE: "Приблизити до [Concept('concept_state', '$concept_state_gen$')|l] [Building.AccessState.GetName]"
@@ -4578,14 +4578,14 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  test.pre.election_tooltip:0 "#BOLD Election in [GetPlayer.GetGovernmentData.GetTimeRemainingPreElection] days#!\nCurrent Standing of Votes:"
  test.acquired_technology_tooltip:0 "New technology acquired!"
 
- PEOPLE_ABROAD_TITLE:0 "#title Unincorporated Population#!"
- POLITICAL_INACTIVE_TITLE:1 "#title [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')]#!"
- POLITICAL_INACTIVE_TITLE_NO_FORMATTING:0 "#title Politically Inactive#!" # Don't turn this into a concept, it will break some IG tooltips
+ PEOPLE_ABROAD_TITLE: "#title Невключене населення#!"
+ POLITICAL_INACTIVE_TITLE: "#title [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')]#!"
+ POLITICAL_INACTIVE_TITLE_NO_FORMATTING: "#title Політично недієве#!" # Don't turn this into a concept, it will break some IG tooltips
  TRAIT_INACTIVE: "(Недієва)"
 
  POLITICALLY_INACTIVE_POPULATION: "[Concept('concept_politically_inactive_involved', '$concept_politically_inactive_gender_gen$')] населення: [Country.GetInactivePopulation|kv]"
- POLITICALLY_INACTIVE_POPULATION_TOOLTIP: "#header [Concept('concept_politically_inactive_involved', '$concept_politically_inactive_gender_gen$')] населення#!\nTotal: [GetPlayer.GetInactivePopulation|kv]\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetInactivePopulationDesc]"
- POLITICALLY_INVOLVED_POPULATION_TOOLTIP:1 "#header [Concept('concept_politically_inactive_involved', '$concept_politically_involved_gender_gen$')] населення#!\nTotal: [GetPlayer.GetPoliticallyInvolvedPopulation|kv]\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetPoliticallyInvolvedPopulationDesc]"
+ POLITICALLY_INACTIVE_POPULATION_TOOLTIP: "#header [Concept('concept_politically_inactive_involved', '$concept_politically_inactive_gender_gen$')] населення#!\nВсього: [GetPlayer.GetInactivePopulation|kv]\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetInactivePopulationDesc]"
+ POLITICALLY_INVOLVED_POPULATION_TOOLTIP: "#header [Concept('concept_politically_inactive_involved', '$concept_politically_involved_gender_gen$')] населення#!\nВсього: [GetPlayer.GetPoliticallyInvolvedPopulation|kv]\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetPoliticallyInvolvedPopulationDesc]"
 
  POLITICAL_STRENGTH_SUBTITLE: "#title [concept_political_strength]#!"
 
@@ -4606,7 +4606,7 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  INCREASE_SPEED_TOOLTIP: "Збільшити швидкість гри"
  DECREASE_SPEED_TOOLTIP: "Зменшити швидкість гри"
  GAME_PAUSED: "Гра на павзі. #instruction Клацніть#!, щоб продовжити"
- GAME_RUNNING: "Гра йде. #instruction Клацніть#!, щоб поставити на павзу"
+ GAME_RUNNING: "Гра продовжується. #instruction Клацніть#!, щоб поставити на павзу"
  TOGGLE_PAUSE_NOT_HOST_OR_LOCAL: "#N Лише відник може поставити або зняти павзу#!"
  PAUSED_BY_PLAYER_MP: "Призупинено гравцем #v [TimeKeeper.GetPausedBy]#!"
  PAUSED_BY_UNPAUSE_ONLY_ME: "Лише ви можете зняти з павзи гру протягом [TimeKeeper.GetTimeAnyoneUnpause] секунд"
@@ -5173,7 +5173,7 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  STRATEGIC_REGION_MARKER_START_DP:0 "#header Start [concept_diplomatic_play]#!\nYou have an #variable Interest#! in #variable [StrategicRegion.GetName]#!, meaning you can start a [concept_diplomatic_play] here"
 
  SITUATION_TOOLTIP: "#HEADER [EVENT.GetTitle]#!\n$TOOLTIP_DELIMITER$\nМісцина: [EVENT.GetState.GetName]\n\nЗалишилося часу: #variable [EVENT.GetRemainingDays]#! дн."
- SITUATION_DEBUG_TOOLTIP:0 "$TOOLTIP_DELIMITER$\nEvent ID: [EVENT.GetKey|v]"
+ SITUATION_DEBUG_TOOLTIP: "$TOOLTIP_DELIMITER$\nТезьбило події: [EVENT.GetKey|v]"
 
  TOOLTIP_INTEREST_GROUP: "#header [InterestGroup.GetName]#!\n$TOOLTIP_DELIMITER$\nПровідник ідеології: [InterestGroup.GetLeaderIdeologyDesc]\nІдеології: [InterestGroup.GetIdeologyDesc]\n\nСила: [InterestGroup.GetClout|%1v]\nНаселення: #variable [InterestGroup.GetPopulation|*]#!\n\n#lore [InterestGroup.GetDesc]#!\n"
  TOOLTIP_ENACT_LAW: "#header Змінити [concept_law|l] «[Law.GetActiveGroupLaw.GetName]» на «[Law.GetName]»#!$TOOLTIP_ENACT_COMMON$"
@@ -5181,19 +5181,19 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  TOOLTIP_CANCEL_LAW_COOLDOWN:0 "@warning! You will be unable to make another enaction attempt for [GetDefine('NPolitics','LAW_ENACTMENT_COOLDOWN_DAYS')|0] days."
  TOOLTIP_ENACT_COMMON:0 "\n$TOOLTIP_DELIMITER$\n[JoinText('\n\n', Law.CannotEnactDesc, JoinText('\n\n', Law.GetReplacedLawEffect, JoinText('\n\n', Law.PredictLegitimacyChangeToEnactDesc, Law.PredictApprovalChangesDuringEnactmentDesc)))]"
  PREDICT_APPROVAL_WHILE_ENACT: "#bold Передбачена зміна схвалення від надання чинности:#!\n$BREAKDOWN$"
- CLICK_TO_OPEN_LAW_GROUP:0 "#instruction Click to view [concept_law_group]#!"
+ CLICK_TO_OPEN_LAW_GROUP: "#instruction Клацніть, що переглянути [Concept('concept_law_group', '$concept_law_group_acc$')|l]#!"
 
  LAW_ENACTMENT_PROGRESS_TOPBAR:0 "[SelectLocalization( GetPlayer.IsEnactingLaw, 'ENACTING_LAW', 'NOT_ENACTING_LAW' )]\n[GetPlayer.GetLawEnactmentProgressDesc]"
  LAW_ENACTMENT_PROGRESS_NOT_STALLED:0 "[Law.GetCheckpointRemainingDays|v] days until next checkpoint\n\n$LAW_NEXT_CHECKPOINT_OUTCOME_CHANCES_DESC$"
  LAW_ENACTMENT_PROGRESS_STALLED:0 "$LAW_ENACTMENT_STALLED_WARNING$#indent_newline:2 \n$LAW_ENACTMENT_STALL_BREAKDOWN$#!\n$LAW_NEXT_CHECKPOINT_OUTCOME_CHANCES_DESC_NO_DATE$"
- LAW_ENACTMENT_STALLED_WARNING:0 "#r Law enactment is currently stalled!#!"
+ LAW_ENACTMENT_STALLED_WARNING: "#r Ухвалення закону наразі призупинено!#!"
  LAW_ENACTMENT_STALL_BREAKDOWN:0 "[Law.GetCountry.GetModifier.GetDescFor('country_cannot_enact_laws')]"
  LAW_ENACTMENT_STALL_BREAKDOWN_FULL:0 "[Law.GetCountry.GetModifier.GetTooltipFor('country_cannot_enact_laws')]"
  ENACTING_LAW: "[GetPlayer.GetName] ухвалює [Concept('concept_law', '$concept_law$')|l] #variable «[GetPlayer.GetLawBeingEnacted.GetName]»#!"
  NOT_ENACTING_LAW: "[GetPlayer.GetName] не ухвалює нового [Concept('concept_law', '$concept_law_gen$')|l]."
  LAW_ENACTMENT_ATTEMPT_TOO_SOON:0 "An attempt to enact [Law.GetName] was made too recently. Wait $TIME_REMAINING$ before another attempt."
  LAW_ENACTMENT_PROGRESS: "[ConcatIfNeitherEmpty(Law.PredictLegitimacyChangeToEnactDesc, '\n')][Law.GetCheckpointRemainingDays|v] дн. до наступної прозір-точки\n\n$LAW_NEXT_CHECKPOINT_OUTCOME_CHANCES_DESC$"
- LAW_NEXT_CHECKPOINT_TIME:0 "In [Law.GetCheckpointRemainingDays|v] days ([Law.GetCheckpointEndDateString])"
+ LAW_NEXT_CHECKPOINT_TIME: "За [Law.GetCheckpointRemainingDays|v] дн. ([Law.GetCheckpointEndDateString])"
  LAW_NEXT_CHECKPOINT_TIME_DESC: "#header Наступна прозір-точка#!\nПриблизно: #v [Law.GetCheckpointEndDateString]#!\n$TOOLTIP_DELIMITER$\n$LAW_NEXT_CHECKPOINT_OUTCOME_CHANCES_DESC_NO_NESTING$\n\n#tooltippable #tooltip:[Law.GetTooltipTag],LAW_NEXT_CHECKPOINT_TIME_FACTORS_TOOLTIP $LAW_NEXT_CHECKPOINT_TIME_FACTORS$#!#!"
  LAW_NEXT_CHECKPOINT_TIME_FACTORS: "Чинники, що впливають на час між прозір-точками - [Law.GetCheckpointTotalDays|v] дн."
  LAW_NEXT_CHECKPOINT_TIME_FACTORS_TOOLTIP: "Базова кількість днів для [Concept('concept_law', '$concept_law_gen$')|l] «[Law.GetName]»: [Law.GetCheckpointBaseDays|v]\n[Law.GetCheckpointTotalDaysBreakdown]"
@@ -5203,8 +5203,8 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  LAW_NEXT_CHECKPOINT_OUTCOME_CHANCES_DESC_NO_NESTING: "$NEXT_CHECKPOINT_NO_NESTING$\n$TAB$$OUTCOME_SUCCESS$\n$TAB$$OUTCOME_ADVANCE$\n$TAB$$OUTCOME_DEBATE$\n$TAB$$OUTCOME_STALL$"
  NEXT_CHECKPOINT: "На наступній прозір-точці #tooltippable #tooltip:[Law.GetTooltipTag],LAW_NEXT_CHECKPOINT_TIME_DESC #v [Law.GetCheckpointEndDateString]#!#!#!, станеться щось з цього:"
  NEXT_CHECKPOINT_NO_DATE: "На наступній прозір-точці, станеться щось з цього"
- NEXT_CHECKPOINT_SHORT:0 "#tooltippable #tooltip:[Law.GetTooltipTag],LAW_NEXT_CHECKPOINT_TIME_DESC #v [Law.GetCheckpointEndDateString]#!#!#!:"
- NEXT_CHECKPOINT_IS:0 "The next checkpoint is: #tooltippable #tooltip:[Law.GetTooltipTag],LAW_NEXT_CHECKPOINT_TIME_DESC #v [Law.GetCheckpointEndDateString]#!#!#!"
+ NEXT_CHECKPOINT_SHORT: "#tooltippable #tooltip:[Law.GetTooltipTag],LAW_NEXT_CHECKPOINT_TIME_DESC #v [Law.GetCheckpointEndDateString]#!#!#!:"
+ NEXT_CHECKPOINT_IS: "Наступна прозір-точка: #tooltippable #tooltip:[Law.GetTooltipTag],LAW_NEXT_CHECKPOINT_TIME_DESC #v [Law.GetCheckpointEndDateString]#!#!#!"
  NEXT_CHECKPOINT_NO_NESTING: "На наступній прозір-точці #v [Law.GetCheckpointEndDateString]#!, станеться щось з цього:"
  OUTCOME_SUCCESS:1 "[Concept('concept_enactment_success', '$concept_enactment_success_short$')]: #tooltippable #tooltip:[Law.GetTooltipTag],CHECKPOINT_SUCCESS_CHANCE_BREAKDOWN [Law.GetCheckpointSuccessChance|v%1]#!#!"
  OUTCOME_ADVANCE:1 "[Concept('concept_enactment_advance', '$concept_enactment_advance_short$')]: #tooltippable #tooltip:[Law.GetTooltipTag],CHECKPOINT_ADVANCE_CHANCE_BREAKDOWN [Law.GetCheckpointAdvanceChance|v%1]#!#!"
@@ -5212,7 +5212,7 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  OUTCOME_STALL:1 "[Concept('concept_enactment_stall', '$concept_enactment_stall_short$')]: #tooltippable #tooltip:[Law.GetTooltipTag],CHECKPOINT_STALL_CHANCE_BREAKDOWN [Law.GetCheckpointStallChance|v%1]#!#!"
 
  CHECKPOINT_SUCCESS_CHANCE_BREAKDOWN: "#header Шанс [Concept('concept_enactment_success', 'успішного ухвалення')|l]#!\nПоточний шанс [Concept('concept_enactment_success', 'успішного ухвалення')|l] - [Law.GetCheckpointSuccessChance|v%1], через:\n$TOOLTIP_DELIMITER$\n[Law.GetCheckpointSuccessBreakdown]"
- CHECKPOINT_ADVANCE_CHANCE_BREAKDOWN: "#header Шанс [Concept('concept_enactment_advance', 'попереднього ухвалення')|l]#!\nПоточний шанс [Concept('concept_enactment_advance', 'попереднього ухвалення')|l] - [Law.GetCheckpointAdvanceChance|v%1], через:\n$TOOLTIP_DELIMITER$\n[Law.GetCheckpointAdvanceBreakdown]"
+ CHECKPOINT_ADVANCE_CHANCE_BREAKDOWN: "#header Шанс на [Concept('concept_enactment_advance', 'поступ в ухвалені')|l]#!\nПоточний шанс на [Concept('concept_enactment_advance', 'поступ в ухвалені')|l] - [Law.GetCheckpointAdvanceChance|v%1], через:\n$TOOLTIP_DELIMITER$\n[Law.GetCheckpointAdvanceBreakdown]"
  CHECKPOINT_DEBATE_CHANCE_BREAKDOWN: "#header Шанс на [Concept('concept_enactment_debate', 'правдування щодо ухвалення')|l]#!\nПоточний шанс на [Concept('concept_enactment_debate', 'правдування щодо ухвалення')|l] - [Law.GetCheckpointDebateChance|v%1], через:\n$TOOLTIP_DELIMITER$\n[Law.GetCheckpointDebateBreakdown]"
  CHECKPOINT_STALL_CHANCE_BREAKDOWN: "#header Шанс на [Concept('concept_enactment_stall', 'припинення ухвалення')|l]#!\nПоточний шанс на [Concept('concept_enactment_stall', 'припинення ухвалення')|l] - [Law.GetCheckpointStallChance|v%1], через:\n$TOOLTIP_DELIMITER$\n[Law.GetCheckpointStallBreakdown]"
 
@@ -5222,20 +5222,20 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  ENACTMENT_OPPOSING_IGS_BREAKDOWN_HEADER: "Від протидії [Concept('concept_interest_group', '$concept_interest_groups_gen$')|l]:"
  ENACTMENT_OPPOSING_IGS_BREAKDOWN_ITEM: "$TAB$[InterestGroup.GetName]: [InterestGroup.GetClout|=v%1]"
 
- ENACTMENT_SUPPORTING_MOVEMENTS_BREAKDOWN_HEADER:0 "Від підтримки [Concept('concept_political_movement', '$concept_political_movements_gen$')|l]:"
- ENACTMENT_SUPPORTING_MOVEMENTS_BREAKDOWN_ITEM:0 "$TAB$[PoliticalMovement.GetName]: [Multiply_CFixedPoint(PoliticalMovement.GetSupport,'(CFixedPoint)0.01')|=v%1]"
+ ENACTMENT_SUPPORTING_MOVEMENTS_BREAKDOWN_HEADER: "Від підтримки [Concept('concept_political_movement', '$concept_political_movements_gen$')|l]:"
+ ENACTMENT_SUPPORTING_MOVEMENTS_BREAKDOWN_ITEM: "$TAB$[PoliticalMovement.GetName]: [Multiply_CFixedPoint(PoliticalMovement.GetSupport,'(CFixedPoint)0.01')|=v%1]"
  
- ENACTMENT_RULER_BREAKDOWN_ITEM:0 "[Character.GetFullName] has the [Ideology.GetName] [concept_ideology]: $VALUE|=v%1$"
+ ENACTMENT_RULER_BREAKDOWN_ITEM: "[Character.GetFullName] має [Concept('concept_ideology','$concept_ideology_acc$')] «[Ideology.GetName]»: $VALUE|=v%1$"
 
- ENACTMENT_OPPOSING_MOVEMENTS_BREAKDOWN_HEADER:0 "From opposing [Concept('concept_political_movement', '$concept_political_movements$')]:"
- ENACTMENT_OPPOSING_MOVEMENTS_BREAKDOWN_ITEM:0 "$TAB$[PoliticalMovement.GetName]: [Multiply_CFixedPoint(PoliticalMovement.GetSupport,'(CFixedPoint)0.01')|=v%1]"
+ ENACTMENT_OPPOSING_MOVEMENTS_BREAKDOWN_HEADER: "Від протидії [Concept('concept_political_movement', '$concept_political_movements_gen$')|l]:"
+ ENACTMENT_OPPOSING_MOVEMENTS_BREAKDOWN_ITEM: "$TAB$[PoliticalMovement.GetName]: [Multiply_CFixedPoint(PoliticalMovement.GetSupport,'(CFixedPoint)0.01')|=v%1]"
 
- ENACTMENT_PAST_CHECKPOINTS_HEADER:0 "From past checkpoints:"
+ ENACTMENT_PAST_CHECKPOINTS_HEADER: "Завдяки попередній прозір-точці:"
 
- ENACTMENT_DEBATE_CHANCE_EFFECTS_BREAKDOWN:0 "[concept_enactment_debate] chance of $DEBATE_CHANCE|v%1$ results in:\n$TAB$$DESC$"
- ENACTMENT_FACTOR_ENTRY:0 "[concept_end_of_discussion_factor]: x$VAL|v2$"
+ ENACTMENT_DEBATE_CHANCE_EFFECTS_BREAKDOWN: "[concept_enactment_debate] з шансом $DEBATE_CHANCE|v%1$ призведе до:\n$TAB$$DESC$"
+ ENACTMENT_FACTOR_ENTRY: "[concept_end_of_discussion_factor]: x$VAL|v2$"
 
- ENACTMENT_BREAKDOWNS_BASE_CHANCE_ENTRY:0 "Базовий: $VAL|v%1$"
+ ENACTMENT_BREAKDOWNS_BASE_CHANCE_ENTRY: "Базовий: $VAL|v%1$"
  ENACTMENT_BASE_SUCCESS_CHANCE_ENTRY:0 "[concept_base_success_chance]: $VAL|=v%1$"
  ENACTMENT_SUCCESS_CHANCE_ENTRY:0 "[concept_enactment_success] chance: $VAL|=v%1$"
  ENACTMENT_ADVANCE_CHANCE_ENTRY:0 "[concept_enactment_advance] chance: $VAL|=v%1$"
@@ -6504,12 +6504,12 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  notification_canceled_trade_route_desc: "[SCOPE.GetRootScope.GetTradeRoute.GetOwner.GetName] скасувала їхній тор на [SCOPE.GetRootScope.GetTradeRoute.GetDirectionName|l] [Concept('concept_good', '$concept_good_gen$')|l] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetTextIcon] [SCOPE.GetRootScope.GetTradeRoute.GetGoods.GetName] ([SCOPE.GetRootScope.GetTradeRoute.GetExportingMarket.GetName] -> [SCOPE.GetRootScope.GetTradeRoute.GetImportingMarket.GetName])."
  notification_canceled_trade_route_tooltip: "#header $notification_canceled_trade_route_name$#!\n$notification_canceled_trade_route_desc$"
 
- notification_new_significant_trade_route_name:0 "Significant $notification_new_trade_route_name$"
- notification_new_significant_trade_route_desc:0 "$notification_new_trade_route_desc$"
- notification_new_significant_trade_route_tooltip:0 "$notification_new_trade_route_tooltip$"
- notification_canceled_significant_trade_route_name:0 "Significant $notification_canceled_trade_route_name$"
- notification_canceled_significant_trade_route_desc:0 "$notification_canceled_trade_route_desc$"
- notification_canceled_significant_trade_route_tooltip:0 "$notification_canceled_trade_route_tooltip$"
+ notification_new_significant_trade_route_name: "Значний $notification_new_trade_route_name$"
+ notification_new_significant_trade_route_desc: "$notification_new_trade_route_desc$"
+ notification_new_significant_trade_route_tooltip: "$notification_new_trade_route_tooltip$"
+ notification_canceled_significant_trade_route_name: "Значний $notification_canceled_trade_route_name$"
+ notification_canceled_significant_trade_route_desc: "$notification_canceled_trade_route_desc$"
+ notification_canceled_significant_trade_route_tooltip: "$notification_canceled_trade_route_tooltip$"
 
  notification_commander_move_name: "[SCOPE.GetRootScope.GetCharacter.GetFullName] переназначений"
  notification_commander_move_desc: "[SCOPE.GetRootScope.GetCharacter.GetFullName] та [SCOPE.GetRootScope.GetCharacter.GetHerHis] #variable [SCOPE.GetRootScope.GetCharacter.GetCombatUnitsTypeIcon][SCOPE.GetRootScope.GetCharacter.GetNumCombatUnits]#! були переназначені до [SCOPE.GetRootScope.GetCharacter.GetLocationHQ.GetName]"
