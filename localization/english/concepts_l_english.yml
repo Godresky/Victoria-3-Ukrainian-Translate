@@ -1160,7 +1160,7 @@
  concept_credit_limit: "Межа кредиту"
  concept_credit_desc:2 "The national $concept_credit$ is the amount of [concept_money] the [concept_treasury] can borrow from its economy, equal to the sum of all domestic [concept_cash_reserves] plus a base value determined by [concept_gdp]. If the [concept_principal] exceeds the $concept_credit_limit$ the [concept_country] goes into [concept_default]."
 
- concept_principal: "Розмір кредиту"
+ concept_principal: "Головна сума"
  concept_principal_desc:2 "The total size of [concept_loans] the [concept_treasury] has accrued, not including the [concept_budget_interest] it owes. If the [concept_principal] exceeds your [concept_credit] you will go into [concept_default]."
 
  concept_loans: "Позики"
@@ -1220,6 +1220,7 @@
  concept_commanders_acc: "Командирів"
  concept_commanders_ins: "Командирами"
  concept_commander_possessive:0 "Commander\\'s"
+ concept_commander_adj: "Командирськ"
  concept_commander_desc:1 "A [concept_character] in command of a part of a [Concept('concept_country','$concept_country_possessive$')] military forces. Their [concept_commander_rank] determines how many forces they are allotted from the $concept_country$'s available reserves."
 
  concept_general: "Генерал"
