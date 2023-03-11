@@ -1221,7 +1221,7 @@
  concept_commanders_ins: "Командирами"
  concept_commander_possessive:0 "Commander\\'s"
  concept_commander_adj: "Командирськ"
- concept_commander_desc:1 "A [concept_character] in command of a part of a [Concept('concept_country','$concept_country_possessive$')] military forces. Their [concept_commander_rank] determines how many forces they are allotted from the $concept_country$'s available reserves."
+ concept_commander_desc: "[concept_character], який керує частною збройних сил [Concept('concept_country','$concept_country_gen$')|l]. Їхнє [concept_commander_rank|l] визначає скільки сил їм виділяються з наявних у держави."
 
  concept_general: "Генерал"
  concept_general_gen: "Генерала"
@@ -1251,8 +1251,8 @@
  concept_political_strengths: "Політичні сили"
  concept_political_strength_desc:3 "The degree of power a [concept_pop], and consequently the [Concept('concept_interest_group','$concept_interest_groups$')] it supports, have over the [Concept('concept_country','$concept_country_possessive$')] politics. It is derived from its supporting $concept_pops$' [concept_wealth]. $concept_pops$ who live in [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] have much less $concept_political_strength$, while $concept_pops$ in the [concept_capital_state] have more.\n\n$concept_pops$ distribute their $concept_political_strength$ to the $concept_interest_groups$ it supports proportionate to how many of its members support it. If an $concept_interest_group$ is a member of a [concept_party], they also gain $concept_political_strength$ from the [concept_votes] that $concept_party$ received in the last [concept_election]. An $concept_interest_group$'s [concept_clout] is equal to their share of the $concept_country$'s total $concept_political_strength$."
 
- concept_working_adults: "Дорослі, що працюють"
- concept_working_adult: "Дорослий, що працює"
+ concept_working_adults: "Робочі дорослі"
+ concept_working_adult: "Робочий дорослий"
  concept_working_adults_desc:1 "The part of a [concept_pop] that make up the [concept_workforce] that work in [Concept('concept_building', '$concept_buildings$')] for [Concept('concept_building_wage', '$concept_building_wages$')]. They are the main source of a $concept_pop$'s [Concept('concept_pop_income','$concept_pop_income_short$')] and [concept_political_strength]."
 
  concept_dependents: "Утриманці"
