@@ -3301,7 +3301,7 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  UPPER_NO_ICON: "[concept_upper_strata]"
 
  DIVIDENDS_FROM_GOVERNMENT_SHARES: "[concept_government_dividends]"
- LOSSES_FROM_GOVERNMENT_SHARES:0 "Losses from [Concept('concept_government_ownership_share', '$concept_government_ownership_shares$')]"
+ LOSSES_FROM_GOVERNMENT_SHARES: "Збитки від [Concept('concept_government_ownership_share', '$concept_government_ownership_shares_gen$')|l]"
  GOVERNMENT_SHARE_DIVIDENDS_EFFICIENCY:0 "All [concept_government_dividends] are multiplied by #v x$MULTIPLIER$#! due to [Country.GetAdjective] [concept_gdp] of @money!$[Country.GetGDP|Dv$]"
  GOVERNMENT_SHARE_DIVIDENDS_EFFICIENCY_WITH_DEBT_FACTOR:0 "All [concept_government_dividends] are multiplied by #v x$MULTIPLIER$#! due to [Country.GetAdjective] [concept_gdp] of @money![Country.GetGDP|Dv] and [concept_principal] of @money![Country.GetPrincipal|Dv]"
 
@@ -5110,14 +5110,14 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  SETUP_TROOPS_BASELINE:0 "Troops (baseline): [Battle.GetUnitIcon] [BattleSetupSideData.GetTroopsFromBaseline|+]"
  SETUP_TROOPS_REINFORCEMENTS:0 "Troops (reinf.): [Battle.GetUnitIcon] [BattleSetupSideData.GetTroopsExtraReinforcement|+=]"
 
- BATTLE_STARTING_ATTACKER_STATS:0 "Attacking army at start of battle:\nBattalions: [Battle.GetStartingAttackerUnits|v]\nMen: [Battle.GetStartingAttackerManpower|v]"
- BATTLE_END_ATTACKER_STATS:0 "Attacking army at end of battle:\nBattalions: [Battle.GetFinalAttackerUnits|v]\nFighting-capable Men: [Battle.GetFinalAttackerManpower|v]"
- BATTLE_STARTING_DEFENDER_STATS:0 "Defending army at start of battle:\nBattalions: [Battle.GetStartingDefenderUnits|v]\nMen: [Battle.GetStartingDefenderManpower|v]"
- BATTLE_END_DEFENDER_STATS:0 "Defending army at end of battle:\nBattalions: [Battle.GetFinalDefenderUnits|v]\nFighting-capable Men: [Battle.GetFinalDefenderManpower|v]"
+ BATTLE_STARTING_ATTACKER_STATS: "Наступальне військо на початку битви:\nКурені: [Battle.GetStartingAttackerUnits|v]\nЧоловіки: [Battle.GetStartingAttackerManpower|v]"
+ BATTLE_END_ATTACKER_STATS: "Наступальне військо на кінці битви:\nКурені: [Battle.GetFinalAttackerUnits|v]\nБоєздатні чоловіки: [Battle.GetFinalAttackerManpower|v]"
+ BATTLE_STARTING_DEFENDER_STATS: "Оборонне військо на початку битви:\nКурені: [Battle.GetStartingDefenderUnits|v]\nЧоловіки: [Battle.GetStartingDefenderManpower|v]"
+ BATTLE_END_DEFENDER_STATS: "Оборонне військо на кінці битви:\nКурені: [Battle.GetFinalDefenderUnits|v]\nБоєздатні чоловіки: [Battle.GetFinalDefenderManpower|v]"
 
 
  OFFER_OBLIGATION: "Запропонувати зобов‘язання"
- CALL_IN_OBLIGATION:1 "Call in Obligation"
+ CALL_IN_OBLIGATION: "Викликати зобов‘язання"
  OFFER_WARGOAL: "Запропонувати «[WarGoal.GetName]»"
  OFFER_WARGOAL_TYPE: "Запропонувати «[WarGoalType.GetName]»"
 

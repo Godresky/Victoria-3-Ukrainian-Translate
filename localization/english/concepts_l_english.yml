@@ -456,7 +456,7 @@
 
  concept_bureaucracy: "Бюрократія"
  concept_bureaucracy_gen: "Бюрократії"
- concept_bureaucracy_desc: "@bur! Бюрократія - це [Concept('concept_capacity','$concept_capacity$')|l], яка використовується для підтримки роботи ваших [Concept('concept_country','$concept_country_possessive$их')|l] установ та повсякденної діяльности. Вартість підтримки росте в залежности від населення у [Concept('concept_incorporated_state', '$concept_incorporated_states_loc$')|l], кожного рівня розвитку [Concept('concept_institution', '$concept_institutions_gen$')|l]. Також використовується для керування [Concept('concept_commander','$concept_commanders_ins$')|l] та [Concept('concept_trade_route','$concept_trade_routes_ins$')|l]. Ви отримуєте @bur! від роботи [Concept('concept_building','$concept_buildings_gen$')|l]-[SelectLocalization(GetPlayer.IsValid,'concept_bureaucracy_desc_added','державна управа')|l] ."
+ concept_bureaucracy_desc: "@bur! Бюрократія - це [Concept('concept_capacity','$concept_capacity$')|l], яка використовується для підтримки роботи ваших [Concept('concept_country','$concept_country_possessive$их')|l] установ та повсякденної діяльности. Вартість підтримки росте в залежности від населення у [Concept('concept_incorporated_state', '$concept_incorporated_states_loc$')|l], кожного рівня розвитку [Concept('concept_institution', '$concept_institutions_gen$')|l]. Також використовується для керування [Concept('concept_commander','$concept_commanders_ins$')|l] та [Concept('concept_trade_route','$concept_trade_routes_ins$')|l]. Ви отримуєте @bur! від роботи [SelectLocalization(GetPlayer.IsValid,Concept('concept_building','$concept_buildings_gen$'),'')|l] [SelectLocalization(GetPlayer.IsValid,'concept_bureaucracy_desc_added','державної управи')|l] ."
  concept_bureaucracy_desc_added: "[GetBuildingType('building_government_administration').GetName]"
  
  concept_authority: "Авторитет"
@@ -794,6 +794,7 @@
  concept_unit: "Військовий підрозділ"
  concept_unit_gen: "Військового підрозділу"
  concept_unit_loc: "Військовому підрозділі"
+ concept_unit_short: "Підрозділ"
  concept_units: "Військові підрозділи"
  concept_units_short: "Підрозділи"
  concept_unit_possessive:0 "Military Unit\\'s"
@@ -830,13 +831,13 @@
  concept_battalions_acc: "Курені"
  concept_battalions_ins: "Куренями"
  concept_battalions_loc: "Куренях"
- concept_battalion_desc: "[concept_unit] у збройних силах [Concept('concept_country','$concept_country_gen$')|l]. Вони створюються й підтримуються у [SelectLocalization(GetPlayer.IsValid,Concept('concept_building', '$concept_buildings_loc$'),'')|l] [SelectLocalization(GetPlayer.IsValid,'concept_battalion_desc_added','куренях')|l] та керуються [Concept('concept_general','$concept_generals_ins$')|l]."
+ concept_battalion_desc: "[concept_unit] у складі збройних сил [Concept('concept_country','$concept_country_gen$')|l]. Він створюється й підтримується у [SelectLocalization(GetPlayer.IsValid,Concept('concept_building', '$concept_buildings_loc$'),'')|l] [SelectLocalization(GetPlayer.IsValid,'concept_battalion_desc_added','куренях')|l] та керується [Concept('concept_general','$concept_generals_ins$')|l]."
  concept_battalion_desc_added:0 "[GetBuildingType('building_barracks').GetName]"
 
  concept_flotilla: "Флотилія"
  concept_flotillas: "Флотилії"
  concept_flotillas_gen: "Флотилій"
- concept_flotilla_desc:1 "A naval [concept_unit] in a [Concept('concept_country','$concept_country_possessive$')] military. They are created and maintained by [SelectLocalization(GetPlayer.IsValid,'concept_flotilla_desc_added','Naval Bases')] and are commanded by [Concept('concept_admiral','$concept_admirals$')]."
+ concept_flotilla_desc: "Військово-морський [Concept('concept_unit','підрозділ')|l] у складі збройних сил [Concept('concept_country','$concept_country_gen$')|l]. Він створюється й підтримується у [SelectLocalization(GetPlayer.IsValid,Concept('concept_building', '$concept_buildings_loc$'),'')|l] [SelectLocalization(GetPlayer.IsValid,'concept_flotilla_desc_added','Морських базах')|l] та керується [Concept('concept_admiral','$concept_admirals_ins$')|l]."
  concept_flotilla_desc_added:0 "[GetBuildingType('building_naval_base').GetName]"
 
  concept_in_government: "В уряді"
@@ -869,6 +870,7 @@
  
  concept_government_ownership_share: "Урядова частка"
  concept_government_ownership_shares: "Урядові частки"
+ concept_government_ownership_shares_gen: "Урядових часток"
  concept_government_ownership_share_desc:0 "A [concept_building] with $concept_government_ownership_shares$ pays a portion of its [Concept('concept_building_balance','$concept_building_balance_profit$')] directly into the [Concept('concept_country','$concept_country_possessive$')] [concept_treasury]. The amount paid is based on the number of $concept_government_ownership_shares$ compared to shares held by [Concept('concept_pop','$concept_pops$')]. No [concept_interest] is paid on [concept_loans] against [concept_cash_reserves] held by $concept_government_ownership_shares$."
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MAY 3, 2022
@@ -880,6 +882,7 @@
  concept_market_share_desc:3 "The $concept_market_share$ of each [concept_country] in a [concept_market] is determined by its [concept_gdp], with a bonus if they are the [concept_market_owner]. The higher a $concept_country$'s $concept_market_share$ the more [Concept('concept_consumption_tax', '$concept_consumption_taxes$')] they collect in the [concept_market]."
 
  concept_default: "Неплатоспроможність"
+ concept_default_acc: "Неплатоспроможність"
  concept_default_desc:4 "Once the [concept_treasury] accumulates [concept_loans] large enough that they exceed the [Concept('concept_country','$concept_country_possessive$')] total [concept_credit], the $concept_country$ is considered to be in $concept_default$. This will pause all ongoing [concept_construction] and will have a negative impact on the [concept_throughput] of [Concept('concept_building', '$concept_buildings$')], growing more severe as time passes. Penalties are removed as soon as the $concept_country$'s weekly balance becomes positive again, or if [concept_bankruptcy] is declared."
 
  concept_bankruptcy: "Банкротство"
@@ -1241,6 +1244,7 @@
  concept_admiral_dat: "Адміралу"
  concept_admirals: "Адмірали"
  concept_admirals_gen: "Адміралів"
+ concept_admirals_ins: "Адміралами"
  concept_admiral_possessive:0 "Admiral\\'s"
  concept_admiral_desc:2 "A naval [concept_commander] [concept_character] who leads a [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_flotilla','$concept_flotillas$')].  Effects from an $concept_admiral$'s [Concept('concept_character_trait','$concept_character_traits$')] are conferred onto $concept_flotillas$ under their command."
 
@@ -1719,7 +1723,7 @@
  concept_budget_income_taxes: "Податки на прибуток"
  concept_budget_income_taxes_desc:1 "A [Concept('concept_taxes','$concept_tax$')] collected on the [Concept('concept_building_wage','$concept_building_wages$')] paid to the [concept_workforce]."
 
- concept_budget_investment_income: "Отримання з вкладів"
+ concept_budget_investment_income: "Отримання зі вкладів"
  concept_budget_investment_income_desc:2 "When [concept_money] from the [concept_treasury] is used in the [concept_construction] of [Concept('concept_building','$concept_buildings$')] that may be funded by the [concept_investment_pool] under the [Concept('concept_country','$concept_country_possessive$')] current [SelectLocalization(GetPlayer.IsValid,'concept_budget_investment_income_desc_added','Economic System')] [concept_law], the $concept_treasury$ is compensated by an equal transfer of funds from the $concept_investment_pool$."
  concept_budget_investment_income_desc_added:1 "$ECONOMIC_SYSTEM_LAW_GROUP$"
 
