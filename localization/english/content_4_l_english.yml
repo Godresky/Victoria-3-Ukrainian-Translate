@@ -264,7 +264,7 @@
  decree_protests_handled:0 "Protests Allowed"
 
 #Devout Flavor event
- ideology_russian_patriarch: "Російський православний патріярхат"
+ ideology_russian_patriarch: "Московський православний патріярхат"
  ideology_russian_patriarch_desc:0 "#lore The Orthodox Patriarchy sees itself as one of the three pillars of the country, that the Tsar is above all and that the peasants deserve be serfs.#!"
  ideology_orthodox_patriarch: "Православний патріярхат"
  ideology_orthodox_patriarch_desc:0 "#lore The Orthodox Patriarchy sees itself as one of the three pillars of the country, and that the right to rule comes from God.#!"

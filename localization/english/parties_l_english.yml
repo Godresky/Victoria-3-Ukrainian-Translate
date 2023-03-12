@@ -46,7 +46,7 @@
  party_national_socialist_movement: "Націонал-соціялістичний рух"
  party_national_front: "Національний фронт"
  party_nasjonal_samling: "Національна єдність"
- party_all_russian_fascist_party: "Всеросійская фашистская партія"
+ party_all_russian_fascist_party: "Всемосковська фашистска партія"
  party_dnsap: "Націонал-соціялістична робітнича партія Данії"
  party_national_league_of_sweden: "Національна ліга Шведчини"
  party_lapua_movement: "Рух Лапуа"
@@ -87,7 +87,7 @@
  party_octobrist_party: "Партія октябристів"
  party_democratic_party: "Демократична партія"
  party_the_right: "Праві"
- party_russian_party: "Російська партія"
+ party_russian_party: "Московська партія"
 
 #free_trade_party
  party_historic_party: "Історична партія"
@@ -128,8 +128,8 @@
  party_imperial_way_party: "Партія імперського тору"
  party_regressivist_party: "Партія регресистів"
  party_legitimist_party: "Легітимістська партія"
- party_russian_assembly: "Російські збори"
- party_russian_all_military_union: "Російський загальновійськовий союз"
+ party_russian_assembly: "Московські збори"
+ party_russian_all_military_union: "Московський загальновійськовий союз"
 
 #radical_party
  party_democratic_progressive_party: "Демократична поступова партія"
@@ -163,7 +163,7 @@
  party_zentrum: "Партія Центру"
  party_catholic_peoples_party: "Католицька народна партія"
  party_learned_council: "Вчена рада"
- party_union_of_the_russian_people: "Союз російського народу"
+ party_union_of_the_russian_people: "Союз московського народу"
  party_clerical_party: "Клерикальна партія"
  party_know_nothing_party: "Партія незнайок"
  party_conservative_catholics: "Консервативні католики"

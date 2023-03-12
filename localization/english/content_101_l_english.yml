@@ -137,7 +137,7 @@
  custom_opium:0 "Opium"
  custom_cocaine:0 "Cocaine"
 
- NO_EFFECT:0 "#italic Nothing happens#!"
+ NO_EFFECT: "#italic Нічого не відбудеться#!"
 
  expedition_events.570.t:0 "Geographical Study"
  expedition_events.570.d:0 "It has been suggested that we stop and undertake a geographical study of the area to increase our local knowledge."

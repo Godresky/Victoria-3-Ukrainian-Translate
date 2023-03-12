@@ -665,11 +665,11 @@
  TRIGGER_IS_BUILDING_CATEGORY:0 "Is a $CATEGORY$"
  TRIGGER_IS_BUILDING_CATEGORY_NOT:1 "Is #bold not #!a $CATEGORY$"
  
- TRIGGER_IS_MARGINAL:0 "Interest Group is [concept_marginalized]"
- TRIGGER_IS_MARGINAL_NOT:1 "Interest Group is #bold not #![concept_marginalized]"
+ TRIGGER_IS_MARGINAL: "Зацікавлена група - [Concept('concept_marginalized', '$concept_marginalized_adj$а')|l]"
+ TRIGGER_IS_MARGINAL_NOT: "Зацікавлена група #bold не#! [Concept('concept_marginalized', '$concept_marginalized_adj$а')|l]"
  
- TRIGGER_IS_POWERFUL:0 "Interest Group is [concept_powerful]"
- TRIGGER_IS_POWERFUL_NOT:1 "Interest Group is #bold not #![concept_powerful]"
+ TRIGGER_IS_POWERFUL:0 "Зацікавлена група - [concept_powerful]"
+ TRIGGER_IS_POWERFUL_NOT:1 "Зацікавлена група is #bold not #![concept_powerful]"
  
  TRIGGER_POP_EMPLOYMENT_BUILDING_GROUP:1 "Employed in #variable $BUILDING_GROUP$#! [concept_building]"
  TRIGGER_POP_EMPLOYMENT_BUILDING_GROUP_NOT:2 "#bold Not#! employed in #variable $BUILDING_GROUP$#! [concept_building]"
@@ -2531,8 +2531,8 @@
  TRIGGER_IS_IN_GOVERNMENT_THIRD:1 "[INTEREST_GROUP.GetName] are part of the government"
  TRIGGER_IS_IN_GOVERNMENT_THIRD_NOT:2 "[INTEREST_GROUP.GetName] are #bold not #!part of the government"
 
- TRIGGER_IS_MARGINAL_THIRD:1 "[INTEREST_GROUP.GetName] are [concept_marginalized]"
- TRIGGER_IS_MARGINAL_THIRD_NOT:2 "[INTEREST_GROUP.GetName] are #bold not #![concept_marginalized]"
+ TRIGGER_IS_MARGINAL_THIRD: "[INTEREST_GROUP.GetName] - [Concept('concept_marginalized', '$concept_marginalized$')|l]"
+ TRIGGER_IS_MARGINAL_THIRD_NOT: "[INTEREST_GROUP.GetName] #bold не#! [Concept('concept_marginalized', '$concept_marginalized$')|l]"
 
  TRIGGER_TRADE_GOODS_EQUAL:0 "[Concept('concept_good', '$concept_goods$')] are [TARGET_GOODS.GetName]"
  TRIGGER_TRADE_GOODS_EQUAL_NOT:0 "[Concept('concept_good', '$concept_goods$')] are #bold not #![TARGET_GOODS.GetName]"

@@ -135,6 +135,7 @@
  concept_trade_route_desc_added:0 "[GetBuildingType('building_trade_center').GetName]"
 
  concept_trade_revenue: "Виручка від торгівлі"
+ concept_trade_revenue_ins: "Виручкою від торгівлі"
  concept_trade_revenue_desc:2 "A [concept_trade_route] generates revenue for the [SelectLocalization(GetPlayer.IsValid,'concept_trade_revenue_desc_added','Trade Center')]  managing it, depending on the [concept_market_price] difference and the volume traded. [concept_tariffs] reduce the $concept_trade_revenue$ generated, effectively decreasing the maximum volume a [concept_trade_route] can move before it becomes unprofitable and stagnates."
  concept_trade_revenue_desc_added:0 "[GetBuildingType('building_trade_center').GetName]"
 
@@ -545,6 +546,7 @@
  concept_interest_groups_gen: "Зацікавлених груп"
  concept_interest_groups_acc: "Зацікавлені групи"
  concept_interest_groups_ins: "Зацікавленими групами"
+ concept_interest_groups_loc: "Зацікавлених групах"
 
  concept_interest_group_short: "Група"
  concept_interest_group_short_gen: "Групи"
@@ -773,6 +775,8 @@
  
  concept_country_possessive: "Державн"
  concept_countries_possessive:0 "Countries\\'"
+
+ concept_country_adj: "Державн"
 
  concept_country_desc:3 "A $concept_country$ consists of one or several parcels of [Concept('concept_province','$concept_province_land$')] organized into [Concept('concept_state','$concept_states$')], in which a [Concept('concept_pop','$concept_population$')] resides under the rule of a [concept_government] and its [concept_head_of_state]. In Victoria 3, both human and AI players each control a $concept_country$.\n\nAside from the nature of their $concept_pops$, which $concept_states$ they own, and how they been developed, a $concept_country$ is defined also by their [concept_country_tier], [concept_primary_cultures], and [concept_state_religion], and whether they are [Concept('concept_recognized_power','$concept_recognized_power_short$')] or [Concept('concept_unrecognized_power','$concept_unrecognized_power_short$')]. $concept_countries$ also have different [Concept('concept_law','$concept_laws$')] and access to different [Concept('concept_technology','$concept_technologies$')]."
 
@@ -1260,7 +1264,7 @@
  concept_working_adults_desc:1 "The part of a [concept_pop] that make up the [concept_workforce] that work in [Concept('concept_building', '$concept_buildings$')] for [Concept('concept_building_wage', '$concept_building_wages$')]. They are the main source of a $concept_pop$'s [Concept('concept_pop_income','$concept_pop_income_short$')] and [concept_political_strength]."
 
  concept_dependents: "Утриманці"
- concept_dependents_gen: "Утриманці"
+ concept_dependents_gen: "Утриманців"
  concept_dependent: "Утриманець"
  concept_dependents_desc:2 "The part of a [concept_pop] not considered part of the [concept_workforce]. They represent the families of the [concept_working_adults] and normally constitute the majority of the population. $concept_dependents$ usually generate [concept_dependent_income] that is typically smaller than the [Concept('concept_building_wage','$concept_building_wages$')] collected by $concept_working_adults$, but they also have lower [concept_pop_needs]. While they are able to support [Concept('concept_interest_group','$concept_interest_groups$')] their [concept_political_strength] typically count for less. They are only granted [Concept('concept_votes','$concept_voting_rights$')] under very specific [Concept('concept_law', '$concept_laws$')].\n\nEnacting different $concept_laws$ or maintaining certain [Concept('concept_institution', '$concept_institutions$')] may convert $concept_dependents$ into $concept_working_adults$ over time, increase their [concept_political_strength], or supplement their $concept_dependent_income$."
 
@@ -1563,6 +1567,7 @@
  concept_culture_desc:2 "All [Concept('concept_pop', '$concept_pops$')] have a $concept_culture$, which can only change through [concept_assimilation]. Their $concept_culture$ determines which [Concept('concept_state_region','$concept_state_regions$')] they consider their [Concept('concept_homeland','$concept_homelands$')] and whether they are [Concept('concept_discrimination','$concept_discriminated_against$')] in their [concept_country] or not."
 
  concept_accepted_culture: "Прийнята культура"
+ concept_accepted_culture_ins: "Прийнятою культурою"
  concept_accepted_cultures: "Прийняті культури"
  concept_accepted_culture_short: "Прийнята"
  concept_accepted_culture_short_adj: "Прийнят"
@@ -1570,8 +1575,10 @@
  concept_accepted_culture_desc_added:0 " [GetLawType('law_national_supremacy').GetGroup.GetName]"
 
  concept_primary_cultures: "Головні культури"
+ concept_primary_cultures_ins: "Головними культурами"
  concept_primary_culture: "Головна культура"
  concept_primary_culture_acc: "Головна культура"
+ concept_primary_culture_ins: "Головною культурою"
  concept_primary_cultures_desc:4 "The [concept_culture] or $concept_cultures$ a [Concept('concept_country','$concept_country_nation_state$')] is primarily associated with. If a $concept_country$ [Concept('concept_nation_formation','forms a different')] $concept_country$ its $concept_primary_cultures$ may change, but will otherwise remain the same.[AddLocalizationIf(GetPlayer.IsValid,'concept_primary_cultures_ingame_added')]"
  concept_primary_cultures_ingame_added:1 "\n\nThe $concept_primary_cultures$ in [GetPlayer.GetName] are [GetPlayer.GetPrimaryCulturesDesc]."
 
@@ -1672,6 +1679,7 @@
  concept_monument_desc:1 "[Concept('concept_building','$concept_buildings$')] unique to a certain [concept_state] that can perform a variety of functions, often conferring [concept_prestige]."
 
  concept_productivity: "Продуктивність"
+ concept_productivity_ins: "Продуктивністю"
  concept_productivity_long: "Річна продуктивність/співробітник"
  concept_productive: "Продуктивний"
  concept_unproductive: "Непродуктивний"
@@ -1769,6 +1777,7 @@
 
  concept_budget_construction_goods: "Будівельні товари"
  concept_budget_construction_goods_gen: "Будівельних товарів"
+ concept_budget_construction_goods_acc: "Будівельні товари"
  concept_budget_construction_goods_desc:2 "[Concept('concept_good','$concept_goods$')] [Concept('concept_good_consumption','$concept_good_consumed$')] by [SelectLocalization(GetPlayer.IsValid,'concept_budget_construction_goods_desc_added','Construction Sector')] [Concept('concept_building','$concept_buildings$')] in order to [Concept('concept_construction','$concept_construct$')] new $concept_buildings$."
  concept_budget_construction_goods_desc_added:0 "[GetBuildingType('building_construction_sector').GetName]"
 
@@ -1892,7 +1901,7 @@
 
  concept_conversion: "Перехід"
  concept_conversion_gen: "Переходу"
- concept_converting:1 "Converting"
+ concept_converting: "Перехід"
  concept_convert:0 "Convert"
  concept_conversion_desc:2 "[Concept('concept_pop','$concept_pops$')] whose [concept_religion] is [Concept('concept_discrimination','$concept_discriminated_against$')] in the [concept_country] they live may instead $concept_convert$ to an [concept_accepted_religion]."
 

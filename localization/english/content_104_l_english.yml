@@ -998,10 +998,10 @@
  founded_psycho_journal_modifier:0 "Funded Philosophical Journal"
  founded_psycho_journal_cost_modifier:0 "Philosophical Journal Expenses"
  
- psychological_affliction:0 "Psychological Affliction"
- psychological_affliction_desc:0 "This character suffers from an illness of the mind, poorly understood and difficult to treat effectively."
- Sigismund_Schlomo:0 "Sigmund"
- Freud:0 "Freud"
+ psychological_affliction: "Психологічний розлад"
+ psychological_affliction_desc: "Цей персонаж страждає на душевну хворобу, яку погано розуміють і важко ефективно лікувати."
+ Sigismund_Schlomo: "Зиґмунд"
+ Freud: "Фройд"
  
  je_grand_exhibition:0 "Awaiting the Grand Exhibition"
  je_grand_exhibition_reason:0 "Countries all across the world wait impatient to see what we have to show."
