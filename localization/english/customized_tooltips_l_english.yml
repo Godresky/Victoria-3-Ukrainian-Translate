@@ -122,8 +122,8 @@
  GOODS_LEADERBOARD_STATUS:0 "#tooltippable #tooltip:[Goods.GetTooltipTag],GOODS_NAME_TOOLTIP_LEADERBOARD_RANKING_BREAKDOWN [Goods.GetMarket.GetOwner.GetFlagTextIcon] [SelectLocalization(GreaterThan_int32(Goods.GetLeaderboardSpot(Goods.GetMarket.GetOwner),'(int32)0'),'GOODS_LEADERBOARD_HEADER_TOP_PRODUCER','GOODS_LEADERBOARD_HEADER_INSIGNIFICANT_PRODUCER')]#!#!"
  GOODS_LEADERBOARD_HEADER:0 "\n\n[Goods.GetMarket.GetOwner.GetFlagTextIcon] [SelectLocalization(GreaterThan_int32(Goods.GetLeaderboardSpot(Goods.GetMarket.GetOwner),'(int32)0'),'GOODS_LEADERBOARD_HEADER_TOP_PRODUCER','GOODS_LEADERBOARD_HEADER_INSIGNIFICANT_PRODUCER')]"
  GOODS_LEADERBOARD_HEADER_TOP_PRODUCER: "Виробник #v ##[Goods.GetLeaderboardSpot(Goods.GetMarket.GetOwner)]#! у світі[Goods.GetPrestigeAwardForSpotDesc( Goods.GetLeaderboardSpot(Goods.GetMarket.GetOwner.Self) )]"
- GOODS_LEADERBOARD_HEADER_INSIGNIFICANT_PRODUCER: "Не є значним виробником [Concept('concept_good','$concept_good_gen$')|l] [Goods.GetName]"
- GOODS_PRESTIGE_AWARD: "#v $VAL|=+$#! [Concept('concept_prestige','$concept_prestige_gen$')|l] завдяки статусу виробника #v ##$SPOT|v$#! [Concept('concept_good','$concept_good_gen$')|l] [Goods.GetTextIcon][Goods.GetName]"
+ GOODS_LEADERBOARD_HEADER_INSIGNIFICANT_PRODUCER: "Не є значним виробником [Concept('concept_good','$concept_good_gen$')|l] [Goods.GetName|l]"
+ GOODS_PRESTIGE_AWARD: "#v $VAL|=+$#! [Concept('concept_prestige','$concept_prestige_gen$')|l] завдяки статусу виробника #v ##$SPOT|v$#! [Concept('concept_good','$concept_good_gen$')|l] [Goods.GetTextIcon][Goods.GetName|l]"
  GOODS_PRESTIGE_SUFFIX: " (#v $VAL|=+$#! [Concept('concept_prestige','$concept_prestige_gen$')|l])"
  NON_TRADEABLE_DESC:0 "\n\n[Goods.GetName] can not be bought or sold via [Concept('concept_trade_route', '$concept_trade_routes$')]"
 

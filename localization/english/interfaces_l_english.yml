@@ -2069,11 +2069,11 @@
  BATTALIONS: "[Concept('concept_battalion', '$concept_battalions$')]"
  FLOTILLAS: "[Concept('concept_flotilla','$concept_flotillas$')]"
 
- GOOD_PRICE_BASED_ON_LAST_TICK_WARNING:1 "#lore These values are updated at least once per week.#!"
+ GOOD_PRICE_BASED_ON_LAST_TICK_WARNING: "#lore Ці значення оновлюються щонайменше раз на тиждень.#!"
  GOODS_PRICE_DESC_FIXED:0 "[GOODS.GetTextIcon][GOODS.GetName] has a fixed price of @money![GOODS.GetPrice|1v] that will never change."
  GOODS_PRICE_DESC_IN_MARKET:2 "#header [Goods.GetTextIcon][Nbsp][Goods.GetName] in [Goods.GetMarket.GetName]#!\n$TOOLTIP_DELIMITER$\n$DATA_GOODS_NAME_TOOLTIP$"
  GOODS_PRICE_DESC_IN_MARKET_PROGRESSBAR:0 "#header @money![Goods.GetMarketPrice|0v] [Goods.GetCompareIconAgainstBasePrice( Goods.GetMarketPrice )] ([Goods.GetPercentageDeltaAgainstBasePrice(Goods.GetMarketPrice)|%0=-])#!"
- GOODS_PRICE_DESC_IN_STATE: "#header [Goods.GetTextIcon][Nbsp][Goods.GetName] у [Concept('concept_state', '$concept_state_loc$')|l] [State.GetName]#!\nМісцеві ціни: @money![Goods.GetStatePrice|1v] ([Goods.GetCompareIconAgainstBasePrice( Goods.GetStatePrice )])\n$TOOLTIP_DELIMITER$\n[concept_sell_orders]: [Goods.GetStateProductionWithTooltip]\n[concept_buy_orders]: [Goods.GetStateConsumptionWithTooltip] \n\n#header Вплив на ціну#!\n[Goods.GetMarketAccess|%v1] через [Concept('concept_market_access', '$concept_market_access_acc$')|l] ([Goods.GetMarketPriceWithTooltip] - [Market.GetName|l])\n[Goods.GetLocalPriceShare|%v1] from Production and Consumption in [State.GetName]\n\n[concept_base_price]: @money![Goods.GetBasePrice|1v]\n\n$GOOD_PRICE_BASED_ON_LAST_TICK_WARNING$"
+ GOODS_PRICE_DESC_IN_STATE: "#header [Goods.GetTextIcon][Nbsp][Goods.GetName] у [Concept('concept_state', '$concept_state_loc$')|l] [State.GetName]#!\nМісцеві ціни: @money![Goods.GetStatePrice|1v] ([Goods.GetCompareIconAgainstBasePrice( Goods.GetStatePrice )])\n$TOOLTIP_DELIMITER$\n[concept_sell_orders]: [Goods.GetStateProductionWithTooltip]\n[concept_buy_orders]: [Goods.GetStateConsumptionWithTooltip] \n\n#header Вплив на ціну#!\n[Goods.GetMarketAccess|%v1] через [Concept('concept_market_access', '$concept_market_access_acc$')|l] ([Goods.GetMarketPriceWithTooltip] - [Market.GetName|l])\n[Goods.GetLocalPriceShare|%v1] через виробництво та споживання [Concept('concept_state', '$concept_state_gen$')|l] [State.GetName]\n\n[concept_base_price]: @money![Goods.GetBasePrice|1v]\n\n$GOOD_PRICE_BASED_ON_LAST_TICK_WARNING$"
  GOODS_PRICE_DESC_IN_ISOLATED_MARKET: "#header [Goods.GetTextIcon][Nbsp][Goods.GetName] у [Concept('concept_state', '$concept_state_loc$')|l] [Goods.GetState.GetName]#!\nМісцеві ціни: @money![Goods.GetStatePrice|1v] ([Goods.GetCompareIconAgainstBasePrice( Goods.GetStatePrice )])\n$TOOLTIP_DELIMITER$\n[Goods.GetStateProductionWithTooltip] [concept_sell_orders]\n[Goods.GetStateConsumptionWithTooltip] [concept_buy_orders]\n\n[concept_base_price]: @money![Goods.GetBasePrice|1v]\n\n$GOOD_PRICE_BASED_ON_LAST_TICK_WARNING$"
 
  GOODS_PRICE_MARKET_LOCAL_PRICE_LINK:0 "See #tooltippable #tooltip:[GOODS.GetTooltipTag],GOODS_PRICE_MARKET_LOCAL_PRICE_BREAKDOWN Local Prices#!#! in [GOODS.GetMarket.GetName]"
@@ -5157,12 +5157,12 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
 
  NUM_BUILDINGS_WITH_PROD_METHOD_ACTIVE:0 "[ProductionMethod.GetNumOfBuildingsUsingThis(GetPlayer.Self)|v] [Concept('concept_building', '$concept_buildings$')] currently have [ProductionMethod.GetName] active:\n[ProductionMethod.GetBuildingTypesUsingThisDesc(GetPlayer.Self)]"
  BUILDING_TYPE_USING_PM_ENTRY:0 "[BuildingType.GetName]: #variable $NUM$#!"
- ACTIVE_PRODUCTION_METHODS_PRODUCING: "[Concept('concept_production_method', '$concept_production_methods_short$')], що виробляють [Goods.GetTextIcon][Nbsp][Goods.GetName] у [Concept('concept_country','$concept_country_loc$')|l] [GetPlayer.GetName]"
- ACTIVE_PRODUCTION_METHODS_CONSUMING: "[Concept('concept_production_method', '$concept_production_methods_short$')], що використовують [Goods.GetTextIcon][Nbsp][Goods.GetName] у [Concept('concept_country','$concept_country_loc$')|l] [GetPlayer.GetName]"
+ ACTIVE_PRODUCTION_METHODS_PRODUCING: "[Concept('concept_production_method', '$concept_production_methods_short$')], що виробляють [Goods.GetTextIcon][Nbsp][Goods.GetName|l] у [Concept('concept_country','$concept_country_loc$')|l] [GetPlayer.GetName]"
+ ACTIVE_PRODUCTION_METHODS_CONSUMING: "[Concept('concept_production_method', '$concept_production_methods_short$')], що використовують [Goods.GetTextIcon][Nbsp][Goods.GetName|l] у [Concept('concept_country','$concept_country_loc$')|l] [GetPlayer.GetName|l]"
  INACTIVE_PRODUCTION_METHODS: "Зараз недіяльні"
- PRODUCTION_METHOD_ITEM:0 "#variable [ProductionMethod.GetName]#!"
+ PRODUCTION_METHOD_ITEM: "#variable [ProductionMethod.GetName]#!"
 
- OUTLINER_SECTION_FORMAT:0 "$TITLE$"
+ OUTLINER_SECTION_FORMAT: "$TITLE$"
 
  PARTIES_TITLE:0 "#title Parties#!"
  COLONIZABLE_NO_POWER_PROJECTION:0 "#N Colonizable nations cannot initiate Power Projections#!"
@@ -6001,7 +6001,7 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  BUILDING_MAP_LIST_PANEL_AVAILABLE_LABOR_HEADER: "Сила"
  BUILDING_MAP_LIST_PANEL_AVAILABLE_LABOR_HEADER_TOOLTIP:0 "#header Доступна робоча сила#!\n$TOOLTIP_DELIMITER$\nHow many Pops that are either [concept_unemployed] or work in [Concept('concept_subsistence_building', '$concept_subsistence_buildings$')] in the State"
  BUILDING_MAP_LIST_PANEL_INFRASTRUCTURE_HEADER: "Інфра"
- BUILDING_MAP_LIST_PANEL_INFRASTRUCTURE_HEADER_TOOLTIP:0 "#header Infrastructure Balance#!\n$TOOLTIP_DELIMITER$\nHow much [concept_infrastructure] is available in the State"
+ BUILDING_MAP_LIST_PANEL_INFRASTRUCTURE_HEADER_TOOLTIP: "#header Балянс інфраструктури#!\n$TOOLTIP_DELIMITER$\nКількість доступної [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l] у реґіоні"
 
  BUILDING_MAP_LIST_PANEL_STATUS_HEADER: "Стан"
  BUILDING_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP: "#header Стан#!\n$TOOLTIP_DELIMITER$\n#concept Доступність розширення цієї [Concept('concept_building', '$concept_building_gen$')|l] у цьому [Concept('concept_state', '$concept_state_loc$')|l].\n\n@map_list_plus!: Ви можете вибрати це.\n@map_list_plus_and_checkmark!: Ви можете вибрати це і Ви це вже тут робите.\n@map_list_checkmark!: Ви вже робите це тут і можете скасувати вибір.\n@map_list_lock!: Ви вже робите це тут, але НЕ можете скасувати вибір.\n@map_list_cross!: Ви НЕ можете вибрати це.\n@map_list_cross_and_checkmark!: Ви вже робите це тут, але НЕ можете вибрати це.#!"
@@ -6149,7 +6149,7 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  PARTY_AFFILIATION: "Партійність"
  PROJECTED_VOTES_TITLE: "Передбачені голоси:"
  PROJECTED_VOTES: "$VOTING_POWER|K$ ($SHARE|%0$)"
- PARTY_AFFILIATION_TOOLTIP:0 "#header Приналежність [InterestGroup.GetName|l] до партії «[Party.GetName]»: $SCORE|v0$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
+ PARTY_AFFILIATION_TOOLTIP: "#header Приналежність [InterestGroup.GetName|l] до партії «[Party.GetName]»: $SCORE|v0$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
 
  CULTURE_IN_STATE_ITEM: "[STATE.GetPopulationForCulture( CULTURE.Self )|vD] [CULTURE.GetName] ([STATE.GetPolStrForCulture( CULTURE.Self )|vD] [Concept('concept_political_strength', '$concept_political_strength_gen$')|l])"
  CULTURE_IN_STATE_FORMAT: "#header Культури у [Concept('concept_state', '$concept_state_loc$')|l] [STATE.GetName]#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
