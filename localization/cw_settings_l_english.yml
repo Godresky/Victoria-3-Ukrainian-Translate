@@ -91,7 +91,7 @@
  OPTION_CAP_144: "144"
  OPTION_CAP_165: "165"
  SETTING_TEXTURE_STREAMING: "Потокове передавання текстур"
- SETTING_TEXTURE_STREAMING_CACHE: "Розмір кешу потокової передачі текстур"
+ SETTING_TEXTURE_STREAMING_CACHE: "Розмір кешу потокового передавання текстур"
  SETTING_VALUE_MB: "$VALUE$ Мб"
  # GUI
  SETTING_ANIMATION_SPEED: "Швидкість анімації"
@@ -166,8 +166,8 @@
  SETTING_CAMERA_FACE_NORTH_TOOLTIP: "Визначає, чи буде знімач завжди спрямована на північ чи ні."
  NO_AUTOSAVE: "Без самозбереження"
  # Multiplayer
- SETTINGS_FILE_TRANSFER_SPEED: "Швидкість передачі файлів"
- SETTINGS_FILE_TRANSFER_SPEED_TOOLTIP: "#T $SETTINGS_FILE_TRANSFER_SPEED$\n#!Встановлює максимальну швидкість передачі файлів збереження гри в лобі для кількох гравців.\n\nНижчі параметри можуть покращити стабільність мережі під час приєднання до багатокористувацьких ігор, але негативно впливають на час завантаження багатокористувацьких ігор."
+ SETTINGS_FILE_TRANSFER_SPEED: "Швидкість передавання файлів"
+ SETTINGS_FILE_TRANSFER_SPEED_TOOLTIP: "#T $SETTINGS_FILE_TRANSFER_SPEED$\n#!Встановлює максимальну швидкість передавання файлів збереження гри в лобі для кількох гравців.\n\nНижчі параметри можуть покращити стабільність мережі під час приєднання до багатокористувацьких ігор, але негативно впливають на час завантаження багатокористувацьких ігор."
  # Tools
  SETTING_MAP_EDITOR_AUTOSAVE_INTERVAL_MINUTES: "Автоматичне збереження редактора мапа (хвилини)"
  SETTING_MAP_EDITOR_AUTOSAVE_INTERVAL_MINUTES_TOOLTIP: "Частота самозбереження редактора мапа (хвилини)"

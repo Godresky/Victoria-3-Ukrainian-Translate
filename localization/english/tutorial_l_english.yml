@@ -523,13 +523,13 @@
 
  lesson_production_methods_how_2:0 "$lesson_production_methods_how_1$"
  lesson_production_methods_how_2_desc:0 "These are the [Concept('concept_production_method', '$concept_production_methods$')] currently in effect in this [concept_building]. You can click any of them to see a list of alternative options. The #g green #! number indicates the number of alternatives you have right now."
- lesson_production_methods_how_2_continue:1 "Select any $concept_production_methods$"
+ lesson_production_methods_how_2_continue:2 "Select any $concept_production_method$"
  lesson_production_methods_how_2_back:0 "[GetTutorialJournalEntry.GetTarget.GetBuilding.GetName] panel must be closed to backtrack"
 
  lesson_production_methods_how_3:0 "$lesson_production_methods_how_1$"
  lesson_production_methods_how_3_desc:0 "Hover any of the options for a breakdown of how the [concept_building] will change if that [concept_production_method] was selected instead."
  lesson_production_methods_how_3_continue:1 "Change any $concept_production_methods$"
- lesson_production_methods_how_3_back:0 "Unselect any $concept_production_methods$ to backtrack"
+ lesson_production_methods_how_3_back:1 "Unselect the $concept_production_method$ to backtrack"
 
  lesson_production_methods_how_4:0 "$lesson_production_methods_how_1$"
  lesson_production_methods_how_4_desc:1 "Good job! You can see the new effects on the [concept_building] immediately, but repercussions on the [concept_workforce] and across the economy might take some time to materialize. Keep this [concept_production_method] active for at least [GetTutorialJournalEntry.GetTotalGoalValue|0] weeks to complete the lesson."
@@ -702,7 +702,7 @@
  lesson_market_access_with_railways_how_4_back:0 "Open the [concept_trade_lens] to backtrack"
 
  lesson_market_access_with_railways_how_5:0 "$lesson_market_access_with_railways_how_1$"
- lesson_market_access_with_railways_how_5_desc:0 "Both [Concept('concept_pop', '$concept_pops$')] and other [Concept('concept_building', '$concept_buildings$')] can purchase [GetGoods('transportation').GetTextIcon] [GetGoods('transportation').GetName], to fulfill [concept_pop_needs] or as part of a [concept_production_method]. But if demand is low and the cost of input goods is high, Railways can easily become unproductive and lose employees due to low [Concept('concept_building_wage', '$concept_building_wages$')]. To ensure optimal access to rail-based [concept_infrastructure] you may need to [Concept('concept_subsidies', '$concept_subsidize$')] Railways - either in specific States or all at once, if they are not already subsidized."
+ lesson_market_access_with_railways_how_5_desc:1 "Both [Concept('concept_pop', '$concept_pops$')] and other [Concept('concept_building', '$concept_buildings$')] can purchase [GetGoods('transportation').GetTextIcon] [GetGoods('transportation').GetName], to fulfill [concept_pop_needs] or as part of a [concept_production_method]. But if demand is low and the cost of input goods is high, Railways can easily become unproductive and lose employees due to low [Concept('concept_building_wage', '$concept_building_wages$')]. To ensure optimal access to rail-based [concept_infrastructure] you may need to [Concept('concept_subsidies', '$concept_subsidize$')] Railways - either in specific [Concept('concept_state', '$concept_states$')] or all at once, if they are not already subsidized."
  lesson_market_access_with_railways_how_5_continue:0 "Open the $concept_buildings$ panel, click the Developments tab, and see if Railways are $concept_subsidized$"
  lesson_market_access_with_railways_how_5_back:0 "Close the Railways details panel in [GetTutorialJournalEntry.GetTarget.GetState.GetName] to backtrack"
 
@@ -1370,16 +1370,17 @@
 
  lesson_establish_trade_route_why_5:0 "$lesson_establish_trade_route_why_1$"
  lesson_establish_trade_route_why_5_desc:0 "If you do a lot of trading, the @bur![Nbsp][concept_bureaucracy] costs can add up. A way to combat that is by establishing a [GetDiplomaticActionType('trade_agreement').GetName] [Concept('concept_diplomatic_pact','$concept_diplomatic_pact_short$')] with one or two [Concept('concept_country','$concept_countries$')]."
- lesson_establish_trade_route_why_5_continue:1 "Open the #b Diplomatic#! Lens to the #b Diplomatic Actions#! tab and select [GetDiplomaticActionType('trade_agreement').GetName]"
+ lesson_establish_trade_route_why_5_continue:2 "Close the #b Politics#! panel, open the #b Diplomatic#! Lens, go to the #b Diplomatic Actions#! tab and select [GetDiplomaticActionType('trade_agreement').GetName]"
  lesson_establish_trade_route_why_5_back:0 "[GetDiplomaticActionType('trade_agreement').GetName] in #b Diplomatic Actions#! tab is not selected"
  
  lesson_establish_trade_route_why_6:0 "$lesson_establish_trade_route_why_1$"
- lesson_establish_trade_route_why_6_desc:0 "Maintaining a [GetDiplomaticActionType('trade_agreement').GetName] costs @inf![Nbsp][concept_influence], but negates any @bur![Nbsp][concept_bureuacracy] costs of [Concept('concept_trade_route','$concept_trade_routes$')] targeting the [concept_market] where they are the [concept_market_owner] for as long as the [Concept('concept_diplomatic_pact','$concept_diplomatic_pact_short$')] is in effect, in both directions. In addition, all [concept_tariffs] for routes between the two [Concept('concept_country','$concept_countries$')] are cancelled, which makes trade more profitable and voluminous."
- lesson_establish_trade_route_why_6_continue:0 "Press Next"
+ lesson_establish_trade_route_why_6_desc:1 "Maintaining a [GetDiplomaticActionType('trade_agreement').GetName] costs @inf![Nbsp][concept_influence], but negates any @bur![Nbsp][concept_bureaucracy] costs of [Concept('concept_trade_route','$concept_trade_routes$')] targeting the [concept_market] where they are the [concept_market_owner] for as long as the [Concept('concept_diplomatic_pact','$concept_diplomatic_pact_short$')] is in effect, in both directions. In addition, all [concept_tariffs] for routes between the two [Concept('concept_country','$concept_countries$')] are cancelled, which makes trade more profitable and voluminous."
+ lesson_establish_trade_route_why_6_back:0 "Close the [GetDiplomaticActionType('trade_agreement').GetName] map interaction"
 
  lesson_establish_trade_route_why_7:0 "$lesson_establish_trade_route_why_1$"
  lesson_establish_trade_route_why_7_desc:0 "You do not need to babysit your $concept_trade_routes$, but optimizing them now and then can be a good idea."
- lesson_establish_trade_route_why_7_continue:0 "Open the #b Market#! panel to the #b Trade Routes#! tab"
+ lesson_establish_trade_route_why_7_continue:1 "Open the #b Market#! panel and go to the #b Trade Routes#! tab"
+ lesson_establish_trade_route_why_7_back:0 "Close #b Trade Routes#! tab"
  
  lesson_establish_trade_route_why_8:0 "$lesson_establish_trade_route_why_1$"
  lesson_establish_trade_route_why_8_desc:0 "This panel shows all [Concept('concept_trade_route','$concept_trade_routes$')] involving your [concept_market], whether owned by yourself or other [Concept('concept_country','$concept_countries$')]. Once established, these will expand to meet [concept_market] conditions, for as long as there are [concept_convoys] to spare. If a route becomes unprofitable - perhaps due to competing trade or unexpected changes in supply or demand - it may shrink, freeing up $concept_convoys$ for other routes. You can adjust the [concept_market_good_policy] for existing $concept_trade_route$ here. You can also find shortcuts for starting $concept_trade_routes$ for [Concept('concept_good','$concept_goods$')] with high demand for import or high supply for export."

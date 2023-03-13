@@ -297,7 +297,7 @@
  principled_pacifist:0 "Principled Pacifist"
  martyrized_pacifist:0 "Martyrized Pacifist"
  election_contextual_events.3.tt.1: "Приховати непатріотичний наклеп приховати від громадськости!"
- election_contextual_events.3.tt.2: "Незважаючи на наші зусилля, інформація просочується."
+ election_contextual_events.3.tt.2: "Незважаючи на наші зусилля, відомості просочуються."
 
  election_contextual_events.4.t: "По кому дзвенять дзвони" # Old IG leader
  election_contextual_events.4.d: "Постарілий [SCOPE.sCharacter('decrepit_leader').GetFullName], провідник групи [SCOPE.gsInterestGroup('decrepit_leader_ig').GetName], несподівано помер в середині кампанії — залишивши [SCOPE.sParty('decrepit_leader_party').GetName] без наріжного політика. Питання про заміну [SCOPE.sCharacter('decrepit_leader').GetHerHis] зараз у всіх на вустах."

@@ -115,9 +115,9 @@
  alert_has_decreasing_interests_alert_hint: "Ви можете запобігти цьому, скориставшись дією «[Concept('concept_declared_interest','$concept_declare_interests$')]» у [Concept('concept_diplomatic_lens','$concept_diplomatic_lens_dat$')|l], якщо ви ще не досягли максимуму проявлених рупів, або можете змінити пріоритети проявлених рупів відповідно до поточних дипломатичних цілей."
  alert_has_decreasing_interests_alert_action: "Панель дипломатії"
 
- alert_obligation_expiring_name:0 "[SCOPE.GetRootScope.GetDiplomaticRelations.GetSecondCountry.GetAdjectiveNoFormatting] [concept_obligation] expiring"
- alert_obligation_expiring_desc:0 "The [concept_obligation] owed to us by [SCOPE.GetRootScope.GetDiplomaticRelations.GetSecondCountry.GetName] will expire in #v [SCOPE.GetRootScope.GetDiplomaticRelations.CalcOwedObligationDaysLeft(GetPlayer.Self)]#! day(s)."
- alert_obligation_expiring_hint:1 "You should make use of the [concept_obligation] before it expires by either using it to improve relations with [SCOPE.GetRootScope.GetDiplomaticRelations.GetSecondCountry.GetName] or tie them into a Diplomatic Agreement or Play."
+ alert_obligation_expiring_name:0 "[SCOPE.GetRootScope.GetDiplomaticRelations.GetFirstCountry.GetAdjectiveNoFormatting] [concept_obligation] expiring"
+ alert_obligation_expiring_desc:0 "The [concept_obligation] owed to us by [SCOPE.GetRootScope.GetDiplomaticRelations.GetFirstCountry.GetName] will expire in #v [SCOPE.GetRootScope.GetDiplomaticRelations.CalcOwedObligationDaysLeft(GetPlayer.Self)]#! day(s)."
+ alert_obligation_expiring_hint:2 "You should make use of the [concept_obligation] before it expires by either using it to improve relations with [SCOPE.GetRootScope.GetDiplomaticRelations.GetFirstCountry.GetName] or tie them into a Diplomatic Agreement or Play."
  alert_obligation_expiring_action: "Панель дипломатії"
 
  alert_idle_mobilized_general_name:0 "Idle [Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized$')] [concept_general]: [SCOPE.GetRootScope.GetCharacter.GetFullName]"

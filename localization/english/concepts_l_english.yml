@@ -123,6 +123,7 @@
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MAY 5, 2022
  
  concept_trade_route: "Торговий тор"
+ concept_trade_route_gen: "Торгового тору"
  concept_trade_route_dat: "Торговому тору"
  concept_trade_route_acc: "Торговий тор"
  concept_trade: "Торгівля"
@@ -312,6 +313,7 @@
  concept_potential_regulars: "Можливі постійні"
  concept_potential_regulars_gen: "Можливих постійних"
  concept_potential_conscripts: "Можливі призвані"
+ concept_potential_conscripts_gen: "Можливих призваних"
  concept_potential_battalions_desc:2 "A [Concept('concept_country','$concept_country_possessive$')] maximum potential [Concept('concept_battalion','$concept_battalions$')] is the sum of the its Potential Regular $concept_battalions$ and Potential [Concept('concept_conscript_battalion','$concept_conscript_battalions$')].\n\n#b Potential Regular $concept_battalions$#!: the number of $concept_battalions$ the $concept_country$'s currently constructed [SelectLocalization(GetPlayer.IsValid,'concept_potential_battalions_desc_added','barracks')] are able to support\n\n#b Potential $concept_conscript_battalions$#!: the number of $concept_conscript_battalions$ the $concept_country$'s [SelectLocalization(GetPlayer.IsValid,'concept_potential_battalions_desc_additional','conscription center')]s would create if [Concept('concept_conscription_center','$concept_conscription$')] had been activated across all [Concept('concept_state','$concept_states$')]"
  concept_potential_battalions_desc_added:0 "[GetBuildingType('building_barracks').GetName]"
  concept_potential_battalions_desc_additional:0 "[GetBuildingType('building_conscription_center').GetName]"
@@ -322,16 +324,19 @@
  concept_conscription_centers_acc: "Осередки призви"
  concept_conscription_centers_ins: "Осередками призви"
  concept_conscription_center_conscription: "Призва"
+ concept_conscription_center_conscription_acc: "Призву"
  concept_conscripted: "Призван"
  concept_conscription: "Призва"
  concept_conscription_center_desc:2 "When a [concept_state] is $concept_conscripted$ during a [concept_diplomatic_play] or [concept_war], a [SelectLocalization(GetPlayer.IsValid,'concept_conscription_center_desc_added','conscription center')] appears with a [concept_building_level] depending on its #v $modifier_state_conscription_rate_add$#! and $concept_state$ [Concept('concept_pop','$concept_population$')] size. This [concept_military_building] will recruit civilian [concept_workforce] into [Concept('concept_conscript_battalion','$concept_conscript_battalions$')] that will be automatically assigned to [Concept('concept_general','$concept_generals$')] in their [concept_hq] as they are raised.\n\nAfter the $concept_war$, all $concept_conscription_centers$ will deactivate and the $concept_conscript_battalions$ will disband. $concept_pops$ who return to civilian life are not guaranteed to return to their old [concept_profession] but must seek new employment opportunities."
  concept_conscription_center_desc_added:0 "[GetBuildingType('building_conscription_center').GetName]"
 
  concept_strategic_objective: "Стратегічна ціль"
+ concept_strategic_objective_gen: "Стратегічної цілі"
  concept_strategic_objective_acc: "Стратегічну ціль"
  concept_strategic_objective_ins: "Стратегічною ціллю"
  concept_strategic_objectives: "Стратегічні цілі"
- concept_strategic_objective_desc:0 "One of your own [Concept('concept_state','$concept_states$')] or a [concept_state] in an enemy [concept_theater]. When a [concept_general] is advancing into a [concept_front] in which the enemy [concept_theater] contains a Strategic Objective, he will be more likely to advance towards that objective."
+ concept_strategic_objectives_gen: "Стратегічниї цілей"
+ concept_strategic_objective_desc: "Один з ваших [Concept('concept_state','$concept_states_gen$')|l] або [concept_state|l] у ворожому [Concept('concept_theater','$concept_theater_loc$')|l]. Коли [concept_general|l] просуваєть на [Concept('concept_front','$concept_front_loc$')|l], де на ворожому [Concept('concept_theater','$concept_theater_loc$')|l] є стратегічна ціль, то він з більшою ймовірністю просуватиметься до цієї цілі."
 
 
  concept_conscript_battalion: "Призваний курень"
@@ -1134,6 +1139,7 @@
  concept_capital_state: "Столиця"
  concept_capital_state_gen: "Столиці"
  concept_capital_state_acc: "Столицю"
+ concept_capital_state_ins: "Столицею"
  concept_capital_state_short: "Столиця"
  concept_capital_state_desc:3 "The site of a [Concept('concept_country','$concept_country_possessive$')] central [concept_government]. Controlling the $concept_capital_state_short$ is of great importance during wartime, and [Concept('concept_pop','$concept_pops$')] who live there have a greater degree of [concept_political_strength] by which to influence politics.[AddLocalizationIf(GetPlayer.IsValid,'concept_capital_state_desc_added')]"
  concept_capital_state_desc_added:0 "\nThe following effects apply:\n[GetStaticModifier('market_capital_state').GetDesc]"
@@ -1159,11 +1165,12 @@
  concept_dividends_desc_added:1 "$ECONOMIC_SYSTEM_LAW_GROUP$"
  
  concept_government_dividends: "Урядові дивіденди"
- concept_government_dividends_desc:0 "While [Concept('concept_building','$concept_buildings$')] with [Concept('concept_government_ownership_share', '$concept_government_ownership_shares$')] have a positive balance, some of these profits are paid directly to the [concept_treasury] as $concept_government_dividends$. The amount paid depends on the proportion of [Concept('concept_government_ownership_share', '$concept_government_ownership_shares$')] to [concept_pop] [Concept('concept_ownership_share', '$concept_ownership_shares$')] and the [Concept('concept_country','$concept_country_possessive$')] [concept_gdp], with inefficiencies in large economies resulting in some of the profits being wasted. Additionally, [concept_loans] against [concept_cash_reserves] held by $government_ownership_shares$ will reduce the amount of $concept_government_dividends$ that [Concept('concept_building','$concept_buildings_possessive$')] pay out."
+ concept_government_dividends_desc:1 "While [Concept('concept_building','$concept_buildings$')] with [Concept('concept_government_ownership_share', '$concept_government_ownership_shares$')] have a positive balance, some of these profits are paid directly to the [concept_treasury] as $concept_government_dividends$. The amount paid depends on the proportion of [Concept('concept_government_ownership_share', '$concept_government_ownership_shares$')] to [concept_pop] [Concept('concept_ownership_share', '$concept_ownership_shares$')] and the [Concept('concept_country','$concept_country_possessive$')] [concept_gdp], with inefficiencies in large economies resulting in some of the profits being wasted. Additionally, [concept_loans] against [concept_cash_reserves] held by $concept_government_ownership_shares$ will reduce the amount of $concept_government_dividends$ that [Concept('concept_building','$concept_buildings_possessive$')] pay out."
 
  concept_credit: "Кредит"
  concept_credit_gen: "Кредиту"
  concept_credit_debt: "Довг"
+ concept_credit_debt_acc: "Довг"
  concept_credit_limit: "Межа кредиту"
  concept_credit_desc:2 "The national $concept_credit$ is the amount of [concept_money] the [concept_treasury] can borrow from its economy, equal to the sum of all domestic [concept_cash_reserves] plus a base value determined by [concept_gdp]. If the [concept_principal] exceeds the $concept_credit_limit$ the [concept_country] goes into [concept_default]."
 
@@ -1187,8 +1194,9 @@
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED APRIL 30, 2022
 
- concept_theater: "Театр"
- concept_theaters: "Театри"
+ concept_theater: "Войовище"
+ concept_theater_loc: "Войовищі"
+ concept_theaters: "Войовища"
  concept_theater_desc:1 "A region of adjacent [Concept('concept_province','$concept_provinces$')] under the control of a single [concept_country]. [Concept('concept_front','$concept_fronts$')] are created on the border between two $concept_theaters$ controlled by $concept_countries$ hostile to each other in a [concept_war] or [concept_diplomatic_play]."
 
  concept_literacy: "Грамотність"
@@ -1417,7 +1425,7 @@
  concept_secessions: "Розколи"
  concept_secession_adj: "Розкольн"
  concept_secessionist: "Розкольник"
- concept_secession_desc:4 "A $concept_secession$ is the result of excessive [concept_cultural_turmoil] in a [concept_country] that controls any of that [Concept('concept_culture','$concept_culture_possessive$')] [Concept('concept_homeland','$concept_homelands$')]. If $concept_cultural_turmoil$ in a $concept_country$ exceeds [GetDefine( 'NPolitics', 'SECESSION_TURMOIL_CUTOFF')|v0], $concept_secessionist$ [Concept('concept_pop','$concept_pops$')] may begin an uprising. Once complete, the $concept_homelands$ will separate from the rest of the $concept_country$, which will automatically start a [concept_diplomatic_play] to return them to the fold.\n\nYou can stop a $concept_secessionist$ uprising by reducing [concept_turmoil] among $concept_pops$ of that $concept_culture$ in your $concept_country$, and you can slow it down using the [SelectLocalization(GetPlayer.IsValid,'concept_secession_desc_added','Home Affairs')] [concept_institution]."
+ concept_secession_desc:4 "A $concept_secession$ is the result of excessive [concept_cultural_turmoil] in a [concept_country] that controls any of that [Concept('concept_culture','$concept_culture_possessive$')] [Concept('concept_homeland','$concept_homelands$')]. If $concept_cultural_turmoil$ in a $concept_country$ exceeds [GetDefine( 'NPolitics', 'SECESSION_TURMOIL_CUTOFF')|v%0], $concept_secessionist$ [Concept('concept_pop','$concept_pops$')] may begin an uprising. Once complete, the $concept_homelands$ will separate from the rest of the $concept_country$, which will automatically start a [concept_diplomatic_play] to return them to the fold.\n\nYou can stop a $concept_secessionist$ uprising by reducing [concept_turmoil] among $concept_pops$ of that $concept_culture$ in your $concept_country$, and you can slow it down using the [SelectLocalization(GetPlayer.IsValid,'concept_secession_desc_added','Home Affairs')] [concept_institution]."
  concept_secession_desc_added:0 "[GetInstitutionType('institution_home_affairs').GetName]"
 
  concept_gdp: "Валовий внутрішній продукт"
@@ -1475,6 +1483,7 @@
  concept_infrastructure_desc_added_2:0 "[GetBuildingType('building_port').GetName]"
 
  concept_infrastructure_usage: "Використання інфраструктури"
+ concept_infrastructure_usage_gen: "Використання інфраструктури"
  concept_infrastructure_usage_desc:1 "[Concept('concept_building','$concept_buildings$')] use a certain amount of [concept_infrastructure] depending on how technologically advanced or demanding they are. The total $concept_infrastructure_usage$ in the [concept_state] is compared to the $concept_infrastructure$ to determine the $concept_state$'s [concept_market_access]. $concept_infrastructure_usage$ also increases the cost of [Concept('concept_port_connection','$concept_port_connections$')]."
   
  concept_good: "Товар"
@@ -1531,8 +1540,9 @@
  concept_pop_possessive:1 "Pop\\'s"
  concept_pops_possessive:0 "Pops\\'"
  concept_population: "Населення"
- concept_population_acc: "Населення"
  concept_population_gen: "Населення"
+ concept_population_dat: "Населенню"
+ concept_population_acc: "Населення"
  concept_population_ins: "Населенням"
  concept_pop_desc:3 "The world's population are organized into $concept_pops$, groups of individuals who work in the same [concept_building] as a certain [concept_profession], and share the same [concept_culture] and [concept_religion]. They use the [Concept('concept_pop_income','$concept_pop_income_short$')] they earn to buy [Concept('concept_good', '$concept_goods$')] to satisfy their [Concept('concept_pop_needs','$concept_pop_needs_short$')], which decides their [concept_wealth] and [concept_sol]. They can support [Concept('concept_interest_group', '$concept_interest_groups$')] and [Concept('concept_political_movement','$concept_political_movements$')], or be [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')]. A $concept_pop$ has a number of [concept_working_adults] and a number of [concept_dependents]. Some number of them are [Concept('concept_literacy','$concept_literate$')], and they might have a number of either [Concept('concept_loyalist','$concept_loyalists$')] or [Concept('concept_radical','$concept_radicals$')]."
 
@@ -1962,6 +1972,7 @@
  concept_character_desc:2 "$concept_characters$ fulfill different [Concept('concept_character_role','$concept_character_roles$')] in your [concept_country]. Their ability to perform these duties depends on their [Concept('concept_character_trait','$concept_character_traits$')]. They always support an [concept_interest_group], and may have an [concept_ideology] that shapes their aspirations and outlook."
 
  concept_popularity: "Знаність"
+ concept_popularity_acc: "Знаність"
  concept_popularity_desc:2 "The $concept_popularity$ of a [concept_character] measures the willingness of [Concept('concept_pop','$concept_pops$')] to follow them. $concept_popularity$ can have different effects depending on the $concept_character$'s [concept_character_role]."
 
  concept_momentum: "Імпульс"
@@ -2063,14 +2074,14 @@
 
  concept_government_type: "Тип уряду"
  concept_government_types: "Типи уряду"
- concept_government_type_transfer_of_power: "Передача влади"
+ concept_government_type_transfer_of_power: "Передавання влади"
  concept_government_type_desc:1 "A [Concept('concept_country','$concept_country_possessive$')] $concept_government_type$ is determined by its [Concept('concept_law','$concept_laws$')] and determines its $concept_government_type_transfer_of_power$, meaning who serves as its [concept_head_of_state].[AddLocalizationIf(GetPlayer.IsValid,'concept_government_type_ingame_added')]"
- concept_government_type_ingame_added:2 "\n\nThe $concept_government_type$ in [GetPlayer.GetNameNoFlag] is [GetPlayer.GetGovernment.GetName], for the following reasons:\n[GetPlayer.GetGovernment.GetPossibleTriggerDesc(AccessPlayer)]\n[GetPlayer.GetGovernment.GetDesc]"
+ concept_government_type_ingame_added:3 "\n\nThe $concept_government_type$ in [GetPlayer.GetNameNoFlag] is #tooltippable #tooltip:[GetPlayer.GetGovernment.GetTooltipTag],GOVERNMENT_TYPE_TOOLTIP_DESC [GetPlayer.GetGovernment.GetName]#!#!, for the following reasons:\n[GetPlayer.GetGovernment.GetPossibleTriggerDesc(AccessPlayer)]"
 
- concept_transfer_of_power: "Передача влади"
- concept_transfer_of_power_gen: "Передачі влади"
- concept_transfer_of_power_acc: "Передачу влади"
- concept_transfer_of_power_desc:0 "The Transfer of Power determines how a [Concept('concept_ruler','$concept_ruler_possessive$')] power is given to the next $concept_ruler$ and when this transfer will take place."
+ concept_transfer_of_power: "Передання влади"
+ concept_transfer_of_power_gen: "Передання влади"
+ concept_transfer_of_power_acc: "Передання влади"
+ concept_transfer_of_power_desc: "Передання влади визначає як влада [Concept('concept_ruler','$concept_ruler_gen$')|l] перейде наступному правителю й коли це передання відбудеться."
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MARCH 29, 2022
 
@@ -2091,6 +2102,7 @@
  concept_unification_candidate: "Кандидат на об‘єднання"
  concept_unification_candidate_short: "Кандидат"
  concept_unification_candidates: "Кандидати на об‘єднання"
+ concept_unification_candidates_gen: "Кандидатів на об‘єднання"
  concept_unification_candidate_desc:1 "A $concept_unification_candidate$ is a [concept_country] considered a viable candidate for unification. The conditions for who qualifies as a $concept_unification_candidate$ varies depending on which unified nation it is. "
 
  concept_unification: "Об‘єднання держави"

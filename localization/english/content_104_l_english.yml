@@ -559,10 +559,10 @@
  ignored_david_copperfield_modifier:0 "Ignored Lowborn Leader"
  
  decree_events.4.t: "Із самого Серця Моря"
- decree_events.4.d: "Новий адмірал з’явився в приплаві [Concept('concept_state','$concept_state_gen$')|l] [SCOPE.sState('decree_state').GetName], який був радісно схвалений колегами. Однак племінник [Concept('concept_character','$concept_character_gen$')|l] [SCOPE.sCharacter('noble_character').GetFullName] також говорив, що має великий руп до цього ж титулу."
+ decree_events.4.d: "Новий адмірал з’явився в приплаві [Concept('concept_state','$concept_state_gen$')|l] [SCOPE.sState('decree_state').GetName], який був радісно схвалений колегами. Однак племінник [Concept('concept_character','$concept_character_gen$')|l] [SCOPE.sCharacter('noble_character').GetFullName] також говорив, що має велику зацікавленість до цього ж титулу."
  decree_events.4.f: "«Є історії, на які якщо звернути увагу, то повірити в них неможливо, адже вони повинні бути в романі. За словами моряків, була дитина, яка почала своє життя на китобійному судні і була однією з восьми чоловіків, яким вдалося повернутися з супержахливої подорожі.\n\nРоками ніхто не знав, де він, він не говорив, не хотів дивитися людям в очі. Пізніше він почав служити на шести різних китобоях, повернувши їх додому цілими й неушкодженими.»"
  decree_events.4.a: "Чоловіки підуть за ним."
- decree_events.4.b: "Хм... [SCOPE.sCharacter('noble_character').GetLastName]. Нам не слід [SCOPE.sCharacter('noble_character').GetHerHis] засмучувати."
+ decree_events.4.b: "Гм... [SCOPE.sCharacter('noble_character').GetLastName]. Нам не слід [SCOPE.sCharacter('noble_character').GetHerHis] засмучувати."
  social_mobility_modifier: "Новий адмірал"
  
  decree_events.5.t:0 "Night at the Opera"

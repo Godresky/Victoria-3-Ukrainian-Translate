@@ -88,9 +88,9 @@
  CLEAR_DEBT_NEG:1 "#variable [COUNTRY.GetAdjectiveNoFormatting]#! financial debts are NOT cleared"
  CLEAR_SCALED_DEBT:1 "#variable [COUNTRY.GetAdjectiveNoFormatting]#! financial debts are cleared by a factor of #variable $VALUE$#! of GDP"
 
- SEIZE_INVESTMENT_POOL:1 "Seize all funds in the [concept_investment_pool] for the [concept_treasury] and convert any [Concept('concept_private_construction', '$concept_private_constructions$') into [Concept('concept_government_construction', '$concept_government_constructions$')]"
+ SEIZE_INVESTMENT_POOL:1 "Seize all funds in the [concept_investment_pool] for the [concept_treasury] and convert any [Concept('concept_private_construction', '$concept_private_constructions$')] into [Concept('concept_government_construction', '$concept_government_constructions$')]"
  SEIZE_INVESTMENT_POOL_FIRST:0 "$SEIZE_INVESTMENT_POOL$"
- SEIZE_INVESTMENT_POOL_THIRD:1 "[Country.GetName] seizes all funds in the [concept_investment_pool] for the [concept_treasury] and converts any [Concept('concept_private_construction', '$concept_private_constructions$') into [Concept('concept_government_construction', '$concept_government_constructions$')]"
+ SEIZE_INVESTMENT_POOL_THIRD:1 "[Country.GetName] seizes all funds in the [concept_investment_pool] for the [concept_treasury] and converts any [Concept('concept_private_construction', '$concept_private_constructions$')] into [Concept('concept_government_construction', '$concept_government_constructions$')]"
  
  TAKE_ON_SCALED_DEBT:1 "Takes on [TARGET_COUNTRY.GetAdjective] [Concept('concept_credit','$concept_credit_debt$')] of @money!#variable $VALUE|vD$#!"
  TAKE_ON_SCALED_DEBT_FIRST:0 "[COUNTRY.GetNameNoFlag] takes on [TARGET_COUNTRY.GetAdjective] [Concept('concept_credit','$concept_credit_debt$')] of @money!#variable $VALUE|vD$#!"
@@ -434,4 +434,6 @@
  PARTIES_DISAPPEARENCE:0 "This will cause parties to disappear."
  UPDATE_PARTY_SUPPORT_EFFECT:0 "Interest Groups will re-evaluate their party support."
  
- ADD_CULTURE_STANDARD_OF_LIVING_MODIFIER:0 "Add $MODIFIER_DESC$ to [State.GetName]"
+ ADD_CULTURE_STANDARD_OF_LIVING_MODIFIER: "Додати «$MODIFIER_DESC$» [Concept('concept_state', '$concept_state_dat$')] [State.GetName]"
+
+ ADD_RELIGION_STANDARD_OF_LIVING_MODIFIER: "Додати «$MODIFIER_DESC$» [Concept('concept_pop', '$concept_population_dat$')] у [Concept('concept_state', '$concept_state_loc$')] [State.GetName]"

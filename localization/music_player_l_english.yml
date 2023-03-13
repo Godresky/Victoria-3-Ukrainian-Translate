@@ -13,6 +13,6 @@
  MUSIC_PLAYER_DENSITY_INTENSE: "Інтенсивна"
  MUSIC_PLAYER_DENSITY_BALANCED: "Збалянсована"
  MUSIC_PLAYER_DENSITY_RELAXED: "Розслаблена"
- MUSIC_PLAYER_CATEGORY_ENABLED: "Enabled" #якщо змінити, то ломається відтворювач
+ MUSIC_PLAYER_CATEGORY_ENABLED: "Увім." #якщо змінити, то ломається відтворювач
  MUSIC_PLAYER_CATEGORY_DISABLED: "Вим."
   
