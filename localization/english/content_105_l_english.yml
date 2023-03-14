@@ -133,14 +133,14 @@
  ig_domestic_weapons_manufacturing:0 "Domestic Weapons Manufacturing"
  ig_unreliable_weapon_imports:0 "Unreliable Weapon Imports"
  ig_secured_desired_imports:0 "Secured Desired Imports"
- ig_refused_desired_imports: "Відмовлено в бажаному ввозі"
+ ig_refused_desired_imports: "Відмовлено у бажаному ввозі"
  modifier_researching_imported_weapons:0 "Researching Imported Weapons"
 
   # Manifest Destiny Decision
- manifest_destiny:0 "Manifest Destiny"
- manifest_destiny_desc:0 "Our great nation is fated to spread across the continent."
- manifest_destiny_tooptip:0 "Requirements:"
- ig_manifest_destiny:0 "$manifest_destiny$"
+ manifest_destiny: "Явне призначення"
+ manifest_destiny_desc: "Нашій великій нації судилося поширитися владу усім континентом."
+ manifest_destiny_tooptip: "Вимоги:"
+ ig_manifest_destiny: "$manifest_destiny$"
 
   # Springtime of the Peoples
  peoples_springtime.1.t:0 "The Spark of Revolution"
