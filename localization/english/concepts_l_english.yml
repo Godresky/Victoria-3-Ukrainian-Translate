@@ -45,7 +45,8 @@
  concept_overlord: "Повелитель"
  concept_overlord_gen: "Повелителя"
  concept_overlord_possessive:0 "Overlord\\'s"
- concept_overlord_desc:0 "The dominant [concept_country] in a [concept_subject] relationship, who derive a number of benefits from the [concept_diplomatic_pact] while (usually) having to pay [concept_influence] for it."
+ concept_overlord_adj: "Повелительськ"
+ concept_overlord_desc: "Домінантна [concept_country|l] у [Concept('concept_subject','$concept_subject_adj$их')|l] відносинах, яка отримує низку переваг від цього [Concept('concept_diplomatic_pact','$concept_diplomatic_pact_gen$')|l], при цьому (зазвичай) змушена платити [Concept('concept_influence','$concept_influence_ins$')|l] за це."
 
  concept_great_power: "Велика держава"
  concept_great_power_ins: "Великою державою"
@@ -470,6 +471,7 @@
  concept_authority_desc: "@aut! Авторитет - це [Concept('concept_capacity','$concept_capacity$')|l], яка використовується для здійснення внутрішніх змін у вашій [Concept('concept_country','$concept_country_loc$')|l], таких як видання [Concept('concept_decree', '$concept_decrees_gen$')|l] чи управління [Concept('concept_interest_group', '$concept_interest_groups_ins$')|l]. Ви отримуєте @aut! з [Concept('concept_law', '$concept_laws_gen$')|l]."
  
  concept_influence: "Вплив"
+ concept_influence_ins: "Впливом"
  concept_influence_gen: "Впливу"
  concept_influence_desc: "@inf! Вплив - це [Concept('concept_capacity','$concept_capacity$')|l], яка використовується для [Concept('concept_diplomatic_action', '$concept_diplomatic_actions_gen$')|l] та [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts_short_gen$')|l] націлені на [Concept('concept_country','$concept_country_acc$')|l]. Ви отримуєте @inf! залежно від [Concept('concept_rank','$concept_rank_gen$')|l]."
 
@@ -1031,6 +1033,7 @@
  concept_ongoing_diplomatic_action_desc:2 "A type of [concept_diplomatic_pact] that can be both initiated and ended at will, with no approval required nor costs incurred by the target [concept_country]."
 
  concept_diplomatic_pact: "Дипломатичний пакт"
+ concept_diplomatic_pact_gen: "Дипломатичного пакту"
  concept_diplomatic_pacts: "Дипломатичні пакти"
  concept_diplomatic_pacts_acc: "Дипломатичні пакти"
  concept_diplomatic_pact_short: "Пакт"
