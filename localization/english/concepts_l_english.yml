@@ -804,6 +804,7 @@
  concept_decree_desc: "$concept_decrees$ - це розпорядження [Concept('concept_ruler','$concept_ruler_acc$')] [Concept('concept_country','$concept_country_gen$')], спрямовані на здійснення змін у підконтрольному [Concept('concept_state','$concept_state_loc$')]. $concept_decrees$ витрачають [Concept('concept_authority','$concept_authority_acc$')] стільки часу, скільки вони діють. Після видання постанови, вона даватиме реґіону певні наддатки, доки її не буде скасовано."
 
  concept_pop_needs: "Потреби населення"
+ concept_pop_needs_acc: "Потреби населення"
  concept_pop_need: "Потреба населення"
  concept_pop_needs_short: "Потреби"
  concept_pop_need_short: "Потреба"
@@ -1344,7 +1345,7 @@
  concept_peace_deal_gen: "Мирної угоди"
  concept_peace_deal_acc: "Мирну угоду"
  concept_peace_deals: "Мирні угоди"
- concept_peace_deal_desc:0 "When a [concept_war_leader] wish to end a [concept_war] they may offer a $concept_peace_deal$. The deal must be agreed to by all negotiating $concept_countries$ remaining in the $concept_war$ to take effect. To increase the chance the $concept_peace_deal$ will be agreed to, the $concept_war_leader$ is allowed to include or exclude proposed [Concept('concept_war_goal','$concept_war_goals$')] from both sides."
+ concept_peace_deal_desc: "Коли [Concept('concept_war_leader','$concept_war_leader$')|l] хоче завершити [Concept('concept_war','$concept_war_acc$')|l], то він може запропонувати мирну угоду. Для того, щоб угода набула чинности, вона має бути схвалена всіма державами-учасницями, які беруть участь у війні. Щоб підвищити ймовірність того, що мирна угода буде досягнута, провідник війни може включати або виключати запропоновані [Concept('concept_war_goal','$concept_war_goals_acc$')|l] обох боків."
 
  concept_war: "Війна"
  concept_war_gen: "Війни"
@@ -1454,10 +1455,10 @@
  concept_isolated_state_desc:2 "A [concept_state_region] is considered $concept_isolated_state_short$ from its [concept_market] if it is not connected by land to its [concept_market_capital], and is not connected by land to a [SelectLocalization(GetPlayer.IsValid,'concept_isolated_state_desc_added','Port')] that can make a [concept_port_connection] to its $concept_market_capital$. $concept_isolated_states$ do not generate any [concept_buy_orders] and [concept_sell_orders], nor is the [concept_local_price] of [Concept('concept_good', '$concept_goods$')] affected by their [concept_market_price]."
  concept_isolated_state_desc_added:0 "[GetBuildingType('building_port').GetName]"
 
- concept_input_goods_shortage: "Нестача вхідних товарів"
- concept_input_goods_shortage_acc: "Нестачу вхідних товарів"
- concept_input_goods_shortages: "Нестача вхідних товарів"
- concept_input_goods_shortages_single: "Нестача вхідного товару"
+ concept_input_goods_shortage: "Нестача первинних товарів"
+ concept_input_goods_shortage_acc: "Нестачу первинних товарів"
+ concept_input_goods_shortages: "Нестача первинних товарів"
+ concept_input_goods_shortages_single: "Нестача первинного товару"
  concept_input_goods_shortage_desc:0 "[Concept('concept_building', '$concept_buildings$')] that consume [Concept('concept_good', '$concept_goods$')] will suffer an output penalty if less than [GetDefine('NEconomy', 'GOODS_SHORTAGE_PENALTY_THRESHOLD')|v%0] of the [concept_buy_orders] for those $concept_goods$ are satisfied. This is usually caused by insufficient availability of the [concept_good] in the [Concept('concept_building', '$concept_building_possessive$')] [concept_market], but may also be a result of low [concept_market_access] in the $concept_building$'s [concept_state_region]."
 
  concept_market: "Ринок"
@@ -1488,13 +1489,13 @@
  concept_infrastructure_acc: "Інфраструктуру"
  concept_infrastructure_acc_alt: "Інфраструктура"
  concept_infrastructure_adj: "Інфраструктурн"
- concept_infrastructure_desc:2 "$concept_infrastructure$ is provided by [Concept('concept_building','$concept_buildings$')] like [SelectLocalization(GetPlayer.IsValid,'concept_infrastructure_desc_added','Railway')] and [SelectLocalization(GetPlayer.IsValid,'concept_infrastructure_desc_added_2','Port')]. It influences how well connected a [concept_state] is to its [concept_market], and how rapidly [Concept('concept_battalion', '$concept_battalions$')] [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilize$')]."
- concept_infrastructure_desc_added:0 "[GetBuildingType('building_railway').GetName]"
- concept_infrastructure_desc_added_2:0 "[GetBuildingType('building_port').GetName]"
+ concept_infrastructure_desc: "$concept_infrastructure$ забезпечується такими [Concept('concept_building','$concept_buildings_ins$')|l], як [SelectLocalization(GetPlayer.IsValid,'concept_infrastructure_desc_added','Залізниця')|l] та [SelectLocalization(GetPlayer.IsValid,'concept_infrastructure_desc_added_2','Приплав')|l]. Це впливає на те, наскільки добре [Concept('concept_state','$concept_state$')|l] приєднаний до свого [Concept('concept_market','$concept_market_gen$')|l], та наскільки швидко [Concept('concept_battalion', '$concept_battalions$')|l] [Concept('concept_mobilize_battalion','Збираються')|l]."
+ concept_infrastructure_desc_added: "[GetBuildingType('building_railway').GetName]"
+ concept_infrastructure_desc_added_2: "[GetBuildingType('building_port').GetName]"
 
  concept_infrastructure_usage: "Використання інфраструктури"
  concept_infrastructure_usage_gen: "Використання інфраструктури"
- concept_infrastructure_usage_desc:1 "[Concept('concept_building','$concept_buildings$')] use a certain amount of [concept_infrastructure] depending on how technologically advanced or demanding they are. The total $concept_infrastructure_usage$ in the [concept_state] is compared to the $concept_infrastructure$ to determine the $concept_state$'s [concept_market_access]. $concept_infrastructure_usage$ also increases the cost of [Concept('concept_port_connection','$concept_port_connections$')]."
+ concept_infrastructure_usage_desc: "[Concept('concept_building','$concept_buildings$')] використовують певну кількість [Concept('concept_infrastructure','$concept_infrastructure_gen$')|l], залежно від того, наскільки вони технологічно просунуті та вимогливі. Загальне використання інфраструктури у [Concept('concept_state','$concept_state_loc$')|l] порівнюється з кількістю інфраструктури, яку [Concept('concept_state','$concept_state_dat$')|l] потрібно для забезпечення [Concept('concept_market_access','$concept_market_access_gen$')|l]. $concept_infrastructure_usage$ також збільшує вартість [Concept('concept_port_connection','$concept_port_connections_gen$')|l]."
   
  concept_good: "Товар"
  concept_good_gen: "Товару"
@@ -1769,6 +1770,7 @@
  concept_taxes: "Податки"
  concept_taxes_gen: "Податків"
  concept_tax: "Податок"
+ concept_tax_gen: "Податку"
  concept_taxing: "Оподаткування"
  concept_taxation: "Оподаткування"
  concept_taxation_gen: "Оподаткування"
@@ -1960,8 +1962,9 @@
  concept_convoy_cost_desc:2 "The $concept_convoy_cost$ of a [concept_shipping_lane] is determined by how many [Concept('concept_good','$concept_goods$')] a [concept_trade_route] moves, how many [Concept('concept_battalion','$concept_battalions$')] a [concept_supply_route] provides for, or how much [concept_infrastructure_usage] a [concept_port_connection] facilitates [concept_market_access] for. This more [Concept('concept_sea_node','$concept_sea_nodes$')] $concept_shipping_lane$ must pass through on its way to the destination, the higher the total $concept_convoy_cost$. The total $concept_convoy_cost$ of all $concept_shipping_lanes$ is compared to the total number of [concept_convoys] provided by [SelectLocalization(GetPlayer.IsValid,'concept_convoy_cost_desc_added','Port')] $concept_buildings$ to determine the strength of your [concept_supply_network]."
  concept_convoy_cost_desc_added:0 "[GetBuildingType('building_port').GetName]"
 
- concept_port_connection: "Приплавне приєднання"
- concept_port_connections: "Приплавні приєднання"
+ concept_port_connection: "Приплавне з’єднання"
+ concept_port_connections: "Приплавні з’єднання"
+ concept_port_connections_gen: "Приплавних з’єднань"
  concept_port_connection_desc:3 "A [concept_shipping_lane] connecting one or several [Concept('concept_state','$concept_states$')] otherwise unreachable overland to the [concept_market_capital], ensuring [concept_market_access] to remote regions. $concept_port_connections$ require a [SelectLocalization(GetPlayer.IsValid,'concept_port_connection_desc_added','Port')] in both ends. The [concept_convoy_cost] of a $concept_port_connection$ is dependent on the total [concept_infrastructure_usage] of the [Concept('concept_state','$concept_states$')] it's connecting."
  concept_port_connection_desc_added:0 "[GetBuildingType('building_port').GetName]"
 
