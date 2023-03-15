@@ -2916,10 +2916,10 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  SOL_FACTOR_PEASANTS:1 "$POP_FRACTION|%1v$ of them are [GetPopType('peasants').GetName] in [Concept('concept_subsistence_building', '$concept_subsistence_buildings$')], limiting them to a low [concept_sol]"
  SOL_FACTOR_TAX_ENTRY:0 "$TAX_LEVEL|%1v$ of income paid in $TAX_TYPE$"
  SOL_FACTOR_GOODS_ENTRY:2 "$RELATIVE_EXPENDITURES|v1%$ - [Goods.GetTextIcon][Nbsp][Goods.GetName] - @money!$PRICE|v1$ #tooltippable #tooltip:COIN_STACK_TOOLTIP $PRICEICON$#!#! ($RELATIVE_PRICE|=-%1$)"
- SOL_FACTOR_GOODS_ENTRY_SHORT:0 "[Goods.GetTextIcon][Nbsp][Goods.GetName] ($RELATIVE_EXPENDITURES|v1%$)"
+ SOL_FACTOR_GOODS_ENTRY_SHORT: "[Goods.GetTextIcon][Nbsp][Goods.GetName] ($RELATIVE_EXPENDITURES|v1%$)"
  SOL_FACTOR_GOODS_BREAKDOWN_SHORT_SUMMARY: "Найбільшими витратами для них є $SUMMARY_LIST$."
- SOL_FACTOR_GOODS_BREAKDOWN:0 "#header [concept_pop_needs]#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
- SOL_FACTOR_TAX_BREAKDOWN:0 "#header [Concept('concept_taxes','$concept_taxation$')]#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
+ SOL_FACTOR_GOODS_BREAKDOWN: "#header [concept_pop_needs]#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
+ SOL_FACTOR_TAX_BREAKDOWN: "#header [Concept('concept_taxes','$concept_taxation$')]#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
 
  EXPECTED_SOL_FACTOR_STRATA:1 "$FRACTION|%1v$ of them are $STRATA|v$: $VALUE|=v$"
  EXPECTED_SOL_FACTOR_LITERACY:1 "They have an average of $LITERACY|%0v$ [concept_literacy]: $VALUE|=v$"

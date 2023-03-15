@@ -438,6 +438,7 @@
 
  concept_government_building: "Урядова будівля"
  concept_government_buildings: "Урядові будівлі"
+ concept_government_buildings_gen: "Урядових будівель"
  concept_government_buildings_acc: "Урядові будівлі"
  concept_government_buildings_ins: "Урядовими будівлями"
  concept_government_building_desc:1 "A [concept_building] owned and operated by the [concept_government] using funds from the [concept_treasury]. $concept_government_buildings$ have no [Concept('concept_good','$concept_goods$')] [concept_good_production] and therefore no [concept_revenue], but produce a number of other resources crucial to running a [concept_country] such as [concept_bureaucracy], [concept_infrastructure], [concept_convoys], and [Concept('concept_unit','$concept_units$')]. The [concept_workforce] of non-military $concept_government_buildings$ get paid according to the [concept_government_wage], while [Concept('concept_military_building','$concept_military_buildings$')] get paid according to the [concept_military_wage]."
@@ -466,7 +467,7 @@
 
  concept_bureaucracy: "Бюрократія"
  concept_bureaucracy_gen: "Бюрократії"
- concept_bureaucracy_desc: "@bur! Бюрократія - це [Concept('concept_capacity','$concept_capacity$')|l], яка використовується для підтримки роботи ваших [Concept('concept_country','$concept_country_possessive$их')|l] установ та повсякденної діяльности. Вартість підтримки росте в залежности від населення у [Concept('concept_incorporated_state', '$concept_incorporated_states_loc$')|l], кожного рівня розвитку [Concept('concept_institution', '$concept_institutions_gen$')|l]. Також використовується для керування [Concept('concept_commander','$concept_commanders_ins$')|l] та [Concept('concept_trade_route','$concept_trade_routes_ins$')|l]. Ви отримуєте @bur! від роботи [SelectLocalization(GetPlayer.IsValid,Concept('concept_building','$concept_buildings_gen$'),'')|l] [SelectLocalization(GetPlayer.IsValid,'concept_bureaucracy_desc_added','державної управи')|l] ."
+ concept_bureaucracy_desc: "@bur! Бюрократія - це [Concept('concept_capacity','$concept_capacity$')|l], яка використовується для підтримки роботи ваших [Concept('concept_country','$concept_country_possessive$их')|l] установ та повсякденної діяльности. Вартість підтримки росте в залежности від населення у [Concept('concept_incorporated_state', '$concept_incorporated_states_loc$')|l] та кожного рівня розвитку [Concept('concept_institution', '$concept_institutions_gen$')|l]. Також використовується для керування [Concept('concept_commander','$concept_commanders_ins$')|l] та [Concept('concept_trade_route','$concept_trade_routes_ins$')|l]. Ви отримуєте @bur! від роботи [SelectLocalization(GetPlayer.IsValid,Concept('concept_building','$concept_buildings_gen$'),'')|l] [SelectLocalization(GetPlayer.IsValid,'concept_bureaucracy_desc_added','державної управи')|l] ."
  concept_bureaucracy_desc_added: "[GetBuildingType('building_government_administration').GetName]"
  
  concept_authority: "Авторитет"
@@ -1540,6 +1541,7 @@
  concept_pops: "Громади"
  concept_pops_gen: "Громад"
  concept_pops_dat: "Громадам"
+ concept_pops_loc: "Громадах"
  concept_pops_adj: "Громадськ"
  concept_person: "Особа"
  concept_persons: "Особи"
@@ -1555,6 +1557,8 @@
  concept_population_dat: "Населенню"
  concept_population_acc: "Населення"
  concept_population_ins: "Населенням"
+ concept_population_loc: "Населенні"
+ concept_population_loc_alt: "Населенню"
  concept_pop_desc:3 "The world's population are organized into $concept_pops$, groups of individuals who work in the same [concept_building] as a certain [concept_profession], and share the same [concept_culture] and [concept_religion]. They use the [Concept('concept_pop_income','$concept_pop_income_short$')] they earn to buy [Concept('concept_good', '$concept_goods$')] to satisfy their [Concept('concept_pop_needs','$concept_pop_needs_short$')], which decides their [concept_wealth] and [concept_sol]. They can support [Concept('concept_interest_group', '$concept_interest_groups$')] and [Concept('concept_political_movement','$concept_political_movements$')], or be [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')]. A $concept_pop$ has a number of [concept_working_adults] and a number of [concept_dependents]. Some number of them are [Concept('concept_literacy','$concept_literate$')], and they might have a number of either [Concept('concept_loyalist','$concept_loyalists$')] or [Concept('concept_radical','$concept_radicals$')]."
 
  concept_profession: "Ремесло"
@@ -2056,6 +2060,7 @@
 
  concept_treasury: "Скарбівниця"
  concept_treasury_gen: "Скарбівниці"
+ concept_treasury_loc: "Скарбівниці"
  concept_treasury_possessive:0 "Treasury\\'s"
  concept_treasury_desc:1 "The $concept_treasury$ keeps track of your [Concept('concept_country','$concept_country_possessive$')] assets. Each week your budget balance will result in the $concept_treasury$ taking out more [concept_loans] to cover a [concept_money] deficit, or depositing $concept_money$ into the [concept_gold_reserves]."
 
