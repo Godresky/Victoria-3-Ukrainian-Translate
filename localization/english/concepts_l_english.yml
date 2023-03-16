@@ -1680,6 +1680,7 @@
  concept_innovation_desc_added:0 "[GetBuildingType('building_university').GetName]"
 
  concept_technology_spread: "Поширення технологій"
+ concept_technology_spread_acc: "Поширення технологій"
  concept_technology_spread_dat: "Поширенню технології"
  concept_technology_spread_desc:2 "One [concept_technology] that you have not yet acquired from each category ($PRODUCTION_NO_CONCEPT$, $MILITARY$, and $SOCIETY$) is always spreading to you from [Concept('concept_country','$concept_countries$')] that have acquired them. The progress you get in spreading $concept_technologies$ is randomized each week around a base value depending on your $concept_country$'s [concept_literacy]. If no $concept_country$ has invented a certain $concept_technology$ yet it cannot spread to you, so you are more likely to acquire early [Concept('concept_technology_era','$concept_technology_era_short$')] $concept_technologies$ from $concept_technology_spread$ than later ones."
 

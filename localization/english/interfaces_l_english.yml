@@ -5278,7 +5278,7 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  TOOLTIP_CHANGE_FROM_LAW_CURRENTLY_ENACTING:0 "#header Змінити [concept_law|l] в групі [LawGroup.GetName]#!\nYou are currently enacting [GetPlayer.GetLawBeingEnacted.GetName] in [GetPlayer.GetLawBeingEnacted.GetGroup.GetName]\nIf you were not, you would have #variable [LawGroup.GetNumPotentialEnactable|+]#! available alternatives to [LawGroup.GetName] in [Law.GetName]"
  PREDICT_LEGITIMACY_TO_ENACT:0 "Once enacted, this Law would change the current Government's Legitimacy by #variable $VAL|=+0$#!"
  LAW_BEING_ENACTED:0 "Being Enacted"
- ENACTING_TO_LAW: "Введення [Concept('concept_law', '$concept_law_gen$')|l] [GetPlayer.GetLawBeingEnacted.GetName]"
+ ENACTING_TO_LAW: "Введення [Concept('concept_law', '$concept_law_gen$')|l] «[GetPlayer.GetLawBeingEnacted.GetName]»"
  LAW_NO_EFFECT: "#italic Жодних змінювачів#!\n"
  ENACT_LAW: "Змінити (Шанс #tooltippable #tooltip:[Law.GetTooltipTag],CHECKPOINT_SUCCESS_CHANCE_BREAKDOWN [Law.GetCheckpointSuccessChance|v0%]#!#! кожних [Law.GetCheckpointBaseDays|v] дн.)"
  REENACT_LAW:0 "Re-enact"
