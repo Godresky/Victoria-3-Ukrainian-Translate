@@ -577,6 +577,7 @@
 
  concept_politician: "Політик"
  concept_politicians: "Політики"
+ concept_politician_desc: "Це [concept_character_role|l] тих [Concept('concept_character','$concept_characters_gen$')|l], чий вплив є політичним, а не військовим. Він може бути [Concept('concept_ruler','$concept_ruler_ins$')|l], [Concept('concept_heir','$concept_heir_ins$')|l] або [Concept('concept_leader','$concept_leader_ins$')|l] [Concept('concept_interest_group','$concept_interest_group_gen$')|l]."
 
  concept_leader: "Провідник"
  concept_leader_gen: "Провідника"
@@ -598,7 +599,9 @@
  concept_character_trait: "Риса характеру"
  concept_character_traits: "Риси характеру"
  concept_character_traits_gen: "Рис характеру"
+ concept_character_traits_acc: "Риси характеру"
  concept_character_traits_short: "Риси"
+ concept_character_trait_desc: "Риси персонажа, навички або умови, які впливають на здатність [Concept('concept_character','$concept_character_gen$')|l] виконувати свою [Concept('concept_character_role','$concept_character_role_acc$')|l]. Здобуваючи [Concept('concept_life_experience','$concept_life_experience_acc$')|l], персонаж може набувати нових рис або змінювати вже наявні."
 
  concept_construction_queue: "Черга на будівництво"
  concept_construction_queue_gen: "Черги на будівництво"
