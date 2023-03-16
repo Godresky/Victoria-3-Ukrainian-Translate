@@ -29,7 +29,7 @@
  lowlands_land_reclamation_desc: "За допомогою комбінації прийомів можна осушити певні ділянки низовини, перетворивши море на придатну для роботи сушу."
  lowlands_land_reclamation_custom_tooltip: "Розпочнеться осушення низинних земель. "
  notification_lowlands_land_reclamation_notification_desc: "Завершено рекультивацію низинних земель"
- notification_lowlands_land_reclamation_notification_tooltip: "Ви отримали ріллю."
+ notification_lowlands_land_reclamation_notification_tooltip: "Ви отримали рілля."
  notification_lowlands_land_reclamation_notification_name: "Осушення низин"
  lowlands_land_reclamation_requirement_tooltip: "Володіє Голляндією, Фрісляндією та Гельдерном"
 

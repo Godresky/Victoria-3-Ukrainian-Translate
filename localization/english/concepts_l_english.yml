@@ -517,6 +517,7 @@
 
  concept_obsession: "Одержимість"
  concept_obsessed: "Одержимий"
+ concept_obsessed_adj: "Одержим"
  concept_obsession_desc:1 "A [concept_culture] can be $concept_obsessed$ with specific [Concept('concept_good','$concept_goods$')]. [Concept('concept_pop', '$concept_pops$')] of that $concept_culture$ will spend significantly more on $concept_goods$ they are $concept_obsessed$ with compared to other $concept_goods$ in the same [concept_pop_needs] category."
 
  concept_taboo: "Табу"
@@ -640,8 +641,8 @@
  concept_private_constructions_alt_loc: "Приватне будівництво"
  concept_private_construction_desc: "Приватна споруда - це [concept_building|l], яка розширюється на замовлення приватників. Вона завжди фінансується з [Concept('concept_investment_pool','$concept_investment_pool_gen$')|l] й не може бути скасована або змінена у пріоритетах [Concept('concept_construction_queue', '$concept_construction_queue_gen$')|l]."
 
- concept_under_construction: "Споруджується"
- concept_under_construction_desc: "[concept_building] [concept_under_construction|l], коли використовує [concept_construction|l]."
+ concept_under_construction: "Споруджування"
+ concept_under_construction_desc: "[concept_building] [Concept('concept_under_construction', 'споруджується')|l], коли використовує [concept_construction|l]."
  
  concept_urbanization: "Оміщення"
  concept_urbanization_gen: "Оміщення"
@@ -1266,6 +1267,7 @@
  concept_admiral: "Адмірал"
  concept_admiral_gen: "Адмірала"
  concept_admiral_dat: "Адміралу"
+ concept_admiral_ins: "Адміралом"
  concept_admirals: "Адмірали"
  concept_admirals_gen: "Адміралів"
  concept_admirals_ins: "Адміралами"
@@ -1428,6 +1430,7 @@
  concept_declared_interest_ingame_added:1 "\n\nYour current number of $concept_declared_interests$ is [GetPlayer.GetNumDeclaredInterests]. Due to your $concept_rank$ of [GetPlayer.GetRank], the most you can $concept_declared_interest_declare$ is #tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#!"
 
  concept_obligation: "Зобов‘язання"
+ concept_obligation_gen: "Зобов‘язання"
  concept_obligation_acc: "Зобов‘язання"
  concept_obligations: "Зобов‘язання"
  concept_obligated: "Зобов‘язан"
@@ -1956,8 +1959,7 @@
  concept_shipping_lane_desc:1 "A $concept_shipping_lane$ is a naval connection of [concept_convoys] between two coastal [Concept('concept_state','$concept_states$')] to move [Concept('concept_good','$concept_goods$')] and [Concept('concept_pop','$concept_pops$')] from place to place. A $concept_shipping_lane$ can be either a [concept_trade_route], [concept_supply_route], or a [concept_port_connection]."
 
  concept_raid_convoys: "Рейд конвоїв"
- concept_convoy_raiding: "Рейдинг конвою"
- concept_convoy_raiding_many: "Рейдять конвої"
+ concept_convoy_raiding: "Рейд на конвої"
  concept_raid_convoys_desc:2 "An [concept_order] given to an [concept_admiral] to sink enemy [concept_convoys] passing through a sea region. Patrolling fleets passing through the same sea region will attempt to intercept and neutralize the raiders."
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MARCH 31, 2022
@@ -2211,6 +2213,7 @@
 
  concept_enactment_success: "Успіх на ухвалення"
  concept_enactment_success_gen: "Успіху на ухвалення"
+ concept_enactment_success_acc: "Успіх на ухвалення"
  concept_enactment_success_short: "Успіх"
  concept_enactment_success_desc: "$concept_enactment_success$ показує відсоток шансу того, що [Concept('concept_law','$concept_law_dat$')|l] нададуть сили на наступній прозір-точці. Він дорівнює [Concept('concept_base_success_chance','$concept_base_success_chance_dat$')|l] плюс заподії, накопичені в процесі надання чинности законові."
 
@@ -2223,8 +2226,8 @@
  concept_enactment_debate_short_debated: "Обговорений"
  concept_enactment_debate_desc:1 "$concept_enactment_debate$ indicates the percentage chance that the enactment process of a [concept_law] will meet with some kind of complication at the next checkpoint. The lower the total chances of [Concept('concept_enactment_success','$concept_enactment_success_short$')], [Concept('concept_enactment_advance','$concept_enactment_advance_short$')], and [Concept('concept_enactment_stall','$concept_enactment_stall_short$')] the greater the chance of $concept_enactment_debate_short$."
 
- concept_enactment_stall: "Припинення ухвалення"
- concept_enactment_stall_short: "Припинення"
+ concept_enactment_stall: "Гальмування ухвалення"
+ concept_enactment_stall_short: "Гальмування"
  concept_enactment_stall_desc:1 "$concept_enactment_stall$ indicates the percentage chance that the enactment process of a [concept_law] will be substantially hindered at the next checkpoint. Its base chance is equal to the total [concept_clout] of opposing [Concept('concept_interest_group','$concept_interest_groups$')] in [concept_government]."
 
  concept_base_success_chance: "Базовий шанс на успіх"

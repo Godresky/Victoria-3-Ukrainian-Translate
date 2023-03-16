@@ -110,12 +110,12 @@
  SET_STATE_RELIGION_FIRST:0 "[TARGET_RELIGION.GetName] becomes the [concept_state_religion] in [COUNTRY.GetNameNoFlag]"
  SET_STATE_RELIGION_THIRD:0 "[TARGET_RELIGION.GetName] becomes the [concept_state_religion] in [COUNTRY.GetName]"
  
- ADD_CULTURAL_OBSESSION:0 "[CULTURE.GetName] becomes obsessed with [GOODS.GetName]"
- ADD_CULTURAL_OBSESSION_FIRST:0 "[CULTURE.GetName] becomes [Concept('concept_obsession', '$concept_obsessed$')] with [GOODS.GetName] in [COUNTRY.GetNameNoFlag]"
- ADD_CULTURAL_OBSESSION_THIRD:0 "[CULTURE.GetName] becomes [Concept('concept_obsession', '$concept_obsessed$')] with [GOODS.GetName] in [COUNTRY.GetName]"
- REMOVE_CULTURAL_OBSESSION:0 "[CULTURE.GetName] stops being obsessed with [GOODS.GetName]"
- REMOVE_CULTURAL_OBSESSION_FIRST:0 "[CULTURE.GetName] stops being [Concept('concept_obsession', '$concept_obsessed$')] with [GOODS.GetName] in [COUNTRY.GetNameNoFlag]"
- REMOVE_CULTURAL_OBSESSION_THIRD:0 "[CULTURE.GetName] stops being [Concept('concept_obsession', '$concept_obsessed$')] with [GOODS.GetName] in [COUNTRY.GetName]"
+ ADD_CULTURAL_OBSESSION: "[CULTURE.GetName] стануть одержимими товаром [GOODS.GetName|l]"
+ ADD_CULTURAL_OBSESSION_FIRST: "[CULTURE.GetName] стануть [Concept('concept_obsession', '$concept_obsessed_adj$ими')|l] товаром [GOODS.GetName|l] у державі [COUNTRY.GetNameNoFlag]"
+ ADD_CULTURAL_OBSESSION_THIRD: "[CULTURE.GetName] стануть [Concept('concept_obsession', '$concept_obsessed_adj$ими')|l] товаром [GOODS.GetName|l] у державі [COUNTRY.GetName]"
+ REMOVE_CULTURAL_OBSESSION: "[CULTURE.GetName] перестануть одержимими товаром [GOODS.GetName|l]"
+ REMOVE_CULTURAL_OBSESSION_FIRST: "[CULTURE.GetName] перестануть [Concept('concept_obsession', '$concept_obsessed_adj$ими')|l] товаром [GOODS.GetName|l] у державі [COUNTRY.GetNameNoFlag]"
+ REMOVE_CULTURAL_OBSESSION_THIRD: "[CULTURE.GetName] перестануть [Concept('concept_obsession', '$concept_obsessed_adj$ими')|l] товаром [GOODS.GetName|l] у державі [COUNTRY.GetName]"
  
  CREATE_RANDOM_CHARACTER_NAME: "Персонаж"
  
