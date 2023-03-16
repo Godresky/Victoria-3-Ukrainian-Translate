@@ -577,14 +577,13 @@
 
  concept_politician: "Політик"
  concept_politicians: "Політики"
- concept_politician_desc: "Це [concept_character_role|l] для тих [Concept('concept_character','$concept_characters_gen$')|l], чий вплив є політичним, а не військовим. Він може бути [Concept('concept_ruler','$concept_ruler_ins$')|l], [Concept('concept_heir','$concept_heir_ins$')|l] або [Concept('concept_leader','$concept_leader_ins$')|l] [Concept('concept_interest_group','$concept_interest_group_gen$')|l]."
 
  concept_leader: "Провідник"
  concept_leader_gen: "Провідника"
  concept_leader_ins: "Провідником"
  concept_leaders: "Провідники"
  concept_leader_possessive:0 "Leader\\'s"
- concept_leader_desc:2 "The [concept_character] who leads an [concept_interest_group] has a set of [Concept('concept_character_trait', '$concept_character_traits$')] that affect it, and a personal [concept_ideology] that is added to the $concept_interest_group$'s $concept_ideologies$ for as long as that $concept_leader$ is in charge."
+ concept_leader_desc: "[concept_character], який очолює [Concept('concept_interest_group','$concept_interest_group_acc$')|l], має певні [Concept('concept_character_trait', '$concept_character_traits_acc$')|l], що впливають на неї, а також особисту [Concept('concept_ideology','$concept_ideology_acc$')|l], яку отримує й зацікавлена група, доки він очолює її."
 
  concept_interest_group_trait: "Риса зацікавленої групи"
  concept_interest_group_traits: "Риси зацікавленої групи"
@@ -600,7 +599,6 @@
  concept_character_traits: "Риси характеру"
  concept_character_traits_gen: "Рис характеру"
  concept_character_traits_short: "Риси"
- concept_character_trait_desc:1 "Personality $concept_character_traits_short$, Skill $concept_character_traits_short$, or Conditions that impact a [Concept('concept_character','$concept_character_possessive$')] ability to carry out their current [concept_character_role]. More or different $concept_character_traits$ may develop as the $concept_character$ gains [concept_life_experience]."
 
  concept_construction_queue: "Черга на будівництво"
  concept_construction_queue_gen: "Черги на будівництво"
@@ -610,7 +608,7 @@
  concept_construction_queue_short_gen: "Черги"
  concept_construction_queue_short_acc: "Чергу"
  concept_construction_queue_short_loc: "Черзі"
- concept_construction_queue_desc:0 "Будь-які [Concept('concept_building', '$concept_buildings$')|l], які плянується розширити, але наразі не використовують [Concept('concept_construction', '$concept_construction_acc$')|l], будуть у черзі на будівництво. Коли будь-яке будівництво стає доступним, то перша будівля у черзі почне використовувати будівництво та [Concept('concept_under_construction', 'зводитися')|l]."
+ concept_construction_queue_desc: "Будь-які [Concept('concept_building', '$concept_buildings$')|l], які плянується розширити, але наразі не використовують [Concept('concept_construction', '$concept_construction_acc$')|l], будуть у черзі на будівництво. Коли будь-яке будівництво стає доступним, то перша будівля у черзі почне використовувати будівництво та [Concept('concept_under_construction', 'зводитися')|l]."
 
  concept_government_construction: "Державна споруда"
  concept_government_construction_gen: "Державної споруди"
@@ -1705,7 +1703,7 @@
 
  concept_monument: "Пам‘ятка"
  concept_monuments: "Пам‘ятки"
- concept_monument_desc:1 "[Concept('concept_building','$concept_buildings$')] unique to a certain [concept_state] that can perform a variety of functions, often conferring [concept_prestige]."
+ concept_monument_desc: "Унікальні [Concept('concept_building','$concept_buildings_acc$')|l] для певного [Concept('concept_state','$concept_state_gen$')|l], які можуть виконувати різноманітні функції, часто надаючи [Concept('concept_prestige','$concept_prestige_acc$')|l]."
 
  concept_productivity: "Продуктивність"
  concept_productivity_ins: "Продуктивністю"
@@ -1722,7 +1720,7 @@
  concept_government_reform: "Урядова зміна"
  concept_government_reform_acc: "Урядову зміну" 
  concept_government_reform_short: "Зміна"
- concept_government_reform_desc:0 "During a $concept_government_reform$ you may alter the composition of your [concept_government] freely by granting or removing [Concept('concept_interest_group','$concept_interest_groups$')] and/or [Concept('concept_party','$concept_parties$')] from power. $concept_interest_groups$ removed from power during such a $concept_government_reform_short$ will gain [Concept('concept_radical','$concept_radicals$')], unless the $concept_government_reform_short$ is performed shortly after a concluded $concept_election$."
+ concept_government_reform_desc:0 "Під час урядової зміни ви можете вільно змінювати склад в [concept_government] freely by granting or removing [Concept('concept_interest_group','$concept_interest_groups$')] and/or [Concept('concept_party','$concept_parties$')] from power. $concept_interest_groups$ removed from power during such a $concept_government_reform_short$ will gain [Concept('concept_radical','$concept_radicals$')], unless the $concept_government_reform_short$ is performed shortly after a concluded $concept_election$."
 
  concept_election: "Вибори"
  concept_election_gen: "Виборів"
@@ -1937,6 +1935,7 @@
  concept_conversion_desc:2 "[Concept('concept_pop','$concept_pops$')] whose [concept_religion] is [Concept('concept_discrimination','$concept_discriminated_against$')] in the [concept_country] they live may instead $concept_convert$ to an [concept_accepted_religion]."
 
  concept_life_experience: "Життєвий досвід"
+ concept_life_experience_acc: "Життєвий досвід"
  concept_life_experience_desc: "[Concept('concept_character', '$concept_characters$')] отримують життєвий досвід з плином часу та завдяки спеціяльним подіям. Життєвий досвід впливає на можливість набуття нових [Concept('concept_character_trait', '$concept_character_traits_gen$')|l]."
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED APRIL 1, 2022
@@ -1974,8 +1973,8 @@
  concept_port_connection_desc:3 "A [concept_shipping_lane] connecting one or several [Concept('concept_state','$concept_states$')] otherwise unreachable overland to the [concept_market_capital], ensuring [concept_market_access] to remote regions. $concept_port_connections$ require a [SelectLocalization(GetPlayer.IsValid,'concept_port_connection_desc_added','Port')] in both ends. The [concept_convoy_cost] of a $concept_port_connection$ is dependent on the total [concept_infrastructure_usage] of the [Concept('concept_state','$concept_states$')] it's connecting."
  concept_port_connection_desc_added:0 "[GetBuildingType('building_port').GetName]"
 
- concept_shipping_lane_effectiveness:1 "$concept_shipping_lane$ $concept_shipping_lane_effectiveness_short$"
- concept_shipping_lane_effectiveness_short:0 "Effectiveness"
+ concept_shipping_lane_effectiveness: "Ефективність судноплавного тору"
+ concept_shipping_lane_effectiveness_short: "Ефективність"
  concept_shipping_lane_effectiveness_desc:3 "The $concept_shipping_lane_effectiveness_short$ of a [concept_shipping_lane] is determined by the strength of a [Concept('concept_country','$concept_country_possessive$')] [concept_supply_network], reduced by any damage it has sustained from [concept_raid_convoys]. When $concept_shipping_lane_effectiveness_short$ is below #v 100%#!, the function of the $concept_shipping_lane$ is reduced to match."
 
  concept_supply_route: "Тор постачання"
@@ -1989,15 +1988,15 @@
  concept_character_ins: "Персонажем"
  concept_characters: "Персонажі"
  concept_characters_gen: "Персонажів"
- concept_character_possessive:0 "Character\\'s"
- concept_character_desc:2 "$concept_characters$ fulfill different [Concept('concept_character_role','$concept_character_roles$')] in your [concept_country]. Their ability to perform these duties depends on their [Concept('concept_character_trait','$concept_character_traits$')]. They always support an [concept_interest_group], and may have an [concept_ideology] that shapes their aspirations and outlook."
+ concept_character_possessive: "Персонажа"
+ concept_character_desc: "Персонажі виконують різні [Concept('concept_character_role','$concept_character_roles_acc$')|l] у вашій [Concept('concept_country','$concept_country_loc$')|l]. Їхня здатність виконувати ці обов’язки залежить від їхніх [Concept('concept_character_trait','$concept_character_traits_gen$')|l]. Вони завжди підтримують певну [Concept('concept_interest_group','$concept_interest_group_acc$')|l], і можуть мати деяку [Concept('concept_ideology','$concept_ideology_acc$')|l], яка формує їхні прагнення та світогляд."
 
  concept_popularity: "Знаність"
  concept_popularity_acc: "Знаність"
- concept_popularity_desc:2 "The $concept_popularity$ of a [concept_character] measures the willingness of [Concept('concept_pop','$concept_pops$')] to follow them. $concept_popularity$ can have different effects depending on the $concept_character$'s [concept_character_role]."
+ concept_popularity_desc: "Знаність [Concept('concept_character','$concept_character_gen$')|l] показує готовність [Concept('concept_pop','$concept_people_gen$')|l] йти за ним. $concept_popularity$ впливає по-різному в залежности від [Concept('concept_character_role','$concept_character_role_gen$')|l] персонажа."
 
  concept_momentum: "Імпульс"
- concept_momentum_desc: "Показує успіх [Concept('concept_election','$concept_election_adj$ої')|l] кампанії [Concept('concept_party','$concept_party_gen$')|l]. $concept_momentum$ збільшує кількість [Concept('concept_votes','$concept_votes_gen$')|l] партії перед днем виборів, а після чого анулюється. На імпульс може вплинути випадковість, спеціяльні події та [concept_popularity|l] їхнього [Concept('concept_party_leader','$concept_party_leader_gen$')|l]."
+ concept_momentum_desc: "Показує успіх [Concept('concept_election','$concept_election_adj$ої')|l] виправи [Concept('concept_party','$concept_party_gen$')|l]. $concept_momentum$ збільшує кількість [Concept('concept_votes','$concept_votes_gen$')|l] партії перед днем виборів, а після чого анулюється. На імпульс може вплинути випадковість, спеціяльні події та [concept_popularity|l] їхнього [Concept('concept_party_leader','$concept_party_leader_gen$')|l]."
 
  concept_government_expenses: "Державні витрати"
  concept_government_expenses_short: "Витрати"
@@ -2058,6 +2057,7 @@
  concept_character_role_dat: "Ролі"
  concept_character_role_acc: "Ролю"
  concept_character_roles: "Ролі"
+ concept_character_roles_acc: "Ролі"
  concept_character_role_desc:2 "$concept_character_roles$ determine what areas of your [concept_country] a particular [concept_character] has influence over. A $concept_character$ can have one or several $concept_character_roles$.\n\nThe list of $concept_character_roles$ are:\n[concept_ruler] (usually also a [concept_politician])\n[concept_heir]\n[concept_politician]\n[concept_general]\n[concept_admiral]"
 
  concept_treasury: "Скарбівниця"

@@ -300,7 +300,7 @@
  election_contextual_events.3.tt.2: "Незважаючи на наші зусилля, відомості просочуються."
 
  election_contextual_events.4.t: "По кому дзвенять дзвони" # Old IG leader
- election_contextual_events.4.d: "Постарілий [SCOPE.sCharacter('decrepit_leader').GetFullName], провідник групи [SCOPE.gsInterestGroup('decrepit_leader_ig').GetName], несподівано помер в середині кампанії — залишивши [SCOPE.sParty('decrepit_leader_party').GetName] без наріжного політика. Питання про заміну [SCOPE.sCharacter('decrepit_leader').GetHerHis] зараз у всіх на вустах."
+ election_contextual_events.4.d: "Постарілий [SCOPE.sCharacter('decrepit_leader').GetFullName], провідник групи [SCOPE.gsInterestGroup('decrepit_leader_ig').GetName], несподівано помер в середині виправа — залишивши [SCOPE.sParty('decrepit_leader_party').GetName] без наріжного політика. Питання про заміну [SCOPE.sCharacter('decrepit_leader').GetHerHis] зараз у всіх на вустах."
  election_contextual_events.4.f:0 ""Unexpected? Bah! That old bag of bones was long overdue to meet [SCOPE.sCharacter('decrepit_leader').GetHerHis] maker. It's about time that party saw some new blood!""
  election_contextual_events.4.a: "Ідіть з популярним, але бездарним кандидатом."
  election_contextual_events.4.b: "Сміливий, але пихатий хлопець закріплює крісло."
