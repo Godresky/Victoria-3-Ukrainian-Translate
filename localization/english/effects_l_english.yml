@@ -113,9 +113,9 @@
  ADD_CULTURAL_OBSESSION: "[CULTURE.GetName] стануть одержимими товаром [GOODS.GetName|l]"
  ADD_CULTURAL_OBSESSION_FIRST: "[CULTURE.GetName] стануть [Concept('concept_obsession', '$concept_obsessed_adj$ими')|l] товаром [GOODS.GetName|l] у державі [COUNTRY.GetNameNoFlag]"
  ADD_CULTURAL_OBSESSION_THIRD: "[CULTURE.GetName] стануть [Concept('concept_obsession', '$concept_obsessed_adj$ими')|l] товаром [GOODS.GetName|l] у державі [COUNTRY.GetName]"
- REMOVE_CULTURAL_OBSESSION: "[CULTURE.GetName] перестануть одержимими товаром [GOODS.GetName|l]"
- REMOVE_CULTURAL_OBSESSION_FIRST: "[CULTURE.GetName] перестануть [Concept('concept_obsession', '$concept_obsessed_adj$ими')|l] товаром [GOODS.GetName|l] у державі [COUNTRY.GetNameNoFlag]"
- REMOVE_CULTURAL_OBSESSION_THIRD: "[CULTURE.GetName] перестануть [Concept('concept_obsession', '$concept_obsessed_adj$ими')|l] товаром [GOODS.GetName|l] у державі [COUNTRY.GetName]"
+ REMOVE_CULTURAL_OBSESSION: "[CULTURE.GetName] перестануть бути одержимими товаром [GOODS.GetName|l]"
+ REMOVE_CULTURAL_OBSESSION_FIRST: "[CULTURE.GetName] перестануть бути [Concept('concept_obsession', '$concept_obsessed_adj$ими')|l] товаром [GOODS.GetName|l] у державі [COUNTRY.GetNameNoFlag]"
+ REMOVE_CULTURAL_OBSESSION_THIRD: "[CULTURE.GetName] перестануть бути [Concept('concept_obsession', '$concept_obsessed_adj$ими')|l] товаром [GOODS.GetName|l] у державі [COUNTRY.GetName]"
  
  CREATE_RANDOM_CHARACTER_NAME: "Персонаж"
  
@@ -226,7 +226,7 @@
  SET_OWNER_OF_PROVINCES:0 "[COUNTRY.GetName] receives $NUM_PROVINCES|v$ provinces in [TARGET_STATE_REGION.GetName]"
  CREATE_STATE:0 "[COUNTRY.GetName] gets a state in [TARGET_STATE_REGION.GetName]"
  SET_STATE_TYPE:0 "[STATE.GetName] becomes a $STATE_TYPE|v$"
- SET_STATE_OWNER:0 "[TARGET_COUNTRY.GetName] becomes owner of [STATE.GetName]"
+ SET_STATE_OWNER: "[TARGET_COUNTRY.GetName] стає власником реґіону [STATE.GetName]"
  CREATE_BUILDING:0 "Creates a Size $LEVEL|v$ [BuildingType.GetName] in [State.GetName]"
  ADD_BUILDING_LEVEL:0 "Change [BuildingType.GetName] level by $LEVEL|v$ in [State.GetName]"
  START_BUILDING_CONSTRUCTION:0 "Start building [BuildingType.GetName] in [State.GetName]"
@@ -273,11 +273,11 @@
  EFFECT_PROJECT_POWER:0 "[CHARACTER.GetFullName] will project power into [STRATEGIC_REGION.GetName]"
   
 
- TRIGGER_EVENT_DELAY_ONE_DAY:0 "in #v 1#! day"
- TRIGGER_EVENT_DELAY_NUM_DAYS:0 "in #v $NUM_DAYS$#! days"
- TRIGGER_EVENT_DELAY_RANGE_DAYS:0 "in #v $DAYS_MIN$#! to #v $DAYS_MAX$#! days"
+ TRIGGER_EVENT_DELAY_ONE_DAY: "за #v 1#! день"
+ TRIGGER_EVENT_DELAY_NUM_DAYS: "за #v $NUM_DAYS$#! дн."
+ TRIGGER_EVENT_DELAY_RANGE_DAYS: "за #v $DAYS_MIN$#!-#v $DAYS_MAX$#! днів"
  TRIGGER_EVENT: "Відбудеться подія #variable «$EVENT_NAME$»#![ConcatIfNeitherEmpty(' ', '$DELAY_DESCRIPTION$')]"
- TRIGGER_EVENT_COUNTRY: "У [Concept('concept_country','$concept_country_loc$')|l] $COUNTRY_NAME$ відбудеться подія #variable «$EVENT_NAME$»#![ConcatIfNeitherEmpty(' ', '$DELAY_DESCRIPTION$')]."
+ TRIGGER_EVENT_COUNTRY: "У [Concept('concept_country','$concept_country_loc$')|l] $COUNTRY_NAME$ відбудеться подія #variable «$EVENT_NAME$»#![ConcatIfNeitherEmpty(' ', '$DELAY_DESCRIPTION$')]"
  custom_trigger_event_unspecific:0 "Triggers an Event"
 
  ANNEX_EFFECT:0 "[COUNTRY.GetName] will annex [TARGET_COUNTRY.GetName]"
@@ -348,12 +348,12 @@
  START_SUPPRESS_IG: "[concept_suppress] [INTEREST_GROUP.GetName]"
  STOP_SUPPRESS_IG: "Зупинити [Concept('concept_suppress','$concept_suppressing$')|l] [INTEREST_GROUP.GetName]"
   
- ADD_BANNED_GOODS:0 "[COUNTRY.GetName] places a total ban on [TARGET_GOODS.GetName]"
- ADD_BANNED_GOODS_FIRST:0 "[COUNTRY.GetNameNoFlag] places a total ban on [TARGET_GOODS.GetName]"
- ADD_BANNED_GOODS_THIRD:0 "[COUNTRY.GetName] places a total ban on [TARGET_GOODS.GetName]"
- REMOVE_BANNED_GOODS:0 "[COUNTRY.GetName] stops banning [TARGET_GOODS.GetName]"
- REMOVE_BANNED_GOODS_FIRST:0 "[COUNTRY.GetNameNoFlag] stops banning [TARGET_GOODS.GetName]"
- REMOVE_BANNED_GOODS_THIRD:0 "[COUNTRY.GetName] stops banning [TARGET_GOODS.GetName]"
+ ADD_BANNED_GOODS: "[COUNTRY.GetName] накладає повну заборону на товар [TARGET_GOODS.GetName|l]"
+ ADD_BANNED_GOODS_FIRST: "[COUNTRY.GetNameNoFlag] накладає повну заборону на товар [TARGET_GOODS.GetName|l]"
+ ADD_BANNED_GOODS_THIRD: "[COUNTRY.GetName] накладає повну заборону на товар [TARGET_GOODS.GetName|l]"
+ REMOVE_BANNED_GOODS: "[COUNTRY.GetName] припиняє забороняти товар [TARGET_GOODS.GetName|l]"
+ REMOVE_BANNED_GOODS_FIRST: "[COUNTRY.GetNameNoFlag] припиняє забороняти товар [TARGET_GOODS.GetName|l]"
+ REMOVE_BANNED_GOODS_THIRD: "[COUNTRY.GetName] припиняє забороняти товар [TARGET_GOODS.GetName|l]"
  
  ADD_EMBARGOED_GOODS:1 "[COUNTRY.GetName] starts [Concept('concept_embargo', '$concept_embargoing$')] [TARGET_GOODS.GetName]"
  ADD_EMBARGOED_GOODS_FIRST:0 "[COUNTRY.GetNameNoFlag] starts [Concept('concept_embargo', '$concept_embargoing$')] [TARGET_GOODS.GetName]"
@@ -395,9 +395,9 @@
  SET_TARIFFS_EXPORT_PRIORITY_FIRST:0 "[COUNTRY.GetNameNoFlag] starts to collect #v Export Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
  SET_TARIFFS_EXPORT_PRIORITY_THIRD:0 "[COUNTRY.GetName] starts to collect #v Export Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
   
- ADD_RADICALS:2 "#variable $NUM|-=1%$#! of$FILTER$ [Concept('concept_pop', '$concept_pops$')] in $SUBJECT_NAME$ become more [concept_radical]"
- ADD_RADICALS_FIRST:2 "#variable $NUM|-=1%$#! of$FILTER$ [Concept('concept_pop', '$concept_pops$')] in $SUBJECT_NAME$ become more [concept_radical]"
- ADD_RADICALS_THIRD:2 "#variable $NUM|-=1%$#! of$FILTER$ [Concept('concept_pop', '$concept_pops$')] in $SUBJECT_NAME$ become more [concept_radical]"
+ ADD_RADICALS: "#variable $NUM|-=1%$#! $FILTER$ [Concept('concept_pop', '$concept_pops_gen$')|l] у місці $SUBJECT_NAME$ стануть більш [Concept('concept_radical', '$concept_radical_adj$ими')|l]"
+ ADD_RADICALS_FIRST: "#variable $NUM|-=1%$#! $FILTER$ [Concept('concept_pop', '$concept_pops_gen$')|l] у місці $SUBJECT_NAME$ стануть більш [Concept('concept_radical', '$concept_radical_adj$ими')|l]"
+ ADD_RADICALS_THIRD: "#variable $NUM|-=1%$#! $FILTER$ [Concept('concept_pop', '$concept_pops_gen$')|l] у місці $SUBJECT_NAME$ стануть більш [Concept('concept_radical', '$concept_radical_adj$ими')|l]"
  
  ADD_LOYALISTS:3 "#variable $NUM|+=1%$#! of$FILTER$ [Concept('concept_pop', '$concept_pops$')] in $SUBJECT_NAME$ become more [Concept('concept_loyalist', '$concept_loyal$')]"
  ADD_LOYALISTS_FIRST:3 "#variable $NUM|+=1%$#! of$FILTER$ [Concept('concept_pop', '$concept_pops$')] in $SUBJECT_NAME$ become more [Concept('concept_loyalist', '$concept_loyal$')]"

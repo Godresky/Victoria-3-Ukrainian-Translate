@@ -3,7 +3,7 @@
  mm_ongoing_diplo_play: "Держави у конфліктах"
  mm_strategic_region: "Стратегічні реґіони"
  mm_state: "Реґіони"
- mm_theater: "Театри"
+ mm_theater: "Войовища"
  mm_military: "Військо"
  mm_military_with_past_battles: "Битви"
  mm_peace_deal: "Воєнна та мирна угода"
@@ -33,7 +33,7 @@
  mm_literacy: "Грамотність"
  mm_infamy: "Рівень ганьби"
 
- mm_theater_interaction: "Взаємодія з театром"
+ mm_theater_interaction: "Взаємодія з войовищем"
  mm_state_interaction: "Взаємодія з реґіоном"
  mm_country_interaction: "Взаємодія з державою"
  mm_market_interaction: "Взаємодія з ринком"

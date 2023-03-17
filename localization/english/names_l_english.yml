@@ -96,10 +96,6 @@
  van_Egmont: "ван Еґмонт"
  van_Galen: "ван Ґален"
  de_Grouwe: "де Ґроуве"
-
-
-
-
  van_Geen:0 "ван Geen"
  van_Ham:0 "ван Ham"
  van_Haren:0 "ван Haren"
@@ -3839,7 +3835,7 @@
  Evander:0 "Evander"
  Edmund:0 "Edmund"
  Earl:0 "Earl"
- Gordon:0 "Gordon"
+ Gordon: "Ґордон"
  Gideon:0 "Gideon"
  Gustavus:0 "Gustavus"
  Hunter:0 "Hunter"
@@ -4137,7 +4133,7 @@
  Rodes:0 "Rodes"
  Rowland:0 "Rowland"
  Ruggles:0 "Ruggles"
- Rust:0 "Rust"
+ Rust: "Раст"
  Ralls:0 "Ralls"
  Rapier:0 "Rapier"
  Robinson:0 "Robinson"

@@ -1,6 +1,7 @@
-﻿﻿l_english:
+﻿l_english:
+
  #Aigun and Beijing
- je_the_eastern_border: "Володар Сходу"
+ je_the_eastern_border:0 "The Ruler of the East"
  je_the_eastern_border_reason:0 "Our ambitions of becoming a Pacific naval power, and our colonial agenda in Central Asia, require that we resolve our long-standing border disputes with [SCOPE.sCountry('china_scope').GetName] in a manner favorable to [ROOT.GetCountry.GetName]."
 
  russia_treaty_of_beijing:0 "The Beijing Treaty"

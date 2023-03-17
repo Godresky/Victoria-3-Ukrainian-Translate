@@ -1,4 +1,5 @@
-﻿l_polish:
+﻿l_english:
+#чоловічий
  CustomLoc_UA_vin: "він"
  CustomLoc_UA_vin_noho: "нього"
  CustomLoc_UA_vin_joho: "його"
@@ -6,6 +7,7 @@
  CustomLoc_UA_vin_nym: "ним"
  CustomLoc_UA_vin_nomu: "ньому"
 
+#жіночий
  CustomLoc_UA_vona: "вона"
  CustomLoc_UA_vona_neji: "неї"
  CustomLoc_UA_vona_jiji: "її"
@@ -13,6 +15,7 @@
  CustomLoc_UA_vona_neju: "нею"
  CustomLoc_UA_vona_nij: "ній"
 
+#середній
  CustomLoc_UA_vony: "вони"
  CustomLoc_UA_vony_nykh: "них"
  CustomLoc_UA_vony_jikh: "їх"

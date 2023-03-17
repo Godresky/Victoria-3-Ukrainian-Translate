@@ -10,7 +10,7 @@
  JOIN: "Приєднатися за тезьбилом"
  SINGLE_PLAYER: "Гра наодинці"
  MULTI_PLAYER: "Гра в мережі"
- OPTIONS: "$OPTIONS_UA$"
+ OPTIONS: "Налаштування"
  CREDITS: "Титри"
  QUIT: "Вийти"
  ACCOUNT: "Обліковка"
@@ -68,6 +68,3 @@
  JOMINI_MSGRDK_SIGNIN_FAILED_TEXT: "Нам не вдалося ввійти за допомогою облікового запису Microsoft. Деякі функції гри можуть бути недоступні."
  JOMINI_MSGRDK_NO_PERMISSION_TITLE: "Дозвіл на обліковий запис"
  JOMINI_MSGRDK_NO_UGC_TEXT: "У вас немає дозволу на доступ до створеного користувачами вмісту. Моди будуть вимкнені."
-
-#UA
- OPTIONS_UA: "Налаштування"

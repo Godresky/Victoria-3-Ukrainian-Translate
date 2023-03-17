@@ -1,6 +1,6 @@
 ﻿l_english:
- oscar_wilde_events.1.t:1 "Each Man Kills the Thing He Loves"
- oscar_wilde_events.1.wilde:2 "The infamous dandy playwright [SCOPE.sCharacter('oscar_wilde').GetFullName] has been sentenced to two years of hard labor on a charge of homosexuality. If [SCOPE.sCharacter('oscar_wilde').GetSheHe] doesn't receive a pardon, we may as well have sentenced the arts in [ROOT.GetCountry.GetNameNoFlag] along with [SCOPE.sCharacter('oscar_wilde').GetHerHim]."
+ oscar_wilde_events.1.t: "Кожен вбиває те, що любить"
+ oscar_wilde_events.1.wilde: "Сумнозвісний драматург-денді [SCOPE.sCharacter('oscar_wilde').GetFullName] був засуджений на два роки каторжних робіт за звинуваченням у гомосексуалізмі. Якщо [SCOPE.sCharacter('oscar_wilde').GetSheHe] не отримує помилування, ми можемо засудити мистецтво у [Concept('concept_country','$concept_country_loc$')|l] [ROOT.GetCountry.GetNameNoFlag] разом з [SCOPE.sCharacter('oscar_wilde').GetCustom('UA_nym_neju')|l]."
  oscar_wilde_events.1.flavor_wilde:1 ""[SCOPE.sCharacter('oscar_wilde').GetHerHis] work represents some of the very best of our nation's tradition of satire and cutting wit.\n\n"
  oscar_wilde_events.1.flavor_author:0 ""It has all the terrible beauty of a Greek tragedy, a tragedy in which I took a great part.\n\n"
  oscar_wilde_events.1.flavor_quote:0 "The books that the world calls immoral are books that show the world its own shame.""

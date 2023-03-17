@@ -5,7 +5,7 @@
  acw_events.1.a: "Жахливо! Треба протистояти насильству работорговців."
  acw_events.1.b: "Цю аболіціоністську аґітацію необхідно припинити!"
 
- acw_events.2.t: "Раб-втікач"
+ acw_events.2.t: "Раб-утікач"
  acw_events.2.d: "Раб, що належить персонажу [SCOPE.sCharacter('slaver_ig_leader').GetFullName] захопив його маєток і втік до північної вільної держави. [SCOPE.sCharacter('slaver_ig_leader').GetLastName] вимагав його повернення, але аболіціоністи виступають проти цього, тому його вимоги були проігноровані."
  acw_events.2.f: "«Є кілька речей, які мене цікавлять більше, ніж справедливість. Якщо людина втрачає куртку, цілком природно, що їй її повертають, чи не так? Я просто прошу, щоб мені повернули те, що є моїм. Чому це викликає такий галас?»"
  acw_events.2.a: "Знайдемо і повернемо раба-втікача"
@@ -183,8 +183,8 @@
  custom_partisan_rangers: "Партизанські рейнджери"
  custom_cowboys: "Ковбої"
  custom_innocents: "Невинні"
- custom_hole_in_the_wall_gang: "Банда Hole-in-the-Wall"  #назва не перекладається
- custom_high_fives_gang: "Банда High-Fives" #назва не перекладається
+ custom_hole_in_the_wall_gang: "Банда Гол-Ін-Зе-Валл"
+ custom_high_fives_gang: "Банда Гайг-Файвс" #назва не перекладається
 
  custom_general_locomotive: "Генеральний"
  custom_yonah: "Йона"
@@ -201,7 +201,7 @@
  custom_loudoun_county: "Лаудун"
  custom_nickajack: "Нікджек"
  custom_winston_county: "Вінстон"
- custom_springfield: "Спрінгфілд"
+ custom_springfield: "Спрінґфілд"
  custom_wayne_county: "Вейн"
  custom_franklin_county: "Франклін"
  custom_jackson_county: "Джексон"

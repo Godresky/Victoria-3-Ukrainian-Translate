@@ -451,12 +451,14 @@
  concept_military_building_desc:4 "[Concept('concept_government_building','$concept_government_buildings$')] used to train, maintain, and supply [Concept('concept_battalion','$concept_battalions$')] and [Concept('concept_flotilla','$concept_flotillas$')] for the [Concept('concept_country','$concept_country_possessive$')] army and navy respectively. The [concept_workforce] of $concept_military_buildings$ get paid according to the [concept_military_wage]."
  
  concept_incorporated_state: "Включений реґіон"
+ concept_incorporated_state_acc: "Включений реґіон"
  concept_incorporated_states: "Включені реґіони"
  concept_incorporated_states_acc: "Включені реґіони"
  concept_incorporated_states_loc: "Включених реґіонах"
  concept_incorporate_state: "Включити реґіон"
  concept_incorporate: "Включити"
  concept_incorporated: "Включений"
+ concept_incorporated_adj: "Включен"
  concept_incorporating: "Включення"
  concept_incorporation: "Включення"
  concept_incorporated_state_desc:2 "[Concept('concept_state','$concept_states$')] that are fully integrated into a [concept_country]. [Concept('concept_pop', '$concept_pops$')] in $concept_incorporated_states$ pay taxes, gain access to benefits from [Concept('concept_institution', '$concept_institutions$')], and participate fully in the Country's political system. [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] can be $concept_incorporated$ through a sometimes lengthy process."
@@ -822,8 +824,8 @@
  concept_unit_possessive:0 "Military Unit\\'s"
  concept_unit_desc:0 "$concept_units$ perform military operations under the guidance of [Concept('concept_general','$concept_generals$')] and [Concept('concept_admiral','$concept_admirals$')]. They can be either land-based [Concept('concept_battalion','$concept_battalions$')] or naval [Concept('concept_flotilla','$concept_flotillas$')]."
 
- concept_kill_rate: "Сучинник смертей"
- concept_kill_rate_ins: "Сучинником смертей"
+ concept_kill_rate: "Сучинник смертности"
+ concept_kill_rate_ins: "Сучинником смертности"
  concept_kill_rate_desc:0 "How effective a [concept_unit] is at ensuring their opponent's [concept_casualties] end up unable to come back to fight another day. Increases the ratio of [concept_casualties] that end up killed (instead of [concept_wounded]). Typically increased by equipping the $concept_unit$ with more destructive #b $pmg_artillery$#! [Concept('concept_production_method','$concept_production_method$')] or certain #b $pmg_specialist_companies$#!. $concept_kill_rate$ is countered by the enemy $concept_unit$'s [concept_recovery_rate]."
 
  concept_recovery_rate: "Сучинник відновлення"
@@ -1034,7 +1036,7 @@
  concept_attitude_desc:1 "An indication of how another [concept_country] feels about you, based on [concept_relations], [concept_infamy], [concept_strategic_desire], and factors such as how large your military is and which $concept_countries$ you have [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] with. $concept_attitude$ affects what sorts of actions a $concept_country$ is likely to take towards you and what role you play in their plans."
 
  concept_instant_diplomatic_action: "Миттєва дипломатична дія"
- concept_ongoing_diplomatic_actions: "Тривалі дипломатичні дії"
+ concept_instant_diplomatic_actions: "Миттєві дипломатичні дії"
  concept_instant_diplomatic_actions_acc: "Миттєві дипломатичні дії"
  concept_instant_diplomatic_action_desc:2 "An action with an instant effect on the [Concept('concept_country','$concept_countries$')] involved. They typically require a certain condition to be true in order to be taken but do not cost any [concept_influence]."
 
@@ -1100,6 +1102,7 @@
  concept_defensive_pact_desc:0 "A [concept_diplomatic_pact] between two [Concept('concept_country','$concept_countries$')]. $concept_countries$ engaged in a $concept_defensive_pact$ may always side with each other in [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] in which they are the primary target, regardless of if the other side maintains an active [concept_active_interest] in the affected [concept_strategic_region]. This does not extend to $concept_diplomatic_plays$ where the other party is the initiator, or where they are backing a third $concept_country$ as a primary target."
 
  concept_supply: "Постачання"
+ concept_supply_gen: "Постачання"
  concept_supply_desc:1 "A [Concept('concept_commander','$concept_commander_possessive$')] $concept_supply$ sets the baseline [concept_supply] for [Concept('concept_unit','$concept_units$')] under their command. $concept_supply$ is usually 100%, but can be lower if a [concept_general] is overseas and supplied by a compromised [concept_shipping_lane], and will be zero if the $concept_general$ is completely cut off from its [concept_hq]. [Concept('concept_character_trait','$concept_character_traits$')] and [Concept('concept_modifier','$concept_modifiers$')] can also apply in some cases."
 
  concept_escort_convoys: "Супровід конвоїв"
@@ -1113,6 +1116,8 @@
  concept_morale: "Моральний дух"
  concept_morale_gen: "Морального духу"
  concept_morale_demoralized: "Знеморалізовані"
+ concept_morale_demoralized_gen: "Знеморалізованих"
+ concept_morale_demoralized_ins: "Знеморалізованими"
  concept_morale_demoralized_adj: "Знеморалізован"
  concept_morale_demoralized_desc: "$concept_morale_desc$"
  concept_morale_desc:1 "A [Concept('concept_unit','$concept_unit_possessive$')] $concept_morale$ measures how much of its remaining [concept_manpower] is ready for [concept_battle]. As a result of $concept_units$ taking and inflicting [concept_casualties] on each other in $concept_battle$, some of the remaining $concept_manpower$ will become $concept_morale_demoralized$ for the remainder of the $concept_battle$ and unable to take offensive action. As all $concept_units$ reach a critical threshold of low $concept_morale$ the [concept_commander] will retreat, leaving the other side victorious.\n\nAfter a $concept_battle$, $concept_units$ will regain their $concept_morale$ at a steady rate up to their $concept_commander$'s [concept_supply] rating."
@@ -1159,6 +1164,7 @@
  concept_capital_state_desc_added:0 "\nThe following effects apply:\n[GetStaticModifier('market_capital_state').GetDesc]"
 
  concept_treaty_port: "Договірний приплав"
+ concept_treaty_port_acc: "Договірний приплав"
  concept_treaty_port_ins: "Договірним приплавом"
  concept_treaty_ports: "Договірні приплави"
  concept_treaty_port_desc:4 "A coastal [concept_state] that consists of a single [concept_province] taken as a [concept_war_goal] for purpose of opening [Concept('concept_trade_route','$concept_trade$')] with that [concept_country]. A $concept_treaty_port$ permits its owner to bypass [concept_tariffs] and [Concept('concept_embargo','$concept_embargoes$')] when trading with any [concept_market] in the same [concept_state_region]. $concept_treaty_ports$ that come under hostile occupation will not confer any of their benefits while the occupation lasts.\n\nFor a $concept_treaty_port$ to confer its effect, the holder's [concept_rank] must be higher than that of the [concept_market_owner], or the holder must be a [concept_recognized_power] while the [concept_market_owner] is not."
@@ -1372,6 +1378,7 @@
  
  concept_primary_demand: "Основна вимога"
  concept_primary_demand_short: "Основна"
+ concept_primary_demand_short_acc: "Основну"
  concept_primary_demands: "Основні вимоги"
  concept_primary_demands_acc: "Основні вимоги"
  concept_primary_demand_desc:0 "$concept_primary_demands$ are [Concept('concept_war_goal','$concept_war_goals$')] that will be enforced on the opposing side of a [concept_diplomatic_play] if they decide to back down. The first [concept_war_goal] added on each side is always a $concept_primary_demand$, as are any [Concept('concept_war_goal','$concept_war_goals$')] added against the leader of the opposing side through [Concept('concept_sway','$concept_swaying$')]."
@@ -2031,10 +2038,14 @@
  concept_in_reserve_desc:1 "[Concept('concept_unit','$concept_units$')] that currently have no [concept_commander] are considered to be $concept_in_reserve$. They cannot be given [Concept('concept_order','$concept_orders$')] but will defend their homeland as part of a [concept_garrison] as needed."
 
  concept_dead: "Мертві"
+ concept_dead_gen: "Мертвих"
+ concept_dead_ins: "Мертвими"
  concept_dead_adj: "Мертв"
  concept_dead_desc: "[concept_casualties], які закінчуються смертю в результаті [Concept('concept_battle','$concept_battle_gen$')|l] або [Concept('concept_attrition','$concept_attrition_gen$')|l]."
 
  concept_wounded: "Поранені"
+ concept_wounded_gen: "Поранених"
+ concept_wounded_ins: "Пораненими"
  concept_wounded_adj: "Поранен"
  concept_wounded_desc:2 "[concept_casualties] that are merely $concept_wounded$ in [concept_battle] or due to [concept_attrition]. Some $concept_wounded$ $concept_casualties$ recover and return to active service after some time, while others end up as [concept_dependents] of other [Concept('concept_pop','$concept_pops$')] in your [concept_country]."
 

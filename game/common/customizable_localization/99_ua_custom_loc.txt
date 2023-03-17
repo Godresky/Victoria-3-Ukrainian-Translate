@@ -10,6 +10,11 @@
 ## Pronouns, 
 
 # UA_vin_vona    | він  | вона
+# UA_noho_neji    | нього  | неї
+# UA_joho_jiji    | його  | її
+# UA_jomu_jij    | йому  | їй
+# UA_nym_neju    | ним  | нею
+# UA_nomu_nij    | ньому  | ній
 
 
 ###################################################
@@ -27,6 +32,71 @@ UA_vin_vona = {
 	}	
 	text = {	
 		localization_key = CustomLoc_UA_vona
+		trigger = { is_female = yes }
+	}	
+}
+
+UA_noho_neji = {		
+	type = character
+	log_loc_errors = yes
+	text = {	
+		localization_key = CustomLoc_UA_vin_noho
+		trigger = { is_female = no }
+	}	
+	text = {	
+		localization_key = CustomLoc_UA_vona_neji
+		trigger = { is_female = yes }
+	}	
+}
+
+UA_joho_jiji = {		
+	type = character
+	log_loc_errors = yes
+	text = {	
+		localization_key = CustomLoc_UA_vin_joho
+		trigger = { is_female = no }
+	}	
+	text = {	
+		localization_key = CustomLoc_UA_vona_jiji
+		trigger = { is_female = yes }
+	}	
+}
+
+UA_jomu_jij = {		
+	type = character
+	log_loc_errors = yes
+	text = {	
+		localization_key = CustomLoc_UA_vin_jomu
+		trigger = { is_female = no }
+	}	
+	text = {	
+		localization_key = CustomLoc_UA_vona_jij
+		trigger = { is_female = yes }
+	}	
+}
+
+UA_nym_neju = {		
+	type = character
+	log_loc_errors = yes
+	text = {	
+		localization_key = CustomLoc_UA_vin_nym
+		trigger = { is_female = no }
+	}	
+	text = {	
+		localization_key = CustomLoc_UA_vona_neju
+		trigger = { is_female = yes }
+	}	
+}
+
+UA_nomu_nij = {		
+	type = character
+	log_loc_errors = yes
+	text = {	
+		localization_key = CustomLoc_UA_vin_nomu
+		trigger = { is_female = no }
+	}	
+	text = {	
+		localization_key = CustomLoc_UA_vona_nij
 		trigger = { is_female = yes }
 	}	
 }

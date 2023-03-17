@@ -91,7 +91,7 @@
  COUNTRY_INFAMY_TOOLTIP:0 "[Country.GetInfamyDesc]"
  COUNTRY_TENSION_TOOLTIP:0 "[Country.GetTensionTooltip(GetPlayer)]"
 
- POPULARITY_BREAKDOWN:1 "#header [Character.GetFullName]#! has #v [LabelingHelper.GetLabelForPopularityCFixedPoint(Character.GetPopularity)]#! ([Character.GetPopularity|0+=]) [concept_popularity][ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', Character.GetPopularityDesc)]"
+ POPULARITY_BREAKDOWN: "#header [Character.GetFullName]#! має [Concept('concept_popularity','$concept_popularity_acc$')|l]: #v [LabelingHelper.GetLabelForPopularityCFixedPoint(Character.GetPopularity)]#! ([Character.GetPopularity|0+=]) [ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', Character.GetPopularityDesc)]"
 
  INTEREST_GROUP_SUPPORTED_BY_TITLE: "[Concept('concept_interest_group', '$concept_interest_group_short_acc$')] [InterestGroup.GetName] підтримують:"
  INTEREST_GROUP_SUPPORTED_BY_SINGLE:0 "[PopType.GetName]: $SUPPORT_PERCENTAGE|%1v$"

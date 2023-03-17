@@ -33,7 +33,7 @@
  DIPLO_PLAY_SAME_SIDES:1 "[COUNTRY.GetName] is supporting [TARGET_COUNTRY.GetName] in another diplomatic play"
  ALREADY_IN_DIPLO_PLAY:1 "[COUNTRY.GetName] and [TARGET_COUNTRY.GetName] are both already part of a different diplomatic play"
  DIPLO_PLAY_ADD_WARGOAL: "Додати [Concept('concept_war_goal','$concept_war_goal_acc$')|l]"
- DIPLO_PLAY_MAKE_PRIMARY_DEMAND:0 "Add to [Concept('concept_primary_demand', '$concept_primary_demand_short$')] (@maneuvers![WarGoal.CalcMakePrimaryDemandManeuversCost|v])"
+ DIPLO_PLAY_MAKE_PRIMARY_DEMAND: "Додати як [Concept('concept_primary_demand', '$concept_primary_demand_short_acc$')|l] (@maneuvers![WarGoal.CalcMakePrimaryDemandManeuversCost|v])"
  DIPLO_PLAY_MAKE_PRIMARY_DEMAND_TOOLTIP:0 "#header Add [WarGoal.GetName] to our [Concept('concept_primary_demand','$concept_primary_demands$')]#!\n$TOOLTIP_DELIMITER$\n[WarGoal.GetMakePrimaryDemandManeuversCostDesc][ConcatIfNeitherEmpty('\n',WarGoal.GetMakePrimaryDemandDiplomaticIncidentDesc)][ConcatIfNeitherEmpty('\n\n',GetDesc(WarGoal.MakeWarGoalPrimaryDemand(GetPlayer.Self)))]\n\n@information! Making a [concept_war_goal] into a [concept_primary_demand] will ensure that it is ceded to our side even if the enemy backs down."
  DIPLO_PLAY_MAKE_PRIMARY_DEMAND_MANEUVERS_COST:0 "Cost: @maneuvers!$COST|v$ ([concept_war_goal] base cost of @maneuvers!$BASE_COST|v$ x [GetDefine('NDiplomacy', 'MAKE_WARGOAL_PRIMARY_DEMAND_MANEUVERS_COST')|v])"
  DIPLO_PLAY_MAKE_PRIMARY_DEMAND_INFAMY_AMOUNT:0 "[concept_infamy]: $INFAMY|1v$ ([concept_war_goal] base [concept_infamy] of $BASE_INFAMY|v$ x [GetDefine('NDiplomacy', 'MAKE_WARGOAL_PRIMARY_DEMAND_INFAMY_AMOUNT')|v])"
