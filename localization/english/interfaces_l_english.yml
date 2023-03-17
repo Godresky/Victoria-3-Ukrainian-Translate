@@ -5264,20 +5264,20 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  LAWS_WITH_GVT_SUPPORT: "Закони, що мають підтримку уряду або зацікавленого руху"
  LAWS_WITHOUT_GVT_SUPPORT: "Закони, що не мають підтримку уряду або зацікавленого руху"
 
- CHEAPEST_LAWS_HEADER:1 "$LAWS_WITH_GVT_SUPPORT$ ([GetDataModelSize(AccessPlayer.AccessLawsWithGovernmentOrMovementSupport)|v])"
- LAWS_WITHOUT_SUPPORT:1 "$LAWS_WITHOUT_GVT_SUPPORT$ ([GetDataModelSize(AccessPlayer.AccessLawsWithoutGovernmentOrMovementSupport)|v])"
- CHEAPEST_LAWS_HEADER_REFORM:0 "$LAWS_WITH_GVT_SUPPORT$ ([GetDataModelSize(ReformGovernment.GetPredictedLawsWithGovernmentOrMovementSupport)|v])"
- LAWS_WITHOUT_SUPPORT_REFORM:0 "$LAWS_WITHOUT_GVT_SUPPORT$ ([GetDataModelSize(ReformGovernment.GetPredictedLawsWithoutGovernmentOrMovementSupport)|v])"
+ CHEAPEST_LAWS_HEADER: "$LAWS_WITH_GVT_SUPPORT$ ([GetDataModelSize(AccessPlayer.AccessLawsWithGovernmentOrMovementSupport)|v])"
+ LAWS_WITHOUT_SUPPORT: "$LAWS_WITHOUT_GVT_SUPPORT$ ([GetDataModelSize(AccessPlayer.AccessLawsWithoutGovernmentOrMovementSupport)|v])"
+ CHEAPEST_LAWS_HEADER_REFORM: "$LAWS_WITH_GVT_SUPPORT$ ([GetDataModelSize(ReformGovernment.GetPredictedLawsWithGovernmentOrMovementSupport)|v])"
+ LAWS_WITHOUT_SUPPORT_REFORM: "$LAWS_WITHOUT_GVT_SUPPORT$ ([GetDataModelSize(ReformGovernment.GetPredictedLawsWithoutGovernmentOrMovementSupport)|v])"
  LAWS_HAS_CHANGED: "Зміняться!"
  CHEAPEST_LAWS_IG_HEADER: "#bold Закони, які [InterestGroup.GetName|l] хочуть прийняти#!"
 
  PREDICTED_LAWS_WITH_GVT_SUPPORT: "$LAWS_WITH_GVT_SUPPORT$ ($PREDICTION$)"
  PREDICTED_LAWS_WITHOUT_GVT_SUPPORT: "$LAWS_WITHOUT_GVT_SUPPORT$ ($PREDICTION$)"
 
- TOOLTIP_CHANGE_FROM_LAW: "#header Змінити [concept_law|l] в групі «[LawGroup.GetName]»#!\nВи маєте #variable [LawGroup.GetNumEnactable|+]#! доступних иншин в групі «[LawGroup.GetName]»" # [Concept('concept_law', '$concept_law_gen$')|l] [Law.GetName]
- TOOLTIP_CHANGE_FROM_LAW_CURRENTLY_ENACTING:0 "#header Змінити [concept_law|l] в групі [LawGroup.GetName]#!\nYou are currently enacting [GetPlayer.GetLawBeingEnacted.GetName] in [GetPlayer.GetLawBeingEnacted.GetGroup.GetName]\nIf you were not, you would have #variable [LawGroup.GetNumPotentialEnactable|+]#! available alternatives to [LawGroup.GetName] in [Law.GetName]"
- PREDICT_LEGITIMACY_TO_ENACT:0 "Once enacted, this Law would change the current Government's Legitimacy by #variable $VAL|=+0$#!"
- LAW_BEING_ENACTED:0 "Being Enacted"
+ TOOLTIP_CHANGE_FROM_LAW: "#header Змінити [concept_law|l] групи «[LawGroup.GetName]»#!\nВи маєте #variable [LawGroup.GetNumEnactable|+]#! доступних иншин групи «[LawGroup.GetName]»" # [Concept('concept_law', '$concept_law_gen$')|l] [Law.GetName]
+ TOOLTIP_CHANGE_FROM_LAW_CURRENTLY_ENACTING: "#header Змінити [Concept('concept_law', '$concept_law_acc$')|l] у групі «[LawGroup.GetName]»#!\nВи наразі ухвалюєте закон «[GetPlayer.GetLawBeingEnacted.GetName]» групи «[GetPlayer.GetLawBeingEnacted.GetGroup.GetName]»\nЯкщо це було б не так, то ви б мали #variable [LawGroup.GetNumPotentialEnactable|+]#! доступних иншин законові «[LawGroup.GetName]» групи «[Law.GetName]»"
+ PREDICT_LEGITIMACY_TO_ENACT: "Після ухвалення, цей закон змінить урядову законність на #variable $VAL|=+0$#!"
+ LAW_BEING_ENACTED: "Набуває чинности"
  ENACTING_TO_LAW: "Введення [Concept('concept_law', '$concept_law_gen$')|l] «[GetPlayer.GetLawBeingEnacted.GetName]»"
  LAW_NO_EFFECT: "#italic Жодних змінювачів#!\n"
  ENACT_LAW: "Змінити (Шанс #tooltippable #tooltip:[Law.GetTooltipTag],CHECKPOINT_SUCCESS_CHANCE_BREAKDOWN [Law.GetCheckpointSuccessChance|v0%]#!#! кожних [Law.GetCheckpointBaseDays|v] дн.)"
