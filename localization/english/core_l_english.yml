@@ -153,6 +153,6 @@
  FRONT_ADVANTAGE_SAME_COMBAT_POWER: "#header $NAME$#!\nОбидві сторони [Concept('concept_front', '$concept_front_gen$')|l] мають одинакову силу, через:"
  FRONT_ADVANTAGE_NO_ONE: "#header $NAME$#!\nНіхто не має переваги на [Concept('concept_front', '$concept_front_loc$')|l], через:"
  FRONT_ADVANTAGE_BREAKDOWN_UNITS: "$TAB$Ми маємо: @battalions!$US|v$ ($OUR_MANPOWER|vD$ @manpower!), вони мають: @battalions!$THEM|v$ ($THEIR_MANPOWER|vD$ @manpower!)"
- FRONT_ADVANTAGE_BREAKDOWN_CE: "$TAB$Середнє захист/оборона - ми маємо: $US|v0$, вони мають: $THEM|v0$"
+ FRONT_ADVANTAGE_BREAKDOWN_CE: "$TAB$Середній захист/оборона - ми маємо: $US|v0$, вони мають: $THEM|v0$"
  law_enactment_chance: "Шанс надання сили закону"
  OBSERVER: "[Concept('concept_observer_mode','$concept_observer$')]"
