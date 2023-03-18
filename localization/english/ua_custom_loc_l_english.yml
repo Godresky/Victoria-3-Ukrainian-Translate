@@ -1,26 +1,39 @@
 ﻿l_english:
+#################################
+######## ## ПЕРСОНАЖІ ## ########
+#################################
+## Займенники
 #чоловічий
- CustomLoc_UA_vin: "він"
- CustomLoc_UA_vin_noho: "нього"
- CustomLoc_UA_vin_joho: "його"
- CustomLoc_UA_vin_jomu: "йому"
- CustomLoc_UA_vin_nym: "ним"
- CustomLoc_UA_vin_nomu: "ньому"
+ CustomLoc_UA_vin: "Він"
+ CustomLoc_UA_vin_noho: "Нього"
+ CustomLoc_UA_vin_joho: "Його"
+ CustomLoc_UA_vin_jomu: "Йому"
+ CustomLoc_UA_vin_nym: "Ним"
+ CustomLoc_UA_vin_nomu: "Ньому"
 
 #жіночий
- CustomLoc_UA_vona: "вона"
- CustomLoc_UA_vona_neji: "неї"
- CustomLoc_UA_vona_jiji: "її"
- CustomLoc_UA_vona_jij: "їй"
- CustomLoc_UA_vona_neju: "нею"
- CustomLoc_UA_vona_nij: "ній"
+ CustomLoc_UA_vona: "Вона"
+ CustomLoc_UA_vona_neji: "Неї"
+ CustomLoc_UA_vona_jiji: "Її"
+ CustomLoc_UA_vona_jij: "Їй"
+ CustomLoc_UA_vona_neju: "Нею"
+ CustomLoc_UA_vona_nij: "Ній"
 
 #середній
- CustomLoc_UA_vony: "вони"
- CustomLoc_UA_vony_nykh: "них"
- CustomLoc_UA_vony_jikh: "їх"
- CustomLoc_UA_vony_jim: "їм"
- CustomLoc_UA_vony_nymy: "ними"
+ CustomLoc_UA_vony: "Вони"
+ CustomLoc_UA_vony_nykh: "Них"
+ CustomLoc_UA_vony_jikh: "Їх"
+ CustomLoc_UA_vony_jim: "Їм"
+ CustomLoc_UA_vony_nymy: "Ними"
+
+## Закінчення
+ CustomLoc_UA_vin_av: "ав"
+ CustomLoc_UA_vin_ov: "ов"
+ CustomLoc_UA_vona_ala: "aла"
+
+#################################
+######## ## ДЕРЖАВИ ## ########
+#################################
 
 #_gen - Родовий
 #_dat - Давальний

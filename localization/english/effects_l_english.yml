@@ -395,9 +395,9 @@
  SET_TARIFFS_EXPORT_PRIORITY_FIRST:0 "[COUNTRY.GetNameNoFlag] starts to collect #v Export Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
  SET_TARIFFS_EXPORT_PRIORITY_THIRD:0 "[COUNTRY.GetName] starts to collect #v Export Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
   
- ADD_RADICALS: "#variable $NUM|-=1%$#! $FILTER$ [Concept('concept_pop', '$concept_pops_gen$')|l] у місці $SUBJECT_NAME$ стануть більш [Concept('concept_radical', '$concept_radical_adj$ими')|l]"
- ADD_RADICALS_FIRST: "#variable $NUM|-=1%$#! $FILTER$ [Concept('concept_pop', '$concept_pops_gen$')|l] у місці $SUBJECT_NAME$ стануть більш [Concept('concept_radical', '$concept_radical_adj$ими')|l]"
- ADD_RADICALS_THIRD: "#variable $NUM|-=1%$#! $FILTER$ [Concept('concept_pop', '$concept_pops_gen$')|l] у місці $SUBJECT_NAME$ стануть більш [Concept('concept_radical', '$concept_radical_adj$ими')|l]"
+ ADD_RADICALS: "#variable $NUM|-=1%$#! $FILTER$ [Concept('concept_pop', '$concept_pops_gen$')] у місці $SUBJECT_NAME$ стануть більш [Concept('concept_radical', '$concept_radical_adj$ими')|l]"
+ ADD_RADICALS_FIRST: "#variable $NUM|-=1%$#! $FILTER$ [Concept('concept_pop', '$concept_pops_gen$')] у місці $SUBJECT_NAME$ стануть більш [Concept('concept_radical', '$concept_radical_adj$ими')|l]"
+ ADD_RADICALS_THIRD: "#variable $NUM|-=1%$#! $FILTER$ [Concept('concept_pop', '$concept_pops_gen$')] у місці $SUBJECT_NAME$ стануть більш [Concept('concept_radical', '$concept_radical_adj$ими')|l]"
  
  ADD_LOYALISTS:3 "#variable $NUM|+=1%$#! of$FILTER$ [Concept('concept_pop', '$concept_pops$')] in $SUBJECT_NAME$ become more [Concept('concept_loyalist', '$concept_loyal$')]"
  ADD_LOYALISTS_FIRST:3 "#variable $NUM|+=1%$#! of$FILTER$ [Concept('concept_pop', '$concept_pops$')] in $SUBJECT_NAME$ become more [Concept('concept_loyalist', '$concept_loyal$')]"

@@ -370,7 +370,7 @@
 
  POP_CULTURE_CHANGE_ENTRY_POSITIVE: "#v $CHANGE|=+$#! уподібнювання народу [Pop.GetName|l] у [Concept('concept_state', '$concept_state_loc$')|l] [Pop.GetState.GetName]"
  POP_CULTURE_CHANGE_ENTRY_NEGATIVE: "#v $CHANGE|=+$#! уподібнювання народу [Pop.GetName|l] до культури [Pop.GetAssimilatingCulture.GetName|l] у [Concept('concept_state', '$concept_state_loc$')|l] [Pop.GetState.GetName]"
- CULTURE_IN_COUNTRY_DESC: "\nКількість представників у [Concept('concept_country', '$concept_country_gen$')|l] [GetPlayer.GetName]: [Culture.GetPopulation(GetPlayer.Self)|Kv] [SelectLocalization(NotEqualTo_int32(Culture.GetPopulationChange(GetPlayer.Self),'(int32)0'),'CULTURE_POPULATION_CHANGE_IN_COUNTRY','')]\nЦе [Concept('concept_primary_cultures', '$concept_primary_culture$')|l] у [Concept('concept_country', '$concept_country_dat$')|l] [GetPlayer.GetName]: [Culture.IsPrimaryCultureInYesNo(GetPlayer.Self)]\n[concept_migration_target]: [Culture.GetMigrationTargetsDesc]\n[concept_turmoil] [Concept('concept_culture', '$concept_culture_gen$')|l] [Culture.GetName|l]:\n$TAB$#variable [GetPlayer.CalcCulturalTurmoil( Culture.Self )|-0%]#! у [Concept('concept_country', '$concept_country_dat$')|l] [GetPlayer.GetName]\n$TAB$#variable [Culture.GetTurmoil|-0%]#! у світі"
+ CULTURE_IN_COUNTRY_DESC: "\nКількість представників у [Concept('concept_country', '$concept_country_loc$')|l] [GetPlayer.GetName]: [Culture.GetPopulation(GetPlayer.Self)|Kv] [SelectLocalization(NotEqualTo_int32(Culture.GetPopulationChange(GetPlayer.Self),'(int32)0'),'CULTURE_POPULATION_CHANGE_IN_COUNTRY','')]\nЦе [Concept('concept_primary_cultures', '$concept_primary_culture$')|l] у [Concept('concept_country', '$concept_country_dat$')|l] [GetPlayer.GetName]: [Culture.IsPrimaryCultureInYesNo(GetPlayer.Self)]\n[concept_migration_target]: [Culture.GetMigrationTargetsDesc]\n[concept_turmoil] [Concept('concept_culture', '$concept_culture_gen$')|l] [Culture.GetName|l]:\n$TAB$#variable [GetPlayer.CalcCulturalTurmoil( Culture.Self )|-0%]#! у [Concept('concept_country', '$concept_country_dat$')|l] [GetPlayer.GetName]\n$TAB$#variable [Culture.GetTurmoil|-0%]#! у світі"
  CULTURE_POPULATION_CHANGE: "Щомісячна зміна кількості народу [Culture.GetName|l] у [Concept('concept_country','$concept_country_loc$')|l] [Country.GetName]: #v $CHANGE|=+$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
 
  POP_RELIGION_CHANGE_ENTRY_POSITIVE: "#v $CHANGE|=+$#! перехід народу [Pop.GetName|l] у [Concept('concept_state', '$concept_state_loc$')|l] [Pop.GetState.GetName]"
@@ -432,10 +432,10 @@
 
  GOVERNMENT_TRANSFER_OF_POWER_TOOLTIP: "#header [GovernmentType.GetTransferOfPowerName]#!\n[GovernmentType.GetTransferOfPowerDesc]"
 
- CUL_DISCRIMINATED_IN_COUNTRY: "Культура [CULTURE.GetName|l] утискається у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
- CUL_NOT_DISCRIMINATED_IN_COUNTRY: "Культура [CULTURE.GetName|l] не утискається у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
- CUL_DISCRIMINATED_NOT_IN_COUNTRY: "Культура [CULTURE.GetName|l] була б утиснена, але не присутня у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
- CUL_NOT_DISCRIMINATED_NOT_IN_COUNTRY: "Культура [CULTURE.GetName|l] не була б утиснена та не присутня у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
+ CUL_DISCRIMINATED_IN_COUNTRY: "[CULTURE.GetName] утискаються у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
+ CUL_NOT_DISCRIMINATED_IN_COUNTRY: "[CULTURE.GetName] не утискаються у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
+ CUL_DISCRIMINATED_NOT_IN_COUNTRY: "[CULTURE.GetName] були б утиснені, але вони не присутні у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
+ CUL_NOT_DISCRIMINATED_NOT_IN_COUNTRY: "[CULTURE.GetName] не були б утиснені, але й не присутні у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
  REL_DISCRIMINATED_IN_COUNTRY: "Релігія [RELIGION.GetName|l] утискається у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
  REL_NOT_DISCRIMINATED_IN_COUNTRY: "Релігія [RELIGION.GetName|l] не утискається у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
  REL_DISCRIMINATED_NOT_IN_COUNTRY: "Релігія [RELIGION.GetName|l] була б утиснена, але не присутня у [Concept('concept_country','$concept_country_loc$')|l] [COUNTRY.GetName]"
@@ -2197,10 +2197,10 @@
  PRODUCTION_AMOUNT_TOOLTIP:0 "Amount (Percentage of Local Market Production)"
 
  STATE_DEVASTATION: "[concept_devastation]\n$STATE_DEVASTATION_CONDENSED$"
- TOOLTIP_STATE_DEVASTATION:0 "#BOLD #V [concept_devastation]#!#!\nCurrent Devastation: #b [StateRegion.GetDevastationLevel|%R2]#!\nDaily Change: #b [StateRegion.CalcDevastationDailyChange|%-2]#!\n$TOOLTIP_DELIMITER$\n[StateRegion.GetDevastationEffects]"
+ TOOLTIP_STATE_DEVASTATION: "#BOLD #V [concept_devastation]#!#!\nПоточне спустошення: #b [StateRegion.GetDevastationLevel|%R2]#!\nЗміна щодня: #b [StateRegion.CalcDevastationDailyChange|%-2]#!\n$TOOLTIP_DELIMITER$\n[StateRegion.GetDevastationEffects]"
  STATE_TURMOIL:1 "[concept_turmoil]\n$STATE_TURMOIL_CONDENSED$"
  TOOLTIP_STATE_TURMOIL: "#BOLD #V [concept_turmoil]#!#!\n[concept_turmoil] через [Concept('concept_radical', '$concept_radical_adj$е')|l] [Concept('concept_pop', '$concept_population$')|l]: #b [State.CalcTurmoil|%2-]#!\n$TOOLTIP_DELIMITER$\n[State.GetTurmoilEffects]"
- STATE_TURMOIL_EFFECTS_MULT_DESC:1 "Effects of [concept_turmoil] multiplied by $MULT|%=-$ due to:\n#b $MODIFIER_NAME$:#!\n$DETAILS$"
+ STATE_TURMOIL_EFFECTS_MULT_DESC: "Заподії від [Concept('concept_turmoil', '$concept_turmoil_gen$')|l] множаться на $MULT|%=-$ через:\n#b $MODIFIER_NAME$:#!\n$DETAILS$"
  TOOLTIP_SPLIT_STATE: "#BOLD #V [concept_split_state]#!#!\n$TOOLTIP_DELIMITER$\n#title States in [State.GetStateRegion.GetName] ([concept_state_region])#!\n[State.GetStateRegion.GetStatesDesc]\n[concept_split_state_desc]"
  TOOLTIP_INCORPORATED_STATE: "#BOLD #V [concept_incorporated_state]#!"
  TOOLTIP_CAPITAL_STATE_HEADER: "(#header [concept_capital_state]#!)"
@@ -4230,13 +4230,13 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
 
  WAR_GOAL_WORTH:1 "#header [concept_war_goal]#!\nThis [concept_war_goal] costs #BOLD [WarGoal.GetWorth]#! War Score for [WarGoal.GetInitiator.GetName] to pursue. You can press [Concept('concept_war_goal', '$concept_war_goals$')] worth Your War Score minus Their War Score."
 
- WAR_START_TITLE:0 "War with #variable [COUNTRY.GetName] #!has broken out!"
- WAR_START_TITLE_NOPLAYER:0 "War between #variable $ATTACKER$ #! and #variable $DEFENDER$ #! has broken out!"
- WAR_START_DESC:0 "The #variable $PLAY_NAME$ #!play in #variable $WHERE$ #!has resulted in a war between #bold you #!and #bold $MAIN_ENEMY$#!."
- WAR_START_DESC_NOPLAYER:0 "The $PLAY_NAME$ play in $WHERE$ has resulted in a war between #bold $FIRST$ #! and #bold $SECOND$#!."
+ WAR_START_TITLE: "Війна з [Concept('concept_country','$concept_country_ins$')|l] #variable [COUNTRY.GetName]#! розпочалася!"
+ WAR_START_TITLE_NOPLAYER: "Війна між [Concept('concept_country','$concept_country_ins$')|l] #variable $ATTACKER$#! та #variable $DEFENDER$#! розпочалася!"
+ WAR_START_DESC: "Гра #variable «$PLAY_NAME$»#! у стр. реґіоні #variable $WHERE$#! призвела до війни між #bold вами#! та державою #bold $MAIN_ENEMY$#!."
+ WAR_START_DESC_NOPLAYER: "Гра «$PLAY_NAME$» у стр. реґіоні $WHERE$ призвела до війни між державами #bold $FIRST$#! та #bold $SECOND$#!."
 
- REGIONS_TITLE:0 "#title Regions#!"
- TOOLTIP_RADICALISM:0 "#header Radicalism#!\n$TOOLTIP_DELIMITER$\n[INTEREST_GROUP.GetActiveIncidents]\n"
+ REGIONS_TITLE: "#title Реґіони#!"
+ TOOLTIP_RADICALISM: "#header Радикалізм#!\n$TOOLTIP_DELIMITER$\n[INTEREST_GROUP.GetActiveIncidents]\n"
  NEXT_RADICALISM_INCIDENT:0 "Will cause Radicalism Incident in:\n#variable [INTEREST_GROUP.GetNextIncident]#! in #variable ~[INTEREST_GROUP.GetWeeksUntilNextIncident]#! weeks ([INTEREST_GROUP.GetRadicalism|%1] progress )"
  TOOLTIP_STATE_RADICALISM:0 "#header Radicalism#!\n$TOOLTIP_DELIMITER$\n[STATE.GetActiveRadicalismIncidents]\n"
  RADICALISM_IN_STATE:0 "#BOLD #V Radicalism#!#! in #BOLD #V $STATE$#!#!\n$TOOLTIP_DELIMITER$\n"
@@ -4496,9 +4496,9 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  notification_rank_changed_notification_desc: "Ваш новий ранґ - [SCOPE.sC('actor').GetRank|v|l]"
  notification_rank_changed_notification_tooltip: "$notification_rank_changed_notification_name$\n$notification_rank_changed_notification_desc$"
 
- notification_heir_born_notification_name:0 "Heir Born"
- notification_heir_born_notification_desc:0 "[SCOPE.GetRootScope.GetCharacter.GetFullName], [concept_heir] to the throne of [SCOPE.GetRootScope.GetCharacter.GetCountry.GetName] has been born"
- notification_heir_born_notification_tooltip:0 "$notification_heir_born_notification_name$\n$notification_heir_born_notification_desc$"
+ notification_heir_born_notification_name: "Народився спадкоємець"
+ notification_heir_born_notification_desc: "[SCOPE.GetRootScope.GetCharacter.GetFullName], [concept_heir|l] на трон [Concept('concept_country','$concept_country_gen$')|l] [SCOPE.GetRootScope.GetCharacter.GetCountry.GetName] народився"
+ notification_heir_born_notification_tooltip: "$notification_heir_born_notification_name$\n$notification_heir_born_notification_desc$"
 
  COMMANDER_COMBAT_UNIT_HEADER: "[CHARACTER.GetFullName]:"
 
@@ -5737,9 +5737,9 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  notification_diplo_play_abandon_side_notification_name:0 "[SCOPE.sC('actor').GetName] abandoned [SCOPE.sC('target').GetName]"
  notification_diplo_play_abandon_side_notification_desc:0 "[SCOPE.sC('actor').GetName] abandoned their support for [SCOPE.sC('target').GetName] in the [concept_diplomatic_play] against [SCOPE.sC('recipient').GetName]."
 
- notification_diplo_play_war_start_third_party_notification_tooltip:0 "#header $notification_diplo_play_war_start_third_party_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_war_start_third_party_notification_desc$"
- notification_diplo_play_war_start_third_party_notification_name:0 "War between [SCOPE.sC('actor').GetName] and [SCOPE.sC('target').GetName]"
- notification_diplo_play_war_start_third_party_notification_desc:0 "War has broken out between [SCOPE.sC('actor').GetName] and [SCOPE.sC('target').GetName]."
+ notification_diplo_play_war_start_third_party_notification_tooltip: "#header $notification_diplo_play_war_start_third_party_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_war_start_third_party_notification_desc$"
+ notification_diplo_play_war_start_third_party_notification_name: "Війна між [Concept('concept_country','$concept_countries_ins$')|l] [SCOPE.sC('actor').GetName] та [SCOPE.sC('target').GetName]"
+ notification_diplo_play_war_start_third_party_notification_desc: "Розпочалася війна між [Concept('concept_country','$concept_countries_ins$')|l] [SCOPE.sC('actor').GetName] та [SCOPE.sC('target').GetName]."
 
  notification_diplo_play_subject_released_notification_tooltip:0 "#header $notification_diplo_play_subject_released_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_subject_released_notification_desc$"
  notification_diplo_play_subject_released_notification_name:0 "[SCOPE.sC('target').GetName] breaks free"
@@ -5802,12 +5802,12 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  notification_interest_deactivated_desc: "Ми більше не зможемо брати участь у [Concept('concept_diplomatic_play', '$concept_diplomatic_plays_loc$')|l], вести дипломатію, створювати [Concept('concept_trade_route', '$concept_trade_routes_acc$')|l] з [Concept('concept_country', '$concept_countries_ins$')|l] у [Concept('concept_strategic_region', '$concept_strategic_region_loc$')|l] [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName]."
  
  notification_interest_activated_third_party_tooltip: "#header $notification_interest_activated_third_party_name$#!\n$TOOLTIP_DELIMITER$\n$notification_interest_activated_third_party_desc$"
- notification_interest_activated_third_party_name:1 "Diplomactic ties with [SCOPE.sCountry('actor').GetName]"
- notification_interest_activated_third_party_desc:1 "Due to [SCOPE.sCountry('actor').GetName] establishing an [concept_interest] in [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName], we can now conduct diplomacy with them."
+ notification_interest_activated_third_party_name: "Дипломатичні зв’язки з [Concept('concept_country', '$concept_country_ins$')|l] [SCOPE.sCountry('actor').GetName]"
+ notification_interest_activated_third_party_desc: "Завдяки тому, що [SCOPE.sCountry('actor').GetName] проявила [Concept('concept_interest', '$concept_interest_acc$')|l] у [Concept('concept_strategic_region', '$concept_strategic_region_short_loc$')|l] [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName], ми тепер зможемо вести дипломатію з ними."
 
  notification_interest_deactivated_third_party_tooltip: "#header $notification_interest_deactivated_third_party_name$#!\n$TOOLTIP_DELIMITER$\n$notification_interest_deactivated_third_party_desc$"
- notification_interest_deactivated_third_party_name:1 "Diplomatic ties with [SCOPE.sCountry('actor').GetName] lost"
- notification_interest_deactivated_third_party_desc:1 "Due to [SCOPE.sCountry('actor').GetName] losing their [concept_interest] in [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName], we are no longer able to conduct diplomacy with them."
+ notification_interest_deactivated_third_party_name: "Дипломатичні зв’язки з [Concept('concept_country', '$concept_country_ins$')|l] [SCOPE.sCountry('actor').GetName] втрачені"
+ notification_interest_deactivated_third_party_desc: "Через те, що [SCOPE.sCountry('actor').GetName] втратила свій [Concept('concept_interest', '$concept_interest_acc$')|l] у [Concept('concept_strategic_region', '$concept_strategic_region_short_loc$')|l] [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName], ми більше не зможемо вести дипломатію з ними."
 
  notification_colony_created_tooltip: "#header $notification_colony_created_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colony_created_desc$"
  notification_colony_created_name: "[SCOPE.sCountry('actor').GetName] осадила [Concept('concept_state','$concept_state_acc$')|l] [SCOPE.GetRootScope.GetState.GetStateRegion.GetName]"
@@ -6259,8 +6259,8 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  journal_entry_completed_notification_group:0 "Journal Entry Completed"
  native_uprising_notification_group:0 "Native Uprising"
  spreading_technology_notification_group:0 "Spreading Technology"
- heir_born_notification_group:0 "Heir Born"
- character_died_notification_group:0 "Character Died"
+ heir_born_notification_group: "Народився спадкоємець"
+ character_died_notification_group: "Персонаж помер"
  diplomatic_action_break_notification_group:0 "Diplomatic Action Break"
  diplomatic_proposal_break_notification_group:0 "Diplomatic Proposal Break"
  diplomatic_proposal_third_party_notification_group:0 "Diplomatic Proposal (Third Party)"
@@ -6351,10 +6351,10 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  PRODUCTION_METHOD_OPTIONS: "Ви маєте #bold #P [ProductionMethodGroup.GetNumAvailableOptions(Building.AccessSelf)]#!#! [SelectLocalization(GreaterThan_int32(ProductionMethodGroup.GetNumAvailableOptions(Building.AccessSelf), '(int32)1'),SelectLocalization(GreaterThan_int32(ProductionMethodGroup.GetNumAvailableOptions(Building.AccessSelf), '(int32)4'),'варіянтів','варіянти'),'варіянт')|l] для [Concept('concept_production_method','$concept_production_method_gen$')|l] «[ProductionMethodGroup.GetName]»"
  PRODUCTION_METHOD_OPTIONS_BULK: "Ви маєте #bold #P [ProductionMethodGroup.GetNumAvailableOptionsForBuildingType(ProductionMethodsPanelEntry.AccessBuildingType)]#!#! [SelectLocalization(GreaterThan_int32(ProductionMethodGroup.GetNumAvailableOptionsForBuildingType(ProductionMethodsPanelEntry.AccessBuildingType), '(int32)1'),SelectLocalization(GreaterThan_int32(ProductionMethodGroup.GetNumAvailableOptionsForBuildingType(ProductionMethodsPanelEntry.AccessBuildingType), '(int32)4'),'варіянтів','варіянти'),'варіянт')|l] для [Concept('concept_production_method','$concept_production_method_gen$')|l] «[ProductionMethodGroup.GetName]»"
 
- FRONT_DESC_LAND_FORMAT:0 "[FRONT.GetName]"
- PEACE_ACCEPTANCE_YES:0 "#bold #P +1000#!#!"
- PEACE_ACCEPTANCE_SCORE:0 "$VAL|=+$"
- WAR_SUPPORT:0 "[concept_war_support]"
+ FRONT_DESC_LAND_FORMAT: "[FRONT.GetName]"
+ PEACE_ACCEPTANCE_YES: "#bold #P +1000#!#!"
+ PEACE_ACCEPTANCE_SCORE: "$VAL|=+$"
+ WAR_SUPPORT: "[concept_war_support]"
  ACCEPTANCE: "Прийняття"
 
  INSTITUTION_NAME_AND_LEVEL: "[Institution.GetName] (Рівень [Institution.GetInvestmentLevel])"
@@ -6378,7 +6378,7 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  CONSTRUCTION_DURATION_PAUSED: "На павзі"
  CONSTRUCTION_CAMP:0 "Construction Camp"
  MOVE_UP: "#header Посунути вверх у [Concept('concept_construction_queue', '$concept_construction_queue_loc$')|l]#!\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty( GetDesc( ConstructionQueueElement.MoveUp ), '\n\n' )]#I Клацніть, щоб пересунути вгору по черзі#!\n#I ALT + Клац, щоб зробити першим в черзі#!"
- MOVE_DOWN:2 "#header Посунути вниз у [Concept('concept_construction_queue', '$concept_construction_queue_loc$')|l]#!\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty( GetDesc( ConstructionQueueElement.MoveDown ), '\n\n' )]#I Клацніть, щоб пересунути вниз по черзі#!\n#I ALT + Клац, щоб зробити останнім в черзі#!"
+ MOVE_DOWN: "#header Посунути вниз у [Concept('concept_construction_queue', '$concept_construction_queue_loc$')|l]#!\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty( GetDesc( ConstructionQueueElement.MoveDown ), '\n\n' )]#I Клацніть, щоб пересунути вниз по черзі#!\n#I ALT + Клац, щоб зробити останнім в черзі#!"
  CANCEL_CONSTRUCTION: "Скасувати будівництво"
 
  PLAYED_BY_PLAYER_DESC: "Керується гравцем #v $PLAYER$#!"
@@ -6407,9 +6407,9 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
 
  GENERALS_HEADER_COUNT: "[Concept('concept_general', '$concept_generals$')] ([GetDataModelSize( Country.AccessGenerals )|v0])"
  MOBILIZED_BATTALIONS_HEADER_COUNT: "Призвані @battalions![Country.GetBattalionsFullyMobilized|v0]/[Country.GetBattalionsWithGeneralRaw]"
- MOBILIZED_BATTALIONS_HEADER_TOOLTIP:0 "[Country.GetFullyMobilizedBattalionsPercentageRaw|%0v] of all [Concept('concept_battalion','$concept_battalions$')] in [Country.GetName] are [Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized$')]"
- MOBILIZED_BATTALIONS_WITH_GENERAL_COUNT:0 "With [Concept('concept_general', '$concept_generals$')]: [Country.GetBattalionsFullyMobilized|v0]/[Country.GetBattalionsMobilizable]"
- ADMIRALS_HEADER_COUNT:0 "[Concept('concept_admiral', '$concept_admirals$')] ([GetDataModelSize( Country.AccessAdmirals )|v0])"
+ MOBILIZED_BATTALIONS_HEADER_TOOLTIP: "[Country.GetFullyMobilizedBattalionsPercentageRaw|%0v] усіх [Concept('concept_battalion','$concept_battalions_gen$')|l] у [Concept('concept_country', '$concept_country_loc$')|l] [Country.GetName] є [Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized_adj$ими')|l]"
+ MOBILIZED_BATTALIONS_WITH_GENERAL_COUNT: "З [Concept('concept_general', '$concept_generals_ins$')|l]: [Country.GetBattalionsFullyMobilized|v0]/[Country.GetBattalionsMobilizable]"
+ ADMIRALS_HEADER_COUNT: "[Concept('concept_admiral', '$concept_admirals$')] ([GetDataModelSize( Country.AccessAdmirals )|v0])"
  ACTIVE_FLOTILLAS_HEADER_COUNT: "Активні [Country.GetWarshipsFielded|v0]/[Country.GetWarshipsCapacity] @flotillas!"
  TOTAL_FLOTILLAS: "Всього флотилій"
 

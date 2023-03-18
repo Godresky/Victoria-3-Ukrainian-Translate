@@ -806,7 +806,7 @@
  concept_decrees_gen: "Постанов"
  concept_decrees_acc: "Постанови"
  concept_decrees_dat: "Постановам"
- concept_decree_desc: "$concept_decrees$ - це розпорядження [Concept('concept_ruler','$concept_ruler_acc$')] [Concept('concept_country','$concept_country_gen$')], спрямовані на здійснення змін у підконтрольному [Concept('concept_state','$concept_state_loc$')]. $concept_decrees$ витрачають [Concept('concept_authority','$concept_authority_acc$')] стільки часу, скільки вони діють. Після видання постанови, вона даватиме реґіону певні наддатки, доки її не буде скасовано."
+ concept_decree_desc: "$concept_decrees$ - це розпорядження [Concept('concept_ruler','$concept_ruler_acc$')|l] [Concept('concept_country','$concept_country_gen$')|l], спрямовані на здійснення змін у підконтрольному [Concept('concept_state','$concept_state_loc$')|l]. $concept_decrees$ витрачають [Concept('concept_authority','$concept_authority_acc$')|l] стільки часу, скільки вони діють. Після видання постанови, вона даватиме реґіону певні наддатки, доки її не буде скасовано."
 
  concept_pop_needs: "Потреби населення"
  concept_pop_needs_acc: "Потреби населення"
@@ -1227,6 +1227,7 @@
  concept_literacy_desc_added:0 "[GetInstitutionType('institution_schools').GetName]"
 
  concept_turmoil: "Сум‘яття"
+ concept_turmoil_gen: "Сум‘яття"
  concept_turmoil_ins: "Сум‘яттям"
  concept_turmoil_desc:2 "[Concept('concept_state', '$concept_states$')] and [Concept('concept_culture', '$concept_cultures$')] with $concept_turmoil$ contain [Concept('concept_radical', '$concept_radicals$')] that are unhappy with their current circumstances. The amount of $concept_turmoil$ is equal to the fraction of the $concept_state$'s or $concept_culture$'s [concept_workforce] that are $concept_radical$.\n\n$concept_turmoil$ can inflict a number of negative local status effects on a $concept_state$ if it gets high enough. [concept_cultural_turmoil] can impact a whole [concept_country] in very disruptive ways."
 

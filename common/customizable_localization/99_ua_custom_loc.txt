@@ -20,17 +20,18 @@
 ###################################################
 ###################################################
 
-#################################
-######## ## ПЕРСОНАЖІ ## ########
-#################################
 
-## Займенники
+## Pronouns, 
+
 UA_vin_vona = {		
 	type = character
 	log_loc_errors = yes
 	text = {	
 		localization_key = CustomLoc_UA_vin
-		trigger = { is_female = no }
+		trigger = {
+			#is_female = no
+			always = yes
+		}
 	}	
 	text = {	
 		localization_key = CustomLoc_UA_vona
@@ -102,34 +103,3 @@ UA_nomu_nij = {
 		trigger = { is_female = yes }
 	}	
 }
-UA_оv_ala = {		
-	type = character
-	log_loc_errors = yes
-	text = {	
-		localization_key = CustomLoc_UA_vin_ov
-		trigger = { is_female = no }
-	}	
-	text = {	
-		localization_key = CustomLoc_UA_vona_ala
-		trigger = { is_female = yes }
-	}	
-}
-
-UA_av_ala = {		
-	type = character
-	log_loc_errors = yes
-	text = {	
-		localization_key = CustomLoc_UA_vin_av
-		trigger = { is_female = no }
-	}	
-	text = {	
-		localization_key = CustomLoc_UA_vona_ala
-		trigger = { is_female = yes }
-	}	
-}
-
-## Закінчення
-
-#################################
-######## ## Держави ## ########
-#################################
