@@ -10,7 +10,6 @@
  CustomLoc_UA_vin_jomu: "Йому"
  CustomLoc_UA_vin_nym: "Ним"
  CustomLoc_UA_vin_nomu: "Ньому"
-
 #жіночий
  CustomLoc_UA_vona: "Вона"
  CustomLoc_UA_vona_neji: "Неї"
@@ -18,14 +17,12 @@
  CustomLoc_UA_vona_jij: "Їй"
  CustomLoc_UA_vona_neju: "Нею"
  CustomLoc_UA_vona_nij: "Ній"
-
 #середній
- CustomLoc_UA_vony: "Вони"
- CustomLoc_UA_vony_nykh: "Них"
- CustomLoc_UA_vony_jikh: "Їх"
- CustomLoc_UA_vony_jim: "Їм"
- CustomLoc_UA_vony_nymy: "Ними"
-
+#  CustomLoc_UA_vony: "Вони"
+#  CustomLoc_UA_vony_nykh: "Них"
+#  CustomLoc_UA_vony_jikh: "Їх"
+#  CustomLoc_UA_vony_jim: "Їм"
+#  CustomLoc_UA_vony_nymy: "Ними"
 ## Закінчення
  CustomLoc_UA_vin_av: "ав"
  CustomLoc_UA_vin_ov: "ов"
