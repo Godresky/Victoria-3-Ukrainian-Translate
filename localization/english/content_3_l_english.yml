@@ -229,21 +229,21 @@
 
 ##################### Warlord China
   
- notification_warlord_china_explosion_point_add_name:0 "[SCOPE.GetRootScope.GetCountry.GetName] Destabilizes."
- notification_warlord_china_explosion_point_add_desc:0 "Our mishandling of [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting] affairs has delegitimized our rule, causing the country to inch ever closer to total collapse."
- notification_warlord_china_explosion_point_add_tooltip:1 "#header $notification_warlord_china_explosion_point_add_name$#!\n$TOOLTIP_DELIMITER$\n$notification_warlord_china_explosion_point_add_desc$"
+ notification_warlord_china_explosion_point_add_name: "[SCOPE.GetRootScope.GetCountry.GetName] - розхитування."
+ notification_warlord_china_explosion_point_add_desc: "Наше неуміле управління справами країни зробило менш законною нашу владу, а це призвело до того, що держава ще більше наблизилась до повного колапсу." #[SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting|l]ими 
+ notification_warlord_china_explosion_point_add_tooltip: "#header $notification_warlord_china_explosion_point_add_name$#!\n$TOOLTIP_DELIMITER$\n$notification_warlord_china_explosion_point_add_desc$"
 
- notification_warlord_china_explosion_point_remove_name:0 "[SCOPE.GetRootScope.GetCountry.GetName] Stabilizes."
- notification_warlord_china_explosion_point_remove_desc:0 "Our skillful steering of the country has legitimized our rule in the eyes of the people, steadily pulling the country back from the brink of collapse."
- notification_warlord_china_explosion_point_remove_tooltip:1 "#header $notification_warlord_china_explosion_point_remove_name$#!\n$TOOLTIP_DELIMITER$\n$notification_warlord_china_explosion_point_remove_desc$"
+ notification_warlord_china_explosion_point_remove_name: "[SCOPE.GetRootScope.GetCountry.GetName] - стабілізування."
+ notification_warlord_china_explosion_point_remove_desc: "Наше вміле управління державою зробило законним наше правління в очах народу, неухильно відводячи країну від колапсу."
+ notification_warlord_china_explosion_point_remove_tooltip: "#header $notification_warlord_china_explosion_point_remove_name$#!\n$TOOLTIP_DELIMITER$\n$notification_warlord_china_explosion_point_remove_desc$"
 
 ##################### Boxer Rebellion
 
  je_boxer_rebellion:0 "The Boxer Rebellion"
  je_boxer_rebellion_reason:1 "The humiliating loss of Chinese lands to foreign "barbarians" have resulted in the formation of numerous martial arts-inspired militias intent on purging the country of any foreign influence.\n\nFailure to see the militias vision through could have dramatic consequences for [ROOT.GetCountry.GetName]."
 
- dyn_c_empire_of_china:0 "Empire of China"
- dyn_c_empire_of_china_adj:0 "Chinese"
+ dyn_c_empire_of_china: "Хінська імперія"
+ dyn_c_empire_of_china_adj: "Хінськ"
 
  boxer_rebellion_events.1.t:0 "The Yihetuan Movement"
  boxer_rebellion_events.1.d:1 "Furious with the growing foreign presence in [ROOT.GetCountry.GetName], [SCOPE.sCulture('han_culture').GetName] subjects are organizing into anti-foreign militias, bent on driving the "barbarians" back into the sea. Many now urge [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] to back the movement, lest the their zeal is turned against [SCOPE.sCulture('manchu_culture').GetName] rule."

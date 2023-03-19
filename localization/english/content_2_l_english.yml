@@ -280,15 +280,15 @@
  monarchist_stall_success:0 "Tin Crown Celebrated"
  monarchist_stall_fail:0 "Tin Crown Mocked"
 
- trains.1.t:0 "The Great Train Smash"
- trains.1.d:0 "An enterprising entertainer has arranged for two aging locomotives to run into each other at a local fair. The resulting collision may pose a danger to the crowd, although that hasn't stopped [SCOPE.sCharacter('train_crash_attendee').GetFullName], leader of the [SCOPE.gsInterestGroup('train_crash_attendee_ig').GetName], from declaring that [SCOPE.sCharacter('train_crash_attendee').GetSheHe] will have a front-row seat at the event."
- trains.1.f:0 ""For crying out loud, why? Why do you want to see a crash so badly?"\n\n"Honestly? I believe that somewhere in the makeup of every normal person — myself included — there lurks the suppressed desire to smash things up.""
- trains.1.a:0 "Everyone, enjoy the spectacle!"
- trains.1.b:0 "Forbid [SCOPE.sCharacter('train_crash_attendee').GetFullName] from risking [SCOPE.sCharacter('train_crash_attendee').GetHerHis] life attending this!"
+ trains.1.t: "Велика залізнична троща"
+ trains.1.d: "Заповзятливий шоумен влаштував зіткнення двох старих паротягів на місцевому ярмарку. Зіткнення може становити небезпеку для натовпу, хоча це не зупинило [Concept('concept_character','$concept_character_gen$')|l] [SCOPE.sCharacter('train_crash_attendee').GetFullName], провідника [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l] [SCOPE.gsInterestGroup('train_crash_attendee_ig').GetName], від заяви, що [SCOPE.sCharacter('train_crash_attendee').GetCustom('UA_vin_vona')|l] буде сидіти в першому ряду на цьому заході."
+ trains.1.f: "-Заради Бога, навіщо? Чому ви так сильно хочете побачити трощу?\n\n-Чесно? Я вірю, що десь у глибині душі кожної нормальної людини, так само як і в мені, ховається пригнічене бажання все зруйнувати."
+ trains.1.a: "Насолоджуйтеся видовищем!"
+ trains.1.b: "Заборонити [SCOPE.sCharacter('train_crash_attendee').GetCustom('UA_jomu_jij')|l] ризикувати життям, відвідуючи захід!"
 
- a_smashing_appearance:0 "A Smashing Appearance"
- the_desire_to_smash_things_up:0 "Things Smashed Up Well"
- the_desire_to_smash_things_up_has_been_denied:0 "Denied Attendance to the Smashing Event"
+ a_smashing_appearance: "Приголомшлива вистава"
+ the_desire_to_smash_things_up: "Троща пройшла успішно"
+ the_desire_to_smash_things_up_has_been_denied: "Заборонено у відвідуванні заходу залізничної трощі"
 
  economy_laws.1.t:0 "Growth Exceeds Projections"
  economy_laws.1.d:0 "The central economic office has declared that our efforts to bring economic matters under government control has resulted in surprisingly positive growth."

@@ -1295,10 +1295,12 @@
 
  concept_dependents: "Утриманці"
  concept_dependents_gen: "Утриманців"
+ concept_dependents_ins: "Утриманцями"
  concept_dependent: "Утриманець"
  concept_dependents_desc:2 "The part of a [concept_pop] not considered part of the [concept_workforce]. They represent the families of the [concept_working_adults] and normally constitute the majority of the population. $concept_dependents$ usually generate [concept_dependent_income] that is typically smaller than the [Concept('concept_building_wage','$concept_building_wages$')] collected by $concept_working_adults$, but they also have lower [concept_pop_needs]. While they are able to support [Concept('concept_interest_group','$concept_interest_groups$')] their [concept_political_strength] typically count for less. They are only granted [Concept('concept_votes','$concept_voting_rights$')] under very specific [Concept('concept_law', '$concept_laws$')].\n\nEnacting different $concept_laws$ or maintaining certain [Concept('concept_institution', '$concept_institutions$')] may convert $concept_dependents$ into $concept_working_adults$ over time, increase their [concept_political_strength], or supplement their $concept_dependent_income$."
 
- concept_disenfranchised:0 "Disenfranchised"
+ concept_disenfranchised: "Безправні"
+ concept_disenfranchised_adj: "Безправн"
  concept_disenfranchised_desc:1 "A $concept_disenfranchised$ [concept_pop] is prohibited from participating in the [Concept('concept_country','$concept_country_possessive$')] politics. As a result they cannot support any [Concept('concept_interest_group','$concept_interest_groups$')]. The most common reason for a $concept_pop$ to be $concept_disenfranchised$ is [concept_discrimination]."
 
  concept_input_mult: "Надходження товарів"
@@ -2042,13 +2044,13 @@
  concept_dead_gen: "Мертвих"
  concept_dead_ins: "Мертвими"
  concept_dead_adj: "Мертв"
- concept_dead_desc: "[concept_casualties], які закінчуються смертю в результаті [Concept('concept_battle','$concept_battle_gen$')|l] або [Concept('concept_attrition','$concept_attrition_gen$')|l]."
+ concept_dead_desc: "[concept_casualties], які закінчуються смертю внаслідок [Concept('concept_battle','$concept_battle_gen$')|l] або [Concept('concept_attrition','$concept_attrition_gen$')|l]."
 
  concept_wounded: "Поранені"
  concept_wounded_gen: "Поранених"
  concept_wounded_ins: "Пораненими"
  concept_wounded_adj: "Поранен"
- concept_wounded_desc:2 "[concept_casualties] that are merely $concept_wounded$ in [concept_battle] or due to [concept_attrition]. Some $concept_wounded$ $concept_casualties$ recover and return to active service after some time, while others end up as [concept_dependents] of other [Concept('concept_pop','$concept_pops$')] in your [concept_country]."
+ concept_wounded_desc: "[concept_casualties], які є лише пораненнями внаслідок [Concept('concept_battle','$concept_battle_gen$')|l] або [Concept('concept_attrition','$concept_attrition_gen$')|l]. Деякі поранені одужують і через певний час повертаються до служби, коли ж інші стають [Concept('concept_dependents','$concept_dependents_ins$')|l] інакших [Concept('concept_pop','$concept_people_gen$')] у вашій [Concept('concept_country','$concept_country_loc$')|l]."
 
  concept_attrition: "Виснаження"
  concept_attrition_gen: "Виснаження"
@@ -2066,7 +2068,7 @@
  concept_heir: "Спадкоємець"
  concept_heir_gen: "Спадкоємця"
  concept_heir_ins: "Спадкоємцем"
- concept_heir_desc:2 "Спадкоємець [Concept('concept_country','$concept_country_gen$')|l] - це [concept_character|l], який перебирає на себе [Concept('concept_character_role','$concept_character_role_acc$')|l] [Concept('concept_ruler','$concept_ruler_gen$')|l] після смерти чинного."
+ concept_heir_desc: "Спадкоємець [Concept('concept_country','$concept_country_gen$')|l] - це [concept_character|l], який перебирає на себе [Concept('concept_character_role','$concept_character_role_acc$')|l] [Concept('concept_ruler','$concept_ruler_gen$')|l] після смерти чинного."
 
  concept_character_role: "Роля"
  concept_character_role_gen: "Ролі"
