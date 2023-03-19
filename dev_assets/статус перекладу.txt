@@ -12,10 +12,10 @@ battle_conditions_l_english.yml | 26/45 | ❌
 buildings_l_english.yml | 220/220 | ❌
 canals_l_english.yml | 3/3 | ✅
 commander_ranks_l_english.yml | 34/34 | ❌
-concepts_l_english.yml | 1872/2297 | ❌
+concepts_l_english.yml | 1877/2297 | ❌
 content_1_l_english.yml | 431/1733 | ❌
-content_2_l_english.yml | 88/544 | ❌
-content_3_l_english.yml | 156/439 | ❌
+content_2_l_english.yml | 96/544 | ❌
+content_3_l_english.yml | 164/439 | ❌
 content_4_l_english.yml | 166/560 | ❌
 content_101_l_english.yml | 255/950 | ❌
 content_102_l_english.yml | 14/14 | ✅ 
