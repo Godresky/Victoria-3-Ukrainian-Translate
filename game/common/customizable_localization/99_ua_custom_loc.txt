@@ -1,13 +1,7 @@
 ﻿### UKRANIAN CUSTOM LOCALISATION
 ### By Godresky
 
-
-###################################
-## PRONOUNS #######################
-###################################
-
-
-## Pronouns, 
+## Pronouns
 
 # UA_vin_vona    | він    | вона
 # UA_noho_neji   | нього  | неї
@@ -16,42 +10,9 @@
 # UA_nym_neju    | ним    | нею
 # UA_nomu_nij    | ньому  | ній
 
-
-###################################################
-###################################################
-
 #################################
 ######## ## ПЕРСОНАЖІ ## ########
 #################################
-
-UA_оv_ala = {		
-	type = character
-	log_loc_errors = yes
-	text = {	
-		localization_key = CustomLoc_UA_vin_ov
-		trigger = { is_female = no }
-	}	
-	text = {	
-		localization_key = CustomLoc_UA_vona_ala
-		trigger = { is_female = yes }
-	}	
-}
-
-UA_nomu_nij_2 = {		
-	type = character
-	log_loc_errors = yes
-	text = {	
-		localization_key = CustomLoc_UA_vin_nomu
-		trigger = {
-			#is_female = no 
-			always = yes 
-		}
-	}	
-	text = {	
-		localization_key = CustomLoc_UA_vona_nij
-		trigger = { is_female = yes }
-	}	
-}
 
 ## Займенники
 UA_vin_vona = {		
@@ -133,7 +94,5 @@ UA_nomu_nij = {
 }
 
 ## Закінчення
-
-#################################
-######## ## Держави ## ########
-#################################
+#[character.IsFemale,'$CustomLoc_UA_vona_ala$','$CustomLoc_UA_vin_av$')|l]
+#[character.IsFemale,'$CustomLoc_UA_vona_ala$','$CustomLoc_UA_vin_ov$')|l]

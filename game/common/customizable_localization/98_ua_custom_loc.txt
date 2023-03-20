@@ -1,0 +1,3753 @@
+### UKRANIAN CUSTOM LOCALISATION
+### By Godresky
+
+########################################################
+######## ## ЗАКІНЧЕННЯ РОЗДІЛЕНИХ РЕҐІОНІВ ## ##########
+########################################################
+UA_split_state_END = {
+	type = state
+	log_loc_errors = no
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_IONIAN_ISLANDS }
+		}
+		localization_key = CustomLoc_UA_split_state_i
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BALEARES }
+		}
+		localization_key = CustomLoc_UA_split_state_i
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SOUTH_ATLANTIC_ISLANDS }
+		}
+		localization_key = CustomLoc_UA_split_state_i
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CANARY_ISLANDS }
+		}
+		localization_key = CustomLoc_UA_split_state_i
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_AZORES }
+		}
+		localization_key = CustomLoc_UA_split_state_i
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BERMUDA }
+		}
+		localization_key = CustomLoc_UA_split_state_i
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BAHAMAS }
+		}
+		localization_key = CustomLoc_UA_split_state_i
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MOLUCCAS }
+		}
+		localization_key = CustomLoc_UA_split_state_i
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SUNDA_ISLANDS }
+		}
+		localization_key = CustomLoc_UA_split_state_i
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_VISAYAS }
+		}
+		localization_key = CustomLoc_UA_split_state_i
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SOLOMON_ISLANDS }
+		}
+		localization_key = CustomLoc_UA_split_state_i
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WEST_AEGEAN_ISLANDS }
+		}
+		localization_key = CustomLoc_UA_split_state_i
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EAST_AEGEAN_ISLANDS }
+		}
+		localization_key = CustomLoc_UA_split_state_i
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MASCARENES }
+		}
+		localization_key = CustomLoc_UA_split_state_i
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_RYUKYU_ISLANDS }
+		}
+		localization_key = CustomLoc_UA_split_state_i
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NORTHWEST_TERRITORIES }
+		}
+		localization_key = CustomLoc_UA_split_state_i
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_HAITI }
+		}
+		localization_key = CustomLoc_UA_split_state_i
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TAHITI }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NGARI }
+		}
+		localization_key = CustomLoc_UA_split_state_i
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_HIMALAYAS }
+		}
+		localization_key = CustomLoc_UA_split_state_i
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_IDAHO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_COLORADO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_OHIO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ONTARIO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SANTO_DOMINGO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TOGO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LAZIO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NEW_MEXICO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GUERRERO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_DURANGO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MEXICO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_JALISCO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_RIO_DE_JANEIRO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CHACO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SANTIAGO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_INNER_MOROCCO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TOLEDO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_PUERTO_RICO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WEST_BORNEO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EAST_BORNEO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NORTH_BORNEO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MINDANAO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CONGO_ORIENTALE }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BAS_CONGO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CONGO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ALEPPO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SEOUL }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_PYONGYANG }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_YANGHO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_HOKKAIDO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KANTO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ABRUZZO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BAJIO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ABU_DHABI }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_RIO_GRANDE }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GUAVIARE }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SANTA_FE }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CAPE_VERDE }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GELRE }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SKOPIA }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KAZEMBE }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SIERRA_LEONE }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SEMIRECHE }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TRANS_BAIKAL }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_RIO_GRANDE_DO_NORTE }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_POTOSI }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TRIPOLI }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_DELHI }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ZAMBEZI }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WADDAI }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LINDI }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KASAI }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_FIJI }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_PERNAMBUCO }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_PEGU }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BORNU }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CHUGOKU }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SHIKOKU }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GUIZHOU }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SHAOZHOU }
+		}
+		localization_key = CustomLoc_UA_split_state_e
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_DISTRICT_OF_COLUMBIA }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_FRANCHE_COMTE }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NORTH_ISLAND }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SOUTH_ISLAND }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KENTUCKY }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TENNESSEE }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NEW_JERSEY }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WEST_COUNTRY }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_RIFT_VALLEY }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_UBANGI_SHARI }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_IVORY_COAST }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_IRAKAJEMI }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GUANGXI }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SHANXI }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_JIANGXI }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ACRE }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_PIAUI }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_JETISY }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MATO_GROSSO }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SAO_PAULO }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ALENTEJO }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TIMBUKTU }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_VANUATU }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NAURU }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KASTAMONU }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TOHOKU }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CHUBU }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GANSU }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SUZHOU }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_JIANGSU }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TRANSVAAL }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BOUGAINVILLE }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_HAIL }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TIANSHAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SICHUAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_YUNNAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_HINGGAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ALXA }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_XIAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_FUJIAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_HENAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_HUNAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TYROL }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SOUTH_TYROL }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_URUGUAY }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ULIASTAI }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ALTO_PARAGUAY }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BAJO_PARAGUAY }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_JUJUY }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SINAI }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BOMBAY }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CHIANG_MAI }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KANSAI }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_QINGHAI }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ZHILI }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SOUTHERN_ANHUI }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NORTHERN_ANHUI }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WESTERN_HUBEI }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EASTERN_HUBEI }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TRANSDANUBIA }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MINSK }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WASHINGTON }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_OREGON }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WYOMING }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KANSAS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ARKANSAS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WISCONSIN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NEW_YORK }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MICHIGAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MARYLAND }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_DELAWARE }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ILLINOIS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MASSACHUSETTS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NEW_HAMPSHIRE }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CONNECTICUT }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_RHODE_ISLAND }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_VERMONT }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MAINE }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TEXAS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NUNAVUT }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SASKATCHEWAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_QUEBEC }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NEWFOUNDLAND }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_HONDURAS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ECUADOR }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GOTLAND }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GOTALAND }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NORRLAND }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SVEALAND }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_PELOPONNESE }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ARAGON }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NEW_SOUTH_WALES }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_QUEENSLAND }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CEYLON }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_OMAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_YEMEN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_HEDJAZ }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TUNISIA }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_DEIR_EZ_ZOR }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GABON }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_YUCATAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ZACATECAS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BOLIVAR }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_AMAZONAS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_RIO_GRANDE_DO_SUL }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MINAS_GERAIS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MARANHAO }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BUENOS_AIRES }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CORRIENTES }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TUCUMAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SANTA_CRUZ }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LA_PAZ }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LOS_RIOS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MARRAKECH }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_FEZ }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_AL_RIF }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TLEMCEN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ALGIERS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_UPPER_EGYPT }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LOWER_EGYPT }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MATRUH }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MIDDLE_EGYPT }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KORDOFAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_DARFUR }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BLUE_NILE }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NEW_BRUNSWICK }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LOURENCO_MARQUES }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MOCAMBIQUE }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LANCASHIRE }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WALES }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_YORKSHIRE }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_HIGHLANDS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MIDLANDS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LOWLANDS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ULSTER }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MUNSTER }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LEINSTER }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LANGUEDOC }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_PROVENCE }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ARMAGNAC }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LIMOUSIN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ORLEANS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ILE_DE_FRANCE }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BADAJOZ }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CRETE }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BALUCHISTAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SINDH }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_PUNJAB }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NAGPUR }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MYSORE }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TRAVANCORE }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MADRAS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KASHMIR }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_HYDERABAD }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GUJARAT }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BIHAR }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ASSAM }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_AWADH }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TENASSERIM }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KACHIN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SHAN_STATES }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CELEBES }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ACEH }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LUZON }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SOUTH_MADAGASCAR }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NORTH_MADAGASCAR }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GONDER }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SOMALILAND }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NAMAQUALAND }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_HEREROLAND }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CHAD }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ZANZIBAR }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_HAUSALAND }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BENIN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_YORUBA_STATES }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_OUTER_HAUSALAND }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NIGER }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EAST_HAUSALAND }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NORTH_CAMEROON }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SOUTH_CAMEROON }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WINDWARD_COAST }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SENEGAL }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ZULULAND }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_VRYSTAAT }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KANAK }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NEJD }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LEBANON }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BAGHDAD }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MOSUL }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LARISTAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SISTAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KHORASAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KHUZESTAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_FARS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ISFAHAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MAZANDARAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TABRIZ }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LURISTAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_AZERBAIJAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GREATER_CAUCASUS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_HUDAVENDIGAR }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_AYDIN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CYPRUS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TRABZON }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WESTERN_AFGHANISTAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_DIYARBAKIR }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ERZURUM }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KARS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EASTERN_AFGHANISTAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BANGKOK }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MEKONG }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TONKIN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ANNAM }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LAOS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BUSAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SARIWON }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KYUSHU }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SHANDONG }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BEIJING }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CHONGQING }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GUANGDONG }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ZHEJIANG }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NANJING }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ARKHANGELSK }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TARTARIA }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_UZBEKIA }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TAJIKISTAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_URALSK }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_AKMOLINSK }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_OKHOTSK }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_YAKUTSK }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_IRKUTSK }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TOMSK }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TOBOLSK }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_UPPER_YENISEYSK }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_URAL }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GALICH }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_DAGESTAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ROSTOV }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CRIMEA }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LUHANSK }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KURSK }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NOVGOROD }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CHERSON }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BRYANSK }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SMOLENSK }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BEKES }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_DELVIDEK }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_POSEN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ANHALT }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NORTH_RHINE }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BRANDENBURG }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SCHLESWIG_HOLSTEIN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WURTTEMBERG }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BADEN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_HANNOVER }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_HESSE }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BRUNSWICK }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_PIEDMONT }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SAKHALIN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BREST }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KIEV }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MECKLENBURG }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BANAT }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_PASHTUNISTAN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CHIAPAS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SAN_SALVADOR }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CONNAUGHT }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_HAWAIIAN_SEAMOUNT_CHAIN }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_HORN_OF_AFRICA }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ALAND }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GOIAS }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_VERACRUZ }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SHENGJING }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			exists = s:STATE_KHOVSGOL
+			this = { state_region = s:STATE_KHOVSGOL }
+		}
+		localization_key = CustomLoc_UA_split_state_yu
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ALASKA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MONTANA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NORTH_DAKOTA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SOUTH_DAKOTA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NEBRASKA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_OKLAHOMA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LOUISIANA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_IOWA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MINNESOTA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_INDIANA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ALABAMA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_FLORIDA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GEORGIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_VIRGINIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WEST_VIRGINIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_PENNSYLVANIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NORTH_CAROLINA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BRITISH_COLUMBIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ALBERTA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MANITOBA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GUATEMALA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NICARAGUA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_COSTA_RICA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_PANAMA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CUBA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SCANIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SICILY }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ALBANIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BOSNIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NAVARRA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SOUTHERN_TRANSYLVANIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_HAWAIIAN_ISLANDS }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NORTHERN_TRANSYLVANIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MOLDAVIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WALLACHIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GALICIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ASTURIAS }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CASTILE }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CATALONIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_VICTORIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TASMANIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SOUTH_AUSTRALIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WESTERN_AUSTRALIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NORTHERN_TERRITORY }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WEST_MICRONESIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EAST_MICRONESIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WEST_JAVA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EAST_JAVA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CENTRAL_JAVA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_URGA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GUINEA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GHANA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_DAHOMEY }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BOTSWANA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ZAMBIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CAMBODIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SAVOY }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LIBERIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EMILIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TUSCANY }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ROMAGNA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NEVADA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ARIZONA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CALIFORNIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BAJA_CALIFORNIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SONORA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CHIHUAHUA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GUAYANA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ZULIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MIRANDA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ANTIOQUIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CUNDINAMARCA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CAUCA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_PASTAZA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CAJAMARCA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LIMA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ICA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_AREQUIPA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_PARANA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TONGA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BAHIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_PARA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_PATAGONIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_RIO_NEGRO }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LA_PAMPA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ARAUCANIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ICELAND }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GREENLAND }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EAST_SAHARA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WEST_SAHARA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SAHARA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CONSTANTINE }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LIBYAN_DESERT }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LIBYA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EGYPTIAN_DESERT }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_DONGOLA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NORTH_ANGOLA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SOUTH_ANGOLA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EAST_ANGOLA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ZAMBEZIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EASTERN_CAPE }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CAPE_COLONY }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NORTHERN_CAPE }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_HOME_COUNTIES }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EAST_ANGLIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_RHONE }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LOIRE }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_PICARDY }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ALSACE_LORRAINE }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NORMANDY }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BURGUNDY }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_AQUITAINE }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ELBE }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BEIRA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ESTREMADURA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MADEIRA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GRANADA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ANDALUSIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_VALENCIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WALLONIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_FLANDERS }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_HOLLAND }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_FRIESLAND }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_JUTLAND }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ZEALAND }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WESTERN_NORWAY }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NORTHERN_NORWAY }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EASTERN_NORWAY }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EAST_SWITZERLAND }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WEST_SWITZERLAND }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WEST_INDIES }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_JAMAICA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ORISSA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_RAJPUTANA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CIRCARS }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CENTRAL_INDIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SOUTH_BENGAL }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NORTH_BENGAL }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NORTH_SUMATRA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SOUTH_SUMATRA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WESTERN_NEW_GUINEA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MALAYA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ATTICA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MACEDONIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_THESSALIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WESTERN_THRACE }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NORTHERN_THRACE }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BULGARIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_DOBRUDJA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_OROMIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_AMHARA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ERITREA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KENYA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TANGANYIKA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MAURITANIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_INNER_MAURITANIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NIGER_DELTA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NIGERIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KATANGA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EQUATEUR }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_UGANDA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EQUATORIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_VOLTA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GAMBIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EASTERN_NEW_GUINEA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TRANSJORDAN }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_PALESTINE }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SYRIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BASRA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ARMENIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MONTENEGRO }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NORTHERN_SERBIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SOUTHERN_SERBIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EASTERN_THRACE }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KONYA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ANKARA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NAKHON_RATCHASIMA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LHASA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_DZUNGARIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SOUTHERN_MANCHURIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NORTHERN_MANCHURIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NINGXIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_FORMOSA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SOUTHERN_FINLAND }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_OSTROBOTHNIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WEST_KARELIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ESTONIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LATVIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LITHUANIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CHUKOTKA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_NENETSIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EAST_KARELIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_OUTER_MANCHURIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KHIVA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KIRGHIZIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TURKMENIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KAMCHATKA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SAMARA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MOSCOW }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_INGRIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BESSARABIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ORSHA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CAMPANIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CALABRIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_APULIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WEST_GALICIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EAST_GALICIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EAST_SLOVAKIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WEST_SLOVAKIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_DALMATIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CROATIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SLAVONIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ISTRIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_VENETIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LOMBARDY }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BOHEMIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MORAVIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CENTRAL_HUNGARY }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_STYRIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_AUSTRIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SLOVENIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WESTPHALIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_POMERANIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WEST_PRUSSIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EAST_PRUSSIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SILESIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BAVARIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_FRANCONIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SAXONY }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GREATER_POLAND }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_LESSER_POLAND }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SARDINIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TARAPACA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ANTOFAGASTA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MAZOVIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MALTA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_UMBRIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CORSICA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_UTAH }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SOUTH_CAROLINA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ADANA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TUVA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BURMA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CEARA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_PARAIBA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SANTA_CATARINA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_SINALOA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_OAXACA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			exists = s:STATE_KHOVSGOL
+			this = { state_region = s:STATE_EASTERN_TRANSYLVANIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_INDIAN_OCEAN_TERRITORY }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MISSOURI }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_MISSISSIPPI }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_EASTERN_MALI }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_WESTERN_MALI }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_POITOU }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_BRITTANY }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_CHAMPAGNE }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_AUVERGNE }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_OB }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KAZAN }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_PERM }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_TVER }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_KUBAN }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_ASTRAKHAN }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_RHINELAND }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_VOLHYNIA }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_GALAPAGOS_RISE }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		trigger = {
+			this = { state_region = s:STATE_YUKON_TERRITORY }
+		}
+		localization_key = CustomLoc_UA_split_state_a
+	}
+	text = {
+		localization_key = CustomLoc_UA_split_state_END_DEFAULT # .
+	}
+}
