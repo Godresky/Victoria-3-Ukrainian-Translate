@@ -1515,6 +1515,7 @@
  concept_good: "Товар"
  concept_good_gen: "Товару"
  concept_good_acc: "Товар"
+ concept_good_ins: "Товаром"
  concept_goods: "Товари"
  concept_goods_acc: "Товари"
  concept_goods_gen: "Товарів"
@@ -1693,6 +1694,7 @@
  concept_innovation_desc_added:0 "[GetBuildingType('building_university').GetName]"
 
  concept_technology_spread: "Поширення технологій"
+ concept_technology_spread_gen: "Поширення технологій"
  concept_technology_spread_acc: "Поширення технологій"
  concept_technology_spread_dat: "Поширенню технології"
  concept_technology_spread_desc:2 "One [concept_technology] that you have not yet acquired from each category ($PRODUCTION_NO_CONCEPT$, $MILITARY$, and $SOCIETY$) is always spreading to you from [Concept('concept_country','$concept_countries$')] that have acquired them. The progress you get in spreading $concept_technologies$ is randomized each week around a base value depending on your $concept_country$'s [concept_literacy]. If no $concept_country$ has invented a certain $concept_technology$ yet it cannot spread to you, so you are more likely to acquire early [Concept('concept_technology_era','$concept_technology_era_short$')] $concept_technologies$ from $concept_technology_spread$ than later ones."
@@ -1708,6 +1710,7 @@
  concept_technology_acc: "Технологію"
  concept_technologies: "Технології"
  concept_technologies_gen: "Технологій"
+ concept_technologies_acc: "Технології"
  concept_technology_desc:3 "$concept_technology$ covers all innovation in the fields of $PRODUCTION_NO_CONCEPT$, $MILITARY$, and $SOCIETY$. $concept_technologies$ have nation-wide effects, which can range from changing the [Concept('concept_country','$concept_country_possessive$')] operating parameters via [Concept('concept_modifier','$concept_modifiers$')] to unlocking new [Concept('concept_production_method','$concept_production_methods$')], [Concept('concept_building','$concept_buildings$')], [Concept('concept_law','$concept_laws$')], [Concept('concept_decree','$concept_decrees$')], and [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')].\n\nProgress is made towards new $concept_technologies$ through [concept_innovation], which is primarily produced by [SelectLocalization(GetPlayer.IsValid,'concept_technology_desc_added','University')] $concept_buildings$. In addition to progress from $concept_innovation$, $concept_technologies$ may propagate from $concept_countries$ who already have them to those who do not via [concept_technology_spread].\n\nThe amount of progress required in a $concept_technology$ to acquire it depends on its [Concept('concept_technology_era','$concept_technology_era_short$')]. $concept_technology_era_ahead_of_time_penalty_desc$"
  concept_technology_desc_added:0 " [GetBuildingType('building_university').GetName]"
 

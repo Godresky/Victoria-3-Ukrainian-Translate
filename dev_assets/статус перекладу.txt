@@ -12,7 +12,7 @@ battle_conditions_l_english.yml | 26/45 | ❌
 buildings_l_english.yml | 220/220 | ❌
 canals_l_english.yml | 3/3 | ✅
 commander_ranks_l_english.yml | 34/34 | ❌
-concepts_l_english.yml | 1877/2297 | ❌
+concepts_l_english.yml | 1880/2302 | ❌
 content_1_l_english.yml | 461/1733 | ❌
 content_2_l_english.yml | 96/544 | ❌
 content_3_l_english.yml | 163/439 | ❌
@@ -21,7 +21,7 @@ content_101_l_english.yml | 255/950 | ❌
 content_102_l_english.yml | 14/14 | ✅ 
 content_103_l_english.yml | 8/161 | ❌
 content_104_l_english.yml | 350/1405 | ❌
-content_105_l_english.yml | 288/1268 | ❌
+content_105_l_english.yml | 290/1268 | ❌
 content_106_l_english.yml | 10/43 | ❌
 core_l_english.yml | 146/158 | ❌
 countries_l_english.yml | 1196/1196 | ❌
@@ -47,7 +47,7 @@ hub_names_l_english.yml | 2998/2998 | ❌
 input_settings_l_english.yml | 51/51 | ❌
 institutions_l_english.yml | 15/15 | ❌
 interface_labels_l_english.yml | 310/310 | ❌
-interfaces_l_english.yml | 4470/7028 | ❌
+interfaces_l_english.yml | 4527/7028 | ❌
 inventions_l_english.yml | 624/624 | ❌
 journal_entries_l_english.yml | 3/29 | ❌
 labels_l_english.yml | 1/13 | ❌

@@ -109,7 +109,7 @@
  trade_route_events.4.b:0 "Their ambitions should first be to make steel, not use it."
 
  trade_route_events.5.t: "Полотно ідей"
- trade_route_events.5.d: "$ig_intelligentsia$ важко знайти дешевий папір, який потрібний для увічнення своїх думок."
+ trade_route_events.5.d: "Розумоті важко знайти дешевий папір, який потрібний для увічнення своїх думок."
  trade_route_events.5.f: "«Єдина перевага цього жалюгідного стану речей, — сказав професор, роздратовано зітхнувши, — полягає в тому, що коли хтось каже, що ідея не варта паперу, на якому вона надрукована, він принаймні має на увазі це!»"
  trade_route_events.5.a: "Ми захистимо сторінки завтрашньої клясики!"
  trade_route_events.5.b: "Навчіться стислости."
@@ -282,9 +282,9 @@
  successful_suffragist:0 "Successful Suffragist"
 
  ideology_patriarchal_suffrage: "Сучасний патріярхат"
- ideology_patriarchal_suffrage_desc:0 "#lore This group believes men should have political authority and that women should obey their fathers and husbands, but have accepted women's right to work and vote.#!"
+ ideology_patriarchal_suffrage_desc: "#lore Ця група вважає, що чоловіки повинні мати політичну владу, а жінки повинні підкорятися своїм батькам та чоловікам, але визнає право жінок працювати й голосувати.#!"
  ideology_feminist_ig: "Фемінізм"
- ideology_feminist_ig_desc:0 "#lore This group holds that women are equal to men and strives for maintaining their rights as citizens.#!"
+ ideology_feminist_ig_desc: "#lore Ця група вважає, що жінки рівні з чоловіками, і бореться за збереження їхніх прав як громадян.#!"
 
   # Secession Events
  secession_events.1.t:0 "Secessionist Manifesto"
