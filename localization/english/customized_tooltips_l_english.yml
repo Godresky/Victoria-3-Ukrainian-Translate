@@ -79,7 +79,7 @@
  ATTITUDE_RELATIONS_INFAMY_OR_TENSION:0 "[SelectLocalization( Country.IsColonizable, 'COUNTRY_TENSION', 'ATTITUDE_RELATIONS_INFAMY' )]"
  ATTITUDE_RELATIONS_INFAMY:2 "[concept_attitude]: #tooltippable #tooltip:COUNTRY_ATTITUDE_TOOLTIP [Country.GetAttitudeTowards(GetPlayer).GetName]#!#! (#tooltippable #tooltip:[Country.GetTooltipTag],COUNTRY_ATTITUDE_SCORE_TOOLTIP [Country.GetAttitudeTowards(GetPlayer.Self).CalcScore|+0]#!#!)\n[concept_relations]: #tooltippable #tooltip:COUNTRY_RELATIONS_TOOLTIP [Country.GetRelationsWithDesc( GetPlayer )|+]#!#! (#BOLD #tooltippable #tooltip:COUNTRY_RELATIONS_TOOLTIP [Country.GetRelationsWith( GetPlayer )|+]#!#!#!)\n[concept_infamy]: #tooltippable #tooltip:COUNTRY_INFAMY_TOOLTIP [Country.GetInfamyLabel|-]#!#! (#BOLD #tooltippable #tooltip:COUNTRY_INFAMY_TOOLTIP [Country.GetInfamy|-1]#!#!#!)"
  COUNTRY_TENSION:0 "[concept_tension]: #tooltippable #tooltip:COUNTRY_TENSION_TOOLTIP [Country.GetTensionWithDesc(GetPlayer)]#!#! (#tooltippable #tooltip:COUNTRY_TENSION_TOOLTIP [Country.GetTensionWith(GetPlayer)|+]#!#!)"
- COUNTRY_IS_MOBILIZED_IMPL: "[Concept('concept_mobilize_general', 'Призиває генералів')|l] ([Country.GetMobilizationRatio|%0v])"
+ COUNTRY_IS_MOBILIZED_IMPL: "[Concept('concept_mobilize_general', 'збирає генералів')|l] ([Country.GetMobilizationRatio|%0v])"
  COUNTRY_IS_DRAFTING_IMPL: "[Concept('concept_conscript_battalion', 'Набирає до війська')|l] ([Country.GetConscriptionRatio|%0v])"
  COUNTRY_IS_MOBILIZED: "[Country.GetName] - $COUNTRY_IS_MOBILIZED_IMPL$."
  COUNTRY_IS_DRAFTING: "[Country.GetName] - $COUNTRY_IS_DRAFTING_IMPL$."

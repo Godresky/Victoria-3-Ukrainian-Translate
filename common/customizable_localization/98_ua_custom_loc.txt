@@ -107,19 +107,19 @@ UA_split_state_END = {
 		trigger = {
 			this = { state_region = s:STATE_HAITI }
 		}
-		localization_key = CustomLoc_UA_split_state_i
+		localization_key = CustomLoc_UA_split_state_yu
 	}
 	text = {
 		trigger = {
 			this = { state_region = s:STATE_TAHITI }
 		}
-		localization_key = CustomLoc_UA_split_state_e
+		localization_key = CustomLoc_UA_split_state_yu
 	}
 	text = {
 		trigger = {
 			this = { state_region = s:STATE_NGARI }
 		}
-		localization_key = CustomLoc_UA_split_state_i
+		localization_key = CustomLoc_UA_split_state_yu
 	}
 	text = {
 		trigger = {
@@ -131,31 +131,31 @@ UA_split_state_END = {
 		trigger = {
 			this = { state_region = s:STATE_IDAHO }
 		}
-		localization_key = CustomLoc_UA_split_state_e
+		localization_key = CustomLoc_UA_split_state_yu
 	}
 	text = {
 		trigger = {
 			this = { state_region = s:STATE_COLORADO }
 		}
-		localization_key = CustomLoc_UA_split_state_e
+		localization_key = CustomLoc_UA_split_state_yu
 	}
 	text = {
 		trigger = {
 			this = { state_region = s:STATE_OHIO }
 		}
-		localization_key = CustomLoc_UA_split_state_e
+		localization_key = CustomLoc_UA_split_state_yu
 	}
 	text = {
 		trigger = {
 			this = { state_region = s:STATE_ONTARIO }
 		}
-		localization_key = CustomLoc_UA_split_state_e
+		localization_key = CustomLoc_UA_split_state_a
 	}
 	text = {
 		trigger = {
 			this = { state_region = s:STATE_SANTO_DOMINGO }
 		}
-		localization_key = CustomLoc_UA_split_state_e
+		localization_key = CustomLoc_UA_split_state_a
 	}
 	text = {
 		trigger = {
@@ -3748,6 +3748,6 @@ UA_split_state_END = {
 		localization_key = CustomLoc_UA_split_state_a
 	}
 	text = {
-		localization_key = CustomLoc_UA_split_state_END_DEFAULT # .
+		localization_key = CustomLoc_UA_split_state_default
 	}
 }

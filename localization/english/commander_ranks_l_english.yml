@@ -12,7 +12,7 @@
  
  commander_rank_2: "Командир 2-го звання"
  commander_rank_2_general: "Генерал-майор"
- commander_rank_2_admiral: "Контр-адмірал"
+ commander_rank_2_admiral: "Контрадмірал"
  commander_rank_2_fallback: "$commander_rank_2_general$ / $commander_rank_2_admiral$?"
  
  commander_rank_3: "Командир 3-го звання"
@@ -27,7 +27,7 @@
  
  commander_rank_5: "Командир 5-го звання"
  commander_rank_5_general: "Фельдмаршал"
- commander_rank_5_admiral: "Ґранд-адмірал"
+ commander_rank_5_admiral: "Ґрандадмірал"
  commander_rank_5_fallback: "$commander_rank_5_general$ / $commander_rank_5_admiral$?"
  
  commander_rank_ruler: "Головнокомандувач"

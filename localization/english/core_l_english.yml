@@ -48,7 +48,8 @@
  RELIGION_STATE_TOOLTIP: "Люди з регілією [RELIGION.GetName|l] у [Concept('concept_state', '$concept_state_loc$')|l] #variable [STATE.GetName]#!\nНаселення: #variable [STATE.GetPopulationForReligion(RELIGION.Self)|*1]#!"
  MILITARY_THEATER_DEBUG_TOOLTIP:0 "#variable ([THEATER.GetID]) [THEATER.GetName]#! (#variable [THEATER.GetOwner.GetName]#!) - adjacent Theaters:"
  MILITARY_THEATER_DEBUG_ENTRY_TOOLTIP:0 "#variable - ([THEATER.GetID]) [THEATER.GetName]#! (#variable [THEATER.GetOwner.GetName]#!)"
- SPLIT_STATE_FORMAT: "$OWNER$. $REGION$"
+ #SPLIT_STATE_FORMAT: "#tooltippable_name $OWNER$[State.GetCustom('UA_split_state_END')]#! $REGION$"
+ SPLIT_STATE_FORMAT: "#tooltippable_name $OWNER$.#! $REGION$"
  SET_GAME_SPEED: "Швидкість гри повинна бути від $MIN_SPEED$ до $MAX_SPEED$ (було поставлено $SET_SPEED$)"
 
  EMPTY_KEY: ""

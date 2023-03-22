@@ -344,6 +344,7 @@
  concept_conscript_battalion: "Призваний курень"
  concept_conscript_battalions: "Призвані курені"
  concept_conscript_battalions_gen: "Призваних куренів"
+ concept_conscript_battalions_acc: "Призвані курені"
  concept_conscript_battalion_short: "Призваний"
  concept_conscript_battalions_short: "Призвані"
  concept_conscript_battalion_drafting: "Призва до війська"
@@ -1331,6 +1332,7 @@
  concept_political_movement_radicalism_desc:2 "The $concept_political_movement_radicalism_short$ of a [concept_political_movement] is based on its number of [Concept('concept_radical','$concept_radicals$')] among its supporting [Concept('concept_pop','$concept_pops$')] and the [concept_clout] of supporting [Concept('concept_interest_group','$concept_interest_groups$')] whose [concept_approval] is [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_ANGRY'))] or worse. A highly $concept_political_movement_radical$ $concept_political_movement$ is less interested in solving issues via mundane politics, and will be able to start a [concept_revolution] sooner."
 
  concept_approval: "Схвалення"
+ concept_approval_acc: "Схвалення"
  concept_approval_disapproval: "Несхвалення"
  concept_approval_indifferent: "Байдужість"
  concept_approval_desc:1 "An [Concept('concept_interest_group','$concept_interest_group_possessive$')] $concept_approval$ depends on two main factors: how much of their [concept_political_strength] comes from [Concept('concept_radical','$concept_radicals$')] compared to [Concept('concept_loyalist','$concept_loyalists$')], and how well the [Concept('concept_country','$concept_country_possessive$')] current [Concept('concept_law','$concept_laws$')] match with the Interest Group's [Concept('concept_ideology','$concept_ideologies$')]. In addition, if a new $concept_law$ is currently being [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')], $concept_approval$ will be affected by a larger temporary adjustment which will linger while [Concept('concept_decay','$concept_decaying$')] for up to #v [GetDefine('NPolitics','CHANGED_LAW_APPROVAL_MONTHS')|0] months#! after it has passed.\n\nAn $concept_interest_group$'s $concept_approval$ impacts which [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] they activate. [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_ANGRY'))] $concept_interest_groups$ contribute to the [Concept('concept_political_movement_radicalism','$concept_political_movement_radicalism_short$')] of [Concept('concept_political_movement','$concept_political_movements$')], while $concept_interest_groups$ that are at least [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_HAPPY'))] will refrain from joining $concept_political_movements_short$ in the first place."
@@ -1640,6 +1642,7 @@
  concept_religion_desc:1 "All [Concept('concept_pop', '$concept_pops$')] have a $concept_religion$, which can only change through [concept_conversion]. Their $concept_religion$ determines whether they are [Concept('concept_discrimination','$concept_discriminated_against$')] in their [concept_country] or not."
 
  concept_accepted_religion: "Прийнята релігія"
+ concept_accepted_religion_acc: "Прийняту релігія"
  concept_accepted_religions: "Прийняті релігії"
  concept_accepted_religion_short: "Прийнята"
  concept_accepted_religion_short_adj: "Прийнят"
@@ -1945,11 +1948,11 @@
  concept_assimilate: "Уподібнювати"
  concept_assimilation_desc:3 "Foreign [Concept('concept_pop','$concept_pops$')] whose [concept_culture] is [Concept('concept_accepted_culture','$concept_accepted_culture_short$')] in the [concept_country] they live, and who do not live in one of their [Concept('concept_homeland','$concept_homelands$')], may $concept_assimilate$ into one of the $concept_country$'s [concept_primary_cultures]."
 
- concept_conversion: "Перехід"
- concept_conversion_gen: "Переходу"
- concept_converting: "Перехід"
- concept_convert:0 "Convert"
- concept_conversion_desc:2 "[Concept('concept_pop','$concept_pops$')] whose [concept_religion] is [Concept('concept_discrimination','$concept_discriminated_against$')] in the [concept_country] they live may instead $concept_convert$ to an [concept_accepted_religion]."
+ concept_conversion: "Навертання"
+ concept_conversion_gen: "Навертання"
+ concept_converting: "Навертання"
+ concept_convert: "Навертати"
+ concept_conversion_desc: "[Concept('concept_pop','$concept_pops$')], чия [concept_religion|l] [Concept('concept_discrimination','утискається')|l] у [Concept('concept_country','$concept_country_loc$')|l], в якій вони живуть, натомість можуть навернути себе на [Concept('concept_accepted_religion','$concept_accepted_religion_acc$')|l]."
 
  concept_life_experience: "Життєвий досвід"
  concept_life_experience_acc: "Життєвий досвід"
@@ -2002,6 +2005,7 @@
  concept_character: "Персонаж"
  concept_character_gen: "Персонажа"
  concept_character_dat: "Персонажу"
+ concept_character_dat_alt: "Персонажові"
  concept_character_ins: "Персонажем"
  concept_characters: "Персонажі"
  concept_characters_gen: "Персонажів"

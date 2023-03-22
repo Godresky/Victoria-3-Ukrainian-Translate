@@ -24,8 +24,12 @@
 #  CustomLoc_UA_vony_jim: "Їм"
 #  CustomLoc_UA_vony_nymy: "Ними"
 ## Закінчення
+#чоловічий
+ CustomLoc_UA_vin_uy: "ий"
  CustomLoc_UA_vin_av: "ав"
  CustomLoc_UA_vin_ov: "ов"
+#жіночий
+ CustomLoc_UA_vona_a: "а"
  CustomLoc_UA_vona_ala: "aла"
 
 ########################################################
@@ -35,6 +39,7 @@
  CustomLoc_UA_split_state_a: "а"
  CustomLoc_UA_split_state_e: "е"
  CustomLoc_UA_split_state_i: "і"
+ CustomLoc_UA_split_state_default: "."
 
 #_gen - Родовий
 #_dat - Давальний

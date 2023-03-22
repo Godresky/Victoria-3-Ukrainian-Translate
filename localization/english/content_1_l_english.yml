@@ -1445,8 +1445,8 @@
  loyal_religious_serfs:0 "Loyalty through Faith"
  less_radical_religious_serfs:0 "Cleansed of Impure Thoughts"
 
- generals.1.t:0 "Due a Promotion"
- generals.1.d:0 "The [SCOPE.gsInterestGroup('low_rank_general_ig').GetName] demand the promotion of [SCOPE.sCharacter('low_rank_general').GetRankName] [SCOPE.sCharacter('low_rank_general').GetFullName], touting [SCOPE.sCharacter('low_rank_general').GetHerHis] history of loyal and effective service."
+ generals.1.t: "Завдяки просуванню"
+ generals.1.d: "[SCOPE.gsInterestGroup('low_rank_general_ig').GetName] вимагає просування [SCOPE.sCharacter('low_rank_general').GetRankName] [SCOPE.sCharacter('low_rank_general').GetFullName], розповідаючи про [SCOPE.sCharacter('low_rank_general').GetCustom('UA_joho_jiji')|l] історію прихильного та ефективного служіння." #адаптувати ранґ
  generals.1.f:1 "So many medals adorned [SCOPE.sCharacter('low_rank_general').GetHerHis] jacket that one could scarcely see the fabric beneath, but it was not yet enough. Chest puffed out with pride, the General smiled as [SCOPE.sCharacter('low_rank_general').GetSheHe] imagined the look on [SCOPE.sCharacter('high_rank_general').GetLastName]'s face when the [SCOPE.sCharacter('high_rank_general').GetRankName] learned of [SCOPE.sCharacter('low_rank_general').GetHerHis] imminent ascension; their rivalry was legendary among the officers.\n\nAt last [SCOPE.sCharacter('low_rank_general').GetSheHe] would have [SCOPE.sCharacter('low_rank_general').GetHerHis] due."
  generals.1.a:0 "[SCOPE.sCharacter('low_rank_general').GetFullName] has earned it."
  generals.1.b:0 "The [SCOPE.gsInterestGroup('low_rank_general_ig').GetName] will not force our hand."
