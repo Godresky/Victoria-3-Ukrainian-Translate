@@ -26,7 +26,7 @@
  
 Корисне:
 [list]
-[*]Підтримується версія гри: [b]1.2.4[/b]
+[*]Підтримується версія гри: [b]1.2.7[/b]
 [*][url=https://github.com/Godresky/Victoria-3-Ukrainian-Translate]Посилання на ґітгаб[/url]
 [*][url=https://trello.com/b/uVKkSOop/%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%B4-%D0%B2%D1%96%D0%BA%D1%82%D0%BE%D1%80%D1%96%D1%97-3]Посилання на трелло[/url]
 [*][url=https://send.monobank.ua/jar/7H5RNWs4kw]Сказати "дякую" розробникам[/url]

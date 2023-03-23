@@ -708,6 +708,8 @@
  concept_arable_land_desc:1 "The amount of land in a [concept_state] that can be used for cultivating crops or raising cattle. Unlike [Concept('concept_building','$concept_buildings$')] that require certain [Concept('concept_resource_potential','$concept_resource_potentials$')] to be constructed, $concept_arable_land$ must be shared between the $concept_building$ types that require it.\n\nThe amount of $concept_arable_land$ that stands unused by other $concept_buildings$ may be used for [Concept('concept_subsistence_building','$concept_subsistence_buildings$')], letting [Concept('concept_pop','$concept_pops$')] eke out a meager living even if not gainfully employed."
 
  concept_state_region: "Управничий реґіон"
+ concept_state_region_gen: "Управничого реґіону"
+ concept_state_region_acc: "Управничий реґіон"
  concept_state_region_loc: "Управничому реґіоні"
  concept_state_regions: "Управничі реґіони"
  concept_state_regions_gen: "Управничих реґіонів"
