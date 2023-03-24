@@ -270,14 +270,14 @@
 
  modifier_cyclone_relief:0 "Cyclone Relief"
 
- historical_events.1.t:0 "First Flight"
- historical_events.1.d:0 "The first heavier-than-air flight has been achieved! This technology will pave the way for the future of aviation."
- historical_events.1.f:0 ""Never before have we commanded such mastery of the skies. With these bold new developments, the sky is the limit!""
- historical_events.1.a:0 "Look, I'm a bird!"
+ historical_events.1.t: "Перший політ"
+ historical_events.1.d: "Перший політ важчого за повітря апарата було здійснено! Ця технологія проторує дорогу у майбутнє авіяції."
+ historical_events.1.f: "«Ніколи раніше ми не володіли такою силою в небі. З цими сміливими новими розробками, обмежень не існує!»"
+ historical_events.1.a: "Поглянь, я наче птах!"
 
- notification_first_flight_name:0 "First Flight"
- notification_first_flight_desc:0 "The first heavier-than-air flight has taken place."
- notification_first_flight_tooltip:0 "#header $notification_first_flight_name$#!\n$TOOLTIP_DELIMITER$\n$notification_first_flight_desc$"
+ notification_first_flight_name: "Перший політ"
+ notification_first_flight_desc: "Перший політ важчого за повітря апарата було здійснено!"
+ notification_first_flight_tooltip: "#header $notification_first_flight_name$#!\n$TOOLTIP_DELIMITER$\n$notification_first_flight_desc$"
 
  warlord_china_events.100.t: "Хіна руйнується"
  warlord_china_events.100.d:0 "The fall of the Qing dynasty has ended China's long standing period of imperial rule and ushered in a new age of warlordism."
@@ -290,15 +290,15 @@
  warlord_china_events.110.a:0 "The people should know."
  warlord_china_events.110.b:0 "Best to cover this up."
 
- notification_ig_leader_steps_down_name:0 "Leader of the [SCOPE.gsInterestGroup('stepping_down_leader_ig').GetName] steps down."
- notification_ig_leader_steps_down_desc:0 "[SCOPE.sCharacter('stepping_down_leader').GetFullName], the leader of the [SCOPE.gsInterestGroup('stepping_down_leader_ig').GetName], has stepped down [SCOPE.sCharacter('stepping_down_leader').GetCustom('stepping_down_reason')]"
- notification_ig_leader_steps_down_tooltip:0 "#header $notification_ig_leader_steps_down_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_leader_steps_down_desc$"
+ notification_ig_leader_steps_down_name: "Провідник [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l]  [SCOPE.gsInterestGroup('stepping_down_leader_ig').GetName] пішов у відставку"
+ notification_ig_leader_steps_down_desc: "[SCOPE.sCharacter('stepping_down_leader').GetFullName], провідник [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l] [SCOPE.gsInterestGroup('stepping_down_leader_ig').GetName], пішов у відставку [SCOPE.sCharacter('stepping_down_leader').GetCustom('stepping_down_reason')|l]"
+ notification_ig_leader_steps_down_tooltip: "#header $notification_ig_leader_steps_down_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_leader_steps_down_desc$"
 
- custom_loc_personal_reasons:0 "due to personal reasons."
- custom_loc_health_reasons:0 "due to waning health."
- custom_loc_scandal:0 "due to a scandal."
- custom_loc_incompetence:0 "due to incompetence."
- custom_loc_family:0 "to spend more time with family."
+ custom_loc_personal_reasons: "через особисті причини."
+ custom_loc_health_reasons: "через погане здоров’я."
+ custom_loc_scandal: "через скандал."
+ custom_loc_incompetence: "через некомпетентність."
+ custom_loc_family: ", бо хоче більше проводити часу з сім’єю."
 
  new_ig_leader_custom_tooltip:0 "Find a new leader."
 
@@ -511,11 +511,11 @@
  banned_duels_tt: "Дуелі будуть заборонені у вашій державі."
 
  character_events.4.t: "Побожний скандал"
- character_events.4.d: "Було виявлено, що [SCOPE.sCharacter('devout_scandal').GetFullName] з [Concept('concept_interest_group','$concept_interest_group_gen$')|l] [SCOPE.sCharacter('devout_scandal').GetInterestGroup.GetName] мав таємний зв’язок із представником духовенства. Тепер усі вимагають [SCOPE.sCharacter('devout_scandal').GetHerHis|U] відставки."
+ character_events.4.d: "Було виявлено, що [SCOPE.sCharacter('devout_scandal').GetFullName] з [Concept('concept_interest_group','$concept_interest_group_gen$')|l] [SCOPE.sCharacter('devout_scandal').GetInterestGroup.GetName] мав таємний зв’язок із представником духовенства. Тепер усі вимагають [SCOPE.sCharacter('devout_scandal').GetCustom('UA_joho_jiji')|l] відставки."
  character_events.4.f: "«Сам факт того, що цей підступний виродок думав, що [SCOPE.sCharacter('devout_scandal').GetSheHe] міг уникнути покарання за таке грубе зловживання владою. Ця ситуація показує про те, що з керівництвом [Concept('concept_interest_group','$concept_interest_group_gen$')|l] [SCOPE.sCharacter('devout_scandal').GetInterestGroup.GetNameNoFormatting] щось не так.»"
- character_events.4.a: "Змусити [SCOPE.sCharacter('devout_scandal').GetHerHis] піти у відставку."
+ character_events.4.a: "Змусити [SCOPE.sCharacter('devout_scandal').GetCustom('UA_joho_jiji')|l] піти у відставку."
  character_events.4.b: "Ігнорувати це."
- character_events.4.c: "Народ повинен знати про [SCOPE.sCharacter('devout_scandal').GetHerHis] розпусту."
+ character_events.4.c: "Народ повинен знати про [SCOPE.sCharacter('devout_scandal').GetCustom('UA_joho_jiji')|l] розпусту."
  character_events.4.a.tt: "[SCOPE.sCharacter('devout_scandal').GetFullName] з ганьбою йде у відставку."
 
  modifier_devout_in_scandal: "Побожний потрапив у скандал"
@@ -547,9 +547,9 @@
 
  MULTIPLAYER_GUI_CLICK_TO_SELECT: "Нажміть на державу, щоб вибрати її."
 
- notification_haiti_stops_paying_france_name:0 "Haiti Stops Payments"
- notification_haiti_stops_paying_france_desc:0 "Haiti has refused to make any further loan payments to France."
- notification_haiti_stops_paying_france_tooltip:0 "#header $notification_haiti_stops_paying_france_name$#!\n$TOOLTIP_DELIMITER$\n$notification_haiti_stops_paying_france_desc$"
+ notification_haiti_stops_paying_france_name: "Гаїті припиняє виплати"
+ notification_haiti_stops_paying_france_desc: "Гаїті відмовилася від подальших виплат за кредитом Франції."
+ notification_haiti_stops_paying_france_tooltip: "#header $notification_haiti_stops_paying_france_name$#!\n$TOOLTIP_DELIMITER$\n$notification_haiti_stops_paying_france_desc$"
 
  angry_duels_banned:0 "Disapproves of duels being banned."
  happy_duels_banned:0 "Approves of duels being banned."

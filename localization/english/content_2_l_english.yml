@@ -70,18 +70,18 @@
  lincoln_aggressively_survives:0 "Leader Attacked Assassin"
  lincoln_aggressively_survives_ruler:0 "Personally Fought Assassin"
 
- texan_war_of_independence.3.t:0 "General Santa Anna Captured"
- texan_war_of_independence.3.d:0 "[SCOPE.sCharacter('santa_anna_scope').GetFullName], the ruler of Mexico and one of its leading generals, has been captured in a swamp wearing a dragoon's uniform by our forces. He is offering to immediately sign a peace with us in exchange for his release."
- texan_war_of_independence.3.f:0 ""Santa Anna, alive, can be of incalculable benefit to Texas; Santa Anna, dead, would just be another casualty.""
- texan_war_of_independence.3.a:0 "Use Santa Anna to press for a deal."
- texan_war_of_independence.3.b:0 "Let him run back to Mexico, we fight on!"
+ texan_war_of_independence.3.t: "Генерал Санта-Анна схоплений"
+ texan_war_of_independence.3.d:0 "[SCOPE.sCharacter('santa_anna_scope').GetFullName], правитель Мексики та один з провідних генералів, був схоплений у болоті в драґунському однострої нашими військами. Він пропонує негайно підписати з нами мир в обмін на своє звільнення."
+ texan_war_of_independence.3.f: "«Живий Санта-Анна може принести незліченну користь Техасу, а мертвий Санта-Анна буде просто ще одним мертвяком.»"
+ texan_war_of_independence.3.a: "Використати Санта-Анну, щоб домогтися угоди."
+ texan_war_of_independence.3.b: "Нехай тікає назад у Мексику, а ми продовжимо боротьбу!"
  
- notification_santa_anna_captured_notification_name:0 "Santa Anna Captured"
- notification_santa_anna_captured_notification_desc:0 "[SCOPE.sCountry('texas_scope').GetName] has captured the [SCOPE.sCountry('mexico_scope').GetAdjective] General Santa Anna, who has used his personal power to negotiate an end to the Texan Independence War"
- notification_santa_anna_captured_notification_tooltip:0 "#header $santa_anna_captured_notification_name$#!\n$TOOLTIP_DELIMITER$\n$santa_anna_captured_notification_desc$"
+ notification_santa_anna_captured_notification_name: "Санта-Анна схоплений"
+ notification_santa_anna_captured_notification_desc: "[SCOPE.sCountry('texas_scope').GetName] захопив [SCOPE.sCountry('mexico_scope').GetAdjective|l]ого генерала Санта-Анну, який використовував свою владу, щоб домовитися про закінчення війни за незалежність Техасу."
+ notification_santa_anna_captured_notification_tooltip: "#header $santa_anna_captured_notification_name$#!\n$TOOLTIP_DELIMITER$\n$santa_anna_captured_notification_desc$"
 
  native_resettlement.1.t: "Вустер проти Джорджії"
- native_resettlement.1.d: "[SCOPE.sCharacter('indian_removal_president').GetPrimaryRoleTitle] [SCOPE.sCharacter('indian_removal_president').GetFullName] проігнорував рішення Верховного суду і наказав вигнати народ [SCOPE.sCulture('cherokee_culture').GetName|l] до країни [SCOPE.sCountry('indian_territory_scope').GetName]."
+ native_resettlement.1.d: "[SCOPE.sCharacter('indian_removal_president').GetPrimaryRoleTitle] [SCOPE.sCharacter('indian_removal_president').GetFullName] проігнорував рішення Верховного суду і наказав вигнати народ [SCOPE.sCulture('cherokee_culture').GetName|l] до місцини [SCOPE.sCountry('indian_territory_scope').GetName]."
  native_resettlement.1.f: "«Яке значення має думка Верховного Суду? Все, що нам потрібно зробити, це підігнати їх сильніше, щоб вони нарешті переїхали, і тоді те, що наше, стане нашим.»"
  native_resettlement.1.a: "Це взагалі законно?"
 
@@ -108,8 +108,8 @@
  native_resettlement.5.f:0 ""Who lived here before us? What name did they give to this place? Will any of us know? Does anyone still remember?""
  native_resettlement.5.a:0 "Let us pray that this shall never happen again."
 
- je_indian_removal:1 "The Indian Removal"
- je_indian_removal_reason:2 "Settlers want the Cherokee nation to vacate coveted land. The President, in defiance of the Supreme Court, has ordered that the Cherokee nation should migrate to the Indian Territory in west."
+ je_indian_removal: "Переселення індіянців"
+ je_indian_removal_reason: "Поселенці хочуть, щоб народ черокі звільнив омріяні землі. Президент, всупереч рішенню Верховного суду, наказав, щоб народ черокі переселився до Індіянської території на заході країни."
   
  USA_paying_removal_costs:0 "Paying for Removal"
  USA_paying_for_provisions:0 "Paying for Provisions"

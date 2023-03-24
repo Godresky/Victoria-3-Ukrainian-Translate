@@ -319,7 +319,7 @@
 
  DEFAULT_EVENT_OPTION: "Цей параметр буде автоматично вибрано після $EVENT_REMAINING_DAYS$."
 
- NO_PROGRESS: "Немає поступу"
+ NO_PROGRESS: "Без поступу"
  INVALID_OPTIONS: "Недійсні параметри: [GetDataModelSize(MapListPanel.AccessInvalidOptions)|v]"
  FAILED_OPTIONS: "Недоступні параметри: [GetDataModelSize(MapListPanel.AccessFailedOptions)|v]"
 
@@ -5755,7 +5755,7 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
 
  notification_resource_discovered_tooltip: "#header $notification_resource_discovered_name$#!\n$TOOLTIP_DELIMITER$\n$notification_resource_discovered_desc$"
  notification_resource_discovered_name: "[SCOPE.sBT('target').GetDiscoveredResourceName] знайдено у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetStateRegion.GetName]"
- notification_resource_discovered_desc: "[SCOPE.sBT('target').GetDiscoveredResourceName] знайдено у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetStateRegion.GetName]. [concept_state_region] тепер може мати додаткові [Concept('concept_building', '$concept_buildings_acc$')|l][SCOPE.sBT('target').GetName|l]."
+ notification_resource_discovered_desc: "[SCOPE.sBT('target').GetDiscoveredResourceName] знайдено у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetStateRegion.GetName]. [concept_state_region] тепер може мати додаткові [Concept('concept_building', '$concept_buildings_acc$')|l] [SCOPE.sBT('target').GetName|l]."
 
  notification_resource_depleted_tooltip:0 "#header $notification_resource_depleted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_resource_depleted_desc$"
  notification_resource_depleted_name:1 "[SCOPE.sBT('target').GetDiscoveredResourceName] depleted in [SCOPE.GetRootScope.GetStateRegion.GetName]"

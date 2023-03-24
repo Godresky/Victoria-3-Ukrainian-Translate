@@ -1701,7 +1701,7 @@
  assassination_completion_tt:0 "The assassination plot fails"
  age_of_caudillos_modifier: "Доба Каудильйо"
  notification_opium_wars_british_response_angry_name: "[SCOPE.sCountry('opium_wars_aggressor_country').GetAdjective]а відповідь на заборону опіюму"
- notification_opium_wars_british_response_angry_desc: "[SCOPE.sCountry('opium_wars_aggressor_country').GetName] гнівно відповіла на [SCOPE.sCountry('opium_wars_target_country').GetAdjectiveNoFormatting|l]у заборону опіюму, з численними загрозами на адресу уряду [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sCountry('opium_wars_target_country').GetName]."
+ notification_opium_wars_british_response_angry_desc: "[SCOPE.sCountry('opium_wars_aggressor_country').GetName] гнівно відповіла на [SCOPE.sCountry('opium_wars_target_country').GetAdjectiveNoFormatting|l]у заборону опіюму, з численними погрозами на адресу уряду [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sCountry('opium_wars_target_country').GetName]."
  notification_opium_wars_british_response_angry_tooltip: "#header $notification_opium_wars_british_response_angry_name$#!\n$TOOLTIP_DELIMITER$\n$notification_opium_wars_british_response_angry_desc$"
  notification_opium_wars_british_response_passive_name: "[SCOPE.sCountry('opium_wars_aggressor_country').GetAdjective]а відповідь на заборону опіюму"
  notification_opium_wars_british_response_passive_desc: "[SCOPE.sCountry('opium_wars_aggressor_country').GetName], здається, просто ігнорує [SCOPE.sCountry('opium_wars_target_country').GetAdjectiveNoFormatting|l]у заборону опіюму."

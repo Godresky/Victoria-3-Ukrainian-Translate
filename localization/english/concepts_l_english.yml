@@ -693,7 +693,7 @@
  concept_unincorporated_state_desc_added:0 "\n\n$concept_unincorporated_states$ are subject to the following effects:\n[GetStaticModifier('unincorporated_state').GetDesc]#!"
 
  concept_decentralized_power: "Децентралізована держава"
- concept_decentralized_nation: "Децентралізовані нація"
+ concept_decentralized_nation: "Децентралізована нація"
  concept_decentralized_nation_acc: "Децентралізовану націю"
  concept_decentralized_nation_gen: "Децентралізованої нації"
  concept_decentralized_nations: "Децентралізовані нації"

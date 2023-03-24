@@ -606,9 +606,9 @@
  custom_newspaper_informer: "Інформер"
  custom_newspaper_bulletin: "Бюллетін"
 
- notification_west_america_expedition_progress_average_name:0 "West America Expedition continues."
- notification_west_america_expedition_progress_average_desc:0 "West America Expedition continues without problems."
- notification_west_america_expedition_progress_average_tooltip:0 "West America Expedition continues without problems."
+ notification_west_america_expedition_progress_average_name: "Західноамериканська експедиція триває."
+ notification_west_america_expedition_progress_average_desc: "Західноамериканська експедиція триває без проблем."
+ notification_west_america_expedition_progress_average_tooltip: "Західноамериканська експедиція триває без проблем."
 
  expedition_events.200.t:0 "Expedition to Map the Western Frontier"
  expedition_events.200.d:0 "Send out an expedition to map the unknown geography of the Western Frontier."
