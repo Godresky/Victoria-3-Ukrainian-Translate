@@ -162,6 +162,7 @@
  concept_market_good_policy_desc_added:0 "[GetLawGroup('lawgroup_trade_policy').GetName]"
 
  concept_tariffs: "Тарифи"
+ concept_tariffs_gen: "Тарифів"
  concept_tariff: "Тариф"
  concept_tariff_loc: "Тарифі"
  concept_tariff_rate:0 "Tariff Rate"

@@ -5372,10 +5372,10 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  MILITARY_WAGES_WEEKLY_EXPENSES_CURRENT:0 "The average annual military wage of @money!$CURRENT_AVERAGE_ANNUAL_WAGE|v2$ costs @money!$CURRENT_WEEKLY_EXPENSES|vD$ weekly"
  MILITARY_WAGES_WEEKLY_EXPENSES_NEW:0 "Changing it by #variable $WAGE_CHANGE_MULT|-=%0$#! to @money!$NEW_AVERAGE_ANNUAL_WAGE|v2$ would $CHANGETYPE$ costs by #variable @money!$DELTA_EXPENSES|-=D$#! to @money!$NEW_WEEKLY_EXPENSES|vD$"
 
- WELFARE_PAYMENTS_BREAKDOWN:0 "#tooltip_header Welfare Payments#!\nTotal: #v #N @money!-[GetPlayer.GetWelfarePaymentsExpenses|D-]"
+ WELFARE_PAYMENTS_BREAKDOWN: "#tooltip_header Соціяльне забезпечення#!\nВсього: #v #N @money!-[GetPlayer.GetWelfarePaymentsExpenses|D-]"
 
- NO_TARIFFS:0 "No [concept_tariffs] for any [Concept('concept_good', '$concept_goods$')]"
- NO_TARIFFS_SINGLE_GOOD:0 "No [concept_tariffs] for [Goods.GetName]"
+ NO_TARIFFS: "Немає [Concept('concept_tariffs','$concept_tariffs_gen$')|l] для будь-яких [Concept('concept_good', '$concept_goods_gen$')|l]"
+ NO_TARIFFS_SINGLE_GOOD: "Немає [Concept('concept_tariffs','$concept_tariffs_gen$')|l] для [Concept('concept_good', '$concept_good_gen$')|l] [Goods.GetName|l]"
  EFFECTS_FOR_TARIFF_LEVEL:0 "Effects for #variable $LEVEL$#! [concept_tariffs]:"
  PREDICTED_TARIFF_LEVEL_REVENUE:1 "Predicted Revenue: @money!$VALUE|Kv$"
  PREDICTED_TARIFF_LEVEL_DELTA:1 "Change in revenue from current [Concept('concept_tariffs','$concept_tariff$')] focus: #variable @money!$DELTA_INCOME|+=D$#!"
