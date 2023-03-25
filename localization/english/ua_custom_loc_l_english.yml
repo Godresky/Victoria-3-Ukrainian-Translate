@@ -26,11 +26,19 @@
 ## Закінчення
 #чоловічий
  CustomLoc_UA_vin_uy: "ий"
+ CustomLoc_UA_vin_ii: "ій"
  CustomLoc_UA_vin_av: "ав"
  CustomLoc_UA_vin_ov: "ов"
+ CustomLoc_UA_vin_empty: ""
 #жіночий
  CustomLoc_UA_vona_a: "а"
+ CustomLoc_UA_vona_іa: "я"
  CustomLoc_UA_vona_ala: "aла"
+ CustomLoc_UA_vona_la: "ла"
+
+## Закінчення
+#[Select_CString(character.IsFemale,'$CustomLoc_UA_vona_ala$','$CustomLoc_UA_vin_av$')|l]
+#[Select_CString(character.IsFemale,'$CustomLoc_UA_vona_ala$','$CustomLoc_UA_vin_ov$')|l]
 
 ########################################################
 ######## ## ЗАКІНЧЕННЯ РОЗДІЛЕНИХ РЕҐІОНІВ ## ##########

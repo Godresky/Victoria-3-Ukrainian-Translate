@@ -330,18 +330,18 @@
  war_goal_annex_country_desc: "[WAR_GOAL.GetHolder.GetName] анексує державу [WAR_GOAL.GetTarget.GetName]"
  war_goal_annex_country_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by allowing them to annex [WAR_GOAL.GetTarget.GetName]."
 
- war_goal_colonization_rights_type_name:1 "Colonization Rights"
+ war_goal_colonization_rights_type_name: "Права на осадництво"
  war_goal_colonization_rights_type_desc:1 "Speed up colonization of a [concept_decentralized_nation]."
  war_goal_colonization_rights:1 "[WAR_GOAL.GetHolder.GetAdjectiveNoFormatting] [concept_colonization_rights]"
  war_goal_colonization_rights_desc:1 "[WAR_GOAL.GetHolder.GetName] is granted [concept_colonization_rights] on [WAR_GOAL.GetTarget.GetName]."
 
- war_goal_secession_type_name:1 "Secession"
+ war_goal_secession_type_name: "Розкол"
  war_goal_secession_type_desc:1 "Attempt to secede from a [concept_country]."
  war_goal_secession:1 "Crush [WAR_GOAL.GetTarget.GetAdjectiveNoFormatting] Secession"
  war_goal_secession_desc:1 "Return all [WAR_GOAL.GetTarget.GetAdjectiveNoFormatting] [Concept('concept_state', '$concept_states$')] that seceded from us."
  war_goal_secession_sway_desc:2 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by returning all [WAR_GOAL.GetTarget.GetAdjectiveNoFormatting] [Concept('concept_state', '$concept_states$')] that seceded from them."
  
- war_goal_revolution_type_name:1 "Revolution"
+ war_goal_revolution_type_name: "Революція"
  war_goal_revolution_type_desc:1 "Attempt to overthrow the [concept_government]."
  war_goal_revolution:1 "Stamp Out [WAR_GOAL.GetTarget.GetAdjectiveNoFormatting] [concept_revolution]"
  war_goal_revolution_desc:2 "Put down the [WAR_GOAL.GetTarget.GetAdjectiveNoFormatting] [concept_revolution]"
