@@ -1851,11 +1851,11 @@
  TRIGGER_ANY_STRATEGIC_OBJECTIVE_COUNT:0 "$PARAMETERS$ $FILTER$[Concept('concept_strategic_objective', '$concept_strategic_objectives$')]"
  
  TRIGGER_ANY_SCOPE_STATE: "Будь-який [concept_state|l]:"
- TRIGGER_ANY_SCOPE_STATE_ALL:2 "All [Concept('concept_state', '$concept_states$')]:"
+ TRIGGER_ANY_SCOPE_STATE_ALL: "Усі [Concept('concept_state', '$concept_states$')|l]:"
  TRIGGER_ANY_SCOPE_STATE_ALL_NOT:1 "No [Concept('concept_state', '$concept_states$')]:"
- TRIGGER_ANY_SCOPE_STATE_ALL_FIRST:2 "All [Country.GetAdjectiveNoFlag] [Concept('concept_state', '$concept_states$')]"
+ TRIGGER_ANY_SCOPE_STATE_ALL_FIRST: "Усі [Country.GetAdjectiveNoFlag|l]і [Concept('concept_state', '$concept_states$')|l]"
  TRIGGER_ANY_SCOPE_STATE_ALL_FIRST_NOT:1 "No [Country.GetAdjectiveNoFlag] [concept_state]"
- TRIGGER_ANY_SCOPE_STATE_ALL_THIRD:2 "All [Concept('concept_state', '$concept_states$')] in [Country.GetName]"
+ TRIGGER_ANY_SCOPE_STATE_ALL_THIRD: "Усі [Concept('concept_state', '$concept_states$')|l] у [Concept('concept_country', '$concept_country_loc$')|l] [Country.GetName]"
  TRIGGER_ANY_SCOPE_STATE_ALL_THIRD_NOT:1 "No [concept_state] not controlled by [Country.GetName]"
  
  TRIGGER_ANY_SCOPE_STATE_COUNT:3 "$PARAMETERS$ $FILTER$[Concept('concept_state', '$concept_states$')]:"
