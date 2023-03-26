@@ -20,7 +20,7 @@
  concept_economy_health_unhealthy: "Нездорова економіка"
  concept_economy_health_unhealthy_short: "Нездорова"
  concept_economy_health_unhealthy_short_je: "Нездоровою"
- concept_economy_health_desc: "Економіка [Concept('concept_country','$concept_country_gen$')|l] вважається здоровою, якщо #italic будь-що з наступного#!:\n$TAB$@green_checkmark_box! її постійні прибутки перевищують постійні витрати\n$TAB$@green_checkmark_box! її [concept_principal] становить менше половини їхньої загальної кількості [concept_credit]"
+ concept_economy_health_desc: "Економіка [Concept('concept_country','$concept_country_gen$')|l] вважається здоровою, якщо #italic будь-що з наступного#!:\n$TAB$@green_checkmark_box! її постійні прибутки перевищують постійні витрати.\n$TAB$@green_checkmark_box! її [Concept('concept_principal','$concept_principal$')|l] становить менше половини від загальної суми [Concept('concept_credit','$concept_credit_gen$')|l]."
 
  concept_bankroll: "$bankroll$"
  concept_bankrolling:0 "Bankrolling"
@@ -512,6 +512,7 @@
  concept_money_desc:5 "$concept_money$ makes the world go 'round. It is used to pay for [Concept('concept_government_wage','$concept_government_wages$')] and [concept_bureaucracy] production, [concept_construction] materials, industry [concept_subsidies], [concept_convoys] for your [Concept('concept_trade_route','$concept_trade_routes$')], and last but probably not least, your military. You gain $concept_money$ by [Concept('concept_taxes','$concept_taxing$')] your [Concept('concept_pop', '$concept_pops$')] and enforcing [concept_tariffs]. Excess $concept_money$ in your [concept_treasury] balance is used to pay off your [concept_loans] or stockpile gold in your [concept_gold_reserves]. Insufficient $concept_money$ increases your $concept_loans$ towards your [Concept('concept_credit','$concept_credit_limit$')], which is determined by how much $concept_money$ is in your $concept_buildings$' [concept_cash_reserves]."
  
  concept_workforce: "Робоча сила"
+ concept_workforce_gen: "Робочої сили"
  concept_workforce_desc: "Робоча сила [Concept('concept_building', '$concept_building_gen$')|l], яка складається із [Concept('concept_pop', '$concept_pops_gen$')|l] з різними [Concept('concept_profession', '$concept_professions_ins$')|l], та залежить від вибраного [Concept('concept_production_method', '$concept_production_method_gen$')|l]."
 
  concept_gold_reserves: "Золотий запас"
@@ -519,6 +520,7 @@
  concept_gold_reserves_desc:1 "A [Concept('concept_country','$concept_country_possessive$')] weekly budget surplus is accumulated in its $concept_gold_reserves$. If the budget balance becomes negative, any [concept_money] in the $concept_gold_reserves$ will be depleted first before the $concept_country$ starts taking [concept_loans]. The $concept_gold_reserves$ can only accumulate up to a fraction of your [concept_gdp] before diminishing returns set in. Stockpiling gold will eventually lead to depleting your economic engine."
 
  concept_cash_reserves: "Грошові резерви"
+ concept_cash_reserves_acc: "Грошові резерви"
  concept_cash_reserves_desc:1 "The assets of a [concept_building] is stored in its $concept_cash_reserves$. If the $concept_building$ runs a positive weekly [concept_building_balance], some of the [concept_money] is deposited into the $concept_cash_reserves$ while the rest is paid out to [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_shares$')] as [concept_dividends].\n\n$concept_cash_reserves$ are considered to be owned by the $concept_pops$ with $concept_ownership_shares$, who will be angry if their $concept_cash_reserves$ are destroyed due to downsizing or [concept_bankruptcy]. The sum of all $concept_cash_reserves$ in your [concept_country] determines your [concept_credit]."
 
  concept_obsession: "Одержимість"
@@ -913,13 +915,14 @@
  concept_market_share_desc:3 "The $concept_market_share$ of each [concept_country] in a [concept_market] is determined by its [concept_gdp], with a bonus if they are the [concept_market_owner]. The higher a $concept_country$'s $concept_market_share$ the more [Concept('concept_consumption_tax', '$concept_consumption_taxes$')] they collect in the [concept_market]."
 
  concept_default: "Неплатоспроможність"
+ concept_default_gen: "Неплатоспроможности"
  concept_default_acc: "Неплатоспроможність"
  concept_default_desc:4 "Once the [concept_treasury] accumulates [concept_loans] large enough that they exceed the [Concept('concept_country','$concept_country_possessive$')] total [concept_credit], the $concept_country$ is considered to be in $concept_default$. This will pause all ongoing [concept_construction] and will have a negative impact on the [concept_throughput] of [Concept('concept_building', '$concept_buildings$')], growing more severe as time passes. Penalties are removed as soon as the $concept_country$'s weekly balance becomes positive again, or if [concept_bankruptcy] is declared."
 
- concept_bankruptcy: "Банкротство"
- concept_bankruptcy_gen: "Банкротства"
- concept_bankruptcy_acc: "Банкротство"
- concept_bankruptcy_ins: "Банкротством"
+ concept_bankruptcy: "Банкрутство"
+ concept_bankruptcy_gen: "Банкрутства"
+ concept_bankruptcy_acc: "Банкрутство"
+ concept_bankruptcy_ins: "Банкрутством"
  concept_bankruptcy_desc:2 "If a [concept_country] is in [concept_default] and unable to pay back its [concept_loans], it may opt to declare $concept_bankruptcy$. This will clear the debt but wipe out all [concept_cash_reserves] the $concept_country$ had borrowed from, and will greatly anger any [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_shares$')].[AddLocalizationIf(GetPlayer.IsValid,'concept_bankruptcy_desc_added')] "
  concept_bankruptcy_desc_added:0 "In addition, the following effects are applied for #v [GetDefine('NEconomy','DECLARE_BANKRUPTCY_PENALTY_DURATION_YEARS')|0] years#!:\n[GetStaticModifier('declared_bankruptcy').GetDesc]"
 
@@ -1201,10 +1204,12 @@
  concept_credit_limit: "Межа кредиту"
  concept_credit_desc:2 "The national $concept_credit$ is the amount of [concept_money] the [concept_treasury] can borrow from its economy, equal to the sum of all domestic [concept_cash_reserves] plus a base value determined by [concept_gdp]. If the [concept_principal] exceeds the $concept_credit_limit$ the [concept_country] goes into [concept_default]."
 
- concept_principal: "Головна сума"
+ concept_principal: "Головний довг"
+ concept_principal_acc: "Головний довг"
  concept_principal_desc:2 "The total size of [concept_loans] the [concept_treasury] has accrued, not including the [concept_budget_interest] it owes. If the [concept_principal] exceeds your [concept_credit] you will go into [concept_default]."
 
  concept_loans: "Позики"
+ concept_loans_acc: "Позики"
  concept_loans_desc:1 "Funds that the [concept_treasury] owes to the [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_shares$')], typically due to some type of government bond program. Whenever the $concept_treasury$ is running a negative balance, it will add to its $concept_loans$ unless it has sufficient [concept_gold_reserves] to cover it. The maximum size of $concept_loans$ a $concept_country$ may take before going into [concept_default] is equal to the sum of its [Concept('concept_building','$concept_buildings_possessive$')] [concept_cash_reserves]. [concept_budget_interest] is accrued on the [concept_principal] weekly, and is collected by $concept_pops$ with [Concept('concept_ownership_share','$concept_ownership_shares$')] proportionate to the amount of [concept_credit] their share of the $concept_cash_reserves$ provides."
 
  concept_war_support: "Підтримка війни"
@@ -1563,6 +1568,7 @@
  concept_pop_loc: "Громаді"
  concept_pops: "Громади"
  concept_pops_gen: "Громад"
+ concept_pops_acc: "Громади"
  concept_pops_dat: "Громадам"
  concept_pops_loc: "Громадах"
  concept_pops_adj: "Громадськ"
@@ -1599,6 +1605,8 @@
  concept_production_methods_gen: "Способів виробництва"
  concept_production_methods_acc: "Способи виробництва"
  concept_production_methods_ins: "Способами виробництва"
+ concept_production_method_short: "Спосіб"
+ concept_production_method_short_acc: "Спосіб"
  concept_production_methods_short: "Способи"
  concept_production_method_desc:3 "$concept_production_methods$ determine how [Concept('concept_building','$concept_buildings$')] operate. They impact\n\n- The [Concept('concept_good_consumption','$concept_input_goods$')] the $concept_building$ must purchase to operate\n- The [Concept('concept_good_production','$concept_output_goods$')] the $concept_building$ produces and sells\n- The distribution of [Concept('concept_profession','$concept_professions$')] among its [concept_workforce]\n\n$concept_production_methods$ can also have other effects, such as the generation of [Concept('concept_modifier','$concept_modifiers$')] or the distribution of [Concept('concept_ownership_share','$concept_ownership_shares$')]. $concept_production_methods$ are organized in groups, in which only one can be active at a time. You can switch which $concept_production_method$ is active in each group as long as you meet the [concept_technology] and/or [concept_law] requirement for it."
 
@@ -1645,7 +1653,7 @@
  concept_religion_ins: "Релігією"
  concept_religions: "Релігії"
  concept_religions_gen: "Релігій"
- concept_religion_desc:1 "All [Concept('concept_pop', '$concept_pops$')] have a $concept_religion$, which can only change through [concept_conversion]. Their $concept_religion$ determines whether they are [Concept('concept_discrimination','$concept_discriminated_against$')] in their [concept_country] or not."
+ concept_religion_desc: "Усі [Concept('concept_pop', '$concept_pops_acc$')|l] мають релігію, яка може змінитися лише через [Concept('concept_conversion', '$concept_conversion_acc$')|l]. Їхнє віровизнання визначає чи їх [Concept('concept_discrimination','$concept_discriminated_against$')|l] в своїй [Concept('concept_country','$concept_country_loc$')|l], чи ні."
 
  concept_accepted_religion: "Прийнята релігія"
  concept_accepted_religion_acc: "Прийняту релігія"
@@ -1956,6 +1964,7 @@
 
  concept_conversion: "Навертання"
  concept_conversion_gen: "Навертання"
+ concept_conversion_acc: "Навертання"
  concept_converting: "Навертання"
  concept_convert: "Навертати"
  concept_conversion_desc: "[Concept('concept_pop','$concept_pops$')], чия [concept_religion|l] [Concept('concept_discrimination','утискається')|l] у [Concept('concept_country','$concept_country_loc$')|l], в якій вони живуть, натомість можуть навернути себе на [Concept('concept_accepted_religion','$concept_accepted_religion_acc$')|l]."
