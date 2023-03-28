@@ -71,7 +71,7 @@
  lincoln_aggressively_survives_ruler:0 "Personally Fought Assassin"
 
  texan_war_of_independence.3.t: "Генерал Санта-Анна схоплений"
- texan_war_of_independence.3.d:0 "[SCOPE.sCharacter('santa_anna_scope').GetFullName], правитель Мексики та один з провідних генералів, був схоплений у болоті в драґунському однострої нашими військами. Він пропонує негайно підписати з нами мир в обмін на своє звільнення."
+ texan_war_of_independence.3.d: "[SCOPE.sCharacter('santa_anna_scope').GetFullName], правитель Мексики та один з провідних генералів, був схоплений у болоті в драґунському однострої нашими військами. Він пропонує негайно підписати з нами мир в обмін на своє звільнення."
  texan_war_of_independence.3.f: "«Живий Санта-Анна може принести незліченну користь Техасу, а мертвий Санта-Анна буде просто ще одним мертвяком.»"
  texan_war_of_independence.3.a: "Використати Санта-Анну, щоб домогтися угоди."
  texan_war_of_independence.3.b: "Нехай тікає назад у Мексику, а ми продовжимо боротьбу!"
@@ -81,8 +81,8 @@
  notification_santa_anna_captured_notification_tooltip: "#header $santa_anna_captured_notification_name$#!\n$TOOLTIP_DELIMITER$\n$santa_anna_captured_notification_desc$"
 
  native_resettlement.1.t: "Вустер проти Джорджії"
- native_resettlement.1.d: "[SCOPE.sCharacter('indian_removal_president').GetPrimaryRoleTitle] [SCOPE.sCharacter('indian_removal_president').GetFullName] проігнорував рішення Верховного суду і наказав вигнати народ [SCOPE.sCulture('cherokee_culture').GetName|l] до місцини [SCOPE.sCountry('indian_territory_scope').GetName]."
- native_resettlement.1.f: "«Яке значення має думка Верховного Суду? Все, що нам потрібно зробити, це підігнати їх сильніше, щоб вони нарешті переїхали, і тоді те, що наше, стане нашим.»"
+ native_resettlement.1.d: "[SCOPE.sCharacter('indian_removal_president').GetPrimaryRoleTitle] [SCOPE.sCharacter('indian_removal_president').GetFullName] проігнорув[Select_CString(SCOPE.sCharacter('indian_removal_president').IsFemale,'$CustomLoc_UA_vona_ala$','$CustomLoc_UA_vin_av$')|l] рішення Верховного суду та наказ[Select_CString(SCOPE.sCharacter('indian_removal_president').IsFemale,'$CustomLoc_UA_vona_ala$','$CustomLoc_UA_vin_av$')|l] вигнати народ [SCOPE.sCulture('cherokee_culture').GetName|l] до місцини [SCOPE.sCountry('indian_territory_scope').GetName]."
+ native_resettlement.1.f: "«Яке значення має думка Верховного Суду? Все, що нам потрібно зробити, це підігнати їх сильніше, щоб вони нарешті переїхали, і тоді те, що наше, стане остаточно нашим.»"
  native_resettlement.1.a: "Це взагалі законно?"
 
  native_resettlement.2.t:1 "John Ross' Protest Petition"
@@ -488,7 +488,7 @@
  war_hero_cult:0 "Homefront War Hero"
  war_hero_fighter:0 "Flying War Hero"
 
- je_trench_warfare: "Війна в багнюці"
+ je_trench_warfare: "Війна у багнюці"
  je_trench_warfare_reason: "Солдати відкрили нову зброю у цю добу наукової війни: лопату."
  trench_warfare.1.t:0 "The Entrenched Front"
  trench_warfare.1.d:1 "Heavy usage of trenches in [SCOPE.sState('trench_warfare_state').GetName] by [SCOPE.sCharacter('trench_warfare_general').GetFullName] has turned the land into a blasted hellscape. The stalemate cannot last forever, but it's not clear what the best way forward is."

@@ -38,7 +38,7 @@
  officers: "@officers! $officers_no_icon$"
  officers_only_icon: "@officers!"
  officers_no_icon: "Офіцери"
- officers_desc: "Офіцери, які командують військовими силами країни в армії та на флоті. Політично вони представляють верхівку Збройних Сил."
+ officers_desc: "Офіцери, які командують військовими силами країни у війську та на флоті. Політично вони представляють верхівку Збройних Сил."
  academics: "@academics! $academics_no_icon$"
  academics_only_icon: "@academics!"
  academics_no_icon: "Академіки"

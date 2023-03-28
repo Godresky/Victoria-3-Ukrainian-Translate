@@ -4181,8 +4181,8 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
 
  PROMOTE_COMMANDER: "Просувати"
  CONFIRM_PROMOTE_COMMANDER:0 "Confirm Promotion"
- CHANGE_RANK_CANNOT_PROMOTE: "[Character.GetFullName] вже має найбільше звання [Character.GetRankName|l] та не може бути просунен[Select_CString(Character.IsFemale,'$CustomLoc_UA_vona_a$','$CustomLoc_UA_vin_uy$')|l] вище."
- CHANGE_RANK_CANNOT_PROMOTE_RULER: "[Character.GetFullName] - [Character.GetPrimaryRoleTitle|l] держави [Character.GetCountry.GetName] і не можуть бути просунен[Select_CString(Character.IsFemale,'$CustomLoc_UA_vona_a$','$CustomLoc_UA_vin_uy$')|l] далі звання [Character.GetRankName]"
+ CHANGE_RANK_CANNOT_PROMOTE: "[Character.GetFullName] вже має найбільше звання [Character.GetRankName|l] та не може бути просунен[Select_CString(Character.IsFemale,'$CustomLoc_UA_vona_a$','$CustomLoc_UA_vin_yY$')|l] вище."
+ CHANGE_RANK_CANNOT_PROMOTE_RULER: "[Character.GetFullName] - [Character.GetPrimaryRoleTitle|l] держави [Character.GetCountry.GetName] і не можуть бути просунен[Select_CString(Character.IsFemale,'$CustomLoc_UA_vona_a$','$CustomLoc_UA_vin_yY$')|l] далі звання [Character.GetRankName]"
 
  DESIGNATE_STRATEGIC_OBJECTIVE_REACHED_MAX:1 "[Country.GetNameNoFormatting] has reached the maximum number of [Concept('concept_strategic_objective', '$concept_strategic_objectives$')] in this [concept_theater]"
  DESIGNATE_STRATEGIC_OBJECTIVE_IMPOSSIBLE_STATE:1 "[State.GetNameNoFormatting] is not in a [Country.GetAdjectiveNoFormatting] enemy [concept_front] nor is owned by [Country.GetNameNoFormatting]"
@@ -6705,7 +6705,7 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  NO_UNPRESSED_WAR_GOALS:0 "No Unpressed War Goals"
  GAME_CHECKSUM_CHANGED_FROM_SAVE_FILE: "@warning_icon!#X Недійсна контрсума досягнення#!\nЦей запис дійсний для досягнень, які створюють іншу контрсуму. Його завантаження призведе до вимкнення досягнень у збережені."
 
- MODIFIER_CONSCRIPTION_RATE_ADD_ADDITIONAL_INFO: "Може зібрати @battalions!$NUM_BATTALIONS|v$ [SelectLocalization(GreaterThan_int32(NUM_BATTALIONS, '(int32)1'),SelectLocalization(GreaterThan_int32(NUM_BATTALIONS, '(int32)4'),'$concept_battalions_gen$','$concept_battalions$'),'$concept_battalion$')|l]"
+ MODIFIER_CONSCRIPTION_RATE_ADD_ADDITIONAL_INFO: "Може зібрати @battalions!$NUM_BATTALIONS|v$" #[SelectLocalization(GreaterThan_int32(NUM_BATTALIONS, '(int32)1'),SelectLocalization(GreaterThan_int32(NUM_BATTALIONS, '(int32)4'),'$concept_battalions_gen$','$concept_battalions$'),'$concept_battalion$')|l]
 
  DEFAULT_HQ_NAME: "[Concept('concept_hq', '$concept_hq$')] [HQ.GetCountry.GetFlagTextIcon] [HQ.GetStrategicRegion.GetNameNoFormatting]"
  DEFAULT_HQ_NAME_NO_FLAG: "[Concept('concept_hq', '$concept_hq$')] [HQ.GetStrategicRegion.GetNameNoFormatting]"

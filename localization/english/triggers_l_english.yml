@@ -956,10 +956,10 @@
  TRIGGER_HAS_DLC:0 "Owns DLC #variable $DLC$#!"
  TRIGGER_HAS_DLC_NOT:1 "Does #bold not #!own DLC #variable $DLC$#!"
  
- TRIGGER_OWNS_ENTIRE_STATE_REGION:0 "Owns all of [StateRegion.GetName]"
- TRIGGER_OWNS_ENTIRE_STATE_REGION_NOT:1 "Does #bold not #!own all of [StateRegion.GetName]"
+ TRIGGER_OWNS_ENTIRE_STATE_REGION: "Повністю володіє [Concept('concept_state','$concept_state_ins$')|l] [StateRegion.GetName]"
+ TRIGGER_OWNS_ENTIRE_STATE_REGION_NOT: "Повністю #bold не#! володіє [Concept('concept_state','$concept_state_ins$')|l] [StateRegion.GetName]"
  TRIGGER_OWNS_ENTIRE_STATE_REGION_FIRST: "[Country.GetNameNoFlag] повністю володіє [Concept('concept_state','$concept_state_ins$')|l] [StateRegion.GetName]"
- TRIGGER_OWNS_ENTIRE_STATE_REGION_FIRST_NOT:1 "[Country.GetNameNoFlag] does #bold not #!own all of [StateRegion.GetName]"
+ TRIGGER_OWNS_ENTIRE_STATE_REGION_FIRST_NOT: "[Country.GetNameNoFlag] повністю #bold не#! володіє [Concept('concept_state','$concept_state_ins$')|l] [StateRegion.GetName]"
  TRIGGER_OWNS_ENTIRE_STATE_REGION_THIRD:0 "All of [StateRegion.GetName] is owned by [Country.GetName]"
  TRIGGER_OWNS_ENTIRE_STATE_REGION_THIRD_NOT:1 "All of [StateRegion.GetName] is #bold not #!owned by [Country.GetName]"
  
