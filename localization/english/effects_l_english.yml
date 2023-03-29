@@ -244,12 +244,12 @@
  ADD_ARABLE_LAND_POSITIVE_EFFECT:0 "[STATE_REGION.GetName] Gets $VALUE|+0$ [concept_arable_land]"
  ADD_ARABLE_LAND_NEGATIVE_EFFECT:0 "[STATE_REGION.GetName] Loses $VALUE|-0$ [concept_arable_land]"
  
- ADD_DEVASTATION_POSITIVE_EFFECT:0 "[STATE_REGION.GetName] Gets $VALUE|-0$% [concept_devastation]"
- ADD_DEVASTATION_NEGATIVE_EFFECT:0 "[STATE_REGION.GetName] Loses $VALUE|+0$% [concept_devastation]"
- ADD_DEVASTATION_POSITIVE_EFFECT_FIRST:0 "[STATE_REGION.GetName] Gets $VALUE|-0$% [concept_devastation]"
- ADD_DEVASTATION_NEGATIVE_EFFECT_FIRST:0 "[STATE_REGION.GetName] Loses $VALUE|+0$% [concept_devastation]"
- ADD_DEVASTATION_POSITIVE_EFFECT_THIRD:0 "[STATE_REGION.GetName] Gets $VALUE|-0$% [concept_devastation]"
- ADD_DEVASTATION_NEGATIVE_EFFECT_THIRD:0 "[STATE_REGION.GetName] Loses $VALUE|+0$% [concept_devastation]"
+ ADD_DEVASTATION_POSITIVE_EFFECT: "[STATE_REGION.GetName] отримає $VALUE|-0$% [Concept('concept_devastation', '$concept_devastation_gen$')|l]"
+ ADD_DEVASTATION_NEGATIVE_EFFECT: "[STATE_REGION.GetName] втратить $VALUE|+0$% [Concept('concept_devastation', '$concept_devastation_gen$')|l]"
+ ADD_DEVASTATION_POSITIVE_EFFECT_FIRST: "[STATE_REGION.GetName] отримає $VALUE|-0$% [Concept('concept_devastation', '$concept_devastation_gen$')|l]"
+ ADD_DEVASTATION_NEGATIVE_EFFECT_FIRST: "[STATE_REGION.GetName] втратить $VALUE|+0$% [Concept('concept_devastation', '$concept_devastation_gen$')|l]"
+ ADD_DEVASTATION_POSITIVE_EFFECT_THIRD: "[STATE_REGION.GetName] отримає $VALUE|-0$% [Concept('concept_devastation', '$concept_devastation_gen$')|l]"
+ ADD_DEVASTATION_NEGATIVE_EFFECT_THIRD: "[STATE_REGION.GetName] втратить $VALUE|+0$% [Concept('concept_devastation', '$concept_devastation_gen$')|l]"
  
  SET_DEVASTATION_POSITIVE_EFFECT:0 "[STATE_REGION.GetName] Sets [concept_devastation]: #variable $VALUE|0$%#"
  SET_DEVASTATION_NEGATIVE_EFFECT:0 "[STATE_REGION.GetName] Sets [concept_devastation]: #variable $VALUE|0$%#"
@@ -280,9 +280,9 @@
  TRIGGER_EVENT_COUNTRY: "У [Concept('concept_country','$concept_country_loc$')|l] $COUNTRY_NAME$ відбудеться подія #variable «$EVENT_NAME$»#![ConcatIfNeitherEmpty(' ', '$DELAY_DESCRIPTION$')]"
  custom_trigger_event_unspecific:0 "Triggers an Event"
 
- ANNEX_EFFECT:0 "[COUNTRY.GetName] will annex [TARGET_COUNTRY.GetName]"
- ANNEX_EFFECT_FIRST:0 "[COUNTRY.GetNameNoFlag] will annex [TARGET_COUNTRY.GetName]"
- ANNEX_EFFECT_THIRD:0 "[COUNTRY.GetName] will annex [TARGET_COUNTRY.GetName]"
+ ANNEX_EFFECT: "[COUNTRY.GetName] анексує [Concept('concept_country','$concept_country_acc$')|l] [TARGET_COUNTRY.GetName]"
+ ANNEX_EFFECT_FIRST: "[COUNTRY.GetNameNoFlag] анексує [Concept('concept_country','$concept_country_acc$')|l] [TARGET_COUNTRY.GetName]"
+ ANNEX_EFFECT_THIRD: "[COUNTRY.GetName] анексує [Concept('concept_country','$concept_country_acc$')|l] [TARGET_COUNTRY.GetName]"
   
  ADD_JOURNAL_ENTRY: "Додасть запис «#variable $JOURNAL_ENTRY_NAME$#!» до часопису державі [COUNTRY.GetName|v]"
  ADD_JOURNAL_ENTRY_FIRST: "Додасть запис «#variable $JOURNAL_ENTRY_NAME$#!» до часопису державі [COUNTRY.GetNameNoFlag|v]"

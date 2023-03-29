@@ -843,10 +843,10 @@
  ADVANCEMENT_PROGRESS_BAR_FIRST_TOOLTIP:4 "#header [concept_advancement_progress] for [Front.GetFirstLeadingCommander.GetCountry.GetFlagTextIcon] [Front.GetFirstLeadingCommander.GetFullName]#!\nProgress: #v [Front.GetFirstAdvanceProgress|1+] / [Front.GetRequiredAdvanceProgressForBattle|0+]#!#!\n$TOOLTIP_DELIMITER$\n[Front.GetFirstLeadingCommander.GetFirstName] is accumulating #v [Front.GetFirstCommanderAdvanceIncrementRaw|1]#! progress per day on this [concept_front].[ConcatIfNeitherEmpty('\n\n', Front.GetFirstCommanderAdvanceBreakdown)]"
  ADVANCEMENT_PROGRESS_BAR_SECOND_TOOLTIP:4 "#header [concept_advancement_progress] for [Front.GetSecondLeadingCommander.GetCountry.GetFlagTextIcon] [Front.GetSecondLeadingCommander.GetFullName]#!\nProgress: #v [Front.GetSecondAdvanceProgress|1+] / [Front.GetRequiredAdvanceProgressForBattle|0+]#!\n$TOOLTIP_DELIMITER$\n[Front.GetSecondLeadingCommander.GetFirstName] is accumulating #v [Front.GetSecondCommanderAdvanceIncrementRaw|1]#! progress per day on this [concept_front].[ConcatIfNeitherEmpty('\n\n', Front.GetSecondCommanderAdvanceBreakdown)]"
 
- CHANGE_ORDER_REDUCE_ADVANCE_PROGRESS:0 "#italic Switching from advance order will reduce [concept_advancement_progress] in current [concept_front] by [GetDefine('NMilitary', 'BATTLE_PLAN_SWITCH_ORDER_LOST_PROGRESS_PERCENT')|%0-]#!"
+ CHANGE_ORDER_REDUCE_ADVANCE_PROGRESS: "#italic Перемикання з наказу просування зменшить [Concept('concept_advancement_progress','$concept_advancement_progress_gen$')|l] на поточному [Concept('concept_front','$concept_front_loc$')|l] на [GetDefine('NMilitary', 'BATTLE_PLAN_SWITCH_ORDER_LOST_PROGRESS_PERCENT')|%0-]#!"
 
- ADVANCEMENT_PROGRESS_NUM_ENTRY:0 "@battalions! $NUM$"
- ADVANCEMENT_PROGRESS_MIN_MAX_ENTRY:0 "@battalions! $MIN$ - $MAX$"
+ ADVANCEMENT_PROGRESS_NUM_ENTRY: "@battalions! $NUM$"
+ ADVANCEMENT_PROGRESS_MIN_MAX_ENTRY: "@battalions! $MIN$ - $MAX$"
 
  HAS_GENERALS_TOOLTIP: "Цей бік має принаймні одного командира"
  ALLIES:0 "Allies:"
@@ -862,8 +862,8 @@
  GENERAL_TRAVELING_ARRIVAL: "#header У дорозі на фронт#!\nПрибуде: $DATE$"
  GENERAL_NAVAL_INVASION_TOOLTIP:1 "#header $naval_invasion$#!\nAccompanying #variable $naval_invasion$#! order on [Character.GetNavalInvasion.GetAdmiral.GetCommanderOrder.GetState.GetName|v]\n\n[Character.GetNavalInvasion.GetStatus]"
  GENERAL_BUSY_NAVAL_INVASION:1 "Accompanying #variable $naval_invasion$#! order on [Character.GetNavalInvasion.GetAdmiral.GetCommanderOrder.GetState.GetName|v]"
- COMMANDER_BUSY_BATTLE:0 "[Character.GetFullName] is currently engaged in battle"
- COMMANDER_BUSY:0 "[Character.GetFullName] is busy"
+ COMMANDER_BUSY_BATTLE: "[Character.GetFullName] наразі бере участь у битві"
+ COMMANDER_BUSY: "[Character.GetFullName] зайнят[Select_CString(Character.IsFemale,'$CustomLoc_UA_vona_a$','$CustomLoc_UA_vin_yY$')|l]"
  ADMIRAL_BUSY_NAVAL_INVASION:1 "#warning @warning! Changing orders will cancel #variable $naval_invasion$#! order on [Character.GetNavalInvasion.GetEnemyState.GetName|v] accompanied by [Character.GetNavalInvasion.GetGeneral.GetFullName].#!"
  COMMANDER_HAS_NO_BATTALIONS:0 "$NAME$ has no [Concept('concept_battalion', '$concept_battalions$')]"
  COMMANDER_HAS_NO_FLOTILLAS:0 "$NAME$ has no [Concept('concept_flotilla','$concept_flotillas$')]"
@@ -5771,8 +5771,8 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  notification_commander_order_invalidated_desc: "[SCOPE.GetRootScope.GetCharacter.GetFullName] тепер має новий наказ [SCOPE.sCOT('target').GetName] (Попередній [SCOPE.sCOT('actor').GetName])"
 
  notification_commander_moved_to_other_front_tooltip: "#header $notification_commander_moved_to_other_front_name$#!\n$TOOLTIP_DELIMITER$\n$notification_commander_moved_to_other_front_desc$"
- notification_commander_moved_to_other_front_name: "[SCOPE.sCha('actor').GetFullName] (@battalions!#variable [SCOPE.sCha('actor').GetNumCombatUnits]#!) переміщен[SCOPE.sCha('actor').IsFemale,'$CustomLoc_UA_vona_a$','$CustomLoc_UA_vin_yY$')|l]"
- notification_commander_moved_to_other_front_desc:1 "[SCOPE.sCha('actor').GetFullName] (@battalions!#variable [SCOPE.sCha('actor').GetNumCombatUnits]#!) переміщен[SCOPE.sCha('actor').IsFemale,'$CustomLoc_UA_vona_a$','$CustomLoc_UA_vin_yY$')|l] до [Concept('concept_front', '$concept_front_gen$')|l] [SCOPE.GetRootScope.GetFront.GetName]"
+ notification_commander_moved_to_other_front_name: "[SCOPE.sCha('actor').GetFullName] (@battalions!#variable [SCOPE.sCha('actor').GetNumCombatUnits]#!) переміщен[Select_CString(SCOPE.sCha('actor').IsFemale,'$CustomLoc_UA_vona_a$','$CustomLoc_UA_vin_yY$')|l]"
+ notification_commander_moved_to_other_front_desc:1 "[SCOPE.sCha('actor').GetFullName] (@battalions!#variable [SCOPE.sCha('actor').GetNumCombatUnits]#!) переміщен[Select_CString(SCOPE.sCha('actor').IsFemale,'$CustomLoc_UA_vona_a$','$CustomLoc_UA_vin_yY$')|l] до [Concept('concept_front', '$concept_front_gen$')|l] [SCOPE.GetRootScope.GetFront.GetName]"
 
  notification_migration_target_created_tooltip: "#header $notification_migration_target_created_name$#!\n$TOOLTIP_DELIMITER$\n$notification_migration_target_created_desc$"
  notification_migration_target_created_name: "Масове переселення народу [SCOPE.GetRootScope.GetState.GetMassMigrationCulture.GetName|l]"

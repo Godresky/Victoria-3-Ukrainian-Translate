@@ -368,6 +368,7 @@
  concept_garrison_desc:1 "The $concept_garrison$ of an [concept_hq] consists of all [Concept('concept_battalion','$concept_battalions$')] that are not yet [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilized$')]. During [concept_war], an $concept_hq$'s $concept_garrison$ will be distributed across any [Concept('concept_front','$concept_fronts$')] present there, where they are temporarily and automatically assigned to defending $concept_generals$ for the duration of a given [concept_battle] or even able to defend independently should no $concept_general$ be available.\n\n$concept_garrison$ forces have lower [concept_good_consumption] of [Concept('concept_military_good','$concept_military_goods$')] on account of not being $concept_mobilize_battalion_mobilized$, but do not derive the benefit of $concept_general$'s [Concept('concept_character_trait','$concept_character_traits$')] and are less likely to become available in defensive $concept_battles$. $concept_garrison$ forces cannot join advances."
 
  concept_advancement_progress: "Поступ просування"
+ concept_advancement_progress_gen: "Поступ просування"
  concept_advancement_progress_desc:1 "[Concept('concept_general','$concept_generals$')] [Concept('concept_order','$concept_ordered$')] to advance a [concept_front] accumulates $concept_advancement_progress$ daily depending on their [concept_advancement_speed]. Once the $concept_advancement_progress$ of the $concept_front$ has reached [GetDefine('NMilitary','BATTLE_PLAN_ADVANCE_PROGRESS_TO_LAUNCH')|v0] a [concept_battle] will start. While a $concept_battle$ is ongoing on the $concept_front$, $concept_advancement_progress$ on that $concept_front$ will be paused."
  
  concept_advancement_speed: "Швидкість просування"
@@ -1926,6 +1927,7 @@
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED APRIL 22, 2022
 
  concept_devastation: "Спустошення"
+ concept_devastation_gen: "Спустошення"
  concept_devastation_desc:2 "$concept_devastation$ is the damage done to a [concept_state_region] as a result of war or natural disasters. It increases from [Concept('concept_battle','$concept_battles$')] and when under hostile [concept_occupation]. It will decrease over time if no part of the $concept_state_region$ is at war.\n\n$concept_devastation$ has a negative impact on [concept_infrastructure], [Concept('concept_pop_growth','$concept_pop_growth_mortality$')], [concept_throughput], and [concept_migration_pull]."
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED APRIL 5, 2022

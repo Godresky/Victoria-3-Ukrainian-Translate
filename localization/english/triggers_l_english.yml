@@ -125,8 +125,8 @@
  TRIGGER_CAN_RESEARCH_THIRD: "[COUNTRY.GetName]» може дослідити технологію «[TECHNOLOGY.GetName]»"
  TRIGGER_CAN_RESEARCH_THIRD_NOT: "[COUNTRY.GetName]» не може дослідити технологію «[TECHNOLOGY.GetName]»"
  
- TRIGGER_IS_WAR_PARTICIPANT:0 "Has [TARGET_COUNTRY.GetName] Participating"
- TRIGGER_IS_WAR_PARTICIPANT_NOT:1 "Does #bold not #!have [TARGET_COUNTRY.GetName] Participating"
+ TRIGGER_IS_WAR_PARTICIPANT: "[TARGET_COUNTRY.GetName] бере участь"
+ TRIGGER_IS_WAR_PARTICIPANT_NOT: "[TARGET_COUNTRY.GetName] #bold не#! бере участь"
  
  TRIGGER_CAN_FORM_NATION: "Можна створити державу [COUNTRYFORMATION.GetName]"
  TRIGGER_CAN_FORM_NATION_NOT:2 "Can #bold not #!form the nation of [COUNTRYFORMATION.GetName]"
@@ -1898,7 +1898,7 @@
  TRIGGER_ANY_SCOPE_WAR_THIRD:1 "Any [COUNTRY.GetAdjective] [concept_war]:"
  TRIGGER_ANY_SCOPE_WAR_THIRD_NOT:1 "No [COUNTRY.GetAdjective] [concept_war]:"
  
- TRIGGER_ANY_SCOPE_WAR_ALL:2 "All [Concept('concept_war', '$concept_wars$')]:"
+ TRIGGER_ANY_SCOPE_WAR_ALL: "Усі [Concept('concept_war', '$concept_wars$')|l]:"
  TRIGGER_ANY_SCOPE_WAR_PERCENT:3 "$PARAMETERS$ of $FILTER$[Concept('concept_war', '$concept_wars$')]:"
  TRIGGER_ANY_SCOPE_WAR_COUNT:3 "$PARAMETERS$ $FILTER$[Concept('concept_war', '$concept_wars$')]:"
  
