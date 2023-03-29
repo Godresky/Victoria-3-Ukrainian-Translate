@@ -899,9 +899,9 @@
  escort_convoys_desc: "#header $escort_convoys$#!\nНаказ [Concept('concept_admiral','$concept_admiral_dat$')|l] [Character.GetFullName] - захищати [Concept('concept_shipping_lane','$concept_shipping_lanes$')|l] проти рейдерів."
  escort_convoys_tooltip: "#header $escort_convoys$#!\nПатрулює між [Character.GetLocationHQ.GetName] та [SCOPE.GetRootScope.GetHQ.GetName]"
 
- commander_status_traveling_time_days:0 "[Character.GetDaysToCompleteTravelRaw|v] [SelectLocalization( GreaterThan_int32( Character.GetDaysToCompleteTravelRaw, '(int32)1' ), 'GENERAL_TRAVEL_DAYS', 'GENERAL_TRAVEL_DAY' )]"
- commander_status_traveling_time_less_than_day:0 "less than #variable 1#! day"
- commander_status_traveling_time:0 "[SelectLocalization( GreaterThan_int32( Character.GetDaysToCompleteTravelRaw, '(int32)0' ), 'commander_status_traveling_time_days', 'commander_status_traveling_time_less_than_day' )]"
+ commander_status_traveling_time_days: "[Character.GetDaysToCompleteTravelRaw|v] [SelectLocalization( GreaterThan_int32( Character.GetDaysToCompleteTravelRaw, '(int32)1' ), 'GENERAL_TRAVEL_DAYS', 'GENERAL_TRAVEL_DAY' )]"
+ commander_status_traveling_time_less_than_day: "менше ніж за #variable 1#! день"
+ commander_status_traveling_time: "[SelectLocalization( GreaterThan_int32( Character.GetDaysToCompleteTravelRaw, '(int32)0' ), 'commander_status_traveling_time_days', 'commander_status_traveling_time_less_than_day' )]"
 
  commander_status_idle:1 "Idle in [Character.GetCurrentHQ.GetName]"
  commander_status_traveling_hq:0 "Traveling to [Character.GetCurrentHQ.GetName] ($commander_status_traveling_time$)"
@@ -4124,10 +4124,10 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
 
  REVOLUTIONS_UPRISING_HEADER_LOYALIST:0 "Opposing [CivilWar.GetUprisingCountry.GetName]!"
  REVOLUTIONS_UPRISING_HEADER_REBEL:0 "Opposing [CivilWar.GetOriginCountry.GetName]!"
- REVOLUTIONS_IG_LIST_HEADER:0 "#title Insurrectionary [Concept('concept_interest_group', '$concept_interest_groups$')]:#!"
- REVOLUTIONS_IG_LIST_HEADER_TOOLTIP:0 "The insurrectionary [Concept('concept_interest_group', '$concept_interest_groups$')] in the country"
- BATTALIONS_STILL_FIGHTING:0 "@battalions! Battalions"
- BATTALIONS_FIGHTING_HISTORY:0 "@battalions! Battalions fighting history"
+ REVOLUTIONS_IG_LIST_HEADER: "#title Бунтівні [Concept('concept_interest_group', '$concept_interest_groups$')|l]:#!"
+ REVOLUTIONS_IG_LIST_HEADER_TOOLTIP: "Бунтівні [Concept('concept_interest_group', '$concept_interest_groups$')] у державі"
+ BATTALIONS_STILL_FIGHTING: "@battalions! Курені"
+ BATTALIONS_FIGHTING_HISTORY: "@battalions! Бойова історія куренів"
  MANPOWER_FIGHTING_HISTORY: "Боєздатні чоловіки"
 
  SECESSION_UPRISING_HEADER:0 "#N #BOLD The [CivilWar.GetCulture.GetName] have seceeded from us!#!#!"
@@ -5106,7 +5106,7 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  MODIFIERS_ATTACKER_HEADER: "#title Змінювачі нападника#!"
  MODIFIERS_DEFENDER_HEADER: "#title Змінювачі оборонця#!"
  CASUALTIES_ATTACKER_HEADER: "#title Втрати нападника#!"
- CASUALTIES_DEFENDER_HEADER: "#title Втрата оборонця#!"
+ CASUALTIES_DEFENDER_HEADER: "#title Втрати оборонця#!"
  CASUALTY_ENTRY_HEADER: "[CultureCasualtyStatistics.GetCulture.GetName]"
  CASUALTY_ENTRY_DEAD: "Мертві: [CultureCasualtyStatistics.GetDead]"
  CASUALTY_ENTRY_WOUNDED: "Ранені: [CultureCasualtyStatistics.GetWounded]"
@@ -5758,17 +5758,17 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  notification_resource_discovered_name: "[SCOPE.sBT('target').GetDiscoveredResourceName] знайдено у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetStateRegion.GetName]"
  notification_resource_discovered_desc: "[SCOPE.sBT('target').GetDiscoveredResourceName] знайдено у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetStateRegion.GetName]. [concept_state_region] тепер може мати додаткові [Concept('concept_building', '$concept_buildings_acc$')|l] [SCOPE.sBT('target').GetName|l]."
 
- notification_resource_depleted_tooltip:0 "#header $notification_resource_depleted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_resource_depleted_desc$"
- notification_resource_depleted_name:1 "[SCOPE.sBT('target').GetDiscoveredResourceName] depleted in [SCOPE.GetRootScope.GetStateRegion.GetName]"
- notification_resource_depleted_desc:1 "[SCOPE.sBT('target').GetDiscoveredResourceName] has been depleted in [SCOPE.GetRootScope.GetStateRegion.GetName]. The [concept_state_region] can now support fewer [SCOPE.sBT('target').GetName]."
+ notification_resource_depleted_tooltip: "#header $notification_resource_depleted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_resource_depleted_desc$"
+ notification_resource_depleted_name: "[SCOPE.sBT('target').GetDiscoveredResourceName] вичерпано у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetStateRegion.GetName]"
+ notification_resource_depleted_desc: "[SCOPE.sBT('target').GetDiscoveredResourceName] вичерпано у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetStateRegion.GetName]. [concept_state_region] тепер може мати менше [Concept('concept_building', '$concept_buildings_acc$')|l] [SCOPE.sBT('target').GetName|l]."
 
  notification_new_culture_obsession_tooltip: "#header $notification_new_culture_obsession_name$#!\n$TOOLTIP_DELIMITER$\n$notification_new_culture_obsession_desc$"
- notification_new_culture_obsession_name: "Народ [SCOPE.GetRootScope.GetCulture.GetName|l] стали одержимими [Concept('concept_good', '$concept_goods_ins$')|l] [SCOPE.sG('goods').GetName|l]"
- notification_new_culture_obsession_desc: "Культура [SCOPE.GetRootScope.GetCulture.GetName] стали одержимою [Concept('concept_good', '$concept_goods_ins$')|l] [SCOPE.sG('goods').GetName|l]."
+ notification_new_culture_obsession_name: "[SCOPE.GetRootScope.GetCulture.GetName|l] стали одержимими [Concept('concept_good', '$concept_goods_ins$')|l] [SCOPE.sG('goods').GetName|l]"
+ notification_new_culture_obsession_desc: "[SCOPE.GetRootScope.GetCulture.GetName] стали одержимими [Concept('concept_good', '$concept_goods_ins$')|l] [SCOPE.sG('goods').GetName|l]."
 
- notification_commander_order_invalidated_tooltip:0 "#header $notification_commander_order_invalidated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_commander_order_invalidated_desc$"
- notification_commander_order_invalidated_name:0 "New Commander Order"
- notification_commander_order_invalidated_desc:0 "[SCOPE.GetRootScope.GetCharacter.GetFullName] now has [SCOPE.sCOT('target').GetName] Order (Previously [SCOPE.sCOT('actor').GetName])"
+ notification_commander_order_invalidated_tooltip: "#header $notification_commander_order_invalidated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_commander_order_invalidated_desc$"
+ notification_commander_order_invalidated_name: "Новий наказ командиру"
+ notification_commander_order_invalidated_desc: "[SCOPE.GetRootScope.GetCharacter.GetFullName] тепер має новий наказ [SCOPE.sCOT('target').GetName] (Попередній [SCOPE.sCOT('actor').GetName])"
 
  notification_commander_moved_to_other_front_tooltip: "#header $notification_commander_moved_to_other_front_name$#!\n$TOOLTIP_DELIMITER$\n$notification_commander_moved_to_other_front_desc$"
  notification_commander_moved_to_other_front_name: "[SCOPE.sCha('actor').GetFullName] (@battalions!#variable [SCOPE.sCha('actor').GetNumCombatUnits]#!) переміщен[SCOPE.sCha('actor').IsFemale,'$CustomLoc_UA_vona_a$','$CustomLoc_UA_vin_yY$')|l]"
@@ -5784,15 +5784,15 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
 
  notification_country_swayed_tooltip: "#header $notification_country_swayed_name$#!\n$TOOLTIP_DELIMITER$\n$notification_country_swayed_desc$"
  notification_country_swayed_name: "[SCOPE.sC('recipient').GetName] змінила позицію"
- notification_country_swayed_desc: "[SCOPE.sC('recipient').GetName] підтримала [Concept('concept_country', '$concept_country_acc$')|l] [SCOPE.sC('actor').GetName] у цій [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l] проти [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sC('target').GetName]"
+ notification_country_swayed_desc: "[SCOPE.sC('recipient').GetName] схилилася на [SCOPE.sC('actor').GetAdjective|l]ий бік у [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l] проти [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sC('target').GetName]"
 
- notification_sway_offer_accepted_tooltip:0 "#header $notification_sway_offer_accepted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_sway_offer_accepted_desc$"
- notification_sway_offer_accepted_name:0 "[SCOPE.sC('recipient').GetName] змінила позицію"
- notification_sway_offer_accepted_desc:0 "[SCOPE.sC('recipient').GetName] was swayed to our side in the [concept_diplomatic_play] against [SCOPE.sC('target').GetName]"
+ notification_sway_offer_accepted_tooltip: "#header $notification_sway_offer_accepted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_sway_offer_accepted_desc$"
+ notification_sway_offer_accepted_name: "[SCOPE.sC('recipient').GetName] змінила позицію"
+ notification_sway_offer_accepted_desc: "[SCOPE.sC('recipient').GetName] схилилася на наш бік у [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l] проти [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sC('target').GetName]"
 
- notification_sway_offer_rejected_tooltip:0 "#header $notification_sway_offer_rejected_name$#!\n$TOOLTIP_DELIMITER$\n$notification_sway_offer_rejected_desc$"
- notification_sway_offer_rejected_name:0 "Attempt to sway [SCOPE.sC('recipient').GetName] failed"
- notification_sway_offer_rejected_desc:0 "[SCOPE.sC('recipient').GetName] refused to be swayed to our side in the [concept_diplomatic_play] against [SCOPE.sC('target').GetName]"
+ notification_sway_offer_rejected_tooltip: "#header $notification_sway_offer_rejected_name$#!\n$TOOLTIP_DELIMITER$\n$notification_sway_offer_rejected_desc$"
+ notification_sway_offer_rejected_name: "Спроба схилити [Concept('concept_country', '$concept_country_acc$')|l] [SCOPE.sC('recipient').GetName] провалилася"
+ notification_sway_offer_rejected_desc: "[SCOPE.sC('recipient').GetName] відмовився схилитися на наш бік у [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l] проти [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sC('target').GetName]"
 
  notification_interest_activated_tooltip: "#header $notification_interest_activated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_interest_activated_desc$"
  notification_interest_activated_name: "[concept_interest] [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName] - проявлений"
@@ -5846,7 +5846,7 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  notification_ig_trait_deactivated_name: "[SCOPE.GetRootScope.GetInterestGroup.GetName] - риса «[SCOPE.sInterestGroupTrait('target').GetName(SCOPE.GetRootScope.GetInterestGroup.Self)]» недієва"
  notification_ig_trait_deactivated_desc: "Це сталося, тому що їхнє [concept_approval|l] - [SCOPE.GetRootScope.GetInterestGroup.GetApprovalRating|l] (#tooltippable #tooltip:[SCOPE.GetRootScope.GetInterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [SCOPE.GetRootScope.GetInterestGroup.GetApprovalValue|=+]#!#!).\n\n#title Заподії (більше не діють):#!\n[SCOPE.sInterestGroupTrait('target').GetModifiersDesc(SCOPE.GetRootScope.GetInterestGroup.Self)]"
 
- notification_ig_movement_left_marginal_name:0 "[SCOPE.GetRootScope.GetInterestGroup.GetName] - left [SCOPE.sPoliticalMovement('political_movement').GetName]"
+ notification_ig_movement_left_marginal_name: "[SCOPE.GetRootScope.GetInterestGroup.GetName] покинула [SCOPE.sPoliticalMovement('political_movement').GetName]"
  notification_ig_movement_left_marginal_desc:0 "This is due to interest group becoming marginal"
  notification_ig_movement_left_marginal_tooltip:0 "#header $notification_ig_movement_left_marginal_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_movement_left_marginal_desc$"
 
@@ -6003,9 +6003,9 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  SORT_BY_MARKET_GOODS: "Хухрити за [Concept('concept_good', '$concept_goods_ins$')|l]"
  SORT_BY_BALANCE_TOOLTIP: "Хухрити за балянсом. Це число, яке ви отримуєте віднявши ціну [Concept('concept_buy_orders', '$concept_buy_orders_gen$')|l] від [Concept('concept_sell_orders', '$concept_sell_orders_gen$')|l]."
  SORT_BY_COUNTRY: "Хухрити за назвою [Concept('concept_country', '$concept_country_gen$')|l]"
- SORT_BY_MAREKT_PRICE:0 "Sort by [concept_market_price]"
- SORT_BY_AMOUNT_CONSUMED:0 "Sort by amount of [Concept('concept_good', '$concept_goods$')] [Concept('concept_good_consumption', '$concept_good_consumed$')]"
- SORT_BY_BUDGET_EXPENDITURE:0 "Sort by the percentage of the [Concept('concept_pop', '$concept_pop_possessive$')] budget spent on each [concept_good]"
+ SORT_BY_MAREKT_PRICE: "Хухрити за [Concept('concept_market_price', '$concept_market_price_ins$')|l]"
+ SORT_BY_AMOUNT_CONSUMED: "Хухрити за кількістю [Concept('concept_good_consumption', '$concept_good_consumed_adj$ого')|l] [Concept('concept_good', '$concept_goods_gen$')|l] "
+ SORT_BY_BUDGET_EXPENDITURE: "Хухрити за відсотком витраченого бюджету [Concept('concept_pop', '$concept_pop_gen$')|l] на кожен [Concept('concept_good', '$concept_good_acc$')|l]"
 
  MAP_MODE_ATTITUDE_COUNTRY: "Показати [concept_attitude|l] до [Concept('concept_country', '$concept_country_gen$')|l] [CountryPanel.GetCountry.GetName] на мапі"
  MAP_MODE_RELATIONS_COUNTRY: "Показати [concept_relations|l] з [Concept('concept_country', '$concept_country_ins$')|l] [CountryPanel.GetCountry.GetName] на мапі"
@@ -6030,7 +6030,7 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  BUILDING_MAP_LIST_PANEL_PEASANTS_HEADER: "Селяни"
  BUILDING_MAP_LIST_PANEL_PEASANTS_HEADER_TOOLTIP: "#header Кількість селян#!"
 
- BUILDING_MAP_LIST_PANEL_CONSTRUCTION_HEADER:0 "@construction!"
+ BUILDING_MAP_LIST_PANEL_CONSTRUCTION_HEADER: "@construction!"
  BUILDING_MAP_LIST_PANEL_CONSTRUCTION_HEADER_TOOLTIP:0 "#header @construction![Nbsp][concept_construction]#!\n$TOOLTIP_DELIMITER$\n#concept How much total @construction! $concept_construction$ the [concept_building] will require to complete.#!"
  BUILDING_MAP_LIST_PANEL_STATUS_BUILD: "Збудувати"
  BUILDING_MAP_LIST_PANEL_STATUS_EXPAND: "Розширити"
@@ -6049,17 +6049,17 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  COLONY_MAP_LIST_PANEL_STATE_HEADER: "Реґіон"
  COLONY_MAP_LIST_PANEL_STATE_HEADER_TOOLTIP: "#header [concept_state]#!\n$TOOLTIP_DELIMITER$\n#concept Цільовий реґіон.#!"
 
- DIPLO_ACTION_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP:0 "#header Status#!\n$TOOLTIP_DELIMITER$\n#concept The availability of this [concept_diplomatic_action] in each [concept_country].\n\n@map_list_plus!: Ви можете вибрати це.\n@map_list_plus_and_checkmark!: Ви можете вибрати це, й це вже тут робите.\n@map_list_checkmark!: Ви вже робите це тут і можете скасувати вибір.\n@map_list_lock!: Ви вже робите це тут, але НЕ можете скасувати вибір.\n@map_list_cross!: Ви НЕ можете вибрати це.\n@map_list_cross_and_checkmark!: Ви вже робите це тут, але НЕ можете вибрати це.#!"
+ DIPLO_ACTION_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP: "#header Стан#!\n$TOOLTIP_DELIMITER$\n#concept Можливість цієї [Concept('concept_diplomatic_action','$concept_diplomatic_action_gen$')|l] для кожної [Concept('concept_country','$concept_country_gen$')|l].\n\n@map_list_plus!: Ви можете вибрати це.\n@map_list_plus_and_checkmark!: Ви можете вибрати це, й це вже тут робите.\n@map_list_checkmark!: Ви вже робите це тут і можете скасувати вибір.\n@map_list_lock!: Ви вже робите це тут, але НЕ можете скасувати вибір.\n@map_list_cross!: Ви НЕ можете вибрати це.\n@map_list_cross_and_checkmark!: Ви вже робите це тут, але НЕ можете вибрати це.#!"
  DIPLO_ACTION_LIST_PANEL_STATUS_HEADER: "Держава"
  DIPLO_ACTION_LIST_PANEL_STATUS_HEADER_TOOLTIP: "#header [concept_country]#!"
- DIPLO_ACTION_LIST_PANEL_STATUS_SEND:0 "Send"
- DIPLO_ACTION_LIST_PANEL_STATUS_NOT_POSSIBLE:0 "Unavailable"
+ DIPLO_ACTION_LIST_PANEL_STATUS_SEND: "Відправити"
+ DIPLO_ACTION_LIST_PANEL_STATUS_NOT_POSSIBLE: "Недоступно"
 
- DECREE_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP:0 "#header Status#!\n$TOOLTIP_DELIMITER$\n#concept The availability of this [concept_decree] in each [concept_state].\n\n@map_list_plus!: Ви можете вибрати це.\n@map_list_plus_and_checkmark!: Ви можете вибрати це, й це вже тут робите.\n@map_list_checkmark!: Ви вже робите це тут і можете скасувати вибір.\n@map_list_lock!: Ви вже робите це тут, але НЕ можете скасувати вибір.\n@map_list_cross!: Ви НЕ можете вибрати це.\n@map_list_cross_and_checkmark!: Ви вже робите це тут, але НЕ можете вибрати це.#!"
- DECREE_LIST_PANEL_STATE_HEADER:0 "State"
- DECREE_LIST_PANEL_STATE_HEADER_TOOLTIP:0 "#header [concept_state]#!"
- DECREE_LIST_PANEL_COST_HEADER:0 "Cost"
- DECREE_LIST_PANEL_COST_HEADER_TOOLTIP:0 "#header Cost to keep maintaining this decree#!"
+ DECREE_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP: "#header Стан#!\n$TOOLTIP_DELIMITER$\n#concept Можливість цієї [Concept('concept_decree','$concept_decree_gen$')|l] для кожного [Concept('concept_state','$concept_state_gen$')|l].\n\n@map_list_plus!: Ви можете вибрати це.\n@map_list_plus_and_checkmark!: Ви можете вибрати це, й це вже тут робите.\n@map_list_checkmark!: Ви вже робите це тут і можете скасувати вибір.\n@map_list_lock!: Ви вже робите це тут, але НЕ можете скасувати вибір.\n@map_list_cross!: Ви НЕ можете вибрати це.\n@map_list_cross_and_checkmark!: Ви вже робите це тут, але НЕ можете вибрати це.#!"
+ DECREE_LIST_PANEL_STATE_HEADER: "Реґіон"
+ DECREE_LIST_PANEL_STATE_HEADER_TOOLTIP: "#header [concept_state]#!"
+ DECREE_LIST_PANEL_COST_HEADER: "Варт."
+ DECREE_LIST_PANEL_COST_HEADER_TOOLTIP: "#header Вартість підтримки цієї постанови#!"
 
  TRADE_ROUTE_LIST_PANEL_STATUS_HEADER_TOOLTIP: "#header Стан#!\n$TOOLTIP_DELIMITER$\n#concept Можливість цього [Concept('concept_trade_route','$concept_trade_route_gen$')|l] для кожного [Concept('concept_market','$concept_market_gen$')|l].\n\n@map_list_plus!: Ви можете вибрати це.\n@map_list_plus_and_checkmark!: Ви можете вибрати це, й це вже тут робите.\n@map_list_checkmark!: Ви вже робите це тут і можете скасувати вибір.\n@map_list_lock!: Ви вже робите це тут, але НЕ можете скасувати вибір.\n@map_list_cross!: Ви НЕ можете вибрати це.\n@map_list_cross_and_checkmark!: Ви вже робите це тут, але НЕ можете вибрати це.#!"
  TRADE_ROUTE_LIST_PANEL_MARKET_HEADER: "Ринок"
@@ -6123,19 +6123,19 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  EMBARGO: "Ембарґо"
  TRADE_AGREEMENT: "Торгова угода"
 
- ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP:0 "#header Status#!\n$TOOLTIP_DELIMITER$\n#concept The availability of activating the [concept_conscription_center] in each [concept_state].\n\n@map_list_plus!: Ви можете вибрати це.\n@map_list_plus_and_checkmark!: Ви можете вибрати це, й це вже тут робите.\n@map_list_checkmark!: Ви вже робите це тут і можете скасувати вибір.\n@map_list_lock!: Ви вже робите це тут, але НЕ можете скасувати вибір.\n@map_list_cross!: Ви НЕ можете вибрати це.\n@map_list_cross_and_checkmark!: Ви вже робите це тут, але НЕ можете вибрати це.#!"
- ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_STATE_HEADER:0 "State"
- ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_STATE_HEADER_TOOLTIP:0 "#header State#!\n$TOOLTIP_DELIMITER$\nThe [concept_state] where [concept_conscription_center] will be activated."
- ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_SIZE_TOOLTIP:0 "#header Size#!\n$TOOLTIP_DELIMITER$\nThe size of the [concept_conscription_center]."
- ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_UNITS:0 "Units"
- ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_UNITS_TOOLTIP:0 "#header Units#!\n$TOOLTIP_DELIMITER$\nThe number of units that will be drafted by the [concept_conscription_center]."
- ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_UNITS_TEXT:0 "@battalions! [MapListOption.GetActivateConscriptionCenterData.GetBuilding.GetCombatUnitCapacity|v]"
+ ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP: "#header Стан#!\n$TOOLTIP_DELIMITER$\n#concept Можливість ожвавлення [Concept('concept_conscription_center', '$concept_conscription_center_gen$')|l] у кожному [Concept('concept_state', '$concept_state_loc$')|l].\n\n@map_list_plus!: Ви можете вибрати це.\n@map_list_plus_and_checkmark!: Ви можете вибрати це, й це вже тут робите.\n@map_list_checkmark!: Ви вже робите це тут і можете скасувати вибір.\n@map_list_lock!: Ви вже робите це тут, але НЕ можете скасувати вибір.\n@map_list_cross!: Ви НЕ можете вибрати це.\n@map_list_cross_and_checkmark!: Ви вже робите це тут, але НЕ можете вибрати це.#!"
+ ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_STATE_HEADER: "Реґіон"
+ ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_STATE_HEADER_TOOLTIP: "#header Реґіон#!\n$TOOLTIP_DELIMITER$\n[concept_state], де [Concept('concept_conscription_center', '$concept_conscription_center$')|l] буде ожвавлено."
+ ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_SIZE_TOOLTIP: "#header Розмір#!\n$TOOLTIP_DELIMITER$\nРозмір [Concept('concept_conscription_center', '$concept_conscription_center_gen$')|l]."
+ ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_UNITS: "Підрозділи"
+ ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_UNITS_TOOLTIP: "#header Підрозділи#!\n$TOOLTIP_DELIMITER$\nКількість підрозділів, які будуть призвані [Concept('concept_conscription_center', '$concept_conscription_center_ins$')|l]."
+ ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_UNITS_TEXT: "@battalions! [MapListOption.GetActivateConscriptionCenterData.GetBuilding.GetCombatUnitCapacity|v]"
 
  FRONT_MAP_LIST_PANEL_UNITS: "Підрозділи"
- FRONT_MAP_LIST_PANEL_UNITS_TOOLTIP: "Кількість підрозділів, присутніх на [Concept( 'concept_front', '$concept_front_loc$' )]."
+ FRONT_MAP_LIST_PANEL_UNITS_TOOLTIP: "Кількість підрозділів, присутніх на [Concept( 'concept_front', '$concept_front_loc$' )|l]."
 
  FRONT_MAP_LIST_PANEL_ADVANTAGE: "Перевага"
- FRONT_MAP_LIST_PANEL_ADVANTAGE_TOOLTIP:0 "Advantage/Disadvantage of the [concept_front]"
+ FRONT_MAP_LIST_PANEL_ADVANTAGE_TOOLTIP: "Переваги/невигоди [Concept( 'concept_front', '$concept_front_gen$' )|l]"
 
  RECRUIT_COMMANDERS_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP: "#header Стан#!\n$TOOLTIP_DELIMITER$\n#concept Можливість найму [Concept('concept_general', '$concept_generals_gen$')|l] у кожному [Concept('concept_hq', '$concept_hq_loc$')|l].\n\n@map_list_plus!: Ви можете вибрати це.\n@map_list_plus_and_checkmark!: Ви можете вибрати це, й це вже тут робите.\n@map_list_checkmark!: Ви вже робите це тут і можете скасувати вибір.\n@map_list_lock!: Ви вже робите це тут, але НЕ можете скасувати вибір.\n@map_list_cross!: Ви НЕ можете вибрати це.\n@map_list_cross_and_checkmark!: Ви вже робите це тут, але НЕ можете вибрати це.#!"
  RECRUIT_COMMANDERS_MAP_LIST_PANEL_CURRENT_NUM: "Наразі"
@@ -6483,8 +6483,8 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  recruit_admirals_lens_option: "Найняти адміралів"
  recruit_admirals_lens_option_tooltip: "Найняти адміралів для [Concept('concept_hq', '$concept_hq_gen$')|l]."
 
- EVENT_HIGHLIGHTED_OPTION: "Ця опція доступна тому, що:"
- EVENT_HIGHLIGHTED_OPTION_NOT: "Ця опція не доступна тому, що:"
+ EVENT_HIGHLIGHTED_OPTION: "Ця опція доступна, тому що:"
+ EVENT_HIGHLIGHTED_OPTION_NOT: "Ця опція не доступна, тому що:"
 
  notification_country_mobilization_name: "[SCOPE.sCountry('actor').GetName] почала [Concept('concept_mobilize_general', '$concept_mobilize_general_mobilization$')|l]"
  notification_country_mobilization_desc: "Наш [SelectLocalization( SCOPE.sDiplomaticPlay('diplomatic_play').AreOnSameSide( GetPlayer, SCOPE.sCountry('actor') ), 'союзник', 'ворог' )] [SCOPE.sCountry('actor').GetName] почав [Concept('concept_mobilize_general', 'збирати')] своїх [Concept('concept_general', '$concept_generals_gen$')|l]."
@@ -6564,7 +6564,7 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  notification_journal_entry_completed_desc: "[Concept('concept_journal_entry','$concept_journal_entry_short$')] «[SCOPE.GetRootScope.GetJournalEntry.GetName]» успішно виконано"
  notification_journal_entry_completed_tooltip: "#header $notification_journal_entry_completed_name$#!\n$notification_journal_entry_completed_desc$"
 
- notification_native_uprising_notification_name: "[SCOPE.sCountry('actor').GetAdjective|l]ий виступ"
+ notification_native_uprising_notification_name: "[SCOPE.sCountry('actor').GetAdjective]ий виступ"
  notification_native_uprising_notification_desc: "[SCOPE.sCountry('actor').GetName] почала [Concept('concept_native_uprising', '$concept_native_uprising_acc$')|l] супроти нас!"
  notification_native_uprising_notification_tooltip: "#header $notification_native_uprising_notification_name$#!\n$notification_native_uprising_notification_desc$"
 
@@ -6746,7 +6746,7 @@ MAP_LIST_STATE_AVAILABLE_LABOR: "[State.GetPotentialLabor|Dv] [SelectLocalizatio
  WARGOALS: "Воєнні цілі"
  NO_WARGOAL: "Немає [Concept('concept_war_goal', '$concept_war_goal_gen$')|l]"
  CAN_SWAY_COUNTRY_TOOLTIP:0 "Has at least one [concept_sway] that [Country.GetName] would accept"
- CANNOT_SWAY_COUNTRY_TOOLTIP:0 "Немає способу [concept_sway|l] [Concept('concept_country', '$concept_country_acc$')|l] [Country.GetName]"
+ CANNOT_SWAY_COUNTRY_TOOLTIP: "Немає способу [concept_sway|l] [Concept('concept_country', '$concept_country_acc$')|l] [Country.GetName]"
  HAS_NO_COUNTRIES_YOU_CAN_SWAY_TOOLTIP:0 "You can sway no countries"
  HAS_COUNTRIES_YOU_CAN_SWAY_TOOLTIP:1 "You can [concept_sway] [DiplomaticPlay.GetNumberOfPossibleSwayCountriesFormatted( GetPlayer.Self )] countries."
  HAS_COUNTRIES_YOU_CAN_SWAY_TOOLTIP_NUMBER_BREAKDOWN:0 "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|v$#!#!"

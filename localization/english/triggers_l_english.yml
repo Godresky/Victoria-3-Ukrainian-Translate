@@ -788,8 +788,8 @@
  TRIGGER_HAS_DECREASING_INTERESTS:0 "Has decreasing Interests"
  TRIGGER_HAS_DECREASING_INTERESTS_NOT:1 "Does #bold not #!have decreasing Interests"
  
- TRIGGER_IS_IN_GOVERNMENT:0 "Is part of the government"
- TRIGGER_IS_IN_GOVERNMENT_NOT:1 "Is #bold not #!part of the government"
+ TRIGGER_IS_IN_GOVERNMENT: "Є в уряді"
+ TRIGGER_IS_IN_GOVERNMENT_NOT: "#bold Не#! є в уряді"
  
  TRIGGER_IG_APPROVAL:0 "Approval is $COMPARATOR$ #variable $NUM|0+=$#!"
  TRIGGER_IG_APPROVAL_NOT:1 "Approval is #bold not #!$COMPARATOR$ #variable $NUM|0+=$#!"

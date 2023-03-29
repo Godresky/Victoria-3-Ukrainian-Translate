@@ -271,12 +271,12 @@
  modifier_cyclone_relief:0 "Cyclone Relief"
 
  historical_events.1.t: "Перший політ"
- historical_events.1.d: "Перший політ важчого за повітря апарата було здійснено! Ця технологія проторує дорогу у майбутнє авіяції."
+ historical_events.1.d: "Здійснено перший політ важчого за повітря апарата! Ця технологія проторує дорогу у майбутнє авіяції."
  historical_events.1.f: "«Ніколи раніше ми не володіли такою силою в небі. З цими сміливими новими розробками, обмежень не існує!»"
  historical_events.1.a: "Поглянь, я наче птах!"
 
  notification_first_flight_name: "Перший політ"
- notification_first_flight_desc: "Перший політ важчого за повітря апарата було здійснено!"
+ notification_first_flight_desc: "Здійснено перший політ важчого за повітря апарата!"
  notification_first_flight_tooltip: "#header $notification_first_flight_name$#!\n$TOOLTIP_DELIMITER$\n$notification_first_flight_desc$"
 
  warlord_china_events.100.t: "Хіна руйнується"

@@ -31,12 +31,12 @@
 
  alert_revolution_alert_name: "[concept_revolution]"
  alert_revolution_alert_desc: "Революція почала рости і це може призвести до того, що ваша держава буде втягнута у [Concept('concept_civil_war','$concept_civil_war_acc$')|l]."
- alert_revolution_alert_hint: "Ви можете вибрати, який бік конфлікту ви підтримаєте в [Concept('concept_civil_war','$concept_civil_war_loc$')|l] та почати [Concept('concept_sway','$concept_sway$')|l] на свій бік інші держави (якщо потрібно), щоб досягти успіху."
+ alert_revolution_alert_hint: "Ви можете вибрати, який бік конфлікту ви підтримаєте в [Concept('concept_civil_war','$concept_civil_war_loc$')|l] та [Concept('concept_sway','$concept_sway$')|l] на свій бік інші держави (якщо потрібно), щоб досягти успіху."
  alert_revolution_alert_action: "Панель політики"
 
  alert_secession_alert_name: "[concept_secession]!"
  alert_secession_alert_desc: "Наша держава була в втягнута у [Concept('concept_civil_war','$concept_civil_war_acc$')|l]!"
- alert_secession_alert_hint: "Ви можете вибрати, який бік конфлікту ви підтримаєте в [Concept('concept_civil_war','$concept_civil_war_loc$')|l] та почати [Concept('concept_sway','$concept_sway$')|l] на свій бік інші держави (якщо потрібно), щоб досягти успіху."
+ alert_secession_alert_hint: "Ви можете вибрати, який бік конфлікту ви підтримаєте в [Concept('concept_civil_war','$concept_civil_war_loc$')|l] та [Concept('concept_sway','$concept_sway$')|l] на свій бік інші держави (якщо потрібно), щоб досягти успіху."
  alert_secession_alert_action: "Панель політики"
 
  alert_is_losing_rank_alert_name: "Втрата [Concept('concept_rank','$concept_rank_gen$')|l]"
@@ -251,7 +251,7 @@
 
  ag_high_tensions_name: "Висока [Concept('concept_tension', '$concept_tension$')|l]"
  ag_high_tensions_desc: "Ми маємо високу [Concept('concept_tension', '$concept_tension_acc$')|l] з [Concept('concept_decentralized_nation', '$concept_decentralized_nations_ins$')|l]."
- ag_high_tensions_tooltip:0 "#header $ag_high_tensions_name$#!\n$TOOLTIP_DELIMITER$\n$ag_high_tensions_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
+ ag_high_tensions_tooltip: "#header $ag_high_tensions_name$#!\n$TOOLTIP_DELIMITER$\n$ag_high_tensions_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  ag_insurrectionary_alerts_name: "Назрівають [Concept('concept_revolution','$concept_revolutions$')|l]"
  ag_insurrectionary_alerts_desc: "Існують зацікавлені партизанські групи, які плянують [Concept('concept_revolution','$concept_revolutions_acc$')|l] в вашій державі!"

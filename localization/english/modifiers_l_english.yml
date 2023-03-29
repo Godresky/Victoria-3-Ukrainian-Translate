@@ -427,8 +427,8 @@
  in_default:0 "Defaulting on Loans"
  in_default_desc:1 "Effects of the [concept_country] being unable to pay the [concept_interest] on its debts"
  
- declared_bankruptcy:0 "Declared Bankruptcy"
- declared_bankruptcy_desc:0 "Effects of the [concept_country] declaring [concept_bankruptcy]"
+ declared_bankruptcy: "Оголошено банкрутство"
+ declared_bankruptcy_desc: "Наслідки оголошення [Concept('concept_country', '$concept_country_ins$')|l] [Concept('concept_bankruptcy', '$concept_bankruptcy_gen$')|l]"
 
  uprising_conscription:0 "Uprising Conscription"
  uprising_conscription_desc:0 "Impact on Conscription due to the Uprising in progress"

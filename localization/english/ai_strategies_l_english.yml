@@ -124,7 +124,7 @@
  ai_attitude_cautious_tooltip: "#header $ai_attitude_cautious$ [concept_attitude|l]#!\n$ai_attitude_cautious_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
   
  ai_attitude_cooperative: "#V #P Співпраця#!#!"
- ai_attitude_cooperative_desc: "[COUNTRY.GetName] бачить [Concept('concept_country', '$concept_country_acc$')|l] [TARGET_COUNTRY.GetName], як a #P #bold можливого друга#!#! в геополітичних справах. Вони можуть шукати ближчих [concept_relations] із [TARGET_COUNTRY.GetName] і, швидше за все, будуть сприйнятливими."
+ ai_attitude_cooperative_desc: "[COUNTRY.GetName] бачить [Concept('concept_country', '$concept_country_acc$')|l] [TARGET_COUNTRY.GetName], як #P #bold можливого друга#!#! в геополітичних справах. Вони можуть шукати ближчих [concept_relations] із [TARGET_COUNTRY.GetName] і, швидше за все, будуть сприйнятливими."
  ai_attitude_cooperative_tooltip: "#header $ai_attitude_cooperative$ [concept_attitude|l]#!\n$ai_attitude_cooperative_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
 
  ai_attitude_conciliatory: "#V #P Примирення#!#!"
