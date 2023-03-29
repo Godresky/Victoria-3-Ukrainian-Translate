@@ -847,7 +847,7 @@
  concept_casualties_desc: "[concept_manpower], який загинув у бою або через [Concept('concept_attrition','$concept_attrition_acc$')|l], вважається втратами. Частина людей зі втрат є убитими одразу, а решта - [Concept('concept_wounded','$concept_wounded_adj$ими')|l]. Це співвідношення залежить від [Concept('concept_recovery_rate','$concept_recovery_rate_gen$')|l] [Concept('concept_unit','$concept_unit_gen$')|l] у порівнянні з ворожим [Concept('concept_kill_rate','$concept_kill_rate_ins$')|l]."
 
  concept_offense: "Наступ"
- concept_offense_desc: "Боєздатність [Concept('concept_unit','$concept_unit_gen$')|l] у [Concept('concept_battle','$concept_battle_loc$')|l] під час просування на територію противника."
+ concept_offense_desc: "Боєздатність [Concept('concept_unit','$concept_unit_gen$')|l] у [Concept('concept_battle','$concept_battle_loc$')|l] під час просування на територію ворога."
 
  concept_defense: "Оборона"
  concept_defense_desc: "Боєздатність [Concept('concept_unit','$concept_unit_gen$')|l] у [Concept('concept_battle','$concept_battle_loc$')|l] під час оборони від ворожих вторгнень."

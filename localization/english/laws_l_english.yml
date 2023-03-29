@@ -184,7 +184,7 @@
  lawgroup_free_speech: "Свобода слова"
  lawgroup_free_speech_desc: "Закони, що регулюють свободу слова та право на публічні зібрання."
   
- law_outlawed_dissent: "Заборона інакодумства"
+ law_outlawed_dissent: "Заборона іншодумства"
  law_outlawed_dissent_desc: "Критика уряду вважається зрадою та незаконною."
  law_censorship: "Цензура"
  law_censorship_desc: "Існує дієва цензура преси і немає гарантій права на зібрання."
@@ -359,7 +359,7 @@
  lawgroup_health_system: "Модель охорони здоров‘я"
  lawgroup_health_system_desc: "Закони про участь (або відсутність) уряду в наданні медичної допомоги своїм громадянам."
   
- law_no_health_system: "Без урядництва"
+ law_no_health_system: "Без моделі охорони здоров’я"
  law_no_health_system_desc: "Держава не фінансує жодну систему охорони здоров’я."
  law_charitable_health_system: "Благодійні лікарні"
  law_charitable_health_system_desc: "Благодійні організації, часто релігійні, надають певну допомогу будь-кому, хто хворіє або помирає, в міру своїх можливостей."
@@ -376,7 +376,7 @@
  law_no_social_security_desc: "У завдання держави не входить забезпечення тих, хто не може забезпечити себе сам."
  law_poor_laws: "Закони про бідняків"
  law_poor_laws_desc: "Витягти волоцюг і бродяг з наших вулиць у робітні будинки цілком варте цих витрат."
- law_wage_subsidies: "Мінімальна зарплата"
+ law_wage_subsidies: "Субсидії на зарплату"
  law_wage_subsidies_desc: "Кожен, хто хоче працювати, має право на їжу. Жодній людині не повинно бракувати коштів для забезпечення своєї сім’ї."
  law_old_age_pension: "Пенсія за віком"
  law_old_age_pension_desc: "Існує практична межа віку, коли наша робоча сила вже неефективна, і її наступний добробут має підпадати під сферу компетенції уряду."
@@ -387,7 +387,7 @@
  lawgroup_rights_of_women: "Права жінок"
  lawgroup_rights_of_women_desc: "Правове регулювання представниць прекрасної статі."
   
- law_no_womens_rights: "Юридичний захист"
+ law_no_womens_rights: "Юридична опіка"
  law_no_womens_rights_desc: "Жінки законно перебувають під опікою чоловіків і мають небагато прав."
  law_women_own_property: "Жінки з майном"
  law_women_own_property_desc: "Незалежно від того, успадковано чи зароблено іншим способом, навіть жінки мають право й обов’язок володіти своїм майном і берегти його."
@@ -426,7 +426,7 @@
  lawgroup_colonization: "Осадництво"
  lawgroup_colonization_desc: "Ваша позиція щодо створення осад для витіснення та завоювання [Concept('concept_decentralized_nation','$concept_decentralized_nation_gen$')|l]."
   
- law_no_colonial_affairs: "Без урядництва"
+ law_no_colonial_affairs: "Без осадних справ"
  law_no_colonial_affairs_desc: "Держава не бере участі в жодному формальному типі осадництва та не може створювати осади."
  law_colonial_resettlement: "Переселення до осад"
  law_colonial_resettlement_desc: "Осади засновуються для забезпечення землею поселенців з невключених реґіонів держави."
@@ -437,13 +437,13 @@
  lawgroup_internal_security: "Внутрішня безпека"
  lawgroup_internal_security_desc: "Тримати внутрішні справи в пріоритеті."
   
- law_no_home_affairs: "Без урядництва"
+ law_no_home_affairs: "Без внутрішніх справ"
  law_no_home_affairs_desc: "Держава не робить особливих спроб зупинити заворушення та повстання."
- law_national_guard: "Національна сердючина"
+ law_national_guard: "Національна сердюччина"
  law_national_guard_desc: "Держава може використовувати військову силу щоб запобігти внутрішніх заворушень."
  law_secret_police: "Таємна поліція"
- law_secret_police_desc: "Таємна поліція пильно стежить за радикальними елементами та інакомислячими."
- law_guaranteed_liberties: "Гарантія свободи"
+ law_secret_police_desc: "Таємна поліція пильно стежить за радикальними елементами та інодумцями."
+ law_guaranteed_liberties: "Гарантовані права та свободи"
  law_guaranteed_liberties_desc: "Бюро внутрішніх справ держави зосереджено виключно на розгляді скарг громадян, і йому заборонено розслідувати чи заарештовувати їх без належної причини."
   
   # Migration
