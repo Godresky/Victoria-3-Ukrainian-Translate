@@ -280,7 +280,8 @@
  concept_target_desc: "[concept_country], на яку спрямована [concept_diplomatic_play|l]."
 
  concept_homeland: "Батьківщина"
- concept_homelands: "Батьківщина"
+ concept_homeland_ins: "Батьківщиною"
+ concept_homelands: "Батьківщини"
  concept_homeland_desc:2 "A [Concept('concept_culture','$concept_culture_possessive$')] $concept_homelands$ consist of those [Concept('concept_state_region','$concept_state_regions$')] that [Concept('concept_pop', '$concept_pops$')] of that $concept_culture$ feel are historically or naturally their territory. $concept_pops$ are more prone to [Concept('concept_migration','$concept_migrate$')] to their $concept_homelands$ than other [Concept('concept_state','$concept_states$')], and $concept_pops$ who reside there will never consider [Concept('concept_assimilation','$concept_assimilating$')].\n\nLaunching a [concept_diplomatic_play] to conquer a $concept_state$ considered a $concept_homeland$ of one of your [concept_primary_cultures] is considered relatively legitimate, and will generate substantially less [concept_infamy] than usual."
 
  concept_mobilize_general: "Збір генералів"
@@ -553,6 +554,7 @@
  concept_subsistence_building: "Житловий будинок"
  concept_subsistence_building_gen: "Житлового будинку"
  concept_subsistence_buildings: "Житлові будинки"
+ concept_subsistence_buildings_gen: "Житлових будинків"
  concept_subsistence_buildings_loc: "Житлових будинках"
  concept_subsistence_building_farming: "Натуральне господарство"
  concept_subsistence_building_desc:2 "A set of [Concept('concept_building', '$concept_buildings$')] that perform low-intensity, decentralized production of food and basic resource [Concept('concept_good','$concept_goods$')] suitable for mere survival. Their production is split between a small quantity of [Concept('concept_good','$concept_goods$')] to be sold on the [concept_market] and [concept_subsistence_output] used to sustain the meager [concept_sol] of the [SelectLocalization(GetPlayer.IsValid,'concept_subsistence_building_desc_added','Peasants')] who work there. They are considerably less effective than most $concept_buildings$, but will operate on any unclaimed [concept_arable_land] and does not require manual [concept_construction]."
@@ -714,7 +716,7 @@
  concept_arable_land_acc: "Рілля"
  concept_arable_land_ins: "Ріллем"
  concept_arable_land_loc: "Ріллі"
- concept_arable_land_desc:1 "The amount of land in a [concept_state] that can be used for cultivating crops or raising cattle. Unlike [Concept('concept_building','$concept_buildings$')] that require certain [Concept('concept_resource_potential','$concept_resource_potentials$')] to be constructed, $concept_arable_land$ must be shared between the $concept_building$ types that require it.\n\nThe amount of $concept_arable_land$ that stands unused by other $concept_buildings$ may be used for [Concept('concept_subsistence_building','$concept_subsistence_buildings$')], letting [Concept('concept_pop','$concept_pops$')] eke out a meager living even if not gainfully employed."
+ concept_arable_land_desc: "Кількість землі у [Concept('concept_state', '$concept_state_loc$')|l], яка може бути використана для вирощування сільськогосподарських культур або розведення великої рогатої худоби. На відміну від [Concept('concept_building','$concept_buildings_gen$')|l], які потребують певного [Concept('concept_resource_potential','$concept_resource_potential_gen$')|l] для будівництва, рілля повинне бути розділеним між типами будівель, які їх потребують.\n\nЧастина рілля, яка не використовується іншими будівлями може бути використана для [Concept('concept_subsistence_building','$concept_subsistence_buildings_gen$')|l], дозволяючи [Concept('concept_pop','$concept_people_dat$')|l] заробляти на життя, навіть якщо вони не мають постійної роботи."
 
  concept_state_region: "Управничий реґіон"
  concept_state_region_gen: "Управничого реґіону"
@@ -722,6 +724,7 @@
  concept_state_region_loc: "Управничому реґіоні"
  concept_state_regions: "Управничі реґіони"
  concept_state_regions_gen: "Управничих реґіонів"
+ concept_state_regions_acc: "Управничі реґіони"
  concept_state_region_desc: "Частина світу, що відповідає певному постійному набору [Concept('concept_province', '$concept_provinces_gen$')|l]. Управничий реґіон зазвичай рівновартий [Concept('concept_state', '$concept_state_dat$')|l]. У певних випадках управничий реґіон може стати [Concept('concept_split_state', '$concept_split_state_ins$')|l], коли 2-є чи більше [Concept('concept_country','$concept_countries_gen$')|l] володіють реґіоном у тому ж самому управничому реґіоні."
 
  concept_occupancy: "Зайнятість"
@@ -1238,8 +1241,8 @@
  concept_literacy_gen: "Грамотности"
  concept_literacy_acc: "Грамотність"
  concept_literate: "Грамотн"
- concept_literacy_desc:2 "The percentage or absolute number of individuals in a [concept_pop] who can read and write. Certain [Concept('concept_profession', '$concept_professions$')] demand higher $concept_literacy$ than others, limiting the [concept_pop_qualifications] for $concept_pops$ in other $concept_professions$ unless their $concept_literacy$ is high enough. You can invest in your [SelectLocalization(GetPlayer.IsValid,'concept_literacy_desc_added','Education')] in order to develop higher $concept_literacy$ in your $concept_population$ over time."
- concept_literacy_desc_added:0 "[GetInstitutionType('institution_schools').GetName]"
+ concept_literacy_desc: "Відсоток або абсолютна кількість [Concept('concept_pop', '$concept_persons_gen$')|l], які вміють читати та писати. Певні [Concept('concept_profession', '$concept_professions$')|l] вимагають вищої грамотности, ніж інші, що може обмежувати людську [Concept('concept_pop_qualifications', '$concept_pop_qualifications_acc$')|l] для цих ремесл, якщо їхня грамотність не є достатньо високою. Ви можете покращити [SelectLocalization(GetPlayer.IsValid,Concept('concept_institution', '$concept_institution_acc$'),'')|l] [SelectLocalization(GetPlayer.IsValid,'concept_literacy_desc_added','Освіту')|l] для того, щоб з часом збільшити грамотність серед вашого населення."
+ concept_literacy_desc_added: "[GetInstitutionType('institution_schools').GetName|l]"
 
  concept_turmoil: "Сум‘яття"
  concept_turmoil_gen: "Сум‘яття"
@@ -1409,6 +1412,7 @@
  concept_resource_potential: "Ресурсна мічність"
  concept_resource_potential_gen: "Ресурсної мічности"
  concept_resource_potentials: "Ресурсні мічності"
+ concept_resource_potentials_gen: "Ресурсних мічностей"
  concept_resource_potentials_acc: "Ресурсні мічності"
  concept_resource_potentials_short: "Мічність"
  concept_resource_potential_desc:3 "A $concept_resource_potential$ grants the ability to construct and expand a specific [concept_building] type in the state, usually a resource industry such as fisheries, mines, or plantations. The maximum [concept_building_level] you can expand the $concept_building$ to is limited either to a fixed amount per resources, or by the $concept_state$'s amount of [concept_arable_land]."
@@ -1622,8 +1626,8 @@
  concept_culture_acc: "Культуру"
  concept_cultures: "Культури"
  concept_cultures_gen: "Культур"
- concept_culture_possessive:1 "Culture\\'s"
- concept_culture_desc:2 "All [Concept('concept_pop', '$concept_pops$')] have a $concept_culture$, which can only change through [concept_assimilation]. Their $concept_culture$ determines which [Concept('concept_state_region','$concept_state_regions$')] they consider their [Concept('concept_homeland','$concept_homelands$')] and whether they are [Concept('concept_discrimination','$concept_discriminated_against$')] in their [concept_country] or not."
+ concept_culture_possessive: "Культурн"
+ concept_culture_desc: "Усі [Concept('concept_pop', '$concept_pops_acc$')|l] мають культуру, яка може змінитися лише через [Concept('concept_assimilation', '$concept_assimilation_acc$')|l]. Їхня культура визначає, які [Concept('concept_state_region','$concept_state_regions_acc$')|l] вони вважають своєю [Concept('concept_homeland','$concept_homeland_ins$')|l] та чи їх [Concept('concept_discrimination','$concept_discriminated_against$')|l] у [Concept('concept_country','$concept_country_loc$')|l], чи все ж ні."
 
  concept_accepted_culture: "Прийнята культура"
  concept_accepted_culture_ins: "Прийнятою культурою"
@@ -1656,7 +1660,7 @@
  concept_religion_ins: "Релігією"
  concept_religions: "Релігії"
  concept_religions_gen: "Релігій"
- concept_religion_desc: "Усі [Concept('concept_pop', '$concept_pops_acc$')|l] мають релігію, яка може змінитися лише через [Concept('concept_conversion', '$concept_conversion_acc$')|l]. Їхнє віровизнання визначає чи їх [Concept('concept_discrimination','$concept_discriminated_against$')|l] в своїй [Concept('concept_country','$concept_country_loc$')|l], чи ні."
+ concept_religion_desc: "Усі [Concept('concept_pop', '$concept_pops_acc$')|l] мають релігію, яка може змінитися лише через [Concept('concept_conversion', '$concept_conversion_acc$')|l]. Їхнє віровизнання визначає чи їх [Concept('concept_discrimination','$concept_discriminated_against$')|l] у [Concept('concept_country','$concept_country_loc$')|l], чи ні."
 
  concept_accepted_religion: "Прийнята релігія"
  concept_accepted_religion_acc: "Прийняту релігія"
@@ -1938,6 +1942,7 @@
 
  concept_pop_qualifications: "Вправність"
  concept_pop_qualifications_gen: "Вправности"
+ concept_pop_qualifications_acc: "Вправність"
  concept_qualifying: "Вправний"
  concept_qualify: "Вчитися"
  concept_pop_qualifications_desc:1 "[Concept('concept_pop','$concept_pops$')] develop the $concept_pop_qualifications$ necessary to change into another [concept_profession] over time. If their current attributes match those of the $concept_profession$, or if they currently work in a related field, they will develop $concept_pop_qualifications$ for it sooner. [concept_literacy], [concept_wealth], and [concept_discrimination] are common deciding factors."
@@ -1963,6 +1968,7 @@
 
  concept_assimilation: "Уподібнювання"
  concept_assimilation_gen: "Уподібнювання"
+ concept_assimilation_acc: "Уподібнювання"
  concept_assimilating: "Уподібнювати"
  concept_assimilate: "Уподібнювати"
  concept_assimilation_desc:3 "Foreign [Concept('concept_pop','$concept_pops$')] whose [concept_culture] is [Concept('concept_accepted_culture','$concept_accepted_culture_short$')] in the [concept_country] they live, and who do not live in one of their [Concept('concept_homeland','$concept_homelands$')], may $concept_assimilate$ into one of the $concept_country$'s [concept_primary_cultures]."
@@ -2090,7 +2096,7 @@
  concept_ruler_ins: "Правителем"
  concept_rulers: "Правителі"
  concept_ruler_possessive:1 "Ruler\\'s"
- concept_ruler_desc:2 "A $concept_ruler$ is usually the [concept_head_of_state] who represents the [Concept('concept_country','$concept_country_possessive$')] in domestic and world affairs. A $concept_ruler$'s [Concept('concept_character_trait','$concept_character_traits$')] affects the $concept_country$ directly. When a $concept_ruler$ dies a new one will take their place, either an [concept_heir] if one exists or another $concept_character$ depending on [concept_government_type]."
+ concept_ruler_desc:2 "$concept_ruler$ - це зазвичай [Concept('concept_head_of_state','$concept_head_of_state_acc$')|l], який  представляє [Concept('concept_country','$concept_country_acc$')|l] у внутрішніх та зовнішніх справах. $concept_ruler$'s [Concept('concept_character_trait','$concept_character_traits$')] affects the $concept_country$ directly. When a $concept_ruler$ dies a new one will take their place, either an [concept_heir] if one exists or another $concept_character$ depending on [concept_government_type]."
 
  concept_heir: "Спадкоємець"
  concept_heir_gen: "Спадкоємця"
@@ -2137,6 +2143,7 @@
 
  concept_head_of_state: "Голова держави"
  concept_head_of_state_gen: "Голови держави"
+ concept_head_of_state_acc: "Голову держави"
  concept_head_of_state_ins: "Головою держави"
  concept_head_of_state_desc:3 "A [Concept('concept_country','$concept_country_possessive$')] [concept_ruler] or highest representative. The [concept_government_type] determines who serves as the $concept_head_of_state$ and when they are replaced.[AddLocalizationIf(GetPlayer.IsValid, 'concept_head_of_state_ingame_added')]"
  concept_head_of_state_ingame_added:1 "\n\nThe [GetPlayer.GetAdjectiveNoFlag] $concept_head_of_state$ is [GetPlayer.GetRuler.GetFullNameWithTitle]."
