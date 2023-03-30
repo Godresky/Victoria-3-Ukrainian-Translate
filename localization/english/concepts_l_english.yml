@@ -2096,10 +2096,11 @@
  concept_ruler_ins: "Правителем"
  concept_rulers: "Правителі"
  concept_ruler_possessive:1 "Ruler\\'s"
- concept_ruler_desc:2 "$concept_ruler$ - це зазвичай [Concept('concept_head_of_state','$concept_head_of_state_acc$')|l], який  представляє [Concept('concept_country','$concept_country_acc$')|l] у внутрішніх та зовнішніх справах. $concept_ruler$'s [Concept('concept_character_trait','$concept_character_traits$')] affects the $concept_country$ directly. When a $concept_ruler$ dies a new one will take their place, either an [concept_heir] if one exists or another $concept_character$ depending on [concept_government_type]."
+ concept_ruler_desc:2 "$concept_ruler$ - це зазвичай [Concept('concept_head_of_state','$concept_head_of_state_acc$')|l], який  представляє [Concept('concept_country','$concept_country_acc$')|l] у внутрішніх та зовнішніх справах. [Concept('concept_character_trait','$concept_character_traits$')] правителя безпосередньо впливають на державу. Коли правитель помирає, на його місце приходить новий, або [Concept('concept_heir','$concept_heir$')|l], якщо є такий, або інший персонаж, залежно від [Concept('concept_government_type','$concept_government_type_gen$')|l]."
 
  concept_heir: "Спадкоємець"
  concept_heir_gen: "Спадкоємця"
+ concept_heir_acc: "Спадкоємця"
  concept_heir_ins: "Спадкоємцем"
  concept_heir_desc: "Спадкоємець [Concept('concept_country','$concept_country_gen$')|l] - це [concept_character|l], який перебирає на себе [Concept('concept_character_role','$concept_character_role_acc$')|l] [Concept('concept_ruler','$concept_ruler_gen$')|l] після смерти чинного."
 
@@ -2149,6 +2150,7 @@
  concept_head_of_state_ingame_added:1 "\n\nThe [GetPlayer.GetAdjectiveNoFlag] $concept_head_of_state$ is [GetPlayer.GetRuler.GetFullNameWithTitle]."
 
  concept_government_type: "Тип уряду"
+ concept_government_type_gen: "Типу уряду"
  concept_government_types: "Типи уряду"
  concept_government_type_transfer_of_power: "Передавання влади"
  concept_government_type_desc:1 "A [Concept('concept_country','$concept_country_possessive$')] $concept_government_type$ is determined by its [Concept('concept_law','$concept_laws$')] and determines its $concept_government_type_transfer_of_power$, meaning who serves as its [concept_head_of_state].[AddLocalizationIf(GetPlayer.IsValid,'concept_government_type_ingame_added')]"

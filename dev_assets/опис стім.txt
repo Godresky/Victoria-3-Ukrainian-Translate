@@ -17,7 +17,7 @@
 
 [h1]Бажаєте допомогти?[/h1]
 Діліться модом з друзями, завантажуйте та грайте.
-Про помилки або пропозиції можете писати в [url=https://t.me/HeartsofUkraine4]групу тґ[/url] або [url=https://steamcommunity.com/workshop/filedetails/discussion/2884178988/3489753940058555479/]спеціяльному обговоренні[/url].
+Про помилки або пропозиції можете писати в [url=https://t.me/+C9PMq0gfzEQ4N2Ey]групу тґ[/url] або [url=https://steamcommunity.com/workshop/filedetails/discussion/2884178988/3489753940058555479/]спеціяльному обговоренні[/url].
 
 
 [h1]Примітки.[/h1]
@@ -26,8 +26,9 @@
  
 Корисне:
 [list]
-[*]Підтримується версія гри: [b]1.2.7[/b]
+[*]Підтримувана версія гри: [b]1.2.7[/b]
 [*][url=https://github.com/Godresky/Victoria-3-Ukrainian-Translate]Посилання на ґітгаб[/url]
+[*][url=https://t.me/perekladalnia_vika3]Тґ канал перекладу[/url]
 [*][url=https://trello.com/b/uVKkSOop/%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%B4-%D0%B2%D1%96%D0%BA%D1%82%D0%BE%D1%80%D1%96%D1%97-3]Посилання на трелло[/url]
 [*][url=https://send.monobank.ua/jar/7H5RNWs4kw]Сказати "дякую" розробникам[/url]
 [*][url=https://www.buymeacoffee.com/godresky]Купити мені кави[/url]

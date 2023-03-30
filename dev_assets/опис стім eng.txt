@@ -17,7 +17,7 @@ We use outdated words to convey the atmosphere of the world at that time. We als
 
 [h1]Do you want to help?[/h1]
 Share the mod with your friends, download and play.
-You can write about errors or suggestions in a [url=https://t.me/HeartsofUkraine4]tg group[/url] or a [url=https://steamcommunity.com/workshop/filedetails/discussion/2884178988/3489753940058555479/]special discussion[/url].
+You can write about errors or suggestions in a [url=https://t.me/+C9PMq0gfzEQ4N2Ey]tg group[/url] or a [url=https://steamcommunity.com/workshop/filedetails/discussion/2884178988/3489753940058555479/]special discussion[/url].
 
 
 [h1]Notes.[/h1]
@@ -28,6 +28,7 @@ Useful:
 [list]
 [*]Supported game version: [b]1.2.7[/b]
 [*][url=https://github.com/Godresky/Victoria-3-Ukrainian-Translate]GitHub link[/url]
+[*][url=https://t.me/perekladalnia_vika3]Tg channel[/url]
 [*][url=https://trello.com/b/uVKkSOop/%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%B4-%D0%B2%D1%96%D0%BA%D1%82%D0%BE%D1%80%D1%96%D1%97-3]Trello link[/url]
 [*][url=https://send.monobank.ua/jar/7H5RNWs4kw]Say "thank you" to the developers[/url]
 [*][url=https://www.buymeacoffee.com/godresky]Buymeacoffee[/url]
