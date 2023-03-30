@@ -5,13 +5,13 @@
  dummy_decision_desc: "Обожнюю хінські булети"
  dummy_decision_tooltip: "Ця підказка пояснює речі, наприклад, чому має сенс, що Франція може анексувати Хіну.\nТеоретично це 100% можливо принаймні в одній з иншинних часових шкал."
 
- grand_exhibition_decision: "Грандіозна виставка"
- grand_exhibition_decision_desc: "Влаштувати грандіозну виставку, щоб презентувати всьому світу свої чудеса. Чим більше технологій ви покажете, тим успішнішою буде виставка."
+ grand_exhibition_decision: "Ґрандіозна виставка"
+ grand_exhibition_decision_desc: "Влаштувати ґрандіозну виставку, щоб презентувати всьому світу свої чудеса. Чим більше технологій ви покажете, тим успішнішою буде виставка."
  grand_exhibition_decision_custom_tooltip: "Повинно бути достатньо, щоб похизуватися."
 
 
  revive_olympic_games_decision: "Відродити Олімпійські ігри"
- revive_olympic_games_decision_desc: "Відродіть стародавні Олімпійські ігри для нової ери."
+ revive_olympic_games_decision_desc: "Відродіть стародавні Олімпійські ігри для нової доби."
 
  ban_opium: "Заборонити торгівлю опіюмом"
  ban_opium_desc: "Тривала опіюмна криза, яка нищить нашу державу, має бути зупинена. Уряд має накласти повну заборону на торгівлю опіюмом, обмеживши як ввіз, так і внутрішнє виробництво."
@@ -28,17 +28,17 @@
  lowlands_land_reclamation: "Осушення низинних земель"
  lowlands_land_reclamation_desc: "За допомогою комбінації прийомів можна осушити певні ділянки низовини, перетворивши море на придатну для роботи сушу."
  lowlands_land_reclamation_custom_tooltip: "Розпочнеться осушення низинних земель. "
- notification_lowlands_land_reclamation_notification_desc: "Завершено рекультивацію низинних земель"
- notification_lowlands_land_reclamation_notification_tooltip: "Ви отримали ріллю."
+ notification_lowlands_land_reclamation_notification_desc: "Завершено освоєння низинних земель"
+ notification_lowlands_land_reclamation_notification_tooltip: "Ви отримали рілля."
  notification_lowlands_land_reclamation_notification_name: "Осушення низин"
  lowlands_land_reclamation_requirement_tooltip: "Володіє Голляндією, Фрісляндією та Гельдерном"
 
- niger_river_expedition: "Експедиція по річці Ніґер"
+ niger_river_expedition: "Експедиція річкою Ніґер"
  niger_river_expedition_desc: "Розпочати експедицію, щоб знайти виток річки Ніґер."
 
 
  west_america_expedition: "Мапа західного кордону Америки"
- west_america_expedition_desc: "Розпочати експедицію, щоб скласти мапу невідомих регіонів і географії західного кордону Північної Америки."
+ west_america_expedition_desc: "Розпочати експедицію, щоб скласти мапу невідомих реґіонів і географії західного кордону Північної Америки."
 
  suez_survey_decision: "Обстеження Суецького перешийка"
  suez_survey_decision_desc: "Уповноважити дослідження, щоб скласти мапу мічности будівництва водоводу через Суецький перешийок"

@@ -137,7 +137,7 @@
  custom_opium:0 "Opium"
  custom_cocaine:0 "Cocaine"
 
- NO_EFFECT:0 "#italic Nothing happens#!"
+ NO_EFFECT: "#italic Нічого не відбудеться#!"
 
  expedition_events.570.t:0 "Geographical Study"
  expedition_events.570.d:0 "It has been suggested that we stop and undertake a geographical study of the area to increase our local knowledge."
@@ -270,16 +270,16 @@
 
  modifier_cyclone_relief:0 "Cyclone Relief"
 
- historical_events.1.t:0 "First Flight"
- historical_events.1.d:0 "The first heavier-than-air flight has been achieved! This technology will pave the way for the future of aviation."
- historical_events.1.f:0 ""Never before have we commanded such mastery of the skies. With these bold new developments, the sky is the limit!""
- historical_events.1.a:0 "Look, I'm a bird!"
+ historical_events.1.t: "Перший політ"
+ historical_events.1.d: "Здійснено перший політ важчого за повітря апарата! Ця технологія проторує дорогу у майбутнє авіяції."
+ historical_events.1.f: "«Ніколи раніше ми не володіли такою силою в небі. З цими сміливими новими розробками, обмежень не існує!»"
+ historical_events.1.a: "Поглянь, я наче птах!"
 
- notification_first_flight_name:0 "First Flight"
- notification_first_flight_desc:0 "The first heavier-than-air flight has taken place."
- notification_first_flight_tooltip:0 "#header $notification_first_flight_name$#!\n$TOOLTIP_DELIMITER$\n$notification_first_flight_desc$"
+ notification_first_flight_name: "Перший політ"
+ notification_first_flight_desc: "Здійснено перший політ важчого за повітря апарата!"
+ notification_first_flight_tooltip: "#header $notification_first_flight_name$#!\n$TOOLTIP_DELIMITER$\n$notification_first_flight_desc$"
 
- warlord_china_events.100.t:0 "China Shatters"
+ warlord_china_events.100.t: "Хіна руйнується"
  warlord_china_events.100.d:0 "The fall of the Qing dynasty has ended China's long standing period of imperial rule and ushered in a new age of warlordism."
  warlord_china_events.100.f:1 ""Empires, like dreams, are made of an intangible material, so fragile they can end at any given time, no previous warning. They hold, however, the same insane appeal. Even if the thread that holds together their seams is invisible, and every suture hides a wound.\n\nThousands of years of imperial rule, ended in just a moment.""
  warlord_china_events.100.a:0 "Oh no."
@@ -290,15 +290,15 @@
  warlord_china_events.110.a:0 "The people should know."
  warlord_china_events.110.b:0 "Best to cover this up."
 
- notification_ig_leader_steps_down_name:0 "Leader of the [SCOPE.gsInterestGroup('stepping_down_leader_ig').GetName] steps down."
- notification_ig_leader_steps_down_desc:0 "[SCOPE.sCharacter('stepping_down_leader').GetFullName], the leader of the [SCOPE.gsInterestGroup('stepping_down_leader_ig').GetName], has stepped down [SCOPE.sCharacter('stepping_down_leader').GetCustom('stepping_down_reason')]"
- notification_ig_leader_steps_down_tooltip:0 "#header $notification_ig_leader_steps_down_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_leader_steps_down_desc$"
+ notification_ig_leader_steps_down_name: "Провідник [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l]  [SCOPE.gsInterestGroup('stepping_down_leader_ig').GetName] пішов у відставку"
+ notification_ig_leader_steps_down_desc: "[SCOPE.sCharacter('stepping_down_leader').GetFullName], провідник [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l] [SCOPE.gsInterestGroup('stepping_down_leader_ig').GetName], пішов у відставку [SCOPE.sCharacter('stepping_down_leader').GetCustom('stepping_down_reason')|l]"
+ notification_ig_leader_steps_down_tooltip: "#header $notification_ig_leader_steps_down_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_leader_steps_down_desc$"
 
- custom_loc_personal_reasons:0 "due to personal reasons."
- custom_loc_health_reasons:0 "due to waning health."
- custom_loc_scandal:0 "due to a scandal."
- custom_loc_incompetence:0 "due to incompetence."
- custom_loc_family:0 "to spend more time with family."
+ custom_loc_personal_reasons: "через особисті причини."
+ custom_loc_health_reasons: "через погане здоров’я."
+ custom_loc_scandal: "через скандал."
+ custom_loc_incompetence: "через некомпетентність."
+ custom_loc_family: ", бо хоче більше проводити часу з сім’єю."
 
  new_ig_leader_custom_tooltip:0 "Find a new leader."
 
@@ -371,17 +371,17 @@
 
  first_flight_prestige:0 "First Flight Achieved"
  
- south_america.2.t:1 "The Peru-Bolivia Confederation"
- south_america.2.d:2 "A unique opportunity has arisen to reunite [ROOT.GetCountry.GetName] and [SCOPE.sCountry('peru_country').GetName] under [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName]. Though the [SCOPE.sCountry('peru_country').GetAdjectiveNoFormatting] government will accept our rule for the time being, this may provoke conflict with our rivals."
- south_america.2.f:2 """To unite two countries is not as easy as putting together bread and butter, it's not even as easy as putting together two pieces of a puzzle.\n\nA country is not a dead object, but the sum of its people, their history and culture. It's a living thing. This unification will hopefully make us a family — and [SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')] knows how difficult a marriage can be.""
- south_america.2.a:2 "To a glorious reunion!"
- south_america.2.b:1 "Unification would be unwise."
+ south_america.2.t: "Перуано-болівійська конфедерація"
+ south_america.2.d: "Виникла унікальна можливість возз’єднатися [Concept('concept_country','$concept_countries_dat$')|l] [ROOT.GetCountry.GetName] та [SCOPE.sCountry('peru_country').GetName] під управлінням [Concept('concept_character','$concept_character_gen$')|l] [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] [ROOT.GetCountry.GetRuler.GetFullName]. Хоч і [SCOPE.sCountry('peru_country').GetAdjectiveNoFormatting|l]ий уряд поки що змириться з нашим правлінням, але це може спровокувати конфлікт з нашими суперниками."
+ south_america.2.f: "«Об’єднати дві країни не так просто, як з’єднати хліб та масло, це навіть не так просто, як скласти два шматочки пазлу.»\n\n«Країна - це не мертвий об’єкт, а сукупність людей, їхньої історії та культури. Це живий організм. Сподіваємося, що це об’єднання зробить нас однією сім’єю — [SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')] знає, наскільки складним може бути шлюб.»"
+ south_america.2.a: "За славне возз’єднання!"
+ south_america.2.b: "Об’єднання було б нерозумним."
 
- south_america.1.t:1 "The Fate of Peru"
- south_america.1.d:1 "Despite the machinations of our rivals, the Peru-Bolivia Confederation has endured for a decade. The possibility now exists for a true unification with [SCOPE.sCountry('peru_country').GetName]."
- south_america.1.f:2 "The mountains are only a distant knife piercing through the evening sky from here. Their jagged blade, pale between the clouds.\n\n"As successors of the Inca Empire, we must annex its former territories, follow the line of the sea and go on, go on, go on.""
- south_america.1.a:1 "We will form a true union."
- south_america.1.b:1 "The present situation suits us better."
+ south_america.1.t: "Доля Перу"
+ south_america.1.d: "Незважаючи на хитрощі наших ворогів, Перуансько-Болівійська конфедерація проіснувала десять років. Зараз є можливість для справжнього об’єднання з [Concept('concept_country','$concept_country_ins$')|l] [SCOPE.sCountry('peru_country').GetName]."
+ south_america.1.f: "«Звідси гори - лише далекий ніж, що пронизує вечірнє небо. Їхнє зазубрене лезо, блідіє між хмарами.»\n\n«Як спадкоємці імперії інків, ми повинні приєднати її колишні території назад, та пройти лінію моря і йти далі, далі й далі.»"
+ south_america.1.a: "Ми створимо справжню союз."
+ south_america.1.b: "Нинішня ситуація нас влаштовує більше."
 
  central_america.1.t:0 "Our States Want Independence"
  central_america.1.d:0 "The states have come together and demanded independence. If we don't give it to them there is sure to be war."
@@ -395,16 +395,16 @@
  central_america.2.a:1 "We must accept our fate."
  central_america.2.b:1 "We will not abandon the union so lightly."
 
- south_america.3.t:0 "Guerrilla War"
- south_america.3.d:0 "Despite the war being over, guerrilla fighters continue to wage a guerrilla war across [SCOPE.sState('guerilla_state').GetName]."
- south_america.3.f:1 ""I don't understand. They can't win. They could never win. They don't have enough people or enough resources but they won't stop fighting.""
- south_america.3.a:0 "Crush them once and for all."
- south_america.3.b:0 "They shall wear out eventually."
+ south_america.3.t: "Партизанська війна"
+ south_america.3.d: "Незважаючи на те, що війна закінчилася, партизани продовжують вести підпільну боротьбу в [Concept('concept_state','$concept_state_loc$')|l] [SCOPE.sState('guerilla_state').GetName]."
+ south_america.3.f: "«Я не розумію. Їм не перемогти. Вони ніколи не зможуть перемогти. У них не вистачає ні людей, ні ресурсів, але вони не припиняють боротися.»"
+ south_america.3.a: "Знищіть їх раз і назавжди."
+ south_america.3.b: "Їхня боротьба з часом згасне."
 
  dp_annex_war:0 "Annex Country"
  dp_annex_war_tooltip:0 "Start a $dp_annex_war$ [concept_diplomatic_play]"
 
- modifier_destroy_guerillas:0 "Destroying Guerrillas"
+ modifier_destroy_guerillas: "Знищення партизан"
 
  dyn_c_confederate_state_of_america: "Конфедеративна Держава Америки"
  dyn_c_united_state: "Злучена Держава Америки"
@@ -472,17 +472,17 @@
  
  free_state_immediate_tooltip:0 "Triggers the Event #bold The Free State#!."
 
- modifier_tangena_ordeal:0 "Tangena Ordeal"
+ modifier_tangena_ordeal: "Випробування танґендою"
 
- abolish_tangena_ordeal:0 "Abolish the Tangena Ordeal"
- abolish_tangena_ordeal_desc:0 "The Tangena ordeal consists of consuming poison to prove ones innocence. Regardless of the veracity of the practice, it claims a significant number of lives every year and should be abolished."
- ranavalona_tt:0 "Your ruler is #bold not#! Ranavalona"
+ abolish_tangena_ordeal: "Заборонити випробування танґендою"
+ abolish_tangena_ordeal_desc: "Випробування танґендою полягає у вживанні отрути, щоб довести свою невинуватість. Незалежно від правдивости практики, вона щороку забирає значну кількість життів і має бути заборонена."
+ ranavalona_tt: "Ваш правитель #bold не#! Ранавалуна"
 
  modifier_french_independence_payments: "Виплати за незалежність від Франції"
  modifier_haitian_independence_payments: "Платежі Гаїті за незалежність"
 
- stop_paying_france:0 "Stop paying France"
- stop_paying_france_desc:0 "We made a deal with France years ago to pay them for our independence but if we stop paying, what are they going to do?"
+ stop_paying_france: "Перестати виплачувати Франції"
+ stop_paying_france_desc: "Після французької військової експедиції на Гаїті 1825 року Сенат уклав угоду з Францією про виплату компенсації за визнання нашої незалежности. Однак, якщо ми перестанемо платити, що вони зможуть зробити?"
 
  character_events.2.t:0 "A Donation of Knowledge"
  character_events.2.d:0 "[SCOPE.sCharacter('university_benefactor').GetFullName] has offered to spend some of their personal wealth to fund the creation of a University in [SCOPE.sState('university_state').GetName]. Though this will likely give the [SCOPE.sCharacter('university_benefactor').GetInterestGroup.GetName] some influence."
@@ -511,11 +511,11 @@
  banned_duels_tt: "Дуелі будуть заборонені у вашій державі."
 
  character_events.4.t: "Побожний скандал"
- character_events.4.d: "Було виявлено, що [SCOPE.sCharacter('devout_scandal').GetFullName] з [Concept('concept_interest_group','$concept_interest_group_gen$')|l] [SCOPE.sCharacter('devout_scandal').GetInterestGroup.GetName] мав таємний зв’язок із представником духовенства. Тепер усі вимагають [SCOPE.sCharacter('devout_scandal').GetHerHis|U] відставки."
+ character_events.4.d: "Було виявлено, що [SCOPE.sCharacter('devout_scandal').GetFullName] з [Concept('concept_interest_group','$concept_interest_group_gen$')|l] [SCOPE.sCharacter('devout_scandal').GetInterestGroup.GetName] мав таємний зв’язок із представником духовенства. Тепер усі вимагають [SCOPE.sCharacter('devout_scandal').GetCustom('UA_joho_jiji')|l] відставки."
  character_events.4.f: "«Сам факт того, що цей підступний виродок думав, що [SCOPE.sCharacter('devout_scandal').GetSheHe] міг уникнути покарання за таке грубе зловживання владою. Ця ситуація показує про те, що з керівництвом [Concept('concept_interest_group','$concept_interest_group_gen$')|l] [SCOPE.sCharacter('devout_scandal').GetInterestGroup.GetNameNoFormatting] щось не так.»"
- character_events.4.a: "Змусити [SCOPE.sCharacter('devout_scandal').GetHerHis] піти у відставку."
+ character_events.4.a: "Змусити [SCOPE.sCharacter('devout_scandal').GetCustom('UA_joho_jiji')|l] піти у відставку."
  character_events.4.b: "Ігнорувати це."
- character_events.4.c: "Народ повинен знати про [SCOPE.sCharacter('devout_scandal').GetHerHis] розпусту."
+ character_events.4.c: "Народ повинен знати про [SCOPE.sCharacter('devout_scandal').GetCustom('UA_joho_jiji')|l] розпусту."
  character_events.4.a.tt: "[SCOPE.sCharacter('devout_scandal').GetFullName] з ганьбою йде у відставку."
 
  modifier_devout_in_scandal: "Побожний потрапив у скандал"
@@ -547,9 +547,9 @@
 
  MULTIPLAYER_GUI_CLICK_TO_SELECT: "Нажміть на державу, щоб вибрати її."
 
- notification_haiti_stops_paying_france_name:0 "Haiti Stops Payments"
- notification_haiti_stops_paying_france_desc:0 "Haiti has refused to make any further loan payments to France."
- notification_haiti_stops_paying_france_tooltip:0 "#header $notification_haiti_stops_paying_france_name$#!\n$TOOLTIP_DELIMITER$\n$notification_haiti_stops_paying_france_desc$"
+ notification_haiti_stops_paying_france_name: "Гаїті припиняє виплати"
+ notification_haiti_stops_paying_france_desc: "Гаїті відмовилася від подальших виплат за кредитом Франції."
+ notification_haiti_stops_paying_france_tooltip: "#header $notification_haiti_stops_paying_france_name$#!\n$TOOLTIP_DELIMITER$\n$notification_haiti_stops_paying_france_desc$"
 
  angry_duels_banned:0 "Disapproves of duels being banned."
  happy_duels_banned:0 "Approves of duels being banned."
@@ -656,16 +656,16 @@
  notification_ig_leader_assassination_failed_desc:1 "The attempt to assassinate the leader of the [SCOPE.gsInterestGroup('target').GetName] has failed."
  notification_ig_leader_assassination_failed_tooltip:0 "#header $notification_ig_leader_assassination_failed_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_leader_assassination_failed_desc$"
 
- je_central_archives:0 "Central Archives"
- je_central_archives_reason:0 "By making a change as simple as how we store documents it is possible to revolutionize our entire organizational system."
+ je_central_archives: "Центральний архів"
+ je_central_archives_reason: "Внісши таку просту зміну, як спосіб зберігання документів, можна зробити революцію в усій нашій організаційній системі."
 
- dan_society_tech_events.1.t:1 "Filing Cabinets"
- dan_society_tech_events.1.d:1 "The use of filing cabinets in the [SCOPE.sBuilding('government_building').GetName] has drastically increased the effectiveness of state bureaucracy."
- dan_society_tech_events.1.f:0 ""The future isn't in flying like a bird, nor in roaring along in a train. No... the future is in filing.""
- dan_society_tech_events.1.a:0 "I love bureaucracy."
- dan_society_tech_events.1.b:0 "Store information about our citizens."
+ dan_society_tech_events.1.t: "Картотечні шафи"
+ dan_society_tech_events.1.d: "Використання картотек у будівлі [SCOPE.sBuilding('government_building').GetName|l] різко підвищило ефективність державної бюрократії."
+ dan_society_tech_events.1.f: "«Майбутнє не в тому, щоб літати, як птах, і не в тому, щоб мчати в поїзді з гуркотом. Ні... майбутнє - у тому, щоб зберігати документи.»"
+ dan_society_tech_events.1.a: "Обожнюю бюрократію."
+ dan_society_tech_events.1.b: "Зберігайте інформацію про наших громадян."
 
- horizontal_filing_cabinets_modifier:0 "Horizontal Filing Cabinets Boost"
+ horizontal_filing_cabinets_modifier: "Покращення поземних картотек"
 
  border_cowardice:0 "Border Cowardice"
 
@@ -866,31 +866,31 @@
  south_america.4.a:0 "Just as we planned."
  south_america.4.a.tt:0 "Bolivia and Peru enter a confederation together."
 
- modifier_combined_bolivia_peru:0 "Peru-Bolivian Confederation Created "
+ modifier_combined_bolivia_peru:0 "Peru-Bolivian Confederation Created"
  central_america_falls_apart:2 "Central American Dissolution"
  central_america_falls_apart_reason:0 "The Central American States are crying out for independence. Will we give it to them? Soon, they will give us an ultimatum."
 
- ragamuffin_war: "Революція Фаррапус"
+ ragamuffin_war: "Війна Фаррапус"
  ragamuffin_war_reason: "Повстанці в Рію-Ґранді-ду-Сул вимагають незалежности і готові заплатити за це кров‘ю своїх солдатів."
 
- south_america.5.t:0 "Victorious Ragamuffins"
- south_america.5.d:1 "Despite the overwhelming odds, Piratini has managed to win the Ragamuffin war, and with it their independence."
- south_america.5.f:1 ""Their faces were molded into expressions of victory and tiredness. Like smudged figures in a canvas, they resembled men of the past. In a time of dreamless apathy and defeated nations, they still fought. And won.""
- south_america.5.a:0 "We will have our revenge."
- south_america.5.b:0 "Peace is the better option."
+ south_america.5.t: "Перемога Фаррапус"
+ south_america.5.d: "Незважаючи на наші величезні шанси, Піратіні вдалося виграти у війні Фаррапус, та разом з цим здобути свою незалежність."
+ south_america.5.f: "«На їхніх обличчях були вирази перемоги та втоми. Немов розмиті фігури на полотні, вони нагадували людей минулого. У часи безпросвітної апатії та переможених націй вони все одно боролися. І перемогли.»"
+ south_america.5.a: "Ми ще помстимося."
+ south_america.5.b: "Мир - найкращий варіянт."
 
- lost_ragamuffin_war:0 "Defeated in Ragamuffin War"
+ lost_ragamuffin_war: "Поразка у війні Фаррапус"
 
- won_ragamuffin_war_integrate:0 "Integrate the Ragamuffins"
- won_ragamuffin_war_ostracize:0 "Ostracize the Ragamuffins"
+ won_ragamuffin_war_integrate: "Інтеграція Фаррапус"
+ won_ragamuffin_war_ostracize: "Приниження Фаррапус"
 
- south_america.6.t:0 "Ragamuffin Defeat"
- south_america.6.d:0 "As expected, the Ragamuffin Rebellion has been crushed. How shall we treat the remaining survivors?"
- south_america.6.f:1 ""Not all the suggestions have been especially charitable. War tends to do that to men. Some commanders smile next to the tents, their lips curved with a triumphant pleasure. Some others argue that enough blood has already been spilled — they're mocked the next evening.\n\nThe rest watch in silence, which could be, arguably, worse.""
- south_america.6.a:0 "Integrate them."
- south_america.6.b:0 "Ostracize them."
+ south_america.6.t: "Поразка Фаррапус"
+ south_america.6.d: "Як і очікувалося, повстання Фаррапус було придушене. Що робити з тими, хто залишився в живих?"
+ south_america.6.f: "«Не всі пропозиції були особливо доброчинними. Війна, як правило, робить це з чоловіками. Деякі командири посміхаються біля наметів, їхні губи кривляться від тріюмфального задоволення. Інші стверджують, що вже пролито достатньо крови - над ними знущаються наступного вечора.\n\nРешта спостерігають мовчки, що, мабуть, могло б бути ще гірше.»"
+ south_america.6.a: "Інтегрувати їх."
+ south_america.6.b: "Принизити їх."
 
- won_ragamuffin_war:0 "Won Ragamuffin War"
+ won_ragamuffin_war: "Виграли війну Фаррапус"
 
  central_america_collapse_tt:0 "Central America falls apart."
 
@@ -948,4 +948,3 @@
  ig_placated_bureaucracy_cost:0 "Interest Group Placation Bureaucracy Cost"
  ig_demand_not_met:0 "Interest Group Demand Not Met"
  ig_placated_completion:0 "Interest Group Placated"
-

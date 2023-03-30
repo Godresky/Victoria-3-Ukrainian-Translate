@@ -3,7 +3,7 @@
 # Generic Law Passing Events
  generic_laws.1.t: "Зворушлива промова захоплює публіку"
  generic_laws.1.d: "Сьогодні по обіді, [SCOPE.sCharacter('orator_ig_leader_scope').GetFullName], провідник [Concept('concept_interest_group','$concept_interest_group_gen$')|l] «[SCOPE.gsInterestGroup('orator_ig_scope').GetName]», виступив з полум‘яною промовою на підтримку надання чинности [Concept('concept_law','$concept_law_gen$')|l] «[SCOPE.sLaw('current_law_scope').GetName]»."
- generic_laws.1.f: "Виступ перед публікою на головній площі [Concept('concept_capital_state','$concept_capital_state_gen$')|l] [SCOPE.sCharacter('orator_ig_leader_scope').GetCountry.GetCapital.GetCityHubName], потужна риторика не залишила байдужими навіть [SCOPE.sCharacter('orator_ig_leader_scope').GetHerHis] найбільш озлоблених політичних опонентів. Excerpts from the speech are already being circulated across [ROOT.GetCountry.GetNameNoFormatting], fanning the fires of an already roaring debate." #[SCOPE.sCharacter('orator_ig_leader_scope').GetFullNameNoFormatting] 
+ generic_laws.1.f:0 "Виступ перед публікою на головній площі [Concept('concept_capital_state','$concept_capital_state_gen$')|l] [SCOPE.sCharacter('orator_ig_leader_scope').GetCountry.GetCapital.GetCityHubName], потужна риторика не залишила байдужими навіть [SCOPE.sCharacter('orator_ig_leader_scope').GetHerHis] найбільш озлоблених політичних опонентів. Excerpts from the speech are already being circulated across [ROOT.GetCountry.GetNameNoFormatting], fanning the fires of an already roaring debate." #[SCOPE.sCharacter('orator_ig_leader_scope').GetFullNameNoFormatting] 
  #переробити
  generic_laws.1.a:0 "This should ease the path to reform greatly."
  generic_laws.1.b:0 "Performances like these reflect well on [SCOPE.sCharacter('orator_ig_leader_scope').GetFullNameNoFormatting] and [SCOPE.sCharacter('orator_ig_leader_scope').GetHerHis] cause."
@@ -106,7 +106,7 @@
 
  generic_laws.11.t:0 "Dissenters Break Ranks"
  generic_laws.11.d:0 "To outside observers, the [SCOPE.gsInterestGroup('dissenters_ig_scope').GetName] may appear firmly commited to the idea of [SCOPE.sLaw('current_law_scope').GetName], but behind this facade of unity discord has long festered. Now, a clique of dissenters have finally had enough, and have officially broken with their fellow members over the issue of reform."
- generic_laws.11.f:0 ""For how long have we stood together? How many times have we lent a willing hand your way? Yet our own concerns are left unanswered, and our desires left unmet. If if we shall not be heard here, we shall be so elsewhere.""
+ generic_laws.11.f:1 ""For how long have we stood together? How many times have we lent a willing hand your way? Yet our own concerns are left unanswered, and our desires left unmet. If we shall not be heard here, we shall be so elsewhere.""
  generic_laws.11.a:0 "Splitters! May the Devil take them."
  generic_laws.11.b:0 "Loosen our purse strings, perhaps we can lure some of them back."
  political_discord:0 "Political Discord"
@@ -126,12 +126,12 @@
 
 # Tanzimat Events
 
- je_sick_man_bureaucracy:0 "Tanzimat: Bureaucratic Reform"
+ je_sick_man_bureaucracy: "Танзимат: Бюрократична реформа"
  sick_man.2.e:0 "Our empire runs on paper."
  je_sick_man_bureaucracy_reason:0 "Our bureaucracy is a patchwork of archaic laws and systems, with corrupt, autonomous Beys barely exerting control over the Empire's provinces. If we are to overcome the many challenges to our rule, we must modernize our administrative system."
- outmoded_bureaucracy:0 "Outmoded Bureaucracy"
- cizye_tax:0 "Cizye Tax"
- ottoman_bureaucracy:0 "Ottoman Bureaucracy"
+ outmoded_bureaucracy: "Застаріла бюрократія"
+ cizye_tax: "Податок джизія"
+ ottoman_bureaucracy: "Османська бюрократія"
  sick_man_of_europe: "Хвора людина Европи"
 
  tanzimat_events.1.t:0 "The Iltizām System"
@@ -229,21 +229,21 @@
 
 ##################### Warlord China
   
- notification_warlord_china_explosion_point_add_name:0 "[SCOPE.GetRootScope.GetCountry.GetName] Destabilizes."
- notification_warlord_china_explosion_point_add_desc:0 "Our mishandling of [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting] affairs has delegitimized our rule, causing the country to inch ever closer to total collapse."
- notification_warlord_china_explosion_point_add_tooltip:1 "#header $notification_warlord_china_explosion_point_add_name$#!\n$TOOLTIP_DELIMITER$\n$notification_warlord_china_explosion_point_add_desc$"
+ notification_warlord_china_explosion_point_add_name: "[SCOPE.GetRootScope.GetCountry.GetName] - розхитування."
+ notification_warlord_china_explosion_point_add_desc: "Наше неуміле управління справами країни зробило менш законною нашу владу, а це призвело до того, що держава ще більше наблизилась до повного колапсу." #[SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting|l]ими 
+ notification_warlord_china_explosion_point_add_tooltip: "#header $notification_warlord_china_explosion_point_add_name$#!\n$TOOLTIP_DELIMITER$\n$notification_warlord_china_explosion_point_add_desc$"
 
- notification_warlord_china_explosion_point_remove_name:0 "[SCOPE.GetRootScope.GetCountry.GetName] Stabilizes."
- notification_warlord_china_explosion_point_remove_desc:0 "Our skillful steering of the country has legitimized our rule in the eyes of the people, steadily pulling the country back from the brink of collapse."
- notification_warlord_china_explosion_point_remove_tooltip:1 "#header $notification_warlord_china_explosion_point_remove_name$#!\n$TOOLTIP_DELIMITER$\n$notification_warlord_china_explosion_point_remove_desc$"
+ notification_warlord_china_explosion_point_remove_name: "[SCOPE.GetRootScope.GetCountry.GetName] - стабілізування."
+ notification_warlord_china_explosion_point_remove_desc: "Наше вміле управління державою зробило законним наше правління в очах народу, неухильно відводячи країну від колапсу."
+ notification_warlord_china_explosion_point_remove_tooltip: "#header $notification_warlord_china_explosion_point_remove_name$#!\n$TOOLTIP_DELIMITER$\n$notification_warlord_china_explosion_point_remove_desc$"
 
 ##################### Boxer Rebellion
 
- je_boxer_rebellion:0 "The Boxer Rebellion"
+ je_boxer_rebellion: "Боксерське повстання"
  je_boxer_rebellion_reason:1 "The humiliating loss of Chinese lands to foreign "barbarians" have resulted in the formation of numerous martial arts-inspired militias intent on purging the country of any foreign influence.\n\nFailure to see the militias vision through could have dramatic consequences for [ROOT.GetCountry.GetName]."
 
- dyn_c_empire_of_china:0 "Empire of China"
- dyn_c_empire_of_china_adj:0 "Chinese"
+ dyn_c_empire_of_china: "Хінська імперія"
+ dyn_c_empire_of_china_adj: "Хінськ"
 
  boxer_rebellion_events.1.t:0 "The Yihetuan Movement"
  boxer_rebellion_events.1.d:1 "Furious with the growing foreign presence in [ROOT.GetCountry.GetName], [SCOPE.sCulture('han_culture').GetName] subjects are organizing into anti-foreign militias, bent on driving the "barbarians" back into the sea. Many now urge [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] to back the movement, lest the their zeal is turned against [SCOPE.sCulture('manchu_culture').GetName] rule."
@@ -275,8 +275,8 @@
 ##################### Contextual Election Events
 
  election_contextual_events.1.t: "Голоси за гречку" # High Food Prices
- election_contextual_events.1.d: "Оскільки ціни на [SCOPE.sGoods('basic_foodstuff').GetName] стрімко зростають по всій державі, [SCOPE.sParty('high_food_price_party').GetName] перебуває під невпинним тиском з боку опозиції, яку звинувачують у безрозсудній грі з добробутом своїх громадян."
- election_contextual_events.1.f: "«Висока ціна [SCOPE.sGoods('basic_foodstuff').GetNameNoFormatting]? Брехня! У моїй молодості ми обходилися вдвічі меншим, ніж ви маєте зараз! Ці «захмарні» ціни на їжу — не що інше, як міркування істеричних домогосподарок!»"
+ election_contextual_events.1.d: "Оскільки ціни на товар [SCOPE.sGoods('basic_foodstuff').GetName|l] стрімко зростають по всій державі, [SCOPE.sParty('high_food_price_party').GetName] перебуває під невпинним тиском з боку опозиції, яку звинувачують у безрозсудній грі з добробутом своїх громадян."
+ election_contextual_events.1.f: "«Висока ціна на товар [SCOPE.sGoods('basic_foodstuff').GetNameNoFormatting|l]? Брехня! У моїй молодості ми обходилися вдвічі меншим, ніж ви маєте зараз! Ці «захмарні» ціни на їжу — не що інше, як міркування істеричних домогосподарок!»"
  election_contextual_events.1.a: "Тоді їм просто доведеться їсти щось інше!"
  election_contextual_events.1.b: "Фінансувати народні кухні. Ситий робить менше помилок."
  alms_for_the_poor: "Милостиня для нужденних"
@@ -289,18 +289,18 @@
  fiscally_irresponsible:0 "Fiscally Irresponsible"
 
  election_contextual_events.3.t: "Пацифіст засуджує війну" # Waging a War of Aggression
- election_contextual_events.3.d: "[SCOPE.sCharacter('pacifist_ig_leader').GetFullName], відомий пацифіст і провідник [SCOPE.gsInterestGroup('opposition_pacifist_ig').GetName], розпочав різку атаку на активну [SCOPE.sParty('government_war_party').GetName], стверджуючи, що війська [ROOT.GetCountry.GetAdjectiveNoFormatting] які брали участь у війні [SCOPE.sWar('pacifist_war').GetNameNoFormatting] під їхнім наглядом скоїли серйозні звірства."
+ election_contextual_events.3.d: "[SCOPE.sCharacter('pacifist_ig_leader').GetFullName], відомий пацифіст і провідник [SCOPE.gsInterestGroup('opposition_pacifist_ig').GetName], розпочав різкий напад на активну [SCOPE.sParty('government_war_party').GetName], стверджуючи, що війська [ROOT.GetCountry.GetAdjectiveNoFormatting] які брали участь у війні [SCOPE.sWar('pacifist_war').GetNameNoFormatting] під їхнім наглядом скоїли серйозні звірства."
  election_contextual_events.3.f: "«Ми... Я отримав наказ зібрати заручників, сер. Старі обличчя, молоді обличчя — деякі не старші мого власного сина. Наші лінії турбували так звані вільні стрільці. «Вбивцями» назвав їх мій командир. «Розбійники» зі злобою в серцях і рушницями в руках. Заручники мали їх стримати!\n\nBut після того, як того вечора впав третій солдат, командир сказав мені взяти заручників... він сказав завести їх у сарай... і... Господи, прости мене.»"
  election_contextual_events.3.a: "Що зробили наші війська!? Кому!?"
- election_contextual_events.3.b: "Цікавий знімок. Нумо зацензуримо."
- election_contextual_events.3.c: "Цікавий знімок. Нумо зацензуримо."
+ election_contextual_events.3.b: "Цікавий знимок. Нумо зацензуримо."
+ election_contextual_events.3.c: "Цікавий знимок. Нумо зацензуримо."
  principled_pacifist:0 "Principled Pacifist"
  martyrized_pacifist:0 "Martyrized Pacifist"
  election_contextual_events.3.tt.1: "Приховати непатріотичний наклеп приховати від громадськости!"
- election_contextual_events.3.tt.2: "Незважаючи на наші зусилля, інформація просочується."
+ election_contextual_events.3.tt.2: "Незважаючи на наші зусилля, відомості просочуються."
 
  election_contextual_events.4.t: "По кому дзвенять дзвони" # Old IG leader
- election_contextual_events.4.d: "Постарілий [SCOPE.sCharacter('decrepit_leader').GetFullName], провідник групи [SCOPE.gsInterestGroup('decrepit_leader_ig').GetName], несподівано помер в середині кампанії — залишивши [SCOPE.sParty('decrepit_leader_party').GetName] без наріжного політика. Питання про заміну [SCOPE.sCharacter('decrepit_leader').GetHerHis] зараз у всіх на вустах."
+ election_contextual_events.4.d: "Постарілий [SCOPE.sCharacter('decrepit_leader').GetFullName], провідник групи [SCOPE.gsInterestGroup('decrepit_leader_ig').GetName], несподівано помер в середині виправа — залишивши [SCOPE.sParty('decrepit_leader_party').GetName] без наріжного політика. Питання про заміну [SCOPE.sCharacter('decrepit_leader').GetHerHis] зараз у всіх на вустах."
  election_contextual_events.4.f:0 ""Unexpected? Bah! That old bag of bones was long overdue to meet [SCOPE.sCharacter('decrepit_leader').GetHerHis] maker. It's about time that party saw some new blood!""
  election_contextual_events.4.a: "Ідіть з популярним, але бездарним кандидатом."
  election_contextual_events.4.b: "Сміливий, але пихатий хлопець закріплює крісло."
@@ -339,7 +339,7 @@
 
 ##################### Military JEs
 
- je_rifling:0 "Rifling"
+ je_rifling: "Нарізи"
  je_rifling_reason:0 "While the concept of rifled gun barrels is many centuries old, only recently have advances in industry and technology allowed for their production and distribution on a large scale — providing a level of accuracy to our armed forces yet unheard of."
  je_machine_guns:0 "Automatic Machine Guns"
  je_machine_guns_reason:0 "Serviceable by a single man, and capable of firing hundreds of shells per minute, the automated machine gun represents a near-insurmountable obstacle for any attacker facing entrenched positions."
@@ -390,11 +390,12 @@
 
 ##################### Indonesia
 
- net_expand_east_indies:0 "Expand the East Indies Administration."
- net_expand_east_indies_desc:0 "We currently hold lands in the East Indies that would be better administered by our colonial subject."
- expand_east_indies_tt:1 "Transfer control of all holdings or vassals in the East Indies to our colony."
+ net_expand_east_indies: "Розширення адміністрації Ост-Індії."
+ net_expand_east_indies_desc: "Наразі ми володіємо землями в Ост-Індії, якими краще б керував наш осадний підвладним."
+ expand_east_indies_tt: "Передасть контроль над усіма володіннями або слушниками в Ост-Індії нашій осаді."
+ expand_dei_cooldown_tt: "Не розширювала адміністрацію Ост-Індії протягом 2 років"
 
- malay_culture:0 "Malay Culture" # includes a lot of cultures that are not Malay. Might revise in future
+ malay_culture: "Малайська культура" # includes a lot of cultures that are not Malay. Might revise in future
 
  IDN: "Індонезія"
  IDN_ADJ: "Індонезійськ"
@@ -418,7 +419,7 @@
  dyn_c_mataram_adj: "Матарамськ"
 
 ##################### Arabia
- yemenite: "Єменець"
+ yemenite: "Єменці"
  dyn_c_qasimid_state: "Держава Касимідів"
  dyn_c_qasimid_state_adj: "Касимідськ"
 

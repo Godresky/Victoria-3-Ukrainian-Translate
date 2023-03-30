@@ -11,7 +11,7 @@
  ENCYCLOPEDIAGE_PREVIOUS_PAGE: "Попередня сторінка"
  ENCYCLOPEDIAGE_NEXT_PAGE: "Наступна сторінка"
  SEARCH_ENCYCLOPEDIA: "Шукання"
- SEARCH_ENCYCLOPEDIA_TOOLTIP: "#T $SEARCH_ENCYCLOPEDIA$\n#!Знайде у вкладці '[EncyclopediaPage.GetTitle]' заголовки які відповідають введеному тексту"
+ SEARCH_ENCYCLOPEDIA_TOOLTIP: "#T $SEARCH_ENCYCLOPEDIA$\n#!Знайде у вкладці «[EncyclopediaPage.GetTitle]» заголовки, які відповідають введеному тексту"
   ### v3 replacement
  RESET_SEARCH_ENCYCLOPEDIA_TOOLTIP: "#T Очистити шукання#!"
   # RESET_SEARCH_ENCYCLOPEDIA_TOOLTIP: "$CHARACTER_LIST_CLEAR$"

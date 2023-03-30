@@ -1,0 +1,18 @@
+﻿l_english:
+ MUSIC_PLAYER: "Відтворювач пісень"
+ MUSIC_PLAYER_OPEN_PLAYER: "Відкрити відтворювач пісень"
+ MUSIC_PLAYER_NEXT_TRACK: "Наступна пісня"
+ MUSIC_PLAYER_PLAY_PAUSE: "Відтворити/На павзу"
+ MUSIC_PLAYER_CURRENT_ELAPSED_TIME: "$MIN$:$SEC$"
+ MUSIC_PLAYER_NO_TRACK: "Нічого не відтворюється"
+ MUSIC_PLAYER_TRACK_PLAY: "Відтворити зараз"
+ MUSIC_PLAYER_TRACK_ENABLE: "Увім."
+ MUSIC_PLAYER_TRACK_DISABLE: "Вим."
+ MUSIC_PLAYER_VOLUME_LABEL: "Гучність"
+ MUSIC_PLAYER_DENSITY_LABEL: "Щільність музики"
+ MUSIC_PLAYER_DENSITY_INTENSE: "Інтенсивна"
+ MUSIC_PLAYER_DENSITY_BALANCED: "Збалянсована"
+ MUSIC_PLAYER_DENSITY_RELAXED: "Розслаблена"
+ MUSIC_PLAYER_CATEGORY_ENABLED: "Увім." #якщо змінити, то ломається відтворювач
+ MUSIC_PLAYER_CATEGORY_DISABLED: "Вим."
+  

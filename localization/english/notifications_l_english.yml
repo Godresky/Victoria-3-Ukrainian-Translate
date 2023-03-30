@@ -7,7 +7,7 @@
  MESSAGE_CLICK_TO_HIDE: "#I Клацніть, що згорнути.#!"
  MESSAGE_CLICK_TO_SHOW: "#I Клацніть, що розгорнути.#!"
  MESSAGE_CLICK_TO_DISMISS: "#I Правий клац, щоб приховати.#!"
- MESSAGE_CLEAR_ALL_TOOLTIP: "#I Клацніть, щоб приховати. \nПравий клац, щоб приховати все.#!"
+ MESSAGE_CLEAR_ALL_TOOLTIP: "#I Клацніть, щоб приховати.\nПравий клац, щоб приховати все.#!"
 
  JOMINI_NOTIFICATION_TIMESTAMP_NOW: "Тільки що"
  JOMINI_NOTIFICATION_TIMESTAMP_MINUTES: "$MINUTES$ хвилин тому"

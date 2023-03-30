@@ -1,5 +1,5 @@
 ﻿l_english:
  AND: " i "
- AND_LIST: ", i "
+ AND_LIST: " i "
  COMMA: ", "
  NEWLINE: "\n"

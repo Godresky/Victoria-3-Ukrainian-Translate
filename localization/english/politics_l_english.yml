@@ -2,11 +2,11 @@
  IG_TRAIT_CONDITIONS_TITLE: "#title Умови:#!"
  IG_TRAIT_APPROVAL_MIN:1 "[concept_approval] of [InterestGroup.GetName] is at least #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN #variable $MIN_RATING$#! (#variable $MIN_VALUE|0+=$#!)#!#!"
  IG_TRAIT_APPROVAL_MAX:1 "[concept_approval] of [InterestGroup.GetName] is #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN #variable $MAX_RATING$#! (#variable $MAX_VALUE|0+=$#!)#!#! or worse"
- IG_TRAIT_MARGINAL:0 "[InterestGroup.GetName] is NOT [concept_marginalized]"
+ IG_TRAIT_MARGINAL: "[Concept('concept_interest_group','$concept_interest_group_short$')] [InterestGroup.GetName] НЕ [Concept('concept_marginalized','$concept_marginalized_adj$а')|l]"
 
  IG_TRAIT_APPROVAL_MIN_BASE:1 "[concept_approval] of the [concept_interest_group] should be at least #variable $MIN_RATING$#! (#variable $MIN_VALUE|0+=$#!)"
  IG_TRAIT_APPROVAL_MAX_BASE:1 "[concept_approval] of the [concept_interest_group] should be #variable $MAX_RATING$#! (#variable $MAX_VALUE|0+=$#!) or worse"
- IG_TRAIT_MARGINAL_BASE:0 "The Interest Group should NOT be [concept_marginalized]"
+ IG_TRAIT_MARGINAL_BASE: "Зацікавлена група НЕ повинна бути [Concept('concept_marginalized','$concept_marginalized_adj$ою')|l]"
 
  IG_TRAIT_EFFECTS_TITLE: ""
  IG_TRAIT_EFFECTS_NO_EFFECT: "#italic Жодних змінювачів#!"

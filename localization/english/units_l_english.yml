@@ -1,16 +1,16 @@
 ﻿l_english:
- flotilla_prefix_hms_sv:0 "HMS"
- flotilla_prefix_uss:0 "USS"
- flotilla_prefix_sms:0 "SMS"
- flotilla_prefix_css:0 "CSS"
- flotilla_prefix_kdm:0 "KDM"
- flotilla_prefix_nms:0 "NMS"
- flotilla_prefix_vp:0 "VP"
- flotilla_prefix_tcg:0 "TCG"
- flotilla_prefix_net_zrms:0 "Zr.Ms."
- flotilla_prefix_net_hrms:0 "Hr.Ms."
- flotilla_prefix_arm:0 "ARM"
- flotilla_prefix_rn:0 "RN"
- flotilla_prefix_hhms:0 "HHMS"
- flotilla_prefix_arv:0 "ARV"
- flotilla_prefix_blank:0 ""
+ flotilla_prefix_hms_sv: "ГМС" #Корабель Його (або Її) Величності
+ flotilla_prefix_uss: "ЮСС" #корабель США
+ flotilla_prefix_sms: "СМС" #
+ flotilla_prefix_css: "КСС" #
+ flotilla_prefix_kdm: "КДМ" #
+ flotilla_prefix_nms: "НМС" #
+ flotilla_prefix_vp: "ВП" #
+ flotilla_prefix_tcg: "ТКҐ" #
+ flotilla_prefix_net_zrms: "Зк.Мс." #
+ flotilla_prefix_net_hrms: "Гр.Мс." #
+ flotilla_prefix_arm: "АРМ" #
+ flotilla_prefix_rn: "РН" #
+ flotilla_prefix_hhms: "ГГМС" #
+ flotilla_prefix_arv: "АРВ" #
+ flotilla_prefix_blank: ""

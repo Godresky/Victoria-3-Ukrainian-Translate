@@ -1,55 +1,58 @@
 ﻿l_english:
- ANY_TRIGGER_FILTER_TEXT:2 "#tooltippable #tooltip:[GetRawTextTooltipTag('$FILTER$')] eligible#!#! "
- TRIGGER_PASSED:1 "@green_checkmark_box! $TEXT$"
- TRIGGER_POTENTIAL:0 "@simple_box! $TEXT$"
- TRIGGER_FAILED:1 "@red_cross! $TEXT$"
- TRIGGER_INVALID:0 "@red_cross! $TEXT$"
- TRIGGER_REDUNDANT:0 "@red_cross! $TEXT$"
+ ANY_TRIGGER_FILTER_TEXT: "#tooltippable #tooltip:[GetRawTextTooltipTag('$FILTER$')] придатні#!#! "
+ TRIGGER_PASSED: "@green_checkmark_box! $TEXT$"
+ TRIGGER_POTENTIAL: "@simple_box! $TEXT$"
+ TRIGGER_FAILED: "@red_cross! $TEXT$"
+ TRIGGER_INVALID: "@red_cross! $TEXT$"
+ TRIGGER_REDUNDANT: "@red_cross! $TEXT$"
  
- TRIGGER_RESULT_UNDEFINED:0 "  •  $TEXT$"
+ TRIGGER_RESULT_UNDEFINED: "  •  $TEXT$"
  TRIGGER_NAND: "Будь-що з цього:"
  
  TRIGGER_OR_NOT: "Нічого з цього:"
  TRIGGER_ALWAYS: "Завжди"
  TRIGGER_ALWAYS_NOT: "Ніколи"
  
- TRIGGER_HAS_STATE_TRAIT: "Є особливість [STATE_TRAIT.GetName]"
- TRIGGER_HAS_STATE_TRAIT_NOT: "Немає особливости [STATE_TRAIT.GetName]" #bold not #!have the [STATE_TRAIT.GetName] trait
+ TRIGGER_HAS_STATE_TRAIT: "Є особливість [STATE_TRAIT.GetName|l]"
+ TRIGGER_HAS_STATE_TRAIT_NOT: "#bold Не#! має особливости [STATE_TRAIT.GetName|l]" #bold not #!have the [STATE_TRAIT.GetName] trait
 
- TRIGGER_IS_HOMELAND:1 "[concept_state] is a [TARGET_CULTURE.GetName] [concept_homeland]"
- TRIGGER_IS_HOMELAND_NOT:2 "[concept_state] is #bold not #!a [TARGET_CULTURE.GetName] [concept_homeland]"
- TRIGGER_IS_HOMELAND_THIRD:0 "[STATE_REGION.GetName] is a [TARGET_CULTURE.GetName] [concept_homeland]"
- TRIGGER_IS_HOMELAND_THIRD_NOT:0 "[STATE_REGION.GetName] is #bold not #!a [TARGET_CULTURE.GetName] [concept_homeland]"
+ TRIGGER_IS_HOMELAND: "[concept_state] - [concept_homeland|l] культури [TARGET_CULTURE.GetName|l] "
+ TRIGGER_IS_HOMELAND_NOT: "[concept_state] #bold не#! [concept_homeland|l] культури [TARGET_CULTURE.GetName|l]"
+ TRIGGER_IS_HOMELAND_THIRD: "[STATE_REGION.GetName] - [concept_homeland|l] культури [TARGET_CULTURE.GetName|l] [concept_homeland]"
+ TRIGGER_IS_HOMELAND_THIRD_NOT: "[STATE_REGION.GetName] #bold не#! [concept_homeland|l] культури [TARGET_CULTURE.GetName|l]"
  
- TRIGGER_HAS_HOMELAND:0 "[CULTURE.GetName] considers [TARGET_STATE_REGION.GetName] a homeland"
- TRIGGER_HAS_HOMELAND_NOT:1 "[CULTURE.GetName] does #bold not #!consider [TARGET_STATE_REGION.GetName] a homeland"
+ TRIGGER_HAS_HOMELAND: "[CULTURE.GetName] вважають реґіон [TARGET_STATE_REGION.GetName] батьківщиною"
+ TRIGGER_HAS_HOMELAND_NOT: "[CULTURE.GetName] #bold не#! вважають реґіон [TARGET_STATE_REGION.GetName] батьківщиною"
 
  TRIGGER_HAS_GAME_STARTED: "Гра почалась"
  TRIGGER_HAS_GAME_STARTED_NOT: "Гра #bold не #!почалась"
  
  TRIGGER_HAS_GAME_RULE: "Встановлено правило: $SETTING$"
  TRIGGER_HAS_GAME_RULE_NOT: "#b Не#! встановлено правило: $SETTING$"
+
+ TRIGGER_NUMBER_OF_POSSIBLE_DECISIONS: "[COUNTRY.GetName] може прийняти $COMPARATOR$ $NUM|v$ рішень(ня)"
+ TRIGGER_NUMBER_OF_POSSIBLE_DECISIONS_NOT: "[COUNTRY.GetName] #b не#! може прийняти $COMPARATOR$ $NUM|v$ рішень(ня)"
  
  TRIGGER_IS_PLAYER: "Під контролем гравця"
- TRIGGER_IS_PLAYER_NOT: "#bold Не #! під контролем гравця"
+ TRIGGER_IS_PLAYER_NOT: "#bold Не#! під контролем гравця"
  TRIGGER_IS_PLAYER_FIRST: "[COUNTRY.GetNameNoFlag] під контролем гравця"
  TRIGGER_IS_PLAYER_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold не#! під контролем гравця"
  TRIGGER_IS_PLAYER_THIRD: "[COUNTRY.GetName] під контролем гравця"
  TRIGGER_IS_PLAYER_THIRD_NOT: "[COUNTRY.GetName] #bold не#! під контролем гравця"
  
  TRIGGER_IS_LOCAL_PLAYER: "Контролюється локальним гравцем"
- TRIGGER_IS_LOCAL_PLAYER_NOT:1 "Is #bold not #!controlled by the local player"
- TRIGGER_IS_LOCAL_PLAYER_FIRST:0 "[COUNTRY.GetNameNoFlag] is controlled by the local player"
- TRIGGER_IS_LOCAL_PLAYER_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] is #bold not #!controlled by the local player"
- TRIGGER_IS_LOCAL_PLAYER_THIRD:0 "[COUNTRY.GetName] is controlled by the local player"
- TRIGGER_IS_LOCAL_PLAYER_THIRD_NOT:1 "[COUNTRY.GetName] is #bold not #!controlled by the local player"
+ TRIGGER_IS_LOCAL_PLAYER_NOT: "#bold Не#! контролюється локальним гравцем"
+ TRIGGER_IS_LOCAL_PLAYER_FIRST: "[COUNTRY.GetNameNoFlag] контролюється локальним гравцем"
+ TRIGGER_IS_LOCAL_PLAYER_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold не#! контролюється локальним гравцем"
+ TRIGGER_IS_LOCAL_PLAYER_THIRD: "[COUNTRY.GetName] контролюється локальним гравцем"
+ TRIGGER_IS_LOCAL_PLAYER_THIRD_NOT: "[COUNTRY.GetName] #bold не#! контролюється локальним гравцем"
  
  TRIGGER_IS_AI: "Контролюється ШІ"
- TRIGGER_IS_AI_NOT:1 "Is #bold not #!not controlled by an AI"
- TRIGGER_IS_AI_FIRST:0 "[COUNTRY.GetNameNoFlag] is controlled by an AI"
- TRIGGER_IS_AI_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] is #bold not #!controlled by an AI"
- TRIGGER_IS_AI_THIRD:0 "[COUNTRY.GetName] is controlled by an AI"
- TRIGGER_IS_AI_THIRD_NOT:1 "[COUNTRY.GetName] is #bold not #!controlled by an AI"
+ TRIGGER_IS_AI_NOT: "#bold Не#! контролюється ШІ"
+ TRIGGER_IS_AI_FIRST: "[COUNTRY.GetNameNoFlag] контролюється ШІ"
+ TRIGGER_IS_AI_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold не#! контролюється ШІ"
+ TRIGGER_IS_AI_THIRD: "[COUNTRY.GetName] контролюється ШІ"
+ TRIGGER_IS_AI_THIRD_NOT: "[COUNTRY.GetName] #bold не#! контролюється ШІ"
  
  TRIGGER_IS_INTEREST_GROUP_TYPE:0 "Is of type #variable $TARGET_TYPE$#!"
  TRIGGER_IS_INTEREST_GROUP_TYPE_NOT:1 "Is #bold not #!of type #variable $TARGET_TYPE$#!"
@@ -70,15 +73,18 @@
  TRIGGER_IS_PROVINCE_LAND:1 "Province in [PROVINCE.GetStateRegion.GetName] is land"
  TRIGGER_IS_PROVINCE_LAND_NOT:2 "Province in [PROVINCE.GetStateRegion.GetName] is #bold not #!land"
  
- TRIGGER_HAS_BUILDING:0 "Has [BuildingType.GetName]"
- TRIGGER_HAS_BUILDING_NOT:1 "Does #bold not #!have [BuildingType.GetName]"
- TRIGGER_HAS_BUILDING_FIRST:0 "Has [BuildingType.GetName]"
- TRIGGER_HAS_BUILDING_FIRST_NOT:1 "Does #bold not #![BuildingType.GetName]"
- TRIGGER_HAS_BUILDING_THIRD:0 "Has [BuildingType.GetName]"
- TRIGGER_HAS_BUILDING_THIRD_NOT:1 "Does #bold not #![BuildingType.GetName]"
+ TRIGGER_HAS_BUILDING: "Має [Concept('concept_building', '$concept_building_acc$')|l] [BuildingType.GetName|l]"
+ TRIGGER_HAS_BUILDING_NOT: "#bold Не#! має [Concept('concept_building', '$concept_building_acc$')|l] [BuildingType.GetName|l]"
+ TRIGGER_HAS_BUILDING_FIRST: "Має [Concept('concept_building', '$concept_building_acc$')|l] [BuildingType.GetName]"
+ TRIGGER_HAS_BUILDING_FIRST_NOT: "#bold Не#! має [Concept('concept_building', '$concept_building_acc$')|l] [BuildingType.GetName|l]"
+ TRIGGER_HAS_BUILDING_THIRD: "Має [Concept('concept_building', '$concept_building_acc$')|l] [BuildingType.GetName]"
+ TRIGGER_HAS_BUILDING_THIRD_NOT: "#bold Не#! має [Concept('concept_building', '$concept_building_acc$')|l] [BuildingType.GetName|l]"
  
  TRIGGER_HAS_ACTIVE_BUILDING:0 "Has active [BuildingType.GetName] building"
  TRIGGER_HAS_ACTIVE_BUILDING_NOT:1 "Does #bold not #!have an active [BuildingType.GetName] building"
+
+ TRIGGER_HAS_POSSIBLE_DECISIONS:0 "Has possible Decisions"
+ TRIGGER_HAS_POSSIBLE_DECISIONS_NOT:0 "Does #bold not#! have any possible Decisions"
  
  EVENT_TARGET_NO_CUSTOM_NAME:0 "$SPECIFIC|v$"
  EVENT_TARGET_CUSTOM_NAME:0 "$GENERAL|v$ ($SPECIFIC|V$)"
@@ -119,11 +125,14 @@
  TRIGGER_CAN_RESEARCH_THIRD: "[COUNTRY.GetName]» може дослідити технологію «[TECHNOLOGY.GetName]»"
  TRIGGER_CAN_RESEARCH_THIRD_NOT: "[COUNTRY.GetName]» не може дослідити технологію «[TECHNOLOGY.GetName]»"
  
- TRIGGER_IS_WAR_PARTICIPANT:0 "Has [TARGET_COUNTRY.GetName] Participating"
- TRIGGER_IS_WAR_PARTICIPANT_NOT:1 "Does #bold not #!have [TARGET_COUNTRY.GetName] Participating"
+ TRIGGER_IS_WAR_PARTICIPANT: "[TARGET_COUNTRY.GetName] бере участь"
+ TRIGGER_IS_WAR_PARTICIPANT_NOT: "[TARGET_COUNTRY.GetName] #bold не#! бере участь"
  
  TRIGGER_CAN_FORM_NATION: "Можна створити державу [COUNTRYFORMATION.GetName]"
  TRIGGER_CAN_FORM_NATION_NOT:2 "Can #bold not #!form the nation of [COUNTRYFORMATION.GetName]"
+
+ TRIGGER_WAS_FORMED_FROM:0 "Was formed from [COUNTRYDEFINITION.GetName]"
+ TRIGGER_WAS_FORMED_FROM_NOT:0 "Were #bold not#! formed from [COUNTRYFORMATION.GetName]"
 
  TRIGGER_HAS_UNIFICATION_CANDIDATE:0 "There is a [concept_unification_candidate] for [COUNTRYFORMATION.GetName]"
  TRIGGER_HAS_UNIFICATION_CANDIDATE_NOT:1 "There is #bold not #!a [concept_unification_candidate] for [COUNTRYFORMATION.GetName]"
@@ -141,28 +150,35 @@
  TRIGGER_HAS_JOURNAL_ENTRY_THIRD:0 "[COUNTRY.GetName] has an active [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
  TRIGGER_HAS_JOURNAL_ENTRY_THIRD_NOT:1 "[COUNTRY.GetName] does #bold not #!have an active [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
  
- TRIGGER_HAS_VARIABLE:1 "#variable The Country#! has #variable the variable in question#!"
- TRIGGER_HAS_VARIABLE_NOT:2 "#variable The Country#! does #bold not #!have #variable the variable in question#!"
- TRIGGER_HAS_VARIABLE_FIRST:1 "#variable The Country#! has #variable the variable in question#!"
- TRIGGER_HAS_VARIABLE_FIRST_NOT:2 "#variable The Country#! does #bold not #!have #variable the variable in question#!"
- TRIGGER_HAS_VARIABLE_THIRD:1 "#variable The Country#! has #variable the variable in question#!"
- TRIGGER_HAS_VARIABLE_THIRD_NOT:2 "#variable The Country#! does #bold not #!have #variable the variable in question#!"
+ TRIGGER_HAS_VARIABLE: "#variable Держава#! має #variable відповідну змінну#!"
+ TRIGGER_HAS_VARIABLE_NOT: "#variable Держава#! #bold не#! має #variable відповідну змінну#!"
+ TRIGGER_HAS_VARIABLE_FIRST: "#variable Держава#! має #variable відповідну змінну#!"
+ TRIGGER_HAS_VARIABLE_FIRST_NOT: "#variable Держава#! #bold не#! має #variable відповідну змінну#!"
+ TRIGGER_HAS_VARIABLE_THIRD: "#variable Держава#! має #variable відповідну змінну#!"
+ TRIGGER_HAS_VARIABLE_THIRD_NOT: "#variable Держава#! #bold не#! має #variable відповідну змінну#!"
  
- TRIGGER_TAKING_LOANS:0 "Is taking loans"
- TRIGGER_TAKING_LOANS_NOT:1 "Is #bold not #!taking loans"
- TRIGGER_TAKING_LOANS_FIRST:0 "[COUNTRY.GetNameNoFlag] is taking loans"
- TRIGGER_TAKING_LOANS_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] is #bold not #!taking loans"
- TRIGGER_TAKING_LOANS_THIRD:0 "[COUNTRY.GetName] is taking loans"
- TRIGGER_TAKING_LOANS_THIRD_NOT:1 "[COUNTRY.GetName] is #bold not #!taking loans"
+ TRIGGER_TAKING_LOANS: "Взяла позику"
+ TRIGGER_TAKING_LOANS_NOT: "#bold Не#! взяла позику"
+ TRIGGER_TAKING_LOANS_FIRST: "[COUNTRY.GetNameNoFlag] взяла позику"
+ TRIGGER_TAKING_LOANS_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold не#! взяла позику"
+ TRIGGER_TAKING_LOANS_THIRD: "[COUNTRY.GetName] взяла позику"
+ TRIGGER_TAKING_LOANS_THIRD_NOT: "[COUNTRY.GetName] #bold не#! взяла позику"
  
  TRIGGER_COUNTRY_THIS_EQUAL: "Держава — [TARGET_COUNTRY.GetName]"
- TRIGGER_COUNTRY_THIS_EQUAL_NOT: "Держава — #bold не#! [TARGET_COUNTRY.GetName]"
+ TRIGGER_COUNTRY_THIS_EQUAL_NOT: "Держава #bold не#! [TARGET_COUNTRY.GetName]"
 
  TRIGGER_INITIATOR_IS:0 "[TARGET_COUNTRY.GetName] is the initiator"
  TRIGGER_INITIATOR_IS_NOT:1 "[TARGET_COUNTRY.GetName] is #bold not #!the initiator"
 
  TRIGGER_IS_TARGET_OF_WARGOAL:0 "[TARGET_COUNTRY.GetName] has a [concept_war_goal] targeting [STATE.GetName]"
  TRIGGER_IS_TARGET_OF_WARGOAL_NOT:0 "[TARGET_COUNTRY.GetName] does #b not#! have a [concept_war_goal] targeting [STATE.GetName]"
+
+ TRIGGER_IS_STRATEGIC_OBJECTIVE:0 "Is a [concept_strategic_objective]"
+ TRIGGER_IS_STRATEGIC_OBJECTIVE_NOT:0 "Is #b not#! a [concept_strategic_objective]"
+ TRIGGER_IS_STRATEGIC_OBJECTIVE_FIRST:0 "[STATE.GetName] is a [concept_strategic_objective] of [TARGET_COUNTRY.GetNameNoFlag]"
+ TRIGGER_IS_STRATEGIC_OBJECTIVE_FIRST_NOT:0 "[STATE.GetName] is #b not#! a [concept_strategic_objective] of [TARGET_COUNTRY.GetNameNoFlag]"
+ TRIGGER_IS_STRATEGIC_OBJECTIVE_THIRD:0 "[STATE.GetName] is a [concept_strategic_objective] of [TARGET_COUNTRY.GetName]"
+ TRIGGER_IS_STRATEGIC_OBJECTIVE_THIRD_NOT:0 "[STATE.GetName] is #b not#! a [concept_strategic_objective] of [TARGET_COUNTRY.GetName]"
  
  TRIGGER_TARGET_IS:0 "[TARGET_COUNTRY.GetName] is the target"
  TRIGGER_TARGET_IS_NOT:1 "[TARGET_COUNTRY.GetName] is #bold not #!the target"
@@ -178,6 +194,9 @@
  
  TRIGGER_IS_DIPLOMATIC_PLAY_TYPE:0 "The Diplomatic Play is [DIPLOMATIC_PLAY_TYPE.GetName]"
  TRIGGER_IS_DIPLOMATIC_PLAY_TYPE_NOT:1 "The Diplomatic Play is #bold not #![DIPLOMATIC_PLAY_TYPE.GetName]"
+
+ TRIGGER_IS_DIPLOMATIC_ACTION_TYPE:0 "The Diplomatic Pact is [DIPLOMATIC_ACTION_TYPE.GetName]"
+ TRIGGER_IS_DIPLOMATIC_ACTION_TYPE_NOT:0 "The Diplomatic Pact is #bold not #![DIPLOMATIC_ACTION_TYPE.GetName]"
  
  TRIGGER_HAS_PLAY_GOAL:0 "Has a war goal [WAR_GOAL_TYPE.GetName]"
  TRIGGER_HAS_PLAY_GOAL_NOT:1 "Does #bold not #!have a war goal [WAR_GOAL_TYPE.GetName]"
@@ -191,6 +210,13 @@
  TRIGGER_IS_SUBJECT_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold не#! є [Concept('concept_subject', '$concept_subject_feminine_ins$')|l] іншої нації"
  TRIGGER_IS_SUBJECT_THIRD: "[COUNTRY.GetName] є [Concept('concept_subject', '$concept_subject_feminine_ins$')|l] іншої нації"
  TRIGGER_IS_SUBJECT_THIRD_NOT: "[COUNTRY.GetName] #bold не#! є [Concept('concept_subject', '$concept_subject_feminine_ins$')|l] іншої нації"
+
+ TRIGGER_IS_JUNIOR_IN_PERSONAL_UNION:0 "Is a junior member of a [concept_personal_union]"
+ TRIGGER_IS_JUNIOR_IN_PERSONAL_UNION_NOT:0 "Is #bold not #!a junior member of a [concept_personal_union]"
+ TRIGGER_IS_JUNIOR_IN_PERSONAL_UNION_FIRST:0 "[COUNTRY.GetNameNoFlag] is a junior member of a [concept_personal_union]"
+ TRIGGER_IS_JUNIOR_IN_PERSONAL_UNION_FIRST_NOT:0 "[COUNTRY.GetNameNoFlag] is #bold not #!a junior member of a [concept_personal_union]"
+ TRIGGER_IS_JUNIOR_IN_PERSONAL_UNION_THIRD:0 "[COUNTRY.GetName] is a junior member of a [concept_personal_union]"
+ TRIGGER_IS_JUNIOR_IN_PERSONAL_UNION_THIRD_NOT:0 "[COUNTRY.GetName] is #bold not #!a junior member of a [concept_personal_union]"
  
  TRIGGER_IS_JUNIOR_IN_CUSTOMS_UNION:0 "Is a junior member of a [concept_customs_union]"
  TRIGGER_IS_JUNIOR_IN_CUSTOMS_UNION_NOT:0 "Is #bold not #!a junior member of a [concept_customs_union]"
@@ -225,6 +251,10 @@
  
  TRIGGER_IS_SUBJECT_TYPE:0 "Is a $SUBJECT_TYPE|v$-type [concept_subject]"
  TRIGGER_IS_SUBJECT_TYPE_NOT:1 "Is #bold not #!a $SUBJECT_TYPE|v$-type [concept_subject]"
+ TRIGGER_IS_SUBJECT_TYPE_FIRST:0 "[COUNTRY.GetNameNoFlag] is #variable $SUBJECT_TYPE$#!"
+ TRIGGER_IS_SUBJECT_TYPE_FIRST_NOT:0 "[COUNTRY.GetNameNoFlag] is #bold not #!#variable $SUBJECT_TYPE$#!"
+ TRIGGER_IS_SUBJECT_TYPE_THIRD:0 "[COUNTRY.GetNameNoFlag] is #variable $SUBJECT_TYPE$#!"
+ TRIGGER_IS_SUBJECT_TYPE_THIRD_NOT:0 "[COUNTRY.GetNameNoFlag] is #bold not #!#variable $SUBJECT_TYPE$#!"
  
  TRIGGER_CONTEXT_MARKET:0 "$NAME|v$"
  
@@ -272,13 +302,13 @@
  TRIGGER_EXPECTED_QUALITY_OF_LIFE:0 "Expected Standard of Living $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_EXPECTED_QUALITY_OF_LIFE_NOT:1 "Expected Standard of Living #bold not #!$COMPARATOR$ #variable $NUM$#!"
  
- TRIGGER_HAS_MODIFIER_TOOLTIPPABLE_MODIFIER_NAME:0 "#tooltippable #tooltip:[GetRawTextTooltipTag('$MODIFIER_DESC$')] $MODIFIER_NAME|v$#!#!"
- TRIGGER_HAS_MODIFIER:1 "Has [SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]"
- TRIGGER_HAS_MODIFIER_NOT:2 "Does #bold not#! have [SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]"
- TRIGGER_HAS_MODIFIER_FIRST:1 "[COUNTRY.GetNameNoFlag] has [SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]"
- TRIGGER_HAS_MODIFIER_FIRST_NOT:2 "[COUNTRY.GetNameNoFlag] does #bold not#! have [SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]"
- TRIGGER_HAS_MODIFIER_THIRD:2 "[COUNTRY.GetName] has [SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]"
- TRIGGER_HAS_MODIFIER_THIRD_NOT:3 "[COUNTRY.GetName] does #bold not#! have [SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]"
+ TRIGGER_HAS_MODIFIER_TOOLTIPPABLE_MODIFIER_NAME: "#tooltippable #tooltip:[GetRawTextTooltipTag('$MODIFIER_DESC$')] $MODIFIER_NAME|v$#!#!"
+ TRIGGER_HAS_MODIFIER: "Має «[SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]»"
+ TRIGGER_HAS_MODIFIER_NOT: "#bold Не#! має «[SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]»"
+ TRIGGER_HAS_MODIFIER_FIRST: "[COUNTRY.GetNameNoFlag] має «[SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]»"
+ TRIGGER_HAS_MODIFIER_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold не#! має «[SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]»"
+ TRIGGER_HAS_MODIFIER_THIRD: "[COUNTRY.GetName] має «[SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]»"
+ TRIGGER_HAS_MODIFIER_THIRD_NOT: "[COUNTRY.GetName] #bold не#! має «[SelectLocalization(StringIsEmpty('$MODIFIER_DESC$'),'$MODIFIER_NAME|v$','$TOOLTIPPABLE_MODIFIER$')]»"
  
  TRIGGER_HAS_EMPLOYEE_SLOTS_FILLED:0 "Has filled its employee slots"
  TRIGGER_HAS_EMPLOYEE_SLOTS_FILLED_NOT:1 "Has #bold not #!filled its employee slots"
@@ -296,13 +326,13 @@
  TRIGGER_CAN_AFFORD_DIPLOMATIC_ACTION_FIRST_NOT:0 "[COUNTRY.GetNameNoFlag] can #b not#! afford [DIPLOMATIC_ACTION_TYPE.GetName] with [TARGET_COUNTRY.GetName]"
  TRIGGER_CAN_AFFORD_DIPLOMATIC_ACTION_THIRD:0 "[COUNTRY.GetName] can afford [DIPLOMATIC_ACTION_TYPE.GetName] with [TARGET_COUNTRY.GetName]"
  TRIGGER_CAN_AFFORD_DIPLOMATIC_ACTION_THIRD_NOT:0 "[COUNTRY.GetName] can #b not#! afford [DIPLOMATIC_ACTION_TYPE.GetName] with [TARGET_COUNTRY.GetName]"
- 
- TRIGGER_IN_DEFAULT:0 "Is in default"
- TRIGGER_IN_DEFAULT_NOT:1 "Is #bold not #!in default"
- TRIGGER_IN_DEFAULT_FIRST:0 "[Country.GetNameNoFlag] is in [concept_default]"
- TRIGGER_IN_DEFAULT_FIRST_NOT:1 "[Country.GetNameNoFlag] is #bold not #!in [concept_default]"
- TRIGGER_IN_DEFAULT_THIRD:0 "[Country.GetName] is in [concept_default]"
- TRIGGER_IN_DEFAULT_THIRD_NOT:1 "[Country.GetName] is #bold not #!in [concept_default]"
+
+ TRIGGER_IN_DEFAULT: "Має неплатоспроможність"
+ TRIGGER_IN_DEFAULT_NOT: "#bold Не#! має неплатоспроможність"
+ TRIGGER_IN_DEFAULT_FIRST: "[Country.GetNameNoFlag] має [Concept('concept_default', '$concept_default_acc$')|l]"
+ TRIGGER_IN_DEFAULT_FIRST_NOT: "[Country.GetNameNoFlag] #bold не#! має [Concept('concept_default', '$concept_default_acc$')|l]"
+ TRIGGER_IN_DEFAULT_THIRD: "[Country.GetName] має [Concept('concept_default', '$concept_default_acc$')|l]"
+ TRIGGER_IN_DEFAULT_THIRD_NOT: "[Country.GetName] #bold не#! має [Concept('concept_default', '$concept_default_acc$')|l]"
  
  TRIGGER_IN_ELECTION_CAMPAIGN:0 "Is in election campaign period"
  TRIGGER_IN_ELECTION_CAMPAIGN_NOT:1 "Is #bold not #!in election campaign period"
@@ -395,7 +425,7 @@
  
  TRIGGER_MODIFIER_EQUAL:0 "Modifier #variable $MODIFIER_NAME$#! Value Equals #variable $VALUE$#!"
  
- TRIGGER_CAN_TAKE_ON_SCALED_DEBT:1 "Can take on [TARGET_COUNTRY.GetAdjective] debt of @money!#variable $VALUE|K0$#!"
+ TRIGGER_CAN_TAKE_ON_SCALED_DEBT: "Може взяти [TARGET_COUNTRY.GetAdjective|l]ий довг у розмірі @money!#variable $VALUE|K0$#!"
  TRIGGER_CAN_TAKE_ON_SCALED_DEBT_NOT:2 "Can #bold not#! take on [TARGET_COUNTRY.GetAdjective] debt of @money!#variable $VALUE|K0$#!"
  TRIGGER_CAN_TAKE_ON_SCALED_DEBT_FIRST:0 "[COUNTRY.GetNameNoFlag] can take on [TARGET_COUNTRY.GetAdjective] debt of @money!#variable $VALUE|K0$#!"
  TRIGGER_CAN_TAKE_ON_SCALED_DEBT_FIRST_NOT:0 "[COUNTRY.GetNameNoFlag] can #bold not#! take on [TARGET_COUNTRY.GetAdjective] debt of @money!#variable $VALUE|K0$#!"
@@ -465,7 +495,7 @@
  TRIGGER_WEEKLY_PROFIT_THIRD:0 "Weekly profit $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_WEEKLY_PROFIT_THIRD_NOT:0 "Weekly profit #bold not #!$COMPARATOR$ #variable $NUM$#!"
 
- TRIGGER_OCCUPANCY:2 "The workforce [concept_occupancy] is $COMPARATOR$ #variable $NUM|%0v$#!"
+ TRIGGER_OCCUPANCY:2 "[concept_occupancy] робочої - $COMPARATOR$ #variable $NUM|%0v$#!"
  TRIGGER_OCCUPANCY_NOT:3 "The workforce [concept_occupancy] is #bold not #!$COMPARATOR$ #variable $NUM|%0v$#!"
  TRIGGER_OCCUPANCY_THIRD:1 "The workforce [concept_occupancy] of [BUILDING.GetName] is $COMPARATOR$ #variable $NUM|%0v$#! (currently: $CURRENT_VALUE|%0v$)"
  TRIGGER_OCCUPANCY_THIRD_NOT:2 "The workforce [concept_occupancy] of [BUILDING.GetName] is #bold not #!$COMPARATOR$ #variable $NUM|%0v$#! (currently: $CURRENT_VALUE|%0v$)"
@@ -635,11 +665,11 @@
  TRIGGER_IS_BUILDING_CATEGORY:0 "Is a $CATEGORY$"
  TRIGGER_IS_BUILDING_CATEGORY_NOT:1 "Is #bold not #!a $CATEGORY$"
  
- TRIGGER_IS_MARGINAL:0 "Interest Group is [concept_marginalized]"
- TRIGGER_IS_MARGINAL_NOT:1 "Interest Group is #bold not #![concept_marginalized]"
+ TRIGGER_IS_MARGINAL: "Зацікавлена група - [Concept('concept_marginalized', '$concept_marginalized_adj$а')|l]"
+ TRIGGER_IS_MARGINAL_NOT: "Зацікавлена група #bold не#! [Concept('concept_marginalized', '$concept_marginalized_adj$а')|l]"
  
- TRIGGER_IS_POWERFUL:0 "Interest Group is [concept_powerful]"
- TRIGGER_IS_POWERFUL_NOT:1 "Interest Group is #bold not #![concept_powerful]"
+ TRIGGER_IS_POWERFUL:0 "Зацікавлена група - [concept_powerful]"
+ TRIGGER_IS_POWERFUL_NOT:1 "Зацікавлена група is #bold not #![concept_powerful]"
  
  TRIGGER_POP_EMPLOYMENT_BUILDING_GROUP:1 "Employed in #variable $BUILDING_GROUP$#! [concept_building]"
  TRIGGER_POP_EMPLOYMENT_BUILDING_GROUP_NOT:2 "#bold Not#! employed in #variable $BUILDING_GROUP$#! [concept_building]"
@@ -758,8 +788,8 @@
  TRIGGER_HAS_DECREASING_INTERESTS:0 "Has decreasing Interests"
  TRIGGER_HAS_DECREASING_INTERESTS_NOT:1 "Does #bold not #!have decreasing Interests"
  
- TRIGGER_IS_IN_GOVERNMENT:0 "Is part of the government"
- TRIGGER_IS_IN_GOVERNMENT_NOT:1 "Is #bold not #!part of the government"
+ TRIGGER_IS_IN_GOVERNMENT: "Є в уряді"
+ TRIGGER_IS_IN_GOVERNMENT_NOT: "#bold Не#! є в уряді"
  
  TRIGGER_IG_APPROVAL:0 "Approval is $COMPARATOR$ #variable $NUM|0+=$#!"
  TRIGGER_IG_APPROVAL_NOT:1 "Approval is #bold not #!$COMPARATOR$ #variable $NUM|0+=$#!"
@@ -784,7 +814,7 @@
  TRIGGER_HAS_LAW:1 "Has enacted [TARGET_LAW_TYPE.GetName]"
  TRIGGER_HAS_LAW_NOT:2 "Has #bold not #!enacted [TARGET_LAW_TYPE.GetName]"
  TRIGGER_HAS_LAW_FIRST: "[COUNTRY.GetNameNoFlag] надала чинности [Concept('concept_law', '$concept_law_gen$')|l] «[TARGET_LAW_TYPE.GetName]»"
- TRIGGER_HAS_LAW_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] does #bold not #!have [TARGET_LAW_TYPE.GetName] enacted"
+ TRIGGER_HAS_LAW_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold не#! надала чинности [Concept('concept_law', '$concept_law_gen$')|l] «[TARGET_LAW_TYPE.GetName]»"
  TRIGGER_HAS_LAW_THIRD:1 "[TARGET_LAW_TYPE.GetName] has been enacted by [COUNTRY.GetName]"
  TRIGGER_HAS_LAW_THIRD_NOT:2 "[TARGET_LAW_TYPE.GetName] has #bold not #!been enacted by [COUNTRY.GetName]"
  
@@ -830,7 +860,7 @@
  TRIGGER_IS_MOBILIZED:0 "Is [Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized$')]"
  TRIGGER_IS_MOBILIZED_NOT:1 "Is #bold not #![Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized$')]"
  
- TRIGGER_HAS_GOVERNMENT_TYPE:1 "Has the [GOVERNMENT_TYPE.GetName] [concept_government_type]"
+ TRIGGER_HAS_GOVERNMENT_TYPE:1 "Має [concept_government_type|l] [GOVERNMENT_TYPE.GetName|l]"
  TRIGGER_HAS_GOVERNMENT_TYPE_NOT:2 "Does #bold not #!have the [GOVERNMENT_TYPE.GetName] government type"
  TRIGGER_HAS_GOVERNMENT_TYPE_FIRST:0 "[COUNTRY.GetNameNoFlag] has the [GOVERNMENT_TYPE.GetName] [concept_government_type]"
  TRIGGER_HAS_GOVERNMENT_TYPE_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] does #bold not #!have the [GOVERNMENT_TYPE.GetName] [concept_government_type]"
@@ -926,10 +956,10 @@
  TRIGGER_HAS_DLC:0 "Owns DLC #variable $DLC$#!"
  TRIGGER_HAS_DLC_NOT:1 "Does #bold not #!own DLC #variable $DLC$#!"
  
- TRIGGER_OWNS_ENTIRE_STATE_REGION:0 "Owns all of [StateRegion.GetName]"
- TRIGGER_OWNS_ENTIRE_STATE_REGION_NOT:1 "Does #bold not #!own all of [StateRegion.GetName]"
+ TRIGGER_OWNS_ENTIRE_STATE_REGION: "Повністю володіє [Concept('concept_state','$concept_state_ins$')|l] [StateRegion.GetName]"
+ TRIGGER_OWNS_ENTIRE_STATE_REGION_NOT: "Повністю #bold не#! володіє [Concept('concept_state','$concept_state_ins$')|l] [StateRegion.GetName]"
  TRIGGER_OWNS_ENTIRE_STATE_REGION_FIRST: "[Country.GetNameNoFlag] повністю володіє [Concept('concept_state','$concept_state_ins$')|l] [StateRegion.GetName]"
- TRIGGER_OWNS_ENTIRE_STATE_REGION_FIRST_NOT:1 "[Country.GetNameNoFlag] does #bold not #!own all of [StateRegion.GetName]"
+ TRIGGER_OWNS_ENTIRE_STATE_REGION_FIRST_NOT: "[Country.GetNameNoFlag] повністю #bold не#! володіє [Concept('concept_state','$concept_state_ins$')|l] [StateRegion.GetName]"
  TRIGGER_OWNS_ENTIRE_STATE_REGION_THIRD:0 "All of [StateRegion.GetName] is owned by [Country.GetName]"
  TRIGGER_OWNS_ENTIRE_STATE_REGION_THIRD_NOT:1 "All of [StateRegion.GetName] is #bold not #!owned by [Country.GetName]"
  
@@ -955,6 +985,9 @@
  
  TRIGGER_HAS_WASTED_CONSTRUCTION:0 "Has unused [concept_construction]"
  TRIGGER_HAS_WASTED_CONSTRUCTION_NOT:1 "Does #bold not #!have unused [concept_construction]"
+
+ TRIGGER_HAS_SUFFICIENT_CONSTRUCTION_CAPACITY_FOR_INVESTMENT:0 "Has enough [concept_construction] production to fully utilize the [concept_investment_pool]"
+ TRIGGER_HAS_SUFFICIENT_CONSTRUCTION_CAPACITY_FOR_INVESTMENT_NOT:0 "Does #b not#! have enough [concept_construction] production to fully utilize the [concept_investment_pool]"
  
  TRIGGER_HAS_DISCRIMINATION_TRAIT:0 "$SUBJECT$ has trait $TRAIT|v$"
  TRIGGER_HAS_DISCRIMINATION_TRAIT_NOT:1 "$SUBJECT$ does #bold not #!have trait $TRAIT|v$"
@@ -1098,12 +1131,12 @@
  TRIGGER_IS_TAXING_GOODS:0 "[COUNTRY.GetName] is taxing [GOODS.GetName]"
  TRIGGER_IS_TAXING_GOODS_NOT:1 "[COUNTRY.GetName] is #bold not #!taxing [GOODS.GetName]"
  
- TRIGGER_INSTITUTION_INVESTMENT_LEVEL:0 "Investment Level for [INSTITUTION_TYPE.GetName] $COMPARATOR$ $NUM$"
- TRIGGER_INSTITUTION_INVESTMENT_LEVEL_NOT:1 "Investment Level for [INSTITUTION_TYPE.GetName] #bold not #!$COMPARATOR$ $NUM$"
- TRIGGER_INSTITUTION_INVESTMENT_LEVEL_FIRST:0 "[COUNTRY.GetAdjectiveNoFlag] Investment Level for [INSTITUTION_TYPE.GetName] $COMPARATOR$ $NUM$"
- TRIGGER_INSTITUTION_INVESTMENT_LEVEL_FIRST_NOT:1 "[COUNTRY.GetAdjectiveNoFlag] Investment Level for [INSTITUTION_TYPE.GetName] #bold not #!$COMPARATOR$ $NUM$"
- TRIGGER_INSTITUTION_INVESTMENT_LEVEL_THIRD:1 "[COUNTRY.GetAdjective] Investment Level for [INSTITUTION_TYPE.GetName] $COMPARATOR$ $NUM$"
- TRIGGER_INSTITUTION_INVESTMENT_LEVEL_THIRD_NOT:2 "[COUNTRY.GetAdjective] Investment Level for [INSTITUTION_TYPE.GetName] #bold not #!$COMPARATOR$ $NUM$"
+ TRIGGER_INSTITUTION_INVESTMENT_LEVEL: "Рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» $COMPARATOR$ $NUM$"
+ TRIGGER_INSTITUTION_INVESTMENT_LEVEL_NOT: "Рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» #bold не #!$COMPARATOR$ $NUM$"
+ TRIGGER_INSTITUTION_INVESTMENT_LEVEL_FIRST: "[COUNTRY.GetAdjectiveNoFlag]ий рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» $COMPARATOR$ $NUM$"
+ TRIGGER_INSTITUTION_INVESTMENT_LEVEL_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag]ий рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» #bold не #!$COMPARATOR$ $NUM$"
+ TRIGGER_INSTITUTION_INVESTMENT_LEVEL_THIRD: "[COUNTRY.GetAdjective]ий рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» $COMPARATOR$ $NUM$"
+ TRIGGER_INSTITUTION_INVESTMENT_LEVEL_THIRD_NOT: "[COUNTRY.GetAdjective]ий рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» #bold не #!$COMPARATOR$ $NUM$"
  
  TRIGGER_TAX_LEVEL:0 "Tax level $COMPARATOR$ $LEVEL$"
  TRIGGER_TAX_LEVEL_NOT:1 "Tax level #bold not #!$COMPARATOR$ $LEVEL$"
@@ -1176,12 +1209,12 @@
  TRIGGER_IT_IS_AUTUMN:0 "It's autumn"
  TRIGGER_IT_IS_AUTUMN_NOT:0 "It's not autumn"
  
- TRIGGER_HAS_CULTURAL_OBSESSION:0 "[CULTURE.GetName] is obsessed with [GOODS.GetName]"
- TRIGGER_HAS_CULTURAL_OBSESSION_NOT:1 "[CULTURE.GetName] is #bold not #!obsessed with [GOODS.GetName]"
- TRIGGER_HAS_CULTURAL_OBSESSION_FIRST:0 "[CULTURE.GetName] is obsessed with [GOODS.GetName]"
- TRIGGER_HAS_CULTURAL_OBSESSION_FIRST_NOT:1 "[CULTURE.GetName] is #bold not #!obsessed with [GOODS.GetName]"
- TRIGGER_HAS_CULTURAL_OBSESSION_THIRD:0 "[CULTURE.GetName] is obsessed with [GOODS.GetName]"
- TRIGGER_HAS_CULTURAL_OBSESSION_THIRD_NOT:1 "[CULTURE.GetName] is #bold not #!obsessed with [GOODS.GetName]"
+ TRIGGER_HAS_CULTURAL_OBSESSION: "[CULTURE.GetName] одержимі товаром [GOODS.GetName|l]"
+ TRIGGER_HAS_CULTURAL_OBSESSION_NOT: "[CULTURE.GetName] #bold не#! одержимі товаром [GOODS.GetName|l]"
+ TRIGGER_HAS_CULTURAL_OBSESSION_FIRST: "[CULTURE.GetName] одержимі товаром [GOODS.GetName|l]"
+ TRIGGER_HAS_CULTURAL_OBSESSION_FIRST_NOT: "[CULTURE.GetName] #bold не#! одержимі товаром [GOODS.GetName|l]"
+ TRIGGER_HAS_CULTURAL_OBSESSION_THIRD: "[CULTURE.GetName] одержимі товаром [GOODS.GetName|l]"
+ TRIGGER_HAS_CULTURAL_OBSESSION_THIRD_NOT: "[CULTURE.GetName] #bold не#! одержимі товаром [GOODS.GetName|l]"
  
  TRIGGER_HAS_RELIGIOUS_TABOO:0 "[RELIGION.GetName] has a taboo against [GOODS.GetName]"
  TRIGGER_HAS_RELIGIOUS_TABOO_NOT:1 "[RELIGION.GetName] does #bold not #!have a taboo against [GOODS.GetName]"
@@ -1241,8 +1274,8 @@
  
  TRIGGER_CULTURE_IS_DISCRIMINATED_IN:1 "Is [Concept('concept_discrimination','$concept_discriminated_against$')] in [Country.GetName]"
  TRIGGER_CULTURE_IS_DISCRIMINATED_IN_NOT:2 "Is #bold not #![Concept('concept_discrimination','$concept_discriminated_against$')] in [Country.GetName]"
- TRIGGER_CULTURE_IS_DISCRIMINATED_IN_THIRD: "Культуру [CULTURE.GetName] [Concept('concept_discrimination','$concept_discriminated_against$')|l] у [Concept('concept_country','$concept_country_dat$')|l] [Country.GetName]"
- TRIGGER_CULTURE_IS_DISCRIMINATED_IN_NOT_THIRD: "Культуру [CULTURE.GetName] #bold не #![Concept('concept_discrimination','$concept_discriminated_against$')|l] у [Concept('concept_country','$concept_country_dat$')|l] [Country.GetName]"
+ TRIGGER_CULTURE_IS_DISCRIMINATED_IN_THIRD: "Культуру [CULTURE.GetName|l] [Concept('concept_discrimination','$concept_discriminated_against$')|l] у [Concept('concept_country','$concept_country_dat$')|l] [Country.GetName]"
+ TRIGGER_CULTURE_IS_DISCRIMINATED_IN_NOT_THIRD: "Культуру [CULTURE.GetName|l] #bold не #![Concept('concept_discrimination','$concept_discriminated_against$')|l] у [Concept('concept_country','$concept_country_dat$')|l] [Country.GetName]"
  
  TRIGGER_CULTURE_SECESSION_PROGRESS:0 "[CULTURE.GetName] in [TARGET_COUNTRY.GetName]: [concept_secession] progress ($CURRENT_VALUE$) is $COMPARATOR$ $NUM|v$"
  TRIGGER_CULTURE_SECESSION_PROGRESS_NOT:0 "[CULTURE.GetName] in [TARGET_COUNTRY.GetName]: [concept_secession] progress ($CURRENT_VALUE$) is $COMPARATOR$ $NUM|v$"
@@ -1288,7 +1321,7 @@
  TRIGGER_HAS_HIGH_ATTRITION:1 "[Character.GetFullName] has a high [concept_attrition]"
  TRIGGER_HAS_HIGH_ATTRITION_NOT:2 "[Character.GetFullName] does #bold not #!have a high [concept_attrition]"
  
- TRIGGER_HAS_ACTIVE_PRODUCTION_METHOD:1 "Has activated [PRODUCTION_METHOD.GetName]"
+ TRIGGER_HAS_ACTIVE_PRODUCTION_METHOD: "Вибраний [Concept('concept_production_method', '$concept_production_method$')|l] «[PRODUCTION_METHOD.GetName]»"
  TRIGGER_HAS_ACTIVE_PRODUCTION_METHOD_NOT:2 "Has #bold not #!activated [PRODUCTION_METHOD.GetName]"
 
  TRIGGER_HAS_ACTIVE_PRODUCTION_METHOD_THIRD:0 "[Building.GetName] has activated [PRODUCTION_METHOD.GetName]"
@@ -1357,10 +1390,10 @@
  TRIGGER_IS_CIVIL_WAR_TYPE:0 "[concept_civil_war] is a #v $CIVIL_WAR_TYPE$#!"
  TRIGGER_IS_CIVIL_WAR_TYPE_NOT:1 "[concept_civil_war] is #bold not #!a #v $CIVIL_WAR_TYPE$#!"
 
- TRIGGER_IS_TREATY_PORT:1 "Is a [concept_treaty_port]"
- TRIGGER_IS_TREATY_PORT_NOT:2 "Is #bold not #!a [concept_treaty_port]"
- TRIGGER_IS_TREATY_PORT_THIRD:0 "[STATE.GetName] is a [concept_treaty_port]"
- TRIGGER_IS_TREATY_PORT_THIRD_NOT:1 "[STATE.GetName] is #bold not #!a [concept_treaty_port]"
+ TRIGGER_IS_TREATY_PORT: "Є [Concept('concept_treaty_port', '$concept_treaty_port_ins$')|l]"
+ TRIGGER_IS_TREATY_PORT_NOT: "#bold Не#! є [Concept('concept_treaty_port', '$concept_treaty_port_ins$')|l]"
+ TRIGGER_IS_TREATY_PORT_THIRD: "[STATE.GetName] - [Concept('concept_treaty_port', '$concept_treaty_port$')|l]"
+ TRIGGER_IS_TREATY_PORT_THIRD_NOT: "[STATE.GetName] не #bold є#! [Concept('concept_treaty_port', '$concept_treaty_port_ins$')|l]"
  
  TRIGGER_AVAILABLE_JOBS:0 "Has $COMPARATOR$ $NUM|v$ available jobs"
  TRIGGER_AVAILABLE_JOBS_NOT:1 "Does #bold not #!have $COMPARATOR$ $NUM|v$ available jobs"
@@ -1598,8 +1631,8 @@
  TRIGGER_ANY_SCOPE_PLAY_PARTICIPANT_PERCENT:1 "$PARAMETERS$ of $FILTER$[concept_diplomatic_play] Participants:"
  TRIGGER_ANY_SCOPE_PLAY_PARTICIPANT_COUNT:1 "$PARAMETERS$ $FILTER$[concept_diplomatic_play] Participants:"
 
- TRIGGER_ANY_STATE_REGION:2 "Any [concept_state_region]:"
- TRIGGER_ANY_STATE_REGION_ALL:2 "All [Concept('concept_state_region', '$concept_state_regions$')]:"
+ TRIGGER_ANY_STATE_REGION: "Будь-який [concept_state_region|l]:"
+ TRIGGER_ANY_STATE_REGION_ALL: "Усі [Concept('concept_state_region', '$concept_state_regions$')|l]:"
  TRIGGER_ANY_STATE_REGION_PERCENT:2 "$PARAMETERS$ of $FILTER$[Concept('concept_state_region', '$concept_state_regions$')]:"
  TRIGGER_ANY_STATE_REGION_COUNT:2 "$PARAMETERS$ $FILTER$[Concept('concept_state_region', '$concept_state_regions$')]:"
 
@@ -1696,9 +1729,9 @@
  TRIGGER_ANY_CHARACTER_IN_VOID_PERCENT:3 "$PARAMETERS$ of $FILTER$[Concept('concept_character', '$concept_characters$')] in the Void:"
  TRIGGER_ANY_CHARACTER_IN_VOID_COUNT:3 "$PARAMETERS$ $FILTER$[Concept('concept_character', '$concept_characters$')] in the Void:"
 
- TRIGGER_ANY_COUNTRY:1 "Any [concept_country]:"
- TRIGGER_ANY_COUNTRY_FIRST:1 "Any [concept_country]:"
- TRIGGER_ANY_COUNTRY_ALL:2 "All [Concept('concept_country', '$concept_countries$')]:"
+ TRIGGER_ANY_COUNTRY: "Будь-яка [concept_country|l]:"
+ TRIGGER_ANY_COUNTRY_FIRST: "Будь-яка [concept_country|l]:"
+ TRIGGER_ANY_COUNTRY_ALL: "Усі [Concept('concept_country', '$concept_countries$')|l]:"
  TRIGGER_ANY_COUNTRY_PERCENT:3 "$PARAMETERS$ of $FILTER$[Concept('concept_country', '$concept_countries$')]:"
  TRIGGER_ANY_COUNTRY_COUNT:3 "$PARAMETERS$ $FILTER$[Concept('concept_country', '$concept_countries$')]:"
  TRIGGER_ANY_COUNTRY_COUNT_FIRST:2 "$PARAMETERS$ $FILTER$[Concept('concept_country', '$concept_countries$')]:"
@@ -1740,9 +1773,9 @@
  
  TRIGGER_ANY_SUBJECT_OR_BELOW:2 "Any [concept_subject] or their $concept_subjects$:"
  TRIGGER_ANY_SUBJECT_OR_BELOW_NOT:3 "No [concept_subject] or their $concept_subjects$:"
- TRIGGER_ANY_SUBJECT_OR_BELOW_FIRST:3 "Any [COUNTRY.GetAdjectiveNoFlag] [concept_subject] or their $concept_subjects$:"
+ TRIGGER_ANY_SUBJECT_OR_BELOW_FIRST: "Будь-який [COUNTRY.GetAdjectiveNoFlag|l]ий [concept_subject|l] або їх підвладні:"
  TRIGGER_ANY_SUBJECT_OR_BELOW_FIRST_NOT:3 "No [COUNTRY.GetAdjectiveNoFlag] [concept_subject] or their $concept_subjects$:"
- TRIGGER_ANY_SUBJECT_OR_BELOW_THIRD:3 "Any [COUNTRY.GetAdjective] [concept_subject] or their $concept_subjects$:"
+ TRIGGER_ANY_SUBJECT_OR_BELOW_THIRD: "Будь-який [COUNTRY.GetAdjective|l]ий [concept_subject|l] або їх підвладні:"
  TRIGGER_ANY_SUBJECT_OR_BELOW_THIRD_NOT:3 "No [COUNTRY.GetAdjective] [concept_subject] or their $concept_subjects$:"
   
  TRIGGER_ANY_SUBJECT_OR_BELOW_ALL:1 "All [Concept('concept_subject','$concept_subjects$')] or their $concept_subjects$:"
@@ -1767,6 +1800,16 @@
  TRIGGER_ANY_RIVAL_COUNTRY_ALL:3 "All rival [Concept('concept_country', '$concept_countries$')]:"
  TRIGGER_ANY_RIVAL_COUNTRY_PERCENT:4 "$PARAMETERS$ of $FILTER$rival [Concept('concept_country', '$concept_countries$')]:"
  TRIGGER_ANY_RIVAL_COUNTRY_COUNT:4 "$PARAMETERS$ $FILTER$rival [Concept('concept_country', '$concept_countries$')]:"
+
+ TRIGGER_ANY_SCOPE_DIPLOMATIC_PACT:0 "Any [concept_diplomatic_pact]:"
+ TRIGGER_ANY_SCOPE_DIPLOMATIC_PACT_ALL:0 "All [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]:"
+ TRIGGER_ANY_SCOPE_DIPLOMATIC_PACT_PERCENT:0 "$PARAMETERS$ of $FILTER$[Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]:"
+ TRIGGER_ANY_SCOPE_DIPLOMATIC_PACT_COUNT:0 "$PARAMETERS$ $FILTER$[Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]:"
+
+ TRIGGER_ANY_SCOPE_DIPLOMATIC_PACT_PARTICIPANT:0 "Any [concept_diplomatic_pact] participant:"
+ TRIGGER_ANY_SCOPE_DIPLOMATIC_PACT_PARTICIPANT_ALL:0 "All [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] participants:"
+ TRIGGER_ANY_SCOPE_DIPLOMATIC_PACT_PARTICIPANT_PERCENT:0 "$PARAMETERS$ of $FILTER$[Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] participants:"
+ TRIGGER_ANY_SCOPE_DIPLOMATIC_PACT_PARTICIPANT_COUNT:0 "$PARAMETERS$ $FILTER$[Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] participants:"
  
  TRIGGER_ANY_SCOPE_CULTURE:1 "Any [concept_culture]:"
  TRIGGER_ANY_SCOPE_CULTURE_ALL:2 "All [Concept('concept_culture', '$concept_cultures$')]:"
@@ -1780,12 +1823,12 @@
  TRIGGER_ANY_PRIMARY_CULTURE_THIRD:1 "Any [COUNTRY.GetAdjective] [concept_primary_cultures]:"
  TRIGGER_ANY_PRIMARY_CULTURE_THIRD_NOT:1 "Any [COUNTRY.GetAdjective] [concept_primary_cultures] NOT:"
  
- TRIGGER_ANY_PRIMARY_CULTURE_ALL:2 "All [Concept('concept_primary_cultures', '$concept_primary_culture$')]:"
- TRIGGER_ANY_PRIMARY_CULTURE_ALL_NOT:1 "All [Concept('concept_primary_cultures', '$concept_primary_culture$')] NOT:"
- TRIGGER_ANY_PRIMARY_CULTURE_ALL_FIRST:1 "All [Concept('concept_primary_cultures', '$concept_primary_culture$')] in [COUNTRY.GetNameNoFlag]:"
- TRIGGER_ANY_PRIMARY_CULTURE_ALL_FIRST_NOT:1 "All [Concept('concept_primary_cultures', '$concept_primary_culture$')] in [COUNTRY.GetNameNoFlag] NOT:"
- TRIGGER_ANY_PRIMARY_CULTURE_ALL_THIRD:1 "All [Concept('concept_primary_cultures', '$concept_primary_culture$')] in [COUNTRY.GetName]:"
- TRIGGER_ANY_PRIMARY_CULTURE_ALL_THIRD_NOT:1 "All [Concept('concept_primary_cultures', '$concept_primary_culture$')] in [COUNTRY.GetName] NOT:"
+ TRIGGER_ANY_PRIMARY_CULTURE_ALL: "Уся [Concept('concept_primary_cultures', '$concept_primary_culture$')|l]:"
+ TRIGGER_ANY_PRIMARY_CULTURE_ALL_NOT: "Уся [Concept('concept_primary_cultures', '$concept_primary_culture$')|l] НЕ:"
+ TRIGGER_ANY_PRIMARY_CULTURE_ALL_FIRST: "Уся [Concept('concept_primary_cultures', '$concept_primary_culture$')|l] у державі [COUNTRY.GetNameNoFlag]:"
+ TRIGGER_ANY_PRIMARY_CULTURE_ALL_FIRST_NOT: "Уся [Concept('concept_primary_cultures', '$concept_primary_culture$')|l] у державі [COUNTRY.GetNameNoFlag] НЕ:"
+ TRIGGER_ANY_PRIMARY_CULTURE_ALL_THIRD: "Уся [Concept('concept_primary_cultures', '$concept_primary_culture$')|l] у державі [COUNTRY.GetName]:"
+ TRIGGER_ANY_PRIMARY_CULTURE_ALL_THIRD_NOT: "Уся [Concept('concept_primary_cultures', '$concept_primary_culture$')|l] у державі [COUNTRY.GetName] НЕ:"
  
  TRIGGER_ANY_PRIMARY_CULTURE_PERCENT:3 "$PARAMETERS$ of $FILTER$[Concept('concept_primary_cultures', '$concept_primary_culture$')]:"
  
@@ -1799,22 +1842,49 @@
  TRIGGER_ANY_STATE_ALL_FIRST:2 "All [Concept('concept_state', '$concept_states$')] worldwide"
  TRIGGER_ANY_STATE_PERCENT:3 "$PARAMETERS$ of $FILTER$[Concept('concept_state', '$concept_states$')] worldwide"
  TRIGGER_ANY_STATE_COUNT:3 "$PARAMETERS$ $FILTER$[Concept('concept_state', '$concept_states$')] worldwide"
+
+ TRIGGER_ANY_STRATEGIC_OBJECTIVE:0 "Any [concept_strategic_objective]:"
+ TRIGGER_ANY_STRATEGIC_OBJECTIVE_FIRST:0 "$TRIGGER_ANY_STRATEGIC_OBJECTIVE$"
+ TRIGGER_ANY_STRATEGIC_OBJECTIVE_ALL:0 "All [Concept('concept_strategic_objective', '$concept_strategic_objectives$')]"
+ TRIGGER_ANY_STRATEGIC_OBJECTIVE_ALL_FIRST:0 "$TRIGGER_ANY_STRATEGIC_OBJECTIVE_ALL$"
+ TRIGGER_ANY_STRATEGIC_OBJECTIVE_PERCENT:0 "$PARAMETERS$ of $FILTER$[Concept('concept_strategic_objective', '$concept_strategic_objectives$')]"
+ TRIGGER_ANY_STRATEGIC_OBJECTIVE_COUNT:0 "$PARAMETERS$ $FILTER$[Concept('concept_strategic_objective', '$concept_strategic_objectives$')]"
  
- TRIGGER_ANY_SCOPE_STATE:1 "Any [concept_state]:"
- TRIGGER_ANY_SCOPE_STATE_ALL:2 "All [Concept('concept_state', '$concept_states$')]:"
+ TRIGGER_ANY_SCOPE_STATE: "Будь-який [concept_state|l]:"
+ TRIGGER_ANY_SCOPE_STATE_ALL: "Усі [Concept('concept_state', '$concept_states$')|l]:"
  TRIGGER_ANY_SCOPE_STATE_ALL_NOT:1 "No [Concept('concept_state', '$concept_states$')]:"
- TRIGGER_ANY_SCOPE_STATE_ALL_FIRST:2 "All [Country.GetAdjectiveNoFlag] [Concept('concept_state', '$concept_states$')]"
+ TRIGGER_ANY_SCOPE_STATE_ALL_FIRST: "Усі [Country.GetAdjectiveNoFlag|l]і [Concept('concept_state', '$concept_states$')|l]"
  TRIGGER_ANY_SCOPE_STATE_ALL_FIRST_NOT:1 "No [Country.GetAdjectiveNoFlag] [concept_state]"
- TRIGGER_ANY_SCOPE_STATE_ALL_THIRD:2 "All [Concept('concept_state', '$concept_states$')] in [Country.GetName]"
+ TRIGGER_ANY_SCOPE_STATE_ALL_THIRD: "Усі [Concept('concept_state', '$concept_states$')|l] у [Concept('concept_country', '$concept_country_loc$')|l] [Country.GetName]"
  TRIGGER_ANY_SCOPE_STATE_ALL_THIRD_NOT:1 "No [concept_state] not controlled by [Country.GetName]"
  
  TRIGGER_ANY_SCOPE_STATE_COUNT:3 "$PARAMETERS$ $FILTER$[Concept('concept_state', '$concept_states$')]:"
  TRIGGER_ANY_SCOPE_STATE_COUNT_FIRST:0 "$PARAMETERS$ $FILTER$[Country.GetAdjectiveNoFlag] [Concept('concept_state', '$concept_states$')]:"
  TRIGGER_ANY_SCOPE_STATE_COUNT_THIRD:0 "$PARAMETERS$ $FILTER$[Concept('concept_state', '$concept_states$')] in [Country.GetName]:"
- TRIGGER_ANY_SCOPE_STATE_FIRST:1 "Any [Country.GetAdjectiveNoFlag] [concept_state]"
+ TRIGGER_ANY_SCOPE_STATE_FIRST: "Будь-який [Country.GetAdjectiveNoFlag|l]ий [concept_state|l]"
  TRIGGER_ANY_SCOPE_STATE_FIRST_NOT:2 "No [Country.GetAdjectiveNoFlag] [concept_state]"
- TRIGGER_ANY_SCOPE_STATE_THIRD:1 "Any [concept_state] in [Country.GetName]"
+ TRIGGER_ANY_SCOPE_STATE_THIRD: "Будь-який [concept_state|l] у державі [Country.GetName]"
  TRIGGER_ANY_SCOPE_STATE_THIRD_NOT:1 "Any [concept_state] not controlled by [Country.GetName]"
+
+ TRIGGER_ANY_SCOPE_STATE_IN_STATE_REGION_FIRST:0 "Any [StateRegion.GetName] [concept_state]"
+ TRIGGER_ANY_SCOPE_STATE_IN_STATE_REGION_FIRST_NOT:0 "No [StateRegion.GetName] [concept_state]"
+ TRIGGER_ANY_SCOPE_STATE_IN_STATE_REGION_THIRD:0 "Any [concept_state] in [StateRegion.GetName]:"
+ TRIGGER_ANY_SCOPE_STATE_IN_STATE_REGION_THIRD_NOT:0 "No [concept_state] in [StateRegion.GetName]:"
+
+ TRIGGER_ANY_SCOPE_STATE_IN_STRATEGIC_REGION_FIRST:0 "Any [StrategicRegion.GetName] [concept_state]"
+ TRIGGER_ANY_SCOPE_STATE_IN_STRATEGIC_REGION_FIRST_NOT:0 "No [StrategicRegion.GetName] [concept_state]"
+ TRIGGER_ANY_SCOPE_STATE_IN_STRATEGIC_REGION_THIRD:0 "Any [concept_state] in [StrategicRegion.GetName]:"
+ TRIGGER_ANY_SCOPE_STATE_IN_STRATEGIC_REGION_THIRD_NOT:0 "No [concept_state] in [StrategicRegion.GetName]:"
+
+ TRIGGER_ANY_SCOPE_STATE_IN_THEATER_FIRST:0 "Any [Theater.GetName] [concept_state]"
+ TRIGGER_ANY_SCOPE_STATE_IN_THEATER_FIRST_NOT:0 "No [Theater.GetName] [concept_state]"
+ TRIGGER_ANY_SCOPE_STATE_IN_THEATER_THIRD:0 "Any [concept_state] in [Theater.GetName]:"
+ TRIGGER_ANY_SCOPE_STATE_IN_THEATER_THIRD_NOT:0 "No [concept_state] in [Theater.GetName]:"
+
+ TRIGGER_ANY_SCOPE_STATE_IN_FRONT_FIRST:0 "Any [Front.GetName] [concept_state]"
+ TRIGGER_ANY_SCOPE_STATE_IN_FRONT_FIRST_NOT:0 "No [Front.GetName] [concept_state]"
+ TRIGGER_ANY_SCOPE_STATE_IN_FRONT_THIRD:0 "Any [concept_state] in [Front.GetName]:"
+ TRIGGER_ANY_SCOPE_STATE_IN_FRONT_THIRD_NOT:0 "No [concept_state] in [Front.GetName]:"
  
  TRIGGER_ANY_NEIGHBOURING_STATE:1 "Any neighboring [concept_state]:"
  TRIGGER_ANY_NEIGHBOURING_STATE_ALL:2 "All neighboring [Concept('concept_state', '$concept_states$')]:"
@@ -1828,7 +1898,7 @@
  TRIGGER_ANY_SCOPE_WAR_THIRD:1 "Any [COUNTRY.GetAdjective] [concept_war]:"
  TRIGGER_ANY_SCOPE_WAR_THIRD_NOT:1 "No [COUNTRY.GetAdjective] [concept_war]:"
  
- TRIGGER_ANY_SCOPE_WAR_ALL:2 "All [Concept('concept_war', '$concept_wars$')]:"
+ TRIGGER_ANY_SCOPE_WAR_ALL: "Усі [Concept('concept_war', '$concept_wars$')|l]:"
  TRIGGER_ANY_SCOPE_WAR_PERCENT:3 "$PARAMETERS$ of $FILTER$[Concept('concept_war', '$concept_wars$')]:"
  TRIGGER_ANY_SCOPE_WAR_COUNT:3 "$PARAMETERS$ $FILTER$[Concept('concept_war', '$concept_wars$')]:"
  
@@ -1858,6 +1928,14 @@
  TRIGGER_MARKET_ACCESS_LESS_OR_EQUAL:0 "[concept_market_access] in [State.GetName] is less than, or equal to $NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
  TRIGGER_MARKET_ACCESS_EQUAL:0 "[concept_market_access] in [State.GetName] is $NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
  TRIGGER_MARKET_ACCESS_NOT_EQUAL:1 "[concept_market_access] in [State.GetName] is #bold not #!$NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
+
+ TRIGGER_MARKET_GOODS_SHORTAGE_EQUAL:0 "The [concept_input_goods_shortage] level of [MARKET_GOODS.GetGoods.GetTextIcon] [MARKET_GOODS.GetGoods.GetName] in [MARKET_GOODS.GetMarket.GetName] is !$NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
+ TRIGGER_MARKET_GOODS_SHORTAGE_EQUAL_NOT:0 "The [concept_input_goods_shortage] level of [MARKET_GOODS.GetGoods.GetTextIcon] [MARKET_GOODS.GetGoods.GetName] in [MARKET_GOODS.GetMarket.GetName] is #b not#! !$NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
+ TRIGGER_MARKET_GOODS_SHORTAGE_GREATER_THAN:0 "The [concept_input_goods_shortage] level of [MARKET_GOODS.GetGoods.GetTextIcon] [MARKET_GOODS.GetGoods.GetName] in [MARKET_GOODS.GetMarket.GetName] is greater than !$NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
+ TRIGGER_MARKET_GOODS_SHORTAGE_LESS_THAN:0 "The [concept_input_goods_shortage] level of [MARKET_GOODS.GetGoods.GetTextIcon] [MARKET_GOODS.GetGoods.GetName] in [MARKET_GOODS.GetMarket.GetName] is less than !$NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
+ TRIGGER_MARKET_GOODS_SHORTAGE_LESS_THAN_OR_EQUAL:0 "The [concept_input_goods_shortage] level of [MARKET_GOODS.GetGoods.GetTextIcon] [MARKET_GOODS.GetGoods.GetName] in [MARKET_GOODS.GetMarket.GetName] is less than or equal to !$NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
+ TRIGGER_MARKET_GOODS_SHORTAGE_GREATER_THAN_OR_EQUAL:0 "The [concept_input_goods_shortage] level of [MARKET_GOODS.GetGoods.GetTextIcon] [MARKET_GOODS.GetGoods.GetName] in [MARKET_GOODS.GetMarket.GetName] is greater than or equal to !$NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
+
 
  TRIGGER_CONSTRUCTION_QUEUE_SIZE_GREATER_THAN:0 "Number of projects in [concept_construction_queue] is greater than $NUM|0v$"
  TRIGGER_CONSTRUCTION_QUEUE_SIZE_LESS_THAN:0 "Number of projects in [concept_construction_queue] is greater than, or equal to $NUM|0v$"
@@ -1889,7 +1967,7 @@
  
  TRIGGER_CONSTRUCTION_QUEUE_DURATION_GREATER_THAN_FIRST:0 "Remaining duration of [Country.GetAdjectiveNoFlag] [concept_construction_queue] is greater than $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
  TRIGGER_CONSTRUCTION_QUEUE_DURATION_GREATER_OR_EQUAL_FIRST:0 "Remaining duration of [Country.GetAdjectiveNoFlag] [concept_construction_queue] is greater than, or equal to $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
- TRIGGER_CONSTRUCTION_QUEUE_DURATION_LESS_THAN_FIRST_STUPID_HASH_COLLISION:0 "Remaining duration of [Country.GetAdjectiveNoFlag] [concept_construction_queue] is less than $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_DURATION_LESS_THAN_FIRST_SUFFIX_TO_AVOID_HASH_COLLISION:0 "Remaining duration of [Country.GetAdjectiveNoFlag] [concept_construction_queue] is less than $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
  TRIGGER_CONSTRUCTION_QUEUE_DURATION_LESS_OR_EQUAL_FIRST:0 "Remaining duration of [Country.GetAdjectiveNoFlag] [concept_construction_queue] is less than, or equal to $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
  TRIGGER_CONSTRUCTION_QUEUE_DURATION_EQUAL_FIRST:0 "Remaining duration of [Country.GetAdjectiveNoFlag] [concept_construction_queue] is $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
  TRIGGER_CONSTRUCTION_QUEUE_DURATION_NOT_EQUAL_FIRST:1 "Remaining duration of [Country.GetAdjectiveNoFlag] [concept_construction_queue] is #bold not #!$NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
@@ -1900,6 +1978,48 @@
  TRIGGER_CONSTRUCTION_QUEUE_DURATION_LESS_OR_EQUAL_THIRD:0 "Remaining duration of [concept_construction_queue] in [Country.GetName] is less than, or equal to $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
  TRIGGER_CONSTRUCTION_QUEUE_DURATION_EQUAL_THIRD:0 "Remaining duration of [concept_construction_queue] in [Country.GetName] is $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
  TRIGGER_CONSTRUCTION_QUEUE_DURATION_NOT_EQUAL_THIRD:1 "Remaining duration of [concept_construction_queue] in [Country.GetName] is #bold not #!$NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+
+TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_GREATER_THAN:0 "Remaining duration of [Concept('concept_government_construction', '$concept_government_constructions$')] is greater than $NUM|0v$ weeks"
+ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_GREATER_OR_EQUAL:0 "Remaining duration of [Concept('concept_government_construction', '$concept_government_constructions$')] is greater than, or equal to $NUM|0v$ weeks"
+ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_LESS_THAN:0 "Remaining duration of [Concept('concept_government_construction', '$concept_government_constructions$')] is less than $NUM|0v$ weeks"
+ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_LESS_OR_EQUAL:0 "Remaining duration of [Concept('concept_government_construction', '$concept_government_constructions$')] is less than, or equal to $NUM|0v$ weeks"
+ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_EQUAL:0 "Remaining duration of [Concept('concept_government_construction', '$concept_government_constructions$')] is $NUM|0v$ weeks"
+ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_NOT_EQUAL:0 "Remaining duration of [Concept('concept_government_construction', '$concept_government_constructions$')] is #bold not #!$NUM|0v$ weeks"
+ 
+ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_GREATER_THAN_FIRST:0 "Remaining duration of [Country.GetAdjectiveNoFlag] [Concept('concept_government_construction', '$concept_government_constructions$')] is greater than $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_GREATER_OR_EQUAL_FIRST:0 "Remaining duration of [Country.GetAdjectiveNoFlag] [Concept('concept_government_construction', '$concept_government_constructions$')] is greater than, or equal to $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_LESS_THAN_FIRST:0 "Remaining duration of [Country.GetAdjectiveNoFlag] [Concept('concept_government_construction', '$concept_government_constructions$')] is less than $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_LESS_OR_EQUAL_FIRST:0 "Remaining duration of [Country.GetAdjectiveNoFlag] [Concept('concept_government_construction', '$concept_government_constructions$')] is less than, or equal to $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_EQUAL_FIRST:0 "Remaining duration of [Country.GetAdjectiveNoFlag] [Concept('concept_government_construction', '$concept_government_constructions$')] is $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_NOT_EQUAL_FIRST:0 "Remaining duration of [Country.GetAdjectiveNoFlag] [Concept('concept_government_construction', '$concept_government_constructions$')] is #bold not #!$NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ 
+ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_GREATER_THAN_THIRD:0 "Remaining duration of [Concept('concept_government_construction', '$concept_government_constructions$')] in [Country.GetName] is greater than $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_LESS_THAN_THIRD:0 "Remaining duration of [Concept('concept_government_construction', '$concept_government_constructions$')] in [Country.GetName] is greater than, or equal to $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_GREATER_OR_EQUAL_THIRD:0 "Remaining duration of [Concept('concept_government_construction', '$concept_government_constructions$')] in [Country.GetName] is less than $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_LESS_OR_EQUAL_THIRD:0 "Remaining duration of [Concept('concept_government_construction', '$concept_government_constructions$')] in [Country.GetName] is less than, or equal to $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_EQUAL_THIRD:0 "Remaining duration of [Concept('concept_government_construction', '$concept_government_constructions$')] in [Country.GetName] is $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_NOT_EQUAL_THIRD:0 "Remaining duration of [Concept('concept_government_construction', '$concept_government_constructions$')] in [Country.GetName] is #bold not #!$NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ 
+ TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_GREATER_THAN:0 "Remaining duration of [Concept('concept_private_construction', '$concept_private_constructions$')] is greater than $NUM|0v$ weeks"
+ TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_GREATER_OR_EQUAL:0 "Remaining duration of [Concept('concept_private_construction', '$concept_private_constructions$')] is greater than, or equal to $NUM|0v$ weeks"
+ TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_LESS_THAN:0 "Remaining duration of [Concept('concept_private_construction', '$concept_private_constructions$')] is less than $NUM|0v$ weeks"
+ TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_LESS_OR_EQUAL:0 "Remaining duration of [Concept('concept_private_construction', '$concept_private_constructions$')] is less than, or equal to $NUM|0v$ weeks"
+ TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_EQUAL:0 "Remaining duration of [Concept('concept_private_construction', '$concept_private_constructions$')] is $NUM|0v$ weeks"
+ TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_NOT_EQUAL:0 "Remaining duration of [Concept('concept_private_construction', '$concept_private_constructions$')] is #bold not #!$NUM|0v$ weeks"
+ 
+ TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_GREATER_THAN_FIRST:0 "Remaining duration of [Country.GetAdjectiveNoFlag] [Concept('concept_private_construction', '$concept_private_constructions$')] is greater than $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_GREATER_OR_EQUAL_FIRST:0 "Remaining duration of [Country.GetAdjectiveNoFlag] [Concept('concept_private_construction', '$concept_private_constructions$')] is greater than, or equal to $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_LESS_THAN_FIRST:0 "Remaining duration of [Country.GetAdjectiveNoFlag] [Concept('concept_private_construction', '$concept_private_constructions$')] is less than $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_LESS_OR_EQUAL_FIRST:0 "Remaining duration of [Country.GetAdjectiveNoFlag] [Concept('concept_private_construction', '$concept_private_constructions$')] is less than, or equal to $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_EQUAL_FIRST:0 "Remaining duration of [Country.GetAdjectiveNoFlag] [Concept('concept_private_construction', '$concept_private_constructions$')] is $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_NOT_EQUAL_FIRST:0 "Remaining duration of [Country.GetAdjectiveNoFlag] [Concept('concept_private_construction', '$concept_private_constructions$')] is #bold not #!$NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ 
+ TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_GREATER_THAN_THIRD:0 "Remaining duration of [Concept('concept_private_construction', '$concept_private_constructions$')] in [Country.GetName] is greater than $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_LESS_THAN_THIRD:0 "Remaining duration of [Concept('concept_private_construction', '$concept_private_constructions$')] in [Country.GetName] is greater than, or equal to $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_GREATER_OR_EQUAL_THIRD:0 "Remaining duration of [Concept('concept_private_construction', '$concept_private_constructions$')] in [Country.GetName] is less than $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_LESS_OR_EQUAL_THIRD:0 "Remaining duration of [Concept('concept_private_construction', '$concept_private_constructions$')] in [Country.GetName] is less than, or equal to $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_EQUAL_THIRD:0 "Remaining duration of [Concept('concept_private_construction', '$concept_private_constructions$')] in [Country.GetName] is $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_NOT_EQUAL_THIRD:0 "Remaining duration of [Concept('concept_private_construction', '$concept_private_constructions$')] in [Country.GetName] is #bold not #!$NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
  
  TRIGGER_BUILDING_LEVEL_GREATER_THAN:1 "Building Level is greater than $TARGET_VALUE|0v$"
  TRIGGER_BUILDING_LEVEL_GREATER_OR_EQUAL: "Розмір будівлі більша або дорівнює $TARGET_VALUE|0v$"
@@ -1931,14 +2051,14 @@
  TRIGGER_NUM_ALLIANCES_TO_ALLIES_EQUAL:0 "Number of Alliances [TARGET_COUNTRY.GetName] has with Allies to [COUNTRY.GetName] Level is $TARGET_VALUE|0v$"
  TRIGGER_NUM_ALLIANCES_TO_ALLIES_NOT_EQUAL:1 "Number of Alliances [TARGET_COUNTRY.GetName] has with Allies to [COUNTRY.GetName] Level is #bold not #!$TARGET_VALUE|0v$"
 
- TRIGGER_RELATIONS_GREATER_THAN:0 "Relations between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName] is greater than $TARGET_VALUE|0v$"
- TRIGGER_RELATIONS_GREATER_OR_EQUAL:0 "Relations between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName] is greater than, or equal to $TARGET_VALUE|0v$"
- TRIGGER_RELATIONS_GREATER_OR_EQUAL_FIRST:0 "Relations between [COUNTRY.GetName] and [TARGET_COUNTRY.GetNameNoFlag] is greater than, or equal to $TARGET_VALUE|0v$"
- TRIGGER_RELATIONS_GREATER_OR_EQUAL_THIRD:0 "Relations between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName] is greater than, or equal to $TARGET_VALUE|0v$"
- TRIGGER_RELATIONS_LESS_THAN:0 "Relations between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName] is less than $TARGET_VALUE|0v$"
- TRIGGER_RELATIONS_LESS_OR_EQUAL:0 "Relations between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName] is less than, or equal to $TARGET_VALUE|0v$"
- TRIGGER_RELATIONS_EQUAL:0 "Relations between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName] is $TARGET_VALUE|0v$"
- TRIGGER_RELATIONS_NOT_EQUAL:1 "Relations between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName] is #bold not #!$TARGET_VALUE|0v$"
+ TRIGGER_RELATIONS_GREATER_THAN: "Відносини між [Concept('concept_country','$concept_countries_ins$')|l] [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] є вищими за $TARGET_VALUE|0v$"
+ TRIGGER_RELATIONS_GREATER_OR_EQUAL: "Відносини між [Concept('concept_country','$concept_countries_ins$')|l] [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] є вищими за або дорівнють $TARGET_VALUE|0v$"
+ TRIGGER_RELATIONS_GREATER_OR_EQUAL_FIRST: "Відносини між [Concept('concept_country','$concept_countries_ins$')|l] [COUNTRY.GetName] та [TARGET_COUNTRY.GetNameNoFlag] є вищими за або дорівнють $TARGET_VALUE|0v$"
+ TRIGGER_RELATIONS_GREATER_OR_EQUAL_THIRD: "Відносини між [Concept('concept_country','$concept_countries_ins$')|l] [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] є вищими за або дорівнють $TARGET_VALUE|0v$"
+ TRIGGER_RELATIONS_LESS_THAN: "Відносини між [Concept('concept_country','$concept_countries_ins$')|l] [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] меншими за $TARGET_VALUE|0v$"
+ TRIGGER_RELATIONS_LESS_OR_EQUAL: "Відносини між [Concept('concept_country','$concept_countries_ins$')|l] [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] меншими за або дорівнють $TARGET_VALUE|0v$"
+ TRIGGER_RELATIONS_EQUAL: "Відносини між [Concept('concept_country','$concept_countries_ins$')|l] [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] є $TARGET_VALUE|0v$"
+ TRIGGER_RELATIONS_NOT_EQUAL: "Відносини між [Concept('concept_country','$concept_countries_ins$')|l] [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] #bold не#! є $TARGET_VALUE|0v$"
 
  TRIGGER_RELATIONS_THRESHOLD_GREATER_THAN:0 "Relations between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName] is greater than $TARGET_VALUE|0v$"
  TRIGGER_RELATIONS_THRESHOLD_GREATER_OR_EQUAL:0 "Relations between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName] is greater than, or equal to $TARGET_VALUE|0v$"
@@ -2064,6 +2184,27 @@
  TRIGGER_STATE_AVERAGE_EXPECTED_SOL_LESS_OR_EQUAL:0 "Average [concept_expected_sol] of [STATE.GetName] is less than, or equal to $TARGET_VALUE|0v$"
  TRIGGER_STATE_AVERAGE_EXPECTED_SOL_EQUAL:0 "Average [concept_expected_sol] of [STATE.GetName] is $TARGET_VALUE|0v$"
  TRIGGER_STATE_AVERAGE_EXPECTED_SOL_NOT_EQUAL:0 "Average [concept_expected_sol] of [STATE.GetName] is #bold not #!$TARGET_VALUE|0v$"
+
+ TRIGGER_NUM_QUEUED_CONSTRUCTIONS_GREATER_THAN:0 "Number of projects in the [concept_construction_queue] is greater than $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_CONSTRUCTIONS_GREATER_OR_EQUAL:0 "Number of projects in the [concept_construction_queue] is greater than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_CONSTRUCTIONS_LESS_THAN:0 "Number of projects in the [concept_construction_queue] is less than $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_CONSTRUCTIONS_LESS_OR_EQUAL:0 "Number of projects in the [concept_construction_queue] is less than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_CONSTRUCTIONS_EQUAL:0 "Number of projects in the [concept_construction_queue] is $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_CONSTRUCTIONS_NOT_EQUAL:0 "Number of projects in the [concept_construction_queue] is #bold not #!$TARGET_VALUE|0v$"
+
+ TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_GREATER_THAN:0 "Number of [Concept('concept_private_construction', '$concept_gprivate_constructions$')] in the [concept_construction_queue] is greater than $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_GREATER_OR_EQUAL:0 "Number of [Concept('concept_private_construction', '$concept_gprivate_constructions$')]  in the [concept_construction_queue] is greater than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_LESS_THAN:0 "Number of [Concept('concept_private_construction', '$concept_gprivate_constructions$')]  in the [concept_construction_queue] is less than $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_LESS_OR_EQUAL:0 "Number of [Concept('concept_private_construction', '$concept_gprivate_constructions$')]  in the [concept_construction_queue] is less than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_EQUAL:0 "Number of [Concept('concept_private_construction', '$concept_gprivate_constructions$')]  in the [concept_construction_queue] is $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_NOT_EQUAL:0 "Number of [Concept('concept_private_construction', '$concept_gprivate_constructions$')]  in the [concept_construction_queue] is #bold not #!$TARGET_VALUE|0v$"
+
+ TRIGGER_NUM_QUEUED_GOVERNMENT_CONSTRUCTIONS_GREATER_THAN:0 "Number of [Concept('concept_government_construction', '$concept_government_constructions$')] in the [concept_construction_queue] is greater than $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_GOVERNMENT_CONSTRUCTIONS_GREATER_OR_EQUAL:0 "Number of [Concept('concept_government_construction', '$concept_government_constructions$')] in the [concept_construction_queue] is greater than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_GOVERNMENT_CONSTRUCTIONS_LESS_THAN:0 "Number of [Concept('concept_government_construction', '$concept_government_constructions$')] in the [concept_construction_queue] is less than $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_GOVERNMENT_CONSTRUCTIONS_LESS_OR_EQUAL:0 "Number of [Concept('concept_government_construction', '$concept_government_constructions$')] in the [concept_construction_queue] is less than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_GOVERNMENT_CONSTRUCTIONS_EQUAL:0 "Number of [Concept('concept_government_construction', '$concept_government_constructions$')] in the [concept_construction_queue] is $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_GOVERNMENT_CONSTRUCTIONS_NOT_EQUAL:0 "Number of [Concept('concept_government_construction', '$concept_government_constructions$')] in the [concept_construction_queue] is #bold not #!$TARGET_VALUE|0v$"
 
  TRIGGER_PARTICIPANTS_GREATER_THAN:0 "The number of countries in [MARKET.GetName] is greater than $TARGET_VALUE|0v$"
  TRIGGER_PARTICIPANTS_GREATER_THAN_NOT:0 "The number of countries in [MARKET.GetName] is #b not#! greater than $TARGET_VALUE|0v$"
@@ -2368,12 +2509,12 @@
  TRIGGER_ANY_SCOPE_STATE_PERCENT_FIRST:1 "$PARAMETERS$ of all $FILTER$[COUNTRY.GetAdjectiveNoFlag] [Concept('concept_state', '$concept_states$')]"
  TRIGGER_ANY_SCOPE_STATE_PERCENT_THIRD:1 "$PARAMETERS$ of all $FILTER$[Concept('concept_state', '$concept_states$')] in [COUNTRY.GetName]"
 
- TRIGGER_STATE_OWNER_EQUAL:0 "[concept_state] is owned by [TARGET_COUNTRY.GetName]"
- TRIGGER_STATE_OWNER_EQUAL_NOT:1 "[concept_state] is #bold not #!owned by [TARGET_COUNTRY.GetName]"
- TRIGGER_STATE_OWNER_EQUAL_THIRD:0 "[concept_state] is owned by [TARGET_COUNTRY.GetName]"
- TRIGGER_STATE_OWNER_EQUAL_THIRD_NOT:0 "[concept_state] is not owned by [TARGET_COUNTRY.GetName]"
- TRIGGER_STATE_OWNER_EQUAL_FIRST:0 "[TARGET_COUNTRY.GetNameNoFlag] owns [concept_state]"
- TRIGGER_STATE_OWNER_EQUAL_FIRST_NOT:0 "[TARGET_COUNTRY.GetNameNoFlag] does not own [concept_state]"
+ TRIGGER_STATE_OWNER_EQUAL: "[concept_state] належить державі [TARGET_COUNTRY.GetName]"
+ TRIGGER_STATE_OWNER_EQUAL_NOT: "[concept_state] #bold не#! належить державі [TARGET_COUNTRY.GetName]"
+ TRIGGER_STATE_OWNER_EQUAL_THIRD: "[concept_state] належить державі [TARGET_COUNTRY.GetName]"
+ TRIGGER_STATE_OWNER_EQUAL_THIRD_NOT: "[concept_state] не належить державі [TARGET_COUNTRY.GetName]"
+ TRIGGER_STATE_OWNER_EQUAL_FIRST: "[TARGET_COUNTRY.GetNameNoFlag] володіє [Concept('concept_state', '$concept_state_ins$')|l]"
+ TRIGGER_STATE_OWNER_EQUAL_FIRST_NOT: "[TARGET_COUNTRY.GetNameNoFlag] не володіє [Concept('concept_state', '$concept_state_ins$')|l]"
 
  TRIGGER_MARKET_OWNER_EQUAL:0 "[concept_market] is controlled by [TARGET_COUNTRY.GetName]"
  TRIGGER_MARKET_OWNER_EQUAL_NOT:0 "[concept_market] is #bold not#! controlled by [TARGET_COUNTRY.GetName]"
@@ -2407,21 +2548,21 @@
  
  TRIGGER_HAS_NO_PRIORITY_TARIFFS:0 "Is collecting #v Unprioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
  TRIGGER_HAS_NO_PRIORITY_TARIFFS_NOT:0 "Is #bold not #!collecting #v Unprioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
- TRIGGER_HAS_NO_PRIORITY_TARIFFS_FIRST:0 "We are collecting #v Unprioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
+ TRIGGER_HAS_NO_PRIORITY_TARIFFS_FIRST:0 "Ми збираємо #v Unprioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
  TRIGGER_HAS_NO_PRIORITY_TARIFFS_FIRST_NOT:0 "We are #bold not #!collecting #v Unprioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
  TRIGGER_HAS_NO_PRIORITY_TARIFFS_THIRD:0 "[COUNTRY.GetName] is collecting #v Unprioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
  TRIGGER_HAS_NO_PRIORITY_TARIFFS_THIRD_NOT:0 "[COUNTRY.GetName] is #bold not #!collecting #v Unprioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
  
  TRIGGER_HAS_IMPORT_PRIORITY_TARIFFS:0 "Is collecting #v Import Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
  TRIGGER_HAS_IMPORT_PRIORITY_TARIFFS_NOT:0 "Is #bold not #!collecting #v Import Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
- TRIGGER_HAS_IMPORT_PRIORITY_TARIFFS_FIRST:0 "We are collecting #v Import Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
+ TRIGGER_HAS_IMPORT_PRIORITY_TARIFFS_FIRST:0 "Ми збираємо #v Import Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
  TRIGGER_HAS_IMPORT_PRIORITY_TARIFFS_FIRST_NOT:0 "We are #bold not #!collecting #v Import Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
  TRIGGER_HAS_IMPORT_PRIORITY_TARIFFS_THIRD:0 "[COUNTRY.GetName] is collecting #v Import Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
  TRIGGER_HAS_IMPORT_PRIORITY_TARIFFS_THIRD_NOT:0 "[COUNTRY.GetName] is #bold not #!collecting #v Import Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
  
  TRIGGER_HAS_EXPORT_PRIORITY_TARIFFS:0 "Is collecting #v Export Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
  TRIGGER_HAS_EXPORT_PRIORITY_TARIFFS_NOT:0 "Is #bold not #!collecting #v Export Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
- TRIGGER_HAS_EXPORT_PRIORITY_TARIFFS_FIRST:0 "We are collecting #v Export Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
+ TRIGGER_HAS_EXPORT_PRIORITY_TARIFFS_FIRST:0 "Ми збираємо #v Export Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
  TRIGGER_HAS_EXPORT_PRIORITY_TARIFFS_FIRST_NOT:0 "We are #bold not #!collecting #v Export Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
  TRIGGER_HAS_EXPORT_PRIORITY_TARIFFS_THIRD:0 "[COUNTRY.GetName] is collecting #v Export Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
  TRIGGER_HAS_EXPORT_PRIORITY_TARIFFS_THIRD_NOT:0 "[COUNTRY.GetName] is #bold not #!collecting #v Export Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
@@ -2432,8 +2573,8 @@
  TRIGGER_IS_IN_GOVERNMENT_THIRD:1 "[INTEREST_GROUP.GetName] are part of the government"
  TRIGGER_IS_IN_GOVERNMENT_THIRD_NOT:2 "[INTEREST_GROUP.GetName] are #bold not #!part of the government"
 
- TRIGGER_IS_MARGINAL_THIRD:1 "[INTEREST_GROUP.GetName] are [concept_marginalized]"
- TRIGGER_IS_MARGINAL_THIRD_NOT:2 "[INTEREST_GROUP.GetName] are #bold not #![concept_marginalized]"
+ TRIGGER_IS_MARGINAL_THIRD: "[INTEREST_GROUP.GetName] - [Concept('concept_marginalized', '$concept_marginalized$')|l]"
+ TRIGGER_IS_MARGINAL_THIRD_NOT: "[INTEREST_GROUP.GetName] #bold не#! [Concept('concept_marginalized', '$concept_marginalized$')|l]"
 
  TRIGGER_TRADE_GOODS_EQUAL:0 "[Concept('concept_good', '$concept_goods$')] are [TARGET_GOODS.GetName]"
  TRIGGER_TRADE_GOODS_EQUAL_NOT:0 "[Concept('concept_good', '$concept_goods$')] are #bold not #![TARGET_GOODS.GetName]"

@@ -46,6 +46,12 @@
  setting_all_releasable_nations_desc: "Дозволено звільняти неправдоподібні та фантастичні нації"
  setting_plausible_releasable_nations: "Історично правдоподібне"
  setting_plausible_releasable_nations_desc: "Дозволено звільняти лише історично правдоподібні нації"
+
+ rule_investment_pool: "Пул вкладів"
+ setting_autonomous_investment_pool: "Самостійний пул вкладів"
+ setting_autonomous_investment_pool_desc: "[concept_investment_pool] використовуватиметься для самостійного фінансування [Concept('concept_private_construction', '$concept_private_construction_gen$')|l] відповідних [Concept('concept_building','споруд')|l], в залежности від [Concept('concept_law','$concept_laws_gen$')|l] [Concept('concept_country', '$concept_country_gen$')|l]."
+ setting_directly_controlled_investment_pool: "Пул вкладів під прямим контролем"
+ setting_directly_controlled_investment_pool_desc: "[concept_investment_pool] використовується безпосередньо кожною [Concept('concept_country', '$concept_country_ins$')|l] та може бути використаний для фінансування [Concept('concept_government_construction', '$concept_government_construction_gen$')|l] відповідних [Concept('concept_building','споруд')|l], в залежности від [Concept('concept_law','$concept_laws_gen$')|l] [Concept('concept_country', '$concept_country_gen$')|l]."
  
  rule_monument_effects: "Заподії пам‘яток"
  setting_allow_monument_effects: "Увімкнені"

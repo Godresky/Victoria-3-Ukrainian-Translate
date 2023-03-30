@@ -1,3 +1,59 @@
-﻿l_polish:
- CustomLoc_UA_vin_vona_male: "він"
- CustomLoc_UA_vin_vona_female: "вона"
+﻿l_english:
+#################################
+######## ## ПЕРСОНАЖІ ## ########
+#################################
+## Займенники
+#чоловічий
+ CustomLoc_UA_vin: "Він"
+ CustomLoc_UA_vin_noho: "Нього"
+ CustomLoc_UA_vin_joho: "Його"
+ CustomLoc_UA_vin_jomu: "Йому"
+ CustomLoc_UA_vin_nym: "Ним"
+ CustomLoc_UA_vin_nomu: "Ньому"
+#жіночий
+ CustomLoc_UA_vona: "Вона"
+ CustomLoc_UA_vona_neji: "Неї"
+ CustomLoc_UA_vona_jiji: "Її"
+ CustomLoc_UA_vona_jij: "Їй"
+ CustomLoc_UA_vona_neju: "Нею"
+ CustomLoc_UA_vona_nij: "Ній"
+#середній
+#  CustomLoc_UA_vony: "Вони"
+#  CustomLoc_UA_vony_nykh: "Них"
+#  CustomLoc_UA_vony_jikh: "Їх"
+#  CustomLoc_UA_vony_jim: "Їм"
+#  CustomLoc_UA_vony_nymy: "Ними"
+
+## Закінчення
+#чоловічий
+ CustomLoc_UA_vin_yY: "ий"
+ CustomLoc_UA_vin_ii: "ій"
+ CustomLoc_UA_vin_av: "ав"
+ CustomLoc_UA_vin_yv: "ив"
+ CustomLoc_UA_vin_v: "в"
+ CustomLoc_UA_vin_ov: "ов"
+ CustomLoc_UA_vin_empty: ""
+#жіночий
+ CustomLoc_UA_vona_a: "а"
+ CustomLoc_UA_vona_іa: "я"
+ CustomLoc_UA_vona_ala: "aла"
+ CustomLoc_UA_vona_la: "ла"
+
+## Закінчення
+#[Select_CString(character.IsFemale,'$CustomLoc_UA_vona_ala$','$CustomLoc_UA_vin_av$')|l]
+#[Select_CString(character.IsFemale,'$CustomLoc_UA_vona_ala$','$CustomLoc_UA_vin_ov$')|l]
+
+########################################################
+######## ## ЗАКІНЧЕННЯ РОЗДІЛЕНИХ РЕҐІОНІВ ## ##########
+########################################################
+ CustomLoc_UA_split_state_yu: "ий"
+ CustomLoc_UA_split_state_a: "а"
+ CustomLoc_UA_split_state_e: "е"
+ CustomLoc_UA_split_state_i: "і"
+ CustomLoc_UA_split_state_default: "."
+
+#_gen - Родовий
+#_dat - Давальний
+#_acc - Знахідний
+#_ins - Орудний
+#_loc - Місцевий
