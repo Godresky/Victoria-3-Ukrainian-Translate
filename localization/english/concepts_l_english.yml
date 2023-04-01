@@ -52,6 +52,7 @@
  concept_great_power_ins: "Великою державою"
  concept_great_powers: "Великі держави"
  concept_great_powers_gen: "Великих держав"
+ concept_great_powers_dat: "Великим державам"
  concept_great_power_desc:3 "Those few [Concept('concept_country', '$concept_countries$')] that run the world through global empires or absolute local dominance are considered to be $concept_great_power$ [concept_rank]. They are in a constant standoff with other $concept_great_powers$ for an edge, and always wary of plucky [Concept('concept_major_power','$concept_major_powers$')] trying to ascend to greatness at their expense.[AddLocalizationIf(GetPlayer.IsValid,'concept_great_power_desc_added')]"
  concept_great_power_desc_added:0 "\n\n$concept_great_powers$ gain the following benefits:\n[GetRankModifier('great_power').GetDesc]"
  

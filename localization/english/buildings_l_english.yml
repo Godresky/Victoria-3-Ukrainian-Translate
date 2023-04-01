@@ -173,8 +173,8 @@
  building_link_merge_markets_lens_option: "Об'єднати ринки"
   
   #Academies
- building_university: "Учильня"
- building_university_lens_option: "Розширити учильні"
+ building_university: "Університет"
+ building_university_lens_option: "Розширити університети"
  building_arts_academy: "Академія мистецтв"
  building_arts_academy_lens_option: "Розширити академії мистецтв"
 
@@ -184,10 +184,10 @@
  building_colony_military_hover: "Встановити #variable війскову осаду#! у реґіоні #variable [STATE.GetName]"
  building_colony_missionary: "Метарська осада"    #від метар(месіонер)
  building_colony_missionary_lens_option: "Встановити метарську осаду"
- building_colony_missionary_hover: "Встановити #variable метарську осаду#! у #variable [STATE.GetName]#!"
+ building_colony_missionary_hover: "Встановити #variable метарську осаду#! у реґіоні #variable [STATE.GetName]#!"
  building_colony_trade: "Торгова осада"
  building_colony_trade_lens_option: "Встановити торгову осаду"
- building_colony_trade_hover: "Встановити #variable торгову осаду#! у #variable [STATE.GetName]"
+ building_colony_trade_hover: "Встановити #variable торгову осаду#! у реґіоні #variable [STATE.GetName]"
 
   #Barracks
  building_barracks: "Курінь"
