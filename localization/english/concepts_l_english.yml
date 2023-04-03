@@ -165,8 +165,11 @@
 
  concept_tariffs: "Тарифи"
  concept_tariffs_gen: "Тарифів"
+ concept_tariffs_acc: "Тарифи"
  concept_tariff: "Тариф"
+ concept_tariff_acc: "Тариф"
  concept_tariff_loc: "Тарифі"
+ concept_tariff_adj: "Тарифн"
  concept_tariff_rate:0 "Tariff Rate"
  concept_tariffs_desc:2 "$concept_tariffs$ are a type of [Concept('concept_taxes','$concept_tax$')] on [Concept('concept_trade_route','$concept_trade$')]. The $concept_tariff_rate$ applied to a $concept_trade_route$ depends on your [Concept('concept_country','$concept_country_possessive$')] current [SelectLocalization(GetPlayer.IsValid,'concept_tariffs_desc_added','Trade Policy')] [concept_law] and your [concept_market_good_policy] for the [concept_good] being traded, while the actual income collected by your [concept_treasury] on the $concept_trade_route$ depends on its volume and the $concept_good$'s [concept_base_price]. Any $concept_tariffs$ charged on the $concept_trade_route$ is subtracted from the [concept_revenue] of the [SelectLocalization(GetPlayer.IsValid,'concept_tariffs_desc_added_2','Trade Center')] managing it, which discourages increasing the volume traded."
  concept_tariffs_desc_added:0 "[GetLawGroup('lawgroup_trade_policy').GetName]"
@@ -491,6 +494,7 @@
 
  concept_institution: "Установа"
  concept_institution_gen: "Установи"
+ concept_institution_dat: "Установі"
  concept_institution_acc: "Установу"
  concept_institutions: "Установи"
  concept_institutions_gen: "Установ"
@@ -1020,8 +1024,8 @@
  concept_combat_width: "Ширина бою"
  concept_combat_width_desc:1 "The $concept_combat_width$ of a particular [concept_terrain] type determines the potential numeric advantage the larger side can have over the smaller side in [concept_battle]. A smaller force can hold out for longer against a larger force if $concept_combat_width$ is relatively low, and vice versa."
 
- concept_infamy: "Рівень ганьби"
- concept_infamy_gen: "Рівня ганьби"
+ concept_infamy: "Ганьба"
+ concept_infamy_gen: "Ганьби"
  concept_infamy_desc:1 "$concept_infamy$ reflects the degree by which the international community, particularly the reigning [Concept('concept_great_power','$concept_great_powers$')], see you as a threat to be contained in light of your past actions. It is accrued primarily from causing [Concept('concept_diplomatic_incident','$concept_diplomatic_incidents$')] and claiming [Concept('concept_war_goal','$concept_war_goals$')] in a [concept_peace_deal]. Your $concept_infamy$ affects $concept_countries$' [concept_attitude] towards you and increases the [concept_influence] cost of [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]. If it reaches the level of #b $infamy_pariah$#!, $concept_great_powers$ will be able to start the [GetDiplomaticPlayType('dp_contain_threat').GetName] [concept_diplomatic_play] against you."
 
  concept_diplomatic_incident: "Дипломатичний інцидент"
@@ -1702,9 +1706,9 @@
  concept_dependent_income_desc:1 "At the end of each week, [Concept('concept_pop','$concept_pops$')] receive a $concept_dependent_income$ based on their number of [concept_dependents] and the amount of income they qualify for. Most $concept_dependents$ receive a base amount from odd jobs depending on the $concept_pop$'s [concept_profession], which can be supplemented by the [SelectLocalization(GetPlayer.IsValid,'concept_dependent_income_desc_added','Social Security')] [concept_institution]."
  concept_dependent_income_desc_added:0 "[GetInstitutionType('institution_social_security').GetName]"
 
- concept_wealth: "Багатство"
- concept_wealth_gen: "Багатства"
- concept_wealth_acc: "Багатство"
+ concept_wealth: "Добробут"
+ concept_wealth_gen: "Добробуту"
+ concept_wealth_acc: "Добробут"
  concept_wealthy: "Багатий"
  concept_wealth_desc:1 "A measure of a [Concept('concept_pop','$concept_pop_possessive$')] material assets. To sustain a certain level of $concept_wealth$ the $concept_pop$ has a set of [Concept('concept_pop_needs','$concept_pop_needs_short$')] it must satisfy each week. If their [Concept('concept_pop_income','$concept_pop_income_short$')] does not cover the cost of these $concept_pop_needs_short$, their $concept_wealth$ will eventually decrease. If they have [concept_money] left over after purchasing the necessary $concept_goods$, $concept_wealth$ will soon increase.\n\n$concept_wealth$ is the main factor contributing to a $concept_pop$'s [concept_sol], and under certain [Concept('concept_law','$concept_laws$')] it may affect other aspects of their life such as [concept_literacy] and [Concept('concept_votes','$concept_voting_rights$')]."
 
@@ -1823,7 +1827,7 @@
  concept_taxation_gen: "Оподаткування"
  concept_tax_rate:0 "Tax Rate"
  concept_tax_level: "Рівень податку"
- concept_taxes_desc:1 "[Concept('concept_country', '$concept_countries$')] can tap into their market economies in various ways. The most common is to tax its populace's private sector incomes, or charge duties on the sales, purchase, or trade of [Concept('concept_good', '$concept_goods$')]."
+ concept_taxes_desc: "[Concept('concept_country', '$concept_countries$')] можуть використовувати свою ринкову економіку різними способами. Найпоширенішим є оподаткування прибутків приватної царини свого населення або стягнення мита на продаж, купівлю чи торгівлю [Concept('concept_good', '$concept_goods_ins$')|l]."
 
  concept_unrealized_taxes: "Недоотримані податки"
  concept_unrealized_taxes_desc:0 "Unrealized Taxes is the amount of [concept_taxes] that the [concept_country] is failing to collect due to various reasons, including but not limited to insufficient [concept_tax_capacity] and [concept_tax_waste]."
@@ -1950,6 +1954,7 @@
 
  concept_hq: "Голпровід"
  concept_hq_gen: "Голпроводу"
+ concept_hq_ins: "Голпроводом"
  concept_hq_loc: "Голпроводі"
  concept_hqs: "Голпроводи"
  concept_hq_possessive:0 "HQ\\'s"
@@ -2043,8 +2048,8 @@
  concept_popularity_acc: "Знаність"
  concept_popularity_desc: "Знаність [Concept('concept_character','$concept_character_gen$')|l] показує готовність [Concept('concept_pop','$concept_people_gen$')|l] йти за ним. $concept_popularity$ впливає по-різному в залежности від [Concept('concept_character_role','$concept_character_role_gen$')|l] персонажа."
 
- concept_momentum: "Імпульс"
- concept_momentum_desc: "Показує успіх [Concept('concept_election','$concept_election_adj$ої')|l] виправи [Concept('concept_party','$concept_party_gen$')|l]. $concept_momentum$ збільшує кількість [Concept('concept_votes','$concept_votes_gen$')|l] партії перед днем виборів, а після чого анулюється. На імпульс може вплинути випадковість, спеціяльні події та [concept_popularity|l] їхнього [Concept('concept_party_leader','$concept_party_leader_gen$')|l]."
+ concept_momentum: "Поштовх"
+ concept_momentum_desc: "Показує успіх [Concept('concept_election','$concept_election_adj$ої')|l] виправи [Concept('concept_party','$concept_party_gen$')|l]. $concept_momentum$ збільшує кількість [Concept('concept_votes','$concept_votes_gen$')|l] партії перед днем виборів, а після чого анулюється. На поштовх може вплинути випадковість, спеціяльні події та [concept_popularity|l] їхнього [Concept('concept_party_leader','$concept_party_leader_gen$')|l]."
 
  concept_government_expenses: "Державні витрати"
  concept_government_expenses_short: "Витрати"
@@ -2054,7 +2059,7 @@
  concept_sovereignty_desc:1 "A [Concept('concept_country','$concept_country_possessive$')] right to self-govern. When one $concept_country$ violates the $concept_sovereignty$ of another they openly disrespect this right. Should the other not respond in turn with an immediate military response enforcing the integrity of their borders, they submit to the violator and permit them military access through their territory."
 
  concept_average_wage: "Середньорічна зарплата"
- concept_average_wage_desc:0 "The average [Concept('concept_building_wage', '$concept_building_wages$')] a single [concept_individual] in the [concept_workforce] would earn annually while working at this [concept_building]."
+ concept_average_wage_desc: "Середня [Concept('concept_building_wage', '$concept_building_wage$')|l], яку б отримувала [Concept('concept_individual', 'одна')|l] [concept_workforce|l], працюючи в цій [Concept('concept_building', '$concept_building_loc$')|l], за рік."
 
  concept_subsidized_wage: "Субсидована зарплата"
  concept_subsidized_wage_desc:1 "When a [Concept('concept_subsidies','$concept_subsidized$')] [concept_building] cannot pay their [concept_workforce] at least the [concept_normal_wage], the remainder is covered by government $concept_subsidies$ through the [concept_treasury]. In return the $concept_building$ will never fire its $concept_workforce$ and aim to keep [concept_throughput] maximized at all times."

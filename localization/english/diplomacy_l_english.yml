@@ -46,7 +46,7 @@
  country_tier_hegemony: "Геґемонія"
  
  DIPLO_PLAY_GREAT_POWER_TRIGGER: "Ми повинні бути [Concept('concept_great_power','$concept_great_power_ins$')|l], щоб почати цю [Concept('concept_diplomatic_play','$concept_diplomatic_play_acc$')|l]"
- DIPLO_PLAY_OUTRAGED_TRIGGER: "Їхній [concept_infamy] level must be at $infamy_pariah$"
+ DIPLO_PLAY_OUTRAGED_TRIGGER: "Їхня [concept_infamy] повинна бути: $infamy_pariah$"
  
  DIPLO_ACTION_RELATIONS: "[concept_relations] між [Concept('concept_country', '$concept_countries_ins$')|l] [SCOPE.GetRootScope.GetCountry.GetName] та [SCOPE.sC('target_country').GetName]"
  DIPLO_ACTION_RELATIONS_CORDIAL: "$DIPLO_ACTION_RELATIONS$ - $relations_cordial$"
@@ -107,9 +107,9 @@
  tension_tense: "#N Напруження#!"
  tension_volatile: "#N Сутички#!"
  
- infamy_reputable: "#V Шанований#!"
- infamy_infamous: "#N Ганебний#!"
- infamy_notorious: "#N Горезвісний#!"
+ infamy_reputable: "#V Шанована#!"
+ infamy_infamous: "#N Ганебна#!"
+ infamy_notorious: "#N Горезвісна#!"
  infamy_pariah: "#N Ізгої#!"
  
  subject_type_protectorate: "[concept_protectorate]"
