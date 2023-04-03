@@ -1490,6 +1490,7 @@
 
  concept_isolated_state: "Ізольований управничий реґіон"
  concept_isolated_states: "Ізольовані управничі реґіони"
+ concept_isolated_states_gen: "Ізольованих управничих реґіонів "
  concept_isolated_state_short: "Ізольований"
  concept_isolated_state_short_adj: "Ізольован"
  concept_isolated_state_desc:2 "A [concept_state_region] is considered $concept_isolated_state_short$ from its [concept_market] if it is not connected by land to its [concept_market_capital], and is not connected by land to a [SelectLocalization(GetPlayer.IsValid,'concept_isolated_state_desc_added','Port')] that can make a [concept_port_connection] to its $concept_market_capital$. $concept_isolated_states$ do not generate any [concept_buy_orders] and [concept_sell_orders], nor is the [concept_local_price] of [Concept('concept_good', '$concept_goods$')] affected by their [concept_market_price]."

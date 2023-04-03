@@ -304,8 +304,8 @@
  rivalry_action_notification_third_party_desc: "[INITIATOR_COUNTRY.GetName] оголосила державу [TARGET_COUNTRY.GetName] своїм [Concept('concept_rivalry', '$concept_rival_ins$')|l]."
  rivalry_action_notification_break_name:0 "[INITIATOR_COUNTRY.GetName] ended [concept_rivalry]"
  rivalry_action_notification_break_desc:1 "[INITIATOR_COUNTRY.GetName] no longer view us as a [Concept('concept_rivalry', '$concept_rival$')]."
- rivalry_action_notification_third_party_break_name:1 "[INITIATOR_COUNTRY.GetAdjectiveNoFormatting]-[TARGET_COUNTRY.GetAdjectiveNoFormatting] [concept_rivalry] Ended"
- rivalry_action_notification_third_party_break_desc:0 "[INITIATOR_COUNTRY.GetName] ended their [concept_rivalry] with [TARGET_COUNTRY.GetName]."
+ rivalry_action_notification_third_party_break_name: "[INITIATOR_COUNTRY.GetAdjectiveNoFormatting]о-[TARGET_COUNTRY.GetAdjectiveNoFormatting|l]е [Concept('concept_rivalry', '$concept_rivalry_acc$')|l] закінчено"
+ rivalry_action_notification_third_party_break_desc: "[INITIATOR_COUNTRY.GetName] завершила їхнє [Concept('concept_rivalry', '$concept_rivalry_acc$')|l] з державою [TARGET_COUNTRY.GetName]."
  
  rivalry_effect_desc_global:0 "Declares a [concept_rivalry]"
  rivalry_effect_desc_first:0 "[COUNTRY.GetAdjectiveNoFlag] declares a [concept_rivalry] with [TARGET_COUNTRY.GetName]"
