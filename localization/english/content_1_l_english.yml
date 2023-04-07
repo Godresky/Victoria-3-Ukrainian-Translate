@@ -825,7 +825,7 @@
  big_nihilism_tt:1 "The [SCOPE.gsInterestGroup('nihilist_ig').GetName] will be much more likely to select Nihilist leaders for 25 years"
  less_popular_nihilist:0 "Suppressed Nihilist Movement"
  popular_nihilist:0 "Thriving Nihilist Movement"
- bureaucracy.1.t:0 "Red Tape"
+ bureaucracy.1.t: "Тяганина"
  bureaucracy.1.d:0 "The civil service, currently led by the [SCOPE.gsInterestGroup('bureaucrat_class').GetName], are deliberately stalling the government by creating unnecessary paperwork. They demand that their jobs be protected under the [SCOPE.sLaw('current_law_scope').GetName] law."
  bureaucracy.1.f:0 ""I'd be happy to assist, but unfortunately this requisition form has only been stamped twice. You'll have to file a complaint with the regional ombudsman, who is currently very busy optimising our new filing system. You can expect a prompt response within six to eight months.""
  bureaucracy.1.a:0 "Current civil servants can keep their positions."

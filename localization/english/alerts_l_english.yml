@@ -45,7 +45,7 @@
  alert_is_losing_rank_alert_action: "Панель дипломатії"
 
  alert_has_no_war_goal_alert_name: "Немає [Concept('concept_war_goal','$concept_war_goals_gen$')|l] проти [Concept('concept_country','$concept_country_gen$')|l] [SCOPE.GetRootScope.GetDiplomaticPlay.GetInitiator.GetName]"
- alert_has_no_war_goal_alert_desc: "Наразі у нас немає жодних [Concept('concept_war_goal', '$concept_war_goals_gen$')|l] в одній із наших [Concept('concept_diplomatic_play', '$concept_diplomatic_plays_gen$')|l].\n\nЯкщо ви не задасьте воєнні цілі під час віхи «[concept_opening_moves]», то [Concept('concept_war_goal', 'ціль')|l] «[concept_war_reparations]» буде самостійно додана для вас."
+ alert_has_no_war_goal_alert_desc: "Наразі у нас немає жодних [Concept('concept_war_goal', '$concept_war_goals_gen$')|l] в одній із наших [Concept('concept_diplomatic_play', '$concept_diplomatic_plays_gen$')|l].\n\nЯкщо ви не задасьте воєнні цілі під час стадії «[concept_opening_moves]», то [Concept('concept_war_goal', 'ціль')|l] «[concept_war_reparations]» буде самостійно додана для вас."
  alert_has_no_war_goal_alert_hint: "Ви можете додати військову ціль для учасника дипломатичної гри на його оглядовому екрані. Ви можете збільшити кількість цілей по мірі того, як все більше держав стають на чийсь бік у дипломатичній грі, проте це коштуватиме [Concept('concept_maneuver', '$concept_maneuvers_gen$')|l], які ви можете витратити, щоб схилити інших учасників на свій бік."
  alert_has_no_war_goal_alert_action: "Дипломатичну гру"
 

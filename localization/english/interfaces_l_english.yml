@@ -4851,7 +4851,7 @@
  DIPLO_PLAY_TAKE_SIDE_CURRENT_BACKER_CONFIRM: "Відмовитися від підтримки [Concept('concept_country', '$concept_country_gen$')|l] [COUNTRY.GetName]? Будь-які [Concept('concept_war_goal', '$concept_war_goals$')|l] або [Concept('concept_obligation', '$concept_obligations$')|l], які вони нам обіцяли, будуть втрачені, а наші [concept_relations|l] з ними погіршаться на #variable #N [GetDefine('NDiplomacy', 'DIPLOMATIC_PLAY_ABANDON_SUPPORT_RELATIONS_IMPACT')]#!#!"
 
  DIPLOMATIC_PLAY_ESCALATION: "[DiplomaticPlay.GetPhaseName|v]"
- DIPLOMATIC_PLAY_ESCALATION_TOOLTIP: "#header Загострення#!\nВіха: [DiplomaticPlay.GetPhaseName|v]\nРівень: #variable [DiplomaticPlay.GetEscalation]#!"
+ DIPLOMATIC_PLAY_ESCALATION_TOOLTIP: "#header Загострення#!\nСтадія: [DiplomaticPlay.GetPhaseName|v]\nРівень: #variable [DiplomaticPlay.GetEscalation]#!"
  DIPLOMATIC_PLAY_SUPPORTS: "#header Підтримує#!"
  DIPLOMATIC_PLAY_OPPOSES: "#header Протистоїть#!"
  DIPLOMATIC_PLAY_UNDECIDED: "#header Не визначився#!"
@@ -6772,7 +6772,7 @@
  DIPLO_PLAY_YOU: "(Ви)"
  DIPLO_PLAY_TOTAL_MOBILIZED: "Всього призваних"
  DIPLO_PLAY_CLICK_TO_SWAY: "#instruction Клацніть, щоб побачити варіянти [Concept('concept_sway', '$concept_swaying_gen$')|l]#!"
- DIPLO_PLAY_CANNOT_SWAY: "Ви зможете [concept_sway|l] якусь державу, лише під час віхи «Дипломатичні суви»"
+ DIPLO_PLAY_CANNOT_SWAY: "Ви зможете [concept_sway|l] якусь державу, лише під час стадії «Дипломатичні суви»"
  DIPLO_PLAY_CLICK_TO_SET_STANCE: "[SelectLocalization(DiplomaticPlay.IsInvolved(GetMetaPlayer.GetPlayedOrObservedCountry), 'DIPLO_PLAY_CLICK_STANCES', 'DIPLO_PLAY_STANCES')]"
  DIPLO_PLAY_CLICK_STANCES: "#instruction Клацніть, щоб вибрати свою позицію#!"
  DIPLO_PLAY_STANCES: "#bold Поточні позиції#!"
