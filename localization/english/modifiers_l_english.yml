@@ -404,16 +404,16 @@
  modifier_state_education_access_wealth_add: "Доступ до навчання (На основі багатства)"
  modifier_state_education_access_wealth_add_desc:0 "A bonus or penalty per Wealth level to pop education access"
   
- modifier_state_pop_qualifications_mult:0 "[concept_pop_qualifications]"
- modifier_state_pop_qualifications_mult_desc:0 "A bonus or penalty to [concept_pop_qualifications]"
+ modifier_state_pop_qualifications_mult: "[concept_pop_qualifications]"
+ modifier_state_pop_qualifications_mult_desc: "Наддаток або карна до [Concept('concept_pop_qualifications', '$concept_pop_qualifications_gen$')|l]"
   
  modifier_state_assimilation_mult: "[concept_assimilation]"
  modifier_state_assimilation_mult_desc: "Наддаток або карна до [Concept('concept_assimilation', '$concept_assimilation_gen$')|l]"
  modifier_state_conversion_mult: "[concept_conversion]"
  modifier_state_conversion_mult_desc: "Наддаток або карна до [Concept('concept_conversion', '$concept_conversion_gen$')|l]"
   
- modifier_country_diplomatic_play_maneuvers_add:1 "[Concept('concept_maneuver', '$concept_maneuvers$')] per Diplomatic Play"
- modifier_country_diplomatic_play_maneuvers_add_desc:1 "A bonus or penalty to the number of [Concept('concept_maneuver', '$concept_maneuvers$')] the country can take in a diplomatic play."
+ modifier_country_diplomatic_play_maneuvers_add: "[Concept('concept_maneuver', '$concept_maneuvers$')] в кожній дипломатичній грі"
+ modifier_country_diplomatic_play_maneuvers_add_desc: "Наддаток або карна до кількости [Concept('concept_maneuver', '$concept_maneuvers_gen$')|l], яких держава може отримати у дипломатичній грі."
   
  modifier_state_port_range_add:0 "Naval Port Range"
  modifier_state_port_range_add_desc:0 "The port range for our navies"

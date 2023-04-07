@@ -414,11 +414,11 @@
  pm_canal: "Водовід"
 
 #misc
- sickman_syria_egypt:0 "Complete another Tanzimat [concept_journal_entry] by owning the following states: Lower Egypt, Middle Egypt, Upper Egypt, and Sinai."
+ sickman_syria_egypt: "Потрібно буде виконати інший Танзимат ([concept_journal_entry]) про володіння такими реґіонами: Нижній Єгипет, Середній Єгипет, Верхній Єгипет та Синай."
  free_state_mort:0 "Increased Freestate Mortality"
 
 #Player Objectives
- economic_dominance_welcome: "Економічна домінація"
+ economic_dominance_welcome: "Економічне домінування"
  economic_dominance_welcome_desc:2 "Through the course of this objective you will be given a series of [Concept('journal_entry','$Journal Entries$')] to complete. How you choose to complete these tasks will be left up to you, the player.\n\nNOTE: You will need to have an Iron or Coal mine in your country before getting your first Journal Entry."
  economic_dominance_lesson_button_skip:0 "Onwards!"
 

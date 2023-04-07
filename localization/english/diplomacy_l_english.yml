@@ -597,7 +597,7 @@
  protectorate_action_break_name: "Дати незалежність"
  protectorate_action_ask_to_break_name: "Вимагати незалежности"
  protectorate_desc:1 "#header $protectorate$#!\n$TOOLTIP_DELIMITER$\nA [concept_diplomatic_pact] that establishes a [concept_protectorate] type [concept_subject] relationship between two [Concept('concept_country', '$concept_countries$')]."
- protectorate_pact_desc:0 "[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] - під [Concept('concept_protectorate', '$concept_protectorate_ins$')|l] [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName]."
+ protectorate_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] під [Concept('concept_protectorate', '$concept_protectorate_ins$')|l] [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName]."
  protectorate_proposal_notification_name:0 "Subjugation Demand"
  protectorate_proposal_notification_desc:0 "[INITIATOR_COUNTRY.GetName] demands that we submit to them and become their [concept_protectorate]."
  protectorate_proposal_notification_effects_desc:0 "If we accept, we will become their subject."

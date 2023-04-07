@@ -28,14 +28,18 @@
 #чоловічий
  CustomLoc_UA_vin_yY: "ий"
  CustomLoc_UA_vin_ii: "ій"
+ CustomLoc_UA_vin_ym: "им"
  CustomLoc_UA_vin_av: "ав"
  CustomLoc_UA_vin_yv: "ив"
+ CustomLoc_UA_vin_ho: "го"
  CustomLoc_UA_vin_v: "в"
  CustomLoc_UA_vin_ov: "ов"
  CustomLoc_UA_vin_empty: ""
 #жіночий
  CustomLoc_UA_vona_a: "а"
- CustomLoc_UA_vona_іa: "я"
+ CustomLoc_UA_vona_I: "ї"
+ CustomLoc_UA_vona_A: "я"
+ CustomLoc_UA_vona_oU: "ою"
  CustomLoc_UA_vona_ala: "aла"
  CustomLoc_UA_vona_la: "ла"
 

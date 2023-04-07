@@ -4462,7 +4462,7 @@
  notification_diplomatic_pact_third_party_auto_break_notification_tooltip: "#header $notification_diplomatic_pact_third_party_auto_break_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplomatic_pact_third_party_auto_break_notification_desc$"
 
  notification_character_died_notification_name: "[SCOPE.GetRootScope.GetCharacter.GetPrimaryRoleName] [SCOPE.GetRootScope.GetCharacter.GetFullName] помер"
- notification_character_died_notification_desc: "Колишн[Select_CString(SCOPE.GetRootScope.GetCharacter.IsFemale,'$CustomLoc_UA_vona_іa$','$CustomLoc_UA_vin_ii$')|l] [SCOPE.GetRootScope.GetCharacter.GetPrimaryRoleName|l] [SCOPE.GetRootScope.GetCharacter.GetFullName] помер[Select_CString(SCOPE.GetRootScope.GetCharacter.IsFemale,'$CustomLoc_UA_vona_la$','$CustomLoc_UA_vin_empty$')|l]."
+ notification_character_died_notification_desc: "Колишн[Select_CString(SCOPE.GetRootScope.GetCharacter.IsFemale,'$CustomLoc_UA_vona_A$','$CustomLoc_UA_vin_ii$')|l] [SCOPE.GetRootScope.GetCharacter.GetPrimaryRoleName|l] [SCOPE.GetRootScope.GetCharacter.GetFullName] помер[Select_CString(SCOPE.GetRootScope.GetCharacter.IsFemale,'$CustomLoc_UA_vona_la$','$CustomLoc_UA_vin_empty$')|l]."
  notification_character_died_notification_tooltip: "$notification_character_died_notification_name$\n$notification_character_died_notification_desc$"
 
  notification_character_died_war_office_notification_name: "$notification_character_died_notification_name$"

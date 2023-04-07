@@ -72,9 +72,9 @@
  RECALCULATE_POP_IG_SUPPORT:0 "[Concept('concept_pop', '$concept_pops$')] in [COUNTRY.GetName] will recalculate their [concept_interest_group] support"
  RECALCULATE_POP_IG_SUPPORT_NEG:0 "[Concept('concept_pop', '$concept_pops$')] in [COUNTRY.GetName] will NOT recalculate [concept_interest_group] support"
  
- SET_COUNTRY_TYPE:0 "[COUNTRY.GetName] becomes #variable $COUNTRY_TYPE$#!"
- SET_COUNTRY_TYPE_FIRST:0 "[COUNTRY.GetNameNoFlag] becomes #variable $COUNTRY_TYPE$#!"
- SET_COUNTRY_TYPE_THIRD:0 "[COUNTRY.GetName] becomes #variable $COUNTRY_TYPE$#!"
+ SET_COUNTRY_TYPE: "[COUNTRY.GetName] стане #variable $COUNTRY_TYPE$#!"
+ SET_COUNTRY_TYPE_FIRST: "[COUNTRY.GetNameNoFlag] стане #variable $COUNTRY_TYPE$#!"
+ SET_COUNTRY_TYPE_THIRD: "[COUNTRY.GetName] стане #variable $COUNTRY_TYPE$#!"
  
  SET_CAPITAL:1 "#variable [COUNTRY.GetAdjectiveNoFormatting]#! [concept_capital_state] moves to #variable $STATE_REGION_NAME$#!"
  SET_CAPITAL_FIRST:0 "#variable [COUNTRY.GetAdjectiveNoFormatting]#! [concept_capital_state] moves to #variable $STATE_REGION_NAME$#!"
@@ -406,8 +406,8 @@
  ADD_CIVIL_WAR_PROGRESS:0 "Change progress of civil war by $VALUE|%$"
  ADD_LAW_PROGRESS:0 "Change progress of law [Law.GetName] by $VALUE|0%$"
 
- MAKE_INDEPENDENT:0 "[COUNTRY.GetName] becomes independent from [TARGET_COUNTRY.GetName]"
- MAKE_INDEPENDENT_NEG:0 "[COUNTRY.GetName] does NOT become independent from [TARGET_COUNTRY.GetName]"
+ MAKE_INDEPENDENT: "[COUNTRY.GetName] стане незалежною від держави [TARGET_COUNTRY.GetName]"
+ MAKE_INDEPENDENT_NEG: "[COUNTRY.GetName] НЕ стане незалежною від держави [TARGET_COUNTRY.GetName]"
   
  OBJECTIVE_SUBGOAL_EFFECT:0 "Objective subgoal effect (player should never see this)"
   
