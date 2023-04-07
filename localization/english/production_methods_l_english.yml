@@ -485,7 +485,7 @@ pm_steam_rail_transport: "Залізниця"
  pm_machine_gunners: "Скорострільники"
  pm_infiltrators: "Просякальці"
  pm_flamethrower_company: "Вогнеметники"
- pm_chemical_weapons_specialists: "Фахівці з хімічної зброї"
+ pm_chemical_weapons_specialists: "Знавці хімічної зброї"
  
 ###
  pmg_organization_conscription: "$pmg_organization$"

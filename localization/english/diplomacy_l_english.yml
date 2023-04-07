@@ -829,9 +829,9 @@
  dominion_proposal_third_party_declined_name:0 "Subjugation Refused"
  dominion_proposal_third_party_declined_desc:0 "[TARGET_COUNTRY.GetName] refused to become the [concept_dominion] of [INITIATOR_COUNTRY.GetName]."
 
- dominion_effect_desc_global:0 "Becomes a [concept_dominion]"
- dominion_effect_desc_first:0 "[TARGET_COUNTRY.GetName] becomes a [COUNTRY.GetAdjectiveNoFlag] [concept_dominion]"
- dominion_effect_desc_third:0 "[AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)] becomes a [concept_dominion] of [COUNTRY.GetName]"
+ dominion_effect_desc_global: "Стане [Concept('concept_dominion','$concept_dominion_ins$')|l]"
+ dominion_effect_desc_first: "[TARGET_COUNTRY.GetName] стане [COUNTRY.GetAdjectiveNoFlag]им [Concept('concept_dominion','$concept_dominion_ins$')|l]"
+ dominion_effect_desc_third: "[AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)] стане [Concept('concept_dominion','$concept_dominion_ins$')|l] держави [COUNTRY.GetName]"
  
  dominion_trigger_desc_global:0 "Is a [concept_dominion]"
  dominion_trigger_false_desc_global:0 "Is #b not#! a [concept_dominion]"

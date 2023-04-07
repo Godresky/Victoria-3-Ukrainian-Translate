@@ -265,17 +265,17 @@
 
 #Devout Flavor event
  ideology_russian_patriarch: "Московський православний патріярхат"
- ideology_russian_patriarch_desc:0 "#lore The Orthodox Patriarchy sees itself as one of the three pillars of the country, that the Tsar is above all and that the peasants deserve be serfs.#!"
+ ideology_russian_patriarch_desc: "#lore Православний патріярхат вважає себе одним з трьох стовпів держави, цар понад усе, а селяни заслуговують бути кріпаками.#!"
  ideology_orthodox_patriarch: "Православний патріярхат"
- ideology_orthodox_patriarch_desc:0 "#lore The Orthodox Patriarchy sees itself as one of the three pillars of the country, and that the right to rule comes from God.#!"
+ ideology_orthodox_patriarch_desc: "#lore Православний патріярхат вважає себе одним з трьох стовпів держави, а право на правління походить від Бога.#!"
  ideology_buddhist_moralist: "Буддійський моралізм"
- ideology_buddhist_moralist_desc:0 "#lore The Buddhist path is clearly set out and that the theocracy is required to best guide the nation down the path it its teachings.#!"
+ ideology_buddhist_moralist_desc: "#lore Буддійська путь чітко визначена, а боговладдя необхідне для того, щоб найкращим чином вести націю тором цього вчення.#!"
  ideology_sikh_moralist: "Сикхська войовничість"
- ideology_sikh_moralist_desc:0 "#lore The Sikh have a militarized movement that will support having a strong national army.#!"
- ideology_hindu_moralist: "Індуський моралізм"
- ideology_hindu_moralist_desc:0 "#lore Hindu Priests believe that bureaucrats should adhere to the caste system..#!"
+ ideology_sikh_moralist_desc: "#lore Сикхи мають войовничий рух, який підтримує створення сильного національного війська.#!"
+ ideology_hindu_moralist: "Індуїський моралізм"
+ ideology_hindu_moralist_desc: "#lore Індуїстські священики вважають, що бюрократи повинні дотримуватися кастової системи.#!"
  ideology_oriental_orthodox_patriarch: "Орієнтально-православний патріярхат"
- ideology_oriental_orthodox_patriarch_desc:1 "#lore The Oriental Orthodox Patriarchy believe that children's education should be a priority for the nation.#!"
+ ideology_oriental_orthodox_patriarch_desc: "#lore У Орієнтально-православному патріярхаті вважають, що освіта дітей має бути пріоритетом для нації.#!"
 
 #Remove below later
  effect_qa_test_events.1.t:0 "Testing Effects?"

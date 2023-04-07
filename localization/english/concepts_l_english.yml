@@ -82,8 +82,8 @@ concept_minor_powers_ins: "Слабкими державами"
  concept_unrecognized_powers: "Невизнані держави"
  concept_unrecognized_regional_power: "Невизнана реґіональна держава"
  concept_unrecognized_major_power: "Невизнана сильна держава"
- concept_unrecognized_power_desc:2 "$concept_unrecognized_powers$ are [Concept('concept_country','$concept_country_polities$')] perceived as inferior and uncivilized by the reigning [Concept('concept_great_power','$concept_great_powers$')], who regard them as little more than potential future conquests. As a result their [concept_prestige] is penalized and they can be targeted with more severe [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]. They are also restricted in what [Concept('concept_rank','$concept_ranks$')] they may reach, no matter how much $concept_prestige$ they acquire.[AddLocalizationIf(GetPlayer.IsValid,'concept_unrecognized_power_desc_added')]"
- concept_unrecognized_power_desc_added:0 "\n\nAn $concept_unrecognized_power$ that wish to remove these penalties must claim recognition from a [concept_great_power] through a $concept_diplomatic_play$."
+ concept_unrecognized_power_desc: "$concept_unrecognized_powers$ - це [Concept('concept_country','$concept_country_polities$')|l], які [Concept('concept_great_power','$concept_great_powers$')|l] вважають нижчими та нецивілізованими та розглядаються не більше ніж місця майбутніх завоювань. Унаслідок цього страждає їхній [Concept('concept_prestige','$concept_prestige$')|l], і вони можуть стати жертвою суворих [Concept('concept_diplomatic_play','$concept_diplomatic_plays_gen$')|l]. Невизнані держави також обмежені в тому, який [Concept('concept_rank','$concept_rank$')|l] можуть досягти, не залежно від того, скільки престижу вони здобудуть.[AddLocalizationIf(GetPlayer.IsValid,'concept_unrecognized_power_desc_added')]"
+ concept_unrecognized_power_desc_added:0 "\n\n$concept_unrecognized_power$, які хочуть скасувати ці  that wish to remove these penalties must claim recognition from a [concept_great_power] through a $concept_diplomatic_play$."
 
  
 
@@ -110,6 +110,7 @@ concept_minor_powers_ins: "Слабкими державами"
  concept_personal_union_desc_added: "[GetLawType('law_monarchy').GetName]"
 
  concept_dominion: "Домініон"
+ concept_dominion_ins: "Домініоном"
  concept_dominion_desc: "[Concept('concept_recognized_power','$concept_recognized_powers$')] можуть перетворити слабшу [Concept('concept_country','країну')] у свого домініона. Домініон - це більш самостійний тип [Concept('concept_subject','$concept_subject_gen$')|l], який може починати власні [Concept('concept_diplomatic_play','$concept_diplomatic_plays_acc$')|l] і не змушений приєднюватися до [Concept('concept_war','$concept_wars_gen$')|l] [Concept('concept_overlord','$concept_overlord_gen$')|l]. Проте він повинен щотижня платити #v 25%#! від своїх доходів зі [Concept('concept_treasury','$concept_treasury_gen$')|l] повелителю."
 
  concept_tributary: "Голдівник"
@@ -814,8 +815,8 @@ concept_minor_powers_ins: "Слабкими державами"
 
  concept_country_nation: "Нація"
  concept_country_nation_state: "Національна держава"
- concept_country_polity: "Політика"
- concept_country_polities: "Політики"
+ concept_country_polity: "Політія"
+ concept_country_polities: "Політеї"
  
  concept_country_possessive: "Державн"
  concept_countries_possessive:0 "Countries\\'"
@@ -1930,14 +1931,14 @@ concept_minor_powers_ins: "Слабкими державами"
  concept_country_tier_ins: "Щабелем держави"
  concept_country_tier_short: "Щабель"
  concept_country_tier_possessive:1 "$concept_country$\\'s $concept_country_tier_short$"
- concept_country_tier_desc:3 "A [Concept('concept_country','$concept_country_possessive$')] $concept_country_tier_short$ is the inherent status and [concept_prestige] it is granted based on its history and significance. Forming a new $concept_country$ is only possible if its $concept_country_tier_short$ is higher than the $concept_country$'s current one."
+ concept_country_tier_desc: "$concept_country_tier_short$ [Concept('concept_country','$concept_country_gen$')|l] - невід’ємний стан та [concept_prestige|l], що надається на основі її історії та значущости. Утворення нової держави можливе лише, якщо її щабель вищий за теперішній."
 
  concept_claim: "Ремст"
  concept_claim_gen: "Ремству"
  concept_claim_acc: "Ремству"
  concept_claims: "Ремстви"
  concept_claims_gen: "Ремств"
- concept_claimed: "Claimed"
+ concept_claimed: "Зажадан"
  concept_claim_desc:1 "A territorial $concept_claim$ that a [concept_country] has on a [concept_state_region], usually because it once belonged to them. Having a $concept_claim$ permits use of the #v $war_goal_return_state_type_name$#! [concept_war_goal] which does not generate as much [concept_infamy] as the #v $war_goal_conquer_state_type_name$#! $concept_war_goal$ does.\n\nConquering an [concept_incorporated_state] will give the previous owner a $concept_claim$ on the $concept_state_region$."
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED APRIL 22, 2022

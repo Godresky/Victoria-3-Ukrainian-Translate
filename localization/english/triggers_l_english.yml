@@ -372,8 +372,8 @@
  TRIGGER_HAS_CLAIM:0 "Has a [concept_claim] on [TARGET_STATE_REGION.GetName]"
  TRIGGER_HAS_CLAIM_NOT:1 "Does #bold not #!have a [concept_claim] on [TARGET_STATE_REGION.GetName]"
  
- TRIGGER_HAS_CLAIM_BY:1 "Is [Concept('concept_claim', '$concept_claimed$')] by [Country.GetName]"
- TRIGGER_HAS_CLAIM_BY_NOT:2 "Is #bold not #![Concept('concept_claim', '$concept_claimed$')] by [Country.GetName]"
+ TRIGGER_HAS_CLAIM_BY: "Є [Concept('concept_claim', '$concept_claimed$им')|l] державою [Country.GetName]"
+ TRIGGER_HAS_CLAIM_BY_NOT: "#bold Не#! є [Concept('concept_claim', '$concept_claimed$им')|l] державою [Country.GetName]"
  
  TRIGGER_IS_IN_WAR_TOGETHER:0 "Is war ally of [TARGET_COUNTRY.GetName]"
  TRIGGER_IS_IN_WAR_TOGETHER_NOT:1 "Is #bold not #!war ally of [TARGET_COUNTRY.GetName]"
