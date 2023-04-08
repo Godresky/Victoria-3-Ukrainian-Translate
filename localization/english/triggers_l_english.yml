@@ -448,8 +448,8 @@
  TRIGGER_LITERACY_RATE_THIRD:1 "$SUBJECT$ has a [concept_literacy] Rate $COMPARATOR$ #variable $NUM|0%$#!"
  TRIGGER_LITERACY_RATE_THIRD_NOT:1 "$SUBJECT$ has a [concept_literacy] Rate $COMPARATOR$ #variable $NUM|0%$#!"
  
- TRIGGER_SCALED_DEBT:0 "Has a debt of $COMPARATOR$ @money!#variable $VALUE|K0$#!"
- TRIGGER_SCALED_DEBT_NOT:1 "Does #bold not #!have a debt of $COMPARATOR$ @money!#variable $VALUE|K0$#!"
+ TRIGGER_SCALED_DEBT: "Має довг $COMPARATOR$ @money!#variable $VALUE|K0$#!"
+ TRIGGER_SCALED_DEBT_NOT: "#bold Не#! має довг $COMPARATOR$ @money!#variable $VALUE|K0$#!"
  
  TRIGGER_RELATIONS:0 "#variable $COUNTRY_ADJ$#! relations with #variable $TARGET_COUNTRY$#! are $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_RELATIONS_NOT:1 "#variable $COUNTRY_ADJ$#! relations with #variable $TARGET_COUNTRY$#! are #bold not #!$COMPARATOR$ #variable $NUM$#!"

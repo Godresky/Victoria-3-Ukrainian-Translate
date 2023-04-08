@@ -134,7 +134,7 @@
  ottoman_bureaucracy: "Османська бюрократія"
  sick_man_of_europe: "Хвора людина Европи"
 
- tanzimat_events.1.t:0 "The Iltizām System"
+ tanzimat_events.1.t: "Система Ілтізам"
  tanzimat_events.1.d:0 "For centuries our administration has depended on tax farming for collecting revenue, but this highly inefficient system leaves much to be desired. Proposals for reform have flooded the Grand Vizier's desk, and the nation eagerly awaits our response."
  tanzimat_events.1.f:1 "Ever since the reign of Mehmed II, taxation rights have been auctioned off to the highest bidder, who in turn retain a part of the revenue for personal use. Over time, this has created a cadre of powerful, autonomous, and oftentimes corrupt [SCOPE.gsInterestGroup('governors').GetNameNoFormatting], significantly reducing state revenues.\n\nWhile most agree that the system must change, few agree on how, and fewer still want to antagonize the landholding elite."
  tanzimat_events.1.a:0 "Abolish tax farming, but leave the [SCOPE.gsInterestGroup('governors').GetNameNoFormatting] in place."
