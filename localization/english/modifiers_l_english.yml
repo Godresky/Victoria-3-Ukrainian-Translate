@@ -62,11 +62,11 @@
  modifier_country_opposition_ig_approval_add: "Схвалення опозиційної зацікавленої групи"
  modifier_country_opposition_ig_approval_add_desc: "Наддаток або карна на схвалення опозиційних зацікавлених груп."
 
- modifier_country_infamy_decay_mult: "Зниження ганьби"
- modifier_country_infamy_decay_mult_desc: "Наддаток або карна до зниження [Concept('concept_infamy', '$concept_infamy_gen$')|l]."
+ modifier_country_infamy_decay_mult: "Спад ганебности"
+ modifier_country_infamy_decay_mult_desc: "Наддаток або карна до спаду [Concept('concept_infamy', '$concept_infamy_gen$')|l]."
 
- modifier_country_tension_decay_mult: "Зниження напруги"
- modifier_country_tension_decay_mult_desc: "Наддаток або карна до зниження [Concept('concept_tension', '$concept_tension_gen$')|l]."
+ modifier_country_tension_decay_mult: "Спад напруги"
+ modifier_country_tension_decay_mult_desc: "Наддаток або карна до спаду [Concept('concept_tension', '$concept_tension_gen$')|l]."
 
  modifier_country_relations_decay_add: "Припинення відносин"
  modifier_country_relations_decay_add_desc: "Наддаток або карна на припинення хороших відносин."
