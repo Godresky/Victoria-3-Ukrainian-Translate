@@ -528,6 +528,9 @@ concept_minor_powers_ins: "Слабкими державами"
  
  concept_workforce: "Робоча сила"
  concept_workforce_gen: "Робочої сили"
+ concept_workforce_laborer: "Робітники"
+ concept_workforce_laborer_gen: "Робітників"
+ concept_workforce_laborer_dat: "Робітнику"
  concept_workforce_desc: "Робоча сила [Concept('concept_building', '$concept_building_gen$')|l], яка складається із [Concept('concept_pop', '$concept_pops_gen$')|l] з різними [Concept('concept_profession', '$concept_professions_ins$')|l], та залежить від вибраного [Concept('concept_production_method', '$concept_production_method_gen$')|l]."
 
  concept_gold_reserves: "Золотий запас"
@@ -1332,6 +1335,7 @@ concept_minor_powers_ins: "Слабкими державами"
 
  concept_working_adults: "Робочі дорослі"
  concept_working_adult: "Робочий дорослий"
+ concept_working_adult_gen: "Робочого дорослого"
  concept_working_adults_desc:1 "The part of a [concept_pop] that make up the [concept_workforce] that work in [Concept('concept_building', '$concept_buildings$')] for [Concept('concept_building_wage', '$concept_building_wages$')]. They are the main source of a $concept_pop$'s [Concept('concept_pop_income','$concept_pop_income_short$')] and [concept_political_strength]."
 
  concept_dependents: "Утриманці"
@@ -1807,24 +1811,25 @@ concept_minor_powers_ins: "Слабкими державами"
  concept_budget_minting_desc: "Це такий вид прибутку для усіх [Concept('concept_country', '$concept_countries_gen$')|l], створюваний за допомогою друку або лиття нових [Concept('concept_money','$concept_money_gen$')|l]. Чим більший [Concept('concept_gdp','$concept_gdp_acc$')|l] [Concept('concept_country','$concept_country_gen$')|l], тим більше грошей може бути викарбувано без шкоди для економіки."
 
  concept_budget_poll_taxes: "Поголовщина"
- concept_budget_poll_tax:1 "Poll Tax"
- concept_budget_poll_taxes_desc:2 "A flat [Concept('concept_taxes','$concept_tax$')] collected on every [Concept('concept_working_adults', '$concept_working_adult$')] it applies to. Since $concept_budget_poll_taxes$ do not scale with the $concept_pop$'s income it tends to impact the [concept_lower_strata] the most."
+ concept_budget_poll_tax: "Поголовщина"
+ concept_budget_poll_tax_gen: "Поголовщини"
+ concept_budget_poll_taxes_desc: "Пропорційний [Concept('concept_taxes','$concept_tax$')|l], що збирається з кожного [Concept('concept_working_adults', '$concept_working_adult_gen$')|l]. Оскільки поголовщина не залежить від прибутку населення, вона, як правило, набільше впливає на [Concept('concept_lower_strata', '$concept_lower_strata_acc$')|l]."
 
  concept_budget_land_taxes: "Земельні податки"
  concept_budget_land_taxes_gen: "Земельних податків"
  concept_budget_land_tax_gen: "Земельного податку"
- concept_budget_land_taxes_desc:4 "A type of [Concept('concept_budget_poll_taxes', '$concept_budget_poll_tax$')] collected from [SelectLocalization(GetPlayer.IsValid,'concept_budget_land_taxes_desc_added','Peasants')] only."
- concept_budget_land_taxes_desc_added:0 "[GetPopType('peasants').GetName]"
+ concept_budget_land_taxes_desc: "Це вид [Concept('concept_budget_poll_taxes', '$concept_budget_poll_tax_gen$')|l], що збирається лише з [SelectLocalization(GetPlayer.IsValid,'групи','')|l] [SelectLocalization(GetPlayer.IsValid,'concept_budget_land_taxes_desc_added','Селян')|l]."
+ concept_budget_land_taxes_desc_added: "[GetPopType('peasants').GetName]"
 
- concept_budget_heathen_taxes:0 "Heathen Taxes"
- concept_budget_heathen_taxes_desc:1 "A type of [Concept('concept_budget_poll_taxes', '$concept_budget_poll_tax$')] collected from all [Concept('concept_pop', '$concept_pops$')] whose [concept_religion] is [Concept('concept_discrimination','$concept_discriminated$')] against by their [concept_country]."
+ concept_budget_heathen_taxes: "Ідоловірські податки"
+ concept_budget_heathen_taxes_desc: "Це вид [Concept('concept_budget_poll_taxes', '$concept_budget_poll_tax_gen$')|l], що збирається з усіх [Concept('concept_pop', '$concept_pops_gen$')], чия [concept_religion|l] є [Concept('concept_discrimination','$concept_discriminated_adj$а')] їхньою [Concept('concept_country','$concept_country_ins$')|l]."
 
  concept_budget_per_capita_taxes: "Подушні податки"
- concept_budget_per_capita_taxes_desc:4 "A type of [Concept('concept_budget_poll_taxes', '$concept_budget_poll_tax$')] collected from all [Concept('concept_pop', '$concept_pops$')] except [SelectLocalization(GetPlayer.IsValid,'concept_budget_per_capita_taxes_desc_added','Peasants')]."
- concept_budget_per_capita_taxes_desc_added:0 "[GetPopType('peasants').GetName]"
+ concept_budget_per_capita_taxes_desc: "Це вид [Concept('concept_budget_poll_taxes', '$concept_budget_poll_tax_gen$')|l], що збирається з усіх [Concept('concept_pop', '$concept_pops_gen$')] окрім [SelectLocalization(GetPlayer.IsValid,'групи','')|l] [SelectLocalization(GetPlayer.IsValid,'concept_budget_per_capita_taxes_desc_added','Селян')|l]."
+ concept_budget_per_capita_taxes_desc_added: "[GetPopType('peasants').GetName]"
 
  concept_budget_income_taxes: "Податки на прибуток"
- concept_budget_income_taxes_desc:1 "A [Concept('concept_taxes','$concept_tax$')] collected on the [Concept('concept_building_wage','$concept_building_wages$')] paid to the [concept_workforce]."
+ concept_budget_income_taxes_desc: "[Concept('concept_taxes','$concept_tax$')], що збирається зі [Concept('concept_building_wage','$concept_building_wages_gen$')|l], які виплачуються [Concept('concept_workforce', '$concept_workforce_laborer_dat$')|l]."
 
  concept_budget_investment_income: "Отримання зі вкладів"
  concept_budget_investment_income_desc:2 "When [concept_money] from the [concept_treasury] is used in the [concept_construction] of [Concept('concept_building','$concept_buildings$')] that may be funded by the [concept_investment_pool] under the [Concept('concept_country','$concept_country_possessive$')] current [SelectLocalization(GetPlayer.IsValid,'concept_budget_investment_income_desc_added','Economic System')] [concept_law], the $concept_treasury$ is compensated by an equal transfer of funds from the $concept_investment_pool$."
@@ -1861,7 +1866,7 @@ concept_minor_powers_ins: "Слабкими державами"
  concept_budget_additional_expenses_desc:1 "Expenses that doesn't fit into another category, often incurred due to the outcome of special events."
 
  concept_budget_diplomatic_pacts: "Дипломатичні пакти"
- concept_budget_diplomatic_pacts_desc:1 "[concept_money] collected from or remitted to the other party in a [concept_diplomatic_pact]."
+ concept_budget_diplomatic_pacts_desc: "[concept_money], які надходять з іншої сторони або перераховані іншій стороні в межах [Concept('concept_diplomatic_pact', '$concept_diplomatic_pact_gen$')|l]."
 
  concept_construction: "Будівництво"
  concept_construction_gen: "Будівництва"
@@ -1888,7 +1893,7 @@ concept_minor_powers_ins: "Слабкими державами"
  concept_budget_wages_desc:1 "[Concept('concept_pop','$concept_pops$')] in the employ of a [Concept('concept_country', '$concept_country_possessive$')] [Concept('concept_government_building','$concept_government_buildings$')] and [Concept('concept_military_building','$concept_military_buildings$')] get paid $concept_budget_wages$ from the [concept_treasury] each week, according to the [concept_government_wage] and [concept_military_wage] respectively."
 
  concept_budget_goods_for_government_buildings: "$concept_goods$ для урядових будівель"
- concept_budget_goods_for_government_buildings_desc:1 "[Concept('concept_good','$concept_goods$')] [Concept('concept_good_consumption','$concept_good_consumed$')] by a [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_government_building','$concept_government_buildings$')]."
+ concept_budget_goods_for_government_buildings_desc: "[Concept('concept_good','$concept_goods$')], [Concept('concept_good_consumption','$concept_good_consumed_adj$і')|l] [Concept('concept_country','$concept_country_possessive$ими')|l] [Concept('concept_government_building','$concept_government_buildings_ins$')|l]."
 
  concept_budget_government_slaves: "Урядові раби"
  concept_budget_government_slaves_desc: "Утримання [Concept('concept_slavery','$concept_slaves_gen$')|l], які працюють безпосередньо на уряд [Concept('concept_country','$concept_country_gen$')|l]."
@@ -1897,7 +1902,7 @@ concept_minor_powers_ins: "Слабкими державами"
  concept_budget_military_wages_desc:1 "[Concept('concept_building_wage','$concept_building_wages$')] paid to [Concept('concept_pop','$concept_pops$')] by [Concept('concept_military_building','$concept_military_buildings$')]. The rate is based on the [Concept('concept_country','$concept_country_possessive$')] [concept_normal_wage]. You can adjust it up and down in the $BUDGET_PANEL_TITLE$ panel."
 
  concept_budget_goods_for_military_buildings: "$concept_goods$ для військових будівель"
- concept_budget_goods_for_military_buildings_desc:1 "[Concept('concept_good','$concept_goods$')] [Concept('concept_good_consumption','$concept_good_consumed$')] by a [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_military_building','$concept_military_buildings$')]."
+ concept_budget_goods_for_military_buildings_desc: "[Concept('concept_good','$concept_goods$')], [Concept('concept_good_consumption','$concept_good_consumed_adj$і')|l] [Concept('concept_country','$concept_country_possessive$ими')|l] [Concept('concept_military_building','$concept_military_buildings_ins$')|l]."
 
  concept_slavery: "Рабство"
  concept_slavery_gen: "Рабства"
@@ -2083,7 +2088,7 @@ concept_minor_powers_ins: "Слабкими державами"
  concept_sovereignty_desc:1 "A [Concept('concept_country','$concept_country_possessive$')] right to self-govern. When one $concept_country$ violates the $concept_sovereignty$ of another they openly disrespect this right. Should the other not respond in turn with an immediate military response enforcing the integrity of their borders, they submit to the violator and permit them military access through their territory."
 
  concept_average_wage: "Середньорічна зарплата"
- concept_average_wage_desc: "Середня [Concept('concept_building_wage', '$concept_building_wage$')|l], яку б отримувала [Concept('concept_individual', 'одна')|l] [concept_workforce|l], працюючи в цій [Concept('concept_building', '$concept_building_loc$')|l], за рік."
+ concept_average_wage_desc: "Середня [Concept('concept_building_wage', '$concept_building_wage$')|l], яку б отримував [Concept('concept_individual', 'один')|l] [Concept('concept_workforce', '$concept_workforce_laborer$')|l] за рік, працюючи в цій [Concept('concept_building', '$concept_building_loc$')|l]."
 
  concept_subsidized_wage: "Субсидована зарплата"
  concept_subsidized_wage_desc:1 "When a [Concept('concept_subsidies','$concept_subsidized$')] [concept_building] cannot pay their [concept_workforce] at least the [concept_normal_wage], the remainder is covered by government $concept_subsidies$ through the [concept_treasury]. In return the $concept_building$ will never fire its $concept_workforce$ and aim to keep [concept_throughput] maximized at all times."
@@ -2154,6 +2159,7 @@ concept_minor_powers_ins: "Слабкими державами"
 
  concept_building_wage: "Зарплата"
  concept_building_wages: "Зарплати"
+ concept_building_wages_gen: "Зарплат"
  concept_building_wage_desc:3 "$concept_building_wages$ paid to [Concept('concept_pop','$concept_pops$')] by the [concept_building] they work in depends on several factors, the most prominent being the $concept_pop$'s [concept_profession] and the $concept_building$'s financial situation. If a $concept_building$'s [concept_building_balance] allows for raising $concept_building_wages$ at all, the $concept_building$ will only do so if it needs to in order to attract more $concept_pops$ to its [concept_workforce]. If a $concept_building$'s $concept_building_balance$ is negative, it will consider lowering $concept_building_wages$ to return to profitability.\n\nYou can guarantee that the $concept_workforce$ is paid a competitive $concept_building_wage$ by [Concept('concept_subsidies', '$concept_subsidizing$')] the building. This will keep it afloat with funds from the [concept_treasury] if necessary."
 
  concept_sell_orders: "Пропозиції продажу"
@@ -2328,6 +2334,7 @@ concept_minor_powers_ins: "Слабкими державами"
 
  concept_lower_strata: "Нижня верства"
  concept_lower_strata_gen: "Нижньої верстви"
+ concept_lower_strata_acc: "Нижню верству"
  concept_lower_strata_desc:3 "The $concept_lower_strata$ consist of [Concept('concept_pop','$concept_pops$')] in [Concept('concept_profession','$concept_professions$')] that work with their hands or do repetitive labor which require little to no [concept_pop_qualifications] and result in low [Concept('concept_building_wage','$concept_building_wages$')].[AddLocalizationIf(GetPlayer.IsValid,'concept_lower_strata_ingame_added')]"
  concept_lower_strata_ingame_added:1 "\n\nConsists of the following $concept_professions$:\n[GetPopTypesInLowerStrataDesc]"
 
