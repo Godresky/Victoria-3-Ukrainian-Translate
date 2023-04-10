@@ -949,9 +949,9 @@
 
  PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS: "@flotillas! [Country.GetWarships|0v]"
  PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS_TOOLTIP: "#header Загальна кількість [Concept('concept_flotilla','$concept_flotillas_gen$')|l]#!: [Country.GetWarships|0v]\n$TOOLTIP_DELIMITER$\n[Country.GetName] наразі має @flotillas![Country.GetWarships|v] [Country.GetFlotillasRanking]\n$PANEL_MILITARY_NAVY_POWER_PROJECTION$\n\n[Country.GetWarshipsBreakdown]"
- PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS_TOOLTIP_LEFT:0 "#header Загальна кількість [Concept('concept_flotilla','$concept_flotillas_gen$')|l]#!\n[WarPanel.GetLeftLeader.GetName] currently has @flotillas![WarPanel.GetLeftLeader.GetWarships|v] War Ships\n\n[WarPanel.GetLeftLeader.GetWarshipsBreakdown]"
- PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS_TOOLTIP_RIGHT:0 "#header Загальна кількість [Concept('concept_flotilla','$concept_flotillas_gen$')|l]#!\n[WarPanel.GetRightLeader.GetName] currently has @flotillas![WarPanel.GetRightLeader.GetWarships|v] War Ships\n\n[WarPanel.GetRightLeader.GetWarshipsBreakdown]"
- PANEL_MILITARY_NAVY_FIELDED_FLOTILLAS:0 "[Country.GetWarshipsFielded|0v]"#header Загальна кількість [Concept('concept_flotilla','$concept_flotillas_gen$')|l]#!\n[Country.GetName] currently has @flotillas![Country.GetWarships|v] War Ships\n\n[Country.GetWarshipsBreakdown]""
+ PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS_TOOLTIP_LEFT: "#header Загальна кількість [Concept('concept_flotilla','$concept_flotillas_gen$')|l]#!\nКількість військових кораблів, яку має [WarPanel.GetLeftLeader.GetName]: @flotillas![WarPanel.GetLeftLeader.GetWarships|v]\n\n[WarPanel.GetLeftLeader.GetWarshipsBreakdown]"
+ PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS_TOOLTIP_RIGHT: "#header Загальна кількість [Concept('concept_flotilla','$concept_flotillas_gen$')|l]#!\nКількість військових кораблів, яку має [WarPanel.GetRightLeader.GetName]: @flotillas![WarPanel.GetRightLeader.GetWarships|v]\n\n[WarPanel.GetRightLeader.GetWarshipsBreakdown]"
+ PANEL_MILITARY_NAVY_FIELDED_FLOTILLAS: "[Country.GetWarshipsFielded|0v]"
  PANEL_MILITARY_NAVY_FIELDED_FLOTILLAS_TOOLTIP:2 "#header Assigned and Fielded [Concept('concept_flotilla','$concept_flotillas$')]#!\n[Country.GetWarshipsFieldedBreakdown]"
  PANEL_MILITARY_NAVY_FLOTILLAS_IN_RESERVE:0 "[Country.GetWarshipsInReserve|0v]"
  PANEL_MILITARY_NAVY_FLOTILLAS_IN_RESERVE_TOOLTIP:1 "#header Unassigned @flotillas! Warships#!\n[Country.GetWarshipsInReserveBreakdown]"
@@ -1138,7 +1138,7 @@
  FRONT_LEFT_ADJECTIVE_SIDE: "[WarPanel.GetLeftLeader.GetNameNoFlag]"
  FRONT_RIGHT_ADJECTIVE_SIDE: "[WarPanel.GetRightLeader.GetNameNoFlag]"
  FRONT_NO_ACTIVE_BATTLES: "Немає активних [Concept('concept_battle', '$concept_battles_gen$')|l]"
- FRONT_NO_ENDED_BATTLES:0 "No ended [Concept('concept_battle', '$concept_battles$')]"
+ FRONT_NO_ENDED_BATTLES: "Немає завершених [Concept('concept_battle', '$concept_battles_gen$')|l]"
  FRONT_PRESENT_GENERALS_PLAYER: "Наших [Concept( 'concept_general', '$concept_generals_gen$' )|l]: #variable [GetDataModelSize(Front.AccessLeftParticipants)]#!"
  FRONT_PRESENT_GENERALS_ENEMY: "Ворожих [Concept( 'concept_general', '$concept_generals_gen$' )|l]: #variable [GetDataModelSize(Front.AccessRightParticipants)]#!"
  FRONT_PRESENT_GENERALS_INITIATOR: "#variable [GetDataModelSize(Front.AccessLeftParticipants)]#! [Concept( 'concept_general', '$concept_generals$' )] (Зачинатель)"
@@ -1214,8 +1214,8 @@
  AVG_STANDARD_OF_LIVING_POOR: "$AVG_SOL_HEADER$ @lower_strata! [Concept('concept_lower_strata', '$concept_lower_strata_gen$')|l] у [Concept('concept_state', '$concept_state_loc$')|l] [State.GetName]\n$TOOLTIP_DELIMITER$\nКількість населення: #variable [State.GetNumberOfPopsPoor|*]#!\nСередній достаток: [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(State.GetAverageStandardOfLivingPoor)|v] (#tooltippable #tooltip:[State.GetTooltipTag],STATE_SOL_POOR [State.GetAverageStandardOfLivingPoor|1v]#!#!)\nСередній $EXPECTED_SOL_SHORT_L$: [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(State.GetExpectedStandardOfLivingPoor)|v] (#tooltippable #tooltip:[State.GetTooltipTag],STATE_EXPECTED_SOL_POOR [State.GetExpectedStandardOfLivingPoor|v1]#!#!)"
  AVG_STANDARD_OF_LIVING_MIDDLE: "$AVG_SOL_HEADER$ @middle_strata! [Concept('concept_middle_strata', '$concept_middle_strata_gen$')|l] у [Concept('concept_state', '$concept_state_loc$')|l] [State.GetName]\n$TOOLTIP_DELIMITER$\nКількість населення: #variable [State.GetNumberOfPopsMiddle|*]#!\nСередній достаток: [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(State.GetAverageStandardOfLivingMiddle)|v] (#tooltippable #tooltip:[State.GetTooltipTag],STATE_SOL_MIDDLE [State.GetAverageStandardOfLivingMiddle|1v]#!#!)\nСередній $EXPECTED_SOL_SHORT_L$: [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(State.GetExpectedStandardOfLivingMiddle)|v] (#tooltippable #tooltip:[State.GetTooltipTag],STATE_EXPECTED_SOL_MIDDLE [State.GetExpectedStandardOfLivingMiddle|v1]#!#!)"
  AVG_STANDARD_OF_LIVING_RICH: "$AVG_SOL_HEADER$ @upper_strata! [Concept('concept_upper_strata', '$concept_upper_strata_gen$')|l] у [Concept('concept_state', '$concept_state_loc$')|l] [State.GetName]\n$TOOLTIP_DELIMITER$\nКількість населення: #variable [State.GetNumberOfPopsRich|*]#!\nСередній достаток: [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(State.GetAverageStandardOfLivingRich)|v] (#tooltippable #tooltip:[State.GetTooltipTag],STATE_SOL_RICH [State.GetAverageStandardOfLivingRich|1v]#!#!)\nСередній $EXPECTED_SOL_SHORT_L$: [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(State.GetExpectedStandardOfLivingRich)|v] (#tooltippable #tooltip:[State.GetTooltipTag],STATE_EXPECTED_SOL_RICH [State.GetExpectedStandardOfLivingRich|v1]#!#!)"
- SOL_BY_POPULATION_AVERAGE_SHORT:0 "#title Avg. SoL:#!"
- SOL_BY_POPULATION_AVERAGE:0 "#title [concept_sol]:#!\n[LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Country.GetAverageSoLByPopulation)|v] ([Country.GetAverageSoLByPopulation|v1])"
+ SOL_BY_POPULATION_AVERAGE_SHORT: "#title Сер. РіЖи:#!"
+ SOL_BY_POPULATION_AVERAGE: "#title [concept_sol]:#!\n[LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Country.GetAverageSoLByPopulation)|v] ([Country.GetAverageSoLByPopulation|v1])"
  AVG_STANDARD_OF_LIVING_COUNTRY: "$AVG_SOL_HEADER$ у [Concept('concept_country','$concept_country_dat$')|l] [Country.GetName]\nСередній достаток: [Country.GetFormattedStandardOfLivingLabelAll|v] (#tooltippable #tooltip:[Country.GetTooltipTag],COUNTRY_SOL_ALL [Country.GetFormattedStandardOfLivingAll|v]#!#!) [Country.GetStandardOfLivingRanking]\nСередній [Concept('concept_expected_sol', '$concept_expected_sol_short$')|l]: [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Country.GetExpectedSoLByPopulation)|v] (#tooltippable #tooltip:[Country.GetTooltipTag],COUNTRY_EXPECTED_SOL_ALL [Country.GetExpectedSoLByPopulation|v1]#!#!)\n$TOOLTIP_DELIMITER$\n$COUNTRY_STRATAS_AVG_SOL$"
 
  COUNTRY_STRATAS_AVG_SOL:1 "$poor$: [Country.GetFormattedStandardOfLivingLabelPoor|v] (#tooltippable #tooltip:[Country.GetTooltipTag],COUNTRY_SOL_LOW,CountryStandardOfLivingLower #v [Country.GetFormattedStandardOfLivingPoor]#!#!#!) - ([LabelingHelper.GetIconForStandardOfLivingCFixedPoint(Country.GetExpectedStandardOfLivingPoor)|v] #tooltippable #tooltip:[Country.GetTooltipTag],COUNTRY_EXPECTED_SOL_LOW [Country.GetExpectedStandardOfLivingPoor|v1]#!#! $EXPECTED_SOL_SHORT_L$)\n$middle$: #v [Country.GetFormattedStandardOfLivingLabelMiddle]#! (#tooltippable #tooltip:[Country.GetTooltipTag],COUNTRY_SOL_MIDDLE,CountryStandardOfLivingMiddle #v [Country.GetFormattedStandardOfLivingMiddle]#!#!#!) - ([LabelingHelper.GetIconForStandardOfLivingCFixedPoint(Country.GetExpectedStandardOfLivingMiddle)|v] #tooltippable #tooltip:[Country.GetTooltipTag],COUNTRY_EXPECTED_SOL_MIDDLE [Country.GetExpectedStandardOfLivingMiddle|v1]#!#! $EXPECTED_SOL_SHORT_L$)\n$rich$: #v [Country.GetFormattedStandardOfLivingLabelRich]#! (#tooltippable #tooltip:[Country.GetTooltipTag],COUNTRY_SOL_UPPER,CountryStandardOfLivingUpper [Country.GetFormattedStandardOfLivingRich|v]#!#!) - ([LabelingHelper.GetIconForStandardOfLivingCFixedPoint(Country.GetExpectedStandardOfLivingRich)|v] #tooltippable #tooltip:[Country.GetTooltipTag],COUNTRY_EXPECTED_SOL_UPPER [Country.GetExpectedStandardOfLivingRich|v1]#!#! $EXPECTED_SOL_SHORT_L$)"
@@ -1226,14 +1226,14 @@
  AVG_STANDARD_OF_LIVING_COUNTRY_MIDDLE: "Середній [Concept('concept_sol','$concept_sol_acc$')|l] [Concept('concept_middle_strata','$concept_middle_strata_gen$')|l] у [Concept('concept_country','$concept_country_loc$')|l] [Country.GetName]"
  AVG_STANDARD_OF_LIVING_COUNTRY_UPPER: "Середній [Concept('concept_sol','$concept_sol_acc$')|l] [Concept('concept_upper_strata','$concept_upper_strata_gen$')|l] у [Concept('concept_country','$concept_country_loc$')|l] [Country.GetName]"
 
- POPULATION_COUNTRY_LOWER:1 "[Concept('concept_pop','$concept_population$')] of the [concept_lower_strata] in [Country.GetName]"
- POPULATION_COUNTRY_MIDDLE:1 "[Concept('concept_pop','$concept_population$')] of the [concept_middle_strata] in [Country.GetName]"
- POPULATION_COUNTRY_UPPER:1 "[Concept('concept_pop','$concept_population$')] of the [concept_upper_strata] in [Country.GetName]"
+ POPULATION_COUNTRY_LOWER: "[Concept('concept_pop','$concept_population$')] [Concept('concept_lower_strata','$concept_lower_strata_gen$')|l] у [Concept('concept_country','$concept_country_loc$')|l] [Country.GetName]"
+ POPULATION_COUNTRY_MIDDLE: "[Concept('concept_pop','$concept_population$')] [Concept('concept_middle_strata','$concept_middle_strata_gen$')|l] у [Concept('concept_country','$concept_country_loc$')|l] [Country.GetName]"
+ POPULATION_COUNTRY_UPPER: "[Concept('concept_pop','$concept_population$')] [Concept('concept_upper_strata','$concept_upper_strata_gen$')|l] у [Concept('concept_country','$concept_country_loc$')|l] [Country.GetName]"
 
-  COUNTRY_SOL_ALL_LABEL:2 "[Country.GetFormattedStandardOfLivingLabelAll] ([Country.GetFormattedStandardOfLivingAll|v])"
- COUNTRY_SOL_LOW_LABEL:2 "[Country.GetFormattedStandardOfLivingLabelPoor] ([Country.GetFormattedStandardOfLivingPoor|v])"
- COUNTRY_SOL_MIDDLE_LABEL:2 "[Country.GetFormattedStandardOfLivingLabelMiddle] ([Country.GetFormattedStandardOfLivingMiddle|v])"
- COUNTRY_SOL_UPPER_LABEL:2 "[Country.GetFormattedStandardOfLivingLabelRich] ([Country.GetFormattedStandardOfLivingRich|v])"
+  COUNTRY_SOL_ALL_LABEL: "[Country.GetFormattedStandardOfLivingLabelAll] ([Country.GetFormattedStandardOfLivingAll|v])"
+ COUNTRY_SOL_LOW_LABEL: "[Country.GetFormattedStandardOfLivingLabelPoor] ([Country.GetFormattedStandardOfLivingPoor|v])"
+ COUNTRY_SOL_MIDDLE_LABEL: "[Country.GetFormattedStandardOfLivingLabelMiddle] ([Country.GetFormattedStandardOfLivingMiddle|v])"
+ COUNTRY_SOL_UPPER_LABEL: "[Country.GetFormattedStandardOfLivingLabelRich] ([Country.GetFormattedStandardOfLivingRich|v])"
  POPS_OVERVIEW_AVERAGE_INCOME_LOW_LABEL: "@money![PopsOverviewPanel.GetAverageIncomePoor|v1] прибутку"
  POPS_OVERVIEW_AVERAGE_INCOME_MIDDLE_LABEL: "@money![PopsOverviewPanel.GetAverageIncomeMiddle|v1] прибутку"
  POPS_OVERVIEW_AVERAGE_INCOME_UPPER_LABEL: "@money![PopsOverviewPanel.GetAverageIncomeRich|v1] прибутку"
@@ -1409,7 +1409,7 @@
  LAND_TEXT_TOOLTIP_CONCEPT: "[State.GetSubsistenceBuilding.GetName] забирають будь-яке доступне [Concept('concept_arable_land', '$concept_arable_land_acc$')|l] у [Concept('concept_state', '$concept_state_loc$')|l] [State.GetName]."
  SUBSISTENCE_CONCEPT:0 "#concept $SUBSISTENCE_CONCEPT_CLEAN$#!"
  SUBSISTENCE_CONCEPT_CLEAN:0 "This is a [concept_subsistence_building], which is a highly inefficient Building that appears when there is unused [concept_arable_land] in a State. As soon as you start exploiting the potential it is using, this Building will automatically get downsized."
- SUBSISTENCE_CREATION_EXPLANATION: "Один розмір [Concept('concept_subsistence_building','$concept_subsistence_building_gen$')|l] сам створюється для кожного не використаного [Concept('concept_arable_land','$concept_arable_land_gen$')|l] у [Concept('concept_state', '$concept_state_loc$')|l].\n[Building.GetState.GetName] має #tooltippable #tooltip:[Building.GetState.GetTooltipTag],LAND_TEXT_TOOLTIP [Building.GetState.GetNumFreeArableLand|v]#!#! [SelectLocalization(GreaterThan_int32(Building.GetState.GetNumFreeArableLand, '(int32)1'),SelectLocalization(GreaterThan_int32(Building.GetState.GetNumFreeArableLand, '(int32)4'),'невикористаного','невикористаних'),'невикористане')|l] [concept_arable_land|l]"
+ SUBSISTENCE_CREATION_EXPLANATION: "Один розмір [Concept('concept_subsistence_building','$concept_subsistence_building_gen$')|l] сама створюється для кожного не використаного [Concept('concept_arable_land','$concept_arable_land_gen$')|l] у [Concept('concept_state', '$concept_state_loc$')|l].\n[Building.GetState.GetName] має #tooltippable #tooltip:[Building.GetState.GetTooltipTag],LAND_TEXT_TOOLTIP [Building.GetState.GetNumFreeArableLand|v]#!#! [SelectLocalization(GreaterThan_int32(Building.GetState.GetNumFreeArableLand, '(int32)1'),SelectLocalization(GreaterThan_int32(Building.GetState.GetNumFreeArableLand, '(int32)4'),'невикористаного','невикористаних'),'невикористане')|l] [concept_arable_land|l]"
  URBAN_CENTER_EXPLANATION:1 "This is an [GetBuildingType('building_urban_center').GetName], which automatically appears when there is enough [concept_urbanization] in the [concept_state]. $URBAN_CENTER_CREATION_EXPLANATION$"
  URBAN_CENTER_CREATION_EXPLANATION: "Один розмір [GetBuildingType('building_urban_center').GetName] is created for each [GetDefine('NEconomy','URBANIZATION_PER_BUILDING')|v] [concept_urbanization] in the [concept_state].\n[Building.GetState.GetName] has #tooltippable #tooltip:[Building.GetState.GetTooltipTag],URBANIZATION_BREAKDOWN [Building.GetState.CalcTotalUrbanization|v]#!#! [concept_urbanization]"
 
@@ -2745,9 +2745,9 @@
  rural: "Сільська місцевість"
  urban: "Міська місцевість"
 
- TOOLTIP_WAR_SUMMARY:0 "#HEADER [War.GetName]#!\n#BOLD Attackers#!:\n#V [War.GetAttackerListString]#!\n#BOLD Defenders#!:\n#V [War.GetDefenderListString]#!"
+ TOOLTIP_WAR_SUMMARY: "#HEADER [War.GetName]#!\n#BOLD Нападники#!:\n#V [War.GetAttackerListString]#!\n#BOLD Оборонці#!:\n#V [War.GetDefenderListString]#!"
  TOOLTIP_REVOLUTION_SUMMARY: "#HEADER Революція#!"
- CALC_WAR_EXHAUSTION:2 "In #variable $TIMER$#! days they will get #bold $LOSS|+$#! due to Exhaustion\n$TAB$#N #bold $BASE$#!#! from Base Decay\n$TAB$#bold $OCCUPATION_CHANGE|+$#! because they are #variable $OCCUPATION|%1$#! Occupied\n$TAB$#bold $WARGOALS_CHANGE|+$#! because their enemy controls #variable $WARGOALS|%1$#! of their Wargoals\n$TAB$#bold $CASUALTIES_CHANGE|+$#! because they have taken #v $CASUALTIES|1$K#! casualties compared to #v $MANPOWER|1$K#! available [concept_manpower] and their side has lost #v $BATTLES_LOST_PERCENTAGE|0%$#! of the [Concept('concept_battle', '$concept_battles$')] (scaled by involved manpower)\n$TAB$#bold $TURMOIL_CHANGE|+$#! because #variable $TURMOIL|%1$#! of their population are [concept_radical]\n$TAB$#bold $SITUATIONS_CHANGE|+$#! because of events"
+ CALC_WAR_EXHAUSTION: "Через #variable $TIMER$#! дн. вони отримають #bold $LOSS|+$#! через виснаження\n$TAB$#N #bold $BASE$#!#! через базове згасання\n$TAB$#bold $OCCUPATION_CHANGE|+$#! через те, що вони окуповані на #variable $OCCUPATION|%1$#!\n$TAB$#bold $WARGOALS_CHANGE|+$#! через те, що ворог контролює #variable $WARGOALS|%1$#! їхніх воєнних цілей\n$TAB$#bold $CASUALTIES_CHANGE|+$#! через те, що вони понесли #v $CASUALTIES|1$K#! втрат у порівнянні з #v $MANPOWER|1$K#! доступного [Concept('concept_manpower', '$concept_manpower_gen$')|l] і їхній бік програв #v $BATTLES_LOST_PERCENTAGE|0%$#! [Concept('concept_battle', '$concept_battles_gen$')|l] (залежно від кількости залученого людського ресурсу)\n$TAB$#bold $TURMOIL_CHANGE|+$#! через те, що #variable $TURMOIL|%1$#! їхнього населення є [Concept('concept_radical', '$concept_radicals_ins$')|l]\n$TAB$#bold $SITUATIONS_CHANGE|+$#! через події"
 
  TOOLTIP_COUNTRY:0 "#BOLD #V [GetPlayer.GetName]#!#!"
  TOOLTIP_COUNTRY_DELAYED:0 "\n$TOOLTIP_DELIMITER$\nCultures: #VARIABLE [GetPlayer.GetPrimaryCulturesDesc]#!\nReligion: #VARIABLE [GetPlayer.GetStateReligion.GetName]#!\nCapital: #VARIABLE [GetPlayer.GetCapital.GetName]#!\n\n[concept_country_desc]"
@@ -2910,26 +2910,26 @@
 
  SOL_FACTOR_TAXES: "Вони платять в середньому #v #tooltippable #tooltip:$BREAKDOWN_TAG$ $TAX_BURDEN|%1$#!#!#! [Concept('concept_taxes','$concept_tax_gen$')|l] від свого прибутку, через це вони мають менше доступних грошей, щоб задовольнити [Concept('concept_pop_needs','$concept_pop_needs_acc$')|l]"
  SOL_FACTOR_MODIFIERS: "[concept_sol] змінюється на #v $VALUE|1=+$#! через змінювачі"
- SOL_FACTOR_NO_MODIFIERS:2 "They are currently not affected by any [concept_sol] modifiers"
+ SOL_FACTOR_NO_MODIFIERS: "Наразі на це не впливає жоден змінювач [Concept('concept_sol','$concept_sol_gen$')|l]"
  SOL_FACTOR_GOODS: "Вони платять в середньому #v #tooltip:COIN_STACK_TOOLTIP $PRICEICON$#! #tooltippable #tooltip:$BREAKDOWN_TAG$ $RELATIVE_PRICE|=-%1$#!#!#! у порівнянні з [Concept('concept_base_price','$concept_base_price_ins$')|l] за свої [Concept('concept_pop_needs','$concept_pop_needs_acc$')|l]. $GOODS_BREAKDOWN_SHORT_SUMMARY$"
- SOL_FACTOR_SLAVES:1 "$POP_FRACTION|%1v$ of them are [Concept('concept_slavery', '$concept_enslaved$')], forcing them into a very low [concept_sol]"
- SOL_FACTOR_PEASANTS:1 "$POP_FRACTION|%1v$ of them are [GetPopType('peasants').GetName] in [Concept('concept_subsistence_building', '$concept_subsistence_buildings$')], limiting them to a low [concept_sol]"
- SOL_FACTOR_TAX_ENTRY:0 "$TAX_LEVEL|%1v$ of income paid in $TAX_TYPE$"
- SOL_FACTOR_GOODS_ENTRY:2 "$RELATIVE_EXPENDITURES|v1%$ - [Goods.GetTextIcon][Nbsp][Goods.GetName] - @money!$PRICE|v1$ #tooltippable #tooltip:COIN_STACK_TOOLTIP $PRICEICON$#!#! ($RELATIVE_PRICE|=-%1$)"
+ SOL_FACTOR_SLAVES: "$POP_FRACTION|%1v$ з них є [Concept('concept_slavery', '$concept_enslaved_adj$ими')|l], що дуже сильно зменшує їхній [Concept('concept_sol','$concept_sol_acc$')|l]"
+ SOL_FACTOR_PEASANTS: "$POP_FRACTION|%1v$ з них є групою [GetPopType('peasants').GetName|l] у [Concept('concept_subsistence_building', '$concept_subsistence_buildings_loc$')|l], що в свою чергу обмежує їхній найменший [Concept('concept_sol','$concept_sol_acc$')|l]"
+ SOL_FACTOR_TAX_ENTRY: "$TAX_LEVEL|%1v$ прибутку йде на тип $TAX_TYPE|l$"
+ SOL_FACTOR_GOODS_ENTRY: "$RELATIVE_EXPENDITURES|v1%$ - [Goods.GetTextIcon][Nbsp][Goods.GetName|l] - @money!$PRICE|v1$ #tooltippable #tooltip:COIN_STACK_TOOLTIP $PRICEICON$#!#! ($RELATIVE_PRICE|=-%1$)"
  SOL_FACTOR_GOODS_ENTRY_SHORT: "[Goods.GetTextIcon][Nbsp][Goods.GetName] ($RELATIVE_EXPENDITURES|v1%$)"
  SOL_FACTOR_GOODS_BREAKDOWN_SHORT_SUMMARY: "Найбільшими витратами для них є $SUMMARY_LIST$."
  SOL_FACTOR_GOODS_BREAKDOWN: "#header [concept_pop_needs]#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
  SOL_FACTOR_TAX_BREAKDOWN: "#header [Concept('concept_taxes','$concept_taxation$')]#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
 
- EXPECTED_SOL_FACTOR_STRATA:1 "$FRACTION|%1v$ of them are $STRATA|v$: $VALUE|=v$"
- EXPECTED_SOL_FACTOR_LITERACY:1 "They have an average of $LITERACY|%0v$ [concept_literacy]: $VALUE|=v$"
+ EXPECTED_SOL_FACTOR_STRATA: "$FRACTION|%1v$ з них - $STRATA|v|l$: $VALUE|=v$"
+ EXPECTED_SOL_FACTOR_LITERACY: "Вони мають в середньому $LITERACY|%0v$ [Concept('concept_literacy','$concept_literacy_gen$')|l]: $VALUE|=v$"
 
- SOL_BELOW_EXPECTED:1 "@warning! $TOTAL|vD$ ($FRACTION|%1v$) of them have a [concept_sol] below the $EXPECTED_SOL_SHORT$ and will become more [concept_radical] over time"
+ SOL_BELOW_EXPECTED: "@warning! $TOTAL|vD$ ($FRACTION|%1v$) з них мають [Concept('concept_sol','$concept_sol_acc$')|l] нижчий за [Concept('concept_expected_sol', '$concept_expected_sol_short_acc$')|l] і з часом стануть більш [Concept('concept_radical','$concept_radical_adj$ими')|l]"
  
- SOL_WELFARE:1 "$TOTAL|vD$ ($FRACTION|%1v$) of them are receiving [concept_welfare_payments], raising their [concept_sol]"
+ SOL_WELFARE: "$TOTAL|vD$ ($FRACTION|%1v$) з них отримують [Concept('concept_welfare_payments','$concept_welfare_payments_acc$')|l], що збільшує їхній [Concept('concept_sol','$concept_sol_acc$')|l]"
 
- TOOLTIP_SOL_MODIFIERS:0 "$BREAKDOWN$"
- POP_DETAILS_TITLE:0 "#bold Pop Details#!"
+ TOOLTIP_SOL_MODIFIERS: "$BREAKDOWN$"
+ POP_DETAILS_TITLE: "#bold Відомості громади#!"
 
  POP_DETAILS_IG: "\n#instruction Клацніть#!, щоб показати [Concept('concept_interest_group_short', '$concept_interest_group_short_acc$')|l] #variable [Pop.GetLargestInterestGroup.GetName]#!"
 
@@ -3688,8 +3688,8 @@
  WARGOAL_INFAMY_TOOLTIP:0 "#header [concept_war_goal] [concept_infamy]: [WarGoal.GetInfamyAmount|-1]#!\n$TOOLTIP_DELIMITER$\n[WarGoal.GetInfamyDesc]"
  WARGOAL_INFAMY:0 "@infamy![WarGoal.GetInfamyAmount|-1]"
 
- WAR_SUPPORT_CANNOT_BE_NEGATIVE:0 "[concept_war_support] cannot be reduced below #variable 0#! because they hold their capital and the following wargoals are not being occupied:"
- WAR_SUPPORT_CANNOT_BE_NEGATIVE_WAR_GOAL_ENTRY:0 "- [WAR_GOAL.GetName]"
+ WAR_SUPPORT_CANNOT_BE_NEGATIVE: "[concept_war_support] не може впасти нижче #variable 0#!, тому що вони утримують свою столицю та такі воєнні цілі не окуповані:"
+ WAR_SUPPORT_CANNOT_BE_NEGATIVE_WAR_GOAL_ENTRY: "- [WAR_GOAL.GetName]"
 
  WAR_PANEL_CURRENT_PEACE_DEAL_PROPOSER: "Запропоновано [Concept('concept_country','$concept_country_ins$')|l] [WarPanel.GetWar.GetCountryProposingPeace.GetName]"
  WAR_PANEL_NO_CURRENT_PEACE_DEAL: "Немає [Concept('concept_peace_deal','$concept_peace_deal_gen$')|l]"
@@ -6969,8 +6969,8 @@
 
  COMBAT_UNIT_DEFENSE_BREAKDOWN:0 "#header [concept_defense]#!\nThe [concept_defense] of #v [CombatUnit.GetDefenseRaw]#! is due to:\n[CombatUnit.GetDefenseBreakdown]"
  COMBAT_UNIT_OFFENSE_BREAKDOWN:0 "#header [concept_offense]#!\nThe [concept_offense] of #v [CombatUnit.GetOffenseRaw]#! is due to:\n[CombatUnit.GetOffenseBreakdown]"
- COMBAT_UNIT_MANPOWER_BREAKDOWN:0 "#header [concept_manpower]#!\n[CombatUnit.GetManpowerTooltip]"
- COMBAT_UNIT_MANPOWER:0 "@manpower! #v [CombatUnit.GetManpowerRaw]#!"
+ COMBAT_UNIT_MANPOWER_BREAKDOWN: "#header [concept_manpower]#!\n[CombatUnit.GetManpowerTooltip]"
+ COMBAT_UNIT_MANPOWER: "@manpower! #v [CombatUnit.GetManpowerRaw]#!"
 
  POP_SIZE_TITLE: "[Concept('concept_pop','$concept_population$')]"
  PIN_CHARACTER: "Прикріпити персонажа [Character.GetFullName] до плянувальника"

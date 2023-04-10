@@ -1180,10 +1180,10 @@
  TRIGGER_STATE_REGION_HAS_GOODS_SHORTAGE:1 "Has [Concept('concept_input_goods_shortage', '$concept_input_goods_shortages$')]"
  TRIGGER_STATE_REGION_HAS_GOODS_SHORTAGE_NOT:2 "Does #bold not #!have [Concept('concept_input_goods_shortage', '$concept_input_goods_shortages$')]"
  
- TRIGGER_IS_SUBSISTENCE_BUILDING:0 "Is a [concept_subsistence_building]"
- TRIGGER_IS_SUBSISTENCE_BUILDING_NOT:1 "Is #bold not #!a [concept_subsistence_building]"
- TRIGGER_IS_SUBSISTENCE_BUILDING_THIRD:0 "[BUILDING.GetName] is a [concept_subsistence_building]"
- TRIGGER_IS_SUBSISTENCE_BUILDING_THIRD_NOT:0 "[BUILDING.GetName] is #bold not #!a [concept_subsistence_building]"
+ TRIGGER_IS_SUBSISTENCE_BUILDING: "Це [concept_subsistence_building|l]"
+ TRIGGER_IS_SUBSISTENCE_BUILDING_NOT: "Це #bold не#! [concept_subsistence_building|l]"
+ TRIGGER_IS_SUBSISTENCE_BUILDING_THIRD: "[BUILDING.GetName] - [concept_subsistence_building|l]"
+ TRIGGER_IS_SUBSISTENCE_BUILDING_THIRD_NOT: "[BUILDING.GetName] #bold не#! [concept_subsistence_building|l]"
  
  TRIGGER_EARNINGS:0 "Earnings for [BUILDING.GetName] $COMPARATOR$ $NUM$"
  TRIGGER_EARNINGS_NOT:1 "Earnings for [BUILDING.GetName] #bold not #!$COMPARATOR$ $NUM$"
