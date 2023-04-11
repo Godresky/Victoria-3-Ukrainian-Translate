@@ -123,7 +123,7 @@
  engine_production_modifier: "Лихоманка паротягів"
  railway_production_modifier: "Лихоманка трафіку"
  production_tech_events.501.t: "Залізнична лихоманка"
- production_tech_events.501.d: "Зростання відгалужень уздовж основних залізничних торів було надзвичайно цінним для поступу цієї галузі, яка все ще роз."
+ production_tech_events.501.d: "Зростання відгалужень уздовж основних залізничних напрямків було надзвичайно корисним для розвитку цієї галузі, яка стрімко розвивається."
  production_tech_events.501.f: "«Дитину заарештували за те, що вона збирала вугілля біля нещодавно прокладених колій. Якби юнакові вистачило розуму вкрасти цілу залізницю, його б назвали Наполеоном промисловости.»"
  production_tech_events.501.a: "Залізниці [Concept('concept_state', '$concept_state_gen$')|l] [SCOPE.sState('railway_state').GetName] повинні процвітати."
  production_tech_events.501.b: "Майстри паротягів з [Concept('concept_state', '$concept_state_gen$')|l] [SCOPE.sState('engine_state').GetName] повинні отримати переваги з цієї лихоманки."

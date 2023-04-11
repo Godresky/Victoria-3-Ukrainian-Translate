@@ -1044,10 +1044,10 @@
  TRIGGER_POLLUTION_AMOUNT:0 "Pollution in [STATE_REGION.GetName] is $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_POLLUTION_AMOUNT_NOT:1 "Pollution in [STATE_REGION.GetName] is #bold not #!$COMPARATOR$ #variable $NUM$#!"
  
- TRIGGER_IS_CAPITAL:1 "Is the [Concept('concept_capital_state','$concept_capital_state_short$')] of [STATE.GetOwner.GetName]"
- TRIGGER_IS_CAPITAL_NOT:2 "Is #bold not#! the [Concept('concept_capital_state','$concept_capital_state_short$')] of [STATE.GetOwner.GetName]"
- TRIGGER_IS_CAPITAL_THIRD:0 "[STATE.GetName] is the [Concept('concept_capital_state','$concept_capital_state_short$')] of [STATE.GetOwner.GetName]"
- TRIGGER_IS_CAPITAL_THIRD_NOT:0 "[STATE.GetName] is #bold not#! the [Concept('concept_capital_state','$concept_capital_state_short$')] of [STATE.GetOwner.GetName]"
+ TRIGGER_IS_CAPITAL: "Це [Concept('concept_capital_state','$concept_capital_state_short$')|l] держави [STATE.GetOwner.GetName]"
+ TRIGGER_IS_CAPITAL_NOT: "Це #bold не#! [Concept('concept_capital_state','$concept_capital_state_short$')|l] держави [STATE.GetOwner.GetName]"
+ TRIGGER_IS_CAPITAL_THIRD: "[STATE.GetName] - [Concept('concept_capital_state','$concept_capital_state_short$')|l] держави [STATE.GetOwner.GetName]"
+ TRIGGER_IS_CAPITAL_THIRD_NOT:0 "[STATE.GetName] #bold не#! [Concept('concept_capital_state','$concept_capital_state_short$')|l] держави [STATE.GetOwner.GetName]"
  
  TRIGGER_CONTAINS_CAPITAL_OF:0 "[STATE_REGION.GetName] contains the capital of [TARGET_COUNTRY.GetName]"
  TRIGGER_CONTAINS_CAPITAL_OF_NOT:1 "[STATE_REGION.GetName] does #bold not #!contain the capital of [TARGET_COUNTRY.GetName]"
@@ -2021,8 +2021,8 @@ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_GREATER_THAN:0 "Remaining duratio
  TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_EQUAL_THIRD:0 "Remaining duration of [Concept('concept_private_construction', '$concept_private_constructions$')] in [Country.GetName] is $NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
  TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_NOT_EQUAL_THIRD:0 "Remaining duration of [Concept('concept_private_construction', '$concept_private_constructions$')] in [Country.GetName] is #bold not #!$NUM|0v$ weeks (currently: $CURRENT_VALUE|0v$)"
  
- TRIGGER_BUILDING_LEVEL_GREATER_THAN:1 "Building Level is greater than $TARGET_VALUE|0v$"
- TRIGGER_BUILDING_LEVEL_GREATER_OR_EQUAL: "Розмір будівлі більша або дорівнює $TARGET_VALUE|0v$"
+ TRIGGER_BUILDING_LEVEL_GREATER_THAN: "Розмір будівлі більший за $TARGET_VALUE|0v$"
+ TRIGGER_BUILDING_LEVEL_GREATER_OR_EQUAL: "Розмір будівлі більший або дорівнює $TARGET_VALUE|0v$"
  TRIGGER_BUILDING_LEVEL_LESS_THAN:1 "Building Level is less than $TARGET_VALUE|0v$"
  TRIGGER_BUILDING_LEVEL_LESS_OR_EQUAL:1 "Building Level is less than, or equal to $TARGET_VALUE|0v$"
  TRIGGER_BUILDING_LEVEL_EQUAL:1 "Building Level is $TARGET_VALUE|0v$"
