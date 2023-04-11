@@ -151,8 +151,8 @@
  legislative_efficiency_desc:0 "A well-oiled political machine can get more things done faster"
  political_dysfunction:0 "Political Dysfunction"
  political_dysfunction_desc:0 "Political outsiders often get caught in the gears of dysfunctional political machines"
- diplomatic_mitigation:0 "Diplomatic Mitigation"
- diplomatic_mitigation_desc:0 "Skilled diplomats can cover up international scandals faster"
+ diplomatic_mitigation: "Дипломатичне пом'якшення"
+ diplomatic_mitigation_desc: "Навчані дипломати можуть швидше залагоджувати міжнародні скандали"
  diplomatic_overreach:0 "Diplomatic Overreach"
  diplomatic_overreach_desc:0 "Without sufficient attention from the diplomatic corp, good Relations will decay over time"
 
