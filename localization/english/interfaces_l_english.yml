@@ -54,7 +54,7 @@
  RELEASE_COUNTRY_HEADER: "[CountryCreation.GetName]"
  RELEASE_COUNTRY_SUBJECT_DESC: "Ви впевнені, що хочете утворити [COUNTRY.GetAdjective|l]у [Concept('concept_subject', '$concept_subject_country_acc$')|l] [COUNTRY_CREATION.GetName]?\n\n$COUNTRY_REWARDS$"
  RELEASE_COUNTRY_INDEPENDENT_DESC: "Ви впевнені, що хочете звільнити як незалежну [Concept('concept_country', '$concept_country_acc$')|l] [COUNTRY_CREATION.GetName]?\n\n$COUNTRY_REWARDS$"
- RELEASE_COUNTRY_WILL_RECEIVE_STATES: "Вона отримає такі реґіони:\n[COUNTRY_CREATION.ListReleasableStates(GetPlayer)]"
+ RELEASE_COUNTRY_WILL_RECEIVE_STATES: "Вона отримає такі землі:\n[COUNTRY_CREATION.ListReleasableStates(GetPlayer)]"
  RELEASE_COUNTRY_WILL_RECEIVE_PROVINCES: "Вона отримає [COUNTRY_CREATION.GetNumProvincesToRelease|v] провін. у [Concept('concept_state_region', '$concept_state_region_loc$')|l] [COUNTRY_CREATION.GetCapital.GetName]"
  RELEASE_COUNTRY_AS_INDEPENDENT: "Дати незалежність"
  RELEASE_COUNTRY_AS_OWN_SUBJECT: "Утворити [Concept('concept_subject', '$concept_subject_country_acc$')|l]"
@@ -107,8 +107,8 @@
 
  TOOLTIP_DELIMITER: "@divider_start!@divider_mid!@divider_mid!@divider_mid!@divider_end!"
 
- MARKETABLE_GOODS_TOOLTIP: "#header Торгові товари#!\n$TOOLTIP_DELIMITER$\nЧерез відносно низький обсяг торгів, на ціну [Concept('concept_good', '$concept_goods_gen$')|l] #variable [Goods.GetName|l]#! впливає ринкове ціноутворення більшою мірою, ніж на інші товари, а реґіон з низьким [Concept('concept_market_access', '$concept_market_access_ins$')|l] меншою мірою."
- NON_MARKETABLE_GOODS_TOOLTIP: "#header Неторгові товари#!\n$TOOLTIP_DELIMITER$\nЧерез відносно високий обсяг торгів, на ціну [Concept('concept_good', '$concept_goods_gen$')|l] #variable [Goods.GetName|l]#! впливає ринкове ціноутворення меншою мірою, ніж на інші товари, а реґіон з низьким [Concept('concept_market_access', '$concept_market_access_ins$')|l] більшою мірою."
+ MARKETABLE_GOODS_TOOLTIP: "#header Торгові товари#!\n$TOOLTIP_DELIMITER$\nЧерез відносно низький обсяг торгів, на ціну [Concept('concept_good', '$concept_goods_gen$')|l] #variable [Goods.GetName|l]#! впливає ринкове ціноутворення більшим чином, ніж на інші товари, а земля з низьким [Concept('concept_market_access', '$concept_market_access_ins$')|l] меншим чином."
+ NON_MARKETABLE_GOODS_TOOLTIP: "#header Неторгові товари#!\n$TOOLTIP_DELIMITER$\nЧерез відносно високий обсяг торгів, на ціну [Concept('concept_good', '$concept_goods_gen$')|l] #variable [Goods.GetName|l]#! впливає ринкове ціноутворення меншим чином, ніж на інші товари, а земля з низьким [Concept('concept_market_access', '$concept_market_access_ins$')|l] більшим чином."
 
  NON_NEGOTIATORS: "Учасники, які не беруть участи в перемовинах"
 
@@ -135,7 +135,7 @@
  TECH_TREE: "Дерево технологій"
  GRAPHLAYOUT_NODE_DEBUG:1 "#D Key: $KEY$\nLayout node id: $LAYOUT_NODE_ID$\nBase node id: $BASE_NODE_ID$\nIncoming nodes: $INCOMING$\nOutgoing nodes: $OUTGOING$\nLayer: $LAYER$\nWidth: $WIDTH$\nCenterX: $CENTER_X$\nPriority: $PRIORITY$\nPosition: $POSITION$ #!"
 
- urban_capacity: "[concept_urbanization] реґіону"
+ urban_capacity: "[concept_urbanization] землі"
 
  BUILDING_GROUP_TITLE: "#title $BUILDING_GROUP$#!"
  BUILDING_GROUP_ENTRY_UNCAPPED: "$BUILDING$"
@@ -290,7 +290,7 @@
  LENS_OPTION_TOOLTIP: "[LensOption.GetTooltip]"
  BUILDING_MODIFIERS_PER_LEVEL_COLON: "#title Змінювачі будівель (За один розмір):#!"
  COUNTRY_MODIFIERS_PER_LEVEL_COLON: "#title Змінювачі держави (За один розмір):#!"
- STATE_MODIFIERS_PER_LEVEL_COLON: "#title Змінювачі реґіону (За один розмір):#!"
+ STATE_MODIFIERS_PER_LEVEL_COLON: "#title Змінювачі землі (За один розмір):#!"
  APPLIES_TO_BUILDING_TYPE: "Застосовано до $BUILDING_TYPE|l$-будівлі ([concept_production_method] «[ProductionMethodGroup.GetName]»)"
  GOODS_PRODUCTION_COLON: "#title Виробляє товари:#!"
  GOODS_CONSUMPTION_COLON: "#title Споживає товари:#!"
@@ -533,7 +533,7 @@
  RELEASE_COUNTRY_NUM_STATES: "#bold [CountryCreation.GetNumReleasableStates(GetPlayer)]#!"
  RELEASE_COUNTRY_REQ_STATES: "#bold [CountryCreation.GetNumReleasableStates(GetPlayer)]/[CountryCreation.GetNumRequiredStates]#!"
  RELEASE_COUNTRY_TOOLTIP: "#title Утворити [Concept('concept_subject', '$concept_subject_country_acc$')|l]#!\nКультури: #variable [CountryCreation.ListCultures]#!\n$TOOLTIP_DELIMITER$\n[CountryCreation.GetReleaseDesc(GetPlayer)]"
- RELEASE_COUNTRY_DESC: "Звільнити [Concept('concept_country', '$concept_country_acc$')|l] #variable [COUNTRY_CREATION.GetName]#! як будь-яку [Concept('concept_subject', '$concept_subject_adj$у')|l] чи як незалежну країну.\n\nВона утвориться в [COUNTRY_CREATION.GetNumReleasableStates(GetPlayer)|v] з [COUNTRY_CREATION.GetTotalNumStates|v] можливих реґіонах:\n[COUNTRY_CREATION.ListPotentialStates(GetPlayer)]"
+ RELEASE_COUNTRY_DESC: "Звільнити [Concept('concept_country', '$concept_country_acc$')|l] #variable [COUNTRY_CREATION.GetName]#! як будь-яку [Concept('concept_subject', '$concept_subject_adj$у')|l] чи як незалежну країну.\n\nВона утвориться в [COUNTRY_CREATION.GetNumReleasableStates(GetPlayer)|v] з [COUNTRY_CREATION.GetTotalNumStates|v] можливих землях:\n[COUNTRY_CREATION.ListPotentialStates(GetPlayer)]"
  RELEASE_COUNTRY_PROVINCES_DESC: "Звільнити [Concept('concept_country', '$concept_country_acc$')|l] #variable [COUNTRY_CREATION.GetName]#! як будь-яку [Concept('concept_subject', '$concept_subject_adj$у')|l] чи як незалежну країну.\n\nВона утвориться у [COUNTRY_CREATION.GetNumProvincesToRelease|v] провінціях(ї) в [Concept('concept_state_region', '$concept_state_region_loc$')|l] [COUNTRY_CREATION.GetCapital.GetName]."
  RELEASABLE_COUNTRIES: "#bold Звільнити [Concept('concept_country', '$concept_countries$')|l]#!"
  NO_RELEASABLE_COUNTRIES: "#bold Немає [Concept('concept_country', '$concept_countries_gen$')|l], які можна звільнити#!"
@@ -542,7 +542,7 @@
  CANNOT_RELEASE_COUNTRY_AS_OWN_SUBJECT_NO_SUBJECT_TYPE: "Ми не можемо утворити нашу [Concept('concept_subject', '$concept_subject_adj$у')|l] [Concept('concept_country', '$concept_country_acc$')|l] [COUNTRY_CREATION.GetName], тому що немає жодного доступно виду підвладного, який б дозволили це зробити"
  CANNOT_RELEASE_COUNTRY_SAME_CAPITAL: "Ми не можемо звільнити [Concept('concept_country', '$concept_country_acc$')|l] [COUNTRY_CREATION.GetName], адже їхня столиця [COUNTRY_CREATION.GetCapital.GetName] також й наша столиця"
  CANNOT_RELEASE_COUNTRY_NO_CAPITAL: "Ми повинні контролювати [COUNTRY_CREATION.GetAdjective|l]у [Concept('concept_capital_state', '$concept_capital_state_ins$')|l] [COUNTRY_CREATION.GetCapital.GetName], щоб звільнити [Concept('concept_country', '$concept_country_acc$')|l] [COUNTRY_CREATION.GetName]"
- CANNOT_RELEASE_COUNTRY_NOT_ENOUGH_STATES: "Щоб звільнити [Concept('concept_country', '$concept_country_acc$')|l] #variable [COUNTRY_CREATION.GetName]#!, ми повинні повністю контролювати таку кількість [COUNTRY_CREATION.GetAdjective|l]их національних реґіонів: #variable [COUNTRY_CREATION.GetNumRequiredStates]#!.\nВсього є #variable [COUNTRY_CREATION.GetTotalNumStates]#! [COUNTRY_CREATION.GetAdjective|l][SelectLocalization(GreaterThan_int32(COUNTRY_CREATION.GetTotalNumStates, '(int32)1'),'их національних реґіонів','ий національний реґіон')|l] у світі:\n[COUNTRY_CREATION.ListPotentialStates(GetPlayer)]"
+ CANNOT_RELEASE_COUNTRY_NOT_ENOUGH_STATES: "Щоб звільнити [Concept('concept_country', '$concept_country_acc$')|l] #variable [COUNTRY_CREATION.GetName]#!, ми повинні повністю контролювати таку кількість [COUNTRY_CREATION.GetAdjective|l]их національних земель: #variable [COUNTRY_CREATION.GetNumRequiredStates]#!.\nВсього є #variable [COUNTRY_CREATION.GetTotalNumStates]#! [COUNTRY_CREATION.GetAdjective|l][SelectLocalization(GreaterThan_int32(COUNTRY_CREATION.GetTotalNumStates, '(int32)1'),'их національних земель','а національна земля')|l] у світі:\n[COUNTRY_CREATION.ListPotentialStates(GetPlayer)]"
  RELEASABLE_STATE: "[STATE_REGION.GetName]"
 
  COUNTRY_FORMATION_HEADER: "Утворення нації"
@@ -1186,8 +1186,8 @@
  INTEREST_DECLARED: "Це [concept_declared_interest|l]"
  
  INTEREST_SOURCE_DECLARED: "Підтримується через [concept_declared_interest|l]"
- INTEREST_SOURCE_OWNED_STATES: "Підтримується через керування реґіонами: $STATES$"
- INTEREST_SOURCE_SUBJECT_STATES: "Утримується через [Concept('concept_subject', '$concept_subject_gen$')|l], який керує реґіонами: $STATES$"
+ INTEREST_SOURCE_OWNED_STATES: "Підтримується через керування землями: $STATES$"
+ INTEREST_SOURCE_SUBJECT_STATES: "Утримується через [Concept('concept_subject', '$concept_subject_gen$')|l], який керує землями: $STATES$"
 
  INTEREST_MARKER_TOOLTIP: "#header [Interest.GetOwner.GetAdjectiveNoFormatting]ий [concept_interest|l] у [Concept('concept_strategic_region', '$concept_strategic_region_loc$')|l] [Interest.GetStrategicRegion.GetName]#!\n$TOOLTIP_DELIMITER$\n[Interest.GetInterestStatusName][ConcatIfNeitherEmpty('\n',Interest.GetInterestSourceDesc)][ConcatIfNeitherEmpty('\n',Interest.GetProgressBarTooltip)]"
  NO_COUNTRIES_WITH_INTEREST:0 "No [concept_country] have an [concept_interest] in [StrategicRegion.GetNameNoFormatting]"
@@ -1349,7 +1349,7 @@
  ABOLISHED_LAWS_TITLE: "#title Скасовані [Concept('concept_law', '$concept_laws$')|l]#!"
  STATE_TITLE: "#title [concept_state]#!"
 
- STATE_EXPLAINER: "#header Реґіон#!\n#instruction Клацніть, щоб хухрити за назвою [Concept('concept_state', '$concept_state_gen$')|l]#!"
+ STATE_EXPLAINER: "#header Земля#!\n#instruction Клацніть, щоб хухрити за назвою [Concept('concept_state', '$concept_state_gen$')|l]#!"
  AVERAGE_POP_WAGE_EXPLAINER: "#header Середня зарплата [Concept('concept_pop', '$concept_population_gen$')|l]#!\n#instruction Клацніть, щоб хухрити за cередньою зарплатою населення у [Concept('concept_state', '$concept_state_loc$')|l]#!"
  EXPENSES_EXPLAINER: "#header Витрати#!\n#instruction Клацніть, щоб хухрити за загальними витратами на [Concept('concept_state', '$concept_state_acc$')|l]#!"
  STATE_INCOME_TAX_REVENUE_EXPLAINER: "#header Прибуток за рахунок податків#!\n#instruction Клацніть, щоб хухрити за загальним прибутком від сплати податків у [Concept('concept_state', '$concept_state_loc$')|l]#!"
@@ -1475,7 +1475,7 @@
  industry_lens_tab: "Промисловість"
  industry_lens_tab_tooltip: "Збудувати промислові споруди\n$TOOLTIP_DELIMITER$\n#concept Промислові [Concept('concept_building', '$concept_buildings$')|l] наймають [Concept('concept_pop', '$concept_people_gen$')|l], щоб перетворити один або більше видів [Concept('concept_good', '$concept_goods_gen$')|l] в один або декілька інших видів.#!"
  decrees_lens_tab: "Постанови"
- decrees_lens_tab_tooltip: "Видати постанову\n$TOOLTIP_DELIMITER$\n#concept Ви можете видати [Concept('concept_decree', '$concept_decree_acc$')|l] у ваших реґіонах, щоб отримати з цього вигоду.#!"
+ decrees_lens_tab_tooltip: "Видати постанову\n$TOOLTIP_DELIMITER$\n#concept Ви можете видати [Concept('concept_decree', '$concept_decree_acc$')|l] у ваших землях, щоб отримати з цього вигоду.#!"
  state_actions_lens_tab: "Державні дії"
  state_actions_lens_tab_tooltip: "Взаємодіяти з моїми [Concept( 'concept_state', '$concept_states_ins$' )|l]"
  diplomatic_plays_lens_tab: "Дипломатичні ігри"
@@ -1685,7 +1685,7 @@
  MIGRATION_PULL_DESC: "[State.GetMigrationPullDesc]"
  STATE_MIGRATION_PULL_BREAKDOWN: "[State.GetMigrationPullDesc]"
 
- MIGRATION_PULL_FROM_EMPTY_STATE: "$TAB$Безлюдний реґіон: #v $VAL|+=1$#!"
+ MIGRATION_PULL_FROM_EMPTY_STATE: "$TAB$Безлюдна земля: #v $VAL|+=1$#!"
  MIGRATION_PULL_FROM_SOL: "$TAB$[concept_sol]: #v $VAL|+=1$#!"
  MIGRATION_PULL_FROM_UNEMPLOYMENT: "$TAB$[Concept('concept_unemployed','$concept_unemployment$')]: #v $VAL|+=1$#!"
  MIGRATION_PULL_FROM_AVAILABLE_ARABLE_LAND: "$TAB$Невикористане [Concept('concept_arable_land','$concept_arable_land_acc$')]: #v $VAL|+=1$#!"
@@ -1830,7 +1830,7 @@
 
  BUILDINGS_USING_THIS_LIST: "#title Використовується:#!\n$LIST$"
  BUILDINGS_PRODUCING_THIS_LIST: "#title Виробляється:#!\n$LIST$"
- OPEN_EXPANSION_LENS: "Розширити в інших реґіонах"
+ OPEN_EXPANSION_LENS: "Розширити в інших землях"
 
  STATE_INFRASTRUCTURE: "[concept_infrastructure]\n$STATE_INFRASTRUCTURE_CONDENSED$"
  STATE_MARKET_CAPITAL_STATUS: "[concept_market_capital]\n$STATE_MARKET_CAPITAL_STATUS_CONDENSED$"
@@ -1838,7 +1838,7 @@
  STATE_SPLIT_STATE_STATUS: "[concept_split_state]\n[State.GetStateRegion.GetName]"
  STATE_MIGRATION_TARGET_STATUS: "[concept_migration_target]\nЗ [Concept('concept_country','$concept_country_gen$')|l] [State.GetMassMigrationOriginCountry.GetName] до [Concept('concept_state','$concept_state_gen$')|l] [State.GetMassMigrationCulture.GetName]"
  STATE_MARKET_STATUS: "[State.GetMarket.GetName]\n[SelectLocalization(LessThan_CFixedPoint(State.GetInfrastructureBalance, '(CFixedPoint)0'), 'WARNING', '')][State.GetMarketAccess|%v0]"
- STATE_TRAIT_STATUS: "[StateTrait.GetName|v]\n#title Риса реґіону#!"
+ STATE_TRAIT_STATUS: "[StateTrait.GetName|v]\n#title Риса землі#!"
  STATE_POPULATION_STATUS: "[Concept('concept_pop','$concept_population$')]\n$STATE_POPULATION_STATUS_CONDENSED$"
  STATE_SOL_STATUS: "[concept_sol]"
  STATE_GDP_STATUS: "$GDP_SHORT$\n$STATE_GDP_STATUS_CONDENSED$"
@@ -1848,8 +1848,8 @@
  STATE_CONSTRUCTION_ACTIVE: "[Country.GetNumBuildingsUnderConstructionInState(State.Self)|v] у процесі"
  STATE_CONSTRUCTION_IN_QUEUE: "\n[Country.GetNumBuildingsInConstructionQueueInState(State.Self)|v] у черзі"
 
- TOOLTIP_VIEW_CONDENSED: "#header Показати неповну панель реґіону#!"
- TOOLTIP_VIEW_DETAILED: "#header Показати докладну панель реґіону#!"
+ TOOLTIP_VIEW_CONDENSED: "#header Показати неповну панель землі#!"
+ TOOLTIP_VIEW_DETAILED: "#header Показати докладну панель землі#!"
 
  WARNING: "@warning! "
 
@@ -1869,7 +1869,7 @@
  STATE_PANEL_INFRASTRUCTURE_DESC: "#header [concept_infrastructure]#!\n[concept_infrastructure] у [Concept('concept_state', '$concept_state_loc$')|l] [State.GetName]: #v [State.GetInfrastructure|0]#!\n$TOOLTIP_DELIMITER$\n[State.GetInfrastructureDesc]"
  STATE_PANEL_INFRASTRUCTURE_USAGE_DESC: "#header [concept_infrastructure_usage]#!\n[concept_infrastructure_usage] у [Concept('concept_state', '$concept_state_loc$')|l] [State.GetName]: #v [Multiply_CFixedPoint(State.GetInfrastructureUsage,'(CFixedPoint)-1')|0+]#!\n$TOOLTIP_DELIMITER$\n[State.GetInfrastructureUsageDesc]"
  STATE_TRAIT_STATE_MODIFIER: "Змінювачі:"
- STATE_TRAIT_STATE_REGION_MODIFIER: "Змінювачі реґіону"
+ STATE_TRAIT_STATE_REGION_MODIFIER: "Змінювачі землі"
  BUILDING_PROGRESS_TOOLTIP: "#header [Building.GetName]#!\nПоступ будівництва: #VARIABLE [Building.GetConstructionProgressPercentage|%]#!\nЩотижневе [Concept('concept_construction', '$concept_construction$')|l]: #v #tooltippable #tooltip:[Building.GetTooltipTag],CONSTRUCTION_SPEED_TOOLTIP [Building.GetConstructionSpeedPerWeek|2]#!#!#!\nДо завершення будівництва: #VARIABLE [Building.GetConstructionRemainingWeeksDesc]#!"
  BUILDING_PROGRESS_TOOLTIP_QUEUED:0 "#header [Building.GetName]#!\nIn Construction Queue in [Country.GetName]"
  
@@ -2225,7 +2225,7 @@
 
  INCORPORATE_STATE_COST: "Вартість: $COST|1v$ @bur![Nbsp][concept_bureaucracy]"
  
- TOOLTIP_INCORPORATE_STATE: "#header Невключений реґіон#!\n[State.GetBureaucracyCostDesc]\n$TOOLTIP_DELIMITER$\n[SelectLocalization(StringIsEmpty(GetDesc(State.IncorporateState)), 'STATE_INCORPORATION_TIME', 'STATE_INCORPORATION_ERROR')]"
+ TOOLTIP_INCORPORATE_STATE: "#header Невключена земля#!\n[State.GetBureaucracyCostDesc]\n$TOOLTIP_DELIMITER$\n[SelectLocalization(StringIsEmpty(GetDesc(State.IncorporateState)), 'STATE_INCORPORATION_TIME', 'STATE_INCORPORATION_ERROR')]"
  STATE_INCORPORATION_TIME:0 "[State.GetIncorporationTimeDesc]"
  STATE_INCORPORATION_ERROR:0 "[GetDesc(State.IncorporateState)]"
  TOOLTIP_CANCEL_INCORPORATION:1 "#header Cancel Incorporation#!\nRefund: [State.PredictBureaucracyCost|1v] @bur![Nbsp][concept_bureaucracy]\n\n@warning! #bold [State.GetIncorporationProgress||v%0] incorporation progress will be lost!#!"
@@ -2311,7 +2311,7 @@
  BUILDING_RANK: "[Building.GetProfitabilityCompareIconInType] ##[Building.GetProfitabilityRankInType|v] [Building.GetBuildingType.GetNameNoFormatting|l]"
  BUILDING_RANK_WORLD: "[Building.GetProfitabilityCompareIcon] ##[Building.GetProfitabilityRank|v] у світі"
 
- TOOLTIP_BUILDINGS_BUDGET: "#BOLD #V [Building.GetName]#!#!\n[Building.GetBuildingType.GetBuildingKindDesc(Building.GetOwner.Self)]\n[concept_government_expenses]: #variable @money! [Building.GetGovernmentExpenses|-Т]#!\n\nЗарплата (й можливі матеріяльні витрати) будуть оплачуватися з вашої скарбниці. Зарплата наблизиться до середньої по реґіоні."
+ TOOLTIP_BUILDINGS_BUDGET: "#BOLD #V [Building.GetName]#!#!\n[Building.GetBuildingType.GetBuildingKindDesc(Building.GetOwner.Self)]\n[concept_government_expenses]: #variable @money! [Building.GetGovernmentExpenses|-Т]#!\n\nЗарплата (й можливі матеріяльні витрати) будуть оплачуватися з вашої скарбниці. Зарплата наблизиться до середньої по землі."
 
  TOOLTIP_PRODUCTION_AMOUNT:0 "#BOLD #V [GoodsProductionInfo.GetName]#!#! in [ProductionMarker.AccessState.GetName]\n$TOOLTIP_DELIMITER$\nProduced: #BOLD #V [GoodsProductionInfo.GetAmount|D]#!#! units\n#BOLD #V [GoodsProductionInfo.GetMP|1%]#!#! of the total production of #variable [GoodsProductionInfo.GetName]#! in the #variable [ProductionMarker.AccessState.GetMarket.GetName]#!"
  TOOLTIP_PRODUCTION_PRICE:0 "#BOLD #V [GoodsProductionInfo.GetName]#!#!\n$TOOLTIP_DELIMITER$\nЦіна: #BOLD #V @money![GoodsProductionInfo.GetPrice|1]#!#! / одиницю"
@@ -2548,17 +2548,17 @@
  MAX_DECLARED_INTERESTS_TOOLTIP:0 "#header Maximum [Concept('concept_declared_interest','$concept_declared_interests$')] for [Country.GetName]#!\n$TOOLTIP_DELIMITER$\n[Country.GetMaxNumDeclaredInterestsBreakdown]"
 
  MAP_INTERACTION_ESC_TO_CANCEL: "#instruction Нажміть #bold ESC#!, щоб закрити поточну взаємодію з мапою#!"
- MAP_INTERACTION_BUILD_BUILDING_DESC: "Виберіть #V реґіон#!, де ви збудуєте споруду #V [BUILDING_TYPE.GetName|l]#!"
+ MAP_INTERACTION_BUILD_BUILDING_DESC: "Виберіть #V землю#!, де ви збудуєте споруду #V [BUILDING_TYPE.GetName|l]#!"
  MAP_INTERACTION_BUILD_BUILDING_PERFORMED: "Будівництво споруди #V [BuildingType.GetName|l]#! почалося"
  MAP_INTERACTION_BUILDING_BUILT: "Будівля [Building.GetName|l] збудована у [Concept('concept_state', '$concept_state_loc$')|l] [Building.GetState.GetName]"
  MAP_INTERACTION_BUILDING_EXPANDED: "[Building.GetName] розширено до розміру #v [Building.GetExpansionLevel]#! у [Concept('concept_state', '$concept_state_loc$')|l] [Building.GetState.GetName]"
- MAP_INTERACTION_CREATE_MARKET_DESC: "Виберіть, в якому #V реґіоні#! збудувати #V ринок#!"
- MAP_INTERACTION_ESTABLISH_COLONY_DESC: "Виберіть, в якому #V реґіоні#! заснувати #V осаду#!"
+ MAP_INTERACTION_CREATE_MARKET_DESC: "Виберіть, в якій #V землі#! збудувати #V ринок#!"
+ MAP_INTERACTION_ESTABLISH_COLONY_DESC: "Виберіть, в якій #V землі#! заснувати #V осаду#!"
  MAP_INTERACTION_ESTABLISH_COLONY_PERFORMED: "#V Осада#! Була заснована [concept_colony|l]"
  MAP_INTERACTION_DECLARE_INTEREST_DESC: "Виберіть будь-який [Concept('concept_strategic_region','$concept_strategic_region_short$')|l], щоб проявити [concept_interest|l]\nПроявлена кількість: [GetPlayer.GetNumDeclaredInterests|v]\nМаксимальна кількість: #tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#!"
  MAP_INTERACTION_DECLARE_INTEREST_PERFORMED: "[concept_interest] був проявлений"
- MAP_INTERACTION_MERGE_MARKET_MARKET_DESC: "Виберіть #V ринок#!, щоб прив’язати #V реґіон/ринок#!"
- MAP_INTERACTION_MERGE_MARKET_STATE_DESC: "Виберіть #V реґіон/ринок#!, щоб прив’язати #V [MARKET.GetName|l]#!"
+ MAP_INTERACTION_MERGE_MARKET_MARKET_DESC: "Виберіть #V ринок#!, щоб прив’язати #V землю/ринок#!"
+ MAP_INTERACTION_MERGE_MARKET_STATE_DESC: "Виберіть #V землю/ринок#!, щоб прив’язати #V [MARKET.GetName|l]#!"
  MAP_INTERACTION_DIPLOMATIC_ACTION_DESC: "Виберіть #V державу#!, які відправити пропозицію «[DIPLOMATIC_ACTION_TYPE.GetName|v]»"
  MAP_INTERACTION_DIPLOMATIC_ACTION_PERFORMED: "Дію [DiplomaticActionType.GetName|v] виконано"
  MAP_INTERACTION_DIPLOMATIC_ACTION_TOOLTIP: "[DIPLOMATIC_ACTION.GetProposeName|v] з [Concept('concept_country','$concept_country_ins$')|l] [TARGET_COUNTRY.GetName][AddTextIf(GreaterThan_CFixedPoint('(CFixedPoint)$MAINTENANCE_COST$','(CFixedPoint)0'),Concatenate('\nВартість обслуговування: @inf!$MAINTENANCE_COST|v0$ ',concept_influence))]"
@@ -2617,7 +2617,7 @@
  TRAVEL_TIME_DESC: "Подорож займе #tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|v$#!#! "
  TRAVEL_HOME_HQ_DESC: "Дорога до [Concept('concept_hq', 'домашнього голпровіду')] займе #tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|v$#!#!"
 
- DECREE_TOOLTIP: "#header Видати [Concept('concept_decree','$concept_decree_acc$')|l] «$NAME$»[AddTextIf(State.IsValid,' у реґіоні ')][AddTextIf(State.IsValid, State.GetName)]#![ConcatIfNeitherEmpty('\n','$ERRORS$')]\n$EFFECT$\n\n#title Вартість:#! #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] #variable $COST|0$#!#!#! $AUTHORITY$\n\n#lore $DESC$#!" #
+ DECREE_TOOLTIP: "#header Видати [Concept('concept_decree','$concept_decree_acc$')|l] «$NAME$»[AddTextIf(State.IsValid,' у землі ')][AddTextIf(State.IsValid, State.GetName)]#![ConcatIfNeitherEmpty('\n','$ERRORS$')]\n$EFFECT$\n\n#title Вартість:#! #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] #variable $COST|0$#!#!#! $AUTHORITY$\n\n#lore $DESC$#!" #
  DECREE_REMOVE: "#header Скасувати#! [Concept('concept_decree','$concept_decree_acc$')|l] «[Decree.GetName]» у [Concept('concept_state','$concept_state_loc$')|l] [Decree.GetState.GetName]"
  CANNOT_SET_DECREE: "#header #N Неможливо видати [Concept('concept_decree','$concept_decree_acc$')|l] для [Concept('concept_state','$concept_state_gen$')|l] [State.GetName]#!#!"
  DECREE_ALREADY_ACTIVE: "[concept_decree] «[DECREE.GetName]» уже видана для [Concept('concept_state','$concept_state_gen$')|l] [STATE.GetName]"
@@ -2940,7 +2940,7 @@
  CREATE_MARKET: "#BOLD Створити [Concept('concept_market', '$concept_market_acc$')|l] у [Concept('concept_state', '$concept_state_loc$')|l] #V $STATE$#!#!"
  MERGE_MARKET:0 "Link [STATE.GetName] to #V [MARKET.GetName]#!"
  SPLIT_MARKET:0 "Unlink [STATE.GetName] from #V [MARKET.GetName]#!"
- CANNOT_BUILD_BUILDING: "#BOLD #N Неможливо $BUILD_OR_EXPAND|l$ споруду #V [BUILDING_TYPE.GetName|l]#! у реґіоні [STATE.GetName]!#!#!"
+ CANNOT_BUILD_BUILDING: "#BOLD #N Неможливо $BUILD_OR_EXPAND|l$ споруду #V [BUILDING_TYPE.GetName|l]#! у землі [STATE.GetName]!#!#!"
  CANNOT_BUILD_MARKET:0 "#BOLD #N Cannot build #V Market#! here!#!#!"
  CANNOT_MERGE_MARKET:0 "#BOLD #N Cannot link #V Market#! here!#!#!"
  CANNOT_MERGE_MARKET_STATE:0 "#BOLD #N Cannot link to #V [MARKET.GetName]#! market#!#!"
@@ -3032,7 +3032,7 @@
  BUDGET_PANEL_TITLE: "#BOLD Бюджет#!"
  WEEKLY_BALANCE: "Щотижневий балянс: [AccessPlayer.PredictWeeklyBalanceWithEconomyHealthHint]"
  BUDGET_TAB_OVERVIEW: "Огляд"
- STATES: "Реґіони"
+ STATES: "Землі"
  BUDGET_TAB_ASSETS: "Активи"
  POOLS: "Кошти"
 
@@ -3347,12 +3347,12 @@
  CURRENT_INVESTMENT_POOL: "[concept_investment_pool]: #v @money![GetPlayer.GetInvestmentPool|D+]#! ([GetPlayer.GetInvestmentPoolChange|=+D])"
  NEXT_PRIVATE_CONSTRUCTION: "[GetPlayer.GetInvestmentPoolPredictedNextBuildingDesc]"
  NO_NEXT_PRIVATE_CONSTRUCTION: "Немає поточних вкладів у [Concept('concept_private_construction', '$concept_private_constructions_alt_acc$')|l]"
- INVESTMENT_POOL_NEXT_BUILDING_WITH_POP_TYPE: "[POP_TYPE.GetName] вкладає у будівлю [BUILDING_TYPE.GetName|l] у реґіоні [STATE.GetName]\n$STATUS$"
- INVESTMENT_POOL_NEXT_BUILDING: "Вкладання у будівлю [BUILDING_TYPE.GetName|l] у реґіоні [STATE.GetName]\nСтан: $STATUS$"
+ INVESTMENT_POOL_NEXT_BUILDING_WITH_POP_TYPE: "[POP_TYPE.GetName] вкладає у будівлю [BUILDING_TYPE.GetName|l] у землі [STATE.GetName]\n$STATUS$"
+ INVESTMENT_POOL_NEXT_BUILDING: "Вкладання у будівлю [BUILDING_TYPE.GetName|l] у землі [STATE.GetName]\nСтан: $STATUS$"
  INVESTMENT_POOL_NEXT_BUILDING_WAITING_FOR_FUNDING: "#b Очікування на отримання фінансування (#tooltippable #tooltip:$BREAKDOWN_TAG$ $PERCENTAGE|v%0$#!#!)#!"
  INVESTMENT_POOL_NEXT_BUILDING_WAITING_FOR_QUEUE: "#b Очікування, коли інші [Concept('concept_private_construction', '$concept_private_constructions$')|l] будуть зведені#!"
  INVESTMENT_POOL_NEXT_BUILDING_READY: "#p Готове до спорудження#!"
- INVESTMENT_POOL_NEXT_BUILDING_FUNDING_DESC: "#header Фінансування будівлі [BUILDING_TYPE.GetName|l] у реґіоні [STATE.GetName]: $FUNDING|v%$#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
+ INVESTMENT_POOL_NEXT_BUILDING_FUNDING_DESC: "#header Фінансування будівлі [BUILDING_TYPE.GetName|l] у землі [STATE.GetName]: $FUNDING|v%$#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
  INVESTMENT_POOL_NEXT_BUILDING_AVAILABLE_TOTAL_FUNDS: "Те, що назбирано @money!$CURRENT|vD$ у [Concept('concept_investment_pool', '$concept_investment_pool_loc$')|l] з @money!$NEEDED|vD$ потрібних для [Concept('concept_private_construction', '$concept_private_constructions_gen$')|l] у черзі, призводить до того, що є @money!$AVAILABLE|vD$ заощаджених коштів"
  INVESTMENT_POOL_NEXT_BUILDING_AVAILABLE_WEEKLY_FUNDS: "Те, що є @money!$CURRENT|vD$ щотижневих виплат у [Concept('concept_investment_pool', '$concept_investment_pool_acc$')|l] з @money!$NEEDED|vD$ потрібних для [Concept('concept_private_construction', '$concept_private_constructions_gen$')|l] у черзі, дає @money!$AVAILABLE|vD$ доступних щотижневих коштів"
  INVESTMENT_POOL_NEXT_BUILDING_NO_AVAILABLE_FUNDS: "@information!Усі заощаджені та щотижневі кошти [Concept('concept_investment_pool', '$concept_investment_pool_gen$')|l] наразі розподіляються на інші проєкти"
@@ -3835,7 +3835,7 @@
 
  COMMANDER_ORDER_REDUNDANT: "#V Вже призначений на цей наказ#!"
  COMMANDER_ORDER_NAVAL_NO_COASTAL: "#N [STATE.GetName] не має жодної прибережної провінції#!"
- COMMANDER_ORDER_NAVAL_COAST_FULLY_IMPASSABLE: "#N $ENEMY_ADJ$е узбережжя реґіону $STATE_NAME$ не має прохідних провінцій#!"
+ COMMANDER_ORDER_NAVAL_COAST_FULLY_IMPASSABLE: "#N $ENEMY_ADJ$е узбережжя землі $STATE_NAME$ не має прохідних провінцій#!"
  COMMANDER_ORDER_NAVAL_NOT_ENEMY: "#N Не у війні з державою [COUNTRY.GetName]#!"
  COMMANDER_ORDER_NAVAL_REPAIRING: "#N $ADMIRAL_REPAIRING_DATE$#!"
  COMMANDER_ORDER_NAVAL_NEED_GENERAL:3 "#N [Country.GetName] has no [Concept('concept_general', '$concept_generals$')] in a coastal [concept_hq] with troops to perform a Naval Invasion#!"
@@ -3869,7 +3869,7 @@
  CONSUMED_BY: "Споживачі"
  RESOURCE_POTENTIALS: "[Concept('concept_resource_potential','$concept_resource_potentials$')]"
  INFORMATION: "Відомості"
- STATE_MODIFIERS: "Змінювачі в реґіоні:\n[State.GetModifier.GetDesc]"
+ STATE_MODIFIERS: "Змінювачі в землі:\n[State.GetModifier.GetDesc]"
 
  SP_CAPACITY_CONCEPT: "#concept Військо спробує досягнути обмеження сили тим, що братиме гроші з війського бюджету, купуватиме військові товари та використовуватиме їх для тренування солдат в куренях чи морських базах.#!"
 
@@ -4657,7 +4657,7 @@
  INCORPORATE_STATE_CANNOT_INCORPORATE_TREATY_PORT: "Не можна включити [Concept('concept_treaty_port','$concept_treaty_port_acc$')|l]"
  INCORPORATE_STATE_INCORPORATION_DISALLOWED: "Не можна включити через:#!\n$TAB$[State.GetModifier.GetDescFor('state_disallow_incorporation')]"
  INCORPORATE_STATE_NOT_ENOUGH_BUREAUCRACY: "@warning! Вартість [Concept('concept_incorporated_state', '$concept_incorporating$')|l] [Concept('concept_state', '$concept_state_gen$')|l] $STATE_NAME$ призведе до зміни на @bur!$PROJECTED_TOTAL|v+1$"
- incorporate_state: "Включити реґіон"
+ incorporate_state: "Включити землю"
  incorporate_state_tooltip: "#header $incorporate_state$#!\n$TOOLTIP_DELIMITER$\n[concept_incorporated_state_desc]"
  
  REVOLUTIONARY_PARTY_CANNOT_JOIN_GOVERMENT:0 "One or more Interest Groups in the [Party.GetName] supports an ongoing Revolution"
@@ -4685,10 +4685,10 @@
 
  COLONIZATION_PAUSED: "[Concept('concept_colony','$concept_colonization$')] на павзі"
 
- CANNOT_ESTABLISH_COLONY_HOVER: "#header #N Неможливо заснувати осаду в реґіоні [STATE_REGION.GetName]#!#!"
+ CANNOT_ESTABLISH_COLONY_HOVER: "#header #N Неможливо заснувати осаду в землі [STATE_REGION.GetName]#!#!"
  ESTABLISH_COLONY_HOVER: "#header Заснувати осаду у [Concept('concept_state','$concept_state_loc$')|l] [STATE_REGION.GetName]#!"
  REMOVE_COLONY_TOOLTIP: "#header Прибрати осаду з [Concept('concept_state','$concept_state_gen$')|l] [StateRegion.GetName]"
- REMOVE_COLONY_CONFIRM: "#header Ви справді хочете скасувати [Concept('concept_colony', 'Осадництво')|l] [Concept('concept_state','$concept_state_gen$')|l] [STATE.GetName]?#!\n\nВи втратите весь поступ у цьому реґіоні, враховуючи вже [Concept('concept_colony', '$concept_colonized$і')|l] провінції.\n[STATE.GetColonyProvinceProgressDesc]\nПоступу до отримання додаткової провінції: #tooltippable #tooltip:[STATE.GetTooltipTag],STATE_COLONY_TOOLTIP [STATE.GetColonyProgress|%]#!#!"
+ REMOVE_COLONY_CONFIRM: "#header Ви справді хочете скасувати [Concept('concept_colony', 'Осадництво')|l] [Concept('concept_state','$concept_state_gen$')|l] [STATE.GetName]?#!\n\nВи втратите весь поступ у цій землі, враховуючи вже [Concept('concept_colony', '$concept_colonized$і')|l] провінції.\n[STATE.GetColonyProvinceProgressDesc]\nПоступу до отримання додаткової провінції: #tooltippable #tooltip:[STATE.GetTooltipTag],STATE_COLONY_TOOLTIP [STATE.GetColonyProgress|%]#!#!"
  STATE_PROVINCES_COLONIZED: "#variable $CURRENT$#!/#variable $TOTAL$#! провінцій вже [Concept('concept_colony', '$concept_colonized$і')|l]"
 
  HAS_NO_INTEREST_MARKER:0 "#N This region has no [concept_interest]#!"
@@ -4711,7 +4711,7 @@
 
  ACTOR_COUNTRY_NOT_VALID: "Держава-учасник не доступна."
  TARGET_COUNTRY_NOT_VALID: "#N Цільова держава не доступна.#!"
- TARGET_STATE_NOT_VALID: "#N Цільовий реґіон не доступний.#!"
+ TARGET_STATE_NOT_VALID: "#N Цільова земля не доступна.#!"
  TARGET_STRATEGIC_REGION_NOT_VALID: "#N Недоступний [concept_strategic_region|l].#!"
 
  NO_ACTIVE_RESEARCH: "Немає поточних досліджень"
@@ -4816,7 +4816,7 @@
  BATTLE_SIZE_BASE_NAVAL_INVASION_GENERALS_BATTALIONS: "$concept_battalions$, які вийшли на сушу"
  BATTLE_SIZE_BASE_NAVAL_INVASION_GARRISONED_BATTALIONS: "$concept_battalions$ у залозі"
  BATTLE_SIZE_NUMERIC_ADVANTAGE: "Чисельна перевага на [Concept('concept_front', '$concept_front_loc$')|l]"
- BATTLE_SIZE_TERRAIN_INFRASTRUCTRE: "Обмеження [Concept('concept_terrain', '$concept_terrain_gen$')|l] та [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l]\n$TAB$[concept_combat_width] реґіону [SCOPE.sProvince('province').GetTerrainName]: [SCOPE.sProvince('province').GetTerrainCombatWidth|v1]\n$TAB$Інфрастурктура реґіону [SCOPE.sProvince('province').GetState.GetName]: [SCOPE.sProvince('province').GetState.GetInfrastructure|v0]"
+ BATTLE_SIZE_TERRAIN_INFRASTRUCTRE: "Обмеження [Concept('concept_terrain', '$concept_terrain_gen$')|l] та [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l]\n$TAB$[concept_combat_width] землі [SCOPE.sProvince('province').GetTerrainName]: [SCOPE.sProvince('province').GetTerrainCombatWidth|v1]\n$TAB$Інфрастурктура землі [SCOPE.sProvince('province').GetState.GetName]: [SCOPE.sProvince('province').GetState.GetInfrastructure|v0]"
  BATTLE_SIZE_MAX_AMOUNT_REACHED: "Досягнута максимальна кількость куренів"
  BATTLE_SIZE_MIN_AMOUNT_REACHED: "Мінімум, необхідний для просування"
  BATTLE_SIZE_FRONT_SIZE: "Через довжину фронту"
@@ -4885,7 +4885,7 @@
  COMBAT_UNIT_NOT_UNDER_DIRECT_COMMAND:0 "Inactive (in battle but not under direct command)"
  COMBAT_UNIT_INACTIVE_MODIFIER_GARRISONED:0 "Inactive (in [Concept('concept_garrison','$concept_garrisons$')])"
 
- BATTLE_IN: "Битва у реґіоні $STATE_REGION_NAME$"
+ BATTLE_IN: "Битва у землі $STATE_REGION_NAME$"
  BATTLE_NEAR: "Битва біля міста $CITY_NAME$"
  BATTLE_FOR: "Битва за місто $CITY_NAME$"
  MILITARY_LENS_CHARACTER_TOOLTIP: "#HEADER $NAME$#!"
@@ -4942,8 +4942,8 @@
  MARKET_ACCESS_DESC_CONNECTED_OVERSEAS: "З‘єднаний з [Concept('concept_market', '$concept_market_ins$')|l] ([State.GetMarket.GetName]) через порти [ShippingLane.GetBeginState.GetName] та [ShippingLane.GetEndState.GetName] при повному основному [Concept('concept_market_access', '$concept_market_access_loc$')|l] - #P $MARKET_ACCESS|%0v$#!"
  MARKET_ACCESS_DESC_CONNECTED_OVERSEAS_INEFFICIENT: "З‘єднаний з ('concept_market', '$concept_market_ins$')|l] ([State.GetMarket.GetName]) via [ShippingLane.GetCountry.GetAdjectiveNoFormatting] [concept_shipping_lane] through the ports of [ShippingLane.GetBeginState.GetName] and [ShippingLane.GetEndState.GetName], with [concept_market_access] reduced to #N $MARKET_ACCESS|%0v$#! due to low [concept_shipping_lane_effectiveness]"
  MARKET_ACCESS_DESC_DISCONNECTED_OVERSEAS: "Неможливо з‘єднатися з [State.GetMarket.GetName|l] наземним тором або через приплави"
- MARKET_ACCESS_DESC_NO_EXIT_PORT: "Неможливо з‘єднатися з [State.GetMarket.GetName|l] наземним тором, а реґіон [State.GetName] не має приплавів"
- MARKET_ACCESS_DESC_NO_ENTRY_PORT: "Неможливо з‘єднатися з [State.GetMarket.GetName|l] наземним тором, а приплав у реґіоні [State.GetName] не має іншого приплаву для [State.GetMarket.GetName|l]"
+ MARKET_ACCESS_DESC_NO_EXIT_PORT: "Неможливо з‘єднатися з [State.GetMarket.GetName|l] наземним тором, а землю [State.GetName] не має приплавів"
+ MARKET_ACCESS_DESC_NO_ENTRY_PORT: "Неможливо з‘єднатися з [State.GetMarket.GetName|l] наземним тором, а приплав у землі [State.GetName] не має іншого приплаву для [State.GetMarket.GetName|l]"
 
  MARKET_PANEL_DETAILS_TAB_LABEL: "Товари"
  MARKET_PANEL_DETAILS_TAB_LABEL_BOLD: "#bold $MARKET_PANEL_DETAILS_TAB_LABEL$#!"
@@ -5010,7 +5010,7 @@
  NO_ACTIVE_DIPLOMACY: "Жодної дійової дипломатії"
  DIPLOMATIC_PLAYS_TARGETING_COUNTRY: "[Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] з [Concept('concept_country', '$concept_country_ins$')|l] [Country.GetName]"
  UNAVAILABLE_DIPLOMATIC_PLAYS_TARGETING_COUNTRY: "Недоступні ігри націлені на державу [Country.GetNameNoFormatting]"
- UNAVAILABLE_DIPLOMATIC_PLAYS_TARGETING_STATE: "Недоступні ігри націлені на реґіони держави [Country.GetNameNoFormatting]"
+ UNAVAILABLE_DIPLOMATIC_PLAYS_TARGETING_STATE: "Недоступні ігри націлені на землі держави [Country.GetNameNoFormatting]"
  NO_DIPLOMATIC_PLAYS_TARGETING_COUNTRY: "[Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] недоступні"
  DIPLOMATIC_STATUS_HEADER: "#title Дипломатія#!"
  TRUCES: "Перемир‘я"
@@ -5528,8 +5528,8 @@
  outliner_title_markets: "#outliner_header Ринки#!"
  outliner_title_isolated_states: "#outliner_header Ізольовані реґіони#!"
  outliner_title_colonies: "#outliner_header Осади#!"
- outliner_title_states: "#outliner_header Реґіони#!"
- outliner_title_unincorporated_states: "#outliner_header Невключений реґіон#!"
+ outliner_title_states: "#outliner_header Землі#!"
+ outliner_title_unincorporated_states: "#outliner_header Невключені землі#!"
  outliner_title_players: "#outliner_header Гравці#!"
 
  outliner_title_market: "#outliner_header [OutlinerEntry.AccessScope.AccessMarket.GetNameNoFormatting]#!"
@@ -6016,13 +6016,13 @@
  DEFAULT_MAP_LIST_PANEL_TITLE_HEADER_TOOLTIP: "#header Назва#!\n$TOOLTIP_DELIMITER$\n#concept Назва цього параметра.#!"
 
  BUILDING_MAP_LIST_PANEL_AVAILABLE_LABOR_HEADER: "Сила"
- BUILDING_MAP_LIST_PANEL_AVAILABLE_LABOR_HEADER_TOOLTIP: "#header Доступна робоча сила#!\n$TOOLTIP_DELIMITER$\nСкільки людей є [Concept('concept_unemployed', '$concept_unemployed_adj$ими')|l] або працюють у [Concept('concept_subsistence_building', '$concept_subsistence_buildings_loc$')|l] у цьому реґіоні"
+ BUILDING_MAP_LIST_PANEL_AVAILABLE_LABOR_HEADER_TOOLTIP: "#header Доступна робоча сила#!\n$TOOLTIP_DELIMITER$\nСкільки людей є [Concept('concept_unemployed', '$concept_unemployed_adj$ими')|l] або працюють у [Concept('concept_subsistence_building', '$concept_subsistence_buildings_loc$')|l] у цій землі"
  BUILDING_MAP_LIST_PANEL_INFRASTRUCTURE_HEADER: "Інф."
- BUILDING_MAP_LIST_PANEL_INFRASTRUCTURE_HEADER_TOOLTIP: "#header Балянс інфраструктури#!\n$TOOLTIP_DELIMITER$\nКількість доступної [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l] у реґіоні"
+ BUILDING_MAP_LIST_PANEL_INFRASTRUCTURE_HEADER_TOOLTIP: "#header Балянс інфраструктури#!\n$TOOLTIP_DELIMITER$\nКількість доступної [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l] у землі"
 
  BUILDING_MAP_LIST_PANEL_STATUS_HEADER: "Стан"
  BUILDING_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP: "#header Стан#!\n$TOOLTIP_DELIMITER$\n#concept Можливість розширення/спорудження цієї [Concept('concept_building', '$concept_building_gen$')|l] у цьому [Concept('concept_state', '$concept_state_loc$')|l].\n\n@map_list_plus!: Ви можете вибрати це.\n@map_list_plus_and_checkmark!: Ви можете вибрати це і Ви це вже тут робите.\n@map_list_checkmark!: Ви вже робите це тут і можете скасувати вибір.\n@map_list_lock!: Ви вже робите це тут, але НЕ можете скасувати вибір.\n@map_list_cross!: Ви НЕ можете вибрати це.\n@map_list_cross_and_checkmark!: Ви вже робите це тут, але НЕ можете вибрати це.#!"
- BUILDING_MAP_LIST_PANEL_STATE_HEADER: "Реґіон"
+ BUILDING_MAP_LIST_PANEL_STATE_HEADER: "Земля"
  BUILDING_MAP_LIST_PANEL_STATE_HEADER_TOOLTIP: "#header [concept_state]#!\n$TOOLTIP_DELIMITER$\n#concept Це [concept_state|l], де [concept_building|l] буде збудована.#!"
  BUILDING_MAP_LIST_PANEL_EFFICIENCY_HEADER: "Ефект."
  BUILDING_MAP_LIST_PANEL_EFFICIENCY_HEADER_TOOLTIP:0 "#header @construction![Nbsp][concept_construction] Efficiency#!\n$TOOLTIP_DELIMITER$\n#concept The @construction! $concept_construction$ Efficiency where the [concept_building] will be built. A positive value reduces the amount of @construction![Nbsp][concept_construction] required per week and vice versa.#!"
@@ -6046,8 +6046,8 @@
  COLONY_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP: "#header Стан#!\n$TOOLTIP_DELIMITER$\n#concept Можливість осадити кожен [Concept('concept_state','$concept_state_acc$')|l].\n\n@map_list_plus!: Ви можете вибрати це.\n@map_list_plus_and_checkmark!: Ви можете вибрати це, й це вже тут робите.\n@map_list_checkmark!: Ви вже робите це тут і можете скасувати вибір.\n@map_list_lock!: Ви вже робите це тут, але НЕ можете скасувати вибір.\n@map_list_cross!: Ви НЕ можете вибрати це.\n@map_list_cross_and_checkmark!: Ви вже робите це тут, але НЕ можете вибрати це.#!"
  COLONY_MAP_LIST_PANEL_REGION_HEADER: "Стр. реґіон"
  COLONY_MAP_LIST_PANEL_REGION_HEADER_TOOLTIP: "#header [concept_strategic_region]#!\n$TOOLTIP_DELIMITER$\n#concept Цільовий стратегічний реґіон.#!"
- COLONY_MAP_LIST_PANEL_STATE_HEADER: "Реґіон"
- COLONY_MAP_LIST_PANEL_STATE_HEADER_TOOLTIP: "#header [concept_state]#!\n$TOOLTIP_DELIMITER$\n#concept Цільовий реґіон.#!"
+ COLONY_MAP_LIST_PANEL_STATE_HEADER: "Земля"
+ COLONY_MAP_LIST_PANEL_STATE_HEADER_TOOLTIP: "#header [concept_state]#!\n$TOOLTIP_DELIMITER$\n#concept Цільова земля.#!"
 
  DIPLO_ACTION_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP: "#header Стан#!\n$TOOLTIP_DELIMITER$\n#concept Можливість цієї [Concept('concept_diplomatic_action','$concept_diplomatic_action_gen$')|l] для кожної [Concept('concept_country','$concept_country_gen$')|l].\n\n@map_list_plus!: Ви можете вибрати це.\n@map_list_plus_and_checkmark!: Ви можете вибрати це, й це вже тут робите.\n@map_list_checkmark!: Ви вже робите це тут і можете скасувати вибір.\n@map_list_lock!: Ви вже робите це тут, але НЕ можете скасувати вибір.\n@map_list_cross!: Ви НЕ можете вибрати це.\n@map_list_cross_and_checkmark!: Ви вже робите це тут, але НЕ можете вибрати це.#!"
  DIPLO_ACTION_LIST_PANEL_STATUS_HEADER: "Держава"
@@ -6056,7 +6056,7 @@
  DIPLO_ACTION_LIST_PANEL_STATUS_NOT_POSSIBLE: "Недоступно"
 
  DECREE_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP: "#header Стан#!\n$TOOLTIP_DELIMITER$\n#concept Можливість цієї [Concept('concept_decree','$concept_decree_gen$')|l] для кожного [Concept('concept_state','$concept_state_gen$')|l].\n\n@map_list_plus!: Ви можете вибрати це.\n@map_list_plus_and_checkmark!: Ви можете вибрати це, й це вже тут робите.\n@map_list_checkmark!: Ви вже робите це тут і можете скасувати вибір.\n@map_list_lock!: Ви вже робите це тут, але НЕ можете скасувати вибір.\n@map_list_cross!: Ви НЕ можете вибрати це.\n@map_list_cross_and_checkmark!: Ви вже робите це тут, але НЕ можете вибрати це.#!"
- DECREE_LIST_PANEL_STATE_HEADER: "Реґіон"
+ DECREE_LIST_PANEL_STATE_HEADER: "Земля"
  DECREE_LIST_PANEL_STATE_HEADER_TOOLTIP: "#header [concept_state]#!"
  DECREE_LIST_PANEL_COST_HEADER: "Варт."
  DECREE_LIST_PANEL_COST_HEADER_TOOLTIP: "#header Вартість підтримки цієї постанови#!"
@@ -6124,8 +6124,8 @@
  TRADE_AGREEMENT: "Торгова угода"
 
  ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP: "#header Стан#!\n$TOOLTIP_DELIMITER$\n#concept Можливість ожвавлення [Concept('concept_conscription_center', '$concept_conscription_center_gen$')|l] у кожному [Concept('concept_state', '$concept_state_loc$')|l].\n\n@map_list_plus!: Ви можете вибрати це.\n@map_list_plus_and_checkmark!: Ви можете вибрати це, й це вже тут робите.\n@map_list_checkmark!: Ви вже робите це тут і можете скасувати вибір.\n@map_list_lock!: Ви вже робите це тут, але НЕ можете скасувати вибір.\n@map_list_cross!: Ви НЕ можете вибрати це.\n@map_list_cross_and_checkmark!: Ви вже робите це тут, але НЕ можете вибрати це.#!"
- ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_STATE_HEADER: "Реґіон"
- ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_STATE_HEADER_TOOLTIP: "#header Реґіон#!\n$TOOLTIP_DELIMITER$\n[concept_state], де [Concept('concept_conscription_center', '$concept_conscription_center$')|l] буде ожвавлено."
+ ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_STATE_HEADER: "Земля"
+ ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_STATE_HEADER_TOOLTIP: "#header Земля#!\n$TOOLTIP_DELIMITER$\n[concept_state], де [Concept('concept_conscription_center', '$concept_conscription_center$')|l] буде ожвавлено."
  ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_SIZE_TOOLTIP: "#header Розмір#!\n$TOOLTIP_DELIMITER$\nРозмір [Concept('concept_conscription_center', '$concept_conscription_center_gen$')|l]."
  ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_UNITS: "Підрозділи"
  ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_UNITS_TOOLTIP: "#header Підрозділи#!\n$TOOLTIP_DELIMITER$\nКількість підрозділів, які будуть призвані [Concept('concept_conscription_center', '$concept_conscription_center_ins$')|l]."
@@ -6467,10 +6467,10 @@
 
  DESIGNATE_STRATEGIC_OBJECTIVE_RIGHT_CLICK_ADD: "Визначити як [Concept('concept_strategic_objective', '$concept_strategic_objective_acc$')|l]"
  DESIGNATE_STRATEGIC_OBJECTIVE_RIGHT_CLICK_REMOVE: "Відмовитися від цієї [Concept('concept_strategic_objective', '$concept_strategic_objective_gen$')|l]"
- DESIGNATE_STRATEGIC_OBJECTIVE_RIGHT_CLICK_ADD_TOOLTIP: "Визначити реґіон [State.GetName] як [Concept('concept_strategic_objective', '$concept_strategic_objective_acc$')|l] у [State.GetTheater(State.GetOwner).GetName|v|l]"
- DESIGNATE_STRATEGIC_OBJECTIVE_RIGHT_CLICK_REMOVE_TOOLTIP: "Прибрати реґіон [State.GetName] з [Concept('concept_strategic_objective', '$concept_strategic_objectives_gen$')|l]"
- DESIGNATE_STRATEGIC_OBJECTIVE_TOOLTIP_ADD: "Визначити реґіон $STATE$ як [Concept('concept_strategic_objective', '$concept_strategic_objective_acc$')|l]"
- DESIGNATE_STRATEGIC_OBJECTIVE_TOOLTIP_REMOVE: "Прибрати реґіон $STATE$ з [Concept('concept_strategic_objective', '$concept_strategic_objectives_gen$')|l]"
+ DESIGNATE_STRATEGIC_OBJECTIVE_RIGHT_CLICK_ADD_TOOLTIP: "Визначити землю [State.GetName] як [Concept('concept_strategic_objective', '$concept_strategic_objective_acc$')|l] у [State.GetTheater(State.GetOwner).GetName|v|l]"
+ DESIGNATE_STRATEGIC_OBJECTIVE_RIGHT_CLICK_REMOVE_TOOLTIP: "Прибрати землю [State.GetName] з [Concept('concept_strategic_objective', '$concept_strategic_objectives_gen$')|l]"
+ DESIGNATE_STRATEGIC_OBJECTIVE_TOOLTIP_ADD: "Визначити землю $STATE$ як [Concept('concept_strategic_objective', '$concept_strategic_objective_acc$')|l]"
+ DESIGNATE_STRATEGIC_OBJECTIVE_TOOLTIP_REMOVE: "Прибрати землю $STATE$ з [Concept('concept_strategic_objective', '$concept_strategic_objectives_gen$')|l]"
 
  activate_conscription_centers_lens_option: "Ожвавити осередки призви"
  activate_conscription_centers_lens_option_tooltip: "#header Ожвавити осередки призви#!\n$TOOLTIP_DELIMITER$\nВиберіть [Concept('concept_state', '$concept_states_acc$')|l], де ви бажаєте ожвавити [Concept('concept_conscription_center', '$concept_conscription_centers_acc$')|l]"
@@ -6691,15 +6691,15 @@
  DECISIONS: "Рішення"
  JOURNAL: "Часопис"
 
- TOOLTIP_SLAVE_STATE: "#header Рабовласницький реґіон#!\nБудівлі у [Concept('concept_state', '$concept_state_loc$')|l] [State.GetName] або використовують $slaves_only_icon$ Рабів, або мають можливість їх використання."
- SLAVE_STATE: "Рабовласницький реґіон"
+ TOOLTIP_SLAVE_STATE: "#header Рабовласницька земля#!\nБудівлі у [Concept('concept_state', '$concept_state_loc$')|l] [State.GetName] або використовують $slaves_only_icon$ Рабів, або мають можливість їх використання."
+ SLAVE_STATE: "Рабовласницька земля"
  SLAVE_IMPORT: "Ввіз рабів"
  SLAVE_EXPORT: "Вивіз рабів"
- SLAVE_IMPORT_MARKER_DESC: "Цей реґіон наразі ввозить рабів з [Concept('concept_state', '$concept_state_gen$')|l] [STATE.GetName]."
- SLAVE_EXPORT_MARKER_DESC: "Цей реґіон наразі вивозить рабів у такі реґіони: "
+ SLAVE_IMPORT_MARKER_DESC: "Ця земля наразі ввозить рабів з [Concept('concept_state', '$concept_state_gen$')|l] [STATE.GetName]."
+ SLAVE_EXPORT_MARKER_DESC: "Ця земля наразі вивозить рабів у такі землі: "
  SLAVE_EXPORT_MARKER_DESC_ITEM: "[STATE.GetName]"
- TOOLTIP_STATE_SLAVE_IMPORT_STATES: "Загальна кількість рабів, яку [STATE.GetName] ввіз з реґіонів $STATES_LIST$ за останній тиждень: #variable $AMOUNT|K+$#!"
- TOOLTIP_STATE_SLAVE_EXPORT_STATES: "Загальна кількість рабів, яку [STATE.GetName] вивіз до реґіонів $STATES_LIST$ за останній тиждень: #variable $AMOUNT|K+$#!"
+ TOOLTIP_STATE_SLAVE_IMPORT_STATES: "Загальна кількість рабів, яку [STATE.GetName] ввезла з земель $STATES_LIST$ за останній тиждень: #variable $AMOUNT|K+$#!"
+ TOOLTIP_STATE_SLAVE_EXPORT_STATES: "Загальна кількість рабів, яку [STATE.GetName] вивезла до земель $STATES_LIST$ за останній тиждень: #variable $AMOUNT|K+$#!"
 
  NICOLAS_TEST:0 "TESTING"
  NO_UNPRESSED_WAR_GOALS:0 "No Unpressed War Goals"
@@ -7011,8 +7011,8 @@
  GDP_PER_CAPITA_LEADERBOARD_HEADER: "#header ВВП на душу населення#!"
  SOL_LEADERBOARD_HEADER: "#header Рівень життя#!"
  POPULATION_LEADERBOARD_HEADER: "#header Населення#!"
- INCORPORATED_LITERACY_LEADERBOARD_HEADER: "#header Грамотність у включених реґіонах#!"
- TOTAL_LITERACY_LEADERBOARD_HEADER: "#header Грамотність у всіх реґіонах#!"
+ INCORPORATED_LITERACY_LEADERBOARD_HEADER: "#header Грамотність у включених земелях#!"
+ TOTAL_LITERACY_LEADERBOARD_HEADER: "#header Грамотність у всіх земелях#!"
  BATTALIONS_LEADERBOARD_HEADER: "#header Батальйони#!"
  FLOTTILAS_LEADERBOARD_HEADER: "#header Флотилії#!"
  GDP_LEADERBOARD_ITEM: "\n$RANK$. @money!$VAL|vD$ - $COUNTRY$"

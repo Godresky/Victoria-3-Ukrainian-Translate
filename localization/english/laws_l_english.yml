@@ -229,7 +229,7 @@
   
   # Voting System group
  law_first_past_the_post: "Система більшости"
- law_first_past_the_post_desc: "Також відома як «Переможець отримує все», ця система обирає єдиного кандидата, який отримує найбільшу кількість місць на реґіональних виборах. Він має тенденцію створювати однопартійні уряди з сильними мандатами, але є вразливим до фальсифікації."
+ law_first_past_the_post_desc: "Також відома як «Переможець отримує все», ця система обирає єдиного кандидата, який отримує найбільшу кількість місць на місцевих виборах. Він має тенденцію створювати однопартійні уряди з сильними мандатами, але є вразливим до фальсифікації."
  law_proportional_representation: "Пропорційна виборча система"
  law_proportional_representation_desc: "Ця система розподіляє місця в парламенті пропорційно кількості поданих голосів. Він має тенденцію до створення багатопартійних коаліційних урядів, де компроміс є ключовим для досягнення будь-яких результатів."
   
@@ -429,7 +429,7 @@
  law_no_colonial_affairs: "Без осадних справ"
  law_no_colonial_affairs_desc: "Держава не бере участі в жодному формальному типі осадництва та не може створювати осади."
  law_colonial_resettlement: "Переселення до осад"
- law_colonial_resettlement_desc: "Осади засновуються для забезпечення землею поселенців з невключених реґіонів держави."
+ law_colonial_resettlement_desc: "Осади засновуються для забезпечення землею поселенців з невключених земель держави."
  law_colonial_exploitation: "Визиск осад"
  law_colonial_exploitation_desc: "Осади засновуються, щоб використовувати територію для отримання природних ресурсів і дешевої робочої сили."
   
@@ -458,7 +458,7 @@
  law_closed_borders_desc: "Ні внутрішня, ні зовнішня міграція не допускається."
 
  liberate_slaves_tt: "Всі [GetPopType('slaves').GetName|l] отримають свободу"
- enslave_discriminated_farm_workers_tt: "Усі [Concept('concept_discrimination','$concept_discriminated_adj$ені')|l] $laborers$, що працюють на хуторах та полищах у колишніх рабовласницьких реґіонах будуть [Concept('concept_slavery', '$concept_enslaved_adj$і')|l]."
+ enslave_discriminated_farm_workers_tt: "Усі [Concept('concept_discrimination','$concept_discriminated_adj$ені')|l] $laborers$, що працюють на хуторах та полищах у колишніх рабовласницьких землях будуть [Concept('concept_slavery', '$concept_enslaved_adj$і')|l]."
 
  enact_law_radical_leftist_government_warning_desc: "@warning! Ухвалення цього [Concept('concept_law', '$concept_law_gen$')|l] може призвести до того, що [Concept('concept_country', '$concept_countries$')|l], які не мають подібних принципів управління, стануть агресивно налаштованими проти нас."
  enact_law_radical_leftist_economy_warning_desc: "@warning! Ухвалення цього [Concept('concept_law', '$concept_law_gen$')|l] може призвести до того, що [Concept('concept_country', '$concept_countries$')|l], які не мають подібних економічних моделей, стануть агресивно налаштованими проти нас."

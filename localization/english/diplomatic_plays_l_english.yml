@@ -300,21 +300,21 @@
  dp_leadership_scandinavia_desc:1 "Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_leadership_scandinavia$\n$TOOLTIP_DELIMITER$\n$dp_leadership_scandinavia_tooltip_desc$"
  dp_leadership_scandinavia_tooltip_desc:0 "Sets the initiating [concept_war_goal] to kick out the trageted [concept_country] as a [concept_unification_candidate] of the Scandinavian [Concept('concept_unification', '$concept_major_unification$')]."
  
- war_goal_conquer_state_type_name: "Завоювання реґіону"
+ war_goal_conquer_state_type_name: "Завоювання землі"
  war_goal_conquer_state_type_desc: "Завоювати [Concept('concept_state','$concept_state_gen$')|l] іншої [Concept('concept_country','$concept_country_gen$')|l]."
- war_goal_conquer_state: "Завоювання реґіону [WAR_GOAL.GetTargetState.GetName]"
+ war_goal_conquer_state: "Завоювання землі [WAR_GOAL.GetTargetState.GetName]"
  war_goal_conquer_state_desc:1 "[WAR_GOAL.GetHolder.GetName] conquers the [concept_state] of [WAR_GOAL.GetTargetState.GetName] from [WAR_GOAL.GetTarget.GetName]"
  war_goal_conquer_state_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to cede them [WAR_GOAL.GetTargetState.GetName]."
  
- war_goal_return_state_type_name: "Повернення реґіону"
+ war_goal_return_state_type_name: "Повернення землі"
  war_goal_return_state_type_desc:1 "Force them to Return a [concept_state] that is our rightful Claim."
- war_goal_return_state: "Повернення реґіону [WAR_GOAL.GetTargetState.GetName]"
+ war_goal_return_state: "Повернення землі [WAR_GOAL.GetTargetState.GetName]"
  war_goal_return_state_desc:1 "[WAR_GOAL.GetTarget.GetName] returns the [concept_state] of [WAR_GOAL.GetTargetState.GetName] to [WAR_GOAL.GetHolder.GetName]"
  war_goal_return_state_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to return them [WAR_GOAL.GetTargetState.GetName]."
  
  war_goal_revoke_claim_type_name: "Відкликання ремства"
  war_goal_revoke_claim_type_desc:1 "Force a country to revoke a claim on a [concept_state_region]."
- war_goal_revoke_claim: "Відкликання ремства на реґіон [WAR_GOAL.GetTargetState.GetStateRegion.GetName]"
+ war_goal_revoke_claim: "Відкликання ремства на землю [WAR_GOAL.GetTargetState.GetStateRegion.GetName]"
  war_goal_revoke_claim_desc:0 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to revoke their Claim on [WAR_GOAL.GetTargetState.GetStateRegion.GetName]."
  war_goal_revoke_claim_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to revoke their claim on [WAR_GOAL.GetTargetState.GetStateRegion.GetName]."
  

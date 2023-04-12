@@ -91,7 +91,7 @@
  expedition_event_decreasing_peril_tt:1 "This will #tooltippable;TOOLTIP:expedition_peril_explanation_tt reduce #!the current peril of the expedition."
  
  expedition_events.670.t: "В джунглях"
- expedition_events.670.d: "Наші оцінки не враховували труднощі, які виникли у [SCOPE.sState('current_expedition_location').GetName]. Ці два місяці, які ми присвятили цьому реґіону Конго, швидше за все, буде подвоєно."
+ expedition_events.670.d: "Наші оцінки не враховували труднощі, які виникли у [SCOPE.sState('current_expedition_location').GetName]. Ці два місяці, які ми присвятили цій землі Конґо, швидше за все, буде подвоєно."
  expedition_events.670.f: "«Ми не могли зрозуміти, що ми вже надто далеко. Я намагався поговорити про це з нашими офіцерами, але вони просто відхиляли це, кажучи, що ми не так глибоко в джунглях. Вони не могли зрозуміти, що ми вже надто далеко — від джунглів, від річки, навіть від цієї бездоганної ночі, зоряного небосхилу й глибокої тиші...\n\nМи мандруємо до кінця часів, до початку часів, тих перших епох, цих останніх епох, тут для нас навряд чи є будь-який знак: вперед, назад, тиша на тлі ревучих джунглів — просто тиша»"
  expedition_events.670.a: "Нам необхідно нормувати їжу."
  expedition_events.670.b: "Ми майже дійшли."
@@ -151,7 +151,7 @@
  modifier_urban_centers: "Ефективність міського центру"
  
  urbanization_events.6.t: "Неефективне сільське господарство"
- urbanization_events.6.d: "[SCOPE.gsInterestGroup('industrialist_ig').GetName] почали скаржитися на існування натуральних господарств у реґіоні [SCOPE.sState('subsistence_state').GetName], заявляючи, що їхню незаперечну неефективність слід негайно розглянути."
+ urbanization_events.6.d: "[SCOPE.gsInterestGroup('industrialist_ig').GetName] почали скаржитися на існування натуральних господарств у землі [SCOPE.sState('subsistence_state').GetName], заявляючи, що їхню незаперечну неефективність слід негайно розглянути."
  urbanization_events.6.f: "«Родючий ґрунт нашого народу страждає, відданий у втомлені та черстві руки, надто виснажений фізичною працею, щоб працювати на гідному рівні. Надто бідний, щоб мати змогу використовувати більш досконалі інструменти, які зробили б їх більш прибутковими... Ця галузь є просто марна інвестиція.»"
  urbanization_events.6.a: "Ми повинні дотримуватися їхніх порад."
  urbanization_events.6.b: "Вони служать нашим цілям."
@@ -324,7 +324,7 @@
  je_famine_reason: "Великий неврожай приніс незмірні страждання нашому народу, який благає наш уряд вжити особливих заходів щодо цієї біди."
  je_famine_goal: "Зачекайте, поки голод закінчиться, або підніміть [concept_sol|l] у вашій державі на 3 бали."
  je_major_famines_success: "Зачекайте, поки голод закінчиться, або підніміть [concept_sol|l] у вашій державі на 3 бали."
- natural_disaster_variable: "Постраждав від стихійного лиха" #реґіон
+ natural_disaster_variable: "Постраждала від стихійного лиха" #земля
  
  natural_disaster_events.7.t:0 "The [SCOPE.sState('volcanic_state').GetName] Eruption"
  natural_disaster_events.7.d:0 "A violent eruption has shaken the state of [SCOPE.sState('volcanic_state').GetName]. Fragments of tephra and volcanic ash have destroyed buildings and crops, taking some of the lives of our people."
@@ -1112,7 +1112,7 @@
  krakatoa.2.d: "Хвилі, вищі за димарі, які є жахливим наслідком виверження вулкану, зруйнували [Concept('concept_state', '$concept_state_acc$')|l] [SCOPE.sState('tsunami_state').GetName]."
  krakatoa.2.f: "«Я ніколи не забуду цю тишу.»"
  krakatoa.2.a: "Немає слів, щоб описати цю трагедію."
- krakatoa_tsunami_tt: "Цунамі додасть спустошення #bold прибережним реґіонам#! по всьому світу, що знаходяться поблизу виверження:\nІндохіна отримає #red 30%#! спустошення\nІндонезія отримає #red 30%#! спустошення\nПівденна Хіна отримає #red 30%#! спустошення\nЯпонія, Океанія, Зандж, Етіопія, Південна Африка та Південна Індія отримає #red 10%#! спустошення"
+ krakatoa_tsunami_tt: "Цунамі додасть спустошення #bold прибережним землям#! по всьому світу, що знаходяться поблизу виверження:\nІндохіна отримає #red 30%#! спустошення\nІндонезія отримає #red 30%#! спустошення\nПівденна Хіна отримає #red 30%#! спустошення\nЯпонія, Океанія, Зандж, Етіопія, Південна Африка та Південна Індія отримає #red 10%#! спустошення"
  
  krakatoa.3.t: "Гарячий попіл"
  krakatoa.3.d: "Зниження температури, спричинене виверженням вулкану, знищило врожай по всій країні, а хутірники [Concept('concept_state', '$concept_state_gen$')|l] [SCOPE.sState('farm_state').GetName] благають про допомогу."
@@ -1125,9 +1125,9 @@
  crop_failure_small_modifier: "Вулканічний неврожай озимини"
  krakatoa_crop_cost_modifier: "Витрати на допомогу через виверження вулкану" #взимку
  krakatoa_crop_failure_tt: "Неврожай також вплине і на решту світу."
- krakatoa_crop_failure_small_modifier_tt: "Наші реґіони, де є хутори або полища, зазнають незначних неврожаїв."
- krakatoa_crop_failure_medium_modifier_tt: "Наші реґіони, де є хутори або полища, зазнають значних неврожаїв."
- krakatoa_crop_failure_big_modifier_tt: "Наші реґіони, де є хутори або полища, зазнають катастрофічних неврожаїв."
+ krakatoa_crop_failure_small_modifier_tt: "Наші землі, де є хутори або полища, зазнають незначних неврожаїв."
+ krakatoa_crop_failure_medium_modifier_tt: "Наші землі, де є хутори або полища, зазнають значних неврожаїв."
+ krakatoa_crop_failure_big_modifier_tt: "Наші землі, де є хутори або полища, зазнають катастрофічних неврожаїв."
  
  krakatoa.4.t: "Струмені диму"
  krakatoa.4.d: "Яскраві червоні заходи сонця спостерігалися протягом кількох місяців по всій країні. Пожежників навіть викликали у [Concept('concept_state', '$concept_state_acc$')|l] [SCOPE.sState('art_state').GetName], щоб загасити видиму пожежу. Багато художників та вчених висловили свою зацікавленість цим явищем."

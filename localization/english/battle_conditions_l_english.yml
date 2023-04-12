@@ -26,7 +26,7 @@
  battle_condition_surprise_maneuver: "Несподіваний маневр"
  battle_condition_surprise_maneuver_desc: "Розумне мислення командира призвело до деяких маневрів, які застали ворога зненацька."
  battle_condition_aggressive_maneuver: "Забірчий маневр"
- battle_condition_aggressive_maneuver_desc: "Схильність командира до жорстоких та рішучих дій дала про себе знати у цій битві."
+ battle_condition_aggressive_maneuver_desc: "Схильність командира до жорстоких та категоричних дій дала про себе знати у цій битві."
  battle_condition_careful_maneuver: "Обережний маневр"
  battle_condition_careful_maneuver_desc: "Повільний та обдуманий підхід командира проявляється в стратегії, прийнятій в цій битві."
  battle_condition_blunder: "Похибка"

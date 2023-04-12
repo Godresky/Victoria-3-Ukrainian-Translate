@@ -226,7 +226,7 @@
  SET_OWNER_OF_PROVINCES:0 "[COUNTRY.GetName] receives $NUM_PROVINCES|v$ provinces in [TARGET_STATE_REGION.GetName]"
  CREATE_STATE:0 "[COUNTRY.GetName] gets a state in [TARGET_STATE_REGION.GetName]"
  SET_STATE_TYPE:0 "[STATE.GetName] becomes a $STATE_TYPE|v$"
- SET_STATE_OWNER: "[TARGET_COUNTRY.GetName] стає власником реґіону [STATE.GetName]"
+ SET_STATE_OWNER: "[TARGET_COUNTRY.GetName] стане власником землі [STATE.GetName]"
  CREATE_BUILDING:0 "Creates a Size $LEVEL|v$ [BuildingType.GetName] in [State.GetName]"
  ADD_BUILDING_LEVEL:0 "Change [BuildingType.GetName] level by $LEVEL|v$ in [State.GetName]"
  START_BUILDING_CONSTRUCTION:0 "Start building [BuildingType.GetName] in [State.GetName]"

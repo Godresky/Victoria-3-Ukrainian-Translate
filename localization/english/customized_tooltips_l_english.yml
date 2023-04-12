@@ -127,7 +127,7 @@
  GOODS_PRESTIGE_SUFFIX: " (#v $VAL|=+$#! [Concept('concept_prestige','$concept_prestige_gen$')|l])"
  NON_TRADEABLE_DESC: "\n\n[Goods.GetName] не можна купити або продати через [Concept('concept_trade_route', '$concept_trade_routes_acc$')|l]"
 
- CONTEXTUAL_GOODS_GENERATION_INFO_STATE: "Ціна у реґіоні [Goods.GetState.GetName]: [Goods.GetStatePriceWithTooltip] (#v [Goods.GetPercentageDeltaAgainstBasePrice(Goods.GetStatePrice)|%1=-]#! порівняно з [Concept('concept_base_price','$concept_base_price_ins$')|l])\n[Goods.GetStateProductionLabel]: [Goods.GetStateProduction|Dv]\n[Goods.GetStateConsumptionLabel]: [Goods.GetStateConsumption|Dv]\n[Goods.GetStateBalanceLabel]: #variable [Goods.GetStateProductionConsumptionDiff|=D+]#!"
+ CONTEXTUAL_GOODS_GENERATION_INFO_STATE: "Ціна у землі [Goods.GetState.GetName]: [Goods.GetStatePriceWithTooltip] (#v [Goods.GetPercentageDeltaAgainstBasePrice(Goods.GetStatePrice)|%1=-]#! порівняно з [Concept('concept_base_price','$concept_base_price_ins$')|l])\n[Goods.GetStateProductionLabel]: [Goods.GetStateProduction|Dv]\n[Goods.GetStateConsumptionLabel]: [Goods.GetStateConsumption|Dv]\n[Goods.GetStateBalanceLabel]: #variable [Goods.GetStateProductionConsumptionDiff|=D+]#!"
  CONTEXTUAL_GOODS_GENERATION_INFO_MARKET: "Ціна ([Goods.GetMarket.GetName]): [Goods.GetMarketPriceWithTooltip] (#v [Goods.GetPercentageDeltaAgainstBasePrice(Goods.GetMarketPrice)|%1=-]#! порівняно з [Concept('concept_base_price','$concept_base_price_ins$')|l])\n[concept_sell_orders] ([Goods.GetMarket.GetName]): [Goods.GetMarketSellOrdersWithTooltip]\n[concept_buy_orders] ([Goods.GetMarket.GetName]): [Goods.GetMarketBuyOrdersWithTooltip]\n[Goods.GetMarketBalanceLabel]: #variable [Goods.GetMarketBuyAndSellOrdersBalance|=D+]#!"
  DATA_GOODS_USAGE_DESC:0 "[Goods.GetBuildingsProducingThisDesc][ConcatIfNeitherEmpty('\n', Goods.GetBuildingsUsingThisDesc)][ConcatIfNeitherEmpty('\n', Goods.GetBuyPackagesContainingThisDesc)]"
  DATA_IDEOLOGY_NAME_TOOLTIP:0 "[Ideology.GetLawStanceDesc]\n\n#lore [Ideology.GetDesc]#!"
@@ -199,10 +199,10 @@
 
  DATA_GOODS_MARKET_CONTEXT_BALANCE_LABEL: "Балянс ([Market.GetName])"
  DATA_GOODS_MARKET_CONTEXT_PRICE_LABEL: "Ціна ([Market.GetName])"
- DATA_GOODS_STATE_CONTEXT_PRODUCTION_LABEL: "Виробництво у реґіоні [State.GetName]"
- DATA_GOODS_STATE_CONTEXT_CONSUMPTION_LABEL: "Споживання у реґіоні [State.GetName]"
- DATA_GOODS_STATE_CONTEXT_BALANCE_LABEL: "Балянс у реґіоні [State.GetName]"
- DATA_GOODS_STATE_CONTEXT_PRICE_LABEL: "Ціна у реґіоні [State.GetName]"
+ DATA_GOODS_STATE_CONTEXT_PRODUCTION_LABEL: "Виробництво у землі [State.GetName]"
+ DATA_GOODS_STATE_CONTEXT_CONSUMPTION_LABEL: "Споживання у землі [State.GetName]"
+ DATA_GOODS_STATE_CONTEXT_BALANCE_LABEL: "Балянс у землі [State.GetName]"
+ DATA_GOODS_STATE_CONTEXT_PRICE_LABEL: "Ціна у землі [State.GetName]"
 
   # BREAKDOWNS
  COUNTRY_RANK_BREAKDOWN:0 "[Country.GetRankTooltip]"

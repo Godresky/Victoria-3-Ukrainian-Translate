@@ -181,13 +181,13 @@
   #Colonies
  building_colony_military: "Військова осада"
  building_colony_military_lens_option: "Встановити війскову осаду"
- building_colony_military_hover: "Встановити #variable війскову осаду#! у реґіоні #variable [STATE.GetName]"
+ building_colony_military_hover: "Встановити #variable війскову осаду#! у землі #variable [STATE.GetName]"
  building_colony_missionary: "Метарська осада"    #від метар(месіонер)
  building_colony_missionary_lens_option: "Встановити метарську осаду"
- building_colony_missionary_hover: "Встановити #variable метарську осаду#! у реґіоні #variable [STATE.GetName]#!"
+ building_colony_missionary_hover: "Встановити #variable метарську осаду#! у землі #variable [STATE.GetName]#!"
  building_colony_trade: "Торгова осада"
  building_colony_trade_lens_option: "Встановити торгову осаду"
- building_colony_trade_hover: "Встановити #variable торгову осаду#! у реґіоні #variable [STATE.GetName]"
+ building_colony_trade_hover: "Встановити #variable торгову осаду#! у землі #variable [STATE.GetName]"
 
   #Barracks
  building_barracks: "Курінь"

@@ -1,8 +1,8 @@
 ﻿l_english:
- JOMINI_GREATER_THAN: "вищий ніж"
- JOMINI_GREATER_EQ_THAN: "вищий або дорівнює"
- JOMINI_LESS_THAN: "менший ніж"
- JOMINI_LESS_EQ_THAN: "менший або дорівнює"
+ JOMINI_GREATER_THAN: "вищ. ніж"
+ JOMINI_GREATER_EQ_THAN: "вищ. або дорівнює"
+ JOMINI_LESS_THAN: "менш. ніж"
+ JOMINI_LESS_EQ_THAN: "менш. або дорівнює"
  JOMINI_EQUAL_TO: "дорівнює"
  JOMINI_NOT_EQ:0 "not exactly"
  TRIGGER_CALC_TRUE_IF_GREATER_THAN:0 "more than"

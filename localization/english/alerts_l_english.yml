@@ -196,7 +196,7 @@
  alert_low_market_access_alert_action: "Панель землі [SCOPE.GetRootScope.GetState.GetName]"
  
  alert_insufficient_tax_capacity_alert_name: "[SCOPE.GetRootScope.GetState.GetName] ([SCOPE.GetRootScope.GetState.CalcTaxCapacityBalance|+0v])"
- alert_insufficient_tax_capacity_alert_desc: "Місцеве керівництво вашого реґіону не має можливости в повній мірі керувати оподаткуванням, яке ви встановили для вашої держави, через це вони стягують з вашого населення менше податків, ніж очікувалося."
+ alert_insufficient_tax_capacity_alert_desc: "Місцеве керівництво вашої землі не має можливости в повній мірі керувати оподаткуванням, яке ви встановили для вашої держави, через це вони стягують з вашого населення менше податків, ніж очікувалося."
  alert_insufficient_tax_capacity_alert_hint: "Ви можете покращити [Concept('concept_tax_capacity','$concept_tax_capacity_acc$')|l] [Concept('concept_state', '$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetName], звівши [Concept('concept_building','$concept_building_acc$')|l] ([GetBuildingType('building_government_administration').GetName]) у [Concept('concept_state', '$concept_state_loc$')|l]. Ви також можете додатково змінювати методи виробництва, щоб збільшити мічність оподаткування, яка створена місцевими будівлями.\n\nУ вашій державі можна змінити закони та досліджувати нові технології, щоб модернізувати свій бюрократичний апарат і збільшити його вроджену податкову мічність."
  alert_insufficient_tax_capacity_alert_action: "Панель землі [SCOPE.GetRootScope.GetState.GetName]"
   
