@@ -740,12 +740,12 @@
  TRIGGER_IS_MASS_MIGRATION_TARGET:3 "[concept_state] [STATE.GetName] is a [concept_migration_target]"
  TRIGGER_IS_MASS_MIGRATION_TARGET_NOT:3 "[concept_state] [STATE.GetName] is #bold not #!a [concept_migration_target]"
  
- TRIGGER_IS_SPLIT_STATE:1 "Is a [concept_split_state]"
- TRIGGER_IS_SPLIT_STATE_NOT:2 "Is #bold not #!a [concept_split_state]"
- TRIGGER_IS_SPLIT_STATE_FIRST:0 "$TRIGGER_IS_SPLIT_STATE_THIRD$"
- TRIGGER_IS_SPLIT_STATE_FIRST_NOT:0 "$TRIGGER_IS_SPLIT_STATE_THIRD_NOT$"
- TRIGGER_IS_SPLIT_STATE_THIRD:0 "[concept_state] [STATE.GetName] is a [concept_split_state]"
- TRIGGER_IS_SPLIT_STATE_THIRD_NOT:0 "[concept_state] [STATE.GetName] is #bold not #!a [concept_split_state]"
+ TRIGGER_IS_SPLIT_STATE: "Це [concept_split_state|l]"
+ TRIGGER_IS_SPLIT_STATE_NOT: "Це #bold не#! [concept_split_state|l]"
+ TRIGGER_IS_SPLIT_STATE_FIRST: "$TRIGGER_IS_SPLIT_STATE_THIRD$"
+ TRIGGER_IS_SPLIT_STATE_FIRST_NOT: "$TRIGGER_IS_SPLIT_STATE_THIRD_NOT$"
+ TRIGGER_IS_SPLIT_STATE_THIRD: "[concept_state] [STATE.GetName] [Concept('concept_split_state', '$concept_split_state_short$')|l]"
+ TRIGGER_IS_SPLIT_STATE_THIRD_NOT: "[concept_state] [STATE.GetName] #bold не#! [Concept('concept_split_state', '$concept_split_state_short$')|l]"
  
  TRIGGER_IS_LARGEST_STATE_IN_REGION:0 "Is the largest [concept_state] in the [concept_state_region]"
  TRIGGER_IS_LARGEST_STATE_IN_REGION_NOT:1 "Is #bold not #!the largest [concept_state] in the [concept_state_region]"

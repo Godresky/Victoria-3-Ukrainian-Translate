@@ -1215,7 +1215,7 @@
  je_patagonia: "Підкорення пустелі"
  je_patagonia_reason: "Південні райони контенту залишаються поза контролем жодної держави. Хоча місцеве населення, безумовно, не полегшить нам завдання, ми повинні убезпечити цю територію, перш ніж вона потрапить до рук наших суперників."
  patagonia.1.t: "Підкорення пустелі"
- patagonia.1.d:0 "We have completed our long campaign to conquer the Patagonian south. Settlers are beginning to seek out promising sites from which to establish new towns and exploit the region's natural resources."
+ patagonia.1.d: "Ми пройшли довгий путь з підкорення півдня Патаґонії. Поселенці почали шукати повних надій ділянок, де будуть зводити нові міста та досліджувати природні ресурси реґіону."
  patagonia.1.f:0 ""The Mapuche fought long and hard for centuries to protect their country. Now at last they are defeated, and that land belongs to us. To the victor, the spoils. Now we must set ourselves to the task of populating and governing what we have won.""
  patagonia.1.a:0 "At last, the south belongs to us."
  patagonian_settlement:0 "Patagonian Settlement"
