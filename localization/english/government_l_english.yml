@@ -189,7 +189,7 @@
  gov_council_dictatorship_desc: "Це [concept_government_type|l], де [concept_country|l] керована невиборною радою"
  gov_council_republic: "Радянська республіка"
  gov_council_republic_desc: "Це [concept_government_type|l], де [concept_country|l] керована радою, яка [Concept('concept_election','обрана')|l] робітниками."
- gov_anarchist_commune: "Анархістська комуна"
+ gov_anarchist_commune: "Безвладна комуна"
  gov_anarchist_commune_desc: "Це [concept_government_type|l], де [concept_country|l] не має офіційної керівної структури, а натомість складається з самоорганізованих комун."
  gov_soviet_dictatorship: "Совєтська диктатура"
  gov_soviet_dictatorship_desc: "Це [concept_government_type|l], де [concept_country|l] керована невиборним совітом"

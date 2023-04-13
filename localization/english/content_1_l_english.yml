@@ -5,12 +5,12 @@
  victoria.1.d2: "Король помер. З вознесінням його юної племінниці [SCOPE.sCharacter('queen_victoria').GetFirstName], королівство радіє. Хай довго править вона!"
  victoria.1.f: "«Оскільки Провіденс вирішило поставити мене на цю посаду, я докладу всіх зусиль, щоб виконати свій обов’язок перед моєю країною.»"
  victoria.1.a: "Боже, бережи королеву!"
- victoria.1.tt: "Члени #yellow [SCOPE.sCountry('hannover_victoria_scope').GetAdjective|l]ої!# [Concept('concept_customs_union','$concept_customs_union_gen$')|l] покинуть нашу економічну сферу."
+ victoria.1.tt: "Члени #yellow [SCOPE.sCountry('hannover_victoria_scope').GetAdjective|l]ої!# [Concept('concept_customs_union','$concept_customs_union_gen$')|l] покинуть нашу економічну царину."
  victoria.2.t: "Коронація королеви Вікторії"
  victoria.2.d: "Король помер. З вознесінням його юної племінниці Вікторії, Ганноверська корона виходить з-під контролю Британії. Її дядько, [SCOPE.sCharacter('ernest_augustus').GetFirstName], зараз править Ганновером."
  victoria.2.f: "«Я б пролив останню краплю своєї крови за свою племінницю.»"
  victoria.2.a: "Боже, бережи короля!"
- victoria.2.tt: "Члени #yellow [SCOPE.GetRootScope.GetCountry.GetAdjective|l]ої!# [Concept('concept_customs_union','$concept_customs_union_gen$')|l] залишаться в нашій економічній сфері."
+ victoria.2.tt: "Члени #yellow [SCOPE.GetRootScope.GetCountry.GetAdjective|l]ої!# [Concept('concept_customs_union','$concept_customs_union_gen$')|l] залишаться в нашій економічній царині."
  grand_exhibition_decision_custom_tooltip_2: "Раніше не проводила ґрандіозних виставок"
   # Cultural Discrimination Traits
  european_heritage: "Европейська спадщина"
@@ -279,7 +279,7 @@
   # Walord China extras
  warlord_china_events.301.t:0 "[SCOPE.sCharacter('yan_xishan_thinker').GetFullName] Thought"
  warlord_china_events.301.d:0 "Наш великий  [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] виробив складну нову ідеологію націлену на об'єднання нації. Черпавши ідеї з багатьох джерел, вона виявилася дуже комплексною, і донести її ідеї до широких мас може виявитися тяжкою задачею." #Потрібно перевірити
- warlord_china_events.301.f:0 ""Наша славетна нова нова ідеологія є абсолютно всеосяжною, включаючи в себе все важливе з мілітаризму, націоналізму, анархізму, демократії, капіталізму, комунізму, індивідуалізму, універсалізму, патерналізму і утопізму.""
+ warlord_china_events.301.f:0 ""Наша славетна нова нова ідеологія є абсолютно всеосяжною, включаючи в себе все важливе з мілітаризму, націоналізму, безвладництво, демократії, капіталізму, комунізму, індивідуалізму, універсалізму, патерналізму і утопізму.""
  warlord_china_events.301.a:0 "Поширте слово [SCOPE.sCharacter('yan_xishan_thinker').GetFullName]!" #Потрібно перевірити
  warlord_china_events.301.b:0 "Воно немає ніякого сенсу. Потрібно сфокусуватися замість того на легітимізації держави."
  yan_xishan_thought_mod:0 "Об'єднуюча думка"
@@ -1092,10 +1092,10 @@
  regicide: "Брутство"
  regicide_averted: "Зупинено брутство"
  1848.1.t: "Суд над правителем [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] [ROOT.GetCountry.GetRuler.GetFirstName]"
- 1848.1.d:0 "The radical government has imprisoned [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] and hastily organized a trial. The expected outcome is a guilty verdict followed by public execution."
- 1848.1.f:0 ""Citizen [ROOT.GetCountry.GetRuler.GetLastName]. The [ROOT.GetCountry.GetAdjectiveNoFormatting] nation accuses you of having committed a multitude of crimes to establish your tyranny, to destroy her freedom. Most egregious among these charges include conspiring with foreign powers, aristocratic corruption, and causing the blood of the people to flow. How do you plead?""
- 1848.1.a:0 "Guilty! Long live the Republic! Long live [ROOT.GetCountry.GetName]!"
- 1848.1.b:0 "This is not justice!"
+ 1848.1.d: "Радикальний уряд ув’язнив правителя [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] [ROOT.GetCountry.GetRuler.GetFullName] та поспіхом організував судовий процес. Очікуваний результат - обвинувальний вирок з подальшою публічною стратою."
+ 1848.1.f: "«Громадянин [ROOT.GetCountry.GetRuler.GetLastName]. [ROOT.GetCountry.GetAdjectiveNoFormatting]ий народ звинувачує вас у тому, що ви вчинили безліч злочинів, щоб встановити свою тиранію та знищити його свободу. Найбільш обурливими з цих звинувачень є змова з іноземними державами, аристократична корупція та спричинення пролиття крови народу. Як ви будете захищатися?»"
+ 1848.1.a: "Вин[Select_CString(ROOT.GetCountry.GetRuler.IsFemale,'$CustomLoc_UA_vona_na$','$CustomLoc_UA_vin_en$')|l]! Слава Республіці! Нехай живе [ROOT.GetCountry.GetName]!"
+ 1848.1.b: "Це не правосуддя!"
  je_abolish_monarchy:0 "Stamp Out Monarchism"
  je_abolish_monarchy_reason:0 "It is time to put the outdated system of hereditary rule behind us. The monarchy must be removed and its supporters humbled, and it must be given time to fade into memory."
  je_abolish_monarchy_goal:0 "The following must be true for 5 total years:"

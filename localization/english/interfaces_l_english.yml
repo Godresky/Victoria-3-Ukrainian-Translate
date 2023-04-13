@@ -384,7 +384,7 @@
 
  METRICS_OF_PROGRESS_HEADER:0 "#title "Metrics of progress"#! (test)"
  COUNTRY_URBANISATION: "#title [concept_urbanization]:#!"
- COUNTRY_INDUSTRIALISATION: "#title Опромислювання:#!"
+ COUNTRY_INDUSTRIALISATION: "#title Опромислування:#!"
  MILITARY: "Військо"
  NAVY: "Флот"
 

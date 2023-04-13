@@ -49,7 +49,7 @@
  ideology_fascist: "Фашист"
  ideology_fascist_desc: "#lore Цей провідник є ультранаціоналістом, який обстає за відродження традиційних авторитарних цінностей у сучасному контексті.#!"
 
- ideology_anarchist: "Анархіст"
+ ideology_anarchist: "Безвладник"
  ideology_anarchist_desc: "#lore Цей провідник прагне скасування ієрархії, влади та держави, залишивши людей керувати собою.#!"
 
  ideology_ethno_nationalist: "Етнонаціоналіст"
@@ -111,7 +111,7 @@
  ideology_liberal: "Лібералізм"
  ideology_liberal_desc: "#lore Ця група вважає свободу та правову рівність важливими цінностями, які слід захищати.#!"
   
- ideology_anti_clerical: "Антиклерикалізм"
+ ideology_anti_clerical: "Протидухівництво"
  ideology_anti_clerical_desc: "#lore Ця група обстає проти впливу організованої релігії на політичну та освітню систему. Вони вважають, що раціональні уми мають бути на передку управління.#!"
   
  ideology_proletarian: "Пролетаріятство"
@@ -299,15 +299,15 @@
  law_multicultural_desc: "Жодна культура не утискається."
   
   # Economic System group
- lawgroup_economic_system: "Економічна модель"
+ lawgroup_economic_system: "Економічна моделя"
  lawgroup_economic_system_desc: "Основні принципи вашої економіки."
 
  law_traditionalism: "Звичайство"
  law_traditionalism_desc: "Доіндустріяльне натуральне господарство з невеликим центральним контролем."
  law_agrarianism: "Земельство"
  law_agrarianism_desc: "Сільська економіка з притиском на розвиток сільського господарства та громади."
- law_cooperative_ownership: "Кооперативна власність"
- law_cooperative_ownership_desc: "Економічна система, заснована на концепції суспільної власности, де надлишок продукції більш рівномірно розподіляється між робітниками."
+ law_cooperative_ownership: "Спільна власність"
+ law_cooperative_ownership_desc: "Економічна моделя, заснована на концепції суспільної власности, де надлишок продукції більш рівномірно розподіляється між робітниками."
  law_command_economy: "Командна економіка"
  law_command_economy_desc: "Орієнтована на внутрішнє середовище інтервенціоністська економіка, де уряд безпосередньо керує більшістю аспектів виробництва."
  law_laissez_faire: "Принцип невтручання"
@@ -343,7 +343,7 @@
  law_graduated_taxation_desc: "Податкова система, яка має на меті покласти тягар оподаткування переважно на заможних верств населення через високі податки на прибутки."
   
   # Education System group
- lawgroup_education_system: "Освітня модель"
+ lawgroup_education_system: "Освітня моделя"
  lawgroup_education_system_desc: "На той час, коли діти закінчать чистити димарі."
   
  law_no_schools: "Без шкіл"
@@ -356,7 +356,7 @@
  law_public_schools_desc: "Шкільне навчання є обов’язком держави, воно має бути стандартизованим і однаково доступним для всіх."
   
   # Health System group
- lawgroup_health_system: "Модель охорони здоров‘я"
+ lawgroup_health_system: "Моделя охорони здоров‘я"
  lawgroup_health_system_desc: "Закони про участь (або відсутність) уряду в наданні медичної допомоги своїм громадянам."
   
  law_no_health_system: "Без моделі охорони здоров’я"

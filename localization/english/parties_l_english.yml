@@ -30,7 +30,7 @@
  party_sikh: "Сикхська партія"
  party_buddhist: "Буддійська партія"
  party_shinto: "Синтоїстська партія"
- party_anarchist: "Товариство анархістів" # works mechanically as a party, but should not be flavored as one
+ party_anarchist: "Товариство безвладників" # works mechanically as a party, but should not be flavored as one
  party_military: "Патріотична партія"
  party_christian_social_party: "Християнсько-соціяльна партія"
  party_constitutional_party: "Конституційна партія"
@@ -292,7 +292,7 @@
  from_communism_powerful: "Є потужними"
  from_socdem_communism: "Посилення лівої зацікавленої групи"
  from_vanguard_anarchy: "Через правителя - авангардиста у раді республік"
- from_anarchy: "Провідник - анархіст"
+ from_anarchy: "Провідник - безвладник"
  powerful_anarachists: "Є потужними"
  from_no_communists: "Єдина ліва зацікавлена група"
  from_peasants: "Є потужними"
