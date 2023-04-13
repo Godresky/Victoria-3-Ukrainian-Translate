@@ -168,7 +168,7 @@
  ATTITUDE_SCORE_NEUTRAL_FORMAT: "#v $SCORE|=0$#!"
  ATTITUDE_SCORE_FORMAT: "#v $SCORE|=0+$#!"
  AI_STRATEGIC_DESIRE: "[COUNTRY.GetAdjectiveNoFormatting]е [concept_strategic_desire|l] відносно [Concept('concept_country', '$concept_country_gen$')|l] [TARGET_COUNTRY.GetNameNoFormatting]: #v $STRATEGIC_DESIRE$#!"
- AI_ATTITUDE_SCORE: "Воно отримано з оцінки [COUNTRY.GetAdjective|l]ого [concept_attitude|l] в $ATTITUDE_SCORE$ відносно [Concept('concept_country', '$concept_country_gen$')|l] [TARGET_COUNTRY.GetName]:"
+ AI_ATTITUDE_SCORE: "Воно отримано з оцінки #yellow [COUNTRY.GetAdjective|l]ого!# [concept_attitude|l] в $ATTITUDE_SCORE$ відносно [Concept('concept_country', '$concept_country_gen$')|l] [TARGET_COUNTRY.GetName]:"
   
  AI_REASON_FORMAT:0 "$DESC$: $SCORE|=0+$"
  AI_REASON_NEUTRALITY:0 "[TARGET_COUNTRY.GetName] lacks diplomatic significance for [COUNTRY.GetName]"

@@ -425,7 +425,7 @@
  
  TRIGGER_MODIFIER_EQUAL:0 "Modifier #variable $MODIFIER_NAME$#! Value Equals #variable $VALUE$#!"
  
- TRIGGER_CAN_TAKE_ON_SCALED_DEBT: "Може взяти [TARGET_COUNTRY.GetAdjective|l]ий довг у розмірі @money!#variable $VALUE|K0$#!"
+ TRIGGER_CAN_TAKE_ON_SCALED_DEBT: "Може взяти #yellow [TARGET_COUNTRY.GetAdjective|l]ий!# довг у розмірі @money!#variable $VALUE|K0$#!"
  TRIGGER_CAN_TAKE_ON_SCALED_DEBT_NOT:2 "Can #bold not#! take on [TARGET_COUNTRY.GetAdjective] debt of @money!#variable $VALUE|K0$#!"
  TRIGGER_CAN_TAKE_ON_SCALED_DEBT_FIRST:0 "[COUNTRY.GetNameNoFlag] can take on [TARGET_COUNTRY.GetAdjective] debt of @money!#variable $VALUE|K0$#!"
  TRIGGER_CAN_TAKE_ON_SCALED_DEBT_FIRST_NOT:0 "[COUNTRY.GetNameNoFlag] can #bold not#! take on [TARGET_COUNTRY.GetAdjective] debt of @money!#variable $VALUE|K0$#!"
@@ -1775,7 +1775,7 @@
  TRIGGER_ANY_SUBJECT_OR_BELOW_NOT:3 "No [concept_subject] or their $concept_subjects$:"
  TRIGGER_ANY_SUBJECT_OR_BELOW_FIRST: "Будь-який [COUNTRY.GetAdjectiveNoFlag|l]ий [concept_subject|l] або їх підвладні:"
  TRIGGER_ANY_SUBJECT_OR_BELOW_FIRST_NOT:3 "No [COUNTRY.GetAdjectiveNoFlag] [concept_subject] or their $concept_subjects$:"
- TRIGGER_ANY_SUBJECT_OR_BELOW_THIRD: "Будь-який [COUNTRY.GetAdjective|l]ий [concept_subject|l] або їх підвладні:"
+ TRIGGER_ANY_SUBJECT_OR_BELOW_THIRD: "Будь-який #yellow [COUNTRY.GetAdjective|l]ий!# [concept_subject|l] або їх підвладні:"
  TRIGGER_ANY_SUBJECT_OR_BELOW_THIRD_NOT:3 "No [COUNTRY.GetAdjective] [concept_subject] or their $concept_subjects$:"
   
  TRIGGER_ANY_SUBJECT_OR_BELOW_ALL:1 "All [Concept('concept_subject','$concept_subjects$')] or their $concept_subjects$:"

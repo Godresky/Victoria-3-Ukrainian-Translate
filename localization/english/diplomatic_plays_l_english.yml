@@ -138,7 +138,7 @@
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_STRATEGY:0 "$NAME|v$ [concept_ai_strategy]: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_WEAK_PREFERENCE:0 "No strong preference for either side: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_DEBT:0 "Size of [Country.GetAdjective] [concept_loans]: #bold $VALUE|+=$#!"
- DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_GOLD_RESERVES: "Розмір [Country.GetAdjective|l]ого [Concept('concept_gold_reserves','$concept_gold_reserves_gen$')|l]: #bold $VALUE|+=$#!"
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_GOLD_RESERVES: "Розмір #yellow [Country.GetAdjective|l]ого!# [Concept('concept_gold_reserves','$concept_gold_reserves_gen$')|l]: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_DEVASTATION:0 "[concept_devastation] in [Country.GetName]: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_TURMOIL:0 "[concept_turmoil] in [Country.GetName]: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_NATIVE_UPRISING:0 "[concept_native_uprising]: #bold $VALUE|+=$#!"

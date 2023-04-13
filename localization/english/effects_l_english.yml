@@ -92,9 +92,9 @@
  SEIZE_INVESTMENT_POOL_FIRST:0 "$SEIZE_INVESTMENT_POOL$"
  SEIZE_INVESTMENT_POOL_THIRD:1 "[Country.GetName] seizes all funds in the [concept_investment_pool] for the [concept_treasury] and converts any [Concept('concept_private_construction', '$concept_private_constructions$')] into [Concept('concept_government_construction', '$concept_government_constructions$')]"
  
- TAKE_ON_SCALED_DEBT: "Візьме на себе [TARGET_COUNTRY.GetAdjective|l]ий [Concept('concept_credit','$concept_credit_debt_acc$')|l] на суму @money!#variable $VALUE|vD$#!"
- TAKE_ON_SCALED_DEBT_FIRST: "[COUNTRY.GetNameNoFlag] візьме на себе [TARGET_COUNTRY.GetAdjective|l]ий [Concept('concept_credit','$concept_credit_debt_acc$')|l] на суму @money!#variable $VALUE|vD$#!"
- TAKE_ON_SCALED_DEBT_THIRD: "[COUNTRY.GetName] візьме на себе [TARGET_COUNTRY.GetAdjective|l]ий [Concept('concept_credit','$concept_credit_debt_acc$')|l] на суму @money!#variable $VALUE|vD$#!"
+ TAKE_ON_SCALED_DEBT: "Візьме на себе #yellow [TARGET_COUNTRY.GetAdjective|l]ий!# [Concept('concept_credit','$concept_credit_debt_acc$')|l] на суму @money!#variable $VALUE|vD$#!"
+ TAKE_ON_SCALED_DEBT_FIRST: "[COUNTRY.GetNameNoFlag] візьме на себе #yellow [TARGET_COUNTRY.GetAdjective|l]ий!# [Concept('concept_credit','$concept_credit_debt_acc$')|l] на суму @money!#variable $VALUE|vD$#!"
+ TAKE_ON_SCALED_DEBT_THIRD: "[COUNTRY.GetName] візьме на себе #yellow [TARGET_COUNTRY.GetAdjective|l]ий!# [Concept('concept_credit','$concept_credit_debt_acc$')|l] на суму @money!#variable $VALUE|vD$#!"
  
  CREATE_TRADE_ROUTE:1 "[COUNTRY.GetName] establishes a level $LEVEL|v0$ $TRADE_DIR$ Route for [Goods.GetTextIcon][Nbsp][Goods.GetName] in [TARGET_MARKET.GetName]"
  LOCK_TRADE_ROUTE:0 "[TradeRoute.GetName] becomes locked $DURATION$"
@@ -232,8 +232,8 @@
  START_BUILDING_CONSTRUCTION:0 "Start building [BuildingType.GetName] in [State.GetName]"
  START_PRIVATELY_FUNDED_BUILDING_CONSTRUCTION:0 "Start building [BuildingType.GetName] in [State.GetName] as a [concept_private_construction]"
  CREATE_POP:0 "[STATE.GetName] gets $SIZE|+$ #variable [POP_TYPE.GetName]#!"
- ADD_HOMELAND:0 "[STATE_REGION.GetName] becomes an #variable [CULTURE.GetName]#! [concept_homeland]"
- REMOVE_HOMELAND:0 "[STATE_REGION.GetName] is no longer an #variable [CULTURE.GetName]#! [concept_homeland]"
+ ADD_HOMELAND: "[STATE_REGION.GetName] стане [Concept('concept_homeland', '$concept_homeland_ins$')|l] народу #variable [CULTURE.GetName|l]#!"
+ REMOVE_HOMELAND: "[STATE_REGION.GetName] більше не буде [Concept('concept_homeland', '$concept_homeland_ins$')|l] народу #variable [CULTURE.GetName|l]#!"
  ADD_CLAIM: "[TARGET_COUNTRY.GetName] отримає [Concept('concept_claim', '$concept_claim_gen$')|l] на [Concept('concept_state', '$concept_state_acc$')|l] [STATE_REGION.GetName]"
  ADD_CLAIM_THIRD: "[TARGET_COUNTRY.GetName] отримає [Concept('concept_claim', '$concept_claim_acc$')|l] на [Concept('concept_state', '$concept_state_acc$')|l] [STATE_REGION.GetName]"
  REMOVE_CLAIM: "[TARGET_COUNTRY.GetName] втратить їхню [Concept('concept_claim', '$concept_claim_gen$')|l] на [Concept('concept_state', '$concept_state_acc$')|l] [STATE_REGION.GetName]"

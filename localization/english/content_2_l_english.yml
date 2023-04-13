@@ -77,7 +77,7 @@
  texan_war_of_independence.3.b: "Нехай тікає назад у Мексику, а ми продовжимо боротьбу!"
  
  notification_santa_anna_captured_notification_name: "Санта-Анна схоплений"
- notification_santa_anna_captured_notification_desc: "[SCOPE.sCountry('texas_scope').GetName] захопив [SCOPE.sCountry('mexico_scope').GetAdjective|l]ого генерала Санта-Анну, який використовував свою владу, щоб домовитися про закінчення війни за незалежність Техасу."
+ notification_santa_anna_captured_notification_desc: "[SCOPE.sCountry('texas_scope').GetName] захопив #yellow [SCOPE.sCountry('mexico_scope').GetAdjective|l]ого!# генерала Санта-Анну, який використовував свою владу, щоб домовитися про закінчення війни за незалежність Техасу."
  notification_santa_anna_captured_notification_tooltip: "#header $santa_anna_captured_notification_name$#!\n$TOOLTIP_DELIMITER$\n$santa_anna_captured_notification_desc$"
 
  native_resettlement.1.t: "Вустер проти Джорджії"
