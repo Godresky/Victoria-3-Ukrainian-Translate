@@ -192,9 +192,9 @@
  gov_anarchist_commune: "Безвладна комуна"
  gov_anarchist_commune_desc: "Це [concept_government_type|l], де [concept_country|l] не має офіційної керівної структури, а натомість складається з самоорганізованих комун."
  gov_soviet_dictatorship: "Совєтська диктатура"
- gov_soviet_dictatorship_desc: "Це [concept_government_type|l], де [concept_country|l] керована невиборним совітом"
+ gov_soviet_dictatorship_desc: "Це [concept_government_type|l], де [concept_country|l] керована невиборним совєтом"
  gov_soviet_republic: "Совєтська республіка"
- gov_soviet_republic_desc: "Це [concept_government_type|l], де [concept_country|l] керована совітом, який [Concept('concept_election','вибирають')|l] робітники."
+ gov_soviet_republic_desc: "Це [concept_government_type|l], де [concept_country|l] керована совєтом, який [Concept('concept_election','вибирають')|l] робітники."
  gov_papal_commune: "Папська комуна"
  gov_papal_commune_desc: "Це [concept_government_type|l], що ґрунтується на принципах християнського соціялізму та традиціях католицької церкви. Кожен муж кардинал!"
 
