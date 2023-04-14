@@ -537,9 +537,9 @@
  TRIGGER_FULLFILLMENT:0 "Fullfillment $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_FULLFILLMENT_NOT:1 "Fillfillment #bold not #!$COMPARATOR$ #variable $NUM$#!"
  
- TRIGGER_TURMOIL:0 "Turmoil is $COMPARATOR$ #variable $NUM|%$#!"
- TRIGGER_TURMOIL_NOT:1 "Turmoil is #bold not #!$COMPARATOR$ #variable $NUM|%$#!"
- TRIGGER_TURMOIL_THIRD:0 "Turmoil in [State.GetName] is $COMPARATOR$ #variable $NUM|%$#!"
+ TRIGGER_TURMOIL: "Сум’яття $COMPARATOR$ #variable $NUM|%$#!"
+ TRIGGER_TURMOIL_NOT: "Сум’яття #bold не #!$COMPARATOR$ #variable $NUM|%$#!"
+ TRIGGER_TURMOIL_THIRD: "Сум’яття землі [State.GetName] $COMPARATOR$ #variable $NUM|%$#!"
  
  TRIGGER_LOYALTY:0 "Loyalists are $COMPARATOR$ #variable $NUM|%$#!"
  TRIGGER_LOYALTY_NOT:1 "Loyalists are #bold not #!$COMPARATOR$ #variable $NUM|%$#!"
@@ -1544,7 +1544,7 @@
  
  TRIGGER_ANY_SCOPE_BUILDING: "Будь-яка [concept_building|l]:"
  TRIGGER_ANY_SCOPE_BUILDING_NOT:1 "No [concept_building]:"
- TRIGGER_ANY_SCOPE_BUILDING_FIRST: "Будь-яка [Country.GetAdjectiveNoFlag|l]а [concept_building|l]:"
+ TRIGGER_ANY_SCOPE_BUILDING_FIRST: "Будь-яка #yellow [Country.GetAdjectiveNoFlag|l]а#! [concept_building|l]:"
  TRIGGER_ANY_SCOPE_BUILDING_FIRST_NOT:1 "No [Country.GetAdjectiveNoFlag] [concept_building]:"
  TRIGGER_ANY_SCOPE_BUILDING_THIRD: "Будь-яка [concept_building|l] у [Concept('concept_state','$concept_state_loc$')|l] [Country.GetNameNoFlag]:"
  TRIGGER_ANY_SCOPE_BUILDING_THIRD_NOT:1 "No [concept_building] in [Country.GetNameNoFlag]:"
@@ -1861,7 +1861,7 @@
  TRIGGER_ANY_SCOPE_STATE_COUNT:3 "$PARAMETERS$ $FILTER$[Concept('concept_state', '$concept_states$')]:"
  TRIGGER_ANY_SCOPE_STATE_COUNT_FIRST:0 "$PARAMETERS$ $FILTER$[Country.GetAdjectiveNoFlag] [Concept('concept_state', '$concept_states$')]:"
  TRIGGER_ANY_SCOPE_STATE_COUNT_THIRD:0 "$PARAMETERS$ $FILTER$[Concept('concept_state', '$concept_states$')] in [Country.GetName]:"
- TRIGGER_ANY_SCOPE_STATE_FIRST: "Будь-яка [Country.GetAdjectiveNoFlag|l]а [concept_state|l]"
+ TRIGGER_ANY_SCOPE_STATE_FIRST: "Будь-яка #yellow [Country.GetAdjectiveNoFlag|l]а#! [concept_state|l]"
  TRIGGER_ANY_SCOPE_STATE_FIRST_NOT:2 "No [Country.GetAdjectiveNoFlag] [concept_state]"
  TRIGGER_ANY_SCOPE_STATE_THIRD: "Будь-яка [concept_state|l] у державі [Country.GetName]"
  TRIGGER_ANY_SCOPE_STATE_THIRD_NOT:1 "Any [concept_state] not controlled by [Country.GetName]"

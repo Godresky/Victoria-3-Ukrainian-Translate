@@ -867,8 +867,8 @@
  south_america.4.a.tt:0 "Bolivia and Peru enter a confederation together."
 
  modifier_combined_bolivia_peru:0 "Peru-Bolivian Confederation Created"
- central_america_falls_apart:2 "Central American Dissolution"
- central_america_falls_apart_reason:0 "The Central American States are crying out for independence. Will we give it to them? Soon, they will give us an ultimatum."
+ central_america_falls_apart: "Розпад Центральної Америки"
+ central_america_falls_apart_reason: "Землі Центральної Америки волають про незалежність. Чи дамо ми їм її? Незабаром вони висунуть нам ультиматум."
 
  ragamuffin_war: "Війна Фаррапус"
  ragamuffin_war_reason: "Повстанці в Рію-Ґранді-ду-Сул вимагають незалежности і готові заплатити за це кров‘ю своїх солдатів."

@@ -96,3 +96,43 @@ UA_nomu_nij = {
 ## Закінчення
 #[Select_CString(character.IsFemale,'$CustomLoc_UA_vona_ala$','$CustomLoc_UA_vin_av$')|l]
 #[Select_CString(character.IsFemale,'$CustomLoc_UA_vona_ala$','$CustomLoc_UA_vin_ov$')|l]
+
+#################################
+######## ## РОЛІ ## #############
+#################################
+
+#_gen - Родовий
+#_dat - Давальний
+#_acc - Знахідний
+#_ins - Орудний
+#_loc - Місцевий
+#_voc - Кличний
+
+UA_primary_role_title_gen = {
+	type = character
+	log_loc_errors = yes
+	text = {	
+		localization_key = RULER_TITLE_KING_gen
+		trigger = {
+			this = {
+				has_role = RULER_TITLE_KING
+			}
+		}
+	}	
+	text = {	
+		localization_key = RULER_TITLE_SULTAN_gen
+		trigger = {
+			this = {
+				has_role = RULER_TITLE_SULTAN
+			}
+		}
+	}	
+	text = {	
+		localization_key = RULER_TITLE_DEFAULT_gen
+		trigger = {
+			this = {
+				has_role = RULER_TITLE_DEFAULT
+			}
+		}
+	}	
+}

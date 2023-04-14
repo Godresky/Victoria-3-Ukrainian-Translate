@@ -317,11 +317,11 @@
  PRICE_ICON_ITEM_RANGE_SAME: "(#tooltippable #tooltip:COIN_STACK_TOOLTIP $ICON$#!#! у такій кількості земельних реґіонів: $NUM$)"
  PRICE_ICON_ITEM_MARKET: "([Goods.GetCompareIconAgainstBasePrice( Goods.GetMarketPrice )] - [Goods.GetMarket.GetName|l])"
 
- DEFAULT_EVENT_OPTION: "Цей параметр буде автоматично вибрано після $EVENT_REMAINING_DAYS$."
+ DEFAULT_EVENT_OPTION: "Цей варіянт буде самовибраний після $EVENT_REMAINING_DAYS$."
 
  NO_PROGRESS: "Без поступу"
- INVALID_OPTIONS: "Недійсні параметри: [GetDataModelSize(MapListPanel.AccessInvalidOptions)|v]"
- FAILED_OPTIONS: "Недоступні параметри: [GetDataModelSize(MapListPanel.AccessFailedOptions)|v]"
+ INVALID_OPTIONS: "Недійсні варіянти: [GetDataModelSize(MapListPanel.AccessInvalidOptions)|v]"
+ FAILED_OPTIONS: "Недоступні варіянти: [GetDataModelSize(MapListPanel.AccessFailedOptions)|v]"
 
  BUILDING_TYPE_COUNTRY_BREAKDOWN: "[SelectLocalization( GreaterThan_int32( BuildingType.GetLevelCountInCountry(GetPlayer.Self), '(int32)0' ), 'BUILDING_TYPE_COUNTRY_BREAKDOWN_NONEMPTY', 'BUILDING_TYPE_COUNTRY_BREAKDOWN_EMPTY' )]"
  BUILDING_TYPE_COUNTRY_BREAKDOWN_NONEMPTY: "#tooltippable #tooltip:[BuildingType.GetTooltipTag],BUILDING_TYPE_COUNTRY_BREAKDOWN_TOOLTIP [BuildingType.GetLevelCountInCountry(GetPlayer.Self)]#!#! - підсумковий розмір усіх будівель [BuildingType.GetNameNoFormatting|l] у [Concept('concept_country','$concept_country_loc$')|l] [GetPlayer.GetName][SelectLocalization(And(Not(BuildingType.IsGovernmentFunded), Not(BuildingType.IsSubsistenceBuilding)), 'BUILDING_TYPE_PRODUCTIVITY', '')]"
@@ -938,14 +938,14 @@
  WOUNDED_BREAKDOWN: "#header Загальна кількість [Concept('concept_wounded','$concept_wounded_adj$их')|l]: $NUM|-D$#!\n$TOTALS_HEADER$\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
  WOUNDED_HEADER_ENTRY_ATTRITION: "Через [concept_attrition|l]: $NUM|-D$"
  WOUNDED_HEADER_ENTRY_BATTLE: "Через [Concept('concept_battle','$concept_battles_acc$')|l]: $NUM|-D$"
- WOUNDED_BREAKDOWN_ENTRY_ATTRITION: "[Country.GetAdjective]е виснаження: $NUM|-Т$"
- WOUNDED_BREAKDOWN_ENTRY_BATTLE: "[Country.GetAdjective]і втрати у битвах: $NUM|-Т$"
+ WOUNDED_BREAKDOWN_ENTRY_ATTRITION: "#yellow [Country.GetAdjective]е#! виснаження: $NUM|-Т$"
+ WOUNDED_BREAKDOWN_ENTRY_BATTLE: "#yellow [Country.GetAdjective]і#! втрати у битвах: $NUM|-Т$"
 
  DEAD_BREAKDOWN: "#header Загальна кількість [Concept('concept_dead','$concept_dead_adj$их')|l]: $NUM|-D$#!\n$TOTALS_HEADER$\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
  DEAD_HEADER_ENTRY_ATTRITION: "Через [concept_attrition|l]: $NUM|-D$"
  DEAD_HEADER_ENTRY_BATTLE: "Через [Concept('concept_battle','$concept_battles_acc$')|l]: $NUM|-D$"
- DEAD_BREAKDOWN_ENTRY_ATTRITION: "[Country.GetAdjective]е виснаження: $NUM|-Т$"
- DEAD_BREAKDOWN_ENTRY_BATTLE: "[Country.GetAdjective]і втрати у битвах: $NUM|-Т$"
+ DEAD_BREAKDOWN_ENTRY_ATTRITION: "#yellow [Country.GetAdjective]е#! виснаження: $NUM|-Т$"
+ DEAD_BREAKDOWN_ENTRY_BATTLE: "#yellow [Country.GetAdjective]і#! втрати у битвах: $NUM|-Т$"
 
  PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS: "@flotillas! [Country.GetWarships|0v]"
  PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS_TOOLTIP: "#header Загальна кількість [Concept('concept_flotilla','$concept_flotillas_gen$')|l]#!: [Country.GetWarships|0v]\n$TOOLTIP_DELIMITER$\n[Country.GetName] наразі має @flotillas![Country.GetWarships|v] [Country.GetFlotillasRanking]\n$PANEL_MILITARY_NAVY_POWER_PROJECTION$\n\n[Country.GetWarshipsBreakdown]"
@@ -995,12 +995,12 @@
  SHIPPING_LANES_HEADER:0 "#title [Concept('concept_shipping_lane', '$concept_shipping_lanes$')]#!"
 
  COMBAT_UNIT_SOURCES_BREAKDOWN_SUPPLY: "#BOLD #$COLOR$ $VALUE|%0$#!#! Concept('concept_supply', '$concept_supply_gen$')|l]"
- COMBAT_UNIT_SOURCES_BREAKDOWN_VERBOSE: "[GetUnitStrengthHeader( '(int32)$CURRENT$', '(int32)$MAX$', '$ICON$' )] $UNIT_NAME|l$ з [Concept('concept_state', '$concept_state_gen$')|l] [STATE.GetName] (#BOLD #$MORALE_COLOR$ $MORALE|%0$#!#! [Concept('concept_morale', '$concept_morale_gen$')|l] та $SUPPLY$)"
- COMBAT_UNIT_SOURCES_BREAKDOWN_CLEAN: "[GetUnitStrengthHeader( '(int32)$CURRENT$', '(int32)$MAX$', '$ICON$' )] $UNIT_NAME|l$ з [Concept('concept_state', '$concept_state_gen$')|l] [STATE.GetName]"
+ COMBAT_UNIT_SOURCES_BREAKDOWN_VERBOSE: "[GetUnitStrengthHeader( '(int32)$CURRENT$', '(int32)$MAX$', '$ICON$' )] $UNIT_NAME|l$ зі [Concept('concept_state', '$concept_state_gen$')|l] [STATE.GetName] (#BOLD #$MORALE_COLOR$ $MORALE|%0$#!#! [Concept('concept_morale', '$concept_morale_gen$')|l] та $SUPPLY$)"
+ COMBAT_UNIT_SOURCES_BREAKDOWN_CLEAN: "[GetUnitStrengthHeader( '(int32)$CURRENT$', '(int32)$MAX$', '$ICON$' )] $UNIT_NAME|l$ зі [Concept('concept_state', '$concept_state_gen$')|l] [STATE.GetName]"
 
  COMBAT_UNIT_MOBILIZATION_STATUS_DEMOBILIZED: "[Concept('concept_mobilize_battalion', '$concept_mobilize_battalion_demobilized$')]"
  COMBAT_UNIT_MOBILIZATION_STATUS_DEMOBILIZED_TOOLTIP: "[CombatUnit.GetName] наразі [Concept('concept_mobilize_battalion', '$concept_mobilize_battalion_demobilized$')]"
- COMBAT_UNIT_MOBILIZATION_STATUS_MOBILIZING:0 "[Concept('concept_mobilize_battalion', '$concept_mobilize_battalion_mobilizing$')] ([CombatUnit.GetMobilization|v%0])"
+ COMBAT_UNIT_MOBILIZATION_STATUS_MOBILIZING: "[Concept('concept_mobilize_battalion', '$concept_mobilize_battalion_mobilizing$')] ([CombatUnit.GetMobilization|v%0])"
  COMBAT_UNIT_MOBILIZATION_STATUS_MOBILIZING_TOOLTIP:0 "[CombatUnit.GetName] is currently [CombatUnit.GetMobilization|v%0] done [Concept('concept_mobilize_battalion', '$concept_mobilize_battalion_mobilizing$')]"
  COMBAT_UNIT_MOBILIZATION_STATUS_MOBILIZED:0 "[Concept('concept_mobilize_battalion', '$concept_mobilize_battalion_mobilized$')]"
  COMBAT_UNIT_MOBILIZATION_STATUS_MOBILIZED_TOOLTIP:0 "[CombatUnit.GetName] is fully [Concept('concept_mobilize_battalion', '$concept_mobilize_battalion_mobilized$')]"
@@ -4087,7 +4087,7 @@
  COST_OF_WAR_ENTRY: "$TYPE$ держави [Country.GetName]: @money!$COST|vD$"
  COST_OF_WAR_TYPE_MATERIEL: "Військові товари"
  COST_OF_WAR_TYPE_WAGES: "Зарплати призваним"
- COST_OF_WAR_TOOLTIP:0 "#header Total Cost of War: @money!$COST|vD$#!\n$COST_OF_WAR_TYPE_MATERIEL$: @money!$MATERIEL_COST|vD$\n$COST_OF_WAR_TYPE_WAGES$: @money!$WAGES_COST|vD$\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
+ COST_OF_WAR_TOOLTIP: "#header Загальна вартість війни: @money!$COST|vD$#!\n$COST_OF_WAR_TYPE_MATERIEL$: @money!$MATERIEL_COST|vD$\n$COST_OF_WAR_TYPE_WAGES$: @money!$WAGES_COST|vD$\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
 
  FILTERS: "Цідила"
 

@@ -978,7 +978,8 @@ concept_minor_powers_ins: "Слабкими державами"
  concept_consumption_tax_desc:3 "A [Concept('concept_taxes','$concept_tax$')] collected on specific [Concept('concept_good','$concept_goods$')] purchased by [Concept('concept_pop','$concept_pop$')] to meet their [concept_pop_needs]. Each $concept_good$ subject to $concept_consumption_taxes$ costs a certain amount of [concept_authority]. When applied to a $concept_good$, its [concept_market_price] increases by the $concept_consumption_tax$ rate at point of sale to $concept_pops$ only, with all [concept_buy_orders] generated in this manner resulting in the surcharge being collected by the [concept_treasury]. Since the surcharge is applied on the [concept_market] level, the $concept_tax$ is ineffective in [Concept('concept_state','$concept_states$')] with low [concept_market_access]."
 
  concept_loyalist: "Прихильник"
- concept_loyal:0 "Loyal"
+ concept_loyal: "Прихильний"
+ concept_loyal_adj: "Прихильн"
  concept_loyalty:0 "Loyalty"
  concept_loyalists: "Прихильники"
  concept_loyalists_gen: "Прихильників"
@@ -1832,6 +1833,7 @@ concept_minor_powers_ins: "Слабкими державами"
  concept_budget_land_taxes_desc_added: "[GetPopType('peasants').GetName]"
 
  concept_budget_heathen_taxes: "Ідоловірські податки"
+ concept_budget_heathen_taxes_gen: "Ідоловірських податків"
  concept_budget_heathen_taxes_desc: "Це вид [Concept('concept_budget_poll_taxes', '$concept_budget_poll_tax_gen$')|l], що збирається з усіх [Concept('concept_pop', '$concept_pops_gen$')], чия [concept_religion|l] є [Concept('concept_discrimination','$concept_discriminated_adj$а')] їхньою [Concept('concept_country','$concept_country_ins$')|l]."
 
  concept_budget_per_capita_taxes: "Подушні податки"
