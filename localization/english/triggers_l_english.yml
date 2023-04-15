@@ -582,8 +582,8 @@
  
  TRIGGER_HIGHEST_SECESSION_PROGRESS:1 "Highest Secession Movement Progress $COMPARATOR$ #variable $NUM|%1$#!"
  TRIGGER_HIGHEST_SECESSION_PROGRESS_NOT:2 "Highest Secession Movement Progress #bold not #!$COMPARATOR$ #variable $NUM|%1$#!"
- TRIGGER_HIGHEST_SECESSION_PROGRESS_FIRST:1 "Highest [Country.GetAdjectiveNoFlag] [concept_secession] Movement Progress $COMPARATOR$ #variable $NUM|%1$#!"
- TRIGGER_HIGHEST_SECESSION_PROGRESS_FIRST_NOT:2 "Highest [Country.GetAdjectiveNoFlag] [concept_secession] Movement Progress #bold not #!$COMPARATOR$ #variable $NUM|%1$#!"
+ TRIGGER_HIGHEST_SECESSION_PROGRESS_FIRST: "Найвищий поступ #yellow [Country.GetAdjectiveNoFlag|l]ого#! [Concept('concept_secession', '$concept_secession_adj$ого')|l] руху $COMPARATOR$ #variable $NUM|%1$#!"
+ TRIGGER_HIGHEST_SECESSION_PROGRESS_FIRST_NOT: "Найвищий поступ #yellow [Country.GetAdjectiveNoFlag|l]ого#! [Concept('concept_secession', '$concept_secession_adj$ого')|l] руху #bold не#!$COMPARATOR$ #variable $NUM|%1$#!"
  TRIGGER_HIGHEST_SECESSION_PROGRESS_THIRD:1 "Highest [concept_secession] Movement in [Country.GetName] Progress $COMPARATOR$ #variable $NUM|%1$#!"
  TRIGGER_HIGHEST_SECESSION_PROGRESS_THIRD_NOT:2 "Highest [concept_secession] Movement in [Country.GetName] Progress #bold not #!$COMPARATOR$ #variable $NUM|%1$#!"
  
@@ -734,8 +734,8 @@
  TRIGGER_MOST_POWERFUL_STRATA:0 "The #variable $TYPE$#! have the most political power"
  TRIGGER_MOST_POWERFUL_STRATA_NOT:1 "The #variable $TYPE$#! do #bold not #!have the most political power"
  
- TRIGGER_IS_INCORPORATED:2 "Is an [concept_incorporated_state]"
- TRIGGER_IS_INCORPORATED_NOT:3 "Is #bold not #!an [concept_incorporated_state]"
+ TRIGGER_IS_INCORPORATED: "Це [concept_incorporated_state|l]"
+ TRIGGER_IS_INCORPORATED_NOT: "Це #bold не#! [concept_incorporated_state|l]"
  
  TRIGGER_IS_MASS_MIGRATION_TARGET:3 "[concept_state] [STATE.GetName] is a [concept_migration_target]"
  TRIGGER_IS_MASS_MIGRATION_TARGET_NOT:3 "[concept_state] [STATE.GetName] is #bold not #!a [concept_migration_target]"
@@ -977,8 +977,8 @@
  TRIGGER_HAS_CONVERTING_POPS:1 "[STATE.GetName] has [Concept('concept_conversion', '$concept_converting$')] [Concept('concept_pop', '$concept_pops$')]."
  TRIGGER_HAS_CONVERTING_POPS_NOT:2 "[STATE.GetName] does #bold not #!have [Concept('concept_conversion', '$concept_converting$')] [Concept('concept_pop', '$concept_pops$')]."
  
- TRIGGER_APPROACHING_BUREAUCRACY_SHORTAGE:0 "The country is about to enter a $BUREAUCRACY$ deficit"
- TRIGGER_APPROACHING_BUREAUCRACY_SHORTAGE_NOT:1 "The country is #bold not #!about to enter a $BUREAUCRACY$ deficit"
+ TRIGGER_APPROACHING_BUREAUCRACY_SHORTAGE: "Держава близька до нестачі $sBUREAUCRACY_gen$"
+ TRIGGER_APPROACHING_BUREAUCRACY_SHORTAGE_NOT: "Держава #bold не#! близька до нестачі $sBUREAUCRACY_gen$"
  
  TRIGGER_IS_CONSTRUCTION_PAUSED:0 "Construction is paused"
  TRIGGER_IS_CONSTRUCTION_PAUSED_NOT:1 "Construction is #bold not #!paused"
@@ -2506,8 +2506,8 @@ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_GREATER_THAN:0 "Remaining duratio
 
  TRIGGER_ANY_SCOPE_STATE_PERCENT:3 "$PARAMETERS$ of $FILTER$[Concept('concept_state', '$concept_states$')]"
  TRIGGER_ANY_SCOPE_STATE_PERCENT_GREATER_THAN:1 "Specified percent of requirements is met among $FILTER$[Concept('concept_state', '$concept_states$')]"
- TRIGGER_ANY_SCOPE_STATE_PERCENT_FIRST:1 "$PARAMETERS$ of all $FILTER$[COUNTRY.GetAdjectiveNoFlag] [Concept('concept_state', '$concept_states$')]"
- TRIGGER_ANY_SCOPE_STATE_PERCENT_THIRD:1 "$PARAMETERS$ of all $FILTER$[Concept('concept_state', '$concept_states$')] in [COUNTRY.GetName]"
+ TRIGGER_ANY_SCOPE_STATE_PERCENT_FIRST: "$PARAMETERS$ усіх $FILTER|l$#yellow [COUNTRY.GetAdjectiveNoFlag|l]их#! [Concept('concept_state', '$concept_states_gen$')|l]"
+ TRIGGER_ANY_SCOPE_STATE_PERCENT_THIRD: "$PARAMETERS$ усіх $FILTER$#yellow [COUNTRY.GetAdjectiveNoFlag|l]их#! [Concept('concept_state', '$concept_states_gen$')|l]"
 
  TRIGGER_STATE_OWNER_EQUAL: "[concept_state] належить державі [TARGET_COUNTRY.GetName]"
  TRIGGER_STATE_OWNER_EQUAL_NOT: "[concept_state] #bold не#! належить державі [TARGET_COUNTRY.GetName]"
@@ -2529,8 +2529,8 @@ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_GREATER_THAN:0 "Remaining duratio
  TRIGGER_CHARACTER_OWNER_EQUAL:0 "[concept_character] belongs to [TARGET_COUNTRY.GetName]"
  TRIGGER_CHARACTER_OWNER_EQUAL_NOT:0 "[concept_character] does #bold not #!belong to [TARGET_COUNTRY.GetName]"
 
- TRIGGER_APPROACHING_BUREAUCRACY_SHORTAGE_FIRST:0 "The country is about to enter a $BUREAUCRACY$ deficit"
- TRIGGER_APPROACHING_BUREAUCRACY_SHORTAGE_FIRST_NOT:0 "The country is #bold not #!about to enter a $BUREAUCRACY$ deficit"
+ TRIGGER_APPROACHING_BUREAUCRACY_SHORTAGE_FIRST: "Держава близька до нестачі $sBUREAUCRACY_gen$"
+ TRIGGER_APPROACHING_BUREAUCRACY_SHORTAGE_FIRST_NOT: "Держава #bold не#! близька до нестачі $sBUREAUCRACY_gen$"
  TRIGGER_APPROACHING_BUREAUCRACY_SHORTAGE_THIRD:0 "The country is about to enter a $BUREAUCRACY$ deficit"
  TRIGGER_APPROACHING_BUREAUCRACY_SHORTAGE_THIRD_NOT:1 "The country is #bold not #!about to enter a $BUREAUCRACY$ deficit"
 
