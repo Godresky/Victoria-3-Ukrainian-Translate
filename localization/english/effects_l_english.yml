@@ -395,13 +395,13 @@
  SET_TARIFFS_EXPORT_PRIORITY_FIRST:0 "[COUNTRY.GetNameNoFlag] starts to collect #v Export Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
  SET_TARIFFS_EXPORT_PRIORITY_THIRD:0 "[COUNTRY.GetName] starts to collect #v Export Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
   
- ADD_RADICALS: "#variable $NUM|-=1%$#! [Concept('concept_pop', '$concept_pop_gen$')]$FILTER|l$ у місці $SUBJECT_NAME$ стане більш [Concept('concept_radical', '$concept_radical_adj$ою')|l]"
- ADD_RADICALS_FIRST: "#variable $NUM|-=1%$#! [Concept('concept_pop', '$concept_pop_gen$')]$FILTER|l$ у місці $SUBJECT_NAME$ стане більш [Concept('concept_radical', '$concept_radical_adj$ою')|l]"
- ADD_RADICALS_THIRD: "#variable $NUM|-=1%$#! [Concept('concept_pop', '$concept_pop_gen$')]$FILTER|l$ у місці $SUBJECT_NAME$ стане більш [Concept('concept_radical', '$concept_radical_adj$ою')|l]"
+ ADD_RADICALS: "#variable $NUM|-=1%$#! [Concept('concept_pop', '$concept_pops_gen$')]$FILTER|l$ у місці $SUBJECT_NAME$ стануть більш [Concept('concept_radical', '$concept_radical_adj$ими')|l]"
+ ADD_RADICALS_FIRST: "#variable $NUM|-=1%$#! [Concept('concept_pop', '$concept_pops_gen$')]$FILTER|l$ у місці $SUBJECT_NAME$ стануть більш [Concept('concept_radical', '$concept_radical_adj$ими')|l]"
+ ADD_RADICALS_THIRD: "#variable $NUM|-=1%$#! [Concept('concept_pop', '$concept_pops_gen$')]$FILTER|l$ у місці $SUBJECT_NAME$ стануть більш [Concept('concept_radical', '$concept_radical_adj$ими')|l]"
  
- ADD_LOYALISTS: "#variable $NUM|+=1%$#! [Concept('concept_pop', '$concept_pop_gen$')]$FILTER|l$ у місці $SUBJECT_NAME$ стане більш [Concept('concept_loyalist', '$concept_loyal_adj$ою')|l]"
- ADD_LOYALISTS_FIRST: "#variable $NUM|+=1%$#! [Concept('concept_pop', '$concept_pop_gen$')]$FILTER|l$ у місці $SUBJECT_NAME$ стане більш [Concept('concept_loyalist', '$concept_loyal_adj$ою')|l]"
- ADD_LOYALISTS_THIRD: "#variable $NUM|+=1%$#! [Concept('concept_pop', '$concept_pop_gen$')]$FILTER|l$ у місці $SUBJECT_NAME$ стане більш [Concept('concept_loyalist', '$concept_loyal_adj$ою')|l]"
+ ADD_LOYALISTS: "#variable $NUM|+=1%$#! [Concept('concept_pop', '$concept_pops_gen$')]$FILTER|l$ у місці $SUBJECT_NAME$ стануть більш [Concept('concept_loyalist', '$concept_loyal_adj$ими')|l]"
+ ADD_LOYALISTS_FIRST: "#variable $NUM|+=1%$#! [Concept('concept_pop', '$concept_pops_gen$')]$FILTER|l$ у місці $SUBJECT_NAME$ стануть більш [Concept('concept_loyalist', '$concept_loyal_adj$ими')|l]"
+ ADD_LOYALISTS_THIRD: "#variable $NUM|+=1%$#! [Concept('concept_pop', '$concept_pops_gen$')]$FILTER|l$ у місці $SUBJECT_NAME$ стануть більш [Concept('concept_loyalist', '$concept_loyal_adj$ими')|l]"
 
  ADD_CIVIL_WAR_PROGRESS:0 "Change progress of civil war by $VALUE|%$"
  ADD_LAW_PROGRESS:0 "Change progress of law [Law.GetName] by $VALUE|0%$"
@@ -423,9 +423,9 @@
 
  CHANGE_CHARACTER_RELIGION:0 "[Character.GetFullName] becomes [TARGET_RELIGION.GetName]"
  
- CHANGE_TAG:0 "[COUNTRY.GetName] becomes $NEW_TAG|v$"
- CHANGE_TAG_FIRST:0 "[COUNTRY.GetNameNoFlag] becomes $NEW_TAG|v$"
- CHANGE_TAG_THIRD:0 "[COUNTRY.GetNameNoFlag] becomes $NEW_TAG|v$"
+ CHANGE_TAG: "[COUNTRY.GetName] стане державою $NEW_TAG|v$"
+ CHANGE_TAG_FIRST: "[COUNTRY.GetNameNoFlag] стане державою $NEW_TAG|v$"
+ CHANGE_TAG_THIRD: "[COUNTRY.GetNameNoFlag] стане державою $NEW_TAG|v$"
  
  ADD_DECLARED_INTEREST:1 "Add a [concept_declared_interest] in $REGION_NAME|v$"
  CHANGE_SUBJECT_TYPE:0 "[Country.GetName] becomes $SUBJECT_TYPE$ of [Country.GetOverlord.GetName]"

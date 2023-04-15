@@ -152,7 +152,7 @@
  
  urbanization_events.6.t: "Неефективне сільське господарство"
  urbanization_events.6.d: "[SCOPE.gsInterestGroup('industrialist_ig').GetName] почали скаржитися на існування натуральних господарств у землі [SCOPE.sState('subsistence_state').GetName], заявляючи, що їхню незаперечну неефективність слід негайно розглянути."
- urbanization_events.6.f: "«Родючий ґрунт нашого народу страждає, відданий у втомлені та черстві руки, надто виснажений фізичною працею, щоб працювати на гідному рівні. Надто бідний, щоб мати змогу використовувати більш досконалі інструменти, які зробили б їх більш прибутковими... Ця галузь є просто марна інвестиція.»"
+ urbanization_events.6.f: "«Родючий ґрунт нашого народу страждає, відданий у втомлені та черстві руки, надто виснажений фізичною працею, щоб працювати на гідному рівні. Надто бідний, щоб мати змогу використовувати більш досконалі інструменти, які зробили б їх більш прибутковими... Ця галузь є просто марний вклад.»"
  urbanization_events.6.a: "Ми повинні дотримуватися їхніх порад."
  urbanization_events.6.b: "Вони служать нашим цілям."
  modifier_no_subsistence_farming: "Відмова від натурального господарства"
@@ -1395,9 +1395,9 @@
  cool_rock_sinister_influence:0 "Sinister Influence"
  infatuated_with_cool_rock_modifier:0 "Occult Interests"
  
- vampire_panic.1.t:0 "A Strange Superstition"
- vampire_panic.1.d:0 "Reports have come out of a strange illness harrying the members of the same family in [SCOPE.sState('vampire_state').GetName]. Locals have started exhuming the bodies of the dead in an effort to stop the so-called "curse"."
- vampire_panic.1.f:0 ""Do you not think that there are things which you cannot understand, and yet which are; that some people see things that others cannot? But there are things old and new which must not be contemplated by men´s eyes, because they know — or think they know — some things which other men have told them.\n\nAh, it is the fault of our science that it wants to explain all; and if it explain not, then it says there is nothing to explain."" #Bram Stoker
+ vampire_panic.1.t: "Дивні забобони"
+ vampire_panic.1.d: "З’явилися повідомлення про дивну хворобу, що переслідує членів однієї сім'ї у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.sState('vampire_state').GetName]. Місцеві жителі почали ексгумувати тіла загиблих, намагаючись зупинити так зване «прокляття»."
+ vampire_panic.1.f:0 "«Do you not think that there are things which you cannot understand, and yet which are; that some people see things that others cannot? But there are things old and new which must not be contemplated by men´s eyes, because they know — or think they know — some things which other men have told them.\n\nAh, it is the fault of our science that it wants to explain all; and if it explain not, then it says there is nothing to explain.»" #Bram Stoker
  vampire_panic.1.d.cullen:0 "Reports have come out of a strange illness harrying the members of the Cullen family in [SCOPE.sState('vampire_state').GetName]. Locals have started exhuming the bodies of the dead in an effort to stop the so-called "curse"."
  vampire_panic.1.a:0 "Just another case of rural superstitions."
  vampire_panic.1.b:0 "A couple of professors have expressed their interest in the matter."

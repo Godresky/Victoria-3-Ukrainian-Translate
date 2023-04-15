@@ -389,11 +389,11 @@
  central_america.1.a:0 "Let them have it"
  central_america.1.b:0 "No chance"
 
- central_america.2.t:1 "The Dissolution of Central America"
- central_america.2.d:1 "The remaining states of the union have declared their independence. It has become clear that the union of [ROOT.GetCountry.GetName] is over, and that [SCOPE.sState('capital_scope').GetName] must fend for itself."
- central_america.2.f:1 ""It is reclaiming the ownership of our country, or bowing down to them. It is forgetting the names of our parents, or learning the enemy's ancestors. It is sowing our own land, or seeing them ravage it. It is freedom, or it is war!""
- central_america.2.a:1 "We must accept our fate."
- central_america.2.b:1 "We will not abandon the union so lightly."
+ central_america.2.t: "Розпад Центральної Америки"
+ central_america.2.d: "Решта держав сполу проголосили незалежність. Стало зрозуміло, що [ROOT.GetCountry.GetName] розпалася, і що [SCOPE.sState('capital_scope').GetName] повинне дбати про самого себе."
+ central_america.2.f: "«Це повернення права власности на нашу державу або прогинання перед ними. Це забування імен наших батьків або вивчення предків ворога. Це засівати нашу власну землю або спостерігати, як вони її спустошують. Свобода або війна!»"
+ central_america.2.a: "Ми повинні прийняти свою долю."
+ central_america.2.b: "Ми не відмовимося від сполу так легко."
 
  south_america.3.t: "Партизанська війна"
  south_america.3.d: "Незважаючи на те, що війна закінчилася, партизани продовжують вести підпільну боротьбу в [Concept('concept_state','$concept_state_loc$')|l] [SCOPE.sState('guerilla_state').GetName]."

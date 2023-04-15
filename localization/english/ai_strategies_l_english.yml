@@ -83,7 +83,7 @@
  ai_strategy_plantation_economy: "Економіка полищ"
  ai_strategy_plantation_economy_desc: "[COUNTRY.GetName] хоче зосередитися на виробництві та ввозові товарних культур."
  ai_strategy_resource_expansion: "Розширення ресурсних галузей"
- ai_strategy_resource_expansion_desc: "[COUNTRY.GetName] хоче інвестувати у видобуток природних ресурсів."
+ ai_strategy_resource_expansion_desc: "[COUNTRY.GetName] хоче вкластися у видобуток природних ресурсів."
  ai_strategy_industrial_expansion: "Опромислування"
  ai_strategy_industrial_expansion_desc: "[COUNTRY.GetName] хоче розбудувати свою промислову базу."
  ai_strategy_infrastructure_expansion: "Покращення інфраструктури"
