@@ -239,7 +239,7 @@
   
  law_serfdom: "Кріпаччина"
  law_serfdom_desc: "Селяни прив'язані до своєї землі і повинні працювати на своїх феодалів."
- law_serfdom_banned: "Кріпаччина скасовано"
+ law_serfdom_banned: "Кріпаччину скасовано"
  law_serfdom_banned_desc: "Феодальну практику кріпацтва скасовано."
  law_regulatory_bodies: "Регулювальні органи"
  law_regulatory_bodies_desc: "Створено державні інституції для регулювання надмірностей роботодавців."
@@ -410,16 +410,16 @@
  law_militarized_police_desc: "Якщо надати вашій поліції військову техніку та військову підготовку, її ефективність у виконанні вашої волі підвищується."
   
   # Bureaucracy
- lawgroup_bureaucracy: "Бюрократія"
+ lawgroup_bureaucracy: "Урядництво"
  lawgroup_bureaucracy_desc: "Як керують вашою державою."
 
- law_hereditary_bureaucrats: "Спадкові бюрократи"
- law_hereditary_bureaucrats_desc: "Бюрократи утримують свою посаду через спадковість та передають обов’язки своїм дітям."
- law_appointed_bureaucrats: "Призначені бюрократи"
- law_appointed_bureaucrats_desc: "Бюрократи призначаються правителями, щоб служити найкращим рупам держави в обмін на високу зарплатню."
- law_meritocratic_bureaucracy: "Гідні бюрократи"
- law_meritocratic_bureaucracy_desc: "Бюрократи змагаються за владні позиції через заслуги. З часом це створює величезні візантійські адміністрації."
- law_elected_bureaucrats: "Виборні бюрократи"
+ law_hereditary_bureaucrats: "Спадкові урядовці"
+ law_hereditary_bureaucrats_desc: "Урядовці утримують свою посаду через спадковість та передають обов’язки своїм дітям."
+ law_appointed_bureaucrats: "Призначені урядовці"
+ law_appointed_bureaucrats_desc: "Урядовці призначаються правителями, щоб служити найкращим рупам держави в обмін на високу зарплатню."
+ law_meritocratic_bureaucracy: "Гідні урядовці"
+ law_meritocratic_bureaucracy_desc: "Урядовці змагаються за владні позиції через заслуги. З часом це створює величезні візантійські адміністрації."
+ law_elected_bureaucrats: "Виборні урядовці"
  law_elected_bureaucrats_desc: "Місцеві губернатори обираються виборцями, що децентралізує владу та полегшує управління громадянами."
   
   # Colonization

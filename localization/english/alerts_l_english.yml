@@ -115,15 +115,15 @@
  alert_has_decreasing_interests_alert_hint: "Ви можете запобігти цьому, скориставшись дією «[Concept('concept_declared_interest','$concept_declare_interests$')]» у [Concept('concept_diplomatic_lens','$concept_diplomatic_lens_dat$')|l], якщо ви ще не досягли максимуму проявлених рупів, або можете змінити пріоритети проявлених рупів відповідно до поточних дипломатичних цілей."
  alert_has_decreasing_interests_alert_action: "Панель дипломатії"
 
- alert_obligation_expiring_name:0 "[SCOPE.GetRootScope.GetDiplomaticRelations.GetFirstCountry.GetAdjectiveNoFormatting] [concept_obligation] expiring"
- alert_obligation_expiring_desc:0 "The [concept_obligation] owed to us by [SCOPE.GetRootScope.GetDiplomaticRelations.GetFirstCountry.GetName] will expire in #v [SCOPE.GetRootScope.GetDiplomaticRelations.CalcOwedObligationDaysLeft(GetPlayer.Self)]#! day(s)."
- alert_obligation_expiring_hint:2 "You should make use of the [concept_obligation] before it expires by either using it to improve relations with [SCOPE.GetRootScope.GetDiplomaticRelations.GetFirstCountry.GetName] or tie them into a Diplomatic Agreement or Play."
+ alert_obligation_expiring_name: "Минає реченець [SCOPE.GetRootScope.GetDiplomaticRelations.GetFirstCountry.GetAdjectiveNoFormatting|l]ого [Concept('concept_obligation', '$concept_obligations_gen$')|l]"
+ alert_obligation_expiring_desc: "Реченець [Concept('concept_obligation', '$concept_obligations_gen$')|l], яке ми володіємо на державу [SCOPE.GetRootScope.GetDiplomaticRelations.GetFirstCountry.GetName], мине через #v [SCOPE.GetRootScope.GetDiplomaticRelations.CalcOwedObligationDaysLeft(GetPlayer.Self)]#! дн."
+ alert_obligation_expiring_hint: "Вам слід скористатися [Concept('concept_obligation', '$concept_obligation_ins$')|l] до того, як мине реченець, або використати для покращення відносин з державою [SCOPE.GetRootScope.GetDiplomaticRelations.GetFirstCountry.GetName], або долучити їх у дипломатичну угоду/гру."
  alert_obligation_expiring_action: "Панель дипломатії"
 
- alert_idle_mobilized_general_name:0 "Idle [Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized$')] [concept_general]: [SCOPE.GetRootScope.GetCharacter.GetFullName]"
- alert_idle_mobilized_general_desc:1 "[SCOPE.GetRootScope.GetCharacter.GetFullName] is mobilized and is idling without a front assignment. They will defend the [concept_hq] from attacking forces while they await further orders"
- alert_idle_mobilized_general_hint:1 "You can give orders to [Concept('concept_general', '$concept_generals$')] in the $concept_general$ Panel."
- alert_idle_mobilized_general_action:1 "General Panel"
+ alert_idle_mobilized_general_name: "Бездіяльний [Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized_adj$ий')|l] [concept_general|l]: [SCOPE.GetRootScope.GetCharacter.GetFullName]"
+ alert_idle_mobilized_general_desc: "[SCOPE.GetRootScope.GetCharacter.GetFullName] зібраний та простоює без фронтового призначення. Він оборонятиме [Concept('concept_hq', '$concept_hq_acc$')|l], якщо наступатимуть ворожі сили, доки він чекає на подальші накази."
+ alert_idle_mobilized_general_hint: "Ви можете видати наказ [Concept('concept_general', '$concept_generals_dat$')|l] на панелі генерала."
+ alert_idle_mobilized_general_action: "Панель генерала"
 
  alert_has_convoys_being_sunk_name:1 "[concept_convoys] Raided"
  alert_has_convoys_being_sunk_desc:2 "Convoys are being Raided in the following Sea Nodes:[SCOPE.GetRootScope.GetCountry.GetSeaNodesMightBeConvoyRaidedInDesc]. \n\n This means that all connections to overseas territory, trade to other markets, and supplies to our expeditionary forces going through these Sea Nodes are being disurpted, which can have disastrous effects on our Economic and Military Might."
@@ -265,12 +265,12 @@
  ag_diplomatic_pact_in_danger_desc: "У вас є [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')|l], які можуть розірватися, якщо [concept_relations|l] погіршаться"
  ag_diplomatic_pact_in_danger_tooltip: "#header $ag_diplomatic_pact_in_danger_name$#!\n$TOOLTIP_DELIMITER$\n$ag_diplomatic_pact_in_danger_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
- ag_expiring_obligations_name:0 "Expiring [Concept('concept_obligation', '$concept_obligations$')]"
- ag_expiring_obligations_desc:0 "We are owed [Concept('concept_obligation', '$concept_obligations$')] that will expire soon."
- ag_expiring_obligations_tooltip:0 "#header $ag_expiring_obligations_name$#!\n$TOOLTIP_DELIMITER$\n$ag_expiring_obligations_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
+ ag_expiring_obligations_name: "Минає реченець [Concept('concept_obligation', '$concept_obligations_gen$')|l]"
+ ag_expiring_obligations_desc: "Ми володіємо [Concept('concept_obligation', '$concept_obligations_ins$')|l], чий реченець скоро мине."
+ ag_expiring_obligations_tooltip: "#header $ag_expiring_obligations_name$#!\n$TOOLTIP_DELIMITER$\n$ag_expiring_obligations_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
   
  ag_idle_mobilized_general_name: "Бездіяльні призвані генерали"
- ag_idle_mobilized_general_desc:0 "[SCOPE.GetRootScope.GetCharacter.GetFullName] are mobilized and is idling without a front assignment. They will defend the [concept_hq] from attacking forces while they await further orders"
+ ag_idle_mobilized_general_desc: "[SCOPE.GetRootScope.GetCharacter.GetFullName] зібрані та простоюють без фронтового призначення. Вони оборонятимуть [Concept('concept_hq', '$concept_hq_acc$')|l], якщо наступатимуть ворожі сили, доки вони чекають на подальші накази."
  ag_idle_mobilized_general_tooltip: "#header $ag_idle_mobilized_general_name$#!\n$TOOLTIP_DELIMITER$\n$ag_idle_mobilized_general_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
 
@@ -284,7 +284,7 @@
 
  ag_market_goods_shortages_name: "[Concept('concept_input_goods_shortage', '$concept_input_goods_shortages$')]"
  ag_market_goods_shortages_desc: "На вашому [Concept('concept_market', '$concept_market_loc$')|l] є [Concept('concept_input_goods_shortage', '$concept_input_goods_shortages$')|l]."
- ag_market_goods_shortages_tooltip:0 "#header $ag_market_goods_shortages_name$#!\n$TOOLTIP_DELIMITER$\n$ag_market_goods_shortages_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
+ ag_market_goods_shortages_tooltip: "#header $ag_market_goods_shortages_name$#!\n$TOOLTIP_DELIMITER$\n$ag_market_goods_shortages_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  ag_low_market_access_states_name: "Низький [concept_market_access|l]"
  ag_low_market_access_states_desc: "У вас є [GetPlayer.GetNumLowMarketAccessStates] [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumLowMarketAccessStates, '(int32)1'),SelectLocalization(GreaterThan_int32(GetPlayer.GetNumLowMarketAccessStates, '(int32)4'),Concept('concept_state', '$concept_states_gen$'),Concept('concept_state', '$concept_states$')),Concept('concept_state', '$concept_state$'))|l] з низьким [Concept('concept_market_access', '$concept_market_access_ins$')|l]"
@@ -301,21 +301,3 @@
  ag_expensive_military_goods_name: "Дорогі [Concept('concept_military_good', '$concept_military_goods$')|l]"
  ag_expensive_military_goods_desc: "У вас є дорогі [Concept('concept_military_good', '$concept_military_goods$')|l], принаймні на одному з ваших [Concept('concept_market', '$concept_markets_gen$')|l]."
  ag_expensive_military_goods_tooltip: "#header $ag_expensive_military_goods_name$#!\n$TOOLTIP_DELIMITER$\n$ag_expensive_military_goods_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
-
- alert_has_navy_troops_in_reserve_peace_time_alert_name:0 "$alert_has_navy_troops_in_reserve_alert_name$"
- alert_has_navy_troops_in_reserve_peace_time_alert_hint:0 "$alert_has_navy_troops_in_reserve_alert_hint$"
- alert_has_navy_troops_in_reserve_peace_time_alert_action:0 "$alert_has_navy_troops_in_reserve_alert_action$"
- alert_has_army_troops_in_reserve_peace_time_alert_name:0 "$alert_has_army_troops_in_reserve_alert_name$"
- alert_has_army_troops_in_reserve_peace_time_alert_hint:0 "$alert_has_army_troops_in_reserve_alert_hint$"
- alert_has_army_troops_in_reserve_peace_time_alert_action:0 "$alert_has_army_troops_in_reserve_alert_action$"
-
- alert_secession_possible_alert_name:0 "Możliwe ruchy [Concept('concept_secession', 'secesjonistyczne')]"
- alert_secession_possible_alert_desc:0 "Co tydzień istnieje ryzyko, że w naszym państwie zorganizują się separatyści:\n\n#title [Concept('concept_culture', '$concept_cultures$')] separatystyczne:#!\n[GetPlayer.GetPossibleSecessionistsDesc]"
- alert_secession_possible_alert_hint:1 "Aby zmniejszyć ryzyko [Concept('concept_secession', 'secesji')], zmniejsz liczbę [Concept('concept_radical', 'radykałów')] w szeregach docelowej [Concept('concept_culture', 'kultury')] w swoim [Concept('concept_country', 'państwie')]. Możesz to zrobić, podnosząc [concept_sol|l] w [Concept('concept_state', 'obszarach administracyjnych')], w których żyją przedstawiciele tej kultury, dbając o to, aby nie byli oni [Concept('concept_discrimination', 'dyskryminowani')] w perspektywie długoterminowej lub wydając [Concept('concept_decree', '$concept_decrees$')|l] łagodzące negatywne czynniki w perspektywie krótkoterminowej."
- alert_secession_possible_alert_action:0 "Panel Kultura"
- ag_missing_war_goals_name:0 "Brakujące [Concept('concept_war_goal', '$concept_war_goals$')|l]"
- ag_missing_war_goals_desc:0 "Uczestniczymy w [Concept('concept_diplomatic_play', 'posunięciach dyplomatycznych')], w których nie wybrano głównego [Concept('concept_war_goal', 'celu wojennego')]."
- ag_missing_war_goals_tooltip:0 "#header $ag_missing_war_goals_name$#!\n$TOOLTIP_DELIMITER$\n$ag_missing_war_goals_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
- ag_high_attrition_name:0 "Wysoki poziom [Concept('concept_attrition', 'wyniszczenia')]"
- ag_high_attrition_desc:0 "Wskaźnik [Concept('concept_attrition', 'wyniszczenia')] co najmniej jednego z naszych [Concept('concept_commander', 'dowódców')] jest wysoki."
- ag_high_attrition_tooltip:0 "#header $ag_high_attrition_name$#!\n$TOOLTIP_DELIMITER$\n$ag_high_attrition_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"

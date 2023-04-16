@@ -449,8 +449,8 @@ pm_steam_rail_transport: "Залізниця"
  pm_switch_boards: "Телекомунікація"
  
  pmg_government_administration_bureaucrat_professionalism: "Професіоналізм"
- pm_hereditary_bureaucrats: "Потомствені бюрократи"
- pm_professional_bureaucrats: "Професійні бюрократи"
+ pm_hereditary_bureaucrats: "Потомствені урядовці"
+ pm_professional_bureaucrats: "Професійні урядовці"
  
  pmg_government_administration_religious_administration: "Світянство"
  pm_religious_bureaucrats: "Адміністративне духовенство"

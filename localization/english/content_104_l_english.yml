@@ -1397,9 +1397,9 @@
  
  vampire_panic.1.t: "Дивні забобони"
  vampire_panic.1.d: "З’явилися повідомлення про дивну хворобу, що переслідує членів однієї сім'ї у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.sState('vampire_state').GetName]. Місцеві жителі почали ексгумувати тіла загиблих, намагаючись зупинити так зване «прокляття»."
- vampire_panic.1.f:0 "«Do you not think that there are things which you cannot understand, and yet which are; that some people see things that others cannot? But there are things old and new which must not be contemplated by men´s eyes, because they know — or think they know — some things which other men have told them.\n\nAh, it is the fault of our science that it wants to explain all; and if it explain not, then it says there is nothing to explain.»" #Bram Stoker
- vampire_panic.1.d.cullen:0 "Reports have come out of a strange illness harrying the members of the Cullen family in [SCOPE.sState('vampire_state').GetName]. Locals have started exhuming the bodies of the dead in an effort to stop the so-called "curse"."
- vampire_panic.1.a:0 "Just another case of rural superstitions."
- vampire_panic.1.b:0 "A couple of professors have expressed their interest in the matter."
- vampire_panic.1.c:0 "The [SCOPE.gsInterestGroup('devout_ig').GetName] would like to investigate the bodies."
- vampire_research_modifier:0 "Superstitions Research"
+ vampire_panic.1.f: "«А чи не спадало вам на думку, що є такі речі, які існують незалежно від того, розумієте ви їх чи ні? Але є нові й старі речі, що люди не бачать. Бо знають, чи думають, що знають, про щось з уст інших\n\nВ тому й недолік науки - вона хоче пояснити все. А коли пояснити не може, то засвідчує, що пояснювати нічого.»" #Bram Stoker
+ vampire_panic.1.d.cullen: "З'явилися повідомлення про дивну хворобу, що переслідує членів сім’ї Калленів у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.sState('vampire_state').GetName]. Місцеві жителі почали ексгумувати тіла загиблих, намагаючись зупинити так зване «прокляття»."
+ vampire_panic.1.a: "Ще один випадок сільських забобонів."
+ vampire_panic.1.b: "Кілька академіків висловили свою зацікавленість у цьому питанні."
+ vampire_panic.1.c: "[SCOPE.gsInterestGroup('devout_ig').GetName] хотіла б дослідити тіла."
+ vampire_research_modifier: "Дослідження забобонів"
