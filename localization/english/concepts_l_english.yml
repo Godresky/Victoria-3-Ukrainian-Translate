@@ -66,7 +66,7 @@
 
  concept_minor_power: "Слабка держава"
  concept_minor_powers: "Слабкі держави"
-concept_minor_powers_ins: "Слабкими державами"
+ concept_minor_powers_ins: "Слабкими державами"
  concept_minor_power_desc: "[Concept('concept_country', '$concept_countries$')] з [Concept('concept_rank', '$concept_rank_acc$')|l] «$concept_minor_power$» - пішаки в імпералістичних іграх [Concept('concept_major_power','$concept_major_power_short$их')|l] та [Concept('concept_great_power','$concept_great_powers_gen$')|l], які часто використовуються як держави-відпружники, як [Concept('concept_puppet','$concept_puppets_acc$')|l] або як захоплені [Concept('concept_market','$concept_markets_acc$')|l].[AddLocalizationIf(GetPlayer.IsValid,'concept_minor_power_desc_added')]"
  concept_minor_power_desc_added: "\n\n$concept_minor_powers$ мають такі переваги:\n[GetRankModifier('minor_power').GetDesc]"
  
@@ -919,6 +919,7 @@ concept_minor_powers_ins: "Слабкими державами"
  concept_market_capital_short: "Столиця"
  concept_market_capital_short_acc: "Столицю"
  concept_market_capitals: "Столиці ринку"
+ concept_market_capitals_ins: "Столицями ринку"
  concept_market_capital_desc:2 "The [concept_state] that serves as the nexus of a [concept_market], to which all other $concept_states$ in the $concept_market$ must connect lest they become [Concept('concept_isolated_state','$concept_isolated_state_short$')]. [Concept('concept_trade_route','$concept_trade_routes$')] are often, but not always, managed from the $concept_market_capital$. The $concept_market_capital$ is often the same $concept_state$ as the [Concept('concept_market_owner','$concept_market_owner_possessive$')] [concept_capital_state], but it is possible to keep these separate.[AddLocalizationIf(GetPlayer.IsValid,'concept_market_capital_desc_added')] "
  concept_market_capital_desc_added:0 "\nThe following effects apply:\n[GetStaticModifier('market_capital_state').GetDesc]"
 
@@ -2068,6 +2069,7 @@ concept_minor_powers_ins: "Слабкими державами"
  concept_convoy_cost_desc_added:0 "[GetBuildingType('building_port').GetName]"
 
  concept_port_connection: "Приплавне з’єднання"
+ concept_port_connection_acc: "Приплавне з’єднання"
  concept_port_connections: "Приплавні з’єднання"
  concept_port_connections_gen: "Приплавних з’єднань"
  concept_port_connection_desc:3 "A [concept_shipping_lane] connecting one or several [Concept('concept_state','$concept_states$')] otherwise unreachable overland to the [concept_market_capital], ensuring [concept_market_access] to remote regions. $concept_port_connections$ require a [SelectLocalization(GetPlayer.IsValid,'concept_port_connection_desc_added','Port')] in both ends. The [concept_convoy_cost] of a $concept_port_connection$ is dependent on the total [concept_infrastructure_usage] of the [Concept('concept_state','$concept_states$')] it's connecting."
