@@ -112,18 +112,18 @@ UA_primary_role_title_gen = {
 	type = character
 	log_loc_errors = yes
 	text = {	
-		localization_key = RULER_TITLE_KING_gen
-		trigger = {
-			this = {
-				has_role = RULER_TITLE_KING
-			}
-		}
-	}	
-	text = {	
 		localization_key = RULER_TITLE_SULTAN_gen
 		trigger = {
 			this = {
 				has_role = RULER_TITLE_SULTAN
+			}
+		}
+	}	
+	text = {	
+		localization_key = RULER_TITLE_KING_gen
+		trigger = {
+			this = {
+				has_role = RULER_TITLE_KING
 			}
 		}
 	}	

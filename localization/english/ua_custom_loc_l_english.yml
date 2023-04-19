@@ -35,6 +35,7 @@
  CustomLoc_UA_vin_ho: "го"
  CustomLoc_UA_vin_v: "в"
  CustomLoc_UA_vin_ov: "ов"
+ CustomLoc_UA_vin_iv: "ів"
  CustomLoc_UA_vin_empty: ""
 #жіночий
  CustomLoc_UA_vona_a: "а"
@@ -44,6 +45,7 @@
  CustomLoc_UA_vona_oU: "ою"
  CustomLoc_UA_vona_ala: "aла"
  CustomLoc_UA_vona_la: "ла"
+ CustomLoc_UA_vona_ela: "ела"
 
 ## Закінчення
 #[Select_CString(character.IsFemale,'$CustomLoc_UA_vona_ala$','$CustomLoc_UA_vin_av$')|l]

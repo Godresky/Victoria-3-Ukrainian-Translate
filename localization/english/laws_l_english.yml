@@ -182,7 +182,7 @@
   
   # Free speech group
  lawgroup_free_speech: "Свобода слова"
- lawgroup_free_speech_desc: "Закони, що регулюють свободу слова та право на публічні зібрання."
+ lawgroup_free_speech_desc: "Закони, що реґулюють свободу слова та право на публічні зібрання."
   
  law_outlawed_dissent: "Заборона іншодумства"
  law_outlawed_dissent_desc: "Критика уряду вважається зрадою та незаконною."
@@ -241,8 +241,8 @@
  law_serfdom_desc: "Селяни прив'язані до своєї землі і повинні працювати на своїх феодалів."
  law_serfdom_banned: "Кріпаччину скасовано"
  law_serfdom_banned_desc: "Феодальну практику кріпацтва скасовано."
- law_regulatory_bodies: "Регулювальні органи"
- law_regulatory_bodies_desc: "Створено державні інституції для регулювання надмірностей роботодавців."
+ law_regulatory_bodies: "Реґулювальні органи"
+ law_regulatory_bodies_desc: "Створено державні інституції для реґулювання надмірностей роботодавців."
  law_worker_protections: "Захист робітників"
  law_worker_protections_desc: "Робітники мають широкий захист, закріпленим законом."
   
@@ -317,7 +317,7 @@
 
  # Trade Policy group
  lawgroup_trade_policy: "Торгова політика"
- lawgroup_trade_policy_desc: "Закони, що регулюють торгівлю та обмін товарами через кордон."
+ lawgroup_trade_policy_desc: "Закони, що реґулюють торгівлю та обмін товарами через кордон."
  law_free_trade: "Вільна торгівля"
  law_free_trade_desc: "Не можна перешкоджати вільному обміну товарами, оскільки торгівля йде на користь усім."
  law_protectionism: "Захисття"
@@ -385,7 +385,7 @@
   
   # Rights of Women group
  lawgroup_rights_of_women: "Права жінок"
- lawgroup_rights_of_women_desc: "Правове регулювання представниць прекрасної статі."
+ lawgroup_rights_of_women_desc: "Правове реґулювання представниць прекрасної статі."
   
  law_no_womens_rights: "Юридична опіка"
  law_no_womens_rights_desc: "Жінки законно перебувають під опікою чоловіків і мають небагато прав."

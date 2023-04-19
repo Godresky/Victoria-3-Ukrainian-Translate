@@ -480,7 +480,7 @@
  concept_incorporated_adj: "Включен"
  concept_incorporating: "Включення"
  concept_incorporation: "Включення"
- concept_incorporated_state_desc: "[Concept('concept_state','$concept_states$')], що повністю інтеґровані у [Concept('concept_country','$concept_country_acc$')|l]. [Concept('concept_pop', '$concept_pops$')] у включених землях сплачують податки, отримати доступ до вигод від [Concept('concept_institution', '$concept_institutions_gen$')] та беруть повноцінну участь у політиці країни. [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] можуть стати включеними через іноді тривалий процес."
+ concept_incorporated_state_desc: "[Concept('concept_state','$concept_states$')], що повністю інтеґровані у [Concept('concept_country','$concept_country_acc$')|l]. [Concept('concept_pop', '$concept_pops$')] у включених землях сплачують податки, отримати доступ до вигод від [Concept('concept_institution', '$concept_institutions_gen$')|l] та беруть повноцінну участь у політиці країни. [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] можуть стати включеними через іноді тривалий процес."
 
  concept_capacity: "Cпроможність"
  concept_capacities: "Спроможності"

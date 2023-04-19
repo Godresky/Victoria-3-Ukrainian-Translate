@@ -1,15 +1,15 @@
 ﻿l_english:
- technology_events.1.t:0 "Unregulated Automobiles"
- technology_events.1.d:0 "Due to a spate of accidents, there have been calls to regulate automobiles. "
- technology_events.1.f:0 "It is being reported that [SCOPE.GetRootScope.GetCountry.GetCustom('automobile_accident_type')]"Faster than a horse and twice as heavy. If people don't see why that's dangerous, I don't know what to tell you.""
- technology_events.1.a:0 "Stricter laws make safer streets."
- technology_events.1.b:0 "People merely need to adjust."
- technology_events.1.c:0 "Automobiles should have the right of way."
+ technology_events.1.t: "Невреґульовані автомобілі"
+ technology_events.1.d: "Через велику кількість автотрощ, прозвучали заклики вреґулювати автомобілі. "
+ technology_events.1.f: "Сповіщають про те, що [SCOPE.GetRootScope.GetCountry.GetCustom('automobile_accident_type')]\n\n«Швидший за коня, але вдвічі важчий. Якщо людини не розуміють, чому це небезпечно, то я не знаю, що навіть сказати.»"
+ technology_events.1.a: "Суворіші закони - безпечніші вулиці."
+ technology_events.1.b: "Людям просто треба пристосуватися."
+ technology_events.1.c: "Автомобілі повинні мати перевагу в русі."
 
- custom_automobile_accident_type_crash:0 "two automobiles crashed into each other at high speed, severely injuring the occupants."
- custom_automobile_accident_type_wall_crash:0 "an out-of-control automobile crashed into a wall at high speeds, killing the driver."
- custom_automobile_accident_type_wall_person_hit:0 "an automobile struck a man who was crossing the street, killing him."
- custom_automobile_accident_type_river:0 "an automobile veered off the road and into a nearby river."
+ custom_automobile_accident_type_crash: "два автомобілі врізалися один в одного на великій швидкості, серйозно травмувавши пасажирів."
+ custom_automobile_accident_type_wall_crash: "некерований автомобіль на великій швидкості врізався в стіну, внаслідок чого загинув водій."
+ custom_automobile_accident_type_wall_person_hit: "автомобіль збив чоловіка, який переходив вулицю, вбивши його."
+ custom_automobile_accident_type_river: "автомобіль з’їхав з дороги і впав у річку."
 
  technology_events.10.t:0 "International Telephone Exchange"
  technology_events.10.d:0 "It has been suggested that by establishing a cross border telephone exchange with [SCOPE.sC('telephone_neighbour').GetName], we could improve relations more easily."
@@ -541,9 +541,9 @@
  character_events.6.b:0 "It is important we don't forget our history."
  character_events.6.c:0 "We shall relocate it to [ROOT.GetCountry.GetCapital.GetCityHubName] to keep an eye on it."
 
- industrialists_cars_restricted:0 "Disapprove of cars being restricted."
- industrialists_cars_unrestricted:0 "Approve of cars being unrestricted."
- automobile_regulations:0 "Automobile Safety Regulations"
+ industrialists_cars_restricted: "Не схвалюють обмеження для автомобілів."
+ industrialists_cars_unrestricted: "Схвалює необмежений рух автомобілів."
+ automobile_regulations: "Правила безпеки дорожнього руху"
 
  MULTIPLAYER_GUI_CLICK_TO_SELECT: "Нажміть на державу, щоб вибрати її."
 

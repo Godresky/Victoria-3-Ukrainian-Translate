@@ -274,7 +274,7 @@
 
 ##################### Contextual Election Events
 
- election_contextual_events.1.t: "Голоси за гречку" # High Food Prices
+ election_contextual_events.1.t: "Голоси за хліб і масло" # High Food Prices
  election_contextual_events.1.d: "Оскільки ціни на товар [SCOPE.sGoods('basic_foodstuff').GetName|l] стрімко зростають по всій державі, [SCOPE.sParty('high_food_price_party').GetName] перебуває під невпинним тиском з боку опозиції, яку звинувачують у безрозсудній грі з добробутом своїх громадян."
  election_contextual_events.1.f: "«Висока ціна на товар [SCOPE.sGoods('basic_foodstuff').GetNameNoFormatting|l]? Брехня! У моїй молодості ми обходилися вдвічі меншим, ніж ви маєте зараз! Ці «захмарні» ціни на їжу — не що інше, як міркування істеричних домогосподарок!»"
  election_contextual_events.1.a: "Тоді їм просто доведеться їсти щось інше!"
