@@ -553,6 +553,7 @@
  concept_taboo_desc:1 "A [concept_religion] can be have a $concept_taboo$ against specific [Concept('concept_good','$concept_goods$')]. [Concept('concept_pop', '$concept_pops$')] of that $concept_religion$ will spend significantly less on $concept_goods$ they consider $concept_taboo$ compared to other $concept_goods$ in the same [concept_pop_needs] category."
 
  concept_goods_substitution: "Заміщення товарів"
+ concept_goods_substitution_gen: "Заміщення товарів"
  concept_goods_substitution_acc: "Заміщення товарів"
  concept_goods_substitutes_short: "Замінники"
  concept_goods_substitution_desc:2 "[Concept('concept_good','$concept_goods$')] that are part of the same [concept_pop_needs] category are mutually substitutable to [Concept('concept_pop','$concept_pops$')] based on availability. For example, the Basic Food group contains both Grain and Meat, and $concept_pops$ will consume more Grain and less Meat, increasing their Meat consumption (and thus reducing Grain consumption) if Meat becomes more available in the market at a later point. In some cases, a Good may be substituted entirely if there are no [concept_sell_orders] for that Good in the [concept_market].\n\nHow much of a $concept_good$ a $concept_pop$ will buy compared to other $concept_goods$ in the same category will change substantially if the $concept_good$ is an [concept_obsession] of their [concept_culture] or a [concept_taboo] in their [concept_religion]. $concept_goods$ that have a higher [concept_base_price] count more towards fulfilling a $concept_pop$'s $concept_pop_needs$ within a particular $concept_pop_needs$ category, so a single unit of Groceries is equivalent to several units of Grain."
@@ -976,6 +977,7 @@
  concept_consumption_tax_gen: "Споживчого податку"
  concept_consumption_tax_acc: "Споживчий податок"
  concept_consumption_taxes: "Споживчі податки"
+ concept_consumption_taxes_acc: "Споживчі податки"
  concept_consumption_taxes_gen: "Споживчих податків"
  concept_consumption_tax_desc:3 "A [Concept('concept_taxes','$concept_tax$')] collected on specific [Concept('concept_good','$concept_goods$')] purchased by [Concept('concept_pop','$concept_pop$')] to meet their [concept_pop_needs]. Each $concept_good$ subject to $concept_consumption_taxes$ costs a certain amount of [concept_authority]. When applied to a $concept_good$, its [concept_market_price] increases by the $concept_consumption_tax$ rate at point of sale to $concept_pops$ only, with all [concept_buy_orders] generated in this manner resulting in the surcharge being collected by the [concept_treasury]. Since the surcharge is applied on the [concept_market] level, the $concept_tax$ is ineffective in [Concept('concept_state','$concept_states$')] with low [concept_market_access]."
 
@@ -1646,6 +1648,7 @@
  concept_pop_desc:3 "The world's population are organized into $concept_pops$, groups of individuals who work in the same [concept_building] as a certain [concept_profession], and share the same [concept_culture] and [concept_religion]. They use the [Concept('concept_pop_income','$concept_pop_income_short$')] they earn to buy [Concept('concept_good', '$concept_goods$')] to satisfy their [Concept('concept_pop_needs','$concept_pop_needs_short$')], which decides their [concept_wealth] and [concept_sol]. They can support [Concept('concept_interest_group', '$concept_interest_groups$')] and [Concept('concept_political_movement','$concept_political_movements$')], or be [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')]. A $concept_pop$ has a number of [concept_working_adults] and a number of [concept_dependents]. Some number of them are [Concept('concept_literacy','$concept_literate$')], and they might have a number of either [Concept('concept_loyalist','$concept_loyalists$')] or [Concept('concept_radical','$concept_radicals$')]."
 
  concept_profession: "Ремесло"
+ concept_profession_acc: "Ремесло"
  concept_profession_ins: "Ремеслом"
  concept_profession_jobs: "Робота"
  concept_profession_jobs_gen: "Роботи"

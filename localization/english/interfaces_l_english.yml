@@ -1251,7 +1251,7 @@
  TAX_BURDEN_TYPE_DIVIDEND: "$BUDGET_DIVIDENDS_TAXES$"
  TAX_BURDEN_TYPE_POLL: "$BUDGET_POLL_TAXES$"
  TAX_BURDEN_ITEM_LABEL: "[TaxBurdenItem.GetValue|v1%]"
- TAX_BURDEN_ITEM_LABEL_TOOLTIP:0 "#header [TaxBurdenItem.GetTaxType]#!\nThese Pops pay an average of [TaxBurdenItem.GetValue|v1%] of their Income as [TaxBurdenItem.GetTaxType]"
+ TAX_BURDEN_ITEM_LABEL_TOOLTIP: "#header [TaxBurdenItem.GetTaxType]#!\nЦі люди в середньому платять [TaxBurdenItem.GetValue|v1%] з їхнього прибутку як [TaxBurdenItem.GetTaxType|l]"
  POPS_OVERVIEW_GOODS_EXPENSES_LOW_LABEL: "[PopsOverviewPanel.GetGoodsExpensesPoor|v1%] на потреби"
  POPS_OVERVIEW_GOODS_EXPENSES_MIDDLE_LABEL: "[PopsOverviewPanel.GetGoodsExpensesMiddle|v1%] на потреби"
  POPS_OVERVIEW_GOODS_EXPENSES_UPPER_LABEL: "[PopsOverviewPanel.GetGoodsExpensesRich|v1%] на потреби"
@@ -1259,7 +1259,7 @@
  POPS_OVERVIEW_GOODS_EXPENSES_MIDDLE_LABEL_TOOLTIP: "#header На потреби#!\nЦі люди в середньому витрачають [PopsOverviewPanel.GetGoodsExpensesMiddle|v1%] на свої потреби"
  POPS_OVERVIEW_GOODS_EXPENSES_UPPER_LABEL_TOOLTIP: "#header На потреби#!\nЦі люди в середньому витрачають [PopsOverviewPanel.GetGoodsExpensesRich|v1%] на свої потреби"
  GOODS_EXPENSE_ITEM_LABEL: "[GoodsExpenseItem.GetExpenseRatio|v1%]"
- GOODS_EXPENSE_ITEM_TOOLTIP:1 "#header [Goods.GetTextIcon][Nbsp][Goods.GetName]#!\nThese Pops spend an average of [GoodsExpenseItem.GetExpenseRatio|v1%] of their Net Income on [Goods.GetName]. The average price is @money![GoodsExpenseItem.GetPrice|v1] #tooltippable #tooltip:COIN_STACK_TOOLTIP [LabelingHelper.GetPriceCompareIcon(GoodsExpenseItem.GetRelativePriceDiff)]#!#!, which is [GoodsExpenseItem.GetRelativePriceDiff|=-%1] compared to the Base Price for [Goods.GetName]"
+ GOODS_EXPENSE_ITEM_TOOLTIP:1 "#header [Goods.GetTextIcon][Nbsp][Goods.GetName]#!\nЦі люди в середньому витрачають [GoodsExpenseItem.GetExpenseRatio|v1%] їхнього чистого прибутку на товар [Goods.GetName|l]. Середня ціна: @money![GoodsExpenseItem.GetPrice|v1] #tooltippable #tooltip:COIN_STACK_TOOLTIP [LabelingHelper.GetPriceCompareIcon(GoodsExpenseItem.GetRelativePriceDiff)]#!#!, що на [GoodsExpenseItem.GetRelativePriceDiff|=-%1] більше порівняно з базисною ціною на товар [Goods.GetName|l]"
  POPS_OVERVIEW_REMAINDER_POOR: "#v [PopsOverviewPanel.GetIncomeRemainderPoor|%=+1]#! [SelectLocalization(GreaterThan_CFixedPoint(PopsOverviewPanel.GetIncomeRemainderPoor, '(CFixedPoint)0'), 'надлишку', 'нестачі')]"
  POPS_OVERVIEW_REMAINDER_MIDDLE: "#v [PopsOverviewPanel.GetIncomeRemainderMiddle|%=+1]#! [SelectLocalization(GreaterThan_CFixedPoint(PopsOverviewPanel.GetIncomeRemainderMiddle, '(CFixedPoint)0'), 'надлишку', 'нестачі')]"
  POPS_OVERVIEW_REMAINDER_RICH: "#v [PopsOverviewPanel.GetIncomeRemainderRich|%=+1]#! [SelectLocalization(GreaterThan_CFixedPoint(PopsOverviewPanel.GetIncomeRemainderRich, '(CFixedPoint)0'), 'надлишку', 'нестачі')]"
@@ -1267,14 +1267,14 @@
  POPS_OVERVIEW_REMAINDER_MIDDLE_TOOLTIP: "#header Тяг рівня життя#!\n#v [PopsOverviewPanel.GetIncomeRemainderMiddle|%=+1]#! з @money![PopsOverviewPanel.GetAverageIncomeMiddle|v1] йде на [SelectLocalization(GreaterThan_CFixedPoint(PopsOverviewPanel.GetIncomeRemainderMiddle, '(CFixedPoint)0'), 'підвищення', 'зниження')] середнього рівня життя цієї громади"
  POPS_OVERVIEW_REMAINDER_RICH_TOOLTIP: "#header Тяг рівня життя#!\n#v [PopsOverviewPanel.GetIncomeRemainderRich|%=+1]#! з @money![PopsOverviewPanel.GetAverageIncomeRich|v1] йде на [SelectLocalization(GreaterThan_CFixedPoint(PopsOverviewPanel.GetIncomeRemainderRich, '(CFixedPoint)0'), 'підвищення', 'зниження')] середнього рівня життя цієї громади"
 
- COUNTRY_SOL_ALL: "#header [Country.GetAdjective]ий середній [concept_sol|l] усього [Concept('concept_pop', '$concept_population$')|l]#!\n#v [Country.GetFormattedStandardOfLivingLabelAll] ([Country.GetFormattedStandardOfLivingAll]#!)\n$TOOLTIP_DELIMITER$\n[Country.GetAdditionalSOLFactorsDescAll]"
- COUNTRY_SOL_LOW: "#header [Country.GetAdjective]ий [Concept('concept_sol','$concept_sol_acc$')|l] [Concept('concept_lower_strata','$concept_lower_strata_gen$')|l]#!\n[GetTrendValue(Country.GetLowerStrataPopulationTrend)|vD] [Concept('concept_pop', '$concept_population_gen$')|l] із середнім рівнем життя - #v [Country.GetFormattedStandardOfLivingLabelPoor] ([Country.GetFormattedStandardOfLivingPoor]#!)\n$TOOLTIP_DELIMITER$\n[Country.GetAdditionalSOLFactorsDescPoor]"
- COUNTRY_SOL_MIDDLE: "#header [Country.GetAdjective]ий [Concept('concept_sol','$concept_sol_acc$')|l] [Concept('concept_middle_strata','$concept_middle_strata_gen$')|l]#!\n[GetTrendValue(Country.GetMiddleStrataPopulationTrend)|vD] [Concept('concept_pop', '$concept_population_gen$')|l] із середнім рівнем життя - #v [Country.GetFormattedStandardOfLivingLabelMiddle] ([Country.GetFormattedStandardOfLivingMiddle]#!)\n$TOOLTIP_DELIMITER$\n[Country.GetAdditionalSOLFactorsDescMiddle]"
- COUNTRY_SOL_UPPER: "#header [Country.GetAdjective]ий [Concept('concept_sol','$concept_sol_acc$')|l] [Concept('concept_upper_strata','$concept_upper_strata_gen$')|l]#!\n[GetTrendValue(Country.GetUpperStrataPopulationTrend)|vD] [Concept('concept_pop', '$concept_population_gen$')|l] із середнім рівнем життя - #v [Country.GetFormattedStandardOfLivingLabelRich] ([Country.GetFormattedStandardOfLivingRich]#!)\n$TOOLTIP_DELIMITER$\n[Country.GetAdditionalSOLFactorsDescRich]"
- COUNTRY_EXPECTED_SOL_ALL: "#header [Country.GetAdjective]ий середній [concept_expected_sol|l] усього [Concept('concept_pop', '$concept_population$')|l]#!\n#v [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Country.GetExpectedSoLByPopulation)] ([Country.GetExpectedSoLByPopulation|1]#!)\n$TOOLTIP_DELIMITER$\n[Country.GetExpectedSOLFactorsDescAll]"
- COUNTRY_EXPECTED_SOL_LOW: "#header [Country.GetAdjective]ий середній [concept_expected_sol|l] [Concept('concept_lower_strata','$concept_lower_strata_gen$')|l]#!\n#v [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Country.GetExpectedStandardOfLivingPoor)] ([Country.GetExpectedStandardOfLivingPoor|1]#!)\n$TOOLTIP_DELIMITER$\n[Country.GetExpectedSOLFactorsDescPoor]"
- COUNTRY_EXPECTED_SOL_MIDDLE: "#header [Country.GetAdjective]ий середній [concept_expected_sol|l] [Concept('concept_middle_strata','$concept_middle_strata_gen$')|l]#!\n#v [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Country.GetExpectedStandardOfLivingMiddle)] ([Country.GetExpectedStandardOfLivingMiddle|1]#!)\n$TOOLTIP_DELIMITER$\n[Country.GetExpectedSOLFactorsDescMiddle]"
- COUNTRY_EXPECTED_SOL_UPPER: "#header [Country.GetAdjective]ий середній [concept_expected_sol|l] [Concept('concept_upper_strata','$concept_upper_strata_gen$')|l]#!\n#v [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Country.GetExpectedStandardOfLivingRich)] ([Country.GetExpectedStandardOfLivingRich|1]#!)\n$TOOLTIP_DELIMITER$\n[Country.GetExpectedSOLFactorsDescRich]"
+ COUNTRY_SOL_ALL: "#header #yellow [Country.GetAdjective]ий#! середній [concept_sol|l] усього [Concept('concept_pop', '$concept_population$')|l]#!\n#v [Country.GetFormattedStandardOfLivingLabelAll] ([Country.GetFormattedStandardOfLivingAll]#!)\n$TOOLTIP_DELIMITER$\n[Country.GetAdditionalSOLFactorsDescAll]"
+ COUNTRY_SOL_LOW: "#header #yellow [Country.GetAdjective]ий#! [Concept('concept_sol','$concept_sol_acc$')|l] [Concept('concept_lower_strata','$concept_lower_strata_gen$')|l]#!\n[GetTrendValue(Country.GetLowerStrataPopulationTrend)|vD] [Concept('concept_pop', '$concept_population_gen$')|l] з середнім рівнем життя - #v [Country.GetFormattedStandardOfLivingLabelPoor] ([Country.GetFormattedStandardOfLivingPoor]#!)\n$TOOLTIP_DELIMITER$\n[Country.GetAdditionalSOLFactorsDescPoor]"
+ COUNTRY_SOL_MIDDLE: "#header #yellow [Country.GetAdjective]ий#! [Concept('concept_sol','$concept_sol_acc$')|l] [Concept('concept_middle_strata','$concept_middle_strata_gen$')|l]#!\n[GetTrendValue(Country.GetMiddleStrataPopulationTrend)|vD] [Concept('concept_pop', '$concept_population_gen$')|l] з середнім рівнем життя - #v [Country.GetFormattedStandardOfLivingLabelMiddle] ([Country.GetFormattedStandardOfLivingMiddle]#!)\n$TOOLTIP_DELIMITER$\n[Country.GetAdditionalSOLFactorsDescMiddle]"
+ COUNTRY_SOL_UPPER: "#header #yellow [Country.GetAdjective]ий#! [Concept('concept_sol','$concept_sol_acc$')|l] [Concept('concept_upper_strata','$concept_upper_strata_gen$')|l]#!\n[GetTrendValue(Country.GetUpperStrataPopulationTrend)|vD] [Concept('concept_pop', '$concept_population_gen$')|l] з середнім рівнем життя - #v [Country.GetFormattedStandardOfLivingLabelRich] ([Country.GetFormattedStandardOfLivingRich]#!)\n$TOOLTIP_DELIMITER$\n[Country.GetAdditionalSOLFactorsDescRich]"
+ COUNTRY_EXPECTED_SOL_ALL: "#header #yellow [Country.GetAdjective]ий#! середній [concept_expected_sol|l] усього [Concept('concept_pop', '$concept_population$')|l]#!\n#v [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Country.GetExpectedSoLByPopulation)] ([Country.GetExpectedSoLByPopulation|1]#!)\n$TOOLTIP_DELIMITER$\n[Country.GetExpectedSOLFactorsDescAll]"
+ COUNTRY_EXPECTED_SOL_LOW: "#header #yellow [Country.GetAdjective]ий#! середній [concept_expected_sol|l] [Concept('concept_lower_strata','$concept_lower_strata_gen$')|l]#!\n#v [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Country.GetExpectedStandardOfLivingPoor)] ([Country.GetExpectedStandardOfLivingPoor|1]#!)\n$TOOLTIP_DELIMITER$\n[Country.GetExpectedSOLFactorsDescPoor]"
+ COUNTRY_EXPECTED_SOL_MIDDLE: "#header #yellow [Country.GetAdjective]ий#! середній [concept_expected_sol|l] [Concept('concept_middle_strata','$concept_middle_strata_gen$')|l]#!\n#v [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Country.GetExpectedStandardOfLivingMiddle)] ([Country.GetExpectedStandardOfLivingMiddle|1]#!)\n$TOOLTIP_DELIMITER$\n[Country.GetExpectedSOLFactorsDescMiddle]"
+ COUNTRY_EXPECTED_SOL_UPPER: "#header #yellow [Country.GetAdjective]ий#! середній [concept_expected_sol|l] [Concept('concept_upper_strata','$concept_upper_strata_gen$')|l]#!\n#v [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Country.GetExpectedStandardOfLivingRich)] ([Country.GetExpectedStandardOfLivingRich|1]#!)\n$TOOLTIP_DELIMITER$\n[Country.GetExpectedSOLFactorsDescRich]"
 
  CULTURE_GLOBAL_AVG_STANDARD_OF_LIVING: "[LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Culture.CalcAvgSoL)|v] (#v [Culture.CalcAvgSoL|1]#!)"
  CULTURE_GLOBAL_AVG_STANDARD_OF_LIVING_LOWER_CLASS: "[LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Culture.CalcAvgSoLForPoor)|v] (#v [Culture.CalcAvgSoLForPoor|1]#!)"
@@ -1561,7 +1561,7 @@
  LOYALISTS_SUMMARY_POP_TYPE_LIST_ITEM: "\n$TAB$[PopType.GetLoyalists(Country.Self)|vD] [PopType.GetName]"
  RADICALS_SUMMARY_POP_TYPE_LIST_ITEM_NO_TAB: "\n[PopType.GetRadicals(Country.Self)|vD] [PopType.GetName]"
  LOYALISTS_SUMMARY_POP_TYPE_LIST_ITEM_NO_TAB: "\n[PopType.GetLoyalists(Country.Self)|vD] [PopType.GetName]"
- RADICALS_LOYALISTS_SUMMARY_POP_TYPE_OTHER_LIST_ITEM: "\n$TAB$#tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] $VAL|vD$#!#! мають інші роботи [Concept('concept_profession', '$concept_profession_jobs_gen$')|l]"
+ RADICALS_LOYALISTS_SUMMARY_POP_TYPE_OTHER_LIST_ITEM: "\n$TAB$#tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] $VAL|vD$#!#! мають інші [Concept('concept_profession', '$concept_profession_jobs_gen$')|l]"
  RADICALS_LOYALISTS_SUMMARY_POLITICALLY_INACTIVE_LIST_ITEM: "\n$TAB$$VAL|vD$ [Concept('concept_politically_inactive_involved', '$concept_politically_inactive_gen$')|l]"
 
  POP_TOOLTIP_DELAYED: "\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty( SelectLocalization( GreaterThan_int32( GetPlayer.GetPeopleAbroad, '(int32)0' ), 'INCORPORATED_POPULATION', ''), '\n')][ConcatIfNeitherEmpty( SelectLocalization( GreaterThan_int32( GetPlayer.GetPeopleAbroad, '(int32)0' ), 'UNINCORPORATED_POPULATION', ''), '\n\n')]$POP_TOOLTIP_DELAYED_EMPLOYMENT_DETAIL$"
@@ -2001,7 +2001,7 @@
  UNDISCOURAGE_GOODS: "Зупинити стримання"
  TAX_GOODS: "Додати податок на споживання"
  NO_GOODS_TO_TAX: "Немає товарів, на які можна збирати [Concept('concept_consumption_tax', '$concept_consumption_tax_acc$')|l]"
- UNTAX_GOODS: "Прибрати податок на споживання"
+ UNTAX_GOODS: "Скасувати податок на споживання"
  SUBSIDIZE_SHORT: "Субси:"
 
  TAX_WASTE: "[concept_tax_waste]: #v $VAL|-%$#!"
@@ -2373,8 +2373,8 @@
  POP_CONSUMPTION: "[concept_pop_needs]"
  BUILDING_CONSUMPTION: "Споживання будівлі"
  BUILDING_PRODUCTION: "Виробництво будівлі"
- GOODS_PANEL_VALUE_TOOLTIP:0 "#header $NAME$#!\n$DESC$\nAmount: #variable $VALUE|D$#!$BREAKDOWN$"
- GOODS_PANEL_VALUE_CHILD_TOOLTIP:0 "$NAME$ - $DESC$: #variable $VALUE|D$#!"
+ GOODS_PANEL_VALUE_TOOLTIP: "#header $NAME$#!\n$DESC$\nОбсяг: #variable $VALUE|D$#!$BREAKDOWN$"
+ GOODS_PANEL_VALUE_CHILD_TOOLTIP: "$NAME$ - $DESC$: #variable $VALUE|D$#!"
 
  GOODS_ICON_AND_NAME_FORMAT:1 "[Goods.GetTextIcon][Nbsp][Goods.GetName]"
  GOODS_EMBARGO_HEADER:0 "#header [concept_embargo]#!"
@@ -2387,24 +2387,24 @@
  GOODS_ENCOURAGE_CONSUMPTION_ACTIVE:2 "We are [Concept('concept_encourage_consumption', '$concept_encouraging_consumption$')] of [Goods.GetTextIcon][Nbsp][Goods.GetName]"
  GOODS_DISCOURAGE_CONSUMPTION_INACTIVE:2 "We are not [Concept('concept_discourage_consumption', '$concept_discouraging_consumption$')] of [Goods.GetTextIcon][Nbsp][Goods.GetName]"
  GOODS_DISCOURAGE_CONSUMPTION_ACTIVE:2 "We are [Concept('concept_discourage_consumption', '$concept_discouraging_consumption$')] of [Goods.GetTextIcon][Nbsp][Goods.GetName]"
- GOODS_TAX_INACTIVE:2 "We are not collecting [Concept('concept_consumption_tax', '$concept_consumption_taxes$')] on [Goods.GetTextIcon][Nbsp][Goods.GetName]"
- GOODS_TAX_ACTIVE:2 "We are collecting [Concept('concept_consumption_tax', '$concept_consumption_taxes$')] on[Goods.GetTextIcon][Nbsp][Goods.GetName]"
+ GOODS_TAX_INACTIVE: "Ми не стягуємо [Concept('concept_consumption_tax', '$concept_consumption_taxes_acc$')|l] на [Concept('concept_good', '$concept_good_acc$')|l] [Goods.GetTextIcon][Nbsp][Goods.GetName|l]"
+ GOODS_TAX_ACTIVE: "Ми стягуємо [Concept('concept_consumption_tax', '$concept_consumption_taxes_acc$')|l] на [Concept('concept_good', '$concept_good_acc$')|l] [Goods.GetTextIcon][Nbsp][Goods.GetName|l]"
  TOGGLE_GOODS_EMBARGO_INACTIVE:0 "#instruction Ліва клавіша#! to $EMBARGO_GOODS$"
  TOGGLE_GOODS_EMBARGO_ACTIVE:0 "#instruction Ліва клавіша#! to $UNEMBARGO_GOODS$"
  TOGGLE_GOODS_ENCOURAGE_CONSUMPTION_INACTIVE:0 "#instruction Ліва клавіша#! to $ENCOURAGE_GOODS$"
  TOGGLE_GOODS_ENCOURAGE_CONSUMPTION_ACTIVE:0 "#instruction Ліва клавіша#! to $UNENCOURAGE_GOODS$"
  TOGGLE_GOODS_DISCOURAGE_CONSUMPTION_INACTIVE:0 "#instruction Ліва клавіша#! to $DISCOURAGE_GOODS$"
  TOGGLE_GOODS_DISCOURAGE_CONSUMPTION_ACTIVE:0 "#instruction Ліва клавіша#! to $UNDISCOURAGE_GOODS$"
- TOGGLE_GOODS_TAX_INACTIVE:0 "#instruction Ліва клавіша#! to $TAX_GOODS$"
- TOGGLE_GOODS_TAX_ACTIVE:0 "#instruction Ліва клавіша#! to $UNTAX_GOODS$"
+ TOGGLE_GOODS_TAX_INACTIVE: "#instruction Ліва клавіша#!, щоб додати податок на споживання"
+ TOGGLE_GOODS_TAX_ACTIVE: "#instruction Ліва клавіша#!, щоб скасувати податок на споживання"
  GOODS_EMBARGO_EFFECTS_INACTIVE:3 "Establishing an [concept_embargo] on [Goods.GetTextIcon][Nbsp][Goods.GetName] will cost us @aut![Nbsp]#v $COST|-0$#! and prevent [Concept('concept_country', '$concept_countries$')] without a [concept_market_share] from establishing [Goods.GetTextIcon][Nbsp][Goods.GetName] [Concept('concept_trade_route', '$concept_trade_routes$')] in [Concept('concept_market', '$concept_markets$')] where we are the [concept_market_owner]"
  GOODS_EMBARGO_EFFECTS_ACTIVE:1 "Ending our [concept_embargo] on [Goods.GetTextIcon][Nbsp][Goods.GetName] will recover the current expense of @aut![Nbsp]#v $COST|+0$#!"
  GOODS_ENCOURAGE_CONSUMPTION_EFFECTS_INACTIVE:2 "[Concept('concept_encourage_consumption', '$concept_encouraging_consumption$')] of [Goods.GetTextIcon][Nbsp][Goods.GetName] cost us @aut![Nbsp]#v $COST|-0$#! and over time will increase the amount of [Goods.GetTextIcon][Nbsp][Goods.GetName] that [Concept('concept_pop', '$concept_pops$')] in all [Concept('concept_market', '$concept_markets$')] where we have a [concept_market_share] consume as part of [concept_goods_substitution]"
  GOODS_ENCOURAGE_CONSUMPTION_EFFECTS_ACTIVE:1 "Ending our efforts to [concept_encourage_consumption] of [Goods.GetTextIcon][Nbsp][Goods.GetName] will recover the current expense of @aut![Nbsp]#v $COST|+0$#!"
  GOODS_DISCOURAGE_CONSUMPTION_EFFECTS_INACTIVE:2 "[Concept('concept_discourage_consumption', '$concept_discouraging_consumption$')] of [Goods.GetTextIcon][Nbsp][Goods.GetName] will cost us @aut![Nbsp]#v $COST|-0$#! and over time will decrease the amount of [Goods.GetTextIcon][Nbsp][Goods.GetName] that [Concept('concept_pop', '$concept_pops$')] in all [Concept('concept_market', '$concept_markets$')] where we have a [concept_market_share] consume as part of [concept_goods_substitution]"
  GOODS_DISCOURAGE_CONSUMPTION_EFFECTS_ACTIVE:1 "Ending our efforts to [concept_discourage_consumption] of [Goods.GetTextIcon][Nbsp][Goods.GetName] will recover the current expense of @aut![Nbsp]#v $COST|+0$#!"
- GOODS_TAX_EFFECTS_INACTIVE:2 "Collecting a [concept_consumption_tax] on $GOODS_NAME$[Nbsp]$GOODS_ICON$ will cost us @aut![Nbsp]#v $COST|-0$#! and generate approximately @money!$REVENUE|K+v$ in revenue"
- GOODS_TAX_EFFECTS_ACTIVE:2 "Removing our [concept_consumption_tax] on $GOODS_NAME$[Nbsp]$GOODS_ICON$ will recover the current expense of @aut![Nbsp]#v $COST|+0$#! but also lose us approximately @money!$REVENUE|K+v$ in revenue"
+ GOODS_TAX_EFFECTS_INACTIVE: "Стягування [Concept('concept_consumption_tax', '$concept_consumption_tax_gen$')|l] на [Concept('concept_good', '$concept_good_acc$')|l] $GOODS_NAME|l$[Nbsp]$GOODS_ICON$ коштуватиме нам @aut![Nbsp]#v $COST|-0$#! і принесе приблизно @money!$REVENUE|K+v$ виручки"
+ GOODS_TAX_EFFECTS_ACTIVE:2 "Скасування нашого [Concept('concept_consumption_tax', '$concept_consumption_tax_gen$')|l] на [Concept('concept_good', '$concept_good_acc$')|l] $GOODS_NAME|l$[Nbsp]$GOODS_ICON$ відшкодує поточні витрати @aut![Nbsp]#v $COST|+0$#!, але ми втратимо приблизно @money!$REVENUE|K+v$ виручки"
 
  NOT_PERMITTED_TO_EMBARGO_GOODS:2 "Our laws do not allow for [Concept('concept_embargo', '$concept_embargoes$')] on [Goods.GetTextIcon][Nbsp][Goods.GetName]"
  NOT_PERMITTED_TO_ENCOURAGE_GOODS:2 "Our laws do not allow [Concept('concept_encourage_consumption', '$concept_encouraging_consumption$')] of [Goods.GetTextIcon][Nbsp][Goods.GetName]"
@@ -2417,7 +2417,7 @@
  NOT_POSSIBLE_TO_ENCOURAGE_NOT_BOUGHT_BY_POPS:1 "It is not possible to [concept_encourage_consumption] of [Goods.GetTextIcon][Nbsp][Goods.GetName] because it is not consumed by [Concept('concept_pop', '$concept_pops$')]"
  NOT_POSSIBLE_TO_DISCOURAGE_NOT_BOUGHT_BY_POPS:1 "It is not possible to [concept_discourage_consumption] of [Goods.GetTextIcon][Nbsp][Goods.GetName] because it is not consumed by [Concept('concept_pop', '$concept_pops$')]"
  NOT_POSSIBLE_TO_EMBARGO_NON_TRADABLE:2 "It is not possible to [concept_embargo] [Goods.GetTextIcon][Nbsp][Goods.GetName] because it cannot be traded between [Concept('concept_market', '$concept_markets$')]"
- GOODS_INTERACTION_INSUFFICIENT_AUT:1 "Have at least @aut!$REQVAL|0v=+$ [concept_authority]"
+ GOODS_INTERACTION_INSUFFICIENT_AUT:1 "Маємо принаймні @aut!$REQVAL|0v=+$" # [concept_authority]
  GOODS_INTERACTION_INSUFFICIENT_INF:0 "Insufficient available $INFLUENCE$, $REQVAL|1v$ needed "
 
  LAW: "#bold [Law.GetNameNoFormatting]#!"
@@ -2754,7 +2754,7 @@
  TOOLTIP_BUILDING_USES:0 "#header [Goods.GetNameNoFormatting]#!"
  TOOLTIP_BUILDING_USES_UNITS_INFO: "#header [Goods.GetName]#!\nВикористана кількість: #variable [Building.GetConsumption(Goods.Self)|0]#! / щотижня\n[Building.GetConsumptionDesc(Goods.Self)]"
  TOOLTIP_BUILDING_PRODUCES:0 "#header [Goods.GetNameNoFormatting]#!\n"
- TOOLTIP_BUILDING_PRODUCES_UNITS_INFO:0 "#header [Goods.GetName]#!\nAmount produced: #variable [Building.GetProduction(Goods.Self)|0]#! / week\n$TOOLTIP_DELIMITER$\nOutput percentage: #variable [Building.GetOutputPercentage(Goods.Self)|%1]#! of production from [Building.GetName]\n[Building.GetProductionDesc(Goods.Self)]"
+ TOOLTIP_BUILDING_PRODUCES_UNITS_INFO:0 "#header [Goods.GetName]#!\nAmount produced: #variable [Building.GetProduction(Goods.Self)|0]#! / щотижня\n$TOOLTIP_DELIMITER$\nOutput percentage: #variable [Building.GetOutputPercentage(Goods.Self)|%1]#! of production from [Building.GetName]\n[Building.GetProductionDesc(Goods.Self)]"
 
 
  TOOLTIP_BUILDING_USES_VALUE_INFO:2 "#header [Goods.GetTextIcon][Nbsp][Goods.GetName]#!\nExpenses paid for [Goods.GetTextIcon][Nbsp][Goods.GetName] used: #variable @money![Building.GetConsumptionValue(Goods.Self)|D]#!\n$TOOLTIP_DELIMITER$\nState Region price: [Goods.GetStatePriceWithTooltip|1]"
@@ -2844,7 +2844,7 @@
  CULTURE_OF_SAME_HERITAGE: "Культури тієїж спадщини ([GetDataModelSize(Culture.AccessSameHeritageCultures)])"
  TURMOIL_OF_CULTURE: "Average [concept_turmoil] of all the [Concept('concept_pop', '$concept_pops$')] of this Culture"
 
- POP_NEEDS_HEADER:0 "Consists of the following [Concept('concept_good', '$concept_goods$')] that are mutually substitutable through [concept_goods_substitution]:"
+ POP_NEEDS_HEADER: "Воно складається з таких [Concept('concept_good', '$concept_goods_gen$')|l], які є взаємозамінними через [Concept('concept_goods_substitution', '$concept_goods_substitution_gen$')|l]:"
  POP_NEEDS_ENTRY_DEFAULT:1 "[Goods.GetTextIcon][Nbsp][Goods.GetName] - Default [Concept('concept_good', '$concept_goods$')] for [POP_NEED.GetName]"
  POP_NEEDS_ENTRY:1 "[Goods.GetTextIcon][Nbsp][Goods.GetName] - Equivalent to $MULT|2v$ unit(s) of [POP_NEED.GetDefaultGoods.GetName]"
  BUY_PACKAGE_POP_CONSUMPTION_WEALTH_SPECIFIC: "Споживається [Concept('concept_pop', '$concept_population_ins$')|l] of [concept_wealth] Levels $LEVEL|v$"
@@ -2953,9 +2953,9 @@
  UNPRODUCTIVE_TRADE_ROUTES: "Ваші непродуктивні [Concept('concept_trade_route', '$concept_trade_routes$')|l]"
 
  CONSTRUCTION_SECTOR_INPUT_FACTOR:0 "Multiplied by #v x$MULT$#! due to unused [concept_construction]"
- CONSTRUCTION_BREAKDOWN:1 "#header [concept_construction]: $CONSTRUCTION_SPEED$#! / week\n$TOOLTIP_DELIMITER$\n#v #tooltippable #tooltip:$BREAKDOWN_TAG$ $BASE_CONSTRUCTION$#!#!#! [concept_construction] provided by [Country.GetName][ConcatIfNeitherEmpty('\n\n','$CAPPEDDESC$')][ConcatIfNeitherEmpty('\n\n','$MODIFIERDESC$')]"
+ CONSTRUCTION_BREAKDOWN: "#header [concept_construction]: $CONSTRUCTION_SPEED$#! / щотижня\n$TOOLTIP_DELIMITER$\n#v #tooltippable #tooltip:$BREAKDOWN_TAG$ $BASE_CONSTRUCTION$#!#!#! [Concept('concept_construction','$concept_construction_gen$')|l] надано [Concept('concept_country','$concept_country_ins$')|l] [Country.GetName][ConcatIfNeitherEmpty('\n\n','$CAPPEDDESC$')][ConcatIfNeitherEmpty('\n\n','$MODIFIERDESC$')]"
  CONSTRUCTION_MODIFIER_HEADER:0 "Efficiency of weekly [concept_construction] in [State.GetName] is modified by:\n$MODIFIER_BREAKDOWN$"
- CONSTRUCTION_CAPPED_DESC:0 "Progress of [BuildingType.GetName] is capped at #v $MAXPOINTS$#! [concept_construction] / week"
+ CONSTRUCTION_CAPPED_DESC:0 "Progress of [BuildingType.GetName] is capped at #v $MAXPOINTS$#! [concept_construction] / щотижня"
 
 
  
@@ -3339,7 +3339,7 @@
  INVESTMENT_POOL_CHANGE: "[GetPlayer.GetInvestmentPoolChangeFromConstructionDesc]\n[GetPlayer.GetInvestmentPoolChangeFromInvestmentDesc]"
  INVESTMENT_POOL_CHANGE_FROM_CONSTRUCTION: "#bold Нове [concept_construction|l]:#! #v @money!$CHANGE|D+$#!"
  INVESTMENT_POOL_CHANGE_FROM_CONSTRUCTION_EMPTY: "Не проводиться [Concept('concept_construction', '$concept_construction_acc$')|l] з використанням пулу вкладів: #v @money!$CHANGE|D+=$#!"
- INVESTMENT_POOL_CHANGE_FROM_INVESTMENT: "[concept_reinvestment]: #v @money!#tooltippable #tooltip:[GetPlayer.GetTooltipTag],INVESTMENT_POOL_SOURCES_BREAKDOWN $CHANGE|D+=$#!#!#!\nУсі вклади множаться на #v x$MULTIPLIER$#! через #yellow [GetPlayer.GetAdjective|l]ий!# [Concept('concept_gdp','$concept_gdp_short$')] у @money![GetPlayer.GetGDP|Dv]"
+ INVESTMENT_POOL_CHANGE_FROM_INVESTMENT: "[concept_reinvestment]: #v @money!#tooltippable #tooltip:[GetPlayer.GetTooltipTag],INVESTMENT_POOL_SOURCES_BREAKDOWN $CHANGE|D+=$#!#!#!\nУсі вклади множаться на #v x$MULTIPLIER$#! через #yellow [GetPlayer.GetAdjective|l]ий#! [Concept('concept_gdp','$concept_gdp_short$')] у @money![GetPlayer.GetGDP|Dv]"
  INVESTMENT_POOL_CHANGE_FROM_INVESTMENT_EMPTY: "Немаж джерел вкладів: #v @money!$CHANGE|D+=$#!"
  INVESTMENT_POOL_SOURCES_BREAKDOWN: "#header [Concept('concept_building', '$concept_buildings$')], що вклали [Concept('concept_money', '$concept_money_acc$')|l] у [Concept('concept_investment_pool', '$concept_investment_pool_acc$')|l]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetInvestmentPoolChangeFromInvestmentBreakdown]"
  INVESTMENT_FROM_BUILDING_DETAIL: "[BuildingType.GetName]: #N #variable @money!$VAL|D+$#!#!"
@@ -3398,7 +3398,7 @@
  TRADE_ROUTE_OPEN_EXPORTING_MARKET: "Показати [TradeRoute.GetExportingMarket.GetName|l] (Вивізник)"
  TRADE_ROUTE_OPEN_IMPORTING_MARKET: "Показати [TradeRoute.GetImportingMarket.GetName|l] (Ввізник)"
  
- SET_TARIFF_FOCUS_ALREADY_ACTIVE:0 "[concept_tariffs] already set to $FOCUS|v$"
+ SET_TARIFF_FOCUS_ALREADY_ACTIVE: "[concept_tariffs] вже налаштовані на «$FOCUS|v$»"
  SET_TARIFF_FOCUS_NOT_ALLOWED:0 "Our Trade Policy does not allow us to set [concept_tariffs] to $FOCUS|v$"
 
  TARIFFS_BREAKDOWN: "#tooltip_header [concept_tariffs]#!\nВсього: #v @money![GetPlayer.PredictTariffs|K+=]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.PredictTariffsDesc]"
@@ -3990,7 +3990,7 @@
  IDEOLOGY_STRONG_DISAPPROVAL: "#N Сильне несхвалення#!"
 
  IDEOLOGY_NO_LAW_STANCES: "#bold Без жодної думки#!"
- IDEOLOGY_LAW_STANCE_GROUP: "#title Думка щодо групи «$LAW_GROUP$»#!"
+ IDEOLOGY_LAW_STANCE_GROUP: "#title Думка щодо групи законів «$LAW_GROUP$»#!"
  IDEOLOGY_LAW_STANCE_STRONGLY_APPROVE: "#P Сильна підтримка#! законів: $LAWS$"
  IDEOLOGY_LAW_STANCE_APPROVE: "#P $concept_endorse$#! законів: $LAWS$"
  IDEOLOGY_LAW_STANCE_DISAPPROVE: "#N $concept_oppose$#! законам: $LAWS$"
@@ -5312,8 +5312,8 @@
  ACTIVE_INSTITUTIONS_TITLE: "#title Установи#!"
  REFORM: "Реформи"
 
- tariff_import_priority: "Захищати внутрішніх виробників"
- tariff_export_priority: "Заохочувати ввіз"
+ tariff_import_priority: "Захищати внутрішні поставки"
+ tariff_export_priority: "Заохочувати вивіз"
  tariff_no_priority: "Без пріоритету"
  
  tariff_level_very_low: "Дуже низькі"
@@ -5381,7 +5381,7 @@
  PREDICTED_TARIFF_LEVEL_REVENUE: "Передбачуваний дохід: @money!$VALUE|Kv$"
  PREDICTED_TARIFF_LEVEL_DELTA: "Зміна доходу порівняно з чинною [Concept('concept_tariffs','$concept_tariff_adj$ою')|l] політикою: #variable @money!$DELTA_INCOME|+=D$#!"
  PREDICTED_TARIFF_LAW_DELTA: "Зміна доходу порівняно з чинним [Concept('concept_tariffs','$concept_tariff_adj$им')|l] законом: #variable @money!$DELTA_INCOME|+=D$#!"
- TARIFF_LEVEL_HEADER: " #header [concept_market_good_policy]: $TARIFF_LEVEL$ #!"
+ TARIFF_LEVEL_HEADER: " #header [concept_market_good_policy]: $TARIFF_LEVEL|l$ #!"
  TARIFF_LEVEL_TARIFF_LAW: "Торгова політика: [LawType.GetName|l]"
  TARIFF_LEVEL_NO_TARIFF_LAW: "Торгова політика: немає"
 
@@ -5575,8 +5575,8 @@
  EDUCATION_ACCESS_DETAILS_TOOLTIP:0 "[Pop.GetEducationAccessDetailsDesc]"
  EDUCATION_ACCESS_FROM_WEALTH:1 "From [concept_wealth] level of $WEALTH|v$: #b $TOTAL|=+2%$#!\n#P #b $PER_LEVEL|%|2$#!#! for each level of [concept_wealth]:"
  EDUCATION_ACCESS_POP_TYPE:0 "From [POP.GetPopType.GetName] [concept_profession]: #b $VALUE|=+%2$#!"
- INSTITUTION_FROM_EACH_LEVEL:0 "each level of $INSTITUTION_TYPE$ (#b $INSTITUTE_LEVEL|v$#!)"
- INSTITUTION_PER_LEVEL:0 "per level of $INSTITUTION_TYPE$ (#b $INSTITUTE_LEVEL|v$#!)"
+ INSTITUTION_FROM_EACH_LEVEL: "за кожен рівень установи $INSTITUTION_TYPE$ (#b $INSTITUTE_LEVEL|v$#!)"
+ INSTITUTION_PER_LEVEL: "за рівень установи $INSTITUTION_TYPE$ (#b $INSTITUTE_LEVEL|v$#!)"
 
  STATE_POTENTIAL_QUALIFICATIONS:1 "#header Potential [concept_pop_qualifications] in [State.GetName]#!\n[SelectLocalization(State.HasInsufficientQualificationsForAvailablePositions, '$INSUFFICENT_QUALIFICATIONS$', '@green_checkmark! Has Qualifications to fill all current Vacancies')]\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
 
@@ -5873,7 +5873,7 @@
  notification_violate_sovereignty_third_party_joins_desc:1 "[SCOPE.sC('third_party_country').GetName] has come to the aid of [SCOPE.sC('target_country').GetName] after their sovereignty was violated by [SCOPE.sC('initiator').GetName]."
 
  SUBSIDIZED_YES:2 "$SUBSIDIZED_YES_HEADER$[ConcatIfNeitherEmpty('\n\n', Building.GetSubsidiesDesc)]\n\n[SelectLocalization(IsValid( Building.ToggleSubsidies ), 'REVOKE_SUBSIDIES_POSSIBLE', GetDesc(Building.ToggleSubsidies))]"
- SUBSIDIZED_YES_HEADER:3 "#header [Concept('concept_subsidies', '$concept_subsidized$')]#!\n$TOOLTIP_DELIMITER$\nThis building is $concept_subsidized$ and costs #N #bold @money! [Building.GetSubsidies|D]#!#! / week"
+ SUBSIDIZED_YES_HEADER:3 "#header [Concept('concept_subsidies', '$concept_subsidized$')]#!\n$TOOLTIP_DELIMITER$\nThis building is $concept_subsidized$ and costs #N #bold @money! [Building.GetSubsidies|D]#!#! / щотижня"
  REVOKE_SUBSIDIES_POSSIBLE:0 "#instruction Click to stop subsidizing it#!"
  SUBSIDIES_MANDATED_BY_MODIFIER:0 "$MODIFIERNAME$#indent_newline:3 \n$DESCRIPTION$#!"
 
@@ -6308,10 +6308,10 @@
  building_expanded_notification_group:0 "Building Expanded"
 
  POP_TYPE_SUPPORT_TITLE: "#b [Concept('concept_interest_group', '$concept_interest_groups$')], які [PopType.GetName|l] підтримують у [Concept('concept_country', '$concept_country_loc$')|l] [Country.GetName]:#!"
- POP_TYPE_SUPPORT_SINGLE:0 "[INTEREST_GROUP.GetName]: $SUPPORT_PERCENTAGE|%1v$"
- POP_TYPE_SUPPORT_SINGLE_FORMAT:0 "$TAB$$POP_TYPE_SUPPORT_SINGLE$"
- POP_TYPE_SUPPORT_FORMAT:0 "$POP_TYPE_SUPPORT_TITLE$\n$BODY$"
- POP_TYPE_SUPPORT_NONE:1 "[PopType.GetName] in [Country.GetName] do not support any $concept_interest_group$"
+ POP_TYPE_SUPPORT_SINGLE: "[INTEREST_GROUP.GetName]: $SUPPORT_PERCENTAGE|%1v$"
+ POP_TYPE_SUPPORT_SINGLE_FORMAT: "$TAB$$POP_TYPE_SUPPORT_SINGLE$"
+ POP_TYPE_SUPPORT_FORMAT: "$POP_TYPE_SUPPORT_TITLE$\n$BODY$"
+ POP_TYPE_SUPPORT_NONE: "[PopType.GetName] у [Concept('concept_country', '$concept_country_loc$')|l] [Country.GetName] не підтримують жодну зацікавлену групу"
  POP_TYPE_SUPPORTED_BY_OTHER_HEADER:1 "#header Other supported [Concept('concept_interest_group', '$concept_interest_groups$')]#!\n$TOOLTIP_DELIMITER$"
  POP_TYPE_SUPPORTED_BY_OTHER:1 "$TAB$Other $concept_interest_groups$: #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] $OTHER_PERCENTAGE|%1v$#!#!"
 
@@ -6339,7 +6339,7 @@
  POP_TYPE_STRATA: "[PopType.GetName] - #tooltippable #tooltip:[PopType.GetTooltipTag],POP_TYPE_BREAKDOWN [PopType.GetStrata|l]#!#!"
  STRATA_MEMBERSHIP_ITEM:0 "\n[POP_TYPE.GetPopulation(GetPlayer.Self)|vD] [POP_TYPE.GetName] ([POP_TYPE.GetPolStr(GetPlayer.Self)|vD] [concept_political_strength])"
  POP_TYPE_BREAKDOWN:1 "#header [GetPlayer.GetAdjectiveNoFormatting] Pops in this Strata#![PopType.GetStrataBreakdown]"
- POP_TYPE_TOOLTIP_SLAVES_AS_LABOR:0 "\n\n#italic Certain [Concept('concept_building', '$concept_buildings$')] employ [PopType.GetNameNoIcon] in order to replace another [concept_profession].#!"
+ POP_TYPE_TOOLTIP_SLAVES_AS_LABOR: "\n\n#italic Деякі [Concept('concept_building', '$concept_buildings_acc$')|l] наймають людей-[PopType.GetNameNoIcon|l], щоб замінити інше [Concept('concept_profession', '$concept_profession_acc$')|l].#!"
 
  YOU_HAVE_RESEARCHED_THIS: "#italic Ви вивчили цю технологію#!"
  CURRENTLY_BEING_RESEARCHED:0 "Currently being researched: $TECHNOLOGY_PROGRESS_WITH_GAIN$"
