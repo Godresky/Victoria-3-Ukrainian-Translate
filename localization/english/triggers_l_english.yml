@@ -341,8 +341,8 @@
  TRIGGER_IN_ELECTION_CAMPAIGN_THIRD:0 "[Country.GetName] is in [concept_election] campaign period"
  TRIGGER_IN_ELECTION_CAMPAIGN_THIRD_NOT:1 "[Country.GetName] is #bold not #!in [concept_election] campaign period"
  
- TRIGGER_HAS_WAR_WITH: "У стані війни з державою [TARGET_COUNTRY.GetName]"
- TRIGGER_HAS_WAR_WITH_NOT:1 "Is #bold not #!at war with [TARGET_COUNTRY.GetName]"
+ TRIGGER_HAS_WAR_WITH: "У війні з державою [TARGET_COUNTRY.GetName]"
+ TRIGGER_HAS_WAR_WITH_NOT: "#bold Не#! у війні з державою [TARGET_COUNTRY.GetName]"
  TRIGGER_IS_DIPLOMATIC_PLAY_ENEMY_OF:0 "Is opposing [TARGET_COUNTRY.GetName] in a [concept_diplomatic_play]"
  TRIGGER_IS_DIPLOMATIC_PLAY_ENEMY_OF_NOT:0 "Is #bold not #! opposing [TARGET_COUNTRY.GetName] in a [concept_diplomatic_play]"
  
@@ -397,12 +397,12 @@
  TRIGGER_HAS_SUBJECT_RELATION_WITH:0 "Has a subject relationship with [TARGET_COUNTRY.GetName]"
  TRIGGER_HAS_SUBJECT_RELATION_WITH_NOT:1 "Does #bold not #!have a subject relationship with [TARGET_COUNTRY.GetName]"
  
- TRIGGER_IS_SUBJECT_OF:1 "Is a [concept_subject] of [TARGET_COUNTRY.GetName]"
- TRIGGER_IS_SUBJECT_OF_NOT:2 "Is #bold not #!a [concept_subject] of [TARGET_COUNTRY.GetName]"
- TRIGGER_IS_SUBJECT_OF_FIRST:0 "[COUNTRY.GetNameNoFlag] is a [concept_subject] of [TARGET_COUNTRY.GetName]"
- TRIGGER_IS_SUBJECT_OF_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] is #bold not #!a [concept_subject] of [TARGET_COUNTRY.GetName]"
- TRIGGER_IS_SUBJECT_OF_THIRD:0 "[COUNTRY.GetName] is a [concept_subject] of [TARGET_COUNTRY.GetName]"
- TRIGGER_IS_SUBJECT_OF_THIRD_NOT:1 "[COUNTRY.GetName] is #bold not #!a [concept_subject] of [TARGET_COUNTRY.GetName]"
+ TRIGGER_IS_SUBJECT_OF: "Є [Concept('concept_subject', '$concept_subject_adj$ою')|l] держави [TARGET_COUNTRY.GetName]"
+ TRIGGER_IS_SUBJECT_OF_NOT: "#bold Не#! є [Concept('concept_subject', '$concept_subject_adj$ою')|l] держави [TARGET_COUNTRY.GetName]"
+ TRIGGER_IS_SUBJECT_OF_FIRST: "[COUNTRY.GetNameNoFlag] - [Concept('concept_subject', '$concept_subject_adj$а')|l] держави [TARGET_COUNTRY.GetName]"
+ TRIGGER_IS_SUBJECT_OF_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold не#! [Concept('concept_subject', '$concept_subject_adj$а')|l] держави [TARGET_COUNTRY.GetName]"
+ TRIGGER_IS_SUBJECT_OF_THIRD: "[COUNTRY.GetName] - [Concept('concept_subject', '$concept_subject_adj$а')|l] держави [TARGET_COUNTRY.GetName]"
+ TRIGGER_IS_SUBJECT_OF_THIRD_NOT: "[COUNTRY.GetName] #bold не#! [Concept('concept_subject', '$concept_subject_adj$а')|l] держави [TARGET_COUNTRY.GetName]"
  
  TRIGGER_HAS_DIPLOMATIC_PACT:1 "[DIPLOMATIC_ACTION_TYPE.GetTriggerDescriptionNoContext( COUNTRY.Self, TARGET_COUNTRY.Self )]"
  TRIGGER_HAS_DIPLOMATIC_PACT_NOT:2 "[DIPLOMATIC_ACTION_TYPE.GetTriggerDescriptionNoContextNot( COUNTRY.Self, TARGET_COUNTRY.Self )]"
@@ -668,8 +668,8 @@
  TRIGGER_IS_MARGINAL: "Зацікавлена група - [Concept('concept_marginalized', '$concept_marginalized_adj$а')|l]"
  TRIGGER_IS_MARGINAL_NOT: "Зацікавлена група #bold не#! [Concept('concept_marginalized', '$concept_marginalized_adj$а')|l]"
  
- TRIGGER_IS_POWERFUL:0 "Зацікавлена група - [concept_powerful]"
- TRIGGER_IS_POWERFUL_NOT:1 "Зацікавлена група is #bold not #![concept_powerful]"
+ TRIGGER_IS_POWERFUL: "Зацікавлена група - [Concept('concept_powerful', '$concept_powerful_adj$а')|l]"
+ TRIGGER_IS_POWERFUL_NOT: "Зацікавлена група #bold не#! [Concept('concept_powerful', '$concept_powerful_adj$а')|l]"
  
  TRIGGER_POP_EMPLOYMENT_BUILDING_GROUP:1 "Employed in #variable $BUILDING_GROUP$#! [concept_building]"
  TRIGGER_POP_EMPLOYMENT_BUILDING_GROUP_NOT:2 "#bold Not#! employed in #variable $BUILDING_GROUP$#! [concept_building]"
@@ -830,8 +830,8 @@
  TRIGGER_HAS_IDEOLOGY: "Має [Concept( 'concept_ideology', '$concept_ideology_acc$' )|l] [IDEOLOGY.GetName]"
  TRIGGER_HAS_IDEOLOGY_NOT:1 "Does #bold not #!have [concept_ideology] [IDEOLOGY.GetName]"
  
- TRIGGER_LAW_STANCE:0 "Stance on [TARGET_LAW_TYPE.GetName] $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_LAW_STANCE_NOT:1 "Stance on [TARGET_LAW_TYPE.GetName] #bold not #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_LAW_STANCE: "Ставлення до закону «[TARGET_LAW_TYPE.GetName]» $COMPARATOR$ #variable $NUM|l$#!"
+ TRIGGER_LAW_STANCE_NOT: "Ставлення до закону «[TARGET_LAW_TYPE.GetName]» #bold не#! $COMPARATOR$ #variable $NUM|l$#!"
  
  TRIGGER_IS_GOAL_COMPLETE:0 "[JOURNAL_ENTRY.GetGoalDesc]"
  TRIGGER_IS_GOAL_COMPLETE_NOT:0 "[JOURNAL_ENTRY.GetGoalDesc]"
@@ -1384,11 +1384,11 @@
  TRIGGER_IS_COUNTRY_ALIVE:1 "[COUNTRY.GetName] is alive"
  TRIGGER_IS_COUNTRY_ALIVE_NOT:1 "[COUNTRY.GetName] is dead"
  
- TRIGGER_CIVIL_WAR_PROGRESS:1 "[concept_civil_war] progress is $COMPARATOR$ #variable $NUM|0$#!"
- TRIGGER_CIVIL_WAR_PROGRESS_NOT:2 "[concept_civil_war] progress is NOT $COMPARATOR$ #variable $NUM|0$#!"
+ TRIGGER_CIVIL_WAR_PROGRESS: "Поступ [Concept('concept_civil_war', '$concept_civil_war_gen$')|l]  $COMPARATOR$ #variable $NUM|0$#!"
+ TRIGGER_CIVIL_WAR_PROGRESS_NOT: "Поступ [Concept('concept_civil_war', '$concept_civil_war_gen$')|l] НЕ $COMPARATOR$ #variable $NUM|0$#!"
  
- TRIGGER_IS_CIVIL_WAR_TYPE:0 "[concept_civil_war] is a #v $CIVIL_WAR_TYPE$#!"
- TRIGGER_IS_CIVIL_WAR_TYPE_NOT:1 "[concept_civil_war] is #bold not #!a #v $CIVIL_WAR_TYPE$#!"
+ TRIGGER_IS_CIVIL_WAR_TYPE: "[concept_civil_war] - #v $CIVIL_WAR_TYPE|l$#!"
+ TRIGGER_IS_CIVIL_WAR_TYPE_NOT: "[concept_civil_war] #bold не#! є #v $CIVIL_WAR_TYPE|l$#!"
 
  TRIGGER_IS_TREATY_PORT: "Є [Concept('concept_treaty_port', '$concept_treaty_port_ins$')|l]"
  TRIGGER_IS_TREATY_PORT_NOT: "#bold Не#! є [Concept('concept_treaty_port', '$concept_treaty_port_ins$')|l]"
@@ -1569,10 +1569,10 @@
  TRIGGER_ANY_INTEREST_GROUP_NOT:1 "No [concept_interest_group]:"
  TRIGGER_ANY_INTEREST_GROUP_FIRST: "Будь-яка [Country.GetAdjectiveNoFlag|l]а [concept_interest_group|l]:"
  TRIGGER_ANY_INTEREST_GROUP_THIRD: "Будь-яка [concept_interest_group|l] у [Concept('concept_country','$concept_country_loc$')|l] [Country.GetName]:"
- TRIGGER_ANY_INTEREST_GROUP_ALL:1 "All [Concept('concept_interest_group', '$concept_interest_groups$')]:"
- TRIGGER_ANY_INTEREST_GROUP_ALL_FIRST:1 "All [Concept('concept_interest_group', '$concept_interest_groups$')] in [Country.GetNameNoFlag]:"
+ TRIGGER_ANY_INTEREST_GROUP_ALL: "Усі [Concept('concept_interest_group', '$concept_interest_groups$')|l]:"
+ TRIGGER_ANY_INTEREST_GROUP_ALL_FIRST: "Усі [Concept('concept_interest_group', '$concept_interest_groups$')|l] у державі [Country.GetNameNoFlag]:"
  TRIGGER_ANY_INTEREST_GROUP_ALL_FIRST_NOT:1 "No [Concept('concept_interest_group', '$concept_interest_groups$')] in [Country.GetNameNoFlag]:"
- TRIGGER_ANY_INTEREST_GROUP_ALL_THIRD:1 "All [Concept('concept_interest_group', '$concept_interest_groups$')] in [Country.GetName]:"
+ TRIGGER_ANY_INTEREST_GROUP_ALL_THIRD: "Усі [Concept('concept_interest_group', '$concept_interest_groups$')|l] у державі [Country.GetName]:"
  TRIGGER_ANY_INTEREST_GROUP_ALL_THIRD_NOT:1 "No [Concept('concept_interest_group', '$concept_interest_groups$')] in [Country.GetName]:"
  TRIGGER_ANY_INTEREST_GROUP_PERCENT:2 "$PARAMETERS$ of $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')]:"
  TRIGGER_ANY_INTEREST_GROUP_PERCENT_THIRD:2 "$PARAMETERS$ of $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')] in [Country.GetName]:"
@@ -1912,11 +1912,11 @@
  TRIGGER_ANY_SCOPE_VIOLATE_SOVEREIGNTY_WARS_PERCENT:2 "$PARAMETERS$ of $FILTER$[Concept('concept_war','$concept_wars$')] where sovereignty has been violated:"
  TRIGGER_ANY_SCOPE_VIOLATE_SOVEREIGNTY_WARS_COUNT:2 "$PARAMETERS$ $FILTER$[Concept('concept_war','$concept_wars$')] where sovereignty has been violated:"
  
- TRIGGER_ANY_CIVIL_WAR:1 "Any [concept_civil_war]:"
- TRIGGER_ANY_CIVIL_WAR_FIRST:1 "Any [concept_civil_war] in [COUNTRY.GetNameNoFlag]:"
+ TRIGGER_ANY_CIVIL_WAR: "Будь-яка [concept_civil_war|l]:"
+ TRIGGER_ANY_CIVIL_WAR_FIRST: "Будь-яка [concept_civil_war|l] у державі [COUNTRY.GetNameNoFlag]:"
  TRIGGER_ANY_CIVIL_WAR_ALL:2 "All [Concept('concept_civil_war', '$concept_civil_wars$')]:"
  TRIGGER_ANY_CIVIL_WAR_ALL_NOT:1 "No [Concept('concept_civil_war', '$concept_civil_wars$')]:"
- TRIGGER_ANY_CIVIL_WAR_ALL_FIRST:1 "Any [Concept('concept_civil_war', '$concept_civil_wars$')]:"
+ TRIGGER_ANY_CIVIL_WAR_ALL_FIRST: "Будь-які [Concept('concept_civil_war', '$concept_civil_wars$')|l]:"
  TRIGGER_ANY_CIVIL_WAR_ALL_FIRST_NOT:1 "No [Concept('concept_civil_war', '$concept_civil_wars$')]:"
  TRIGGER_ANY_CIVIL_WAR_ALL_THIRD:1 "Ongoing [Concept('concept_civil_war', '$concept_civil_wars$')] in [Country.GetName]:"
  TRIGGER_ANY_CIVIL_WAR_PERCENT:3 "$PARAMETERS$ of $FILTER$[Concept('concept_civil_war', '$concept_civil_wars$')]:"

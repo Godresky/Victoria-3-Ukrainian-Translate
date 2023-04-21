@@ -761,16 +761,16 @@
  concept_clout_gen: "Сили"
  concept_clout_desc:1 "An [Concept('concept_interest_group','$concept_interest_group_possessive$')] share of the total [concept_political_strength] that [Concept('concept_pop', '$concept_pops$')] across their [concept_country] generate. $concept_clout$ is the final word on how influential an $concept_interest_group$ is, and affects everything from [concept_legitimacy] and [concept_enactment_of_laws] if the $concept_interest_group$ is [concept_in_government], to [concept_political_movement_support] and [Concept('concept_political_movement_radicalism','$concept_political_movement_radicalism_short$')] if it is [concept_in_opposition]. It also affects whether the $concept_interest_group$ is considered [concept_powerful], [concept_influential], or [concept_marginalized]."
 
- concept_powerful: "Потужний"
+ concept_powerful: "Потужна"
  concept_powerful_adj: "Потужн"
  concept_powerful_desc:1 "$concept_influential_powerful_common$ A $concept_powerful$ $concept_interest_group$'s [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] will have a [GetDefine('NPolitics','POWERFUL_IG_TRAIT_BONUS')|%0=+] greater effect than if they were merely $concept_influential$.\n\n$concept_interest_groups$ are considered $concept_powerful$ while their $concept_clout$ is above [GetDefine('NPolitics','POWERFUL_IG_THRESHOLD')|%0]."
  
- concept_influential: "Впливовий"
+ concept_influential: "Впливова"
  concept_influential_adj: "Впливов"
  concept_influential_powerful_common:0 "The amount of [concept_clout] an [concept_interest_group] has decides whether it is [concept_powerful], $concept_influential$, or [concept_marginalized]."
  concept_influential_desc:1 "$concept_influential_powerful_common$ An $concept_influential$ $concept_interest_group$'s [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] will have a lesser effect than if they were $concept_powerful$.\n\n$concept_interest_groups$ are considered $concept_influential$ while their $concept_clout$ is below [GetDefine('NPolitics','POWERFUL_IG_THRESHOLD')|%0v]."
 
- concept_marginalized: "Маргіналізовані"
+ concept_marginalized: "Маргіналізована"
  concept_marginalized_adj: "Маргіналізован"
  concept_marginalized_desc:2 "$concept_marginalized$ [Concept('concept_interest_group', '$concept_interest_groups$')] have too little [concept_clout] to be politically noteworthy. They cannot be included in the [concept_government], nor do they join [Concept('concept_party','$concept_parties$')]. Their [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] are permanently deactivated for as long as they remain $concept_marginalized$.\n\nAlready $concept_marginalized$ $concept_interest_groups$ remain $concept_marginalized$ for as long as their $concept_clout$ is below [GetDefine('NPolitics','MARGINAL_IG_THRESHOLD')|%0v]. Non-$concept_marginalized$ $concept_interest_groups$ will become $concept_marginalized$ once their $concept_clout$ drops below [GetDefine('NPolitics','MARGINAL_IG_CUTOFF')|%0v], unless they are already [concept_in_government] in which case they do not become $concept_marginalized$ until removed."
  
@@ -1409,6 +1409,7 @@
  concept_revolution_progression_speed_desc:0 "The rate by which [Concept('concept_revolution','$concept_revolutions$')] progress. Might be affected by [Concept('concept_law', '$concept_laws$')]."
 
  concept_civil_war: "Громадянська війна"
+ concept_civil_war_gen: "Громадянської війни"
  concept_civil_war_acc: "Громадянську війну"
  concept_civil_war_loc: "Громадянській війні"
  concept_civil_wars: "Громадянські війни"
