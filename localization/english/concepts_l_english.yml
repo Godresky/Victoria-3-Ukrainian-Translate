@@ -470,6 +470,7 @@
  concept_military_building_desc:4 "[Concept('concept_government_building','$concept_government_buildings$')] used to train, maintain, and supply [Concept('concept_battalion','$concept_battalions$')] and [Concept('concept_flotilla','$concept_flotillas$')] for the [Concept('concept_country','$concept_country_possessive$')] army and navy respectively. The [concept_workforce] of $concept_military_buildings$ get paid according to the [concept_military_wage]."
  
  concept_incorporated_state: "Включена земля"
+ concept_incorporated_state_ins: "Включеною землею"
  concept_incorporated_state_acc: "Включену землю"
  concept_incorporated_states: "Включені землі"
  concept_incorporated_states_acc: "Включені землі"

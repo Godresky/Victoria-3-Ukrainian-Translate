@@ -1,6 +1,6 @@
 ﻿l_english:
- government_conflict:0 "Government Conflict" # Modifier
- disfavored_in_government:0 "Disfavored in Government" # Modifier
+ government_conflict: "Урядовий конфлікт" # Modifier
+ disfavored_in_government: "Незадоволені урядом" # Modifier
  rejected_petition:0 "Rejected Petition"
  accepted_petition:0 "Accepted Petition" # Modifier
  accepted_petition_LI:0 "Accepted Petition" # Modifier
@@ -99,7 +99,7 @@
  
  government_conflicts.8.t: "Ці виробні від сатани"
  government_conflicts.8.d: "[SCOPE.gsInterestGroup('rural_folk_ig').GetName] незадоволені тим, що [SCOPE.gsInterestGroup('industrialists_ig').GetName] увійшла у [ROOT.GetCountry.GetAdjectiveNoFormatting|l]ий уряд."
- government_conflicts.8.f:0 "«Something tells me, when they've built all their factories and machines that are supposed to relieve us of our burdens, we'll still be harvesting the grapes and they'll still be drinking the wine.»"
+ government_conflicts.8.f: "«Щось мені підказує, що коли вони зведуть свої виробні та машини, які повинні звільнити нас від тягаря, то ми і далі будемо збирати виноград, а вони пити вино.»"
  government_conflicts.8.a: "Подобається вам це чи ні, але опромислення - це майбутнє."
  government_conflicts.8.b: "Ми не повинні забувати про тих, хто годує мешканців міста."
  government_conflicts.8.c: "Виробні та хутори однаково потрібні для #yellow [ROOT.GetCountry.GetAdjective|l]ого#! майбутнього."

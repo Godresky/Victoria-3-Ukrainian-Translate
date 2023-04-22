@@ -2213,15 +2213,15 @@
  TOOLTIP_UNINCORPORATED_STATE_NOT_VALID: "#BOLD #V [concept_unincorporated_state]#!#!\n[GetDesc( State.IncorporateState )]\n$TOOLTIP_DELIMITER$\n$concept_unincorporated_state_desc$"
  TOOLTIP_UNINCORPORATED_STATE_VALID: "#bold [concept_unincorporated_state]#!\n#instruction Клацніть, щоб [Concept('concept_incorporated_state', '$concept_incorporate$')|l] [Concept('concept_state','$concept_state_acc$')|l] [State.GetName]#!\nВартість: [State.PredictBureaucracyCost|1v] @bur![Nbsp][concept_bureaucracy]\n$TOOLTIP_DELIMITER$\n$TOOLTIP_UNINCORPORATED_STATE_INSTITUTIONS_EFFECT$\n$TOOLTIP_DELIMITER$\n$concept_unincorporated_state_desc$"
  TOOLTIP_INCORPORATED_STATE_VALID: "#bold [concept_incorporated_state]#!\n[State.GetCountry.GetName] вважає [Concept('concept_incorporated_state','$concept_incorporated_adj$ою')|l] [Concept('concept_state','$concept_state_acc$')|l] [State.GetName]\n$TOOLTIP_DELIMITER$\n$TOOLTIP_INCORPORATED_STATE_INSTITUTIONS_EFFECT$\n$TOOLTIP_DELIMITER$\n$STATE_BUR_BREAKDOWN$"
- STATE_BUR_BREAKDOWN:0 "The total cost of #v @bur![State.GetBureaucracyCost|1=-]#! is due to:\n$TAB$Base Cost: [State.GetBaseBureaucracyCostRaw|1=-]\n$TAB$[concept_institution] Cost: #tooltippable #tooltip:[State.GetCountry.GetTooltipTag],INSTITUTION_BUR_FACTOR_BREAKDOWN #v [State.CalcPopInstitutionBureaucracyCost|1=-]#!#!#!\n$TAB$[State.GetPopulationSize|Dv] [Concept('concept_pop','$concept_population$')] Cost: #v [State.GetBasePopBureaucracyCostRaw|1=-]#!"
+ STATE_BUR_BREAKDOWN: "Загальні витрати #v @bur![State.GetBureaucracyCost|1=-]#! через:\n$TAB$Базова вартість: [State.GetBaseBureaucracyCostRaw|1=-]\n$TAB$Вартість [Concept('concept_institution', '$concept_institution_gen$')|l]: #tooltippable #tooltip:[State.GetCountry.GetTooltipTag],INSTITUTION_BUR_FACTOR_BREAKDOWN #v [State.CalcPopInstitutionBureaucracyCost|1=-]#!#!#!\n$TAB$Вартість [State.GetPopulationSize|Dv] [Concept('concept_pop','$concept_population_gen$')|l]: #v [State.GetBasePopBureaucracyCostRaw|1=-]#!"
 
  TREATY_PORT_INACTIVE_COUNTRY_RANK:0 "@simple_box! [COUNTRY.GetAdjective] [concept_rank] must be higher than [TARGET_COUNTRY.GetAdjective] [concept_rank] of [TARGET_COUNTRY.GetRank]"
  TREATY_PORT_INACTIVE_OCCUPIED:0 "@simple_box! [State.GetName] must not be occupied by a hostile [concept_country]"
  TREATY_PORT_INACTIVE_ISOLATED:0 "@simple_box! [State.GetName] must not be isolated from [Market.GetName]"
  STATE_BUR_TOOLTIP:0 "#header [concept_bureaucracy] Cost for [State.GetName]#!\n$STATE_BUR_BREAKDOWN$"
  TOOLTIP_UNINCORPORATED_STATE_INSTITUTIONS_EFFECT:0 "[State.GetOwner.GetAdjectiveNoFormatting] [Concept('concept_institution', '$concept_institutions$')] have no effect on [State.GetName] because it's an [concept_unincorporated_state].\n[Concept('concept_incorporated_state', '$concept_incorporating$')] [State.GetName] would have the following effects:\n[State.GetOwner.GetInstitutionsSummary]"
- TOOLTIP_INCORPORATED_STATE_INSTITUTIONS_EFFECT:0 "The effects of [State.GetName] being an [concept_incorporated_state] are the following:\n[State.GetOwner.GetInstitutionsSummary]"
- INSTITUTION_BUR_FACTOR_BREAKDOWN:0 "[Country.GetInstitutionInvestmentBureaucracyFactorDesc]"
+ TOOLTIP_INCORPORATED_STATE_INSTITUTIONS_EFFECT: "Заподії [Concept('concept_state','$concept_state_gen$')|l] [State.GetName], якщо вона стане [Concept('concept_incorporated_state','$concept_incorporated_adj$ою')|l], є такими:\n[State.GetOwner.GetInstitutionsSummary]"
+ INSTITUTION_BUR_FACTOR_BREAKDOWN: "[Country.GetInstitutionInvestmentBureaucracyFactorDesc]"
 
  INCORPORATE_STATE_COST: "Вартість: $COST|1v$ @bur![Nbsp][concept_bureaucracy]"
  
@@ -2800,9 +2800,9 @@
  POP_IG_POL_STR_TOOLTIP:0 "#header [concept_political_strength]#!\n$TOOLTIP_DELIMITER$\nThis Pop supports the #variable [PopListPopEntry.GetContextIG.GetName]#! with #variable [PopListPopEntry.GetIGPolStr|K]#! of their #variable [PopListPopEntry.GetPop.GetPoliticalStrength|D]#! [concept_political_strength]."
  POP_POL_STR:2 "#header [concept_political_strength]#!\nValue: #variable [Pop.GetPoliticalStrength|1*]#!\n$TOOLTIP_DELIMITER$\n[Pop.GetPoliticalStrengthDesc][AddTextIf(Not(StringIsEmpty(Pop.GetPoliticalStrengthDesc)), '\n\n')]"
  POP_POPULATION:1 "#header [Concept('concept_pop','$concept_population$')] of [Pop.GetName] in [Pop.GetState.GetName]#!\n$POP_SIZE_BREAKDOWN$\n$TOOLTIP_DELIMITER$\n[Pop.GetPopGrowthDesc]\n[ConcatIfNeitherEmpty('\n',Pop.GetPopAssimilationDesc)][ConcatIfNeitherEmpty('\n',Pop.GetPopConversionDesc)]   $TOOLTIP_DELIMITER$\n[Pop.GetWorkforceRatioDesc]"
- POP_SIZE_BREAKDOWN:0 "Total: #variable [Pop.GetTotalSize|Dv]#!\n$TAB$Workforce: #variable [Pop.GetNumWorkforce|Dv]#!\n$TAB$Dependents: #variable [Pop.GetDependentsSize|Dv]#!"
- WORKFORCE_RATIO_DESC:0 "#variable $VAL|%1$#! of this Pop is in the Workforce while the rest are Dependents. Over time this ratio will approach #variable $TARGET_VAL|%1$#! due to:\n$BREAKDOWN$"
- TARGET_WORKFORCE_RATIO_BASE_FOR_TYPE:0 "Base value for #variable $POP_TYPE$#!: #variable $VAL|%1$#!"
+ POP_SIZE_BREAKDOWN: "Всього: #variable [Pop.GetTotalSize|Dv]#!\n$TAB$Робоча сила: #variable [Pop.GetNumWorkforce|Dv]#!\n$TAB$Утриманці: #variable [Pop.GetDependentsSize|Dv]#!"
+ WORKFORCE_RATIO_DESC: "#variable $VAL|%1$#! з них є робочою силою, а решта - утриманцями. З часом це співвідношення буде наближатися до #variable $TARGET_VAL|%1$#! через:\n$BREAKDOWN$"
+ TARGET_WORKFORCE_RATIO_BASE_FOR_TYPE: "Базове значення для групи #variable $POP_TYPE$#!: #variable $VAL|%1$#!"
 
  CHANGE_SPEED_TOOLTIP_1: "Змінити швидкість на 1"
  CHANGE_SPEED_TOOLTIP_2: "Змінити швидкість на 2"
@@ -5556,7 +5556,7 @@
  HEROIC_VICTORY:0 "Heroic victory in the $BATTLE_NAME$"
  HEROIC_LOSS:0 "Humiliating defeat in the $BATTLE_NAME$"
 
- YEARLYGROWTH:0 "Annual Net Growth: #variable $NETGROWTHRATE|%=+1$#!"
+ YEARLYGROWTH: "Annual Net Growth: #variable $NETGROWTHRATE|%=+1$#!"
  YEARLYBIRTHS:1 "Yearly Births: #variable $VAL|+0$#! (Annual Birthrate: #tooltippable #tooltip:$BREAKDOWN_TAG$ $BIRTHRATE|%1=+$#!#!)"
  BIRTHS_FROM_SOL:0 "From [concept_sol]: #variable $VAL|+=0$#!"
  MALNOURISHMENT_FROM_SOL:0 "Malnourished: $VAL|+=%1$"
