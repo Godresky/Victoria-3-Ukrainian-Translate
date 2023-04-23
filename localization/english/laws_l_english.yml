@@ -127,7 +127,7 @@
  ideology_pro_slavery_desc: "#lore Ця група розглядає рабство як необхідну частину добре розвинутого суспільства.#!"
   
  ideology_reactionary: "Реакціонерство"
- ideology_reactionary_desc: "#lore Ця група ностальгує за минулим, реальним чи уявним, де справедливі королі правили єдиним суспільством.#!"
+ ideology_reactionary_desc: "#lore Ця група ностальґує за минулим, реальним чи уявним, де справедливі королі правили єдиним суспільством.#!"
  
  ideology_plutocratic: "Плутократія"
  ideology_plutocratic_desc: "#lore Ця група вірить, що заможні люди довели свою цінність як особи, що приймають рішення, і формують інтелектуальну еліту, яка добре підходить для визначення курсу суспільства.#!"
@@ -139,7 +139,7 @@
  ideology_republican_paternalistic: "Елітаризм"
  ideology_republican_paternalistic_desc: "#lore Ця група віддає перевагу правлінню земельної еліти, але все ще підтримує республіканську форму правління.#!"
 
- ideology_scholar_paternalistic: "За вченів-урядників"
+ ideology_scholar_paternalistic: "За вчених-урядників"
  ideology_scholar_paternalistic_desc: "#lore Ця група воліла б бачити державу під керівництвом монарха, якому б радили мудрі й освічені люди.#!"
 
  ideology_junker_paternalistic: "Юнкерство"

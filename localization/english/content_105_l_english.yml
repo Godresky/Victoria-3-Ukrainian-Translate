@@ -1057,8 +1057,8 @@
  raj.6.f:0 ""As long as there remains the scent of Iman in the hearts of our Ghazis, so long shall the sword of Hindustan flash before the throne of London."" # Bahadur Shah Zafar
  raj.6.a:0 "It must be suppressed!"
  raj.6.b:0 "Long live the new Hindustan!"
- raj.7.t:0 "End of the Company"
- raj.7.a:0 "The Company is over, but the Empire lives on."
+ raj.7.t: "Кінець компанії"
+ raj.7.a: "Компанії кінець, але імперія житиме далі."
  changed_cartridges:0 "Changed Cartridges"
  overseas_service_exemption:0 "Overseas Service Exemption"
  promised_no_proselytization:0 "Promised No Proselytization"

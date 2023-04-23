@@ -849,6 +849,7 @@
  concept_pop_needs_acc: "Потреби населення"
  concept_pop_need: "Потреба населення"
  concept_pop_needs_short: "Потреби"
+ concept_pop_needs_short_gen: "Потреб"
  concept_pop_need_short: "Потреба"
  concept_pop_needs_desc:1 "[Concept('concept_pop', '$concept_pops$')] spend their income on [Concept('concept_good', '$concept_goods$')] to fulfill their $concept_pop_needs_short$. The higher their [concept_wealth] the more $concept_goods$ it will purchase. $concept_pops$ gain more diverse and luxurious $concept_pop_needs_short$ as their $concept_wealth$ increases. A given $concept_pop_need_short$ can often be satisfied by a variety of $concept_goods$ via [concept_goods_substitution]. If the $concept_pop$ has money left over after its $concept_pop_needs_short$ have been fulfilled their $concept_wealth$ will increase. The inverse is also true: if the $concept_pop$ cannot afford their $concept_pop_needs_short$ they will still purchase them, and the shortfall reduces their $concept_wealth$."
 
@@ -1693,11 +1694,12 @@
  concept_accepted_culture_desc_added:0 " [GetLawType('law_national_supremacy').GetGroup.GetName]"
 
  concept_primary_cultures: "Головні культури"
+ concept_primary_cultures_gen: "Головних культур"
  concept_primary_cultures_ins: "Головними культурами"
  concept_primary_culture: "Головна культура"
  concept_primary_culture_acc: "Головна культура"
  concept_primary_culture_ins: "Головною культурою"
- concept_primary_cultures_desc:4 "[concept_culture] або культури, які в першу чергу в’яжуться з [Concept('concept_country','$concept_country_nation_state_ins$')|l]. Якщо держава [Concept('concept_nation_formation','утворює іншу')] країну, то її головна культура може змінитися, але в основному залишиться незмінною.[AddLocalizationIf(GetPlayer.IsValid,'concept_primary_cultures_ingame_added')]"
+ concept_primary_cultures_desc: "[concept_culture] або культури, які в першу чергу в’яжуться з [Concept('concept_country','$concept_country_nation_state_ins$')|l]. Якщо держава [Concept('concept_nation_formation','утворює іншу')] країну, то її головна культура може змінитися, але в основному залишиться незмінною.[AddLocalizationIf(GetPlayer.IsValid,'concept_primary_cultures_ingame_added')]"
  concept_primary_cultures_ingame_added: "\n\nГоловні культури у державі [GetPlayer.GetName]: [GetPlayer.GetPrimaryCulturesDesc]."
 
  concept_cultural_trait: "Риса культури"
@@ -2018,7 +2020,7 @@
 
  concept_tax_waste: "Податкове марнотратство"
  concept_tax_waste_gen: "Податкового марнотратства"
- concept_tax_waste_desc:1 "The amount of [concept_taxes] collected that are wasted, due to inefficiencies or corruption, prior to entering the government coffers."
+ concept_tax_waste_desc: "Кількість зібраних [Concept('concept_taxes','$concept_taxes_gen$')|l], яка була змарнована, через неефективність або корупцію, замість того, щоб потрапити у державну скарбівницю."
 
  concept_tax_capacity: "Податкова спроможність"
  concept_tax_capacity_gen: "Податкової спроможности"
@@ -2032,7 +2034,7 @@
  concept_assimilation_acc: "Уподібнювання"
  concept_assimilating: "Уподібнювати"
  concept_assimilate: "Уподібнювати"
- concept_assimilation_desc:3 "Foreign [Concept('concept_pop','$concept_pops$')] whose [concept_culture] is [Concept('concept_accepted_culture','$concept_accepted_culture_short$')] in the [concept_country] they live, and who do not live in one of their [Concept('concept_homeland','$concept_homelands$')], may $concept_assimilate$ into one of the $concept_country$'s [concept_primary_cultures]."
+ concept_assimilation_desc:3 "Іноземні [Concept('concept_pop','$concept_pops$')|l], чия [concept_culture|l] [Concept('concept_accepted_culture','$concept_accepted_culture_short$')|l] в [Concept('concept_country','$concept_country_loc$')|l], де вони живуть, і які не проживають на своїй [Concept('concept_homeland','$concept_homeland_loc$')|l], можуть уподібнюватися в одну з [Concept('concept_primary_cultures','$concept_primary_cultures_gen$')|l]."
 
  concept_conversion: "Навертання"
  concept_conversion_gen: "Навертання"
