@@ -568,6 +568,7 @@
  
  concept_local_price: "Місцева ціна"
  concept_local_price_acc: "Місцеву ціну"
+ concept_local_price_ins: "Місцевою ціною"
  concept_local_prices: "Місцеві ціни"
  concept_local_price_desc:1 "The price of a [concept_good] in a [concept_state]. It is determined by the local [concept_good_consumption] and [concept_good_production], moderated by the [concept_market_price] depending on the [Concept('concept_state','$concept_state_possessive$')] [concept_market_access]. All transactions except [Concept('concept_trade_route','$concept_trade$')] occur in the $concept_local_price$, with purchases and sales creating [Concept('concept_buy_orders','$concept_buy_order_short$')] and [concept_sell_orders] on the [concept_market]."
  
@@ -893,13 +894,13 @@
  concept_battalions_ins: "Куренями"
  concept_battalions_loc: "Куренях"
  concept_battalion_desc: "[concept_unit] у складі збройних сил [Concept('concept_country','$concept_country_gen$')|l]. Він створюється й підтримується у [SelectLocalization(GetPlayer.IsValid,Concept('concept_building', '$concept_buildings_loc$'),'')|l] [SelectLocalization(GetPlayer.IsValid,'concept_battalion_desc_added','куренях')|l] та керується [Concept('concept_general','$concept_generals_ins$')|l]."
- concept_battalion_desc_added:0 "[GetBuildingType('building_barracks').GetName]"
+ concept_battalion_desc_added: "[GetBuildingType('building_barracks').GetName]"
 
  concept_flotilla: "Флотилія"
  concept_flotillas: "Флотилії"
  concept_flotillas_gen: "Флотилій"
  concept_flotilla_desc: "Військово-морський [Concept('concept_unit','підрозділ')|l] у складі збройних сил [Concept('concept_country','$concept_country_gen$')|l]. Він створюється й підтримується у [SelectLocalization(GetPlayer.IsValid,Concept('concept_building', '$concept_buildings_loc$'),'')|l] [SelectLocalization(GetPlayer.IsValid,'concept_flotilla_desc_added','Морських базах')|l] та керується [Concept('concept_admiral','$concept_admirals_ins$')|l]."
- concept_flotilla_desc_added:0 "[GetBuildingType('building_naval_base').GetName]"
+ concept_flotilla_desc_added: "[GetBuildingType('building_naval_base').GetName]"
 
  concept_in_government: "В уряді"
  concept_in_government_desc: "[Concept('concept_interest_group','$concept_interest_groups$')], що входять в [Concept('concept_government','$concept_government_acc$')|l] впливають на те, яким [Concept('concept_law','$concept_laws_dat$')|l] можна буде [Concept('concept_enactment_of_laws','надати чинности')|l] та встановлює [Concept('concept_legitimacy','$concept_legitimacy_acc$')|l] [Concept('concept_country','$concept_country_gen$')|l]. Вони ніколи не підтримають [Concept('concept_political_movement','$concept_political_movements_acc$')|l], якщо тільки їхнє [concept_approval|l] не впаде настільки низько, що вони приєднаються до [Concept('concept_in_opposition','$concept_in_opposition_short_gen$')|l]."
@@ -1042,7 +1043,7 @@
 
  concept_revenue: "Виручка"
  concept_revenue_gen: "Виручки"
- concept_revenue_desc:0 "After a [concept_building] has [Concept('concept_good_production','$concept_good_produced$')] [Concept('concept_good','$concept_goods$')], they are sold at the [concept_local_price]. The amount of [concept_money] made in the sale is the $concept_building$'s $concept_revenue$, the positive factor of its [concept_building_balance]."
+ concept_revenue_desc: "Після того, як [concept_building|l] [Concept('concept_good_production','виробила')|l] [Concept('concept_good','$concept_goods_acc$')|l], вона продає їх за [Concept('concept_local_price','$concept_local_price_ins$')|l]. Сума [Concept('concept_money','$concept_money_gen$')|l], отримана від продажу, - це і є виручкою будівлі, позитивним чинником її [Concept('concept_building_balance','$concept_building_balance_gen$')|l]."
 
  concept_combat_width: "Ширина бою"
  concept_combat_width_desc:1 "The $concept_combat_width$ of a particular [concept_terrain] type determines the potential numeric advantage the larger side can have over the smaller side in [concept_battle]. A smaller force can hold out for longer against a larger force if $concept_combat_width$ is relatively low, and vice versa."
@@ -1065,7 +1066,7 @@
  concept_relations: "Відносини"
  concept_relations_gen: "Відносин"
  concept_relations_acc: "Відносини"
- concept_relations_desc:0 "The current stance of diplomatic $concept_relations$ between two [Concept('concept_country', '$concept_countries$')]. Both sides can influence this mutual score using the [GetDiplomaticActionType('increase_relations').GetName], [GetDiplomaticActionType('damage_relations').GetName], and [GetDiplomaticActionType('expel_diplomats').GetName] [Concept('concept_diplomatic_action','$concept_diplomatic_actions$')] by spending [concept_influence]. $concept_relations$ impact which $concept_diplomatic_actions$ and [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts_short$')] are valid interaction options for the $concept_countries$, and also impact the likelihood they will accept diplomatic overtures or take your side in a [concept_diplomatic_play]."
+ concept_relations_desc: "Поточний стан відносин між двома [Concept('concept_country', '$concept_countries_ins$')|l]. Обидві сторони можуть впливати на обопільні значення, використовуючи такі [Concept('concept_diplomatic_action','$concept_diplomatic_actions_acc$')|l]: «[GetDiplomaticActionType('increase_relations').GetName]», «[GetDiplomaticActionType('damage_relations').GetName]» та «[GetDiplomaticActionType('expel_diplomats').GetName]», витрачаючи [Concept('concept_influence','$concept_influence_acc$')|l]. $concept_relations$ впливають на те, які дипломатичні дії і [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts_short_acc$')|l] є доступними варіянтами для держав, а також на ймовірність того, що вони приймуть дипломатичні пропозиції або стануть на ваш бік у [Concept('concept_diplomatic_play','$concept_diplomatic_play_loc$')|l]."
 
  concept_ai_strategy: "Стратегія"
  concept_ai_strategy_acc: "Стратегію"
@@ -1099,6 +1100,7 @@
  concept_diplomatic_pact_short: "Пакт"
  concept_diplomatic_pact_short_gen: "Пакту"
  concept_diplomatic_pacts_short: "Пакти"
+ concept_diplomatic_pacts_short_acc: "Пакти"
  concept_diplomatic_pacts_short_gen: "Пактів"
  concept_diplomatic_pact_desc:3 "Unilateral or bilateral understandings between two [Concept('concept_country', '$concept_countries$')]. They may have a maintenance cost in [concept_influence] for one or both parties, and can have a wide range of effects including [concept_subject] relationships. $concept_diplomatic_pacts_short$ can break for a number of different reasons, including [concept_relations] deviating too far in either direction, one side or another explicitly breaking it, or a time limit running out."
 
@@ -1202,7 +1204,7 @@
  concept_base_price: "Базисна ціна"
  concept_base_price_gen: "Базисної ціни"
  concept_base_price_ins: "Базисною ціною"
- concept_base_price_desc:1 "The price of a [concept_good] when its [Concept('concept_sell_orders','$concept_sell_orders_supply$')] exactly equal its [Concept('concept_buy_orders','$concept_buy_orders_demand$')]."
+ concept_base_price_desc: "Ціна [Concept('concept_good','$concept_good_gen$')|l], коли його [Concept('concept_sell_orders','$concept_sell_orders_supply$')|l] точно дорівнює [Concept('concept_buy_orders','$concept_buy_orders_demand_gen$')|l]."
 
  concept_market_impact: "Вплив на ринок"
  concept_market_impact_short: "Вплив"
@@ -2181,6 +2183,7 @@
  concept_treasury_desc:1 "The $concept_treasury$ keeps track of your [Concept('concept_country','$concept_country_possessive$')] assets. Each week your budget balance will result in the $concept_treasury$ taking out more [concept_loans] to cover a [concept_money] deficit, or depositing $concept_money$ into the [concept_gold_reserves]."
 
  concept_building_balance: "Балянс"
+ concept_building_balance_gen: "Балянсу"
  concept_building_balance_profit: "Прибуток"
  concept_building_balance_desc:3 "A [Concept('concept_building','$concept_building_possessive$')] $concept_building_balance$ is the amount of [concept_money] that remains of its [concept_revenue] after paying [Concept('concept_building_wage','$concept_building_wages$')] and purchasing required [Concept('concept_good','$concept_goods_input$')]. The $concept_building_balance$ is divided between [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_share$')] and the $concept_building$'s [concept_cash_reserves]. A $concept_building$'s $concept_building_balance$ can be improved either by making its $concept_goods_input$ cheaper, or by making its $concept_goods_output$ more expensive. This can be done by increasing or decreasing [Concept('concept_sell_orders','$concept_sell_orders_supply$')] and [Concept('concept_buy_orders','$concept_buy_orders_demand$')] on the [concept_market] it belongs to."
 
@@ -2193,14 +2196,15 @@
  concept_sell_orders_gen: "Пропозицій продажу"
  concept_sell_order: "Пропозиція продажу"
  concept_sell_order_short: "Продаж"
- concept_sell_orders_supply:0 "Supply"
+ concept_sell_orders_supply: "Пропозиція"
  concept_sell_orders_desc:2 "The number of orders to sell a [concept_good] on the central [concept_market] is used in combination with [concept_buy_orders] to determine its [concept_market_price]. $concept_sell_orders$ are generated by the production of the $concept_good$ in each of the $concept_market$'s [Concept('concept_state','$concept_states$')]. The higher the [concept_market_access] a $concept_state$ has, the closer the number of $concept_sell_orders$ generated will be to the total production."
 
  concept_buy_orders: "Пропозиції покупки"
  concept_buy_orders_gen: "Пропозицій покупки"
  concept_buy_order: "Пропозиція покупки"
  concept_buy_order_short: "Покупка"
- concept_buy_orders_demand:0 "Demand"
+ concept_buy_orders_demand: "Попит"
+ concept_buy_orders_demand_gen: "Попиту"
  concept_buy_orders_desc:2 "The number of orders to buy a [concept_good] on the central [concept_market] is used in combination with [concept_sell_orders] to determine its [concept_market_price]. $concept_buy_orders$ are generated by the consumption of the $concept_good$ in each of the $concept_market$'s [Concept('concept_state','$concept_states$')]. The higher the [concept_market_access] a $concept_state$ has, the closer the number of $concept_buy_orders$ generated will be to the total consumption."
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MARCH 30, 2022
