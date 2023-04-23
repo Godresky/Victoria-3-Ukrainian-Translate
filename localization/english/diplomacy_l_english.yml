@@ -197,7 +197,7 @@
  DIPLOMATIC_ACCEPTANCE_POWERFUL_PROTECTORS_THEM: "Вони мають потужних покровителів"
  DIPLOMATIC_ACCEPTANCE_POWERFUL_PROTECTORS_US: "Ми маємо потужних покровителів"
  DIPLOMATIC_ACCEPTANCE_TRUCE: "У нас перемир`я"
- DIPLOMATIC_ACCEPTANCE_DEBT: "Розмір #yellow [SCOPE.GetRootScope.GetCountry.GetAdjective|l]ої!# [Concept('concept_loans','$concept_loans_gen$')|l]"
+ DIPLOMATIC_ACCEPTANCE_DEBT: "Розмір #yellow [SCOPE.GetRootScope.GetCountry.GetAdjective|l]ої#! [Concept('concept_loans','$concept_loans_gen$')|l]"
  DIPLOMATIC_ACCEPTANCE_INCOMPATIBLE_ECONOMIC_SYSTEMS: "У нас несумісні економічні моделі"
  DIPLOMATIC_ACCEPTANCE_INFLUENCE_PAYMENTS: "[SCOPE.sCountry('actor').GetAdjectiveNoFormatting]ий фінансовий вплив на цю державу"
 

@@ -1160,7 +1160,7 @@
  NUM_UNITS_FROM_RESERVE_HEADER: "Підрозділів [Concept('concept_in_reserve', '$concept_in_reserve$')|l]:"
  NUM_UNITS_FROM_RESERVE_ENTRY: "$TAB$[HQ.GetCombatUnitsIcon] $VAL|v$ з [HQ.GetName|l]"
 
- FRONT_MORALE_TOOLTIP: "$COUNTRY_NAME|v$ий моральний дух - #BOLD #$MORALE_COLOR$ $VAL|0%$#!#! на [Concept('concept_front', '$concept_front_loc$')|l] $FRONT_NAME$"
+ FRONT_MORALE_TOOLTIP: "#bold $COUNTRY_NAME|v$ий#! моральний дух - #BOLD #$MORALE_COLOR$ $VAL|0%$#!#! на [Concept('concept_front', '$concept_front_loc$')|l] $FRONT_NAME$"
  COMMANDER_MORALE_TOOLTIP: "#header Моральний дух#!\nМоральний дух війська [Concept('concept_commander', '$concept_commander_gen$')|l] [Character.GetFullName] - #BOLD #[GetMoraleColorString( Character.GetMorale )] [Character.GetMorale|0%]#!#!\n\n$MILITARY_PANEL_CHARACTER_SUPPLY_TOOLTIP$"
  MORALE_TOOLTIP: "[Country.GetAdjectiveNoFormatting|v]ий моральний дух - #BOLD #[GetMoraleColorString( FrontMarker.GetFront.GetMorale( Country.Self ) )] [FrontMarker.GetFront.GetMorale( Country.Self )|0%]#!#! in [FrontMarker.GetFront.GetName]"
  STRENGTH_SUPPLY_TOOLTIP:1 "[SeaRegionNavalPresence.GetCountry.GetAdjectiveNoFormatting|v] Supply Flotillas at #BOLD #[GetMoraleColorString( SeaRegionNavalPresence.GetStrength )] [SeaRegionNavalPresence.GetStrength|0%]#!#! strength in [SeaRegionNavalPresence.GetProvince.GetStateRegion.GetName]"
@@ -5784,7 +5784,7 @@
 
  notification_country_swayed_tooltip: "#header $notification_country_swayed_name$#!\n$TOOLTIP_DELIMITER$\n$notification_country_swayed_desc$"
  notification_country_swayed_name: "[SCOPE.sC('recipient').GetName] змінила позицію"
- notification_country_swayed_desc: "[SCOPE.sC('recipient').GetName] схилилася на #yellow [SCOPE.sC('actor').GetAdjective|l]ий!# бік у [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l] проти [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sC('target').GetName]"
+ notification_country_swayed_desc: "[SCOPE.sC('recipient').GetName] схилилася на #yellow [SCOPE.sC('actor').GetAdjective|l]ий#! бік у [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l] проти [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sC('target').GetName]"
 
  notification_sway_offer_accepted_tooltip: "#header $notification_sway_offer_accepted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_sway_offer_accepted_desc$"
  notification_sway_offer_accepted_name: "[SCOPE.sC('recipient').GetName] змінила позицію"

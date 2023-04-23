@@ -393,7 +393,7 @@
 
   # Discrimination Events
  discrimination_events.1.t: "Всупереч закону"
- discrimination_events.1.d.culture: "Хоч вони і не мають усіх прав в #yellow [ROOT.GetCountry.GetAdjective|l]ому!# законодавстві, проте деякі особи з [Concept('concept_culture','$concept_culture_gen$')|l] [SCOPE.sPop('discriminated_culture_pop').GetCulture.GetName|l] почали переїжджати в райони та часто відвідувати заклади, в які вони, зазвичай, не змогли б попасти."
+ discrimination_events.1.d.culture: "Хоч вони і не мають усіх прав в #yellow [ROOT.GetCountry.GetAdjective|l]ому#! законодавстві, проте деякі особи з [Concept('concept_culture','$concept_culture_gen$')|l] [SCOPE.sPop('discriminated_culture_pop').GetCulture.GetName|l] почали переїжджати в райони та часто відвідувати заклади, в які вони, зазвичай, не змогли б попасти."
  discrimination_events.1.d.religion: "Хоч вони і не мають усіх прав в #yellow [ROOT.GetCountry.GetAdjective|l]ому!# законодавстві, проте деякі прихильники [Concept('concept_religion','$concept_religion_gen$')|l] [SCOPE.sPop('discriminated_religion_pop').GetReligion.GetName|l] почали переїжджати в райони та часто відвідувати заклади, в які вони, зазвичай, не змогли б попасти."
  discrimination_events.1.f: "«Якщо ми хочемо, щоб наші діти мали майбутнє, ми повинні ростити їх тут» - сказав він. - «Я хочу, щоб вони жили десь, де безпечно.»\n\nВона схрестила руки.\n\n«Ви бачили, які у нас погляди? Коли люди говорять про "безпечний", вони не мають на увазі безпечний #ITALIC для#! нас. Вони хочуть мати безпеку #ITALIC від#! нас.»"
  discrimination_events.1.a: "Можливо, нам знадобляться деякі нові правила, щоб зберегти мир."
