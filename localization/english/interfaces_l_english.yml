@@ -545,7 +545,7 @@
  CANNOT_RELEASE_COUNTRY_NOT_ENOUGH_STATES: "Щоб звільнити [Concept('concept_country', '$concept_country_acc$')|l] #variable [COUNTRY_CREATION.GetName]#!, ми повинні повністю контролювати таку кількість [COUNTRY_CREATION.GetAdjective|l]их національних земель: #variable [COUNTRY_CREATION.GetNumRequiredStates]#!.\nВсього є #variable [COUNTRY_CREATION.GetTotalNumStates]#! [COUNTRY_CREATION.GetAdjective|l][SelectLocalization(GreaterThan_int32(COUNTRY_CREATION.GetTotalNumStates, '(int32)1'),'их національних земель','а національна земля')|l] у світі:\n[COUNTRY_CREATION.ListPotentialStates(GetPlayer)]"
  RELEASABLE_STATE: "[STATE_REGION.GetName]"
 
- COUNTRY_FORMATION_HEADER: "Утворення нації"
+ COUNTRY_FORMATION_HEADER: "Утворення нації [CountryFormation.GetName]"
  COUNTRY_FORMATION_TYPE: "[SelectLocalization(CountryFormation.IsMajorFormation, Concept('concept_unification', '$concept_major_unification$'), Concept('concept_unification', '$concept_minor_unification$'))]"
  GO_TO_COUNTRY_FORMATION: "Показати #header [CountryFormation.GetAdjective|l]е#! [Concept('concept_nation_formation', '$concept_nation_formation_acc$')|l]"
 
@@ -1694,15 +1694,15 @@
 
  TOOLTIP_STATE_MIGRATION_PULL_DESC: "#header [concept_migration_pull]#!\n$TOOLTIP_DELIMITER$\n[concept_migration_pull] [Concept('concept_state', '$concept_state_gen$')|l] [State.GetName] - #v [State.GetMigrationPull|1]#! через:\n$DETAILS$\n[State.GetMigrationDetailsDesc]"
  
- LABEL_STATE_MIGRATION_ISOLATED: "[concept_isolated_state]"
+ LABEL_STATE_MIGRATION_ISOLATED: "[Concept('concept_isolated_state','Ізольована земля')]"
  LABEL_STATE_MIGRATION_PULL_HIGH: "#tooltippable #tooltip:[STATE.GetTooltipTag],STATE_MIGRATION_PULL_BREAKDOWN #P #b Висока ($STATE_VALUE|1$)#!#!#!#!"
  LABEL_STATE_MIGRATION_PULL_MEDIUM: "#tooltippable #tooltip:[STATE.GetTooltipTag],STATE_MIGRATION_PULL_BREAKDOWN #V #b Середня ($STATE_VALUE|1$)#!#!#!#!"
  LABEL_STATE_MIGRATION_PULL_LOW: "#tooltippable #tooltip:[STATE.GetTooltipTag],STATE_MIGRATION_PULL_BREAKDOWN #N #b Низька ($STATE_VALUE|1$)#!#!#!#!"
  
- TOOLTIP_STATE_MIGRATION_ISOLATED:1 "[STATE.GetName] is an [concept_isolated_state], and will not experience any migration"
- TOOLTIP_STATE_MIGRATION_PULL_HIGH:2 "[STATE.GetName] has a $LABEL_STATE_MIGRATION_PULL_HIGH$ [concept_migration_pull] compared to the average ($MARKET_VALUE|1v$) in the [State.GetMarket.GetName], and may receive immigrants from other states in the [State.GetMarket.GetName]\n\n$concept_migration$ can be effected by your current [GetLawGroup('lawgroup_migration').GetName] [concept_law]"
- TOOLTIP_STATE_MIGRATION_PULL_MEDIUM:2 "[STATE.GetName] has a $LABEL_STATE_MIGRATION_PULL_MEDIUM$ [concept_migration_pull] compared to the average ($MARKET_VALUE|1v$) in the [State.GetMarket.GetName], and may send a limited number of emigrants to other states within the [State.GetMarket.GetName]\n\n$concept_migration$ can be effected by your current [GetLawGroup('lawgroup_migration').GetName] [concept_law]"
- TOOLTIP_STATE_MIGRATION_PULL_LOW:2 "[STATE.GetName] has a $LABEL_STATE_MIGRATION_PULL_LOW$ [concept_migration_pull] compared to the average ($MARKET_VALUE|1v$) in the [State.GetMarket.GetName], and may send emigrants to other states in the [State.GetMarket.GetName]\n\n$concept_migration$ can be effected by your current [GetLawGroup('lawgroup_migration').GetName] [concept_law]"
+ TOOLTIP_STATE_MIGRATION_ISOLATED: "[STATE.GetName] - [concept_isolated_state|l] і тут не здійснюється жодна міграція"
+ TOOLTIP_STATE_MIGRATION_PULL_HIGH: "[Concept('concept_migration_pull', '$concept_migration_pull$')] [Concept('concept_state', '$concept_state_gen$')|l] [STATE.GetName]: $LABEL_STATE_MIGRATION_PULL_HIGH$, у порівнянні з середньою ($MARKET_VALUE|1v$) на [State.GetMarket.GetName|l], і може приймати переселенців з інших земель цього ринку\n\n$concept_migration$ може бути здійснена відповідно до вашого чинного [Concept('concept_law', '$concept_law_gen$')|l] з групи «[GetLawGroup('lawgroup_migration').GetName]»" #([State.GetMarket.GetName])
+ TOOLTIP_STATE_MIGRATION_PULL_MEDIUM: "[Concept('concept_migration_pull', '$concept_migration_pull$')] [Concept('concept_state', '$concept_state_gen$')|l] [STATE.GetName]: $LABEL_STATE_MIGRATION_PULL_MEDIUM$, у порівнянні з середньою ($MARKET_VALUE|1v$) на [State.GetMarket.GetName|l], і може відправляти обмежену кількість переселенців в інші землі в межах цього ринку\n\n$concept_migration$ може бути здійснена відповідно до вашого чинного [Concept('concept_law', '$concept_law_gen$')|l] з групи «[GetLawGroup('lawgroup_migration').GetName]»"
+ TOOLTIP_STATE_MIGRATION_PULL_LOW: "[Concept('concept_migration_pull', '$concept_migration_pull$')] [Concept('concept_state', '$concept_state_gen$')|l] [STATE.GetName]: $LABEL_STATE_MIGRATION_PULL_LOW$, у порівнянні з середньою ($MARKET_VALUE|1v$) на [State.GetMarket.GetName|l], і може відправляти переселенців в інші землі в межах цього ринку\n\n$concept_migration$ може бути здійснена відповідно до вашого чинного [Concept('concept_law', '$concept_law_gen$')|l] з групи «[GetLawGroup('lawgroup_migration').GetName]»"
  
  TOOLTIP_STATE_IMMIGRATION_STATES:0 "[STATE.GetName] received a total of #variable $AMOUNT|D+$#! immigrants from $STATES_LIST$ last week"
  TOOLTIP_STATE_EMIGRATION_STATES:0 "[STATE.GetName] sent a total of #variable $AMOUNT|D+$#! emigrants to $STATES_LIST$ last week"
@@ -1721,12 +1721,12 @@
  CULTURE_INFO: "Культури"
  CULTURE_INFO_BOLD: "#bold $CULTURE_INFO$#!"
  
- FORM_NATION_STATE_REGION_CONTROL_DESC:0 "#header [Country.GetAdjective] control over [STATE_REGION.GetName]#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
- FORM_NATION_STATE_CONTROL_REASON_OWNERSHIP:0 "@green_checkmark! [State.GetName]: [Country.GetName] owns the [concept_state]"
- FORM_NATION_STATE_CONTROL_REASON_CANDIDATE_SUPPORT:0 "@green_checkmark! [State.GetName]: [State.GetName]: [State.GetOwner.GetName] supports [Country.GetName] as [concept_unification_candidate]"
- FORM_NATION_STATE_CONTROL_REASON_SUBJECT:0 "@green_checkmark! [State.GetName]: [State.GetOwner.GetName] is a non-autonomous [concept_subject] ($SUBJECT_TYPE$) of [Country.GetName]"
- FORM_NATION_STATE_NO_CONTROL_REASON_AUTONOMOUS_SUBJECT:0 "@red_cross! [State.GetName]: [State.GetOwner.GetName] is too autonomous a [concept_subject] ($SUBJECT_TYPE$) to count as being controlled by [Country.GetName]"
- FORM_NATION_STATE_NO_CONTROL_REASON_GENERIC:0 "@red_cross! [State.GetName]: [Country.GetName] does not exert any control over [State.GetOwner.GetName]"
+ FORM_NATION_STATE_REGION_CONTROL_DESC: "#header #yellow [Country.GetAdjective]ий#! контроль над землею [STATE_REGION.GetName]#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
+ FORM_NATION_STATE_CONTROL_REASON_OWNERSHIP: "@green_checkmark! [State.GetName]: [Country.GetName] володіють [Concept('concept_state', '$concept_state_ins$')|l]"
+ FORM_NATION_STATE_CONTROL_REASON_CANDIDATE_SUPPORT: "@green_checkmark! [State.GetName]: [State.GetOwner.GetName] підтримує державу [Country.GetName] як [Concept('concept_unification_candidate', '$concept_unification_candidate_acc$')|l]"
+ FORM_NATION_STATE_CONTROL_REASON_SUBJECT: "@green_checkmark! [State.GetName]: [State.GetOwner.GetName] є не автономним [Concept('concept_subject', '$concept_subject_adj$им')|l] ($SUBJECT_TYPE$) держави [Country.GetName]"
+ FORM_NATION_STATE_NO_CONTROL_REASON_AUTONOMOUS_SUBJECT: "@red_cross! [State.GetName]: [State.GetOwner.GetName] вважається занадто автономним [Concept('concept_subject', '$concept_subject_adj$им')|l] ($SUBJECT_TYPE$) держави [Country.GetName]"
+ FORM_NATION_STATE_NO_CONTROL_REASON_GENERIC: "@red_cross! [State.GetName]: [Country.GetName] не має жодного контролю над державою [State.GetOwner.GetName]"
 
  PLAYER_CULTURE: "У [Concept('concept_country','$concept_country_loc$')|l] [GetPlayer.GetName]"
  GLOBAL_CULTURE: "У світі"
@@ -3318,7 +3318,7 @@
  LOSSES_FROM_GOVERNMENT_SHARES: "Збитки від [Concept('concept_government_ownership_share', '$concept_government_ownership_shares_gen$')|l]"
  LOSSES_FROM_GOVERNMENT_SHARES_l: "збитки від [Concept('concept_government_ownership_share', '$concept_government_ownership_shares_gen$')|l]"
  GOVERNMENT_SHARE_DIVIDENDS_EFFICIENCY: "Усі [concept_government_dividends|l] множаться на #v x$MULTIPLIER$#! через #yellow [Country.GetAdjective|l]ий!# [Concept('concept_gdp','$concept_gdp_acc$')|l] - @money!$[Country.GetGDP|Dv$]"
- GOVERNMENT_SHARE_DIVIDENDS_EFFICIENCY_WITH_DEBT_FACTOR: "Усі [concept_government_dividends|l] множаться на #v x$MULTIPLIER$#! через #yellow [Country.GetAdjective|l]ий!# [Concept('concept_gdp','$concept_gdp_acc$')|l] - @money![Country.GetGDP|Dv] та [Concept('concept_principal','$concept_principal_acc$')|l] - @money![Country.GetPrincipal|Dv]"
+ GOVERNMENT_SHARE_DIVIDENDS_EFFICIENCY_WITH_DEBT_FACTOR: "Усі [concept_government_dividends|l] множаться на #v x$MULTIPLIER$#! через #yellow [Country.GetAdjective|l]ий#! [Concept('concept_gdp','$concept_gdp_acc$')|l] - @money![Country.GetGDP|Dv] та [Concept('concept_principal','$concept_principal_acc$')|l] - @money![Country.GetPrincipal|Dv]"
 
  TOOLTIP_BUDGET_PANEL: "#header Щотижневий балянс#!\nВсього: #variable [AccessPlayer.PredictWeeklyBalance|D+=]#!\n$TOOLTIP_DELIMITER$\n$INVESTMENT_POOL$\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetIncomeBreakdown]\n\n[GetPlayer.GetExpensesBreakdown]"
  TAX_INCOME_BREAKDOWN: "#bold Національний дохід:#! #tooltippable #tooltip:[GetPlayer.GetTooltipTag],TOTAL_INCOME_BREAKDOWN,TotalIncomeTooltip #variable @money![GetPlayer.PredictWeeklyFixedIncome|D+=]#!#!#!"
@@ -3658,13 +3658,13 @@
  PEACE_ACCEPTANCE_TOTAL_VICTORY:0 "Complete Victory: #bold $VAL|=+$#!"
  ADD_WARGOAL_ITEM: "#header [WarGoal.GetName]#!\n$TOOLTIP_DELIMITER$\n$DIPLO_PLAY_WAR_GOAL_PRIMARY_OR_SECONDARY$\nНадсилач: [WarGoal.GetHolder.GetName]\nЦіль: [WarGoal.GetTarget.GetName]\nЗаподії: [WarGoal.GetDesc]\n[ConcatIfNeitherEmpty(WarGoal.GetAddWarGoalDiplomaticIncidentDesc, '\n')][ConcatIfNeitherEmpty(AddWarGoalPanel.GetDiplomaticPlay.GetCanAddWarGoalString( WarGoal.Self ), '\n')]"
 
- UNIFICATION_SUPPORT_ATTITUDE_SCORE:0 "#v [Country.GetAttitudeTowards(COUNTRY_THIRD_PARTY.Self).GetName]#! attitude: #v $VALUE$#!"
- UNIFICATION_SUPPORT_RELATIONS_SCORE:0 "#v [Country.GetRelationsWithDesc(COUNTRY_THIRD_PARTY.Self)]! relations: #v $VALUE$#!"
- UNIFICATION_SUPPORT_RANK_SCORE:0 "[Country.GetName] is a #v [COUNTRY.GetRank]#!: #v $VALUE$#!"
+ UNIFICATION_SUPPORT_ATTITUDE_SCORE: "Ставлення - #v [Country.GetAttitudeTowards(COUNTRY_THIRD_PARTY.Self).GetName|l]#!: #v $VALUE$#!"
+ UNIFICATION_SUPPORT_RELATIONS_SCORE: "Відносини - #v [Country.GetRelationsWithDesc(COUNTRY_THIRD_PARTY.Self)|l]#!: #v $VALUE$#!"
+ UNIFICATION_SUPPORT_RANK_SCORE: "[Country.GetName] - #v [COUNTRY.GetRank|l]#!: #v $VALUE$#!"
 
- UNIFICATION_SUPPORT_FOR_CANDIDATES_ENTRY:0 "[Country.GetName]: #tooltippable #tooltip:$BREAKDOWN_TAG$ #v $VALUE$#!#!#!"
- UNIFICATION_SUPPORT_FOR_CANDIDATES_DESC:0 "Support for [CountryFormation.GetAdjective] [Concept('concept_unification_candidate', '$concept_unification_candidates$')]:\n$DETAILS$"
- UNIFICATION_CANDIDATE_SUPPORT_BREAKDOWN:0 "#header [Country.GetAdjectiveNoFormatting] support for [COUNTRY_THIRD_PARTY.GetName] as [concept_unification_candidate] of [CountryFormation.GetName]: #v $VALUE$#!#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
+ UNIFICATION_SUPPORT_FOR_CANDIDATES_ENTRY: "[Country.GetName]: #tooltippable #tooltip:$BREAKDOWN_TAG$ #v $VALUE$#!#!#!"
+ UNIFICATION_SUPPORT_FOR_CANDIDATES_DESC: "Підтримка #yellow [CountryFormation.GetAdjective|l]их#! [Concept('concept_unification_candidate', '$concept_unification_candidates_gen$')|l]:\n$DETAILS$"
+ UNIFICATION_CANDIDATE_SUPPORT_BREAKDOWN: "#header [Country.GetAdjectiveNoFormatting]а підтримка держави [COUNTRY_THIRD_PARTY.GetName] як [Concept('concept_unification_candidate', '$concept_unification_candidates_gen$')|l] нації [CountryFormation.GetName]: #v $VALUE$#!#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
 
  NO_VALID_WAR_GOALS: "Немає доступних [Concept('concept_war_goal', '$concept_war_goals_gen$')|l]"
 
@@ -4633,7 +4633,7 @@
 
  STATE_COLONY_ACTIVE_INTEREST: "Наступне зростання осади очікується #variable [State.GetColonyGrowthDateDesc]#!\n\nПоступ збільшується на #variable [State.GetDailyColonyProgress|%]#! через: \n[State.GetColonyGrowthModifierDesc]"
  STATE_COLONY_TOOLTIP_INACTIVE_INTEREST: "\n#R Неможливо отримати додатковий поступ через відсутність [Concept('concept_active_interest', '$concept_active_interest_gen$')|l] у [Concept('concept_strategic_region', '$concept_strategic_region_loc$')|l] [State.GetStateRegion.GetStrategicRegion.GetName]#!"
- STATE_COLONY_TOOLTIP: "#header Будівництво [State.GetOwner.GetAdjective|l]ої осади у [Concept('concept_state','$concept_state_loc$')|l] [State.GetName]#!\n$TOOLTIP_DELIMITER$\nПоступ до отримання додаткової провінції: #variable [State.GetColonyProgress|%]#!\n[SelectLocalization( State.IsColonyProgressBlockedByInactiveInterest, 'STATE_COLONY_TOOLTIP_INACTIVE_INTEREST', 'STATE_COLONY_ACTIVE_INTEREST' )]"
+ STATE_COLONY_TOOLTIP: "#header Будівництво #yellow [State.GetOwner.GetAdjective|l]ої#! осади у [Concept('concept_state','$concept_state_loc$')|l] [State.GetName]#!\n$TOOLTIP_DELIMITER$\nПоступ до отримання додаткової провінції: #variable [State.GetColonyProgress|%]#!\n[SelectLocalization( State.IsColonyProgressBlockedByInactiveInterest, 'STATE_COLONY_TOOLTIP_INACTIVE_INTEREST', 'STATE_COLONY_ACTIVE_INTEREST' )]"
 
  MARKET_CAPITAL: "#title [concept_market_capital]#!\n[Market.GetMarketCapital.GetName]"
  MOVE_CAPITAL_FORBIDDEN_WHILE_IN_ACTIVE_DIPLO_PLAY:0 "#N Cannot move the capital while involved in a [concept_diplomatic_play]#!"
@@ -4916,12 +4916,12 @@
  BATTLE_ALLY_DEFEAT: "Ваш союзник, [Battle.GetLoser.GetName] - переможений!"
  BATTLE_CAPTURING_COUNTRY: "[Battle.GetCapturingCountry.GetName] захопила [Battle.GetNumCapturedProvinces|v] провінцій"
  BATTLE_COUNTRY_DEFEAT: "[Battle.GetLoosingProvincesCountry.GetName] втратила [Battle.GetNumCapturedProvinces|v] провінцій"
- DEAD_TOOLTIP_ATTACKER: "Кількість [Concept('concept_dead', '$concept_dead_ins$')|l], яких зазнала #yellow [Battle.GetAttacker.GetAdjective|l]а!# сторона: [Battle.GetAttackerTotalDead|0v] "
- DEAD_TOOLTIP_DEFENDER: "Кількість [Concept('concept_dead', '$concept_dead_ins$')|l], яких зазнала #yellow [Battle.GetDefender.GetAdjective|l]а!# сторона: [Battle.GetDefenderTotalDead|0v]"
- WOUNDED_TOOLTIP_ATTACKER: "Кількість [Concept('concept_wounded', '$concept_wounded_ins$')|l], яких зазнала #yellow [Battle.GetAttacker.GetAdjective|l]а!# сторона: [Battle.GetAttackerTotalWounded|0v]"
- WOUNDED_TOOLTIP_DEFENDER: "Кількість [Concept('concept_wounded', '$concept_wounded_ins$')|l], яких зазнала #yellow [Battle.GetDefender.GetAdjective|l]а!# сторона: [Battle.GetDefenderTotalWounded|0v]"
- DEMORALIZED_TOOLTIP_ATTACKER: "Кількість [Concept('concept_morale_demoralized', '$concept_morale_demoralized_ins$')|l], яких зазнала [Battle.GetAttacker.GetAdjective|l]а сторона: [Battle.GetAttackerTotalDemoralized|0v]"
- DEMORALIZED_TOOLTIP_DEFENDER: "Кількість [Concept('concept_morale_demoralized', '$concept_morale_demoralized_ins$')|l], яких зазнала [Battle.GetDefender.GetAdjective|l]а сторона: [Battle.GetDefenderTotalDemoralized|0v]"
+ DEAD_TOOLTIP_ATTACKER: "Кількість [Concept('concept_dead', '$concept_dead_ins$')|l], яких зазнала #yellow [Battle.GetAttacker.GetAdjective|l]а#! сторона: [Battle.GetAttackerTotalDead|0v] "
+ DEAD_TOOLTIP_DEFENDER: "Кількість [Concept('concept_dead', '$concept_dead_ins$')|l], яких зазнала #yellow [Battle.GetDefender.GetAdjective|l]а#! сторона: [Battle.GetDefenderTotalDead|0v]"
+ WOUNDED_TOOLTIP_ATTACKER: "Кількість [Concept('concept_wounded', '$concept_wounded_ins$')|l], яких зазнала #yellow [Battle.GetAttacker.GetAdjective|l]а#! сторона: [Battle.GetAttackerTotalWounded|0v]"
+ WOUNDED_TOOLTIP_DEFENDER: "Кількість [Concept('concept_wounded', '$concept_wounded_ins$')|l], яких зазнала #yellow [Battle.GetDefender.GetAdjective|l]а#! сторона: [Battle.GetDefenderTotalWounded|0v]"
+ DEMORALIZED_TOOLTIP_ATTACKER: "Кількість [Concept('concept_morale_demoralized', '$concept_morale_demoralized_ins$')|l], яких зазнала #yellow [Battle.GetAttacker.GetAdjective|l]а#! сторона: [Battle.GetAttackerTotalDemoralized|0v]"
+ DEMORALIZED_TOOLTIP_DEFENDER: "Кількість [Concept('concept_morale_demoralized', '$concept_morale_demoralized_ins$')|l], яких зазнала #yellow [Battle.GetDefender.GetAdjective|l]а#! сторона: [Battle.GetDefenderTotalDemoralized|0v]"
  BATTLE_MODIFIER_UNDER_COMMAND_HEADER: "Підрозділи під контролем отримують такі переваги:\n$TOOLTIP_DELIMITER$\n"
  BATTLE_MODIFIER_TOOLTIP_ATTACKER: "[Battle.GetAttackerUnderCommandBreakdown]"
  BATTLE_MODIFIER_TOOLTIP_DEFENDER: "[Battle.GetDefenderUnderCommandBreakdown]"
@@ -5591,8 +5591,8 @@
  QUEUE_CONSTRUCTION_POINTS_SUMMARY: "[Country.EstimatedConstructionQueueDuration|v] тиж."
  QUEUE_CONSTRUCTION_POINTS_SUMMARY_TOOLTIP: "#header Приблий час на буідвництво#!\n[Country.GetName] залишилося приблизно [Country.EstimatedConstructionQueueDuration|v] тиж. у [Concept('concept_construction_queue', '$concept_construction_queue_loc$')|l]\n$TOOLTIP_DELIMITER$\n[Country.EstimatedGovernmentConstructionQueueDuration|v] тиж. у черзі на [Concept('concept_government_construction', '$concept_government_construction_alt_acc$')|l]\n[Country.EstimatedPrivateConstructionQueueDuration|v] тиж. у черзі на [Concept('concept_private_construction', '$concept_private_construction_alt_acc$')|l]"
 
- NUM_PRIVATE_CONSTRUCTION_TOOLTIP: "#header [Concept('concept_private_construction', '$concept_private_constructions$')]#!\nКількість [Concept('concept_private_construction', '$concept_private_constructions_gen$')|l] у [Country.GetAdjective|l]ій [Concept('concept_construction_queue', '$concept_construction_queue_loc$')|l]: [Country.GetNumPrivateConstructionsInQueue|v]"
- NUM_GOVERNMENT_CONSTRUCTION_TOOLTIP: "#header [Concept('concept_government_construction', '$concept_government_constructions$')]#!\nКількість [Concept('concept_government_construction', '$concept_government_constructions_gen$')|l] у [Country.GetAdjective|l]ій [Concept('concept_construction_queue', '$concept_construction_queue_loc$')|l]: [Country.GetNumGovernmentConstructionsInQueue|v]"
+ NUM_PRIVATE_CONSTRUCTION_TOOLTIP: "#header [Concept('concept_private_construction', '$concept_private_constructions$')]#!\nКількість [Concept('concept_private_construction', '$concept_private_constructions_gen$')|l] у #yellow [Country.GetAdjective|l]ій#! [Concept('concept_construction_queue', '$concept_construction_queue_loc$')|l]: [Country.GetNumPrivateConstructionsInQueue|v]"
+ NUM_GOVERNMENT_CONSTRUCTION_TOOLTIP: "#header [Concept('concept_government_construction', '$concept_government_constructions$')]#!\nКількість [Concept('concept_government_construction', '$concept_government_constructions_gen$')|l] у #yellow [Country.GetAdjective|l]ій#! [Concept('concept_construction_queue', '$concept_construction_queue_loc$')|l]: [Country.GetNumGovernmentConstructionsInQueue|v]"
 
  QUALIFICATIONS_LITERACY_FACTOR:0 "From [concept_literacy] [Pop.GetLiteracyRate|v0%]"
  QUALIFICATIONS_WEALTH_FACTOR:0 "From [concept_wealth] [Pop.GetCurrentWealth|v0]"
@@ -6176,8 +6176,8 @@
 
 
  TECHNOLOGY: "Технології"
- TOOLTIP_REQUIREMENTS_ANY: "#title Вимагає будь-що з наступного:#!"
- TOOLTIP_REQUIREMENTS_ALL: "#title Вимагає усе з наступного:#!"
+ TOOLTIP_REQUIREMENTS_ANY: "#title Вимагає будь-що з цього:#!"
+ TOOLTIP_REQUIREMENTS_ALL: "#title Вимагає усе з цього:#!"
  TECHNOLOGY_RESEARCHED: "#i Уже дослідженно#!"
  TOOLTIP_UNLOCKS: "#title Розблоковує#!"
  TOOLTIP_UNLOCK_PRODUCTION_METHOD: "Розблоковує [concept_production_method|l] «$PRODUCTION_METHOD$» для [Concept('concept_building','$concept_building_gen$')|l] $BUILDING_TYPE|l$"
@@ -6529,7 +6529,7 @@
  notification_canceled_significant_trade_route_tooltip: "$notification_canceled_trade_route_tooltip$"
 
  notification_commander_move_name: "[SCOPE.GetRootScope.GetCharacter.GetFullName] переназначений"
- notification_commander_move_desc: "[SCOPE.GetRootScope.GetCharacter.GetFullName] та [SCOPE.GetRootScope.GetCharacter.GetHerHis] #variable [SCOPE.GetRootScope.GetCharacter.GetCombatUnitsTypeIcon][SCOPE.GetRootScope.GetCharacter.GetNumCombatUnits]#! були переназначені до [SCOPE.GetRootScope.GetCharacter.GetLocationHQ.GetName]"
+ notification_commander_move_desc: "[SCOPE.GetRootScope.GetCharacter.GetFullName] та [SCOPE.GetRootScope.GetCharacter.GetHerHis|l] #variable [SCOPE.GetRootScope.GetCharacter.GetCombatUnitsTypeIcon][SCOPE.GetRootScope.GetCharacter.GetNumCombatUnits]#! були переназначені до [SCOPE.GetRootScope.GetCharacter.GetLocationHQ.GetName]"
  notification_commander_move_tooltip: "#header $notification_commander_move_name$#!\n$notification_commander_move_desc$"
 
  notification_naval_invasion_failed_name: "Морська висадка провалилася"
@@ -6601,7 +6601,7 @@
  notification_country_owed_obligation_removed_desc: "[SCOPE.sCountry('recipient').GetName] більше не має [Concept('concept_obligation','$concept_obligation_gen$')|l] перед нами"
 
  notification_unification_candidate_added_name: "[SCOPE.sCountry('actor').GetName] стала [Concept('concept_unification_candidate','$concept_unification_candidate_ins$')|l]"
- notification_unification_candidate_added_desc: "[SCOPE.sCountry('actor').GetName] стала [Concept('concept_unification_candidate','$concept_unification_candidate_ins$')|l] [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sCountryFormation('country_formation').GetName] та тепер може отримувати підтримку від менших #yellow [SCOPE.sCountryFormation('country_formation').GetAdjective|l]их!# [Concept('concept_country', 'Країн')|l]"
+ notification_unification_candidate_added_desc: "[SCOPE.sCountry('actor').GetName] стала [Concept('concept_unification_candidate','$concept_unification_candidate_ins$')|l] [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sCountryFormation('country_formation').GetName] та тепер може отримувати підтримку від менших #yellow [SCOPE.sCountryFormation('country_formation').GetAdjective|l]их#! [Concept('concept_country', 'Країн')|l]"
  notification_unification_candidate_added_tooltip: "#header $notification_unification_candidate_added_name$#!\n$notification_unification_candidate_added_desc$"
 
  notification_unification_candidate_removed_name: "[SCOPE.sCountry('actor').GetName] більше не [Concept('concept_unification_candidate','$concept_unification_candidate_acc$')|l]"
