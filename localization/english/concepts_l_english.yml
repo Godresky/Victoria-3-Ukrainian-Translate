@@ -98,6 +98,7 @@
  concept_puppet: "Лялька"
  concept_puppet_acc: "Ляльку"
  concept_puppet_gen: "Ляльки"
+ concept_puppet_ins: "Лялькою"
  concept_puppets: "Ляльки"
  concept_puppets_acc: "Ляльки"
  concept_puppet_desc: "[Concept('concept_recognized_power','$concept_recognized_powers$')] можуть перетворити слабшу [Concept('concept_country','країну')] у свою ляльку. Лялька - це тип [Concept('concept_subject','$concept_subject_gen$')|l], який не може починати власні [Concept('concept_diplomatic_play','$concept_diplomatic_plays_acc$')|l], але змушений приєднюватися до [Concept('concept_war','$concept_wars_gen$')|l] [Concept('concept_overlord','$concept_overlord_gen$')|l], та, також, мусить щотижня платити #v 30%#! від своїх доходів зі [Concept('concept_treasury','$concept_treasury_gen$')|l] повелителю. [concept_rank] ляльки не може стати вищим або дорівнювати ранґу повелителя, а її повелитель має ціль #b «Анексія»#! у дипломатичній грі."
@@ -1054,6 +1055,7 @@
  concept_infamy_desc:1 "$concept_infamy$ reflects the degree by which the international community, particularly the reigning [Concept('concept_great_power','$concept_great_powers$')], see you as a threat to be contained in light of your past actions. It is accrued primarily from causing [Concept('concept_diplomatic_incident','$concept_diplomatic_incidents$')] and claiming [Concept('concept_war_goal','$concept_war_goals$')] in a [concept_peace_deal]. Your $concept_infamy$ affects $concept_countries$' [concept_attitude] towards you and increases the [concept_influence] cost of [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]. If it reaches the level of #b $infamy_pariah$#!, $concept_great_powers$ will be able to start the [GetDiplomaticPlayType('dp_contain_threat').GetName] [concept_diplomatic_play] against you."
 
  concept_diplomatic_incident: "Дипломатичний інцидент"
+ concept_diplomatic_incident_gen: "Дипломатичного інциденту"
  concept_diplomatic_incident_short: "Інцидент"
  concept_diplomatic_incidents: "Дипломатичний інцидент"
  concept_diplomatic_incident_desc:1 "A $concept_diplomatic_incident$ is typically the result of a [concept_country] starting a [concept_diplomatic_play]. $concept_diplomatic_incidents$ generate [concept_infamy] for the $concept_country$ who started it, and will cause [concept_relations] to fall with all $concept_countries$ with an [concept_interest] in the [concept_strategic_region], particularly the target of the $concept_diplomatic_play_short$. $concept_diplomatic_incidents$ can also be the result of other actions, for example decisions made during special events."

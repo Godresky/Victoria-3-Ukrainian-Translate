@@ -4855,9 +4855,9 @@
  DIPLOMATIC_PLAY_SUPPORTS: "#header Підтримує#!"
  DIPLOMATIC_PLAY_OPPOSES: "#header Протистоїть#!"
  DIPLOMATIC_PLAY_UNDECIDED: "#header Не визначився#!"
- DIPLOMATIC_PLAY_NAME: "[concept_diplomatic_play] у [Concept('concept_state', '$concept_state_loc$')|l] [DiplomaticPlay.GetStrategicRegion.GetName]"
+ DIPLOMATIC_PLAY_NAME: "[concept_diplomatic_play] у [Concept('concept_strategic_region', '$concept_strategic_region_short_loc$')|l] [DiplomaticPlay.GetStrategicRegion.GetName]"
  DIPLOMATIC_PLAY_SWITCH_COUNTRY: "Змінити бік"
- DIPLOMATIC_PLAY_OUTLINER_TOOLTIP: "#header [concept_diplomatic_play] у [Concept('concept_state', '$concept_state_loc$')|l] [DiplomaticPlay.GetStrategicRegion.GetName]#!\n$TOOLTIP_DELIMITER$\n$DIPLO_PLAY_INITIATOR$: [DiplomaticPlay.GetInitiator.GetName]\n$DIPLO_PLAY_TARGET$: [DiplomaticPlay.GetTarget.GetName]"
+ DIPLOMATIC_PLAY_OUTLINER_TOOLTIP: "#header [concept_diplomatic_play] у [Concept('concept_strategic_region', '$concept_strategic_region_short_loc$')|l] [DiplomaticPlay.GetStrategicRegion.GetName]#!\n$TOOLTIP_DELIMITER$\n$DIPLO_PLAY_INITIATOR$: [DiplomaticPlay.GetInitiator.GetName]\n$DIPLO_PLAY_TARGET$: [DiplomaticPlay.GetTarget.GetName]"
 
  COUNTRY_STRENGTH_POINT_ARMY_TOOLTIP:0 "Total Army Strength Point\n#variable [Country.GetStrengthPointArmy]#!\n\nEffectiveness: #variable [Country.GetCombatEffectivenessArmy|2]#!\nReinforcement Rate (not implemented): #variable [Country.GetReinforcementRateArmy]#!\nAvailable Barracks Strength Points capacity: #variable [Country.GetBarracksStrengthPointCapacityArmy] Strength Points#!"
  COUNTRY_STRENGTH_POINT_NAVY_TOOLTIP:0 "Total Navy Strength Point\n#variable [Country.GetStrengthPointNavy]#!\n\nKill Rate: #variable [Country.GetKillRateNavy]#!\nReinforcement Rate: #variable [Country.GetReinforcementRateNavy]#!\nAvailable Barracks Strength Points capacity: #variable [Country.GetBarracksStrengthPointCapacityNavy] Strength Points#!"

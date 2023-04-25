@@ -428,7 +428,7 @@
  war_goal_make_puppet_type_name: "Перетворення на ляльку"
  war_goal_make_puppet_type_desc:1 "Force another country to become a [concept_puppet]."
  war_goal_make_puppet: "[WAR_GOAL.GetTarget.GetName] - лялька"
- war_goal_make_puppet_desc:1 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to become a [concept_puppet]."
+ war_goal_make_puppet_desc: "[WAR_GOAL.GetHolder.GetName] примусить державу [WAR_GOAL.GetTarget.GetName] стати [Concept('concept_puppet', '$concept_puppet_ins$')|l]."
  war_goal_make_puppet_sway_desc:1 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetTarget.GetName] to become your [concept_puppet]."
  
  war_goal_make_dominion_type_name: "Перетворення на домініона"
