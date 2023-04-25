@@ -9,8 +9,8 @@
  building_paper_mills_lens_option: "Розширити паперові виробні"
  building_shipyards: "Корабельня"
  building_shipyards_lens_option: "Розширити корабельні"
- building_chemical_plants: "Хімічна промисловість"
- building_chemical_plants_lens_option: "Розширити хімічні промисловісті"
+ building_chemical_plants: "Хемічна промисловість"
+ building_chemical_plants_lens_option: "Розширити хемічні промисловісті"
  building_furniture_manufacturies: "Меблева товарня"
  building_furniture_manufacturies_lens_option: "Розширити меблеві товарні"
  building_electrics_industry: "Електрична промисловість"
@@ -25,8 +25,8 @@
  building_munition_plants_lens_option: "Розширити виробні набоїв"
  building_synthetics_plants: "Синтетична промисловість"
  building_synthetics_plants_lens_option: "Розширити синтетичну промисловість"
- building_steel_mills: "Металоварня"     #Незнаю чи є таке слово, але як на мене воно непогано звучить
- building_steel_mills_lens_option: "Розширити металоварні"
+ building_steel_mills: "Крицеварня"     #Незнаю чи є таке слово, але як на мене воно непогано звучить
+ building_steel_mills_lens_option: "Розширити крицеварні"
  building_glassworks: "Скловарня"       #Незнаю чи є таке слово, але як на мене воно непогано звучить
  building_glassworks_lens_option: "Розширити скловарні"
  building_coal_mine: "Вугільна копальня"
@@ -173,21 +173,21 @@
  building_link_merge_markets_lens_option: "Об'єднати ринки"
   
   #Academies
- building_university: "Учильня"
- building_university_lens_option: "Розширити учильні"
+ building_university: "Університет"
+ building_university_lens_option: "Розширити університети"
  building_arts_academy: "Академія мистецтв"
  building_arts_academy_lens_option: "Розширити академії мистецтв"
 
   #Colonies
  building_colony_military: "Військова осада"
  building_colony_military_lens_option: "Встановити війскову осаду"
- building_colony_military_hover: "Встановити #variable війскову осаду#! у реґіоні #variable [STATE.GetName]"
+ building_colony_military_hover: "Встановити #variable війскову осаду#! у землі #variable [STATE.GetName]"
  building_colony_missionary: "Метарська осада"    #від метар(месіонер)
  building_colony_missionary_lens_option: "Встановити метарську осаду"
- building_colony_missionary_hover: "Встановити #variable метарську осаду#! у #variable [STATE.GetName]#!"
+ building_colony_missionary_hover: "Встановити #variable метарську осаду#! у землі #variable [STATE.GetName]#!"
  building_colony_trade: "Торгова осада"
  building_colony_trade_lens_option: "Встановити торгову осаду"
- building_colony_trade_hover: "Встановити #variable торгову осаду#! у #variable [STATE.GetName]"
+ building_colony_trade_hover: "Встановити #variable торгову осаду#! у землі #variable [STATE.GetName]"
 
   #Barracks
  building_barracks: "Курінь"

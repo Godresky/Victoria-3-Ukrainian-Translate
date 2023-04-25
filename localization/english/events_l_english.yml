@@ -1,6 +1,6 @@
 ﻿l_english:
- government_conflict:0 "Government Conflict" # Modifier
- disfavored_in_government:0 "Disfavored in Government" # Modifier
+ government_conflict: "Урядовий конфлікт" # Modifier
+ disfavored_in_government: "Незадоволені урядом" # Modifier
  rejected_petition:0 "Rejected Petition"
  accepted_petition:0 "Accepted Petition" # Modifier
  accepted_petition_LI:0 "Accepted Petition" # Modifier
@@ -97,19 +97,19 @@
  government_conflicts.7.b:0 "Those who earn success deserve to reap its fruits."
  government_conflicts.7.c:0 "The important thing is that work gets done, not how."
  
- government_conflicts.8.t:0 "These Dark Satanic Mills"
- government_conflicts.8.d:1 "The [SCOPE.gsInterestGroup('rural_folk_ig').GetName] are dissatisfied with the inclusion of the [SCOPE.gsInterestGroup('industrialists_ig').GetName] in the [ROOT.GetCountry.GetAdjectiveNoFormatting] government."
- government_conflicts.8.f:0 ""Something tells me, when they've built all their factories and machines that are supposed to relieve us of our burdens, we'll still be harvesting the grapes and they'll still be drinking the wine.""
- government_conflicts.8.a:0 "Like it or not, industrialization is the future."
- government_conflicts.8.b:0 "We must not forget those who feed the city-dwellers."
- government_conflicts.8.c:0 "Factories and farms will be equally needed in [ROOT.GetCountry.GetName]'s future."
+ government_conflicts.8.t: "Ці виробні від сатани"
+ government_conflicts.8.d: "[SCOPE.gsInterestGroup('rural_folk_ig').GetName] незадоволені тим, що [SCOPE.gsInterestGroup('industrialists_ig').GetName] увійшла у [ROOT.GetCountry.GetAdjectiveNoFormatting|l]ий уряд."
+ government_conflicts.8.f: "«Щось мені підказує, що коли вони зведуть свої виробні та машини, які повинні звільнити нас від тягаря, то ми і далі будемо збирати виноград, а вони пити вино.»"
+ government_conflicts.8.a: "Подобається вам це чи ні, але опромислення - це майбутнє."
+ government_conflicts.8.b: "Ми не повинні забувати про тих, хто годує мешканців міста."
+ government_conflicts.8.c: "Виробні та хутори однаково потрібні для #yellow [ROOT.GetCountry.GetAdjective|l]ого#! майбутнього."
  
- government_conflicts.9.t:0 "Country or Class"
- government_conflicts.9.d:1 "The [SCOPE.gsInterestGroup('trade_unions_ig').GetName] are dissatisfied with the inclusion of the [SCOPE.gsInterestGroup('armed_forces_ig').GetName] in the [ROOT.GetCountry.GetAdjectiveNoFormatting] government."
- government_conflicts.9.f:0 ""At what point after you declare that you will dedicate your life to defending your country do you realize how absurd the lie is that you have told yourself? Is it when you aim your weapons at your brothers and sisters standing up to injustice, or only when you pull the trigger?""
- government_conflicts.9.a:0 "The army keeps the peace. Disturb it at your peril."
- government_conflicts.9.b:0 "The struggle within is more important than the struggle without."
- government_conflicts.9.c:0 "Let us hope the conflict never escalates that far."
+ government_conflicts.9.t: "Держава чи кляс"
+ government_conflicts.9.d: "[SCOPE.gsInterestGroup('trade_unions_ig').GetName] незадоволені тим, що [SCOPE.gsInterestGroup('armed_forces_ig').GetName] увійшла у [ROOT.GetCountry.GetAdjectiveNoFormatting|l]ий уряд."
+ government_conflicts.9.f: "«В той момент, коли ви промовляєте, що присвятите життя захисту своєї держави, ви взагалі усвідомлюєте наскільки безглуздим є те, що ви сказали самі собі? Захист країни - це коли ти цілишся у своїх братів та сестер, чи лише коли ти наживаєш на спусковий гачок?»"
+ government_conflicts.9.a: "Військо зберігає мир. Тому порушуйте його на свій страх та ризик."
+ government_conflicts.9.b: "Боротьба всередині важливіша за боротьбу ззовні."
+ government_conflicts.9.c: "Будемо сподіватися, що сутичка не зайде далеко."
  
  government_conflicts.10.t:0 "Thought and Action"
  government_conflicts.10.d:1 "The [SCOPE.gsInterestGroup('armed_forces_ig').GetName] are dissatisfied with the inclusion of the [SCOPE.gsInterestGroup('intelligentsia_ig').GetName] in the [ROOT.GetCountry.GetAdjectiveNoFormatting] government."
@@ -350,11 +350,11 @@
  commander_events.5.a:0 "Focus on fire power."
  commander_events.5.b:0 "Focus on precision."
 
- law_events.1.t:0 "Conscientious Objectors"
- law_events.1.d:1 "The [SCOPE.gsInterestGroup('anti_conscription_ig').GetName] argues that citizens with moral or religious objections to violence should be exempt from [SCOPE.sLaw('current_law_scope').GetName]."
- law_events.1.f:0 ""Conscription is simply another form of forced labor, one of the worst in fact as it makes us raise arms against our fellow man, regardless of our personal moral views.""
- law_events.1.a:1 "Objectors are excluded from the draft."
- law_events.1.b:0 "Everyone must fight."
+ law_events.1.t: "Відмовники через ідейні міркування"
+ law_events.1.d: "[SCOPE.gsInterestGroup('anti_conscription_ig').GetName] стверджує, що громадяни, які мають моральні або релігійні заперечення проти насильства, повинні бути звільненими від [Concept('concept_law', '$concept_law_gen$')|l] «[SCOPE.sLaw('current_law_scope').GetName]»."
+ law_events.1.f: "«Призва у військо - це просто ще одна форма примусової праці, одна з найгірших, адже вона змушує нас наводити зброю на ближнього свого, незалежно від наших особистих моральних переконань.»"
+ law_events.1.a: "Відмовники матимуть виняток."
+ law_events.1.b: "Кожен повинен битися."
 
  law_events.2.t:0 "Lighting the Way"
  law_events.2.d:0 "The newly established police force has requested that the streets be lit to make their job much easier."
@@ -368,18 +368,18 @@
  law_events.4.a:0 "Excellent idea."
  law_events.4.b:0 "It is not a priority."
 
- law_events.5.t:0 "Unhappy Mine Owners"
- law_events.5.d:0 "Several mine owners from [SCOPE.sState('state_with_mine').GetName] are requesting an exemption from the mining regulations."
- law_events.5.f:0 ""It is simply ridiculous to think we will be able to maintain a profitable mine on only a ten hour work days, not to mention the other extra costs we will incur implementing all these safety measures.""
- law_events.5.a:0 "One small exception couldn't hurt."
- law_events.5.b:0 "No exceptions."
+ law_events.5.t: "Нещасливі власники копалень"
+ law_events.5.d: "Одразу декілька власників копалень з [Concept('concept_state', '$concept_state_gen$')|l] [SCOPE.sState('state_with_mine').GetName] звернулися з проханням про виїмку з правил видобутку корисних копалин."
+ law_events.5.f: "«Просто смішно думати, що ми зможемо підтримувати прибуткову роботу копалень лише за десятигодинного робочого дня, не кажучи вже про інші додаткові витрати, які ми понесемо, впроваджуючи усі ці заходи безпеки.»"
+ law_events.5.a: "Один невеликий виняток не завадить."
+ law_events.5.b: "Жодних винятків."
 
  law_events.6.t:0 "Secular Teachings"
  law_events.6.d:1 "The [SCOPE.gsInterestGroup('intelligentsia_ig').GetName] have shown their unhappiness with the passing of the [SCOPE.sLaw('current_law_scope').GetName] law, arguing that education and religion should be separate matters."
  law_events.6.f:0 ""How can we expect our children to learn anything meaningful when they are being indoctrinated from the outset?""
  law_events.6.a:1 "We shall consider it."
  law_events.6.b:0 "Out of the question."
- modifier_religious_schools_abolished_intelligentsia:1 "Listened to Religious Schools Concerns"
+ modifier_religious_schools_abolished_intelligentsia: "Прислухалися до проблем релігійних шкіл"
  religious_schools_bad_modifier:0 "Religious Schools Disputed"
  religious_schools_good_modifier:0 "Religious Schools Supported"
 

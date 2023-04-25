@@ -393,8 +393,8 @@
 
   # Discrimination Events
  discrimination_events.1.t: "Всупереч закону"
- discrimination_events.1.d.culture: "Хоч вони і не мають усіх прав в [ROOT.GetCountry.GetAdjective|l]ому законодавстві, проте деякі особи з [Concept('concept_culture','$concept_culture_gen$')|l] [SCOPE.sPop('discriminated_culture_pop').GetCulture.GetName|l] почали переїжджати в райони та часто відвідувати заклади, в які вони, зазвичай, не змогли б попасти."
- discrimination_events.1.d.religion: "Хоч вони і не мають усіх прав в [ROOT.GetCountry.GetAdjective|l]ому законодавстві, проте деякі прихильники [Concept('concept_religion','$concept_religion_gen$')|l] [SCOPE.sPop('discriminated_religion_pop').GetReligion.GetName|l] почали переїжджати в райони та часто відвідувати заклади, в які вони, зазвичай, не змогли б попасти."
+ discrimination_events.1.d.culture: "Хоч вони і не мають усіх прав в #yellow [ROOT.GetCountry.GetAdjective|l]ому#! законодавстві, проте деякі особи з [Concept('concept_culture','$concept_culture_gen$')|l] [SCOPE.sPop('discriminated_culture_pop').GetCulture.GetName|l] почали переїжджати в райони та часто відвідувати заклади, в які вони, зазвичай, не змогли б попасти."
+ discrimination_events.1.d.religion: "Хоч вони і не мають усіх прав в #yellow [ROOT.GetCountry.GetAdjective|l]ому!# законодавстві, проте деякі прихильники [Concept('concept_religion','$concept_religion_gen$')|l] [SCOPE.sPop('discriminated_religion_pop').GetReligion.GetName|l] почали переїжджати в райони та часто відвідувати заклади, в які вони, зазвичай, не змогли б попасти."
  discrimination_events.1.f: "«Якщо ми хочемо, щоб наші діти мали майбутнє, ми повинні ростити їх тут» - сказав він. - «Я хочу, щоб вони жили десь, де безпечно.»\n\nВона схрестила руки.\n\n«Ви бачили, які у нас погляди? Коли люди говорять про "безпечний", вони не мають на увазі безпечний #ITALIC для#! нас. Вони хочуть мати безпеку #ITALIC від#! нас.»"
  discrimination_events.1.a: "Можливо, нам знадобляться деякі нові правила, щоб зберегти мир."
  discrimination_events.1.b: "Вони справедливо заслужили цей успіх з усім, що з цього випливає."
@@ -767,7 +767,7 @@
  je_liberalism_1_reason: "Більш демократичне суспільство з правильними ідеалами закладе основу для держави, де свобода всіх громадян є першорядною."
  je_liberalism_2: "Свобода торгівлі"
  je_liberalism_2_reason: "Відкрита держава, яка торгує як із сусідами, так і з далекими націями, є ключем до майбутнього економічного лібералізму."
- je_liberalism_2_goal: "Збільшити кількість [ROOT.GetCountry.GetAdjective|l]их [Concept('concept_trade_route', '$concept_trade_routes_gen$')|l] на 25%."
+ je_liberalism_2_goal: "Збільшіть кількість #yellow [ROOT.GetCountry.GetAdjective|l]их!# [Concept('concept_trade_route', '$concept_trade_routes_gen$')|l] на 25%."
  je_liberalism_3: "Свобода думки"
  je_liberalism_3_reason: "Дозволяючи слову бути вільним, думка звільняється разом із ним, відкриваючи нову еру радикальних інновацій та реформ."
  je_liberalism_4: "Новий Колос"
@@ -792,7 +792,7 @@
  liberalism.3.b: "Місце, де дослідженням не перешкоджають звичаї."
 
  liberalism.4.t: "Відкриті обійми"
- liberalism.4.d: "[ROOT.GetCountry.GetName] стала відома у всьому світі як місце, яке приймає іммігрантів без утиску."
+ liberalism.4.d: "[ROOT.GetCountry.GetName] стала відома у всьому світі як місце, яке приймає переселенців без утиску."
  liberalism.4.f: "«Вам, землі стародавні, - кричить вона, безмовних\nГуб не розтиснувши, - жити в розкоші порожній,\nА мені віддайте з глибин бездонних\nСвоїх ізгоїв, люд забитий свій,\nПошліть мені знедолених, бездомних,\nЯ їм свічку біля дверей золотий!»" # Emma Lazarus
  liberalism.4.a: "Приходьте один, приходьте всі!"
  liberalism.4.b: "Ми будемо відомі, як Новий Колос!"
@@ -1057,8 +1057,8 @@
  raj.6.f:0 ""As long as there remains the scent of Iman in the hearts of our Ghazis, so long shall the sword of Hindustan flash before the throne of London."" # Bahadur Shah Zafar
  raj.6.a:0 "It must be suppressed!"
  raj.6.b:0 "Long live the new Hindustan!"
- raj.7.t:0 "End of the Company"
- raj.7.a:0 "The Company is over, but the Empire lives on."
+ raj.7.t: "Кінець компанії"
+ raj.7.a: "Компанії кінець, але імперія житиме далі."
  changed_cartridges:0 "Changed Cartridges"
  overseas_service_exemption:0 "Overseas Service Exemption"
  promised_no_proselytization:0 "Promised No Proselytization"
@@ -1077,11 +1077,11 @@
 
  corn_laws.1.t: "Кінець законів про зерно"
  corn_laws.1.d: "Ввозовий податок на зерно, відомий як закон про зерно, було скасовано, що означає політичний відхід від глитайства та влади землевласників."
- corn_laws.1.f: "«Дехто може сказати, що ми підкорилися волі купців, що ми відмовилися від економічної влади, яку давали нам наші власні землі, на користь міжнародної торгівлі. Проте вони надто легко забувають, що ніщо не є більшою загрозою їхній владі, ніж натовп голодуючих селян»"
+ corn_laws.1.f: "«Дехто може сказати, що ми підкорилися волі купців, що ми відмовилися від економічної влади, яку давали нам наші власні землі, на користь міжнародної торгівлі. Проте вони надто легко забувають, що ніщо не є більшою загрозою їхній владі, ніж натовп морених голодом селян»"
  corn_laws.1.a: "Нехай починеться торгівля зерном!"
  corn_laws.2.t: "Сучасний консерватизм"
 
- corn_laws.2.d: "Новий політик піднявся в лавах [Concept('concept_interest_group','$concept_interest_group_gen$')|l] [SCOPE.gsInterestGroup('landowners_ig').GetName], проводячи виправу за протитрадиційну програму скасування зернових законів."
+ corn_laws.2.d: "Новий політик піднявся в лавах [Concept('concept_interest_group','$concept_interest_group_gen$')|l] [SCOPE.gsInterestGroup('landowners_ig').GetName], проводячи виправу за протизвичаєве скасування зернових законів."
  corn_laws.2.f: "«Я сподіваюся, що після посилання на докази, якими володіє уряд, хоча багато хто може вважати, що висновки, до яких я та інші дійшли щодо небезпеки, були помилковими, все ж я раджу їм не бути надто впевненими. Адже нам залишилося ще сім місяців, щоб отримати новий запас їжі для людей. Я пам’ятаю звіти, які надходили останнім часом, але я прошу палату не робити надто поспішних висновків про те, що небезпека минула. Це не так. Сер, я вірю, що, можливо, я задовольнив деяких із тих, хто вважає висновки помилковими, але порада була чесною, оскільки ми порекомендували вдатися до надзвичайних заходів.»" # Robert Peel
  corn_laws.2.a: "Новий провідник для нашої доби!"
  corn_laws.2.b: "[SCOPE.gsInterestGroup('landowners_ig').GetLeader.GetFullName] - служник рупів [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l] [SCOPE.gsInterestGroup('landowners_ig').GetName]."
@@ -1160,7 +1160,7 @@
  election_liberal_events.1.t: "Надмімрна віддія"
  election_liberal_events.1.d: "[SCOPE.sParty('liberal_party').GetName] у своїй виборчій виправа критикувала [Concept('concept_party','$concept_party_acc$')|l] [SCOPE.sParty('conservative_party').GetName] за те, що вони прийняли до себе [Concept('concept_character','$concept_character_gen$')|l] [SCOPE.sCharacter('extremist_leader').GetFullName]. Кажуть, що [SCOPE.sCharacter('extremist_leader').GetHerHis|l] ультраправі погляди доводять, що партія відкрита для екстремістів."
  election_liberal_events.1.f: "«Вони називають себе консерваторами, хоча самі по собі просто порожнеча цінностей та ідеалів, але в цій порожнечі виросло щось ще гірше. Серед них є ті, хто не тільки стане на заваді змінам нашої країни, а й захоче сформувати її майбутнє за власними безглуздими уявленнями про минуле, якого ніколи не існувало. Вони готові на будь-які методи для цього. Не віддавайте свій голос легковажно, якщо не хочете зробити перший крок на торі до війни та геноциду.»"
- election_liberal_events.1.a: "Вони далекі від традиційних [ROOT.GetCountry.GetAdjective|l]их цінностей, які самі пошируюють."
+ election_liberal_events.1.a: "Вони далекі від традиційних #yellow [ROOT.GetCountry.GetAdjective|l]их!# цінностей, які самі пошируюють."
  election_liberal_events.1.b: "[SCOPE.sCharacter('extremist_leader').GetLastName] - просто відданий патріот!"
  downplaying_fascism: "Дозволений утиск"
 
@@ -1171,14 +1171,14 @@
  election_liberal_events.2.b: "Корумповану систему неможливо змінити, її треба повалити."
 
  election_liberal_events.3.t: "[ROOT.GetCountry.GetName] - країна миру"
- election_liberal_events.3.d: "[SCOPE.sCharacter('pacifist_leader').GetFullName], відомий пацифіст, агітував за одну з [Concept('concept_party','$concept_parties_gen$')|l] ([SCOPE.sParty('liberal_party').GetName]), передбачаючи більш мирну політику, яка б замінила наш агресивний підхід."
+ election_liberal_events.3.d: "[SCOPE.sCharacter('pacifist_leader').GetFullName], відомий пацифіст, аґітував за одну з [Concept('concept_party','$concept_parties_gen$')|l] ([SCOPE.sParty('liberal_party').GetName]), передбачаючи більш мирну політику, яка б замінила наш агресивний підхід."
  election_liberal_events.3.f: "«Коли я їду за кордон, люди кажуть мені: «Пане [SCOPE.sCharacter('pacifist_leader').GetFirstName], це безнадійно. [ROOT.GetCountry.GetAdjective]і політики звикли домагатися свого тором насильства та погроз. Такі люди ніколи не зміняться.» -, а я кажу їм: «[ROOT.GetCountry.GetAdjective]і люди люблять мир, як і люди всіх народів. Ось чому провідники використовують силу та обман, щоб змусити їх піти на війну. Не більше! Народ буде почутий і його репутація буде відновлена. Якщо ми зможемо відновити мир тут, то зможе у всьому світі!»"
  election_liberal_events.3.a: "Зараз ми мирна нація."
  election_liberal_events.3.b: "Наші вороги не повинні переставати нас боятися ні сьогодні, ні ніколи."
 
  election_liberal_events.4.t: "Відкриті ринки"
  election_liberal_events.4.d: "Високі ціни на [Concept('concept_good','$concept_good$')|l] [SCOPE.sGoods('expensive_good').GetName|l] стали помітною темою для розмов у виборчій виправі [Concept('concept_party','$concept_party_gen$')|l] [SCOPE.sParty('free_trade_campaign_party').GetName], стверджуючи, що їхня політика вільної торгівлі знизить ціни."
- election_liberal_events.4.f: "«Не обманюйте себе! Торгові обмеження не називаються захисттям, тому що вони захищають вас. Вони захищають обраних спекулянтів не від голоду чи злиднів, а від конкуренції. Вони захищають їх від світу! Вони змусили вас подумати, що ви безпечніші з [ROOT.GetCountry.GetAdjective|l]им черевиком на шиї, ніж ви були б вільними. Пора змінити цю політику!»"
+ election_liberal_events.4.f: "«Не обманюйте себе! Торгові обмеження не називаються захисттям, тому що вони захищають вас. Вони захищають обраних спекулянтів не від голоду чи злиднів, а від конкуренції. Вони захищають їх від світу! Вони змусили вас подумати, що ви безпечніші з #yellow [ROOT.GetCountry.GetAdjective|l]им!# черевиком на шиї, ніж ви були б вільними. Пора змінити цю політику!»"
  election_liberal_events.4.a: "Це доба світового ринку!"
  election_liberal_events.4.b: "Наша нинішня політика необхідна для збереження стабільности економіки."
 
@@ -1193,8 +1193,8 @@
  election_conservative_events.2.a: "Ми повинні об’єднатися в цей важкий час."
  election_conservative_events.2.b: "Це схоже на холоднокровний опортунізм."
  election_conservative_events.3.t: "Правопорядок"
- election_conservative_events.3.d: "Вказуючи на нестримну радикальну діяльність у реґіоні [SCOPE.sState('turmoil_state').GetName], [SCOPE.sParty('conservative_party').GetName] проводить виправу на платформі посилення поліцянської діяльности."
- election_conservative_events.3.f: "«Люди, схоже, вважають, що для виправдання хаосу, який ми бачимо в реґіоні [SCOPE.sState('turmoil_state').GetName], можна використати найнезначніші політичні приводи. Якщо вони ще не придумали приводу, наші вороги з радістю нададуть їм це. Ми не будемо! Ми повинні надіслати сміливе повідомлення тим, хто хоче висміяти [ROOT.GetCountry.GetAdjective}l] закон, що вони не можуть уникнути правосуддя»"
+ election_conservative_events.3.d: "Вказуючи на нестримну радикальну діяльність у землі [SCOPE.sState('turmoil_state').GetName], [SCOPE.sParty('conservative_party').GetName] проводить виправу на платформі посилення поліцянської діяльности."
+ election_conservative_events.3.f: "«Люди, схоже, вважають, що для виправдання хаосу, який ми бачимо у землі [SCOPE.sState('turmoil_state').GetName], можна використати найнезначніші політичні приводи. Якщо вони ще не придумали приводу, наші вороги з радістю нададуть їм це. Ми не будемо! Ми повинні надіслати сміливе повідомлення тим, хто хоче висміяти [ROOT.GetCountry.GetAdjective}l] закон, що вони не можуть уникнути правосуддя»"
  election_conservative_events.3.a: "Ця рана занадто довго гноїлася."
  election_conservative_events.3.b: "Ключ до запобігання злочинності – запобігання бідності."
  election_conservative_events.4.t: "Найкращий захист"

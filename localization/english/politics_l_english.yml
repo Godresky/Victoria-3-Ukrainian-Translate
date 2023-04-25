@@ -66,7 +66,7 @@
  
  POP_SUPPORT_FOR_POLITICAL_MOVEMENTS:0 "[Concept('concept_political_movement', '$concept_political_movements$')]:\n$DETAILS$"
  POP_SUPPORT_FOR_POLITICAL_MOVEMENTS_ENTRY:0 "$NUM_SUPPORTING|Dv$ supporters of [PoliticalMovement.GetFullName]"
- INTEREST_GROUP_POLITICAL_MOVEMENT_DESC:0 "Supports the [PoliticalMovement.GetFullName]"
+ INTEREST_GROUP_POLITICAL_MOVEMENT_DESC: "Підтримує [PoliticalMovement.GetFullName|l]"
  
  LAW_POLITICAL_MOVEMENT_TO_PRESERVE: "[PoliticalMovement.GetFullName] вимагає, щоб ми припинили процес надання чинности нового [Concept('concept_law', '$concept_law_gen$')|l]"
  LAW_POLITICAL_MOVEMENT_TO_ENACT: "[PoliticalMovement.GetFullName] вимагає, щоб ми надали чинности цьому [Concept('concept_law', '$concept_law_gen$')|l]"
