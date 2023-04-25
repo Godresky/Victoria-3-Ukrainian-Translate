@@ -26,7 +26,7 @@
  FRONTEND_IS_PAUSED: "Гра на павзі"
  FRONTEND_PLAYERS_COUNT: "[GetPlayersCount] гравців(-я)"
  FRONTEND_INVITE: "Запросіть більше гравців, надіславши їм тезьбило сервера:\n[GetServerInfo.GetServerID]"
- FRONTEND_LOGIN_FOR_MUTLIPLAYER: "Увійдіть для мультиплеєру"
+ FRONTEND_LOGIN_FOR_MUTLIPLAYER: "Увійдіть для багатокору"
  FRONTEND_LOGIN_FOR_MUTLIPLAYER_TT: "Відкрити вікно входження в обліковку"
  FRONTEND_LOGGED_IN: "Увійшли в"
  FRONTEND_JOIN_MULTIPLAYER: "Приєднатися до гри"

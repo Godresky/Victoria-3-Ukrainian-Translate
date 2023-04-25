@@ -929,7 +929,9 @@
 
  concept_ownership_share: "Частка власности"
  concept_ownership_shares: "Частки власности"
+ concept_ownership_shares_gen: "Часток власности"
  concept_ownership_shares_acc: "Частки власности"
+ concept_ownership_shares_ins: "Частками власности"
  concept_ownership_share_desc:1 "[Concept('concept_pop','$concept_pops$')] with $concept_ownership_shares$ in their [concept_building] gain a portion of its [Concept('concept_building_balance','$concept_building_balance_profit$')] as [concept_pop_income], in the form of [concept_dividends]. The amount they receive is based on their share of the $concept_building$'s total $concept_ownership_shares$. The $concept_pop$ is also considered to own that proportion of the $concept_building$'s current [concept_cash_reserves]. How $concept_ownership_shares$ are apportioned across the $concept_building$'s [concept_workforce] is determined by its $pmg_ownership$ [Concept('concept_production_method', '$concept_production_methods$')], which are strictly limited by [Concept('concept_law', '$concept_laws$')]."
  
  concept_government_ownership_share: "Урядова частка"
@@ -1284,7 +1286,7 @@
  concept_literacy_gen: "Грамотности"
  concept_literacy_acc: "Грамотність"
  concept_literate: "Грамотн"
- concept_literacy_desc: "Відсоток або абсолютна кількість [Concept('concept_pop', '$concept_persons_gen$')|l], які вміють читати та писати. Певні [Concept('concept_profession', '$concept_professions$')|l] вимагають вищої грамотности, ніж інші, що може обмежувати людську [Concept('concept_pop_qualifications', '$concept_pop_qualifications_acc$')|l] для цих ремесл, якщо їхня грамотність не є достатньо високою. Ви можете покращити [SelectLocalization(GetPlayer.IsValid,Concept('concept_institution', '$concept_institution_acc$'),'')|l] [SelectLocalization(GetPlayer.IsValid,'concept_literacy_desc_added','Освіту')|l] для того, щоб з часом збільшити грамотність серед вашого населення."
+ concept_literacy_desc: "Відсоток або абсолютна кількість [Concept('concept_pop', '$concept_persons_gen$')|l], які вміють читати та писати. Певні [Concept('concept_profession', '$concept_professions$')|l] вимагають вищої грамотности, ніж інші, що може обмежувати людську [Concept('concept_pop_qualifications', '$concept_pop_qualifications_acc$')|l] для цих ремесл, якщо їхня грамотність не є достатньо високою. Ви можете покращити [SelectLocalization(GetPlayer.IsValid,Concept('concept_institution', '$concept_institution_acc$'),'')|l] [SelectLocalization(GetPlayer.IsValid,'concept_literacy_desc_added','Освіту')|l] для того, щоб з часом збільшити грамотність вашого населення."
  concept_literacy_desc_added: "[GetInstitutionType('institution_schools').GetName|l]"
 
  concept_turmoil: "Сум‘яття"
@@ -1742,10 +1744,11 @@
  concept_investment_pool_acc: "Пул вкладів"
  concept_investment_pool_ins: "Пулом вкладів"
  concept_investment_pool_loc: "Пулі вкладів"
- concept_investment_pool_desc:3 "[concept_reinvestment] from [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_shares$')] is deposited into the $concept_investment_pool$, where it becomes available to [Concept('concept_construction','$concept_construct$')] [Concept('concept_building','$concept_buildings$')] the [Concept('concept_country','$concept_country_possessive$')] current [SelectLocalization(GetPlayer.IsValid,'concept_investment_pool_desc_added','Economic System')] [concept_law] permits to be built with these funds. As $concept_construction$ of such $concept_buildings$ take place, the funds required to build them are deducted from the $concept_investment_pool$ and deposited in the [concept_treasury] as an [concept_budget_investment_income]."
- concept_investment_pool_desc_added:1 "$ECONOMIC_SYSTEM_LAW_GROUP$"
+ concept_investment_pool_desc: "[Concept('concept_reinvestment','$concept_reinvestments$')] від [Concept('concept_pop','$concept_pops_gen$')|l] з [Concept('concept_ownership_share','$concept_ownership_shares_ins$')|l] вносяться до пулу вкладів, де є можливість [Concept('concept_construction','Зводити')|l] [Concept('concept_building','$concept_buildings_acc$')|l], які чинний [concept_law|l] «[SelectLocalization(GetPlayer.IsValid,'concept_investment_pool_desc_added','Економічна моделя')]» [Concept('concept_country','$concept_country_gen$')|l] дозволяє споруджувати за ці гроші. У процесі зведення таких будівель кошти, необхідні для їх будівництва, вираховуються з пулу вкладів та передаютья у [Concept('concept_treasury','$concept_treasury_acc$')|l] як [Concept('concept_budget_investment_income','$concept_budget_investment_income_acc$')|l]."
+ concept_investment_pool_desc_added: "$ECONOMIC_SYSTEM_LAW_GROUP$"
 
  concept_reinvestment: "Повторний вклад"
+ concept_reinvestments: "Повторні вклади"
  concept_reinvestment_desc:0 "A portion of the [concept_dividends] collected by certain [Concept('concept_profession','$concept_professions$')] is reinvested into the economy, adding [concept_money] to the [concept_investment_pool]. The amount added depends on factors such as the [Concept('concept_country','$concept_country_possessive$')] current [SelectLocalization(GetPlayer.IsValid,'concept_investment_pool_desc_added','Economic System')] [concept_law] as well as its [concept_gdp], with inefficiencies in large economies resulting in some of the investment being wasted."
 
  concept_pop_income: "Прибуток населення"
@@ -1859,8 +1862,9 @@
  concept_budget_income_taxes_desc: "[Concept('concept_taxes','$concept_tax$')], що збирається зі [Concept('concept_building_wage','$concept_building_wages_gen$')|l], які виплачуються [Concept('concept_workforce', '$concept_workforce_laborer_dat$')|l]."
 
  concept_budget_investment_income: "Отримання зі вкладів"
- concept_budget_investment_income_desc:2 "When [concept_money] from the [concept_treasury] is used in the [concept_construction] of [Concept('concept_building','$concept_buildings$')] that may be funded by the [concept_investment_pool] under the [Concept('concept_country','$concept_country_possessive$')] current [SelectLocalization(GetPlayer.IsValid,'concept_budget_investment_income_desc_added','Economic System')] [concept_law], the $concept_treasury$ is compensated by an equal transfer of funds from the $concept_investment_pool$."
- concept_budget_investment_income_desc_added:1 "$ECONOMIC_SYSTEM_LAW_GROUP$"
+ concept_budget_investment_income_acc: "Отримання зі вкладів"
+ concept_budget_investment_income_desc: "Коли [concept_money|l] зі [Concept('concept_treasury', '$concept_treasury_gen$')|l] використовуються для [Concept('concept_construction','Зведення')|l] [Concept('concept_building','$concept_buildings_gen$')|l], то вони можуть бути профінансовані [Concept('concept_investment_pool','$concept_investment_pool_ins$')|l] відповідно до чинного [Concept('concept_law','$concept_law_gen$')|l] групи «[SelectLocalization(GetPlayer.IsValid,'concept_budget_investment_income_desc_added','Економічна моделя')]» [Concept('concept_country','$concept_country_gen$')|l]. Витрати скарбівниці відшкодовуються рівним переказом коштів з пулу вкладів."
+ concept_budget_investment_income_desc_added: "$ECONOMIC_SYSTEM_LAW_GROUP$"
 
  concept_budget_consumption_taxes: "Споживчі податки"
  concept_budget_consumption_tax: "Споживчий податок"
