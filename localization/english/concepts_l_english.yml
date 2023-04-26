@@ -501,6 +501,7 @@
  
  concept_influence: "Вплив"
  concept_influence_ins: "Впливом"
+ concept_influence_acc: "Вплив"
  concept_influence_gen: "Впливу"
  concept_influence_desc: "@inf! Вплив - це [Concept('concept_capacity','$concept_capacity$')|l], яка використовується для [Concept('concept_diplomatic_action', '$concept_diplomatic_actions_gen$')|l] та [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts_short_gen$')|l] націлені на [Concept('concept_country','$concept_country_acc$')|l]. Ви отримуєте @inf! залежно від [Concept('concept_rank','$concept_rank_gen$')|l]."
 
@@ -1071,7 +1072,7 @@
  concept_relations: "Відносини"
  concept_relations_gen: "Відносин"
  concept_relations_acc: "Відносини"
- concept_relations_desc: "Поточний стан відносин між двома [Concept('concept_country', '$concept_countries_ins$')|l]. Обидві сторони можуть впливати на обопільні значення, використовуючи такі [Concept('concept_diplomatic_action','$concept_diplomatic_actions_acc$')|l]: «[GetDiplomaticActionType('increase_relations').GetName]», «[GetDiplomaticActionType('damage_relations').GetName]» та «[GetDiplomaticActionType('expel_diplomats').GetName]», витрачаючи [Concept('concept_influence','$concept_influence_acc$')|l]. $concept_relations$ впливають на те, які дипломатичні дії і [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts_short_acc$')|l] є доступними варіянтами для держав, а також на ймовірність того, що вони приймуть дипломатичні пропозиції або стануть на ваш бік у [Concept('concept_diplomatic_play','$concept_diplomatic_play_loc$')|l]."
+ concept_relations_desc: "Поточний стан відносин між двома [Concept('concept_country', '$concept_countries_ins$')|l]. Обидві сторони можуть впливати на значення, використовуючи такі [Concept('concept_diplomatic_action','$concept_diplomatic_actions_acc$')|l]: «[GetDiplomaticActionType('increase_relations').GetName]», «[GetDiplomaticActionType('damage_relations').GetName]» та «[GetDiplomaticActionType('expel_diplomats').GetName]», витрачаючи [Concept('concept_influence','$concept_influence_acc$')|l]. $concept_relations$ впливають на те, які дипломатичні дії і [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts_short_acc$')|l] є доступними для держав, а також на ймовірність того, що вони приймуть дипломатичні пропозиції або стануть на ваш бік у [Concept('concept_diplomatic_play','$concept_diplomatic_play_loc$')|l]."
 
  concept_ai_strategy: "Стратегія"
  concept_ai_strategy_acc: "Стратегію"
