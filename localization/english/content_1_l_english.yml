@@ -996,7 +996,7 @@
  partial_german_unification_influence_prestige: "Об’єднувач Німеччини"
  german_unification_popularity: "Об’єднувач Німеччини"
  german_unifier_ruler: "Об’єднувач Німеччини"
- je_age_of_princes:0 "The Age of Princes"
+ je_age_of_princes: "Доба князів"
  je_age_of_princes_reason:0 "Ethiopia has been shattered into a dozen warring fiefdoms. It is up to us to reunify the Empire and to restore peace and prosperity to our people."
  ethiopia.1.t:0 "The Outlaw Prince"
  ethiopia.1.d:0 "A minor noble of the House of Solomon has rapidly risen to power and popularity. Legally an outlaw, he has defeated every army sent against him and now he seeks to take the throne of [ROOT.GetCountry.GetName] by force."
