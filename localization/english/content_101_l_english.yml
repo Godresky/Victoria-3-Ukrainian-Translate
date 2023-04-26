@@ -250,7 +250,7 @@
 
  modifier_mega_earthquake_relief:0 "Cataclysmic Earthquake Relief"
 
- natural_disaster_events.5.t: "Неврожай в [Concept('concept_state','$concept_state_loc$')|l] [SCOPE.sState('crop_fail_state').GetName]"
+ natural_disaster_events.5.t: "Неврожай у [Concept('concept_state','$concept_state_loc$')|l] [SCOPE.sState('crop_fail_state').GetName]"
  natural_disaster_events.5.d: "[Concept('concept_state','$concept_state_loc$')] [SCOPE.sState('crop_fail_state').GetName] був уражений хворобою. Посіви гинуть направо і наліво, тому цього року врожай напевно буде меншим, ніж очікувалося."
  natural_disaster_events.5.f: "«Кілька тижнів тому ми помітили, що деякі культури загинули, але ми нічого про це не думали. Ми завжди втрачаємо кілька. Ми не очікували саме цього.»"
  natural_disaster_events.5.a: "Це позначиться на врожаї."
