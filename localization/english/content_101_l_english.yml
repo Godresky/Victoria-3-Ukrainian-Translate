@@ -28,14 +28,14 @@
  modifier_radio_ig: "Гарна реклама через віщатель"
  modifier_radio_opium: "Схвалення опіюму"
 
- technology_events.30.t:0 "Weapons of War"
- technology_events.30.d:0 "An article has been published by the [ROOT.GetCountry.GetAdjectiveNoFormatting] [SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')] about some of the weapons which our country uses in the ongoing [SCOPE.sWar('ongoing_war').GetName] war."
- technology_events.30.f:1 "[SCOPE.GetRootScope.GetCountry.GetCustom('war_weapons_article')] Members of the public are calling for the use of such weapons to be restricted.\n\n"Such foul instruments of pain and torment have no place on earth.""
- technology_events.30.a:0 "Don't restrict them."
- technology_events.30.b:0 "Coverup their usage."
+ technology_events.30.t: "Зброя війни"
+ technology_events.30.d: "[ROOT.GetCountry.GetAdjectiveNoFormatting]а газета «[SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')]» опублікувала статтю про деяку зброю, яку наша держава використовує у тривалій війні [SCOPE.sWar('ongoing_war').GetName]."
+ technology_events.30.f: "[SCOPE.GetRootScope.GetCountry.GetCustom('war_weapons_article')] Представники громадськости закликають обмежити використання цієї зброї\n\n«Таким нечистим знадобам, що приносять біль та стражджання, не місце на землі.»"
+ technology_events.30.a: "Не обмежувати використання."
+ technology_events.30.b: "Приховати її використання."
 
- custom_weapon_article_machine_gun:0 "The article focuses on the machine gun, a terrifying weapon which tears through flesh and bone at an almost inhuman rate."
- custom_weapon_article_chemical_weapons:0 "The article focuses on the use of chlorine gas, a terrifying weapon."
+ custom_weapon_article_machine_gun: "Статті присвячена скорострілу - жахливій зброї, яка розриває плоть та кістки з майже нелюдською швидкістю."
+ custom_weapon_article_chemical_weapons: "Стаття присвячена використанню жахливої зброї, хлоридного газу."
 
  technology_events.40.t:0 "Photographs of [ROOT.GetCountry.GetName]"
  technology_events.40.d:0 "It has been suggested that we take and distribute some pictures of our country's most famous landmarks."
