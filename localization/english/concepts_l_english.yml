@@ -1080,12 +1080,13 @@
  concept_ai_strategy_desc:1 "AI-controlled [Concept('concept_country','$concept_countries$')] have a set of three $concept_ai_strategies$ in areas corresponding with the [Concept('concept_capacity','$concept_capacities$')] which govern their long- and short-term goals, and how they will proceed when making decisions in regards to other $concept_countries$. Which $concept_ai_strategies$ are selected is influenced by a number of factors such as the $concept_country$'s size and [concept_rank], as well as its current [concept_government]."
 
  concept_strategic_desire: "Стратегічне бажання"
+ concept_strategic_desire_acc: "Стратегічне бажання"
  concept_strategic_desire_desc:2 "AI-controlled [Concept('concept_country', '$concept_countries$')] may have a $concept_strategic_desire$ towards $concept_countries$ they deem geopolitically relevant. Their $concept_strategic_desire$ influence their [concept_attitude]."
 
  concept_attitude: "Ставлення"
  concept_attitude_gen: "Ставлення"
  concept_attitude_acc: "Ставлення"
- concept_attitude_desc:1 "An indication of how another [concept_country] feels about you, based on [concept_relations], [concept_infamy], [concept_strategic_desire], and factors such as how large your military is and which $concept_countries$ you have [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] with. $concept_attitude$ affects what sorts of actions a $concept_country$ is likely to take towards you and what role you play in their plans."
+ concept_attitude_desc: "Показник того, як інша [concept_country|l] ставиться до вас, який спирається на [Concept('concept_relations', '$concept_relations_acc$')|l], [Concept('concept_infamy', '$concept_infamy_acc$')|l], [Concept('concept_strategic_desire', '$concept_strategic_desire_acc$')|l] та такі чинники, як чисельність вашого війська та з якими країнами ви маєте [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')|l]. $concept_attitude$ впливає на те, які дії держава може здійснити щодо вас та яку ролю ви відіграєте в її плянах."
 
  concept_instant_diplomatic_action: "Миттєва дипломатична дія"
  concept_instant_diplomatic_actions: "Миттєві дипломатичні дії"
