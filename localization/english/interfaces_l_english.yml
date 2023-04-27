@@ -5763,8 +5763,8 @@
  notification_resource_depleted_desc: "[SCOPE.sBT('target').GetDiscoveredResourceName] вичерпано у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetStateRegion.GetName]. [concept_state_region] тепер може мати менше [Concept('concept_building', '$concept_buildings_acc$')|l] [SCOPE.sBT('target').GetName|l]."
 
  notification_new_culture_obsession_tooltip: "#header $notification_new_culture_obsession_name$#!\n$TOOLTIP_DELIMITER$\n$notification_new_culture_obsession_desc$"
- notification_new_culture_obsession_name: "[SCOPE.GetRootScope.GetCulture.GetName|l] стали одержимими [Concept('concept_good', '$concept_goods_ins$')|l] [SCOPE.sG('goods').GetName|l]"
- notification_new_culture_obsession_desc: "[SCOPE.GetRootScope.GetCulture.GetName] стали одержимими [Concept('concept_good', '$concept_goods_ins$')|l] [SCOPE.sG('goods').GetName|l]."
+ notification_new_culture_obsession_name: "[SCOPE.GetRootScope.GetCulture.GetName] стали одержимими [Concept('concept_good', '$concept_good_ins$')|l] [SCOPE.sG('goods').GetName|l]"
+ notification_new_culture_obsession_desc: "[SCOPE.GetRootScope.GetCulture.GetName] стали одержимими [Concept('concept_good', '$concept_good_ins$')|l] [SCOPE.sG('goods').GetName|l]."
 
  notification_commander_order_invalidated_tooltip: "#header $notification_commander_order_invalidated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_commander_order_invalidated_desc$"
  notification_commander_order_invalidated_name: "Новий наказ командиру"
