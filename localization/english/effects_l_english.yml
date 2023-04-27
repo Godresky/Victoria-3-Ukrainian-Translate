@@ -284,9 +284,9 @@
  ANNEX_EFFECT_FIRST: "[COUNTRY.GetNameNoFlag] анексує [Concept('concept_country','$concept_country_acc$')|l] [TARGET_COUNTRY.GetName]"
  ANNEX_EFFECT_THIRD: "[COUNTRY.GetName] анексує [Concept('concept_country','$concept_country_acc$')|l] [TARGET_COUNTRY.GetName]"
   
- ADD_JOURNAL_ENTRY: "Додасть запис «#variable $JOURNAL_ENTRY_NAME$#!» до часопису державі [COUNTRY.GetName|v]"
- ADD_JOURNAL_ENTRY_FIRST: "Додасть запис «#variable $JOURNAL_ENTRY_NAME$#!» до часопису державі [COUNTRY.GetNameNoFlag|v]"
- ADD_JOURNAL_ENTRY_THIRD: "Додасть запис «#variable $JOURNAL_ENTRY_NAME$#!» до часопису державі [COUNTRY.GetName|v]"
+ ADD_JOURNAL_ENTRY: "Додасть запис «#variable $JOURNAL_ENTRY_NAME$#!» до часопису держави [COUNTRY.GetName|v]"
+ ADD_JOURNAL_ENTRY_FIRST: "Додасть запис «#variable $JOURNAL_ENTRY_NAME$#!» до часопису держави [COUNTRY.GetNameNoFlag|v]"
+ ADD_JOURNAL_ENTRY_THIRD: "Додасть запис «#variable $JOURNAL_ENTRY_NAME$#!» до часопису держави [COUNTRY.GetName|v]"
  START_TUTORIAL_LESSON:0 "Starts the #variable $TUTORIAL_NAME$#! tutorial"
   
  ADD_RULING_INTEREST_GROUP:0 "[INTEREST_GROUP.GetName] becomes part of the government"

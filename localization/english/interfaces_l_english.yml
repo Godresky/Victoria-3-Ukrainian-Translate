@@ -688,7 +688,7 @@
  MILITARY_PANEL_NO_BATTALIONS: "Немає [Concept('concept_battalion', '$concept_battalions_gen$')|l] доступних у цьому [Concept('concept_hq', '$concept_hq_loc$')|l]"
  MILITARY_PANEL_COMMANDER_NAME_FORMAT: "[Character.GetFullName]"
  MILITARY_PANEL_COMMANDER_STATUS_FORMAT: "[Character.GetLocationFormatted]"
- MILITARY_PANEL_BUILDING_TROOP_NAME: "[Building.GetCustom('troop_name')] у реґ. [Building.GetState.GetName]"
+ MILITARY_PANEL_BUILDING_TROOP_NAME: "[Building.GetCustom('troop_name')] у зем. [Building.GetState.GetName]"
  MILITARY_PANEL_UNITS_FROM_BUILDING_FORMAT: "#variable [Character.GetNumCombatUnitsFromBuilding(Building.Self)]#!/[Building.GetCombatUnitCapacity] [Building.GetCombatUnitsIcon]"
  MILITARY_PANEL_UNITS_FROM_BUILDING_FORMAT_UNMOBILIZED: "#variable [Character.GetNumCombatUnitsFromBuilding(Building.Self)]#! [Building.GetCombatUnitsIcon]"
  MILITARY_PANEL_UNITS_FROM_BUILDING_TOOLTIP: "Наразі існує #variable [Character.GetNumCombatUnitsFromBuilding(Building.Self)]#! [Building.GetCombatUnitsIcon] у цьому підрозділі"
@@ -1902,9 +1902,9 @@
  CONSTRUCTION_QUEUE_INACTIVE_PROJECTS_NO_ITEMS: "Немає додаткових проєктів у [Concept('concept_construction_queue', '$concept_construction_queue_loc$')|l]"
  CONSTRUCTION_SPEED_TOOLTIP: "[Building.GetConstructionSpeedPerWeekDesc]"
  CONSTRUCTION_QUEUE_SPEED_TOOLTIP: "[ConstructionQueueElement.GetConstructionSpeedPerWeekDesc]"
- CONSTRUCTION_QUEUE_DESC_ITEM: "[BUILDING.GetName] у реґ. [STATE.GetName]: #v $BASE_SPEED$#! (Max of #v $MAX_BASE_SPEED$#!)[AddTextIf( $IS_UNDER_CONSTRUCTION$ ,' - #v $WEEKS_LEFT$#! тиж. до завершення' )]"
- CONSTRUCTION_QUEUE_DESC_BACKLOG_ITEM: "[BUILDING.GetName] у реґ. [STATE.GetName] (у черзі)[AddTextIf( $IS_UNDER_CONSTRUCTION$ , ' - #v $WEEKS_LEFT$#! тиж. до завершення' )]"
- CONSTRUCTION_QUEUE_DESC_INVALID_ITEM: "[BUILDING.GetName] у реґ. [STATE.GetName] #N (недійсний)#!"
+ CONSTRUCTION_QUEUE_DESC_ITEM: "[BUILDING.GetName] у зем. [STATE.GetName]: #v $BASE_SPEED$#! (Max of #v $MAX_BASE_SPEED$#!)[AddTextIf( $IS_UNDER_CONSTRUCTION$ ,' - #v $WEEKS_LEFT$#! тиж. до завершення' )]"
+ CONSTRUCTION_QUEUE_DESC_BACKLOG_ITEM: "[BUILDING.GetName] у зем. [STATE.GetName] (у черзі)[AddTextIf( $IS_UNDER_CONSTRUCTION$ , ' - #v $WEEKS_LEFT$#! тиж. до завершення' )]"
+ CONSTRUCTION_QUEUE_DESC_INVALID_ITEM: "[BUILDING.GetName] у зем. [STATE.GetName] #N (недійсний)#!"
  CONSTRUCTION_QUEUE: "[concept_construction_queue]"
  CONSTRUCTION_QUEUE_STATE:0 "[concept_construction] #v @construction! #tooltippable #tooltip:[State.GetOwner.GetTooltipTag],CONSTRUCTION_SPEED_BASE_TOOLTIP [State.GetOwner.CalcUsedConstruction|0]/[State.GetOwner.CalcBaseConstructionSpeed|0]#!#!#!"
  CONSTRUCTION_QUEUE_IS_EMPTY: "Нічого не [Concept('concept_under_construction', 'споруджується')|l]"
@@ -4505,7 +4505,7 @@
 
  HQ_TROOP_ALLOCATION_CHANGE_HEADER: "Військо у [HQ.GetNameNoFlag|l] зміниться:"
  HQ_TROOP_ALLOCATION_CHANGE_COMMANDER: "[CHARACTER.GetFullName]:"
- HQ_TROOP_ALLOCATION_CHANGE_ENTRY: "[Hq.GetCombatUnitsIcon] #v $VALUE|+=$#! від [BUILDING.GetName] у реґ. [State.GetName]"
+ HQ_TROOP_ALLOCATION_CHANGE_ENTRY: "[Hq.GetCombatUnitsIcon] #v $VALUE|+=$#! від [BUILDING.GetName] у зем. [State.GetName]"
 
  HQ_TROOP_ALLOCATION_CHANGE_UNIT_TYPE: "$ICON_STR$ #tooltippable #tooltip:$BREAKDOWN$ $VALUE|+=$#!#! $UNIT_TYPE_NAME$"
 
