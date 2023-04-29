@@ -2041,7 +2041,7 @@
  MARKET_PARTICIPANT_SHARE: "#V [Country.GetName]#! має [MarketPanel.GetMarket.GetMarketSharePercentageFor(Country.Self)|v%] [Concept('concept_market_share', '$concept_market_share_this_gen$')|l]\n$TOOLTIP_DELIMITER$\n" #in [MarketPanel.GetMarket.GetName]
 
  COIN_01_BASE: "#tooltippable #tooltip:COIN_STACK_TOOLTIP @coin1!#!#! #bold Набагато дешевше#! порівняно з [Concept('concept_base_price', '$concept_base_price_ins$')|l] ($VAL|v=1%$)"
- COIN_02_BASE: "#tooltippable #tooltip:COIN_STACK_TOOLTIP @coin2!#!#! #bold Значно дешевше#! порівняно з [Concept('concept_base_price', '$concept_base_price_ins$')|l] ($VAL|v=1%$)"
+ COIN_02_BASE: "#tooltippable #tooltip:COIN_STACK_TOOLTIP @coin2!#!#! #bold Набагато дешевше#! порівняно з [Concept('concept_base_price', '$concept_base_price_ins$')|l] ($VAL|v=1%$)"
  COIN_03_BASE: "#tooltippable #tooltip:COIN_STACK_TOOLTIP @coin3!#!#! #bold Дешеве#! порівняно з [Concept('concept_base_price', '$concept_base_price_ins$')|l] ($VAL|v=1%$)"
  COIN_04_BASE: "#tooltippable #tooltip:COIN_STACK_TOOLTIP @coin4!#!#! #bold Дешеве#! порівняно з [Concept('concept_base_price', '$concept_base_price_ins$')|l] ($VAL|v=1%$)"
  COIN_05_BASE: "#tooltippable #tooltip:COIN_STACK_TOOLTIP @coin5!#!#! #bold Трішки дешевше#! порівняно з [Concept('concept_base_price', '$concept_base_price_ins$')|l] ($VAL|v=1%$)"
@@ -2069,7 +2069,7 @@
  COIN_13_BASE_SHORT: "#tooltippable #tooltip:COIN_STACK_TOOLTIP @coin13!#!#!  #bold Набагато дорожчий#!"
 
  COIN_STACK_ICON_FORMAT: "#tooltippable #tooltip:COIN_STACK_TOOLTIP $ICON$#!#!"
- COIN_STACK_TOOLTIP:0 "The Price icon shows how expensive (or cheap) a [concept_good] is relative to the [concept_base_price] of that [concept_good]. These icons range from Very Cheap (@coin1!) to Base Price (@coin7!) to Very Expensive (@coin13!)"
+ COIN_STACK_TOOLTIP: "Значок ціни показує наскільки дорожчий (або дешевший) [Concept('concept_good', '$concept_good_acc$')|l] відносно [Concept('concept_base_price', '$concept_base_price_gen$')|l] цього [Concept('concept_good', '$concept_good_gen$')|l]. Значення цього значка може простягатися від дуже дешевий (@coin1!) до базисної ціни (@coin7!) та дуже дорогий (@coin13!)"
 
  GOODS_STATE_PRICE_AGAINST_BASE_PRICE_TOOLTIP:0 "#header [Goods.GetStatePriceLabel] compared to [concept_base_price]#!\n[Goods.GetCompareDescAgainstBasePrice( Goods.GetStatePrice )]\n$TOOLTIP_DELIMITER$\n[Goods.GetStatePriceLabel]: #variable @money![Goods.GetStatePrice|1]#!\n[concept_base_price]: #BOLD #V @money![Goods.GetBasePrice|1]#!#!"
  GOODS_MARKET_PRICE_AGAINST_BASE_PRICE_TOOLTIP:0 "#header [Goods.GetMarketPriceLabel] compared to [concept_base_price]#!\n[Goods.GetCompareDescAgainstBasePrice( Goods.GetMarketPrice )]\n$TOOLTIP_DELIMITER$\n[Goods.GetMarketPriceLabel]: #variable @money![Goods.GetMarketPrice|1]#!\n[concept_base_price]: #BOLD #V @money![Goods.GetBasePrice|1]#!#!"
@@ -2128,10 +2128,10 @@
  GOODS_PRICE_STATE_PRODUCTION_HEADER:0 "#header Production of [GOODS.GetName] in [STATE.GetName]#!\n$TOOLTIP_DELIMITER$"
  GOODS_PRICE_STATE_CONSUMPITON_HEADER:0 "#header Consumption of [GOODS.GetName] in [STATE.GetName]#!\n$TOOLTIP_DELIMITER$"
  GOODS_PRICE_STATE_STATE_HEADER:0 "#bold In [STATE.GetName]#!"
- GOODS_PRICE_STATE_BUILDING_PRODUCTION_ITEM:0 "[Building.GetName]: [BUILDING.GetProduction(GOODS.Self)|0v]"
- GOODS_PRICE_STATE_BUILDING_CONSUMPTION_ITEM:0 "[BUILDING.GetName]: [BUILDING.GetConsumption(GOODS.Self)|0v]"
- GOODS_PRICE_STATE_POPS_PRODUCTION_ITEM:0 "Pops: #tooltippable #tooltip:[GOODS.GetTooltipTag]|[STATE.GetTooltipTag],GOODS_PRICE_STATE_POPTYPE_PRODUCTION_BREAKDOWN $VALUE|0$#!#!"
- GOODS_PRICE_STATE_POPS_CONSUMPTION_ITEM:0 "Pops: #tooltippable #tooltip:[GOODS.GetTooltipTag]|[STATE.GetTooltipTag],GOODS_PRICE_STATE_POPTYPE_CONSUMPTION_BREAKDOWN $VALUE|0$#!#!"
+ GOODS_PRICE_STATE_BUILDING_PRODUCTION_ITEM: "[Building.GetName]: [BUILDING.GetProduction(GOODS.Self)|0v]"
+ GOODS_PRICE_STATE_BUILDING_CONSUMPTION_ITEM: "[BUILDING.GetName]: [BUILDING.GetConsumption(GOODS.Self)|0v]"
+ GOODS_PRICE_STATE_POPS_PRODUCTION_ITEM: "Громади: #tooltippable #tooltip:[GOODS.GetTooltipTag]|[STATE.GetTooltipTag],GOODS_PRICE_STATE_POPTYPE_PRODUCTION_BREAKDOWN $VALUE|0$#!#!"
+ GOODS_PRICE_STATE_POPS_CONSUMPTION_ITEM: "Громади: #tooltippable #tooltip:[GOODS.GetTooltipTag]|[STATE.GetTooltipTag],GOODS_PRICE_STATE_POPTYPE_CONSUMPTION_BREAKDOWN $VALUE|0$#!#!"
 
  GOODS_PRICE_STATE_POPTYPE_PRODUCTION_BREAKDOWN:0 "[Goods.GetStatePopTypeProductionBreakdown(State.Self)]"
  GOODS_PRICE_STATE_POPTYPE_CONSUMPTION_BREAKDOWN:0 "[Goods.GetStatePopTypeDemandBreakdown(State.Self)]"

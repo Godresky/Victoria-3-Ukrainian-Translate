@@ -1171,7 +1171,7 @@
  election_liberal_events.2.b: "Корумповану систему неможливо змінити, її треба повалити."
 
  election_liberal_events.3.t: "[ROOT.GetCountry.GetName] - країна миру"
- election_liberal_events.3.d: "[SCOPE.sCharacter('pacifist_leader').GetFullName], відомий пацифіст, аґітував за одну з [Concept('concept_party','$concept_parties_gen$')|l] ([SCOPE.sParty('liberal_party').GetName]), передбачаючи більш мирну політику, яка б замінила наш агресивний підхід."
+ election_liberal_events.3.d: "[SCOPE.sCharacter('pacifist_leader').GetFullName], відомий пацифіст, закликав за одну з [Concept('concept_party','$concept_parties_gen$')|l] ([SCOPE.sParty('liberal_party').GetName]), передбачаючи більш мирну політику, яка б замінила наш агресивний підхід."
  election_liberal_events.3.f: "«Коли я їду за кордон, люди кажуть мені: «Пане [SCOPE.sCharacter('pacifist_leader').GetFirstName], це безнадійно. [ROOT.GetCountry.GetAdjective]і політики звикли домагатися свого тором насильства та погроз. Такі люди ніколи не зміняться.» -, а я кажу їм: «[ROOT.GetCountry.GetAdjective]і люди люблять мир, як і люди всіх народів. Ось чому провідники використовують силу та обман, щоб змусити їх піти на війну. Не більше! Народ буде почутий і його репутація буде відновлена. Якщо ми зможемо відновити мир тут, то зможе у всьому світі!»"
  election_liberal_events.3.a: "Зараз ми мирна нація."
  election_liberal_events.3.b: "Наші вороги не повинні переставати нас боятися ні сьогодні, ні ніколи."
