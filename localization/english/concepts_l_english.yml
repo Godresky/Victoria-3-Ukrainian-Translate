@@ -1639,6 +1639,7 @@
  concept_pops_gen: "Громад"
  concept_pops_acc: "Громади"
  concept_pops_dat: "Громадам"
+ concept_pops_ins: "Громадами"
  concept_pops_loc: "Громадах"
  concept_pops_adj: "Громадськ"
  concept_person: "Особа"
