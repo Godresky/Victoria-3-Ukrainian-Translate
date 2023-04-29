@@ -2825,8 +2825,8 @@
  POP_DISCRIMINATION_STATUS_DISCRIMINATED: "$concept_discriminated$"
  POP_DISCRIMINATION_STATUS_ACCEPTED: "Прийняті"
 
- POP_DISCRIMINATION_PRIMARY_CULTURE_DESC:0 "[concept_primary_cultures] are never [Concept('concept_discrimination','$concept_discriminated_against$')], regardless of [Concept('concept_law', '$concept_laws$')]"
- POP_DISCRIMINATION_SLAVE:0 "Slaves are always [Concept('concept_discrimination','$concept_discriminated_against$')]"
+ POP_DISCRIMINATION_PRIMARY_CULTURE_DESC: "[concept_primary_cultures] ніколи не будуть [Concept('concept_discrimination','$concept_discriminated_adj$ими')|l], незалежно від [Concept('concept_law', '$concept_laws_gen$')|l]"
+ POP_DISCRIMINATION_SLAVE: "Раби завжди будуть [Concept('concept_discrimination','$concept_discriminated_adj$ими')|l]"
 
  TURMOIL_TITLE: "#title [concept_turmoil]#!"
  TURMOIL_ENTRY_TITLE: "#title [concept_turmoil]:#!"
@@ -2841,11 +2841,11 @@
  CULTURE_TABOOS: "Табу:"
  HOMELANDS: "Батьківщини"
  OWNER: "Власник"
- CULTURE_OF_SAME_HERITAGE: "Культури тієїж спадщини ([GetDataModelSize(Culture.AccessSameHeritageCultures)])"
- TURMOIL_OF_CULTURE: "Average [concept_turmoil] of all the [Concept('concept_pop', '$concept_pops$')] of this Culture"
+ CULTURE_OF_SAME_HERITAGE: "Культури тієї ж спадщини ([GetDataModelSize(Culture.AccessSameHeritageCultures)])"
+ TURMOIL_OF_CULTURE: "Середнє [concept_turmoil|l] усіх [Concept('concept_pop', '$concept_pops_gen$')] цієї культури"
 
  POP_NEEDS_HEADER: "Воно складається з таких [Concept('concept_good', '$concept_goods_gen$')|l], які є взаємозамінними через [Concept('concept_goods_substitution', '$concept_goods_substitution_gen$')|l]:"
- POP_NEEDS_ENTRY_DEFAULT: "[Goods.GetTextIcon][Nbsp][Goods.GetName] - типовий товар [Concept('concept_good', '$concept_goods$')] для: [POP_NEED.GetName|l]"
+ POP_NEEDS_ENTRY_DEFAULT: "[Goods.GetTextIcon][Nbsp][Goods.GetName] - типовий [Concept('concept_good', '$concept_good$')|l] для: [POP_NEED.GetName|l]"
  POP_NEEDS_ENTRY: "[Goods.GetTextIcon][Nbsp][Goods.GetName] - рівносильний $MULT|2v$ од. товару [POP_NEED.GetDefaultGoods.GetName|l]"
  BUY_PACKAGE_POP_CONSUMPTION_WEALTH_SPECIFIC: "Споживається [Concept('concept_pop', '$concept_population_ins$')|l] of [concept_wealth] Levels $LEVEL|v$"
  BUY_PACKAGE_POP_CONSUMPTION_WEALTH_TO_LEVEL: "Споживається [Concept('concept_pop', '$concept_population_ins$')|l] з рівнем [Concept('concept_wealth', '$concept_wealth_gen$')|l] $LEVEL|v$ і менше"
