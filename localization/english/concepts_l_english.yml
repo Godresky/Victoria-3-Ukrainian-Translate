@@ -77,13 +77,14 @@
  concept_insignificant_power_desc_added: "\n\n$concept_insignificant_powers$ мають такі переваги:\n[GetRankModifier('insignificant_power').GetDesc]"
  
  concept_unrecognized_power: "Невизнана держава"
+ concept_unrecognized_power_gen: "Невизнаної держави"
  concept_unrecognized_power_short: "Невизнана"
  concept_unrecognized_power_adj: "Невизнан"
  concept_unrecognized_powers: "Невизнані держави"
  concept_unrecognized_regional_power: "Невизнана реґіональна держава"
  concept_unrecognized_major_power: "Невизнана сильна держава"
  concept_unrecognized_power_desc: "$concept_unrecognized_powers$ - це [Concept('concept_country','$concept_country_polities$')|l], які [Concept('concept_great_power','$concept_great_powers$')|l] вважають нижчими та нецивілізованими та розглядаються не більше ніж місця майбутніх завоювань. Унаслідок цього страждає їхній [Concept('concept_prestige','$concept_prestige$')|l], і вони можуть стати жертвою суворих [Concept('concept_diplomatic_play','$concept_diplomatic_plays_gen$')|l]. Невизнані держави також обмежені в тому, який [Concept('concept_rank','$concept_rank$')|l] можуть досягти, не залежно від того, скільки престижу вони здобудуть.[AddLocalizationIf(GetPlayer.IsValid,'concept_unrecognized_power_desc_added')]"
- concept_unrecognized_power_desc_added:0 "\n\n$concept_unrecognized_power$, які хочуть скасувати ці  that wish to remove these penalties must claim recognition from a [concept_great_power] through a $concept_diplomatic_play$."
+ concept_unrecognized_power_desc_added:0 "\n\n$concept_unrecognized_power$, які хочуть скасувати ці обмеження, повинні вимагати визнання від [Concept('concept_great_power','$concept_great_power_gen$')|l] через дипломатичну гру."
 
  
 
@@ -228,8 +229,9 @@
  concept_buildings_acc: "Будівлі"
  concept_buildings_ins: "Будівлями"
  concept_buildings_loc: "Будівлях"
- concept_building_industry:0 "Industry"
- concept_building_industries:0 "Industries"
+ concept_building_industry: "Галузь промисловости"
+ concept_building_industries: "Галузі промисловости"
+ concept_building_industries_gen: "Галузей промисловости"
  concept_building_possessive:1 "Building\\'s"
  concept_buildings_possessive:1 "Buildings\\'"
  concept_building_workplace:0 "Workplace"
@@ -452,7 +454,7 @@
  concept_diplomatic_actions_acc: "Дипломатичні дії"
  concept_diplomatic_actions_short: "Дії"
  concept_diplomatic_actions_short_acc: "Дії"
- concept_diplomatic_action_desc:2 "Широкий термін для позначення взаємодії між двома [Concept('concept_country','$concept_countries_ins$')|l] у що входить: [Concept('concept_instant_diplomatic_action','$concept_instant_diplomatic_actions_acc$')|l], [Concept('concept_ongoing_diplomatic_action','$concept_ongoing_diplomatic_actions_acc$')|l], та [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts_acc$')|l]. Вони відрізняються від [Concept('concept_diplomatic_play','$concept_diplomatic_plays_gen$')|l] тим, що жодна третя сторона не може впливати на результати і немає ризику, що дія сама собою може перерости у [Concept('concept_war','$concept_war_acc$')|l]."
+ concept_diplomatic_action_desc: "Широкий термін для позначення взаємодії між двома [Concept('concept_country','$concept_countries_ins$')|l] у що входить: [Concept('concept_instant_diplomatic_action','$concept_instant_diplomatic_actions_acc$')|l], [Concept('concept_ongoing_diplomatic_action','$concept_ongoing_diplomatic_actions_acc$')|l], та [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts_acc$')|l]. Вони відрізняються від [Concept('concept_diplomatic_play','$concept_diplomatic_plays_gen$')|l] тим, що жодна третя сторона не може впливати на результати і немає ризику, що дія сама собою може перерости у [Concept('concept_war','$concept_war_acc$')|l]."
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MAY 4, 2022
 
@@ -468,6 +470,7 @@
  concept_military_buildings_acc: "Військові будівлі"
  concept_military_buildings_ins: "Військовими будівлями"
  concept_military_building_army_and_navy: "Військо та флот"
+ concept_military_building_army_and_navy_gen: "Війська та флоту"
  concept_military_building_desc:4 "[Concept('concept_government_building','$concept_government_buildings$')] used to train, maintain, and supply [Concept('concept_battalion','$concept_battalions$')] and [Concept('concept_flotilla','$concept_flotillas$')] for the [Concept('concept_country','$concept_country_possessive$')] army and navy respectively. The [concept_workforce] of $concept_military_buildings$ get paid according to the [concept_military_wage]."
  
  concept_incorporated_state: "Включена земля"
@@ -1190,8 +1193,8 @@
  concept_rank_acc: "Ранґ"
  concept_rank_ins: "Ранґом"
  concept_ranks: "Ранґи"
- concept_rank_desc:3 "A [Concept('concept_country','$concept_country_possessive$')] $concept_rank$ is determined by measuring its [concept_prestige] relative to other $concept_countries$ worldwide. It determines what sorts of international activities you are permitted to engage in, what your people and the world expects of you, and where you stand in the global pecking order.[AddLocalizationIf( GetPlayer.IsValid, 'concept_rank_ingame_added' )]"
- concept_rank_ingame_added:1 "\n\nYour current $concept_rank$ is [GetPlayer.GetRank], which gives you the following benefits:\n[GetPlayer.GetRankModifier.GetDesc]"
+ concept_rank_desc:3 "$concept_rank$ [Concept('concept_country','$concept_country_gen$')|l] визначається через порівння її [Concept('concept_prestige','$concept_prestige_gen$')|l] з іншими державами світу. Він визначає, якими видами міжнародної діяльности вам дозволено займатися, чого від вас очікує ваш народ та світ, і яке місце ви посідаєте в світовій ієрархії.[AddLocalizationIf( GetPlayer.IsValid, 'concept_rank_ingame_added' )]"
+ concept_rank_ingame_added: "\n\nВаш ранґ наразі: [GetPlayer.GetRank], що дає вам такі переваги:\n[GetPlayer.GetRankModifier.GetDesc]"
 
  concept_migration: "Міграція"
  concept_migrating:1 "Migrating"
@@ -1236,8 +1239,8 @@
  concept_prestige_gen: "Престижу"
  concept_prestige_acc: "Престиж"
  concept_prestige_ins: "Престижем"
- concept_prestige_desc:3 "Your [concept_rank] is determined by comparing your $concept_prestige$ to all other [Concept('concept_country','$concept_countries$')] in the world. $concept_prestige$ originates primarily from how impressive your economy is as measured by your [concept_gdp], how much [concept_power_projection] your military forces generate, and your [concept_country_tier]. It can also be affected by other factors such as your [SelectLocalization(GetPlayer.IsValid,'concept_prestige_desc_gamestate','Arts Academy')] and [Concept('concept_monument','$concept_monuments$')], and if you are a world leader in the production of a certain [concept_good]."
- concept_prestige_desc_gamestate:0 "[GetBuildingType('building_arts_academy').GetName]"
+ concept_prestige_desc: "Ваш [concept_rank|l] визначається через порівння вашого престижу з усіма іншими [Concept('concept_country','$concept_countries_ins$')|l] у світі. $concept_prestige$ походить насамперед від того, наскільки потужною є ваша економіка, що вимірюється вашим [Concept('concept_gdp','$concept_gdp_ins$')|l], скільки [Concept('concept_power_projection','$concept_power_projection_gen$')|l] створюють ваші збройні сили та за вашим [Concept('concept_country_tier','$concept_country_tier_ins$')|l]. На нього також можуть впливати й інші чинники, такі як [SelectLocalization(GetPlayer.IsValid,'concept_prestige_desc_gamestate','Академія мистецтв')|l] та [Concept('concept_monument','$concept_monuments$')|l], і якщо ви є провідним виробником певного [Concept('concept_good','$concept_good_gen$')|l] у світі."
+ concept_prestige_desc_gamestate: "[GetBuildingType('building_arts_academy').GetName]"
 
  concept_power_projection: "Проєкція сили"
  concept_power_projection_gen: "Проєкції сили"
@@ -1263,8 +1266,10 @@
  concept_principal_acc: "Головний довг"
  concept_principal_desc:2 "The total size of [concept_loans] the [concept_treasury] has accrued, not including the [concept_budget_interest] it owes. If the [concept_principal] exceeds your [concept_credit] you will go into [concept_default]."
 
+ concept_loan: "Позика"
+ concept_loan_gen: "Позики"
  concept_loans: "Позики"
- concept_loans_gen: "Позики"
+ concept_loans_gen: "Позик"
  concept_loans_acc: "Позики"
  concept_loans_desc:1 "Funds that the [concept_treasury] owes to the [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_shares$')], typically due to some type of government bond program. Whenever the $concept_treasury$ is running a negative balance, it will add to its $concept_loans$ unless it has sufficient [concept_gold_reserves] to cover it. The maximum size of $concept_loans$ a $concept_country$ may take before going into [concept_default] is equal to the sum of its [Concept('concept_building','$concept_buildings_possessive$')] [concept_cash_reserves]. [concept_budget_interest] is accrued on the [concept_principal] weekly, and is collected by $concept_pops$ with [Concept('concept_ownership_share','$concept_ownership_shares$')] proportionate to the amount of [concept_credit] their share of the $concept_cash_reserves$ provides."
 
@@ -1476,6 +1481,7 @@
  concept_government_gen: "Уряду"
  concept_government_acc: "Уряд"
  concept_government_dat: "Урядові"
+ concept_government_ins: "Урядом"
  concept_government_loc: "Уряді"
  concept_governments: "Уряди"
  concept_governments_gen: "Урядів"
@@ -1779,11 +1785,11 @@
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED APRIL 27, 2022
 
- concept_innovation: "Інновація"
- concept_innovation_gen: "Інновації"
- concept_innovation_dat: "Інноваціям"
- concept_innovations: "Інновації"
- concept_innovations_gen: "Інновацій"
+ concept_innovation: "Іновація"
+ concept_innovation_gen: "Іновації"
+ concept_innovation_dat: "Іноваціям"
+ concept_innovations: "Іновації"
+ concept_innovations_gen: "Іновацій"
  concept_innovation_desc:3 "@innovation!$concept_innovation$ is produced by [SelectLocalization(GetPlayer.IsValid,'concept_innovation_desc_added','University')] $concept_buildings$ and contributes to active research progress for [Concept('concept_technology', '$concept_technologies$')]. Unspent @innovation!$concept_innovation$ will increase the [concept_technology_spread] you're currently benefiting from, if any."
  concept_innovation_desc_added:0 "[GetBuildingType('building_university').GetName]"
 
@@ -2318,6 +2324,7 @@
 
  concept_journal_entry: "Запис у часописі"
  concept_journal_entry_acc: "Запис у часописі"
+ concept_journal_entry_gen: "Запису у часописі"
  concept_journal_entry_short: "Запис"
  concept_journal: "Часопис"
  concept_journal_entries: "Записи у часописі"
