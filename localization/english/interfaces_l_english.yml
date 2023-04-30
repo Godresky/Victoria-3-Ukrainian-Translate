@@ -2676,7 +2676,7 @@
  POWERFUL_REASON_ABOVE_THRESHOLD: "їх [concept_clout|l] більша #variable [GetDefine('NPolitics', 'POWERFUL_IG_THRESHOLD')|%0]#!"
  POWERFUL_REASON_ABOVE_CUTOFF: "їх [concept_clout|l] більша #variable [GetDefine('NPolitics', 'POWERFUL_IG_CUTOFF')|%0]#!"
  NEUTRAL_IG_DESC: "\nЦя [concept_interest_group|l] вважається [Concept('concept_influential','$concept_influential_adj$ою')|l]"
- RADICAL_IG_TOOLTIP:1 "#N [InterestGroup.GetName] supports a [concept_political_movement] that is plotting a [concept_revolution]!#!"
+ RADICAL_IG_TOOLTIP: "#N [InterestGroup.GetName] підтримує [Concept('concept_political_movement','$concept_political_movement_acc$')|l], який скоро переросте у [Concept('concept_revolution','$concept_revolution_acc$')|l]!#!"
  REVOLUTION_IG_TOOLTIP:1 "#N [InterestGroup.GetName] supports an ongoing [concept_revolution]!#!"
  RADICALIZATION_CHANCE_TOOLTIP:0 "[InterestGroup.GetChanceToRadicalizeDesc]"
  RADICALIZATION_CHANCE_BREAKDOWN:1 "#header Weekly Chance to Radicalize: #v $CHANCE|-%$#!#!\n$TOOLTIP_DELIMITER$\nFrom [concept_approval]: #v $BASE|-=1%$#![ConcatIfNeitherEmpty('$SUPPRESSION_MODIFIER_FORMAT$','$SUPPRESSION_MODIFIER$')]"
@@ -4004,6 +4004,12 @@
  ig_approval_unhappy: "#bold #N Незадоволеність#!#!"
  ig_approval_angry: "#bold #N Ворожість#!#!"
 
+ ig_approval_loyal_l: "#bold #P прихильність#!#!"
+ ig_approval_happy_l: "#bold #P щастя#!#!"
+ ig_approval_neutral_l: "#bold невтральність#!"
+ ig_approval_unhappy_l: "#bold #N незадоволеність#!#!"
+ ig_approval_angry_l: "#bold #N ворожість#!#!"
+
  WILL_RADICALIZE_WARNING: "@warning! [INTEREST_GROUP.GetName] може [Concept('concept_political_movement_radicalism', '$concept_political_movement_radicalize$')|l]"
 
  IG_NAME_WITH_LEADER: "[CHARACTER.GetFullName] - [INTEREST_GROUP.GetName]"
@@ -4093,29 +4099,29 @@
 
  REVOLUTIONS_HEADER: "#BOLD Революція#!"
  REVOLUTIONS_HEADER_TOOLTIP: "Існують [Concept('concept_interest_group', '$concept_interest_groups$')|l], які активно намагаються повалити уряд!"
- SECESSION_HEADER: "#BOLD Розкол народу [CivilWar.GetCulture.GetName]#!"
+ SECESSION_HEADER: "#BOLD Розкол народу [CivilWar.GetCulture.GetName|l]#!"
  SECESSION_HEADER_TOOLTIP: "[CivilWar.GetCulture.GetName] намагаються розколоти нашу державу!"
 
- REVOLUTIONS_PROGRESS_TOOLTIP:0 "#header [concept_revolution] [Concept('concept_political_movement', '$concept_political_movement_short_gen$')|l] [CivilWar.GetPoliticalMovement.GetName|l]#!\nПоточний поступ: #v [Multiply_CFixedPoint(CivilWar.GetProgress,'(CFixedPoint)100')|0]/100#!\n$TOOLTIP_DELIMITER$\n[concept_revolution_progression_speed]: #tooltippable #tooltip:[CivilWar.GetTooltipTag],CIVIL_WAR_PROGRESS_TOOLTIP [Multiply_CFixedPoint(CivilWar.GetWeeklyProgress,'(CFixedPoint)100')|0-=]#!#! / week\n\n[concept_revolution] progression can increase up to a maximum of [concept_political_movement_radicalism] of the [concept_political_movement] to [CivilWar.GetPoliticalMovement.GetName]: #tooltippable #tooltip:[CivilWar.GetPoliticalMovement.GetTooltipTag],POLITICAL_MOVEMENT_RADICALISM_TOOLTIP,PoliticalMovementRadicalismTooltip [Multiply_CFixedPoint(CivilWar.GetMaxProgress,'(CFixedPoint)100')|0-=]#!#!\nIf it reaches #v 100#! a $concept_revolution$ will break out. [AddLocalizationIf(And(GreaterThan_CFixedPoint(CivilWar.GetWeeklyProgress, '(CFixedPoint)0'),GreaterThan_CFixedPoint(CivilWar.GetMaxProgress, '(CFixedPoint)1')), 'REVOLUTION_WARNING')]\n\n[CivilWar.GetUprisingStatesString]"
- REVOLUTION_WARNING:0 "\n\n@warning! $concept_revolution$ is impending in #v [CivilWar.GetNumWeeksToBreakOut]#! week(s)!"
+ REVOLUTIONS_PROGRESS_TOOLTIP: "#header [concept_revolution] [Concept('concept_political_movement', '$concept_political_movement_short_gen$')|l] [CivilWar.GetPoliticalMovement.GetName|l]#!\nРозвиток наразі: #v [Multiply_CFixedPoint(CivilWar.GetProgress,'(CFixedPoint)100')|0]/100#!\n$TOOLTIP_DELIMITER$\n[concept_revolution_progression_speed]: #tooltippable #tooltip:[CivilWar.GetTooltipTag],CIVIL_WAR_PROGRESS_TOOLTIP [Multiply_CFixedPoint(CivilWar.GetWeeklyProgress,'(CFixedPoint)100')|0-=]#!#! / щотижня\n\nРозвиток [Concept('concept_revolution', '$concept_revolution_gen$')|l] може вирости до максимуму [Concept('concept_political_movement_radicalism', '$concept_political_movement_radicalism_short_gen$')|l] [Concept('concept_political_movement', '$concept_political_movement_gen$')|l] [CivilWar.GetPoliticalMovement.GetName|l]: #tooltippable #tooltip:[CivilWar.GetPoliticalMovement.GetTooltipTag],POLITICAL_MOVEMENT_RADICALISM_TOOLTIP,PoliticalMovementRadicalismTooltip [Multiply_CFixedPoint(CivilWar.GetMaxProgress,'(CFixedPoint)100')|0-=]#!#!\nПри досягнені #v 100#! революція спалахне. [AddLocalizationIf(And(GreaterThan_CFixedPoint(CivilWar.GetWeeklyProgress, '(CFixedPoint)0'),GreaterThan_CFixedPoint(CivilWar.GetMaxProgress, '(CFixedPoint)1')), 'REVOLUTION_WARNING')]\n\n[CivilWar.GetUprisingStatesString]"
+ REVOLUTION_WARNING: "\n\n@warning! $concept_revolution$ очікується через #v [CivilWar.GetNumWeeksToBreakOut]#! тиж!"
 
- UPRISING_PROGRESS_TOOLTIP_STATE_HEADER:1 "The following [Concept('concept_state','$concept_states$')] would secede:"
- UPRISING_PROGRESS_TOOLTIP_STATE_ENTRY:0 "$VALUE|%0v$ chance for [STATE.GetName]"
- UPRISING_PROGRESS_TOOLTIP_STATE_ENTRY_GUARANTEED:0 "[STATE.GetName]"
- UPRISING_PROGRESS_TOOLTIP_STATE_ENTRY_UNIT:0 "$ICON$ $VALUE|v$"
- UPRISING_PROGRESS_TOOLTIP_TOTAL_STRENGTH_STATES:1 "$NUM_STR|v$ [Concept('concept_state','$concept_states$')]"
- UPRISING_PROGRESS_TOOLTIP_TOTAL_STRENGTH_UNIT:0 ", $ICON$$VALUE|v$"
+ UPRISING_PROGRESS_TOOLTIP_STATE_HEADER: "Такі [Concept('concept_state','$concept_states$')|l] відділяться:"
+ UPRISING_PROGRESS_TOOLTIP_STATE_ENTRY: "$VALUE|%0v$ шансу, що [STATE.GetName]"
+ UPRISING_PROGRESS_TOOLTIP_STATE_ENTRY_GUARANTEED: "[STATE.GetName]"
+ UPRISING_PROGRESS_TOOLTIP_STATE_ENTRY_UNIT: "$ICON$ $VALUE|v$"
+ UPRISING_PROGRESS_TOOLTIP_TOTAL_STRENGTH_STATES: "$NUM_STR|v$ [Concept('concept_state','$concept_states_gen$')|l]"
+ UPRISING_PROGRESS_TOOLTIP_TOTAL_STRENGTH_UNIT: ", $ICON$$VALUE|v$"
 
  SECESSION_PROGRESS_TOOLTIP:0 "#header Secession#!\nSecession movement buildup is at [CivilWar.GetProgress|%v1]!\n$TOOLTIP_DELIMITER$\nEvery week this is changed by #tooltippable #tooltip:[CivilWar.GetTooltipTag],CIVIL_WAR_PROGRESS_TOOLTIP [CivilWar.GetWeeklyProgress|%1-=]#!#! based on [concept_turmoil] of [CivilWar.GetCulture.GetName] population. If [concept_turmoil] is lower than [GetDefine( 'NPolitics', 'SECESSION_TURMOIL_CUTOFF' )|v%0] progress will be reduced.\nStates with more than #variable [GetDefine( 'NPolitics', 'SECESSION_STATE_CUTOFF_PERCENT' )|%0]#! [CivilWar.GetCulture.GetName] population will seceede.\n\n[CivilWar.GetUprisingStatesString]\n\n[concept_secession_desc]"
 
- CIVIL_WAR_PROGRESS_TOOLTIP:0 "[CivilWar.GetWeeklyProgressDesc]"
- CIVIL_WAR_MAX_PROGRESS_TOOLTIP:0 "[CivilWar.GetMaxProgressDesc]"
- CIVIL_WAR_PROGRESS_BREAKDOWN:1 "#header Weekly Progress: $PROGRESS|%0$#!\n$TOOLTIP_DELIMITER$\nBase: #v $BASE|-=1%$#![ConcatIfNeitherEmpty('\n','$MODIFIER$')]"
- CIVIL_WAR_REVOLUTION_PROGRESS_BREAKDOWN:1 "#header Weekly Progress: [Multiply_CFixedPoint('(CFixedPoint)$PROGRESS$','(CFixedPoint)100'))|0]#!\n$TOOLTIP_DELIMITER$\nBase: #v [Multiply_CFixedPoint('(CFixedPoint)$BASE$','(CFixedPoint)100'))|0-=]#![ConcatIfNeitherEmpty('\n','$MODIFIER$')]"
- CIVIL_WAR_MAX_PROGRESS_BREAKDOWN:2 "#header Maximum Progress: [Multiply_CFixedPoint('(CFixedPoint)$TOTAL_MAX$','(CFixedPoint)100'))|0]#!\n$TOOLTIP_DELIMITER$\nFrom [Concept('concept_political_movement_radicalism', '$concept_political_movement_radicalism_short$')]: #v [Multiply_CFixedPoint('(CFixedPoint)$MAX_FROM_RADICALISM$','(CFixedPoint)100'))|0]#!"
+ CIVIL_WAR_PROGRESS_TOOLTIP: "[CivilWar.GetWeeklyProgressDesc]"
+ CIVIL_WAR_MAX_PROGRESS_TOOLTIP: "[CivilWar.GetMaxProgressDesc]"
+ CIVIL_WAR_PROGRESS_BREAKDOWN: "#header Щотижневий розвиток: $PROGRESS|%0$#!\n$TOOLTIP_DELIMITER$\nБазовий: #v $BASE|-=1%$#![ConcatIfNeitherEmpty('\n','$MODIFIER$')]"
+ CIVIL_WAR_REVOLUTION_PROGRESS_BREAKDOWN: "#header Щотижневий розвиток: [Multiply_CFixedPoint('(CFixedPoint)$PROGRESS$','(CFixedPoint)100'))|0]#!\n$TOOLTIP_DELIMITER$\nБазовий: #v [Multiply_CFixedPoint('(CFixedPoint)$BASE$','(CFixedPoint)100'))|0-=]#![ConcatIfNeitherEmpty('\n','$MODIFIER$')]"
+ CIVIL_WAR_MAX_PROGRESS_BREAKDOWN: "#header Максимальний розвиток: [Multiply_CFixedPoint('(CFixedPoint)$TOTAL_MAX$','(CFixedPoint)100'))|0]#!\n$TOOLTIP_DELIMITER$\nЧерез [Concept('concept_political_movement_radicalism', '$concept_political_movement_radicalism_short_acc$')|l]: #v [Multiply_CFixedPoint('(CFixedPoint)$MAX_FROM_RADICALISM$','(CFixedPoint)100'))|0]#!"
  CIVIL_WAR_MAX_UNSUPPORTED_PROGRESS:0 "This revolution cannot sustain progress above [Multiply_CFixedPoint('(CFixedPoint)$PROGRESS_LIMIT$','(CFixedPoint)100'))|0v] because the [concept_political_movement] lacks support from an [concept_interest_group]."
- CIVIL_WAR_PROGRESS_AT_MAX_PROGRESS:1 "#header Weekly Progress\n$TOOLTIP_DELIMITER$\n[concept_revolution] is at current maximum progress of #tooltippable #tooltip:$BREAKDOWN_TAG$ [Multiply_CFixedPoint('(CFixedPoint)$MAX_PROGRESS$','(CFixedPoint)100'))|0]#!#!"
- CIVIL_WAR_PROGRESS_ABOVE_MAX_PROGRESS:1 "#header Weekly Progress\n$TOOLTIP_DELIMITER$\n[concept_revolution] is above maximum progress of #tooltippable #tooltip:$BREAKDOWN_TAG$ [Multiply_CFixedPoint('(CFixedPoint)$MAX_PROGRESS$','(CFixedPoint)100'))|0]#!#!"
+ CIVIL_WAR_PROGRESS_AT_MAX_PROGRESS: "#header Щотижневий розвиток\n$TOOLTIP_DELIMITER$\n[concept_revolution] наразі досягла максимального розвитку #tooltippable #tooltip:$BREAKDOWN_TAG$ [Multiply_CFixedPoint('(CFixedPoint)$MAX_PROGRESS$','(CFixedPoint)100'))|0]#!#!"
+ CIVIL_WAR_PROGRESS_ABOVE_MAX_PROGRESS: "#header Щотижневий розвиток\n$TOOLTIP_DELIMITER$\n[concept_revolution] перевищує максимальний розвиток #tooltippable #tooltip:$BREAKDOWN_TAG$ [Multiply_CFixedPoint('(CFixedPoint)$MAX_PROGRESS$','(CFixedPoint)100'))|0]#!#!"
 
  SECESSION_CULTURE_TEXT:0 "Culture: [CivilWar.GetCulture.GetName]"
  SECESSION_CULTURE_TURMOIL_TEXT:0 "Turmoil: #BOLD [CivilWar.GetCulture.CalcTurmoilInCountry( GetPlayer.Self )|-=%0]#! (excess: #BOLD [CivilWar.GetExcessTurmoil|-%=0]#!)"
@@ -4197,7 +4203,7 @@
 
  IG_IS_IN_GOVERNMENT: "[concept_in_government]: #variable [GetDefine( 'NPolitics', 'IG_IN_GOVERNMENT_APPROVAL' )|+=]#!"
  IG_IS_IN_OPPOSITION: "[concept_in_opposition]: #variable [GetDefine( 'NPolitics', 'IG_IN_OPPOSITION_APPROVAL' )|+=]#!"
- IG_POWERFUL_IS_IN_OPPOSITION:0 "[concept_powerful] and [concept_in_opposition]: #variable [GetDefine( 'NPolitics', 'IG_POWERFUL_IN_OPPOSITION_APPROVAL' )|+=]#!"
+ IG_POWERFUL_IS_IN_OPPOSITION: "[concept_powerful] і [concept_in_opposition|l]: #variable [GetDefine( 'NPolitics', 'IG_POWERFUL_IN_OPPOSITION_APPROVAL' )|+=]#!"
  IG_REVOLUTIONARY_IN_GOVERNMENT:0 "Revolutionary [Concept('concept_interest_group', '$concept_interest_groups$')] in Government have capped Approval"
  IG_LAW_APPROVAL_CAPPED: "Загальне [concept_approval|l] - #B $TOTAL|+=$#! (Обмежене реальним значенням - #B $UNCAPPED|+=$#!) через:"
  IG_LAW_APPROVAL: "Загальне [concept_approval|l] - #B $TOTAL|+=$#! через:"
@@ -4207,8 +4213,8 @@
  IG_LAW_CHANGES_HEADER: "#title Зміна закону:#!"
  IG_OTHER_FACTORS_HEADER: "#title Інші чинники:#!"
 
- IG_IS_SUPPRESSED_ATTRACTION:1 "[Concept('concept_suppress','$concept_suppressed$')]: #variable $VAL|+=%0$#!"
- IG_IS_PROMOTED_ATTRACTION:2 "[Concept('concept_bolster','$concept_bolstered$')]: #variable $VAL|+=%0$#!"
+ IG_IS_SUPPRESSED_ATTRACTION: "[Concept('concept_suppress','$concept_suppressed$')]: #variable $VAL|+=%0$#!"
+ IG_IS_PROMOTED_ATTRACTION: "[Concept('concept_bolster','$concept_bolstered$')]: #variable $VAL|+=%0$#!"
 
  PEOPLE_ABROAD_TOOLTIP: "#BOLD #V Unincorporated Population#!#!\n$TOOLTIP_DELIMITER$\n$ABROAD_POP_CONCEPT$"
  INTEREST_GROUP_TITLE: "#title [concept_interest_group]#!"
@@ -4216,7 +4222,7 @@
  CLOUT_TITLE: "#title Вплив#!"
  SP_TITLE:0 "#title Army Strength Points#!"
  SP_NAVAL_TITLE:0 "#title Naval Strength Points#!"
- REVOLUTION_TITLE:0 "#title Revolution!#!"
+ REVOLUTION_TITLE: "#title Революція!#!"
  REVOLUTION_CAPITAL_STATE_PROGRESS:0 "Capital State Provinces Held: "
  REVOLUTION_CAPITAL_TAKE_DESC:0 "Once the revolution holds all provinces in the capital state they start a countdown to victory.\n#variable [RevolutionaryFaction.GetCountry.GetName]#! is holding #variable [RevolutionaryFaction.GetCapitalControl]#! provinces, the revolters are holding #variable [RevolutionaryFaction.GetRevolutionCapitalControl]#!"
  REVOLUTION_VICTORY_DESC:0 "When the revolters hold all Capital provinces this bar will start to fill, once it is full the revolters will win and force all their demands"
@@ -5253,11 +5259,11 @@
  ENACTMENT_FACTOR_ENTRY: "[concept_end_of_discussion_factor]: x$VAL|v2$"
 
  ENACTMENT_BREAKDOWNS_BASE_CHANCE_ENTRY: "Базовий: $VAL|v%1$"
- ENACTMENT_BASE_SUCCESS_CHANCE_ENTRY:0 "[concept_base_success_chance]: $VAL|=v%1$"
- ENACTMENT_SUCCESS_CHANCE_ENTRY:0 "[concept_enactment_success] chance: $VAL|=v%1$"
- ENACTMENT_ADVANCE_CHANCE_ENTRY:0 "[concept_enactment_advance] chance: $VAL|=v%1$"
- ENACTMENT_ADVANCE_FACTOR_ENTRY:0 "[concept_advance_factor]: x$VAL|v2$"
- ENACTMENT_STALL_CHANCE_ENTRY:0 "[concept_enactment_stall] chance: $VAL|=v%1$"
+ ENACTMENT_BASE_SUCCESS_CHANCE_ENTRY: "[concept_base_success_chance]: $VAL|=v%1$"
+ ENACTMENT_SUCCESS_CHANCE_ENTRY: "Шанс [Concept('concept_enactment_success', '$concept_enactment_success_gen$')|l]: $VAL|=v%1$"
+ ENACTMENT_ADVANCE_CHANCE_ENTRY: "Шанс [Concept('concept_enactment_advance', '$concept_enactment_advance_gen$')|l]: $VAL|=v%1$"
+ ENACTMENT_ADVANCE_FACTOR_ENTRY: "[concept_advance_factor]: x$VAL|v2$"
+ ENACTMENT_STALL_CHANCE_ENTRY: "Шанс [Concept('concept_enactment_stall', '$concept_enactment_stall_gen$')|l]: $VAL|=v%1$"
 
  ENACTMENT_FASTENACT_IS_ACTIVE:0 ""fastenact" is active"
 
@@ -5867,7 +5873,7 @@
 
  notification_ig_resigned_government_tooltip: "#header $notification_ig_resigned_government_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_resigned_government_desc$"
  notification_ig_resigned_government_name: "Вихід з [Concept('concept_government','$concept_government_gen$')|l]"
- notification_ig_resigned_government_desc: "[SCOPE.GetRootScope.GetInterestGroup.GetName] вийщла з [Concept('concept_government','$concept_government_gen$')|l] через те, що їхнє [Concept('concept_approval','$concept_approval_acc$')|l] - $ig_approval_angry$"
+ notification_ig_resigned_government_desc: "[SCOPE.GetRootScope.GetInterestGroup.GetName] вийщла з [Concept('concept_government','$concept_government_gen$')|l] через те, що їхнє [Concept('concept_approval','$concept_approval_acc$')|l] - $ig_approval_angry_l$"
 
  notification_violate_sovereignty_third_party_joins_name:2 "[SCOPE.sC('third_party_country').GetName] aids [SCOPE.sC('target_country').GetName]"
  notification_violate_sovereignty_third_party_joins_desc:1 "[SCOPE.sC('third_party_country').GetName] has come to the aid of [SCOPE.sC('target_country').GetName] after their sovereignty was violated by [SCOPE.sC('initiator').GetName]."

@@ -9,10 +9,10 @@
  ADD_TREASURY_EFFECT_THIRD_POSITIVE: "[COUNTRY.GetName] отримає @money!$VALUE|+=$"
  ADD_TREASURY_EFFECT_THIRD_NEGATIVE: "[COUNTRY.GetName] втратить @money!$VALUE|+=$"
 
- SET_COUNTRY_ARMY_SP_TARGET: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! військові бали сили(@army_SP!) встановляться на #variable $VALUE$#!"
- SET_COUNTRY_NAVY_SP_TARGET: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! корабельські бали сили(@navy_SP!) встановляться на #variable $VALUE$#!"
- SET_RELATIONS: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! відносини до #variable [TARGET_COUNTRY.GetName]#! встановиться на #variable $VALUE|0$#!"
- SET_TENSION: "[Concept('concept_tension', '$concept_tensions$')|l] між [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] встановиться на #variable $VALUE|0$#!"
+ SET_COUNTRY_ARMY_SP_TARGET: "#variable [COUNTRY.GetAdjectiveNoFormatting]і#! військові бали сили(@army_SP!) встановляться на #variable $VALUE$#!"
+ SET_COUNTRY_NAVY_SP_TARGET: "#variable [COUNTRY.GetAdjectiveNoFormatting]і#! корабельські бали сили(@navy_SP!) встановляться на #variable $VALUE$#!"
+ SET_RELATIONS: "#variable [COUNTRY.GetAdjectiveNoFormatting]і#! відносини з державою #variable [TARGET_COUNTRY.GetName]#! стануть на #variable $VALUE|0$#!"
+ SET_TENSION: "[Concept('concept_tension', '$concept_tension$')] між [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] стане на #variable $VALUE|0$#!"
  SET_STRATEGY: "[COUNTRY.GetName] затверджує #variable [AIStrategy.GetName]#! стратегію"
  SET_DIPLOMATS_EXPELLED: "[COUNTRY.GetName] висилає дипломатів з [TARGET_COUNTRY.GetName], перешкоджаючи будь-якому поліпшенню відносин протягом #b 5 років#!"
  SET_SECRET_GOAL: "[COUNTRY.GetName] отримає #variable $SECRET_GOAL$#! таємну мету [TARGET_COUNTRY.GetName]"
@@ -55,8 +55,8 @@
  CHANGE_RELATIONS_THIRD: "#variable [COUNTRY.GetAdjectiveNoFormatting]і#! [concept_relations|l] з державою #variable [TARGET_COUNTRY.GetName]#! покращаться на $VALUE|0+$"
  CHANGE_RELATIONS_THIRD_NEG: "#variable [COUNTRY.GetAdjectiveNoFormatting]і#! [concept_relations|l] з державою #variable [TARGET_COUNTRY.GetName]#! погіршаться на $VALUE|0-$"
  
- CHANGE_TENSION: "[Concept('concept_tension', '$concept_tensions$')] між [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] збільшиться на #N $VALUE|0$#!"
- CHANGE_TENSION_NEG: "[Concept('concept_tension', '$concept_tensions$')] між [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] зменшиться на #P $VALUE|0$#!"
+ CHANGE_TENSION: "[Concept('concept_tension', '$concept_tension$')] між [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] збільшиться на #N $VALUE|0$#!"
+ CHANGE_TENSION_NEG: "[Concept('concept_tension', '$concept_tension$')] між [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] зменшиться на #P $VALUE|0$#!"
  
  SET_OWES_OBLIGATION_TO: "Матиме [Concept('concept_obligation', '$concept_obligation_acc$')|l] перед державою [TARGET_COUNTRY.GetName]"
  SET_OWES_OBLIGATION_TO_NEG: "Більше не матиме [Concept('concept_obligation', '$concept_obligation_acc$')|l] перед державою [TARGET_COUNTRY.GetName]"

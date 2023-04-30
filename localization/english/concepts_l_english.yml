@@ -1396,6 +1396,8 @@
 
  concept_political_movement_radicalism: "Радикалізм політичного руху"
  concept_political_movement_radicalism_short: "Радикалізм"
+ concept_political_movement_radicalism_short_gen: "Радикалізму"
+ concept_political_movement_radicalism_short_acc: "Радикалізм"
  concept_political_movement_radical:0 "Radical"
  concept_political_movement_radicalize: "Радикалізуватися"
  concept_political_movement_radicalism_desc:2 "The $concept_political_movement_radicalism_short$ of a [concept_political_movement] is based on its number of [Concept('concept_radical','$concept_radicals$')] among its supporting [Concept('concept_pop','$concept_pops$')] and the [concept_clout] of supporting [Concept('concept_interest_group','$concept_interest_groups$')] whose [concept_approval] is [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_ANGRY'))] or worse. A highly $concept_political_movement_radical$ $concept_political_movement$ is less interested in solving issues via mundane politics, and will be able to start a [concept_revolution] sooner."
@@ -2331,6 +2333,7 @@
 
  concept_political_movement: "Політичний рух"
  concept_political_movement_gen: "Політичного руху"
+ concept_political_movement_acc: "Політичний рух"
  concept_political_movement_short: "Рух"
  concept_political_movement_short_gen: "Руху"
  concept_political_movements_short: "Рухи"
@@ -2356,10 +2359,12 @@
  concept_enactment_success_desc: "$concept_enactment_success$ показує відсоток шансу того, що [Concept('concept_law','$concept_law_dat$')|l] нададуть сили на наступній прозір-точці. Він дорівнює [Concept('concept_base_success_chance','$concept_base_success_chance_dat$')|l] плюс заподії, накопичені в процесі надання чинности законові."
 
  concept_enactment_advance: "Поступ в ухвалені"
+ concept_enactment_advance_gen: "Поступу в ухвалені"
  concept_enactment_advance_short: "Поступ"
  concept_enactment_advance_desc: "$concept_enactment_advance$ indicates the percentage chance that the enactment process of a [concept_law] will advance somehow at the next checkpoint, even if it will not meet with a full [Concept('concept_enactment_success','$concept_enactment_success_short$')] yet. It is derived from the enactment's [concept_base_success_chance]."
 
  concept_enactment_debate: "Правдування щодо ухвалення"
+ concept_enactment_debate_gen: "Правдування щодо ухвалення"
  concept_enactment_debate_short: "Правдування"
  concept_enactment_debate_short_debated: "Обговорений"
  concept_enactment_debate_desc:1 "$concept_enactment_debate$ indicates the percentage chance that the enactment process of a [concept_law] will meet with some kind of complication at the next checkpoint. The lower the total chances of [Concept('concept_enactment_success','$concept_enactment_success_short$')], [Concept('concept_enactment_advance','$concept_enactment_advance_short$')], and [Concept('concept_enactment_stall','$concept_enactment_stall_short$')] the greater the chance of $concept_enactment_debate_short$."

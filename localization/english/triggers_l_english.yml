@@ -1243,17 +1243,17 @@
  TRIGGER_GAME_DATE:0 "Current game date is $COMPARATOR$ $DATE$"
  TRIGGER_GAME_DATE_NOT:1 "Current game date is #bold not #!$COMPARATOR$ $DATE$"
  
- TRIGGER_ENACTING_ANY_LAW:0 "Is enacting a law"
- TRIGGER_ENACTING_ANY_LAW_NOT:1 "Is #bold not #!enacting a law"
+ TRIGGER_ENACTING_ANY_LAW: "Ухвалює закон"
+ TRIGGER_ENACTING_ANY_LAW_NOT: "#bold Не#! ухвалює закон"
  TRIGGER_ENACTING_ANY_LAW_FIRST:0 "[COUNTRY.GetNameNoFlag] is enacting a law"
  TRIGGER_ENACTING_ANY_LAW_FIRST_NOT:0 "[COUNTRY.GetNameNoFlag] is #bold not #!enacting a law"
  TRIGGER_ENACTING_ANY_LAW_THIRD:0 "[COUNTRY.GetNameNoFlag] is enacting a law"
  TRIGGER_ENACTING_ANY_LAW_THIRD_NOT:0 "[COUNTRY.GetNameNoFlag] is #bold not #!enacting a law"
 
- TRIGGER_IS_ENACTING_LAW:0 "Is enacting [TARGET_LAW_TYPE.GetName]"
- TRIGGER_IS_ENACTING_LAW_NOT:1 "Is #bold not #!enacting [TARGET_LAW_TYPE.GetName]"
- TRIGGER_IS_ENACTING_LAW_FIRST:0 "Is enacting [TARGET_LAW_TYPE.GetName]"
- TRIGGER_IS_ENACTING_LAW_NOT_FIRST:0 "Is #bold not #!enacting [TARGET_LAW_TYPE.GetName]"
+ TRIGGER_IS_ENACTING_LAW: "Ухвалює закон «[TARGET_LAW_TYPE.GetName]»"
+ TRIGGER_IS_ENACTING_LAW_NOT: "#bold Не#! ухвалює закон «[TARGET_LAW_TYPE.GetName]»"
+ TRIGGER_IS_ENACTING_LAW_FIRST: "Ухвалює закон «[TARGET_LAW_TYPE.GetName]»"
+ TRIGGER_IS_ENACTING_LAW_NOT_FIRST: "#bold Не#! ухвалює закон «[TARGET_LAW_TYPE.GetName]»"
  
  TRIGGER_IS_EXPANDING_INSTITUTION:0 "Is expanding an institution"
  TRIGGER_IS_EXPANDING_INSTITUTION_NOT:1 "Is #bold not #!expanding in institution"
