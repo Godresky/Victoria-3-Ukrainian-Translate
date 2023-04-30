@@ -626,10 +626,10 @@
  BUILDING_BATTALIONS_MOBILIZED: "[Concept('concept_mobilize_battalion', '$concept_mobilize_battalions_mobilized$')]:"
  
  PANEL_MILITARY_ARMY_POWER_PROJECTION_TOOLTIP: "[Country.GetArmyPowerProjectionDesc]"
- PANEL_MILITARY_ARMY_POWER_PROJECTION: "Чисельність і технологічна складність [Country.GetAdjective|l]их [Concept('concept_battalion', '$concept_battalions_gen$')|l] дає змогу оцінити їхню військову [Concept('concept_power_projection', '$concept_power_projection_acc$')|l] у #tooltippable #tooltip:[Country.GetTooltipTag],PANEL_MILITARY_ARMY_POWER_PROJECTION_TOOLTIP [Country.GetArmyPowerProjection|v0]#!#!"
+ PANEL_MILITARY_ARMY_POWER_PROJECTION: "Чисельність і технологічна складність #yellow [Country.GetAdjective|l]их#! [Concept('concept_battalion', '$concept_battalions_gen$')|l] дає змогу оцінити їхню військову [Concept('concept_power_projection', '$concept_power_projection_acc$')|l] у #tooltippable #tooltip:[Country.GetTooltipTag],PANEL_MILITARY_ARMY_POWER_PROJECTION_TOOLTIP [Country.GetArmyPowerProjection|v0]#!#!"
 
  PANEL_MILITARY_NAVY_POWER_PROJECTION_TOOLTIP: "[Country.GetNavyPowerProjectionDesc]"
- PANEL_MILITARY_NAVY_POWER_PROJECTION: "Чисельність і технологічна складність [Country.GetAdjective|l]их [Concept('concept_flotilla', '$concept_flotillas_gen$')|l] дає змогу оцінити їхню морську [Concept('concept_power_projection', '$concept_power_projection_acc$')|l] у #tooltippable #tooltip:[Country.GetTooltipTag],PANEL_MILITARY_ARMY_POWER_PROJECTION_TOOLTIP [Country.GetNavyPowerProjection|v0]#!#!"
+ PANEL_MILITARY_NAVY_POWER_PROJECTION: "Чисельність і технологічна складність #yellow [Country.GetAdjective|l]их#! [Concept('concept_flotilla', '$concept_flotillas_gen$')|l] дає змогу оцінити їхню морську [Concept('concept_power_projection', '$concept_power_projection_acc$')|l] у #tooltippable #tooltip:[Country.GetTooltipTag],PANEL_MILITARY_ARMY_POWER_PROJECTION_TOOLTIP [Country.GetNavyPowerProjection|v0]#!#!"
  PANEL_MILITARY_ARMY_CURRENT_REGULARS: "@battalions![Country.GetRegularBattalions|0v]"
  PANEL_MILITARY_ARMY_CURRENT_CONSCRIPTS: "@battalions![Country.GetConscriptedBattalions|0v]/[Country.CalcConscriptableBattalions|0]"
  PANEL_MILITARY_ARMY_CURRENT_BATTALIONS: "@battalions![Country.GetBattalions|0v]"
