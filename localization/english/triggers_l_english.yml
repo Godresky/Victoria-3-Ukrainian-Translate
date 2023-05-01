@@ -1567,7 +1567,7 @@
 
  TRIGGER_ANY_INTEREST_GROUP: "Будь-яка [concept_interest_group]:"
  TRIGGER_ANY_INTEREST_GROUP_NOT:1 "No [concept_interest_group]:"
- TRIGGER_ANY_INTEREST_GROUP_FIRST: "Будь-яка [Country.GetAdjectiveNoFlag|l]а [concept_interest_group|l]:"
+ TRIGGER_ANY_INTEREST_GROUP_FIRST: "Будь-яка #yellow [Country.GetAdjectiveNoFlag|l]а#! [concept_interest_group|l]:"
  TRIGGER_ANY_INTEREST_GROUP_THIRD: "Будь-яка [concept_interest_group|l] у [Concept('concept_country','$concept_country_loc$')|l] [Country.GetName]:"
  TRIGGER_ANY_INTEREST_GROUP_ALL: "Усі [Concept('concept_interest_group', '$concept_interest_groups$')|l]:"
  TRIGGER_ANY_INTEREST_GROUP_ALL_FIRST: "Усі [Concept('concept_interest_group', '$concept_interest_groups$')|l] у державі [Country.GetNameNoFlag]:"

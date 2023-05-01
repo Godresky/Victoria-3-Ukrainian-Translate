@@ -1730,4 +1730,4 @@
  bic_breakup.1.b:0 "This is the birth of an Indian nation."
  bic_breakup.1.c:0 "British rule must be maintained at all costs."
  india_princes_independent_tt:0 "All [concept_subject] countries will become independent, and our [Concept('concept_state', '$concept_states$')] will be divided between them."
- warlord_china_implosion_tt:0 "Our [Concept('concept_state', '$concept_states$')] will be divided between the warlords"
+ warlord_china_implosion_tt: "Наші [Concept('concept_state', '$concept_states$')|l] будуть розділені полководцями"

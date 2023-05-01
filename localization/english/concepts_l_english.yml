@@ -1249,6 +1249,7 @@
 
  concept_dividends: "Дивіденди"
  concept_dividends_gen: "Дивідендів"
+ concept_dividends_acc: "Дивіденди"
  concept_dividends_desc:3 "While [Concept('concept_building','$concept_buildings$')] have a positive balance, some of these profits are paid out to [Concept('concept_pop', '$concept_pops$')] with [Concept('concept_ownership_share', '$concept_ownership_shares$')] as $concept_dividends$, which are are subject to [concept_budget_dividends_taxes]. Depending on the [Concept('concept_country','$concept_country_possessive$')] current [SelectLocalization(GetPlayer.IsValid,'concept_dividends_desc_added','Economic System')] [concept_law] a portion of [concept_pop] $concept_dividends$ may be invested back into the economy through [concept_reinvestment], while the remainder goes towards [concept_pop_needs] and [concept_wealth]. If a [concept_building] has [Concept('concept_government_ownership_share', '$concept_government_ownership_shares$')], those will pay out [concept_government_dividends] instead, in a proportion relative to the number of [concept_pop] [Concept('concept_ownership_share', '$concept_ownership_shares$')]."
  concept_dividends_desc_added:1 "$ECONOMIC_SYSTEM_LAW_GROUP$"
  
@@ -1677,6 +1678,7 @@
  concept_professions: "Ремесла"
  concept_professions_gen: "Ремесел"
  concept_professions_acc: "Ремесла"
+ concept_professions_ins: "Ремеслами"
  concept_profession_desc:2 "A [Concept('concept_pop','$concept_pop_possessive$')] $concept_profession$ determines which role they perform in their [concept_building], how large of a [concept_building_wage] they collect from it, and whether or not they get [Concept('concept_ownership_share','$concept_ownership_shares$')] in it. It also impacts which [Concept('concept_interest_group','$concept_interest_group$')] they're likely to support, how likely they are to remain [Concept('concept_politically_inactive_involved', '$concept_politically_inactive$')], and whether they are considered [concept_lower_strata], [concept_middle_strata], or [concept_upper_strata]. To switch $concept_professions$, a $concept_pop$ must have the appropriate [concept_pop_qualifications]."
 
  concept_production_method: "Спосіб виробництва"
@@ -1990,6 +1992,7 @@
  concept_subsidies_desc:2 "A $concept_subsidized$ [concept_building] is guaranteed by the [Concept('concept_country','$concept_country_possessive$')] [concept_government] to be funded enough to always by able to pay at least the [concept_subsidized_wage]. If the building cannot pay its employees according to this rate or higher, and/or if its cost of buying [Concept('concept_good_consumption','$concept_input_goods$')] exceeds its [concept_revenue] from selling [Concept('concept_good_production','$concept_output_goods$')], the [concept_treasury] will cover the difference. This guarantees the $concept_building$ can hire as many employees as it wants in order to maximize [concept_throughput] without concern for how financially viable that is."
 
  concept_budget_interest: "Відсотки"
+ concept_budget_interest_acc: "Відсотки"
  concept_budget_interest_rate: "Відсоткова ставка"
  concept_budget_interest_rates: "Відсоткові ставки"
  concept_budget_interest_desc:0 "The $concept_budget_interest$ paid by a [concept_country] on its [concept_loans]. It is calculated by multiplying the [concept_principal] with the annual $concept_budget_interest_rate$, and is paid out to lending [Concept('concept_pop','$concept_pops$')] weekly. The $concept_budget_interest_rate$ paid is affected primarily by [concept_technology]."
@@ -2212,6 +2215,7 @@
 
  concept_building_wage: "Зарплата"
  concept_building_wage_acc: "Зарплату"
+ concept_building_wage_gen: "Зарплати"
  concept_building_wages: "Зарплати"
  concept_building_wages_gen: "Зарплат"
  concept_building_wage_desc:3 "$concept_building_wages$ paid to [Concept('concept_pop','$concept_pops$')] by the [concept_building] they work in depends on several factors, the most prominent being the $concept_pop$'s [concept_profession] and the $concept_building$'s financial situation. If a $concept_building$'s [concept_building_balance] allows for raising $concept_building_wages$ at all, the $concept_building$ will only do so if it needs to in order to attract more $concept_pops$ to its [concept_workforce]. If a $concept_building$'s $concept_building_balance$ is negative, it will consider lowering $concept_building_wages$ to return to profitability.\n\nYou can guarantee that the $concept_workforce$ is paid a competitive $concept_building_wage$ by [Concept('concept_subsidies', '$concept_subsidizing$')] the building. This will keep it afloat with funds from the [concept_treasury] if necessary."
@@ -2395,18 +2399,18 @@
  concept_lower_strata: "Нижня верства"
  concept_lower_strata_gen: "Нижньої верстви"
  concept_lower_strata_acc: "Нижню верству"
- concept_lower_strata_desc:3 "The $concept_lower_strata$ consist of [Concept('concept_pop','$concept_pops$')] in [Concept('concept_profession','$concept_professions$')] that work with their hands or do repetitive labor which require little to no [concept_pop_qualifications] and result in low [Concept('concept_building_wage','$concept_building_wages$')].[AddLocalizationIf(GetPlayer.IsValid,'concept_lower_strata_ingame_added')]"
- concept_lower_strata_ingame_added:1 "\n\nConsists of the following $concept_professions$:\n[GetPopTypesInLowerStrataDesc]"
+ concept_lower_strata_desc: "$concept_lower_strata$ мість [Concept('concept_pop','$concept_pops_acc$')|l] з [Concept('concept_profession','$concept_professions_ins$')|l], які працюють руками або виконувають одноманітну роботу, що майже не вимагає [Concept('concept_pop_qualifications','$concept_pop_qualifications_gen$')|l], у наслідок чого вони отримують низьку [Concept('concept_building_wage','$concept_building_wage_acc$')|l].[AddLocalizationIf(GetPlayer.IsValid,'concept_lower_strata_ingame_added')]"
+ concept_lower_strata_ingame_added: "\n\nМістить такі ремесла:\n[GetPopTypesInLowerStrataDesc]"
 
  concept_middle_strata: "Середня верства"
  concept_middle_strata_gen: "Середньої верстви"
- concept_middle_strata_desc:3 "The $concept_middle_strata$ consist of [Concept('concept_pop','$concept_pops$')] with specialized [Concept('concept_profession','$concept_professions$')] that are harder to gain [concept_pop_qualifications] for. This provides them with more leverage on the labor market and thereby higher [Concept('concept_building_wage','$concept_building_wages$')].[AddLocalizationIf(GetPlayer.IsValid,'concept_middle_strata_ingame_added')]"
- concept_middle_strata_ingame_added:1 "\n\nConsists of the following $concept_professions$:\n[GetPopTypesInMiddleStrataDesc]"
+ concept_middle_strata_desc: "$concept_middle_strata$ мість [Concept('concept_pop','$concept_pops$')|l] з профільними [Concept('concept_profession','$concept_professions_ins$')|l], для яких складніше здобути [Concept('concept_pop_qualifications','$concept_pop_qualifications_acc$')|l]. Це дає їм більше важелів впливу на ринку праці, а отже, вищу [Concept('concept_building_wage','$concept_building_wage_acc$')|l].[AddLocalizationIf(GetPlayer.IsValid,'concept_middle_strata_ingame_added')]"
+ concept_middle_strata_ingame_added: "\n\nМістить такі ремесла:\n[GetPopTypesInMiddleStrataDesc]"
 
  concept_upper_strata: "Верхня верства"
  concept_upper_strata_gen: "Верхньої верстви"
- concept_upper_strata_desc:3 "The $concept_upper_strata$ consist of [Concept('concept_pop','$concept_pops$')] with [Concept('concept_profession','$concept_professions$')] they [Concept('concept_pop_qualifications','$concept_qualify$')] for mostly on the basis of [concept_wealth]. These $concept_professions$ are typically not available to $concept_pops$ subject to [concept_discrimination] either. They tend to hold [Concept('concept_ownership_share','$concept_ownership_shares$')] in their [Concept('concept_building','$concept_buildings$')] and draw [concept_dividends] and collect [concept_budget_interest] in addition to [Concept('concept_building_wage','$concept_building_wages$')].[AddLocalizationIf(GetPlayer.IsValid, 'concept_upper_strata_ingame_added')]"
- concept_upper_strata_ingame_added:1 "\n\nConsists of the following $concept_professions$:\n[GetPopTypesInUpperStrataDesc]"
+ concept_upper_strata_desc:3 "$concept_upper_strata$ мість [Concept('concept_pop','$concept_pops$')|l] з [Concept('concept_profession','$concept_professions_ins$')|l], до яких вони [Concept('concept_pop_qualifications','Підготовлені')|l] здебільшого через своє [Concept('concept_wealth','Багатство')|l]. Ці ремесла зазвичай недоступні громадам, які є [Concept('concept_discrimination','$concept_discriminated_adj$ими')|l]. Вони, як правило, мають [Concept('concept_ownership_share','$concept_ownership_shares_acc$')|l] своїх [Concept('concept_building','$concept_buildings_gen$')|l], отримують [Concept('concept_dividends','$concept_dividends_acc$')|l] та одержують [Concept('concept_budget_interest','$concept_budget_interest_acc$')|l] на додаток до [Concept('concept_building_wage','$concept_building_wage_gen$')|l].[AddLocalizationIf(GetPlayer.IsValid, 'concept_upper_strata_ingame_added')]"
+ concept_upper_strata_ingame_added: "\n\nМістить такі ремесла:\n[GetPopTypesInUpperStrataDesc]"
 
 ### NEW ITEMS
 

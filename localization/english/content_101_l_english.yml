@@ -280,9 +280,9 @@
  notification_first_flight_tooltip: "#header $notification_first_flight_name$#!\n$TOOLTIP_DELIMITER$\n$notification_first_flight_desc$"
 
  warlord_china_events.100.t: "Хіна руйнується"
- warlord_china_events.100.d:0 "The fall of the Qing dynasty has ended China's long standing period of imperial rule and ushered in a new age of warlordism."
- warlord_china_events.100.f:1 ""Empires, like dreams, are made of an intangible material, so fragile they can end at any given time, no previous warning. They hold, however, the same insane appeal. Even if the thread that holds together their seams is invisible, and every suture hides a wound.\n\nThousands of years of imperial rule, ended in just a moment.""
- warlord_china_events.100.a:0 "Oh no."
+ warlord_china_events.100.d: "Падіння династії Цін завершило тривалу часину імператорського правління в Хіні та відкрило нову добу полководщини."
+ warlord_china_events.100.f: "«Імперії, як мрії, виготовлені з неосяжного матеріялу, настільки крихкі, що можуть розвалитися в будь-який момент, без попередження. Однак вони мають таку ж шалену привабливість. Навіть якщо нитка, яка скріплює їхні шви, невидима, а за кожним швом ховається рана.\n\nТисячі років імперського правління закінчилися за одну мить.»"
+ warlord_china_events.100.a: "О ні."
 
  warlord_china_events.110.t:0 "Melon Smashing"
  warlord_china_events.110.d:0 "It is at risk of becoming public knowledge that [SCOPE.sCharacter('prisoner_killing_warlord').GetPrimaryRoleTitle] [SCOPE.sCharacter('prisoner_killing_warlord').GetFullName] entertains [SCOPE.sCharacter('prisoner_killing_warlord')GetHimselfHerself] by smashing in the skulls of prisoners with a sword."

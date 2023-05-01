@@ -3299,7 +3299,7 @@
  BALANCE_ITEM: "[TradeOverviewEntry.GetGoods.GetCompareIconAgainstBasePriceNoFormatting(TradeOverviewEntry.GetGoods.GetMarketPrice)] "
 
  RELATIONS_TOOLTIP: "#header [concept_relations]#!\n[concept_relations] між [Concept('concept_country', '$concept_countries_ins$')|l] [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] - #BOLD $LABEL|l$#! (#variable $VAL|+=$#!)$PROGRESS$"
- INFAMY_TOOLTIP: "#header [COUNTRY.GetAdjective]а [concept_infamy|l]: #BOLD $INFAMY_LABEL|l$#! (#variable $INFAMY|-1$#!)#!\n$TOOLTIP_DELIMITER$\n$INFAMY_DECAY$[ConcatIfNeitherEmpty('\n\nЗаподії:\n','$INFAMY_EFFECTS$')]"
+ INFAMY_TOOLTIP: "#header #yellow [COUNTRY.GetAdjective]а#! [concept_infamy|l]: #BOLD $INFAMY_LABEL|l$#! (#variable $INFAMY|-1$#!)#!\n$TOOLTIP_DELIMITER$\n$INFAMY_DECAY$[ConcatIfNeitherEmpty('\n\nЗаподії:\n','$INFAMY_EFFECTS$')]"
  INFAMY_DECAY_RATE: "Згасання [Concept('concept_infamy', '$concept_infamy_gen$')|l]: #P #bold -$VAL|3$#!#! / щотижня\n$TAB$Базове згасання: #P #bold -$YEARLYBASE|3$#!#!  / рік$MITIGATION$"
  TENSION_TOOLTIP: "[concept_tension] між нами та тубільцями [COUNTRY.GetName] - #BOLD $LABEL$#! (#variable $VAL|-$#!)$DECAY$"
  TENSION_DECAY_RATE: "Згасання [Concept('concept_tension', '$concept_tension_gen$')|l]: #P #bold -$VAL|3$#!#! / щотижня\n$TAB$Базове згасання: #P #bold -$YEARLYBASE|3$#!#!  / рік$MITIGATION$"
@@ -5721,7 +5721,7 @@
  notification_ally_capitulated_desc:0 "Our ally #variable [SCOPE.sC('target').GetName]#! has capitulated. All wargoals targeting them have been enforced."
 
  notification_diplo_play_start_notification_tooltip: "#header $notification_diplo_play_start_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_start_notification_desc$"
- notification_diplo_play_start_notification_name: "[SCOPE.sC('actor').GetAdjective]а [concept_diplomatic_play|l] проти нас"
+ notification_diplo_play_start_notification_name: "#yellow [SCOPE.sC('actor').GetAdjective]а#! [concept_diplomatic_play|l] проти нас"
  notification_diplo_play_start_notification_desc: "[SCOPE.sC('actor').GetName] почала [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] «[SCOPE.GetRootScope.GetDiplomaticPlay.GetDiplomaticPlayType.GetName|b]» проти нас."
 
  notification_diplo_play_start_third_party_notification_tooltip: "#header $notification_diplo_play_start_third_party_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_start_third_party_notification_desc$"
