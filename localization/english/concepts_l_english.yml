@@ -905,6 +905,7 @@
  concept_flotilla: "Флотилія"
  concept_flotillas: "Флотилії"
  concept_flotillas_gen: "Флотилій"
+ concept_flotillas_acc: "Флотилії"
  concept_flotilla_desc: "Військово-морський [Concept('concept_unit','підрозділ')|l] у складі збройних сил [Concept('concept_country','$concept_country_gen$')|l]. Він створюється й підтримується у [SelectLocalization(GetPlayer.IsValid,Concept('concept_building', '$concept_buildings_loc$'),'')|l] [SelectLocalization(GetPlayer.IsValid,'concept_flotilla_desc_added','Морських базах')|l] та керується [Concept('concept_admiral','$concept_admirals_ins$')|l]."
  concept_flotilla_desc_added: "[GetBuildingType('building_naval_base').GetName]"
 
@@ -1344,7 +1345,7 @@
  concept_generals_ins: "Генералами"
  concept_general_possessive:0 "General\\'s"
  concept_general_plural_singular: "Генерал(и)"
- concept_general_desc: "[concept_character] - [concept_commander|l] війська, який очолює [Concept('concept_battalion','$concept_battalions_acc$')|l] [Concept('concept_country','$concept_country_gen$')|l]. Щоб видати [Concept('concept_order','$concept_order_acc$')|l] генералу, він повинен бути [Concept('concept_mobilize_general','$concept_mobilize_general_mobilized_adj$им')|l]. Заподії від [Concept('concept_character_trait','$concept_character_traits_gen$')|l] генерала поширюється на курені, які під його прямим керуванням."
+ concept_general_desc: "Військовий [concept_commander|l], [concept_character|l], який очолює [Concept('concept_battalion','$concept_battalions_acc$')|l] [Concept('concept_country','$concept_country_gen$')|l]. Щоб видати [Concept('concept_order','$concept_order_acc$')|l] генералу, він повинен бути [Concept('concept_mobilize_general','$concept_mobilize_general_mobilized_adj$им')|l]. Заподії від [Concept('concept_character_trait','$concept_character_traits_gen$')|l] генерала поширюються на курені під його прямим керуванням."
 
  concept_admiral: "Адмірал"
  concept_admiral_gen: "Адмірала"
@@ -1354,7 +1355,7 @@
  concept_admirals_gen: "Адміралів"
  concept_admirals_ins: "Адміралами"
  concept_admiral_possessive:0 "Admiral\\'s"
- concept_admiral_desc:2 "A naval [concept_commander] [concept_character] who leads a [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_flotilla','$concept_flotillas$')].  Effects from an $concept_admiral$'s [Concept('concept_character_trait','$concept_character_traits$')] are conferred onto $concept_flotillas$ under their command."
+ concept_admiral_desc: "Морський [concept_commander|l], [concept_character|l], який очолює [Concept('concept_flotilla','$concept_flotillas_acc$')|l] [Concept('concept_country','$concept_country_gen$')|l]. Заподії від [Concept('concept_character_trait','$concept_character_traits_gen$')|l] адмірала поширюються на флотилії під його прямим керуванням."
 
  concept_political_strength: "Політична сила"
  concept_political_strength_gen: "Політичної сили"
@@ -1792,7 +1793,7 @@
  concept_innovation_dat: "Іноваціям"
  concept_innovations: "Іновації"
  concept_innovations_gen: "Іновацій"
- concept_innovation_desc:3 "@innovation!$concept_innovation$ is produced by [SelectLocalization(GetPlayer.IsValid,'concept_innovation_desc_added','University')] $concept_buildings$ and contributes to active research progress for [Concept('concept_technology', '$concept_technologies$')]. Unspent @innovation!$concept_innovation$ will increase the [concept_technology_spread] you're currently benefiting from, if any."
+ concept_innovation_desc: "@innovation!$concept_innovation$ виробляється [SelectLocalization(GetPlayer.IsValid,'будівлями ','')|l][SelectLocalization(GetPlayer.IsValid,'concept_innovation_desc_added','Університетами')|l] та допомагає поступу активного дослідження [Concept('concept_technology', '$concept_technologies_gen$')|l]. Невитрачені @innovation!іновації збільшать [Concept('concept_technology_spread', '$concept_technology_spread_acc$')|l], від якого ви наразі отримуєте користь, якщо таке є."
  concept_innovation_desc_added:0 "[GetBuildingType('building_university').GetName]"
 
  concept_technology_spread: "Поширення технологій"

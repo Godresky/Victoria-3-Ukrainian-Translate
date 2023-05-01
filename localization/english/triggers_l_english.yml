@@ -488,12 +488,12 @@
  TRIGGER_INTEREST_GROUP_POPULATION:0 "Population $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_INTEREST_GROUP_POPULATION_NOT:1 "Population #bold not #!$COMPARATOR$ #variable $NUM$#!"
  
- TRIGGER_WEEKLY_PROFIT:0 "Weekly profit $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_WEEKLY_PROFIT_NOT:1 "Weekly profit #bold not #!$COMPARATOR$ #variable $NUM$#!"
- TRIGGER_WEEKLY_PROFIT_FIRST:0 "Weekly profit $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_WEEKLY_PROFIT_FIRST_NOT:0 "Weekly profit #bold not #!$COMPARATOR$ #variable $NUM$#!"
- TRIGGER_WEEKLY_PROFIT_THIRD:0 "Weekly profit $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_WEEKLY_PROFIT_THIRD_NOT:0 "Weekly profit #bold not #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_WEEKLY_PROFIT: "Щотижневий прибуток $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_WEEKLY_PROFIT_NOT: "Щотижневий прибуток #bold не #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_WEEKLY_PROFIT_FIRST: "Щотижневий прибуток $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_WEEKLY_PROFIT_FIRST_NOT: "Щотижневий прибуток #bold не #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_WEEKLY_PROFIT_THIRD: "Щотижневий прибуток $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_WEEKLY_PROFIT_THIRD_NOT: "Щотижневий прибуток #bold не #!$COMPARATOR$ #variable $NUM$#!"
 
  TRIGGER_OCCUPANCY: "[concept_occupancy] робочої сили є $COMPARATOR$ #variable $NUM|%0v$#!"
  TRIGGER_OCCUPANCY_NOT:3 "The workforce [concept_occupancy] is #bold not #!$COMPARATOR$ #variable $NUM|%0v$#!"
