@@ -427,7 +427,7 @@
  CHANGE_TAG_FIRST: "[COUNTRY.GetNameNoFlag] стане державою $NEW_TAG|v$"
  CHANGE_TAG_THIRD: "[COUNTRY.GetNameNoFlag] стане державою $NEW_TAG|v$"
  
- ADD_DECLARED_INTEREST:1 "Add a [concept_declared_interest] in $REGION_NAME|v$"
+ ADD_DECLARED_INTEREST: "Додасть [Concept('concept_active_interest','$concept_active_interest_acc$')|l] у стр. реґіоні $REGION_NAME|v$"
  CHANGE_SUBJECT_TYPE:0 "[Country.GetName] becomes $SUBJECT_TYPE$ of [Country.GetOverlord.GetName]"
 
  PARTIES_EMERGENCE:0 "This will cause parties to emerge."
