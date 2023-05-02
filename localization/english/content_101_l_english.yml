@@ -545,7 +545,7 @@
  industrialists_cars_unrestricted: "Схвалює необмежений рух автомобілів."
  automobile_regulations: "Правила безпеки дорожнього руху"
 
- MULTIPLAYER_GUI_CLICK_TO_SELECT: "Нажміть на державу, щоб вибрати її."
+ MULTIPLAYER_GUI_CLICK_TO_SELECT: "Натисніть на державу, щоб вибрати її."
 
  notification_haiti_stops_paying_france_name: "Гаїті припиняє виплати"
  notification_haiti_stops_paying_france_desc: "Гаїті відмовилася від подальших виплат за кредитом Франції."

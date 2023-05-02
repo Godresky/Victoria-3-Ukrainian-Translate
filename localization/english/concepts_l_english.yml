@@ -91,6 +91,7 @@
  concept_protectorate: "Покровительство"
  concept_protectorate_gen: "Покровительства"
  concept_protectorate_acc: "Покровительство"
+ concept_protectorate_dat: "Покровительству"
  concept_protectorate_ins: "Покровительством"
  concept_protector: "Покровитель"
  concept_protector_ins: "Покровителем"
@@ -112,15 +113,18 @@
  concept_personal_union_desc_added: "[GetLawType('law_monarchy').GetName]"
 
  concept_dominion: "Домініон"
+ concept_dominion_gen: "Домініона"
  concept_dominion_ins: "Домініоном"
  concept_dominion_desc: "[Concept('concept_recognized_power','$concept_recognized_powers$')] можуть перетворити слабшу [Concept('concept_country','країну')] у свого домініона. Домініон - це більш самостійний тип [Concept('concept_subject','$concept_subject_gen$')|l], який може починати власні [Concept('concept_diplomatic_play','$concept_diplomatic_plays_acc$')|l] і не змушений приєднюватися до [Concept('concept_war','$concept_wars_gen$')|l] [Concept('concept_overlord','$concept_overlord_gen$')|l]. Проте він повинен щотижня платити #v 25%#! від своїх доходів зі [Concept('concept_treasury','$concept_treasury_gen$')|l] повелителю."
 
  concept_tributary: "Голдівник"
+ concept_tributary_gen: "Голдівника"
  concept_tributary_ins: "Голдівником"
  concept_tributary_desc: "[Concept('concept_unrecognized_power','$concept_unrecognized_powers$')] можуть перетворити слабшу [Concept('concept_country','країну')|l] у свого голдівника. Голдівник - це більш самостійний тип [Concept('concept_subject','$concept_subject_gen$')|l], який може починати власні [Concept('concept_diplomatic_play','$concept_diplomatic_plays_acc$')|l] і не змушений приєднюватися до [Concept('concept_war','$concept_wars_gen$')|l] [Concept('concept_overlord','$concept_overlord_gen$')|l]. Проте він повинен щотижня платити #v 20%#! від своїх доходів зі [Concept('concept_treasury','$concept_treasury_gen$')|l] повелителю."
 
  concept_vassal: "Слушник"
- concept_vassal_gen: "Слушник"
+ concept_vassal_gen: "Слушника"
+ concept_vassal_ins: "Слушником"
  concept_vassalize: "Слушникувати"
  concept_vassal_desc: "[Concept('concept_unrecognized_power','$concept_unrecognized_powers$')] можуть перетворити слабшу [Concept('concept_country','країну')] у свого слушника. Слушник - це тип [Concept('concept_subject','$concept_subject_gen$')|l], який не може починати власні [Concept('concept_diplomatic_play','$concept_diplomatic_plays_acc$')|l], але змушений приєднюватися до [Concept('concept_war','$concept_wars_gen$')|l] [Concept('concept_overlord','$concept_overlord_gen$')|l], та, також, мусить щотижня платити #v 30%#! від своїх доходів зі [Concept('concept_treasury','$concept_treasury_gen$')|l] повелителю."
  
@@ -1783,6 +1787,7 @@
  concept_wealth: "Добробут"
  concept_wealth_gen: "Добробуту"
  concept_wealth_acc: "Добробут"
+ concept_wealth_ins: "Добробутом"
  concept_wealthy: "Багатий"
  concept_wealth_desc:1 "A measure of a [Concept('concept_pop','$concept_pop_possessive$')] material assets. To sustain a certain level of $concept_wealth$ the $concept_pop$ has a set of [Concept('concept_pop_needs','$concept_pop_needs_short$')] it must satisfy each week. If their [Concept('concept_pop_income','$concept_pop_income_short$')] does not cover the cost of these $concept_pop_needs_short$, their $concept_wealth$ will eventually decrease. If they have [concept_money] left over after purchasing the necessary $concept_goods$, $concept_wealth$ will soon increase.\n\n$concept_wealth$ is the main factor contributing to a $concept_pop$'s [concept_sol], and under certain [Concept('concept_law','$concept_laws$')] it may affect other aspects of their life such as [concept_literacy] and [Concept('concept_votes','$concept_voting_rights$')]."
 

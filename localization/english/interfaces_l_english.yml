@@ -73,8 +73,8 @@
  CONFIRM_YES: "Так"
  CONFIRM_NO: "Ні"
 
- UNLOCK_TOPBAR: "Нажміть, щоб #bold відкріпити#!"
- LOCK_TOPBAR: "Нажміть, щоб #bold прикріпити#!"
+ UNLOCK_TOPBAR: "Натисніть, щоб #bold відкріпити#!"
+ LOCK_TOPBAR: "Натисніть, щоб #bold прикріпити#!"
 
  BASE_SCRIPT_VALUE_FORMAT: "$KEY$: $VALUE|+=0$"
  DECIMAL_SCRIPT_VALUE_FORMAT: "$KEY$: $VALUE|+=$"
@@ -2547,7 +2547,7 @@
 
  MAX_DECLARED_INTERESTS_TOOLTIP:0 "#header Maximum [Concept('concept_declared_interest','$concept_declared_interests$')] for [Country.GetName]#!\n$TOOLTIP_DELIMITER$\n[Country.GetMaxNumDeclaredInterestsBreakdown]"
 
- MAP_INTERACTION_ESC_TO_CANCEL: "#instruction Нажміть #bold ESC#!, щоб закрити поточну взаємодію з мапою#!"
+ MAP_INTERACTION_ESC_TO_CANCEL: "#instruction Натисніть #bold ESC#!, щоб закрити поточну взаємодію з мапою#!"
  MAP_INTERACTION_BUILD_BUILDING_DESC: "Виберіть #V землю#!, де ви збудуєте споруду #V [BUILDING_TYPE.GetName|l]#!"
  MAP_INTERACTION_BUILD_BUILDING_PERFORMED: "Будівництво споруди #V [BuildingType.GetName|l]#! почалося"
  MAP_INTERACTION_BUILDING_BUILT: "Будівля [Building.GetName|l] збудована у [Concept('concept_state', '$concept_state_loc$')|l] [Building.GetState.GetName]"
