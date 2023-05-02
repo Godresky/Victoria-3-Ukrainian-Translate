@@ -28,14 +28,14 @@
  modifier_radio_ig: "Гарна реклама через віщатель"
  modifier_radio_opium: "Схвалення опіюму"
 
- technology_events.30.t:0 "Weapons of War"
- technology_events.30.d:0 "An article has been published by the [ROOT.GetCountry.GetAdjectiveNoFormatting] [SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')] about some of the weapons which our country uses in the ongoing [SCOPE.sWar('ongoing_war').GetName] war."
- technology_events.30.f:1 "[SCOPE.GetRootScope.GetCountry.GetCustom('war_weapons_article')] Members of the public are calling for the use of such weapons to be restricted.\n\n"Such foul instruments of pain and torment have no place on earth.""
- technology_events.30.a:0 "Don't restrict them."
- technology_events.30.b:0 "Coverup their usage."
+ technology_events.30.t: "Зброя війни"
+ technology_events.30.d: "[ROOT.GetCountry.GetAdjectiveNoFormatting]а газета «[SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')]» опублікувала статтю про деяку зброю, яку наша держава використовує у тривалій війні [SCOPE.sWar('ongoing_war').GetName]."
+ technology_events.30.f: "[SCOPE.GetRootScope.GetCountry.GetCustom('war_weapons_article')] Представники громадськости закликають обмежити використання цієї зброї\n\n«Таким нечистим знадобам, що приносять біль та стражджання, не місце на землі.»"
+ technology_events.30.a: "Не обмежувати використання."
+ technology_events.30.b: "Приховати її використання."
 
- custom_weapon_article_machine_gun:0 "The article focuses on the machine gun, a terrifying weapon which tears through flesh and bone at an almost inhuman rate."
- custom_weapon_article_chemical_weapons:0 "The article focuses on the use of chlorine gas, a terrifying weapon."
+ custom_weapon_article_machine_gun: "Статті присвячена скорострілу - жахливій зброї, яка розриває плоть та кістки з майже нелюдською швидкістю."
+ custom_weapon_article_chemical_weapons: "Стаття присвячена використанню жахливої зброї, хлоридного газу."
 
  technology_events.40.t:0 "Photographs of [ROOT.GetCountry.GetName]"
  technology_events.40.d:0 "It has been suggested that we take and distribute some pictures of our country's most famous landmarks."
@@ -250,7 +250,7 @@
 
  modifier_mega_earthquake_relief:0 "Cataclysmic Earthquake Relief"
 
- natural_disaster_events.5.t: "Неврожай в [Concept('concept_state','$concept_state_loc$')|l] [SCOPE.sState('crop_fail_state').GetName]"
+ natural_disaster_events.5.t: "Неврожай у [Concept('concept_state','$concept_state_loc$')|l] [SCOPE.sState('crop_fail_state').GetName]"
  natural_disaster_events.5.d: "[Concept('concept_state','$concept_state_loc$')] [SCOPE.sState('crop_fail_state').GetName] був уражений хворобою. Посіви гинуть направо і наліво, тому цього року врожай напевно буде меншим, ніж очікувалося."
  natural_disaster_events.5.f: "«Кілька тижнів тому ми помітили, що деякі культури загинули, але ми нічого про це не думали. Ми завжди втрачаємо кілька. Ми не очікували саме цього.»"
  natural_disaster_events.5.a: "Це позначиться на врожаї."
@@ -280,9 +280,9 @@
  notification_first_flight_tooltip: "#header $notification_first_flight_name$#!\n$TOOLTIP_DELIMITER$\n$notification_first_flight_desc$"
 
  warlord_china_events.100.t: "Хіна руйнується"
- warlord_china_events.100.d:0 "The fall of the Qing dynasty has ended China's long standing period of imperial rule and ushered in a new age of warlordism."
- warlord_china_events.100.f:1 ""Empires, like dreams, are made of an intangible material, so fragile they can end at any given time, no previous warning. They hold, however, the same insane appeal. Even if the thread that holds together their seams is invisible, and every suture hides a wound.\n\nThousands of years of imperial rule, ended in just a moment.""
- warlord_china_events.100.a:0 "Oh no."
+ warlord_china_events.100.d: "Падіння династії Цін завершило тривалу часину імператорського правління в Хіні та відкрило нову добу полководщини."
+ warlord_china_events.100.f: "«Імперії, як мрії, виготовлені з неосяжного матеріялу, настільки крихкі, що можуть розвалитися в будь-який момент, без попередження. Однак вони мають таку ж шалену привабливість. Навіть якщо нитка, яка скріплює їхні шви, невидима, а за кожним швом ховається рана.\n\nТисячі років імперського правління закінчилися за одну мить.»"
+ warlord_china_events.100.a: "О ні."
 
  warlord_china_events.110.t:0 "Melon Smashing"
  warlord_china_events.110.d:0 "It is at risk of becoming public knowledge that [SCOPE.sCharacter('prisoner_killing_warlord').GetPrimaryRoleTitle] [SCOPE.sCharacter('prisoner_killing_warlord').GetFullName] entertains [SCOPE.sCharacter('prisoner_killing_warlord')GetHimselfHerself] by smashing in the skulls of prisoners with a sword."
@@ -545,7 +545,7 @@
  industrialists_cars_unrestricted: "Схвалює необмежений рух автомобілів."
  automobile_regulations: "Правила безпеки дорожнього руху"
 
- MULTIPLAYER_GUI_CLICK_TO_SELECT: "Нажміть на державу, щоб вибрати її."
+ MULTIPLAYER_GUI_CLICK_TO_SELECT: "Натисніть на державу, щоб вибрати її."
 
  notification_haiti_stops_paying_france_name: "Гаїті припиняє виплати"
  notification_haiti_stops_paying_france_desc: "Гаїті відмовилася від подальших виплат за кредитом Франції."

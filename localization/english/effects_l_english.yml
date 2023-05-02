@@ -9,10 +9,10 @@
  ADD_TREASURY_EFFECT_THIRD_POSITIVE: "[COUNTRY.GetName] отримає @money!$VALUE|+=$"
  ADD_TREASURY_EFFECT_THIRD_NEGATIVE: "[COUNTRY.GetName] втратить @money!$VALUE|+=$"
 
- SET_COUNTRY_ARMY_SP_TARGET: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! військові бали сили(@army_SP!) встановляться на #variable $VALUE$#!"
- SET_COUNTRY_NAVY_SP_TARGET: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! корабельські бали сили(@navy_SP!) встановляться на #variable $VALUE$#!"
- SET_RELATIONS: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! відносини до #variable [TARGET_COUNTRY.GetName]#! встановиться на #variable $VALUE|0$#!"
- SET_TENSION: "[Concept('concept_tension', '$concept_tensions$')|l] між [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] встановиться на #variable $VALUE|0$#!"
+ SET_COUNTRY_ARMY_SP_TARGET: "#variable [COUNTRY.GetAdjectiveNoFormatting]і#! військові бали сили(@army_SP!) встановляться на #variable $VALUE$#!"
+ SET_COUNTRY_NAVY_SP_TARGET: "#variable [COUNTRY.GetAdjectiveNoFormatting]і#! корабельські бали сили(@navy_SP!) встановляться на #variable $VALUE$#!"
+ SET_RELATIONS: "#variable [COUNTRY.GetAdjectiveNoFormatting]і#! відносини з державою #variable [TARGET_COUNTRY.GetName]#! стануть на #variable $VALUE|0$#!"
+ SET_TENSION: "[Concept('concept_tension', '$concept_tension$')] між [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] стане на #variable $VALUE|0$#!"
  SET_STRATEGY: "[COUNTRY.GetName] затверджує #variable [AIStrategy.GetName]#! стратегію"
  SET_DIPLOMATS_EXPELLED: "[COUNTRY.GetName] висилає дипломатів з [TARGET_COUNTRY.GetName], перешкоджаючи будь-якому поліпшенню відносин протягом #b 5 років#!"
  SET_SECRET_GOAL: "[COUNTRY.GetName] отримає #variable $SECRET_GOAL$#! таємну мету [TARGET_COUNTRY.GetName]"
@@ -55,8 +55,8 @@
  CHANGE_RELATIONS_THIRD: "#variable [COUNTRY.GetAdjectiveNoFormatting]і#! [concept_relations|l] з державою #variable [TARGET_COUNTRY.GetName]#! покращаться на $VALUE|0+$"
  CHANGE_RELATIONS_THIRD_NEG: "#variable [COUNTRY.GetAdjectiveNoFormatting]і#! [concept_relations|l] з державою #variable [TARGET_COUNTRY.GetName]#! погіршаться на $VALUE|0-$"
  
- CHANGE_TENSION: "[Concept('concept_tension', '$concept_tensions$')] між [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] збільшиться на #N $VALUE|0$#!"
- CHANGE_TENSION_NEG: "[Concept('concept_tension', '$concept_tensions$')] між [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] зменшиться на #P $VALUE|0$#!"
+ CHANGE_TENSION: "[Concept('concept_tension', '$concept_tension$')] між [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] збільшиться на #N $VALUE|0$#!"
+ CHANGE_TENSION_NEG: "[Concept('concept_tension', '$concept_tension$')] між [COUNTRY.GetName] та [TARGET_COUNTRY.GetName] зменшиться на #P $VALUE|0$#!"
  
  SET_OWES_OBLIGATION_TO: "Матиме [Concept('concept_obligation', '$concept_obligation_acc$')|l] перед державою [TARGET_COUNTRY.GetName]"
  SET_OWES_OBLIGATION_TO_NEG: "Більше не матиме [Concept('concept_obligation', '$concept_obligation_acc$')|l] перед державою [TARGET_COUNTRY.GetName]"
@@ -102,9 +102,9 @@
  ADD_PRIMARY_CULTURE: "[TARGET_CULTURE.GetName] тепер [Concept('concept_primary_cultures','$concept_primary_culture_acc$')|l] держави [COUNTRY.GetName]"
  ADD_PRIMARY_CULTURE_FIRST: "[TARGET_CULTURE.GetName] тепер [Concept('concept_primary_cultures','$concept_primary_culture_acc$')|l] держави [COUNTRY.GetNameNoFlag]"
  ADD_PRIMARY_CULTURE_THIRD: "[TARGET_CULTURE.GetName] тепер [Concept('concept_primary_cultures','$concept_primary_culture_acc$')|l] держави [COUNTRY.GetName]"
- REMOVE_PRIMARY_CULTURE:1 "[TARGET_CULTURE.GetName] stops being a [Concept('concept_primary_cultures','$concept_primary_culture$')] of [COUNTRY.GetName]"
- REMOVE_PRIMARY_CULTURE_FIRST:1 "[TARGET_CULTURE.GetName] stops being a [Concept('concept_primary_cultures','$concept_primary_culture$')] of [COUNTRY.GetNameNoFlag]"
- REMOVE_PRIMARY_CULTURE_THIRD:2 "[TARGET_CULTURE.GetName] stops being a [Concept('concept_primary_cultures','$concept_primary_culture$')] of [COUNTRY.GetName]"
+ REMOVE_PRIMARY_CULTURE: "[TARGET_CULTURE.GetName] перестане бути [Concept('concept_primary_cultures','$concept_primary_culture_ins$')|l] держави [COUNTRY.GetName]"
+ REMOVE_PRIMARY_CULTURE_FIRST: "[TARGET_CULTURE.GetName] перестане бути [Concept('concept_primary_cultures','$concept_primary_culture_ins$')|l] держави [COUNTRY.GetNameNoFlag]"
+ REMOVE_PRIMARY_CULTURE_THIRD: "[TARGET_CULTURE.GetName] перестане бути [Concept('concept_primary_cultures','$concept_primary_culture_ins$')|l] держави [COUNTRY.GetName]"
  
  SET_STATE_RELIGION:1 "[TARGET_RELIGION.GetName] becomes the state religion in [COUNTRY.GetName]"
  SET_STATE_RELIGION_FIRST:0 "[TARGET_RELIGION.GetName] becomes the [concept_state_religion] in [COUNTRY.GetNameNoFlag]"
@@ -146,16 +146,16 @@
  CHANGE_INFAMY_NEG: "[concept_infamy] впаде на #variable $VALUE$#!"
  CHANGE_INFAMY_FIRST: "[COUNTRY.GetAdjectiveNoFormatting]а [concept_infamy|l] зросте на #variable $VALUE$#!"
  CHANGE_INFAMY_FIRST_NEG: "[COUNTRY.GetAdjectiveNoFormatting]а [concept_infamy|l] впаде на #variable $VALUE$#!"
- CHANGE_INFAMY_THIRD: "[COUNTRY.GetAdjective]а [concept_infamy|l] зросте на #variable $VALUE$#!"
- CHANGE_INFAMY_THIRD_NEG: "[COUNTRY.GetAdjective]а [concept_infamy|l] впаде на #variable $VALUE$#!"
+ CHANGE_INFAMY_THIRD: "#yellow [COUNTRY.GetAdjective]а#! [concept_infamy|l] зросте на #variable $VALUE$#!"
+ CHANGE_INFAMY_THIRD_NEG: "#yellow [COUNTRY.GetAdjective]а#! [concept_infamy|l] впаде на #variable $VALUE$#!"
  
  CREATE_INCIDENT:0 "$DESC$"
  CREATE_INCIDENT_FIRST:0 "$DESC$"
  CREATE_INCIDENT_THIRD:0 "$DESC$"
  
- PLAY_AS:0 "Change player's actively controlled country from [COUNTRY.GetName] to [TARGET_COUNTRY.GetName]"
- PLAY_AS_FIRST:0 "Change player's actively controlled country from [COUNTRY.GetName] to [TARGET_COUNTRY.GetName]"
- PLAY_AS_THIRD:0 "Change player's actively controlled country from [COUNTRY.GetName] to [TARGET_COUNTRY.GetName]"
+ PLAY_AS: "Гравець пересяде з країни [COUNTRY.GetName] на державу [TARGET_COUNTRY.GetName]"
+ PLAY_AS_FIRST: "Гравець пересяде з країни [COUNTRY.GetName] на державу [TARGET_COUNTRY.GetName]"
+ PLAY_AS_THIRD: "Гравець пересяде з країни [COUNTRY.GetName] на державу [TARGET_COUNTRY.GetName]"
 
  REMOVE_INITIATOR_BACKERS:0 "[COUNTRY.GetName] leaves [TARGET_DIPLOMATIC_PLAY.GetName]"
  REMOVE_TARGET_BACKERS:0 "[COUNTRY.GetName] leaves [TARGET_DIPLOMATIC_PLAY.GetName]"
@@ -284,9 +284,9 @@
  ANNEX_EFFECT_FIRST: "[COUNTRY.GetNameNoFlag] анексує [Concept('concept_country','$concept_country_acc$')|l] [TARGET_COUNTRY.GetName]"
  ANNEX_EFFECT_THIRD: "[COUNTRY.GetName] анексує [Concept('concept_country','$concept_country_acc$')|l] [TARGET_COUNTRY.GetName]"
   
- ADD_JOURNAL_ENTRY: "Додасть запис «#variable $JOURNAL_ENTRY_NAME$#!» до часопису державі [COUNTRY.GetName|v]"
- ADD_JOURNAL_ENTRY_FIRST: "Додасть запис «#variable $JOURNAL_ENTRY_NAME$#!» до часопису державі [COUNTRY.GetNameNoFlag|v]"
- ADD_JOURNAL_ENTRY_THIRD: "Додасть запис «#variable $JOURNAL_ENTRY_NAME$#!» до часопису державі [COUNTRY.GetName|v]"
+ ADD_JOURNAL_ENTRY: "Додасть запис «#variable $JOURNAL_ENTRY_NAME$#!» до часопису держави [COUNTRY.GetName|v]"
+ ADD_JOURNAL_ENTRY_FIRST: "Додасть запис «#variable $JOURNAL_ENTRY_NAME$#!» до часопису держави [COUNTRY.GetNameNoFlag|v]"
+ ADD_JOURNAL_ENTRY_THIRD: "Додасть запис «#variable $JOURNAL_ENTRY_NAME$#!» до часопису держави [COUNTRY.GetName|v]"
  START_TUTORIAL_LESSON:0 "Starts the #variable $TUTORIAL_NAME$#! tutorial"
   
  ADD_RULING_INTEREST_GROUP:0 "[INTEREST_GROUP.GetName] becomes part of the government"
@@ -427,7 +427,7 @@
  CHANGE_TAG_FIRST: "[COUNTRY.GetNameNoFlag] стане державою $NEW_TAG|v$"
  CHANGE_TAG_THIRD: "[COUNTRY.GetNameNoFlag] стане державою $NEW_TAG|v$"
  
- ADD_DECLARED_INTEREST:1 "Add a [concept_declared_interest] in $REGION_NAME|v$"
+ ADD_DECLARED_INTEREST: "Додасть [Concept('concept_active_interest','$concept_active_interest_acc$')|l] у стр. реґіоні $REGION_NAME|v$"
  CHANGE_SUBJECT_TYPE:0 "[Country.GetName] becomes $SUBJECT_TYPE$ of [Country.GetOverlord.GetName]"
 
  PARTIES_EMERGENCE:0 "This will cause parties to emerge."
