@@ -320,7 +320,9 @@
  concept_mobilize_battalion_mobilized: "Зібрані"
  concept_mobilize_battalion_mobilized_adj: "Зібран"
  concept_mobilize_battalions_mobilized: "Зібрані курені"
+ concept_mobilize_battalions_mobilized_gen: "Зібраних куренів"
  concept_mobilize_battalion_mobilization: "Збір"
+ concept_mobilize_battalion_mobilization_gen: "Збору"
  concept_mobilize_battalion_desc: "[Concept('concept_battalion', '$concept_battalions$')], які призначені до [Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized_adj$ого')|l] [Concept('concept_general', '$concept_general_gen$')|l] негайно почнуть збір зі швидкістю, яка залежить від [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l] [Concept('concept_state', '$concept_state_gen$')|l]. Зібрані та ті, що у процесі збору, [Concept('concept_battalion', '$concept_battalions$')|l] споживають більше [Concept('concept_military_good','$concept_military_goods_gen$')|l], але повністю готові йти у [Concept('concept_battle','$concept_battle_acc$')|l] за їхнім [Concept('concept_general','$concept_general_ins$')|l]."
 
  concept_fully_mobilized_battalions: "Повністю зібрані курені"
@@ -1111,6 +1113,7 @@
  concept_diplomatic_pact_gen: "Дипломатичного пакту"
  concept_diplomatic_pact_acc: "Дипломатичний пакт"
  concept_diplomatic_pacts: "Дипломатичні пакти"
+ concept_diplomatic_pacts_gen: "Дипломатичних пактів"
  concept_diplomatic_pacts_acc: "Дипломатичні пакти"
  concept_diplomatic_pact_short: "Пакт"
  concept_diplomatic_pact_short_gen: "Пакту"
