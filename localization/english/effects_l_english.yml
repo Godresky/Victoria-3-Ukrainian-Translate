@@ -88,8 +88,8 @@
  CLEAR_DEBT_NEG:1 "#variable [COUNTRY.GetAdjectiveNoFormatting]#! financial debts are NOT cleared"
  CLEAR_SCALED_DEBT:1 "#variable [COUNTRY.GetAdjectiveNoFormatting]#! financial debts are cleared by a factor of #variable $VALUE$#! of GDP"
 
- SEIZE_INVESTMENT_POOL:1 "Seize all funds in the [concept_investment_pool] for the [concept_treasury] and convert any [Concept('concept_private_construction', '$concept_private_constructions$')] into [Concept('concept_government_construction', '$concept_government_constructions$')]"
- SEIZE_INVESTMENT_POOL_FIRST:0 "$SEIZE_INVESTMENT_POOL$"
+ SEIZE_INVESTMENT_POOL: "Вилучить усі кошти з [Concept('concept_investment_pool', '$concept_investment_pool_gen$')|l] до [Concept('concept_treasury', '$concept_treasury_gen$')|l] та перетворить будь-які [Concept('concept_private_construction', '$concept_private_constructions_acc$')|l] у [Concept('concept_government_construction', '$concept_government_constructions_adj$і')|l]"
+ SEIZE_INVESTMENT_POOL_FIRST: "$SEIZE_INVESTMENT_POOL$"
  SEIZE_INVESTMENT_POOL_THIRD:1 "[Country.GetName] seizes all funds in the [concept_investment_pool] for the [concept_treasury] and converts any [Concept('concept_private_construction', '$concept_private_constructions$')] into [Concept('concept_government_construction', '$concept_government_constructions$')]"
  
  TAKE_ON_SCALED_DEBT: "Візьме на себе #yellow [TARGET_COUNTRY.GetAdjective|l]ий#! [Concept('concept_credit','$concept_credit_debt_acc$')|l] на суму @money!#variable $VALUE|vD$#!"

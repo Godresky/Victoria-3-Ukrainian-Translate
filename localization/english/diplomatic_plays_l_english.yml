@@ -55,7 +55,7 @@
  DIPLO_PLAY_JOIN_WRONG_PHASE: "#N Єдиний спосіб стати на чийсь бік або перетягнути іншу державу у [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l], є лише під час стадії «#variable $DIPLO_PLAY_MIDDLE_PHASE$#!»#!"
  DIPLO_PLAY_SWAY_WRONG_PHASE:0 "#N It is only possible to sway undecided participants in a [concept_diplomatic_play] during the #variable $DIPLO_PLAY_MIDDLE_PHASE$#! phase#!"
  DIPLO_PLAY_OVERLORD_JOIN_WRONG_PHASE:0 "#N The suzerain of one of the primary participants in a [concept_diplomatic_play] can only take sides during the #variable $DIPLO_PLAY_OPENING_PHASE$#! phase#!"
- DIPLO_PLAY_YIELD_WRONG_PHASE:0 "#N It is not possible to back down in a [concept_diplomatic_play] during the #variable $DIPLO_PLAY_OPENING_PHASE$#! phase#!"
+ DIPLO_PLAY_YIELD_WRONG_PHASE: "#N Неможливо відступити у [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l] під час стадії «#variable $DIPLO_PLAY_OPENING_PHASE$#!»#!"
  DIPLO_PLAY_ADD_WARGOAL_WRONG_PHASE: "#N Неможливо додати додаткові [Concept('concept_war_goal','$concept_war_goals_acc$')|l] у [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l] під час стадії «#variable $DIPLO_PLAY_CLOSING_PHASE$#!»#!"
  DIPLO_PLAY_BACKER_PROMISED_INITIATOR_OBLIGATION:1 "[Country.GetName] has been promised an [concept_obligation] to support the initiator side in this [concept_diplomatic_play]"
  DIPLO_PLAY_BACKER_PROMISED_TARGET_OBLIGATION:1 "[Country.GetName] has been promised an [concept_obligation] to support the target side in this [concept_diplomatic_play]"

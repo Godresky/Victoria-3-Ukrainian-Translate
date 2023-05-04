@@ -147,7 +147,7 @@
  concept_trade_routes_dat: "Торговим торам"
  concept_trade_routes_acc: "Торгові тори"
  concept_trade_routes_ins: "Торговими торами"
- concept_trade_route_desc:0 "[Concept('concept_trade_routes', '$concept_trade_routes$')] купують [Concept('concept_good', '$concept_goods_acc$')] на одному [Concept('concept_market', '$concept_market_loc$')], transport it to another using [concept_convoys] (or overland, if the $concept_markets$ are adjacent), and $concept_sell_order_short$ the $concept_goods$ there in order to make [concept_revenue] (from which [concept_tariffs] are subtracted) for the [SelectLocalization(GetPlayer.IsValid,'concept_trade_route_desc_added','Trade Center')] managing it. In the process it creates [Concept('concept_buy_orders','$concept_buy_order_short$')] and [concept_sell_orders] on the two $concept_markets$, making it more expensive in one and less in the other. The volume of $concept_goods$ moved will independently scale up and down to meet the $concept_market$ conditions in both, employing more or less [concept_workforce] to match. Each $concept_trade_route$ costs a fixed amount of [concept_bureaucracy] to maintain."
+ concept_trade_route_desc:0 "[Concept('concept_trade_route', '$concept_trade_routes$')] купують [Concept('concept_good', '$concept_goods_acc$')] на одному [Concept('concept_market', '$concept_market_loc$')], transport it to another using [concept_convoys] (or overland, if the $concept_markets$ are adjacent), and $concept_sell_order_short$ the $concept_goods$ there in order to make [concept_revenue] (from which [concept_tariffs] are subtracted) for the [SelectLocalization(GetPlayer.IsValid,'concept_trade_route_desc_added','Trade Center')] managing it. In the process it creates [Concept('concept_buy_orders','$concept_buy_order_short$')] and [concept_sell_orders] on the two $concept_markets$, making it more expensive in one and less in the other. The volume of $concept_goods$ moved will independently scale up and down to meet the $concept_market$ conditions in both, employing more or less [concept_workforce] to match. Each $concept_trade_route$ costs a fixed amount of [concept_bureaucracy] to maintain."
  concept_trade_route_desc_added:0 "[GetBuildingType('building_trade_center').GetName]"
 
  concept_trade_revenue: "Виручка від торгівлі"
@@ -156,15 +156,16 @@
  concept_trade_revenue_desc:2 "A [concept_trade_route] generates revenue for the [SelectLocalization(GetPlayer.IsValid,'concept_trade_revenue_desc_added','Trade Center')]  managing it, depending on the [concept_market_price] difference and the volume traded. [concept_tariffs] reduce the $concept_trade_revenue$ generated, effectively decreasing the maximum volume a [concept_trade_route] can move before it becomes unprofitable and stagnates."
  concept_trade_revenue_desc_added:0 "[GetBuildingType('building_trade_center').GetName]"
 
- concept_land_trade_capacity: "Спроможність торгівлі землею"
- concept_land_trade_capacity_desc:0 "$concept_land_trade_capacity$ allows a [concept_trade_route] to land-adjacent market to trade a certain number of [Concept('concept_good', '$concept_goods$')] without using [concept_convoys]. If the [concept_trade_route] grows to trade more [Concept('concept_good', '$concept_goods$')] than what can be covered by your $concept_land_trade_capacity$, it will start to require [concept_convoys] for all [Concept('concept_good', '$concept_goods$')] in excess of this value."
+ concept_land_trade_capacity: "Спроможність наземної торгівлі"
+ concept_land_trade_capacity_acc: "Спроможність наземної торгівлі"
+ concept_land_trade_capacity_desc:0 "$concept_land_trade_capacity$ дозволяє [Concept('concept_trade_route', '$concept_trade_route_dat$')|l] to land-adjacent market to trade a certain number of [Concept('concept_good', '$concept_goods$')] without using [concept_convoys]. If the [concept_trade_route] grows to trade more [Concept('concept_good', '$concept_goods$')] than what can be covered by your $concept_land_trade_capacity$, it will start to require [concept_convoys] for all [Concept('concept_good', '$concept_goods$')] in excess of this value."
  
  concept_trade_agreement: "Торгова угода"
  concept_trade_agreement_gen: "Торгової угоди"
  concept_trade_agreement_acc: "Торгову угоду"
- concept_trade_agreement_desc:2 "A type of [concept_diplomatic_pact] between two [Concept('concept_country', '$concept_countries$')] that eliminates [concept_tariffs] and [concept_bureaucracy] cost of [Concept('concept_trade_route','$concept_trade_routes$')] between them."
+ concept_trade_agreement_desc: "[concept_diplomatic_pact] між двома [Concept('concept_country', '$concept_countries_ins$')|l], що прибирає [Concept('concept_tariffs', '$concept_tariffs_acc$')|l] та витрати [Concept('concept_bureaucracy', '$concept_bureaucracy_gen$')|l] на [Concept('concept_trade_route','$concept_trade_routes_acc$')] між ними."
 
- concept_trade_route_competitiveness: "Конкурентоспроможність торговельних торів"
+ concept_trade_route_competitiveness: "Конкурентоспроможність торгових торів"
  concept_trade_route_competitiveness_short: "Конкурентоспроможність"
  concept_trade_route_competitiveness_desc:1 "If a [Concept('concept_market','$concept_market_possessive$')] pool of [Concept('concept_good','$concept_goods$')] available for [Concept('concept_trade_route','$concept_trade$')] is depleted due to too many $concept_trade$ partners, the $concept_trade_route_competitiveness_short$ of each competing $concept_trade_route$ determines how large a share they get access to. A $concept_trade_route$'s $concept_trade_route_competitiveness_short$ increases over time."
 
@@ -534,6 +535,7 @@
  concept_laws_gen: "Законів"
  concept_laws_acc: "Закони"
  concept_laws_dat: "Законам"
+ concept_laws_ins: "Законами"
  concept_law_desc: "$concept_laws$ встановлють основні правила функціонування та управління вашої [Concept('concept_country','$concept_country_gen$')|l]. Певні закони роблять доступними [Concept('concept_institution', '$concept_institutions_acc$')|l], які здійснюватимуть подальший контроль. Для того, щоб закон міг бути [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted_adj$им')|l], його повинна [Concept('concept_endorse_oppose','підтримати')|l] принаймні одна [Concept('concept_interest_group', '$concept_interest_group$')|l] [concept_in_government|l] або сучасний [Concept('concept_political_movement', '$concept_political_movement$')|l]."
 
  concept_money: "Гроші"
@@ -670,6 +672,7 @@
  concept_government_constructions_alt: "Державні будівництва"
  concept_government_constructions_alt_gen: "Державних будівництв"
  concept_government_constructions_alt_acc: "Державні будівництва"
+ concept_government_constructions_adj: "Державн"
  concept_government_construction_desc: "Державна споруда - це [concept_building|l], яка розширюється за прямими вказівками [Concept('concept_government','$concept_government_gen$')|l] [Concept('concept_country','$concept_country_gen$')|l]. Вона може отримувати кошти безпосередньо з державної скарбівниці й може бути скасована або змінена у пріоритетах [Concept('concept_construction_queue', '$concept_construction_queue_gen$')|l]."
  
  concept_private_construction: "Приватна споруда"
@@ -685,6 +688,7 @@
  concept_private_constructions_alt_gen: "Приватних будівництв"
  concept_private_constructions_alt_acc: "Приватне будівництво"
  concept_private_constructions_alt_loc: "Приватне будівництво"
+ concept_private_constructions_adj: "Приватн"
  concept_private_construction_desc: "Приватна споруда - це [concept_building|l], яка розширюється на замовлення приватників. Вона завжди фінансується з [Concept('concept_investment_pool','$concept_investment_pool_gen$')|l] й не може бути скасована або змінена у пріоритетах [Concept('concept_construction_queue', '$concept_construction_queue_gen$')|l]."
 
  concept_under_construction: "Споруджування"
@@ -1041,7 +1045,7 @@
  concept_colony_acc: "Осаду"
  concept_colonies: "Осади"
  concept_colonies_acc: "Осади"
- concept_colonize:0 "Colonize"
+ concept_colonize: "Осадити"
  concept_colonial: "Осадницьк"
  concept_colonized: "Осаджен"
  concept_colonizes:1 "Colonizes"
@@ -1065,6 +1069,7 @@
 
  concept_infamy: "Ганебність"
  concept_infamy_gen: "Ганебности"
+ concept_infamy_acc: "Ганебність"
  concept_infamy_desc:1 "$concept_infamy$ reflects the degree by which the international community, particularly the reigning [Concept('concept_great_power','$concept_great_powers$')], see you as a threat to be contained in light of your past actions. It is accrued primarily from causing [Concept('concept_diplomatic_incident','$concept_diplomatic_incidents$')] and claiming [Concept('concept_war_goal','$concept_war_goals$')] in a [concept_peace_deal]. Your $concept_infamy$ affects $concept_countries$' [concept_attitude] towards you and increases the [concept_influence] cost of [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]. If it reaches the level of #b $infamy_pariah$#!, $concept_great_powers$ will be able to start the [GetDiplomaticPlayType('dp_contain_threat').GetName] [concept_diplomatic_play] against you."
 
  concept_diplomatic_incident: "Дипломатичний інцидент"
@@ -1507,12 +1512,13 @@
  concept_interests: "Рупи"
  concept_interests_acc: "Рупи"
  concept_interests_gen: "Рупів"
- concept_interest_desc:2 "A [concept_country] maintaining an $concept_interest$ in a [concept_strategic_region] signals to the rest of the world that they might get involved in [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] taking place there. Having an [concept_active_interest] in a $concept_strategic_region$ is a requirement for many [Concept('concept_diplomatic_action','$concept_diplomatic_actions$')], and you cannot [Concept('concept_colony', '$concept_colonize$')] [Concept('concept_state_region','$concept_state_regions$')] where you do not maintain an [concept_active_interest].\n\nYou automatically gain $concept_interests$ in all $concept_strategic_regions$ where you own at least one non-colonial [concept_state]. Your ability to [Concept('concept_declared_interest','$concept_declared_interest_declare$')] more depends on your [concept_rank]."
+ concept_interest_desc: "[concept_country], підтримуючи руп у [Concept('concept_strategic_region', '$concept_strategic_region_loc$')|l], дає знати решті світу, що вона може бути втягнута у місцеві [Concept('concept_diplomatic_play', '$concept_diplomatic_plays_acc$')|l]. Багато [Concept('concept_diplomatic_action','$concept_diplomatic_actions_gen$')|l] потребують [Concept('concept_active_interest','$concept_active_interest_acc$')|l] у стратегічному реґіоні, також ви не зможете [Concept('concept_colony', '$concept_colonize$')|l] [Concept('concept_state_region','$concept_state_regions_acc$')|l], де ви не підтримуєте [Concept('concept_active_interest','$concept_active_interest_acc$')|l].\n\nВи одразу отримуєте рупи у всіх стратегічних реґіонах, де ви володієте принаймні одною неосадною [Concept('concept_state', '$concept_state_ins$')|l]. Ваша здатність [Concept('concept_declared_interest','проявляти')] більше залежить від вашого [Concept('concept_rank', '$concept_rank_gen$')|l]."
 
  concept_inactive_interest: "Неактивний руп"
  concept_inactive_interest_ins: "Неактивним рупом"
  concept_inactive_interest_short: "Неактивний"
- concept_inactive_interest_desc:1 "When a new [concept_interest] is first [Concept('concept_declared_interest','$concept_declared_interest_declared$')], it remains $concept_inactive_interest_short$ for a period of #v [GetDefine('NDiplomacy','INTEREST_NUM_DAYS_CHANGE')|0] days#! before it becomes [Concept('concept_active_interest','$concept_active_interest_short$')]."
+ concept_inactive_interest_short_adj: "Неактивн"
+ concept_inactive_interest_desc: "Коли новий [concept_interest|l] вперше [Concept('concept_declared_interest','$concept_declared_interest_declared_adj$ий')|l], залишається неактивним протягом #v [GetDefine('NDiplomacy','INTEREST_NUM_DAYS_CHANGE')|0] дн.#! до того, як він стане [Concept('concept_active_interest','$concept_active_interest_short_adj$им')|l]."
 
  concept_active_interest: "Активний руп"
  concept_active_interest_gen: "Активного рупу"
@@ -1520,14 +1526,18 @@
  concept_active_interest_ins: "Активним рупом"
  concept_active_interests: "Активні рупи"
  concept_active_interest_short: "Активний"
- concept_active_interest_desc:1 "A fully functional [concept_interest]. $concept_interests$ you gain from own at least one non-colonial [concept_state] in the [concept_state_region] are always considered $concept_active_interest_short$, while [Concept('concept_declared_interest','$concept_declared_interests$')] are [Concept('concept_inactive_interest','$concept_inactive_interest_short$')] when first $concept_declared_interest_declared$."
+ concept_active_interest_short_adj: "Активн"
+ concept_active_interest_desc: "Повністю у робочий [Concept('concept_interest', '$concept_interest_acc$')|l]. $concept_interests$ ви отримуєте від володіння принаймні однією неосадною [Concept('concept_state', '$concept_state_ins$')|l] у [Concept('concept_strategic_region', '$concept_strategic_region_loc$')|l] завжди є активними, доки [Concept('concept_declared_interest','$concept_declared_interests$')|l] є [Concept('concept_inactive_interest','$concept_inactive_interest_short_adj$им')|l], коли вперше проявлений."
   
  concept_declared_interest: "Проявлений руп"
+ concept_declared_interest_gen: "Проявленого рупу"
+ concept_declared_interest_acc: "Проявлений руп"
  concept_declared_interests: "Проявлені рупи"
  concept_declared_interests_gen: "Проявлених рупів"
  concept_declare_interests: "Проявити руп"
  concept_declared_interest_declare: "Проявити"
  concept_declared_interest_declared: "Проявлений"
+ concept_declared_interest_declared_adj: "Проявлен"
  concept_declared_interest_desc:2 "If you do not own at least one non-colonial [concept_state] in a [concept_state_region], but wish to maintain an [concept_interest] there anyway, you may choose to $concept_declared_interest_declare$ an $concept_interest$ there. The number of $concept_interests$ you can $concept_declared_interest_declare$ in such $concept_state_regions$ depends on your [concept_rank].[AddLocalizationIf(GetPlayer.IsValid, 'concept_declared_interest_ingame_added')]"
  concept_declared_interest_ingame_added:1 "\n\nYour current number of $concept_declared_interests$ is [GetPlayer.GetNumDeclaredInterests]. Due to your $concept_rank$ of [GetPlayer.GetRank], the most you can $concept_declared_interest_declare$ is #tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#!"
 
@@ -1586,7 +1596,7 @@
  concept_market_adj: "Ринков"
 
  concept_market_possessive:1 "Market\\'s"
- concept_market_desc:2 "All [Concept('concept_state', '$concept_states$')] in the same $concept_market$ will trade [Concept('concept_good', '$concept_goods$')] with each other, unless they are [Concept('concept_isolated_state','$concept_isolated_state_short$')]. How well connected these $concept_states$ are with each other is measured by their [concept_market_access]. $concept_markets$ may also trade with each other through [Concept('concept_trade_route','$concept_trade_routes$')].\n\nEach [concept_country] either controls its own $concept_market$ or participates in one other via a [concept_customs_union] or [concept_subject] relationship. "
+ concept_market_desc: "Усі [Concept('concept_state', '$concept_states$')|l] у тому ж ринку торгуватимуть [Concept('concept_good', '$concept_goods_ins$')|l] один з одним, якщо тільки вони не [Concept('concept_isolated_state','$concept_isolated_state_short_adj$і')|l]. [concept_market_access] вимірює, наскільки добре ці землі зв’язані один з одним. $concept_markets$ також можуть торгувати один з одним через [Concept('concept_trade_route','$concept_trade_routes_acc$')|l].\n\nКожна [concept_country|l] або контролює свій власний ринок, або є учасником через [Concept('concept_customs_union','$concept_customs_union_acc$')|l] чи [Concept('concept_subject','$concept_subject_adj$ий')|l] стан. "
 
  concept_market_access: "Доступ до ринку"
  concept_market_access_gen: "Доступу до ринку"

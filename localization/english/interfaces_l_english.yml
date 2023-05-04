@@ -2545,7 +2545,7 @@
 
  TRADE_ROUTE_CONVOYS_DESC: "Кількість доступних @convoys! [Concept('concept_convoys','$concept_convoys_gen$')|l]: #tooltippable #tooltip:[GetPlayer.GetTooltipTag],NUM_CONVOYS_TOOLTIP_EXTENDED [GetPlayer.GetNumAvailableConvoys]#!#!"
 
- MAX_DECLARED_INTERESTS_TOOLTIP:0 "#header Maximum [Concept('concept_declared_interest','$concept_declared_interests$')] for [Country.GetName]#!\n$TOOLTIP_DELIMITER$\n[Country.GetMaxNumDeclaredInterestsBreakdown]"
+ MAX_DECLARED_INTERESTS_TOOLTIP: "#header Максимум [Concept('concept_declared_interest','$concept_declared_interests_gen$')|l] для [Concept('concept_country', '$concept_country_gen$')|l] [Country.GetName]#!\n$TOOLTIP_DELIMITER$\n[Country.GetMaxNumDeclaredInterestsBreakdown]"
 
  MAP_INTERACTION_ESC_TO_CANCEL: "#instruction Натисніть #bold ESC#!, щоб закрити поточну взаємодію з мапою#!"
  MAP_INTERACTION_BUILD_BUILDING_DESC: "Виберіть #V землю#!, де ви збудуєте споруду #V [BUILDING_TYPE.GetName|l]#!"
@@ -3533,8 +3533,8 @@
  TRADE_ROUTE_DESIRED_QUANTITY_IMPORT:1 "Desired Imports for level #v $LEVELS$#! [concept_trade_route]: #v #tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|0$#!#!#!"
  TRADE_ROUTE_DESIRED_QUANTITY_EXPORT:1 "Desired Exports for level #v $LEVELS$#! [concept_trade_route]: #v #tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|0$#!#!#!"
  TRADE_ROUTE_DESIRED_QUANTITY_BREAKDOWN:0 "#v #tooltippable #tooltip:$BREAKDOWN_TAG$ $PER_LEVEL$#!#!#! x #v $LEVELS$#! [concept_trade_route] level(s)"
- TRADE_ROUTE_COMPETITIVENESS:0 "Trade Route Competitiveness: #v #tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|0$#!#!#!"
- TRADE_ROUTE_COMPETITIVENESS_ZERO:0 "Trade Route Competitiveness: #v #tooltippable #tooltip:$BREAKDOWN_TAG$ #r $VAL|0$#!#!#!#!"
+ TRADE_ROUTE_COMPETITIVENESS: "Конкурентоспроможність торгових торів: #v #tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|0$#!#!#!"
+ TRADE_ROUTE_COMPETITIVENESS_ZERO: "Конкурентоспроможність торгових торів: #v #tooltippable #tooltip:$BREAKDOWN_TAG$ #r $VAL|0$#!#!#!#!"
  TRADE_ROUTE_GOODS_EXPORT_HEADER:1 "Export Breakdown of [Goods.GetTextIcon][Nbsp][Goods.GetName] from [MARKET.GetName]:"
  TRADE_ROUTE_TOTAL_DESIRED_EXPORTS:1 "Current Desired Exports: #v #tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|0$#!#!#!"
  TRADE_ROUTE_TOTAL_AVAILABLE_EXPORTS:0 "Potential Exports: #v #tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|0$#!#!#!"
@@ -4708,10 +4708,10 @@
  IM_COUNTRY_RANK_TOO_LOW:0 "#N Country rank needs to be at least $RANK$ to do this#!"
 
  INTERESTS:0 "[Concept('concept_interest', '$concept_interests$')]"
- DECLARE_INTEREST_ALREADY_HAS_INTEREST:0 "[Country.GetName] already has an [concept_interest] in [StrategicRegion.GetName]"
- DECLARE_INTEREST_TOO_MANY_DECLARED_INTERESTS:1 "[Country.GetName] cannot declare any more [Concept('concept_interest', '$concept_interests$')]"
- DECLARE_INTEREST_ADD_TOOLTIP: "#header [concept_declared_interest] у [Concept('concept_strategic_region', '$concept_strategic_region_loc$')|l] [StrategicRegion.GetName]#!\n$TOOLTIP_DELIMITER$\nAdd a [concept_declared_interest] у [Concept('concept_strategic_region', '$concept_strategic_region_loc$')|l] [StrategicRegion.GetName]\nWe are currently using [GetPlayer.GetNumDeclaredInterests|v] of our #tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#! [Concept('concept_declared_interest','$concept_declared_interests$')]"
- DECLARE_INTEREST_REMOVE_TOOLTIP:1 "#header [concept_declared_interest] in [StrategicRegion.GetName]#!\n$TOOLTIP_DELIMITER$\nRemove our [concept_declared_interest] in [StrategicRegion.GetName]\nWe are currently using [GetPlayer.GetNumDeclaredInterests|v] of our #tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#! [Concept('concept_declared_interest','$concept_declared_interests$')]"
+ DECLARE_INTEREST_ALREADY_HAS_INTEREST:0 "[Country.GetName] вже має [Concept('concept_interest', '$concept_interest_acc$')|l] у [Concept('concept_strategic_region', '$concept_strategic_region_short_loc$')|l] [StrategicRegion.GetName]"
+ DECLARE_INTEREST_TOO_MANY_DECLARED_INTERESTS: "[Country.GetName] не може прокласти більше [Concept('concept_interest', '$concept_interests_gen$')|l]"
+ DECLARE_INTEREST_ADD_TOOLTIP: "#header [concept_declared_interest] у [Concept('concept_strategic_region', '$concept_strategic_region_loc$')|l] [StrategicRegion.GetName]#!\n$TOOLTIP_DELIMITER$\nДодати [Concept('concept_declared_interest', '$concept_declared_interest_acc$')|l] у [Concept('concept_strategic_region', '$concept_strategic_region_loc$')|l] [StrategicRegion.GetName]\nМи наразі використали [GetPlayer.GetNumDeclaredInterests|v] з #tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#! можливих [Concept('concept_declared_interest','$concept_declared_interests_gen$')|l]"
+ DECLARE_INTEREST_REMOVE_TOOLTIP: "#header [concept_declared_interest] у [Concept('concept_strategic_region', '$concept_strategic_region_loc$')|l] [StrategicRegion.GetName]#!\n$TOOLTIP_DELIMITER$\nПрибрати наш [Concept('concept_declared_interest', '$concept_declared_interest_acc$')|l] у [Concept('concept_strategic_region', '$concept_strategic_region_loc$')|l] [StrategicRegion.GetName]\nМи наразі використали [GetPlayer.GetNumDeclaredInterests|v] з #tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#! можливих [Concept('concept_declared_interest','$concept_declared_interests_gen$')|l]"
  DECLARE_INTEREST_NOT_COASTAL_NOT_ADJACENT:1 "[StrategicRegion.GetName] is neither coastal nor adjacent to any of our natural [Concept('concept_interest', '$concept_interests$')]"
  DECLARE_INTEREST_COASTAL_BUT_NO_COAST:1 "[StrategicRegion.GetName] not adjacent to any of our natural [Concept('concept_interest', '$concept_interests$')] and we do not have a coast"
 
@@ -5417,7 +5417,7 @@
  INVESTMENT_WEEKLY_COST_CHANGE: "Зміна щотижневих витрат: #variable @bur! $COSTCHANGE|1=$#!"
  LAW_DOES_NOT_SUPPORT_INVESTMENT: "Цей закон не має [Concept('concept_investment_level', '$concept_investment_levels_acc$')|l]"
 
- ON_ENACT:0 "#title When enacted:#!"
+ ON_ENACT: "#title Коли буде ухваленим:#!"
  ON_REVOKE:0 "#title When revoked:#!"
  ON_REVOKE_ACTIVE:0 "#title When the currently active $LAW$ is revoked#!"
  THIS_IS_DUE_TO:0 "#title The total effect of this Law is due to:#!"
@@ -5428,8 +5428,8 @@
  LAW_EFFECT_FOR_CURRENT_INVESTMENT_LEVEL:0 "#bold You are currently getting the following for [concept_investment_level] #variable $LEVEL$#!:#!"
  LAW_EFFECT_FOR_TARGET_INVESTMENT_LEVEL:0 "#bold You would get the following for [concept_investment_level] #variable $LEVEL$#!:#!"
  LAW_ALLOWED_BUILDING_GROUPS_FROM_INVESTMENT_POOL:0 "Funds in the [concept_investment_pool] can be used to build "
- CULTURE_ACCEPT_RULE_CHANGE:0 "Culture(s) will be accepted based on:\n"
- RELIGION_ACCEPT_RULE_CHANGE:0 "Religion(s) will be accepted based on:\n"
+ CULTURE_ACCEPT_RULE_CHANGE: "Культура(-и) будуть прийняті на основі:\n"
+ RELIGION_ACCEPT_RULE_CHANGE: "Релігія(-ї) будуть прийняті на основі:\n"
 
  MARKET_TITLE: "#title Ринок#!"
  UNITS_PRODUCED_TITLE: "#title Вироблено одиниць#!"
@@ -5886,7 +5886,7 @@
  SUBSIDIZED_NO: "$SUBSIDIZED_NO_HEADER$\n\n[SelectLocalization(IsValid( Building.ToggleSubsidies ), 'SUBSIDIZE_POSSIBLE', GetDesc(Building.ToggleSubsidies))]"
  SUBSIDIZED_NO_HEADER: "#header Не [Concept('concept_subsidies', '$concept_subsidized$')|l]#!\n$TOOLTIP_DELIMITER$\nЦя будівля не [Concept('concept_subsidies', '$concept_subsidized$')|l]"
  SUBSIDIZE_POSSIBLE: "#instruction Клацніть, щоб надати субсидію#!"
- NOT_PERMITTED_TO_SUBSIDIZE_BUILDING_GROUP:0 "Subsidizing this building is not permitted in our country. This is usually determined by economic [Concept('concept_law', '$concept_laws$')]."
+ NOT_PERMITTED_TO_SUBSIDIZE_BUILDING_GROUP: "Надати субсидію цій будівлі не дозволено в нашій державі. Зазвичай, це визначається економічними [Concept('concept_law', '$concept_laws_ins$')|l]."
  CANNOT_SUBSIDIZE_GOVERNMENT_BUILDINGS: "[Concept('concept_government_building', '$concept_government_buildings$')] не можуть бути під субсидією."
  CANNOT_SUBSIDIZE_SUBSISTENCE_BUILDINGS: "[Concept('concept_subsistence_building', '$concept_subsistence_buildings$')] не можуть бути під субсидією."
 
@@ -6211,12 +6211,12 @@
  TOOLTIP_UNLOCK_DECREE_SINGLE: "нову [concept_decree]"
  TOOLTIP_UNLOCK_DECREE_MANY: "кілька нових [Concept('concept_decree', '$concept_decrees_gen$')]"
 
- TOOLTIP_DISALLOWS_NO_BREAKDOWN:0 "$DISALLOWED_DESC$"
- TOOLTIP_DISALLOWS_WITH_BREAKDOWN:0 "#tooltippable #tooltip:$BREAKDOWN_TAG$ Disallows $DISALLOWED_CATEGORIES_LIST$#!#!"
- TOOLTIP_DISALLOW_PM_SINGLE:0 "a [concept_production_method]"
- TOOLTIP_DISALLOW_PM_MANY:0 "multiple [Concept('concept_production_method', '$concept_production_methods$')]"
+ TOOLTIP_DISALLOWS_NO_BREAKDOWN: "$DISALLOWED_DESC$"
+ TOOLTIP_DISALLOWS_WITH_BREAKDOWN: "#tooltippable #tooltip:$BREAKDOWN_TAG$ Заборонить $DISALLOWED_CATEGORIES_LIST$#!#!"
+ TOOLTIP_DISALLOW_PM_SINGLE: " [concept_production_method|l]"
+ TOOLTIP_DISALLOW_PM_MANY: "кілька [Concept('concept_production_method', '$concept_production_methods_gen$')|l]"
 
- STANDARD_PM_LIST_ITEM:0 "\n$PRODUCTION_METHOD$"
+ STANDARD_PM_LIST_ITEM: "\n$PRODUCTION_METHOD$"
  STANDARD_PMS_DESC:0 "#header Reset to Standard [Concept('concept_production_method', '$concept_production_methods$')]#!$LIST$"
 
  CURRENTLY_ACTIVE_LAW: "#b Чинний закон#!"
@@ -7019,7 +7019,7 @@
  POPULATION_LEADERBOARD_HEADER: "#header Населення#!"
  INCORPORATED_LITERACY_LEADERBOARD_HEADER: "#header Грамотність у включених земелях#!"
  TOTAL_LITERACY_LEADERBOARD_HEADER: "#header Грамотність у всіх земелях#!"
- BATTALIONS_LEADERBOARD_HEADER: "#header Батальйони#!"
+ BATTALIONS_LEADERBOARD_HEADER: "#header Курені#!"
  FLOTTILAS_LEADERBOARD_HEADER: "#header Флотилії#!"
  GDP_LEADERBOARD_ITEM: "\n$RANK$. @money!$VAL|vD$ - $COUNTRY$"
  SOL_LEADERBOARD_ITEM: "\n$RANK$. $VAL|vD$ - $COUNTRY$"
