@@ -28,9 +28,8 @@ Useful:
 [list]
 [*]Supported game version: [b]1.2.7[/b]
 [*][url=https://github.com/Godresky/Victoria-3-Ukrainian-Translate]GitHub link[/url]
-[*][url=https://t.me/perekladalnia_vika3]Tg channel about Victoria 3[/url]
+[*][url=https://t.me/godresky_vika3]Tg channel about Victoria 3[/url]
 [*][url=https://send.monobank.ua/jar/7H5RNWs4kw]Say "thank you" to the developers[/url]
-[*][url=https://www.buymeacoffee.com/godresky]Buymeacoffee[/url]
 [*][url=https://twitter.com/godresky]My twitter[/url]
 [/list]
 

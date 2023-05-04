@@ -28,9 +28,8 @@
 [list]
 [*]Підтримувана версія гри: [b]1.2.7[/b]
 [*][url=https://github.com/Godresky/Victoria-3-Ukrainian-Translate]Посилання на ґітгаб[/url]
-[*][url=https://t.me/perekladalnia_vika3]Тґ канал про Вікторію 3[/url]
+[*][url=https://t.me/godresky_vika3]Тґ канал про Вікторію 3[/url]
 [*][url=https://send.monobank.ua/jar/7H5RNWs4kw]Сказати "дякую" розробникам[/url]
-[*][url=https://www.buymeacoffee.com/godresky]Купити мені кави[/url]
 [*][url=https://twitter.com/godresky]Мій твітер[/url]
 [/list]
 
