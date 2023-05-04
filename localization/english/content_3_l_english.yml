@@ -3,7 +3,7 @@
 # Generic Law Passing Events
  generic_laws.1.t: "Зворушлива промова захоплює публіку"
  generic_laws.1.d: "Сьогодні по обіді, [SCOPE.sCharacter('orator_ig_leader_scope').GetFullName], провідник [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l] [SCOPE.gsInterestGroup('orator_ig_scope').GetName], виступив з полум‘яною промовою на підтримку надання чинности [Concept('concept_law','$concept_law_gen$')|l] «[SCOPE.sLaw('current_law_scope').GetName]»."
- generic_laws.1.f: "Виступ перед публікою на головній площі міста [SCOPE.sCharacter('orator_ig_leader_scope').GetCountry.GetCapital.GetCityHubName].  [SCOPE.sCharacter('orator_ig_leader_scope').GetFullNameNoFormatting] своєю палкою промовою не залиши[Select_CString(SCOPE.sCharacter('ottoman_sultan').IsFemale,'$CustomLoc_UA_vona_la$','$CustomLoc_UA_vin_v$')|l] байдужими навіть своїх найбільш озлоблених політичних опонентів. Уривки з промови вже ширяться всією країною, роздмухуючи вогонь і без того бурхливих суперечок." # [ROOT.GetCountry.GetNameNoFormatting]
+ generic_laws.1.f: "Виступ перед публікою на головній площі міста [SCOPE.sCharacter('orator_ig_leader_scope').GetCountry.GetCapital.GetCityHubName]. [SCOPE.sCharacter('orator_ig_leader_scope').GetFullNameNoFormatting] своєю палкою промовою не залиши[Select_CString(SCOPE.sCharacter('ottoman_sultan').IsFemale,'$CustomLoc_UA_vona_la$','$CustomLoc_UA_vin_v$')|l] байдужими навіть своїх найбільш озлоблених політичних опонентів. Уривки з промови вже ширяться всією країною, роздмухуючи вогонь і без того бурхливих суперечок." # [ROOT.GetCountry.GetNameNoFormatting]
  #переробити
  generic_laws.1.a: "Це має значно полегшити шлях до змін."
  generic_laws.1.b: "[SCOPE.sCharacter('orator_ig_leader_scope').GetFullNameNoFormatting] у промові добре показав свої цілі."
@@ -12,15 +12,15 @@
  rising_support_for_ig_minor: "Зростання громадської підтримки"
  skilled_orator: "Визнаний промовець"
 
- generic_laws.2.t:0 "Backroom Dealings Exposed"
- generic_laws.2.d:0 "Prominent members of the [SCOPE.gsInterestGroup('corrupt_ig_scope').GetName] — outspoken supporters of [SCOPE.sLaw('current_law_scope').GetName] and close allies of [SCOPE.sCharacter('corrupt_ig_leader_scope').GetFullName] — have been exposed in a corruption scandal, having exchanged political favors for personal "gifts"."
- generic_laws.2.f:0 ""What is the chief end of man? — to get rich. In what way? — dishonestly if we can; honestly if we must."" # Mark Twain
- generic_laws.2.a:0 "So? Such is the nature of politics."
- generic_laws.2.b:0 "Throw them to the wolves, we must clean up this mess."
- ignored_corruption:0 "Ignored Corruption"
- corrupt_connections_exposed:0 "Corrupt Connections Exposed"
- corrupt_connections_exposed_minor:0 "Corrupt Connections Exposed"
- dealing_with_corruption:0 "Dealing with Corruption"
+ generic_laws.2.t: "Викрито залаштункові оборудки"
+ generic_laws.2.d: "Видатні учасники [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l] [SCOPE.gsInterestGroup('corrupt_ig_scope').GetName] — відверті прихильники [Concept('concept_law','$concept_law_gen$')|l] «[SCOPE.sLaw('current_law_scope').GetName]» і [SCOPE.sCharacter('corrupt_ig_leader_scope').GetFullName] та [SCOPE.sCharacter('corrupt_ig_leader_scope').GetCustom('UA_joho_jiji')|l] близькі союзники були викриті в корупційному скандалі, обмінявши політичні послуги на особисті «подарунки»."
+ generic_laws.2.f: "«Яка головна ціль людини - розбагатіти. Яким чином? - Нечесно, якщо можемо; чесно, якщо мусимо.»" # Mark Twain
+ generic_laws.2.a: "І що? Така природа політики."
+ generic_laws.2.b: "Кидайте їх напризволяще, ми повинні прибрати цей безлад."
+ ignored_corruption: "Ігнорування корупції"
+ corrupt_connections_exposed: "Викриття корупційних зв'язків"
+ corrupt_connections_exposed_minor: "Викриття корупційних зв'язків"
+ dealing_with_corruption: "Боротьба з корупцією"
 
  generic_laws.3.t:1 "Opposition Members Put Forth Demands"
  generic_laws.3.d:0 "More pragmatically inclined members of the [SCOPE.gsInterestGroup('opposition_demands_ig_scope').GetName], currently opposed to the passing of [SCOPE.sLaw('current_law_scope').GetName], have offered to change their stance were they to be offered certain political concessions. Such concessions would not be popular with the [SCOPE.gsInterestGroup('opposition_demands_supporting_ig_scope').GetName], however."
@@ -196,7 +196,7 @@
  tanzimat_events.7.b: "Це триматиме в шорах можливих зрадників."
 
  tanzimat_events.8.t: "Відновлено порядок у місті [SCOPE.sState('orderrestored_state_scope').GetName]"
- tanzimat_events.8.d:0 "Відчуття нормального життя повернулося на вулиці міста [SCOPE.sState('orderrestored_state_scope').GetCityHubName]. Вітрини крамниць і поповнюються товарами, а заяви про недовіру і ненависть поступово змінюються на заяви про примирення."
+ tanzimat_events.8.d: "Відчуття нормального життя повернулося на вулиці міста [SCOPE.sState('orderrestored_state_scope').GetCityHubName]. Вітрини крамниць і поповнюються товарами, а заяви про недовіру і ненависть поступово змінюються на заяви про примирення."
  tanzimat_events.8.f: "«Ці виродки розгромили мою крамницю та образили моє ім’я! Проте, все ж це була найбільша шкода, завдана мені. Але мій син бачив, як близько двоє людей, що брали участь у заворушеннях, були відтягнені вояками, очевидно, вбиті своїми. Можливо, тут все ж таки можна знайти якусь справедливість. Тепер передайте мені цукор, адже цей чай гіркий, немов маслини.»"
  tanzimat_events.8.a: "Дякувати Аллагу!"
 
@@ -211,7 +211,7 @@
 
  tanzimat_events.10.t: "Побір зіммі-новобранців"
  tanzimat_events.10.d: "Зі встановленням військової призви держава тепер повинна вирішити, яку ролю, якщо така є, відіграватимуть немусульмани в нашому війську."
- tanzimat_events.10.f:0 "Традиційно немусульманські піддані імперії звільнялися від військової служби, замінюючи свою кров спеціяльним податком «Джизія», що сплачувався Осяній Порті. Прихильники осучаснення війстка запропонували поширити призву на усіх підданих Османської імперії, однак це позбавило б імперську казну важливого джерела доходу."
+ tanzimat_events.10.f: "Традиційно немусульманські піддані імперії звільнялися від військової служби, замінюючи свою кров спеціяльним податком «Джизія», що сплачувався Осяній Порті. Прихильники осучаснення війстка запропонували поширити призву на усіх підданих Османської імперії, однак це позбавило б імперську казну важливого джерела доходу."
  tanzimat_events.10.a: "Ті, хто може собі це дозволити, можуть заплати податок для звільнення від призви."
  tanzimat_events.10.b: "Побір стосується всіх осіб, незалежно від віровизнання."
  draft_exemption_tax: "Бедел-і Аскері"
