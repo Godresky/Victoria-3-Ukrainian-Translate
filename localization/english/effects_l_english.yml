@@ -69,7 +69,7 @@
  RECALCULATE_LAWS_NEG:0 "[COUNTRY.GetName] will NOT recalculate its [Concept('concept_law', '$concept_laws$')]"
  VALIDATE_SUBSIDIES:0 "[COUNTRY.GetName] will ensure its industrial subsidies are valid"
  VALIDATE_SUBSIDIES_NEG:0 "[COUNTRY.GetName] will NOT ensure its industrial subsidies are valid"
- RECALCULATE_POP_IG_SUPPORT:0 "[Concept('concept_pop', '$concept_pops$')] in [COUNTRY.GetName] will recalculate their [concept_interest_group] support"
+ RECALCULATE_POP_IG_SUPPORT: "[Concept('concept_pop', '$concept_pops$')] у державі [COUNTRY.GetName] перерахують підтримку своєї [Concept('concept_interest_group', '$concept_interest_group_gen$')|l]"
  RECALCULATE_POP_IG_SUPPORT_NEG:0 "[Concept('concept_pop', '$concept_pops$')] in [COUNTRY.GetName] will NOT recalculate [concept_interest_group] support"
  
  SET_COUNTRY_TYPE: "[COUNTRY.GetName] стане #variable $COUNTRY_TYPE$#!"

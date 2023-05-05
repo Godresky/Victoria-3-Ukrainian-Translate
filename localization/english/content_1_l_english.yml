@@ -1710,7 +1710,7 @@
  central_america_fail_tt: "Володієте менше ніж 3-ма землями Центральної Америки"
  kill_own_ruler_tt:0 "The assassins will gain progress much more quickly"
  assassination_events.1.b:0 "Perhaps this would not be such a terrible thing."
- protected_speech_tt:0 "Cannot [concept_bolster] or [concept_suppress] [Concept('concept_interest_group', '$concept_interest_groups$')]"
+ protected_speech_tt: "Не можна [concept_bolster|l] або [concept_suppress|l] [Concept('concept_interest_group', '$concept_interest_groups_acc$')|l]"
  heavenly.4.b:0 "God is on their side!"
  stop_suez_survey_decision:0 "Cancel the Suez Survey"
  stop_suez_survey_decision_desc:0 "The Immense cost of conducting our survey of the Suez may become an unacceptable burden. Should we cancel the project, we would have to start again from scratch if we make another attempt."

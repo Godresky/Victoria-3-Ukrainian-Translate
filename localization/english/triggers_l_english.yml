@@ -1008,16 +1008,16 @@
  TRIGGER_IS_BEING_PROMOTED_THIRD:1 "[INTEREST_GROUP.GetName] is being [Concept('concept_bolster','$concept_bolstered$')]"
  TRIGGER_IS_BEING_PROMOTED_THIRD_NOT:2 "[INTEREST_GROUP.GetName] is #bold not#! being [Concept('concept_bolster','$concept_bolstered$')]"
  
- TRIGGER_SHARES_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT:2 "Shares a [concept_cultural_trait] with any [concept_primary_cultures] in their [concept_country]"
+ TRIGGER_SHARES_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT: "Має спільну [Concept('concept_cultural_trait','$concept_cultural_trait_acc$')|l] з будь-якими [Concept('concept_primary_cultures','$concept_primary_cultures_ins$')|l] у своїй [Concept('concept_country','$concept_country_loc$')|l]"
  TRIGGER_SHARES_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT_NOT:1 "Does not share a [concept_cultural_trait] with any [concept_primary_cultures] in their [concept_country]"
  
- TRIGGER_SHARES_HERITAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT:1 "Shares a [concept_cultural_heritage_trait] with any [concept_primary_cultures] in their [concept_country]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT: "Має спільну [Concept('concept_cultural_heritage_trait','$concept_cultural_heritage_trait_acc$')|l] з будь-якими [Concept('concept_primary_cultures','$concept_primary_cultures_ins$')|l] у своїй [Concept('concept_country','$concept_country_loc$')|l]"
  TRIGGER_SHARES_HERITAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT_NOT:1 "Does not share a [concept_cultural_heritage_trait] with any [concept_primary_cultures] in their [concept_country]"
 
  TRIGGER_SHARES_HERITAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_THIRD:0 "Shares a [concept_cultural_heritage_trait] with any [concept_primary_cultures] ([Pop.GetCountry.GetPrimaryCulturesDesc] in [Pop.GetCountry.GetName])"
  TRIGGER_SHARES_HERITAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_THIRD_NOT:0 "Does not share a [concept_cultural_heritage_trait] with any [concept_primary_cultures] ([Pop.GetCountry.GetPrimaryCulturesDesc] in [Pop.GetCountry.GetName])"
  
- TRIGGER_SHARES_NON_HERITAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT:0 "Shares a [concept_cultural_trait] which is not a [concept_cultural_heritage_trait] with any [concept_primary_cultures] ([GetPlayer.GetPrimaryCulturesDesc] in [GetPlayer.GetName])"
+ TRIGGER_SHARES_NON_HERITAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT: "Має спільну [Concept('concept_cultural_trait','$concept_cultural_trait_acc$')|l], яка не є [Concept('concept_cultural_heritage_trait','$concept_cultural_heritage_trait_gen$')|l], з будь-якою [Concept('concept_primary_cultures','$concept_primary_cultures_ins$')|l] ([GetPlayer.GetPrimaryCulturesDesc] у державі [GetPlayer.GetName])"
  TRIGGER_SHARES_NON_HERITAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT_NOT:0 "Does not share a [concept_cultural_trait] which is not a [concept_cultural_heritage_trait] with any [concept_primary_cultures] ([GetPlayer.GetPrimaryCulturesDesc] in [GetPlayer.GetName])"
 
  TRIGGER_SHARES_NON_HERITAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_THIRD:0 "Shares a [concept_cultural_trait] which is not a [concept_cultural_heritage_trait] with any [concept_primary_cultures] ([Pop.GetCountry.GetPrimaryCulturesDesc] in [Pop.GetCountry.GetName])"
@@ -1031,10 +1031,10 @@
  TRIGGER_SHARES_HERITAGE_TRAIT_WITH_STATE_RELIGION_THIRD:0 "Shares a trait with the [concept_state_religion] ([Pop.GetCountry.GetStateReligion.GetName] in [Pop.GetCountry.GetName])"
  TRIGGER_SHARES_HERITAGE_TRAIT_WITH_STATE_RELIGION_THIRD_NOT:0 "Does not share a trait with the [concept_state_religion] ([Pop.GetCountry.GetStateReligion.GetName] in [Pop.GetCountry.GetName])"
  
- TRIGGER_IS_STATE_RELIGION_NOCONTEXT:1 "Is the [concept_state_religion]"
+ TRIGGER_IS_STATE_RELIGION_NOCONTEXT: "Це [concept_state_religion|l]"
  TRIGGER_IS_STATE_RELIGION_NOCONTEXT_NOT:0 "Is not the [concept_state_religion]"
  
- TRIGGER_IS_PRIMARY_CULTURE_OF_NOCONTEXT:1 "Is the [Concept( 'concept_primary_cultures', '$concept_primary_culture$' )]"
+ TRIGGER_IS_PRIMARY_CULTURE_OF_NOCONTEXT: "Це [Concept( 'concept_primary_cultures', '$concept_primary_culture$' )|l]"
  TRIGGER_IS_PRIMARY_CULTURE_OF_NOCONTEXT_NOT:0 "Is not the [Concept( 'concept_primary_cultures', '$concept_primary_culture$' )]"
  
  TRIGGER_IS_COUNTRY_TYPE_NOCONTEXT_NOT:1 "Is #bold not #!#variable $COUNTRY_TYPE$#!"

@@ -198,7 +198,7 @@
  concept_sol_acc: "Рівень життя"
  concept_sol_loc: "Рівенях життя"
  concept_sol_short: "РіЖи"
- concept_sol_desc:1 "$concept_sol$ measures a [Concept('concept_pop','$concept_pop_possessive$')] living conditions, with their material [concept_wealth] as the baseline. It governs [Concept('concept_pop_growth','$concept_pop_growth_birthrate_and_mortality$')], and every time it changes it can cause $concept_pops$ to become more [concept_radical] or [Concept('concept_loyalist','$concept_loyal$')]. The average $concept_sol$ in a [concept_state] affects its [concept_migration_pull]."
+ concept_sol_desc: "$concept_sol$ вимірює умови життя [Concept('concept_pop','$concept_pop_gen$')|l] за їхнім матеріяльним [Concept('concept_wealth','$concept_wealth_ins$')|l] відносно основного показника. Він вимірює [Concept('concept_pop_growth','$concept_pop_growth_birthrate_and_mortality$')|l], і щоразу, коли вона змінюється, це може призвести до того, що люди стануть більш [Concept('concept_radical','$concept_radical_adj$ими')|l] або [Concept('concept_loyalist','$concept_loyal_adj$ими')|l]. Середній рівень життя у [Concept('concept_state','$concept_state_loc$')|l] впливає на його [Concept('concept_migration_pull','$concept_migration_pull_acc$')|l]."
 
  concept_expected_sol: "Очікуваний мінімум рівня життя"
  concept_expected_sol_short: "Очікуваний мінімум"
@@ -301,6 +301,7 @@
 
  concept_homeland: "Батьківщина"
  concept_homeland_ins: "Батьківщиною"
+ concept_homeland_loc: "Батьківщині"
  concept_homelands: "Батьківщини"
  concept_homeland_desc:2 "A [Concept('concept_culture','$concept_culture_possessive$')] $concept_homelands$ consist of those [Concept('concept_state_region','$concept_state_regions$')] that [Concept('concept_pop', '$concept_pops$')] of that $concept_culture$ feel are historically or naturally their territory. $concept_pops$ are more prone to [Concept('concept_migration','$concept_migrate$')] to their $concept_homelands$ than other [Concept('concept_state','$concept_states$')], and $concept_pops$ who reside there will never consider [Concept('concept_assimilation','$concept_assimilating$')].\n\nLaunching a [concept_diplomatic_play] to conquer a $concept_state$ considered a $concept_homeland$ of one of your [concept_primary_cultures] is considered relatively legitimate, and will generate substantially less [concept_infamy] than usual."
 
@@ -617,9 +618,12 @@
  concept_interest_group_desc:3 "A political faction within your [concept_country] that share a common interest. They are supported by [Concept('concept_pop', '$concept_pops$')] in relation to their [Concept('concept_interest_group_attraction','$concept_interest_group_attraction_short$')] to them, and the [concept_clout] they enjoy is based directly on the supporting $concept_pops$' [concept_political_strength]. $concept_interest_groups$ have number of [Concept('concept_ideology', '$concept_ideologies$')], causing them to endorse or oppose different [Concept('concept_law', '$concept_laws$')].\n\nThey also have three [Concept('concept_interest_group_trait', '$concept_interest_group_traits$')] that are activated on different [concept_approval] levels. Their [Concept('concept_leader','$concept_leader_possessive$')] personal $concept_ideology$ also rubs off on the $concept_interest_group$."
 
  concept_interest_group_attraction: "Залученість у зацікавлену групу"
+ concept_interest_group_attraction_acc: "Залученість у зацікавлену групу"
  concept_interest_group_attraction_short: "Залученість"
+ concept_interest_group_attraction_short_gen: "Залучености"
  concept_interest_group_attractions: "Залученості у зацікавлену групу"
- concept_attracted:0 "Attracted"
+ concept_attracted: "Залучені"
+ concept_attracted_adj: "Залучен"
  concept_interest_group_attraction_desc:4 "How likely a [Concept('concept_pop', '$concept_pops$')] are to support a particular [concept_interest_group]. Influenced by the $concept_pop$'s properties, such as [concept_profession], [concept_wealth], and [concept_education_access], a high $concept_interest_group_attraction_short$ means the $concept_pop$ feels it's likely this $concept_interest_group$ represents their political interests."
 
  concept_politician: "Політик"
@@ -723,6 +727,7 @@
  concept_ideology_desc:2 "An [Concept('concept_interest_group','$concept_interest_group_possessive$')] $concept_ideology$ influences which [Concept('concept_law','$concept_laws$')] it [Concept('concept_endorse_oppose','$concept_endorses_and_opposes$')]. Their stance on the $concept_laws$ which are currently in effect in the [concept_country] have small, permanent effects on the $concept_interest_group$'s $concept_approval$. While a $concept_country$ is trying to [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enact$')] a new $concept_law$, a larger but temporary effect applies relative to which $concept_law$ is being removed and which is coming into effect. This temporary effect will eventually [concept_decay], leaving only the permanent, objective effect on $concept_approval$."
 
  concept_subsistence_output: "Прожитковий мінімум"
+ concept_subsistence_output_acc: "Прожитковий мінімум"
  concept_subsistence_output_desc:3 "A form of in-kind income that [SelectLocalization(GetPlayer.IsValid,'concept_subsistence_output_desc_added','Peasants')] generate from [Concept('concept_subsistence_building','$concept_subsistence_building_farming$')], which represents the work they perform producing [Concept('concept_good','$concept_goods$')] to cover their own [Concept('concept_pop_needs','$concept_pop_needs_short$')]. Unlike [Concept('concept_building_wage','$concept_building_wages$')], $concept_subsistence_output$ is not paid out from the $concept_building$'s [concept_revenue] and is not subject to [concept_budget_income_taxes]."
  concept_subsistence_output_desc_added:0 "[GetPopType('peasants').GetName]"
 
@@ -770,7 +775,8 @@
  concept_votes_gen: "Голосів"
  concept_votes_dat: "Голосам"
  concept_vote: "Голос"
- concept_voting_rights: "Виборчі права"
+ concept_voting_rights: "Права голосу"
+ concept_voting_rights_acc: "Права голосу"
  concept_voting: "Голосування"
  concept_votes_desc:1 "Your [Concept('concept_law', '$concept_laws$')] determine whether any given [concept_pop] gets to cast a $concept_vote$, and if so, how much [concept_political_strength] that $vote$ will count for. $concept_votes$ are cast for [Concept('concept_party','$concept_parties$')] during [concept_election] periods. $concept_pops$ will tend to vote for the $concept_party$ their [concept_interest_group] belongs to, but may be won over by another $concept_party$ with greater [concept_momentum]. After the $concept_election$ date, the number of total $concept_votes$ each $concept_party$ received will be fixed until the next $concept_election$, and will increase the [concept_clout] of any $concept_interest_groups$ that are members of the $concept_party$."
  
@@ -935,6 +941,7 @@
 
  concept_market_capital: "Столиця ринку"
  concept_market_capital_gen: "Столиці ринку"
+ concept_market_capital_acc: "Столицю ринку"
  concept_market_capital_ins: "Столицею ринку"
  concept_market_capital_short: "Столиця"
  concept_market_capital_short_acc: "Столицю"
@@ -1209,8 +1216,8 @@
  concept_rank_desc:3 "$concept_rank$ [Concept('concept_country','$concept_country_gen$')|l] визначається через порівння її [Concept('concept_prestige','$concept_prestige_gen$')|l] з іншими державами світу. Він визначає, якими видами міжнародної діяльности вам дозволено займатися, чого від вас очікує ваш народ та світ, і яке місце ви посідаєте в світовій ієрархії.[AddLocalizationIf( GetPlayer.IsValid, 'concept_rank_ingame_added' )]"
  concept_rank_ingame_added: "\n\nВаш ранґ наразі: [GetPlayer.GetRank], що дає вам такі переваги:\n[GetPlayer.GetRankModifier.GetDesc]"
 
- concept_migration: "Міграція"
- concept_migrating:1 "Migrating"
+ concept_migration: "Міґрація"
+ concept_migrating: "Міґрувати"
  concept_migrate:0 "Migrate"
  concept_immigration:1 "Immigration"
  concept_immigrating:1 "Immigrating"
@@ -1219,8 +1226,8 @@
  concept_emigrating:1 "Emigrating"
  concept_migration_desc:1 "The movement of [Concept('concept_pop','$concept_pops$')] between [Concept('concept_state','$concept_states$')] in the same [concept_market], or between [Concept('concept_country','$concept_countries$')] facilitated by [Concept('concept_migration_target','$concept_migration_targets$')]. $concept_migration$ generally flows from $concept_states$ with lower to higher [concept_migration_pull]. $concept_pops$ will only consider $concept_emigrating$ if their [concept_sol] is lower than the average in their [concept_market] or if they are [concept_unemployed]. $concept_migration$ rate is affected by [concept_infrastructure] in the $concept_states$."
 
- concept_migration_target: "Ціль міграції"
- concept_migration_targets: "Цілі міграції"
+ concept_migration_target: "Ціль міґрації"
+ concept_migration_targets: "Цілі міґрації"
  concept_migration_target_desc:1 "A [concept_state] selected as a suitable target for mass [concept_migration] by a [concept_culture] subject to considerable [concept_cultural_turmoil]. $concept_migration_target_explainer$ Surrounding $concept_states$ may also see some degree of $concept_immigration$ from a $concept_migration_target$."
  concept_migration_target_explainer:1 "A $concept_migration_target$ may appear when the [concept_turmoil] of a [concept_culture] in a [concept_country] is at least [GetDefine('NPops','MASS_MIGRATION_ORIGIN_MIN_TURMOIL')|v%0]."
 
@@ -1315,6 +1322,7 @@
 
  concept_turmoil: "Сум‘яття"
  concept_turmoil_gen: "Сум‘яття"
+ concept_turmoil_acc: "Сум‘яття"
  concept_turmoil_ins: "Сум‘яттям"
  concept_turmoil_desc:2 "[Concept('concept_state', '$concept_states$')] and [Concept('concept_culture', '$concept_cultures$')] with $concept_turmoil$ contain [Concept('concept_radical', '$concept_radicals$')] that are unhappy with their current circumstances. The amount of $concept_turmoil$ is equal to the fraction of the $concept_state$'s or $concept_culture$'s [concept_workforce] that are $concept_radical$.\n\n$concept_turmoil$ can inflict a number of negative local status effects on a $concept_state$ if it gets high enough. [concept_cultural_turmoil] can impact a whole [concept_country] in very disruptive ways."
 
@@ -1502,7 +1510,7 @@
  concept_governments_dat: "Урядам"
  concept_governments_loc: "Урядах"
  concept_government_possessive:0 "Government\\'s"
- concept_government_desc:1 "A [Concept('concept_country','$concept_country_possessive$')] $concept_government$ consists of one or several [Concept('concept_interest_group','$concept_interest_groups$')]. If the $concept_country$ has [Concept('concept_votes','$concept_voting_rights$')] these $concept_interest_groups$ may be organized into [Concept('concept_party','$concept_parties$')]. Depending on the $concept_country$'s [Concept('concept_law','$concept_laws$')], this mix of $concept_interest_groups$ will result in higher or lower $concept_government$ [concept_legitimacy].\n\nAny new $concept_law$ you wish to [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enact$')] must have some support among $concept_interest_groups$ that make up the $concept_government$, unless it is supported by an active [concept_political_movement]. The ability to quickly and painlessly push the $concept_law$ through the legislature depends on how unified the $concept_government$'s support of it is."
+ concept_government_desc: "$concept_government$ [Concept('concept_country','$concept_country_gen$')|l] складається з одного або декількох [Concept('concept_interest_group','$concept_interest_groups_gen$')|l]. Якщо країна дає [Concept('concept_votes','$concept_voting_rights$')|l] своїм зацікавленим групам, то вони можуть бути розподілені по [Concept('concept_party','$concept_parties_loc$')|l]. В залежности від [Concept('concept_law','$concept_laws_gen$')|l] держави, таке поєднання зацікавлених груп призведе до більшої або меншої [Concept('concept_legitimacy','$concept_legitimacy_gen$')|l] уряду.\n\nБудь-які нові закони, які ви хотіли б [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enact$')|l], повинні мати підтримку серед зацікавлених груп, які входять в уряд, якщо вони не підтримуються сучасним [Concept('concept_political_movement','$concept_political_movement_ins$')|l]. Можливість швидко та безболісно проштовхнути закон через законодавчий орган залежить від того, наскільки є одностайною підтримка в уряді."
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED APRIL 28, 2022
 
@@ -1726,6 +1734,7 @@
  concept_accepted_culture: "Прийнята культура"
  concept_accepted_culture_ins: "Прийнятою культурою"
  concept_accepted_cultures: "Прийняті культури"
+ concept_accepted_cultures_loc: "Прийнятих культурах"
  concept_accepted_culture_short: "Прийнята"
  concept_accepted_culture_short_adj: "Прийнят"
  concept_accepted_culture_desc:2 "A [Concept('concept_country','$concept_country_possessive$')] $concept_accepted_cultures$ consists of its [concept_primary_cultures], plus any other [Concept('concept_culture','$concept_cultures$')]  considered $concept_accepted_culture_short$ due to the $concept_country$'s current [SelectLocalization(GetPlayer.IsValid, 'concept_accepted_culture_desc_added','Citizenship')] [concept_law]."
@@ -1741,10 +1750,14 @@
  concept_primary_cultures_ingame_added: "\n\nГоловні культури у державі [GetPlayer.GetName]: [GetPlayer.GetPrimaryCulturesDesc]."
 
  concept_cultural_trait: "Риса культури"
+ concept_cultural_trait_gen: "Риси культури"
+ concept_cultural_trait_acc: "Рису культури"
  concept_cultural_traits: "Риси культури"
  concept_cultural_trait_desc:2 "Aspects of a [concept_culture] such as its dominant language and from which part of the world it originates. The similarity between the $concept_cultural_traits$ of a [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_primary_cultures','$concept_primary_culture$')] and the $concept_culture$ of a [concept_pop], combined with the $concept_country$'s current [GetLawType('law_national_supremacy').GetGroup.GetName] [concept_law], determines whether the $concept_pop$ is [Concept('concept_discrimination','$concept_discriminated_against$')] or not."
 
  concept_cultural_heritage_trait: "Культурна спадщина"
+ concept_cultural_heritage_trait_gen: "Культурної спадщини"
+ concept_cultural_heritage_trait_acc: "Культурну спадщину"
  concept_cultural_heritage_traits: "Культурні спадщини"
  concept_cultural_heritage_trait_desc:2 "A type of [concept_cultural_trait] that specifies the general region of the world where the [concept_culture] originated. Certain [SelectLocalization(GetPlayer.IsValid,'concept_accepted_culture_desc_added','Citizenship')] [Concept('concept_law','$concept_laws$')] consider $concept_cultural_heritage_traits$ to be more important than other $concept_cultural_traits$ when determining whether a [concept_pop] should be [Concept('concept_discrimination','$concept_discriminated_against$')] or not."
  concept_cultural_heritage_trait_desc_added:0 "[GetLawType('law_national_supremacy').GetGroup.GetName]"
@@ -1768,7 +1781,7 @@
  concept_state_religion: "Державна релігія"
  concept_state_religion_ins: "Державною релігією"
  concept_state_religion_desc: "[concept_religion], яка найбільше в’яжеться з [Concept('concept_country','$concept_country_ins$')|l]. Зазвичай, це панівна [Concept('concept_religion','$concept_religion$')|l], яку сповідує більшість [Concept('concept_pop', '$concept_pops_gen$')|l], проте іноді може бути як законодавчо проголошеною, так і просто релігією, яку сповідує [Concept('concept_ruler', '$concept_ruler$')|l]. Зазвичай вона не змінюється.[AddLocalizationIf(GetPlayer.IsValid, 'concept_state_religion_ingame_added')]"
- concept_state_religion_ingame_added: "\n\nДержавна релігія держави [GetPlayer.GetName] - [GetPlayer.GetStateReligion.GetName|l]."
+ concept_state_religion_ingame_added: "\n\nДержавна релігія держави [GetPlayer.GetName]: [GetPlayer.GetStateReligion.GetName]."
 
  concept_religious_trait: "Релігійна риса"
  concept_religious_traits: "Релігійні риси"
@@ -2322,6 +2335,7 @@
  concept_party_acc_alt: "Партії"
  concept_parties: "Партії"
  concept_parties_gen: "Партій"
+ concept_parties_loc: "Партіях"
  concept_party_possessive:0 "Party\\'s"
  concept_party_adj: "Партійн"
  concept_party_desc:1 "A $concept_party$ is a political entity that participates in [Concept('concept_election','$concept_election$')]. They consist of one or more [Concept('concept_interest_group','$concept_interest_groups$')] whose [Concept('concept_ideology','$concept_ideologies$')] are at least somewhat compatible. These $concept_interest_groups$ are empowered by the [concept_votes] the $concept_party$ has won proportional to their [concept_clout]. Individual $concept_interest_groups$ cannot be included in [concept_government] without the rest of their $concept_party$ members."
@@ -2335,6 +2349,7 @@
  concept_suppressed: "Придушені"
  concept_suppressing: "Придушення"
  concept_suppression: "Придушення"
+ concept_suppression_gen: "Придушення"
  concept_suppress_desc:2 "A $concept_suppressed$ [concept_interest_group] is less attractive for [Concept('concept_pop','$concept_pops$')] to support. Your base $concept_suppression$ ability is determined by your [SelectLocalization(GetPlayer.IsValid,'concept_suppress_desc_added','Free Speech')] [concept_law]. $concept_suppressing$ $concept_interest_groups$ cost [concept_authority]."
  concept_suppress_desc_added:0 "[GetLawGroup('lawgroup_free_speech').GetName]"
 
@@ -2342,6 +2357,7 @@
  concept_bolstered: "Підтримані"
  concept_bolsters: "Підтримати"
  concept_bolstering: "Підтримання"
+ concept_bolstering_gen: "Підтримання"
  concept_bolster_desc:0 "A $concept_bolstered$ [concept_interest_group] is more attractive for [Concept('concept_pop','$concept_pops$')] to support. Your base $concept_bolstering$ ability is determined by your [SelectLocalization(GetPlayer.IsValid,'concept_bolster_desc_added','Free Speech')] [concept_law]. $concept_bolstering$ $concept_interest_groups$ costs [concept_authority]."
  concept_bolster_desc_added:0 "[GetLawGroup('lawgroup_free_speech').GetName]"
 
@@ -2364,6 +2380,7 @@
  concept_political_movement: "Політичний рух"
  concept_political_movement_gen: "Політичного руху"
  concept_political_movement_acc: "Політичний рух"
+ concept_political_movement_ins: "Політичним рухом"
  concept_political_movement_short: "Рух"
  concept_political_movement_short_gen: "Руху"
  concept_political_movements_short: "Рухи"
@@ -2404,21 +2421,22 @@
  concept_enactment_stall_desc:1 "$concept_enactment_stall$ indicates the percentage chance that the enactment process of a [concept_law] will be substantially hindered at the next checkpoint. Its base chance is equal to the total [concept_clout] of opposing [Concept('concept_interest_group','$concept_interest_groups$')] in [concept_government]."
 
  concept_base_success_chance: "Базовий шанс на успіх"
+ concept_base_success_chance_acc: "Базовий шанс на успіх"
  concept_base_success_chance_dat: "Базовому шансу на успіх"
  concept_base_success_chance_desc:0 "$concept_base_success_chance$ is equal to the total [concept_clout] of supporting [Concept('concept_interest_group','$concept_interest_groups$')] in [concept_government] plus or minus [Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] gained from any relevant [Concept('concept_political_movement', '$concept_political_movements$')]."
 
  concept_advance_factor: "Чинник поступу"
- concept_advance_factor_desc:0 "$concept_advance_factor$ is a static factor used to determine [concept_enactment_advance] by scaling the [concept_base_success_chance]."
+ concept_advance_factor_desc: "$concept_advance_factor$ - це нерухомий чинник, що використовується для визначення [Concept('concept_enactment_advance','$concept_enactment_advance_gen$')|l] та збільшений на [Concept('concept_base_success_chance','$concept_base_success_chance_acc$')|l]."
 
- concept_migration_pull: "Міграційна привабливість"
- concept_migration_pull_acc: "Міграційну привабливість"
+ concept_migration_pull: "Міґраційна привабливість"
+ concept_migration_pull_acc: "Міґраційну привабливість"
  concept_migration_pull_short: "Привабливість"
  concept_migration_pull_desc:1 "$concept_migration_pull$ is a [concept_state]'s ability to attract migrants. It is based primarily on the average [concept_sol] among [Concept('concept_pop','$concept_pops$')] in the $concept_state$ but can be modified by a number of other factors. Any [Concept('concept_unemployed','$concept_unemployment$')] in the $concept_state$ will depress $concept_migration_pull$. The value is compared against other $concept_states$ between which migration may occur to determine in which direction migrants tend to flow."
 
  concept_lower_strata: "Нижня верства"
  concept_lower_strata_gen: "Нижньої верстви"
  concept_lower_strata_acc: "Нижню верству"
- concept_lower_strata_desc: "$concept_lower_strata$ мість [Concept('concept_pop','$concept_pops_acc$')|l] з [Concept('concept_profession','$concept_professions_ins$')|l], які працюють руками або виконувають одноманітну роботу, що майже не вимагає [Concept('concept_pop_qualifications','$concept_pop_qualifications_gen$')|l], у наслідок чого вони отримують низьку [Concept('concept_building_wage','$concept_building_wage_acc$')|l].[AddLocalizationIf(GetPlayer.IsValid,'concept_lower_strata_ingame_added')]"
+ concept_lower_strata_desc: "$concept_lower_strata$ мість [Concept('concept_pop','$concept_pops_acc$')|l] з [Concept('concept_profession','$concept_professions_ins$')|l], які працюють руками або виконують одноманітну роботу, що майже не вимагає [Concept('concept_pop_qualifications','$concept_pop_qualifications_gen$')|l], у наслідок чого вони отримують низьку [Concept('concept_building_wage','$concept_building_wage_acc$')|l].[AddLocalizationIf(GetPlayer.IsValid,'concept_lower_strata_ingame_added')]"
  concept_lower_strata_ingame_added: "\n\nМістить такі ремесла:\n[GetPopTypesInLowerStrataDesc]"
 
  concept_middle_strata: "Середня верства"

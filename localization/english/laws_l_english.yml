@@ -447,15 +447,15 @@
  law_guaranteed_liberties_desc: "Бюро внутрішніх справ держави зосереджено виключно на розгляді скарг громадян, і йому заборонено розслідувати чи заарештовувати їх без належної причини."
   
   # Migration
- lawgroup_migration: "Міграція"
+ lawgroup_migration: "Міґрація"
  lawgroup_migration_desc: "Контроль потоку людей."
   
- law_no_migration_controls: "Жодного міграційного контролю"
+ law_no_migration_controls: "Жодного міґраційного контролю"
  law_no_migration_controls_desc: "Держава не намагається контролювати пересування через свої кордони."
- law_migration_controls: "Міграційний контроль"
- law_migration_controls_desc: "Мігрувати можуть лише люди культур і релігій, які не утискаються."
+ law_migration_controls: "Міґраційний контроль"
+ law_migration_controls_desc: "Міґрувати можуть лише люди культур і релігій, які не утискаються."
  law_closed_borders: "Закриті кордони"
- law_closed_borders_desc: "Ні внутрішня, ні зовнішня міграція не допускається."
+ law_closed_borders_desc: "Ні внутрішня, ні зовнішня міґрація не допускається."
 
  liberate_slaves_tt: "Всі [GetPopType('slaves').GetName|l] отримають свободу"
  enslave_discriminated_farm_workers_tt: "Усі [Concept('concept_discrimination','$concept_discriminated_adj$ені')|l] $laborers$, що працюють на хуторах та полищах у колишніх рабовласницьких землях будуть [Concept('concept_slavery', '$concept_enslaved_adj$і')|l]."
