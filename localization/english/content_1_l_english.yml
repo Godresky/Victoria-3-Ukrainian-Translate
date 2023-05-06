@@ -1091,7 +1091,7 @@
  malay_language: "Малайська мова"
  regicide: "Брутство"
  regicide_averted: "Зупинено брутство"
- 1848.1.t: "Суд над правителем [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] [ROOT.GetCountry.GetRuler.GetFirstName]"
+ 1848.1.t: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] попа[Select_CString(ROOT.GetCountry.GetRuler.IsFemale,'$CustomLoc_UA_vona_la$','$CustomLoc_UA_vin_v$')|l] під суд"
  1848.1.d: "Радикальний уряд ув’язнив правителя [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] [ROOT.GetCountry.GetRuler.GetFullName] та поспіхом організував судовий процес. Очікуваний результат - обвинувальний вирок з подальшою публічною стратою."
  1848.1.f: "«Громадянин [ROOT.GetCountry.GetRuler.GetLastName]. [ROOT.GetCountry.GetAdjectiveNoFormatting]ий народ звинувачує вас у тому, що ви вчинили безліч злочинів, щоб встановити свою тиранію та знищити його свободу. Найбільш обурливими з цих звинувачень є змова з іноземними державами, аристократична корупція та спричинення пролиття крови народу. Як ви будете захищатися?»"
  1848.1.a: "Вин[Select_CString(ROOT.GetCountry.GetRuler.IsFemale,'$CustomLoc_UA_vona_na$','$CustomLoc_UA_vin_en$')|l]! Слава Республіці! Нехай живе [ROOT.GetCountry.GetName]!"

@@ -261,7 +261,7 @@
  concept_diplomatic_plays_loc: "Дипломатичних іграх"
  concept_diplomatic_plays_short: "Ігри"
  concept_diplomatic_play_negotiated:0 "Negotiated"
- concept_diplomatic_play_desc: "Дипломатична гра - це ворожі дипломатичні перемовини між двома або більше [Concept('concept_country','$concept_countries_ins$')|l], що приходить, коли одна країна висуває вимоги до іншої. Щоб почати дипломатичну гру, ви повинні мати [Concept('concept_active_interest','$concept_active_interest_acc$')|l] у відповідному [Concept('concept_strategic_region','$concept_strategic_region_loc$')|l], що також дає право на участь у грі третій стороні.\n\nДипломатична гра може [Concept('concept_escalation', 'загостритися')|l] під час трьох стадій: «[concept_opening_moves]», «[concept_diplomatic_maneuvers]», та «[concept_countdown_to_war]». Ці три стадії визначають умови можливої [Concept('concept_peace_deal','$concept_peace_deal_gen$')|l], якщо дипломатична гра переросте у [Concept('concept_war','$concept_war_acc$')|l]. Війні можна запобігти, якщо [concept_initiator|l] або [concept_target|l] гри відступить та виконає [Concept('concept_primary_demand','$concept_primary_demands_acc$')|l] іншої сторони."
+ concept_diplomatic_play_desc: "Дипломатична гра - це ворожі дипломатичні перемовини між двома або більше [Concept('concept_country','$concept_countries_ins$')|l], що приходить, коли одна країна висуває вимоги до іншої. Щоб почати дипломатичну гру, ви повинні мати [Concept('concept_active_interest','$concept_active_interest_acc$')|l] у відповідному [Concept('concept_strategic_region','$concept_strategic_region_loc$')|l], що також дає право на участь у грі третій стороні.\n\nДипломатична гра може [Concept('concept_escalation', 'загостритися')|l] під час трьох стадій: «[concept_opening_moves]», «[concept_diplomatic_maneuvers]» та «[concept_countdown_to_war]». Ці три стадії визначають умови можливої [Concept('concept_peace_deal','$concept_peace_deal_gen$')|l], якщо дипломатична гра переросте у [Concept('concept_war','$concept_war_acc$')|l]. Війні можна запобігти, якщо [concept_initiator|l] або [concept_target|l] гри відступить та виконає [Concept('concept_primary_demand','$concept_primary_demands_acc$')|l] іншої сторони."
 
  concept_sympathy: "Співчуття"
  concept_sympathy_desc:0 "All AI-controlled [Concept('concept_country','$concept_countries$')] involved in a [concept_diplomatic_play] begin the play with a level of $concept_sympathy$ for each side, which influences how likely they are to support that side in the conflict. AI [Concept('concept_country','$concept_countries$')] tend to have higher $concept_sympathy$ for the [concept_target], for countries they have [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] with, and for those are opposing a [concept_country] with high [concept_infamy]. $concept_sympathy$ can also increase over the course of the [concept_diplomatic_play], as a side that gains powerful backers or accrues [concept_infamy] through adding [Concept('concept_war_goal', '$concept_war_goals$')] tends to generate $concept_sympathy$ for the opposing side."
@@ -403,8 +403,9 @@
  concept_provinces: "Провінції"
  concept_provinces_gen: "Провінцій"
  concept_province_possessive:0 "Province\\'s"
- concept_province_land: "Земля"
- concept_province_land_gen: "Землі"
+ concept_province_land: "Суходіл"
+ concept_province_land_gen: "Суходолу"
+ concept_province_land_ins: "Суходолом"
  concept_province_desc:2 "Subdivisions of [Concept('concept_state', '$concept_states$')], each with its own [concept_terrain]. $concept_provinces$ are transferred between $concept_states$ during [Concept('concept_colony','$concept_colonization$')], and can be temporarily transferred between [Concept('concept_theater','$concept_theaters$')] during [concept_war] as the outcome of [Concept('concept_battle','$concept_battles$')]."
 
  concept_battle_condition: "Умови битви"
@@ -445,7 +446,7 @@
  concept_strategic_region_short: "Стр. реґіон"
  concept_strategic_region_short_loc: "Стр. реґіоні"
  concept_strategic_regions_short: "Стр. реґіони"
- concept_strategic_region_desc:1 "A collection of [Concept('concept_state_region', '$concept_state_regions$')] considered a region of strategic importance. [Concept('concept_country','$concept_countries$')] have an [concept_interest] in all $concept_strategic_regions_short$ where they own [Concept('concept_province','$concept_province_land$')], and may project additional [Concept('concept_interest','$concept_interests$')] in other $concept_strategic_regions$ if their [concept_rank] is high enough to do so.\n\nMaintaining an [concept_active_interest] in a $concept_strategic_region$ is a prerequisite to participate in [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] taking place there."
+ concept_strategic_region_desc: "Набір [Concept('concept_state_region', '$concept_state_regions_gen$')|l] вважається реґіоном стратегічного значення. [Concept('concept_country','$concept_countries$')] мають [Concept('concept_interest', '$concept_interest_acc$')|l] у всіх стр. реґіонах, де вони володіють [Concept('concept_province','$concept_province_land_ins$')|l], і можуть проявити додаткові [Concept('concept_interest','$concept_interests_acc$')|l] в інших стратегічних реґіонах, якщо їхній [Concept('concept_rank', '$concept_rank_acc$')|l] є достатньо високим для цього.\n\nПідтримання [Concept('concept_active_interest', '$concept_active_interest_gen$')|l] в стратегічному реґіоні є обов’язковою умовою для участи в місцевих [Concept('concept_diplomatic_play','$concept_diplomatic_plays_loc$')|l]."
 
  concept_sway: "Схилити"
  concept_swaying: "Схилення"

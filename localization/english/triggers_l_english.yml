@@ -1329,13 +1329,13 @@
  
  TRIGGER_CASH_RESERVES_AVAILABLE: "Сума [Concept('concept_cash_reserves', '$concept_cash_reserves_gen$')|l] $COMPARATOR$ @money!$NUM|vD$"
  TRIGGER_CASH_RESERVES_AVAILABLE_NOT: "Сума [Concept('concept_cash_reserves', '$concept_cash_reserves_gen$')|l] #bold не#! $COMPARATOR$ @money!$NUM|vD$"
- TRIGGER_CASH_RESERVES_AVAILABLE_THIRD:0 "The [concept_cash_reserves] of [BUILDING.GetName] is $COMPARATOR$ @money!$NUM|vD$ (currently: @money!$CURRENT_VALUE|vD$)"
- TRIGGER_CASH_RESERVES_AVAILABLE_THIRD_NOT:1 "The [concept_cash_reserves] of [BUILDING.GetName] is #bold not #!$COMPARATOR$ @money!$NUM|vD$ (currently: @money!$CURRENT_VALUE|vD$)"
+ TRIGGER_CASH_RESERVES_AVAILABLE_THIRD: "Сума [Concept('concept_cash_reserves', '$concept_cash_reserves_gen$')|l] будівлі [BUILDING.GetName|l] $COMPARATOR$ @money!$NUM|vD$ (наразі: @money!$CURRENT_VALUE|vD$)"
+ TRIGGER_CASH_RESERVES_AVAILABLE_THIRD_NOT: "Сума [Concept('concept_cash_reserves', '$concept_cash_reserves_gen$')|l] будівлі [BUILDING.GetName|l] #bold не#! $COMPARATOR$ @money!$NUM|vD$ (наразі: @money!$CURRENT_VALUE|vD$)"
  
  TRIGGER_CASH_RESERVES_RATIO: "Сума [Concept('concept_cash_reserves', '$concept_cash_reserves_gen$')|l] $COMPARATOR$ $NUM|%0v$"
  TRIGGER_CASH_RESERVES_RATIO_NOT: "Сума [Concept('concept_cash_reserves', '$concept_cash_reserves_gen$')|l] #bold не#! $COMPARATOR$ $NUM|%0v$"
- TRIGGER_CASH_RESERVES_RATIO_THIRD:0 "The [concept_cash_reserves] of [BUILDING.GetName] is $COMPARATOR$ $NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
- TRIGGER_CASH_RESERVES_RATIO_THIRD_NOT:1 "The [concept_cash_reserves] of [BUILDING.GetName] is #bold not #!$COMPARATOR$ $NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
+ TRIGGER_CASH_RESERVES_RATIO_THIRD: "Сума [Concept('concept_cash_reserves', '$concept_cash_reserves_gen$')|l] будівлі [BUILDING.GetName] $COMPARATOR$ $NUM|%0v$ (наразі: $CURRENT_VALUE|%0v$)"
+ TRIGGER_CASH_RESERVES_RATIO_THIRD_NOT: "Сума [Concept('concept_cash_reserves', '$concept_cash_reserves_gen$')|l] будівлі [BUILDING.GetName] #bold не#! $COMPARATOR$ $NUM|%0v$ (наразі: $CURRENT_VALUE|%0v$)"
  
  TRIGGER_IS_TRADE_ROUTE_ACTIVE:0 "The [concept_trade_route] is active"
  TRIGGER_IS_TRADE_ROUTE_ACTIVE_NOT:0 "The [concept_trade_route] is inactive"

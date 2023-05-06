@@ -62,7 +62,7 @@
  POLITICAL_MOVEMENT_RADICALISM_FROM_ANGRY_IG_CLOUT_BREAKDOWN:0 "#header $ig_approval_angry$ supporting [Concept('concept_interest_group', '$concept_interest_groups$')]#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
  POLITICAL_MOVEMENT_RADICALISM_FROM_ANGRY_IG_CLOUT_ENTRY:0 "$VALUE|v=0$ from [InterestGroup.GetClout|%v] [concept_clout] of [InterestGroup.GetName] ([InterestGroup.GetClout|v2] x [GetDefine('NPolitics','POLITICAL_MOVEMENT_RADICALISM_TARGET_FROM_ANGRY_IG_CLOUT')|v])"
  POLITICAL_MOVEMENT_RADICALISM_FROM_RADICAL_POPS: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|v=0$#!#! через підтримку [Concept('concept_radical', '$concept_radicals_gen$')|l]"
- POLITICAL_MOVEMENT_RADICALISM_FROM_RADICAL_POPS_BREAKDOWN:0 "#header Supporting [Concept('concept_radical', '$concept_radicals$')]#!\n$TOOLTIP_DELIMITER$\n$VALUE|v=0$ from $RADICALS_FRACTION|v%$ ($NUM_RADICALS|Dv$) of the total population as [concept_radical] [concept_pop] supporters ($RADICALS_FRACTION|v2$ x [GetDefine('NPolitics','POLITICAL_MOVEMENT_RADICALISM_TARGET_FROM_RADICALS')|v])"
+ POLITICAL_MOVEMENT_RADICALISM_FROM_RADICAL_POPS_BREAKDOWN:0 "#header Підтримка [Concept('concept_radical', '$concept_radicals_gen$')|l]#!\n$TOOLTIP_DELIMITER$\n$VALUE|v=0$ from $RADICALS_FRACTION|v%$ ($NUM_RADICALS|Dv$) of the total population as [concept_radical] [concept_pop] supporters ($RADICALS_FRACTION|v2$ x [GetDefine('NPolitics','POLITICAL_MOVEMENT_RADICALISM_TARGET_FROM_RADICALS')|v])"
  
  POP_SUPPORT_FOR_POLITICAL_MOVEMENTS: "[Concept('concept_political_movement', '$concept_political_movements$')]:\n$DETAILS$"
  POP_SUPPORT_FOR_POLITICAL_MOVEMENTS_ENTRY: "$NUM_SUPPORTING|Dv$ прихильників [PoliticalMovement.GetFullName|l]"
