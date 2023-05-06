@@ -616,7 +616,7 @@ pm_steam_rail_transport: "Залізниця"
  pmg_synthetic_dyes: "Синтетичні барвники"
  pm_silk_production: "Виробництво шовку"
  pm_no_artificial_fibers: "Пріоритет на барвники"
- pm_rayon: "Район"
+ pm_rayon: "Штучний шовк"
 
 # Foundries
  pm_steamworks: "Парова робота"

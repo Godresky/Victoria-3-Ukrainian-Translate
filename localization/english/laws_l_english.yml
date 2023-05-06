@@ -195,7 +195,7 @@
   
   # Army Model group
  lawgroup_army_model: "Тип війська"
- lawgroup_army_model_desc: "Як ваше військо організоване та регламентованеі."
+ lawgroup_army_model_desc: "Як ваше військо організоване та регламентоване."
   
  law_peasant_levies: "Селянські збори"
  law_peasant_levies_desc: "Основна сила війська складається з військовозобов’язаної піхоти, яка має ґрунтовну підготовку."

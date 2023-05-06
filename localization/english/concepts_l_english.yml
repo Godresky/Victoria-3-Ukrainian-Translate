@@ -364,7 +364,7 @@
  concept_strategic_objective_ins: "Стратегічною ціллю"
  concept_strategic_objectives: "Стратегічні цілі"
  concept_strategic_objectives_gen: "Стратегічних цілей"
- concept_strategic_objective_desc: "Один з ваших [Concept('concept_state','$concept_states_gen$')|l] або [concept_state|l] у ворожому [Concept('concept_theater','$concept_theater_loc$')|l]. Коли [concept_general|l] просуваєть на [Concept('concept_front','$concept_front_loc$')|l], де на ворожому [Concept('concept_theater','$concept_theater_loc$')|l] є стратегічна ціль, то він з більшою ймовірністю просуватиметься до цієї цілі."
+ concept_strategic_objective_desc: "Один з ваших [Concept('concept_state','$concept_states_gen$')|l] або [concept_state|l] у ворожому [Concept('concept_theater','$concept_theater_loc$')|l]. Коли [concept_general|l] просуваєть на [Concept('concept_front','$concept_front_loc$')|l], де на ворожому [Concept('concept_theater','$concept_theater_loc$')|l] є стратегічна ціль, то він з більшою імовірністю просуватиметься до цієї цілі."
 
 
  concept_conscript_battalion: "Призваний курень"
@@ -557,6 +557,7 @@
 
  concept_cash_reserves: "Грошові резерви"
  concept_cash_reserves_acc: "Грошові резерви"
+ concept_cash_reserves_gen: "Грошових резервів"
  concept_cash_reserves_desc:1 "The assets of a [concept_building] is stored in its $concept_cash_reserves$. If the $concept_building$ runs a positive weekly [concept_building_balance], some of the [concept_money] is deposited into the $concept_cash_reserves$ while the rest is paid out to [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_shares$')] as [concept_dividends].\n\n$concept_cash_reserves$ are considered to be owned by the $concept_pops$ with $concept_ownership_shares$, who will be angry if their $concept_cash_reserves$ are destroyed due to downsizing or [concept_bankruptcy]. The sum of all $concept_cash_reserves$ in your [concept_country] determines your [concept_credit]."
 
  concept_obsession: "Одержимість"
@@ -1094,7 +1095,7 @@
  concept_relations: "Відносини"
  concept_relations_gen: "Відносин"
  concept_relations_acc: "Відносини"
- concept_relations_desc: "Поточний стан відносин між двома [Concept('concept_country', '$concept_countries_ins$')|l]. Обидві сторони можуть впливати на значення, використовуючи такі [Concept('concept_diplomatic_action','$concept_diplomatic_actions_acc$')|l]: «[GetDiplomaticActionType('increase_relations').GetName]», «[GetDiplomaticActionType('damage_relations').GetName]» та «[GetDiplomaticActionType('expel_diplomats').GetName]», витрачаючи [Concept('concept_influence','$concept_influence_acc$')|l]. $concept_relations$ впливають на те, які дипломатичні дії і [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts_short_acc$')|l] є доступними для держав, а також на ймовірність того, що вони приймуть дипломатичні пропозиції або стануть на ваш бік у [Concept('concept_diplomatic_play','$concept_diplomatic_play_loc$')|l]."
+ concept_relations_desc: "Поточний стан відносин між двома [Concept('concept_country', '$concept_countries_ins$')|l]. Обидві сторони можуть впливати на значення, використовуючи такі [Concept('concept_diplomatic_action','$concept_diplomatic_actions_acc$')|l]: «[GetDiplomaticActionType('increase_relations').GetName]», «[GetDiplomaticActionType('damage_relations').GetName]» та «[GetDiplomaticActionType('expel_diplomats').GetName]», витрачаючи [Concept('concept_influence','$concept_influence_acc$')|l]. $concept_relations$ впливають на те, які дипломатичні дії і [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts_short_acc$')|l] є доступними для держав, а також на імовірність того, що вони приймуть дипломатичні пропозиції або стануть на ваш бік у [Concept('concept_diplomatic_play','$concept_diplomatic_play_loc$')|l]."
 
  concept_ai_strategy: "Стратегія"
  concept_ai_strategy_acc: "Стратегію"
@@ -1459,7 +1460,7 @@
  concept_peace_deal_gen: "Мирної угоди"
  concept_peace_deal_acc: "Мирну угоду"
  concept_peace_deals: "Мирні угоди"
- concept_peace_deal_desc: "Коли [Concept('concept_war_leader','$concept_war_leader$')|l] хоче завершити [Concept('concept_war','$concept_war_acc$')|l], то він може запропонувати мирну угоду. Для того, щоб угода набула чинности, вона має бути схвалена всіма державами-учасницями, які беруть участь у війні. Щоб підвищити ймовірність того, що мирна угода буде досягнута, провідник війни може включати або виключати запропоновані [Concept('concept_war_goal','$concept_war_goals_acc$')|l] обох боків."
+ concept_peace_deal_desc: "Коли [Concept('concept_war_leader','$concept_war_leader$')|l] хоче завершити [Concept('concept_war','$concept_war_acc$')|l], то він може запропонувати мирну угоду. Для того, щоб угода набула чинности, вона має бути схвалена всіма державами-учасницями, які беруть участь у війні. Щоб підвищити імовірність того, що мирна угода буде досягнута, провідник війни може включати або виключати запропоновані [Concept('concept_war_goal','$concept_war_goals_acc$')|l] обох боків."
 
  concept_war: "Війна"
  concept_war_gen: "Війни"

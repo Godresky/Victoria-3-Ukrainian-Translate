@@ -57,7 +57,7 @@
  modifier_country_military_goods_cost_mult_desc: "Наддаток або карна до грошової вартости військово-матеріяльних потреб."
 
  modifier_country_law_enactment_success_add: "Шанс на надання чинности"
- modifier_country_law_enactment_success_add_desc: "Постійний відсоток, що збільшує або зменшує ймовірність ухвалення закону."
+ modifier_country_law_enactment_success_add_desc: "Постійний відсоток, що збільшує або зменшує імовірність ухвалення закону."
 
  modifier_country_opposition_ig_approval_add: "Схвалення опозиційної зацікавленої групи"
  modifier_country_opposition_ig_approval_add_desc: "Наддаток або карна на схвалення опозиційних зацікавлених груп."
