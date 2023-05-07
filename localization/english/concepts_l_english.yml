@@ -429,6 +429,7 @@
  
  concept_modifier: "Змінювач"
  concept_modifiers: "Змінювачі"
+ concept_modifiers_acc: "Змінювачі"
  concept_modifier_desc:1 "Any adjustment of a value away from its norm is considered a $concept_modifier$. These can be permanent or [Concept('concept_timed_modifier','$concept_timed$')], and their origin can always be sourced back to something like a [concept_law], [concept_technology], [concept_institution], [concept_building], [concept_character_trait], or even an option selected during a special event. Values adjusted by $concept_modifiers$ all have tooltips that explain the full list of sources and their values."
 
  concept_terrain: "Рельєф місцевости"
@@ -549,6 +550,7 @@
  concept_workforce_gen: "Робочої сили"
  concept_workforce_laborer: "Робітники"
  concept_workforce_laborer_gen: "Робітників"
+ concept_workforce_laborer_acc: "Робітники"
  concept_workforce_laborer_dat: "Робітнику"
  concept_workforce_desc: "Робоча сила [Concept('concept_building', '$concept_building_gen$')|l], яка складається із [Concept('concept_pop', '$concept_pops_gen$')|l] з різними [Concept('concept_profession', '$concept_professions_ins$')|l], та залежить від вибраного [Concept('concept_production_method', '$concept_production_method_gen$')|l]."
 
@@ -597,7 +599,10 @@
  concept_subsistence_building_desc:2 "A set of [Concept('concept_building', '$concept_buildings$')] that perform low-intensity, decentralized production of food and basic resource [Concept('concept_good','$concept_goods$')] suitable for mere survival. Their production is split between a small quantity of [Concept('concept_good','$concept_goods$')] to be sold on the [concept_market] and [concept_subsistence_output] used to sustain the meager [concept_sol] of the [SelectLocalization(GetPlayer.IsValid,'concept_subsistence_building_desc_added','Peasants')] who work there. They are considerably less effective than most $concept_buildings$, but will operate on any unclaimed [concept_arable_land] and does not require manual [concept_construction]."
  concept_subsistence_building_desc_added:0 "[GetPopType('peasants').GetName]"
 
- concept_economy_of_scale:0 "Economy of Scale" #Економія за рахунок зростання мірила
+ concept_economy_of_scale: "Економія від розміру"
+ concept_economy_of_scale_gen: "Економії від розміру"
+ concept_economy_of_scale_acc: "Економію від розміру"
+ concept_economy_of_scale_dat: "Економії від розміру"
  concept_economy_of_scale_desc:2 "Many [Concept('concept_building','$concept_buildings$')] become more efficient the larger they get. Such $concept_buildings$ gain the following effects for every [concept_building_level] beyond the first:\n[GetStaticModifier('economy_of_scale').GetDesc][AddLocalizationIf(GetPlayer.IsValid,'concept_economy_of_scale_desc_ingame_added')]"
  concept_economy_of_scale_desc_ingame_added:0 "\n\nYour current national level cap for $concept_economy_of_scale$ effects is [GetPlayer.GetModifier.GetValueWithBreakdownFor('building_economy_of_scale_level_cap_add')]."
 
@@ -1161,6 +1166,7 @@
  concept_customs_union: "Митна спілка"
  concept_customs_union_acc: "Митну спілку"
  concept_customs_union_gen: "Митної спілки"
+ concept_customs_union_loc: "Митній спілці"
  concept_customs_union_desc:1 "A [concept_diplomatic_pact] between a [concept_senior_partner] and one or several [Concept('concept_junior_partner','$concept_junior_partners$')] to share a single [concept_market], under the leadership of the $concept_senior_partner$. All [concept_subject] $concept_diplomatic_pacts_short$ also act as a $concept_customs_union$ $concept_diplomatic_pact_short$."
 
  concept_senior_partner: "Старший учасник"
@@ -1408,7 +1414,7 @@
 
  concept_throughput: "Пропускна спроможність"
  concept_throughput_gen: "Пропускної спроможности"
- concept_throughput_desc:1 "How effectively the [concept_workforce] of a [concept_building] can turn [Concept('concept_good_consumption','$concept_input_goods$')] into [Concept('concept_good_production','$concept_output_goods$')] or other effects. $concept_throughput$ can increase as a result of [concept_economy_of_scale], and might be adjusted up or down due to [Concept('concept_modifier','$concept_modifiers$')]."
+ concept_throughput_desc: "Наскільки ефективно [Concept('concept_workforce','$concept_workforce_laborer_acc$')|l] [Concept('concept_building','$concept_building_gen$')|l] можуть перетворити [Concept('concept_good_consumption','$concept_input_goods_acc$')|l] у [Concept('concept_good_production','$concept_output_goods_acc$')|l] або інші заподії. $concept_throughput$ може збільшитися внаслідок [Concept('concept_economy_of_scale','$concept_economy_of_scale_gen$')|l] чи змінитися в бік збільшення або зменшення через [Concept('concept_modifier','$concept_modifiers_acc$')|l]."
 
  concept_native_uprising: "Тубільський виступ"
  concept_native_uprising_gen: "Тубільського виступу"
@@ -2007,6 +2013,7 @@
  concept_good_produce:1 "Produce"
  concept_good_produces:0 "Produces"
  concept_output_goods: "Вихідні товари"
+ concept_output_goods_acc: "Вихідні товари"
  concept_good_production_desc: "Кількість [Concept('concept_good','$concept_goods_gen$')|l], вироблене [Concept('concept_building','$concept_building_ins$')|l], що буде продана для отримання [Concept('concept_revenue','$concept_revenue_gen$')|l]."
 
  concept_good_consumption: "Споживання"
@@ -2014,6 +2021,7 @@
  concept_good_consumed: "Спожито"
  concept_good_consumed_adj: "Спожит"
  concept_input_goods: "Вхідні товари"
+ concept_input_goods_acc: "Вхідні товари"
  concept_good_consumption_desc:1 "Кількість [Concept('concept_good','$concept_goods_gen$')|l], спожите [Concept('concept_building','$concept_building_ins$')|l] або [Concept('concept_pop','$concept_population_ins$')|l] в процесі підтримання своєї [Concept('concept_throughput','$concept_throughput_gen$')|l] чи свого [Concept('concept_wealth','$concept_wealth_gen$')|l]."
 
  concept_subsidy: "Субсидія"
@@ -2370,7 +2378,8 @@
  concept_journal: "Часопис"
  concept_journal_entries: "Записи у часописі"
  concept_journal_entries_gen: "Записів у часописі"
- concept_journal_entry_desc: "$concept_journal_entries$ відстежують події, що відбуваються у вашій державі. Вони можуть представляти можливості або виклики, нагадувати про дані вами обіцянки або попереджати про потенційні кризи, які можуть виникнути.\n\nЗаписи у часописі зазвичай вирішуються й видаляються з вашого часопису, коли вони вважаються #bold виконаними#!. Проте не усі записи у часописі можуть бути #bold виконаними#!. Деякі з них можуть бути #bold проваленими#!, #bold час вийшов#! або видалені за певних умов."
+ concept_journal_entries_acc: "Записи у часописі"
+ concept_journal_entry_desc: "$concept_journal_entries$ відстежують події, що відбуваються у вашій державі. Вони можуть представляти можливості або виклики, нагадувати про дані вами обіцянки або попереджати про потенційні кризи, які можуть виникнути.\n\nЗаписи у часописі зазвичай вирішуються й видаляються з вашого часопису, коли вони вважаються #bold виконаними#!. Проте не усі записи у часописі можуть бути #bold виконаними#!. Деякі з них можуть бути #bold проваленими#!, ті, в яких #bold час вийшов#!, або #bold видаленими#! за певних умов."
 
  concept_political_movement_placated: "Заспокоєні"
  concept_political_movement_placated_desc:1 "A $concept_political_movement_placated$ [concept_political_movement] is currently satisfied with the changes you are making to the $concept_country$, and will put their [concept_revolution] on hold for now. They will resume organizing in the event that you abandon that course."

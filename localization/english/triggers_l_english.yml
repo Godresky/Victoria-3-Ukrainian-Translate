@@ -496,9 +496,9 @@
  TRIGGER_WEEKLY_PROFIT_THIRD_NOT: "Щотижневий прибуток #bold не #!$COMPARATOR$ #variable $NUM$#!"
 
  TRIGGER_OCCUPANCY: "[concept_occupancy] робочої сили $COMPARATOR$ #variable $NUM|%0v$#!"
- TRIGGER_OCCUPANCY_NOT:3 "The workforce [concept_occupancy] is #bold not #!$COMPARATOR$ #variable $NUM|%0v$#!"
- TRIGGER_OCCUPANCY_THIRD:1 "The workforce [concept_occupancy] of [BUILDING.GetName] is $COMPARATOR$ #variable $NUM|%0v$#! (currently: $CURRENT_VALUE|%0v$)"
- TRIGGER_OCCUPANCY_THIRD_NOT:2 "The workforce [concept_occupancy] of [BUILDING.GetName] is #bold not #!$COMPARATOR$ #variable $NUM|%0v$#! (currently: $CURRENT_VALUE|%0v$)"
+ TRIGGER_OCCUPANCY_NOT: "[concept_occupancy] робочої сили #bold не#! $COMPARATOR$ #variable $NUM|%0v$#!"
+ TRIGGER_OCCUPANCY_THIRD: "[concept_occupancy] робочої сили будівлі [BUILDING.GetName|l] $COMPARATOR$ #variable $NUM|%0v$#! (наразі: $CURRENT_VALUE|%0v$)"
+ TRIGGER_OCCUPANCY_THIRD_NOT: "[concept_occupancy] робочої сили будівлі [BUILDING.GetName|l] #bold не#! $COMPARATOR$ #variable $NUM|%0v$#! (наразі: $CURRENT_VALUE|%0v$)"
  
  TRIGGER_INTEREST_GROUP_POPULATION_PERCENTAGE:0 "Percentage of country population $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_INTEREST_GROUP_POPULATION_PERCENTAGE_NOT:1 "Percentage of country population #bold not #!$COMPARATOR$ #variable $NUM$#!"
@@ -1093,8 +1093,8 @@
  TRIGGER_MARKET_GOODS_IMPORTS_THIRD:0 "Imports for [GOODS.GetName] in [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_MARKET_GOODS_IMPORTS_THIRD_NOT:0 "Imports for [GOODS.GetName] in [MARKET.GetName] NOT $COMPARATOR$ #variable $NUM$#!"
  
- TRIGGER_MARKET_GOODS_EXPORTS:0 "Exports for [GOODS.GetName] in [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_MARKET_GOODS_EXPORTS_NOT:1 "Exports for [GOODS.GetName] in [MARKET.GetName] #bold not #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_MARKET_GOODS_EXPORTS: "Вивіз товару [GOODS.GetName|l] для  ринку ([MARKET.GetName]) $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_MARKET_GOODS_EXPORTS_NOT: "Вивіз товару [GOODS.GetName|l] для ринку ([MARKET.GetName]) #bold не#! $COMPARATOR$ #variable $NUM$#!"
  
  TRIGGER_MARKET_GOODS_DELTA:0 "Delta for [GOODS.GetName] in [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_MARKET_GOODS_DELTA_NOT:1 "Delta for [GOODS.GetName] in [MARKET.GetName] #bold not #!$COMPARATOR$ #variable $NUM$#!"
@@ -1304,10 +1304,10 @@
  TRIGGER_IS_VIOLATING_SOVEREIGNTY_OF:0 "[COUNTRY.GetName] is violating [TARGET_COUNTRY.GetAdjectiveNoFormatting] [concept_sovereignty]"
  TRIGGER_IS_VIOLATING_SOVEREIGNTY_OF_NOT:1 "[COUNTRY.GetName] is #bold not #!violating [TARGET_COUNTRY.GetAdjectiveNoFormatting] [concept_sovereignty]"
  
- TRIGGER_IS_SUBSIDIZED:2 "Is [Concept('concept_subsidies', '$concept_subsidized$')]"
- TRIGGER_IS_SUBSIDIZED_NOT:3 "Is #bold not #![Concept('concept_subsidies', '$concept_subsidized$')]"
- TRIGGER_IS_SUBSIDIZED_THIRD:1 "[BUILDING.GetName] is [Concept('concept_subsidies', '$concept_subsidized$')]"
- TRIGGER_IS_SUBSIDIZED_THIRD_NOT:1 "[BUILDING.GetName] is #bold not #![Concept('concept_subsidies', '$concept_subsidized$')]"
+ TRIGGER_IS_SUBSIDIZED: "Є [Concept('concept_subsidies', '$concept_subsidized$')|l]"
+ TRIGGER_IS_SUBSIDIZED_NOT: "#bold Не#! є [Concept('concept_subsidies', '$concept_subsidized$')|l]"
+ TRIGGER_IS_SUBSIDIZED_THIRD: "[BUILDING.GetName] [Concept('concept_subsidies', '$concept_subsidized$')|l]"
+ TRIGGER_IS_SUBSIDIZED_THIRD_NOT: "[BUILDING.GetName] #bold не#! [Concept('concept_subsidies', '$concept_subsidized$')|l]"
  
  TRIGGER_IS_REPAIRING:0 "[Character.GetFullName] is busy repairing after losing a naval battle"
  TRIGGER_IS_REPAIRING_NOT:1 "[Character.GetFullName] has #bold not #!lost a naval battle recently"
@@ -1334,8 +1334,8 @@
  
  TRIGGER_CASH_RESERVES_RATIO: "Сума [Concept('concept_cash_reserves', '$concept_cash_reserves_gen$')|l] $COMPARATOR$ $NUM|%0v$"
  TRIGGER_CASH_RESERVES_RATIO_NOT: "Сума [Concept('concept_cash_reserves', '$concept_cash_reserves_gen$')|l] #bold не#! $COMPARATOR$ $NUM|%0v$"
- TRIGGER_CASH_RESERVES_RATIO_THIRD: "Сума [Concept('concept_cash_reserves', '$concept_cash_reserves_gen$')|l] будівлі [BUILDING.GetName] $COMPARATOR$ $NUM|%0v$ (наразі: $CURRENT_VALUE|%0v$)"
- TRIGGER_CASH_RESERVES_RATIO_THIRD_NOT: "Сума [Concept('concept_cash_reserves', '$concept_cash_reserves_gen$')|l] будівлі [BUILDING.GetName] #bold не#! $COMPARATOR$ $NUM|%0v$ (наразі: $CURRENT_VALUE|%0v$)"
+ TRIGGER_CASH_RESERVES_RATIO_THIRD: "Сума [Concept('concept_cash_reserves', '$concept_cash_reserves_gen$')|l] будівлі [BUILDING.GetName|l] $COMPARATOR$ $NUM|%0v$ (наразі: $CURRENT_VALUE|%0v$)"
+ TRIGGER_CASH_RESERVES_RATIO_THIRD_NOT: "Сума [Concept('concept_cash_reserves', '$concept_cash_reserves_gen$')|l] будівлі [BUILDING.GetName|l] #bold не#! $COMPARATOR$ $NUM|%0v$ (наразі: $CURRENT_VALUE|%0v$)"
  
  TRIGGER_IS_TRADE_ROUTE_ACTIVE:0 "The [concept_trade_route] is active"
  TRIGGER_IS_TRADE_ROUTE_ACTIVE_NOT:0 "The [concept_trade_route] is inactive"
@@ -1548,13 +1548,13 @@
  TRIGGER_ANY_SCOPE_BUILDING_FIRST_NOT:1 "No [Country.GetAdjectiveNoFlag] [concept_building]:"
  TRIGGER_ANY_SCOPE_BUILDING_THIRD: "Будь-яка [concept_building|l] у [Concept('concept_state','$concept_state_loc$')|l] [Country.GetNameNoFlag]:"
  TRIGGER_ANY_SCOPE_BUILDING_THIRD_NOT:1 "No [concept_building] in [Country.GetNameNoFlag]:"
- TRIGGER_ANY_SCOPE_BUILDING_PERCENT:2 "$PARAMETERS$ of $FILTER$[Concept('concept_building', '$concept_buildings$')]:"
- TRIGGER_ANY_SCOPE_BUILDING_PERCENT_FIRST:3 "$PARAMETERS$ of $FILTER$[Concept('concept_building', '$concept_buildings$')]:"
- TRIGGER_ANY_SCOPE_BUILDING_PERCENT_THIRD:2 "$PARAMETERS$ of $FILTER$[Concept('concept_building', '$concept_buildings$')]:"
+ TRIGGER_ANY_SCOPE_BUILDING_PERCENT: "$PARAMETERS$ - $FILTER$[Concept('concept_building', '$concept_buildings$')|l]:"
+ TRIGGER_ANY_SCOPE_BUILDING_PERCENT_FIRST: "$PARAMETERS$ - $FILTER$[Concept('concept_building', '$concept_buildings$')|l]:"
+ TRIGGER_ANY_SCOPE_BUILDING_PERCENT_THIRD: "$PARAMETERS$ - $FILTER$[Concept('concept_building', '$concept_buildings$')|l]:"
  TRIGGER_ANY_SCOPE_BUILDING_COUNT:2 "$PARAMETERS$ $FILTER$[Concept('concept_building', '$concept_buildings$')]:"
- TRIGGER_ANY_SCOPE_BUILDING_ALL:1 "All [Concept('concept_building', '$concept_buildings$')]:"
- TRIGGER_ANY_SCOPE_BUILDING_ALL_FIRST:1 "All [Country.GetAdjectiveNoFlag] [Concept('concept_building', '$concept_buildings$')]:"
- TRIGGER_ANY_SCOPE_BUILDING_ALL_THIRD:1 "All [Concept('concept_building', '$concept_buildings$')]:"
+ TRIGGER_ANY_SCOPE_BUILDING_ALL: "Усі [Concept('concept_building', '$concept_buildings$')|l]:"
+ TRIGGER_ANY_SCOPE_BUILDING_ALL_FIRST: "Усі #yellow [Country.GetAdjectiveNoFlag]і#! [Concept('concept_building', '$concept_buildings$')|l]:"
+ TRIGGER_ANY_SCOPE_BUILDING_ALL_THIRD: "Усі [Concept('concept_building', '$concept_buildings$')|l]:"
 
  TRIGGER_ANY_SCOPE_BUILDING_IN_STATE_THIRD: "Будь-яка [concept_building|l] у [Concept('concept_state','$concept_state_loc$')|l] [State.GetName]:"
  TRIGGER_ANY_SCOPE_BUILDING_IN_STATE_THIRD_NOT:1 "No [concept_building] in [State.GetName]:"
@@ -2208,7 +2208,7 @@ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_GREATER_THAN:0 "Remaining duratio
 
  TRIGGER_PARTICIPANTS_GREATER_THAN:0 "The number of countries in [MARKET.GetName] is greater than $TARGET_VALUE|0v$"
  TRIGGER_PARTICIPANTS_GREATER_THAN_NOT:0 "The number of countries in [MARKET.GetName] is #b not#! greater than $TARGET_VALUE|0v$"
- TRIGGER_PARTICIPANTS_GREATER_OR_EQUAL:0 "The number of countries in [MARKET.GetName] is greater than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_PARTICIPANTS_GREATER_OR_EQUAL: "Кількість країн, які входять в [MARKET.GetName|l], більша або дорівнює $TARGET_VALUE|0v$"
  TRIGGER_PARTICIPANTS_GREATER_OR_EQUAL_NOT:0 "The number of countries in [MARKET.GetName] is #b not#! greater than, or equal to $TARGET_VALUE|0v$"
  TRIGGER_PARTICIPANTS_LESS_THAN:0 "The number of countries in [MARKET.GetName] is less than $TARGET_VALUE|0v$"
  TRIGGER_PARTICIPANTS_LESS_THAN_NOT:0 "The number of countries in [MARKET.GetName] is #b not#! less than $TARGET_VALUE|0v$"
@@ -2516,12 +2516,12 @@ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_GREATER_THAN:0 "Remaining duratio
  TRIGGER_STATE_OWNER_EQUAL_FIRST: "[TARGET_COUNTRY.GetNameNoFlag] володіє [Concept('concept_state', '$concept_state_ins$')|l]"
  TRIGGER_STATE_OWNER_EQUAL_FIRST_NOT: "[TARGET_COUNTRY.GetNameNoFlag] не володіє [Concept('concept_state', '$concept_state_ins$')|l]"
 
- TRIGGER_MARKET_OWNER_EQUAL:0 "[concept_market] is controlled by [TARGET_COUNTRY.GetName]"
- TRIGGER_MARKET_OWNER_EQUAL_NOT:0 "[concept_market] is #bold not#! controlled by [TARGET_COUNTRY.GetName]"
- TRIGGER_MARKET_OWNER_EQUAL_THIRD:0 "[concept_market] is controlled by [TARGET_COUNTRY.GetName]"
- TRIGGER_MARKET_OWNER_EQUAL_THIRD_NOT:0 "[concept_market] is not controlled by [TARGET_COUNTRY.GetName]"
- TRIGGER_MARKET_OWNER_EQUAL_FIRST:0 "[TARGET_COUNTRY.GetNameNoFlag] control [concept_market]"
- TRIGGER_MARKET_OWNER_EQUAL_FIRST_NOT:0 "[TARGET_COUNTRY.GetNameNoFlag] does not control [concept_market]"
+ TRIGGER_MARKET_OWNER_EQUAL: "[concept_market] під контролем держави [TARGET_COUNTRY.GetName]"
+ TRIGGER_MARKET_OWNER_EQUAL_NOT: "[concept_market] #bold не#! під контролем держави [TARGET_COUNTRY.GetName]"
+ TRIGGER_MARKET_OWNER_EQUAL_THIRD: "[concept_market] під контролем держави [TARGET_COUNTRY.GetName]"
+ TRIGGER_MARKET_OWNER_EQUAL_THIRD_NOT: "[concept_market] не під контролем держави [TARGET_COUNTRY.GetName]"
+ TRIGGER_MARKET_OWNER_EQUAL_FIRST: "[TARGET_COUNTRY.GetNameNoFlag] контролює [Concept('concept_market', '$concept_market_acc$')|l]"
+ TRIGGER_MARKET_OWNER_EQUAL_FIRST_NOT: "[TARGET_COUNTRY.GetNameNoFlag] не контролює [Concept('concept_market', '$concept_market_acc$')|l]"
 
  TRIGGER_NONE_OWNER_EQUAL:0 "Belongs to [TARGET_COUNTRY.GetName]"
  TRIGGER_NONE_OWNER_EQUAL_NOT:0 "Does #bold not #!belong to [TARGET_COUNTRY.GetName]"

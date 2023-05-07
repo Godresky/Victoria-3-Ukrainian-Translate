@@ -135,8 +135,8 @@ pm_disabled_steam_power: "Без парової потужності"
  pm_mechanized_workshops: "Механізовані майстерні"
 
  pmg_luxury_building_furniture_manufacturies: "Розкішне виробництво"
- pm_no_luxuries: "Не розкішна мебля"
- pm_luxury_furniture: "Розкішна мебля"
+ pm_no_luxuries: "Не розкішні меблі"
+ pm_luxury_furniture: "Розкішні меблі"
  pm_precision_tools: "Точні інструменти"
 
  pmg_automation_building_furniture_manufacturies: "Самочинність"
@@ -237,7 +237,7 @@ pm_disabled_steam_power: "Без парової потужності"
 # Motor Industry
  pmg_base_building_motor_industry: "Моделя рушія"
  pm_steam_engines: "Парові рушії"
- pm_electric_engines: "Електрицні рушії"
+ pm_electric_engines: "Електричні рушії"
  pm_diesel_engines: "Дизельні рушії"
 
  pmg_automobile_production: "Виробництво"
@@ -674,8 +674,8 @@ pm_steam_rail_transport: "Залізниця"
  pm_automated_bakery: "Автоматизована пекарня"
  
  
- pm_munition_plants: "Виробні боєприпасів"
- pm_no_munitions: "Немає виробництва боєприпасів"
+ pm_munition_plants: "Виробні набоїв"
+ pm_no_munitions: "Немає виробництва набоїв"
  pm_synthetics: "Синтетика"
  pm_no_synthetics: "Немає синтетики"
  

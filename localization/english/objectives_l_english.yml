@@ -13,7 +13,7 @@
  objective_tutorial_name_PER: "#v $PER$#!"
  objective_tutorial_desc_PER: "#lore $PER_FLAVOR_TEXT$#!"
  
- objective_economic_dominance: "Економічне домінування"
+ objective_economic_dominance: "Економічне панування"
  objective_economic_dominance_desc: "Ваша мета розширити своє виробництво, охоплення ринку та вплив на торгівлю, доки світова економіка не стане під вашим контролем. Вашою кінцевою ціллю буде контроль над левовою часткою світового ВВП."
  objective_economic_dominance_idle_header: "Продовжуйте йти своєю дорогою"
  objective_economic_dominance_idle_hint: "З часом з’явиться більше викликів"

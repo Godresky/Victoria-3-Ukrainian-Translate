@@ -1117,7 +1117,7 @@
 
 
  ### Journal Entries
- JOURNAL_ENTRY_IN_PROGRESS:0 "@green_checkmark! #bold Completion In Progress#!"
+ JOURNAL_ENTRY_IN_PROGRESS: "@green_checkmark! #bold Виконання триває#!"
  
  je_tutorial_expand_basic_building:1 "Expand a basic $concept_building$"
  je_tutorial_expand_basic_building_status:0 "Expand the [JournalEntry.GetTarget.GetBuilding.GetName] in [JournalEntry.GetTarget.GetBuilding.GetState.GetName]"

@@ -418,56 +418,56 @@
  free_state_mort:0 "Increased Freestate Mortality"
 
 #Player Objectives
- economic_dominance_welcome: "Економічне домінування"
- economic_dominance_welcome_desc:2 "Through the course of this objective you will be given a series of [Concept('journal_entry','$Journal Entries$')] to complete. How you choose to complete these tasks will be left up to you, the player.\n\nNOTE: You will need to have an Iron or Coal mine in your country before getting your first Journal Entry."
- economic_dominance_lesson_button_skip:0 "Onwards!"
+ economic_dominance_welcome: "Економічне панування"
+ economic_dominance_welcome_desc: "Під час досягнення цієї цілі вам буде низку [Concept('concept_journal_entry','$concept_journal_entries_gen$')|l], які потрібно виконати. Як ви вирішите виконати ці записи, залежить від вас, гравця.\n\nЗАМІТКА: Вам потрібно мати у вашій державі залізну або вугільну копальню, щоб отримати перший запис у часописі."
+ economic_dominance_lesson_button_skip: "Далі!"
 
- je_objective_expand_goods_production:2 "Expand our Mining Industries"
- je_objective_expand_goods_production_status:0 "Expand the [JournalEntry.GetTarget.GetBuilding.GetName] in [JournalEntry.GetTarget.GetBuilding.GetState.GetName]"
- je_objective_expand_goods_production_reason:1 "We should take our first steps towards increasing our domestic output. We should expand the [JournalEntry.GetTarget.GetBuilding.GetName] in [JournalEntry.GetTarget.GetBuilding.GetState.GetName]. This will place us in a strong position to expand industries further in the future."
- je_objective_expand_goods_production_goal:1 "Increase [JournalEntry.GetTarget.GetBuilding.GetName] in [JournalEntry.GetTarget.GetBuilding.GetState.GetName] by one level."
+ je_objective_expand_goods_production: "Розширте копальню промисловість"
+ je_objective_expand_goods_production_status: "Розширте будівлю [JournalEntry.GetTarget.GetBuilding.GetName|l] у землі [JournalEntry.GetTarget.GetBuilding.GetState.GetName]"
+ je_objective_expand_goods_production_reason: "Ми повинні зробити перші кроки до збільшення внутрішнього виробництва. Ми повинні розширити будівлю [JournalEntry.GetTarget.GetBuilding.GetName|l] у землі [JournalEntry.GetTarget.GetBuilding.GetState.GetName]. Це дасть нам сильну перевагу для подальшого розширення галузей у майбутньому."
+ je_objective_expand_goods_production_goal: "Розширте будівлю [JournalEntry.GetTarget.GetBuilding.GetName|l] у землі [JournalEntry.GetTarget.GetBuilding.GetState.GetName] на один розмір."
 
- expand_goods_production_complete_1:0 "Production Increased!"
- expand_goods_production_complete_1_desc:3 "Well done! You have completed the first part of the Economic Dominance Objective. Continue to complete [Concept('journal_entry','$Journal Entries$')] to unlock additional tasks."
+ expand_goods_production_complete_1: "Збільшення виробництва!"
+ expand_goods_production_complete_1_desc: "Чудово! Ви виконали першу частину у цілі «Економічне панування». Продовжуйте виконувати [Concept('concept_journal_entry','$concept_journal_entries_acc$')|l], щоб розблокувати додаткові завдання."
 
- je_refining_goods:0 "Refining our Production"
- je_refining_goods_status:2 "Have a level 4 [GetBuildingType('building_steel_mills').GetName] in a state."
- je_refining_goods_reason:2 "Having increased our raw [Concept('concept_good','$concept_goods$')] production, we should now look to refine these $concept_goods$ to increase potential for profits across our nation. Why import from others when we can make it ourselves?"
+ je_refining_goods: "Вдосконалення нашого виробництва"
+ je_refining_goods_status: "Майте 4 розмір будівлі [GetBuildingType('building_steel_mills').GetName|l] у землі."
+ je_refining_goods_reason: "Збільшивши виробництво [Concept('concept_good','Cировини')|l], ми тепер повинні прагнути вдосконалити наші товари, щоб розширити можливості для отримання прибутку в нашій країні. Навіщо ввозити з інших держав, коли ми можемо зробити це самі?"
 
- je_specialized_goods:0 "Specialized Goods Production"
- je_specialized_goods_status:2 "Have a level 2 [GetBuildingType('building_motor_industry').GetName] in a state."
- je_specialized_goods_reason:3 "We should look to diversify our goods production further. We have started production of one good, but if we begin producing even more expensive goods, we will be able to export it to all the corners of the globe."
+ je_specialized_goods: "Виробництво спеціялізованих товарів"
+ je_specialized_goods_status: "Майте 2 розмір будівлі [GetBuildingType('building_motor_industry').GetName|l] у землі."
+ je_specialized_goods_reason: "Ми повинні шукати способи подальшої урізноманітности виробництва наших товарів. Ми розпочали виробництво одного товару, але якщо ми почнемо виробляти ще дорожчий товар, то зможемо вивозити його в усі куточки світу."
 
- je_expanding_the_market:1 "Expanding our Market"
- je_expanding_the_market_status:2 "Have 8 nations a part of your [concept_customs_union]."
- je_expanding_the_market_reason:3 "We should look to expanding our $concept_customs_union$ with additional nations. This will allow for freer and more direct trade with other nations, without the need to establishing individual [Concept('concept_trade_route','$concept_trade_routes$')]."
+ je_expanding_the_market: "Розширення нашого ринку"
+ je_expanding_the_market_status: "Майте 8 країну у вашій [Concept('concept_customs_union','$concept_customs_union_loc$')|l]."
+ je_expanding_the_market_reason: "Ми повинні прагнути до розширення нашої митної спілки з іншими країнами. Це дозволить здійснювати більш вільну та пряму торгівлю з іншими державами без необхідності прокладати окремі [Concept('concept_trade_route','$concept_trade_routes_acc$')|l]."
 
- je_strong_market:0 "The Strong Market"
- je_strong_market_reason:1 "The time has come to establish ourselves as the largest and most powerful market on the globe."
+ je_strong_market: "Потужний ринок"
+ je_strong_market_reason: "Настав час утвердитися як найбільший і найпотужніший ринок на планеті."
 
- economic_dominance_complete_1:0 "Economic Dominance Completed"
- economic_dominance_complete_desc:1 "Well done! You have completed the Economic Dominance Objective. Feel free to continue playing the game or try a different objective."
+ economic_dominance_complete_1: "Економічне панування - завершено"
+ economic_dominance_complete_desc: "Чудово! Ви виконали ціль «Економічне панування». Не соромтеся продовжувати гру або спробувати іншу ціль."
 
- je_objective_expand_goods_production_invalid_tooltip:0 "[JournalEntry.GetTarget.GetBuilding.GetName] in [JournalEntry.GetTarget.GetBuilding.GetState.GetName] is no longer owned by [GetPlayer.GetName]"
+ je_objective_expand_goods_production_invalid_tooltip: "[JournalEntry.GetTarget.GetBuilding.GetName] у землі [JournalEntry.GetTarget.GetBuilding.GetState.GetName] більше не належить державі [GetPlayer.GetName]"
 
- je_specialized_inputs:0 "Improving Production"
- je_specialized_inputs_reason:1 "With our production of industrialized products now well under way we should look to reinvest these goods back into our other buildings. We will then be able to free up other workers to work elsewhere.\n\nNOTE: Completing this journal entry will invalidate the Exporting our Profits journal entry."
+ je_specialized_inputs: "Покращення виробництва"
+ je_specialized_inputs_reason: "Оскільки наше виробництво промислових товарів зараз добре розвивається, ми повинні шукати можливості повторно вкладати їх назад в інші наші будівлі. Тоді ми зможемо звільнити інших робітників для роботи в інакших місцях.\n\nЗАМІТКА: Виконання цього запису зробить недійсним запис у часописі «Вивіз наших прибуктів»."
 
- je_utilizing_our_strength:0 "Utilizing Our Strength"
- je_utilizing_our_strength_reason:0 "As we have decided to focus on using our industrial goods for ourselves. It would be best to keep the price of these goods as low as possible so as to not ramp up costs on other buildings that rely heavily on these goods to stay profitable."
+ je_utilizing_our_strength: "Використовуючи нашу силу"
+ je_utilizing_our_strength_reason: "Оскільки ми вирішили зосередитися на використанні наших промислових товарів для себе. Найкраще тримати ціну на ці товари якомога нижчою, щоб не збільшувати витрати на інші будівлі, які значною мірою залежать від цих товарів, та залишатися прибутковим."
 
- je_exporting_profits:0 "Exporting Our Profits"
- je_exporting_profits_reason:1 "Now that we have a large stockpile of goods, we can begin exporting these goods as to increase the profitability of their production buildings.\n\nNOTE: Completing this journal entry will invalidate the Improving Production journal entry."
+ je_exporting_profits: "Вивіз наших прибуктів"
+ je_exporting_profits_reason: "Тепер, коли у нас є великий запас товарів, ми можемо почати вивозити їх, щоб збільшити прибутковість своїх виробничих будівель.\n\nЗАМІТКА: Виконання цього запису зробить недійсним запис у часописі «Покращення виробництва»."
 
- je_raise_exports_value:1 "Increasing Export Value"
- je_raise_exports_value_reason:1 "With our focus now being placed on the exportation of our valuable goods, the best course of action would be to increase the value of these goods to maximize the profits the buildings are earning."
+ je_raise_exports_value: "Збільшення вартости вивозу"
+ je_raise_exports_value_reason: "Оскільки зараз ми зосереджені на вивозі наших цінних товарів, найкращим напрямком  було б збільшити вартість цих товарів, щоб отримувати найвищі прибутки, які приносять будівлі."
  
- je_lower_production_costs:0 "Lowering Consumption Prices"
- je_lower_production_costs_reason:1 "With our growing industries not only do we need to maintain a steady stream of goods into our factories, we also need to check that these input goods are not too expensive and negatively affecting production of additional more valuable goods."
+ je_lower_production_costs: "Зниження споживчих цін"
+ je_lower_production_costs_reason: "З розвитком промисловости нам потрібно не лише підтримувати постійний потік товарів на наші виробні, але й перевіряти, щоб ці вхідні товари не були занадто дорогими і не впливали погано на виробництво додаткової, більш цінної, продукції."
 
- tt_lower_production_costs_sub_obj:0 "Have [GetGoods('iron').GetName], [GetGoods('coal').GetName], and [GetGoods('steel').GetName] in [AccessPlayer.AccessFirstMarket.GetName] 20% cheaper than their [concept_base_price]"
- tt_raise_exports_value_sub_obj:0 "Have [GetGoods('engines').GetName] in [AccessPlayer.AccessFirstMarket.GetName] 50% pricier than their [concept_base_price]"
- tt_utilizing_our_strength_sub_obj:0 "Have [GetGoods('engines').GetName] in [AccessPlayer.AccessFirstMarket.GetName] 20% cheaper than their [concept_base_price]"
+ tt_lower_production_costs_sub_obj: "[GetGoods('iron').GetName], [GetGoods('coal').GetName|l] та [GetGoods('steel').GetName|l] на ринку ([AccessPlayer.AccessFirstMarket.GetName]) повинні бути на 20% дешевшими ніж їхня [concept_base_price|l]"
+ tt_raise_exports_value_sub_obj: "[GetGoods('engines').GetName] на ринку ([AccessPlayer.AccessFirstMarket.GetName]) повинні бути на 50% дорожчими ніж їхня [concept_base_price|l]"
+ tt_utilizing_our_strength_sub_obj: "[GetGoods('engines').GetName] на ринку ([AccessPlayer.AccessFirstMarket.GetName]) повинні бути на 20% дешевшими ніж їхня [concept_base_price|l]"
 
  je_african_colonies_own_a_colony:0 "Is a [concept_colony] on the African continent"
  je_african_colonies_own_whole_state_region:0 "Spans the entire [concept_state_region]"
