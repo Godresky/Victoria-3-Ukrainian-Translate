@@ -22,9 +22,9 @@
  corrupt_connections_exposed_minor: "Викриття корупційних зв'язків"
  dealing_with_corruption: "Боротьба з корупцією"
 
- generic_laws.3.t:1 "Opposition Members Put Forth Demands"
- generic_laws.3.d:0 "More pragmatically inclined members of the [SCOPE.gsInterestGroup('opposition_demands_ig_scope').GetName], currently opposed to the passing of [SCOPE.sLaw('current_law_scope').GetName], have offered to change their stance were they to be offered certain political concessions. Such concessions would not be popular with the [SCOPE.gsInterestGroup('opposition_demands_supporting_ig_scope').GetName], however."
- generic_laws.3.f:0 ""Compromise makes a good umbrella, but a poor roof; it is temporary expedient, often wise in party politics, almost sure to be unwise in statesmanship."" # James Russell Lowell
+ generic_laws.3.t: "Опозиціонери висунули вимоги"
+ generic_laws.3.d: "Більш праґматично налаштовані члени [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l] [SCOPE.gsInterestGroup('opposition_demands_ig_scope').GetName], які обстоюють проти ухвалення [Concept('concept_law','$concept_law_gen$')|l] «[SCOPE.sLaw('current_law_scope').GetName]», погодилися змінити свою позицію, якщо їм запропонують певні політичні поступки. Однак, [SCOPE.gsInterestGroup('opposition_demands_supporting_ig_scope').GetName] не зрозуміє такі поступки."
+ generic_laws.3.f:0 "«Compromise makes a good umbrella, but a poor roof; it is temporary expedient, often wise in party politics, almost sure to be unwise in statesmanship.»" # James Russell Lowell
  generic_laws.3.a:0 "Acquiesce to their demands, the bill must pass."
  generic_laws.3.b:0 "Compromise is a tool of the weak."
  cross_bench_support:0 "Crossbench Support"
