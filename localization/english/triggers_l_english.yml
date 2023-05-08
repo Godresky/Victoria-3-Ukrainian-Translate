@@ -366,7 +366,7 @@
  TRIGGER_HAS_OVERLAPPING_INTERESTS:2 "Has [Concept('concept_interest', '$concept_interests$')] in the same [Concept('concept_strategic_region','$concept_strategic_regions$')] as [TARGET_COUNTRY.GetName]"
  TRIGGER_HAS_OVERLAPPING_INTERESTS_NOT:2 "Does #bold not#! have have any [Concept('concept_interest', '$concept_interests$')] in the same [Concept('concept_strategic_region','$concept_strategic_regions$')] as [TARGET_COUNTRY.GetName]"
  
- TRIGGER_HAS_DIPLOMATIC_RELEVANCE:1 "We are [concept_neighbors] with [TARGET_COUNTRY.GetName] or have [Concept('concept_interest', '$concept_interests$')] in the same [Concept('concept_strategic_region','$concept_strategic_regions$')]"
+ TRIGGER_HAS_DIPLOMATIC_RELEVANCE: "Ми [concept_neighbors|l] з державою [TARGET_COUNTRY.GetName] або маємо [Concept('concept_interest', '$concept_interests_acc$')|l] у тих самих [Concept('concept_strategic_region','$concept_strategic_regions_loc$')|l]"
  TRIGGER_HAS_DIPLOMATIC_RELEVANCE_NOT:2 "We are #b not#! [concept_neighbors] with [TARGET_COUNTRY.GetName] and do #b not#! have any [Concept('concept_interest', '$concept_interests$')] in the same [Concept('concept_strategic_region','$concept_strategic_regions$')]"
  
  TRIGGER_HAS_CLAIM:0 "Has a [concept_claim] on [TARGET_STATE_REGION.GetName]"
