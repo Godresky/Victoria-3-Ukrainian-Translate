@@ -24,14 +24,14 @@
 
  generic_laws.3.t: "Опозиціонери висунули вимоги"
  generic_laws.3.d: "Більш праґматично налаштовані члени [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l] [SCOPE.gsInterestGroup('opposition_demands_ig_scope').GetName], які обстоюють проти ухвалення [Concept('concept_law','$concept_law_gen$')|l] «[SCOPE.sLaw('current_law_scope').GetName]», погодилися змінити свою позицію, якщо їм запропонують певні політичні поступки. Однак, [SCOPE.gsInterestGroup('opposition_demands_supporting_ig_scope').GetName] не зрозуміє такі поступки."
- generic_laws.3.f:0 "«Compromise makes a good umbrella, but a poor roof; it is temporary expedient, often wise in party politics, almost sure to be unwise in statesmanship.»" # James Russell Lowell
- generic_laws.3.a:0 "Acquiesce to their demands, the bill must pass."
- generic_laws.3.b:0 "Compromise is a tool of the weak."
- cross_bench_support:0 "Crossbench Support"
- concessions_obtained:0 "Concessions Obtained"
- political_advances_spurned:0 "Political Advances Spurned"
- unpopular_compromises:0 "Unpopular Compromises"
- steadfast_conviction:0 "Steadfast Conviction"
+ generic_laws.3.f: "«Компроміс - це хороша парасолька, але поганий дах; він тимчасово доцільний, часто слушний у партійній політиці, але майже напевно безглуздий у державному управлінні.»" # James Russell Lowell
+ generic_laws.3.a: "Якщо пристати на їхні вимоги, закон буде ухвалений."
+ generic_laws.3.b: "Компроміс - знаряддя слабких."
+ cross_bench_support: "Поперечна опора"
+ concessions_obtained: "Отримано поступки"
+ political_advances_spurned: "Політична вимога відкинута"
+ unpopular_compromises: "Непопулярний компроміс"
+ steadfast_conviction: "Тверде переконання"
 
 
  generic_laws.4.t:0 "Popular Playwright Endorses Reform"
