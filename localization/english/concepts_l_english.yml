@@ -556,7 +556,12 @@
 
  concept_gold_reserves: "Золотий запас"
  concept_gold_reserves_gen: "Золотого запасу"
- concept_gold_reserves_desc:1 "A [Concept('concept_country','$concept_country_possessive$')] weekly budget surplus is accumulated in its $concept_gold_reserves$. If the budget balance becomes negative, any [concept_money] in the $concept_gold_reserves$ will be depleted first before the $concept_country$ starts taking [concept_loans]. The $concept_gold_reserves$ can only accumulate up to a fraction of your [concept_gdp] before diminishing returns set in. Stockpiling gold will eventually lead to depleting your economic engine."
+ concept_gold_reserves_acc: "Золотий запас"
+ concept_gold_reserves_dat: "Золотому запасу"
+ concept_gold_reserves_dat_alt: "Золотому запасові"
+ concept_gold_reserves_ins: "Золотим запасом"
+ concept_gold_reserves_loc: "Золотому запасі"
+ concept_gold_reserves_desc: "Надлишок [Concept('concept_country','$concept_country_possessive$ого')|l] щотижневого бюджету накопичується у його золотому запасі. Якщо балянс бюджету стане від’ємним, будь-які [concept_money|l] у золотому запасі будуть вичерпаними першими, до того як держава візьме [Concept('concept_loans','$concept_loan_acc$')|l]. $concept_gold_reserves$ може накопичити лише частину вашого [Concept('concept_gdp','$concept_gdp_gen$')|l], перш ніж почнеться зниження прибутковости. Накопичення золота врешті-решт призведе до виснаження вашого економічного рушія."
 
  concept_cash_reserves: "Грошові резерви"
  concept_cash_reserves_acc: "Грошові резерви"
@@ -1297,6 +1302,7 @@
 
  concept_loan: "Позика"
  concept_loan_gen: "Позики"
+ concept_loan_acc: "Позику"
  concept_loans: "Позики"
  concept_loans_gen: "Позик"
  concept_loans_acc: "Позики"
