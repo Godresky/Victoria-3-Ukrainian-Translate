@@ -725,7 +725,7 @@
  TRIGGER_SHARES_HERITAGE_AND_OTHER_TRAIT_WITH_ANY_PRIMARY_CULTURE:0 "[CULTURE.GetName] shares a heritage and a non-heritage trait with any primary culture in [TARGET_COUNTRY.GetName]"
  TRIGGER_SHARES_HERITAGE_AND_OTHER_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOT:1 "[CULTURE.GetName] does #bold not #!share a heritage and a non-heritage trait with any primary culture in [TARGET_COUNTRY.GetName]"
  
- TRIGGER_SHARES_TRAIT_WITH_STATE_RELIGION:0 "[RELIGION.GetName] shares a trait with the [concept_state_religion] in [TARGET_COUNTRY.GetName]"
+ TRIGGER_SHARES_TRAIT_WITH_STATE_RELIGION: "[RELIGION.GetName] має спільну рису з [Concept('concept_state_religion','$concept_state_religion_ins$')|l] у державі [TARGET_COUNTRY.GetName]"
  TRIGGER_SHARES_TRAIT_WITH_STATE_RELIGION_NOT:1 "[RELIGION.GetName] does #bold not #!share a trait with the [concept_state_religion] in [TARGET_COUNTRY.GetName]"
  
  TRIGGER_SHARES_HERITAGE_TRAIT_WITH_STATE_RELIGION:0 "[RELIGION.GetName] shares a trait with the [concept_state_religion] in [TARGET_COUNTRY.GetName]"
@@ -1025,8 +1025,8 @@
  
  TRIGGER_SCOPE_COUNTRY_NOCONTEXT: "Держава"
  
- TRIGGER_SHARES_HERITAGE_TRAIT_WITH_STATE_RELIGION_NOCONTEXT:1 "Shares a trait with the [concept_state_religion] [concept_state_religion] in their [concept_country]"
- TRIGGER_SHARES_HERITAGE_TRAIT_WITH_STATE_RELIGION_NOCONTEXT_NOT:1 "Does not share a trait with the [concept_state_religion] [concept_state_religion] in their [concept_country]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_WITH_STATE_RELIGION_NOCONTEXT: "Має спільну рису з [Concept('concept_state_religion','$concept_state_religion_ins$')|l] у їхній [Concept('concept_country','$concept_country_loc$')|l]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_WITH_STATE_RELIGION_NOCONTEXT_NOT: "Не має спільну рису з [Concept('concept_state_religion','$concept_state_religion_ins$')|l] у їхній [Concept('concept_country','$concept_country_loc$')|l]"
 
  TRIGGER_SHARES_HERITAGE_TRAIT_WITH_STATE_RELIGION_THIRD:0 "Shares a trait with the [concept_state_religion] ([Pop.GetCountry.GetStateReligion.GetName] in [Pop.GetCountry.GetName])"
  TRIGGER_SHARES_HERITAGE_TRAIT_WITH_STATE_RELIGION_THIRD_NOT:0 "Does not share a trait with the [concept_state_religion] ([Pop.GetCountry.GetStateReligion.GetName] in [Pop.GetCountry.GetName])"

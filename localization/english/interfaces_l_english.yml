@@ -1410,7 +1410,7 @@
  SUBSISTENCE_CONCEPT:0 "#concept $SUBSISTENCE_CONCEPT_CLEAN$#!"
  SUBSISTENCE_CONCEPT_CLEAN:0 "This is a [concept_subsistence_building], which is a highly inefficient Building that appears when there is unused [concept_arable_land] in a State. As soon as you start exploiting the potential it is using, this Building will automatically get downsized."
  SUBSISTENCE_CREATION_EXPLANATION: "Один розмір [Concept('concept_subsistence_building','$concept_subsistence_building_gen$')|l] сама створюється для кожного не використаного [Concept('concept_arable_land','$concept_arable_land_gen$')|l] у [Concept('concept_state', '$concept_state_loc$')|l].\n[Building.GetState.GetName] має #tooltippable #tooltip:[Building.GetState.GetTooltipTag],LAND_TEXT_TOOLTIP [Building.GetState.GetNumFreeArableLand|v]#!#! [SelectLocalization(GreaterThan_int32(Building.GetState.GetNumFreeArableLand, '(int32)1'),SelectLocalization(GreaterThan_int32(Building.GetState.GetNumFreeArableLand, '(int32)4'),'невикористаного','невикористаних'),'невикористане')|l] [concept_arable_land|l]"
- URBAN_CENTER_EXPLANATION:1 "This is an [GetBuildingType('building_urban_center').GetName], which automatically appears when there is enough [concept_urbanization] in the [concept_state]. $URBAN_CENTER_CREATION_EXPLANATION$"
+ URBAN_CENTER_EXPLANATION:1 "Це [GetBuildingType('building_urban_center').GetName|l], який самостійно з’являється, коли накопичується достатньо [Concept('concept_urbanization','$concept_urbanization_gen$')|l] у [Concept('concept_state','$concept_state_loc$')|l]. $URBAN_CENTER_CREATION_EXPLANATION$"
  URBAN_CENTER_CREATION_EXPLANATION: "Один розмір [GetBuildingType('building_urban_center').GetName|l] створюється за кожні [GetDefine('NEconomy','URBANIZATION_PER_BUILDING')|v] [Concept('concept_urbanization', '$concept_urbanization_gen$')|l] у [Concept('concept_state', '$concept_state_loc$')|l].\n[Building.GetState.GetName] має #tooltippable #tooltip:[Building.GetState.GetTooltipTag],URBANIZATION_BREAKDOWN [Building.GetState.CalcTotalUrbanization|v]#!#! [Concept('concept_urbanization', '$concept_urbanization_gen$')|l]"
 
  UNUSED_TRADE_ROUTES:0 "You have [Market.GetNumberOfUnusedTradeRoutes(GetPlayer.Self)|v] unused Levels of Trade Routes in [Market.GetName]"
@@ -6182,8 +6182,8 @@
 
 
  TECHNOLOGY: "Технології"
- TOOLTIP_REQUIREMENTS_ANY: "#title Вимагає будь-що з цього:#!"
- TOOLTIP_REQUIREMENTS_ALL: "#title Вимагає усе з цього:#!"
+ TOOLTIP_REQUIREMENTS_ANY: "#title Потрібна одна з цих умов:#!"
+ TOOLTIP_REQUIREMENTS_ALL: "#title Потрібно усі з цих умов:#!"
  TECHNOLOGY_RESEARCHED: "#i Уже дослідженно#!"
  TOOLTIP_UNLOCKS: "#title Розблоковує#!"
  TOOLTIP_UNLOCK_PRODUCTION_METHOD: "Розблоковує [concept_production_method|l] «$PRODUCTION_METHOD$» для [Concept('concept_building','$concept_building_gen$')|l] $BUILDING_TYPE|l$"
@@ -6198,8 +6198,8 @@
  TOOLTIP_UNLOCK_TECH_TYPE: "Дає доступ до [Concept('concept_technology','$concept_technology_gen$')|l] «$TECH_TYPE$»"
  TOOLTIP_UNLOCK_CANAL: "Розблокобує $DATA_CANAL_TYPE_NAME_FORMAT$"
  TOOLTIP_DISALLOW_LAW_TYPE: "Забороняє [Concept('concept_law','$concept_law_ins$')|l] $LAW$"
- TOOLTIP_UNLOCKED_BY_LAW_TYPE: "Розблоковано [Concept('concept_law','$concept_law_ins$')|l] $LAW$"
- TOOLTIP_DISALLOWED_BY_LAW_TYPE: "Заборонено [Concept('concept_law','$concept_law_ins$')|l] $LAW$"
+ TOOLTIP_UNLOCKED_BY_LAW_TYPE: "Розблоковано через [Concept('concept_law','$concept_law_acc$')|l] $LAW$"
+ TOOLTIP_DISALLOWED_BY_LAW_TYPE: "Заблоковано через [Concept('concept_law','$concept_law_acc$')|l] $LAW$"
  TOOLTIP_UNLOCKED_BY_TECHNOLOGY: "$TECHNOLOGY$"
 
  TOOLTIP_UNLOCKS_NO_BREAKDOWN: "$UNLOCKED_DESC$"
@@ -6352,8 +6352,8 @@
  LENS_ACTION_NUMBER: "[LensOption.GetText|v]\n[GetDescriptiveText(LensOption.GetMapInteraction)]\nКількість доступних цілей для цієї дії: #v [LensOption.GetNumberOfSelections|+]#!"
  BUILDING_ACTION_NUMBER: "[BuildingType.GetName|v]\nВиберіть у якому [Concept('concept_state', '$concept_state_loc$')|l] звести [Concept('concept_building', '$concept_building_acc$')|l] [BuildingType.GetName|v|l]\nКількість [Concept('concept_state', '$concept_states_gen$')|l], де наразі може бути спорудженно: #v [BuildingType.GetNumAvailableStatesForBuilding|+]#!"
 
- IS_ACTIVE: "$TEXT$ (#P Активна#!)"
- IS_INACTIVE: "$TEXT$ (Неактивна)"
+ IS_ACTIVE: "$TEXT$ (#P Діє#!)"
+ IS_INACTIVE: "$TEXT$ (Не діє)"
 
  PRODUCTION_METHOD_OPTIONS: "Ви маєте #bold #P [ProductionMethodGroup.GetNumAvailableOptions(Building.AccessSelf)]#!#! [SelectLocalization(GreaterThan_int32(ProductionMethodGroup.GetNumAvailableOptions(Building.AccessSelf), '(int32)1'),SelectLocalization(GreaterThan_int32(ProductionMethodGroup.GetNumAvailableOptions(Building.AccessSelf), '(int32)4'),'варіянтів','варіянти'),'варіянт')|l] для [Concept('concept_production_method','$concept_production_method_gen$')|l] «[ProductionMethodGroup.GetName]»"
  PRODUCTION_METHOD_OPTIONS_BULK: "Ви маєте #bold #P [ProductionMethodGroup.GetNumAvailableOptionsForBuildingType(ProductionMethodsPanelEntry.AccessBuildingType)]#!#! [SelectLocalization(GreaterThan_int32(ProductionMethodGroup.GetNumAvailableOptionsForBuildingType(ProductionMethodsPanelEntry.AccessBuildingType), '(int32)1'),SelectLocalization(GreaterThan_int32(ProductionMethodGroup.GetNumAvailableOptionsForBuildingType(ProductionMethodsPanelEntry.AccessBuildingType), '(int32)4'),'варіянтів','варіянти'),'варіянт')|l] для [Concept('concept_production_method','$concept_production_method_gen$')|l] «[ProductionMethodGroup.GetName]»"

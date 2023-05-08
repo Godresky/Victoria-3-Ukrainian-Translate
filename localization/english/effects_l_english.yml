@@ -35,7 +35,7 @@
  SET_INSTITUTION_INVESTMENT_LEVEL: "[COUNTRY.GetName] встановлює рівень розвитку установи [INSTITUTION.GetName] на $LEVEL|v$"
  CHANGE_INSTITUTION_INVESTMENT_LEVEL: "[Country.GetName] змінює рівень розвитку установи [Institution.GetName] на $INVESTMENT|v$"
  ACTIVATE_LAW_WITH_INVESTMENT_LEVEL: "[COUNTRY.GetName] ухвалює закон [Law.GetFullNameWithStatus] з рівнем розвитку $LEVEL|v$"
- DEACTIVATE_LAW: "[COUNTRY.GetName] відключає закон [Law.GetFullNameWithStatus]"
+ DEACTIVATE_LAW: "[COUNTRY.GetName] забороняє закон [Law.GetFullNameWithStatus]"
  CALL_ELECTION: "[COUNTRY.GetName] матиме #variable вибори через $MONTHS$ місяці#!"
  SET_INTEREST_GROUP_NAME: "[IG.GetName] перейменується у #variable $IG_NAME$#!"
  SET_AS_INTEREST_GROUP_LEADER: "[Character.GetFullName|v] стає провідником [Character.GetInterestGroup.GetName|v]"
@@ -430,9 +430,9 @@
  ADD_DECLARED_INTEREST: "Додасть [Concept('concept_active_interest','$concept_active_interest_acc$')|l] у стр. реґіоні $REGION_NAME|v$"
  CHANGE_SUBJECT_TYPE:0 "[Country.GetName] becomes $SUBJECT_TYPE$ of [Country.GetOverlord.GetName]"
 
- PARTIES_EMERGENCE:0 "This will cause parties to emerge."
- PARTIES_DISAPPEARENCE:0 "This will cause parties to disappear."
- UPDATE_PARTY_SUPPORT_EFFECT:0 "Interest Groups will re-evaluate their party support."
+ PARTIES_EMERGENCE: "Це призведе до створення партій."
+ PARTIES_DISAPPEARENCE: "Це призведе до зникнення партій."
+ UPDATE_PARTY_SUPPORT_EFFECT: "Зацікавлені групи переглянуть свою підтримку партій."
  
  ADD_CULTURE_STANDARD_OF_LIVING_MODIFIER: "Додати «$MODIFIER_DESC$» [Concept('concept_state', '$concept_state_dat$')] [State.GetName]"
 
