@@ -142,27 +142,27 @@
  ai_attitude_loyal_tooltip: "#header $ai_attitude_loyal$ [concept_attitude|l]#!\n$ai_attitude_loyal_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
   
  ai_attitude_protective: "#V #P Захисне#!#!"
- ai_attitude_protective_desc: "[COUNTRY.GetName] бачить [Concept('concept_country', '$concept_country_acc$')|l] [TARGET_COUNTRY.GetName], як #P #bold потребуючих їхнього захисту#!#! в геополітичних справах. Імовірно, вони втрутяться на нашому боці в [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] і можуть запропонувати [TARGET_COUNTRY.GetName] стати їхнім [concept_subject]."
+ ai_attitude_protective_desc: "[COUNTRY.GetName] бачить [Concept('concept_country', '$concept_country_acc$')|l] [TARGET_COUNTRY.GetName], як #P #bold тих, хто потребують їхнього захисту#!#!, в геополітичних справах. Імовірно, вони втрутяться на нашому боці у [Concept('concept_diplomatic_play', '$concept_diplomatic_plays_acc$')|l] і можуть запропонувати [TARGET_COUNTRY.GetName] стати їхнім [concept_subject]."
  ai_attitude_protective_tooltip: "#header $ai_attitude_protective$ [concept_attitude|l]#!\n$ai_attitude_protective_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
   
  ai_attitude_wary: "#V #N Підозріле#!#!"
- ai_attitude_wary_desc: "[COUNTRY.GetName] бачить [Concept('concept_country', '$concept_country_acc$')|l] [TARGET_COUNTRY.GetName], як #N #bold потенційну загрозу#!#! в геополітичних справах. Вони менш сприйнятливі до дипломатії та можуть шукати союзників, щоб захиститися від нас."
+ ai_attitude_wary_desc: "[COUNTRY.GetName] бачить [Concept('concept_country', '$concept_country_acc$')|l] [TARGET_COUNTRY.GetName], як #N #bold можливу загрозу#!#! в геополітичних справах. Вони менш сприйнятливі до дипломатії та шукатимуть союзників, щоб захиститися від нас."
  ai_attitude_wary_tooltip: "#header $ai_attitude_wary$ [concept_attitude|l]#!\n$ai_attitude_wary_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
  
  ai_attitude_antagonistic: "#V #N Вороже#!#!"
- ai_attitude_antagonistic_desc: "[COUNTRY.GetName] бачить [Concept('concept_country', '$concept_country_acc$')|l] [TARGET_COUNTRY.GetName], як #N #bold загрозливу силу#!#! в геополітичних справах. Імовірно, вони шукатимуть альянсів із нашими ворогами й можуть приєднатися до [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')], щоб протистояти нашій експансії."
+ ai_attitude_antagonistic_desc: "[COUNTRY.GetName] бачить [Concept('concept_country', '$concept_country_acc$')|l] [TARGET_COUNTRY.GetName], як #N #bold загрозливу силу#!#! в геополітичних справах. Імовірно, вони шукатимуть альянсів з нашими ворогами й можуть приєднатися до [Concept('concept_diplomatic_play', '$concept_diplomatic_plays_gen$')|l], щоб протистояти нашому розширенню."
  ai_attitude_antagonistic_tooltip: "#header $ai_attitude_antagonistic$ [concept_attitude|l]#!\n$ai_attitude_antagonistic_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
  
  ai_attitude_belligerent: "#V #N Войовниче#!#!"
- ai_attitude_belligerent_desc: "[COUNTRY.GetName] бачить [Concept('concept_country', '$concept_country_acc$')|l] [TARGET_COUNTRY.GetName], як #N #bold ціль для завоювання#!#! в геополітичних справах. Вони, імовірно, розпочнуть [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] проти [TARGET_COUNTRY.GetName], якщо відчують, що шанси на їхню користь."
+ ai_attitude_belligerent_desc: "[COUNTRY.GetName] бачить [Concept('concept_country', '$concept_country_acc$')|l] [TARGET_COUNTRY.GetName], як #N #bold ціль для завоювання#!#! в геополітичних справах. Імовірно, вони розпочнуть [Concept('concept_diplomatic_play', '$concept_diplomatic_plays_acc$')|l] супроти держави [TARGET_COUNTRY.GetName], якщо відчують, що у них є шанси перемогти."
  ai_attitude_belligerent_tooltip: "#header $ai_attitude_belligerent$ [concept_attitude|l]#!\n$ai_attitude_belligerent_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
  
  ai_attitude_domineering: "#V #N Домінування#!#!"
- ai_attitude_domineering_desc: "[COUNTRY.GetName] бачить [Concept('concept_country', '$concept_country_acc$')|l] [TARGET_COUNTRY.GetName], як їхній #N #bold природний суб‘єкт#!#! в геополітичних справах. Імовірно, вони спробують зробити з нас [concept_subject] або й далі інтегруватимуть [TARGET_COUNTRY.GetName], якщо ми вже є їхнім [concept_subject]."
+ ai_attitude_domineering_desc: "[COUNTRY.GetName] бачить [Concept('concept_country', '$concept_country_acc$')|l] [TARGET_COUNTRY.GetName], як свого #N #bold природного підвладного#!#! в геополітичних справах. Імовірно, вони спробують зробити нас своїм [Concept('concept_subject', '$concept_subject_ins$')|l] або й далі інтеґруватимуть країну [TARGET_COUNTRY.GetName], якщо ми вже є їхнім [Concept('concept_subject', '$concept_subject_ins$')|l]."
  ai_attitude_domineering_tooltip: "#header $ai_attitude_domineering$ [concept_attitude|l]#!\n$ai_attitude_domineering_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
 
  ai_attitude_rebellious: "#V #N Бунтарське#!#!"
- ai_attitude_rebellious_desc: "[COUNTRY.GetName] бачить [Concept('concept_country', '$concept_country_acc$')|l] [TARGET_COUNTRY.GetName], як їхнього #N #bold тиранічного гнобителя#!#! в геополітичних справах. Вони, імовірно, спробують [concept_diplomatic_play] за незалежність, якщо вірять, що можуть перемогти."
+ ai_attitude_rebellious_desc: "[COUNTRY.GetName] бачить [Concept('concept_country', '$concept_country_acc$')|l] [TARGET_COUNTRY.GetName], як їхнього #N #bold тиранічного гнобителя#!#! в геополітичних справах. Імовірно, вони спробують розпочати [Concept('concept_diplomatic_play', '$concept_diplomatic_plays_acc$')|l] за незалежність, якщо повірять, що в змозі перемогти."
  ai_attitude_rebellious_tooltip: "#header $ai_attitude_rebellious$ [concept_attitude|l]#!\n$ai_attitude_rebellious_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
   
  ATTITUDE_SCORE_NEUTRAL_FORMAT: "#v $SCORE|=0$#!"

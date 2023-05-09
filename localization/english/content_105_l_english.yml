@@ -1201,7 +1201,7 @@
  election_conservative_events.4.d: "Наші сусіди в [SCOPE.sCountry('election_threatening_neighbor').GetName] стали відомі своєю безжальною зовнішньою політикою занепокоєння, яку [SCOPE.sParty('hawk_campaign_party').GetName] підняла у своїй передвиборчій виправі, обіцяючи бути жорсткіше, у свою чергу, щоб стримати агресію."
  election_conservative_events.4.f: "«Мені надійшла пропозиція, щоб наші дипломати вивчали більше мов, щоб полегшити зв’язки по всьому світу. Це все добре, але ми всі знаємо, що існує лише одна мова [SCOPE.sCountry('election_threatening_neighbor').GetAdjective] брут розуміє. Цьому не вчать в університетах, але нам краще бути готовими говорити нею, якщо ми хочемо, щоб кордон залишився там, де він є!»"
  election_conservative_events.4.a: "[SCOPE.sCountry('election_threatening_neighbor').GetAdjective] загрозу треба стримувати!"
- election_conservative_events.4.b: "Вони просто шукають мішень для свого позерства."
+ election_conservative_events.4.b: "Вони просто шукають мішень для свого позування."
  election_moderate_events.1.t:0 "[ROOT.GetCountry.GetGovernment.GetName] of Conscience"
  election_moderate_events.1.d:0 "The rise of far-left and far-right political parties in [ROOT.GetCountry.GetName] has led [SCOPE.sParty('moderate_party').GetName] to portray themselves as the voice of reason in the upcoming election, a moderate centrist alternative to extremism."
  election_moderate_events.1.f:0 ""Hearing some of the rhetoric used by my opponents, you would think they'd rather not have an election at all! For all their idealism, they hardly seem like they can wait to start spilling blood. What utopias can such hatred build? A road to heaven, paved with bad intentions.""

@@ -566,10 +566,13 @@
  concept_gold_reserves_loc: "Золотому запасі"
  concept_gold_reserves_desc: "Надлишок [Concept('concept_country','$concept_country_possessive$ого')|l] щотижневого бюджету накопичується у його золотому запасі. Якщо балянс бюджету стане від’ємним, будь-які [concept_money|l] у золотому запасі будуть вичерпаними першими, до того як держава візьме [Concept('concept_loans','$concept_loan_acc$')|l]. $concept_gold_reserves$ може накопичити лише частину вашого [Concept('concept_gdp','$concept_gdp_gen$')|l], перш ніж почнеться зниження прибутковости. Накопичення золота врешті-решт призведе до виснаження вашого економічного рушія."
 
- concept_cash_reserves: "Грошові резерви"
- concept_cash_reserves_acc: "Грошові резерви"
- concept_cash_reserves_gen: "Грошових резервів"
- concept_cash_reserves_desc:1 "The assets of a [concept_building] is stored in its $concept_cash_reserves$. If the $concept_building$ runs a positive weekly [concept_building_balance], some of the [concept_money] is deposited into the $concept_cash_reserves$ while the rest is paid out to [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_shares$')] as [concept_dividends].\n\n$concept_cash_reserves$ are considered to be owned by the $concept_pops$ with $concept_ownership_shares$, who will be angry if their $concept_cash_reserves$ are destroyed due to downsizing or [concept_bankruptcy]. The sum of all $concept_cash_reserves$ in your [concept_country] determines your [concept_credit]."
+ concept_cash_reserves: "Грошові запаси"
+ concept_cash_reserves_gen: "Грошових запасів"
+ concept_cash_reserves_acc: "Грошові запаси"
+ concept_cash_reserves_dat: "Грошовим запасам"
+ concept_cash_reserves_loc: "Грошових запасах"
+ concept_cash_reserves_ins: "Грошовими запасами"
+ concept_cash_reserves_desc: "Майно [Concept('concept_building','$concept_building_gen$')|l] накопичується у її грошових запасах. Якщо будівля видає додатній щотижневий [Concept('concept_building_balance','$concept_building_balance_acc$')|l], то частина [Concept('concept_money','коштів')|l] вноситься у грошові запаси, коли ж решта виплачується [Concept('concept_pop','$concept_persons_ins$')|l] з [Concept('concept_ownership_share','$concept_ownership_shares_ins$')|l] як [Concept('concept_dividends','$concept_dividends_acc$')|l].\n\n$concept_cash_reserves$ вважається є власністю осіб з частками власности, які будуть злитися, якщо їхній грошовий запас буде знищеним через згортання або [Concept('concept_bankruptcy','$concept_bankruptcy_acc$')|l]. Вся сума грошового запасу у вашій [Concept('concept_country','$concept_country_loc$')|l] визначає ваш [Concept('concept_credit','$concept_credit_acc$')|l]."
 
  concept_obsession: "Одержимість"
  concept_obsessed: "Одержимий"
@@ -1294,6 +1297,7 @@
 
  concept_credit: "Кредит"
  concept_credit_gen: "Кредиту"
+ concept_credit_acc: "Кредит"
  concept_credit_debt: "Довг"
  concept_credit_debt_acc: "Довг"
  concept_credit_limit: "Межа кредиту"
@@ -1698,6 +1702,7 @@
  concept_person: "Особа"
  concept_persons: "Особи"
  concept_persons_gen: "Осіб"
+ concept_persons_ins: "Особами"
  concept_people: "Люди"
  concept_people_acc: "Люди"
  concept_people_gen: "Людей"
@@ -2263,6 +2268,7 @@
 
  concept_building_balance: "Балянс"
  concept_building_balance_gen: "Балянсу"
+ concept_building_balance_acc: "Балянс"
  concept_building_balance_profit: "Прибуток"
  concept_building_balance_desc:3 "A [Concept('concept_building','$concept_building_possessive$')] $concept_building_balance$ is the amount of [concept_money] that remains of its [concept_revenue] after paying [Concept('concept_building_wage','$concept_building_wages$')] and purchasing required [Concept('concept_good','$concept_goods_input$')]. The $concept_building_balance$ is divided between [Concept('concept_pop','$concept_pops$')] with [Concept('concept_ownership_share','$concept_ownership_share$')] and the $concept_building$'s [concept_cash_reserves]. A $concept_building$'s $concept_building_balance$ can be improved either by making its $concept_goods_input$ cheaper, or by making its $concept_goods_output$ more expensive. This can be done by increasing or decreasing [Concept('concept_sell_orders','$concept_sell_orders_supply$')] and [Concept('concept_buy_orders','$concept_buy_orders_demand$')] on the [concept_market] it belongs to."
 

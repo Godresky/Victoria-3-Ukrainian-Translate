@@ -369,7 +369,7 @@
  assassination_aftermath_helpers:0 "The assassin was rumored to have had inside help."
  assassination_sewer_escape:0 "The assassin managed to escape through the sewers."
 
- first_flight_prestige:0 "First Flight Achieved"
+ first_flight_prestige: "Здійснено перший політ"
  
  south_america.2.t: "Перуано-болівійська конфедерація"
  south_america.2.d: "Виникла унікальна можливість возз’єднатися [Concept('concept_country','$concept_countries_dat$')|l] [ROOT.GetCountry.GetName] та [SCOPE.sCountry('peru_country').GetName] під управлінням [Concept('concept_character','$concept_character_gen$')|l] [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] [ROOT.GetCountry.GetRuler.GetFullName]. Хоч і [SCOPE.sCountry('peru_country').GetAdjectiveNoFormatting|l]ий уряд поки що змириться з нашим правлінням, але це може спровокувати конфлікт з нашими суперниками."
