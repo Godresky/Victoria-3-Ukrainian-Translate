@@ -1105,7 +1105,7 @@
  temporary_minimum_wages: "Тимчасова мінімальна зарплата"
 
   # Custom triggers
- state_in_africa_desc: "Держава розташована на африканському континенті."
+ state_in_africa_desc: "Держава розташована на африканському суходолі."
 
  # Additional Meiji Restoration Events
  meiji.7.t:0 "Railway Advisors"

@@ -419,7 +419,7 @@
 
 #Player Objectives
  economic_dominance_welcome: "Економічне панування"
- economic_dominance_welcome_desc: "Під час досягнення цієї цілі вам буде низку [Concept('concept_journal_entry','$concept_journal_entries_gen$')|l], які потрібно виконати. Як ви вирішите виконати ці записи, залежить від вас, гравця.\n\nЗАМІТКА: Вам потрібно мати у вашій державі залізну або вугільну копальню, щоб отримати перший запис у часописі."
+ economic_dominance_welcome_desc: "Під час досягнення цієї цілі вам буде дано низку [Concept('concept_journal_entry','$concept_journal_entries_gen$')|l], які потрібно виконати. Як ви вирішите виконати ці записи, залежить від вас, гравця.\n\nЗАМІТКА: Вам потрібно мати у вашій державі залізну або вугільну копальню, щоб отримати перший запис у часописі."
  economic_dominance_lesson_button_skip: "Далі!"
 
  je_objective_expand_goods_production: "Розширте копальню промисловість"
@@ -469,8 +469,8 @@
  tt_raise_exports_value_sub_obj: "[GetGoods('engines').GetName] на ринку ([AccessPlayer.AccessFirstMarket.GetName]) повинні бути на 50% дорожчими ніж їхня [concept_base_price|l]"
  tt_utilizing_our_strength_sub_obj: "[GetGoods('engines').GetName] на ринку ([AccessPlayer.AccessFirstMarket.GetName]) повинні бути на 20% дешевшими ніж їхня [concept_base_price|l]"
 
- je_african_colonies_own_a_colony:0 "Is a [concept_colony] on the African continent"
- je_african_colonies_own_whole_state_region:0 "Spans the entire [concept_state_region]"
+ je_african_colonies_own_a_colony: "Це [concept_colony|l] на африканському суходолі"
+ je_african_colonies_own_whole_state_region: "Охоплює весь [Concept('concept_state_region','$concept_state_region_acc$')|l]"
 				
  #Egalitarian Society Objectives
  je_objective_encourage_liberal_ideas:1 "Encourage Liberal Thought"
@@ -509,11 +509,11 @@
 
 
  #Hegemony Player Objective
- je_colonization_laws:0 "A Colonial Power"
- je_colonization_laws_reason:3 "Our first steps to establishing our hegemony should be to expand our borders overseas. We should amend our laws to allow us to colonize, in order to further our goals."
+ je_colonization_laws: "Осадницька держава"
+ je_colonization_laws_reason: "Нашими першими кроками до встановлення власної геґемонії має стати розширення наших заморських кордонів. Ми повинні змінити наші закони, які б дозволили нам осадництво, для досягнення наших цілей."
 
- je_african_colonies:0 "African Colonies"
- je_african_colonies_reason:2 "Now that our laws allow us to establish our own colonies, we should look towards acquiring new lands on the African Continent as our first steps in expanding our hegemony."
+ je_african_colonies: "Африканські осади"
+ je_african_colonies_reason: "Тепер, коли наші закони дозволяють нам засновувати власні осади, ми повинні розглядати захоплення нових земель на африканському суходолі як перший крок до розширення нашої геґемонії."
 
  je_expand_navy_and_army:1 "Bolstering the Military"
  je_expand_navy_and_army_reason:2 "With our first colonies established, we should be prepared for the worst. Our army doesn't need to be the strongest in the world, but we should aim to dissuade others from attempting a [concept_diplomatic_play] against us."
@@ -543,11 +543,11 @@
  je_the_hegemon_reason:1 "We have shown the world what we are capable of. We have made great strides. Now however we should make sure we have the population to back our global standing."
  je_the_hegemon_final_tt:0 "Control half of the global $concept_population$."
 
- colonization_law_passed_complete_1:0 "Colonial Power"
- colonization_law_passed_complete_1_desc:2 "Well done! You have just completed your first objective and are now well on your way to establishing your own hegemony."
+ colonization_law_passed_complete_1: "Осадницька державаі"
+ colonization_law_passed_complete_1_desc: "Дуже добре! Ви щойно виконали своє перший запис і тепер ближчі на крок до встановлення власної геґемонії."
 
- hegemon_welcome:1 "Hegemony"
- hegemon_welcome_desc:1 "Welcome to the Hegemony Player Objective. In this objective you will be given a series of [Concept('concept_journal_entry', '$concept_journal_entries$')] to complete that will guide you down a path towards creating your own hegemony."
+ hegemon_welcome: "Геґемонія"
+ hegemon_welcome_desc: "Вітаємо у цілі «Геґемонія». Під час досягнення її вам буде дано низку [Concept('concept_journal_entry','$concept_journal_entries_gen$')|l], які потрібно виконати. Це допоможе вам проторувати дорогу до власної геґемонії."
 
  hegemon_complete:1 "Hegemony Completed"
  hegemon_complete_desc:2 "Well done! You have completed the Hegemony Objective. Feel free to continue playing the game or try a different objective."

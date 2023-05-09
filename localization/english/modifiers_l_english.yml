@@ -2091,12 +2091,12 @@
  battle_navy_defense_desc:0 "$modifier_unit_navy_defense_add_desc$"
 
  modifier_unit_morale_loss_add: "Втрата [Concept('concept_morale','$concept_morale_gen$')|l]"
- modifier_unit_morale_loss_add_desc: "The amount of [concept_morale] a [concept_unit] loses during battle"
- modifier_unit_morale_loss_mult:0 "$modifier_unit_morale_loss_add$"
- modifier_unit_morale_loss_mult_desc:0 "$modifier_unit_morale_loss_add_desc$"
+ modifier_unit_morale_loss_add_desc: "Кількість [Concept('concept_morale','$concept_morale_gen$')|l], яку втрачає [Concept('concept_unit','$concept_unit_acc$')|l] під час битви"
+ modifier_unit_morale_loss_mult: "$modifier_unit_morale_loss_add$"
+ modifier_unit_morale_loss_mult_desc: "$modifier_unit_morale_loss_add_desc$"
 
- modifier_unit_morale_damage_mult:0 "[concept_morale] Damage"
- modifier_unit_morale_damage_mult_desc:0 "The amount of damage a [concept_unit] inflicts on its enemy's [concept_morale]"
+ modifier_unit_morale_damage_mult: "Шкода [Concept('concept_morale','$concept_morale_dat$')|l]"
+ modifier_unit_morale_damage_mult_desc: "Кількість шкоди, яку [Concept('concept_unit','$concept_unit$')|l] завдає ворожому [Concept('concept_morale','$concept_morale_dat$')|l]"
  modifier_unit_morale_recovery_mult:0 "[concept_morale] Recovery"
  modifier_unit_morale_recovery_mult_desc:0 "How quickly a [concept_unit] recovers from [concept_morale] damage inflicted by its enemy"
  

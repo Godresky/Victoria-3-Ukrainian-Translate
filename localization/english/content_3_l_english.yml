@@ -34,15 +34,15 @@
  steadfast_conviction: "Тверде переконання"
 
 
- generic_laws.4.t:0 "Popular Playwright Endorses Reform"
- generic_laws.4.d:0 "In the midst of the debate surrounding [SCOPE.sLaw('current_law_scope').GetName], one of the country's leading playwrights, strongly associated with the [SCOPE.gsInterestGroup('playwright_ig_scope').GetName], has staged a widely acclaimed play whose politically laden theme makes no secret of the author's desire for the law to be passed."
- generic_laws.4.f:0 ""The man's viewpoints may be somewhat partisan, but sir, you cannot argue with his prose!""
- generic_laws.4.a:0 "[SCOPE.sLaw('current_law_scope').GetNameNoFormatting] will be on everyone's lips now."
- generic_laws.4.b:0 "This sure puts the [SCOPE.gsInterestGroup('playwright_ig_scope').GetNameNoFormatting] in a good light."
- generic_laws.4.c:0 "Let us ensure the play gets a wider, international audience."
- rising_support_for_ig:0 "Flattering Portrayal"
- popular_support_for_law:0 "Popular Support for Law"
- renowned_playwright:0 "Renowned Playwright"
+ generic_laws.4.t: "Популярний драматург підтримав зміну"
+ generic_laws.4.d: "У розпал дебатів навколо [Concept('concept_law','$concept_law_gen$')|l] «[SCOPE.sLaw('current_law_scope').GetName]», один із провідних драматургів держави, який тісно асоціюється з [Concept('concept_interest_group','$concept_interest_group_short_ins$')|l] [SCOPE.gsInterestGroup('playwright_ig_scope').GetName], поставив широко відому п’єсу, що порушує політичне питання та у якій творець не приховує своєї підтримки в ухвалені закону."
+ generic_laws.4.f: "«Точка зору творця може бути дещо упередженою, але, пане, з його прозою не посперечаєшся!»"
+ generic_laws.4.a: "[SCOPE.sLaw('current_law_scope').GetNameNoFormatting] тепер у всіх на вустах."
+ generic_laws.4.b: "[SCOPE.gsInterestGroup('playwright_ig_scope').GetNameNoFormatting] тепер має хорошу славу."
+ generic_laws.4.c: "Подбаймо про те, щоб п’єса отримала ширшу славу."
+ rising_support_for_ig: "Улесливе зображення"
+ popular_support_for_law: "Народна підтримка закону"
+ renowned_playwright: "Видатний драматург"
 
  generic_laws.5.t: "Бюрократична заплутаність"
  generic_laws.5.d: "Законодавці, які працюють над ухваленням [Concept('concept_law', '$concept_law_gen$')|l] «[SCOPE.sLaw('current_law_scope').GetName]», застрягли в особливо складній низці бюрократичних процедур, що майже повністю призупинило роботу над наданням чинности."
@@ -53,14 +53,14 @@
  mired_in_bureaucracy_minor: "Бюрократичні перепони"
  cutting_red_tape: "Робота проти системи"
 
- generic_laws.6.t:0 "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] Intervenes in Political Process"
- generic_laws.6.d:0 "The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] has taken a personal interest in the ongoing debate concerning [SCOPE.sLaw('current_law_scope').GetName], and have resolved to use [ROOT.GetCountry.GetRuler.GetHerHis] royal prerogative to ensure the law passes."
- generic_laws.6.f:0 "[ROOT.GetCountry.GetRuler.GetFullNameNoFormatting] seldomly intervenes directly in matters of law, relying instead on a system of delegation and personal influence for the efficient running of [ROOT.GetCountry.GetRuler.GetHerHis] realm. While legally, the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] may exercise [ROOT.GetCountry.GetRuler.GetHerHis] royal powers at will, doing so is sure to rile up both republicans and opponents of the law in question."
- generic_laws.6.a:0 "The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s will be done!"
- generic_laws.6.b:0 "Advise the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] against it, it would do more harm than good."
- royal_prerogative:0 "Royal Prerogative Used"
- backed_by_court:0 "By Royal Decree"
- ruler_restrained:0 "Ruler Restrained"
+ generic_laws.6.t: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] втручається у політичний процес"
+ generic_laws.6.d: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] вияви[Select_CString(ROOT.GetCountry.GetRuler.IsFemale,'$CustomLoc_UA_vona_la$','$CustomLoc_UA_vin_v$')|l] особисту зацікавленість до поточного обговорення [Concept('concept_law', '$concept_law_gen$')|l] «[SCOPE.sLaw('current_law_scope').GetName]» і виріши[Select_CString(ROOT.GetCountry.GetRuler.IsFemale,'$CustomLoc_UA_vona_la$','$CustomLoc_UA_vin_v$')|l] використати свою королівську прерогативу, щоб забезпечити ухвалення закону."
+ generic_laws.6.f: "[ROOT.GetCountry.GetRuler.GetFullNameNoFormatting] рідко втручається безпосередньо в обговорення закону, покладаючись на систему доручення повноважень та особистого впливу для ефективного управління [ROOT.GetCountry.GetRuler.GetCustom('UA_joho_jiji')|l] державою. Хоч юридично, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] може використовувати свою королівську владу на власний розсуд, це неодмінно розлютить як республіканців, так і опонентів закону, про який йдеться."
+ generic_laws.6.a: "Нехай буде виконана [ROOT.GetCountry.GetRuler.GetCustom('UA_joho_jiji')|l] воля!"
+ generic_laws.6.b: "Спробуємо відмовити [ROOT.GetCountry.GetRuler.GetCustom('UA_joho_jiji')|l] від цього, адже це принесе більше шкоди, ніж користі."
+ royal_prerogative: "Використано королівську прерогативу"
+ backed_by_court: "За королівською постановою"
+ ruler_restrained: "Стримано правителя"
 
 
  generic_laws.7.t:0 "Grassroots Support for Law"
@@ -299,7 +299,7 @@
  election_contextual_events.3.tt.1: "Приховати непатріотичний наклеп приховати від громадськости!"
  election_contextual_events.3.tt.2: "Незважаючи на наші зусилля, відомості просочуються."
 
- election_contextual_events.4.t: "По кому дзвенять дзвони" # Old IG leader
+ election_contextual_events.4.t: "За ким лунають дзвони" # Old IG leader
  election_contextual_events.4.d: "Постарілий [SCOPE.sCharacter('decrepit_leader').GetFullName], провідник групи [SCOPE.gsInterestGroup('decrepit_leader_ig').GetName], несподівано помер в середині виправа — залишивши [SCOPE.sParty('decrepit_leader_party').GetName] без наріжного політика. Питання про заміну [SCOPE.sCharacter('decrepit_leader').GetHerHis] зараз у всіх на вустах."
  election_contextual_events.4.f:0 ""Unexpected? Bah! That old bag of bones was long overdue to meet [SCOPE.sCharacter('decrepit_leader').GetHerHis] maker. It's about time that party saw some new blood!""
  election_contextual_events.4.a: "Ідіть з популярним, але бездарним кандидатом."

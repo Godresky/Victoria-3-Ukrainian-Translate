@@ -631,6 +631,7 @@
  concept_interest_group_short: "Група"
  concept_interest_group_short_gen: "Групи"
  concept_interest_group_short_acc: "Групу"
+ concept_interest_group_short_ins: "Групою"
 
  concept_interest_group_possessive:1 "Interest Group\\'s"
  concept_interest_group_desc:3 "A political faction within your [concept_country] that share a common interest. They are supported by [Concept('concept_pop', '$concept_pops$')] in relation to their [Concept('concept_interest_group_attraction','$concept_interest_group_attraction_short$')] to them, and the [concept_clout] they enjoy is based directly on the supporting $concept_pops$' [concept_political_strength]. $concept_interest_groups$ have number of [Concept('concept_ideology', '$concept_ideologies$')], causing them to endorse or oppose different [Concept('concept_law', '$concept_laws$')].\n\nThey also have three [Concept('concept_interest_group_trait', '$concept_interest_group_traits$')] that are activated on different [concept_approval] levels. Their [Concept('concept_leader','$concept_leader_possessive$')] personal $concept_ideology$ also rubs off on the $concept_interest_group$."
@@ -894,6 +895,7 @@
 
  concept_unit: "Військовий підрозділ"
  concept_unit_gen: "Військового підрозділу"
+ concept_unit_acc: "Військовий підрозділ"
  concept_unit_loc: "Військовому підрозділі"
  concept_unit_short: "Підрозділ"
  concept_units: "Військові підрозділи"
@@ -1220,6 +1222,7 @@
 
  concept_morale: "Моральний дух"
  concept_morale_gen: "Морального духу"
+ concept_morale_dat: "Моральному духу"
  concept_morale_demoralized: "Знеморалізовані"
  concept_morale_demoralized_gen: "Знеморалізованих"
  concept_morale_demoralized_ins: "Знеморалізованими"
