@@ -1730,7 +1730,7 @@
  modifier_expedition_film:0 "Film of Expedition"
  modifier_niger_river_expedition_complete:0 "Explored the Niger River"
 
- MODIFIER_NAME_FORMAT_BUILDING_TYPE_IN_STATE:0 "$BUILDING$ in $STATE$"
+ MODIFIER_NAME_FORMAT_BUILDING_TYPE_IN_STATE: "$BUILDING$ у землі $STATE$"
 
  modifier_olympic_games: "Олімпійські ігри"
  modifier_film_industry:0 "Film Industry"
