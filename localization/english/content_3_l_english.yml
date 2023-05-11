@@ -361,10 +361,10 @@
  machine_gun_expertise_low:0 "Machine Gun Expert"
  machine_gun_expertise_high:0 "Machine Gun Expert"
 
- je_ironclads:0 "Ironclads"
- je_ironclads_reason:0 "Metal-clad, steam-powered ships equipped with large-caliber guns capable of firing explosive shot, the ironclad represents a radical departure from the Age of Fighting Sail."
- je_monitors:0 "Monitors"
- je_monitors_reason:0 "Shallow draft vessels primarily intended for coastal defense operations, the monitor represents an affordable solution to any nation lacking the capital or industry to maintain a high seas ironclad navy."
+ je_ironclads: "Панцерники"
+ je_ironclads_reason: "Обшиті металом, парові кораблі, оснащені великокаліберними гарматами, здатними стріляти розривними снарядами, залізні кораблі є радикальним відхиленням від доби бойових вітрильників."
+ je_monitors: "Спостережники"
+ je_monitors_reason: "Спостережник, призначений для береговою оборони, - це доступне рішення для будь-якої країни, якій не вистачає грошей або промисловости для утримання панцерників у відкритому морі."
 
  military_tech_events.403.t:0 "A Doctrine of Iron and Steam"
  military_tech_events.403.d:0 "The introduction of vessels with metal-skinned hulls represents nothing less than a revolution in naval warfare. Near-impervious to traditional types of shot, [SCOPE.sCharacter('ironclad_admiral').GetPrimaryRoleTitle] [SCOPE.sCharacter('ironclad_admiral').GetFullName] assures us that [ROOT.GetCountry.GetAdjectiveNoFormatting] dominion of the seas will be absolute."

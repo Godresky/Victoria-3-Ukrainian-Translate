@@ -98,9 +98,9 @@
  TRIGGER_HAS_INSTITUTION_THIRD:0 "[COUNTRY.GetName] has the [INSTITUTION_TYPE.GetName] [concept_institution]"
  TRIGGER_HAS_INSTITUTION_THIRD_NOT:0 "[COUNTRY.GetName] does #bold not#! have the [INSTITUTION_TYPE.GetName] [concept_institution]"
  
- TRIGGER_HAS_DECREE:0 "Has the [DECREE_TYPE.GetName] [concept_decree]"
+ TRIGGER_HAS_DECREE: "Має видану [Concept('concept_decree', '$concept_decree_acc$')|l] «[DECREE_TYPE.GetName]»"
  TRIGGER_HAS_DECREE_NOT:1 "Does #bold not#! have the [DECREE_TYPE.GetName] [concept_decree]"
- TRIGGER_HAS_DECREE_THIRD:0 "[STATE.GetName] has the [DECREE_TYPE.GetName] [concept_decree]"
+ TRIGGER_HAS_DECREE_THIRD: "[STATE.GetName] має видану [Concept('concept_decree', '$concept_decree_acc$')|l] «[DECREE_TYPE.GetName]»"
  TRIGGER_HAS_DECREE_THIRD_NOT:0 "[STATE.GetName] does #bold not#! have the [DECREE_TYPE.GetName] [concept_decree]"
  
  TRIGGER_HAS_INTEREST_MARKER_IN_REGION:0 "Has an [concept_interest] in [TARGET_STRATEGIC_REGION.GetName]"
@@ -1133,10 +1133,10 @@
  
  TRIGGER_INSTITUTION_INVESTMENT_LEVEL: "Рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» $COMPARATOR$ $NUM$"
  TRIGGER_INSTITUTION_INVESTMENT_LEVEL_NOT: "Рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» #bold не #!$COMPARATOR$ $NUM$"
- TRIGGER_INSTITUTION_INVESTMENT_LEVEL_FIRST: "[COUNTRY.GetAdjectiveNoFlag]ий рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» $COMPARATOR$ $NUM$"
- TRIGGER_INSTITUTION_INVESTMENT_LEVEL_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag]ий рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» #bold не #!$COMPARATOR$ $NUM$"
- TRIGGER_INSTITUTION_INVESTMENT_LEVEL_THIRD: "[COUNTRY.GetAdjective]ий рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» $COMPARATOR$ $NUM$"
- TRIGGER_INSTITUTION_INVESTMENT_LEVEL_THIRD_NOT: "[COUNTRY.GetAdjective]ий рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» #bold не #!$COMPARATOR$ $NUM$"
+ TRIGGER_INSTITUTION_INVESTMENT_LEVEL_FIRST: "#yellow [COUNTRY.GetAdjectiveNoFlag]ий#! рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» $COMPARATOR$ $NUM$"
+ TRIGGER_INSTITUTION_INVESTMENT_LEVEL_FIRST_NOT: "#yellow [COUNTRY.GetAdjectiveNoFlag]ий#! рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» #bold не #!$COMPARATOR$ $NUM$"
+ TRIGGER_INSTITUTION_INVESTMENT_LEVEL_THIRD: "#yellow [COUNTRY.GetAdjective]ий#! рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» $COMPARATOR$ $NUM$"
+ TRIGGER_INSTITUTION_INVESTMENT_LEVEL_THIRD_NOT: "#yellow [COUNTRY.GetAdjective]ий#! рівень розвитку [Concept('concept_institution', '$concept_institution_gen$')|l] «[INSTITUTION_TYPE.GetName]» #bold не #!$COMPARATOR$ $NUM$"
  
  TRIGGER_TAX_LEVEL:0 "Tax level $COMPARATOR$ $LEVEL$"
  TRIGGER_TAX_LEVEL_NOT:1 "Tax level #bold not #!$COMPARATOR$ $LEVEL$"
@@ -1773,9 +1773,9 @@
  
  TRIGGER_ANY_SUBJECT_OR_BELOW:2 "Any [concept_subject] or their $concept_subjects$:"
  TRIGGER_ANY_SUBJECT_OR_BELOW_NOT:3 "No [concept_subject] or their $concept_subjects$:"
- TRIGGER_ANY_SUBJECT_OR_BELOW_FIRST: "Будь-який [COUNTRY.GetAdjectiveNoFlag|l]ий [concept_subject|l] або їх підвладні:"
+ TRIGGER_ANY_SUBJECT_OR_BELOW_FIRST: "Будь-який #yellow [COUNTRY.GetAdjectiveNoFlag|l]ий#! [concept_subject|l] або їхні підвладні:"
  TRIGGER_ANY_SUBJECT_OR_BELOW_FIRST_NOT:3 "No [COUNTRY.GetAdjectiveNoFlag] [concept_subject] or their $concept_subjects$:"
- TRIGGER_ANY_SUBJECT_OR_BELOW_THIRD: "Будь-який #yellow [COUNTRY.GetAdjective|l]ий#! [concept_subject|l] або їх підвладні:"
+ TRIGGER_ANY_SUBJECT_OR_BELOW_THIRD: "Будь-який #yellow [COUNTRY.GetAdjective|l]ий#! [concept_subject|l] або їхні підвладні:"
  TRIGGER_ANY_SUBJECT_OR_BELOW_THIRD_NOT:3 "No [COUNTRY.GetAdjective] [concept_subject] or their $concept_subjects$:"
   
  TRIGGER_ANY_SUBJECT_OR_BELOW_ALL:1 "All [Concept('concept_subject','$concept_subjects$')] or their $concept_subjects$:"
@@ -2567,11 +2567,11 @@ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_GREATER_THAN:0 "Remaining duratio
  TRIGGER_HAS_EXPORT_PRIORITY_TARIFFS_THIRD:0 "[COUNTRY.GetName] is collecting #v Export Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
  TRIGGER_HAS_EXPORT_PRIORITY_TARIFFS_THIRD_NOT:0 "[COUNTRY.GetName] is #bold not #!collecting #v Export Prioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
 
- TRIGGER_IS_POWERFUL_THIRD:1 "[INTEREST_GROUP.GetName] are [concept_powerful]"
- TRIGGER_IS_POWERFUL_THIRD_NOT:2 "[INTEREST_GROUP.GetName] are #bold not #![concept_powerful]"
+ TRIGGER_IS_POWERFUL_THIRD: "[INTEREST_GROUP.GetName] - [concept_powerful|l]"
+ TRIGGER_IS_POWERFUL_THIRD_NOT: "[INTEREST_GROUP.GetName] #bold не#! [concept_powerful|l]"
 
- TRIGGER_IS_IN_GOVERNMENT_THIRD:1 "[INTEREST_GROUP.GetName] are part of the government"
- TRIGGER_IS_IN_GOVERNMENT_THIRD_NOT:2 "[INTEREST_GROUP.GetName] are #bold not #!part of the government"
+ TRIGGER_IS_IN_GOVERNMENT_THIRD: "[INTEREST_GROUP.GetName] частина уряду"
+ TRIGGER_IS_IN_GOVERNMENT_THIRD_NOT: "[INTEREST_GROUP.GetName] #bold не#! частина уряду"
 
  TRIGGER_IS_MARGINAL_THIRD: "[INTEREST_GROUP.GetName] - [Concept('concept_marginalized', '$concept_marginalized$')|l]"
  TRIGGER_IS_MARGINAL_THIRD_NOT: "[INTEREST_GROUP.GetName] #bold не#! [Concept('concept_marginalized', '$concept_marginalized$')|l]"

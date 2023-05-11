@@ -854,7 +854,7 @@
 
  modifier_crop_failure_relief_effect:0 "Crop Failure Relief"
 
- opera_modifier_costs:0 "National Opera"
+ opera_modifier_costs: "Національна оперна вистава"
  foreign_concert_modifier_cost:0 "Foreign Concert"
 
  create_peru_bolivia_confederation:0 "Reunite Bolivia and Peru"

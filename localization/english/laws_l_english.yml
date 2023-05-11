@@ -426,11 +426,11 @@
  lawgroup_colonization: "Осадництво"
  lawgroup_colonization_desc: "Ваша позиція щодо створення осад для витіснення та завоювання [Concept('concept_decentralized_nation','$concept_decentralized_nation_gen$')|l]."
   
- law_no_colonial_affairs: "Без осадних справ"
+ law_no_colonial_affairs: "Без осадницьких справ"
  law_no_colonial_affairs_desc: "Держава не бере участі в жодному формальному типі осадництва та не може створювати осади."
  law_colonial_resettlement: "Переселення до осад"
  law_colonial_resettlement_desc: "Осади засновуються для забезпечення землею поселенців з невключених земель держави."
- law_colonial_exploitation: "Визиск осад"
+ law_colonial_exploitation: "Визиск з осад"
  law_colonial_exploitation_desc: "Осади засновуються, щоб використовувати територію для отримання природних ресурсів і дешевої робочої сили."
   
   # Internal Security
