@@ -1003,10 +1003,10 @@
  TRIGGER_IS_BEING_SUPPRESSED_FIRST:0 "[INTEREST_GROUP.GetName] is being suppressed"
  TRIGGER_IS_BEING_SUPPRESSED_FIRST_NOT:0 "[INTEREST_GROUP.GetName] is #bold not #!being suppressed"
  
- TRIGGER_IS_BEING_PROMOTED:2 "В даний час [Concept('concept_bolster','$concept_bolstered$')]"
- TRIGGER_IS_BEING_PROMOTED_NOT:3 "Is #bold not#! being [Concept('concept_bolster','$concept_bolstered$')]"
- TRIGGER_IS_BEING_PROMOTED_THIRD:1 "[INTEREST_GROUP.GetName] is being [Concept('concept_bolster','$concept_bolstered$')]"
- TRIGGER_IS_BEING_PROMOTED_THIRD_NOT:2 "[INTEREST_GROUP.GetName] is #bold not#! being [Concept('concept_bolster','$concept_bolstered$')]"
+ TRIGGER_IS_BEING_PROMOTED: "Є [Concept('concept_bolster','$concept_bolstered_adj$ою')|l]"
+ TRIGGER_IS_BEING_PROMOTED_NOT: "#bold Не#! є [Concept('concept_bolster','$concept_bolstered_adj$ою')|l]"
+ TRIGGER_IS_BEING_PROMOTED_THIRD: "[INTEREST_GROUP.GetName] - [Concept('concept_bolster','$concept_bolstered_adj$а')|l]"
+ TRIGGER_IS_BEING_PROMOTED_THIRD_NOT: "[INTEREST_GROUP.GetName] #bold не#! [Concept('concept_bolster','$concept_bolstered_adj$а')|l]"
  
  TRIGGER_SHARES_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT: "Має спільну [Concept('concept_cultural_trait','$concept_cultural_trait_acc$')|l] з будь-якими [Concept('concept_primary_cultures','$concept_primary_cultures_ins$')|l] у своїй [Concept('concept_country','$concept_country_loc$')|l]"
  TRIGGER_SHARES_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT_NOT:1 "Does not share a [concept_cultural_trait] with any [concept_primary_cultures] in their [concept_country]"

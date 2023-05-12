@@ -43,7 +43,7 @@
  ACCOUNT_CREATED_TEXT: "Дякуємо за створення Парадокс обліковки"
  ACCOUNT_BUTTON_CANCEL: "Скасувати"
  ACCOUNT_BUTTON_CREATE: "Створити"
- POPS_CREATE_ACCOUNT_CREARE_SUGGESTION: "Парадокс обліковка потрібна для багатокор гри"
+ POPS_CREATE_ACCOUNT_CREARE_SUGGESTION: "Парадокс обліковка потрібна для багатокору"
  POPS_account-exists: "Обліковка вже існує, оберіть іншу е-пошту або увійдіть за допомогою поточної адреси"
  POPS_bad-password-length: "Пароль не може бути довшим за 128 символів. Довжина пароля повинна бути не менше 6 символів."
  POPS_invalid-email: "Е-пошта не дійсна"

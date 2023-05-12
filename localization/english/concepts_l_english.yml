@@ -2303,15 +2303,15 @@
  concept_head_of_state_gen: "Голови держави"
  concept_head_of_state_acc: "Голову держави"
  concept_head_of_state_ins: "Головою держави"
- concept_head_of_state_desc:3 "A [Concept('concept_country','$concept_country_possessive$')] [concept_ruler] or highest representative. The [concept_government_type] determines who serves as the $concept_head_of_state$ and when they are replaced.[AddLocalizationIf(GetPlayer.IsValid, 'concept_head_of_state_ingame_added')]"
- concept_head_of_state_ingame_added:1 "\n\nThe [GetPlayer.GetAdjectiveNoFlag] $concept_head_of_state$ is [GetPlayer.GetRuler.GetFullNameWithTitle]."
+ concept_head_of_state_desc: "[concept_ruler] [Concept('concept_country','$concept_country_gen$')] або найвищий представник. [concept_government_type] визначає, хто виконує обов’язки голови держави і коли він буде заміненим.[AddLocalizationIf(GetPlayer.IsValid, 'concept_head_of_state_ingame_added')]"
+ concept_head_of_state_ingame_added: "\n\n#yellow [GetPlayer.GetAdjectiveNoFlag]ий#! голова держави - [GetPlayer.GetRuler.GetFullNameWithTitle]."
 
  concept_government_type: "Тип уряду"
  concept_government_type_gen: "Типу уряду"
  concept_government_types: "Типи уряду"
- concept_government_type_transfer_of_power: "Передавання влади"
- concept_government_type_desc:1 "A [Concept('concept_country','$concept_country_possessive$')] $concept_government_type$ is determined by its [Concept('concept_law','$concept_laws$')] and determines its $concept_government_type_transfer_of_power$, meaning who serves as its [concept_head_of_state].[AddLocalizationIf(GetPlayer.IsValid,'concept_government_type_ingame_added')]"
- concept_government_type_ingame_added:3 "\n\nThe $concept_government_type$ in [GetPlayer.GetNameNoFlag] is #tooltippable #tooltip:[GetPlayer.GetGovernment.GetTooltipTag],GOVERNMENT_TYPE_TOOLTIP_DESC [GetPlayer.GetGovernment.GetName]#!#!, for the following reasons:\n[GetPlayer.GetGovernment.GetPossibleTriggerDesc(AccessPlayer)]"
+ concept_government_type_transfer_of_power: "Передання влади"
+ concept_government_type_desc: "$concept_government_type$ [Concept('concept_country','$concept_country_gen$')|l] визначається їхніми [Concept('concept_law','$concept_laws_ins$')|l] та переданням влади, тобто визначає, хто виконує обов’язки [Concept('concept_head_of_state','$concept_head_of_state_gen$')|l].[AddLocalizationIf(GetPlayer.IsValid,'concept_government_type_ingame_added')]"
+ concept_government_type_ingame_added: "\n\n$concept_government_type$ у державі [GetPlayer.GetNameNoFlag] - #tooltippable #tooltip:[GetPlayer.GetGovernment.GetTooltipTag],GOVERNMENT_TYPE_TOOLTIP_DESC [GetPlayer.GetGovernment.GetName]#!#! з таких причин:\n[GetPlayer.GetGovernment.GetPossibleTriggerDesc(AccessPlayer)]"
 
  concept_transfer_of_power: "Передання влади"
  concept_transfer_of_power_gen: "Передання влади"
@@ -2385,6 +2385,7 @@
 
  concept_bolster: "Підтримати"
  concept_bolstered: "Підтримані"
+ concept_bolstered_adj: "Підтриман"
  concept_bolsters: "Підтримати"
  concept_bolstering: "Підтримання"
  concept_bolstering_gen: "Підтримання"

@@ -326,7 +326,7 @@
  BUILDING_TYPE_COUNTRY_BREAKDOWN: "[SelectLocalization( GreaterThan_int32( BuildingType.GetLevelCountInCountry(GetPlayer.Self), '(int32)0' ), 'BUILDING_TYPE_COUNTRY_BREAKDOWN_NONEMPTY', 'BUILDING_TYPE_COUNTRY_BREAKDOWN_EMPTY' )]"
  BUILDING_TYPE_COUNTRY_BREAKDOWN_NONEMPTY: "#tooltippable #tooltip:[BuildingType.GetTooltipTag],BUILDING_TYPE_COUNTRY_BREAKDOWN_TOOLTIP [BuildingType.GetLevelCountInCountry(GetPlayer.Self)]#!#! - підсумковий розмір усіх будівель [BuildingType.GetNameNoFormatting|l] у [Concept('concept_country','$concept_country_loc$')|l] [GetPlayer.GetName][SelectLocalization(And(Not(BuildingType.IsGovernmentFunded), Not(BuildingType.IsSubsistenceBuilding)), 'BUILDING_TYPE_PRODUCTIVITY', '')]"
  BUILDING_TYPE_COUNTRY_BREAKDOWN_TOOLTIP: "#header [BuildingType.GetName] у [Concept('concept_state', '$concept_state_loc$')|l] [GetPlayer.GetName]#!\n[BuildingType.GetBreakdownInCountry(GetPlayer.Self)]"
- BUILDING_TYPE_COUNTRY_BREAKDOWN_ITEM: "[BUILDING.GetName] [BUILDING.GetExpansionLevel|v]-го розміру у [Concept('concept_state', '$concept_state_loc$')|l] [BUILDING.GetState.GetName]"
+ BUILDING_TYPE_COUNTRY_BREAKDOWN_ITEM: "[BUILDING.GetName] [BUILDING.GetExpansionLevel|v]-го розміру в [Concept('concept_state', '$concept_state_loc$')|l] [BUILDING.GetState.GetName]"
  BUILDING_TYPE_CONSTRUCTION_COUNTRY_BREAKDOWN_ITEM: "[BUILDING.GetName] [BUILDING.GetExpansionLevelsInQueue|v]-го розміру споруджується у [Concept('concept_state', '$concept_state_loc$')|l] [BUILDING.GetState.GetName]"
  BUILDING_TYPE_COUNT: "#tooltippable #tooltip:[BuildingType.GetTooltipTag],BUILDING_TYPE_COUNTRY_BREAKDOWN_TOOLTIP [SelectLocalization( GreaterThan_int32( BuildingType.GetUnderConstructionCountInCountry(GetPlayer.Self), '(int32)0' ), 'BUILDING_TYPE_COUNT_ACTIVE_CONSTRUCTIONS', 'BUILDING_TYPE_COUNT_NO_CONSTRUCTION')]#!#!"
  BUILDING_TYPE_COUNTRY_BREAKDOWN_EMPTY: "Немає [Concept('concept_building', '$concept_building_gen$')|l] [BuildingType.GetNameNoFormatting|l] у [Concept('concept_country', '$concept_country_loc$')|l] [GetPlayer.GetName]"
@@ -4511,7 +4511,7 @@
 
  HQ_TROOP_ALLOCATION_CHANGE_HEADER: "Військо у [HQ.GetNameNoFlag|l] зміниться:"
  HQ_TROOP_ALLOCATION_CHANGE_COMMANDER: "[CHARACTER.GetFullName]:"
- HQ_TROOP_ALLOCATION_CHANGE_ENTRY: "[Hq.GetCombatUnitsIcon] #v $VALUE|+=$#! від [BUILDING.GetName] у зем. [State.GetName]"
+ HQ_TROOP_ALLOCATION_CHANGE_ENTRY: "[Hq.GetCombatUnitsIcon] #v $VALUE|+=$#! від [BUILDING.GetName|l] у зем. [State.GetName]"
 
  HQ_TROOP_ALLOCATION_CHANGE_UNIT_TYPE: "$ICON_STR$ #tooltippable #tooltip:$BREAKDOWN$ $VALUE|+=$#!#! $UNIT_TYPE_NAME$"
 
