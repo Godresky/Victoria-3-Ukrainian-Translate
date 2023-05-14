@@ -137,7 +137,7 @@
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_BASE_VALUE: "Базова значення: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_STRATEGY: "#yellow $NAME|v$а#! [concept_ai_strategy|l]: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_WEAK_PREFERENCE: "Нема жодної переваги у будь-якої сторони: #bold $VALUE|+=$#!"
- DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_DEBT: "Розмір #yellow [Country.GetAdjective]|l]ої#! [Concept('concept_loans','$concept_loan_gen$')|l]: #bold $VALUE|+=$#!"
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_DEBT: "Розмір #yellow [Country.GetAdjective|l]ої#! [Concept('concept_loans','$concept_loan_gen$')|l]: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_GOLD_RESERVES: "Розмір #yellow [Country.GetAdjective|l]ого#! [Concept('concept_gold_reserves','$concept_gold_reserves_gen$')|l]: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_DEVASTATION: "[concept_devastation] у державі [Country.GetName]: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_TURMOIL: "[concept_turmoil] у державі [Country.GetName]: #bold $VALUE|+=$#!"

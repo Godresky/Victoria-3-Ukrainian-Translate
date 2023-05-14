@@ -418,11 +418,11 @@
  take_on_debt_proposal_notification_name:1 "$take_on_debt_action_name$ Proposed"
  take_on_debt_proposal_notification_desc:5 "[INITIATOR_COUNTRY.GetName] has proposed to take on our national [Concept('concept_credit','$concept_credit_debt$')], hopefully this is not done with a sinister motive."
  take_on_debt_proposal_notification_effects_desc:0 "$take_on_debt_desc$"
- take_on_debt_proposal_accepted_name:0 "$take_on_debt_action_name$ Accepted"
+ take_on_debt_proposal_accepted_name: "Прийнято викуплення [Concept('concept_credit','$concept_credit_debt_gen$')|l]"
  take_on_debt_proposal_accepted_desc:1 "[TARGET_COUNTRY.GetName] accepted our proposal to take on their national [Concept('concept_credit','$concept_credit_debt$')]."
  take_on_debt_proposal_declined_name:0 "$take_on_debt_action_name$ Refused"
  take_on_debt_proposal_declined_desc:0 "[TARGET_COUNTRY.GetName] declined our proposal to take on their national [Concept('concept_credit','$concept_credit_debt$')]."
- take_on_debt_proposal_third_party_accepted_name:1 "$take_on_debt_action_name$ Accepted"
+ take_on_debt_proposal_third_party_accepted_name: "Прийнято викуплення [Concept('concept_credit','$concept_credit_debt_gen$')|l]
  take_on_debt_proposal_third_party_accepted_desc:2 "[INITIATOR_COUNTRY.GetName] has taken on [TARGET_COUNTRY.GetName]'s national [Concept('concept_credit','$concept_credit_debt$')]. As a result, they are now owed an [concept_obligation]."
  take_on_debt_proposal_third_party_declined_name:0 "$take_on_debt_action_name$ Refused"
  take_on_debt_proposal_third_party_declined_desc:0 "[TARGET_COUNTRY.GetName] declined to have [INITIATOR_COUNTRY.GetName] take on their national [Concept('concept_credit','$concept_credit_debt$')]."

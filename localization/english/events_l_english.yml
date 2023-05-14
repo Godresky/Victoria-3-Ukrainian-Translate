@@ -384,9 +384,9 @@
  religious_schools_good_modifier:0 "Religious Schools Supported"
 
  #Make these specific to each expedition
- notification_expedition_progress_average_desc:0 "Your current expedition proceeds without incident"
- notification_expedition_progress_average_tooltip:0 "Your expedition continues to make steady progress"
- notification_expedition_progress_average_name:0 "Current Expedition"
+ notification_expedition_progress_average_desc: "Ваша поточна виправа просунулася вперед без ускладнень"
+ notification_expedition_progress_average_tooltip: "Ваша виправа продовжує впевнено просуватися вперед"
+ notification_expedition_progress_average_name: "Поточна виправа"
 
  expedition_event_ongoing_tt:0 "The expedition continues."
 
@@ -606,9 +606,9 @@
  custom_newspaper_informer: "Інформер"
  custom_newspaper_bulletin: "Бюллетін"
 
- notification_west_america_expedition_progress_average_name: "Західноамериканська експедиція триває."
- notification_west_america_expedition_progress_average_desc: "Західноамериканська експедиція триває без проблем."
- notification_west_america_expedition_progress_average_tooltip: "Західноамериканська експедиція триває без проблем."
+ notification_west_america_expedition_progress_average_name: "Західноамериканська виправа триває."
+ notification_west_america_expedition_progress_average_desc: "Західноамериканська виправа триває без проблем."
+ notification_west_america_expedition_progress_average_tooltip: "Західноамериканська виправа триває без проблем."
 
  expedition_events.200.t:0 "Expedition to Map the Western Frontier"
  expedition_events.200.d:0 "Send out an expedition to map the unknown geography of the Western Frontier."

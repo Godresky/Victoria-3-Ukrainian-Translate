@@ -269,7 +269,7 @@
  ag_expiring_obligations_desc: "Ми володіємо [Concept('concept_obligation', '$concept_obligations_ins$')|l], чий реченець скоро мине."
  ag_expiring_obligations_tooltip: "#header $ag_expiring_obligations_name$#!\n$TOOLTIP_DELIMITER$\n$ag_expiring_obligations_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
   
- ag_idle_mobilized_general_name: "Бездіяльні призвані генерали"
+ ag_idle_mobilized_general_name: "Бездіяльні зібрані генерали"
  ag_idle_mobilized_general_desc: "[SCOPE.GetRootScope.GetCharacter.GetFullName] зібрані та простоюють без фронтового призначення. Вони оборонятимуть [Concept('concept_hq', '$concept_hq_acc$')|l], якщо наступатимуть ворожі сили, доки вони чекають на подальші накази."
  ag_idle_mobilized_general_tooltip: "#header $ag_idle_mobilized_general_name$#!\n$TOOLTIP_DELIMITER$\n$ag_idle_mobilized_general_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 

@@ -83,8 +83,8 @@
  expedition_events.512.f:1 ""We sat on the top of a mountain. Briefly we stopped. The water was running low, and so was the food. The jungle couldn't possibly end; it wasn't in its nature. Monstrous trees bit the last fragments of sky. We were so tired. So tired.""
  expedition_events.512.a:0 "Damnation!"
 
- central_africa_expedition: "Експедиція з шуканням витоку Нілу"
- central_africa_expedition_desc: "У центрі африканського континенту зберігається таємниця витоку Нілу."
+ central_africa_expedition: "Виправа шукання витоки Нілу"
+ central_africa_expedition_desc: "У центрі африканського суходолу зберігається таємниця витоку Нілу."
  central_africa_expedition_tooltip: "Вимоги:"
 
  modifier_central_africa_expedition_complete:0 "Found the Source of the Nile"
@@ -482,7 +482,7 @@
  modifier_haitian_independence_payments: "Платежі Гаїті за незалежність"
 
  stop_paying_france: "Перестати виплачувати Франції"
- stop_paying_france_desc: "Після французької військової експедиції на Гаїті 1825 року Сенат уклав угоду з Францією про виплату компенсації за визнання нашої незалежности. Однак, якщо ми перестанемо платити, що вони зможуть зробити?"
+ stop_paying_france_desc: "Після французької військової виправи на Гаїті 1825 року Сенат уклав угоду з Францією про виплату компенсації за визнання нашої незалежности. Однак, якщо ми перестанемо платити, що вони зможуть зробити?"
 
  character_events.2.t:0 "A Donation of Knowledge"
  character_events.2.d:0 "[SCOPE.sCharacter('university_benefactor').GetFullName] has offered to spend some of their personal wealth to fund the creation of a University in [SCOPE.sState('university_state').GetName]. Though this will likely give the [SCOPE.sCharacter('university_benefactor').GetInterestGroup.GetName] some influence."

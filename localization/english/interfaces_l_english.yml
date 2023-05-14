@@ -922,12 +922,12 @@
  CONVOY_RAIDING_ENEMIES_TOOLTIP:0 "Hostile Supply Networks:"
  CONVOY_RAIDING_ENEMIES_TOOLTIP_ENTRY:0 "[Country.GetName]"
 
- NAVAL_BATTLE_MARKER:0 "$SEA_REGION$"
- NAVAL_INVASION_WAITING_FOR_GENERAL:1 "Waiting for [Character.GetFullName] to return to [Character.GetHomeHQ.GetName] $TRAVEL_DESC$."
- NAVAL_INVASION_WAITING_FOR_ADMIRAL:0 "Waiting for [Character.GetFullName] to prepare their forces - [LabelingHelper.GetDaysLoc(Character.GetOrderPreparationDaysLeft, '')]"
- NAVAL_INVASION_WAITING_FOR_TROOPS:1 "Waiting for [Character.GetFullNamePossessive] troops to [Concept('concept_mobilize_battalion', '$concept_mobilize_battalion_mobilize$')] ([Character.GetMobilizationPercentageFormatted])."
- NAVAL_INVASION_NAVAL_BATTLE:1 "Fighting off enemy interception in [Battle.GetName]!"
- NAVAL_INVASION_LAND_BATTLE:1 "Fighting in [Battle.GetName|v] to establish a new [concept_front]!"
+ NAVAL_BATTLE_MARKER: "$SEA_REGION$"
+ NAVAL_INVASION_WAITING_FOR_GENERAL: "В очікуванні повернення командира [Character.GetFullName] до [Character.GetHomeHQ.GetName|l] $TRAVEL_DESC$."
+ NAVAL_INVASION_WAITING_FOR_ADMIRAL: "В очікуванні приготування військ командира [Character.GetFullName] - [LabelingHelper.GetDaysLoc(Character.GetOrderPreparationDaysLeft, '')]"
+ NAVAL_INVASION_WAITING_FOR_TROOPS: "В очікуванні [Concept('concept_mobilize_battalion', '$concept_mobilize_battalion_mobilization_gen$')|l] військ командира [Character.GetFullNamePossessive] ([Character.GetMobilizationPercentageFormatted])."
+ NAVAL_INVASION_NAVAL_BATTLE: "В бою з ворожим перехопленням ([Battle.GetName])!"
+ NAVAL_INVASION_LAND_BATTLE: "В бою задля прокладання нового [Concept('concept_front','$concept_front_gen$')|l] ([Battle.GetName|v])!"
 
  WAR_PANEL_PARTICIPANT_DEAD: "[concept_dead]: #variable #N -[WarParticipant.GetNumDead|K-]#!#!"
  WAR_PANEL_PARTICIPANT_WOUNDED: "[concept_wounded]: #variable #N -[WarParticipant.GetNumWounded|K-]#!#!"
@@ -2621,7 +2621,7 @@
  DECREE_REMOVE: "#header Скасувати#! [Concept('concept_decree','$concept_decree_acc$')|l] «[Decree.GetName]» у [Concept('concept_state','$concept_state_loc$')|l] [Decree.GetState.GetName]"
  CANNOT_SET_DECREE: "#header #N Неможливо видати [Concept('concept_decree','$concept_decree_acc$')|l] для [Concept('concept_state','$concept_state_gen$')|l] [State.GetName]#!#!"
  DECREE_ALREADY_ACTIVE: "[concept_decree] «[DECREE.GetName]» уже видана для [Concept('concept_state','$concept_state_gen$')|l] [STATE.GetName]"
- DECREE_CANNOT_AFFORD:1 "Have at least @aut!$COST|vD$ [concept_authority] to spend on this [concept_decree]"
+ DECREE_CANNOT_AFFORD: "Маєте принаймні @aut!$COST|vD$ [Concept('concept_authority','$concept_authority_gen$')|l], щоб витратити на цю [Concept('concept_decree','$concept_decree_acc$')|l]"
  DISABLE_DECREE_TOOLTIP: "#header Скасувати#! [Concept('concept_decree','$concept_decree_acc$')|l] «[DecreeType.GetName]» у [Concept('concept_state','$concept_state_loc$')|l] [State.GetName]#!"
  DECREE_COST_ENTRY: "«[DECREE.GetName]» у [Concept('concept_state','$concept_state_loc$')|l] [DECREE.GetState.GetName]: #variable #N -[DECREE.GetCost|0]#!#!"
 
@@ -5813,7 +5813,7 @@
  notification_interest_activated_third_party_desc: "Завдяки тому, що [SCOPE.sCountry('actor').GetName] проявила [Concept('concept_interest', '$concept_interest_acc$')|l] у [Concept('concept_strategic_region', '$concept_strategic_region_short_loc$')|l] [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName], ми тепер зможемо вести дипломатію з ними."
 
  notification_interest_deactivated_third_party_tooltip: "#header $notification_interest_deactivated_third_party_name$#!\n$TOOLTIP_DELIMITER$\n$notification_interest_deactivated_third_party_desc$"
- notification_interest_deactivated_third_party_name: "Дипломатичні зв’язки з [Concept('concept_country', '$concept_country_ins$')|l] [SCOPE.sCountry('actor').GetName] втрачені"
+ notification_interest_deactivated_third_party_name: "Втрачено дипломатичні зв’язки з [Concept('concept_country', '$concept_country_ins$')|l] [SCOPE.sCountry('actor').GetName]"
  notification_interest_deactivated_third_party_desc: "Через те, що [SCOPE.sCountry('actor').GetName] втратила свій [Concept('concept_interest', '$concept_interest_acc$')|l] у [Concept('concept_strategic_region', '$concept_strategic_region_short_loc$')|l] [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName], ми більше не зможемо вести дипломатію з ними."
 
  notification_colony_created_tooltip: "#header $notification_colony_created_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colony_created_desc$"
@@ -5825,8 +5825,8 @@
  notification_colony_complete_desc: "Наше осадництво [Concept('concept_state','$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetName] завершено й наша колишня [concept_colony|l] тепер стала повноцінним [Concept('concept_state','$concept_state_ins$')|l]."
  
  notification_colony_complete_third_party_tooltip: "#header $notification_colony_complete_third_party_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colony_complete_third_party_desc$"
- notification_colony_complete_third_party_name: "[SCOPE.sCountry('actor').GetAdjective]е осадництво [Concept('concept_state','$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetStateRegion.GetName] завершено"
- notification_colony_complete_third_party_desc: "[SCOPE.sCountry('actor').GetAdjective]е осадництво [Concept('concept_state','$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetName] завершено й їхня колишня [concept_colony|l] тепер стала повноцінним [Concept('concept_state','$concept_state_ins$')|l]."
+ notification_colony_complete_third_party_name: "#yellow [SCOPE.sCountry('actor').GetAdjective]е#! осадництво [Concept('concept_state','$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetStateRegion.GetName] завершено"
+ notification_colony_complete_third_party_desc: "#yellow [SCOPE.sCountry('actor').GetAdjective]е#! осадництво [Concept('concept_state','$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetName] завершено й їхня колишня [concept_colony|l] тепер стала повноцінним [Concept('concept_state','$concept_state_ins$')|l]."
 
  notification_ig_trait_activated_tooltip: "#header $notification_ig_trait_activated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_trait_activated_desc$"
  notification_ig_trait_activated_name: "[SCOPE.GetRootScope.GetInterestGroup.GetName] - риса «[SCOPE.sInterestGroupTrait('target').GetName(SCOPE.GetRootScope.GetInterestGroup.Self)]» дієва"

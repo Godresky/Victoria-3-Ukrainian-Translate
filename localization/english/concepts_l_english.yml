@@ -1393,6 +1393,7 @@
 
  concept_admiral: "Адмірал"
  concept_admiral_gen: "Адмірала"
+ concept_admiral_acc: "Адмірала"
  concept_admiral_dat: "Адміралу"
  concept_admiral_ins: "Адміралом"
  concept_admirals: "Адмірали"
@@ -2449,6 +2450,7 @@
  concept_enactment_debate_desc:1 "$concept_enactment_debate$ indicates the percentage chance that the enactment process of a [concept_law] will meet with some kind of complication at the next checkpoint. The lower the total chances of [Concept('concept_enactment_success','$concept_enactment_success_short$')], [Concept('concept_enactment_advance','$concept_enactment_advance_short$')], and [Concept('concept_enactment_stall','$concept_enactment_stall_short$')] the greater the chance of $concept_enactment_debate_short$."
 
  concept_enactment_stall: "Гальмування ухвалення"
+ concept_enactment_stall_gen: "Гальмування ухвалення"
  concept_enactment_stall_short: "Гальмування"
  concept_enactment_stall_desc:1 "$concept_enactment_stall$ indicates the percentage chance that the enactment process of a [concept_law] will be substantially hindered at the next checkpoint. Its base chance is equal to the total [concept_clout] of opposing [Concept('concept_interest_group','$concept_interest_groups$')] in [concept_government]."
 
