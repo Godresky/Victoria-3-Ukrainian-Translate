@@ -340,9 +340,9 @@
 ##################### Military JEs
 
  je_rifling: "Нарізи"
- je_rifling_reason:0 "While the concept of rifled gun barrels is many centuries old, only recently have advances in industry and technology allowed for their production and distribution on a large scale — providing a level of accuracy to our armed forces yet unheard of."
- je_machine_guns:0 "Automatic Machine Guns"
- je_machine_guns_reason:0 "Serviceable by a single man, and capable of firing hundreds of shells per minute, the automated machine gun represents a near-insurmountable obstacle for any attacker facing entrenched positions."
+ je_rifling_reason: "Хоча ідея нарізних стволів існує вже багато століть, лише нещодавно розвиток промисловости та технологій дозволив їх виробництво та розповсюдження у великих обсягах, що забезпечило нашим збройним силам нечувану досі точність."
+ je_machine_guns: "Самоскоростріли"
+ je_machine_guns_reason: "Обслуговуваний однією людиною та здатний випускати сотні куль за хвилину, самоскоростріл є майже нездоланною перешкодою для будь-якого нападника, що зіткнувся з укріпленими позиціями."
 
  military_tech_events.401.t:1 "Modernizing the Arsenal"
  military_tech_events.401.d:0 "The change in large-scale production from smoothbore muskets to rifles in the [SCOPE.sBuilding('rifle_factory').GetName] in [SCOPE.sState('rifle_state').GetName] has ushered in a new era for [SCOPE.sGoods('small_arms_good').GetName] production in [ROOT.GetCountry.GetNameNoFormatting]."
