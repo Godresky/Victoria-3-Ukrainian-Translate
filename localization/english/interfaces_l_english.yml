@@ -3392,8 +3392,8 @@
  EXPORT_TARIFFS_FROM_GOODS_DETAIL: "#N #variable @money!$VAL|D+$#!#! завдяки вивозу [Concept('concept_good','$concept_good_gen$')|l] [Goods.GetName|l]"
  
  SET_GOODS_TARIFF_NO_PRIORITY: "Встановити [Concept('concept_market_good_policy','$concept_market_good_policy_acc$')|l] «$tariff_no_priority$»"
- SET_GOODS_TARIFF_IMPORT_PRIORITY: "Встановити [Concept('concept_market_good_policy','$concept_market_good_policy_acc$')|l] «Захист внутрішніх виробників»"
- SET_GOODS_TARIFF_EXPORT_PRIORITY: "Встановити [Concept('concept_market_good_policy','$concept_market_good_policy_acc$')|l] «Заохочування ввозу»"
+ SET_GOODS_TARIFF_IMPORT_PRIORITY: "Встановити [Concept('concept_market_good_policy','$concept_market_good_policy_acc$')|l] «Захист внутрішніх поставок»"
+ SET_GOODS_TARIFF_EXPORT_PRIORITY: "Встановити [Concept('concept_market_good_policy','$concept_market_good_policy_acc$')|l] «Заохочування вивозу»"
  
  TRADE_ROUTE_OPEN_EXPORTING_MARKET: "Показати [TradeRoute.GetExportingMarket.GetName|l] (Вивізник)"
  TRADE_ROUTE_OPEN_IMPORTING_MARKET: "Показати [TradeRoute.GetImportingMarket.GetName|l] (Ввізник)"
@@ -3541,8 +3541,8 @@
  TRADE_ROUTE_GOODS_IMPORT_HEADER:1 "Import Breakdown of [Goods.GetTextIcon][Nbsp][Goods.GetName] to [MARKET.GetName]:"
  TRADE_ROUTE_TOTAL_DESIRED_IMPORTS:1 "Current Desired Imports: #v #tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|0$#!#!#!"
  TRADE_ROUTE_TOTAL_AVAILABLE_IMPORTS:0 "Potential Imports: #v #tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|0$#!#!#!"
- TRADE_ROUTE_NO_INTEREST_IN_REGIONS:0 "Either [COUNTRY.GetName] or [TARGET_COUNTRY.GetName] must have an [concept_interest] in a [concept_strategic_region] where the other [Concept('concept_country','$concept_country_possessive$')] [concept_market] is present for trade to be possible"
- TRADE_ROUTE_LANDLOCKED_COUNTRY:0 "You cannot trade overseas since your [concept_market_capital] has no access to a coast"
+ TRADE_ROUTE_NO_INTEREST_IN_REGIONS: "Щоб торгівля була можливою, або [COUNTRY.GetName], або [TARGET_COUNTRY.GetName] мусять мати [Concept('concept_interest', '$concept_interest_acc$')|l] у [Concept('concept_strategic_region','$concept_strategic_region_loc$')|l], де існує [concept_market|l] іншої [Concept('concept_country','$concept_country_gen$')|l]"
+ TRADE_ROUTE_LANDLOCKED_COUNTRY: "Ви не можете торгувати крізь море, оскільки ваша [concept_market_capital|l] не має доступу до береговини"
  TRADE_ROUTE_EXPORTS_CAPPED:0 "Desired exports exceed potential, limiting traded amount to #v $POSSIBLE_QUANTITY|0$#! (#v $TOTAL_POSSIBLE_QUANTITY|0$#! x #v $QUANTITY_PERC|0%$#! competitiveness share)"
  TRADE_ROUTE_IMPORTS_CAPPED:0 "Desired imports exceed potential, limiting traded amount to #v $POSSIBLE_QUANTITY|0$#! (#v $TOTAL_POSSIBLE_QUANTITY|0$#! x #v $QUANTITY_PERC|0%$#! competitiveness share)"
  TRADE_ROUTE_MARKET_LACKS_PORT:0 "Not possible to establish this [concept_trade_route] because [MARKET.GetName] lacks a port."
@@ -3642,7 +3642,7 @@
  TRADE_ROUTE_ALREADY_EXISTS:0 "We already have a [concept_trade_route] for [Goods.GetName] between these Markets"
  TRADE_ROUTE_EMBARGOED_GOODS:2 "You are not a participant in [MARKET.GetName] and [Goods.GetTextIcon][Nbsp][Goods.GetName] is [Concept('concept_embargo', '$concept_embargoed$')] there"
  INSUFFICIENT_SELL_ORDERS:0 "Insufficient Supply in [MARKET.GetName] × $RATIO|-%1$: $VAL|vD$\n$TAB$Sell Orders available in [MARKET.GetName]: $SELL_ORDERS|vD$\n$TAB$Total Import Demand: $TOTAL_DEMAND|vD$"
- TRADE_ROUTE_UNREACHABLE:1 "We have no way of reaching this [concept_market]"
+ TRADE_ROUTE_UNREACHABLE:1 "Ми ніяк не можемо досягти їхнього [Concept('concept_market', '$concept_market_gen$')|l]"
 
  MARKET_NAME_WITH_STATUS_ISOLATED: "#bold [MARKET.GetNameNoFormatting]#! #maximum (Ізольований)#!"
  MARKET_NAME_WITH_STATUS: "#bold [MARKET.GetNameNoFormatting]#!"

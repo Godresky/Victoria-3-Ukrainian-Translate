@@ -99,7 +99,7 @@
  
  government_conflicts.8.t: "Ці виробні від сатани"
  government_conflicts.8.d: "[SCOPE.gsInterestGroup('rural_folk_ig').GetName] незадоволені тим, що [SCOPE.gsInterestGroup('industrialists_ig').GetName] увійшла у [ROOT.GetCountry.GetAdjectiveNoFormatting|l]ий уряд."
- government_conflicts.8.f: "«Щось мені підказує, що коли вони зведуть свої виробні та машини, які повинні звільнити нас від тягаря, то ми і далі будемо збирати виноград, а вони пити вино.»"
+ government_conflicts.8.f: "«Щось мені підказує, що коли вони зведуть свої виробні та машини, які повинні звільнити нас від тягара, то ми і далі будемо збирати виноград, а вони пити вино.»"
  government_conflicts.8.a: "Подобається вам це чи ні, але опромислення - це майбутнє."
  government_conflicts.8.b: "Ми не повинні забувати про тих, хто годує мешканців міста."
  government_conflicts.8.c: "Виробні та хутори однаково потрібні для #yellow [ROOT.GetCountry.GetAdjective|l]ого#! майбутнього."
@@ -762,23 +762,23 @@
  expedition_events.282.f:0 ""We picked a direction, almost at random. Good thing it turned out to be the right one.""
  expedition_events.282.a:0 "Great News"
 
- expedition_events.400.t:1 "Suez Isthmus Surveyed"
+ expedition_events.400.t: "Суецький пересип обстежено"
  expedition_events.400.d:1 "Our survey of the Suez Isthmus is complete. We have confirmed that it would be possible to construct a canal linking the Mediterranean to the Red Sea."
  expedition_events.400.f:1 ""There has been a long held belief that the water levels on either side of the Suez Isthmus differed greatly. We have now proven that is not the case.""
- expedition_events.400.a:0 "Very good!"
+ expedition_events.400.a: "Дуже добре!"
 
  notification_suez_survey_started_desc:0 "Suez Isthmus Survey Started"
  notification_suez_survey_started_tooltip:0 "Suez Isthmus Survey Started"
  suez_survey_complete_tooltip:0 "Suez Survey Complete"
 
- expedition_events.410.t:1 "Panama Isthmus Surveyed"
+ expedition_events.410.t: "Панамський пересип обстежено"
  expedition_events.410.d:1 "Our survey of the Panama Isthmus is complete. We have confirmed that it would be possible to construct a canal linking the Atlantic and Pacific Oceans."
  expedition_events.410.f:1 ""A faster route between the Atlantic and Pacific has long been sought, but now we shall make it ourselves.""
- expedition_events.410.a:0 "Very good!"
+ expedition_events.410.a: "Дуже добре!"
 
- notification_panama_survey_started_desc:0 "Panama Isthmus Survey Started"
- notification_panama_survey_started_tooltip:0 "Panama Isthmus Survey Started"
- panama_survey_complete_tooltip:0 "Panama Survey Complete"
+ notification_panama_survey_started_desc: "Розпочато обстеження Панамського пересипу"
+ notification_panama_survey_started_tooltip: "Розпочато обстеження Панамського пересипу"
+ panama_survey_complete_tooltip: "Обстеження Панами завершено"
 
  ig_revolutions.1.t:0 "On the Edge"
  ig_revolutions.1.d:1 "The [SCOPE.gsInterestGroup('ig_on_the_edge').GetName], led by wily [SCOPE.sCharacter('ig_on_the_edge_leader').GetFullName], have threatened to join the revolutionary forces if their demands are not met. Although the concessions they demand are small, the power they will wield if we admit our weakness to them shall be tremendous."

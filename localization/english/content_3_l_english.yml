@@ -48,7 +48,7 @@
  generic_laws.5.d: "Законодавці, які працюють над ухваленням [Concept('concept_law', '$concept_law_gen$')|l] «[SCOPE.sLaw('current_law_scope').GetName]», застрягли в особливо складній низці бюрократичних процедур, що майже повністю призупинило роботу над наданням чинности."
  generic_laws.5.f: "«Повністю розвинений бюрократичний апарат порівнюється з іншими організаціями так само, як машина з немеханічним способом виробництва.»" # Max Weber
  generic_laws.5.a: "До біса цю заплутану правову систему!"
- generic_laws.5.b: "Подолайте хоч би частину тягаря."
+ generic_laws.5.b: "Подолайте хоч би частину тягара."
  mired_in_bureaucracy: "Занурений у бюрократію"
  mired_in_bureaucracy_minor: "Бюрократичні перепони"
  cutting_red_tape: "Робота проти системи"
@@ -435,5 +435,5 @@
 
 #################### Misc. Journal Entries
 
- has_activated_dynamite:0 "Has activated Dynamite"
- has_activated_public_trading:0 "Has activated Publicly Traded"
+ has_activated_dynamite: "Вибрано спосіб виробництва «Вибухівка»"
+ has_activated_public_trading: "Вибрано спосіб виробництва «Відкрита торгівля»"

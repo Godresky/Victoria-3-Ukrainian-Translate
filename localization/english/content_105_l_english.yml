@@ -202,8 +202,8 @@
   #je_springtime_of_the_peoples_custom_complete: "The international current of revolutionary sentiment has subsided."
 
   # Suffragist Events
- je_suffragists:0 "Call for Women's Suffrage"
- je_suffragists_reason:0 "The rise of the Suffragist movement, calling for the voting franchise to be extended to eligible female citizens, has become a prominent feature of the contemporary political landscape."
+ je_suffragists: "Заклик до виборчого права для жінок"
+ je_suffragists_reason: "Зростання суфражистського руху, який закликає до надання виборчого права жінкам, що досягли повноліття, стало помітною рисою сучасної політичної ситуації."
  suffragist_events.9.t:0 "Votes for Women"
  suffragist_events.9.d:0 "Women in [ROOT.GetCountry.GetName] have begun organizing to campaign for their right to vote in general elections. [SCOPE.gsInterestGroup('suffragist_ig').GetLeader.GetFullName] of the [SCOPE.gsInterestGroup('suffragist_ig').GetName] has emerged as a leading figure of this movement."
  suffragist_events.9.f:0 ""If democracy is to live to up to its own ideals, it cannot simply be an emulation of ancient republics. It must be an ongoing project, always asking the question: Who is not heard? Whose wisdom is discarded? [ROOT.GetCountry.GetNameNoFormatting] has already recognized women as capable of ruling themselves. Why should we not aid in ruling the nation?""
@@ -543,8 +543,8 @@
   # Tech/Production JEs and Events
  je_pumpjacks:0 "Expand the Oil Industry"
  je_pumpjacks_reason:0 "We have only begun to discover the applications of oil, but we have discovered some supply of it. We must tap into it without delay."
- je_electrical_generation:0 "Expand Power Plants"
- je_electrical_generation_reason:0 "There are those who claim that in the future, electricity could be used to power everything. Whether or not those dreams will come true, there is already plenty of use for it in industries. Where there is demand, we must make supply."
+ je_electrical_generation: "Розширення струмень"
+ je_electrical_generation_reason: "Є люди, які стверджують, що в майбутньому електрику можна буде використовувати для живлення всього на світі. Незалежно від того, чи здійсняться ці мрії, чи ні, вже зараз є багато галузей, де вона може бути використана. Там, де є попит, треба зробити пропозицію."
  production_tech_events.401.t:0 "Booming Oil Industry"
  production_tech_events.401.d:0 "The recent expansion of the [SCOPE.sBuilding('oil_rig_building').GetName] in [SCOPE.sState('oil_rig_state').GetName] has boosted confidence in [ROOT.GetCountry.GetName]'s future as an oil producer."
  production_tech_events.401.f:0 ""If our ancestors had seen machines powered by a black, flammable liquid bursting forth from the earth, they would surely have called our technological marvels the work of the Devil. Thank God we live in such enlightened times!""

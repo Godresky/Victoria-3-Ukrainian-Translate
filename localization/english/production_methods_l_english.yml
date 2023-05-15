@@ -852,7 +852,7 @@ pm_steam_rail_transport: "Залізниця"
  pm_privately_owned_building_railway: "$pm_privately_owned$"
  pm_trade_center_privately_owned: "$pm_privately_owned$"
  
- pm_publicly_traded: "Публічна торгівля"
+ pm_publicly_traded: "Відкрита торгівля"
  pm_publicly_traded_building_food_industry: "$pm_publicly_traded$"
  pm_publicly_traded_building_textile_mills: "$pm_publicly_traded$"
  pm_publicly_traded_building_furniture_manufacturies: "$pm_publicly_traded$"

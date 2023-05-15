@@ -1925,9 +1925,9 @@
  modifier_oregon_trail_mapped:0 "Oregon Trail Mapped"
  modifier_great_salt_lake_mapped:0 "Great Salt Lake Mapped"
 
- modifier_surveying_suez: "Обстеження Суецького перешийка"
+ modifier_surveying_suez: "Обстеження Суецького пересипу"
 
- modifier_surveying_panama: "Обстеження Панамського перешийка"
+ modifier_surveying_panama: "Обстеження Панамського пересипу"
 
  modifier_country_production_tech_cost_mult:0 "Production [concept_technology] Cost"
  modifier_country_production_tech_cost_mult_desc:0 "A bonus or penalty to research [concept_technology] in the Production category"
