@@ -403,9 +403,9 @@
  election_neutral.2.c:0 "If [SCOPE.sCharacter('electioneering_commander').GetFullName] likes politics so much, [SCOPE.sCharacter('electioneering_commander').GetSheHe] ought to get more involved."
  election_neutral.2.c.tt:0 "[SCOPE.sCharacter('electioneering_commander').GetFullName] does not have the Politician trait."
 
- election_neutral.3.t:0 "Whistle-Stop Tour"
- election_neutral.3.d:0 "[SCOPE.sCharacter('whistle_stop_leader').GetFullName] intends to travel across [SCOPE.sState('whistle_stop_state').GetName] by train to campaign for the [SCOPE.sParty('whistle_stop_party').GetName]."
- election_neutral.3.f:0 ""All I intend to do is present myself to the people — I'm just a simple [SCOPE.sCharacter('whistle_stop_leader').GetManWoman] trying to get our party's message out by the best means available.""
+ election_neutral.3.t: "Тур зі свистком"
+ election_neutral.3.d: "[SCOPE.sCharacter('whistle_stop_leader').GetFullName] хоча здійснити подорож поїздом через [Concept('concept_state','$concept_state_acc$')|l] [SCOPE.sState('whistle_stop_state').GetName], щоб закликати голосувати за [SCOPE.sParty('whistle_stop_party').GetName|l]."
+ election_neutral.3.f:0 "«All I intend to do is present myself to the people — I'm just a simple [SCOPE.sCharacter('whistle_stop_leader').GetManWoman] trying to get our party's message out by the best means available.»"
  election_neutral.3.a:0 "Campaigning by rail is a smart move."
  election_neutral.3.b:0 "It'd be a shame if that campaign train kept suffering delays."
  election_neutral.3.c:0 "The fate of the nation depends on that train running on time!"
