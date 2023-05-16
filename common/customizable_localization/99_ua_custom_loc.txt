@@ -3,12 +3,14 @@
 
 ## Pronouns
 
-# UA_vin_vona    | він    | вона
-# UA_noho_neji   | нього  | неї
-# UA_joho_jiji   | його   | її
-# UA_jomu_jij    | йому   | їй
-# UA_nym_neju    | ним    | нею
-# UA_nomu_nij    | ньому  | ній
+# UA_vin_vona    | він     | вона
+# UA_noho_neji   | нього   | неї
+# UA_joho_jiji   | його    | її
+# UA_jomu_jij    | йому    | їй
+# UA_nym_neju    | ним     | нею
+# UA_nomu_nij    | ньому   | ній
+
+# UA_man_woman   | чоловік | жінка
 
 #################################
 ######## ## ПЕРСОНАЖІ ## ########
@@ -89,6 +91,19 @@ UA_nomu_nij = {
 	}	
 	text = {	
 		localization_key = CustomLoc_UA_vona_nij
+		trigger = { is_female = yes }
+	}	
+}
+
+UA_man_woman = {		
+	type = character
+	log_loc_errors = yes
+	text = {	
+		localization_key = CustomLoc_UA_vin_man
+		trigger = { is_female = no }
+	}	
+	text = {	
+		localization_key = CustomLoc_UA_vona_woman
 		trigger = { is_female = yes }
 	}	
 }

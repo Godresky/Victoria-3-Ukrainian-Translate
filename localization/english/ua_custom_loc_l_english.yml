@@ -10,6 +10,8 @@
  CustomLoc_UA_vin_jomu: "Йому"
  CustomLoc_UA_vin_nym: "Ним"
  CustomLoc_UA_vin_nomu: "Ньому"
+
+ CustomLoc_UA_vin_man: "Чоловік"
 #жіночий
  CustomLoc_UA_vona: "Вона"
  CustomLoc_UA_vona_neji: "Неї"
@@ -17,6 +19,8 @@
  CustomLoc_UA_vona_jij: "Їй"
  CustomLoc_UA_vona_neju: "Нею"
  CustomLoc_UA_vona_nij: "Ній"
+
+ CustomLoc_UA_vona_woman: "Жінка"
 #середній
 #  CustomLoc_UA_vony: "Вони"
 #  CustomLoc_UA_vony_nykh: "Них"

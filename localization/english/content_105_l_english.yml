@@ -79,12 +79,12 @@
  obligation_events.5.f:1 ""Not everyone is afforded the opportunities they deserve in their home country. We are an ambitious nation, one that will make better use of [SCOPE.sCharacter('obligation_request_character').GetHerHis] skills than they ever could.""
  obligation_events.5.a:1 "Just what our military needs!"
  obligation_events.5.b:1 "The obligation is worth more than the skills of one [SCOPE.sCharacter('obligation_request_character').GetManWoman]."
- obligation_events.6.t:1 "A [SCOPE.sCharacter('obligation_request_character').GetManWoman] in Demand"
- obligation_events.6.d:1 "[SCOPE.sC('obligation_request_sender').GetName] is calling in the obligation we owe them by requesting our commander [SCOPE.sCharacter('obligation_request_character').GetFullName] be sent to serve in their military."
- obligation_events.6.f:1 ""A lot of talk about serving one's country in the military, as if it was a simple choice. What if the best service you can provide to your country is by serving another?""
- obligation_events.6.a:1 "A small price for what they did to earn it!"
- obligation_events.6.b:1 "They may have our military aid, but not our military leaders."
- obligation_events.tt.no:0 "No message will be sent to [SCOPE.sC('obligation_request_target').GetName]."
+ obligation_events.6.t: "[SCOPE.sCharacter('obligation_request_character').GetCustom('UA_man_woman')] на вимогу"
+ obligation_events.6.d: "[SCOPE.sC('obligation_request_sender').GetName] закликає до зобов’язання, яке ми маємо перед ними, просячи відправити нашого командира [SCOPE.sCharacter('obligation_request_character').GetFullName] на службу в їхнє військо."
+ obligation_events.6.f: "«Багато говорять про служіння своїй державі у війську, ніби це просто вибір. Що, якщо найкраща послуга, яку ви можете надати своїй країні, - це служіння іншій?»"
+ obligation_events.6.a: "Невелика ціна за те, що вони зробили!"
+ obligation_events.6.b: "Вони отримають військову допомогу, але не наших командирів."
+ obligation_events.tt.no: "Повідомлення не буде надіслано державі [SCOPE.sC('obligation_request_target').GetName]."
 
   # Trade Route Events
  trade_route_events.1.t:0 "Dangerous Gunsmiths"
@@ -1101,7 +1101,7 @@
  # Corn Law Modifiers
  corn_law_proponent: "Прихильник закону про зерно"
  corn_law_leverage: "Важелі на закон про зерно"
- repealed_corn_laws: "Скасовані закони про зерно"
+ repealed_corn_laws: "Скасовано закони про зерно"
  temporary_minimum_wages: "Тимчасова мінімальна зарплата"
 
   # Custom triggers

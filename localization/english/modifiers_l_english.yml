@@ -460,9 +460,9 @@
  pm_retooling:0 "Production Method Retooling"
  pm_retooling_loc:0 "Retooling for $PM$ — Expires $EXPIRY$"
  pm_retooling_desc:0 "A penalty to the building's throughput due to recent change of production methods."
-  pm_offense_defense_readjustment: "Реґулювання первинного обладнання"
+  pm_offense_defense_readjustment: "Зміна первинного обладнання"
  pm_offense_defense_readjustment_desc:1 "A penalty to the [concept_offense] and [concept_defense] provided by the building due to recent change of primary [Concept('concept_production_method','$concept_production_methods$')]."
- pm_offense_defense_readjustment_minor: "Реґулювання вторинного обладнання"
+ pm_offense_defense_readjustment_minor: "Зміна вторинного обладнання"
  pm_offense_defense_readjustment_minor_desc:0 "A penalty to the [concept_offense] and [concept_defense] provided by the building due to recent change of secondary [Concept('concept_production_method','$concept_production_methods$')]."
   
  insufficient_urbanization:0 "Insufficient [concept_urbanization]"

@@ -561,7 +561,7 @@ pm_steam_rail_transport: "Залізниця"
  
 #Naval Base
  pmg_ship_class: "Кляс кораблів"
- pm_man_o_wars: "Мановари"
+ pm_man_o_wars: "Мановар"
  pm_ironclads: "Панцерник"
  pm_monitors: "Спостережник"
  pm_dreadnoughts: "Дредновт"

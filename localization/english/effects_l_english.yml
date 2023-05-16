@@ -210,7 +210,7 @@
  REMOVE_TRAIT:0 "[CHARACTER.GetFullName] removes trait [CHARACTER_TRAIT.GetName]"
  REMOVE_TRAIT_GLOBAL:0 "[CHARACTER.GetFullName] removes trait [CHARACTER_TRAIT.GetName]"
  REMOVE_TRAIT_FIRST:0 "[CHARACTER.GetFullName] removes trait [CHARACTER_TRAIT.GetName]"
- TRANSFER_CHARACTER:0 "[CHARACTER.GetFullName] becomes employed by [TARGET_COUNTRY.GetName]"
+ TRANSFER_CHARACTER: "[CHARACTER.GetFullName] піде працювати на державу [TARGET_COUNTRY.GetName]"
  SET_CHARACTER_BUSY:0 "[CHARACTER.GetFullName] drops all assignments and becomes busy"
  SET_CHARACTER_BUSY_NEG:0 "[CHARACTER.GetFullName] is no longer busy"
  SET_CHARACTER_BUSY_GLOBAL:0 "[CHARACTER.GetFullName] drops all assignments and becomes busy"
@@ -411,7 +411,7 @@
   
  OBJECTIVE_SUBGOAL_EFFECT:0 "Objective subgoal effect (player should never see this)"
   
- REMOVE_DIPLOMATIC_PACT:1 "Breaks [DIPLOMATIC_ACTION_TYPE.GetName] ([concept_diplomatic_action]) between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName]"
+ REMOVE_DIPLOMATIC_PACT: "Розірве [Concept('concept_diplomatic_action','$concept_diplomatic_action_acc$')|l] [DIPLOMATIC_ACTION_TYPE.GetName] між державами [COUNTRY.GetName] та [TARGET_COUNTRY.GetName]"
   
  SET_SUBSIDIZED:1 "Start [Concept('concept_subsidies', '$concept_subsidizing$')] [Building.GetName]"
  SET_SUBSIDIZED_NEGATIVE:1 "Stop [Concept('concept_subsidies', '$concept_subsidizing$')] [Building.GetName]"

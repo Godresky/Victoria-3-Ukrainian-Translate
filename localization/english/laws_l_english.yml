@@ -168,7 +168,7 @@
  lawgroup_governance_principles_desc: "Ґрунтовні принципи управління державою. Визначає ким є голова держави."
   
  law_chiefdom: "Вождівство"
- law_chiefdom_desc: "A hierarchical pre-industrial political system based on kinship, with a warlord or elder of a prominent family at the head. It is incapable of efficient centralized control over entire states."
+ law_chiefdom_desc: "Ієрархічна доіндустріальна політична система, заснована на родинних зв’язках, на чолі якої стояв або полководець, або старійшина знатного роду. Вона не здатна здійснювати ефективний централізований контроль над землями."
  law_monarchy: "Монархія"
  law_monarchy_desc: "Тип правління, при якому шляхецька династія відображає національну ідентичність держави і передає виконавчу владу в руки голови династії."
  law_presidential_republic: "Президентська республіка"
