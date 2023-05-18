@@ -4891,7 +4891,7 @@
  COMBAT_UNIT_NOT_UNDER_DIRECT_COMMAND:0 "Inactive (in battle but not under direct command)"
  COMBAT_UNIT_INACTIVE_MODIFIER_GARRISONED:0 "Inactive (in [Concept('concept_garrison','$concept_garrisons$')])"
 
- BATTLE_IN: "Битва у землі $STATE_REGION_NAME$"
+ BATTLE_IN: "Битва у місцині $STATE_REGION_NAME$"
  BATTLE_NEAR: "Битва біля міста $CITY_NAME$"
  BATTLE_FOR: "Битва за місто $CITY_NAME$"
  MILITARY_LENS_CHARACTER_TOOLTIP: "#HEADER $NAME$#!"
