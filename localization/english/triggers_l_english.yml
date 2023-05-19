@@ -443,10 +443,10 @@
  
  TRIGGER_LITERACY_RATE:2 "[concept_literacy] Rate $COMPARATOR$ #variable $NUM|0%$#!"
  TRIGGER_LITERACY_RATE_NOT:2 "Does #bold not #!have a [concept_literacy] Rate $COMPARATOR$ #variable $NUM|0%$#!"
- TRIGGER_LITERACY_RATE_FIRST:1 "$SUBJECT$ has a [concept_literacy] Rate $COMPARATOR$ #variable $NUM|0%$#!"
- TRIGGER_LITERACY_RATE_FIRST_NOT:1 "$SUBJECT$ has a [concept_literacy] Rate $COMPARATOR$ #variable $NUM|0%$#!"
- TRIGGER_LITERACY_RATE_THIRD:1 "$SUBJECT$ has a [concept_literacy] Rate $COMPARATOR$ #variable $NUM|0%$#!"
- TRIGGER_LITERACY_RATE_THIRD_NOT:1 "$SUBJECT$ has a [concept_literacy] Rate $COMPARATOR$ #variable $NUM|0%$#!"
+ TRIGGER_LITERACY_RATE_FIRST: "$SUBJECT$ має [Concept('concept_literacy','$concept_literacy_acc$')|l] $COMPARATOR$ #variable $NUM|0%$#!"
+ TRIGGER_LITERACY_RATE_FIRST_NOT: "$SUBJECT$ має [Concept('concept_literacy','$concept_literacy_acc$')|l] $COMPARATOR$ #variable $NUM|0%$#!"
+ TRIGGER_LITERACY_RATE_THIRD: "$SUBJECT$ має [Concept('concept_literacy','$concept_literacy_acc$')|l] $COMPARATOR$ #variable $NUM|0%$#!"
+ TRIGGER_LITERACY_RATE_THIRD_NOT: "$SUBJECT$ має [Concept('concept_literacy','$concept_literacy_acc$')|l] $COMPARATOR$ #variable $NUM|0%$#!"
  
  TRIGGER_SCALED_DEBT: "Має довг $COMPARATOR$ @money!#variable $VALUE|K0$#!"
  TRIGGER_SCALED_DEBT_NOT: "#bold Не#! має довг $COMPARATOR$ @money!#variable $VALUE|K0$#!"
@@ -963,10 +963,10 @@
  TRIGGER_OWNS_ENTIRE_STATE_REGION_THIRD:0 "All of [StateRegion.GetName] is owned by [Country.GetName]"
  TRIGGER_OWNS_ENTIRE_STATE_REGION_THIRD_NOT:1 "All of [StateRegion.GetName] is #bold not #!owned by [Country.GetName]"
  
- TRIGGER_COUNTRY_OR_SUBJECT_OWNS_ENTIRE_STATE_REGION:0 "[StateRegion.GetName] is owned by the country or its subjects"
- TRIGGER_COUNTRY_OR_SUBJECT_OWNS_ENTIRE_STATE_REGION_FIRST:0 "[StateRegion.GetName] is owned by [Country.GetNameNoFlag] or its subjects"
- TRIGGER_COUNTRY_OR_SUBJECT_OWNS_ENTIRE_STATE_REGION_NOT:1 "[StateRegion.GetName] is #bold not #!owned by the country or its subjects"
- TRIGGER_COUNTRY_OR_SUBJECT_OWNS_ENTIRE_STATE_REGION_FIRST_NOT:0 "[StateRegion.GetName] is #bold not #!owned by [Country.GetNameNoFlag] or its subjects"
+ TRIGGER_COUNTRY_OR_SUBJECT_OWNS_ENTIRE_STATE_REGION: "Країна або її підвладні володіють [Concept('concept_state','$concept_state_ins$')|l] [StateRegion.GetName]"
+ TRIGGER_COUNTRY_OR_SUBJECT_OWNS_ENTIRE_STATE_REGION_FIRST: "[Country.GetNameNoFlag] або її підвладні володіють [Concept('concept_state','$concept_state_ins$')|l] [StateRegion.GetName]"
+ TRIGGER_COUNTRY_OR_SUBJECT_OWNS_ENTIRE_STATE_REGION_NOT: "Країна або її підвладні #bold не#! володіють [Concept('concept_state','$concept_state_ins$')|l] [StateRegion.GetName]"
+ TRIGGER_COUNTRY_OR_SUBJECT_OWNS_ENTIRE_STATE_REGION_FIRST_NOT: "[Country.GetNameNoFlag] або її підвладні #bold не#! володіють [Concept('concept_state','$concept_state_ins$')|l] [StateRegion.GetName]"
  
  TRIGGER_HAS_STATE_IN_STATE_REGION:0 "Has a State in [STATE_REGION.GetName]"
  TRIGGER_HAS_STATE_IN_STATE_REGION_NOT:0 "Does Not have a State in [STATE_REGION.GetName]"
@@ -2111,7 +2111,7 @@ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_GREATER_THAN:0 "Remaining duratio
 
  TRIGGER_COUNTRY_AVERAGE_SOL_GREATER_THAN:0 "Average Standard of Living of [COUNTRY.GetName] is greater than $TARGET_VALUE|0v$"
  TRIGGER_COUNTRY_AVERAGE_SOL_GREATER_THAN_NOT:1 "Average Standard of Living of [COUNTRY.GetName] is #bold not #!greater than $TARGET_VALUE|0v$"
- TRIGGER_COUNTRY_AVERAGE_SOL_GREATER_THAN_FIRST:0 "Average [concept_sol] of [COUNTRY.GetNameNoFlag] is greater than $TARGET_VALUE|0v$"
+ TRIGGER_COUNTRY_AVERAGE_SOL_GREATER_THAN_FIRST: "Середній [concept_sol|l] у державі [COUNTRY.GetNameNoFlag] більший за $TARGET_VALUE|0v$"
  TRIGGER_COUNTRY_AVERAGE_SOL_GREATER_THAN_FIRST_NOT:1 "Average [concept_sol] of [COUNTRY.GetNameNoFlag] is #bold not #!greater than $TARGET_VALUE|0v$"
  TRIGGER_COUNTRY_AVERAGE_SOL_GREATER_THAN_THIRD:0 "Average [concept_sol] of [COUNTRY.GetName] is greater than $TARGET_VALUE|0v$"
  TRIGGER_COUNTRY_AVERAGE_SOL_GREATER_THAN_THIRD_NOT:1 "Average [concept_sol] of [COUNTRY.GetName] is #bold not #!greater than $TARGET_VALUE|0v$"

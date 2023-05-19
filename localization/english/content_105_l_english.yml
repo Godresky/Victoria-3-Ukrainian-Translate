@@ -4,7 +4,7 @@
  pm_events.1.f:0 "Accidents have always happened, but I felt like I used to have time to react. Not this time. I grabbed his arm to pull him out of the way, but I'd barely got hold of his wrist before the arm was all I held onto."
  pm_events.1.a:0 "Slow down production while the staff adjusts to this new machinery."
  pm_events.1.b:0 "We cannot pull the brakes on the engines of progress!"
- industrial_safety_slowdowns:0 "Industrial Safety Slowdowns"
+ industrial_safety_slowdowns:0 "Уповільнення промисловости задля безпеки"
  lacking_industrial_safety_regulations:0 "Lacking Industrial Safety Regulations"
  slowed_down_production:0 "Slowed Down Production"
  ignored_safety_concerns:0 "Ignored Safety Concerns"
@@ -1034,7 +1034,7 @@
  je_avert_sepoy_mutiny_reason: "Незадоволеність пануванням Компанії на індійському субконтиненті зростає, навіть у лавах нашого власного місцевого війська. Повстанню все ще можна запобігти."
  je_avert_sepoy_mutiny_tt_1: "Виконайте запис у часописі #BOLD «$je_consolidate_colonial_rule$»#!"
  je_avert_sepoy_mutiny_tt_2: "Виконайте запис у часописі #BOLD «$je_reform_indies$»#!"
- je_sepoy_mutiny:0 "Sepoy Mutiny"
+ je_sepoy_mutiny: "Повстання сипаїв"
  je_sepoy_mutiny_reason:0 "Mutiny and rebellion has broken out against the Company. If we are to maintain our authority, it must be crushed completely."
   # Sepoy Mutiny Events
  raj.3.t:0 "Forbidden Grease"

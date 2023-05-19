@@ -706,7 +706,7 @@
  goods_radio_output_mult:0 "$radio$ Goods Output"
  goods_radio_output_mult_desc:0 "A bonus or penalty for the production of $radio$."
 
- working_conditions:0 "Dangerous Working Conditions"
+ working_conditions: "Небезпечні умови праці"
  child_labor:0 "Child Labor"
   
  modifier_state_aristocrats_mortality_mult: "$aristocrats$ - [Concept('concept_pop_growth', '$concept_pop_growth_mortality$')|l]"

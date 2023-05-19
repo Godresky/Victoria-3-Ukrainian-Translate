@@ -229,7 +229,7 @@
  expecting_riches_less: "Нереалістичні очікування"
  expecting_riches_angry: "Нереалістичні очікування розвіяні"
  
- ig_leaders.20.t:0 "The Gamble"
+ ig_leaders.20.t: "Азартна гра"
  ig_leaders.20.d:0 "[SCOPE.sCharacter('reckless_leader').GetFullName], leader of the [SCOPE.gsInterestGroup('reckless_ig').GetName], has been openly preaching about the benefits that a mysterious and secret political gamble can bring to our government. When asked for details, [SCOPE.sCharacter('reckless_leader').GetSheHe] smiles coyly, refusing to elaborate."
  ig_leaders.20.f:0 "[SCOPE.sCharacter('reckless_leader').GetFullNameNoFormatting] has always had a taste for adventure and suspiciously tall hats. [SCOPE.sCharacter('reckless_leader').GetHerHis|U] closest friends don't seem to pay attention to these dangerous qualities, but the most respectable gentlemen have voiced their concerns in a mildly passive aggressive manner.\n\n"Nobody would ever doubt a sterling citizen like myself, don't you think?""
  ig_leaders.20.a:0 "How bad can it be?"

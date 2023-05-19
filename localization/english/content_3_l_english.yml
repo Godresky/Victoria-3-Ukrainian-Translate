@@ -16,7 +16,7 @@
  generic_laws.2.d: "Видатні учасники [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l] [SCOPE.gsInterestGroup('corrupt_ig_scope').GetName] — відверті прихильники [Concept('concept_law','$concept_law_gen$')|l] «[SCOPE.sLaw('current_law_scope').GetName]» і [SCOPE.sCharacter('corrupt_ig_leader_scope').GetFullName] та [SCOPE.sCharacter('corrupt_ig_leader_scope').GetCustom('UA_joho_jiji')|l] близькі союзники були викриті в корупційному скандалі, обмінявши політичні послуги на особисті «подарунки»."
  generic_laws.2.f: "«Яка головна ціль людини - розбагатіти. Яким чином? - Нечесно, якщо можемо; чесно, якщо мусимо.»" # Mark Twain
  generic_laws.2.a: "І що? Така природа політики."
- generic_laws.2.b: "Кидайте їх напризволяще, ми повинні прибрати цей безлад."
+ generic_laws.2.b: "Викиньте їх за борт, ми не повинні залишати цей безлад."
  ignored_corruption: "Ігнорування корупції"
  corrupt_connections_exposed: "Викриття корупційних зв'язків"
  corrupt_connections_exposed_minor: "Викриття корупційних зв'язків"
