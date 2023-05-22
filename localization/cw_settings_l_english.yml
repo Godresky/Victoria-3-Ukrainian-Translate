@@ -6,7 +6,8 @@
  SETTING_VALUE_SECONDS: "$VALUE$ секунд"
  SETTING_VALUE_MINUTES: "$VALUE$ хвилин"
  # Graphics
- SETTING_RENDERER: "Рендерер"
+ SETTING_RENDERER: "Рендер"
+ SETTING_RENDERER_TOOLTIP: "Визначає, який рендеринґ використовувати."
  SETTING_VSYNC: "Вертикальна сихронізація"
  SETTING_VSYNC_TOOLTIP: "#T $SETTING_VSYNC$\n#!Робить у грі та вашому моніторі однакову частоту кадрів, зменшуючи розриви на екрані.\n\nВимкнення може збільшити продуктивність."
  SETTING_PORTRAIT_MULTI_SAMPLING: "Портретне багаторазове згладжування"

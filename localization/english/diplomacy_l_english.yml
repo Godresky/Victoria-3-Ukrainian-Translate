@@ -155,6 +155,9 @@
  EXISTING_PACT: "Цінність наявного пакту [DIPLOMATIC_PACT.GetName|l]"
  NO_PACT_TO_TRANSFER: "Не існує жодного подібного [Concept('concept_diplomatic_pact','$concept_diplomatic_pact_gen$')|l], який можна було б передати"
  
+ AI_WILL_ACCEPT_GENERIC: "@green_checkmark! [Country.GetName] погодиться"
+ AI_WILL_NOT_ACCEPT_GENERIC: "@red_cross! [Country.GetName] #bold #n НЕ#!#! погодиться"
+
  AI_WILL_ACCEPT: "@green_checkmark! [DiplomaticAction.GetSecondCountry.GetName] погодиться"
  AI_WILL_ACCEPT_WITH_OWE_OBLIGATION: "@green_checkmark! [DiplomaticAction.GetSecondCountry.GetName] погодиться, якщо б ми надали їм своє [Concept('concept_obligation','$concept_obligation_acc$')|l]"
  AI_WILL_ACCEPT_WITH_CALL_IN_OBLIGATION: "@green_checkmark! [DiplomaticAction.GetSecondCountry.GetName] погодиться, якщо б ми зняли їхнє [Concept('concept_obligation','$concept_obligation_acc$')|l]"
