@@ -883,7 +883,7 @@ pm_steam_rail_transport: "Залізниця"
  pm_publicly_traded_building_railway: "$pm_publicly_traded$"
  pm_trade_center_government_run: "$pm_government_run$"
  
- pm_government_run: "Державне підприємство"
+ pm_government_run: "Державна власність"
  pm_government_run_building_food_industry: "$pm_government_run$"
  pm_government_run_building_textile_mills: "$pm_government_run$"
  pm_government_run_building_furniture_manufacturies: "$pm_government_run$"

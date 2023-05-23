@@ -550,20 +550,20 @@
 
  concept_enactment_setback:0 "Enactment Setback"
  concept_enactment_setbacks:0 "Enactment Setbacks"
- concept_enactment_setback_short:0 "Setback"
- concept_enactment_setbacks_short:0 "Setbacks"
+ concept_enactment_setback_short: "Невдача"
+ concept_enactment_setbacks_short: "Невдачі"
  concept_enactment_setback_desc:0 "While [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacting$')] a [concept_law] you may suffer $concept_enactment_setbacks_short$. This could be due to a [Concept('concept_enactment_stall','$concept_enactment_stall_short$')] result at the $concept_enactment_of_laws_enactment$ checkpoint, a consequence of a [Concept('concept_enactment_debate','$concept_enactment_debate_short$')], or that [concept_enactment_success] chance fell below #v 0#!. If you accumulate #r [GetDefine('NPolitics', 'LAW_ENACTMENT_MAX_SETBACKS')]#! $concept_enactment_setbacks_short$, the $concept_enactment_of_laws_enactment$ #r fails#!."
 
  concept_enactment_phase:0 "Enactment Phase"
- concept_enactment_phase_short:0 "Phase"
- concept_enactment_phases_short:0 "Phases"
+ concept_enactment_phase_short: "Стадія"
+ concept_enactment_phases_short: "Стадії"
  concept_enactment_phases:0 "Enactment Phases"
  concept_enactment_phase_desc:0 "To [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enact$')] a [concept_law] you must successfully guide it through [GetDefine('NPolitics', 'LAW_ENACTMENT_MAX_PHASES')|v] $concept_enactment_phases_short$ [AddLocalizationIf(GetPlayer.IsValid,'concept_enactment_phase_ingame_added')]by achieving [Concept('concept_enactment_success','$concept_enactment_successes$')]. During this process there is a risk of getting [Concept('concept_enactment_setback','$concept_enactment_setbacks$')] that may cause the $concept_enactment_of_laws_enactment$ to #r fail#!."
  concept_enactment_phase_ingame_added:0 "- [GetPlayer.GetCustom('enactment_phase_0')|v], [GetPlayer.GetCustom('enactment_phase_1')|v], and [GetPlayer.GetCustom('enactment_phase_2')|v] - "
  concept_setback:0 "Enactment Setback"
  concept_setbacks:0 "Enactment Setbacks"
- concept_setback_short:0 "Setback"
- concept_setbacks_short:0 "Setbacks"
+ concept_setback_short: "Невдача"
+ concept_setbacks_short: "Невдачі"
  concept_setback_desc:0 "During [concept_enactment_of_laws], you may have a Setback. This means that your [Concept('concept_politician','$concept_politicians$')] either [concept_enactment_stall], [Concept('concept_enactment_debate','$concept_enactment_debate_short_debated$')], or the [concept_enactment_success] went below #v 0#!. If the $concept_law$ being $concept_enactment_of_laws_enacted$ recieves #r [GetDefine('NPolitics', 'LAW_ENACTMENT_MAX_SETBACKS')]#! Setbacks, the $concept_enactment_of_laws_enactment$ #r fails#!."
 
  concept_money: "Гроші"
@@ -1075,8 +1075,8 @@
  concept_radicalization_acc: "Радикалізацію"
  concept_radical_desc:2 "$concept_radical$ [Concept('concept_individual','$concept_individuals$')] within a [concept_pop] are disillusioned with the state of their [concept_country]. The presence of $concept_radicals$ in a [concept_state] contributes to [concept_turmoil], and the $concept_radicalism$ of $concept_pops$ contribute to [concept_political_movement_radicalism]. The [concept_approval] of [Concept('concept_interest_group','$concept_interest_groups$')] supported by $concept_radical$ $concept_pops$ will also be impacted.\n\n$concept_radicals$ are created continuously while a $concept_pop$ is subjected to [concept_discrimination] or when their [concept_sol] falls below their [concept_expected_sol], whenever a $concept_pop$'s [concept_sol] decreases, and due to decisions made during special events. $concept_radicals$ are also created in $concept_pops$ that support $concept_political_movements$ whose demands go unfulfilled, and when $concept_pops$ are fired from a [Concept('concept_building','$concept_building_possessive$')] [concept_workforce] (particularly if they held [Concept('concept_ownership_share','$concept_ownership_shares$')]).\n\nThe opposite of a $concept_radical$ is a [concept_loyalist]. Whenever a $concept_loyalist$ would be created in a $concept_pop$ that already has $concept_radicals$, one $concept_radical$ becomes [concept_neutral] instead."
  
- concept_neutral:0 "Neutral"
- concept_neutrals:0 "Neutrals"
+ concept_neutral: "Невтрал"
+ concept_neutrals: "Невтрали"
  concept_neutral_desc:0 "$concept_neutral$ [Concept('concept_individual','$concept_individuals$')] within a [concept_pop] are neither [concept_radical] or [Concept('concept_loyalist','$concept_loyal$')] towards their [concept_country]. However, they are only one negative or positive step away from becoming $concept_radical$ or $concept_loyal$.\n\nWhenever a $concept_radical$ would be created in a $concept_pop$ that already has $concept_loyalists$, one $concept_loyalist$ becomes $concept_neutral$ instead. All $concept_individuals$ in a $concept_pop$ needs to be either $concept_neutral$ or already $concept_radical$ for a $concept_radical$ to be created. Vice versa when a $concept_loyalist$ would be created."
 
  concept_rivalry: "Суперництво"
@@ -2446,6 +2446,7 @@
  concept_political_movement_ins: "Політичним рухом"
  concept_political_movement_short: "Рух"
  concept_political_movement_short_gen: "Руху"
+ concept_political_movement_short_acc: "Рух"
  concept_political_movements_short: "Рухи"
  concept_political_movements: "Політичні рухи"
  concept_political_movements_gen: "Політичних рухів"
@@ -2533,12 +2534,15 @@
 
  concept_agitator: "Закликач"
  concept_agitators: "Закликачі"
+ concept_agitators_gen: "Закликачів"
  concept_agitate: "Закликати"
  concept_agitator_possessive:0 "Agitator\\'s"
  concept_agitator_desc:0 "A [concept_character_role] for [Concept('concept_character','$concept_characters$')] who support a [concept_political_movement] independently of their [concept_interest_group]. The [concept_political_movement] they support is determined by their [concept_ideology] and that of their [concept_interest_group]. Their impact on their [concept_political_movement] is determined by the Agitator's [concept_popularity] and [Concept('concept_character_trait', '$concept_character_traits$')]."
+
  concept_exile: "Вигнанець"
  concept_exiles: "Вигнанеці"
- concept_exiled: "Вигнання"
+ concept_exiled: "Вигнаний"
+ concept_exiled_adj: "Вигнан"
  concept_in_exile: "У вигнанні"
  concept_exile_desc:0 "A [concept_character] may be $concept_exiled$ using the #b Exile Dissident#! character action. The $concept_character$ becomes an [concept_agitator] and is expelled from your country.\n\nAn $concept_exiled$ $concept_character$ may be invited to any [concept_country] through the #b Invite Exile#! character action, where they will immediately start or join a [concept_political_movement] for that $concept_country$ in accordance with their [concept_ideology]. If all their [Concept('concept_endorse_oppose', '$concept_endorsed$')] [Concept('concept_law', '$concept_laws$')] are already active when they arrive, the invited $concept_agitator$ will remain dormant."
 

@@ -171,11 +171,11 @@
  repatriated_agitator: "Repatriated Agitator"
  exiling_dissident_radicals_factors: "The amount of [Concept('concept_radical','$concept_radicals$')] generated depends on our Freedom of Speech [Concept('concept_law', '$concept_laws$')] and the [concept_popularity] of the [concept_character]"
   # Positivist Ideology
- ideology_positivist: "Positivist"
- ideology_positivist_desc: "This character is an ardent technocrat and anticlericalist, disdaining both the arbitrary power of monarchs and the fickle whims of the public."
+ ideology_positivist:0 "Positivist"
+ ideology_positivist_desc:0 "This character is an ardent technocrat and anticlericalist, disdaining both the arbitrary power of monarchs and the fickle whims of the public."
  # Technocracy Law
- law_technocracy: "Technocracy"
- law_technocracy_desc: "The nation is governed by an unelected council of men of reason and ability."
+ law_technocracy: "Технократія"
+ law_technocracy_desc: "Нацією керує невиборна рада розумних і здібних людей."
  # Technocracy law events
  technocracy.1.t: "Public Meltdown"
  technocracy.1.d: "Following a series of poor business decisions, [SCOPE.sCharacter('technocrat_leader').GetFullName] has taken to lashing out against [SCOPE.sCharacter('technocrat_leader').GetHerHis] detractors in the tabloids. These screeds have served to destroy [SCOPE.sCharacter('technocrat_leader').GetHerHis] public reputation and damaged support for [GetLawType('law_technocracy').GetName]."

@@ -36,7 +36,7 @@
  HOVER_STATE_LOYALISTS: "[STATE.GetNumLoyalists] [Concept('concept_loyalist', '$concept_loyalists_gen$')|l] у [Concept('concept_state', '$concept_state_loc$')|l] [STATE.GetName]"
  HOVER_STATE_RADICALS: "[STATE.GetNumRadicals] [Concept('concept_radical', '$concept_radicals_gen$')|l] у [Concept('concept_state', '$concept_state_loc$')|l] [STATE.GetName]"
  INTEREST_GROUP_STATE_TOOLTIP: "#variable [INTEREST_GROUP.GetName]#! у [Concept('concept_state','$concept_state_loc$')|l] #variable [STATE.GetName]#!\n[concept_political_strength]: #variable [INTEREST_GROUP.GetPoliticalStrengthInState(STATE.Self)|D]#!\n$TOOLTIP_DELIMITER$\n[Concept('concept_pop','$concept_population$')]: #variable [INTEREST_GROUP.GetPopulationInState(STATE.Self)|D]#!"
- INTEREST_GROUP_WILL_JOIN_PARTY: "Приєднається до партії «$PARTY_NAME$» під час наступних урядових змін"
+ INTEREST_GROUP_WILL_JOIN_PARTY: "Приєднається до партії «[PARTY.GetName]», під час наступних урядових змін"
  INTEREST_GROUP_WILL_JOIN_PARTY_TOOLTIP: "[InterestGroup.GetName] вирішила приєднатися до партії «[PARTY.GetName]» під час наступних [Concept('concept_government_reform','$concept_government_reform_loc$')|l]"
  INTEREST_GROUP_AFFILIATION_TOOLTIP: "#HEADER Поточна приналежність до [Concept('concept_party','$concept_party_gen$')|l]: «[PARTY.GetName]»#!\n$TOOLTIP_DELIMITER$\n$AFFILIATION_DETAILS$"
  INTEREST_GROUP_AFFILIATION_TOOLTIP_NONE: "#HEADER Не входять в ніяку [Concept('concept_party','$concept_party_acc$')|l]#!\n$TOOLTIP_DELIMITER$\n$AFFILIATION_DETAILS$"
