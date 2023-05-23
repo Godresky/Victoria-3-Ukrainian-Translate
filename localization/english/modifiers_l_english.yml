@@ -16,6 +16,8 @@
  native_conscription_11: "$native_conscription_1$"
  native_conscription_12: "$native_conscription_1$"
 
+ modifier_country_agitator_slots_add:0 "Potential [Concept('concept_agitator','$concept_agitators$')]"
+ modifier_country_agitator_slots_add_desc:0 "An increase or decrease to the number of potential [Concept('concept_agitator','$concept_agitators$')] a [concept_country] can maintain within its borders"
  modifier_country_war_exhaustion_casualties_mult: "[concept_war_exhaustion] через [Concept('concept_casualties','$concept_casualties_acc$')|l]"
  modifier_country_war_exhaustion_casualties_mult_desc: "Збільшення або зменшення [concept_war_exhaustion|l] у [Concept('concept_country','$concept_country_loc$')|l], що перебуває у [Concept('concept_war','$concept_war_loc$')|l] через [concept_casualties|l]."
 
@@ -167,6 +169,16 @@
  battle_navy_average_morale_damage_desc:1 "$average_unit_value$"
  battle_navy_average_kill_rate:1 "$average_unit_value$"
  battle_navy_average_kill_rate_desc:1 "$average_unit_value$"
+ battle_army_average_recovery_rate:0 "$average_unit_value$"
+
+ battle_army_average_recovery_rate_desc:0 "$average_unit_value$"
+ battle_navy_average_recovery_rate:0 "$average_unit_value$"
+ battle_navy_average_recovery_rate_desc:0 "$average_unit_value$"
+ battle_average_provinces_captured:0 "$average_unit_value$"
+ battle_average_provinces_captured_desc:0 "$average_unit_value$"
+ battle_average_provinces_lost:0 "$average_unit_value$"
+ battle_average_provinces_lost_desc:0 "$average_unit_value$"
+ battle_naval_invasion_beachhead_penalty:0 "Insufficient [concept_naval_invasion_support]"
  battle_naval_invasion_beachhead_penalty:0 "Insufficient Naval Invasion Support"
  battle_naval_invasion_beachhead_penalty_desc:2 "Not enough [Concept('concept_flotilla','$concept_flotillas$')] supporting the landing battle"
  battle_naval_invasion_landing_penalty:0 "Difficult Landing"
@@ -347,11 +359,11 @@
  modifier_interest_group_ig_trade_unions_pop_attraction_mult:1 "$ig_variant_trade_unions$ Pop Attraction"
  modifier_interest_group_ig_trade_unions_pop_attraction_mult_desc:1 "A bonus or penalty to the how attracted Pops are to the $ig_variant_trade_unions$ [concept_interest_group]"
   
- modifier_tax_land_add: "@money! Земельний податок"
+ modifier_tax_land_add: "Земельний податок"
  modifier_tax_land_add_desc: "Кількість [Concept('concept_budget_land_taxes', '$concept_budget_land_taxes_gen$')|l] зібраних з [Concept('concept_pop','$concept_pop_gen$')|l] [GetPopType('peasants').GetName]"
- modifier_tax_heathen_add: "@money! Релігійний податок"
+ modifier_tax_heathen_add: "Релігійний податок"
  modifier_tax_heathen_add_desc: "Кількість [Concept('concept_budget_heathen_taxes', '$concept_budget_heathen_taxes_gen$')|l] зібраних щороку з [Concept('concept_pop','$concept_pops_gen$')|l] за віровизнання [Concept('concept_religion','$concept_religion_gen$')|l], яка [Concept('concept_discrimination','Утискається')|l]"
- modifier_tax_per_capita_add: "@money! Подушний податок"
+ modifier_tax_per_capita_add: "Подушний податок"
  modifier_tax_per_capita_add_desc:2 "The amount of [concept_budget_per_capita_taxes] collected from non-[GetPopType('peasants').GetName] [Concept('concept_pop','$concept_pops$')]"
  modifier_state_welfare_payments_add: "Соціяльні виплати"
  modifier_state_welfare_payments_add_desc:0 "The fraction of the [concept_normal_wage] at which [Concept('concept_pop','$concept_pops$')] receive [concept_welfare_payments] from the state"
@@ -446,7 +458,7 @@
 
  mobilized_battalion_consumption:1 "[Concept('concept_mobilize_battalion', '$concept_mobilize_battalion_mobilized$')] [Concept('concept_battalion', '$concept_battalions$')]"
 
- retired_commander_interest_group_impact:0 "[concept_commander] Retirement"
+ retired_commander_interest_group_impact:1 "Commander Retirement"
 
  modifier_building_throughput_mult: "[concept_throughput]"
  modifier_building_throughput_mult_desc: "Наддаток або карна до пропускної спроможности будівлі."
@@ -477,7 +489,7 @@
  modifier_country_trade_route_cost_mult: "Витрати @bur![Nbsp][Concept('concept_bureaucracy', '$concept_bureaucracy_gen$')|l] на торгові тори"
  modifier_country_trade_route_cost_mult_desc: "Збільшує або зменшує витрати @bur![Concept('concept_bureaucracy', '$concept_bureaucracy_gen$')|l] на кожен [Concept('concept_trade_route', '$concept_trade_route_acc$')|l]"
  modifier_country_trade_route_competitiveness_mult: "Конкурентоспроможність торгових торів"
- modifier_country_trade_route_competitiveness_mult_desc: "Збільшує або зменшує конкурентоспроможність [Concept('concept_trade_route', '$concept_trade_routes_gen$')|l]"
+ modifier_country_trade_route_competitiveness_mult_desc: "Збільшує або зменшує [Concept('concept_trade_route_competitiveness', '$concept_trade_route_competitiveness_short_acc$')|l] [Concept('concept_trade_route', '$concept_trade_routes_gen$')|l]"
  modifier_country_trade_route_imports_add:0 "Imports per [concept_trade_route] Level"
  modifier_country_trade_route_imports_add_desc:0 "An increase or decrease to the amount of goods imported via [Concept('concept_trade_route', '$concept_trade_routes$')]."
  modifier_country_trade_route_exports_add:0 "Exports per [concept_trade_route] Level"
@@ -708,6 +720,8 @@
 
  working_conditions: "Небезпечні умови праці"
  child_labor:0 "Child Labor"
+
+ supported_law_cancelled:0 "Supported Law Enactment Cancelled"
   
  modifier_state_aristocrats_mortality_mult: "$aristocrats$ - [Concept('concept_pop_growth', '$concept_pop_growth_mortality$')|l]"
  modifier_state_aristocrats_mortality_mult_desc:1 "An increase or decrease in the [Concept('concept_pop_growth', '$concept_pop_growth_mortality$')] of $aristocrats$"
@@ -919,11 +933,11 @@
  modifier_country_legitimacy_govt_size_mult_desc:1 "The amount of [concept_legitimacy] the [concept_government] gains or loses by including more [Concept('concept_interest_group', '$concept_interest_groups$')]."
  modifier_country_legitimacy_ideological_incoherence_mult:0 "$IDEOLOGICAL_INCOHERENCE_ALIAS$"
  modifier_country_legitimacy_ideological_incoherence_mult_desc:0 "$modifier_country_legitimacy_ideological_incoherence_mult$"
- modifier_country_legitimacy_govt_leader_clout_add:0 "[concept_legitimacy] from Government Leader Clout"
+ modifier_country_legitimacy_govt_leader_clout_add:1 "[concept_legitimacy] based on Government Leader Clout"
  modifier_country_legitimacy_govt_leader_clout_add_desc:1 "The amount of [concept_legitimacy] the [concept_government] gains or loses based on the [concept_clout] of the [concept_interest_group] leading the government."
- modifier_country_legitimacy_govt_total_clout_add: "[concept_legitimacy] завдяки силі уряду"
+ modifier_country_legitimacy_govt_total_clout_add:1 "[concept_legitimacy] based on [concept_government] [concept_clout]"
  modifier_country_legitimacy_govt_total_clout_add_desc:1 "The amount of [concept_legitimacy] the [concept_government] gains or loses based on the total [concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] in the government."
- modifier_country_legitimacy_govt_total_votes_add: "[concept_legitimacy] завдяки [Concept('concept_votes','$concept_votes_dat$')|l]"
+ modifier_country_legitimacy_govt_total_votes_add:1 "[concept_legitimacy] based on [concept_votes]"
  modifier_country_legitimacy_govt_total_votes_add_desc: "Рівень [Concept('concept_legitimacy','$concept_legitimacy_gen$')|l], який отримає або втрачає [concept_government|l], виходячи зі загального відсотку [Concept('concept_votes','$concept_votes_gen$')|l] [Concept('concept_party','$concept_parties_gen$')|l] в уряді."
   
  modifier_stockpile_army_requirement_small_arms_add:0 "Army @small_arms! Consumption"
@@ -1071,6 +1085,16 @@
  modifier_building_group_bg_infrastructure_machinists_mortality_mult_desc:0 "An increase or decrease in the $modifier_building_group_bg_infrastructure_machinists_mortality_mult$"
  modifier_building_group_bg_infrastructure_engineers_mortality_mult:0 "[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')] of $engineers$ employed in Infrastructure"
  modifier_building_group_bg_infrastructure_engineers_mortality_mult_desc:0 "An increase or decrease in the $modifier_building_group_bg_infrastructure_engineers_mortality_mult$"
+ modifier_building_group_bg_whaling_laborers_mortality_mult:0 "[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')] of $laborers$ employed in Whaling Stations"
+ modifier_building_group_bg_whaling_laborers_mortality_mult_desc:0 "An increase or decrease in the $modifier_building_group_bg_whaling_laborers_mortality_mult$"
+ modifier_building_group_bg_whaling_machinists_mortality_mult:0 "[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')] of $machinists$ employed in Whaling Stations"
+ modifier_building_group_bg_whaling_machinists_mortality_mult_desc:1 "An increase or decrease in the $modifier_building_group_bg_whaling_machinists_mortality_mult$"
+ modifier_building_group_bg_fishing_laborers_mortality_mult:0 "[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')] of $laborers$ employed in Fishing Wharves"
+ modifier_building_group_bg_fishing_laborers_mortality_mult_desc:0 "An increase or decrease in the $modifier_building_group_bg_fishing_laborers_mortality_mult$"
+ modifier_building_group_bg_fishing_machinists_mortality_mult:0 "[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')] of $machinists$ employed in Fishing Wharves"
+ modifier_building_group_bg_fishing_machinists_mortality_mult_desc:0 "An increase or decrease in the $modifier_building_group_bg_fishing_machinists_mortality_mult$"
+ modifier_building_group_bg_fishing_engineers_mortality_mult:0 "[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')] of $engineers$ employed in Fishing Wharves"
+ modifier_building_group_bg_fishing_engineers_mortality_mult_desc:0 "An increase or decrease in the $modifier_building_group_bg_fishing_engineers_mortality_mult$"
 
  modifier_building_group_bg_manufacturing_throughput_mult: "[concept_throughput] рукоділень"
  modifier_building_group_bg_manufacturing_throughput_mult_desc: "Наддаток або карна, що впливає на виробництво та використання товарів у рукодільнях"
@@ -1084,6 +1108,8 @@
  modifier_building_group_bg_mining_throughput_mult_desc: "Наддаток або карна, що впливає на виробництво та використання товарів у копальнях"
  modifier_building_group_bg_oil_extraction_throughput_mult: "[concept_throughput] ропового витягу"
  modifier_building_group_bg_oil_extraction_throughput_mult_desc: "Наддаток або карна, що впливає на виробництво та використання товарів у ропових витягах"
+ modifier_building_group_bg_rubber_throughput_mult:0 "$bg_rubber$ [concept_throughput]"
+ modifier_building_group_bg_rubber_throughput_mult_desc:0 "A bonus or penalty to both input and output of $bg_rubber$"
   
  modifier_building_group_bg_service_throughput_mult: "[concept_throughput] царини послуг"
  modifier_building_group_bg_service_throughput_mult_desc: "Наддаток або карна, що впливає на виробництво та використання товарів у царині послуг"
@@ -1485,7 +1511,7 @@
  modifier_state_working_adult_ratio_add: "Співвідношення робочої сили"
  modifier_state_working_adult_ratio_add_desc: "Співвідношення робочої сили та утриманців"
   
- modifier_country_voting_power_base_add: "[concept_political_strength] завдяки голосам"
+ modifier_country_voting_power_base_add:2 "[concept_political_strength] per Vote"
  modifier_country_voting_power_base_add_desc:1 "An increase or decrease to amount of [concept_political_strength] gained from each vote in Elections"
  modifier_country_voting_power_from_literacy_add: "[concept_political_strength] завдяки голосам освічених громад"
  modifier_country_voting_power_from_literacy_add_desc:1 "An increase or decrease to amount of [concept_political_strength] gained from each vote in Elections, modified by the [concept_literacy] of the voting [concept_pop]"
@@ -1818,6 +1844,8 @@
  modifier_country_disallow_discriminated_migration_desc: "Ця країна не дозволяє [Concept('concept_discrimination', '$concept_discriminated_adj$им')|l] [Concept('concept_pop', '$concept_pops_dat$')|l] [Concept('concept_migration', '$concept_migrating$')|l]"
  modifier_country_disallow_migration: "Усім [Concept('concept_pop', '$concept_pops_dat$')|l] заборонено [Concept('concept_migration', '$concept_migrating$')|l]"
  modifier_country_disallow_migration_desc: "Ця країна не дозволяє будь-яким [Concept('concept_pop', '$concept_pops_dat$')|l] [Concept('concept_migration', '$concept_migrating$')|l]"
+ modifier_country_disallow_agitator_invites:0 "Disallowed from inviting [Concept('concept_exile', '$concept_exiles$')]"
+ modifier_country_disallow_agitator_invites_desc:0 "This country does not permit the invitation of [Concept('concept_exile', '$concept_exiles$')]"
 
  modifier_country_embargo_all_goods:0 "Permission to Embargo all Goods"
  modifier_country_embargo_all_goods_desc:0 "Legal permission to embargo all categories of goods"
@@ -1957,16 +1985,25 @@
  modifier_state_loyalists_from_sol_change_accepted_religion_mult:0 "Кількість [Concept('concept_loyalist', '$concept_loyalists_gen$')|l] через збільшення [Concept('concept_sol', '$concept_sol_gen$')|l] у [Concept('concept_accepted_religion', '$concept_accepted_religions_loc$')|l]"
  modifier_state_loyalists_from_sol_change_accepted_religion_mult_desc:0 "An increase or decrease to how many [Concept('concept_pop', '$concept_pops$')] of [Concept('concept_accepted_religion', '$concept_accepted_religions$')] will become [concept_loyalist] from increases in [concept_sol]"
 
+ modifier_country_revolution_clock_time_add:0 "#todo [concept_revolution] Clock Time#!"
+ modifier_country_revolution_clock_time_add_desc:0 "#todo A bonus or penalty to how fast the revolution clock ticks#!"
+ modifier_country_secession_clock_time_add:0 "#todo [concept_secession] Clock Time#!"
+ modifier_country_secession_clock_time_add_desc:0 "#todo A bonus or penalty to how fast the secession clock ticks#!"
   
- modifier_country_revolution_secession_speed_mult: "Швидкість розвитку [Concept('concept_revolution', '$concept_revolution_gen$')|l] / [Concept('concept_secession', '$concept_secession_gen$')|l]"
- modifier_country_revolution_secession_speed_mult_desc:1 "A bonus or penalty to the Progression Speed of [Concept('concept_revolution', '$concept_revolutions$')] and [Concept('concept_secession', '$concept_secessions$')]"
- modifier_country_revolution_secession_speed_add:0 "$modifier_country_revolution_secession_speed_mult$"
- modifier_country_revolution_secession_speed_add_desc:0 "$modifier_country_revolution_secession_speed_mult_desc$"
+ modifier_country_revolution_progress_mult:0 "[concept_revolution] Progression Speed"
+ modifier_country_revolution_progress_mult_desc:0 "A bonus or penalty to how much progress is added to the revolution when the [concept_revolution] Clock strikes 12"
+ modifier_country_revolution_progress_add:0 "$modifier_country_revolution_progress_mult$"
+ modifier_country_revolution_progress_add_desc:0 "$modifier_country_revolution_progress_mult_desc$"
+
+ modifier_country_secession_progress_mult:0 "[concept_secession] Progression Speed"
+ modifier_country_secession_progress_mult_desc:0 "A bonus or penalty to how much progress is added to the secession when the [concept_secession] Clock strikes 12"
+ modifier_country_secession_progress_add:0 "$modifier_country_secession_progress_mult$"
+ modifier_country_secession_progress_add_desc:0 "$modifier_country_secession_progress_mult_desc$"
 
  modifier_failed_expedition:0 "Failed Expedition"
  modifier_failed_expedition_desc:0 "This country recently lost an expedition."
 
- modifier_country_convoys_capacity_add:0 "[concept_convoys]"
+ modifier_country_convoys_capacity_add: "@convoys! [concept_convoys]"
  modifier_country_convoys_capacity_add_desc:0 "$concept_convoys_desc$"
  modifier_country_convoys_capacity_mult:0 "$modifier_country_convoys_capacity_add$"
  modifier_country_convoys_capacity_mult_desc:0 "$concept_convoys_desc$"
@@ -1986,9 +2023,11 @@
  modifier_country_institution_size_change_speed_mult:0 "Institution Size Change Speed"
  modifier_country_institution_size_change_speed_mult_desc:0 "How fast you change the size of an institution"
   
- modifier_political_movement_support_add:0 "Підтримка політичного руху"
+ modifier_political_movement_support_add: "Підтримка політичного руху"
  modifier_political_movement_support_add_desc:0 "An increase or decrease in [concept_political_movement_support]"
- modifier_political_movement_radicalism_add:0 "Радикалізм політичного руху"
+ modifier_political_movement_support_mult:0 "$modifier_political_movement_support_add$"
+ modifier_political_movement_support_mult_desc:0 "$modifier_political_movement_support_add_desc$"
+ modifier_political_movement_radicalism_add: "Радикалізм політичного руху"
  modifier_political_movement_radicalism_add_desc:0 "An increase or decrease in [concept_political_movement_radicalism]"
  modifier_political_movement_radicalism_mult:0 "$modifier_political_movement_radicalism_add$"
  modifier_political_movement_radicalism_mult_desc:0 "$modifier_political_movement_radicalism_add_desc$"
@@ -2116,8 +2155,8 @@
  modifier_unit_advancement_speed_mult:0 "[concept_advancement_speed]"
  modifier_unit_advancement_speed_mult_desc:0 "Alters a [Concept('concept_front','$concept_front_possessive$')] [concept_advancement_speed]"
  
- modifier_unit_convoy_requirements_mult:1 "[Concept('concept_convoy','$concept_convoys$')] Requirement"
- modifier_unit_convoy_requirements_mult_desc:0 "How many [Concept('concept_convoy','$concept_convoys$')] are needed to maintain [Concept('concept_unit','$concept_units$')] with [concept_supply] overseas"
+ modifier_unit_convoy_requirements_mult:1 "[concept_convoys] Requirement"
+ modifier_unit_convoy_requirements_mult_desc:0 "How many [concept_convoys] are needed to maintain [Concept('concept_unit','$concept_units$')] with [concept_supply] overseas"
  
  modifier_unit_convoy_raiding_mult:0 "Convoy Raiding Efficiency"
  modifier_unit_convoy_raiding_mult_desc:1 "Increase the effectiveness of our [Concept('concept_flotilla','$concept_flotillas$')] to [concept_raid_convoys]."
@@ -2354,58 +2393,77 @@
  modifier_state_pop_support_law_command_economy_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_command_economy').GetName] [concept_law]."
  modifier_state_pop_support_law_command_economy_mult:0 "[GetLawType('law_command_economy').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_command_economy_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_command_economy').GetName] [concept_law]."
+
+ modifier_state_pop_support_law_industry_banned_add:0 "[GetLawType('law_industry_banned').GetName] [concept_pop] Support"
+ modifier_state_pop_support_law_industry_banned_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_industry_banned').GetName] [concept_law]."
+ modifier_state_pop_support_law_industry_banned_mult:0 "[GetLawType('law_industry_banned').GetName] [concept_pop] Support"
+ modifier_state_pop_support_law_industry_banned_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_industry_banned').GetName] [concept_law]."
+
  modifier_state_pop_support_law_no_schools_add:0 "[GetLawType('law_no_schools').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_no_schools_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_no_schools').GetName] [concept_law]."
  modifier_state_pop_support_law_no_schools_mult:0 "[GetLawType('law_no_schools').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_no_schools_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_no_schools').GetName] [concept_law]."
+
  modifier_state_pop_support_law_religious_schools_add:0 "[GetLawType('law_religion_schools').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_religious_schools_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_religion_schools').GetName] [concept_law]."
  modifier_state_pop_support_law_religious_schools_mult:0 "[GetLawType('law_religion_schools').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_religious_schools_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_religion_schools').GetName] [concept_law]."
+
  modifier_state_pop_support_law_private_schools_add:0 "[GetLawType('law_private_schools').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_private_schools_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_private_schools').GetName] [concept_law]."
  modifier_state_pop_support_law_private_schools_mult:0 "[GetLawType('law_private_schools').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_private_schools_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_private_schools').GetName] [concept_law]."
+
  modifier_state_pop_support_law_public_schools_add:0 "[GetLawType('law_public_schools').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_public_schools_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_public_schools').GetName] [concept_law]."
  modifier_state_pop_support_law_public_schools_mult:0 "[GetLawType('law_public_schools').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_public_schools_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_public_schools').GetName] [concept_law]."
+
  modifier_state_pop_support_law_outlawed_dissent_add:0 "[GetLawType('law_outlawed_dissent').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_outlawed_dissent_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_outlawed_dissent').GetName] [concept_law]."
  modifier_state_pop_support_law_outlawed_dissent_mult:0 "[GetLawType('law_outlawed_dissent').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_outlawed_dissent_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_outlawed_dissent').GetName] [concept_law]."
+
  modifier_state_pop_support_law_censorship_add:0 "[GetLawType('law_censorship').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_censorship_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_censorship').GetName] [concept_law]."
  modifier_state_pop_support_law_censorship_mult:0 "[GetLawType('law_censorship').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_censorship_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_censorship').GetName] [concept_law]."
+
  modifier_state_pop_support_law_right_of_assembly_add:0 "[GetLawType('law_right_of_assembly').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_right_of_assembly_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_right_of_assembly').GetName] [concept_law]."
  modifier_state_pop_support_law_right_of_assembly_mult:0 "[GetLawType('law_right_of_assembly').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_right_of_assembly_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_right_of_assembly').GetName] [concept_law]."
+
  modifier_state_pop_support_law_protected_speech_add:0 "[GetLawType('law_protected_speech').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_protected_speech_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_protected_speech').GetName] [concept_law]."
  modifier_state_pop_support_law_protected_speech_mult:0 "[GetLawType('law_protected_speech').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_protected_speech_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_protected_speech').GetName] [concept_law]."
+
  modifier_state_pop_support_law_chiefdom_add:0 "[GetLawType('law_chiefdom').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_chiefdom_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_chiefdom').GetName] [concept_law]."
  modifier_state_pop_support_law_chiefdom_mult:0 "[GetLawType('law_chiefdom').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_chiefdom_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_chiefdom').GetName] [concept_law]."
+
  modifier_state_pop_support_law_monarchy_add:0 "[GetLawType('law_monarchy').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_monarchy_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_monarchy').GetName] [concept_law]."
  modifier_state_pop_support_law_monarchy_mult:0 "[GetLawType('law_monarchy').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_monarchy_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_monarchy').GetName] [concept_law]."
+
  modifier_state_pop_support_law_presidential_republic_add:0 "[GetLawType('law_presidential_republic').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_presidential_republic_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_presidential_republic').GetName] [concept_law]."
  modifier_state_pop_support_law_presidential_republic_mult:0 "[GetLawType('law_presidential_republic').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_presidential_republic_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_presidential_republic').GetName] [concept_law]."
- modifier_state_pop_support_law_parliamentary_republic_add:0 "[GetLawType('law_presidential_army').GetName] [concept_pop] Support"
- modifier_state_pop_support_law_parliamentary_republic_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_presidential_army').GetName] [concept_law]."
- modifier_state_pop_support_law_parliamentary_republic_mult:0 "[GetLawType('law_presidential_army').GetName] [concept_pop] Support"
- modifier_state_pop_support_law_parliamentary_republic_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_presidential_army').GetName] [concept_law]."
+
+modifier_state_pop_support_law_parliamentary_republic_add:0 "[GetLawType('law_parliamentary_republic').GetName] [concept_pop] Support"
+ modifier_state_pop_support_law_parliamentary_republic_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_parliamentary_republic').GetName] [concept_law]."
+ modifier_state_pop_support_law_parliamentary_republic_mult:0 "[GetLawType('law_parliamentary_republic').GetName] [concept_pop] Support"
+ modifier_state_pop_support_law_parliamentary_republic_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_parliamentary_republic').GetName] [concept_law]."
+
  modifier_state_pop_support_law_theocracy_add:0 "[GetLawType('law_theocracy').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_theocracy_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_theocracy').GetName] [concept_law]."
  modifier_state_pop_support_law_theocracy_mult:0 "[GetLawType('law_theocracy').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_theocracy_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_theocracy').GetName] [concept_law]."
+
  modifier_state_pop_support_law_council_republic_add:0 "[GetLawType('law_council_republic').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_council_republic_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_council_republic').GetName] [concept_law]."
  modifier_state_pop_support_law_council_republic_mult:0 "[GetLawType('law_council_republic').GetName] [concept_pop] Support"
@@ -2610,3 +2668,38 @@
  modifier_state_pop_support_law_old_age_pension_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_old_age_pension').GetName] [concept_law]."
  modifier_state_pop_support_law_old_age_pension_mult:0 "[GetLawType('law_old_age_pension').GetName] [concept_pop] Support"
  modifier_state_pop_support_law_old_age_pension_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_old_age_pension').GetName] [concept_law]."
+
+ modifier_state_pop_support_law_single_party_state_add:0 "[GetLawType('law_single_party_state').GetName] [concept_pop] Support"
+ modifier_state_pop_support_law_single_party_state_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_single_party_state').GetName] [concept_law]."
+ modifier_state_pop_support_law_single_party_state_mult:0 "[GetLawType('law_single_party_state').GetName] [concept_pop] Support"
+ modifier_state_pop_support_law_single_party_state_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_single_party_state').GetName] [concept_law]."
+
+ modifier_state_pop_support_law_atheist_state_add:0 "[GetLawType('law_atheist_state').GetName] [concept_pop] Support"
+ modifier_state_pop_support_law_atheist_state_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_atheist_state').GetName] [concept_law]."
+ modifier_state_pop_support_law_atheist_state_mult:0 "[GetLawType('law_atheist_state').GetName] [concept_pop] Support"
+ modifier_state_pop_support_law_atheist_state_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_atheist_state').GetName] [concept_law]."
+
+ modifier_state_pop_support_law_cooperative_ownership_add:0 "[GetLawType('law_cooperative_ownership').GetName] [concept_pop] Support"
+ modifier_state_pop_support_law_cooperative_ownership_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_cooperative_ownership').GetName] [concept_law]."
+ modifier_state_pop_support_law_cooperative_ownership_mult:0 "[GetLawType('law_cooperative_ownership').GetName] [concept_pop] Support"
+ modifier_state_pop_support_law_cooperative_ownership_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_cooperative_ownership').GetName] [concept_law]."
+
+ modifier_state_pop_support_law_tenant_farmers_add:0 "[GetLawType('law_tenant_farmers').GetName] [concept_pop] Support"
+ modifier_state_pop_support_law_tenant_farmers_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_tenant_farmers').GetName] [concept_law]."
+ modifier_state_pop_support_law_tenant_farmers_mult:0 "[GetLawType('law_tenant_farmers').GetName] [concept_pop] Support"
+ modifier_state_pop_support_law_tenant_farmers_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_tenant_farmers').GetName] [concept_law]."
+
+ modifier_state_pop_support_law_homesteading_add:0 "[GetLawType('law_homesteading').GetName] [concept_pop] Support"
+ modifier_state_pop_support_law_homesteading_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_homesteading').GetName] [concept_law]."
+ modifier_state_pop_support_law_homesteading_mult:0 "[GetLawType('law_homesteading').GetName] [concept_pop] Support"
+ modifier_state_pop_support_law_homesteading_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_homesteading').GetName] [concept_law]."
+
+ modifier_state_pop_support_law_commercialized_agriculture_add:0 "[GetLawType('law_commercialized_agriculture').GetName] [concept_pop] Support"
+ modifier_state_pop_support_law_commercialized_agriculture_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_commercialized_agriculture').GetName] [concept_law]."
+ modifier_state_pop_support_law_commercialized_agriculture_mult:0 "[GetLawType('law_commercialized_agriculture').GetName] [concept_pop] Support"
+ modifier_state_pop_support_law_commercialized_agriculture_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_commercialized_agriculture').GetName] [concept_law]."
+
+ modifier_state_pop_support_law_collectivized_agriculture_add:0 "[GetLawType('law_collectivized_agriculture').GetName] [concept_pop] Support"
+ modifier_state_pop_support_law_collectivized_agriculture_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_collectivized_agriculture').GetName] [concept_law]."
+ modifier_state_pop_support_law_collectivized_agriculture_mult:0 "[GetLawType('law_collectivized_agriculture').GetName] [concept_pop] Support"
+ modifier_state_pop_support_law_collectivized_agriculture_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_collectivized_agriculture').GetName] [concept_law]."

@@ -5,7 +5,7 @@
  party_liberal: "Ліберальна партія"
  party_nazis: "Нацистська партія"
  party_british_union_of_fascists: "Британський союз фашистів"
- party_mouvement_franciste: "Рух Франциска"
+ party_mouvement_franciste: "Французька дія"
  party_silver_legion: "Срібний легіон"
  integralist_party: "Партія інтегралістів"
  falangist_party: "Фаланґістська партія"
@@ -87,7 +87,9 @@
  party_octobrist_party: "Партія октябристів"
  party_democratic_party: "Демократична партія"
  party_the_right: "Праві"
- party_russian_party: "Московська партія"
+ party_russian_party: "Московитська партія"
+ party_resistance_party: "Партія супротиву"
+ party_party_of_order: "Партія порядку"
 
 #free_trade_party
  party_historic_party: "Історична партія"
@@ -97,6 +99,7 @@
  party_communications_clique: "Комунікаційна кліка"
  party_national_party: "Національна партія"
  party_party_of_peaceful_renovation: "Партія мирного оновлення"
+ party_democratic_alliance: "Демократичний альянс"
 
 #liberal_party
  party_progressive_party: "Поступова партія"
@@ -130,6 +133,7 @@
  party_legitimist_party: "Леґітимістська партія"
  party_russian_assembly: "Московські збори"
  party_russian_all_military_union: "Московський загальновійськовий союз"
+ party_union_of_rights: "Спілка прав"
 
 #radical_party
  party_democratic_progressive_party: "Демократична поступова партія"
@@ -152,6 +156,7 @@
  party_the_far_left: "Ультраліві"
  party_french_party: "Французька партія"
  party_trudovik_group: "Трудова група"
+ party_republican_union: "Республіканська спілка"
 
 
 #religious_party
@@ -225,6 +230,7 @@
  party_national_farmer_party: "Національна хутірницька партія"
  party_patrons_of_industry: "Покровителі промисловости"
  party_national_grange: "Національна садиба"
+ party_agrarian_and_farmer_party: "Рільничо-хутріницька партія"
 
 #anarchist_party
  party_young_socialists: "Молоді соціялісти"
@@ -232,6 +238,7 @@
  party_maximalist_federation: "Максималістична федерація"
  party_socialist_league: "Соціялістична ліга"
  party_italian_syndicalist_union: "Італійський синдикалістський союз"
+ party_anarcho_communist_federation: "Безвладницько-комуністична федерація"
 
  # Party weight descriptions
  base_value: "Базове значення"
@@ -341,6 +348,7 @@
  from_hates_children: "Підтримує дитячу працю"
  from_no_free_trade: "Підтримує закон про вільну торгівлю"
  from_autocracy: "Обстає проти закону про самодержавство"
+ from_no_oligarchy_wealth_voting: "Підтримує закон або про олігархію, або про голосування багатих"
  from_universal_suffrage: "Закон про загальне виборче право"
  from_no_per_capita_tax: "Підтримує закон про подушне оподаткування"
  from_graduated_taxation: "Закон про поступове оподаткування"
@@ -348,8 +356,12 @@
  from_command_economy: "Закон про командну економіку"
  from_lack_of_private_schools: "Підтримує приватні школи"
  from_no_rural_folk_in_party: "Відсутність підтримки селян"
- from_archetype_party: "Природжений член партії"
+ from_archetype_party: "Природний член партії"
  from_influential_supporting_member: "Впливова група у допоміжній ролі"
- from_two_prior_members: "Два члени партії"
- from_three_prior_members: "Три члени партії"
- from_more_than_three_prior_members: "Більше ніж три члени партії"
+ from_two_prior_members: "Два інші члени партії"
+ from_three_prior_members: "Три інші члени партії"
+ from_more_than_three_prior_members: "Більше трьох інших членів партії" 
+ from_authoritarian: "Самодержавна ідеологія  провідника"
+ from_protectionist_leader: "Захистська ідеологія провідника"
+ from_french_monarchist_rival: "Потужні суперники-монархісти"
+ from_only_legal_party: "Через єдину законну партію"

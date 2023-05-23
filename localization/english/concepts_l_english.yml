@@ -169,6 +169,7 @@
 
  concept_trade_route_competitiveness: "Конкурентоспроможність торгових торів"
  concept_trade_route_competitiveness_short: "Конкурентоспроможність"
+ concept_trade_route_competitiveness_short_acc: "Конкурентоспроможність"
  concept_trade_route_competitiveness_desc:1 "If a [Concept('concept_market','$concept_market_possessive$')] pool of [Concept('concept_good','$concept_goods$')] available for [Concept('concept_trade_route','$concept_trade$')] is depleted due to too many $concept_trade$ partners, the $concept_trade_route_competitiveness_short$ of each competing $concept_trade_route$ determines how large a share they get access to. A $concept_trade_route$'s $concept_trade_route_competitiveness_short$ increases over time."
 
  concept_market_good_policy: "Товарна політика ринку"

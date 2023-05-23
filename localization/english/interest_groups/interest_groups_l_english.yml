@@ -118,6 +118,13 @@
  ig_church_of_sweden: "Шведська церква"
  ig_church_of_sweden_desc: "Шведська церква була заснована королем Ґуставом Васою в XVI столітті і є офіційною державною церквою Шведчинни. Будучи лютеранською інституцією, Церква вважає, що Біблія є єдиним джерелом християнської догматики, таким чином відкидаючи авторитет Папи Римського і традиції, такі як почитання святих."
 
+# Danish IGs
+ ig_church_of_denmark: "Данська церква"
+# Norwegian IGs
+ ig_aristocracy_of_officials: "Аристократичні урядовці"
+ ig_aristocracy_of_officials_desc:0 "Lacking any significant historical nobility and with the institution being formally abolished in 1821, Norway's upper class is instead made up of civil servants, with lawyers, priests, and doctors occupying the positions of a traditional nobility."
+ ig_church_of_norway: "Норвезька церква"
+
   # Korean IGs
  ig_yangban: "Урядовці Янбан"
  ig_yangban_desc: "Янбан представляє корейську земельну та неземельну аристократію, яка отримала свої титули та вплив завдяки посадам у урядовому апараті держави. Уособлюючи конфуціянські ідеали вченого-урядовця, вони є затятими захисниками звичного порядку Кореї."
@@ -125,6 +132,10 @@
   # Russian IGs
  ig_gentry_assembly: "Дворянське зібрання"
  ig_gentry_assembly_desc: "Дворянське зібрання - це самоврядний орган, репрезентуючий московську аристократію. Отримавши офіційний статус у 1785 році, Зібрання відтоді підтримує збереження або розширення традиційних дворянських повноважень і привілеїв."
+
+  # Australian IGs
+ ig_squattocracy: "Сквотократи"
+
   # Misc Igs
  ig_red_army: "Червона Армія"
  ig_red_army_desc: "Червона армія - це установа, призначена для захисту і поширення революції, та народжена тором злиття традиційних збройних сил з пролетаріятом й комуністичною ідеологією."
