@@ -1494,6 +1494,7 @@
  concept_revolutions: "Революції"
  concept_revolutions_acc: "Революції"
  concept_revolutionary: "Революційний"
+ concept_revolutionary_adj: "Революційн"
  concept_revolution_desc:3 "A $concept_revolution$ is the result of a [concept_political_movement] that has grown too [Concept('concept_political_movement_radicalism','$concept_political_movement_radical$')]. If the $concept_political_movement_short$ starts an uprising, [Concept('concept_state','$concept_states$')] in which its supporting [Concept('concept_interest_group','$concept_interest_groups$')] and [Concept('concept_pop','$concept_pops$')] are relatively strong will separate from the rest of the $concept_country$ and start a [concept_diplomatic_play] to annex the loyalists.\n\nYou can lower the $concept_political_movement_short$'s [concept_political_movement_radicalism] by reducing the number of [Concept('concept_radical','$concept_radicals$')] in the supporting $concept_pops$ and increasing the [concept_approval] of supporting $concept_interest_groups$. You can also weaken and slow a $concept_revolution$ down using the [SelectLocalization(GetPlayer.IsValid,'concept_revolution_desc_added','Home Affairs')] [concept_institution]."
  concept_revolution_desc_added:0 "[GetInstitutionType('institution_home_affairs').GetName]"
 
@@ -1758,6 +1759,7 @@
  concept_professions_gen: "Ремесел"
  concept_professions_acc: "Ремесла"
  concept_professions_ins: "Ремеслами"
+ concept_professions_loc: "Ремеслах"
  concept_profession_desc:2 "A [Concept('concept_pop','$concept_pop_possessive$')] $concept_profession$ determines which role they perform in their [concept_building], how large of a [concept_building_wage] they collect from it, and whether or not they get [Concept('concept_ownership_share','$concept_ownership_shares$')] in it. It also impacts which [Concept('concept_interest_group','$concept_interest_group$')] they're likely to support, how likely they are to remain [Concept('concept_politically_unaligned_aligned', '$concept_politically_unaligned$')], and whether they are considered [concept_lower_strata], [concept_middle_strata], or [concept_upper_strata]. To switch $concept_professions$, a $concept_pop$ must have the appropriate [concept_pop_qualifications]."
 
  concept_production_method: "Спосіб виробництва"
@@ -1931,6 +1933,7 @@
 
  concept_election: "Вибори"
  concept_election_gen: "Виборів"
+ concept_election_acc: "Вибори"
  concept_election_loc: "Виборах"
  concept_elections: "Вибори"
  concept_election_adj: "Виборч"
@@ -2533,6 +2536,7 @@
  concept_sea_node_desc:0 "An intersection or point along a naval [concept_shipping_lane] representing a part of the ocean. $concept_shipping_lanes$ always take the route between two coastal [Concept('concept_state','$concept_states$')] that pass through the fewest number of $concept_sea_nodes$. Each additional $concept_sea_node$ beyond the first adds #v [GetDefine('NEconomy','SHIPPING_LANE_CONVOY_COST_SCALING')|=-%0]#! to the [concept_convoy_cost]."
 
  concept_agitator: "Закликач"
+ concept_agitator_gen: "Закликача"
  concept_agitators: "Закликачі"
  concept_agitators_gen: "Закликачів"
  concept_agitate: "Закликати"
@@ -2564,5 +2568,6 @@
  concept_training_rate:0 "Training Rate"
  concept_training_rate_desc:0 "The $concept_training_rate$ is the amount of [concept_manpower] that can trained per week at a [concept_military_building]."
 
- concept_naval_invasion_support:0 "Naval Invasion Support"
+ concept_naval_invasion_support: "Підтримка морського вторгнення"
+ concept_naval_invasion_support_gen: "Підтримки морського вторгнення"
  concept_naval_invasion_support_desc:0 "$concept_naval_invasion_support$ is a comparison of the amount of the [Concept('concept_flotilla','$concept_flotillas$')] you have assigned to naval invasion to the amount of [Concept('concept_battalion','$concept_battalions$')] taking part in that invasion. Each invading $concept_battalion$ requires a $concept_flotilla$ to avoid any negative penalties upon landing."

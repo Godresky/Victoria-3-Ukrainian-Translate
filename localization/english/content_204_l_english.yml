@@ -1,22 +1,22 @@
 ﻿l_english:
-  je_the_krakow_uprising:0 "The Kraków Uprising"
-  je_the_krakow_uprising_reason:0 "The [concept_revolution] tearing through the free city of [SCOPE.sCountry('krakow_scope').GetName] threatens to unleash another wave of Polish nationalist agitation in Galicia. The city must be pacified, and incorporated as a full component of [ROOT.GetCountry.GetName]."
-  krakow_uprising_happened_tt:0 "Kraków has recently experienced a [concept_revolution]"
+  je_the_krakow_uprising: "Краківське повстання"
+  je_the_krakow_uprising_reason: "[concept_revolution] терзає вільне місто [SCOPE.sCountry('krakow_scope').GetName], що створює загрозу нової хвилі польських націоналістичних закликів на Галичині. Місто потрібно вгамувати і приєднати як повноправну частину держави [ROOT.GetCountry.GetName]."
+  krakow_uprising_happened_tt: "Краків нещодавно пережив [Concept('concept_revolution', '$concept_revolution_acc$')|l]"
 
-  krakow.1.t:0 "The Manifesto for the Polish Nation"
-  krakow.1.d:0 "As revolution breaks out in the free city of [SCOPE.sCountry('krakow_scope').GetName], radical Polish nationalist figures have issued a manifesto calling for universal suffrage, the abolition of serfdom, and the reunification of Poland."
-  krakow.1.f:0 "Poles!\n\nThe hour of the uprising has struck - the whole of Poland is rising and growing together - our brothers in the Duchy of Poznań, in Congress Poland, in Lithuania, and in Ruthenia have already risen, and are fighting the enemy.\n\nFrom now on, we do not know any difference between us. We are now brothers, sons of one Motherland, with one father, God in heaven! Let us call upon Him for help, and He will bless our weapons and give us victory!"
-  krakow.1.a:0 "We must reassert control over Kraków immediately."
-  krakow.1.b:0 "We are bound to preserve the status of the Treaty of Vienna."
+  krakow.1.t: "Маніфест польських націоналістів"
+  krakow.1.d: "Як тільки революція спалахнула у вільному місті [SCOPE.sCountry('krakow_scope').GetName], радикальні польські націоналісти видали маніфест зі закликом до загального виборчого права, скасування кріпацтва та возз’єднання Польщі."
+  krakow.1.f: "«Поляки!\n\nНастала година повстання - уся Польща піднімається і гуртується - наші брати у Познанському князівстві, у Польському конґресі, у Литві і в Русі вже повстали й боряться проти супостата.\n\nВід сьогодні ми не знаємо жодної різниці між нами. Ми тепер усі брати й сини Батьківщини, з нами один батько - Господь на небесах! Покличмо Його на допомогу, і Він благословить нашу збрую й подарує перемогу!»"
+  krakow.1.a: "Ми повинні негайно відновити контроль над Краковом."
+  krakow.1.b: "Ми зобов’язані зберегти чинність Віденського миру."
 
-  krakow.2.t:0 "The Grand Duchy of Kraków"
-  krakow.2.d:0 "With the revolution in Kraków crushed, the former Free City has been integrated into the Kingdom of Galicia and Lodomeria as the Grand Duchy of Kraków. This act has spurred controversy in Europe for violating the Treaty of Vienna."
-  krakow.2.f:0 ""Any plan conceived in moderation must fail when the circumstances are set in extremes."" #- Klemens von Metternich
-  krakow.2.a:0 "Focus on mitigating the diplomatic consequences."
-  krakow.2.b:0 "Continue to repress their radical ideology."
+  krakow.2.t: "Велике князівство Краківське"
+  krakow.2.d: "Після поразки революції у Кракові колишнє вільне місто було включене до складу Королівства Галичини і Лодомерії як Велике князівство Краківське. Цей вчинок викликав суперечки в Европі щодо порушення Віденського миру."
+  krakow.2.f: "«Будь-який плян, задуманий помірковано, може зазнати невдачі, коли обставини стають надзвичайними.»" #- Klemens von Metternich
+  krakow.2.a: "Зосередьтеся на пом’якшенні дипломатичних наслідків."
+  krakow.2.b: "Продовжувати придушувати їхню радикальну ідеологію."
 
-  je_the_krakow_uprising_annex_button:0 "Occupy Kraków"
-  je_the_krakow_uprising_annex_button_desc:0 "We will occupy the Free City of Kraków in order to transform it into an integral part of our state"
+  je_the_krakow_uprising_annex_button: "Окупувати Краків"
+  je_the_krakow_uprising_annex_button_desc: "Ми займемо Вільне місто Краків, щоб перетворити його на невід’ємну частину нашої держави."
 
-  modifier_repressing_polish_nationalism:0 "Repressing Polish Nationalism"
-  modifier_mitigating_diplomatic_consequences:0 "Treaty Violation Mitigation"
+  modifier_repressing_polish_nationalism: "Придушення польського націоналізму"
+  modifier_mitigating_diplomatic_consequences: "Пом’якшення наслідків порушення миру"
