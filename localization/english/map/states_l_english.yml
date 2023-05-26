@@ -236,7 +236,7 @@
  STATE_FRENCH_LOW_COUNTRIES: "Французьке Пониззя"
  STATE_PICARDY: "Пікардія"
  STATE_PROVENCE: "Прованс"
- STATE_ALSACE_LORRAINE: "Ельзас-Лотарингія"
+ STATE_ALSACE_LORRAINE: "Ельзас-Лотаринґія"
  STATE_NORMANDY: "Нормандія"
  STATE_POITOU: "Пуату-Сентонж"
  STATE_GUYENNE: "Ґієнь"
@@ -245,9 +245,9 @@
  STATE_BURGUNDY: "Бурґундія"
  STATE_CHAMPAGNE: "Шампань"
  STATE_FRANCHE_COMTE: "Франш-Конте"
- STATE_LORRAINE: "Лорраїне" #Лотаринґія
+ STATE_LORRAINE: "Лотаринґія" #Лотаринґія
  STATE_AQUITAINE: "Аквітанія"
- STATE_ORLEANS: "Орлеане-Беррі "
+ STATE_ORLEANS: "Орлеане-Беррі"
  STATE_ILE_DE_FRANCE: "Іль-де-Франс"
  STATE_ELBE: "Ельба"
  STATE_BEIRA: "Бейра"

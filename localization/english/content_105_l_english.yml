@@ -1192,7 +1192,7 @@
  election_conservative_events.1.a: "Такі бідні духом не можуть керувати такою державою як [ROOT.GetCountry.GetName]."
  election_conservative_events.1.b: "Можливо, [SCOPE.sCharacter('atheist_leader').GetLastName] бачить речі ясніше, не обмежено релігійними догмами."
  election_conservative_events.2.t: "Єдність у традиції"
- election_conservative_events.2.d: "У світлі [|l], якого зазнали такі держави, як [SCOPE.sState('devastation_state').GetName], [SCOPE.sParty('conservative_party').GetName] провела виправу з об'єднання держави [ROOT.GetCountry.GetName] у цей важкий час позаду традиційних цінностей."
+ election_conservative_events.2.d: "У світлі [concept_devastation|l], якого зазнали такі землі, як [SCOPE.sState('devastation_state').GetName], [SCOPE.sParty('conservative_party').GetName] провела виправу з об'єднання держави [ROOT.GetCountry.GetName] у цей важкий час позаду традиційних цінностей."
  election_conservative_events.2.f: "«Наша нація лежить у руїнах, але вона відроджувалася з попелу раніше і буде робити це знову, доки ми не забудемо, хто ми є. Зараз не час для радикалізму чи безрозсудності. Це час для зцілення. Ми повинні дивитися на те, що змусило нас вистояти в минулому, і захистити його від тих, хто хотів би побачити його знищення. Поки ми не відбудуємо, поки ми не зцілимо, це все, що ми маємо!»"
  election_conservative_events.2.a: "Ми повинні об’єднатися в цей важкий час."
  election_conservative_events.2.b: "Це схоже на холоднокровний опортунізм."

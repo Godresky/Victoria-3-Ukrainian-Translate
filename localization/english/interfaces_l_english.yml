@@ -938,7 +938,7 @@
  advance_tooltip: "#header $advance$#!\nНацілено на [Concept('concept_front','$concept_front_acc$')|l] [SCOPE.GetRootScope.GetFront.GetName]"
  stand_by: "Очікувати"
  stand_by_gerund: "Очікує"
- stand_by_desc: "#header Очікує#!\nНаказ [Concept('concept_general','$concept_general_dat$')|l] [Character.GetFullName] - покинути [Concept('concept_front','$concept_front_acc$')|l] та повернутися назад до [Character.GetHomeHQ.GetName|v|l].\n\nЦі [Concept('concept_battalion', '$concept_battalions$')|l] продовжать брати участь у оборонних [Concept('concept_battle', '$concept_battles_loc$')|l], проте без наддатків від генерала. Перебуваючи у [Concept('concept_hq', '$concept_hq_loc$')|l] вони не будуть [Concept('concept_attrition', 'виснажуватися')|l].[ConcatIfNeitherEmpty( '\n\n', Character.GetDaysToTravelHomeHQFormatted )]"
+ stand_by_desc: "#header Очікувати#!\nНаказ [Concept('concept_general','$concept_general_dat$')|l] [Character.GetFullName] - покинути [Concept('concept_front','$concept_front_acc$')|l] та повернутися назад до [Character.GetHomeHQ.GetName|v|l].\n\nЦі [Concept('concept_battalion', '$concept_battalions$')|l] продовжать брати участь у оборонних [Concept('concept_battle', '$concept_battles_loc$')|l], проте без наддатків від генерала. Перебуваючи у [Concept('concept_hq', '$concept_hq_loc$')|l] вони не будуть [Concept('concept_attrition', 'виснажуватися')|l].[ConcatIfNeitherEmpty( '\n\n', Character.GetDaysToTravelHomeHQFormatted )]"
  patrol_coast: "Патрулювати берег"
  patrol_coast_gerund: "Патрулює берег"
  patrol_coast_desc: "#header $patrol_coast$#!\nНаказ [Concept('concept_admiral','$concept_admiral_dat$')|l] [Character.GetFullName] - виявляти та знищувати будь-які ворожі судна вздовж берегової лінії."
@@ -2399,8 +2399,8 @@
  GO_TO_BUTTON_INTEREST_GROUP: "Показати [Concept('concept_interest_group', '$concept_interest_group_acc$')|l] [InterestGroup.GetName]"
  GO_TO_BUTTON_WAR: "Показати [Concept('concept_war', '$concept_war_acc$')|l] [War.GetName|l]"
  GO_TO_BUTTON_JOURNAL: "Показати часопис"
- GO_TO_BUTTON_EXILED_AGITATORS:0 "Go to the [Concept('concept_exile', '$concept_exiled$')] [Concept('concept_agitator', '$concept_agitators$')]"
- GO_TO_BUTTON_LAW:0 "Go to the [Law.GetGroup.GetName] [concept_law_group]"
+ GO_TO_BUTTON_EXILED_AGITATORS: "Показати [Concept('concept_exile', '$concept_exiled_adj$их')|l] [Concept('concept_agitator', '$concept_agitators_acc$')|l]"
+ GO_TO_BUTTON_LAW: "Показати [Concept('concept_law_group', '$concept_law_group_acc$')|l] «[Law.GetGroup.GetName]»"
 
  START_RESEARCHING: "Почати дослідження"
 
@@ -3899,13 +3899,13 @@
  WAR_PANEL_INITIATOR_WARGOALS: "#title [Concept('concept_war_goal', '$concept_war_goals$')] зачинателя#!"
  WAR_PANEL_TARGET_WARGOALS: "#title [Concept('concept_war_goal', '$concept_war_goals$')] мішені#!"
 
- PROMOTION_EFFECTS_TOOLTIP:1 "[AddTextIf(IsValid(Character.GetPromoteCommand), Character.GetNextCommanderRankBenefits))][ConcatIfNeitherEmpty('\n\n', Character.GetHomeHQ.GetTroopAllocationChangeFromPromotion(Character.Self))]"
- PROMOTE_CHARACTER_HEADER:0 "#header Promote [Character.GetFullName][AddTextIf(Not(Character.IsMaxRank), Concatenate(' to ', Character.GetRankNameFor(Character.GetNextCommanderRank)))]#!"
- MILITARY_PANEL_PROMOTE_CHARACTER_TOOLTIP:4 "$PROMOTE_CHARACTER_HEADER$[ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\nEffects:\n', Localize('PROMOTION_EFFECTS_TOOLTIP'))][ConcatIfNeitherEmpty('\n', GetDesc(Character.GetPromoteCommand))]"
+ PROMOTION_EFFECTS_TOOLTIP: "[AddTextIf(IsValid(Character.GetPromoteCommand), Character.GetNextCommanderRankBenefits))][ConcatIfNeitherEmpty('\n\n', Character.GetHomeHQ.GetTroopAllocationChangeFromPromotion(Character.Self))]"
+ PROMOTE_CHARACTER_HEADER: "#header Просувати [Character.GetFullName][AddTextIf(Not(Character.IsMaxRank), Concatenate(' до звання ', Character.GetRankNameFor(Character.GetNextCommanderRank)))]#!"
+ MILITARY_PANEL_PROMOTE_CHARACTER_TOOLTIP: "$PROMOTE_CHARACTER_HEADER$[ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\nЗаподії:\n', Localize('PROMOTION_EFFECTS_TOOLTIP'))][ConcatIfNeitherEmpty('\n', GetDesc(Character.GetPromoteCommand))]"
 
- MILITARY_PANEL_PROMOTE_CHARACTER_TOOLTIP_MAX_RANK:0 "#header Promote [Character.GetFullName]#!\n\n#N [GetDesc(Character.GetPromoteCommand)]#!"
+ MILITARY_PANEL_PROMOTE_CHARACTER_TOOLTIP_MAX_RANK: "#header Просувати [Character.GetFullName]#!\n\n#N [GetDesc(Character.GetPromoteCommand)]#!"
  MILITARY_PANEL_CHARACTER_SUPPLY_TOOLTIP: "#header Постачання#!\nПоточне постачання підрозділів [Concept('concept_commander', '$concept_commander_gen$')|l] [Character.GetFullName] - #variable [Character.GetSupply|%0]#!\nНаступне постачання - #variable [Character.GetNextSupply|%0]#!\n$TOOLTIP_DELIMITER$\n[concept_supply_desc]"
- MILITARY_PANEL_CHARACTER_OLD_SUPPLY:0 "Supply: #variable [Character.GetSupply|%1]#!"
+ MILITARY_PANEL_CHARACTER_OLD_SUPPLY: "Постачання: #variable [Character.GetSupply|%1]#!"
  AT_THE_WAR_OFFICE_TOOLTIP:0 "#header At the War Office#!\n$TOOLTIP_DELIMITER$\n[concept_war_office_desc]"
  RECRUIT_CHARACTER_HEADER:0 "#header Recruit Character#!"
 
@@ -3934,8 +3934,8 @@
 
  COMMANDER_ORDER_CONVOY_RAIDING_INVALID_TARGET:1 "#N No hostile [Concept('concept_supply_network', '$concept_supply_networks$')] present#!"
 
- COMMANDER_PANEL_CURRENT_ORDER:1 "Current [concept_order]: #b [Character.GetCommanderOrder.GetType.GetNameGerund]#! [AddLocalizationIf(Not(Or(Character.IsAdmiral, Character.GetCommanderOrder.GetType.IsStandBy)), 'COMMANDER_PANEL_CURRENT_ORDER_LOCATION')]"
- COMMANDER_PANEL_CURRENT_ORDER_LOCATION:0 "[Character.GetCommanderOrder.GetFrontTarget.GetName]"
+ COMMANDER_PANEL_CURRENT_ORDER: "Поточний [concept_order|l]: #b [Character.GetCommanderOrder.GetType.GetNameGerund]#! [AddLocalizationIf(Not(Or(Character.IsAdmiral, Character.GetCommanderOrder.GetType.IsStandBy)), 'COMMANDER_PANEL_CURRENT_ORDER_LOCATION')]"
+ COMMANDER_PANEL_CURRENT_ORDER_LOCATION: "[Character.GetCommanderOrder.GetFrontTarget.GetName]"
  COMMANDER_PANEL_ORDER_TOOLTIP: "[Character.GetSwitchOrderButtonDesc( CommanderOrderType.Self )][ConcatIfNeitherEmpty('\n\n', Character.CanSelectOrderDesc( CommanderOrderType.Self ))]"
  COMMANDER_PANEL_ORDER_TOGGLE_DEFEND_TOOLTIP: "Змінити поточний [Concept('concept_order','$concept_order_acc$')|l] на #b оборону#!, залишаючись на [Concept('concept_front','$concept_front_loc$')|l] [Character.GetCommanderOrder.GetFrontTarget.GetName]."
  COMMANDER_PANEL_ORDER_TOGGLE_ADVANCE_TOOLTIP: "Змінити поточний [Concept('concept_order','$concept_order_acc$')|l] на #b просування#!, залишаючись на [Concept('concept_front','$concept_front_loc$')|l] [Character.GetCommanderOrder.GetFrontTarget.GetName]."

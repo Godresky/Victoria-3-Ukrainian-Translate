@@ -212,20 +212,20 @@
  modifier_stockpile_navy_cap_mult:0 "$modifier_stockpile_navy_cap_add$"
  modifier_stockpile_navy_cap_mult_desc:0 "$modifier_stockpile_navy_cap_add_desc$"
  
- modifier_character_command_limit_combat_unit_regular_add:0 "Regular Battalion Command Limit"
- modifier_character_command_limit_combat_unit_regular_add_desc:0 "The number of [Concept('concept_unit','$concept_units$')] this [concept_character] can command.\n\n$concept_command_limit_desc$"
- modifier_character_command_limit_combat_unit_conscript_add:0 "Conscript Battalion Command Limit"
- modifier_character_command_limit_combat_unit_conscript_add_desc:0 "$modifier_character_command_limit_combat_unit_regular_add_desc$"
- modifier_character_command_limit_combat_unit_flotilla_add:0 "Flotilla Command Limit"
- modifier_character_command_limit_combat_unit_flotilla_add_desc:0 "$modifier_character_command_limit_combat_unit_regular_add_desc$"
+ modifier_character_command_limit_combat_unit_regular_add: "Обмеження командира для постійних куренів"
+ modifier_character_command_limit_combat_unit_regular_add_desc: "Кількість [Concept('concept_unit','$concept_units_gen$')], яким цей [concept_character|l] може командувати.\n\n$concept_command_limit_desc$"
+ modifier_character_command_limit_combat_unit_conscript_add: "Обмеження командира для призваних куренів"
+ modifier_character_command_limit_combat_unit_conscript_add_desc: "$modifier_character_command_limit_combat_unit_regular_add_desc$"
+ modifier_character_command_limit_combat_unit_flotilla_add: "Обмеження командира для флотилій"
+ modifier_character_command_limit_combat_unit_flotilla_add_desc: "$modifier_character_command_limit_combat_unit_regular_add_desc$"
 
  modifier_character_command_limit_mult:0 "Command Limit"
  modifier_character_command_limit_mult_desc:1 "Multiplies the amount of units this [concept_character] can command."
  modifier_character_command_budget_add_pre_fix:0 "@money!"
  modifier_building_production_mult:0 "Building Production"
  modifier_building_production_mult_desc:0 "Affects production output of all the goods produced in the building"
- modifier_building_economy_of_scale_level_cap_add:0 "[concept_economy_of_scale] Building Level Cap"
- modifier_building_economy_of_scale_level_cap_add_desc:0 "The maximum number of [concept_building] levels that can confer [concept_economy_of_scale] effects."
+ modifier_building_economy_of_scale_level_cap_add: "Обмеження [Concept('concept_economy_of_scale','$concept_economy_of_scale_gen$')|l] на будівлю"
+ modifier_building_economy_of_scale_level_cap_add_desc: "Максимальна кількість розміру [Concept('concept_building','$concept_building_gen$')|l], який даватиме заподії [Concept('concept_economy_of_scale','$concept_economy_of_scale_gen$')|l]."
 
  modifier_country_prestige_add: "Престиж"
  modifier_country_prestige_add_desc: "Скільки престижу держава має."
@@ -458,7 +458,7 @@
 
  mobilized_battalion_consumption:1 "[Concept('concept_mobilize_battalion', '$concept_mobilize_battalion_mobilized$')] [Concept('concept_battalion', '$concept_battalions$')]"
 
- retired_commander_interest_group_impact:1 "Commander Retirement"
+ retired_commander_interest_group_impact: "Відставка командира"
 
  modifier_building_throughput_mult: "[concept_throughput]"
  modifier_building_throughput_mult_desc: "Наддаток або карна до пропускної спроможности будівлі."
