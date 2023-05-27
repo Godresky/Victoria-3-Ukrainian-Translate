@@ -219,8 +219,8 @@
  modifier_character_command_limit_combat_unit_flotilla_add: "Обмеження командира для флотилій"
  modifier_character_command_limit_combat_unit_flotilla_add_desc: "$modifier_character_command_limit_combat_unit_regular_add_desc$"
 
- modifier_character_command_limit_mult:0 "Command Limit"
- modifier_character_command_limit_mult_desc:1 "Multiplies the amount of units this [concept_character] can command."
+ modifier_character_command_limit_mult: "Обмеження командира"
+ modifier_character_command_limit_mult_desc: "Множник кількости підрозділів, якими цей [concept_character] може командувати."
  modifier_character_command_budget_add_pre_fix:0 "@money!"
  modifier_building_production_mult:0 "Building Production"
  modifier_building_production_mult_desc:0 "Affects production output of all the goods produced in the building"

@@ -14,7 +14,7 @@
  state_atheism.2.t: "Спілка безвірників"
  state_atheism.2.d: "[SCOPE.sPop('godless_pop').GetName] ([SCOPE.sBuilding('godless_uni').GetName]) у [Concept('concept_state','$concept_state_loc$')|l] [SCOPE.sState('godless_state').GetName] дуже сильно підтримують закон «[SCOPE.sLaw('current_law_scope').GetName]». Вони заснували «Спілку безвірників» для поширення протирелігійної думки."
  state_atheism.2.f: "«Я чув, як нас обмовляли, кажучи: «вони посягають на найвище досягнення людської культури». Якщо це найвище, чого досягло людство, то я маю сміятися, щоб досягти ще більшої висоти, і все, що мені потрібно зробити, лише перестрибнути через калюжу.»"
- state_atheism.2.a: "Просвітницька ініціатива."
+ state_atheism.2.a: "Просвітницька ініціятива."
  state_atheism.2.b: "Чіпляйтеся до теїстів на вулицях."
  state_atheism.2.c: "Розвивайте суспільство в університетах."
  state_atheism.3.t: "Благодійні справи"
