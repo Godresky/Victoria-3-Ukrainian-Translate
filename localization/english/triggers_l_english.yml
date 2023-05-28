@@ -140,7 +140,7 @@
  TRIGGER_HAS_UNIFICATION_CANDIDATE:0 "There is a [concept_unification_candidate] for [COUNTRYFORMATION.GetName]"
  TRIGGER_HAS_UNIFICATION_CANDIDATE_NOT:1 "There is #bold not #!a [concept_unification_candidate] for [COUNTRYFORMATION.GetName]"
 
- TRIGGER_IS_UNIFICATION_CANDIDATE:0 "[COUNTRY.GetName] is a [concept_unification_candidate] for [COUNTRYFORMATION.GetName]"
+ TRIGGER_IS_UNIFICATION_CANDIDATE: "[COUNTRY.GetName] - [concept_unification_candidate|l] держави [COUNTRYFORMATION.GetName]"
  TRIGGER_IS_UNIFICATION_CANDIDATE_NOT:0 "[COUNTRY.GetName] is #bold not #!a [concept_unification_candidate] for [COUNTRYFORMATION.GetName]"
  
  TRIGGER_IS_SUPPORTING_UNIFICATION_CANDIDATE:0 "[COUNTRY.GetName] is supporting [TARGET_COUNTRY.GetName] as [concept_unification_candidate] for [COUNTRYFORMATION.GetName]"
@@ -1825,10 +1825,10 @@
  TRIGGER_ANY_COUNTRY: "Будь-яка [concept_country|l]:"
  TRIGGER_ANY_COUNTRY_FIRST: "Будь-яка [concept_country|l]:"
  TRIGGER_ANY_COUNTRY_ALL: "Усі [Concept('concept_country', '$concept_countries$')|l]:"
- TRIGGER_ANY_COUNTRY_PERCENT:3 "$PARAMETERS$ of $FILTER$[Concept('concept_country', '$concept_countries$')]:"
+ TRIGGER_ANY_COUNTRY_PERCENT:3 "$PARAMETERS$ $FILTER$[Concept('concept_country', '$concept_countries_gen$')|l]:"
  TRIGGER_ANY_COUNTRY_COUNT:3 "$PARAMETERS$ $FILTER$[Concept('concept_country', '$concept_countries$')]:"
- TRIGGER_ANY_COUNTRY_COUNT_FIRST:2 "$PARAMETERS$ $FILTER$[Concept('concept_country', '$concept_countries$')]:"
- TRIGGER_ANY_COUNTRY_COUNT_THIRD:2 "$PARAMETERS$ $FILTER$[Concept('concept_country', '$concept_countries$')]:"
+ TRIGGER_ANY_COUNTRY_COUNT_FIRST:2 "$PARAMETERS$ $FILTER$[Concept('concept_country', '$concept_countries$')|l]:"
+ TRIGGER_ANY_COUNTRY_COUNT_THIRD:2 "$PARAMETERS$ $FILTER$[Concept('concept_country', '$concept_countries$')|l]:"
  
  TRIGGER_ANY_SCOPE_ALLY:1 "Any Ally:"
  TRIGGER_ANY_SCOPE_ALLY_ALL:1 "All Allies:"

@@ -935,9 +935,9 @@
  modifier_country_legitimacy_ideological_incoherence_mult_desc:0 "$modifier_country_legitimacy_ideological_incoherence_mult$"
  modifier_country_legitimacy_govt_leader_clout_add:1 "[concept_legitimacy] based on Government Leader Clout"
  modifier_country_legitimacy_govt_leader_clout_add_desc:1 "The amount of [concept_legitimacy] the [concept_government] gains or loses based on the [concept_clout] of the [concept_interest_group] leading the government."
- modifier_country_legitimacy_govt_total_clout_add:1 "[concept_legitimacy] based on [concept_government] [concept_clout]"
+ modifier_country_legitimacy_govt_total_clout_add: "[concept_legitimacy] на основі [Concept('concept_clout','$concept_clout_gen$')|l] [Concept('concept_government','$concept_government_gen$')|l]"
  modifier_country_legitimacy_govt_total_clout_add_desc:1 "The amount of [concept_legitimacy] the [concept_government] gains or loses based on the total [concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] in the government."
- modifier_country_legitimacy_govt_total_votes_add:1 "[concept_legitimacy] based on [concept_votes]"
+ modifier_country_legitimacy_govt_total_votes_add: "[concept_legitimacy] на основі [Concept('concept_votes','$concept_votes_gen$')|l]"
  modifier_country_legitimacy_govt_total_votes_add_desc: "Рівень [Concept('concept_legitimacy','$concept_legitimacy_gen$')|l], який отримає або втрачає [concept_government|l], виходячи зі загального відсотку [Concept('concept_votes','$concept_votes_gen$')|l] [Concept('concept_party','$concept_parties_gen$')|l] в уряді."
   
  modifier_stockpile_army_requirement_small_arms_add:0 "Army @small_arms! Consumption"

@@ -2351,7 +2351,7 @@
  concept_head_of_state_gen: "Голови держави"
  concept_head_of_state_acc: "Голову держави"
  concept_head_of_state_ins: "Головою держави"
- concept_head_of_state_desc: "[concept_ruler] [Concept('concept_country','$concept_country_gen$')] або найвищий представник. [concept_government_type] визначає, хто виконує обов’язки голови держави і коли він буде заміненим.[AddLocalizationIf(GetPlayer.IsValid, 'concept_head_of_state_ingame_added')]"
+ concept_head_of_state_desc: "[concept_ruler] [Concept('concept_country','$concept_country_gen$')|l] або найвищий її представник. [concept_government_type] визначає, хто виконує обов’язки голови держави і коли він буде заміненим.[AddLocalizationIf(GetPlayer.IsValid, 'concept_head_of_state_ingame_added')]"
  concept_head_of_state_ingame_added: "\n\n#yellow [GetPlayer.GetAdjectiveNoFlag]ий#! голова держави - [GetPlayer.GetRuler.GetFullNameWithTitle]."
 
  concept_government_type: "Тип уряду"
