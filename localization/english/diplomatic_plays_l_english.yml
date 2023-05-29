@@ -91,7 +91,7 @@
  WARGOAL_TARGET_WILL_NOT_EXIST:1 " [COUNTRY.GetName] will be annexed as a result of the already added wargoals"
  WARGOAL_TARGET_WILL_NOT_EXIST_AFTER_WARGOAL:1 " [COUNTRY.GetName] will be annexed as a result of adding this wargoal, invaliding an already added wargoal"
  WARGOAL_TARGET_NOT_RIVAL:2 " [COUNTRY.GetName] is not a [Concept('concept_rivalry', '$concept_rival$')] of [TARGET_COUNTRY.GetName]"
- WARGOAL_NOT_UNIFICATION_CANDIDATE:1 " [Country.GetName] is not a [concept_unification_candidate] for [CountryFormation.GetName]"
+ WARGOAL_NOT_UNIFICATION_CANDIDATE: " [Country.GetName] не [concept_unification_candidate|l] нації [CountryFormation.GetName]"
  WARGOAL_NOT_SOLE_UNIFICATION_CANDIDATE:1 " [Country.GetName] must be the only [concept_unification_candidate] for [CountryFormation.GetName]"
  WARGOAL_COUNTRY_HAS_SLAVERY:1 " [COUNTRY.GetName] practices some form of [concept_slavery]"
  WARGOAL_COUNTRY_NO_SLAVERY:1 " [COUNTRY.GetName] does not practice [concept_slavery] in any form"
@@ -362,7 +362,7 @@
  war_goal_war_reparations_type_name: "Воєнне відшкодування"
  war_goal_war_reparations_type_desc: "Змусити іншу державу платити [concept_war_reparations|l]."
  war_goal_war_reparations: "[WAR_GOAL.GetTarget.GetAdjectiveNoFormatting]е [concept_war_reparations|l]"
- war_goal_war_reparations_desc: "[WAR_GOAL.GetHolder.GetName] змусить державу [WAR_GOAL.GetTarget.GetName] переказувати нам #variable 10%#! їхніх податкових прибутків як [Concept('concept_war_reparations', '$concept_war_reparations_acc$')] протягом 5-ти років."
+ war_goal_war_reparations_desc: "[WAR_GOAL.GetHolder.GetName] змусить державу [WAR_GOAL.GetTarget.GetName] переказувати нам #variable 10%#! їхніх податкових прибутків як [Concept('concept_war_reparations', '$concept_war_reparations_acc$')|l] протягом 5-ти років."
  war_goal_war_reparations_sway_desc:1 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to pay them #variable 10%#! of their tax income in [concept_war_reparations] for 5 years."
  
  war_goal_unification_leadership_type_name: "Відник об’єднання"
@@ -452,6 +452,6 @@
  war_goal_unification_type_name: "Об’єднання"
  war_goal_unification_type_desc:1 "Attempt to annex all lesser countries sharing a culture with a nation formation."
  war_goal_unification: "Об’єднання держави [WAR_GOAL.GetCountryFormation.GetName]"
- war_goal_unification_desc:1 "[WAR_GOAL.GetHolder.GetName] attempts to annex all lesser [WAR_GOAL.GetCountryFormation.GetAdjective] countries."
+ war_goal_unification_desc: "[WAR_GOAL.GetHolder.GetName] спробує анексувати усі менші #yellow [WAR_GOAL.GetCountryFormation.GetAdjective|l]і#! держави."
  war_goal_unification_sway_desc:1 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by having them annex all lesser [WAR_GOAL.GetCountryFormation.GetAdjective] countries."
   

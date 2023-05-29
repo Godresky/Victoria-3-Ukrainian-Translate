@@ -1198,6 +1198,7 @@
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MAY 1, 2022
 
  concept_war_reparations: "Воєнне відшкодування"
+ concept_war_reparations_acc: "Воєнне відшкодування"
  concept_war_reparations_desc:2 "A secondary [concept_war_goal] that can be added onto a [concept_diplomatic_play] and claimed as part of a [concept_peace_deal]. If enforced, the targeted [concept_country] is forced to transfer [GetDiplomaticActionType('war_reparations').GetIncomeTransfer|v%] of their [concept_treasury] income to the other for a duration of #v [GetDefine('NDiplomacy','WAR_GOAL_REPARATIONS_MONTHS')|0] months#!."
 
  concept_colonization_rights: "Права на осадництво"

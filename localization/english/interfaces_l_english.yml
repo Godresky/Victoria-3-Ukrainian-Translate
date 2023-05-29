@@ -4879,8 +4879,8 @@
  ENACT_APPROVAL_CHANGES: "#title Зміна схвалення [Concept('concept_interest_group', '$concept_interest_groups_gen$')|l] від надання сили [Concept('concept_law', '$concept_law_gen$')|l] «[PlayerMessageItem.GetLaw.GetName]»#!"
  ABOLISH_APPROVAL_CHANGES: "#title Зміна схвалення [Concept('concept_interest_group', '$concept_interest_groups_gen$')|l] від скасування [Concept('concept_law', '$concept_law_gen$')|l] «[PlayerMessageItem.GetPrevLaw.GetName]»#!"
  LAW_LORE: "#lore #bold [PlayerMessageItem.GetLaw.GetName]#!\n[PlayerMessageItem.GetLaw.GetFlavor]#!"
- LAW_LORE_HEADER:0 "#b [PlayerMessageItem.GetLaw.GetFlavor]#!"
- PREVIOUS_LAW_POPUP_HEADER:0 "Changed from [PlayerMessageItem.GetPrevLaw.GetName]"
+ LAW_LORE_HEADER: "#b [PlayerMessageItem.GetLaw.GetFlavor]#!"
+ PREVIOUS_LAW_POPUP_HEADER: "Змінено зі [Concept('concept_law', '$concept_law_gen$')|l] «[PlayerMessageItem.GetPrevLaw.GetName]»"
 
  INVALID_ERA: "Недоступна ера"
  TECHNOLOGY_PROGRESS: "#v @innovation! [Technology.GetProgress(GetPlayer.Self)|D]#! / #maximum [Technology.GetCost(GetPlayer.Self)|D]#!"

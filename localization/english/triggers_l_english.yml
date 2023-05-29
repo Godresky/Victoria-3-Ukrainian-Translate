@@ -1825,7 +1825,7 @@
  TRIGGER_ANY_COUNTRY: "Будь-яка [concept_country|l]:"
  TRIGGER_ANY_COUNTRY_FIRST: "Будь-яка [concept_country|l]:"
  TRIGGER_ANY_COUNTRY_ALL: "Усі [Concept('concept_country', '$concept_countries$')|l]:"
- TRIGGER_ANY_COUNTRY_PERCENT:3 "$PARAMETERS$ $FILTER$[Concept('concept_country', '$concept_countries_gen$')|l]:"
+ TRIGGER_ANY_COUNTRY_PERCENT: "$PARAMETERS$ - $FILTER$[Concept('concept_country', '$concept_countries$')|l]:"
  TRIGGER_ANY_COUNTRY_COUNT:3 "$PARAMETERS$ $FILTER$[Concept('concept_country', '$concept_countries$')]:"
  TRIGGER_ANY_COUNTRY_COUNT_FIRST:2 "$PARAMETERS$ $FILTER$[Concept('concept_country', '$concept_countries$')|l]:"
  TRIGGER_ANY_COUNTRY_COUNT_THIRD:2 "$PARAMETERS$ $FILTER$[Concept('concept_country', '$concept_countries$')|l]:"
