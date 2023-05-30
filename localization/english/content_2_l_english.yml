@@ -24,12 +24,12 @@
  industrial_accident_events.4.a:0 "Close the distilleries while the wreckage gets cleared."
  industrial_accident_events.4.b:0 "One tragedy must not stop progress!"
 
- industrial_accident_events.5.t:0 "Boiler Explosion"
- industrial_accident_events.5.d:0 "A factory in [SCOPE.sState('boiler_explosion_state').GetName] has been rocked by a tremendous boiler explosion, with dozens dead or injured. The story of this tragedy has quickly become a national event."
- industrial_accident_events.5.f:0 ""The scalding steam rushed out of the burst boiler and into the faces of the men on the shop floor. If the blast itself or the flying debris didn't get them, then the steam surely did.""
- industrial_accident_events.5.a:0 "These events are simply the price of progress."
- industrial_accident_events.5.b:0 "Workers should not be exploited and forced into such conditions."
- industrial_accident_events.5.c:0 "Machines are dangerous! Industry itself is a cancer."
+ industrial_accident_events.5.t: "Вибух котла"
+ industrial_accident_events.5.d: "Виробню у [Concept('concept_state','$concept_state_loc$')|l] [SCOPE.sState('boiler_explosion_state').GetName] сколихнув потужний вибух котла, внаслідок якого десяток людей загинуло або отримало поранення. Ця історія швидко переросла у національну трагедію."
+ industrial_accident_events.5.f: "«The scalding steam rushed out of the burst boiler and into the faces of the men on the shop floor. If the blast itself or the flying debris didn't get them, then the steam surely did.»"
+ industrial_accident_events.5.a: "Такі події - просто ціна поступу."
+ industrial_accident_events.5.b: "Робітників не можна визискувати та примушувати працювати в таких умовах."
+ industrial_accident_events.5.c: "Машини небезпечні! Промисловість сама по собі є раковою пухлиною."
 
  industrial_accident_events.6.t: "Нещасний випадок у копальні"
  industrial_accident_events.6.d: "Копальня у [Concept('concept_state','$concept_state_loc$')|l] [SCOPE.sState('mining_accident_state').GetName] обвалилася, через що рудокопи потрапили у пастку в темних копальнях під землею. Розмір нещасного випадку перетворив його на велику трагедію для [Concept('concept_state','$concept_state_gen$')|l] [SCOPE.sState('mining_accident_state').GetName] і усієї нації."

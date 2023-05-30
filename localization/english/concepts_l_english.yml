@@ -1091,6 +1091,7 @@
  
  concept_neutral: "Невтрал"
  concept_neutrals: "Невтрали"
+ concept_neutrals_gen: "Невтралів"
  concept_neutral_desc:0 "$concept_neutral$ [Concept('concept_individual','$concept_individuals$')] within a [concept_pop] are neither [concept_radical] or [Concept('concept_loyalist','$concept_loyal$')] towards their [concept_country]. However, they are only one negative or positive step away from becoming $concept_radical$ or $concept_loyal$.\n\nWhenever a $concept_radical$ would be created in a $concept_pop$ that already has $concept_loyalists$, one $concept_loyalist$ becomes $concept_neutral$ instead. All $concept_individuals$ in a $concept_pop$ needs to be either $concept_neutral$ or already $concept_radical$ for a $concept_radical$ to be created. Vice versa when a $concept_loyalist$ would be created."
 
  concept_rivalry: "Суперництво"
