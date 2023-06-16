@@ -2300,6 +2300,7 @@
 
  concept_heir: "Спадкоємець"
  concept_heir_gen: "Спадкоємця"
+ concept_heir_dat: "Спадкоємцю"
  concept_heir_acc: "Спадкоємця"
  concept_heir_ins: "Спадкоємцем"
  concept_heir_desc: "Спадкоємець [Concept('concept_country','$concept_country_gen$')|l] - це [concept_character|l], який перебирає на себе [Concept('concept_character_role','$concept_character_role_acc$')|l] [Concept('concept_ruler','$concept_ruler_gen$')|l] після смерти чинного."
@@ -2457,6 +2458,7 @@
 
  concept_political_movement_support: "Підтримка політичного руху"
  concept_political_movement_support_short: "Підтримка"
+ concept_political_movement_support_short_acc: "Підтримку"
  concept_political_movement_supporting:0 "Supporting"
  concept_political_movement_support_desc:3 "The $concept_political_movement_support_short$ of a [concept_political_movement] is based on the [concept_political_strength] of its supporting [Concept('concept_pop','$concept_pops$')] as well as the [concept_popularity] and [Concept('concept_character_trait','$concept_character_traits$')] of any supporting [Concept('concept_agitator','$concept_agitators$')]. A $concept_political_movement$ with a high degree of $concept_political_movement_support_short$ increases the [concept_enactment_success] chance if you pursue the [concept_law] they desire, or increases the [concept_enactment_stall] chance if they oppose it. Should the $concept_political_movement$ lead to a [concept_revolution], $concept_political_movement_support$ will determine how many [Concept('concept_state','$concept_states$')] it will start with."
 

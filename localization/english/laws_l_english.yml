@@ -7,8 +7,8 @@
  ideology_traditionalist: "Звичаїст"
  ideology_traditionalist_desc: "#lore Цей провідник вірить у збереження традиційних звичаїв та розглядає їх як продовження природних законів.#!"
 
- ideology_atheist:1 "Nihilist"
- ideology_atheist_desc:1 "#lore This leader prioritizes the questioning and overturning of traditionalist social order and institutions at all costs, seeking to clear the ground for a comprehensively revolutionary society. #!"
+ ideology_atheist: "Нігіліст"
+ ideology_atheist_desc: "#lore Цей провідник ставить під сумнів і руйнує звичаїські соціяльні порядки та установи будь-якою ціною, шукаючи новий ґрунт для всеосяжного революційного суспільства. #!"
 
  ideology_republican_leader: "Республіканець"
  ideology_republican_leader_desc: "#lore Цей провідник прагне встановити республіку, якою керуватимуть обрані посадовці.#!"
@@ -471,10 +471,10 @@
 # Luddites
  law_industry_banned: "Заборона промисловости"
  law_industry_banned_desc: "Економічний погляд, який відкидає важку промисловість і самочинність, віддаючи перевагу плодам чесної праці, а не бездушним машинам."
- industry_banned_tt:0 "It will no longer be possible to build #bold Heavy Industry#! buildings"
- industry_banned_destroy_tt:0 "@warning! All #bold Heavy Industry#! buildings in this country will be dismantled"
- ideology_luddite:0 "Luddite"
- ideology_luddite_desc:0 "Luddites are opposed to industrial automation, or in more extreme cases to industry itself."
+ industry_banned_tt: "Більше не буде можливо зводити будівлі #bold важкої промисловости#!"
+ industry_banned_destroy_tt: "@warning! Усі будівлі #bold важкої промисловости#! у цій країні будуть розібрані"
+ ideology_luddite: "Луддист"
+ ideology_luddite_desc: "Лудисти обстоюють проти промислової самочинности, або, в більш радикальних випадках, до самої промисловости."
 
 # Land Reform Laws
  lawgroup_land_reform: "Земельна реформа"

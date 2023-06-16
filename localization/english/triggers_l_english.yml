@@ -525,8 +525,8 @@
  TRIGGER_AGE:0 "Age is $COMPARATOR$ $NUM|v$"
  TRIGGER_AGE_NOT:1 "Age is #bold not #!$COMPARATOR$ $NUM|v$"
 
- TRIGGER_AGE_THIRD:0 "[CHARACTER.GetFullNamePossessive] age is $COMPARATOR$ $NUM|v$"
- TRIGGER_AGE_THIRD_NOT:0 "[CHARACTER.GetFullNamePossessive] age is #bold not #!$COMPARATOR$ $NUM|v$"
+ TRIGGER_AGE_THIRD: "[CHARACTER.GetFullNamePossessive]: вік $COMPARATOR$ $NUM|v$"
+ TRIGGER_AGE_THIRD_NOT: "[CHARACTER.GetFullNamePossessive]: вік #bold не#!$COMPARATOR$ $NUM|v$"
  
  TRIGGER_COMMANDER_RANK:0 "Commander rank is $COMPARATOR$ $NUM|v$"
  TRIGGER_COMMANDER_RANK_NOT:1 "Commander rank is #bold not #!$COMPARATOR$ $NUM|v$"
@@ -1873,7 +1873,7 @@
   
  TRIGGER_ANY_SUBJECT_OR_BELOW_ALL:1 "All [Concept('concept_subject','$concept_subjects$')] or their $concept_subjects$:"
  TRIGGER_ANY_SUBJECT_OR_BELOW_ALL_NOT:1 "No [Concept('concept_subject','$concept_subjects$')] or their $concept_subjects$:"
- TRIGGER_ANY_SUBJECT_OR_BELOW_ALL_FIRST:1 "All [COUNTRY.GetAdjectiveNoFlag] [Concept('concept_subject', '$concept_subjects$')] or their $concept_subjects$:"
+ TRIGGER_ANY_SUBJECT_OR_BELOW_ALL_FIRST: "Усі #yellow [COUNTRY.GetAdjectiveNoFlag|l]і#! [Concept('concept_subject', '$concept_subjects$')|l] або їхні підвладні:"
  TRIGGER_ANY_SUBJECT_OR_BELOW_ALL_FIRST_NOT:1 "No [COUNTRY.GetAdjectiveNoFlag] [Concept('concept_subject', '$concept_subjects$')] or their $concept_subjects$:"
  TRIGGER_ANY_SUBJECT_OR_BELOW_ALL_THIRD:1 "All [COUNTRY.GetAdjective] [Concept('concept_subject', '$concept_subjects$')] or their $concept_subjects$:"
  TRIGGER_ANY_SUBJECT_OR_BELOW_ALL_THIRD_NOT:1 "No [COUNTRY.GetAdjective] [Concept('concept_subject', '$concept_subjects$')] or their $concept_subjects$:"
@@ -1946,7 +1946,7 @@
  TRIGGER_ANY_SCOPE_STATE: "Будь-яка [concept_state|l]:"
  TRIGGER_ANY_SCOPE_STATE_ALL: "Усі [Concept('concept_state', '$concept_states$')|l]:"
  TRIGGER_ANY_SCOPE_STATE_ALL_NOT:1 "No [Concept('concept_state', '$concept_states$')]:"
- TRIGGER_ANY_SCOPE_STATE_ALL_FIRST: "Усі [Country.GetAdjectiveNoFlag|l]і [Concept('concept_state', '$concept_states$')|l]"
+ TRIGGER_ANY_SCOPE_STATE_ALL_FIRST: "Усі #yellow [Country.GetAdjectiveNoFlag|l]і#! [Concept('concept_state', '$concept_states$')|l]"
  TRIGGER_ANY_SCOPE_STATE_ALL_FIRST_NOT:1 "No [Country.GetAdjectiveNoFlag] [concept_state]"
  TRIGGER_ANY_SCOPE_STATE_ALL_THIRD: "Усі [Concept('concept_state', '$concept_states$')|l] у [Concept('concept_country', '$concept_country_loc$')|l] [Country.GetName]"
  TRIGGER_ANY_SCOPE_STATE_ALL_THIRD_NOT:1 "No [concept_state] not controlled by [Country.GetName]"

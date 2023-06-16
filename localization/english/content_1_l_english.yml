@@ -591,7 +591,7 @@
  je_sick_man_main_goal: "Виконайте 4 «Танзимати» ([Concept('concept_journal_entry', '$concept_journal_entries$')])"
  je_sick_man_syria: "Танзимат: Повернути Сирію"
  je_sick_man_syria_reason: "Ми втратили Сирію через тирана Єгипет, який викрав її з наших рук. Нам потрібно повернути її!"
- je_sick_man_syria_status: "Якщо ми почнемо дипломатичну гри проти Єгипту, то це дасть европейським [Concept('concept_great_power', '$concept_great_powers_dat$')|l] [Concept('concept_active_interest', '$concept_active_interest_acc$')|l] у цій землі."
+ je_sick_man_syria_status: "Якщо ми почнемо дипломатичну гри проти Єгипту, то це дасть европейським [Concept('concept_great_power', '$concept_great_powers_dat$')|l] [Concept('concept_active_interest', '$concept_active_interest_acc$')|l] на цьому терені."
  je_sick_man_egypt: "Танзимат: Повернути Єгипет"
  je_sick_man_egypt_reason: "Після повернення Сирії ми повинні звернути увагу на Єгипет. За правом османське володіння, що потрапило до рук узурпатора."
  je_sick_man_economy: "Танзимат: Оміщення"
