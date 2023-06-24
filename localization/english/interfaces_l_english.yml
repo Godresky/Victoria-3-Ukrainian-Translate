@@ -3063,7 +3063,7 @@
  GOODS_PROFIT_PRODUCTION_AFTER_SUBSTITUTION:4 "#v @money!$IMPACT|K+=$#! from #v $NUM_UNITS|0=+$#! [Goods.GetTextIcon] #v [Goods.GetName]#! ($PRICE_CUR_ICON$@arrow_right!$PRICE_NEW_ICON$ after [concept_goods_substitution])"
  NO_OPPOSITION: "#bold Немає [Concept('concept_interest_group', '$concept_interest_groups_gen$')|l] в опозиції#!"
  NO_POLITICAL_MOVEMENTS: "Немає [Concept('concept_political_movement', '$concept_political_movements_gen$')|l]"
- IG_NO_POLITICAL_MOVEMENT:0 "No supported [Concept('concept_political_movement', '$concept_political_movements$')]"
+ IG_NO_POLITICAL_MOVEMENT: "Не підтримують [Concept('concept_political_movement', '$concept_political_movement_acc$')|l]"
  NO_LAW_BEING_ENACTED: "Немає [Concept('concept_law', '$concept_law_gen$')|l], якому надають сили"
  NO_INTERESTS: "Немає [Concept('concept_interest', '$concept_interests_gen$')|l]"
 
@@ -5372,7 +5372,7 @@
  CHEAPEST_LAWS_HEADER_REFORM: "$LAWS_WITH_GVT_SUPPORT$ ([GetDataModelSize(ReformGovernment.GetPredictedLawsWithGovernmentOrMovementSupport)|v])"
  LAWS_WITHOUT_SUPPORT_REFORM: "$LAWS_WITHOUT_GVT_SUPPORT$ ([GetDataModelSize(ReformGovernment.GetPredictedLawsWithoutGovernmentOrMovementSupport)|v])"
  LAWS_HAS_CHANGED: "Зміняться!"
- CHEAPEST_LAWS_IG_HEADER: "#bold Закони, які [InterestGroup.GetName|l] хочуть прийняти#!"
+ CHEAPEST_LAWS_IG_HEADER: "#bold Закони, які [InterestGroup.GetName|l] хочуть ухвалити#!"
 
  PREDICTED_LAWS_WITH_GVT_SUPPORT: "$LAWS_WITH_GVT_SUPPORT$ ($PREDICTION$)"
  PREDICTED_LAWS_WITHOUT_GVT_SUPPORT: "$LAWS_WITHOUT_GVT_SUPPORT$ ($PREDICTION$)"
@@ -6849,7 +6849,7 @@
  NO_UNPRESSED_WAR_GOALS:0 "No Unpressed War Goals"
  GAME_CHECKSUM_CHANGED_FROM_SAVE_FILE: "@warning_icon!#X Недійсна контрсума досягнення#!\nЦей запис дійсний для досягнень, які створюють іншу контрсуму. Його завантаження призведе до вимкнення досягнень у збережені."
 
- MODIFIER_CONSCRIPTION_RATE_ADD_ADDITIONAL_INFO:2 "@battalions!$NUM_BATTALIONS|v$ [Concept('concept_battalion', '$concept_battalions$')] can be [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilized$')]"
+ MODIFIER_CONSCRIPTION_RATE_ADD_ADDITIONAL_INFO: "Кількість [Concept('concept_battalion', '$concept_battalions_gen$')|l], яку можна [Concept('concept_mobilize_battalion','Зібрати')|l]: @battalions!$NUM_BATTALIONS|v$"
 
  DEFAULT_HQ_NAME: "[Concept('concept_hq', '$concept_hq$')] [HQ.GetCountry.GetFlagTextIcon] [HQ.GetStrategicRegion.GetNameNoFormatting]"
  DEFAULT_HQ_NAME_NO_FLAG: "[Concept('concept_hq', '$concept_hq$')] [HQ.GetStrategicRegion.GetNameNoFormatting]"
