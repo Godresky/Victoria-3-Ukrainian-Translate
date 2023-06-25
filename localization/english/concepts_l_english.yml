@@ -341,7 +341,7 @@
 
  concept_available_battalions: "Доступні курені"
  concept_available_battalions_gen: "Доступних куренів"
- concept_available_battalions_desc: "Доступні [Concept('concept_battalion','$concept_battalions$')|l] [Concept('concept_country','$concept_country_gen$')|l] - це $concept_battalions$, які наразі підняті [SelectLocalization(GetPlayer.IsValid,'будівлями','')|l] [SelectLocalization(GetPlayer.IsValid,'concept_available_battalions_desc_added','куренями')|l] та/або [Concept('concept_conscription_center','$concept_conscription_centers$')]."
+ concept_available_battalions_desc: "Доступні [Concept('concept_battalion','$concept_battalions$')|l] [Concept('concept_country','$concept_country_gen$')|l] - це $concept_battalions$, які наразі підняті [SelectLocalization(GetPlayer.IsValid,'будівлями','')|l] [SelectLocalization(GetPlayer.IsValid,'concept_available_battalions_desc_added','Куренями')|l] та/або [Concept('concept_conscription_center','$concept_conscription_centers$')|l]."
  concept_available_battalions_desc_added: "[GetBuildingType('building_barracks').GetName]"
 
  concept_potential_battalions: "Можливі курені"
@@ -391,7 +391,7 @@
  concept_front_loc: "Фронті"
  concept_fronts: "Фронти"
  concept_fronts_gen: "Фронтів"
- concept_front_desc:2 "A collection of [Concept('concept_province', '$concept_provinces$')] on the border of [Concept('concept_theater','$concept_theaters$')] between two [Concept('concept_country', '$concept_countries$')] at [concept_war] with each other. [Concept('concept_general', '$concept_generals$')] can be [Concept('concept_order','$concept_ordered$')] to advance or defend $concept_fronts$, which can result in [Concept('concept_battle','$concept_battles$')] that change the size of the $concept_theaters$ and the location of the $concept_front$."
+ concept_front_desc: "Набір [Concept('concept_province', '$concept_provinces_gen$')|l] на кордоні з [Concept('concept_theater','$concept_theaters_ins$')] між двома [Concept('concept_country', '$concept_countries_ins$')|l], які у [Concept('concept_war', '$concept_war_loc$')|l] між собою. [Concept('concept_general', '$concept_generals$')] можуть бути [Concept('concept_order','$concept_ordered$ими')|l] просувати або обороняти фронти. Проводячи до [Concept('concept_battle','$concept_battles_gen$')|l], які змінюють розмір войовищ та місце фронту."
 
  concept_garrison: "Залога"
  concept_garrison_gen: "Залоги"
@@ -415,7 +415,7 @@
  concept_province_land: "Суходіл"
  concept_province_land_gen: "Суходолу"
  concept_province_land_ins: "Суходолом"
- concept_province_desc:2 "Subdivisions of [Concept('concept_state', '$concept_states$')], each with its own [concept_terrain]. $concept_provinces$ are transferred between $concept_states$ during [Concept('concept_colony','$concept_colonization$')], and can be temporarily transferred between [Concept('concept_theater','$concept_theaters$')] during [concept_war] as the outcome of [Concept('concept_battle','$concept_battles$')]."
+ concept_province_desc: "Дрібна частина [Concept('concept_state', '$concept_states_gen$')|l], що володіє власним [Concept('concept_terrain', '$concept_terrain_ins$')|l]. $concept_provinces$ переходить між землями під час [Concept('concept_colony','$concept_colonization_gen$')|l] і може тимчасово переходити між [Concept('concept_theater','$concept_theaters_ins$')|l] під час [Concept('concept_war','$concept_war_gen$')|l] внаслідок [Concept('concept_battle','$concept_battles_gen$')|l]."
 
  concept_battle_condition: "Умови битви"
  concept_battle_condition_short: "Умови"
@@ -443,6 +443,7 @@
 
  concept_terrain: "Рельєф місцевости"
  concept_terrain_gen: "Рельєфу місцевости"
+ concept_terrain_ins: "Рельєфом місцевости"
  concept_terrain_desc:3 "A [Concept('concept_province','$concept_province_possessive$')] $concept_terrain$ determines its [concept_combat_width] and how volatile and unpredictable [Concept('concept_battle','$concept_battles$')] in that $concept_province$ is. [Concept('concept_general','$concept_generals$')] can also be more or less versed in fighting in different types of $concept_terrain$.\n\nThe $concept_terrain$ of a given $concept_province$ can change as a result of the [Concept('concept_building','$concept_buildings$')] constructed in the [concept_state]."
 
  concept_strategic_region: "Стратегічний реґіон"
@@ -682,7 +683,7 @@
 
  concept_politician: "Політик"
  concept_politicians: "Політики"
- concept_politician_desc: "Це [concept_character_role|l] тих [Concept('concept_character','$concept_characters_gen$')|l], чий вплив є політичним, а не військовим. Він може бути [Concept('concept_ruler','$concept_ruler_ins$')|l], [Concept('concept_heir','$concept_heir_ins$')|l] або [Concept('concept_leader','$concept_leader_ins$')|l] [Concept('concept_interest_group','$concept_interest_group_gen$')|l]."
+ concept_politician_desc: "Це [concept_character_role|l] для тих [Concept('concept_character','$concept_characters_gen$')|l], чий вплив є політичним, а не військовим. Він може бути [Concept('concept_ruler','$concept_ruler_ins$')|l], [Concept('concept_heir','$concept_heir_ins$')|l] або [Concept('concept_leader','$concept_leader_ins$')|l] [Concept('concept_interest_group','$concept_interest_group_gen$')|l]."
 
  concept_leader: "Провідник"
  concept_leader_gen: "Провідника"
@@ -705,6 +706,7 @@
  concept_character_traits: "Риси характеру"
  concept_character_traits_gen: "Рис характеру"
  concept_character_traits_acc: "Риси характеру"
+ concept_character_traits_ins: "Рисою характеру"
  concept_character_traits_short: "Риси"
  concept_character_trait_desc: "Риси персонажа, навички або умови, які впливають на здатність [Concept('concept_character','$concept_character_gen$')|l] виконувати свою [Concept('concept_character_role','$concept_character_role_acc$')|l]. Здобуваючи [Concept('concept_life_experience','$concept_life_experience_acc$')|l], персонаж може набувати нових рис або змінювати вже наявні."
 
@@ -777,6 +779,7 @@
  concept_ideology_gen: "Ідеології"
  concept_ideology_dat: "Ідеології"
  concept_ideology_acc: "Ідеологію"
+ concept_ideology_ins: "Ідеологією"
  concept_ideologies: "Ідеології"
  concept_ideologies_gen: "Ідеологій"
  concept_ideologies_dat: "Ідеологіям"
@@ -1120,6 +1123,7 @@
  concept_colonizes:1 "Colonizes"
  concept_colonizing:0 "Colonizing"
  concept_colonization: "Осадництво"
+ concept_colonization_gen: "Осадництва"
  concept_colony_desc: "Поселення, яке створене [Concept('concept_country','$concept_country_ins$')|l]-осадником на землях [Concept('concept_decentralized_nation','$concept_decentralized_nation_gen$')|l]. Майбутній осадник повинен мати [Concept('concept_institution','$concept_institution_acc$')|l] «[SelectLocalization(GetPlayer.IsValid,'concept_colony_desc_added','Осадництво')]» та [Concept('concept_interest','$concept_interest_acc$')|l] у [Concept('concept_strategic_region','$concept_strategic_region_loc$')|l]. Спочатку буде захоплена одна [Concept('concept_province','$concept_province_acc$')|l]. Сусідні провінції будуть осаджені зі швидкістю, що залежить від [Concept('concept_colonial_growth','$concept_colonial_growth_acc$')|l] у державі. А в свою чергу, це створюватиме [Concept('concept_tension','$concept_tension_acc$')|l]."
  concept_colony_desc_added: "[GetInstitutionType('institution_colonial_affairs').GetName]"
  
@@ -1378,6 +1382,7 @@
  concept_theater: "Войовище"
  concept_theater_loc: "Войовищі"
  concept_theaters: "Войовища"
+ concept_theaters_ins: "Войовищами"
  concept_theater_desc:1 "A region of adjacent [Concept('concept_province','$concept_provinces$')] under the control of a single [concept_country]. [Concept('concept_front','$concept_fronts$')] are created on the border between two $concept_theaters$ controlled by $concept_countries$ hostile to each other in a [concept_war] or [concept_diplomatic_play]."
 
  concept_literacy: "Грамотність"
@@ -2240,6 +2245,7 @@
  concept_popularity: "Знаність"
  concept_popularity_gen: "Знаности"
  concept_popularity_acc: "Знаність"
+ concept_popularity_ins: "Знаністю"
  concept_popularity_desc: "Знаність [Concept('concept_character','$concept_character_gen$')|l] показує готовність [Concept('concept_pop','$concept_people_gen$')|l] йти за ним. $concept_popularity$ впливає по-різному в залежности від [Concept('concept_character_role','$concept_character_role_gen$')|l] персонажа."
 
  concept_momentum: "Поштовх"
@@ -2407,7 +2413,7 @@
  concept_order_acc: "Наказ"
  concept_orders: "Накази"
  concept_orders_acc: "Накази"
- concept_ordered:0 "Ordered"
+ concept_ordered: "Назначен"
  concept_order_desc:2 "[Concept('concept_commander','$concept_commanders$')] can be given $concept_orders$ that cause them to pursue different military objectives. Some $concept_orders$ have targets (such as [Concept('concept_front','$concept_fronts$')] or [Concept('concept_hq','$concept_hqs$')]) while others do not. If an $concept_order$ requires a $concept_commander$ to travel they will do so automatically upon having been given it."
 
  concept_party: "Партія"
@@ -2527,31 +2533,32 @@
  concept_lower_strata: "Нижня верства"
  concept_lower_strata_gen: "Нижньої верстви"
  concept_lower_strata_acc: "Нижню верству"
- concept_lower_strata_desc: "$concept_lower_strata$ мість [Concept('concept_pop','$concept_pops_acc$')|l] з [Concept('concept_profession','$concept_professions_ins$')|l], які працюють руками або виконують одноманітну роботу, що майже не вимагає [Concept('concept_pop_qualifications','$concept_pop_qualifications_gen$')|l], у наслідок чого вони отримують низьку [Concept('concept_building_wage','$concept_building_wage_acc$')|l].[AddLocalizationIf(GetPlayer.IsValid,'concept_lower_strata_ingame_added')]"
+ concept_lower_strata_desc: "$concept_lower_strata$ містить [Concept('concept_pop','$concept_pops_acc$')|l] з [Concept('concept_profession','$concept_professions_ins$')|l], які працюють руками або виконують одноманітну роботу, що майже не вимагає [Concept('concept_pop_qualifications','$concept_pop_qualifications_gen$')|l], у наслідок чого вони отримують низьку [Concept('concept_building_wage','$concept_building_wage_acc$')|l].[AddLocalizationIf(GetPlayer.IsValid,'concept_lower_strata_ingame_added')]"
  concept_lower_strata_ingame_added: "\n\nМістить такі ремесла:\n[GetPopTypesInLowerStrataDesc]"
 
  concept_middle_strata: "Середня верства"
  concept_middle_strata_gen: "Середньої верстви"
- concept_middle_strata_desc: "$concept_middle_strata$ мість [Concept('concept_pop','$concept_pops$')|l] з профільними [Concept('concept_profession','$concept_professions_ins$')|l], для яких складніше здобути [Concept('concept_pop_qualifications','$concept_pop_qualifications_acc$')|l]. Це дає їм більше важелів впливу на ринку праці, а отже, вищу [Concept('concept_building_wage','$concept_building_wage_acc$')|l].[AddLocalizationIf(GetPlayer.IsValid,'concept_middle_strata_ingame_added')]"
+ concept_middle_strata_desc: "$concept_middle_strata$ містить [Concept('concept_pop','$concept_pops_acc$')|l] з профільними [Concept('concept_profession','$concept_professions_ins$')|l], для яких складніше здобути [Concept('concept_pop_qualifications','$concept_pop_qualifications_acc$')|l]. Це дає їм більше важелів впливу на ринку праці, а отже, вищу [Concept('concept_building_wage','$concept_building_wage_acc$')|l].[AddLocalizationIf(GetPlayer.IsValid,'concept_middle_strata_ingame_added')]"
  concept_middle_strata_ingame_added: "\n\nМістить такі ремесла:\n[GetPopTypesInMiddleStrataDesc]"
 
  concept_upper_strata: "Верхня верства"
  concept_upper_strata_gen: "Верхньої верстви"
- concept_upper_strata_desc:3 "$concept_upper_strata$ мість [Concept('concept_pop','$concept_pops$')|l] з [Concept('concept_profession','$concept_professions_ins$')|l], до яких вони [Concept('concept_pop_qualifications','Підготовлені')|l] здебільшого через своє [Concept('concept_wealth','Багатство')|l]. Ці ремесла зазвичай недоступні громадам, які є [Concept('concept_discrimination','$concept_discriminated_adj$ими')|l]. Вони, як правило, мають [Concept('concept_ownership_share','$concept_ownership_shares_acc$')|l] своїх [Concept('concept_building','$concept_buildings_gen$')|l], отримують [Concept('concept_dividends','$concept_dividends_acc$')|l] та одержують [Concept('concept_budget_interest','$concept_budget_interest_acc$')|l] на додаток до [Concept('concept_building_wage','$concept_building_wage_gen$')|l].[AddLocalizationIf(GetPlayer.IsValid, 'concept_upper_strata_ingame_added')]"
+ concept_upper_strata_desc: "$concept_upper_strata$ містить [Concept('concept_pop','$concept_pops_acc$')|l] з [Concept('concept_profession','$concept_professions_ins$')|l], до яких вони [Concept('concept_pop_qualifications','Підготовлені')|l] здебільшого через своє [Concept('concept_wealth','Багатство')|l]. Ці ремесла зазвичай недоступні громадам, які є [Concept('concept_discrimination','$concept_discriminated_adj$ими')|l]. Вони, як правило, мають [Concept('concept_ownership_share','$concept_ownership_shares_acc$')|l] своїх [Concept('concept_building','$concept_buildings_gen$')|l], отримують [Concept('concept_dividends','$concept_dividends_acc$')|l] та одержують [Concept('concept_budget_interest','$concept_budget_interest_acc$')|l] на додаток до [Concept('concept_building_wage','$concept_building_wage_gen$')|l].[AddLocalizationIf(GetPlayer.IsValid, 'concept_upper_strata_ingame_added')]"
  concept_upper_strata_ingame_added: "\n\nМістить такі ремесла:\n[GetPopTypesInUpperStrataDesc]"
 
 ### NEW ITEMS
 
  concept_neighbors: "Сусіди"
  concept_neighbors_ins: "Сусідами"
- concept_neighbors_desc:1 "Two [Concept('concept_country','$concept_countries$')] are considered to be $concept_neighbors$ if they share a land border or if they both own coastal [Concept('concept_state','$concept_states$')] that connect to the same [concept_sea_node]."
+ concept_neighbors_desc: "Дві [Concept('concept_country','$concept_countries_acc$')|l] вважаються сусідами, якщо вони мають спільний сухопутний кордон або якщо обидва володіють прибережними [Concept('concept_state','$concept_states_ins$')|l], які з’єдуються до одного і того ж [Concept('concept_sea_node','$concept_sea_node_gen$')|l]."
  
  concept_welfare_payments: "Соціяльні виплати"
  concept_welfare_payments_acc: "Соціяльні виплати"
  concept_welfare_payments_desc:1 "$concept_welfare_payments$ are a form of direct subsidy paid by by a [concept_country] to all $concept_pops$ in the [concept_workforce] that receive wages lower than the defined fraction of the [concept_normal_wage]."
 
- concept_sea_node:0 "Sea Node"
- concept_sea_nodes:0 "Sea Nodes"
+ concept_sea_node: "Морський вузол"
+ concept_sea_node_gen: "Морського вузла"
+ concept_sea_nodes: "Морські вузли"
  concept_sea_node_desc:0 "An intersection or point along a naval [concept_shipping_lane] representing a part of the ocean. $concept_shipping_lanes$ always take the route between two coastal [Concept('concept_state','$concept_states$')] that pass through the fewest number of $concept_sea_nodes$. Each additional $concept_sea_node$ beyond the first adds #v [GetDefine('NEconomy','SHIPPING_LANE_CONVOY_COST_SCALING')|=-%0]#! to the [concept_convoy_cost]."
 
  concept_agitator: "Закликач"
@@ -2561,7 +2568,7 @@
  concept_agitators_acc: "Закликачів"
  concept_agitate: "Закликати"
  concept_agitator_possessive:0 "Agitator\\'s"
- concept_agitator_desc:0 "A [concept_character_role] for [Concept('concept_character','$concept_characters$')] who support a [concept_political_movement] independently of their [concept_interest_group]. The [concept_political_movement] they support is determined by their [concept_ideology] and that of their [concept_interest_group]. Their impact on their [concept_political_movement] is determined by the Agitator's [concept_popularity] and [Concept('concept_character_trait', '$concept_character_traits$')]."
+ concept_agitator_desc: "Це [concept_character_role|l] для тих [Concept('concept_character','$concept_characters_gen$')|l], які підтримують незалежний [Concept('concept_political_movement','$concept_political_movement_acc$')|l] їхньої [Concept('concept_interest_group','$concept_interest_group_ins$')|l]. [concept_political_movement], який вони підтримують, визначено їхньою [Concept('concept_ideology','$concept_ideology_ins$')|l] та [Concept('concept_interest_group','$concept_interest_group_ins$')|l]. Їхній вплив на [Concept('concept_political_movement','$concept_political_movement_acc$')|l] визначається [Concept('concept_popularity','$concept_popularity_ins$')|l] закликача та [Concept('concept_character_trait', '$concept_character_traits_ins$')|l]."
 
  concept_exile: "Вигнанець"
  concept_exiles: "Вигнанеці"
