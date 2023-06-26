@@ -1,15 +1,7 @@
 ﻿l_english:
- IG_TRAIT_CONDITIONS_TITLE: "#title Умови:#!"
- IG_TRAIT_APPROVAL_MIN:1 "[concept_approval] of [InterestGroup.GetName] is at least #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN #variable $MIN_RATING$#! (#variable $MIN_VALUE|0+=$#!)#!#!"
- IG_TRAIT_APPROVAL_MAX:1 "[concept_approval] of [InterestGroup.GetName] is #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN #variable $MAX_RATING$#! (#variable $MAX_VALUE|0+=$#!)#!#! or worse"
- IG_TRAIT_MARGINAL: "[Concept('concept_interest_group','$concept_interest_group_short$')] [InterestGroup.GetName] НЕ [Concept('concept_marginalized','$concept_marginalized_adj$а')|l]"
-
- IG_TRAIT_APPROVAL_MIN_BASE:1 "[concept_approval] of the [concept_interest_group] should be at least #variable $MIN_RATING$#! (#variable $MIN_VALUE|0+=$#!)"
- IG_TRAIT_APPROVAL_MAX_BASE:1 "[concept_approval] of the [concept_interest_group] should be #variable $MAX_RATING$#! (#variable $MAX_VALUE|0+=$#!) or worse"
- IG_TRAIT_MARGINAL_BASE: "Зацікавлена група НЕ повинна бути [Concept('concept_marginalized','$concept_marginalized_adj$ою')|l]"
-
- IG_TRAIT_EFFECTS_TITLE: ""
- IG_TRAIT_EFFECTS_NO_EFFECT: "#italic Жодних змінювачів#!"
+ IG_TRAIT_NOT_MARGINAL_CHECK:0 "[InterestGroup.GetName] are #b not#! [concept_marginalized]"
+ IG_TRAIT_APPROVAL_THRESHOLD_MIN:0 "[concept_approval] of [InterestGroup.GetName] is at least $THRESHOLD|+$ (currently: #v #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [InterestGroup.GetApprovalValue|+]#!#!#!)"
+ IG_TRAIT_APPROVAL_THRESHOLD_MAX:0 "[concept_approval] of [InterestGroup.GetName] is $THRESHOLD|+$ or worse (currently: #v #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [InterestGroup.GetApprovalValue|+]#!#!#!)"
 
  ACTIVE_IG_GROUP_TRAITS: "#title Риси дієвих груп населення#!"
  ELECTION: "Вибори"
@@ -78,22 +70,20 @@
 
  CLOUT: "$concept_clout$"
   
- POLITICAL_MOVEMENT_SUPPORT_FROM_IG_CLOUT: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|v=D$#!#! через [Concept('concept_clout', '$concept_clout_acc$')|l] [Concept('concept_interest_group', '$concept_interest_groups_gen$')|l], що підтримують"
- POLITICAL_MOVEMENT_SUPPORT_FROM_IG_CLOUT_BREAKDOWN: "#header Підтримка [Concept('concept_interest_group', '$concept_interest_groups_gen$')|l]#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
- POLITICAL_MOVEMENT_SUPPORT_FROM_IG_CLOUT_ENTRY:1 "$VALUE|v=D$ from [InterestGroup.GetClout|%v] [concept_clout] of [InterestGroup.GetName] ([InterestGroup.GetClout|v2] x [GetDefine('NPolitics','POLITICAL_MOVEMENT_SUPPORT_FROM_CLOUT')|v])"
- POLITICAL_MOVEMENT_SUPPORT_FROM_IG_CLOUT_ENTRY_POP:0 "$VALUE|v=D$ from $MEMBERS|v$ members of [InterestGroup.GetName] ($CLOUT|v2$ x [GetDefine('NPolitics','POLITICAL_MOVEMENT_SUPPORT_FROM_CLOUT')|v])"
- POLITICAL_MOVEMENT_SUPPORT_FROM_POPS: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|v=D$#!#! через підтримку [Concept('concept_pop', '$concept_pops_gen$')|l]"
- POLITICAL_MOVEMENT_SUPPORT_FROM_POPS_POP: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|v=D$#!#! через підтримку [Concept('concept_individual','$concept_individuals_gen$')|l]"
- POLITICAL_MOVEMENT_SUPPORT_FROM_POPS_BREAKDOWN:2 "#header [concept_pop] Support#!\n$TOOLTIP_DELIMITER$\n$VALUE|v=D$ from being supported by $POP_FRACTION|v%$ (#v #tooltippable #tooltip:[PoliticalMovement.GetTooltipTag],POLITICAL_MOVEMENT_POP_SUPPORT_TOOLTIP $NUM_POPS|D$#!#!#!) of the population ($POP_FRACTION|v2$ x [GetDefine('NPolitics','POLITICAL_MOVEMENT_SUPPORT_FROM_POPULATION')|v])"
- POLITICAL_MOVEMENT_SUPPORT_FROM_CHARACTERS:0 "#tooltippable #tooltip:$SUPPORT_BREAKDOWN$ $SUPPORT|v=D$#!#! from supporting [Concept('concept_agitator', '$concept_agitators$')]"
- POLITICAL_MOVEMENT_SUPPORT_FROM_CHARACTERS_ENTRY:0 "$SUPPORT|v=D$ from [Character.GetFullNamePossessive] [concept_popularity] of #tooltippable #tooltip:$POPULARITY_BREAKDOWN$ $POPULARITY|v=D$#!#! (x[GetDefine('NCharacters', 'AGITATOR_MOVEMENT_SUPPORT_WEIGHT')|v])"
+ POLITICAL_MOVEMENT_SUPPORT_FROM_IG_CLOUT_ENTRY:1 "$VALUE|v=1$ from [InterestGroup.GetClout|%v] [concept_clout] of [InterestGroup.GetName] ([InterestGroup.GetClout|v3] x [GetDefine('NPolitics','POLITICAL_MOVEMENT_SUPPORT_FROM_CLOUT')|v0])"
+ POLITICAL_MOVEMENT_SUPPORT_FROM_IG_CLOUT_ENTRY_POP: "$VALUE|v=1$ from $MEMBERS|v$ members of [InterestGroup.GetName] ($CLOUT|v2$ x [GetDefine('NPolitics','POLITICAL_MOVEMENT_SUPPORT_FROM_CLOUT')|v0])"
+ POLITICAL_MOVEMENT_SUPPORT_FROM_POPS:1 "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|v=1$#!#! from supporting [Concept('concept_pop', '$concept_pops$')]"
+ POLITICAL_MOVEMENT_SUPPORT_FROM_POPS_POP: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|v=1$#!#! from supporting [Concept('concept_individual','$concept_individuals$')]"
+ POLITICAL_MOVEMENT_SUPPORT_FROM_POPS_BREAKDOWN:2 "#header [concept_pop] Support#!\n$TOOLTIP_DELIMITER$\n$VALUE|v=1$ from being supported by $POP_FRACTION|v%$ (#v #tooltippable #tooltip:[PoliticalMovement.GetTooltipTag],POLITICAL_MOVEMENT_POP_SUPPORT_TOOLTIP $NUM_POPS|D$#!#!#!) of the population ($POP_FRACTION|v3$ x [GetDefine('NPolitics','POLITICAL_MOVEMENT_SUPPORT_FROM_POPULATION')|v0])"
+ POLITICAL_MOVEMENT_SUPPORT_FROM_CHARACTERS_ENTRY: "$VALUE|v=%0$ from [Character.GetFullNamePossessive] [concept_popularity] of #v #tooltippable #tooltip:[Character.GetTooltipTag],POPULARITY_BREAKDOWN [LabelingHelper.GetLabelForPopularityCFixedPoint(Character.GetPopularity)]#!#!#! (#v #tooltippable #tooltip:[Character.GetTooltipTag],POPULARITY_BREAKDOWN [Character.GetPopularity|+0]#!#!#!) (x[GetDefine('NCharacters', 'AGITATOR_MOVEMENT_SUPPORT_WEIGHT')|v])"
+
  POLITICAL_MOVEMENT_AGITATOR_SUPPORT:0 "#tooltippable [LabelingHelper.GetLabelForSupport(PoliticalMovement.GetCharacterSupport(Character.Self))]#! ([PoliticalMovement.GetCharacterSupport(Character.Self)|vD])"
  POLITICAL_MOVEMENT_AGITATOR_SUPPORT_TOOLTIP:0 "[PoliticalMovement.GetCharacterSupportDesc(Character.Self)]"
  POLITICAL_MOVEMENT_POP_SUPPORT:0 "Supporters: [Pop.GetPoliticalMovementSupporterCount(PoliticalMovement.Self)|Dv] ([Pop.GetPoliticalMovementSupportFraction(PoliticalMovement.Self)|%D])"
   
  POLITICAL_MOVEMENT_RADICALISM_FROM_ANGRY_IG_CLOUT: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|v=0$#!#! через підтримку [Concept('concept_interest_group', '$concept_interest_groups_gen$')|l] зі схвалення $ig_approval_angry_l$"
  POLITICAL_MOVEMENT_RADICALISM_FROM_ANGRY_IG_CLOUT_BREAKDOWN: "#header Підтримка [Concept('concept_interest_group', '$concept_interest_groups_gen$')|l] зі схвалення $ig_approval_angry_l$#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
- POLITICAL_MOVEMENT_RADICALISM_FROM_ANGRY_IG_CLOUT_ENTRY: "$VALUE|v=0$ через [InterestGroup.GetClout|%v] [Concept('concept_clout', '$concept_clout_gen$')|l] групи [InterestGroup.GetName] ([InterestGroup.GetClout|v2] x [GetDefine('NPolitics','POLITICAL_MOVEMENT_RADICALISM_TARGET_FROM_ANGRY_IG_CLOUT')|v])"
+ POLITICAL_MOVEMENT_RADICALISM_FROM_ANGRY_IG_CLOUT_ENTRY: "$VALUE|v=0$ через [InterestGroup.GetClout|%v] [Concept('concept_clout', '$concept_clout_gen$')|l] групи [InterestGroup.GetName] ([InterestGroup.GetClout|v3] x [GetDefine('NPolitics','POLITICAL_MOVEMENT_RADICALISM_TARGET_FROM_ANGRY_IG_CLOUT')|v])"
  POLITICAL_MOVEMENT_RADICALISM_FROM_RADICAL_POPS: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|v=0$#!#! через підтримку [Concept('concept_radical', '$concept_radicals_gen$')|l]"
  POLITICAL_MOVEMENT_RADICALISM_FROM_RADICAL_POPS_BREAKDOWN: "#header Підтримка [Concept('concept_radical', '$concept_radicals_gen$')|l]#!\n$TOOLTIP_DELIMITER$\n$VALUE|v=0$ через те, що $RADICALS_FRACTION|v%$ ($NUM_RADICALS|Dv$) зі всього населення - [Concept('concept_radical', '$concept_radicals$')|l], які підтримують ($RADICALS_FRACTION|v2$ x [GetDefine('NPolitics','POLITICAL_MOVEMENT_RADICALISM_TARGET_FROM_RADICALS')|v])" #[concept_pop]
  

@@ -149,32 +149,61 @@
  own_all_andes_tt: "Заволодійте усіма землями у стратегічному реґіоні Анди"
  own_all_la_plata_tt: "Заволодійте усіма землями у стратегічному реґіоні Ла-Плата"
 
- # 1.3 Achievements
+# 1.3 Achievements
+
+ ACHIEVEMENT_achievement_amish_paradise: "Рай для амішів"
+ ACHIEVEMENT_DESC_achievement_amish_paradise: "За націю Янкі, ухваліть закон «Заборона промисловости» до 1846 року та майте принаймні середній рівень життя 20"
+ achievement_amish_paradise.tt: "Ухваліть закон «Заборона промисловости» до 1846 року"
+
+ ACHIEVEMENT_achievement_euphoric: "Евфорічний"
+ ACHIEVEMENT_DESC_achievement_euphoric: "Ухваліть закон «Атеїстична держава» та майте потужну розумоту."
+
+ ACHIEVEMENT_achievement_it_never_ends: "Це ніколи не закінчиться"
+ ACHIEVEMENT_DESC_achievement_it_never_ends: "Закріпіть династію Бонапартів, станьте республікою та викорініть монархізм"
+ bonaparte_cemented_tt: "Закріплено династію Бонапартів"
+ stamped_out_monarchy_tt: "Виконано запис у часописі «Викорінення монархізму»"
+
+ ACHIEVEMENT_achievement_hexagon_no_more: "Більше не шестикутник"
+ ACHIEVEMENT_DESC_achievement_hexagon_no_more: "Виконайте запис у французькому часописі «Природні кордони»"
+ achievement_hexagon_no_more_tt: "Виконано запис у французькому часописі «Природні кордони»"
+
+ ACHIEVEMENT_achievement_lallemagne_cest_rien: "Німеччина - це ніщо"
+ ACHIEVEMENT_DESC_achievement_lallemagne_cest_rien: "За Францію, не дайте об’єднатися Німеччині аж до 1930 року"
+ germany_never_exists.tt: "Німеччина ніколи не об’єднувалася"
 
  ACHIEVEMENT_achievement_vox_populi: "Голос народу"
  ACHIEVEMENT_DESC_achievement_vox_populi: "Ухваліть закон за підтримки закликача"
  achievement_vox_populi_var: "Ухваліть закон за підтримки закликача"
+
  ACHIEVEMENT_achievement_emperor_norton: "Імператор Нортон"
  ACHIEVEMENT_DESC_achievement_emperor_norton: "За Злучені Держави, станьте монархією з Джошуа Нортоном на чолі"
  achievement_emperor_norton.tt: "Джошуа Нортон - монарх"
+
  ACHIEVEMENT_achievement_agitate_elsewhere: "Закликайте деінде"
  ACHIEVEMENT_DESC_achievement_agitate_elsewhere: "Виженіть закликача з принаймні 100 популярністю"
  achievement_agitate_elsewhere.tt: "Виженіть закликача з принаймні 100 популярністю"
+
  ACHIEVEMENT_achievement_shut_the_door_behind_you: "Зачиніть за собою двері"
  ACHIEVEMENT_DESC_achievement_shut_the_door_behind_you: "Запросіть вигнанця як правителя та ухваліть закон про закриті кордони"
  exile_to_ruler.tt: "Дозвольте запрошеному вигнанцю стати правителем вашого народу"
+
  ACHIEVEMENT_achievement_crush_the_commune: "Розгром комуни"
  ACHIEVEMENT_DESC_achievement_crush_the_commune: "За Францію, розгроміть повстання Паризької комуни"
  crush_the_commune_tt: "Ви розгромили повстання Паризької комуни"
+
  ACHIEVEMENT_achievement_military_junta: "Військова хунта"
  ACHIEVEMENT_DESC_achievement_military_junta: "Збройні сили здійснили державний переворот"
  achievement_military_junta.tt: "Збройні сили здійснили державний переворот"
+
  ACHIEVEMENT_achievement_huge_ego_sorry: "Велике Я, вибачте"
  ACHIEVEMENT_DESC_achievement_huge_ego_sorry: "Об'єднайте Німеччину та дозвольте Максу Штірнеру керувати вашою державою"
  achievement_huge_ego_sorry.tt: "Це Макс Штінер"
+
  ACHIEVEMENT_achievement_authoritarian: "Самовладець"
  ACHIEVEMENT_DESC_achievement_authoritarian: "Ухваліть закони про однопартійну державу, воєнізовану поліцію та заборону іншодумства"
+
  ACHIEVEMENT_achievement_breadbasket: "Житниця"
  ACHIEVEMENT_DESC_achievement_breadbasket: "Ухваліть закон про присадибне господарство та будьте провідним виробником зерна та харчів"
- ACHIEVEMENT_achievement_meiji_restoration: "Meiji Restoration"
+
+ ACHIEVEMENT_achievement_meiji_restoration: "Реставрація Мейджі"
  ACHIEVEMENT_DESC_achievement_meiji_restoration: "За Японію, виконайте запис у часописі «Почесна віднова» до 1912 року"

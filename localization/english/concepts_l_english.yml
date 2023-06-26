@@ -319,7 +319,10 @@
  concept_mobilize_general_mobilized: "Зібрані"
  concept_mobilize_general_mobilized_adj: "Зібран"
  concept_mobilize_general_mobilization: "Збір"
- concept_mobilize_general_desc: "[Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized_adj$ий')] [Concept('concept_general', '$concept_general$')|l] негайно почне процес збору усіх [Concept('concept_battalion', '$concept_battalions_gen$')|l], які призначені до них. Після збору генерал не може бути бути знятий з військової служби вручну, проте піде самостійно, якщо [concept_country|l] більше не перебуватиме у стані [Concept('concept_war', '$concept_war_gen$')|l]."
+ concept_mobilize_general_demobilized: "Знятий зі служби"
+ concept_mobilize_general_demobilization: "Зняття зі служби"
+ concept_mobilize_general_demobilized_adj: "Знят"
+ concept_mobilize_general_desc: "[Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized_adj$ий')] [Concept('concept_general', '$concept_general$')|l] негайно почне процес збору усіх [Concept('concept_battalion', '$concept_battalions_gen$')|l], які призначені до них. $concept_mobilize_general_mobilized_adj$ий генерал самостійно буде знятий зі служби, коли [concept_country|l] більше не перебуватиме у стані [Concept('concept_war', '$concept_war_gen$')|l]. Дореченцеве зняття зі служби під час активних бойових дій можливе, але лише після тривалого перебування в польових умовах і за значні витрати."
 
  concept_mobilize_battalion: "Збір куренів"
  concept_mobilize_battalion_demobilized: "Знятий зі служби"
@@ -696,7 +699,7 @@
  concept_interest_group_traits: "Риси зацікавленої групи"
  concept_interest_group_trait_short: "Риса"
  concept_interest_group_traits_short: "Риси"
- concept_interest_group_trait_desc:1 "All [Concept('concept_interest_group','$concept_interest_groups$')] have three $concept_interest_group_traits_short$ that take effect on different levels of [concept_approval] and have a considerable impact on the whole [concept_country].\nA negative $concept_interest_group_trait_short$ will activate if $concept_approval$ drops below $ig_approval_unhappy$ (#v [GetDefine('NPolitics','APPROVAL_THRESHOLD_UNHAPPY')|0=+]#!)\nA positive $concept_interest_group_trait_short$ will activate if $concept_approval$ exceeds $ig_approval_happy$ (#v [GetDefine('NPolitics','APPROVAL_THRESHOLD_HAPPY')|0=+]#!)\nAn additional positive $concept_interest_group_trait_short$ will activate if $concept_approval$ exceeds $ig_approval_loyal$ (#v [GetDefine('NPolitics','APPROVAL_THRESHOLD_LOYAL')|0=+]#!).\n\nThe $concept_interest_group_traits_short$ of [concept_marginalized] $concept_interest_groups$ never activate, while the $concept_interest_group_traits_short$ of [concept_powerful] $concept_interest_groups$ have increased effect."
+ concept_interest_group_trait_desc:1 "All [Concept('concept_interest_group','$concept_interest_groups$')] have three $concept_interest_group_traits_short$ that take effect on different levels of [concept_approval] and have a considerable impact on the whole [concept_country].\nA negative $concept_interest_group_trait_short$ will activate if $concept_approval$ drops below $ig_approval_unhappy$ (#v [GetDefine('NPolitics','APPROVAL_THRESHOLD_UNHAPPY')|0=+]#!)\nA positive $concept_interest_group_trait_short$ will activate if $concept_approval$ exceeds $ig_approval_happy$ (#v [GetDefine('NPolitics','APPROVAL_THRESHOLD_HAPPY')|0=+]#!)\nAn additional positive $concept_interest_group_trait_short$ will activate if $concept_approval$ exceeds $ig_approval_loyal$ (#v [GetDefine('NPolitics','APPROVAL_THRESHOLD_LOYAL')|0=+]#!).\nOnce active, the $concept_interest_group_trait_short$ will not deactivate until $concept_approval$ is at least [GetDefine('NPolitics','IG_TRAIT_STICKINESS')|v] points away from the threshold.\n\nThe $concept_interest_group_traits_short$ of [concept_marginalized] $concept_interest_groups$ never activate, while the $concept_interest_group_traits_short$ of [concept_powerful] $concept_interest_groups$ have increased effect."
  
  concept_decay: "Згасання"
  concept_decaying: "Згасання"
@@ -2569,6 +2572,7 @@
  concept_agitate: "Закликати"
  concept_agitator_possessive:0 "Agitator\\'s"
  concept_agitator_desc: "Це [concept_character_role|l] для тих [Concept('concept_character','$concept_characters_gen$')|l], які підтримують незалежний [Concept('concept_political_movement','$concept_political_movement_acc$')|l] їхньої [Concept('concept_interest_group','$concept_interest_group_ins$')|l]. [concept_political_movement], який вони підтримують, визначено їхньою [Concept('concept_ideology','$concept_ideology_ins$')|l] та [Concept('concept_interest_group','$concept_interest_group_ins$')|l]. Їхній вплив на [Concept('concept_political_movement','$concept_political_movement_acc$')|l] визначається [Concept('concept_popularity','$concept_popularity_ins$')|l] закликача та [Concept('concept_character_trait', '$concept_character_traits_ins$')|l]."
+ AGITATORS_TITLE: "[Concept('concept_agitator','$concept_agitators$')]"
 
  concept_exile: "Вигнанець"
  concept_exiles: "Вигнанеці"

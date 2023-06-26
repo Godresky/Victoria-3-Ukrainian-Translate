@@ -61,5 +61,18 @@
  setting_no_monument_effects: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_no_monument_effects_desc Вимкнені#!#!"
  setting_no_monument_effects_desc: "[Concept('concept_monument', '$concept_monuments$')] мають виключно декоративний характер. Винагорода за їхнє створення суто візуальна."
 
+ rule_pop_consolidation: "Гуртування громад (Продуктивність)"
+ setting_no_consolidation: "Жодного"
+ setting_no_consolidation_desc: "[Concept('concept_pop', '$concept_pops$')] ніколи не гуртуватимуться, крім з використанням постанов [Concept('concept_assimilation', '$concept_assimilation_gen$')|l] або [Concept('concept_conversion', '$concept_conversion_gen$')|l], незалежно від розміру.\n@warning! Це може сильно зашкодити продуктивності в середині та наприкінці гри"
+ 
+ setting_minor_consolidation: "Мале"
+ setting_minor_consolidation_desc: "[Concept('concept_pop', '$concept_pops$')] гуртуватимуться лише тоді, коли вони дуже малі та неефективні.\nМоже погіршити продуктивність в середині та наприкінці гри."
+ 
+ setting_moderate_consolidation: "Помірне"
+ setting_moderate_consolidation_desc: "[Concept('concept_pop', '$concept_pops$')] гуртуватимуться, якщо вони досить малі та мають обмежений вплив на ігровий процес."
+ 
+ setting_aggressive_consolidation: "Наполегливе"
+ setting_aggressive_consolidation_desc: "За належних умов навіть [Concept('concept_pop', '$concept_pops$')|l] середнього розміру гуртуватимуться.\n@warning! Може покращити продуктивність, але вплине на балянс гри"
+ 
  DELETE_SELECTED_PRESET_BUTTON_TOOLTIP: "Видалити цей преднабір"
  SAVE_PRESET_BUTTON_TOOLTIP: "Зберегти цей преднабір"

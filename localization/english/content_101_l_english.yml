@@ -547,10 +547,6 @@
 
  MULTIPLAYER_GUI_CLICK_TO_SELECT: "Натисніть на державу, щоб вибрати її."
 
- notification_haiti_stops_paying_france_name: "Гаїті припиняє виплати"
- notification_haiti_stops_paying_france_desc: "Гаїті відмовилася від подальших виплат за кредитом Франції."
- notification_haiti_stops_paying_france_tooltip: "#header $notification_haiti_stops_paying_france_name$#!\n$TOOLTIP_DELIMITER$\n$notification_haiti_stops_paying_france_desc$"
-
  angry_duels_banned:0 "Disapproves of duels being banned."
  happy_duels_banned:0 "Approves of duels being banned."
 

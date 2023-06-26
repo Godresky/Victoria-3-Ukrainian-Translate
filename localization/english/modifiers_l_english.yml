@@ -939,6 +939,11 @@
  modifier_country_legitimacy_govt_total_clout_add_desc:1 "The amount of [concept_legitimacy] the [concept_government] gains or loses based on the total [concept_clout] of [Concept('concept_interest_group', '$concept_interest_groups$')] in the government."
  modifier_country_legitimacy_govt_total_votes_add: "[concept_legitimacy] на основі [Concept('concept_votes','$concept_votes_gen$')|l]"
  modifier_country_legitimacy_govt_total_votes_add_desc: "Рівень [Concept('concept_legitimacy','$concept_legitimacy_gen$')|l], який отримає або втрачає [concept_government|l], виходячи зі загального відсотку [Concept('concept_votes','$concept_votes_gen$')|l] [Concept('concept_party','$concept_parties_gen$')|l] в уряді."
+
+ modifier_country_radicals_from_legitimacy_mult:0 "[Concept('concept_radical','$concept_radicals$')] from low [concept_legitimacy]"
+ modifier_country_radicals_from_legitimacy_mult_desc:0 "A change to the number of [Concept('concept_radical','$concept_radicals$')] a [concept_country] gains from having low [concept_legitimacy]"
+ modifier_country_loyalists_from_legitimacy_mult:0 "[Concept('concept_loyalist','$concept_loyalists$')] from high [concept_legitimacy]"
+ modifier_country_loyalists_from_legitimacy_mult_desc:0 "A change to the number of [Concept('concept_loyalist','$concept_loyalists$')] a [concept_country] gains from having high [concept_legitimacy]"
   
  modifier_stockpile_army_requirement_small_arms_add:0 "Army @small_arms! Consumption"
  modifier_stockpile_army_requirement_small_arms_add_desc:0 "Increases how much @small_arms! Small Arms the army consumes"
@@ -1110,6 +1115,11 @@
  modifier_building_group_bg_oil_extraction_throughput_mult_desc: "Наддаток або карна, що впливає на виробництво та використання товарів у ропових витягах"
  modifier_building_group_bg_rubber_throughput_mult:0 "$bg_rubber$ [concept_throughput]"
  modifier_building_group_bg_rubber_throughput_mult_desc:0 "A bonus or penalty to both input and output of $bg_rubber$"
+
+ modifier_building_group_bg_light_industry_throughput_mult:0 "$bg_light_industry$ [concept_throughput]"
+ modifier_building_group_bg_light_industry_throughput_mult_desc:0 "A bonus or penalty to both input and output of $bg_light_industry$"
+ modifier_building_group_bg_heavy_industry_throughput_mult:0 "$bg_heavy_industry$ [concept_throughput]"
+ modifier_building_group_bg_heavy_industry_throughput_mult_desc:0 "A bonus or penalty to both input and output of $bg_heavy_industry$"
   
  modifier_building_group_bg_service_throughput_mult: "[concept_throughput] царини послуг"
  modifier_building_group_bg_service_throughput_mult_desc: "Наддаток або карна, що впливає на виробництво та використання товарів у царині послуг"
