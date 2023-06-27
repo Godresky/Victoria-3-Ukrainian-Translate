@@ -858,8 +858,8 @@
  concept_influential_powerful_common:0 "The amount of [concept_clout] an [concept_interest_group] has decides whether it is [concept_powerful], $concept_influential$, or [concept_marginalized]."
  concept_influential_desc:1 "$concept_influential_powerful_common$ An $concept_influential$ $concept_interest_group$'s [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] will have a lesser effect than if they were $concept_powerful$.\n\n$concept_interest_groups$ are considered $concept_influential$ while their $concept_clout$ is below [GetDefine('NPolitics','POWERFUL_IG_THRESHOLD')|%0v]."
 
- concept_marginalized: "Маргіналізована"
- concept_marginalized_adj: "Маргіналізован"
+ concept_marginalized: "Марґіналізована"
+ concept_marginalized_adj: "Марґіналізован"
  concept_marginalized_desc:2 "$concept_marginalized$ [Concept('concept_interest_group', '$concept_interest_groups$')] have too little [concept_clout] to be politically noteworthy. They cannot be included in the [concept_government], nor do they join [Concept('concept_party','$concept_parties$')]. Their [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] are permanently deactivated for as long as they remain $concept_marginalized$.\n\nAlready $concept_marginalized$ $concept_interest_groups$ remain $concept_marginalized$ for as long as their $concept_clout$ is below [GetDefine('NPolitics','MARGINAL_IG_THRESHOLD')|%0v]. Non-$concept_marginalized$ $concept_interest_groups$ will become $concept_marginalized$ once their $concept_clout$ drops below [GetDefine('NPolitics','MARGINAL_IG_CUTOFF')|%0v], unless they are already [concept_in_government] in which case they do not become $concept_marginalized$ until removed."
  
  concept_politically_unaligned_aligned: "Політично позаблокові/залучені"
@@ -1305,6 +1305,7 @@
 
  concept_base_price: "Базисна ціна"
  concept_base_price_gen: "Базисної ціни"
+ concept_base_price_acc: "Базисну ціну"
  concept_base_price_ins: "Базисною ціною"
  concept_base_price_desc: "Ціна [Concept('concept_good','$concept_good_gen$')|l], коли його [Concept('concept_sell_orders','$concept_sell_orders_supply$')|l] точно дорівнює [Concept('concept_buy_orders','$concept_buy_orders_demand_gen$')|l]."
 

@@ -1932,7 +1932,7 @@
  STATE_REGION_COLONIZER_ITEM: "$TAB$[STATE.GetOwner.GetName] ([STATE.GetName])\n"
  STATE_COLONIZER_WIDGET_ITEM: "[STATE.GetCountry.GetFlagTextIcon] "
 
-STATE_INFRASTRUCTURE_USAGE_TOOLTIP:3 "#header [concept_infrastructure_usage]#!\n[SelectLocalization(EqualTo_CFixedPoint(State.GetInfrastructureUsage, '(CFixedPoint)0'), 'NO_STATE_INFRASTRUCTURE_USAGE_DESC', 'STATE_INFRASTRUCTURE_USAGE')]"
+ STATE_INFRASTRUCTURE_USAGE_TOOLTIP:3 "#header [concept_infrastructure_usage]#!\n[SelectLocalization(EqualTo_CFixedPoint(State.GetInfrastructureUsage, '(CFixedPoint)0'), 'NO_STATE_INFRASTRUCTURE_USAGE_DESC', 'STATE_INFRASTRUCTURE_USAGE')]"
  STATE_INFRASTRUCTURE_USAGE:0 "[State.GetName] uses #v [Multiply_CFixedPoint(State.GetInfrastructureUsage,'(CFixedPoint)-1')|0+]#! [concept_infrastructure]\n$TOOLTIP_DELIMITER$\n[State.GetInfrastructureUsageDesc]"
  STATE_INFRASTRUCTURE_TOOLTIP:3 "#header [concept_infrastructure]#!\n[SelectLocalization(LessThanOrEqualTo_CFixedPoint(State.GetInfrastructure, '(CFixedPoint)0'), 'NO_STATE_INFRASTRUCTURE_DESC', 'STATE_INFRASTRUCTURE_TOOLTIP_HAS_INFRASTRUCTURE')]"
  STATE_INFRASTRUCTURE_TOOLTIP_HAS_INFRASTRUCTURE:0 "[State.GetName] has [State.GetInfrastructure|+0] [concept_infrastructure]\n$TOOLTIP_DELIMITER$\n[State.GetInfrastructureDesc]"
@@ -3882,7 +3882,7 @@ STATE_INFRASTRUCTURE_USAGE_TOOLTIP:3 "#header [concept_infrastructure_usage]#!\n
  IN_GARRISON: "У [Concept('concept_garrison', '$concept_garrison_loc$')|l]"
  WITH_GENERALS: "З [Concept('concept_general', '$concept_generals_ins$')|l]"
 
- EVENT_DLC_TOOLTIP:0 "This event is part of the #v [Event.GetDLCName]#! DLC"
+ EVENT_DLC_TOOLTIP: "Ця подія є частиною доповнення #v «[Event.GetDLCName]»#!"
 
  COMMANDER_PANEL_ATTRITION_FORMAT: "[SelectLocalization(GreaterThan_CFixedPoint(Character.GetAttritionRaw, GetDefine( 'NMilitary', 'NORMAL_ATTRITION' )), '@high_attrition!', '@attrition!')] [Character.GetAttritionFormattedShort]"
  MILITARY_PANEL_ATTRITION_FORMAT: "[SelectLocalization(GreaterThan_CFixedPoint(Character.GetAttritionRaw, GetDefine( 'NMilitary', 'NORMAL_ATTRITION' )), '@high_attrition!', '@attrition!')] [Character.GetAttritionFormatted]"
@@ -4178,7 +4178,7 @@ STATE_INFRASTRUCTURE_USAGE_TOOLTIP:3 "#header [concept_infrastructure_usage]#!\n
  RELATION_TO_IG:0 "Total relation to #variable $IG_NAME$#!: $RELATION_VALUE|+=$\n$TOOLTIP_DELIMITER$\n$RELATION_BREAKDOWN$"
  IN_GOVERNMENT_DESC: "#HEADER В уряді#!\n$TOOLTIP_DELIMITER$\n[concept_in_government_desc]"
  IN_OPPOSITION_DESC: "#HEADER В опозиції#!\n$TOOLTIP_DELIMITER$\n$[concept_in_opposition_desc]$"
- MARGINAL_DESC: "#HEADER Маргіналізована#!\n$TOOLTIP_DELIMITER$\n[concept_marginalized_desc]"
+ MARGINAL_DESC: "#HEADER Марґіналізована#!\n$TOOLTIP_DELIMITER$\n[concept_marginalized_desc]"
  IN_REVOLUTION_DESC: "#HEADER Бере участь у революції#!\n$TOOLTIP_DELIMITER$\n$IN_REVOLUTION_CONCEPT$"
 
  SECESSION_ALERT_ENTRY_CHANCE:0 "[CULTURE.GetName] [CULTURE.GetChanceForSecessionMovement( GetPlayer.Self )|%1v]"
@@ -4750,7 +4750,7 @@ STATE_INFRASTRUCTURE_USAGE_TOOLTIP:3 "#header [concept_infrastructure_usage]#!\n
 
  STATE_COLONY_ACTIVE_INTEREST: "Наступне зростання осади очікується #variable [State.GetColonyGrowthDateDesc]#!\n\nПоступ збільшується на #variable [State.GetDailyColonyProgress|%]#! через: \n[State.GetColonyGrowthModifierDesc]"
  STATE_COLONY_TOOLTIP_INACTIVE_INTEREST: "\n#R Неможливо отримати додатковий поступ через відсутність [Concept('concept_active_interest', '$concept_active_interest_gen$')|l] у [Concept('concept_strategic_region', '$concept_strategic_region_loc$')|l] [State.GetStateRegion.GetStrategicRegion.GetName]#!"
- STATE_COLONY_TOOLTIP:4 "#header Establishing [State.GetOwner.GetAdjective] Colony in [State.GetName]#!\n[GetPlayer.GetTensionTooltip( State.GetNextColonyProvince.GetState.GetOwner )]#!\n$TOOLTIP_DELIMITER$\nПоступ до отримання додаткової провінції: #variable [State.GetColonyProgress|%]#!\n[SelectLocalization( State.IsColonyProgressBlockedByInactiveInterest, 'STATE_COLONY_TOOLTIP_INACTIVE_INTEREST', 'STATE_COLONY_ACTIVE_INTEREST' )]"
+ STATE_COLONY_TOOLTIP: "#header Встановлення #yellow [State.GetOwner.GetAdjective|l]ої#! осади в землі [State.GetName]#!\n[GetPlayer.GetTensionTooltip( State.GetNextColonyProvince.GetState.GetOwner )]\n$TOOLTIP_DELIMITER$\nПоступ до отримання додаткової провінції: #variable [State.GetColonyProgress|%]#!\n[SelectLocalization( State.IsColonyProgressBlockedByInactiveInterest, 'STATE_COLONY_TOOLTIP_INACTIVE_INTEREST', 'STATE_COLONY_ACTIVE_INTEREST' )]"
 
  MARKET_CAPITAL: "#title [concept_market_capital]#!\n[Market.GetMarketCapital.GetName]"
  MOVE_CAPITAL_FORBIDDEN_WHILE_IN_ACTIVE_DIPLO_PLAY:0 "#N Cannot move the capital while involved in a [concept_diplomatic_play]#!"
@@ -5520,9 +5520,9 @@ LAW_ENACTMENT_PROGRESS:6 "#header [Concept('concept_enactment_of_laws', '$concep
  DISABLES_INSTITUTION: "Зробить недоступною [Concept('concept_institution','$concept_institution_acc$')|l] [INSTITUTION.GetName|l]"
  PROVIDES_INSTITUTION_TYPE: "Зробить доступною [Concept('concept_institution','$concept_institution_acc$')|l] [INSTITUTION_TYPE.GetName|l]\nДодаткові витрати $sBUREAUCRACY_gen$: $COST|=v1$"
  PROVIDES_INSTITUTION: "Зробить доступною [Concept('concept_institution','$concept_institution_acc$')|l] [INSTITUTION.GetName|l]"
- INSTITUTION_TYPE_NEW_EFFECT:1 "[LawType.GetName] would provide [INSTITUTION_TYPE.GetName] (Level #v 1#!) with:\n$EFFECTS$"
- INSTITUTION_NEW_EFFECT:1 "[LawType.GetName] would provide [INSTITUTION.GetName] (Level [Institution.GetInvestmentLevel|v]) with:\n$EFFECTS$"
- INSTITUTION_SAME_EFFECT:1 "[LawType.GetName] is providing [Institution.GetName] (Level [Institution.GetInvestmentLevel|v]) with:\n$EFFECTS$"
+ INSTITUTION_TYPE_NEW_EFFECT: "[LawType.GetName] надасть установі [INSTITUTION_TYPE.GetName|l] (Рівень #v 1#!):\n$EFFECTS$"
+ INSTITUTION_NEW_EFFECT: "[LawType.GetName] надасть установі [INSTITUTION.GetName|l] (Рівень [Institution.GetInvestmentLevel|v]):\n$EFFECTS$"
+ INSTITUTION_SAME_EFFECT: "[LawType.GetName] надає установі [Institution.GetName|l] (Рівень [Institution.GetInvestmentLevel|v]):\n$EFFECTS$"
  COUNTRY_CANNOT_AFFORD_NEW_INSTITUTION_TYPE:1 "@red_cross! «[Law.GetCountry.GetName] lacks the #v @bur![Multiply_CFixedPoint(GetPlayer.GetInstitutionInvestmentBureaucracyFactor,'(CFixedPoint)-1')]#! [concept_bureaucracy] required to fund a new [INSTITUTION_TYPE.GetName] [concept_institution]"
 
  INVESTMENT_CURRENT_LEVEL: "Це поточний [Concept('concept_investment_level', '$concept_investment_level$')|l]."
@@ -5544,11 +5544,11 @@ LAW_ENACTMENT_PROGRESS:6 "#header [Concept('concept_enactment_of_laws', '$concep
  LAW_EFFECT_FOR_CURRENT_INVESTMENT_LEVEL:0 "#bold You are currently getting the following for [concept_investment_level] #variable $LEVEL$#!:#!"
  LAW_EFFECT_FOR_TARGET_INVESTMENT_LEVEL:0 "#bold You would get the following for [concept_investment_level] #variable $LEVEL$#!:#!"
  LAW_ALLOWED_BUILDING_GROUPS_FROM_INVESTMENT_POOL:0 "Funds in the [concept_investment_pool] can be used to build "
- CULTURE_ACCEPT_RULE_CHANGE:1 "[Concept('concept_culture','$ONE_OR_MANY_CULTURES$')] will be [Concept('concept_accepted_culture','$concept_accepted_culture_short$')] based on:\n"
- RELIGION_ACCEPT_RULE_CHANGE:1 "[Concept('concept_religion','$ONE_OR_MANY_RELIGIONS$')] will be [Concept('concept_accepted_religion','$concept_accepted_religion_short$')] based on:\n"
+ CULTURE_ACCEPT_RULE_CHANGE: "[Concept('concept_culture','$ONE_OR_MANY_CULTURES$')] будуть [Concept('concept_accepted_culture','$concept_accepted_culture_short_adj$і')|l] на основі:\n"
+ RELIGION_ACCEPT_RULE_CHANGE: "[Concept('concept_religion','$ONE_OR_MANY_RELIGIONS$')] будуть [Concept('concept_accepted_religion','$concept_accepted_religion_short_adj$і')|l] на основі:\n"
 
- ONE_OR_MANY_CULTURES: "Culture(s)"
- ONE_OR_MANY_RELIGIONS: "Religion(s)"
+ ONE_OR_MANY_CULTURES: "Культура(и)"
+ ONE_OR_MANY_RELIGIONS: "Релігія(ї)"
 
  MARKET_TITLE: "#title Ринок#!"
  UNITS_PRODUCED_TITLE: "#title Вироблено одиниць#!"
@@ -5566,7 +5566,7 @@ LAW_ENACTMENT_PROGRESS:6 "#header [Concept('concept_enactment_of_laws', '$concep
  
  CHARACTER_PANEL_SUBTITLE:2 "[SelectLocalization( Character.IsInExilePool, 'CHARACTER_PANEL_SUBTITLE_EXILE', 'CHARACTER_PANEL_SUBTITLE_NOT_EXILE' )]"
  CHARACTER_PANEL_SUBTITLE_NOT_EXILE: "[SelectLocalization(Character.IsRuler, Concept('concept_ruler', Character.GetPrimaryRoleTitle), Character.GetPrimaryRoleName)] [SelectLocalization(Character.IsRuler, 'держави','у державі')] [Character.GetCountry.GetName]"
- CHARACTER_PANEL_SUBTITLE_EXILE:0 "[Concept('concept_exile', '$concept_exiled$')] [Character.GetPrimaryRoleName]"
+ CHARACTER_PANEL_SUBTITLE_EXILE: "[Concept('concept_exile', '$concept_exiled$')] [Character.GetPrimaryRoleName|l]"
 
  INSUFFICIENT_AUT:0 "You need #variable #N $VAL$#!#! $AUTHORITY$ but have only #variable $CURRENT$#!"
  INSUFFICIENT_BUR:0 "You need #variable #N $VAL$#!#! $BUREAUCRACY$ but have only #variable $CURRENT$#!"
@@ -5655,7 +5655,7 @@ LAW_ENACTMENT_PROGRESS:6 "#header [Concept('concept_enactment_of_laws', '$concep
  outliner_title_admirals: "#outliner_header Адмірали#!  (#tooltip:[GetPlayer.GetTooltipTag],PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS_TOOLTIP #variable @navy_SP![GetPlayer.GetWarships|0]#!#!)"
  outliner_title_agitators: "#outliner_header Закликачі#!"
  outliner_title_interest_groups: "#outliner_header Зацікавлені групи#!"
- outliner_title_marginalized_interest_groups: "#outliner_header Маргіналізовані групи#!"
+ outliner_title_marginalized_interest_groups: "#outliner_header Марґіналізовані групи#!"
  outliner_title_markets: "#outliner_header Ринки#!"
  outliner_title_isolated_states: "#outliner_header Ізольовані реґіони#!"
  outliner_title_colonies: "#outliner_header Осади#!"
@@ -6272,7 +6272,7 @@ LAW_ENACTMENT_PROGRESS:6 "#header [Concept('concept_enactment_of_laws', '$concep
  RECRUIT_COMMANDERS_MAP_LIST_PANEL_CURRENT_FLOTILLAS_TOOLTIP: "#header Підрозділи#!\n$TOOLTIP_DELIMITER$\nКількість флотилій без [Concept( 'concept_admiral', '$concept_admiral_gen$')|l] у [Concept( 'concept_hq', '$concept_hq_loc$')|l]."
  RECRUIT_COMMANDERS_CHARACTERS_POPUP: "Буде командувати $DESC$"
 
- COLONY_MAP_MARKER_DAYS_LEFT: "[SelectLocalization( GreaterThan_int32(GetPlayer.GetTensionWith( State.GetNextColonyProvince.GetState.GetOwner), '(int32)50'), '@warning! ', '')]#! дн."
+ COLONY_MAP_MARKER_DAYS_LEFT: "[SelectLocalization( GreaterThan_int32(GetPlayer.GetTensionWith( State.GetNextColonyProvince.GetState.GetOwner), '(int32)50'), '@warning! ', '')]#bold [State.GetColonyProgressAsDays]#! дн."
  BUILDING_MAP_MARKER_WEEKS_LEFT: "#bold [Building.GetConstructionRemainingWeeksDesc]#!"
 
  MARKET_ACCESS_WITH_WARNING: "[SelectLocalization( LessThan_CFixedPoint(State.GetMarketAccess, '(CFixedPoint)1'), '@warning!', '')] #v [State.GetMarketAccess|%0]#!"

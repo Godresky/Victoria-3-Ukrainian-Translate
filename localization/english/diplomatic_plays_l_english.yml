@@ -70,9 +70,9 @@
  DIPLO_PLAY_SWAY_OFFER_OBLIGATION_DESC:1 "Try to convince [COUNTRY.GetName] to join your side by offering them an [concept_obligation].[ConcatIfNeitherEmpty( '\n$TOOLTIP_DELIMITER$\n', '$ERRORS$' )]"
  DIPLO_PLAY_SWAY_OFFER_WAR_GOAL_DESC:0 "[WAR_GOAL.GetSwayDesc][ConcatIfNeitherEmpty( '\n$TOOLTIP_DELIMITER$\n', '$ERRORS$' )]"
 
- DIPLO_PLAY_OBLIGATION_TO_EXPIRATION:0 "#header Owes [concept_obligation] to $COUNTRY_NAME$#!\nLasts until #v $EXPIRATION_DATE$#! ($TIME_LEFT_FORMATTED$ left)" 
- DIPLO_PLAY_OBLIGATION_FROM_EXPIRATION:0 "#header Owes [concept_obligation] from $COUNTRY_NAME$#!\nLasts until #v $EXPIRATION_DATE$#! ($TIME_LEFT_FORMATTED$ left)" 
- DIPLO_PLAY_TRUCE_EXPIRATION:0 "#header Active Truce with $COUNTRY_NAME$#!\nLasts until #v $EXPIRATION_DATE$#! ($TIME_LEFT_FORMATTED$ left)"
+ DIPLO_PLAY_OBLIGATION_TO_EXPIRATION: "#header Має [Concept('concept_obligation', '$concept_obligation_acc$')|l] перед державою $COUNTRY_NAME$#!\nТриватиме до #v $EXPIRATION_DATE$#! ($TIME_LEFT_FORMATTED$ залишилося)" 
+ DIPLO_PLAY_OBLIGATION_FROM_EXPIRATION: "#header Має [Concept('concept_obligation', '$concept_obligation_acc$')|l] від держави $COUNTRY_NAME$#!\nТриватиме до #v $EXPIRATION_DATE$#! ($TIME_LEFT_FORMATTED$ залишилося)" 
+ DIPLO_PLAY_TRUCE_EXPIRATION: "#header Має активне перемир’я з державою $COUNTRY_NAME$#!\nТриватиме до #v $EXPIRATION_DATE$#! ($TIME_LEFT_FORMATTED$ залишилося)"
 
  texan_war_of_independence: "Техаська війна за незалежність"
   

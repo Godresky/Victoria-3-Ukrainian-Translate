@@ -26,7 +26,7 @@ They helped with the translation: [url=https://t.me/HeartsofUkraine4]пан Дм
 
 Useful:
 [list]
-[*]Supported game version: [b]1.3.2[/b]
+[*]Supported game version: [b]1.3.5[/b]
 [*][url=https://github.com/Godresky/Victoria-3-Ukrainian-Translate]GitHub link[/url]
 [*][url=https://t.me/godresky_vika3]Tg channel about Victoria 3[/url]
 [*][url=https://send.monobank.ua/jar/7H5RNWs4kw]Say "thank you" to the developers[/url]

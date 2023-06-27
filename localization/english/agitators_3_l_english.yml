@@ -1,6 +1,6 @@
 ﻿l_english:
  # Natural Borders of France
- je_french_natural_borders: "The Natural Borders of France"
+ je_french_natural_borders: "Природні кордони Франції"
  je_french_natural_borders_reason: "Expansionistic tendencies have once again arisen in France. The citizens, or at least some of the loudest citizens, demand that our borders extend to the banks of the Rhine and the slopes of the Alps."
  own_all_french_homelands: "Own all French homeland states"
  natural_borders.1.t: "The Limit of the Nation"
@@ -9,7 +9,7 @@
  natural_borders.1.a: "Our borders must reach the Rhine."
  natural_borders.1.b: "This is an absurd notion."
  dismiss_natural_borders_tt: "The 'Natural Borders of France' Journal Entry will be dismissed"
- natural_borders.2.t: "The Natural Borders of France"
+ natural_borders.2.t: "Природні кордони Франції"
  natural_borders.2.d: "With [ROOT.GetCountry.GetName] now extending to the far corners of the Rhine and Alps, we have achieved what champions of this project have termed our 'natural borders'. We must now administer our newly-acquired territories."
  natural_borders.2.f: "The Rhenish official greeted the newcomer. Plenty of folks were coming from further west nowadays. He pulled out his form and began writing.\n"Yes, herr—err, monsieur. Your name, please?"\n"Jean Robert."\n"Your age?"\n"Thirty-one."\n"Occupation?"\n"Ah non, mon ami! Just visiting.""
  natural_borders.2.a: "They must learn to be French."
