@@ -2575,8 +2575,11 @@
  concept_agitator_desc: "Це [concept_character_role|l] для тих [Concept('concept_character','$concept_characters_gen$')|l], які підтримують незалежний [Concept('concept_political_movement','$concept_political_movement_acc$')|l] їхньої [Concept('concept_interest_group','$concept_interest_group_ins$')|l]. [concept_political_movement], який вони підтримують, визначено їхньою [Concept('concept_ideology','$concept_ideology_ins$')|l] та [Concept('concept_interest_group','$concept_interest_group_ins$')|l]. Їхній вплив на [Concept('concept_political_movement','$concept_political_movement_acc$')|l] визначається [Concept('concept_popularity','$concept_popularity_ins$')|l] закликача та [Concept('concept_character_trait', '$concept_character_traits_ins$')|l]."
  AGITATORS_TITLE: "[Concept('concept_agitator','$concept_agitators$')]"
 
- concept_exile: "Вигнанець"
- concept_exiles: "Вигнанеці"
+ concept_exile: "Вигнання"
+ concept_exile_acc: "Вигнання"
+ concept_exiles: "Вигнання"
+ concept_exile_person: "Вигнанець"
+ concept_exile_persons: "Вигнанці"
  concept_exiled: "Вигнаний"
  concept_exiled_adj: "Вигнан"
  concept_in_exile: "У вигнанні"

@@ -37,9 +37,9 @@
  invite_exile_state_religion_tt: "Якщо у нас чинний [concept_law|l] «Державна релігія», то персонаж має сповідувати нашу [Concept('concept_state_religion', '$concept_state_religion_acc$')|l]"
  adopt_random_antigovernment_ideology_tt:0 "This [concept_character] will adopt an [concept_ideology] opposed to our government."
 
- notification_exile_notification_name:0 "[SCOPE.sCharacter('exile_scope').GetFullName] exiled from [SCOPE.sCountry('exiling_country_scope').GetName]."
- notification_exile_notification_desc:0 "[SCOPE.sCharacter('exile_scope').GetFullName] has been sent into [concept_exile] by [SCOPE.sCountry('exiling_country_scope').GetName]."
- notification_exile_notification_tooltip:0 "#header $notification_exile_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_exile_notification_desc$"
+ notification_exile_notification_name: "[SCOPE.sCharacter('exile_scope').GetFullName] бу[Select_CString(character.IsFemale,'$CustomLoc_UA_vona_la$','$CustomLoc_UA_vin_v$')|l] вигнан[Select_CString(character.IsFemale,'$CustomLoc_UA_vona_a$','$CustomLoc_UA_vin_yY$')|l] з [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sCountry('exiling_country_scope').GetName]."
+ notification_exile_notification_desc: "[SCOPE.sCharacter('exile_scope').GetFullName] бу[Select_CString(character.IsFemale,'$CustomLoc_UA_vona_la$','$CustomLoc_UA_vin_v$')|l] відправлен[Select_CString(character.IsFemale,'$CustomLoc_UA_vona_a$','$CustomLoc_UA_vin_yY$')|l] у [Concept('concept_exile', '$concept_exile_acc$')|l] державою [SCOPE.sCountry('exiling_country_scope').GetName]."
+ notification_exile_notification_tooltip: "#header $notification_exile_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_exile_notification_desc$"
 
 # Agitator Interactions
  grant_leadership_to_agitator: "Зробити провідником"

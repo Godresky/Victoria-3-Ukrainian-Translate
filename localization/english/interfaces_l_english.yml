@@ -4254,7 +4254,7 @@
  FORM_GOV_NO_CHANGE: "Поточний [concept_government|l] ніяк не змінився."
  FORM_GOV_EMPTY: "В уряді повинна бути принаймні одна [concept_interest_group|l]."
  FORM_GOV_RECENT_REGIME_CHANGE:0 "We recently had a forced regime change."
- FORM_GOV_IG_WANTS_TO_JOIN_PARTY:0 "$IG_NAME$ wants to join $PARTY_NAME$"
+ FORM_GOV_IG_WANTS_TO_JOIN_PARTY: "$IG_NAME$ хоче приєднатися до [Concept('concept_party', '$concept_party_gen$')|l] «$PARTY_NAME$»"
  FORM_GOV_CIVIL_WAR_COUNTRY:0 "Countries born of a [concept_civil_war] cannot reform their [concept_government] while the [concept_civil_war] is ongoing"
 
  RULER_JOIN_IG_SHORT:0 "Join"
