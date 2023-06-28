@@ -257,8 +257,8 @@
  TRIGGER_IS_COUNTRY_TYPE_FIRST:0 "[COUNTRY.GetNameNoFlag] is #variable $COUNTRY_TYPE$#!"
  TRIGGER_IS_COUNTRY_TYPE_FIRST_NOT:0 "[COUNTRY.GetNameNoFlag] is #bold not #!#variable $COUNTRY_TYPE$#!"
  
- TRIGGER_IS_SUBJECT_TYPE:0 "Is a $SUBJECT_TYPE|v$-type [concept_subject]"
- TRIGGER_IS_SUBJECT_TYPE_NOT:1 "Is #bold not #!a $SUBJECT_TYPE|v$-type [concept_subject]"
+ TRIGGER_IS_SUBJECT_TYPE: "Тип [Concept('concept_subject','$concept_subject_gen$')|l] - $SUBJECT_TYPE|v$"
+ TRIGGER_IS_SUBJECT_TYPE_NOT: "#bold Не #! тип [Concept('concept_subject','$concept_subject_gen$')|l] - $SUBJECT_TYPE|v$"
  TRIGGER_IS_SUBJECT_TYPE_FIRST:0 "[COUNTRY.GetNameNoFlag] is #variable $SUBJECT_TYPE$#!"
  TRIGGER_IS_SUBJECT_TYPE_FIRST_NOT:0 "[COUNTRY.GetNameNoFlag] is #bold not #!#variable $SUBJECT_TYPE$#!"
  TRIGGER_IS_SUBJECT_TYPE_THIRD:0 "[COUNTRY.GetNameNoFlag] is #variable $SUBJECT_TYPE$#!"
@@ -432,8 +432,8 @@
  TRIGGER_HAS_STRATEGY:0 "Has the #variable [AIStrategy.GetName]#! strategy"
  TRIGGER_HAS_STRATEGY_NOT:1 "Does #bold not #!have the #variable [AIStrategy.GetName]#! strategy"
  
- TRIGGER_HAS_ATTITUDE:0 "Has #variable $ATTITUDE$#! attitude towards [TARGET_COUNTRY.GetName]"
- TRIGGER_HAS_ATTITUDE_NOT:1 "Does #bold not #!have #variable $ATTITUDE$#! attitude towards [TARGET_COUNTRY.GetName]"
+ TRIGGER_HAS_ATTITUDE: "Має ставлення #variable $ATTITUDE|l$#! до держави [TARGET_COUNTRY.GetName]"
+ TRIGGER_HAS_ATTITUDE_NOT: "#bold Не#! має ставлення #variable $ATTITUDE|l$#! до держави [TARGET_COUNTRY.GetName]"
  
  TRIGGER_HAS_SECRET_GOAL:0 "Has #variable $SECRET_GOAL$#! secret goal towards [TARGET_COUNTRY.GetName]"
  TRIGGER_HAS_SECRET_GOAL_NOT:1 "Does #bold not #!have #variable $SECRET_GOAL$#! secret goal towards [TARGET_COUNTRY.GetName]"
@@ -879,20 +879,20 @@
  TRIGGER_LAW_STANCE: "Ставлення до закону «[TARGET_LAW_TYPE.GetName]» $COMPARATOR$ #variable $NUM|l$#!"
  TRIGGER_LAW_STANCE_NOT: "Ставлення до закону «[TARGET_LAW_TYPE.GetName]» #bold не#! $COMPARATOR$ #variable $NUM|l$#!"
  
- TRIGGER_IS_GOAL_COMPLETE:0 "[JOURNAL_ENTRY.GetGoalDesc]"
- TRIGGER_IS_GOAL_COMPLETE_NOT:0 "[JOURNAL_ENTRY.GetGoalDesc]"
- TRIGGER_IS_GOAL_COMPLETE_FIRST:0 "[JOURNAL_ENTRY.GetGoalDesc]"
- TRIGGER_IS_GOAL_COMPLETE_FIRST_NOT:0 "[JOURNAL_ENTRY.GetGoalDesc]"
- TRIGGER_IS_GOAL_COMPLETE_THIRD:0 "[JOURNAL_ENTRY.GetGoalDesc]"
- TRIGGER_IS_GOAL_COMPLETE_THIRD_NOT:0 "[JOURNAL_ENTRY.GetGoalDesc]"
+ TRIGGER_IS_GOAL_COMPLETE: "[JOURNAL_ENTRY.GetGoalDesc]"
+ TRIGGER_IS_GOAL_COMPLETE_NOT: "[JOURNAL_ENTRY.GetGoalDesc]"
+ TRIGGER_IS_GOAL_COMPLETE_FIRST: "[JOURNAL_ENTRY.GetGoalDesc]"
+ TRIGGER_IS_GOAL_COMPLETE_FIRST_NOT: "[JOURNAL_ENTRY.GetGoalDesc]"
+ TRIGGER_IS_GOAL_COMPLETE_THIRD: "[JOURNAL_ENTRY.GetGoalDesc]"
+ TRIGGER_IS_GOAL_COMPLETE_THIRD_NOT: "[JOURNAL_ENTRY.GetGoalDesc]"
  
  TRIGGER_COUNTRY_HAS_PRIMARY_CULTURE: "[TARGET_CULTURE.GetName] - [Concept( 'concept_primary_cultures', '$concept_primary_culture$' )|l] у державі"
- TRIGGER_COUNTRY_HAS_PRIMARY_CULTURE_NOT: "[TARGET_CULTURE.GetName] #bold не#! [Concept( 'concept_primary_cultures', '$concept_primary_culture$' )] у державі"
+ TRIGGER_COUNTRY_HAS_PRIMARY_CULTURE_NOT: "[TARGET_CULTURE.GetName] #bold не#! [Concept( 'concept_primary_cultures', '$concept_primary_culture$' )|l] у державі"
  TRIGGER_COUNTRY_HAS_PRIMARY_CULTURE_FIRST: "[TARGET_CULTURE.GetName] - [Concept( 'concept_primary_cultures', '$concept_primary_culture$' )|l] у державі"
  TRIGGER_COUNTRY_HAS_PRIMARY_CULTURE_FIRST_NOT: "[TARGET_CULTURE.GetName] #bold не#! [Concept( 'concept_primary_cultures', '$concept_primary_culture$' )|l] у державі"
  
- TRIGGER_COUNTRY_HAS_STATE_RELIGION:0 "Has the [TARGET_RELIGION.GetName] religion as [concept_state_religion]"
- TRIGGER_COUNTRY_HAS_STATE_RELIGION_NOT:1 "Does #bold not #!have the [TARGET_RELIGION.GetName] religion as [concept_state_religion]"
+ TRIGGER_COUNTRY_HAS_STATE_RELIGION: "[concept_state_religion] - [TARGET_RELIGION.GetName|l]"
+ TRIGGER_COUNTRY_HAS_STATE_RELIGION_NOT: "[concept_state_religion] #bold не#! [TARGET_RELIGION.GetName|l]"
  
  TRIGGER_HAS_ROLE: "Має ролю #variable $ROLE$#!"
  TRIGGER_HAS_ROLE_NOT:1 "Does #bold not #!have the #variable $ROLE$#! role"
@@ -1329,8 +1329,8 @@
  
  TRIGGER_COMMANDER_IS_AVAILABLE:0 "$TRIGGER_IS_BUSY_NOT$[ConcatIfNeitherEmpty('\n$TAB$','$ERRORS$')]"
 
- TRIGGER_GAME_DATE:0 "Current game date is $COMPARATOR$ $DATE$"
- TRIGGER_GAME_DATE_NOT:1 "Current game date is #bold not #!$COMPARATOR$ $DATE$"
+ TRIGGER_GAME_DATE: "Поточна дата гри $COMPARATOR$ $DATE$"
+ TRIGGER_GAME_DATE_NOT: "Поточна дата гри #bold не#! $COMPARATOR$ $DATE$"
  
  TRIGGER_ENACTING_ANY_LAW: "Ухвалює закон"
  TRIGGER_ENACTING_ANY_LAW_NOT: "#bold Не#! ухвалює закон"
@@ -1849,8 +1849,8 @@
  TRIGGER_ANY_COUNTRY_COUNT_FIRST:2 "$PARAMETERS$ $FILTER$[Concept('concept_country', '$concept_countries$')|l]:"
  TRIGGER_ANY_COUNTRY_COUNT_THIRD:2 "$PARAMETERS$ $FILTER$[Concept('concept_country', '$concept_countries$')|l]:"
  
- TRIGGER_ANY_SCOPE_ALLY:1 "Any Ally:"
- TRIGGER_ANY_SCOPE_ALLY_ALL:1 "All Allies:"
+ TRIGGER_ANY_SCOPE_ALLY: "Будь-який союзник:"
+ TRIGGER_ANY_SCOPE_ALLY_ALL: "Будь-які союзники:"
  TRIGGER_ANY_SCOPE_ALLY_PERCENT:2 "$PARAMETERS$ of $FILTER$Allies:"
  TRIGGER_ANY_SCOPE_ALLY_COUNT:2 "$PARAMETERS$ $FILTER$Allies:"
  TRIGGER_ANY_SCOPE_ALLY_THIRD:1 "Any Ally of [Country.GetName]:"

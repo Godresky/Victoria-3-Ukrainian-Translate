@@ -112,9 +112,9 @@
  REMOVE_PRIMARY_CULTURE_FIRST: "[TARGET_CULTURE.GetName] перестане бути [Concept('concept_primary_cultures','$concept_primary_culture_ins$')|l] держави [COUNTRY.GetNameNoFlag]"
  REMOVE_PRIMARY_CULTURE_THIRD: "[TARGET_CULTURE.GetName] перестане бути [Concept('concept_primary_cultures','$concept_primary_culture_ins$')|l] держави [COUNTRY.GetName]"
  
- SET_STATE_RELIGION:1 "[TARGET_RELIGION.GetName] becomes the state religion in [COUNTRY.GetName]"
- SET_STATE_RELIGION_FIRST:0 "[TARGET_RELIGION.GetName] becomes the [concept_state_religion] in [COUNTRY.GetNameNoFlag]"
- SET_STATE_RELIGION_THIRD:0 "[TARGET_RELIGION.GetName] becomes the [concept_state_religion] in [COUNTRY.GetName]"
+ SET_STATE_RELIGION: "[TARGET_RELIGION.GetName] стане державною релігією у державі [COUNTRY.GetName]"
+ SET_STATE_RELIGION_FIRST: "[TARGET_RELIGION.GetName] стане [Concept('concept_state_religion','$concept_state_religion_ins$')|l] державі [COUNTRY.GetNameNoFlag]"
+ SET_STATE_RELIGION_THIRD: "[TARGET_RELIGION.GetName] стане [Concept('concept_state_religion','$concept_state_religion_ins$')|l] державі [COUNTRY.GetName]"
  
  ADD_CULTURAL_OBSESSION: "[CULTURE.GetName] стануть одержимими товаром [GOODS.GetName|l]"
  REMOVE_CULTURAL_OBSESSION: "[CULTURE.GetName] перестануть бути одержимими товаром [GOODS.GetName|l]"
