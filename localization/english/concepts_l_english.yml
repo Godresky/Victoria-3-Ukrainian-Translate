@@ -154,9 +154,9 @@
  concept_trade_route_desc:0 "[Concept('concept_trade_route', '$concept_trade_routes$')] купують [Concept('concept_good', '$concept_goods_acc$')] на одному [Concept('concept_market', '$concept_market_loc$')], transport it to another using [concept_convoys] (or overland, if the $concept_markets$ are adjacent), and $concept_sell_order_short$ the $concept_goods$ there in order to make [concept_revenue] (from which [concept_tariffs] are subtracted) for the [SelectLocalization(GetPlayer.IsValid,'concept_trade_route_desc_added','Trade Center')] managing it. In the process it creates [Concept('concept_buy_orders','$concept_buy_order_short$')] and [concept_sell_orders] on the two $concept_markets$, making it more expensive in one and less in the other. The volume of $concept_goods$ moved will independently scale up and down to meet the $concept_market$ conditions in both, employing more or less [concept_workforce] to match. Each $concept_trade_route$ costs a fixed amount of [concept_bureaucracy] to maintain."
  concept_trade_route_desc_added:0 "[GetBuildingType('building_trade_center').GetName]"
 
- concept_trade_revenue: "Виручка від торгівлі"
- concept_trade_revenue_gen: "Виручки від торгівлі"
- concept_trade_revenue_ins: "Виручкою від торгівлі"
+ concept_trade_revenue: "Виторг від торгівлі"
+ concept_trade_revenue_gen: "Виторгу від торгівлі"
+ concept_trade_revenue_ins: "Виторгом від торгівлі"
  concept_trade_revenue_desc:2 "A [concept_trade_route] generates revenue for the [SelectLocalization(GetPlayer.IsValid,'concept_trade_revenue_desc_added','Trade Center')]  managing it, depending on the [concept_market_price] difference and the volume traded. [concept_tariffs] reduce the $concept_trade_revenue$ generated, effectively decreasing the maximum volume a [concept_trade_route] can move before it becomes unprofitable and stagnates."
  concept_trade_revenue_desc_added:0 "[GetBuildingType('building_trade_center').GetName]"
 
@@ -220,14 +220,14 @@
  concept_pop_growth_mortality: "Смертність"
  concept_pop_growth_desc:3 "The net number of [Concept('concept_individual','$concept_individuals$')] a [concept_pop] gains or loses over time is governed by its $concept_pop_growth_birthrate_and_mortality$. Both metrics are governed by [concept_sol] and modified by factors such as disease, dangerous working conditions, beneficial [Concept('concept_institution', '$concept_institutions$')], and available living space.\n\n@information! External changes to a $concept_pop$'s size due to e.g. [concept_migration] or [concept_casualties] of [concept_war] are not considered $concept_pop_growth$."
 
- concept_individual: "Особистість"
- concept_individual_gen: "Особистісти"
- concept_individual_dat: "Особистості"
- concept_individual_acc: "Особистість"
- concept_individuals: "Особистості"
- concept_individuals_gen: "Особистостей"
- concept_individuals_dat: "Особистостям"
- concept_individuals_acc: "Особистості"
+ concept_individual: "Людина"
+ concept_individual_gen: "Людини"
+ concept_individual_dat: "Людині"
+ concept_individual_acc: "Людину"
+ concept_individuals: "Люди"
+ concept_individuals_gen: "Людей"
+ concept_individuals_dat: "Людьми"
+ concept_individuals_acc: "Людей"
  concept_individual_desc:1 "An individual is a single person within a [concept_pop], who can be either a [Concept('concept_working_adults','$concept_working_adult$')] or a [Concept('concept_dependents','$concept_dependent$')]. All [Concept('concept_pop', '$concept_pops$')] are made up of $concept_individuals$ with the same [concept_culture], [concept_religion], [concept_profession], and [Concept('concept_building','$concept_building_workplace$')]."
  
  concept_building: "Будівля"
@@ -1136,9 +1136,9 @@
  concept_escalates: "Загостритися"
  concept_escalation_desc:2 "Once a [concept_diplomatic_play] has been initiated, it steadily $concept_escalates$ through three distinct phases: [concept_opening_moves], [concept_diplomatic_maneuvers], and [concept_countdown_to_war]. The phase limits which actions are available to participants. If the $concept_diplomatic_play_short$ does not resolve prior to $concept_escalation$ progressing all the way through the $concept_countdown_to_war$, [concept_war] will break out."
 
- concept_revenue: "Виручка"
- concept_revenue_gen: "Виручки"
- concept_revenue_desc: "Після того, як [concept_building|l] [Concept('concept_good_production','виробила')|l] [Concept('concept_good','$concept_goods_acc$')|l], вона продає їх за [Concept('concept_local_price','$concept_local_price_ins$')|l]. Сума [Concept('concept_money','$concept_money_gen$')|l], отримана від продажу, - це і є виручкою будівлі, позитивним чинником її [Concept('concept_building_balance','$concept_building_balance_gen$')|l]."
+ concept_revenue: "Виторг"
+ concept_revenue_gen: "Виторгу"
+ concept_revenue_desc: "Після того, як [concept_building|l] [Concept('concept_good_production','виробила')|l] [Concept('concept_good','$concept_goods_acc$')|l], вона продає їх за [Concept('concept_local_price','$concept_local_price_ins$')|l]. Сума [Concept('concept_money','$concept_money_gen$')|l], отримана від продажу, - це і є виторгом будівлі, хорошим чинником її [Concept('concept_building_balance','$concept_building_balance_gen$')|l]."
 
  concept_combat_width: "Ширина бою"
  concept_combat_width_desc:1 "The $concept_combat_width$ of a particular [concept_terrain] type determines the potential numeric advantage the larger side can have over the smaller side in [concept_battle]. A smaller force can hold out for longer against a larger force if $concept_combat_width$ is relatively low, and vice versa."

@@ -291,7 +291,7 @@
  NUM_STATES_TOOLTIP_count: "#header [SelectLocalization($MULTIPLE$,'[concept_state]','[Concept('concept_state','$concept_states$')]')] у [Concept('concept_country','$concept_country_loc$')|l] [Country.GetNameNoFlag]: $VAL|0v$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
 
  PROCESS_EXPENSES: "Витрати:"
- PROCESS_REVENUE: "Виручка:"
+ PROCESS_REVENUE: "Виторг:"
  PROCESS_BALANCE: "Щотижневий [concept_building_balance|l]:"
  VACANCIES: "Вакансії"
  NO_VACANCIES: "Будівля немає вакансій"
@@ -2036,8 +2036,8 @@
  EARNINGS_PER_EMPLOYEE: "Заробіток / робітник"
  WORLD_PROFITABILITY_HEADER: "$EARNINGS_PER_EMPLOYEE$ у порівнянні з усіма будівлями"
  BUILDING_PROFITABILITY_HEADER: "$EARNINGS_PER_EMPLOYEE$ у порівнянні з іншими будівлями [Building.GetName|l]"
- BUILDING_PROFITABILITY_HEADER_TOOLTIP:1 "#header [concept_productivity]#!\n$TOOLTIP_DELIMITER$\nYearly average $EARNINGS_PER_EMPLOYEE$."
- BUILDING_TAXATION_CAPACITY_HEADER_TOOLTIP:0 "#header $concept_tax_capacity$ Balance#!\n$TOOLTIP_DELIMITER$\nThe balance of [concept_tax_capacity] and Usage in a State."
+ BUILDING_PROFITABILITY_HEADER_TOOLTIP: "#header [concept_productivity]#!\n$TOOLTIP_DELIMITER$\nЩорічний середній заробіток / робітник"
+ BUILDING_TAXATION_CAPACITY_HEADER_TOOLTIP: "#header Балянс податкової спроможности#!\n$TOOLTIP_DELIMITER$\nБалянс [Concept('concept_tax_capacity', '$concept_tax_capacity_gen$')|l] та використання її в землі."
 
  BUILDING_PRODUCTIVITY_HEADER: "Середньоріч. заробіток / робітник"
  GOVERNMENTAL_EXPENSES: "Урядові витрати: #tooltippable #tooltip:[Building.GetTooltipTag],BUILDING_GOVERNMENT_EXPENSES_DESC #N @money!-[Building.GetGovernmentExpenses|D-]#!#!#!"
@@ -2045,7 +2045,7 @@
  NOT_HIRING:0 "#header #red [Building.GetName] не може наймати на роботу!#!#!\n$TOOLTIP_DELIMITER$\nЗайнятість: #tooltippable #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_EMPLOYMENT #variable [Building.GetNoOfEmployed|1*]#!#!#! / #maximum [Building.GetEmployeeCap|1*] робітників#! (#BOLD #V [Building.GetEmploymentPercentage|0%]#!#!)\n\nЦя [concept_building|l] не має коштів, щоб когось найняти.\n\nПоточна продуктивність: [Building.GetAverageAnnualEarningsPerEmployeeFormatted]"
  EMPLOYMENT_HINT:1 "\n\n@information! The [Concept('concept_building_wage', '$concept_building_wages$')] in the [Building.GetName] are based on its economic situation. In order to afford to attract more [Concept('concept_pop', '$concept_pops$')] to the Workforce its Weekly [concept_building_balance] should be improved. You can influence this by either making the [Concept('concept_good', '$concept_goods$')] it consumes cheaper, or by making the Goods it produces more expensive. This is done by increasing or decreasing supply and demand on the [Building.GetState.GetMarket.GetName]. You can guarantee that the Workforce is paid a competitive [concept_building_wage] by [Concept('concept_subsidies', '$concept_subsidizing$')] the building. This will keep it afloat by using [concept_money] from the [GetPlayer.GetAdjectiveNoFormatting] [concept_treasury], if necessary."
  INCOME_TAXES: "Сплачення податків: #tooltippable #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_TAXES_TOOLTIP #variable @money![Building.GetTaxationRevenue|D+=]#!#!#!"
- BUILDING_TOOLTIP_BASE_INFO:2 "[AddLocalizationIf(Not(Building.GetState.IsIncorporated), 'BUILDING_STATE_IS_UNINCORPORATED')]Size: [Building.GetExpansionLevelBreakdownDesc][AddLocalizationIf(Building.IsBuildingType('building_urban_center'), '\n')][AddLocalizationIf(Building.IsBuildingType('building_urban_center'), 'BUILDING_STATE_URBANIZATION')][ConcatIfNeitherEmpty('\n', SelectLocalization( GreaterThan_int64(Building.GetNoOfEmployed, '(int64)0'), 'EMPLOYMENT_INFO', '' ))]"
+ BUILDING_TOOLTIP_BASE_INFO: "[AddLocalizationIf(Not(Building.GetState.IsIncorporated), 'BUILDING_STATE_IS_UNINCORPORATED')]Розмір: [Building.GetExpansionLevelBreakdownDesc][AddLocalizationIf(Building.IsBuildingType('building_urban_center'), '\n')][AddLocalizationIf(Building.IsBuildingType('building_urban_center'), 'BUILDING_STATE_URBANIZATION')][ConcatIfNeitherEmpty('\n', SelectLocalization( GreaterThan_int64(Building.GetNoOfEmployed, '(int64)0'), 'EMPLOYMENT_INFO', '' ))]"
  BUILDING_STATE_IS_UNINCORPORATED: "@unincorporated! [SelectLocalization(Building.GetState.IsIncorporating, 'BUILDING_STATE_INCORPORATING', 'UNINCORPORATED')]\n"
  BUILDING_STATE_INCORPORATING: "[Concept('concept_incorporated_state','$concept_incorporating$')] (#tooltippable #tooltip:[Building.GetState.GetTooltipTag],TOOLTIP_INCORPORATING_STATE [Building.GetState.GetIncorporationProgress|v%0]#!#!)"
  BUILDING_STATE_URBANIZATION:0 "Total [concept_urbanization] in [Building.GetState.GetName]: #v #tooltippable #tooltip:[Building.GetState.GetTooltipTag],URBANIZATION_BREAKDOWN [Building.GetState.CalcTotalUrbanization]#!#!#!"
@@ -2836,12 +2836,12 @@
  TOOLTIP_REVOLUTION_SUMMARY: "#HEADER Революція#!"
  CALC_WAR_EXHAUSTION: "Через #variable $TIMER$#! дн. вони отримають #bold $LOSS|+$#! через виснаження\n$TAB$#N #bold $BASE$#!#! через базове згасання\n$TAB$#bold $OCCUPATION_CHANGE|+$#! через те, що вони окуповані на #variable $OCCUPATION|%1$#!\n$TAB$#bold $WARGOALS_CHANGE|+$#! через те, що ворог контролює #variable $WARGOALS|%1$#! їхніх воєнних цілей\n$TAB$#bold $CASUALTIES_CHANGE|+$#! через те, що вони понесли #v $CASUALTIES|1$K#! втрат у порівнянні з #v $MANPOWER|1$K#! доступного [Concept('concept_manpower', '$concept_manpower_gen$')|l] і їхній бік програв #v $BATTLES_LOST_PERCENTAGE|0%$#! [Concept('concept_battle', '$concept_battles_gen$')|l] (залежно від кількости залученого людського ресурсу)\n$TAB$#bold $TURMOIL_CHANGE|+$#! через те, що #variable $TURMOIL|%1$#! їхнього населення є [Concept('concept_radical', '$concept_radicals_ins$')|l]\n$TAB$#bold $SITUATIONS_CHANGE|+$#! через події"
 
- TOOLTIP_COUNTRY:0 "#BOLD #V [GetPlayer.GetName]#!#!"
- TOOLTIP_COUNTRY_DELAYED:0 "\n$TOOLTIP_DELIMITER$\nCultures: #VARIABLE [GetPlayer.GetPrimaryCulturesDesc]#!\nReligion: #VARIABLE [GetPlayer.GetStateReligion.GetName]#!\nCapital: #VARIABLE [GetPlayer.GetCapital.GetName]#!\n\n[concept_country_desc]"
- TOOLTIP_BUILDING_USES:0 "#header [Goods.GetNameNoFormatting]#!"
+ TOOLTIP_COUNTRY: "#BOLD #V [GetPlayer.GetName]#!#!"
+ TOOLTIP_COUNTRY_DELAYED: "\n$TOOLTIP_DELIMITER$\nКультура: #VARIABLE [GetPlayer.GetPrimaryCulturesDesc]#!\nРелігія: #VARIABLE [GetPlayer.GetStateReligion.GetName]#!\nСтолиця: #VARIABLE [GetPlayer.GetCapital.GetName]#!\n\n[concept_country_desc]"
+ TOOLTIP_BUILDING_USES: "#header [Goods.GetNameNoFormatting]#!"
  TOOLTIP_BUILDING_USES_UNITS_INFO: "#header [Goods.GetName]#!\nВикористана кількість: #variable [Building.GetConsumption(Goods.Self)|0]#! / щотижня\n[Building.GetConsumptionDesc(Goods.Self)]"
- TOOLTIP_BUILDING_PRODUCES:0 "#header [Goods.GetNameNoFormatting]#!\n"
- TOOLTIP_BUILDING_PRODUCES_UNITS_INFO:0 "#header [Goods.GetName]#!\nAmount produced: #variable [Building.GetProduction(Goods.Self)|0]#! / щотижня\n$TOOLTIP_DELIMITER$\nOutput percentage: #variable [Building.GetOutputPercentage(Goods.Self)|%1]#! of production from [Building.GetName]\n[Building.GetProductionDesc(Goods.Self)]"
+ TOOLTIP_BUILDING_PRODUCES: "#header [Goods.GetNameNoFormatting]#!\n"
+ TOOLTIP_BUILDING_PRODUCES_UNITS_INFO: "#header [Goods.GetName]#!\nВироблена кількість: #variable [Building.GetProduction(Goods.Self)|0]#! / щотижня\n$TOOLTIP_DELIMITER$\nВідсоток випуску: #variable [Building.GetOutputPercentage(Goods.Self)|%1]#! виробництва з будівлі [Building.GetName|l]\n[Building.GetProductionDesc(Goods.Self)]"
 
 
  TOOLTIP_BUILDING_USES_VALUE_INFO:2 "#header [Goods.GetTextIcon][Nbsp][Goods.GetName]#!\nExpenses paid for [Goods.GetTextIcon][Nbsp][Goods.GetName] used: #variable @money![Building.GetConsumptionValue(Goods.Self)|D]#!\n$TOOLTIP_DELIMITER$\nState Region price: [Goods.GetStatePriceWithTooltip|1]"
@@ -3047,7 +3047,7 @@
 
 
  
- CAN_EXPAND_BUILDING_TOOLTIP:2 "#header $BUILD_OR_EXPAND$ [BUILDING_TYPE.GetName] in [STATE.GetName]#! (Size: [BUILDING.GetExpansionLevelBreakdownDesc])\n#tooltippable #tooltip:[GetRawTextTooltipTag('$PROFIT_IMPACT_DESC$')] #v @money!$PROFIT_IMPACT|K+=$#!#!#! Predicted [SelectLocalization(Or(ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_government_administration').Self), ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_construction_sector').Self)), 'BUILDING_UPKEEP_HEADER', 'BUILDING_EARNINGS_HEADER')] / week\n[ConcatIfNeitherEmpty('$QUALIFICATIONS$', '\n')][SelectLocalization( LessThan_CFixedPoint(State.GetConstructionEfficiency, '(CFixedPoint)0'), 'CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY_WARNING', '')]$TOOLTIP_DELIMITER$\n@construction! $REQUIRED_CONSTRUCTION|v0$ [concept_construction] ($CONSTRUCTION_COST_CHANGE$)\n[ConcatIfNeitherEmpty('$INVESTMENT_FUND$', '\n')]\n[STATE.GetMarketAccessStatus]\nAvailable Labor: [State.GetNumSubsistenceWorkingAdults|Dv] [GetPopType('peasants').GetName] [SelectLocalization( GreaterThan_int64(State.GetNumUnemployedWorkingAdults, '(int64)0'), 'AND_UNEMPLOYED', '' )][ConcatIfNeitherEmpty('$MILITARY_INFO$', '\n')][ConcatIfNeitherEmpty('$PORT_INFO$', '\n')]\n\n$KEY_MODIFIER_INSTRUCTIONS$"
+ CAN_EXPAND_BUILDING_TOOLTIP:2 "#header $BUILD_OR_EXPAND$ [BUILDING_TYPE.GetName] in [STATE.GetName]#! (Розмір: [BUILDING.GetExpansionLevelBreakdownDesc])\n#tooltippable #tooltip:[GetRawTextTooltipTag('$PROFIT_IMPACT_DESC$')] #v @money!$PROFIT_IMPACT|K+=$#!#!#! Predicted [SelectLocalization(Or(ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_government_administration').Self), ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_construction_sector').Self)), 'BUILDING_UPKEEP_HEADER', 'BUILDING_EARNINGS_HEADER')] / week\n[ConcatIfNeitherEmpty('$QUALIFICATIONS$', '\n')][SelectLocalization( LessThan_CFixedPoint(State.GetConstructionEfficiency, '(CFixedPoint)0'), 'CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY_WARNING', '')]$TOOLTIP_DELIMITER$\n@construction! $REQUIRED_CONSTRUCTION|v0$ [concept_construction] ($CONSTRUCTION_COST_CHANGE$)\n[ConcatIfNeitherEmpty('$INVESTMENT_FUND$', '\n')]\n[STATE.GetMarketAccessStatus]\nAvailable Labor: [State.GetNumSubsistenceWorkingAdults|Dv] [GetPopType('peasants').GetName] [SelectLocalization( GreaterThan_int64(State.GetNumUnemployedWorkingAdults, '(int64)0'), 'AND_UNEMPLOYED', '' )][ConcatIfNeitherEmpty('$MILITARY_INFO$', '\n')][ConcatIfNeitherEmpty('$PORT_INFO$', '\n')]\n\n$KEY_MODIFIER_INSTRUCTIONS$"
 # $PRODUCTION_BREAKDOWN$ is currently not included, re-add to CAN_EXPAND_BUILDING_TOOLTIP if deeemed necessary
 
  AND_UNEMPLOYED: "та [State.GetNumUnemployedWorkingAdults|Dv] [Concept('concept_unemployed', '$concept_unemployed_gen$')|l]"
@@ -3082,7 +3082,7 @@
  CANNOT_EXPAND_BUILDING_NOT_EXPANDABLE:1 "[BuildingType.GetName] cannot be expanded past level 1 in [STATE_REGION.GetName]"
  CANNOT_EXPAND_BUILDING_NO_ARABLE_LAND:0 "[BuildingType.GetName] requires [concept_arable_land]"
  CANNOT_EXPAND_BUILDING_NO_RESOURCE:0 "Insufficient resource quantity in [State.GetName]"
- CANNOT_EXPAND_BUILDING_NOT_AVAILABLE_IN_STATE:0 "[STATE.GetName] cannot support [BUILDING_TYPE.GetName]"
+ CANNOT_EXPAND_BUILDING_NOT_AVAILABLE_IN_STATE: "[STATE.GetName] не може підтримувати будівлю [BUILDING_TYPE.GetName|l]"
  CANNOT_EXPAND_BUILDING_AT_REGION_MAX_CAP:1 "[BuildingType.GetName] is at maximum capacity in [STATE_REGION.GetName]"
  CANNOT_EXPAND_BUILDING_NOT_ACTIVE:0 "[BuildingType.GetName] is not active"
  CANNOT_EXPAND_BUILDING_NOT_BUILDABLE:0 "[BuildingType.GetName] cannot be manually constructed"
@@ -5083,7 +5083,7 @@
  TOOLTIP_BUILDING_POPTYPE_AVERAGE_WAGE: "#header [PopType.GetName] у будівлі [Building.GetName]#!\n[concept_average_wage]: @money![Building.GetAverageAnnualWageForPopType(PopType.Self)|Dv]\n$TOOLTIP_DELIMITER$\n[Building.GetAverageAnnualWageBreakdownForPopType(PopType.Self)]"
  POP_AVG_ANNUAL_WAGE_ENTRY: "@money!$WAGE|Dv$ - [Pop.GetCulture.GetName] [Pop.GetReligion.GetName|l] ([Pop.GetNumWorkforce|vD])"
 
- BALANCE_TOOLTIP: "#header Щотижневий балянс: [Building.GetBalance|D+=]#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$\n\nБалянс @money!#v [Building.GetBalance|D+=]#! через:\n$TAB$Щотижнева виручка: #v @money![Building.GetLastRevenue|D+=]#!\n$TAB$Щотижневі витрати: #v @money![Negate_CFixedPoint(Building.GetTotalExpenses)|+=D]#!"
+ BALANCE_TOOLTIP: "#header Щотижневий балянс: [Building.GetBalance|D+=]#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$\n\nБалянс @money!#v [Building.GetBalance|D+=]#! через:\n$TAB$Щотижневий виторг: #v @money![Building.GetLastRevenue|D+=]#!\n$TAB$Щотижневі витрати: #v @money![Negate_CFixedPoint(Building.GetTotalExpenses)|+=D]#!"
  BUILDING_BALANCE_PROFIT: "#v @money![Building.GetBalance|D+]#! додатній балянс переходить до:\n$BREAKDOWN$"
  BUILDING_BALANCE_PROFIT_WASTE: "Даремно втрачений прибуток:\n$BREAKDOWN$"
  BUILDING_BALANCE_LOSS: "#v @money![Negate_CFixedPoint(Building.GetBalance)|D-]#! для покриття від’ємного балянсу використовується:\n$BREAKDOWN$"
@@ -5114,7 +5114,7 @@
  MAINTAINING:0 "Maintaining @arrow_none!"
  HIRING:0 "Scaling up @arrow_up_up!"
  DOWNSIZING:0 "Tightening belt @arrow_down_down!"
- EARNINGS_BREAKDOWN:0 "#header Earnings#!\nValue: @money![Building.GetEarnings|vD=]\n$TOOLTIP_DELIMITER$\nRevenue: #BOLD #V @money![Building.GetLastRevenue|D+=]#!#![Building.GetLastMaterialExpensesDesc][Building.GetLastSlaveUpkeepDesc]"
+ EARNINGS_BREAKDOWN: "#header Заробіток#!\nValue: @money![Building.GetEarnings|vD=]\n$TOOLTIP_DELIMITER$\nВиторг: #BOLD #V @money![Building.GetLastRevenue|D+=]#!#![Building.GetLastMaterialExpensesDesc][Building.GetLastSlaveUpkeepDesc]"
  WORKFORCE: "#title Робоча сила #!"
  SORTED_BY: "Хухрене за #BOLD середньою зарплатою#!"
  WARS_LABEL: "#title Війни#!"
@@ -6160,10 +6160,10 @@ LAW_ENACTMENT_PROGRESS:6 "#header [Concept('concept_enactment_of_laws', '$concep
  
  CONSTRUCTION_EFFICIENCY_MINIMUM_DESC:0 "@information! [concept_construction] Efficiency cannot be lower than [GetDefine('NEconomy', 'MIN_CONSTRUCTION_EFFICIENCY')|v%0]"
 
- BUILDING_MAP_LIST_PANEL_PROFIT_IMPACT_HEADER:3 "[SelectLocalization(Or(ObjectsEqual(MapListBuildingPanel.GetBuildingType, GetBuildingType('building_government_administration').Self), ObjectsEqual(MapListBuildingPanel.GetBuildingType, GetBuildingType('building_construction_sector').Self)), 'BUILDING_UPKEEP_HEADER', 'BUILDING_EARNINGS_HEADER')]"
- BUILDING_UPKEEP_HEADER:0 "Upkeep"
- BUILDING_EARNINGS_HEADER:0 "Earnings"
- BUILDING_MAP_LIST_PANEL_PROFIT_IMPACT_TOOLTIP:2 "#header Predicted [SelectLocalization(Or(ObjectsEqual(MapListBuildingPanel.GetBuildingType, GetBuildingType('building_government_administration').Self), ObjectsEqual(MapListBuildingPanel.GetBuildingType, GetBuildingType('building_construction_sector').Self)), 'BUILDING_UPKEEP_HEADER', 'BUILDING_EARNINGS_HEADER')] after expansion#!\n(Excluding [Concept('concept_building_wage','$concept_building_wages$')])\n$TOOLTIP_DELIMITER$\nA prediction of how much expanding this building would affect its weekly [SelectLocalization(Or(ObjectsEqual(MapListBuildingPanel.GetBuildingType, GetBuildingType('building_government_administration').Self), ObjectsEqual(MapListBuildingPanel.GetBuildingType, GetBuildingType('building_construction_sector').Self)), 'BUILDING_UPKEEP_HEADER', 'BUILDING_EARNINGS_HEADER')]."
+ BUILDING_MAP_LIST_PANEL_PROFIT_IMPACT_HEADER: "[SelectLocalization(Or(ObjectsEqual(MapListBuildingPanel.GetBuildingType, GetBuildingType('building_government_administration').Self), ObjectsEqual(MapListBuildingPanel.GetBuildingType, GetBuildingType('building_construction_sector').Self)), 'BUILDING_UPKEEP_HEADER', 'BUILDING_EARNINGS_HEADER')]"
+ BUILDING_UPKEEP_HEADER: "Утрим."
+ BUILDING_EARNINGS_HEADER: "Зароб."
+ BUILDING_MAP_LIST_PANEL_PROFIT_IMPACT_TOOLTIP: "#header Передбачуваний [SelectLocalization(Or(ObjectsEqual(MapListBuildingPanel.GetBuildingType, GetBuildingType('building_government_administration').Self), ObjectsEqual(MapListBuildingPanel.GetBuildingType, GetBuildingType('building_construction_sector').Self)), 'Утримання', 'Заробіток')|l] після розширення#!\n(Без урахування [Concept('concept_building_wage','$concept_building_wages_gen$')|l])\n$TOOLTIP_DELIMITER$\nПередбачення того, наскільки розширення цієї будівлі вплине на її щотижневий [SelectLocalization(Or(ObjectsEqual(MapListBuildingPanel.GetBuildingType, GetBuildingType('building_government_administration').Self), ObjectsEqual(MapListBuildingPanel.GetBuildingType, GetBuildingType('building_construction_sector').Self)), 'Утримання', 'Заробіток')|l]."
 
  COLONY_MAP_LIST_PANEL_STATUS_HEADER: "Стан"
  COLONY_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP:1 "#header Status#!\n$TOOLTIP_DELIMITER$\n#concept The availability of colonizing each [concept_state_region].\n\n@map_list_plus!: You can select this.\n@map_list_plus_and_checkmark!: You can select this and you are already doing this here.\n@map_list_checkmark!: You are already doing this here and you can deselect this.\n@map_list_lock!: You are already doing this here, but you can NOT deselect this.\n@map_list_cross!: You can NOT select this.#!"
@@ -6245,7 +6245,7 @@ LAW_ENACTMENT_PROGRESS:6 "#header [Concept('concept_enactment_of_laws', '$concep
  TRADE_ROUTES_SORT_COUNTRY: "Дер."
  TRADE_ROUTES_SORT_COST: "Варт."
  TRADE_ROUTES_SORT_PRODUCTIVITY: "Прод."
- TRADE_ROUTES_SORT_REVENUE: "Виручка"
+ TRADE_ROUTES_SORT_REVENUE: "Виторг"
  TRADE_ROUTES_SORT_OWNER: "..."
  EMBARGO: "Ембарґо"
  TRADE_AGREEMENT: "Торгова угода"
