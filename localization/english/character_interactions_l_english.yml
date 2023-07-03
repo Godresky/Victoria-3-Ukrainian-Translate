@@ -15,8 +15,8 @@
  INTERACTION_COOLDOWN: " ([CharacterInteraction.GetCooldown(Character.Self)])"
 
  demobilize_general: "Зняти зі служби"
- demobilize_general_info:0 "If ordered to perform an early [Concept('concept_mobilize_general','$concept_mobilize_general_demobilization$')], [Character.GetFullName] and [Character.GetHerHis] troops would immediately stand down and return to [Character.GetHomeHQ.GetName], but a portion of their mobilization cost would still be incurred for [Character.MakeScope.ScriptValue('num_months_mobilization_cost_after_early_demobilization')|v0] months."
- demobilize_general_tt:0 "Has been [Concept('concept_mobilize_general','$concept_mobilize_general_mobilized$')] for at least [Character.MakeScope.ScriptValue('num_months_before_permit_demobilization')|v0] months (currently: [Character.MakeScope.Var('num_months_mobilized').GetValue|v0] )"
+ demobilize_general_info: "Якщо було наказано провести дочасне [Concept('concept_mobilize_general','$concept_mobilize_general_demobilization_acc$')], [Character.GetFullName] та [Character.GetCustom('UA_joho_jiji')|l] військо буде негайно відкликано та повернуто до [Character.GetHomeHQ.GetName|l], але частина вартости збирання буде утримуватися протягом [Character.MakeScope.ScriptValue('num_months_mobilization_cost_after_early_demobilization')|v0] місяців."
+ demobilize_general_tt: "Бу[Select_CString(Character.IsFemale,'$CustomLoc_UA_vona_la$','$CustomLoc_UA_vin_v$')|l] [Select_CString(Character.IsFemale,'[Concept('concept_mobilize_general','$concept_mobilize_general_mobilized_adj$ою')]','[Concept('concept_mobilize_general','$concept_mobilize_general_mobilized_adj$им')]')|l] принаймні [Character.MakeScope.ScriptValue('num_months_before_permit_demobilization')|v0] місц. (наразі: [Character.MakeScope.Var('num_months_mobilized').GetValue|v0] )"
 
  grant_command_to_ruler: "Зробити командиром"
  remove_command_from_ruler: "Відправити у відставку"
@@ -25,17 +25,17 @@
 
 # Exile Interactions
  exile_character: "Вигнати незгодного"
- exile_character_info:0 "If [Concept( 'concept_exile', 'exiled' )], [Character.GetFullName] will leave [Character.GetCountry.GetName], and be recruitable by other [Concept('concept_country', '$concept_countries$')] as an [concept_agitator]"
- exile_dissident_tt:0 "[Character.GetFullName] will be sent into $concept_exile$"
+ exile_character_info: "Якщо [Concept( 'concept_exile', 'Вигнати' )|l], [Character.GetFullName] покине країну [Character.GetCountry.GetName], і його зможуть найняти інші [Concept('concept_country', '$concept_countries_acc$')|l] як Concept('concept_agitator', '$concept_agitator_gen$')|l]"
+ exile_dissident_tt: "[Character.GetFullName] буде відправлен[Select_CString(Character.IsFemale,'$CustomLoc_UA_vona_a$','$CustomLoc_UA_vin_yY$')|l] у вигнання"
  invite_exile: "Запросити вигнанця"
  invite_exile_start_join_movement_effect: "[SelectLocalization(Character.PredictLawToAgitate(GetPlayer.Self).GetPoliticalMovement.IsValid, 'invite_exile_join_movement', SelectLocalization(Character.PredictLawToAgitate(GetPlayer.Self).IsValid, 'invite_exile_start_movement', 'invite_exile_no_movement'))]"
  invite_exile_start_movement: "Почне [Concept('concept_political_movement', '$concept_political_movement_acc$')|l] [Character.PredictLawToAgitate(GetPlayer.Self).GetPotentialPoliticalMovementName|l]"
  invite_exile_join_movement: "Приєднається до [Concept('concept_political_movement', '$concept_political_movement_gen$')|l] [Character.PredictLawToAgitate(GetPlayer.Self).GetPoliticalMovement.GetName|l]"
  invite_exile_no_movement: "#b Не#! почне [Concept('concept_political_movement', '$concept_political_movement_acc$')|l] або не приєднається до нього"
  invite_exile_info: "[Concept( 'concept_character_role', '$concept_character_roles$' )]: #v [Character.GetAllRoleNames]#!\n[concept_interest_group]: [Character.GetInterestGroup.GetName]\n[concept_ideology]: [Character.GetIdeology.GetName]\n[concept_popularity]: #v #tooltip:[Character.GetTooltipTag],POPULARITY_BREAKDOWN [LabelingHelper.GetLabelForPopularityCFixedPoint(Character.GetPopularity)]#!#! (#v #tooltippable #tooltip:[Character.GetTooltipTag],POPULARITY_BREAKDOWN [Character.GetPopularity|0]#!#!#!)\n\n$concept_popularity$ [Concept('concept_agitator', '$concept_agitator_gen$')|l] вплине на підтримку політичного руху, який закликач розпочне або до якого приєднається"
- invite_exile_devout_tt:0 "Devout [Concept('concept_character', '$concept_characters$')] must have our [concept_state_religion]"
+ invite_exile_devout_tt: "Набожні [Concept('concept_character', '$concept_characters$')|l] мусять мати нашу [Concept('concept_state_religion', '$concept_state_religion_acc$')|l]"
  invite_exile_state_religion_tt: "Якщо у нас чинний [concept_law|l] «Державна релігія», то персонаж має сповідувати нашу [Concept('concept_state_religion', '$concept_state_religion_acc$')|l]"
- adopt_random_antigovernment_ideology_tt:0 "This [concept_character] will adopt an [concept_ideology] opposed to our government."
+ adopt_random_antigovernment_ideology_tt: "Цей [concept_character|l] прийме [Concept('concept_ideology', '$concept_ideology_acc$')|l] протилежну нашому уряду."
 
  notification_exile_notification_name: "[SCOPE.sCharacter('exile_scope').GetFullName] бу[Select_CString(SCOPE.sCharacter('exile_scope').IsFemale,'$CustomLoc_UA_vona_la$','$CustomLoc_UA_vin_v$')|l] вигнан[Select_CString(SCOPE.sCharacter('exile_scope').IsFemale,'$CustomLoc_UA_vona_a$','$CustomLoc_UA_vin_yY$')|l] з [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sCountry('exiling_country_scope').GetName]."
  notification_exile_notification_desc: "[SCOPE.sCharacter('exile_scope').GetFullName] бу[Select_CString(SCOPE.sCharacter('exile_scope').IsFemale,'$CustomLoc_UA_vona_la$','$CustomLoc_UA_vin_v$')|l] відправлен[Select_CString(SCOPE.sCharacter('exile_scope').IsFemale,'$CustomLoc_UA_vona_a$','$CustomLoc_UA_vin_yY$')|l] у [Concept('concept_exile', '$concept_exile_acc$')|l] державою [SCOPE.sCountry('exiling_country_scope').GetName]."
@@ -43,14 +43,14 @@
 
 # Agitator Interactions
  grant_leadership_to_agitator: "Зробити провідником"
- grant_leadership_to_agitator_info:0 "[concept_ideology]: [Character.GetIdeology.GetName]\n[concept_popularity]: #v #tooltip:[Character.GetTooltipTag],POPULARITY_BREAKDOWN [LabelingHelper.GetLabelForPopularityCFixedPoint(Character.GetPopularity)]#!#! (#v #tooltippable #tooltip:[Character.GetTooltipTag],POPULARITY_BREAKDOWN [Character.GetPopularity|0]#!#!#!)\n\nIf granted leadership, the $concept_ideology$ of [Character.GetFullName] will be added to the [Character.GetInterestGroup.GetName] and [Character.GetHerHis] $concept_popularity$ will affect their [concept_interest_group_attraction]"
- make_agitator_ig_leader_tt:0 "Becomes the [concept_leader] of the [Character.GetInterestGroup.GetName]"
+ grant_leadership_to_agitator_info: "[concept_ideology]: [Character.GetIdeology.GetName]\n[concept_popularity]: #v #tooltip:[Character.GetTooltipTag],POPULARITY_BREAKDOWN [LabelingHelper.GetLabelForPopularityCFixedPoint(Character.GetPopularity)]#!#! (#v #tooltippable #tooltip:[Character.GetTooltipTag],POPULARITY_BREAKDOWN [Character.GetPopularity|0]#!#!#!)\n\nЯкщо зробити провідником, то [CharacterInteraction.GetCustom('UA_joho_jiji')|l] ідеологія буде додана до [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l] [Character.GetInterestGroup.GetName], а популярність персонажа вплине на [Concept('concept_interest_group_attraction','$concept_interest_group_attraction_acc$')|l]"
+ make_agitator_ig_leader_tt: "Стане [Concept('concept_leader','$concept_leader_ins$')|l] групи [Character.GetInterestGroup.GetName]"
  grant_command_to_agitator: "Зробити командиром"
- grant_command_to_agitator_info:0 "If granted command, [Character.GetFullName] will remain an [concept_agitator], but will also gain the ability to lead armies as a [concept_general], with their [concept_commander_rank] affecting the [concept_clout] of the [Character.GetInterestGroup.GetName]"
+ grant_command_to_agitator_info: "Якщо зробити командиром, то [Character.GetFullName] залишиться [Concept('concept_agitator','$concept_agitator_ins$')|l], але отримає здатність очолювати військо як [Concept('concept_general','$concept_general$')|l], зі своїм [Concept('concept_commander_rank','$concept_commander_rank_ins$')|l], яке впливає на [Concept('concept_clout','$concept_clout_acc$')|l] групи [Character.GetInterestGroup.GetName]"
 
 # Monarch interactions
  marry_ruler_or_heir: "Королівське одруження"
- marry_ruler_or_heir_info:0 "Королівське одруження служить для поліпшення [Concept('concept_relations', '$concept_relations_gen$')|l] між державою [Character.GetCountry.GetName] та [Concept('concept_country', 'батьківщиною')|l] кохання [Select_CString(Character.IsFemale,'пані','пана')|l] [Character.GetPrimaryRoleTitle|l] [Character.GetFullName], крім того це, можливо, підвищить [Character.GetCustom('UA_joho_jiji')|l] [Concept('concept_popularity', '$concept_popularity_acc$')|l]"
+ marry_ruler_or_heir_info: "Королівське одруження служить для поліпшення [Concept('concept_relations', '$concept_relations_gen$')|l] між державою [Character.GetCountry.GetName] та [Concept('concept_country', 'батьківщиною')|l] кохання [Select_CString(Character.IsFemale,'пані','пана')|l] [Character.GetPrimaryRoleTitle|l] [Character.GetFullName], крім того це, можливо, підвищить [Character.GetCustom('UA_joho_jiji')|l] [Concept('concept_popularity', '$concept_popularity_acc$')|l]"
  marry_ruler_or_heir_desc: "#lore [Character.GetFullName] шукатиме своє кохання зі шляхетного роду дружньої держави.#!"
  abdicate_monarch: "Зректися престолу"
  abdicate_monarch_info: "[concept_ruler] зречеться престолу держави [Character.GetCountry.GetName], передавши свій титул [Character.GetPrimaryRoleTitle|l] своєму [Concept('concept_heir', '$concept_heir_dat$')|l]"

@@ -217,7 +217,7 @@
  
  goldrush.4.t: "Копальні організуються"
  goldrush.4.d: "Копальники та власники копалень намагаються захистити свої рупи у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.sState('gr4_gold_state').GetName], формально організовуючи себе та свою роботу. Однак, підходи, що застосовують групи [SCOPE.gsInterestGroup('trade_unions_ig').GetName] та [SCOPE.gsInterestGroup('industrialists_ig').GetName], не можуть співпрацювати."
- goldrush.4.f:1 "Один з членів групи [SCOPE.gsInterestGroup('industrialists_ig').GetNameNoFormatting|l] легенько постукує по кришталю вікна - звук посилюється через порожнечу комори. «Ти ще хочеш, щоб я віддав їм золото? Частину мого будинку? - великодушно запитує він, все ще стоячи спиною до дверей. Що моє - моє, а що твоє - твоє. А копальні - це те, що належить мені.»"
+ goldrush.4.f: "Один з членів групи [SCOPE.gsInterestGroup('industrialists_ig').GetNameNoFormatting|l] легенько постукує по кришталю вікна - звук посилюється через порожнечу комори. «Ти ще хочеш, щоб я віддав їм золото? Частину мого будинку? - великодушно запитує він, все ще стоячи спиною до дверей. Що моє - моє, а що твоє - твоє. А копальні - це те, що належить мені.»"
  goldrush.4.a: "Підтримати групу [SCOPE.gsInterestGroup('trade_unions_ig').GetName]."
  goldrush.4.b: "Підтримати групу [SCOPE.gsInterestGroup('industrialists_ig').GetName]."
  

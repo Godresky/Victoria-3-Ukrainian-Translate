@@ -2354,7 +2354,7 @@
  TOOLTIP_BUILDING_SLAVE_UPKEEP: "Утримання рабів: #tooltippable #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDINGS_SLAVE_UPKEEP_DETAILS @money!$VAL|D-$#!#!"
  TOOLTIP_BUILDING_WAGE_SUBSIDIES: "Субсидії на зарплату: #tooltippable #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_WAGES_DESC @money!$VAL|D-$#!#!"
  TOOLTIP_BUILDING_BALANCE_SUBSIDIES:0 "Balance Subsidies: @money!$VAL|D-$"
- TOOLTIP_BUILDING_WAGES_DESC:0 "[Building.GetLastWagesExpensesDesc]"
+ TOOLTIP_BUILDING_WAGES_DESC: "[Building.GetLastWagesExpensesDesc]"
 
  TOOLTIP_BUILDING_TOTAL_WAGE_EXPENSES: "Загальна щотижнева зарплата: @money!$VAL|Dv$$SUBSIDIES$\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
  BUILDING_WAGE_SUBSIDIES: " + @money!$VAL|D-0$ ([concept_subsidies])"
@@ -2622,11 +2622,11 @@
  POPS_LIST_LARGEST_IGS:0 "#title Primary IGs: #!"
  POP_LIST_POL_STR:0 "Pol. Str: #variable [Pop.GetPoliticalStrength|K]#!"
  POP_LIST_WEALTH:0 "Wealth: #variable [Pop.GetCurrentWealth|1*]#!"
- POP_LIST_NOT_ALL_POPS_SHOWN:1 "[GetDataModelSize(PopListItem.GetPops)]/[PopListItem.GetNumTotalPops] [Concept('concept_pop', '$concept_pops$')] shown"
+ POP_LIST_NOT_ALL_POPS_SHOWN: "Показано [GetDataModelSize(PopListItem.GetPops)]/[PopListItem.GetNumTotalPops] [Concept('concept_pop', '$concept_pops_gen$')|l]"
  STATE_CULTURES: "#title [Concept('concept_culture','$concept_cultures$')]#!"
  STATE_RELIGIONS: "#title [Concept('concept_religion','$concept_religions$')]#!"
  STATE_POP_TYPES: "#title [concept_profession]#!"
- VERSION_TOOLTIP:0 "#title Build Version#!\n[GetVersion]\n#instruction Click to copy to clipboard#!"
+ VERSION_TOOLTIP: "#title Версія гри#!\n[GetVersion]\n#instruction Клацніть, щоб скопіювати#!"
 
  TRADE_ROUTE_CONVOYS_DESC: "Кількість доступних @convoys! [Concept('concept_convoys','$concept_convoys_gen$')|l]: #tooltippable #tooltip:[GetPlayer.GetTooltipTag],NUM_CONVOYS_TOOLTIP_EXTENDED [GetPlayer.GetNumAvailableConvoys]#!#!"
 

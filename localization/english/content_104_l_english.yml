@@ -1,12 +1,12 @@
 ﻿l_english:
  congo_river_expedition: "Виправа річкою Конґо"
- congo_river_expedition_desc: "Серце африканського континенту залишається для багатьох загадкою. Ми розпочнемо виправу для визначення русла річки Конґо."
+ congo_river_expedition_desc: "Серце африканського материку залишається для багатьох загадкою. Ми розпочнемо виправу для визначення русла річки Конґо."
  congo_river_expedition_tooltip: "Вимоги:"
  modifier_congo_river_expedition_complete: "Нанесено на мапу русло річки Конґо"
  
  expedition_events.601.t: "Виправа річкою Конґо"
  expedition_events.601.d: "Була призначена виправа для дослідження річок Луалаба і Конґо."
- expedition_events.601.f: "Для участі в виправі в самісіньке серце природи зібрано ряд знавців у різних галузях. Їхній юнацький ентузіязм тихо змішується з розсудливим страхом, який відчувають перед незвіданим континентом наші найбільш досвідчені дослідники."
+ expedition_events.601.f: "Для участи у виправі в самісіньке серце природи зібрано ряд знавців у різних галузях. Їхній юнацький ентузіязм тихо змішується з розсудливим страхом, який відчувають перед незвіданим континентом наші найбільш досвідчені дослідники."
  expedition_events.601.a: "Чудова ідея."
  expedition_events.601.b: "Не зараз."
  
@@ -17,13 +17,13 @@
  expedition_events.603.t: "Вибір бюджету"
  expedition_events.603.d: "Скільки грошей ви бажаєте виділити в бюджет виправи?"
  expedition_events.603.f: "«Ми можемо наштовхнутися на всілякі перешкоди, і чим більше у нас буде фінансування, тим краще ми будемо підготовлені»"
- expedition_events.603.a: "Невелику кількість."
- expedition_events.603.b: "Помірну кількість."
- expedition_events.603.c: "Велику кількість."
+ expedition_events.603.a: "Невелику суму."
+ expedition_events.603.b: "Середню суму."
+ expedition_events.603.c: "Велику суму."
  
  expedition_events.604.t: "Виправа починається"
  expedition_events.604.d: "Після кількох тижнів підготовки та подорожі виправи на чолі з [SCOPE.sCharacter('expedition_leader').GetFullName] прибула до гирла Конґо. Звідси вони почнуть свою подорож, щоб визначити русло цієї невловимої річки."
- expedition_events.604.f: "«Піднятися цією річкою було наче подорожувати назад до найдавніших початків світу, коли рослинність буйствувала на землі, а великі дерева були королями. Порожній потік, велика тиша, непроникний ліс. Повітря було теплим, густим, важким, млявим. Не було радості в блиску сонця. Довгі відрізки водного тору бігли далі, безлюдно, у морок затьмарених відстаней»" #Joseph Conrad
+ expedition_events.604.f: "«Піднятися цією річкою було наче подорожувати назад до найдавніших початків світу, коли рослинність буянила на землі, а великі дерева були королями. Порожній потік, велика тиша, непроникний ліс. Повітря було теплим, густим, важким, млявим. Не було радости в блиску сонця. Довгі відрізки водного тору бігли далі, безлюдно, у морок затьмарених відстаней»" #Joseph Conrad
  expedition_events.604.a: "Вперед!"
  
  expedition_events.611.t: "Успішна виправа"
@@ -33,7 +33,7 @@
  congo_expedition_modifier: "Успішна виправа в Конґо"
  
  expedition_events.612.t: "Провал виправи"
- expedition_events.612.d:0 "After not receiving any reports for many months, it has become clear that the expedition to plot the course of the Congo River has failed and [SCOPE.sCharacter('expedition_leader').GetFullName] has been lost along with it."
+ expedition_events.612.d:0 "Після декількох місяців мовчання, стало зрозуміло, що виправа руслом річки Конґо провалилася і [SCOPE.sCharacter('expedition_leader').GetFullName] has been lost along with it."
  expedition_events.612.d2:0 "After not receiving any reports for many months, the fate of the expedition seemed clear; however, a letter from [SCOPE.sCharacter('expedition_leader').GetFullName] finally arrived this morning, confessing that the only way to live was to come back."
  expedition_events.612.f:0 ""Do you see the story? Do you see anything? It seems to me that I am trying to tell you a dream — making a vain attempt, because no relation of a dream can convey the dream-sensation, that commingling of absurdity, surprise, and bewilderment in a tremor of struggling revolt, that notion of being captured by the incredible which is the very essence of dreams...""
  expedition_events.612.a:0 "Damnation!"

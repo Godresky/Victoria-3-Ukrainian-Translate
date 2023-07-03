@@ -321,6 +321,7 @@
  concept_mobilize_general_mobilization: "Збір"
  concept_mobilize_general_demobilized: "Знятий зі служби"
  concept_mobilize_general_demobilization: "Зняття зі служби"
+ concept_mobilize_general_demobilization_acc: "Зняття зі служби"
  concept_mobilize_general_demobilized_adj: "Знят"
  concept_mobilize_general_desc: "[Concept('concept_mobilize_general', '$concept_mobilize_general_mobilized_adj$ий')] [Concept('concept_general', '$concept_general$')|l] негайно почне процес збору усіх [Concept('concept_battalion', '$concept_battalions_gen$')|l], які призначені до них. $concept_mobilize_general_mobilized_adj$ий генерал самостійно буде знятий зі служби, коли [concept_country|l] більше не перебуватиме у стані [Concept('concept_war', '$concept_war_gen$')|l]. Дореченцеве зняття зі служби під час активних бойових дій можливе, але лише після тривалого перебування в польових умовах і за значні витрати."
 
@@ -1206,6 +1207,7 @@
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED MAY 1, 2022
 
  concept_war_reparations: "Воєнне відшкодування"
+ concept_war_reparations_gen: "Воєнного відшкодування"
  concept_war_reparations_acc: "Воєнне відшкодування"
  concept_war_reparations_desc:2 "A secondary [concept_war_goal] that can be added onto a [concept_diplomatic_play] and claimed as part of a [concept_peace_deal]. If enforced, the targeted [concept_country] is forced to transfer [GetDiplomaticActionType('war_reparations').GetIncomeTransfer|v%] of their [concept_treasury] income to the other for a duration of #v [GetDefine('NDiplomacy','WAR_GOAL_REPARATIONS_MONTHS')|0] months#!."
 
@@ -2567,6 +2569,7 @@
 
  concept_agitator: "Закликач"
  concept_agitator_gen: "Закликача"
+ concept_agitator_ins: "Закликачем"
  concept_agitators: "Закликачі"
  concept_agitators_gen: "Закликачів"
  concept_agitators_acc: "Закликачів"
