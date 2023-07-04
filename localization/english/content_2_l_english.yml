@@ -464,12 +464,12 @@
  hard_pressed_for_money:0 "Hard-Pressed for Money"
  changing_policies_electoral_support:0 "Electoral Support for a Change in Laws"
 
- je_splitting_oman:0 "Fracturing Oman"
- je_splitting_oman_reason:0 "The sons of [ROOT.GetCountry.GetRuler.GetFullName] are hungry for power and land. Upon the Sultan's death, [ROOT.GetCountry.GetRuler.GetFirstName]'s sons will split the country between its Arabian and African holdings and vie for supremacy."
- said_bin_sultan_al_said_dies:0 "Sultan Said al Said has died."
- omani_realm_splits:0 "The Omani realm will split between Oman and Zanzibar."
+ je_splitting_oman: "Розкол Оману"
+ je_splitting_oman_reason: "Сини правителя - [ROOT.GetCountry.GetRuler.GetFullName], жадають влади та землі. Коли султан помре, то [ROOT.GetCountry.GetRuler.GetCustom('UA_joho_jiji')|l] сини розділять державу на арабські та арфиканські володіння і змагатимуться за верховенство."
+ said_bin_sultan_al_said_dies: "Султан Саїд аль Саїд помер."
+ omani_realm_splits: "Оманська держава розділиться нв Оман та Занзібар."
 
- zanzibar.1.t:0 "The Rise of Zanzibar"
+ zanzibar.1.t: "Розквіт Занзібару"
  zanzibar.1.d:0 "While [SCOPE.sCharacter('sultan_of_muscat_and_oman').GetFullName] has succeeded to power in Oman and Muscat, his younger brother [SCOPE.sCharacter('sultan_of_zanzibar').GetFullName] has established an independent powerbase as the [SCOPE.sCountry('sultanate_of_zanzibar').GetRuler.GetPrimaryRoleTitle] of [SCOPE.sCountry('sultanate_of_zanzibar').GetNameNoFlag] in East Africa."
  zanzibar.1.f:0 ""Why Africa? Look around you! The waters around Zanzibar are a more brilliant blue than the sky itself, the white sands are so fine that I could rest on the shore and imagine I was upon a hundred cushions, and all the goods of Africa you can imagine can be had in its markets. Why struggle in Oman when I can build an empire here with these riches?""
  zanzibar.1.a:0 "[SCOPE.sCountry('muscat_and_oman').GetNameNoFlag] still reigns supreme!"

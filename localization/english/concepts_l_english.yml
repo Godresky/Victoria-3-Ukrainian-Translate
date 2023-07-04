@@ -331,6 +331,7 @@
  concept_mobilize_battalion_demobilized_adj: "Знят"
  concept_mobilize_battalion_mobilize: "Збирати"
  concept_mobilize_battalion_mobilizing: "Збір"
+ concept_mobilize_battalion_mobilizing_gen: "Збору"
  concept_mobilize_battalion_mobilized: "Зібрані"
  concept_mobilize_battalion_mobilized_adj: "Зібран"
  concept_mobilize_battalions_mobilized: "Зібрані курені"
@@ -1864,6 +1865,7 @@
  concept_accepted_religion_desc_added:0 "[GetLawType('law_state_religion').GetGroup.GetName]"
 
  concept_state_religion: "Державна релігія"
+ concept_state_religion_acc: "Державну релігію"
  concept_state_religion_ins: "Державною релігією"
  concept_state_religion_desc: "[concept_religion], яка найбільше в’яжеться з [Concept('concept_country','$concept_country_ins$')|l]. Зазвичай, це панівна [Concept('concept_religion','$concept_religion$')|l], яку сповідує більшість [Concept('concept_pop', '$concept_pops_gen$')|l], проте іноді може бути як законодавчо проголошеною, так і просто релігією, яку сповідує [Concept('concept_ruler', '$concept_ruler$')|l]. Зазвичай вона не змінюється.[AddLocalizationIf(GetPlayer.IsValid, 'concept_state_religion_ingame_added')]"
  concept_state_religion_ingame_added: "\n\nДержавна релігія держави [GetPlayer.GetName]: [GetPlayer.GetStateReligion.GetName]."
@@ -2600,8 +2602,10 @@
  concept_message_settings_none: "Немає"
  concept_message_settings_none_desc: "Сповіщення не будуть відображатися ніде в інтерфейсі користувача."
 
- concept_field_promotion:0 "Field Promotion"
- concept_field_promotion_desc:0 "When a [concept_commander] dies in the line of duty a new $concept_commander$ immediately receieves a $concept_field_promotion$ to assume their duties."
+ concept_field_promotion: "Польове просування"
+ concept_field_promotion_gen: "Польового просування"
+ concept_field_promotion_acc: "Польове просування"
+ concept_field_promotion_desc: "Коли [Concept('concept_commander','$concept_commander$')|l] помирає на лінії зіткнення, то новий командир одразу отримує польове просування, щоб перебрати обовʼязки попереднього."
 
  concept_training_rate:0 "Training Rate"
  concept_training_rate_desc:0 "The $concept_training_rate$ is the amount of [concept_manpower] that can trained per week at a [concept_military_building]."
