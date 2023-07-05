@@ -1959,7 +1959,7 @@
  concept_government_reform_acc: "Урядову зміну" 
  concept_government_reform_loc: "Урядових змінах" 
  concept_government_reform_short: "Зміна"
- concept_government_reform_desc:0 "Під час урядової зміни ви можете вільно змінювати склад в [concept_government] freely by granting or removing [Concept('concept_interest_group','$concept_interest_groups$')] and/or [Concept('concept_party','$concept_parties$')] from power. $concept_interest_groups$ removed from power during such a $concept_government_reform_short$ will gain [Concept('concept_radical','$concept_radicals$')], unless the $concept_government_reform_short$ is performed shortly after a concluded $concept_election$."
+ concept_government_reform_desc: "Під час урядової зміни ви можете вільно змінювати склад [Concept('concept_government', '$concept_government_gen$')|l], додаючи або прибираючи [Concept('concept_interest_group','$concept_interest_groups_acc$')|l] та/або [Concept('concept_party','$concept_parties_acc$')|l]. $concept_interest_groups$, усунені від влади, під час такої зміни збільшать [Concept('concept_radical','$concept_radicals_acc$')|l], якщо тільки урядова зміна не здійснюється незабаром після виборів."
 
  concept_election: "Вибори"
  concept_election_gen: "Виборів"
@@ -2127,13 +2127,14 @@
  concept_country_tier_possessive:1 "$concept_country$\\'s $concept_country_tier_short$"
  concept_country_tier_desc: "$concept_country_tier_short$ [Concept('concept_country','$concept_country_gen$')|l] - невід’ємний стан та [concept_prestige|l], що надається на основі її історії та значущости. Утворення нової держави можливе лише, якщо її щабель вищий за теперішній."
 
- concept_claim: "Ремст"
- concept_claim_gen: "Ремству"
- concept_claim_acc: "Ремству"
- concept_claims: "Ремстви"
- concept_claims_gen: "Ремств"
+ concept_claim: "Домага"
+ concept_claim_gen: "Домаги"
+ concept_claim_acc: "Домагу"
+ concept_claims: "Домаги"
+ concept_claims_gen: "Домаг"
+ concept_claims_acc: "Домаги"
  concept_claimed: "Зажадан"
- concept_claim_desc:1 "A territorial $concept_claim$ that a [concept_country] has on a [concept_state_region], usually because it once belonged to them. Having a $concept_claim$ permits use of the #v $war_goal_return_state_type_name$#! [concept_war_goal] which does not generate as much [concept_infamy] as the #v $war_goal_conquer_state_type_name$#! $concept_war_goal$ does.\n\nConquering an [concept_incorporated_state] will give the previous owner a $concept_claim$ on the $concept_state_region$."
+ concept_claim_desc: "[concept_country] має територіяльну домагу на [Concept('concept_state_region','$concept_state_region_acc$')|l], зазвичай, через те, що вона колись їй належала. Коли є домага, то можна використати [Concept('concept_war_goal','$concept_war_goal_acc$')|l] #v «$war_goal_return_state_type_name$»#!, яка не створює стільки ж [Concept('concept_infamy','$concept_infamy_gen$')|l], скільки воєнна ціль #v «$war_goal_conquer_state_type_name$»#!.\n\nЯкщо ви завоюєте [Concept('concept_incorporated_state','$concept_incorporated_state_acc$')|l], то це дасть попередній власниці домагу на цей земельний реґіон."
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED APRIL 22, 2022
 
@@ -2391,13 +2392,13 @@
  concept_recognized_power_short_adj: "Визнан"
  concept_recognized_power_desc:0 "A $concept_recognized_power$ is considered a valid nation-state capable of self-determination by consensus of the [Concept('concept_great_power','$concept_great_powers$')], which sets them apart from [Concept('concept_unrecognized_power','$concept_unrecognized_powers$')]."
 
- concept_unification_supporter: "Прихильник об'єднання"
- concept_unification_supporters: "Прихильники об'єднання"
+ concept_unification_supporter: "Прихильник обʼєднання"
+ concept_unification_supporters: "Прихильники обʼєднання"
  concept_unification_suppor_noun: "Підтримка"
  concept_unification_support: "Підтримати"
  concept_unification_no_support: "Підтримувати"
  concept_unification_supporting: "Підтримання"
- concept_unification_supporter_desc: "$concept_unification_supporter$ - [concept_country|l], що підтримує певного [Concept('concept_unification_candidate','$concept_unification_candidate_gen$')|l]. Якщо об’єднання пройде успішно, то прихильник об'єднання стане частиною унії."
+ concept_unification_supporter_desc: "$concept_unification_supporter$ - [concept_country|l], що підтримує певного [Concept('concept_unification_candidate','$concept_unification_candidate_gen$')|l]. Якщо об’єднання пройде успішно, то прихильник обʼєднання стане частиною унії."
 
  concept_unification_candidate: "Кандидат на об‘єднання"
  concept_unification_candidate_gen: "Кандидата на об‘єднання"
@@ -2430,6 +2431,7 @@
  concept_party_acc_alt: "Партії"
  concept_parties: "Партії"
  concept_parties_gen: "Партій"
+ concept_parties_acc: "Партії"
  concept_parties_loc: "Партіях"
  concept_party_possessive:0 "Party\\'s"
  concept_party_adj: "Партійн"

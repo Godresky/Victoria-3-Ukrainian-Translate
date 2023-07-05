@@ -470,12 +470,12 @@
  omani_realm_splits: "Оманська держава розділиться нв Оман та Занзібар."
 
  zanzibar.1.t: "Розквіт Занзібару"
- zanzibar.1.d:0 "While [SCOPE.sCharacter('sultan_of_muscat_and_oman').GetFullName] has succeeded to power in Oman and Muscat, his younger brother [SCOPE.sCharacter('sultan_of_zanzibar').GetFullName] has established an independent powerbase as the [SCOPE.sCountry('sultanate_of_zanzibar').GetRuler.GetPrimaryRoleTitle] of [SCOPE.sCountry('sultanate_of_zanzibar').GetNameNoFlag] in East Africa."
- zanzibar.1.f:0 ""Why Africa? Look around you! The waters around Zanzibar are a more brilliant blue than the sky itself, the white sands are so fine that I could rest on the shore and imagine I was upon a hundred cushions, and all the goods of Africa you can imagine can be had in its markets. Why struggle in Oman when I can build an empire here with these riches?""
- zanzibar.1.a:0 "[SCOPE.sCountry('muscat_and_oman').GetNameNoFlag] still reigns supreme!"
- zanzibar.1.a.tt:0 "Continue to play as [SCOPE.sCountry('muscat_and_oman').GetNameNoFlag]."
- zanzibar.1.b:0 "Our fortunes lie with [SCOPE.sCountry('sultanate_of_zanzibar').GetNameNoFlag]."
- zanzibar.1.c:0 "Stop [SCOPE.sCountry('sultanate_of_zanzibar').GetNameNoFlag]! [SCOPE.sCountry('muscat_and_oman').GetNameNoFlag] cannot be divided."
+ zanzibar.1.d: "Коли [SCOPE.sCharacter('sultan_of_muscat_and_oman').GetFullName] прийшов до влади в Омані та Маскаті, його молодший брат, [SCOPE.sCharacter('sultan_of_zanzibar').GetFullName], проголосив себе як незалежний [SCOPE.sCountry('sultanate_of_zanzibar').GetRuler.GetPrimaryRoleTitle|l] країни [SCOPE.sCountry('sultanate_of_zanzibar').GetNameNoFlag] у Східній Африці."
+ zanzibar.1.f: "«Чому Африка? Тільки поглянь навколо! Вода, яка оточує Занзібар, має більш яскравіший синій колір, ніж небо, а білі піски такі дрібні, що я міг би відпочивати на березі, уявляючи, що лежу на сотні подушок, а на його ринках можна придбати всі африканські товари, які тільки можна собі придумати. Навіщо боротися в Омані, коли я можу побудувати імперію тут разом з цими багатствами?»"
+ zanzibar.1.a: "[SCOPE.sCountry('muscat_and_oman').GetNameNoFlag] все ще панує!"
+ zanzibar.1.a.tt: "Ви продовжите грати за державу [SCOPE.sCountry('muscat_and_oman').GetNameNoFlag]."
+ zanzibar.1.b: "Наша доля в краю, що зветься [SCOPE.sCountry('sultanate_of_zanzibar').GetNameNoFlag]."
+ zanzibar.1.c: "Зупиніть [SCOPE.sCountry('sultanate_of_zanzibar').GetNameNoFlag]! [SCOPE.sCountry('muscat_and_oman').GetNameNoFlag] не має бути поділеним."
 
  je_military_aviation:0 "War Among the Clouds"
  je_military_aviation_reason:0 "Advancements in aviation have opened up a new battlefield: the skies above."

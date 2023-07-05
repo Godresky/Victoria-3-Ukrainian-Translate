@@ -239,7 +239,7 @@
  REMOVE_HOMELAND: "[STATE_REGION.GetName] більше не буде [Concept('concept_homeland', '$concept_homeland_ins$')|l] народу #variable [CULTURE.GetName|l]#!"
  ADD_CLAIM: "[TARGET_COUNTRY.GetName] отримає [Concept('concept_claim', '$concept_claim_gen$')|l] на [Concept('concept_state', '$concept_state_acc$')|l] [STATE_REGION.GetName]"
  ADD_CLAIM_THIRD: "[TARGET_COUNTRY.GetName] отримає [Concept('concept_claim', '$concept_claim_acc$')|l] на [Concept('concept_state', '$concept_state_acc$')|l] [STATE_REGION.GetName]"
- REMOVE_CLAIM: "[TARGET_COUNTRY.GetName] втратить їхню [Concept('concept_claim', '$concept_claim_gen$')|l] на [Concept('concept_state', '$concept_state_acc$')|l] [STATE_REGION.GetName]"
+ REMOVE_CLAIM: "[TARGET_COUNTRY.GetName] втратить їхню [Concept('concept_claim', '$concept_claim_acc$')|l] на [Concept('concept_state', '$concept_state_acc$')|l] [STATE_REGION.GetName]"
  ACTIVATE_BUILDING:0 "[BUILDING_TYPE.GetName] in [STATE.GetName] is activated"
  DEACTIVATE_BUILDING:0 "[BUILDING_TYPE.GetName] in [STATE.GetName] is deactivated"
  REMOVE_BUILDING:0 "[BUILDING_TYPE.GetName] in [STATE.GetName] is destroyed"
