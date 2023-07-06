@@ -308,6 +308,7 @@
  concept_target_desc: "[concept_country], на яку спрямована [concept_diplomatic_play|l]."
 
  concept_homeland: "Батьківщина"
+ concept_homeland_acc: "Батьківщину"
  concept_homeland_ins: "Батьківщиною"
  concept_homeland_loc: "Батьківщині"
  concept_homelands: "Батьківщини"
@@ -813,6 +814,7 @@
  concept_decentralized_nation: "Децентралізована нація"
  concept_decentralized_nation_acc: "Децентралізовану націю"
  concept_decentralized_nation_gen: "Децентралізованої нації"
+ concept_decentralized_nation_ins: "Децентралізованою нацією"
  concept_decentralized_nations: "Децентралізовані нації"
  concept_decentralized_nations_ins: "Децентралізованими націями"
  concept_decentralized_nation_desc:1 "A [Concept('concept_country','$concept_country_nation$')] that share most properties of $concept_countries$ - [Concept('concept_pop','$concept_pops$')], a [concept_ruler], [Concept('concept_building','$concept_buildings$')], [Concept('concept_law','$concept_laws$')] and so on - but with a lack of centralized power (and/or will) to enforce borders. This makes them prone to [Concept('concept_colony','$concept_colonization$')] by $concept_countries$ who do not see them as equals to be properly [Concept('concept_diplomatic_play','$concept_diplomatic_play_negotiated$')] with for land rights.\n\n$concept_decentralized_nations$ are AI controlled and are not playable by humans."
@@ -866,7 +868,9 @@
  
  concept_politically_unaligned_aligned: "Політично позаблокові/залучені"
  concept_politically_unaligned: "Політично позаблокові"
+ concept_politically_unaligned_adj: "Політично позаблоков"
  concept_politically_involved: "Політично залучені"
+ concept_politically_involved_adj: "Політично залучен"
  concept_politically_unaligned_aligned_desc:4 "The part of a [concept_pop] that does not support an [concept_interest_group] is called #b Politically Unaligned#!. This is often due to low [concept_literacy] or [concept_sol]. $concept_politically_unaligned$ parts of $concept_pops$ do not participate in the political process and any [concept_political_strength] they possess is wasted.\n\nThe opposite of this is #b Politically Aligned#!. Which means the $concept_pop$ is part of one of your [Concept('concept_country', '$concept_country_possessive$')] [Concept('concept_interest_group', '$concept_interest_groups$')] and the $concept_pop$'s $concept_political_strength$ is attributed to that $concept_interest_group$."
  
  concept_investment_level: "Рівень розвитку"

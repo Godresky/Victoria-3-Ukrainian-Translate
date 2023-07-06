@@ -614,8 +614,8 @@
  
  TRIGGER_HIGHEST_SECESSION_PROGRESS:1 "Highest Secession Movement Progress $COMPARATOR$ #variable $NUM|%1$#!"
  TRIGGER_HIGHEST_SECESSION_PROGRESS_NOT:2 "Highest Secession Movement Progress #bold not #!$COMPARATOR$ #variable $NUM|%1$#!"
- TRIGGER_HIGHEST_SECESSION_PROGRESS_FIRST: "Найвищий поступ #yellow [Country.GetAdjectiveNoFlag|l]ого#! [Concept('concept_secession', '$concept_secession_adj$ого')|l] руху $COMPARATOR$ #variable $NUM|%1$#!"
- TRIGGER_HIGHEST_SECESSION_PROGRESS_FIRST_NOT: "Найвищий поступ #yellow [Country.GetAdjectiveNoFlag|l]ого#! [Concept('concept_secession', '$concept_secession_adj$ого')|l] руху #bold не#!$COMPARATOR$ #variable $NUM|%1$#!"
+ TRIGGER_HIGHEST_SECESSION_PROGRESS_FIRST: "Найвищий розвиток #yellow [Country.GetAdjectiveNoFlag|l]ого#! [Concept('concept_secession', '$concept_secession_adj$ого')|l] руху $COMPARATOR$ #variable $NUM|%1$#!"
+ TRIGGER_HIGHEST_SECESSION_PROGRESS_FIRST_NOT: "Найвищий розвиток #yellow [Country.GetAdjectiveNoFlag|l]ого#! [Concept('concept_secession', '$concept_secession_adj$ого')|l] руху #bold не#!$COMPARATOR$ #variable $NUM|%1$#!"
  TRIGGER_HIGHEST_SECESSION_PROGRESS_THIRD:1 "Highest [concept_secession] Movement in [Country.GetName] Progress $COMPARATOR$ #variable $NUM|%1$#!"
  TRIGGER_HIGHEST_SECESSION_PROGRESS_THIRD_NOT:2 "Highest [concept_secession] Movement in [Country.GetName] Progress #bold not #!$COMPARATOR$ #variable $NUM|%1$#!"
  
@@ -1366,8 +1366,8 @@
  TRIGGER_CULTURE_IS_DISCRIMINATED_IN_THIRD: "Культуру [CULTURE.GetName|l] [Concept('concept_discrimination','$concept_discriminated_against$')|l] у [Concept('concept_country','$concept_country_dat$')|l] [Country.GetName]"
  TRIGGER_CULTURE_IS_DISCRIMINATED_IN_NOT_THIRD: "Культуру [CULTURE.GetName|l] #bold не #![Concept('concept_discrimination','$concept_discriminated_against$')|l] у [Concept('concept_country','$concept_country_dat$')|l] [Country.GetName]"
  
- TRIGGER_CULTURE_SECESSION_PROGRESS:0 "[CULTURE.GetName] in [TARGET_COUNTRY.GetName]: [concept_secession] progress ($CURRENT_VALUE$) is $COMPARATOR$ $NUM|v$"
- TRIGGER_CULTURE_SECESSION_PROGRESS_NOT:0 "[CULTURE.GetName] in [TARGET_COUNTRY.GetName]: [concept_secession] progress ($CURRENT_VALUE$) is $COMPARATOR$ $NUM|v$"
+ TRIGGER_CULTURE_SECESSION_PROGRESS: "[CULTURE.GetName] у державі [TARGET_COUNTRY.GetName]: розвиток [Concept('concept_secession', '$concept_secession_gen$')|l] ($CURRENT_VALUE$) $COMPARATOR$ $NUM|v$"
+ TRIGGER_CULTURE_SECESSION_PROGRESS_NOT: "[CULTURE.GetName] у державі [TARGET_COUNTRY.GetName]:  розвиток [Concept('concept_secession', '$concept_secession_gen$')|l] ($CURRENT_VALUE$) $COMPARATOR$ $NUM|v$"
 
  TRIGGER_CULTURE_PERCENT_STATE:0 "Population in [STATE.GetName] is $COMPARATOR$ $NUM|%0v$ [TARGET_CULTURE.GetName] (Currently $CURRENT_VALUE|%0v$)"
  TRIGGER_CULTURE_PERCENT_STATE_NOT:0 "Population in [STATE.GetName] is #bold not#! $COMPARATOR$ $NUM|%0v$ [TARGET_CULTURE.GetName] (Currently $CURRENT_VALUE|%0v$)"
