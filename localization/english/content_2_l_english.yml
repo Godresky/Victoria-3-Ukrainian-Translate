@@ -477,9 +477,9 @@
  zanzibar.1.b: "Наша доля в краю, що зветься [SCOPE.sCountry('sultanate_of_zanzibar').GetNameNoFlag]."
  zanzibar.1.c: "Зупиніть [SCOPE.sCountry('sultanate_of_zanzibar').GetNameNoFlag]! [SCOPE.sCountry('muscat_and_oman').GetNameNoFlag] не має бути поділеним."
 
- je_military_aviation:0 "War Among the Clouds"
- je_military_aviation_reason:0 "Advancements in aviation have opened up a new battlefield: the skies above."
- aviation.1.t:0 "The Ace Officer"
+ je_military_aviation: "Війна серед хмар"
+ je_military_aviation_reason: "Розвиток у царині авіяції відкрив нове поле бою: небеса над головою."
+ aviation.1.t: "Ас-офіцер"
  aviation.1.d:1 "[SCOPE.sCharacter('flying_circus_general').GetFullName] has gained renowned not merely for utilizing aircraft in battle, but for even flying one [SCOPE.sCharacter('flying_circus_general').GetHerHim]self over the skies of [SCOPE.sState('flying_circus_state').GetName]."
  aviation.1.f:1 ""The papers are calling [SCOPE.sCharacter('flying_circus_general').GetHerHim] the '[SCOPE.sCharacter('flying_circus_general').GetCustom('air_ace_adjective_loc')] [SCOPE.sCharacter('flying_circus_general').GetCustom('air_ace_noun_loc')]'! [SCOPE.sCharacter('flying_circus_general').GetSheHe|U]'s astounding — I can't tell if it'd be better to parade [SCOPE.sCharacter('flying_circus_general').GetHerHim] around at home or keep siccing [SCOPE.sCharacter('flying_circus_general').GetHerHim] on everyone in [SCOPE.sState('flying_circus_state').GetNameNoFormatting].""
  aviation.1.a:0 "Hero-worship will help domestically."

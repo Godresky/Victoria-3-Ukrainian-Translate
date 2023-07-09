@@ -492,6 +492,7 @@
  concept_government_building_desc:1 "A [concept_building] owned and operated by the [concept_government] using funds from the [concept_treasury]. $concept_government_buildings$ have no [Concept('concept_good','$concept_goods$')] [concept_good_production] and therefore no [concept_revenue], but produce a number of other resources crucial to running a [concept_country] such as [concept_bureaucracy], [concept_infrastructure], [concept_convoys], and [Concept('concept_unit','$concept_units$')]. The [concept_workforce] of non-military $concept_government_buildings$ get paid according to the [concept_government_wage], while [Concept('concept_military_building','$concept_military_buildings$')] get paid according to the [concept_military_wage]."
 
  concept_military_building: "Військова будівля"
+ concept_military_building_loc: "Військовій будівлі"
  concept_military_buildings: "Військові будівлі"
  concept_military_buildings_acc: "Військові будівлі"
  concept_military_buildings_ins: "Військовими будівлями"
@@ -2613,8 +2614,8 @@
  concept_field_promotion_acc: "Польове просування"
  concept_field_promotion_desc: "Коли [Concept('concept_commander','$concept_commander$')|l] помирає на лінії зіткнення, то новий командир одразу отримує польове просування, щоб перебрати обовʼязки попереднього."
 
- concept_training_rate:0 "Training Rate"
- concept_training_rate_desc:0 "The $concept_training_rate$ is the amount of [concept_manpower] that can trained per week at a [concept_military_building]."
+ concept_training_rate: "Ефективність тренування"
+ concept_training_rate_desc: "$concept_training_rate$ - це кількість [Concept('concept_manpower','$concept_manpower_gen$')|l], яка може натренована за тиждень у [Concept('concept_military_building','$concept_military_building_loc$')|l]."
 
  concept_naval_invasion_support: "Підтримка морського вторгнення"
  concept_naval_invasion_support_gen: "Підтримки морського вторгнення"

@@ -1,8 +1,8 @@
 ﻿l_english:
   
-custom_orleanist: "Orléanist"
-custom_legitimist: "Bourbon"
-custom_bonapartist: "Bonapartist"
+custom_orleanist: "Орлеаністи"
+custom_legitimist: "Бурбони"
+custom_bonapartist: "Бонапартисти"
 
 french_pretenders.1.t: "The [SCOPE.GetRootScope.GetCountry.GetCustom('dynamic_french_pretender')] Restoration"
 french_pretenders.1.d_1:1 "With the failure of the previous regime to legitimize itself, a swift coup has elevated [ROOT.GetCountry.GetRuler.GetFullName] to power. Opting for a more reserved and modern coronation compared to some of [ROOT.GetCountry.GetRuler.GetHerHis] predecessors, [ROOT.GetCountry.GetRuler.GetSheHe] has been crowned [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] of [ROOT.GetCountry.GetName] in the cathedral of Reims."

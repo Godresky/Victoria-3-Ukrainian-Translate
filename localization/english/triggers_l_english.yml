@@ -151,11 +151,11 @@
  TRIGGER_IS_SUPPORTING_UNIFICATION_CANDIDATE:0 "[COUNTRY.GetName] is supporting [TARGET_COUNTRY.GetName] as [concept_unification_candidate] for [COUNTRY_FORMATION.GetName]"
  TRIGGER_IS_SUPPORTING_UNIFICATION_CANDIDATE_NOT:0 "[COUNTRY.GetName] is #bold not#! supporting [TARGET_COUNTRY.GetName] as [concept_unification_candidate] for [COUNTRY_FORMATION.GetName]"
  
- TRIGGER_HAS_JOURNAL_ENTRY:0 "Has an active [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
+ TRIGGER_HAS_JOURNAL_ENTRY: "Є ожвавленим [Concept('concept_journal_entry', '$concept_journal_entry_acc$')|l] «[JOURNAL_ENTRY_TYPE.GetName]»"
  TRIGGER_HAS_JOURNAL_ENTRY_NOT:1 "Does #bold not #!have an active [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
- TRIGGER_HAS_JOURNAL_ENTRY_FIRST:0 "[COUNTRY.GetNameNoFlag] has an active [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
+ TRIGGER_HAS_JOURNAL_ENTRY_FIRST: "У державі [COUNTRY.GetNameNoFlag] є ожвавленим [Concept('concept_journal_entry', '$concept_journal_entry_acc$')|l] «[JOURNAL_ENTRY_TYPE.GetName]»"
  TRIGGER_HAS_JOURNAL_ENTRY_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] does #bold not #!have an active [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
- TRIGGER_HAS_JOURNAL_ENTRY_THIRD:0 "[COUNTRY.GetName] has an active [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
+ TRIGGER_HAS_JOURNAL_ENTRY_THIRD: "У державі [COUNTRY.GetName] є ожвавленим [Concept('concept_journal_entry', '$concept_journal_entry_acc$')|l] «[JOURNAL_ENTRY_TYPE.GetName]»"
  TRIGGER_HAS_JOURNAL_ENTRY_THIRD_NOT:1 "[COUNTRY.GetName] does #bold not #!have an active [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
  
  TRIGGER_HAS_VARIABLE: "#variable Держава#! має #variable відповідну змінну#!"
@@ -284,15 +284,15 @@
  TRIGGER_IS_POP_TYPE:1 "[concept_profession] is [POP_TYPE.GetName]"
  TRIGGER_IS_POP_TYPE_NOT:2 "[concept_profession] is #bold not#! [POP_TYPE.GetName]"
  
- TRIGGER_HAS_TRAIT:0 "Has the trait [CHARACTER_TRAIT.GetName]"
- TRIGGER_HAS_TRAIT_NOT:1 "Does #bold not #!have the trait [CHARACTER_TRAIT.GetName]"
- TRIGGER_HAS_TRAIT_THIRD:0 "Has the trait [CHARACTER_TRAIT.GetName]"
- TRIGGER_HAS_TRAIT_THIRD_NOT:0 "Does #bold not #!have the trait [CHARACTER_TRAIT.GetName]"
+ TRIGGER_HAS_TRAIT: "Має рису «[CHARACTER_TRAIT.GetName]»"
+ TRIGGER_HAS_TRAIT_NOT: "#bold Не#! має рису «[CHARACTER_TRAIT.GetName]»"
+ TRIGGER_HAS_TRAIT_THIRD: "Має рису «[CHARACTER_TRAIT.GetName]»"
+ TRIGGER_HAS_TRAIT_THIRD_NOT: "#bold Не#! має рису «[CHARACTER_TRAIT.GetName]»"
  
- TRIGGER_IS_FEMALE: "Жінка"
- TRIGGER_IS_FEMALE_NOT: "#bold Не#! жінка"
- TRIGGER_IS_FEMALE_THIRD:0 "[CHARACTER.GetFullName] is a woman"
- TRIGGER_IS_FEMALE_THIRD_NOT:0 "[CHARACTER.GetFullName] is #bold not #!a woman"
+ TRIGGER_IS_FEMALE: "Це жінка"
+ TRIGGER_IS_FEMALE_NOT: "Це #bold не#! жінка"
+ TRIGGER_IS_FEMALE_THIRD: "[CHARACTER.GetFullName] - жінка"
+ TRIGGER_IS_FEMALE_THIRD_NOT: "[CHARACTER.GetFullName] #bold не#! жінка"
 
  TRIGGER_IS_HISTORICAL:0 "Is historical"
  TRIGGER_IS_HISTORICAL_NOT:0 "Is #bold not#! historical"
@@ -726,7 +726,7 @@
  TRIGGER_POP_IS_DISCRIMINATED:0 "Is being discriminated against in their home country"
  TRIGGER_POP_IS_DISCRIMINATED_NOT:1 "Is #bold not #!being discriminated against in their home country"
  
- TRIGGER_POP_HAS_PRIMARY_CULTURE:1 "Belongs to a [Concept('concept_primary_cultures','$concept_primary_culture$')] in their home [concept_country]"
+ TRIGGER_POP_HAS_PRIMARY_CULTURE:1 "стосується держави a [Concept('concept_primary_cultures','$concept_primary_culture$')] in their home [concept_country]"
  TRIGGER_POP_HAS_PRIMARY_CULTURE_NOT:2 "Does #b not#! belongs to a [Concept('concept_primary_cultures','$concept_primary_culture$')] in their home [concept_country]"
  
  TRIGGER_CULTURE_ACCEPTED:0 "Is of a culture considered accepted in their home country"
@@ -1312,7 +1312,7 @@
  
  TRIGGER_RADICAL_FRACTION:3 "Fraction of [concept_radical] [SelectLocalization( StringIsEmpty( '$FILTER$' ), Concept('concept_pop', '$concept_pops$'), '$FILTER$')] is $COMPARATOR$ $NUM$"
  TRIGGER_RADICAL_FRACTION_NOT:4 "Fraction of [concept_radical] [SelectLocalization( StringIsEmpty( '$FILTER$' ), Concept('concept_pop', '$concept_pops$'), '$FILTER$')] is #bold not #!$COMPARATOR$ $NUM$"
- TRIGGER_RADICAL_FRACTION_THIRD:1 "$COMPARATOR|U$ $NUM|%0$ of [SelectLocalization( StringIsEmpty( '$FILTER$' ), Concept('concept_pop', '$concept_pops$'), '$FILTER$')] in $NAME$ are [Concept('concept_radical', '$concept_radicals$')]"
+ TRIGGER_RADICAL_FRACTION_THIRD: "$COMPARATOR|U$ $NUM|%0$ [SelectLocalization( StringIsEmpty( '$FILTER$' ), Concept('concept_pop', '$concept_pops_gen$'), '$FILTER$')|l] у місцині $NAME$ - [Concept('concept_radical', '$concept_radicals$')|l]"
  TRIGGER_RADICAL_FRACTION_THIRD_NOT:1 "$COMPARATOR|U$ $NUM|%0$ of [SelectLocalization( StringIsEmpty( '$FILTER$' ), Concept('concept_pop', '$concept_pops$'), '$FILTER$')] in $NAME$ are #bold not#! [Concept('concept_radical', '$concept_radicals$')]"
  
  TRIGGER_LOYALIST_FRACTION:3 "Fraction of [concept_loyalist] [SelectLocalization( StringIsEmpty( '$FILTER$' ), Concept('concept_pop', '$concept_pops$'), '$FILTER$')] is $COMPARATOR$ $NUM$"
@@ -1491,8 +1491,8 @@
  TRIGGER_IS_COUNTRY_ALIVE:1 "[COUNTRY.GetName] is alive"
  TRIGGER_IS_COUNTRY_ALIVE_NOT:2 "[COUNTRY.GetName] does not exist"
 
- TRIGGER_CIVIL_WAR_PROGRESS:1 "[concept_civil_war] progress is $COMPARATOR$ #variable $NUM|0%$#!"
- TRIGGER_CIVIL_WAR_PROGRESS_NOT:2 "[concept_civil_war] progress is NOT $COMPARATOR$ #variable $NUM|0%$#!"
+ TRIGGER_CIVIL_WAR_PROGRESS: "Розвиток [Concept('concept_civil_war', '$concept_civil_war_gen$')|l] $COMPARATOR$ #variable $NUM|0%$#!"
+ TRIGGER_CIVIL_WAR_PROGRESS_NOT: "Розвиток [Concept('concept_civil_war', '$concept_civil_war_gen$')|l] НЕ $COMPARATOR$ #variable $NUM|0%$#!"
  
  TRIGGER_IS_CIVIL_WAR_TYPE: "[concept_civil_war] - #v $CIVIL_WAR_TYPE|l$#!"
  TRIGGER_IS_CIVIL_WAR_TYPE_NOT: "[concept_civil_war] #bold не#! є #v $CIVIL_WAR_TYPE|l$#!"
@@ -2003,19 +2003,19 @@
  TRIGGER_ANY_NEIGHBOURING_STATE_PERCENT:3 "$PARAMETERS$ of $FILTER$neighboring [Concept('concept_state', '$concept_states$')]:"
  TRIGGER_ANY_NEIGHBOURING_STATE_COUNT:3 "$PARAMETERS$ $FILTER$neighboring [Concept('concept_state', '$concept_states$')]:"
  
- TRIGGER_ANY_SCOPE_WAR:1 "Any [concept_war]:"
- TRIGGER_ANY_SCOPE_WAR_NOT:1 "No [concept_war]:"
- TRIGGER_ANY_SCOPE_WAR_FIRST:1 "Any [COUNTRY.GetAdjectiveNoFlag] [concept_war]:"
- TRIGGER_ANY_SCOPE_WAR_FIRST_NOT:1 "No [COUNTRY.GetAdjectiveNoFlag] [concept_war]:"
- TRIGGER_ANY_SCOPE_WAR_THIRD:1 "Any [COUNTRY.GetAdjective] [concept_war]:"
- TRIGGER_ANY_SCOPE_WAR_THIRD_NOT:1 "No [COUNTRY.GetAdjective] [concept_war]:"
+ TRIGGER_ANY_SCOPE_WAR: "Будь-яка [concept_war|l]:"
+ TRIGGER_ANY_SCOPE_WAR_NOT: "Жодна [concept_war|l]:"
+ TRIGGER_ANY_SCOPE_WAR_FIRST: "Будь-яка #yellow [COUNTRY.GetAdjectiveNoFlag|l]а#! [concept_war|l]:"
+ TRIGGER_ANY_SCOPE_WAR_FIRST_NOT: "Жодна #yellow [COUNTRY.GetAdjectiveNoFlag|l]а#! [concept_war|l]:"
+ TRIGGER_ANY_SCOPE_WAR_THIRD: "Будь-яка #yellow [COUNTRY.GetAdjective|l]а#! [concept_war|l]:"
+ TRIGGER_ANY_SCOPE_WAR_THIRD_NOT: "Жодна #yellow [COUNTRY.GetAdjective|l]а#! [concept_war|l]:"
  
  TRIGGER_ANY_SCOPE_WAR_ALL: "Усі [Concept('concept_war', '$concept_wars$')|l]:"
  TRIGGER_ANY_SCOPE_WAR_PERCENT:3 "$PARAMETERS$ of $FILTER$[Concept('concept_war', '$concept_wars$')]:"
  TRIGGER_ANY_SCOPE_WAR_COUNT:3 "$PARAMETERS$ $FILTER$[Concept('concept_war', '$concept_wars$')]:"
  
- TRIGGER_ANY_SCOPE_FRONT:1 "Any [concept_front]:"
- TRIGGER_ANY_SCOPE_FRONT_ALL:1 "All [Concept('concept_front', '$concept_fronts$')]:"
+ TRIGGER_ANY_SCOPE_FRONT: "Будь-який [concept_front|l]:"
+ TRIGGER_ANY_SCOPE_FRONT_ALL: "Усі [Concept('concept_front', '$concept_fronts$')|l]:"
  TRIGGER_ANY_SCOPE_FRONT_PERCENT:2 "$PARAMETERS$ of $FILTER$[Concept('concept_front', '$concept_fronts$')]:"
  TRIGGER_ANY_SCOPE_FRONT_COUNT:2 "$PARAMETERS$ $FILTER$[Concept('concept_front', '$concept_fronts$')]:"
  
@@ -2589,8 +2589,8 @@ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_GREATER_THAN:0 "Remaining duratio
  TRIGGER_NUM_DEFENDING_BATTALIONS_EQUAL:0 "[FRONT.GetName] number of defending Battalions is $TARGET_VALUE|0v$"
  TRIGGER_NUM_DEFENDING_BATTALIONS_NOT_EQUAL:1 "[FRONT.GetName] number of defending Battalions is #bold not #!$TARGET_VALUE|0v$"
 
- TRIGGER_COMMANDER_PM_USAGE:2 "Commander from [TARGET_COUNTRY.GetName] has [PRODUCTION_METHOD.GetName] usage ($CURRENT_VALUE|%v$) that is $COMPARATOR$ $NUM|v%$"
- TRIGGER_COMMANDER_PM_USAGE_NOT:3 "Commander from [TARGET_COUNTRY.GetName] does #bold not #!have [PRODUCTION_METHOD.GetName] usage ($CURRENT_VALUE|%v$) that is $COMPARATOR$ $NUM|v%$"
+ TRIGGER_COMMANDER_PM_USAGE: "У командира держави [TARGET_COUNTRY.GetName] використання способу «[PRODUCTION_METHOD.GetName]» ($CURRENT_VALUE|%v$) $COMPARATOR$ $NUM|v%$"
+ TRIGGER_COMMANDER_PM_USAGE_NOT: "У командира держави [TARGET_COUNTRY.GetName] використання способу «[PRODUCTION_METHOD.GetName]» ($CURRENT_VALUE|%v$) #bold не#! $COMPARATOR$ $NUM|v%$"
  
  TRIGGER_DIPLOMATIC_PLAY_PM_USAGE:1 "[DIPLOMATIC_PLAY.GetName] on the [TARGET_COUNTRY.GetAdjectiveNoFormatting] side has [PRODUCTION_METHOD.GetName] usage ($CURRENT_VALUE|%v$) that is $COMPARATOR$ $NUM|v%$"
  TRIGGER_DIPLOMATIC_PLAY_PM_USAGE_NOT:2 "[DIPLOMATIC_PLAY.GetName] on the [TARGET_COUNTRY.GetAdjectiveNoFormatting] side does #bold not #!have [PRODUCTION_METHOD.GetName] usage ($CURRENT_VALUE|%v$) that is $COMPARATOR$ $NUM|v%$"
@@ -2600,12 +2600,12 @@ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_GREATER_THAN:0 "Remaining duratio
  TRIGGER_FRONT_SIDE_PM_USAGE_THIRD:0 "[FRONT.GetName] on the [TARGET_COUNTRY.GetAdjectiveNoFormatting] side has [PRODUCTION_METHOD.GetName] usage ($CURRENT_VALUE|%v$) that is $COMPARATOR$ $NUM|v%$"
  TRIGGER_FRONT_SIDE_PM_USAGE_THIRD_NOT:0 "[FRONT.GetName] on the [TARGET_COUNTRY.GetAdjectiveNoFormatting] side does #bold not #!have [PRODUCTION_METHOD.GetName] usage ($CURRENT_VALUE|%v$) that is $COMPARATOR$ $NUM|v%$"
  
- TRIGGER_COUNTRY_PM_USAGE:1 "[COUNTRY.GetName] has [PRODUCTION_METHOD.GetName] usage ($CURRENT_VALUE|%v$) that is $COMPARATOR$ $NUM|v%$"
- TRIGGER_COUNTRY_PM_USAGE_NOT:2 "[COUNTRY.GetName] does #bold not #!have [PRODUCTION_METHOD.GetName] usage ($CURRENT_VALUE|%v$) that is $COMPARATOR$ $NUM|v%$"
- TRIGGER_COUNTRY_PM_USAGE_FIRST:0 "[COUNTRY.GetNameNoFlag] has [PRODUCTION_METHOD.GetName] usage ($CURRENT_VALUE|%v$) that is $COMPARATOR$ $NUM|v%$"
- TRIGGER_COUNTRY_PM_USAGE_FIRST_NOT:0 "[COUNTRY.GetNameNoFlag] has [PRODUCTION_METHOD.GetName] usage ($CURRENT_VALUE|%v$) that is $COMPARATOR$ $NUM|v%$"
- TRIGGER_COUNTRY_PM_USAGE_THIRD:0 "[COUNTRY.GetName] has [PRODUCTION_METHOD.GetName] usage ($CURRENT_VALUE|%v$) that is $COMPARATOR$ $NUM|v%$"
- TRIGGER_COUNTRY_PM_USAGE_THIRD_NOT:0 "[COUNTRY.GetName] has [PRODUCTION_METHOD.GetName] usage ($CURRENT_VALUE|%v$) that is $COMPARATOR$ $NUM|v%$"
+ TRIGGER_COUNTRY_PM_USAGE: "У державі [COUNTRY.GetName] використання способу «[PRODUCTION_METHOD.GetName]» ($CURRENT_VALUE|%v$) $COMPARATOR$ $NUM|v%$"
+ TRIGGER_COUNTRY_PM_USAGE_NOT: "У державі [COUNTRY.GetName] використання способу «[PRODUCTION_METHOD.GetName]» ($CURRENT_VALUE|%v$) #bold не#! $COMPARATOR$ $NUM|v%$"
+ TRIGGER_COUNTRY_PM_USAGE_FIRST: "У державі [COUNTRY.GetNameNoFlag] використання способу «[PRODUCTION_METHOD.GetName]» ($CURRENT_VALUE|%v$) $COMPARATOR$ $NUM|v%$"
+ TRIGGER_COUNTRY_PM_USAGE_FIRST_NOT: "У державі [COUNTRY.GetNameNoFlag] використання способу «[PRODUCTION_METHOD.GetName]» ($CURRENT_VALUE|%v$) #bold не#! $COMPARATOR$ $NUM|v%$"
+ TRIGGER_COUNTRY_PM_USAGE_THIRD: "У державі [COUNTRY.GetName] використання способу «[PRODUCTION_METHOD.GetName]» ($CURRENT_VALUE|%v$) $COMPARATOR$ $NUM|v%$"
+ TRIGGER_COUNTRY_PM_USAGE_THIRD_NOT: "У державі [COUNTRY.GetName] використання способу «[PRODUCTION_METHOD.GetName]» ($CURRENT_VALUE|%v$) #bold не#! $COMPARATOR$ $NUM|v%$"
  
  TRIGGER_BATTLE_SIDE_PM_USAGE:1 "[BATTLE.GetName] on the [TARGET_COUNTRY.GetAdjectiveNoFormatting] side has [PRODUCTION_METHOD.GetName] usage ($CURRENT_VALUE|%v$) that is $COMPARATOR$ $NUM|v%$"
  TRIGGER_BATTLE_SIDE_PM_USAGE_NOT:2 "[BATTLE.GetName] on the [TARGET_COUNTRY.GetAdjectiveNoFormatting] side does #bold not #!have [PRODUCTION_METHOD.GetName] usage ($CURRENT_VALUE|%v$) that is $COMPARATOR$ $NUM|v%$"
@@ -2635,11 +2635,11 @@ TRIGGER_CONSTRUCTION_QUEUE_GOVERNMENT_DURATION_GREATER_THAN:0 "Remaining duratio
  TRIGGER_MARKET_OWNER_EQUAL_FIRST: "[TARGET_COUNTRY.GetNameNoFlag] контролює [Concept('concept_market', '$concept_market_acc$')|l]"
  TRIGGER_MARKET_OWNER_EQUAL_FIRST_NOT: "[TARGET_COUNTRY.GetNameNoFlag] не контролює [Concept('concept_market', '$concept_market_acc$')|l]"
 
- TRIGGER_NONE_OWNER_EQUAL:0 "Belongs to [TARGET_COUNTRY.GetName]"
- TRIGGER_NONE_OWNER_EQUAL_NOT:0 "Does #bold not #!belong to [TARGET_COUNTRY.GetName]"
+ TRIGGER_NONE_OWNER_EQUAL: "Стосується держави [TARGET_COUNTRY.GetName]"
+ TRIGGER_NONE_OWNER_EQUAL_NOT: "#bold Не#! стосується держави [TARGET_COUNTRY.GetName]"
 
- TRIGGER_CHARACTER_OWNER_EQUAL:0 "[concept_character] belongs to [TARGET_COUNTRY.GetName]"
- TRIGGER_CHARACTER_OWNER_EQUAL_NOT:0 "[concept_character] does #bold not #!belong to [TARGET_COUNTRY.GetName]"
+ TRIGGER_CHARACTER_OWNER_EQUAL: "[concept_character] стосується держави [TARGET_COUNTRY.GetName]"
+ TRIGGER_CHARACTER_OWNER_EQUAL_NOT: "[concept_character] #bold не#! стосується держави [TARGET_COUNTRY.GetName]"
 
  TRIGGER_APPROACHING_BUREAUCRACY_SHORTAGE_FIRST: "Держава близька до нестачі $sBUREAUCRACY_gen$"
  TRIGGER_APPROACHING_BUREAUCRACY_SHORTAGE_FIRST_NOT: "Держава #bold не#! близька до нестачі $sBUREAUCRACY_gen$"

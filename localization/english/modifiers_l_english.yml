@@ -940,9 +940,9 @@
  modifier_country_legitimacy_govt_total_votes_add: "[concept_legitimacy] на основі [Concept('concept_votes','$concept_votes_gen$')|l]"
  modifier_country_legitimacy_govt_total_votes_add_desc: "Рівень [Concept('concept_legitimacy','$concept_legitimacy_gen$')|l], який отримає або втрачає [concept_government|l], виходячи зі загального відсотку [Concept('concept_votes','$concept_votes_gen$')|l] [Concept('concept_party','$concept_parties_gen$')|l] в уряді."
 
- modifier_country_radicals_from_legitimacy_mult:0 "[Concept('concept_radical','$concept_radicals$')] from low [concept_legitimacy]"
+ modifier_country_radicals_from_legitimacy_mult: "[Concept('concept_radical','$concept_radicals$')] через низьку [Concept('concept_legitimacy','$concept_legitimacy_acc$')|l]"
  modifier_country_radicals_from_legitimacy_mult_desc:0 "A change to the number of [Concept('concept_radical','$concept_radicals$')] a [concept_country] gains from having low [concept_legitimacy]"
- modifier_country_loyalists_from_legitimacy_mult:0 "[Concept('concept_loyalist','$concept_loyalists$')] from high [concept_legitimacy]"
+ modifier_country_loyalists_from_legitimacy_mult: "[Concept('concept_loyalist','$concept_loyalists$')] через високу [Concept('concept_legitimacy','$concept_legitimacy_acc$')|l]"
  modifier_country_loyalists_from_legitimacy_mult_desc:0 "A change to the number of [Concept('concept_loyalist','$concept_loyalists$')] a [concept_country] gains from having high [concept_legitimacy]"
   
  modifier_stockpile_army_requirement_small_arms_add:0 "Army @small_arms! Consumption"
