@@ -166,7 +166,7 @@
  DATA_PARTY_NAME_TOOLTIP: "[SelectLocalization( Party.GetLeader.IsValid, 'DATA_PARTY_NAME_LEADER_TOOLTIP', 'concept_party_desc' )]"
  DATA_MARKET_NAME_TOOLTIP: "[concept_market_owner]: [Market.GetOwner.GetName]\n[concept_market_capital]: [Market.GetMarketCapital.GetName]\nБалянс: #tooltippable #tooltip:MARKET_BALANCE_BREAKDOWN #bold @money![Market.GetBalance|+=D]#!#!#!\nВнесок у [concept_gdp|l]: #tooltippable #tooltip:MARKET_GDP_PERCENTAGE_TOOLTIP [Market.GetGDPContributionPercentage( GetPlayer )|%1]#!#! \nЗначення [Concept('concept_gdp', '$concept_gdp_gen$')|l]: @money!#variable [Market.GetMarketGDPValue|D]#!"
  DATA_DECREE_TYPE_NAME_TOOLTIP: "[DecreeType.GetTooltip(GetPlayer.Self)]"
- DATA_LAW_GROUP_NAME_TOOLTIP: "[LawGroup.GetDesc]\n\n$DATA_LAW_GROUP_NAME_TOOLTIP_ACTIVE_LAW$[ConcatIfNeitherEmpty( '\n', AddLocalizationIf( LawGroup.GetCurrentlyEnacting.IsValid, 'DATA_LAW_GROUP_NAME_TOOLTIP_ENACTING_LAW' ))]\nМи маємо [LawGroup.GetNumEnactable|v] доступних иншин у цій групі."
+ DATA_LAW_GROUP_NAME_TOOLTIP: "[LawGroup.GetDesc]\n\n$DATA_LAW_GROUP_NAME_TOOLTIP_ACTIVE_LAW$[ConcatIfNeitherEmpty( '\n', AddLocalizationIf( LawGroup.GetCurrentlyEnacting.IsValid, 'DATA_LAW_GROUP_NAME_TOOLTIP_ENACTING_LAW' ))]\nМи маємо [LawGroup.GetNumEnactable|v] доступних іншин у цій групі."
  DATA_LAW_GROUP_NAME_TOOLTIP_ACTIVE_LAW: "Наразі чинний [concept_law|l]: [LawGroup.GetCurrentlyActive.GetName]"
  DATA_LAW_GROUP_NAME_TOOLTIP_ENACTING_LAW: "$concept_law$, що ухвалюється: [LawGroup.GetCurrentlyEnacting.GetName]"
  DATA_LAW_TYPE_NAME_TOOLTIP: "[LawType.GetTooltip(GetPlayer.Self)]$TOOLTIP_DELIMITER$\n#lore [LawType.GetDesc]"

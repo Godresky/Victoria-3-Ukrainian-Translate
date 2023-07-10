@@ -1648,6 +1648,7 @@
 
  concept_secession: "Розкол"
  concept_secession_gen: "Розколу"
+ concept_secession_dat: "Розколу"
  concept_secessions: "Розколи"
  concept_secession_adj: "Розкольн"
  concept_secessionist: "Розкольник"
