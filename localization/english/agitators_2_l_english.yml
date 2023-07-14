@@ -79,8 +79,8 @@ french_dynastic_progress_decrease_medium: "The Journal Entry #bold Cement the Ho
 
 
 je_conquest_of_algeria: "Завоювання Алжиру"
-je_conquest_of_algeria_reason: "In 1827, the so-called #bold Fan Affair#! resulted in a French military blockade of the #bold Deylik of Algiers#!. Three years later, our troops landed on the shores of Algeria in force, decisively defeating the army of #bold Hussein Dey#! at the battle of Staouéli. With his defeat, the old Deylik crumbled, but opportunists and pretenders rapidly filled the void it left behind.\n\nOur conquest is not yet complete. Until the French banner flies from every Algerian hamlet and every rebel lies broken in the sand, we shall not rest.\n\nVive la France!"
-je_conquest_of_algeria_tt: "Events about large scale raids will no longer occur."
+je_conquest_of_algeria_reason: "У 1827 році, так званий #bold випадок з мухогоном#! привів до французької військової блокади #bold Алжирського действа#!. Три роки опісля наші вояки висадилися на Алжирському побережжі cилою, відважно розгромивши військо #bold Гусейна Дея#! у битві при Стаоуелі. З його поразкою, старе Действо розсипалося, проте пристосуванці та претенденти швидко заповнили пустоту.\n\nНаше завоювання ще не завершене. Доки французький стяг не замайоріє над кожним Алжирським поселенням, а усякий повстанець не гнитиме на піску, доти ми не заспокоїмося.\n\nВіва ля Франсе!"
+je_conquest_of_algeria_tt: "Події про масові напади більше не відбуватимуться."
 
 
 je_the_algerian_departements: "The Algerian Departments"
@@ -89,18 +89,18 @@ je_the_algerian_departements_tt_1: "The state regions of [SCOPE.sState('je_algie
 je_the_algerian_departements_tt_2: "[SCOPE.sCulture('maghrebi_culture_scope').GetName] and [SCOPE.sCulture('berber_culture_scope').GetName] must be [Concept('concept_accepted_culture','$concept_accepted_culture_short$')|l] [Concept('concept_culture','$concept_cultures$')|l] in [SCOPE.GetRootScope.GetCountry.GetName]."
 je_the_algerian_departements_tt_3: "The [SCOPE.sCulture('french_culture_scope').GetName] [Concept('concept_pop','$concept_population$')|l] of [SCOPE.sState('je_algiers_state_scope').GetStateRegion.GetName], [SCOPE.sState('je_oran_state_scope').GetStateRegion.GetName], and [SCOPE.sState('je_constantine_state_scope').GetStateRegion.GetName] is greater than or equal to #bold 20%#!."
 
-je_reconquest_of_algeria: "The Algerian War of Resistance"
-je_reconquest_of_algeria_reason: "In 1830, the #bold Deylik of Algiers#! fell to the accursed French. Their victory however, was not complete, and the Algerian interior remains unbroken. With the aid of God, we shall push the invaders back into the sea, and consolidate the three #bold Beyliks#! under our benevolent rule."
-je_reconquest_of_algeria_tt: "We have formed Algeria."
+je_reconquest_of_algeria: "Алжирська війна за незалежність"
+je_reconquest_of_algeria_reason: "У 1830 році, #bold Алжирське действо#! впало через огидних французів. Однак їхня перемога не була повною, і внутрішні землі Алжиру залишилися непідкореними. З благословенням Аллага, ми викинемо загарбників у море і об’єднаємо три #bold бейства#! піл нашим доброчинним правлінням."
+je_reconquest_of_algeria_tt: "Ми утворили Алжир."
 
-algeria_events.1.t: "The Proclamation of Algiers"
-algeria_events.1.d: "Standing on the deck of the [SCOPE.GetRootScope.GetCountry.GetCustom('dynamic_ship_name')] — flagship of the Mediterranean squadron — [SCOPE.sCharacter('algerian_parade_general_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('algerian_parade_general_scope').GetLastName] announces the end of large scale military operations in Algeria."
-algeria_events.1.f: "The colorful procession of troops slowly snakes its way along Algier's waterfront. Brighly clad Zouaves march lockstep towards the anchored [ROOT.GetCountry.GetAdjectiveNoFormatting] vessels lining the harbor, carrying the torn battle standards of vanquished Algerian regiments. Behind them, lancers, regulars, and native Tiralleurs follow suit.\n\nAs [SCOPE.sCharacter('algerian_parade_general_scope').GetFullNameNoFormatting] gazes out on the vast assembly of [ROOT.GetCountry.GetAdjectiveNoFormatting] military might from [SCOPE.sCharacter('algerian_parade_general_scope').GetHerHis] position on the aft deck, [SCOPE.sCharacter('algerian_parade_general_scope').GetHerHis] thoughs are interrupted by the gentle clearing of a throat. "It's the governor, sir. He wants to know what's next on the agenda.""
-algeria_events.1.a: "Today we salute the heroes of Africa!"
-algeria_events.1.b: "Subsidize companies to acquire farmland for European settlers."
-algeria_events.1.c: "The rule of the sabre is at an end. Contact the Sheikhs."
-algerian_migration: "Land Acquisition Companies"
-vanquished_barbary: "Vanquished Barbary"
+algeria_events.1.t: "Проклямація Алжиру"
+algeria_events.1.d: "Стоячи на палубі корабля «[SCOPE.GetRootScope.GetCountry.GetCustom('dynamic_ship_name')]» — флагмана Середземної ескадри — [SCOPE.sCharacter('algerian_parade_general_scope').GetPrimaryRoleTitle|l] [SCOPE.sCharacter('algerian_parade_general_scope').GetLastName] оголосив про кінець великої військової операції в Алжирі."
+algeria_events.1.f: "Яскрава хода нашого війська повільно повзла вздовж Алжирського надбережжя. Яскраво вбрані зуави крокують до пришвартованих [ROOT.GetCountry.GetAdjectiveNoFormatting|l]их кораблів у гавані, несучи пошматовані бойові хоругви переможених алжирських загонів. За ними йдуть лансьєри, постійні вояки та місцеві тирельєри.\n\nКоли [SCOPE.sCharacter('algerian_parade_general_scope').GetFullNameNoFormatting] споглядає на величезне зборище [ROOT.GetCountry.GetAdjectiveNoFormatting|l]их військових з кормової палуби, [SCOPE.sCharacter('algerian_parade_general_scope').GetHerHis|l] хрипи перериває легке відкашлювання в горлі. «Це губернатор, пане. Він хоче знати, що далі на порядку денному.»"
+algeria_events.1.a: "Сьогодні ми вітаємо африканських звитяжців!"
+algeria_events.1.b: "Субсидуйте команії, щоб ті придбали поля для европейських поселенців."
+algeria_events.1.c: "Правлінню військової сили настав кінець. Зверніться до шейхів."
+algerian_migration: "Компанії з придбання землі"
+vanquished_barbary: "Переможені бербери"
 
 algeria_events.2.t: "The [SCOPE.sCharacter('cremieux_decree_leader_scope').GetLastNameNoFormatting] Decree"
 algeria_events.2.d: "Sympathetic to their plight, [SCOPE.sCharacter('cremieux_decree_leader_scope').GetFullName], leader of the [SCOPE.sCharacter('cremieux_decree_leader_scope').GetInterestGroup.GetName], has proposed the granting of [ROOT.GetCountry.GetAdjectiveNoFormatting] citizenship to Algeria's native [SCOPE.sPop('cremieux_decree_pop_scope').GetReligion.GetName] population."
@@ -108,11 +108,11 @@ algeria_events.2.f: "No. 136. - Declaring the indigenous Jews of Algeria [ROOT.G
 algeria_events.2.a: "Approved. God knows we could use some goodwill in the region."
 algeria_events.2.b: "Denied. This will rock the boat too much."
 
-algeria_events.3.t: "The Algerian Fiasco"
+algeria_events.3.t: "Алжирське фіяско"
 algeria_events.3.d: "With the loss of the last [ROOT.GetCountry.GetAdjectiveNoFormatting] foothold in Algeria, the grand colonial project started in 1830 has come to an inglorious end."
 algeria_events.3.f: "The knocking on [SCOPE.sCharacter('algerian_fiasco_ig_leader').GetFullNameNoFormatting]'s study door grows more intense by the minute — each thud reverberating through the General's head as if they were physical blows.\n\nIn front of [SCOPE.sCharacter('algerian_fiasco_ig_leader').GetHerHim], a small mountain of reports, each and every one of them somehow more damning than the last.\n"Incompetence." "Humiliation." "Disaster."\nMany were the times when [SCOPE.sCharacter('algerian_fiasco_ig_leader').GetLastNameNoFormatting] had pondered his legacy. Well now [SCOPE.sCharacter('algerian_fiasco_ig_leader').GetSheHe] knows. [SCOPE.sCharacter('algerian_fiasco_ig_leader').GetSheHe|U] is the [SCOPE.sCharacter('algerian_fiasco_ig_leader').GetWomanMan] that lost Algeria.\n\nThe thuds grow ever louder.\nThey will expect a statement soon.\n\n[SCOPE.sCharacter('algerian_fiasco_ig_leader').GetSheHe|U] might as well give one to them."
 algeria_events.3.a: "With a trembling hand, [SCOPE.sCharacter('algerian_fiasco_ig_leader').GetLastName] lifts the gun to [SCOPE.sCharacter('algerian_fiasco_ig_leader').GetHerHis] temple."
-the_algerian_fiasco: "The Algerian Fiasco"
+the_algerian_fiasco: "Алжирське фіяско"
 widespread_condemnation_modifier: "Widespread Condemnation"
 
 algeria_events.4.t: "A French Algeria"
@@ -164,16 +164,16 @@ algeria_events.8.tt.3: "You formed Algeria as Ait Abbas or Touggourt"
 modern_jugurtha: "Modern Jugurtha"
 barbary_pirates_modifier: "Corsair Heritage"
 
-dyn_c_regency_of_algiers: "Regency of Algiers"
-dyn_c_regency_of_algiers_adj: "Algerian"
-dyn_c_barbary: "Barbary" # Alt. Tamazgha, but that is a very modern term
-dyn_c_barbary_adj: "Barbary"
-dyn_c_maghreb: "Maghreb"
-dyn_c_maghreb_adj: "Maghrebi"
+dyn_c_regency_of_algiers: "Алжирське намісництво"
+dyn_c_regency_of_algiers_adj: "Алжирськ"
+dyn_c_barbary: "Берберщина" # Alt. Tamazgha, but that is a very modern term
+dyn_c_barbary_adj: "Берберськ"
+dyn_c_maghreb: "Магриб"
+dyn_c_maghreb_adj: "Магрибськ"
 
-state_trait_mitidja_plain: "Mitidja Plain"
-state_trait_mokta_el_hadid: "Mokta El Hadid"
-state_trait_atlas_mountains: "Atlas Mountains"
+state_trait_mitidja_plain: "Мітідійська рівнина"
+state_trait_mokta_el_hadid: "Мокта Ель-Гадід"
+state_trait_atlas_mountains: "Атлаські гори"
 
 
 CON_FLAVOR_TEXT: "When the Algerian Deylik fell to the French in 1830, its Eastern province persevered in the capable hands of Ahmed Bey. Intent on restoring and modernizing the old Deylik, he will have to contend with both the French invaders and rivaling Algerian factions."
@@ -181,16 +181,16 @@ AIT_FLAVOR_TEXT: "For centuries, the Berber kingdom of Ait Abbas has ruled in Ka
 MAS_FLAVOR_TEXT: "Unexpectedly thrust into power during the French invasion, the Islamic scholar Abdelkader finds himself at the helm of a resistance campaign turned nascent state. Can Mascara drive out the invaders, or will it succumb to French might?"
 TUG_FLAVOR_TEXT: "After a bloody family feud resulted in the death of the previous Sultan, his capable, but ruthless wife seized power in the name of their child son. Can the desert realm of Touggourt secure a place for itself in the 19th century?"
 
-custom_ship_gloire: "Gloire"
-custom_ship_magnanime: "Magnanime"
-custom_ship_devastation: "Dévastation"
-custom_ship_courbet: "Courbet"
-custom_ship_charlemagne: "Charlemagne"
-custom_ship_richelieu: "Richelieu"
-custom_ship_brennus: "Brennus"
-custom_ship_charles_martel: "Charles Martel"
-custom_ship_potemkin: "Potemkin"
-custom_ship_gangut: "Gangut"
+custom_ship_gloire: "Глуар"
+custom_ship_magnanime: "Мен’янім"
+custom_ship_devastation: "Девастасьйон"
+custom_ship_courbet: "Курбе"
+custom_ship_charlemagne: "Шарльомань"
+custom_ship_richelieu: "Рішулью"
+custom_ship_brennus: "Бреннюс"
+custom_ship_charles_martel: "Шарлє Мартель"
+custom_ship_potemkin: "Потьомкін"
+custom_ship_gangut: "Ґанґут"
 
 # Dreyfus Affair
 

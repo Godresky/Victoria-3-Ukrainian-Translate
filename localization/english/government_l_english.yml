@@ -61,7 +61,7 @@
  gov_hawaiian_monarchy_recognised_desc: "Це [concept_government_type|l], де влада належить вождю Гавайських островів.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_prince: "Князівство"
  gov_prince_desc: "Це [concept_government_type|l], де [Concept('concept_ruler','$RULER_TITLE_PRINCE$')|l] керує [Concept('concept_country','$concept_country_ins$')|l].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
- gov_bey: "Бейлік"
+ gov_bey: "Бейство"
  gov_bey_desc: "Це [concept_government_type|l], де [Concept('concept_ruler','$RULER_TITLE_BEY$')|l] керує [Concept('concept_country','$concept_country_ins$')|l].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_caliphate: "Халіфат"
  gov_caliphate_desc: "Це [concept_government_type|l], де [Concept('concept_country','$concept_country_ins$')|l] керує голова духівництва.\n\n$TRANSFER_OF_POWER_NAME_DESC$"

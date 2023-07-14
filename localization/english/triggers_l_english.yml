@@ -1027,8 +1027,8 @@
  TRIGGER_COUNTRY_OR_SUBJECT_OWNS_ENTIRE_STATE_REGION_NOT: "Країна або її підвладні #bold не#! володіють [Concept('concept_state','$concept_state_ins$')|l] [StateRegion.GetName]"
  TRIGGER_COUNTRY_OR_SUBJECT_OWNS_ENTIRE_STATE_REGION_FIRST_NOT: "[Country.GetNameNoFlag] або її підвладні #bold не#! володіють [Concept('concept_state','$concept_state_ins$')|l] [StateRegion.GetName]"
  
- TRIGGER_HAS_STATE_IN_STATE_REGION:0 "Has a State in [STATE_REGION.GetName]"
- TRIGGER_HAS_STATE_IN_STATE_REGION_NOT:0 "Does Not have a State in [STATE_REGION.GetName]"
+ TRIGGER_HAS_STATE_IN_STATE_REGION: "Володіє землею у реґіоні [STATE_REGION.GetName]"
+ TRIGGER_HAS_STATE_IN_STATE_REGION_NOT: "Не володіє землею у реґіоні [STATE_REGION.GetName]"
  
  TRIGGER_HAS_ASSIMILATING_POPS:1 "[STATE.GetName] has [Concept('concept_assimilation', '$concept_assimilating$')] [Concept('concept_pop', '$concept_pops$')]."
  TRIGGER_HAS_ASSIMILATING_POPS_NOT:2 "[STATE.GetName] does #bold not #!have [Concept('concept_assimilation', '$concept_assimilating$')] [Concept('concept_pop', '$concept_pops$')]."
