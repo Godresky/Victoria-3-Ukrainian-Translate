@@ -5940,11 +5940,11 @@ LAW_ENACTMENT_PROGRESS:6 "#header [Concept('concept_enactment_of_laws', '$concep
  
  notification_colony_complete_tooltip: "#header $notification_colony_complete_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colony_complete_desc$"
  notification_colony_complete_name: "Осадництво [Concept('concept_state','$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetStateRegion.GetName] завершено"
- notification_colony_complete_desc: "Наше осадництво [Concept('concept_state','$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetName] завершено й наша колишня [concept_colony|l] тепер стала повноцінним [Concept('concept_state','$concept_state_ins$')|l]."
+ notification_colony_complete_desc: "Наше осадництво [Concept('concept_state','$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetName] завершено і наша колишня [concept_colony|l] тепер стала повноцінною [Concept('concept_state','$concept_state_ins$')|l]."
  
  notification_colony_complete_third_party_tooltip: "#header $notification_colony_complete_third_party_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colony_complete_third_party_desc$"
  notification_colony_complete_third_party_name: "#yellow [SCOPE.sCountry('actor').GetAdjective]е#! осадництво [Concept('concept_state','$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetStateRegion.GetName] завершено"
- notification_colony_complete_third_party_desc: "#yellow [SCOPE.sCountry('actor').GetAdjective]е#! осадництво [Concept('concept_state','$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetName] завершено й їхня колишня [concept_colony|l] тепер стала повноцінним [Concept('concept_state','$concept_state_ins$')|l]."
+ notification_colony_complete_third_party_desc: "#yellow [SCOPE.sCountry('actor').GetAdjective]е#! осадництво [Concept('concept_state','$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetName] завершено і їхня колишня [concept_colony|l] тепер стала повноцінною [Concept('concept_state','$concept_state_ins$')|l]."
 
  notification_ig_trait_activated_tooltip: "#header $notification_ig_trait_activated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_trait_activated_desc$"
  notification_ig_trait_activated_name: "[SCOPE.GetRootScope.GetInterestGroup.GetName] - риса «[SCOPE.sInterestGroupTrait('target').GetName(SCOPE.GetRootScope.GetInterestGroup.Self)]» дієва"
