@@ -1,5 +1,5 @@
 ﻿файл | перекладено рядків | вичитка
-seas_l_english.yml | 100% | ❌
+seas_l_english.yml | 100% | ❌ 
 state_traits_l_english.yml | 100% | ❌
 states_l_english.yml | 100% | ❌
 strategic_regions_l_english.yml | 100% | ❌
