@@ -106,7 +106,7 @@
  ACHIEVEMENT_DESC_muhammed_alis_ambition: "Почавши за Єгипет, сформуйте Арабію та володійте Східною Тракією"
  ACHIEVEMENT_DESC_an_empire_under_the_pun: "Почавши за Сикхську імперію, підпорядкуйте Великобританію."
  ACHIEVEMENT_DESC_i_didnt_vote_for_pedro: "За Бразилію, змініть уряд на республіку та запровадьте загальне виборче право."
- ACHIEVEMENT_DESC_go_west_young_man: "За ЗДА, заволодійте Каліфорнією, Ореґоном та Вашинґтоном з населенням 250 тисяч або більше у кожній землі"
+ ACHIEVEMENT_DESC_go_west_young_man: "За ЗСА, заволодійте Каліфорнією, Ореґоном та Вашинґтоном з населенням 250 тисяч або більше у кожній землі"
  ACHIEVEMENT_DESC_the_western_protectorate: "Почавши за Велику Цін, майте договірний приплав у Франції, Німеччині, Британії, Іберії та Італії"
  ACHIEVEMENT_DESC_the_paris_commune: "За Францію, станьте радянською республікою та створіть командну економіку"
  ACHIEVEMENT_DESC_barbarys_back: "Почавши за Маскару, Константішу, Аїт Аббас або Туґґурт утворіть Алжир та станьте сильною державою"
@@ -115,8 +115,8 @@
  ACHIEVEMENT_DESC_habsburg_resurgence: "За Австрію, володійте Сілезією та зробіть Прусію слабкою державою або нижчим ранґом"
  ACHIEVEMENT_DESC_great_game: "За Московщину, заволодійте Середньою Азією"
  ACHIEVEMENT_DESC_bourbon_for_everyone: "За Еспанію, майте середній рівень життя принаймні 20, залишаючись монархією"
- ACHIEVEMENT_DESC_manifest_mexico: "За Мексику, заволодійте Тихоокеанським узбережжям, Великими рівнинами та Техасом і майте вищий ранґ, ніж ЗДА"
- ACHIEVEMENT_DESC_american_territory: "Почавши за Індіянську територію, ЗДА мають стати підвладними з не більше ніж трьома землями"
+ ACHIEVEMENT_DESC_manifest_mexico: "За Мексику, заволодійте Тихоокеанським узбережжям, Великими рівнинами та Техасом і майте вищий ранґ, ніж ЗСА"
+ ACHIEVEMENT_DESC_american_territory: "Почавши за Індіянську територію, ЗСА мають стати підвладними з не більше ніж трьома землями"
  ACHIEVEMENT_DESC_broken_promises: "За Італію приєднайтеся до дипломатичної гри проти 2 або більше ваших союзників"
  ACHIEVEMENT_DESC_the_berlin_conference: "Почавши з Прусію, сформуйте Німеччину та повністю володійте щонайменше 10-ма землями в Африці"
  ACHIEVEMENT_DESC_belle_epoque: "Почавши за Францію, майте найвищий у світі ВВП та рівень іновацій"
@@ -143,7 +143,7 @@
  ACHIEVEMENT_DESC_tycoon: "Виконайте завдання «Економічне панування»"
  ACHIEVEMENT_DESC_hegemon: "Виконайте завдання «Геґемон»."
  ACHIEVEMENT_DESC_caretaker: "Виконайте завдання «Егалітарне суспільство»."
- ACHIEVEMENT_DESC_star_swarmed_banner: "За Злучені Держави, відобразіть на вашому стязі 100 держав"
+ ACHIEVEMENT_DESC_star_swarmed_banner: "За Злучені Стейти, відобразіть на вашому стязі 100 стейтів"
 
  own_all_gran_colombia_tt: "Заволодійте усіма землями у стратегічному реґіоні Велика Колумбія"
  own_all_andes_tt: "Заволодійте усіма землями у стратегічному реґіоні Анди"
@@ -176,7 +176,7 @@
  achievement_vox_populi_var: "Ухваліть закон за підтримки закликача"
 
  ACHIEVEMENT_achievement_emperor_norton: "Імператор Нортон"
- ACHIEVEMENT_DESC_achievement_emperor_norton: "За Злучені Держави, станьте монархією з Джошуа Нортоном на чолі"
+ ACHIEVEMENT_DESC_achievement_emperor_norton: "За Злучені Стейти станьте монархією на чолі з Джошуа Нортоном"
  achievement_emperor_norton.tt: "Джошуа Нортон - монарх"
 
  ACHIEVEMENT_achievement_agitate_elsewhere: "Закликайте деінде"

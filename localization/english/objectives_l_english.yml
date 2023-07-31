@@ -18,7 +18,7 @@
  objective_economic_dominance_idle_header: "Продовжуйте йти своєю дорогою"
  objective_economic_dominance_idle_hint: "З часом з’явиться більше викликів"
  
- objective_economic_dominance_name_USA: "#v Злучені Держави#!"
+ objective_economic_dominance_name_USA: "#v Злучені Стейти#!"
  objective_economic_dominance_desc_USA: "#lore $USA_FLAVOR_TEXT$#!"
  objective_economic_dominance_name_GBR: "#v $GBR$#!"
  objective_economic_dominance_desc_GBR: "#lore $GBR_FLAVOR_TEXT$#!"

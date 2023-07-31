@@ -163,9 +163,9 @@ pm_disabled_steam_power: "Без парової потужності"
 
  
  pmg_glassblowing: "Масове виробництво"
- pm_manual_glassblowing: "Ручне склодувство"
- pm_automatic_bottle_blowers: "Автоматичні склодувки"
- pm_disabled_glassblowing: "Без склодувства"
+ pm_manual_glassblowing: "Ручне скловидування"
+ pm_automatic_bottle_blowers: "Самоччине скловидування"
+ pm_disabled_glassblowing: "Без скловидування"
  
 # Tooling Workshops
  pmg_base_building_tooling_workshops: "Тип знадобів"

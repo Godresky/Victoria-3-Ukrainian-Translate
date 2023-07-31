@@ -2067,24 +2067,24 @@
   land_ownership_law_events.18.c:0 "Concessions must not avert the Revolution."
 
   ### Government Petitions
-  je_government_petition:0 "Government Petition"
-  je_government_petition_status:0 "The [SCOPE.gsInterestGroup('government_petition_ig').GetName] are petitioning for [SCOPE.sLaw('government_petition_law').GetName] to pass."
-  je_government_petition_reason:0 "As a loyal component of the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s government, the [SCOPE.gsInterestGroup('government_petition_ig').GetName] are petitioning for [SCOPE.sLaw('government_petition_law').GetName] to pass.\n\nIf [SCOPE.sLaw('government_petition_law').GetName] is successfully passed, the [SCOPE.gsInterestGroup('government_petition_ig').GetName] will be greatly pleased, but if this petition is ignored, the nation will face penalties, up to the [SCOPE.gsInterestGroup('government_petition_ig').GetName]'s resignation from government."
-  modifier_failed_to_meet_petition:0 "Failed Petition"
-  modifier_successfully_met_petition_legitimacy:0 "Responsive Governance"
-  modifier_expelled_from_government_petition:0 "Expelled from Government"
-  modifier_failed_to_meet_petition_legitimacy:0 "Unresponsive Governance"
-  modifier_refused_petition_legitimacy:0 "Unjust Governance"
+  je_government_petition: "Урядове прохання"
+  je_government_petition_status: "Група [SCOPE.gsInterestGroup('government_petition_ig').GetName] вимагає ухвалити закон «[SCOPE.sLaw('government_petition_law').GetName]»."
+  je_government_petition_reason: "Як прихильна частина уряду та очільника держави, група [SCOPE.gsInterestGroup('government_petition_ig').GetName] вимагає ухвалити закон «[SCOPE.sLaw('government_petition_law').GetName]».\n\nЯкщо законові «[SCOPE.sLaw('government_petition_law').GetName]» нададуть сили, то група [SCOPE.gsInterestGroup('government_petition_ig').GetName] буде дуже задоволені. Але якщо це прохання проігнорують, тоді країну чекатимуть наслідки, аж до того, що група [SCOPE.gsInterestGroup('government_petition_ig').GetName] покине уряд." #[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l]
+  modifier_failed_to_meet_petition: "Провал прохання"
+  modifier_successfully_met_petition_legitimacy: "Чуйне керування"
+  modifier_expelled_from_government_petition: "Вигнані з уряду"
+  modifier_failed_to_meet_petition_legitimacy: "Нечуйне керування"
+  modifier_refused_petition_legitimacy: "Несправедливий уряд"
 
-  notification_government_petition_start_name:0 "[SCOPE.gsInterestGroup('government_petition_ig').GetName] Petition Government"
-  notification_government_petition_start_desc:0 "The [SCOPE.gsInterestGroup('government_petition_ig').GetName] have petitioned the government to pass [SCOPE.sLaw('government_petition_law').GetName]."
-  notification_government_petition_start_tooltip:0 "#header $notification_government_petition_start_name$#!\n$TOOLTIP_DELIMITER$\n$notification_government_petition_start_desc$"
-  government_petition_tt:0 "The [SCOPE.gsInterestGroup('government_petition_ig').GetName] will expect the government to pass [SCOPE.sLaw('government_petition_law').GetName] within the next five years."
+  notification_government_petition_start_name: "Урядове прохання від групи [SCOPE.gsInterestGroup('government_petition_ig').GetName]"
+  notification_government_petition_start_desc: "Група [SCOPE.gsInterestGroup('government_petition_ig').GetName] вимагає в уряду ухвалити закон «[SCOPE.sLaw('government_petition_law').GetName]»."
+  notification_government_petition_start_tooltip: "#header $notification_government_petition_start_name$#!\n$TOOLTIP_DELIMITER$\n$notification_government_petition_start_desc$"
+  government_petition_tt: "Група [SCOPE.gsInterestGroup('government_petition_ig').GetName] очікує, що уряд ухвалить закон «[SCOPE.sLaw('government_petition_law').GetName]» протягом наступних п’яти років."
 
-  government_petition_events.1.t:0 "[SCOPE.gsInterestGroup('government_petition_ig').GetName] Petition Government"
-  government_petition_events.1.d:0 "Representing his constituents in the [SCOPE.gsInterestGroup('government_petition_ig').GetName], [SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetFullName] has issued a formal petition to the [ROOT.GetCountry.GetAdjective] government to pass [SCOPE.sLaw('government_petition_law').GetName]."
-  government_petition_events.1.f:0 ""Er, one last matter for the day, sir. Members of your constituency arrived this morning. They're... asking rather loudly and insistently... if you would meet with them about new legislation."\n\n"Is that it? Goodness, you seem as if you've seen a ghost. I'm sure I can spare the last hours of light for them, can't I?"\n\n"I-I believe so, sir. They weren't taking 'no' for an answer.""
-  government_petition_events.1.a:0 "We will see what we can do."
+  government_petition_events.1.t: "Урядове прохання від групи [SCOPE.gsInterestGroup('government_petition_ig').GetName]"
+  government_petition_events.1.d: "Представляючи виборців своєї групи [SCOPE.gsInterestGroup('government_petition_ig').GetName], [SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetFullName] пода[Select_CString(SCOPE.gsInterestGroup('government_petition_ig').IsFemale,'$CustomLoc_UA_vona_la$','$CustomLoc_UA_vin_v$')|l] офіційне прохання до #yellow [ROOT.GetCountry.GetAdjective|l]ого#! уряду з метою ухвалити закон «[SCOPE.sLaw('government_petition_law').GetName]»."
+  government_petition_events.1.f: "«Кгм, остання справа на сьогодні, пане. Члени вашого виборчого округу прибули сьогодні вранці. Вони... просять досить голосно і наполегливо... чи хотіли б ви зустрітися з ними для обговорення нового законодавства?»\n\n«І це все? Боже, ти наче примару побачив. Я впевнений, що зможу приділити останні години робочого дня для них, чи не так?»\n\n«Я-я гадаю, що так, пане. Вони не приймали «Ні» як відповідь.»"
+  government_petition_events.1.a: "Подивимося, що ми можемо зробити."
 
   ### New Modifiers
     

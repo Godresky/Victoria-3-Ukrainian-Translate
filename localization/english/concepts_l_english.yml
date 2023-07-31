@@ -1408,7 +1408,7 @@
  concept_turmoil_gen: "Сум‘яття"
  concept_turmoil_acc: "Сум‘яття"
  concept_turmoil_ins: "Сум‘яттям"
- concept_turmoil_desc:2 "[Concept('concept_state', '$concept_states$')] and [Concept('concept_culture', '$concept_cultures$')] with $concept_turmoil$ contain [Concept('concept_radical', '$concept_radicals$')] that are unhappy with their current circumstances. The amount of $concept_turmoil$ is equal to the fraction of the $concept_state$'s or $concept_culture$'s [concept_workforce] that are $concept_radical$.\n\n$concept_turmoil$ can inflict a number of negative local status effects on a $concept_state$ if it gets high enough. [concept_cultural_turmoil] can impact a whole [concept_country] in very disruptive ways."
+ concept_turmoil_desc: "[Concept('concept_state', '$concept_states$')] та [Concept('concept_culture', '$concept_cultures$')|l] зі сум’яттям сповненні [Concept('concept_radical', '$concept_radicals_ins$')|l], які незадоволені своїм теперішнім становищем. Величина сум’яття дорівнює частці від [Concept('concept_workforce', '$concept_workforce_gen$')|l] землі або культури, яка є радикальною.\n\n$concept_turmoil$ може спричинити низку поганих наслідків для землі, якщо є достатньо великим. [concept_cultural_turmoil] може впливати на усю [Concept('concept_country', '$concept_country_acc$')|l] дуже руйнівним способом."
 
  concept_unemployed: "Безробітні"
  concept_unemployed_gen: "Безробітніх"
@@ -2023,6 +2023,7 @@
 
  concept_taxes: "Податки"
  concept_taxes_gen: "Податків"
+ concept_taxes_acc: "Податки"
  concept_tax: "Податок"
  concept_tax_gen: "Податку"
  concept_taxing: "Оподаткування"
@@ -2268,7 +2269,7 @@
 
  concept_government_expenses: "Державні витрати"
  concept_government_expenses_short: "Витрати"
- concept_government_expenses_desc:1 "The total weekly $concept_government_expenses_short$ accrued by the [concept_government], balanced against all its weekly revenues such as [concept_taxes], with the balance added to or removed from the [concept_treasury]."
+ concept_government_expenses_desc: "Загальна сума щотижневих витрат, нарахованих [Concept('concept_government','$concept_government_ins$')|l], врівноважується з усіма його щотижневими надходженнями, такими як [Concept('concept_taxes','$concept_taxes_acc$')|l], а залишок додається до [Concept('concept_treasury','$concept_treasury_gen$')|l] або вилучається з неї."
 
  concept_sovereignty: "Суверенітет"
  concept_sovereignty_desc:1 "A [Concept('concept_country','$concept_country_possessive$')] right to self-govern. When one $concept_country$ violates the $concept_sovereignty$ of another they openly disrespect this right. Should the other not respond in turn with an immediate military response enforcing the integrity of their borders, they submit to the violator and permit them military access through their territory."
