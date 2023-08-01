@@ -71,7 +71,7 @@
  ai_strategy_reactionary_agenda: "Підтримка звичайства"
  ai_strategy_reactionary_agenda_desc: "[COUNTRY.GetName] прагне сприяти владі та програмі реформ землевласників та набожних."
  ai_strategy_progressive_agenda: "Підтримка ліберальних реформ"
- ai_strategy_progressive_agenda_desc: "[COUNTRY.GetName] прагне просувати владу та програму реформ розумоти і промисловців."
+ ai_strategy_progressive_agenda_desc: "[COUNTRY.GetName] прагне просувати владу та програму реформ інтеліґенції і промисловців."
  ai_strategy_egalitarian_agenda: "Поступове рівництво"
  ai_strategy_egalitarian_agenda_desc: "[COUNTRY.GetName] прагне просувати владу та програму реформ популістів і робітничого руху."
  ai_strategy_nationalist_agenda: "Зміцнення нації"

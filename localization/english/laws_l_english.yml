@@ -292,7 +292,7 @@
  lawgroup_citizenship: "Громадянство"
  lawgroup_citizenship_desc: "Розширення прав громадянства."
   
- law_ethnostate: "Чаднодержава"
+ law_ethnostate: "Етнодержава"
  law_ethnostate_desc: "Усі чужі культури утискаються."
  law_national_supremacy: "Національна перевага"
  law_national_supremacy_desc: "Іноземні культури утискаються, якщо вони не мають спільної спадщини та мови (або інших звичаїв)."
