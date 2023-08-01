@@ -1849,6 +1849,7 @@
  concept_cultural_heritage_trait: "Культурна спадщина"
  concept_cultural_heritage_trait_gen: "Культурної спадщини"
  concept_cultural_heritage_trait_acc: "Культурну спадщину"
+ concept_cultural_heritage_trait_ins: "Культурною спадщиною"
  concept_cultural_heritage_traits: "Культурні спадщини"
  concept_cultural_heritage_trait_desc:2 "A type of [concept_cultural_trait] that specifies the general region of the world where the [concept_culture] originated. Certain [SelectLocalization(GetPlayer.IsValid,'concept_accepted_culture_desc_added','Citizenship')] [Concept('concept_law','$concept_laws$')] consider $concept_cultural_heritage_traits$ to be more important than other $concept_cultural_traits$ when determining whether a [concept_pop] should be [Concept('concept_discrimination','$concept_discriminated_against$')] or not."
  concept_cultural_heritage_trait_desc_added:0 "[GetLawType('law_national_supremacy').GetGroup.GetName]"

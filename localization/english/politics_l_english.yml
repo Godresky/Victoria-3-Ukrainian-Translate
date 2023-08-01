@@ -1,7 +1,7 @@
 ﻿l_english:
- IG_TRAIT_NOT_MARGINAL_CHECK:0 "[InterestGroup.GetName] are #b not#! [concept_marginalized]"
- IG_TRAIT_APPROVAL_THRESHOLD_MIN:0 "[concept_approval] of [InterestGroup.GetName] is at least $THRESHOLD|+$ (currently: #v #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [InterestGroup.GetApprovalValue|+]#!#!#!)"
- IG_TRAIT_APPROVAL_THRESHOLD_MAX:0 "[concept_approval] of [InterestGroup.GetName] is $THRESHOLD|+$ or worse (currently: #v #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [InterestGroup.GetApprovalValue|+]#!#!#!)"
+ IG_TRAIT_NOT_MARGINAL_CHECK: "[InterestGroup.GetName] #b не#! [Concept('concept_marginalized', '$concept_marginalized_adj$а')|l]"
+ IG_TRAIT_APPROVAL_THRESHOLD_MIN: "[concept_approval] групи [InterestGroup.GetName] принаймні $THRESHOLD|+$ (наразі: #v #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [InterestGroup.GetApprovalValue|+]#!#!#!)"
+ IG_TRAIT_APPROVAL_THRESHOLD_MAX: "[concept_approval] групи [InterestGroup.GetName] є $THRESHOLD|+$ або гірше (наразі: #v #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [InterestGroup.GetApprovalValue|+]#!#!#!)"
 
  ACTIVE_IG_GROUP_TRAITS: "#title Риси дієвих груп населення#!"
  ELECTION: "Вибори"

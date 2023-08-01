@@ -151,11 +151,11 @@
  TRIGGER_IS_SUPPORTING_UNIFICATION_CANDIDATE:0 "[COUNTRY.GetName] is supporting [TARGET_COUNTRY.GetName] as [concept_unification_candidate] for [COUNTRY_FORMATION.GetName]"
  TRIGGER_IS_SUPPORTING_UNIFICATION_CANDIDATE_NOT:0 "[COUNTRY.GetName] is #bold not#! supporting [TARGET_COUNTRY.GetName] as [concept_unification_candidate] for [COUNTRY_FORMATION.GetName]"
  
- TRIGGER_HAS_JOURNAL_ENTRY: "Є ожвавленим [Concept('concept_journal_entry', '$concept_journal_entry_acc$')|l] «[JOURNAL_ENTRY_TYPE.GetName]»"
+ TRIGGER_HAS_JOURNAL_ENTRY: "Є активним [Concept('concept_journal_entry', '$concept_journal_entry_acc$')|l] «[JOURNAL_ENTRY_TYPE.GetName]»"
  TRIGGER_HAS_JOURNAL_ENTRY_NOT:1 "Does #bold not #!have an active [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
- TRIGGER_HAS_JOURNAL_ENTRY_FIRST: "У державі [COUNTRY.GetNameNoFlag] є ожвавленим [Concept('concept_journal_entry', '$concept_journal_entry_acc$')|l] «[JOURNAL_ENTRY_TYPE.GetName]»"
+ TRIGGER_HAS_JOURNAL_ENTRY_FIRST: "У державі [COUNTRY.GetNameNoFlag] є активним [Concept('concept_journal_entry', '$concept_journal_entry_acc$')|l] «[JOURNAL_ENTRY_TYPE.GetName]»"
  TRIGGER_HAS_JOURNAL_ENTRY_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] does #bold not #!have an active [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
- TRIGGER_HAS_JOURNAL_ENTRY_THIRD: "У державі [COUNTRY.GetName] є ожвавленим [Concept('concept_journal_entry', '$concept_journal_entry_acc$')|l] «[JOURNAL_ENTRY_TYPE.GetName]»"
+ TRIGGER_HAS_JOURNAL_ENTRY_THIRD: "У державі [COUNTRY.GetName] є активним [Concept('concept_journal_entry', '$concept_journal_entry_acc$')|l] «[JOURNAL_ENTRY_TYPE.GetName]»"
  TRIGGER_HAS_JOURNAL_ENTRY_THIRD_NOT:1 "[COUNTRY.GetName] does #bold not #!have an active [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
  
  TRIGGER_HAS_VARIABLE: "#variable Держава#! має #variable відповідну змінну#!"
@@ -1068,15 +1068,15 @@
  TRIGGER_IS_BEING_PROMOTED_THIRD_NOT: "[INTEREST_GROUP.GetName] #bold не#! [Concept('concept_bolster','$concept_bolstered_adj$а')|l]"
  
  TRIGGER_SHARES_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT: "Має спільну [Concept('concept_cultural_trait','$concept_cultural_trait_acc$')|l] з будь-якими [Concept('concept_primary_cultures','$concept_primary_cultures_ins$')|l] у своїй [Concept('concept_country','$concept_country_loc$')|l]"
- TRIGGER_SHARES_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT_NOT:1 "Does not share a [concept_cultural_trait] with any [concept_primary_cultures] in their [concept_country]"
+ TRIGGER_SHARES_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT_NOT: "Не має спільну [Concept('concept_cultural_trait','$concept_cultural_trait_acc$')|l] з будь-якими [Concept('concept_primary_cultures','$concept_primary_cultures_ins$')|l] у своїй [Concept('concept_country','$concept_country_loc$')|l]"
  
  TRIGGER_SHARES_HERITAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT: "Має спільну [Concept('concept_cultural_heritage_trait','$concept_cultural_heritage_trait_acc$')|l] з будь-якими [Concept('concept_primary_cultures','$concept_primary_cultures_ins$')|l] у своїй [Concept('concept_country','$concept_country_loc$')|l]"
- TRIGGER_SHARES_HERITAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT_NOT:1 "Does not share a [concept_cultural_heritage_trait] with any [concept_primary_cultures] in their [concept_country]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT_NOT: "Не має спільну [Concept('concept_cultural_heritage_trait','$concept_cultural_heritage_trait_acc$')|l] з будь-якими [Concept('concept_primary_cultures','$concept_primary_cultures_ins$')|l] у своїй [Concept('concept_country','$concept_country_loc$')|l]"
 
  TRIGGER_SHARES_HERITAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_THIRD:0 "Shares a [concept_cultural_heritage_trait] with any [concept_primary_cultures] ([Pop.GetCountry.GetPrimaryCulturesDesc] in [Pop.GetCountry.GetName])"
  TRIGGER_SHARES_HERITAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_THIRD_NOT:0 "Does not share a [concept_cultural_heritage_trait] with any [concept_primary_cultures] ([Pop.GetCountry.GetPrimaryCulturesDesc] in [Pop.GetCountry.GetName])"
  
- TRIGGER_SHARES_NON_HERITAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT: "Має спільну [Concept('concept_cultural_trait','$concept_cultural_trait_acc$')|l], яка не є [Concept('concept_cultural_heritage_trait','$concept_cultural_heritage_trait_gen$')|l], з будь-якою [Concept('concept_primary_cultures','$concept_primary_cultures_ins$')|l] ([GetPlayer.GetPrimaryCulturesDesc] у державі [GetPlayer.GetName])"
+ TRIGGER_SHARES_NON_HERITAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT: "Має спільну [Concept('concept_cultural_trait','$concept_cultural_trait_acc$')|l], яка не є [Concept('concept_cultural_heritage_trait','$concept_cultural_heritage_trait_ins$')|l], з будь-якими [Concept('concept_primary_cultures','$concept_primary_cultures_ins$')|l] ([GetPlayer.GetPrimaryCulturesDesc] у державі [GetPlayer.GetName])"
  TRIGGER_SHARES_NON_HERITAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT_NOT:0 "Does not share a [concept_cultural_trait] which is not a [concept_cultural_heritage_trait] with any [concept_primary_cultures] ([GetPlayer.GetPrimaryCulturesDesc] in [GetPlayer.GetName])"
 
  TRIGGER_SHARES_NON_HERITAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_THIRD:0 "Shares a [concept_cultural_trait] which is not a [concept_cultural_heritage_trait] with any [concept_primary_cultures] ([Pop.GetCountry.GetPrimaryCulturesDesc] in [Pop.GetCountry.GetName])"
@@ -1084,10 +1084,10 @@
  
  TRIGGER_SCOPE_COUNTRY_NOCONTEXT: "Держава"
  
- TRIGGER_SHARES_HERITAGE_TRAIT_WITH_STATE_RELIGION_NOCONTEXT: "Поділяє рису з [Concept('concept_state_religion', '$concept_state_religion_ins$')|l] у їхній [Concept('concept_country', '$concept_country_loc$')|l]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_WITH_STATE_RELIGION_NOCONTEXT: "Поділяє рису з [Concept('concept_state_religion', '$concept_state_religion_ins$')|l] у своїй [Concept('concept_country', '$concept_country_loc$')|l]"
  TRIGGER_SHARES_HERITAGE_TRAIT_WITH_STATE_RELIGION_NOCONTEXT_NOT:1 "Does not share a trait with the [concept_state_religion] in their [concept_country]"
 
- TRIGGER_SHARES_HERITAGE_TRAIT_WITH_STATE_RELIGION_THIRD: "Поділяє рису з [Concept('concept_state_religion', '$concept_state_religion_ins$')|l] ([Pop.GetCountry.GetStateReligion.GetName] у [Concept('concept_country', '$concept_country_loc$')|l] [Pop.GetCountry.GetName])"
+ TRIGGER_SHARES_HERITAGE_TRAIT_WITH_STATE_RELIGION_THIRD: "Поділяє рису з [Concept('concept_state_religion', '$concept_state_religion_ins$')|l] ([Pop.GetCountry.GetStateReligion.GetName] у державі [Pop.GetCountry.GetName])"
  TRIGGER_SHARES_HERITAGE_TRAIT_WITH_STATE_RELIGION_THIRD_NOT:0 "Does not share a trait with the [concept_state_religion] ([Pop.GetCountry.GetStateReligion.GetName] in [Pop.GetCountry.GetName])"
  
  TRIGGER_IS_STATE_RELIGION_NOCONTEXT: "Це [concept_state_religion|l]"

@@ -1,5 +1,5 @@
 ﻿l_english:
- DECISION_TOOLTIP_FORMAT: "#header $NAME$#!\n$TOOLTIP_DELIMITER$\n$TRIGGER_SUMMARY$\n\nПісля ожвавлювання:\n$EFFECT_SUMMARY$"
+ DECISION_TOOLTIP_FORMAT: "#header $NAME$#!\n$TOOLTIP_DELIMITER$\n$TRIGGER_SUMMARY$\n\nПісля активації:\n$EFFECT_SUMMARY$"
 
  dummy_decision: "Підставне рішення"
  dummy_decision_desc: "Обожнюю хінські булети"
