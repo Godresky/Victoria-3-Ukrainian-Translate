@@ -2105,11 +2105,11 @@
   modifier_legitimist_devout_modifier:0 "Catholic Church Patronized"
   modifier_political_smears_monarchism:0 "Unscrupulous Competitor"
 
-  france_retour_des_cendres:0 "The Return of the Ashes"
-  france_retour_des_cendres_desc:0 "Claim the body of Napoleon from Saint Helena, and rebury the Emperor's body on the banks of the Seine."
-  retour_des_cendres_tt:0 "This action will empower and give a chance to appease the #bold Bonapartists#!"
-  modifier_return_of_napoleons_body:0 "The Return of the Ashes"
-  modifier_return_of_napoleons_body_ig:0 "The Return of the Ashes"
+  france_retour_des_cendres: "Повернення праху"
+  france_retour_des_cendres_desc: "Вимагати повернути тіло Наполеона з острову Святої Гелени та перепоховати останки імператора на березі Сени."
+  retour_des_cendres_tt: "Ця дія надасть можливість задобрити #bold бонапартистів#!"
+  modifier_return_of_napoleons_body: "Повернення праху"
+  modifier_return_of_napoleons_body_ig: "Повернення праху"
 
   french_pretenders_pulse.10.t:0 "The Heirs of the Grande Armée"
   french_pretenders_pulse.10.d:0 "The good spirits of [ROOT.GetCountry.GetAdjective] soldiers in our current conflict brings rise to memories of the triumphant armies of Napoléon I. The [SCOPE.sCharacter('bonapartist_character').GetIdeology.GetName] cause has enjoyed an increase in popularity along the frontlines"
@@ -2172,9 +2172,9 @@
   french_pretenders_pulse.18.a:0 "He waived his right in 1830."
   french_pretenders_pulse.18.b:0 "We can make the effort to heal the rifts of July."
 
-  french_pretenders_pulse.19.t:0 "Le Retour des Cendres"
-  french_pretenders_pulse.19.d:0 "The body of Napoleon Bonaparte has been returned from [SCOPE.sCountry('saint_helena_owner_scope').GetName], and transported from Saint Helena to [ROOT.GetCountry.GetAdjective] soil. The interment of the Emperor's body presents an opportunity to rehabilitate the Imperial past."
-  french_pretenders_pulse.19.f:0 ""I count myself happy that it has been reserved for me to return to the soil of France the mortal remains of him who added so much glory to our pomp and to pay the debt of our common Fatherland by surrounding his coffin with all the honours due to him.""
+  french_pretenders_pulse.19.t: "Le Retour des Cendres"
+  french_pretenders_pulse.19.d: "Тіло Наполеона Бонапарта повернулося з країни [SCOPE.sCountry('saint_helena_owner_scope').GetName] та було перевезене з острова Святої Гелени до #yellow [ROOT.GetCountry.GetAdjective]ого#! терену. Поховання тіла імператора дає можливість переосмислити імперське минуле."
+  french_pretenders_pulse.19.f:0 "«I count myself happy that it has been reserved for me to return to the soil of France the mortal remains of him who added so much glory to our pomp and to pay the debt of our common Fatherland by surrounding his coffin with all the honours due to him.»"
   french_pretenders_pulse.19.a:0 "We have put the Empereur to rest at last."
   french_pretenders_pulse.19.b:0 "Use this opportunity to court the Bonapartists."
 
