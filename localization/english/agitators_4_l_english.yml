@@ -2173,10 +2173,10 @@
   french_pretenders_pulse.18.b:0 "We can make the effort to heal the rifts of July."
 
   french_pretenders_pulse.19.t: "Le Retour des Cendres"
-  french_pretenders_pulse.19.d: "Тіло Наполеона Бонапарта повернулося з країни [SCOPE.sCountry('saint_helena_owner_scope').GetName] та було перевезене з острова Святої Гелени до #yellow [ROOT.GetCountry.GetAdjective]ого#! терену. Поховання тіла імператора дає можливість переосмислити імперське минуле."
-  french_pretenders_pulse.19.f:0 "«I count myself happy that it has been reserved for me to return to the soil of France the mortal remains of him who added so much glory to our pomp and to pay the debt of our common Fatherland by surrounding his coffin with all the honours due to him.»"
-  french_pretenders_pulse.19.a:0 "We have put the Empereur to rest at last."
-  french_pretenders_pulse.19.b:0 "Use this opportunity to court the Bonapartists."
+  french_pretenders_pulse.19.d: "Тіло Наполеона Бонапарта повернулося з країни [SCOPE.sCountry('saint_helena_owner_scope').GetName] та було перевезене з острова Святої Гелени до #yellow [ROOT.GetCountry.GetAdjective|l]ого#! землі. Поховання тіла імператора дає можливість переосмислити імперське минуле."
+  french_pretenders_pulse.19.f: "«Я вважаю себе щасливим, що мені випала нагода повернути на землю Франції тлін того, хто подарував стільки слави нашій величі, і сплатити борг нашої спільної Батьківщини, оточивши його труну всіма належними йому почестями.»"
+  french_pretenders_pulse.19.a: "Ми нарешті відправили імператора на спочинок."
+  french_pretenders_pulse.19.b: "Скористатися цією можливістю, щоб задобрити бонапартистів."
 
   french_pretenders.7.t:0 "The New Monarchy"
   french_pretenders.7.d:0 "With the [ROOT.GetCountry.GetAdjective] monarchy restored anew, and a regent temporarily occupying the throne, the time has come to determine which dynasty will be entrusted with the restored crown of France."
