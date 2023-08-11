@@ -95,7 +95,7 @@
  # Royal Marriage
  wedding.2.t: "Шукаючи своє кохання"
  wedding.2.d: "[SCOPE.sCharacter('royal_marriage_character').GetPrimaryRoleTitle] [SCOPE.sCharacter('royal_marriage_character').GetFullName] шукає своє кохання відповідного знатного походження."
- wedding.2.f: "«Матінко, чому я не можу піти до вінця з [Select_CString(SCOPE.sCharacter('royal_marriage_character').IsFemale,'пані','паном')|l] [SCOPE.sCharacter('royal_marriage_character').GetPrimaryRoleTitle|l]? Чому [SCOPE.sCharacter('royal_marriage_character').GetCustom('UA_vin_vona')|l] повинен побратися із кимось, хто з далеких земель?»\n\n«Ми простолюдини, дорогенька. Сильні світу цього просто не можуть опуститися до нашого рівня.»"
+ wedding.2.f: "«Матінко, чому я не можу піти до вінця з [Select_CString(SCOPE.sCharacter('royal_marriage_character').IsFemale,'пані','паном')|l] [SCOPE.sCharacter('royal_marriage_character').GetPrimaryRoleTitle|l]? Чому [SCOPE.sCharacter('royal_marriage_character').GetCustom('UA_vin_vona')|l] повин[Select_CString(SCOPE.sCharacter('royal_marriage_character').IsFemale,'$CustomLoc_UA_vona_na$','$CustomLoc_UA_vin_en$')|l] побратися із кимось, хто з далеких земель?»\n\n«Ми простолюдини, золотце. Сильні світу цього просто не можуть опуститися до нашого рівня.»"
  wedding.2.a: "Член #yellow [SCOPE.sCountry('marriage_country_1').GetAdjective]ого#! дому [SCOPE.sCharacter('foreign_ruler_1').GetLastName] підійде."
  wedding.2.b: "[SCOPE.sCharacter('foreign_ruler_2').GetPrimaryRoleTitle] держави [SCOPE.sCountry('marriage_country_2').GetName] має належного родича."
  wedding.2.c: "#yellow [SCOPE.sCountry('marriage_country_3').GetAdjective]а#! королівська сім’я буде чудовою парою."

@@ -1490,7 +1490,7 @@
 
  EXPAND: "#header Розширити#!"
  COLLAPSE: "#header Згорнути#!"
- UNPIN: "#header Відкріпити#! з плянувальника"
+ UNPIN: "#header Відкріпити#! від плянувальника"
  PIN: "#header Прикріпити#! до плянувальника"
  buildings_expand: "Розширити"
  buildings_expand_tooltip: "#BOLD #V Розширити#!#!\n$TOOLTIP_DELIMITER$\n[concept_building_desc]"
@@ -5919,11 +5919,11 @@ LAW_ENACTMENT_PROGRESS:6 "#header [Concept('concept_enactment_of_laws', '$concep
  notification_sway_offer_rejected_desc: "[SCOPE.sC('recipient').GetName] відмовився схилитися на наш бік у [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l] проти [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sC('target').GetName]"
 
  notification_interest_activated_tooltip: "#header $notification_interest_activated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_interest_activated_desc$"
- notification_interest_activated_name: "[concept_interest] [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName] - проявлений"
+ notification_interest_activated_name: "[concept_interest] [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName] проявлений"
  notification_interest_activated_desc: "Ми тепер зможемо брати участь у [Concept('concept_diplomatic_play', '$concept_diplomatic_plays_loc$')|l], вести дипломатію, створювати [Concept('concept_trade_route', '$concept_trade_routes_acc$')|l] з [Concept('concept_country', '$concept_countries_ins$')|l] у [Concept('concept_strategic_region', '$concept_strategic_region_loc$')|l] [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName]."
 
  notification_interest_deactivated_tooltip: "#header $notification_interest_deactivated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_interest_deactivated_desc$"
- notification_interest_deactivated_name: "[concept_interest] [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName] - прибраний"
+ notification_interest_deactivated_name: "[concept_interest] [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName] прибраний"
  notification_interest_deactivated_desc: "Ми більше не зможемо брати участь у [Concept('concept_diplomatic_play', '$concept_diplomatic_plays_loc$')|l], вести дипломатію, створювати [Concept('concept_trade_route', '$concept_trade_routes_acc$')|l] з [Concept('concept_country', '$concept_countries_ins$')|l] у [Concept('concept_strategic_region', '$concept_strategic_region_loc$')|l] [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName]."
  
  notification_interest_activated_third_party_tooltip: "#header $notification_interest_activated_third_party_name$#!\n$TOOLTIP_DELIMITER$\n$notification_interest_activated_third_party_desc$"
@@ -5980,7 +5980,7 @@ LAW_ENACTMENT_PROGRESS:6 "#header [Concept('concept_enactment_of_laws', '$concep
 
  notification_ig_movement_left_happy_name: "[SCOPE.GetRootScope.GetInterestGroup.GetName] покинула рух [SCOPE.sPoliticalMovement('political_movement').GetName|l]"
  notification_ig_movement_left_happy_desc: "Це сталося через те, що їхнє [Concept('concept_approval','$concept_approval_acc$')|l] - [SCOPE.GetRootScope.GetInterestGroup.GetApprovalRating|l] (#tooltippable #tooltip:[SCOPE.GetRootScope.GetInterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [SCOPE.GetRootScope.GetInterestGroup.GetApprovalValue|=+]#!#!)"
- notification_ig_movement_left_happy_tooltip:0 "#header $notification_ig_movement_left_happy_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_movement_left_happy_desc$"
+ notification_ig_movement_left_happy_tooltip: "#header $notification_ig_movement_left_happy_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_movement_left_happy_desc$"
  
  notification_parties_activated_name: "Новостворені партії"
  notification_parties_activated_desc: "У нашій державі утворилися нові партії: [SCOPE.GetRootScope.GetCountry.GetRecentPartiesDesc]"
@@ -6046,7 +6046,7 @@ LAW_ENACTMENT_PROGRESS:6 "#header [Concept('concept_enactment_of_laws', '$concep
  MARKET_RIGHT_CLICK_MENU_PIN_IN_OUTLINER: "[SelectLocalization(Market.IsPinnedInOutliner, 'UNPIN_IN_OUTLINER', 'PIN_IN_OUTLINER')]"
  GOODS_RIGHT_CLICK_MENU_PIN_IN_OUTLINER: "[SelectLocalization(Goods.IsPinnedInOutliner, 'UNPIN_IN_OUTLINER', 'PIN_IN_OUTLINER')]"
  PIN_IN_OUTLINER: "Закріпити у плянувальнику"
- UNPIN_IN_OUTLINER: "Відкріпити з плянувальника"
+ UNPIN_IN_OUTLINER: "Відкріпити від плянувальника"
 
 
  CHARACTER_RIGHT_CLICK_MENU_TITLE: "[Character.GetFullName]"
