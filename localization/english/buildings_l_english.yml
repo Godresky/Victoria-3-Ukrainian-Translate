@@ -156,6 +156,19 @@
  bg_military: "Військові споруди"
  bg_special: "Спеціяльні споруди"
  bg_conscription: "Будівлі призви"
+ bg_shipyards: "Корабельні"
+ bg_subsistence_agriculture: "Натуральне сільське господарство"
+ bg_subsistence_ranching: "Натуральні хутори"
+ bg_gold_fields: "Золоті старальні"
+ bg_arts: "Будинки мистецтв"
+ bg_power: "Електростанції"
+ bg_technology: "Університетські будівлі"
+ bg_canals: "Водоводи"
+ bg_monuments: "Пам’ятки"
+ bg_army: "Army Buildings"
+ bg_navy: "Naval Buildings"
+ bg_skyscraper: "Skyscrapers"
+ bg_monuments_hidden: "Monuments"
 
 #Factories
 
@@ -215,6 +228,11 @@
  building_khaju_bridge: "$building_dummy$"
  building_machu_picchu: "$building_dummy$"
  building_petra: "$building_dummy$"
+  # AP1
+ building_martandsuntemple: "$building_dummy$"
+ building_observatorygreenwich: "$building_dummy$"
+ building_temple_of_poseidon: "$building_dummy$"
+ building_wat_arun: "$building_dummy$"
 
   # Skyscraper
  building_skyscraper: "Хмарочос"

@@ -18,6 +18,8 @@
   unopposed_whistleblower: "Only Honest Face"
   successful_law_ram: "Double Up"
   successful_law_focus: "Double Stake"
+  partisan_favoritism: "Partisan Favoritism"
+  compromised_law_ram: "Compromised Effort"
   failed_law_ram: "Split"
   failed_law_abandoned: "Folded Hand"
   just_like_lenin: "Adamant Opposition"
@@ -30,6 +32,9 @@
   forgot_bread_prices: "Out of Touch"
   book_yeeter: "Champion of Civility"
   closeted_skeletons: "Dirty Secrets"
+  ignored_provisions: "Ignored Suggested Provisions"
+  disadvantageous_favoritism: "Disadvantageous Favoritism"
+  architect_of_change: "Architect of Change"
 
   #agitator_stall. events; will later expand to include agitator_debate. and agitator_advance. decades.
   agitator_legal_events.1.t: "A Rant for the Ages"

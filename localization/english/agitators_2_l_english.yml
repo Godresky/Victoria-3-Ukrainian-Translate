@@ -508,39 +508,39 @@ anti_feudal_opposition: "Rejecting Neo-Feudalism"
 
 # Garibaldi Events
 
-garibaldi_popularity_modifier_tier_1: "Untested Idealist"
-garibaldi_popularity_modifier_tier_2: "The Gaucho"
-garibaldi_popularity_modifier_tier_3: "The Lion"
-garibaldi_popularity_modifier_tier_4: "The General"
-garibaldi_popularity_modifier_tier_5: "Hero of the Two Worlds"
+garibaldi_popularity_modifier_tier_1:0 "Untested Idealist"
+garibaldi_popularity_modifier_tier_2:0 "The Gaucho"
+garibaldi_popularity_modifier_tier_3:0 "The Lion"
+garibaldi_popularity_modifier_tier_4:0 "The General"
+garibaldi_popularity_modifier_tier_5:0 "Hero of the Two Worlds"
 
-garibaldi_events.1.t: "Garibaldi Offers His Services"
-garibaldi_events.1.d: "Judging our struggle against [SCOPE.sCountry('garibaldi_spawn_foe_scope').GetName] just, the Italian revolutionary and nationalist [SCOPE.sCharacter('garibaldi_scope').GetFullName] has decided to allign with our cause, offering up his services as a general."
-garibaldi_events.1.f: ""I offer neither pay, nor quarters, nor food;\nI offer only hunger, thirst, forced marches, battles and death.\nLet him who loves his country with his heart, and not merely with his lips, follow me."" # Garibaldi
-garibaldi_events.1.a: "Have [SCOPE.sCharacter('garibaldi_scope').GetFullName] lead our armies."
-garibaldi_events.1.b: "We have no use for this rabble-rousing wildcard."
-rejected_garibaldi_modifier: "Refused the Aid of Garibaldi"
+garibaldi_events.1.t:0 "Garibaldi Offers His Services"
+garibaldi_events.1.d:0 "Judging our struggle against [SCOPE.sCountry('garibaldi_spawn_foe_scope').GetName] just, the Italian revolutionary and nationalist [SCOPE.sCharacter('garibaldi_scope').GetFullName] has decided to align with our cause, offering up his services as a general."
+garibaldi_events.1.f:0 ""I offer neither pay, nor quarters, nor food;\nI offer only hunger, thirst, forced marches, battles and death.\nLet him who loves his country with his heart, and not merely with his lips, follow me."" # Garibaldi
+garibaldi_events.1.a:0 "Have [SCOPE.sCharacter('garibaldi_scope').GetFullName] lead our armies."
+garibaldi_events.1.b:0 "We have no use for this rabble-rousing wildcard."
+rejected_garibaldi_modifier:0 "Refused the Aid of Garibaldi"
 
-garibaldi_events.2.t: "Garibaldi Bids His Farewells"
-garibaldi_events.2.d_1: "With the outbreak of war between [SCOPE.sCountry('garibaldi_italian_nation_scope').GetName] and [SCOPE.sCountry('garibaldi_foreign_nation_scope').GetName], [SCOPE.sCharacter('garibaldi_scope').GetFullName] has decided to leave [SCOPE.GetRootScope.GetCountry.GetNameNoFlag] to take up arms against the enemies of Italy."
-garibaldi_events.2.d_2: "With [SCOPE.GetRootScope.GetCountry.GetNameNoFlag] at peace, and the fight against tyrants over, at least for now, [SCOPE.sCharacter('garibaldi_scope').GetFullName] has decided to leave the country in pursuit of another worthy cause."
-garibaldi_events.2.f: ""Where there are brothers who fight for Italian freedom – there we must rush."" # Garibaldi
-garibaldi_events.2.a: "Godspeed, General [SCOPE.sCharacter('garibaldi_scope').GetLastName]."
+garibaldi_events.2.t:0 "Garibaldi Bids His Farewells"
+garibaldi_events.2.d_1:0 "With the outbreak of war between [SCOPE.sCountry('garibaldi_italian_nation_scope').GetName] and [SCOPE.sCountry('garibaldi_foreign_nation_scope').GetName], [SCOPE.sCharacter('garibaldi_scope').GetFullName] has decided to leave [SCOPE.GetRootScope.GetCountry.GetNameNoFlag] to take up arms against the enemies of Italy."
+garibaldi_events.2.d_2:0 "With [SCOPE.GetRootScope.GetCountry.GetNameNoFlag] at peace, and the fight against tyrants over, at least for now, [SCOPE.sCharacter('garibaldi_scope').GetFullName] has decided to leave the country in pursuit of another worthy cause."
+garibaldi_events.2.f:0 ""Where there are brothers who fight for Italian freedom – there we must rush."" # Garibaldi
+garibaldi_events.2.a:0 "Godspeed, General [SCOPE.sCharacter('garibaldi_scope').GetLastName]."
 
-garibaldi_events.3.t: "The Italian Legion of Volunteers"
-garibaldi_events.3.d: "Drawing on the Italian population of [SCOPE.sState('italian_legion_state_scope').GetName], General [SCOPE.sCharacter('garibaldi_scope').GetFullName] has organized a legion of like-minded compatriots to join the [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFlag] fight against [SCOPE.sCountry('italian_legion_foe_scope').GetAdjective] tyranny."
-garibaldi_events.3.f: ""My men!\nWe are few, the enemy are many,\nmore glorious will be the victory.\nBe steady, reserve your fire until they are close on you,\nthen fire,\nand at them with the bayonet!"" # Garibaldi
-garibaldi_events.3.a: "Their skills and zeal are sorely needed on the battlefield."
-garibaldi_events.3.b: "Use their expertise to train and recruit more men for the army."
-italian_legion_barracks_modifier: "Italian Legionary Barracks"
-italian_legionaries_modifier: "Italian Legionary Volunteers"
+garibaldi_events.3.t:0 "The Italian Legion of Volunteers"
+garibaldi_events.3.d:0 "Drawing on the Italian population of [SCOPE.sState('italian_legion_state_scope').GetName], General [SCOPE.sCharacter('garibaldi_scope').GetFullName] has organized a legion of like-minded compatriots to join the [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFlag] fight against [SCOPE.sCountry('italian_legion_foe_scope').GetAdjective] tyranny."
+garibaldi_events.3.f:0 ""My men!\nWe are few, the enemy are many,\nmore glorious will be the victory.\nBe steady, reserve your fire until they are close on you,\nthen fire,\nand at them with the bayonet!"" # Garibaldi
+garibaldi_events.3.a:0 "Their skills and zeal are sorely needed on the battlefield."
+garibaldi_events.3.b:0 "Use their expertise to train and recruit more men for the army."
+italian_legion_barracks_modifier:0 "Italian Legionary Barracks"
+italian_legionaries_modifier:0 "Italian Legionary Volunteers"
 
-garibaldi_events.4.t: "Garibaldi Riles Up the Peasantry"
-garibaldi_events.4.d: "While [SCOPE.sCharacter('garibaldi_scope').GetFullName]'s abilities to move the minds of commoners have proven useful in the fight against [SCOPE.sCountry('garibaldi_peasants_foe_scope').GetAdjective], his radical preachings are starting to turn some of [SCOPE.sState('garibaldi_peasants_state_scope').GetName]'s [GetPopType('farmers').GetName] against our own rule as well — with several government ministers now demanding he be gagged."
-garibaldi_events.4.f: ""The day the peasants will be educated in the truth, tyrants and slaves will be impossible on Earth."" # Garibaldi
-garibaldi_events.4.a: "He is too important for the cause. Let us avoid antagonization."
-garibaldi_events.4.b: "Order him to tone down his language."
-emboldened_peasantry_modifier: "Emboldened Peasantry"
+garibaldi_events.4.t:0 "Garibaldi Riles Up the Peasantry"
+garibaldi_events.4.d:0 "While [SCOPE.sCharacter('garibaldi_scope').GetFullName]'s abilities to move the minds of commoners have proven useful in the fight against [SCOPE.sCountry('garibaldi_peasants_foe_scope').GetAdjective], his radical preachings are starting to turn some of [SCOPE.sState('garibaldi_peasants_state_scope').GetName]'s [GetPopType('farmers').GetName] against our own rule as well — with several government ministers now demanding he be gagged."
+garibaldi_events.4.f:0 ""The day the peasants will be educated in the truth, tyrants and slaves will be impossible on Earth."" # Garibaldi
+garibaldi_events.4.a:0 "He is too important for the cause. Let us avoid antagonization."
+garibaldi_events.4.b:0 "Order him to tone down his language."
+emboldened_peasantry_modifier:0 "Emboldened Peasantry"
 
 # Luddite Law Events
 

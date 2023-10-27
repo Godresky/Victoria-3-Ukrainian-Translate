@@ -228,7 +228,7 @@
  modifier_building_economy_of_scale_level_cap_add_desc: "Максимальна кількість розміру [Concept('concept_building','$concept_building_gen$')|l], який даватиме заподії [Concept('concept_economy_of_scale','$concept_economy_of_scale_gen$')|l]."
 
  modifier_country_prestige_add: "Престиж"
- modifier_country_prestige_add_desc: "Скільки престижу держава має."
+ modifier_country_prestige_add_desc: "Скільки [Concept('concept_prestige','$concept_prestige_gen$')|l] держава має."
 
  modifier_country_max_declared_interests_add: "Максимальна кількість проявлених рупів"
  modifier_country_max_declared_interests_add_desc: "Збільшення або зменшення кількости [Concept('concept_interest', '$concept_interests_gen$')|l], що країна може оголосити за межами своїх контрольованих земель."
@@ -1701,12 +1701,6 @@
  modifier_country_private_construction_allocation_mult: "Виділення коштів на приватне будівництво"
  modifier_country_private_construction_allocation_mult_desc:0 "An increase or decrease in the fraction of weekly [concept_construction] that will be preferentially allocated to [Concept('concept_private_construction', '$concept_private_constructions$')] over [Concept('concept_government_construction', '$concept_government_constructions$')]."
 
- modifier_country_production_weekly_innovation_mult:0 "Weekly [concept_innovation] Gain Multiplier for Production"
- modifier_country_production_weekly_innovation_mult_desc:0 "Modifies the amount of [concept_innovation] gained every week for Production"
- modifier_country_military_weekly_innovation_mult:0 "Weekly [concept_innovation] Gain Multiplier for Military"
- modifier_country_military_weekly_innovation_mult_desc:0 "The amount of [concept_innovation] gained every week for Military"
- modifier_country_society_weekly_innovation_mult:0 "Weekly [concept_innovation] Gain Multiplier for Society"
- modifier_country_society_weekly_innovation_mult_desc:0 "The amount of [concept_innovation] gained every week for Society"
  modifier_country_production_tech_spread_mult:0 "Technology Spread for Production"
  modifier_country_production_tech_spread_mult_desc:0 "The speed at which Production technologies spread from other countries "
  modifier_country_military_tech_spread_mult:0 "Technology Spread for Military"
@@ -1714,8 +1708,8 @@
  modifier_country_society_tech_spread_mult:0 "Technology Spread for Society"
  modifier_country_society_tech_spread_mult_desc:0 "The speed at which Society technologies spread from other countries"
   
- modifier_technology_invention_cost_mult:0 "Technology Cost"
- modifier_technology_invention_cost_mult_desc:0 "A bonus or penalty to the cost to invent or adopt new technologies."
+ modifier_country_tech_research_speed_mult:1 "Technology Research Speed"
+ modifier_country_tech_research_speed_mult_desc:1 "A bonus or penalty to the speed at which [concept_technology] is researched when spending [concept_innovation]"
  modifier_character_morale_cap_add:0 "Morale Cap"
  modifier_character_morale_cap_add_desc:0 "A bonus or penalty to max unit morale."
  modifier_character_budget_mult:0 "Character Budget"
@@ -1967,13 +1961,12 @@
 
  modifier_surveying_panama: "Обстеження Панамського пересипу"
 
- modifier_country_production_tech_cost_mult: "Вартість виробничої [Concept('concept_technology', '$concept_technology_gen$')|l]"
- modifier_country_production_tech_cost_mult_desc: "Наддаток або карна до дослідження [Concept('concept_technology', '$concept_technology_gen$')|l] у розділі виробництва"
- modifier_country_military_tech_cost_mult: "Вартість військової [Concept('concept_technology', '$concept_technology_gen$')|l]"
- modifier_country_military_tech_cost_mult_desc: "Наддаток або карна до дослідження [Concept('concept_technology', '$concept_technology_gen$')|l] у розділі війська"
- modifier_country_society_tech_cost_mult: "Вартість суспільної [Concept('concept_technology', '$concept_technology_gen$')|l]"
- modifier_country_society_tech_cost_mult_desc: "Наддаток або карна до дослідження [Concept('concept_technology', '$concept_technology_gen$')|l] у розділі суспільства"
-
+ modifier_country_production_tech_research_speed_mult:1 "Production Research Speed"
+ modifier_country_production_tech_research_speed_mult_desc:1 "A bonus or penalty to the speed at which [concept_technology] in the Production category is researched when spending [concept_innovation]"
+ modifier_country_military_tech_research_speed_mult:1 "Military Research Speed"
+ modifier_country_military_tech_research_speed_mult_desc:1 "A bonus or penalty to the speed at which [concept_technology] in the Military category is researched when spending [concept_innovation]"
+ modifier_country_society_tech_research_speed_mult:1 "Society Research Speed"
+ modifier_country_society_tech_research_speed_mult_desc:1 "A bonus or penalty to the speed at which [concept_technology] in the Society category is researched when spending [concept_innovation]"
  modifier_country_radicals_from_conquest_mult:0 "Radicals from Conquest"
  modifier_country_radicals_from_conquest_mult_desc:0 "A bonus or penalty to the amount of [Concept('concept_pop', '$concept_pops$')] that will become [concept_radical] when we conquer [Concept('concept_state', '$concept_states$')] militarily"
 
@@ -2169,8 +2162,12 @@
  modifier_unit_convoy_requirements_mult_desc:0 "How many [concept_convoys] are needed to maintain [Concept('concept_unit','$concept_units$')] with [concept_supply] overseas"
  
  modifier_unit_convoy_raiding_mult:0 "Convoy Raiding Efficiency"
- modifier_unit_convoy_raiding_mult_desc:1 "Increase the effectiveness of our [Concept('concept_flotilla','$concept_flotillas$')] to [concept_raid_convoys]."
- 
+ modifier_unit_convoy_raiding_mult_desc:2 "Increase or decrease the effectiveness of our [Concept('concept_flotilla','$concept_flotillas$')] to [concept_raid_convoys]."
+ modifier_unit_convoy_defense_mult:0 "Convoy Escort Defense"
+ modifier_unit_convoy_defense_mult_desc:0 "Increase or decrease the protection offered against [Concept('concept_raid_convoys', '$concept_convoy_raiding$')] by escort [Concept('concept_flotilla','$concept_flotillas$')]."
+ modifier_unit_convoy_raiding_interception_mult:0 "Convoy Raider Interception"
+ modifier_unit_convoy_raiding_interception_mult_desc:0 "Increase or decrease the chance of intercepting and engaging hostile [Concept('concept_flotilla','$concept_flotillas$')] engaged in [Concept('concept_raid_convoys', '$concept_convoy_raiding$')]."
+
  modifier_unit_supply_consumption_mult:0 "Supply Consumption"
  modifier_unit_supply_consumption_mult_desc:0 "How many [Concept('concept_good', '$concept_goods$')] it takes to maintain a [concept_unit]"
  

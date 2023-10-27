@@ -1653,7 +1653,7 @@
  je_sick_man_advance: "Просуне роботу над записом у часописі «Хвора людина Европи»"
  luxurious_parties: "Розкішні вечірки"
  notification_ig_leader_memento_mori_name: "[SCOPE.sCharacter('memento_mori_leader').GetFullName] ([SCOPE.gsInterestGroup('memento_mori_ig').GetTextIcon]) йде на пенсію"
- notification_ig_leader_memento_mori_desc: "[SCOPE.sCharacter('memento_mori_leader').GetFullName], провідник [Concept('concept_interest_group', '$concept_interest_group_gen$')|l] [SCOPE.gsInterestGroup('memento_mori_ig').GetName], відійшов від політичного життя."
+ notification_ig_leader_memento_mori_desc: "[SCOPE.sCharacter('memento_mori_leader').GetFullName], провідник [Concept('concept_interest_group', '$concept_interest_group_gen$')|l] [SCOPE.gsInterestGroup('memento_mori_ig').GetName], відійш[Select_CString(SCOPE.sCharacter('memento_mori_leader').IsFemale,'$CustomLoc_UA_vona_ala$','$CustomLoc_UA_vin_ov$')|l] від політичного життя. [SCOPE.gsInterestGroup('memento_mori_ig').GetLeader.GetFullName], відомий своєю ідеологією [SCOPE.gsInterestGroup('memento_mori_ig').GetLeader.GetIdeology.GetName], тепер очолює зацікавлену групу."
  notification_ig_leader_memento_mori_tooltip: "#header $notification_ig_leader_memento_mori_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_leader_memento_mori_desc$"
  iron_horse_raids:0 "Iron Horse Raids"
  csa_releasable_tt:0 "The American Civil War has happened"
