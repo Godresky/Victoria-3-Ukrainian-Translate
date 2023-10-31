@@ -279,11 +279,11 @@
 
   # Walord China extras
  warlord_china_events.301.t:0 "[SCOPE.sCharacter('yan_xishan_thinker').GetFullName] Thought"
- warlord_china_events.301.d:0 "Наш великий  [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] виробив складну нову ідеологію націлену на об'єднання нації. Черпавши ідеї з багатьох джерел, вона виявилася дуже комплексною, і донести її ідеї до широких мас може виявитися тяжкою задачею." #Потрібно перевірити
+ warlord_china_events.301.d:0 "Наш великий [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] виробив складну нову ідеологію націлену на об'єднання нації. Черпавши ідеї з багатьох джерел, вона виявилася дуже комплексною, і донести її ідеї до широких мас може виявитися тяжкою задачею." #Потрібно перевірити
  warlord_china_events.301.f:0 ""Наша славетна нова нова ідеологія є абсолютно всеосяжною, включаючи в себе все важливе з мілітаризму, націоналізму, безвладництво, демократії, капіталізму, комунізму, індивідуалізму, універсалізму, патерналізму і утопізму.""
  warlord_china_events.301.a:0 "Поширте слово [SCOPE.sCharacter('yan_xishan_thinker').GetFullName]!" #Потрібно перевірити
  warlord_china_events.301.b:0 "Воно немає ніякого сенсу. Потрібно сфокусуватися замість того на легітимізації держави."
- yan_xishan_thought_mod:0 "Об'єднювальна думка"
+ yan_xishan_thought_mod:0 "Об‘єднювальна думка"
  warlord_legitimacy:0 "Законність держави"
  failed_yan_xishan_thought_mod: "Конфузіонізм"
   # The British Raj
