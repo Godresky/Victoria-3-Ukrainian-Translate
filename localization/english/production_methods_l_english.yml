@@ -289,7 +289,7 @@ pm_disabled_steam_power: "Без парової потужності"
  pmg_base_building_fishing_wharf: "Тип рибальства"
  pm_simple_fishing: "Проста риболовля"
  pm_fishing_trawlers: "Рибальські тральщики"
- pm_steam_trawlers: "Парові тральшики"
+ pm_steam_trawlers: "Парові тральщики"
 
  pmg_refrigeration_building_fishing_wharf: "Тип охолодження"
  pm_unrefrigerated: "Без охолодження"

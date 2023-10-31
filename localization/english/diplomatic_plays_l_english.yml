@@ -455,7 +455,7 @@
   
  war_goal_unification_type_name: "Об’єднання"
  war_goal_unification_type_desc:2 "Annex all required [Concept('concept_state', '$concept_states$')] for a [concept_unification] not owned by [Concept('concept_unification_supporter','$concept_unification_supporters$')],  [Concept('concept_subject','$concept_subjects$')] or Allies."
- war_goal_unification:2 "Unify with [WAR_GOAL.GetTargetState.GetName]"
+ war_goal_unification: "Об’єднання з державою [WAR_GOAL.GetTargetState.GetName]"
  war_goal_unification_desc:2 "[WAR_GOAL.GetHolder.GetName] annexes the [WAR_GOAL.GetCountryFormation.GetAdjective] homeland of [WAR_GOAL.GetTargetState.GetName]."
  war_goal_unification_sway_desc:2 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by having them annex the [WAR_GOAL.GetCountryFormation.GetAdjective] homeland of [WAR_GOAL.GetTargetState.GetName]."
   

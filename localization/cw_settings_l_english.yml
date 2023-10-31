@@ -60,7 +60,7 @@
  OPTION_HIGH: "Висок."
  OPTION_ULTRA: "Надвисок."
  OPTION_CUSTOM: "Користувацьк."
- OPTION_DEFAULT: "За замовчуванням"
+ OPTION_DEFAULT: "Звичайн."
  SETTINGS_CATEGORY_UI: "Інтерфейс"
  SETTINGS_CATEGORY_GAME: "Гра"
  SETTING_TEXTURE_QUALITY: "Якість текстур"

@@ -2,7 +2,7 @@
  SETTING_INPUT_CONTEXT_COMMON: "Загальне"
  SETTING_INPUT_CONTEXT_COMMON_TOOLTIP: "Прив'язки клавіш для загальних значень введення"
 
- SETTING_INPUT_ACTION_PAUSE: "Павза/зняти з павзи"
+ SETTING_INPUT_ACTION_PAUSE: "Призупинити/продовжити"
  SETTING_INPUT_ACTION_INCREASE_SPEED: "Збільшити швидкість"
  SETTING_INPUT_ACTION_DECREASE_SPEED: "Зменшити швидкість"
  SETTING_INPUT_ACTION_SPEED_ONE: "Швидкість 1"

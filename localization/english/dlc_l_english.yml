@@ -1,6 +1,6 @@
 ﻿l_english:
  DLC: "ДЛС"
- DLC_ENABLED: "#emphasis @green_checkmark! Доповнення #g увімкнене#!#!"
+ DLC_ENABLED: "#emphasis @green_checkmark! Доповнення #g увімкнуте#!#!"
  DLC_NOT_ENABLED: "#emphasis @red_cross! Ви #g володієте#! цим доповненням, але ви його #r вимкнули#!#!"
  DLC_NOT_OWNED: "#emphasis @red_cross! Ви #r не володійєте#! цим доповненням#!"
  DLC_BUTTON_TOOLTIP: "#T [Dlc.GetName]#!\n[Dlc.GetDesc]\n\n#low [SelectLocalization(Dlc.IsVerified, SelectLocalization(Dlc.IsEnabled, 'DLC_ENABLED', 'DLC_NOT_ENABLED'), 'DLC_NOT_OWNED')]#!\n\n#I Клацніть, щоб відвідати крамницю#!"

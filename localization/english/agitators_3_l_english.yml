@@ -33,7 +33,7 @@
  at_peace_nocontext_tt: "Is at peace"
  relations_amicable_nocontext_tt: "Relations are at least Amicable"
  # Coup!
- je_coup: "Coup!"
+ je_coup: "Заколот!"
  je_coup_reason: "The [SCOPE.gsInterestGroup('coup_ig').GetName] are planning a coup against our democratic institutions, aiming to seize control of the government and install a regime more amicable to their interests."
  je_coup_goal: "The [SCOPE.gsInterestGroup('coup_ig').GetName] is ready to execute the coup"
  coup_no_progress: "The coup has no progress"
