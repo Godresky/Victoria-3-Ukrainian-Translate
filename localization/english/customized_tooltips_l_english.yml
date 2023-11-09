@@ -172,7 +172,7 @@
  DATA_LAW_TYPE_NAME_TOOLTIP: "[LawType.GetTooltip(GetPlayer.Self)]$TOOLTIP_DELIMITER$\n#lore [LawType.GetDesc]"
  DATA_LAW_NAME_TOOLTIP: "[Law.GetTooltip]\n$DATA_LAW_TOOLTIP_IG_SUPPORT$\n#!$TOOLTIP_DELIMITER$\n#lore [Law.GetDesc]#!"
  DATA_LAW_TOOLTIP_IG_SUPPORT: "[SelectLocalization( GreaterThan_int32( Law.GetNumSupportingInterestGroups, '(int32)0' ), 'DATA_LAW_TOOLTIP_SUPPORTED', 'DATA_LAW_TOOLTIP_NOT_SUPPORTED' )]"
- DATA_LAW_TOOLTIP_SUPPORTED: "#tooltippable #tooltip:[Law.GetTooltipTag],DATA_LAW_NAME_BREAKDOWN [Law.GetNumSupportingInterestGroups|v]#!#! [Concept('concept_interest_group', '$concept_interest_groups$')] [Law.GetSupportingInterestGroupsSummary] підтримують [Concept('concept_law', '$concept_law_acc$')|l]"
+ DATA_LAW_TOOLTIP_SUPPORTED: "[Concept('concept_interest_group', '$concept_interest_groups_gen$')], що підтримують [Concept('concept_law', '$concept_law_acc$')|l]: #tooltippable #tooltip:[Law.GetTooltipTag],DATA_LAW_NAME_BREAKDOWN [Law.GetNumSupportingInterestGroups|v]#!#! [Law.GetSupportingInterestGroupsSummary]"
  DATA_LAW_TOOLTIP_NOT_SUPPORTED: "Цей [concept_law|l] не підтримує жодна [concept_interest_group|l]"
  DATA_LAW_TOOLTIP_SUPPORTING_IG_ENTRY: "[InterestGroup.GetName] ([InterestGroup.GetClout|v%1] [Concept('concept_clout', '$concept_clout_gen$')|l])"
  DATA_LAW_TOOLTIP_SUPPORTING_IG_SUMMARY_ENTRY: "[InterestGroup.GetTextIcon]"

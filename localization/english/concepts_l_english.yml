@@ -205,9 +205,9 @@
  concept_sol_short: "РіЖи"
  concept_sol_desc: "$concept_sol$ вимірює умови життя [Concept('concept_pop','$concept_pop_gen$')|l] за їхнім матеріяльним [Concept('concept_wealth','$concept_wealth_ins$')|l] відносно основного показника. Він вимірює [Concept('concept_pop_growth','$concept_pop_growth_birthrate_and_mortality$')|l], і щоразу, коли вона змінюється, це може призвести до того, що люди стануть більш [Concept('concept_radical','$concept_radical_adj$ими')|l] або [Concept('concept_loyalist','$concept_loyal_adj$ими')|l]. Середній рівень життя у [Concept('concept_state','$concept_state_loc$')|l] впливає на його [Concept('concept_migration_pull','$concept_migration_pull_acc$')|l]."
 
- concept_expected_sol: "Очікуваний мінімум рівня життя"
- concept_expected_sol_gen: "Очікуваного мінімуму рівня життя"
- concept_expected_sol_acc: "Очікуваний мінімум рівня життя"
+ concept_expected_sol: "Очікуваний рівень життя"
+ concept_expected_sol_gen: "Очікуваний рівень життя"
+ concept_expected_sol_acc: "Очікуваний рівень життя"
  concept_expected_sol_short: "Очікуваний мінімум"
  concept_expected_sol_short_gen: "Очікуваного мінімуму"
  concept_expected_sol_short_acc: "Очікуваний мінімум"
