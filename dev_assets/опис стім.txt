@@ -40,10 +40,10 @@
  
 Корисне:
 [list]
-[*]Підтримувана версія гри: [b]1.3.6[/b]
+[*]Підтримувана версія гри: [b]1.4.2[/b]
 [*][url=https://github.com/Godresky/Victoria-3-Ukrainian-Translate]Поклик на Ґітгаб[/url]
 [*][url=https://drive.google.com/drive/folders/186_K4LmKJh6JLijl9xXBqJsZbesNsF_c?usp=sharing]Поклик на Ґуґл диск[/url]
-[*][url=https://t.me/godresky_vika3]Тґ канал про Вікторію 3[/url]
+[*][url=https://discord.gg/zeMqBmzCzA]Дискорд-сервер по Вікторії 3[/url]
 [*][url=https://t.me/by_godresky]Мій Тґ канал[/url]
 [*][url=https://send.monobank.ua/jar/7H5RNWs4kw]Сказати "дякую" розробникам[/url]
 [*][url=https://twitter.com/godresky]Мій твітер[/url]

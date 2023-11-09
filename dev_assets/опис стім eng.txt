@@ -4,7 +4,7 @@
 
 
 [h1]Why "руп", "осада", "Швайцарія", etc?[/h1]
-We use outdated words to convey the atmosphere of the world at that time. We also use Skrypnykivka (wish of the authors).
+We use outdated words to convey the atmosphere of the world at that time. We also use [url=https://uk.wikipedia.org/wiki/%D0%A5%D0%B0%D1%80%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D0%BF%D0%B8%D1%81]Skrypnykivka[/url] (wish of the authors).
  
 
 [h1]How to play with Ukrainian?[/h1]
@@ -13,6 +13,20 @@ We use outdated words to convey the atmosphere of the world at that time. We als
     [*]Choose [b]English[/b] in the launcher
     [*]Launch and enjoy the Ukrainian
 [/olist]
+
+[h1]Translation progress.[/h1]
+Currently translated:
+[list]
+[*]Most part of the interface
+[*]The majority part of events, decisions, and entries in the original game's journal
+[*]Part of the events, decisions, and entries in the Voice of the People expansion's journal
+[*]All names of countries (and descriptions), cultures, religions, types of government
+[*]All names of laws and descriptions of laws, production methods, character traits
+[*]All song titles of the original game and the expansion "Melodies for the Masses"
+[*]Part of tutorials
+[*]Part of concepts
+[*]Small part of character names
+[/list]
 
 
 [h1]Do you want to help?[/h1]
@@ -26,10 +40,10 @@ They helped with the translation: [url=https://t.me/HeartsofUkraine4]пан Дм
 
 Useful:
 [list]
-[*]Supported game version: [b]1.3.6[/b]
+[*]Supported game version: [b]1.4.2[/b]
 [*][url=https://github.com/Godresky/Victoria-3-Ukrainian-Translate]GitHub link[/url]
 [*][url=https://drive.google.com/drive/folders/186_K4LmKJh6JLijl9xXBqJsZbesNsF_c?usp=sharing]Google Drive[/url]
-[*][url=https://t.me/godresky_vika3]Tg channel about Victoria 3[/url]
+[*][url=https://discord.gg/zeMqBmzCzA]My Victoria 3 Discord Server[/url]
 [*][url=https://t.me/by_godresky]My Tg channel[/url]
 [*][url=https://send.monobank.ua/jar/7H5RNWs4kw]Say "thank you" to the developers[/url]
 [*][url=https://twitter.com/godresky]My twitter[/url]
