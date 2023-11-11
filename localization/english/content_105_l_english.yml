@@ -788,7 +788,7 @@
 
  liberalism.3.t: "Думка, слово та ідеал"
  liberalism.3.d: "[ROOT.GetCountry.GetName] - це держава, яка в очах все більшої кількости людей, які цінують необмежене, сміливе мислення, стає одною із найбезпечніших місць для дослідження цих ідей."
- liberalism.3.f: "«Ви читали той бруд, який викладений у цьому нібито "вірші" про [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] [Concept('concept_country', '$concept_country_gen$')|l] [ROOT.GetCountry.GetName]? Епатажно.»\n«Епатажно!»\n«Також написав один із [ROOT.GetCountry.GetRuler.GetHerHis] земляків. Чи можеш ти таке уявити?»\n«Я отримав копію для себе. Хтось має стежити за цими літературними розпусниками. І точно не [ROOT.GetCountry.GetAdjectiveNoFormatting|l]ий уряд!»"
+ liberalism.3.f: "«Ви читали той бруд, який викладений у цьому нібито „вірші“ про [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] [Concept('concept_country', '$concept_country_gen$')|l] [ROOT.GetCountry.GetName]? Епатажно.»\n«Епатажно!»\n«Також написав один із [ROOT.GetCountry.GetRuler.GetHerHis] земляків. Чи можеш ти таке уявити?»\n«Я отримав копію для себе. Хтось має стежити за цими літературними розпусниками. І точно не [ROOT.GetCountry.GetAdjectiveNoFormatting|l]ий уряд!»"
  liberalism.3.a: "Утопія для сучасного художника."
  liberalism.3.b: "Місце, де дослідженням не перешкоджають звичаї."
 

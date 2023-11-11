@@ -87,13 +87,13 @@
 
  native_resettlement.2.t: "Протестне прохання Джона Росса"
  native_resettlement.2.d: "Вождь Джон, один з головних вождів [SCOPE.sCulture('cherokee_culture').GetName|l], подав на розгляд у Конґрес прохання уневажити договір, який би змусив нарід [SCOPE.sCulture('cherokee_culture').GetName|l] переселитися у місцину [SCOPE.sCountry('indian_territory_scope').GetName]. Його клопотання має майже стільки ж підписів, як і все східне населення черокі."
- native_resettlement.2.f:0 "«By the stipulations of this treaty, we are stripped of every attribute of freedom. Our property may be plundered before our eyes; violence may be committed on our persons, even our lives may be taken away, and there is none to regard our complaints. We are denationalized; we are disfranchised. We are deprived of membership in the human family!»"
+ native_resettlement.2.f: "«Згідно з умовами цього договору ми позбавляємося усіх атрибут свободи. Наше майно може бути вкрадене на наших очах, над нами можуть вчиняти насильство та ,навіть, забрати наші життя, і ніхто не зверне увагу на наше невдоволення. Ми без країни, ми безправні. Ми позбавлені можливости бути серед людей!»"
  native_resettlement.2.a: "Договір є договір. Ми не в змозі скасувати те, що підписали."
  native_resettlement.2.b: "Наша совість змушує нас скасувати договір про виселення."
 
  native_resettlement.3.t: "Виселення індіянців"
  native_resettlement.3.d: "Згідно з договором про виселення, настав час для народу [SCOPE.sCulture('cherokee_culture').GetName|l] зі землі [SCOPE.sState('indian_removal_state').GetName] переселитися у місцину [SCOPE.sCountry('indian_territory_scope').GetName]. Деякі вимушені переселенці відмовляються залишати свої домівки, а багато хто погано готовий до подорожі."
- native_resettlement.3.f:0 "«My friends, circumstances render it impossible that you can flourish in the midst of our community. You have but one remedy within your reach, and that is to remove west. And the sooner you do this, the sooner you will commence your career of improvement and prosperity.»"
+ native_resettlement.3.f: "«Мої друзі, обставини унеможливлюють ваше процвітання поміж нашої спільноти. У вас є лише одна можливість - переселитися на захід. І чим швидше ви зробите це, тим скоріше станете на путь вдосконалення та достатку.»"
  native_resettlement.3.a: "Примусити їх кийком і багнетом."
  native_resettlement.3.b: "Запропонувати їм допомогу в подорожі."
 
@@ -129,7 +129,7 @@
  production_tech_events.501.b: "Майстри паротягів з [Concept('concept_state', '$concept_state_gen$')|l] [SCOPE.sState('engine_state').GetName] повинні отримати переваги з цієї лихоманки."
  production_tech_events.501.c: "Не спочиваймо на лаврах, а передбачаймо майбутнє!"
 
- je_indian_removal_resolve_the_chain:0 "Conclude the ongoing process of Removal either by stopping the proceedings or completing them."
+ je_indian_removal_resolve_the_chain: "Завершіть тривалий процес виселення або зупинивши, або закінчивши його."
 
  slavery_law_events.1.t:0 "The Classical Case for Chains"
  slavery_law_events.1.d:0 "[SCOPE.sCharacter('slaver_ig_leader_scope').GetFullName], the leader of the [SCOPE.gsInterestGroup('slaver_ig_scope').GetName], has delivered a well-received speech regarding the classical basis of [SCOPE.sLaw('current_law_scope').GetName] and its historical legitimacy."
@@ -519,7 +519,7 @@
  ace_wind: "Дух"
  ace_cowboy: "Ковбой"
  
- je_submarines:0 "The War Beneath the Waves"
+ je_submarines:0 "Війна під хвилями"
  je_submarines_reason:0 "Advancements in submersible technology mean that naval warfare does not need to be waged solely on the surface of the sea any longer."
  naval_tech_events.4.t:0 "Supreme Submarines"
  naval_tech_events.4.d:0 "Our growing use of submarines in warfare has created a new generation of commanders, exemplified by the likes of [SCOPE.sCharacter('submarine_commander').GetFullName], who understand the nature of underwater warfare very well."
