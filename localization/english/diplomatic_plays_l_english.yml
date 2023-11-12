@@ -192,123 +192,123 @@
     
  dp_regime_change: "$war_goal_regime_change_type_name$"
  dp_regime_change_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_regime_change$#!\n$TOOLTIP_DELIMITER$\n$dp_regime_change_desc$"
- dp_regime_change_desc:1 "Sets the initiating [concept_war_goal] to force the target to change their [concept_government] to one similar to your own and enact up to #v [GetDefine('NPolitics','NUM_REVOLUTIONARY_LAW_CHANGES')]#! [Concept('concept_law', '$concept_laws$')] favored by the new regime."
+ dp_regime_change_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], яка змушує ціль змінити їхній [Concept('concept_government', '$concept_government_acc$')|l] до подібного на ваш і надати чинности [Concept('concept_law', '$concept_laws_dat$')|l] #v ([GetDefine('NPolitics','NUM_REVOLUTIONARY_LAW_CHANGES')])#!, які відповідають новому устрою."
  
  dp_ban_slavery: "$war_goal_ban_slavery_type_name$"
  dp_ban_slavery_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_ban_slavery$#!\n$TOOLTIP_DELIMITER$\n$dp_ban_slavery_desc$"
- dp_ban_slavery_desc:0 "Встановлює початкову [concept_war_goal] to force the targeted [concept_country] to abolish slavery by changing their [GetLawGroup('lawgroup_slavery').GetName] [concept_law] to [GetLawType('law_slavery_banned').GetName]."
+ dp_ban_slavery_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], яка змушує цільову [Concept('concept_country', '$concept_country_acc$')|l] скасувати рабство та змінити у групі «[GetLawGroup('lawgroup_slavery').GetName]» на [Concept('concept_law', '$concept_law_acc$')|l] «[GetLawType('law_slavery_banned').GetName]»."
   
  dp_conquer_state: "$war_goal_conquer_state_type_name$"
  dp_conquer_state_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_conquer_state$#!\n$TOOLTIP_DELIMITER$\n$dp_conquer_state_desc$"
- dp_conquer_state_desc:0 "Встановлює початкову [concept_war_goal] to force the targeted [concept_country] to cede a specific [concept_state] for you to take control of."
+ dp_conquer_state_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], яка змушує цільову [Concept('concept_country', '$concept_country_acc$')|l] передати під ваш контроль певну [Concept('concept_state', '$concept_state_acc$')|l]."
   
  dp_return_state: "$war_goal_return_state_type_name$"
  dp_return_state_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_return_state$#!\n$TOOLTIP_DELIMITER$\n$dp_return_state_desc$"
- dp_return_state_desc:0 "Встановлює початкову [concept_war_goal] to force the targeted [concept_country] to return the specified [concept_state] to you."
+ dp_return_state_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], яка змушує цільову [Concept('concept_country', '$concept_country_acc$')|l] повернути певну [Concept('concept_state', '$concept_state_acc$')|l] вам."
 
  dp_independence: "$war_goal_independence_type_name$"
  dp_independence_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_independence$#!\n$TOOLTIP_DELIMITER$\n$dp_independence_desc$"
- dp_independence_desc:0 "Встановлює початкову [concept_war_goal] to force the targeted [concept_country] to grant you independence."
+ dp_independence_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], яка змушує цільову [Concept('concept_country', '$concept_country_acc$')|l] надати вам незалежність."
    
  dp_liberate_subject: "$war_goal_liberate_subject_type_name$"
  dp_liberate_subject_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_liberate_subject$#!\n$TOOLTIP_DELIMITER$\n$dp_liberate_subject_desc$"
- dp_liberate_subject_desc:0 "Встановлює початкову [concept_war_goal] to force the targeted [concept_country] to grant independence to one of their [Concept('concept_subject', '$concept_subjects$')]."
+ dp_liberate_subject_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], яка змушує цільову [Concept('concept_country', '$concept_country_acc$')|l] надати незалежність одному з їхніх [Concept('concept_subject', '$concept_subjects_gen$')|l]."
    
  dp_take_treaty_port: "$war_goal_take_treaty_port_type_name$"
  dp_take_treaty_port_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_take_treaty_port$#!\n$TOOLTIP_DELIMITER$\n$dp_take_treaty_port_desc$"
- dp_take_treaty_port_desc:0 "Встановлює початкову [concept_war_goal] to force the targeted [concept_country] to cede a [concept_treaty_port] in the targeted [concept_state_region]."
+ dp_take_treaty_port_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], яка змушує цільову [Concept('concept_country', '$concept_country_acc$')|l] віддати [Concept('concept_treaty_port', '$concept_treaty_port_acc$')|l] у вибраному [Concept('concept_state_region', '$concept_state_region_loc$')|l]."
    
  dp_force_recognition: "$war_goal_force_recognition_type_name$"
  dp_force_recognition_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_force_recognition$#!\n$TOOLTIP_DELIMITER$\n$dp_force_recognition_desc$"
- dp_force_recognition_desc:0 "Встановлює початкову [concept_war_goal] to force the targeted [concept_country] to remove the [Concept('concept_unrecognized_power','$concept_unrecognized_power_short$')] status of you."
+ dp_force_recognition_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], яка змушує цільову [Concept('concept_country', '$concept_country_acc$')|l] прибрати [Concept('concept_unrecognized_power','$concept_unrecognized_power_adj$ий')|l] статус у вас."
    
  dp_contain_threat: "$war_goal_contain_threat_type_name$"
  dp_contain_threat_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_contain_threat$#!\n$TOOLTIP_DELIMITER$\n$dp_contain_threat_desc$"
- dp_contain_threat_desc:0 "Встановлює початкову [concept_war_goal] to force the targeted [concept_country] to release all [Concept('concept_state', '$concept_states$')] and [Concept('concept_subject', '$concept_subjects$')] they have gained through conquest in the last #v [GetDefine('NDiplomacy', 'WAR_GOAL_CONTAIN_THREAT_YEARS_SINCE_CONQUEST')]#! years."
+ dp_contain_threat_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], яка змушує цільову [Concept('concept_country', '$concept_country_acc$')|l] звільнити всі [Concept('concept_state', '$concept_states_acc$')|l] та всіх [Concept('concept_subject', '$concept_subjects_acc$')|l], які вони завоювали протягом останніх #v [GetDefine('NDiplomacy', 'WAR_GOAL_CONTAIN_THREAT_YEARS_SINCE_CONQUEST')]#! років."
   
  dp_transfer_subject: "$war_goal_transfer_subject_type_name$"
  dp_transfer_subject_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_transfer_subject$#!\n$TOOLTIP_DELIMITER$\n$dp_transfer_subject_desc$"
- dp_transfer_subject_desc:0 "Встановлює початкову [concept_war_goal] to force the targeted [concept_country] to transfer their control of the targeted [concept_subject] to you."
+ dp_transfer_subject_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], яка змушує цільову [Concept('concept_country', '$concept_country_acc$')|l] передати вам контроль над вибраним [Concept('concept_subject', '$concept_subject_ins$')|l]."
   
  dp_make_puppet: "$war_goal_make_puppet_type_name$"
  dp_make_puppet_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_make_puppet$#!\n$TOOLTIP_DELIMITER$\n$dp_make_puppet_desc$"
- dp_make_puppet_desc:0 "Встановлює початкову [concept_war_goal] to force the targeted [concept_country] to become your [concept_puppet]."
+ dp_make_puppet_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], яка змушує цільову [Concept('concept_country', '$concept_country_acc$')|l] стати вашою [Concept('concept_puppet', '$concept_puppet_ins$')|l]."
  
  dp_make_dominion: "$war_goal_make_dominion_type_name$"
  dp_make_dominion_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_make_dominion$#!\n$TOOLTIP_DELIMITER$\n$dp_make_dominion_desc$"
- dp_make_dominion_desc:0 "Встановлює початкову [concept_war_goal] to force the targeted [concept_country] to become your [concept_dominion]."
+ dp_make_dominion_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], яка змушує цільову [Concept('concept_country', '$concept_country_acc$')|l] стати вашим [Concept('concept_dominion', '$concept_dominion_ins$')|l]."
    
  dp_make_vassal: "$war_goal_make_vassal_type_name$"
  dp_make_vassal_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_make_vassal$#!\n$TOOLTIP_DELIMITER$\n$dp_make_vassal_desc$"
- dp_make_vassal_desc:0 "Встановлює початкову [concept_war_goal] to force the targeted [concept_country] to become your [concept_vassal]."
+ dp_make_vassal_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], яка змушує цільову [Concept('concept_country', '$concept_country_acc$')|l] стати вашим [Concept('concept_vassal', '$concept_vassal_ins$')|l]."
    
  dp_annex_subject: "Анексія підвладного"
  dp_annex_subject_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_annex_subject$#!\n$TOOLTIP_DELIMITER$\n$dp_annex_subject_desc$"
- dp_annex_subject_desc:0 "Встановлює початкову [concept_war_goal] to completely annex the targeted [concept_country]."
+ dp_annex_subject_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l] для цілковитої анексії вибраної [Concept('concept_country', '$concept_country_gen$')|l]."
    
  dp_revolution: "$war_goal_revolution_type_name$"
  dp_revolution_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_revolution$#!\n$TOOLTIP_DELIMITER$\n$dp_revolution_desc$"
- dp_revolution_desc:0 "Встановлює початкову [concept_war_goal] to put down the targeted [concept_revolution]."
+ dp_revolution_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], аби придушити [Concept('concept_revolution', '$concept_revolution_acc$')|l]."
    
  dp_secession: "$war_goal_secession_type_name$"
  dp_secession_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_secession$#!\n$TOOLTIP_DELIMITER$\n$dp_secession_desc$"
- dp_secession_desc:0 "Встановлює початкову [concept_war_goal] to crush the targeted [concept_secession] and force them to return all [Concept('concept_state', '$concept_states$')] they have seceded from us."
+ dp_secession_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], аби розчавити [Concept('concept_secession', '$concept_secession_acc$')|l] та примусити їх повернути всі [Concept('concept_state', '$concept_states_acc$')|l], які відокремилися від нас."
   
  dp_unify_germany: "Обʼєднання Німеччини"
  dp_unify_germany_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_unify_germany$#!\n$TOOLTIP_DELIMITER$\n$dp_unify_germany_desc$"
- dp_unify_germany_desc:1 "Sets the initiating [concept_war_goal] to annex all German homeland states held by other nations."
+ dp_unify_germany_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], аби анексувати всі німецькі батьківщини, що належать іншим країнам."
    
  dp_unify_italy: "Обʼєднання Італії"
  dp_unify_italy_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_unify_italy$#!\n$TOOLTIP_DELIMITER$\n$dp_unify_italy_desc$"
- dp_unify_italy_desc:1 "Sets the initiating [concept_war_goal] to annex all Italian homeland states held by other nations."
+ dp_unify_italy_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], аби анексувати всі італійські батьківщини, що належать іншим країнам."
  
  dp_unify_scandinavia: "Обʼєднання Скандинавії"
  dp_unify_scandinavia_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_unify_scandinavia$#!\n$TOOLTIP_DELIMITER$\n$dp_unify_scandinavia_desc$"
- dp_unify_scandinavia_desc:1 "Sets the initiating [concept_war_goal] to annex all Scandinavian homeland states held by other nations."
+ dp_unify_scandinavia_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], аби анексувати всі скандинавські батьківщини, що належать іншим країнам."
    
  dp_unify_ethiopia: "Обʼєднання Етіопії"
  dp_unify_ethiopia_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_unify_ethiopia$#!\n$TOOLTIP_DELIMITER$\n$dp_unify_ethiopia_desc$"
- dp_unify_ethiopia_desc:0 "Встановлює початкову [concept_war_goal] to annex all lesser Ethiopian countries."
+ dp_unify_ethiopia_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], аби анексувати всі малі етіопські країни."
  ETH_tt: "[SCOPE.sCountry('target_country').GetName] може утворити Етіопію"
 
  dp_unify_china: "Обʼєднання Хіни"
  dp_unify_china_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_unify_china$#!\n$TOOLTIP_DELIMITER$\n$dp_unify_china_desc$"
- dp_unify_china_desc:0 "Встановлює початкову [concept_war_goal] to annex all lesser Chinese countries."
+ dp_unify_china_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], аби анексувати всі малі хінські країни."
 
  dp_unify_arabia: "Обʼєднання Арабії"
  dp_unify_arabia_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_unify_arabia$#!\n$TOOLTIP_DELIMITER$\n$dp_unify_arabia_desc$"
- dp_unify_arabia_desc:0 "Встановлює початкову [concept_war_goal] to annex all lesser Arabian countries."
+ dp_unify_arabia_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], аби анексувати всі малі арабські країни."
  ARA_tt: "[SCOPE.sCountry('target_country').GetName] може утворити Арабію"
 
  dp_unify_india: "Обʼєднання Індії"
  dp_unify_india_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_unify_india$#!\n$TOOLTIP_DELIMITER$\n$dp_unify_india_desc$"
- dp_unify_india_desc:0 "Встановлює початкову [concept_war_goal] to annex all lesser Indian countries."
+ dp_unify_india_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], аби анексувати всі малі індійські країни."
  BHT_tt: "[SCOPE.sCountry('target_country').GetName] може утворити Індію"
 
  dp_unify_indonesia: "Об’єднання Архіпелагу"
  dp_unify_indonesia_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_unify_indonesia$#!\n$TOOLTIP_DELIMITER$\n$dp_unify_indonesia_desc$"
- dp_unify_indonesia_desc:0 "Встановлює початкову [concept_war_goal] to annex all lesser Indonesian countries."
+ dp_unify_indonesia_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], аби анексувати всі малі індонезійські країни."
  IDN_tt: "[SCOPE.sCountry('target_country').GetName] може утворити Індонезію"
 
  dp_southern_secession: "Південний розкол"
  dp_southern_secession_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_southern_secession$#!\n$TOOLTIP_DELIMITER$\n$dp_southern_secession_desc$"
- dp_southern_secession_desc:0 "Встановлює початкову [concept_war_goal] to crush the Southern [concept_secession] and force them to return all [Concept('concept_state', '$concept_states$')] they have seceded from us."
+ dp_southern_secession_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], аби розчавити Південний [Concept('concept_secession', '$concept_secession_acc$')|l] та примусити їх повернути всі [Concept('concept_state', '$concept_states_acc$')|l], які відокремилися від нас."
  
  dp_humiliation: "Приниження"
  dp_humiliation_tooltip: "#header Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_humiliation$#!\n$TOOLTIP_DELIMITER$\n$dp_humiliation_desc$"
- dp_humiliation_desc:0 "Встановлює початкову [concept_war_goal] to reduce the targeted [Concept('concept_country', '$concept_country_possessive$')] prestige and prevents them from opposing you in [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] for #v 5#! years."
+ dp_humiliation_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], аби зменшити престиж цільової [Concept('concept_country', '$concept_country_gen$')|l] та не дати їм змогу протистояти вам у [Concept('concept_diplomatic_play', '$concept_diplomatic_plays_loc$')|l] протягом #v 5-ти#! років."
 
  dp_leadership_germany: "Німецьке провідництво"
- dp_leadership_germany_desc:1 "Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_leadership_germany$\n$TOOLTIP_DELIMITER$\n$dp_leadership_germany_tooltip_desc$"
- dp_leadership_germany_tooltip_desc:0 "Встановлює початкову [concept_war_goal] to kick out the trageted [concept_country] as a [concept_unification_candidate] of the German [Concept('concept_unification', '$concept_major_unification$')]."
+ dp_leadership_germany_desc: "Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_leadership_germany$\n$TOOLTIP_DELIMITER$\n$dp_leadership_germany_tooltip_desc$"
+ dp_leadership_germany_tooltip_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], аби цільова [Concept('concept_country', '$concept_country$')|l] втратила статус [Concept('concept_unification_candidate', '$concept_unification_candidate_short_gen$')|l] на Німецьке [Concept('concept_unification', '$concept_major_unification_acc$')|l]."
  
  dp_leadership_italy: "Італійське провідництво"
- dp_leadership_italy_desc:1 "Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_leadership_italy$\n$TOOLTIP_DELIMITER$\n$dp_leadership_italy_tooltip_desc$"
- dp_leadership_italy_tooltip_desc:0 "Встановлює початкову [concept_war_goal] to kick out the trageted [concept_country] as a [concept_unification_candidate] of the Italian [Concept('concept_unification', '$concept_major_unification$')]."
+ dp_leadership_italy_desc: "Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_leadership_italy$\n$TOOLTIP_DELIMITER$\n$dp_leadership_italy_tooltip_desc$"
+ dp_leadership_italy_tooltip_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], аби цільова [Concept('concept_country', '$concept_country$')|l] втратила статус [Concept('concept_unification_candidate', '$concept_unification_candidate_short_gen$')|l] на Італійське [Concept('concept_unification', '$concept_major_unification_acc$')|l]."
  
  dp_leadership_scandinavia: "Скандинавське провідництво"
- dp_leadership_scandinavia_desc:1 "Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_leadership_scandinavia$\n$TOOLTIP_DELIMITER$\n$dp_leadership_scandinavia_tooltip_desc$"
- dp_leadership_scandinavia_tooltip_desc:0 "Встановлює початкову [concept_war_goal] to kick out the trageted [concept_country] as a [concept_unification_candidate] of the Scandinavian [Concept('concept_unification', '$concept_major_unification$')]."
+ dp_leadership_scandinavia_desc: "Почати [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] $dp_leadership_scandinavia$\n$TOOLTIP_DELIMITER$\n$dp_leadership_scandinavia_tooltip_desc$"
+ dp_leadership_scandinavia_tooltip_desc: "Встановлює початкову [Concept('concept_war_goal', '$concept_war_goal_acc$')|l], аби цільова [Concept('concept_country', '$concept_country$')|l] втратила статус [Concept('concept_unification_candidate', '$concept_unification_candidate_short_gen$')|l] на Скандинавське [Concept('concept_unification', '$concept_major_unification_acc$')|l]."
  
  war_goal_conquer_state_type_name: "Завоювання землі"
  war_goal_conquer_state_type_desc: "Завоювати [Concept('concept_state','$concept_state_gen$')|l] іншої [Concept('concept_country','$concept_country_gen$')|l]."

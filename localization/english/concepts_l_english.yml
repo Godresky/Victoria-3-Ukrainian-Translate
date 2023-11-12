@@ -35,6 +35,7 @@
  concept_subject_feminine_gen: "Підвладної"
  concept_subject_feminine_ins: "Підвладною"
  concept_subjects: "Підвладні"
+ concept_subjects_acc: "Підвладних"
  concept_subjects_gen: "Підвладних"
  concept_subject_country: "Підвладна держава"
  concept_subject_country_acc: "Підвладну державу"
@@ -201,6 +202,7 @@
  concept_sol: "Рівень життя"
  concept_sol_gen: "Рівня життя"
  concept_sol_acc: "Рівень життя"
+ concept_sol_ins: "Рівнем життя"
  concept_sol_loc: "Рівенях життя"
  concept_sol_short: "РіЖи"
  concept_sol_desc: "$concept_sol$ вимірює умови життя [Concept('concept_pop','$concept_pop_gen$')|l] за їхнім матеріяльним [Concept('concept_wealth','$concept_wealth_ins$')|l] відносно основного показника. Він вимірює [Concept('concept_pop_growth','$concept_pop_growth_birthrate_and_mortality$')|l], і щоразу, коли вона змінюється, це може призвести до того, що люди стануть більш [Concept('concept_radical','$concept_radical_adj$ими')|l] або [Concept('concept_loyalist','$concept_loyal_adj$ими')|l]. Середній рівень життя у [Concept('concept_state','$concept_state_loc$')|l] впливає на його [Concept('concept_migration_pull','$concept_migration_pull_acc$')|l]."
@@ -935,6 +937,7 @@
  concept_pop_need: "Потреба населення"
  concept_pop_needs_short: "Потреби"
  concept_pop_needs_short_gen: "Потреб"
+ concept_pop_needs_short_acc: "Потреби"
  concept_pop_need_short: "Потреба"
  concept_pop_needs_desc:1 "[Concept('concept_pop', '$concept_pops$')] spend their income on [Concept('concept_good', '$concept_goods$')] to fulfill their $concept_pop_needs_short$. The higher their [concept_wealth] the more $concept_goods$ it will purchase. $concept_pops$ gain more diverse and luxurious $concept_pop_needs_short$ as their $concept_wealth$ increases. A given $concept_pop_need_short$ can often be satisfied by a variety of $concept_goods$ via [concept_goods_substitution]. If the $concept_pop$ has money left over after its $concept_pop_needs_short$ have been fulfilled their $concept_wealth$ will increase. The inverse is also true: if the $concept_pop$ cannot afford their $concept_pop_needs_short$ they will still purchase them, and the shortfall reduces their $concept_wealth$."
 
@@ -1357,6 +1360,7 @@
  concept_credit_acc: "Кредит"
  concept_credit_debt: "Довг"
  concept_credit_debt_acc: "Довг"
+ concept_credit_debt_gen: "Довгу"
  concept_credit_limit: "Межа кредиту"
  concept_credit_desc:2 "The national $concept_credit$ is the amount of [concept_money] the [concept_treasury] can borrow from its economy, equal to the sum of all domestic [concept_cash_reserves] plus a base value determined by [concept_gdp]. If the [concept_principal] exceeds the $concept_credit_limit$ the [concept_country] goes into [concept_default]."
 
@@ -1466,6 +1470,7 @@
  concept_political_strength_desc:3 "The degree of power a [concept_pop], and consequently the [Concept('concept_interest_group','$concept_interest_groups$')] it supports, have over the [Concept('concept_country','$concept_country_possessive$')] politics. It is derived from its supporting $concept_pops$' [concept_wealth]. $concept_pops$ who live in [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] have much less $concept_political_strength$, while $concept_pops$ in the [concept_capital_state] have more.\n\n$concept_pops$ distribute their $concept_political_strength$ to the $concept_interest_groups$ it supports proportionate to how many of its members support it. If an $concept_interest_group$ is a member of a [concept_party], they also gain $concept_political_strength$ from the [concept_votes] that $concept_party$ received in the last [concept_election]. An $concept_interest_group$'s [concept_clout] is equal to their share of the $concept_country$'s total $concept_political_strength$."
 
  concept_working_adults: "Робочі дорослі"
+ concept_working_adults_gen: "Робочих дорослих"
  concept_working_adult: "Робочий дорослий"
  concept_working_adult_gen: "Робочого дорослого"
  concept_working_adults_desc:1 "The part of a [concept_pop] that make up the [concept_workforce] that work in [Concept('concept_building', '$concept_buildings$')] for [Concept('concept_building_wage', '$concept_building_wages$')]. They are the main source of a $concept_pop$'s [Concept('concept_pop_income','$concept_pop_income_short$')] and [concept_political_strength]."
@@ -1520,6 +1525,7 @@
  concept_revolution_gen: "Революції"
  concept_revolution_dat: "Революції"
  concept_revolution_acc: "Революцію"
+ concept_revolution_loc: "Революції"
  concept_revolutions: "Революції"
  concept_revolutions_acc: "Революції"
  concept_revolutionary: "Революційний"
@@ -1778,11 +1784,12 @@
  concept_population_ins: "Населенням"
  concept_population_loc: "Населенні"
  concept_population_loc_alt: "Населенню"
- concept_pop_desc:3 "The world's population are organized into $concept_pops$, groups of individuals who work in the same [concept_building] as a certain [concept_profession], and share the same [concept_culture] and [concept_religion]. They use the [Concept('concept_pop_income','$concept_pop_income_short$')] they earn to buy [Concept('concept_good', '$concept_goods$')] to satisfy their [Concept('concept_pop_needs','$concept_pop_needs_short$')], which decides their [concept_wealth] and [concept_sol]. They can support [Concept('concept_interest_group', '$concept_interest_groups$')] and [Concept('concept_political_movement','$concept_political_movements$')], or be [Concept('concept_politically_unaligned_aligned', '$concept_politically_unaligned$')]. A $concept_pop$ has a number of [concept_working_adults] and a number of [concept_dependents]. Some number of them are [Concept('concept_literacy','$concept_literate$')], and they might have a number of either [Concept('concept_loyalist','$concept_loyalists$')] or [Concept('concept_radical','$concept_radicals$')]."
+ concept_pop_desc:3 "Світове населення об’єднюються у громади, кола людей, які працюють у тій же [Concept('concept_building','$concept_building_loc$')|l] на певному [Concept('concept_profession','$concept_profession_loc$')|l] й поділяють такі ж [Concept('concept_culture','$concept_culture_acc$')|l] та [Concept('concept_religion','$concept_religion_acc$')|l]. Вони використовують свій [Concept('concept_pop_income','$concept_pop_income_short_acc$')|l], щоби купити [Concept('concept_good', '$concept_goods_acc$')|l], аби задовільнити свої [Concept('concept_pop_needs','$concept_pop_needs_short_acc$')|l], які визначаються їхніми [Concept('concept_wealth','$concept_wealth_ins$')|l] та [Concept('concept_sol','$concept_sol_ins$')|l]. Вони можуть підтримувати [Concept('concept_interest_group', '$concept_interest_group_acc$')|l] і [Concept('concept_political_movement','$concept_political_movements_acc$')|l] або бути [Concept('concept_politically_unaligned_aligned', '$concept_politically_unaligned_adj$ими')|l]. У громаді є кількість [Concept('concept_working_adults','$concept_working_adults_gen$')|l] та [Concept('concept_dependents','$concept_dependents_gen$')|l]. Певне число з них є [Concept('concept_literacy','$concept_literate$ими')|l], а серед них можуть бути як і [Concept('concept_loyalist','$concept_loyalists$')|l], так і [Concept('concept_radical','$concept_radicals$')|l]."
 
  concept_profession: "Ремесло"
  concept_profession_acc: "Ремесло"
  concept_profession_ins: "Ремеслом"
+ concept_profession_loc: "Ремеслі"
  concept_profession_jobs: "Робота"
  concept_profession_jobs_gen: "Роботи"
  concept_professions: "Ремесла"
@@ -1891,6 +1898,7 @@
 
  concept_pop_income: "Прибуток населення"
  concept_pop_income_short: "Прибуток"
+ concept_pop_income_short_acc: "Прибуток"
  concept_pop_income_expenses: "Витрати населення"
  concept_pop_income_expenses_short: "Витрати"
  concept_pop_income_desc:0 "At the end of each week, [Concept('concept_pop','$concept_pops$')] receive an $concept_pop_income_short$ based on the size of their [concept_workforce] and the current [concept_building_wage] offered to them, plus the size of their [concept_dependents] and the amount of [concept_dependent_income] they collect. This $concept_pop_income_short$ is spent on [concept_pop_needs] which impact the $concept_pop$'s [concept_wealth]."
@@ -2261,6 +2269,7 @@
  concept_popularity_desc: "Знаність [Concept('concept_character','$concept_character_gen$')|l] показує готовність [Concept('concept_pop','$concept_people_gen$')|l] йти за ним. $concept_popularity$ впливає по-різному в залежности від [Concept('concept_character_role','$concept_character_role_gen$')|l] персонажа."
 
  concept_momentum: "Поштовх"
+ concept_momentum_gen: "Поштовху"
  concept_momentum_desc: "Показує успіх [Concept('concept_election','$concept_election_adj$ої')|l] виправи [Concept('concept_party','$concept_party_gen$')|l]. $concept_momentum$ збільшує кількість [Concept('concept_votes','$concept_votes_gen$')|l] партії перед днем виборів, а після чого анулюється. На поштовх може вплинути випадковість, спеціяльні події та [concept_popularity|l] їхнього [Concept('concept_party_leader','$concept_party_leader_gen$')|l]."
 
  concept_government_expenses: "Державні витрати"
@@ -2408,12 +2417,14 @@
  concept_unification_candidate_acc: "Кандидат на об‘єднання"
  concept_unification_candidate_ins: "Кандидатом на об‘єднання"
  concept_unification_candidate_short: "Кандидат"
+ concept_unification_candidate_short_gen: "Кандидата"
  concept_unification_candidates: "Кандидати на об‘єднання"
  concept_unification_candidates_gen: "Кандидатів на об‘єднання"
  concept_unification_candidate_desc: "$concept_unification_candidate$ - це [concept_country|l] вважається реальним кандидатом на об’єднання. Умови для тих, хто може бути кандидатом на об’єднання, різняться залежно від того, про яку об’єднану націю йдеться."
 
  concept_unification: "Об‘єднання держави"
  concept_major_unification: "Велике об‘єднання"
+ concept_major_unification_acc: "Велике об‘єднання"
  concept_minor_unification: "Мале об‘єднання"
  concept_unification_desc:0 "The act of unifying and forming a new [concept_country] out of several $concept_countries$ is called Unification. A $concept_country$ can be formed by controlling a specific number of [Concept('concept_state','$concept_states$')] in the new $concept_country$'s region.\n\nA #b Major Unification#! allows $concept_countries$ to become [Concept('concept_unification_candidate','$concept_unification_candidates$')] which gives them access to the Unification [concept_diplomatic_play]. This $concept_diplomatic_play$ sets the [Concept('concept_war_goal','$concept_war_goals$')] to annex all the required $concept_states$ and $concept_countries$.\n\nWhile a #b Minor Unification#! do not allow any [Concept('concept_unification_candidate','$concept_unification_candidates$')] and can only form a $concept_country$ if the number of required $concept_states$ are controlled."
  

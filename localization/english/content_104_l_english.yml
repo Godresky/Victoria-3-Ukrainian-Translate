@@ -340,7 +340,7 @@
  natural_disaster_events.8.b:0 "We absolutely need to help these people."
  modifier_mega_volcanic_relief:0 "Large Eruption Relief"
  
- natural_disaster_variable_tt:0 "There is a chance that a famine will occur in the upcoming months."
+ natural_disaster_variable_tt: "Існує ризик того, що голод настане в найближчі місяці."
  
  famine_events.1.t: "Тяжкі часи"
  famine_events.1.d: "Голод став небезпечною проблемою для нашої нації, оскільки люди зі [Concept('concept_state', '$concept_state_gen$')|l] [SCOPE.sState('famine_state').GetName] повідомляють, що їм абсолютно нічого їсти. Ними було зроблено запит на надання надзвичайної допомоги."

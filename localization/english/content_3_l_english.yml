@@ -246,7 +246,7 @@
 ##################### Boxer Rebellion
 
  je_boxer_rebellion: "Боксерське повстання"
- je_boxer_rebellion_reason:1 "The humiliating loss of Chinese lands to foreign "barbarians" have resulted in the formation of numerous martial arts-inspired militias intent on purging the country of any foreign influence.\n\nFailure to see the militias vision through could have dramatic consequences for [ROOT.GetCountry.GetName]."
+ je_boxer_rebellion_reason: "Принизлива втрата хінських земель чужоземним «дикунам» призвела до утворення численних ополчень, натхненних бойовими мистецтвами, що мали на меті очистити країну від будь-якого іноземного впливу.\n\nНеспроможність втілити задуми ополченців у життя може мати драматичні трагічні для держави [ROOT.GetCountry.GetName]."
 
  dyn_c_empire_of_china: "Хінська імперія"
  dyn_c_empire_of_china_adj: "Хінськ"
@@ -288,30 +288,30 @@
  alms_for_the_poor: "Милостиня для нужденних"
 
  election_contextual_events.2.t: "Шахрайське майбутнє" # High Debts
- election_contextual_events.2.d:0 "Claims that the [SCOPE.sParty('public_debt_party').GetName]'s policy of extensive money loaning has saddled future generations with an undue burden have caused the party to leak voters like a faulty sieve."
- election_contextual_events.2.f:0 ""Blessed are the young, for they shall inherit the national debt."" # Herbert Hoover (Might remove this one because of slight anachronism, but the quote IS quite funny)
- election_contextual_events.2.a:0 "Loans are a cornerstone of any healthy economy!"
- election_contextual_events.2.b:0 "Find a scapegoat, the public demands a sacrifice."
- fiscally_irresponsible:0 "Fiscally Irresponsible"
+ election_contextual_events.2.d: "Заяви про те, що політика партії «[SCOPE.sParty('public_debt_party').GetName]», спрямована на значне кредитування, поклала на майбутні покоління надмірний тягар, призвело до того, що партія почала втрачати виборців, мов з води йшла."
+ election_contextual_events.2.f: "«Блаженні молоді, бо вони успадкують національний довг.»" # Herbert Hoover (Might remove this one because of slight anachronism, but the quote IS quite funny)
+ election_contextual_events.2.a: "Кредити - наріжний камінь будь-якої здорової економіки!"
+ election_contextual_events.2.b: "Знайдіть цапа-відбувайла, суспільство вимагає жертви."
+ fiscally_irresponsible: "Фінансово безвідповідальні"
 
  election_contextual_events.3.t: "Пацифіст засуджує війну" # Waging a War of Aggression
  election_contextual_events.3.d: "[SCOPE.sCharacter('pacifist_ig_leader').GetFullName], відомий пацифіст і провідник [SCOPE.gsInterestGroup('opposition_pacifist_ig').GetName], розпочав різкий напад на активну [SCOPE.sParty('government_war_party').GetName], стверджуючи, що війська [ROOT.GetCountry.GetAdjectiveNoFormatting] які брали участь у війні [SCOPE.sWar('pacifist_war').GetNameNoFormatting] під їхнім наглядом скоїли серйозні звірства."
- election_contextual_events.3.f: "«Ми... Я отримав наказ зібрати заручників, сер. Старі обличчя, молоді обличчя — деякі не старші мого власного сина. Наші лінії турбували так звані вільні стрільці. «Вбивцями» назвав їх мій командир. «Розбійники» зі злобою в серцях і рушницями в руках. Заручники мали їх стримати!\n\nBut після того, як того вечора впав третій солдат, командир сказав мені взяти заручників... він сказав завести їх у сарай... і... Господи, прости мене.»"
+ election_contextual_events.3.f: "«Ми... Я отримав наказ зібрати заручників, пане. Старі обличчя, молоді обличчя — деякі не старші мого власного сина. Наші лінії турбували так звані вільні стрільці. «Вбивцями» назвав їх мій командир. «Розбійники» зі злобою в серцях і рушницями в руках. Заручники мали їх стримати!\n\nАле після того, як того вечора впав третій вояка, командир сказав мені взяти заручників... він сказав завести їх у сарай... і... Господи, прости мене.»"
  election_contextual_events.3.a: "Що зробили наші війська!? Кому!?"
  election_contextual_events.3.b: "Цікавий знимок. Нумо зацензуримо."
  election_contextual_events.3.c: "Цікавий знимок. Нумо зацензуримо."
- principled_pacifist:0 "Principled Pacifist"
- martyrized_pacifist:0 "Martyrized Pacifist"
+ principled_pacifist: "Принциповий пацифіст"
+ martyrized_pacifist: "Замучений пацифіст"
  election_contextual_events.3.tt.1: "Приховати непатріотичний наклеп приховати від громадськости!"
  election_contextual_events.3.tt.2: "Незважаючи на наші зусилля, відомості просочуються."
 
  election_contextual_events.4.t: "За ким лунають дзвони" # Old IG leader
- election_contextual_events.4.d: "Постарілий [SCOPE.sCharacter('decrepit_leader').GetFullName], провідник групи [SCOPE.gsInterestGroup('decrepit_leader_ig').GetName], несподівано помер в середині виправа — залишивши [SCOPE.sParty('decrepit_leader_party').GetName] без наріжного політика. Питання про заміну [SCOPE.sCharacter('decrepit_leader').GetHerHis] зараз у всіх на вустах."
- election_contextual_events.4.f:0 ""Unexpected? Bah! That old bag of bones was long overdue to meet [SCOPE.sCharacter('decrepit_leader').GetHerHis] maker. It's about time that party saw some new blood!""
+ election_contextual_events.4.d: "Постаріл[Select_CString(SCOPE.sCharacter('decrepit_leader').IsFemale,'$CustomLoc_UA_vona_a$','$CustomLoc_UA_vin_yY$')|l] [SCOPE.sCharacter('decrepit_leader').GetFullName], провідник групи [SCOPE.gsInterestGroup('decrepit_leader_ig').GetName], несподівано помер в середині виправа — залишивши [SCOPE.sParty('decrepit_leader_party').GetName] без наріжного політика. Питання про заміну [SCOPE.sCharacter('decrepit_leader').GetHerHis] зараз у всіх на вустах."
+ election_contextual_events.4.f: "«Несподівано? Ба! Цей старий мішок з кістками вже давно мав зустрітися зі своїм творцем. Настав час поповнити партію свіжою кров’ю!»"
  election_contextual_events.4.a: "Ідіть з популярним, але бездарним кандидатом."
  election_contextual_events.4.b: "Сміливий, але пихатий хлопець закріплює крісло."
- well_connected:0 "Well-connected"
- imperious_upstart:0 "Imperious Upstart"
+ well_connected: З хорошими зв’язками"
+ imperious_upstart: "Пихатий вискочка"
 
  election_contextual_events.5.t: "Держава потреб" # Low Standard of Living
  election_contextual_events.5.d: "[SCOPE.sCharacter('low_sol_opposition_leader').GetFullName], провідник [SCOPE.gsInterestGroup('low_sol_opposition_ig').GetName], голосно звинувачує [SCOPE.sParty('low_sol_party').GetName] у неправильному керуванні, врахувавши низький рівень життя в державі — він стверджує, що лише [SCOPE.sParty('low_sol_opposition_party').GetName] має силу волі виправити ситуацію."
@@ -358,14 +358,14 @@
  modern_rifle_arsenal: "Сучасна зброярня крісів"
  arsenal_proving_ground: "Випробувальний полігон зброярні"
 
- military_tech_events.402.t:0 "The Devil's Paintbrush"
+ military_tech_events.402.t: "Пензель диявола"
  military_tech_events.402.d:0 "[SCOPE.sCharacter('machine_gun_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('machine_gun_general').GetFullName]'s use of dedicated machine gun teams in the [SCOPE.sWar('machine_gun_war').GetName] war has yielded advantageous results on the field of battle, leaving full platoons of enemies dead before they have even reached our lines."
  military_tech_events.402.f:1 ""If anyone had told me that it would be possible to make a gun that would: Pull a cartridge belt into position, pull a loaded cartridge out of it, move it in front of the barrel, thrust it into the barrel, close the breech in a proper manner, cock the hammer, pull the trigger, fire off the cartridge, extract the empty shell and throw it out of the mechanism, feed a new cartridge into position, and do all these things in the tenth of a second, I would not have believed it. \n\nBut now I have seen it done with my own eyes."" # Francis Pratt
  military_tech_events.402.a:0 "Our foes fall like grass before the scythe."
  military_tech_events.402.b:0 "Whatever happens, we have got the Maxim gun, and they have not." # Hilaire Belloc
  military_tech_events.402.c:0 "[SCOPE.sCharacter('machine_gun_general').GetFullName]'s mastery of this tool is unparalleled."
- machine_gun_expertise_low:0 "Machine Gun Expert"
- machine_gun_expertise_high:0 "Machine Gun Expert"
+ machine_gun_expertise_low: "Знавець скорострілів"
+ machine_gun_expertise_high: "Знавець скорострілів"
 
  je_ironclads: "Панцерники"
  je_ironclads_reason: "Обшиті металом, парові кораблі, оснащені великокаліберними гарматами, здатними стріляти розривними снарядами, залізні кораблі є радикальним відхиленням від доби бойових вітрильників."

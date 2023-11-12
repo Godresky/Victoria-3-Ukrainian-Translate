@@ -24,7 +24,7 @@
  state_atheism.3.b: "Надішліть державну допомогу, щоб підірвати їхню діяльність."
  state_atheism.3.c: "Створіть наші благодійні організації, щоб підірвати діяльність тих благодійників."
  state_atheism.3.dd: "Просто нехай працюють."
- godless_ig_leader: "[SCOPE.sCharacter('godless_leader').GetFullName] групи [SCOPE.gsInterestGroup('godless_ig').GetName] буде замінен[Select_CString(character.IsFemale,'$CustomLoc_UA_vona_a$','$CustomLoc_UA_vin_yY$')|l] на атеїстичного провідника"
+ godless_ig_leader: "[SCOPE.sCharacter('godless_leader').GetFullName] групи [SCOPE.gsInterestGroup('godless_ig').GetName] буде замінен[Select_CString(SCOPE.gsInterestGroup('godless_ig').IsFemale,'$CustomLoc_UA_vona_a$','$CustomLoc_UA_vin_yY$')|l] на атеїстичного провідника"
  society_of_the_godless_mod: "Спілка безвірників"
  antireligious_policies: "Протирелігійна політика"
  state_atheism_conversion_tt: "10% [Concept('concept_pop', '$concept_pops_gen$')|l] у ваших [Concept('concept_incorporated_state', '$concept_incorporated_states_loc$')|l] стануть атеїстами"

@@ -439,9 +439,9 @@
  SET_SUBSIDIZED:1 "Start [Concept('concept_subsidies', '$concept_subsidizing$')] [Building.GetName]"
  SET_SUBSIDIZED_NEGATIVE:1 "Stop [Concept('concept_subsidies', '$concept_subsidizing$')] [Building.GetName]"
   
- ADD_MOMENTUM:2 "#v $VALUE|%+=0$#! [concept_momentum] will be added to [Party.GetName] [Party.GetMembersSummary]"
- ADD_MOMENTUM_FIRST:2 "#v $VALUE|%+=0$#! [concept_momentum] will be added to [Party.GetName] [Party.GetMembersSummary]"
- ADD_MOMENTUM_THIRD:2 "#v $VALUE|%+=0$#! [concept_momentum] will be added to [Party.GetName] [Party.GetMembersSummary]"
+ ADD_MOMENTUM: "#v $VALUE|%+=0$#! [Concept('concept_momentum','$concept_momentum_gen$')|l] додасть партії «[Party.GetName]» [Party.GetMembersSummary]"
+ ADD_MOMENTUM_FIRST: "#v $VALUE|%+=0$#! [Concept('concept_momentum','$concept_momentum_gen$')|l] додасть партії «[Party.GetName]» [Party.GetMembersSummary]"
+ ADD_MOMENTUM_THIRD: "#v $VALUE|%+=0$#! [Concept('concept_momentum','$concept_momentum_gen$')|l] додасть партії «[Party.GetName]» [Party.GetMembersSummary]"
  RESOLVE_PLAY_FOR:0 "[Country.GetName] enforces their war goals and leaves [TARGET_DIPLOMATIC_PLAY.GetName]"
 
  CHANGE_CHARACTER_RELIGION:0 "[Character.GetFullName] becomes [TARGET_RELIGION.GetName]"

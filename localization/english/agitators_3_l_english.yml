@@ -2,7 +2,7 @@
  # Natural Borders of France
  je_french_natural_borders: "Природні кордони Франції"
  je_french_natural_borders_reason: "Expansionistic tendencies have once again arisen in France. The citizens, or at least some of the loudest citizens, demand that our borders extend to the banks of the Rhine and the slopes of the Alps."
- own_all_french_homelands: "Own all French homeland states"
+ own_all_french_homelands: "Заволодійте усіма французькими батьківщинами"
  natural_borders.1.t: "The Limit of the Nation"
  natural_borders.1.d: "The notion of 'natural borders' has become popular among supporters of the [SCOPE.sCharacter('borders_leader').GetLastName] regime. French patriots demand the expansion of the [ROOT.GetCountry.GetAdjective] state into bordering regions."
  natural_borders.1.f: ""The limits of France are marked by nature. We will reach the edge of the horizon, from the banks of the [SCOPE.sState('rhineland_state').GetStateRegion.GetNameNoFormatting], to the mountains of [SCOPE.sState('savoy_state').GetStateRegion.GetNameNoFormatting], to the coast of [SCOPE.sState('flanders_state').GetStateRegion.GetNameNoFormatting]. The boundaries of our nation must be there.""
