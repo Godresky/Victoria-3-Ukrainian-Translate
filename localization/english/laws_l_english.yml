@@ -61,6 +61,9 @@
  ideology_market_liberal: "Ринковий ліберал"
  ideology_market_liberal_desc: "#lore Цей провідник вважає, що невидима рука вільного ринку повинна бути керівною силою економіки держави.#!"
 
+ ideology_liberal_leader:0 "Democrat"
+ ideology_liberal_leader_desc:0 "#lore This leader prioritizes the institution of democracy and opposes uncontested rule over the nation. #!"
+
   # Interest Group Ideologies
 
  ideology_paternalistic: "Патерналізм"
@@ -81,6 +84,9 @@
  ideology_laissez_faire: "За принцип невтручання"
  ideology_laissez_faire_desc: "#lore Ця група вірить у вільний потік торгівлі та робочої сили, віддаючи перевагу рішенням ринку, а не уряду.#!"
   
+ ideology_oligarchic:0 "Oligarchic"
+ ideology_oligarchic_desc:0 "#lore This group favors monopolizing power in the hands of a secular state controlled by local oligarchies.#!"
+
  ideology_individualist: "Індивідуалізм"
  ideology_individualist_desc: "#lore Ця група вважає, що кожна людина відповідальна за власну долю, і обстає проти державних послуг, які можуть бути оплачені приватними особами.#!"
   
@@ -135,6 +141,15 @@
  ideology_agrarian: "Рільництво"
  ideology_agrarian_desc: "#lore Ця група вважає, що фокус економічної політики має бути на сільському господарстві та рупах хутірників.#!"
 
+ ideology_corporatist:0 "Corporatist"
+ ideology_corporatist_desc:0 "#lore This group believes in the resolution of conflict between classes through the application of religious principles.#!"
+ 
+ ideology_corporatist_leader:0 "Corporatist"
+ ideology_corporatist_leader_desc:0 "#lore This leader believes in the resolution of class conflict through concessions from the upper class and collaboration between different social groups.#!"
+ 
+ ideology_agrarian_jeffersonian:0 "Jeffersonian"
+ ideology_agrarian_jeffersonian_desc:0 "#lore This group believes that the smallholding farmer class forms the foundation of the country, supporting agarianism as the basis for a free society.#!"
+
   # flavor ideologies
  ideology_republican_paternalistic: "Елітаризм"
  ideology_republican_paternalistic_desc: "#lore Ця група віддає перевагу правлінню земельної еліти, але все ще підтримує республіканську форму правління.#!"
@@ -145,7 +160,7 @@
  ideology_junker_paternalistic: "Юнкерство"
  ideology_junker_paternalistic_desc: "#lore Ця група вважає, що земельне дворянство найкраще підходить, щоб вести державу до її майбутнього.#!"
 
- ideology_papal_paternalistic: "За папу"
+ ideology_papal_paternalistic:0 "Baronial"
  ideology_papal_paternalistic_desc: "#lore Ця група підтримує авторитет Папи та традиційну ієрархію Святого Престолу.#!"
 
  ideology_confucian: "Конфуціянство"
@@ -160,8 +175,11 @@
  ideology_caudillismo: "Каудилізм"
  ideology_caudillismo_desc: "#lore Ця група схильна підтримувати сильних провідників з військовим минулим, а не конституційне верховенство права.#!"
 
- ideology_heavenly_kingdom_theocratic: "Богопоклонник"
+ ideology_heavenly_kingdom_theocratic: "Богопоклонництво"
  ideology_heavenly_kingdom_theocratic_desc: "#lore Ця група підтримує ідею, що всі люди стають синами і дочками Божими, коли їх врятував Христос, й підтримує боговладне правління.#!"
+
+ ideology_papal_moralist:0 "Pontifical"
+ ideology_papal_moralist_desc:0 "#lore This group has a strong devotion to maintaining both the temporal and ecclesiastical powers of the Catholic Church.#!"
 
   # Government Principles group
  lawgroup_governance_principles: "Принципи управління"
@@ -198,6 +216,7 @@
  lawgroup_army_model_desc: "Як ваше військо організоване та регламентоване."
   
  law_peasant_levies: "Селянські збори"
+ law_peasant_levies_additional_effects:0 "Restricts recruitment of Infantry units to [GetCombatUnitType('combat_unit_type_irregular_infantry').GetName] and [GetCombatUnitType('combat_unit_type_line_infantry').GetName]\nRestricts recruitment of Artillery units to [GetCombatUnitType('combat_unit_type_cannon_artillery').GetName] and [GetCombatUnitType('combat_unit_type_mobile_artillery').GetName]\nRestricts recruitment of Cavalry units to [GetCombatUnitType('combat_unit_type_hussars').GetName]"
  law_peasant_levies_desc: "Основна сила війська складається з військовозобов’язаної піхоти, яка має ґрунтовну підготовку."
  law_national_militia: "Народне ополчення"
  law_national_militia_desc: "Постійне військо невелике, але місцеві ополченці можуть бути задіяні для захисту своїх домівок."
@@ -526,3 +545,7 @@
  enactment_phase_0_generic: "Складання"
  enactment_phase_1_generic: "Обговорення"
  enactment_phase_2_generic: "Голосування"
+
+ # Frontier Colonization
+ law_frontier_colonization:0 "Frontier Colonization"
+ law_frontier_colonization_desc:0 "The wild frontiers on our borders are ripe for settlement if they can first be pacified and tamed."

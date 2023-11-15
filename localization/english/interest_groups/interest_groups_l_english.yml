@@ -75,6 +75,8 @@
  ig_southern_planters_desc: "Багато батьків-засновників вважали незалежних фермерів-йоменів Півночі основним будівельним блоком громадян, але неможливо заперечити величезне багатство південних тютюнових і бавовняних полищ. Це багатство дає південним полищаторам право брати участь в управлінні державою."
  ig_evangelicals: "Євангелісти"
  ig_evangelicals_desc: "Палкі християни з напрочуд великого розмаїття протестантських деномінацій, євангелісти вважають, що нація повинна досягти духовного пробудження, щоб врятуватися."
+ ig_yeoman_farmers:0 "Yeoman Farmers"
+ ig_yeoman_farmers_desc:1 "The smallholding American rural class, regarded by many of the Founding Fathers as the bedrock of the nation. The yeoman class has long established itself as the vanguard of both American rural populism and Westwards expansion."
 
   # Ottoman IGs
  ig_local_governors: "Місцеві губернатори"
@@ -89,8 +91,8 @@
  ig_confucian_desc: "Конфуціянство, будучи більше соціяльною традицією, комфортно співіснує з безліччю інших вірувань, але, тим не менш, вимагає соціяльної гармонії і високої моралі від тих, хто його сповідує."
 
   # Papal IGs
- ig_roman_landowners: "Римські землевласники"
- ig_roman_landowners_desc: "Римські землевласники, власники великих володінь, є захисниками традицій та cтарих засобів заробіку грошей, та є тісно переплетеними з Папством."
+ ig_roman_landowners:1 "Civic Nobility"
+ ig_roman_landowners_desc:1 "Consisting of noble families and landholding elites granted titles by the Pope, the Roman civic nobility serve as people of wealth, influence, and temporal power across the Holy See’s territories."
  ig_roman_curia: "Римська Курія"
  ig_roman_curia_desc: "Римська Курія, або як вона ще відома - «Римський Суд» - це адміністративна інституція Святого Престолу, яка здійснює як церковні, так і світські повноваження."
 
@@ -120,10 +122,13 @@
 
 # Danish IGs
  ig_church_of_denmark: "Данська церква"
+ ig_church_of_denmark_desc:0 "Established in the 16th century by King Christian III, the Church of Denmark is the official state church of Denmark. Being a Lutheran institution, the Church holds that the Bible is the sole authority on Christian dogma, thus rejecting the authority of the Pope and traditions such as the veneration of saints."
+
 # Norwegian IGs
  ig_aristocracy_of_officials: "Аристократичні урядовці"
  ig_aristocracy_of_officials_desc: "За відсутности значного історичного дворянства і після того, як ця установа була офіційно скасована в 1821 році, вищий клас Норвеґії натомість складається з державних службовців, а також юристи, священники та лікарі займають позиції звичайного дворянства."
  ig_church_of_norway: "Норвезька церква"
+ ig_church_of_norway_desc:0 "The Church of Norway was established as a separate body from the Roman Catholic Church and integrated with the Norwegian state in the 16th century as a result of the Protestant Reformation. Being a Lutheran institution, the Church holds that the Bible is the sole authority on Christian dogma, thus rejecting the authority of the Pope and traditions such as the veneration of saints."
 
   # Korean IGs
  ig_yangban: "Урядовці Янбан"
@@ -135,7 +140,14 @@
 
   # Australian IGs
  ig_squattocracy: "Сквотократи"
+ ig_squattocracy_desc:0 "The ’Squattocracy’ represents the class of white Australian settlers who have occupied large tracts of land with little or no legal claim. Often the first settlers to arrive in a given area, the squattocracy has gained immense wealth and social influence primarily through the proceeds of raising livestock on their territories."
+  
+  # Austrian IGs
+ austrian_aristocracy: "Австрійська аристократія"
+ austrian_aristocracy_desc:0 "The Austrian Aristocracy represents the established noble class of Austria, historically awarded with noble titles by the Habsburg Holy Roman Emperors and Archdukes of Austria, and possessing great influence within the imperial court."
 
   # Misc Igs
  ig_red_army: "Червона Армія"
  ig_red_army_desc: "Червона армія - це установа, призначена для захисту і поширення революції, та народжена тором злиття традиційних збройних сил з пролетаріятом й комуністичною ідеологією."
+ ig_fellahin: "Фелахін"
+ ig_fellahin_desc:0 "Gaining their name from the plows they work and the fields they till, the fellahin are the farmers and peasants of Egypt."

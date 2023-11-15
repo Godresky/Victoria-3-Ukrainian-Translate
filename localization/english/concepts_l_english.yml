@@ -200,6 +200,7 @@
  concept_tariffs_desc_added_2:0 "[GetBuildingType('building_trade_center').GetName]"
  
  concept_concept: "Ігровий задум"
+ concept_concept_acc: "Ігровий задум"
  concept_concept_ins: "Ігровим задумом"
  concept_concepts: "Ігрові задуми"
  concept_concept_desc: "Це ігровий задум із можливістю підказки з іншим [Concept('concept_concept','$concept_concept_ins$')|l]."
