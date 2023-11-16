@@ -750,6 +750,7 @@
  concept_leader_gen: "Провідника"
  concept_leader_ins: "Провідником"
  concept_leaders: "Провідники"
+ concept_leaders_gen: "Провідників"
  concept_leader_possessive:0 "Leader\\'s"
  concept_leader_desc: "[concept_character], який очолює [Concept('concept_interest_group','$concept_interest_group_acc$')|l], має певні [Concept('concept_character_trait', '$concept_character_traits_acc$')|l], що впливають на неї, а також особисту [Concept('concept_ideology','$concept_ideology_acc$')|l], яку отримує й зацікавлена група, доки він очолює її."
 
@@ -1119,6 +1120,7 @@
  concept_market_share_desc:3 "The $concept_market_share$ of each [concept_country] in a [concept_market] is determined by its [concept_gdp], with a bonus if they are the [concept_market_owner]. The higher a $concept_country$'s $concept_market_share$ the more [Concept('concept_consumption_tax', '$concept_consumption_taxes$')] they collect in the [concept_market]."
 
  concept_default: "Неплатоспроможність"
+ concept_default_adj: "Несплатоспроможн"
  concept_default_gen: "Неплатоспроможности"
  concept_default_acc: "Неплатоспроможність"
  concept_default_desc:4 "Once the [concept_treasury] accumulates [concept_loans] large enough that they exceed the [Concept('concept_country','$concept_country_possessive$')] total [concept_credit], the $concept_country$ is considered to be in $concept_default$. This will pause all ongoing [concept_construction] and will have a negative impact on the [concept_throughput] of [Concept('concept_building', '$concept_buildings$')], growing more severe as time passes. Penalties are removed as soon as the $concept_country$'s weekly balance becomes positive again, or if [concept_bankruptcy] is declared."

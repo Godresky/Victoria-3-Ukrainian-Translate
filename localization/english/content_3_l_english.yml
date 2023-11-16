@@ -500,9 +500,9 @@ funding_polish_rebels_small_modifier: "Arming Volunteers"
 funding_polish_rebels_large_modifier: "Arming Volunteers"
 polish_rebel_funding_modifier: "Polish Volunteer Legions"
 
-je_poland_lithuania: "Expanding the Commonwealth"
-je_poland_lithuania_reason: "The borders of the old Commonwealth stretched far beyond the lands of the Poles and Lithuanians and into the vastness of Ruthenia. It shall do so again."
-je_poland_lithuania_tt: "We have formed the Polish-Lithuanian Commonwealth"
+je_poland_lithuania: "Відродження Речі Посполитої"
+je_poland_lithuania_reason: "Кордони старої Речі Посполитої простягалися далеко за межі земель поляків і литовців і на простори Руси. Вона зробить це знову."
+je_poland_lithuania_tt: "Ми утворили Річ Посполиту"
 
 poland_events.6.t: "The New Commonwealth"
 poland_events.6.d: "The Commonwealth of [ROOT.GetCountry.GetName] has been restored, undoing decades of subjugation and partition. While the [SCOPE.sCulture('polish_culture').GetName] and [SCOPE.sCulture('lithuanian_culture').GetName] people now enjoy freedom from Russian and German rule, we must consider whether to extend our dominion to liberate [SCOPE.sCulture('ukrainian_culture').GetName] and [SCOPE.sCulture('byelorussian_culture').GetName] lands as well."

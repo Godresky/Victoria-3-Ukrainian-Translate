@@ -288,10 +288,10 @@
   ideology_land_reformer:0 "Land Reformer"
   ideology_land_reformer_desc:0 "This character is committed to breaking the power of large landowners and redistributing land to be worked by the common people."
 
-  je_agricultural_development:0 "The River of Coffee"
-  je_agricultural_development_reason:0 "[ROOT.GetCountry.GetName] is blessed with a vast amount of fertile farmland, and a climate suited to the growing of highly profitable cash crops. This provides a great chance to enrich the nation and propel [ROOT.GetCountry.GetAdjectiveNoFormatting] products into worldwide prominence."
-  je_agricultural_development_goal:0 "Increase the amount of [concept_buy_orders] for $coffee$ within the [SCOPE.sCountry('brazil_scope').GetCapital.GetMarket.GetName] by 150%"
-  je_agricultural_development_goal_dummy:0 "Increase the amount of [concept_buy_orders] for $coffee$ within the Brazilian market by 150%"
+  je_agricultural_development: "Кавова річка"
+  je_agricultural_development_reason: "[ROOT.GetCountry.GetName] має величезну кількість родючих сільськогосподарських угідь і клімат, придатний для вирощування високорентабельних товарних культур. Це дає чудовий шанс збагатити націю та підняти [ROOT.GetCountry.GetAdjectiveNoFormatting]і продукти на всесвітню популярність."
+  je_agricultural_development_goal: "Збільшити кількість [concept_buy_orders_gen|l] для $coffee$ у межах ринку [SCOPE.sCountry('brazil_scope').GetCapital.GetMarket.GetName] на 150%"
+  je_agricultural_development_goal_dummy: "Збільшити кількість [concept_buy_orders_gen|l] для $coffee$ у межах бразильського ринку на 150%"
 
   je_coffee_with_milk:0 "Coffee with Milk"
   je_coffee_with_milk_reason:0 "The development of the [ROOT.GetCountry.GetAdjective] agricultural industry has concentrated a great degree of wealth into the hands of the agricultural "coffee and milk" barons. The recent coffee boom has created great opportunity for growth - but also great risk of concentrated political influence in the hands of agrarian [SCOPE.gsInterestGroup('landowners_ig').GetName].\n\nEffects at the conclusion of this [concept_journal_entry] will depend on the status of [ROOT.GetCountry.GetName]'s #bold Land Reform#! laws"
@@ -623,10 +623,10 @@
   BRZ_populism.9.a:0 "We must be careful to not spur further revolts."
   BRZ_populism.9.b:0 "The Commune must be crushed with all due haste."
 
-  BRZ_vargas.1.t:0 "The New Republic"
-  BRZ_vargas.1.d:0 "After a swift seizure of power by elements of the military sympathetic to the reformist cause, [SCOPE.sCharacter('vargas_scope').GetFullName] has been declared President of [ROOT.GetCountry.GetNameNoFormatting]. [SCOPE.sCharacter('vargas_scope').GetHerHis|U] agenda calls for modernization and a swift restoration of order to the nation."
-  BRZ_vargas.1.f:0 "It began in a small state, divested of a share in the oligarchy. Then, by clever words after an assassination, it blossomed. But only after the oligarchy itself was cheated by one of its halves did the revolt grow strong. Now, its actors were assembled: the First Republic was ready to fall. Only swift action would stop a bloody civil war."
-  BRZ_vargas.1.a:0 "A new Brazil comes into being."
+  BRZ_vargas.1.t: "Нова республіка"
+  BRZ_vargas.1.d: "Після швидкого захоплення влади елементами військових, які прихильно ставилися до реформаторської справи, [SCOPE.sCharacter('vargas_scope').GetFullName] був оголошений президентом [ROOT.GetCountry.GetNameNoFormatting]. [SCOPE.sCharacter('vargas_scope').GetHerHis|U] програма закликає до модернізації та швидкого відновлення порядку в країні."
+  BRZ_vargas.1.f: "Це почалося в маленькій державі, позбавленій частки олігархії. Потім, розумними словами після вбивства, воно розцвіло. Але лише після того, як сама олігархія була обдурена однією зі своїх половин, повстання розрослося. Тепер її актори були зібрані: Перша Республіка була готова до падіння. Лише швидкі дії можуть зупинити кровопролитну громадянську війну."
+  BRZ_vargas.1.a: "Народжується нова Бразилія."
 
   BRZ_vargas.2.t:0 "The Estado Novo"
   BRZ_vargas.2.d:0 "With a series of crackdowns against the left wing, and numerous decrees reinforcing the power of the state, [SCOPE.sCharacter('vargas_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('vargas_scope').GetFullName] has fully solidified [SCOPE.sCharacter('vargas_scope').GetHerHis] rule over [ROOT.GetCountry.GetName]."
