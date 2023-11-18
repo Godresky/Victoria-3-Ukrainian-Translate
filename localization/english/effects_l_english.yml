@@ -36,6 +36,11 @@
  CHANGE_INSTITUTION_INVESTMENT_LEVEL: "[Country.GetName] змінює рівень розвитку установи [Institution.GetName] на $INVESTMENT|v$"
  ACTIVATE_LAW_WITH_INVESTMENT_LEVEL: "[COUNTRY.GetName] ухвалює закон [Law.GetFullNameWithStatus] з рівнем розвитку $LEVEL|v$"
  DEACTIVATE_LAW: "[COUNTRY.GetName] забороняє закон [Law.GetFullNameWithStatus]"
+
+ START_ENACTMENT:0 "Will start [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacting$')] [LAW.GetName]"
+ START_ENACTMENT_FIRST:0 "[COUNTRY.GetNameNoFlag] will start [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacting$')] [LAW.GetName]"
+ START_ENACTMENT_THIRD:0 "[COUNTRY.GetNameNo] will start [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacting$')] [LAW.GetName]"
+
  CALL_ELECTION: "[COUNTRY.GetName] матиме #variable вибори через $MONTHS$ місяці#!"
  SET_INTEREST_GROUP_NAME: "[IG.GetName] перейменується у #variable $IG_NAME$#!"
  SET_AS_INTEREST_GROUP_LEADER: "[Character.GetFullName|v] стає провідником [Character.GetInterestGroup.GetName|v]"

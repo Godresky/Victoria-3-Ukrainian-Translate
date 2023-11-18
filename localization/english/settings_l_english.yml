@@ -122,6 +122,13 @@
 
  SETTING_OCCUPATION_STRIPES: "Смугаста окупація"
  SETTING_OCCUPATION_STRIPES_TOOLTIP: "#T $SETTING_OCCUPATION_STRIPES$#!\nУвімкнути кольорові смуги як візуальне позначення окупації на мапі замість зображень стягів країн"
+ 
+ SETTING_PORTRAIT_RENDER_SCALE:0 "Portrait Render Scaling"
+ SETTING_PORTRAIT_RENDER_SCALE_TOOLTIP:0 "#T SETTING_PORTRAIT_RENDER_SCALE#!\nImprove character portrait detail level by upscaling render results, at the cost of some more rendering performance."
+ 
+ OPTION_PORTRAIT_RENDER_SCALE_NONE:0 "×1.0 - None"
+ OPTION_PORTRAIT_RENDER_SCALE_MEDIUM:0 "×1.5 - Medium"
+ OPTION_PORTRAIT_RENDER_SCALE_HIGH:0 "×2.0 - High"
 
  ui_skin_theme: "Інтерфейс користувача"
  ui_skin_theme_desc: "Кнопки, рамки, вікна, горища тощо у грі."
