@@ -50,7 +50,7 @@
   pedro.7.a: "Імператор мертвий. Хай живе [SCOPE.sCharacter('new_brz_monarch_scope').GetPrimaryRoleTitle]."
   pedro.8.t: "Проголошення Республіки"
   pedro.8.d: "У результаті безкровного перевороту [SCOPE.gsInterestGroup('armed_forces_ig').GetName] та [SCOPE.gsInterestGroup('landowners_ig').GetName] скинули монархію [SCOPE.sCharacter('pedro_scope').GetFullName] та проголосили [GetLawType('law_presidential_republic').GetName]. Хоча багато хто хотів боротися, щоб захистити уряд і [SCOPE.sCharacter('pedro_scope').GetPrimaryRoleTitle], колишній монарх закликав до миру та зрікся престолу."
-  pedro.8.f: "«Так це все, чи не так?»\n\n«Так, Педру. Ти й твоя родина більше не при владі. Має бути республіка. Нові можновладці хочуть, щоб вас... перевели до Європи, поки вони консолідують нову владу.»\n\n«От й добре. Якщо так, то це буде моя пенсія. Я надто багато працював і втомився. Тоді я піду відпочивати.»"
+  pedro.8.f: "«Так це все, чи не так?»\n\n«Так, Педру. Ти й твоя родина більше не при владі. Має бути республіка. Нові можновладці хочуть, щоб вас... перевели до Европи, поки вони консолідують нову владу.»\n\n«От й добре. Якщо так, то це буде моя пенсія. Я надто багато працював і втомився. Тоді я піду відпочивати.»"
   pedro.8.a: "Я люблю республіку."
   je_pedro_republic:0 "The Republican Proposal"
   je_pedro_republic_reason:0 "Progressive republicans have approached the Emperor with a plan to peacefully transition [ROOT.GetCountry.GetName] towards becoming a [GetLawType('law_presidential_republic').GetName], with Pedro himself acting as the nation's first President."
