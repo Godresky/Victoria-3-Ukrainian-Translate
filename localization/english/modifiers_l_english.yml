@@ -1453,7 +1453,7 @@
  modifier_goods_output_electricity_add:0 "@electricity! Electricity output"
  modifier_goods_output_electricity_add_desc:0 "The amount of @electricity! Electricity produced by buildings"
   
-+ modifier_goods_input_fabric_add:0 "@fabric! Fabric input"
+ modifier_goods_input_fabric_add:0 "@fabric! Fabric input"
  modifier_goods_input_fabric_add_desc:0 "The amount of @fabric! Fabric consumed by buildings"
  modifier_goods_input_wood_add:0 "@wood! Wood input"
  modifier_goods_input_wood_add_desc:0 "The amount of @wood! Wood consumed by buildings"

@@ -264,11 +264,21 @@
  concept_building_desc_added:1 "\n\nYou can [Concept('concept_construction','$concept_construct$')] new, or expand existing, $concept_buildings$ in each of your [Concept('concept_state','$concept_states$')] using your [GetBuildingType('building_construction_sector').GetName]."
 
  concept_company: "Підприємство"
+ concept_company_gen: "Підприємства"
+ concept_company_dat: "Підприємству"
+ concept_company_acc: "Підприємство"
+ concept_company_ins: "Підприємством"
+ concept_company_loc: "Підприємстві"
  concept_companies: "Підприємства"
+ concept_companies_gen: "Підприємств"
+ concept_companies_dat: "Підприємствам"
+ concept_companies_acc: "Підприємства"
+ concept_companies_ins: "Підприємствами"
+ concept_companies_loc: "Підприємствах"
  concept_company_possessive:0 "Company\\'s"
  concept_company_desc:0 "$concept_companies$ are associated with one or several types of [Concept('concept_building','$concept_buildings$')] in a [concept_country]. When established in said $concept_country$ they increase the [concept_throughput] and @construction![Nbsp][concept_construction] efficiency of their associated $concept_buildings$. The degree to which a $concept_company$ provides benefits depends on the relative [concept_prestige] ranking of the $concept_country$, with $concept_countries$ in the #v Top-[GetDefine('NDiplomacy','TOP_PRESTIGE_RANK_BONUS_THRESHOLD')]#! receiving even stronger bonuses.\n\n$concept_companies$ have a [concept_prosperity] score which increases from high [concept_productivity] and can provide additional bonuses for its $concept_country$."
  
- concept_prosperity:0 "Prosperity"
+ concept_prosperity: "Успіх"
  concept_prosperity_desc:0 "$concept_companies$ have a $concept_prosperity$ score which depends on their [concept_productivity]. When a $concept_company$ has at least [GetDefine('NEconomy','COMPANY_PROSPERITY_BONUS_THRESHOLD')|v0] $concept_prosperity$, it will activate a bonus [concept_modifier] for its [concept_country].\n\n$concept_prosperity$ will #b increase#! while $concept_productivity$ is at least #p @money![GetDefine('NEconomy','COMPANY_PRODUCTIVITY_ABSOLUTE_HIGH_THRESHOLD')|0]#! or #p x[GetDefine('NEconomy','COMPANY_PRODUCTIVITY_RATIO_HIGH_THRESHOLD')]#! the global average (whichever is lower) and #b decrease#! while it is below #n @money![GetDefine('NEconomy','COMPANY_PRODUCTIVITY_ABSOLUTE_LOW_THRESHOLD')|0]#! or #n x[GetDefine('NEconomy','COMPANY_PRODUCTIVITY_RATIO_LOW_THRESHOLD')]#! the global average (whichever is higher)."
 
  concept_building_level: "Розмір будівлі"
@@ -340,7 +350,7 @@
  concept_mobilization_options:0 "Mobilization Options"
  concept_mobilization_option_desc:0 "An [concept_army] can be configured with any number of $concept_mobilization_options$ while in peacetime. Each $concept_mobilization_option_short$ applies a cost in [Concept('concept_good','$concept_goods$')] and an effect for all [Concept('concept_battalion','$concept_battalions$')] in the $concept_army$ while it is [Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')]"
 
- concept_mobilize_army:0 "Mobilize Army"
+ concept_mobilize_army: "Збір війська"
  concept_mobilize_army_mobilize:0 "Mobilize"
  concept_mobilize_army_mobilizing:0 "Mobilizing"
  concept_mobilize_army_mobilized:0 "Mobilized"
@@ -463,15 +473,15 @@
  concept_battle_condition_short: "Умови"
  concept_battle_condition_desc:0 "During [Concept('concept_battle','$concept_battles$')] each side will be affected by a $concept_battle_condition$ that influences the outcome. Which $concept_battle_condition_short$ applies depends on a number of factors, which often includes the [Concept('concept_character_trait','$concept_character_traits$')] of the [Concept('concept_commander','$concept_commanders$')] in charge of that side."
 
- concept_army:0 "Army"
+ concept_army: "Наземні сили"
  concept_armies:0 "Armies"
  concept_army_possessive:0 "Army\\'s"
- concept_army_long:0 "Army Formation"
+ concept_army_long: "Наземне об’єднання"
  concept_army_desc:0 "An $concept_army$ is a part of your land forces which is composed of $combat_unit_group_infantry$, $combat_unit_group_artillery$ and $combat_unit_group_cavalry$. A $concept_army$ can be given orders like $advance$ or $defend$."
- concept_fleet:0 "Fleet"
+ concept_fleet: "Морські сили"
  concept_fleets:0 "Fleets"
  concept_fleet_possessive:0 "Fleet\\'s"
- concept_fleet_long:0 "Fleet Formation"
+ concept_fleet_long: "Морське об’єднання"
  concept_fleet_desc:0 "A $concept_fleet$ is a part of your naval forces which is composed of $combat_unit_group_light_ship$, $combat_unit_group_capital_ship$ and $combat_unit_group_support_ship$. A $concept_fleet$ can be given orders like $patrol_coast$, $raid_convoys$ or $escort_convoys$."
 
  concept_battle: "Битва"
@@ -1553,8 +1563,8 @@
  concept_admiral_defeated:0 "Defeated"
  concept_admiral_defeated_desc:0 "An [concept_admiral] is $concept_admiral_defeated$ when he loses a [concept_battle] at sea. A [concept_fleet] is $concept_admiral_defeated$ when all its [Concept('concept_admiral','$concept_admirals$')] are $concept_admiral_defeated$. $concept_admirals$ and $concept_fleets$ will only repair and regroup once they are back at their home [concept_hq]."
 
- concept_military_formation:0 "Formation"
- concept_military_formations:0 "Formations"
+ concept_military_formation: "З’єднання"
+ concept_military_formations: "З’єднання"
  concept_military_formation_desc:0 "A $concept_military_formation$ is an [concept_army] or [concept_fleet] that is used in [Concept('concept_war','$concept_wars$')] to achieve military objectives. They may have assigned [Concept('concept_unit','$concept_units$')] and [Concept('concept_commander','$concept_commanders$')] and can be ordered to [Concept('concept_front','$concept_fronts$')] to fight the enemy forces there."
 
  concept_political_strength: "Політична сила"
