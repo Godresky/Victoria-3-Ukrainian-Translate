@@ -212,8 +212,8 @@
  law_protected_speech_desc: "Захист свободи слова закріплено законом."
   
   # Army Model group
- lawgroup_army_model: "Тип війська"
- lawgroup_army_model_desc: "Як ваше військо організоване та регламентоване."
+ lawgroup_army_model: "Тип збройних сил"
+ lawgroup_army_model_desc: "Як ваші збройні сили влаштовані та впорядковані."
   
  law_peasant_levies: "Селянські збори"
  law_peasant_levies_additional_effects:0 "Restricts recruitment of Infantry units to [GetCombatUnitType('combat_unit_type_irregular_infantry').GetName] and [GetCombatUnitType('combat_unit_type_line_infantry').GetName]\nRestricts recruitment of Artillery units to [GetCombatUnitType('combat_unit_type_cannon_artillery').GetName] and [GetCombatUnitType('combat_unit_type_mobile_artillery').GetName]\nRestricts recruitment of Cavalry units to [GetCombatUnitType('combat_unit_type_hussars').GetName]"

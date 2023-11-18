@@ -452,7 +452,7 @@
  METRICS_OF_PROGRESS_HEADER:0 "#title "Metrics of progress"#! (test)"
  COUNTRY_URBANISATION: "#title [concept_urbanization]:#!"
  COUNTRY_INDUSTRIALISATION: "#title Опромислування:#!"
- MILITARY: "Військо"
+ MILITARY: "Збройні сили"
  NAVY: "Флот"
 
  PRICE_REPORT_SHORT: "$DETAILS$"
@@ -718,19 +718,19 @@
  BUILDING_BATTALIONS_MOBILIZED: "[Concept('concept_mobilize_battalion', '$concept_mobilize_battalions_mobilized$')]:"
  
  PANEL_MILITARY_ARMY_POWER_PROJECTION_TOOLTIP: "[Country.GetArmyPowerProjectionDesc]"
- PANEL_MILITARY_ARMY_POWER_PROJECTION:0 "The total number of [Country.GetAdjective] [Concept('concept_battalion', '$concept_battalions$')] and their technological sophistication results in an Army [concept_power_projection] of #tooltippable #tooltip:[Country.GetTooltipTag],PANEL_MILITARY_ARMY_POWER_PROJECTION_TOOLTIP [Country.GetArmyPowerProjection|v0]#!#!"
+ PANEL_MILITARY_ARMY_POWER_PROJECTION: "Загальна кількість #yellow [Country.GetAdjective|l]их#! [Concept('concept_battalion', '$concept_battalions_gen$')|l] і їхня технологічна складність призводить до військової [Concept('concept_power_projection', '$concept_power_projection_gen$')|l] в #tooltippable #tooltip:[Country.GetTooltipTag],PANEL_MILITARY_ARMY_POWER_PROJECTION_TOOLTIP [Country.GetArmyPowerProjection|v0]#!#!"
 
  PANEL_MILITARY_NAVY_POWER_PROJECTION_TOOLTIP: "[Country.GetNavyPowerProjectionDesc]"
- PANEL_MILITARY_NAVY_POWER_PROJECTION:0 "The total number of [Country.GetAdjective] [Concept('concept_flotilla', '$concept_flotillas$')] and their technological sophistication results in a Navy [concept_power_projection] of #tooltippable #tooltip:[Country.GetTooltipTag],PANEL_MILITARY_NAVY_POWER_PROJECTION_TOOLTIP [Country.GetNavyPowerProjection|v0]#!#!"
+ PANEL_MILITARY_NAVY_POWER_PROJECTION: "Загальна кількість #yellow [Country.GetAdjective|l]их#! [Concept('concept_flotilla', '$concept_flotillas_gen$')|l] і їхня технологічна складність призводить до морської [Concept('concept_power_projection', '$concept_power_projection_gen$')|l] в #tooltippable #tooltip:[Country.GetTooltipTag],PANEL_MILITARY_NAVY_POWER_PROJECTION_TOOLTIP [Country.GetNavyPowerProjection|v0]#!#!"
  PANEL_MILITARY_ARMY_CURRENT_REGULARS: "@battalions![Country.GetRegularBattalions|0v]"
  PANEL_MILITARY_ARMY_CURRENT_CONSCRIPTS: "@battalions![Country.GetConscriptedBattalions|0v]/[Country.CalcConscriptableBattalions|0]"
  PANEL_MILITARY_ARMY_CURRENT_BATTALIONS: "@battalions![Country.GetBattalions|0v]"
  
- POWER_PROJECTION_FROM_MILITARY_FORMATION:0 "#tooltippable #tooltip:[MILITARY_FORMATION.GetTooltipTag],MILITARY_FORMATION_POWER_PROJECTION_TOOLTIP $VALUE|=+0$#!#! from [MILITARY_FORMATION.GetName]"
+ POWER_PROJECTION_FROM_MILITARY_FORMATION: "#tooltippable #tooltip:[MILITARY_FORMATION.GetTooltipTag],MILITARY_FORMATION_POWER_PROJECTION_TOOLTIP $VALUE|=+0$#!#! через з’єднання [MILITARY_FORMATION.GetName]"
  MILITARY_FORMATION_POWER_PROJECTION_TOOLTIP:0 "[MilitaryFormation.GetPowerProjectionDesc]"
  MILITARY_FORMATION_POWER_PROJECTION_DESC:0 "#header [concept_power_projection]: $TOTAL_POWER_PROJECTION|v0$\n$TOOLTIP_DELIMITER$\nAverage [concept_offense] and [concept_defense] of $AVERAGE_CE|1v$ spread across $TOTAL_MANPOWER|D1$ [concept_manpower] results in $TOTAL_POWER_PROJECTION|v0$ $concept_power_projection$ for the formation."
 
- REGULARS_AND_CONSCRIPTS:0 "Regulars & Conscripts"
+ REGULARS_AND_CONSCRIPTS: "Постійні та призвані"
 
  MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS:0 "#v [MilitaryFormation.GetNumCombatUnits]#!/[SelectLocalization(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumCombatUnits), 'INSUFFICIENT_COMMAND_LIMIT', 'SUFFICIENT_COMMAND_LIMIT')]"
  MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS_NO_LIMIT:0 "#v [MilitaryFormation.GetNumCombatUnits]#!"
@@ -743,7 +743,7 @@
 
  PANEL_MILITARY_NATIVE_POTENTIAL_BATTALIONS_TOOLTIP: "Коли висока [Concept('concept_tension', '$concept_tension$')|l] спричинить [Concept('concept_native_uprising','$concept_native_uprising_acc$')|l], то [Country.GetName] зможе розгорнути @battalions![Country.CalcConscriptableBattalions|0] [SelectLocalization(GreaterThan_int32(Country.CalcConscriptableBattalions, '(int32)1'),SelectLocalization(GreaterThan_int32(Country.CalcConscriptableBattalions, '(int32)4'),Concept('concept_battalion', '$concept_battalions_gen$'),Concept('concept_battalion', '$concept_battalions$')),Concept('concept_battalion', '$concept_battalion$'))|l] воїнів."
 
- PANEL_MILITARY_ARMY_OVERVIEW_TOOLTIP: "#header [Country.GetAdjective] [Concept('concept_battalion', '$concept_battalions$')] and [Concept('concept_conscript_battalion','$concept_conscript_battalions$')]#!\n@battalions![Country.GetRegularBattalions|v] [Concept('concept_battalion', '$concept_battalions$')] (#v [Country.GetFullyMobilizedBattalionsPercentageRaw|0%]#!@mobilization! [Concept('concept_mobilize_battalion', '$concept_mobilize_battalion_mobilized$')])\n@conscripts![Country.GetConscriptedBattalions|v] out of [Country.CalcConscriptableBattalions|v] raised [Concept('concept_conscript_battalion','$concept_conscript_battalions$')]\n$TOOLTIP_DELIMITER$\n$PANEL_MILITARY_ARMY_POWER_PROJECTION$\n\n[Concept('concept_army','$concept_armies$')]:\n[SelectLocalization(IsDataModelEmpty(Country.GetMilitaryFormationsArmy), 'NO_ARMIES_IN_COUNTRY', 'ARMIES_IN_COUNTRY_TOOLTIP_BREAKDOWN')]"
+ PANEL_MILITARY_ARMY_OVERVIEW_TOOLTIP: "#header #yellow [Country.GetAdjective]і#! [Concept('concept_battalion', '$concept_battalions$')|l] та [Concept('concept_conscript_battalion','$concept_conscript_battalions$')|l]#!\n@battalions![Country.GetRegularBattalions|v] [Concept('concept_battalion', '$concept_battalions$')] (#v [Country.GetFullyMobilizedBattalionsPercentageRaw|0%]#!@mobilization! [Concept('concept_mobilize_battalion', '$concept_mobilize_battalion_mobilized_adj$их')|l])\n@conscripts![Country.GetConscriptedBattalions|v] із [Country.CalcConscriptableBattalions|v] піднятих [Concept('concept_conscript_battalion','$concept_conscript_battalions_gen$')|l]\n$TOOLTIP_DELIMITER$\n$PANEL_MILITARY_ARMY_POWER_PROJECTION$\n\n[Concept('concept_army','$concept_armies$')]:\n[SelectLocalization(IsDataModelEmpty(Country.GetMilitaryFormationsArmy), 'NO_ARMIES_IN_COUNTRY', 'ARMIES_IN_COUNTRY_TOOLTIP_BREAKDOWN')]"
  
  NO_ARMIES_IN_COUNTRY: "No [Concept('concept_army','$concept_armies$')] in [Country.GetName]"
  ARMIES_IN_COUNTRY_TOOLTIP_BREAKDOWN: "[Country.GetArmiesBreakdown]"
@@ -1031,11 +1031,11 @@
  MILITARY_FORMATION_TROOP_ATTRITION_LEVEL: "$MILITARY_FORMATION_ATTRITION_RISK_ICON_WITH_LABEL$"
  MILITARY_FORMATION_TROOP_MORALE_TOOLTIP: "#[GetMoraleColorString(MilitaryFormation.GetMoraleForBuildingUnits(Building.Self))] [MilitaryFormation.GetMoraleForBuildingUnits(Building.Self)|0%v]#! [concept_morale]"
  
- PIN_MILITARY_FORMATION: "Pin [MilitaryFormation.GetName] to outliner"
- UNPIN_MILITARY_FORMATION: "Unpin [MilitaryFormation.GetName] from outliner"
- ZOOM_TO_MILITARY_FORMATION: "Zoom to current location[AddLocalizationIf( MilitaryFormation.IsZoomingToMapMarkerPosition, 'ZOOM_TO_DISABLED' )]"
+ PIN_MILITARY_FORMATION: "Прикріпити з’єднання [MilitaryFormation.GetName] до плянувальника"
+ UNPIN_MILITARY_FORMATION: "Відкріпити з’єднання [MilitaryFormation.GetName] від плянувальника"
+ ZOOM_TO_MILITARY_FORMATION: "Приблизити до місцини[AddLocalizationIf( MilitaryFormation.IsZoomingToMapMarkerPosition, 'ZOOM_TO_DISABLED' )]"
  
- MILITARY_FORMATION_IN_LOCATION_SUBTITLE: "[SelectLocalization(MilitaryFormation.IsArmy,'MILITARY_FORMATION_IN_LOCATION_SUBTITLE_ARMY','MILITARY_FORMATION_IN_LOCATION_SUBTITLE_FLEET')] in [MilitaryFormation.GetCurrentHQ.GetNameNoFlag]"
+ MILITARY_FORMATION_IN_LOCATION_SUBTITLE: "[SelectLocalization(MilitaryFormation.IsArmy,'MILITARY_FORMATION_IN_LOCATION_SUBTITLE_ARMY','MILITARY_FORMATION_IN_LOCATION_SUBTITLE_FLEET')] в [MilitaryFormation.GetCurrentHQ.GetNameNoFlag|l]"
  MILITARY_FORMATION_IN_LOCATION_SUBTITLE_ARMY: "[concept_army]"
  MILITARY_FORMATION_IN_LOCATION_SUBTITLE_FLEET: "[concept_fleet]"
  
@@ -1050,9 +1050,9 @@
  
  MILITARY_FORMATION_EXPENSE: "#v @money![MilitaryFormation.GetGoodsConsumptionCostRaw|0-K]#!"
  MILITARY_FORMATION_EXPENSE_TOOLTIP_TAG: "[MilitaryFormation.GetGoodsConsumptionDesc]"
- MILITARY_FORMATION_EXPENSE_TOOLTIP: "#header [MilitaryFormation.GetName] Upkeep#!\nWeekly cost: #v @money!$VAL|0-K$#!\n$TOOLTIP_DELIMITER$\nExpenses by [Concept('concept_good','$concept_goods$')]:\n$BREAKDOWN_BY_GOODS$\n\nExpenses by [Concept('concept_building','$concept_buildings$')]:\n$BREAKDOWN_BY_BUILDING$"
- MILITARY_FORMATION_EXPENSE_BY_GOODS: "#v @money!$VAL|0-K$#! for [Goods.GetTextIcon][Nbsp][Goods.GetName]"
- MILITARY_FORMATION_EXPENSE_BY_BUILDING: "#v @money!$VAL|0-K$#! from [Building.GetName] in [Building.GetState.GetName]"
+ MILITARY_FORMATION_EXPENSE_TOOLTIP: "#header Утримання з’єднання [MilitaryFormation.GetName]#!\nЩотижневі витрати: #v @money!$VAL|0-K$#!\n$TOOLTIP_DELIMITER$\nВитрати на [Concept('concept_good','$concept_goods_acc$')|l]:\n$BREAKDOWN_BY_GOODS$\n\nВитрати на [Concept('concept_building','$concept_buildings_acc$')|l]:\n$BREAKDOWN_BY_BUILDING$"
+ MILITARY_FORMATION_EXPENSE_BY_GOODS: "#v @money!$VAL|0-K$#! на товар [Goods.GetTextIcon][Nbsp][Goods.GetName]"
+ MILITARY_FORMATION_EXPENSE_BY_BUILDING: "#v @money!$VAL|0-K$#! на будівлю [Building.GetName|l] у землі [Building.GetState.GetName]"
  MILITARY_FORMATION_BUILDABLE_UNITS: "Buildable Units"
  MILITARY_FORMATION_UNITS_RECRUITMENT: "Unit Default Types & Recruitment"
  MILITARY_FORMATION_UNITS: "Unit Details"
@@ -1095,16 +1095,16 @@
  MILITARY_FORMATION_UNIT_GROUP_NUMBER_OF_EXPECTED_BATTALIONS: "+ [Subtract_int32(CombatUnitGroup.GetExpectedNumUnits, CombatUnitGroup.GetCurrentNumUnits)]"
  MILITARY_FORMATION_UNIT_GROUP_NUMBER_OF_FLOTILLAS: "@flotillas! #v [CombatUnitGroup.GetCurrentNumUnits]#! [CombatUnitGroup.GetExpectedNumUnits]"
  
- MILITARY_FORMATION_DISBAND_TOOLTIP: "#r Disband#! [MilitaryFormation.GetName]"
- MILITARY_FORMATION_DISBAND: "Disband"
+ MILITARY_FORMATION_DISBAND_TOOLTIP: "#r Розпустити#! [MilitaryFormation.GetName]"
+ MILITARY_FORMATION_DISBAND: "Розпустити"
  MILITARY_FORMATION_TRANSFER_UNIT_TOOLTIP: "Transfer [Concept('concept_unit', '$concept_units$')] to another [SelectLocalization( MilitaryFormation.IsArmy, 'MILITARY_FORMATION_TRANSFER_UNIT_ARMY_TOOLTIP', 'MILITARY_FORMATION_TRANSFER_UNIT_FLEET_TOOLTIP')]"
  MILITARY_FORMATION_TRANSFER_UNIT_ARMY_TOOLTIP: "[concept_army]"
  MILITARY_FORMATION_TRANSFER_UNIT_FLEET_TOOLTIP: "[concept_fleet]"
  FORMATION_STATUS_TRAVELING_TO_FRONT: "Traveling to [Front.GetName] ([MilitaryFormation.GetTravelDaysLeft|v] days left, currently in [MilitaryFormation.GetLocationString])"
  FORMATION_STATUS_TRAVELING_TO_SEA_NODE: "Traveling to [Province.GetStateRegion.GetName] ([MilitaryFormation.GetTravelDaysLeft|v] days left, currently in [MilitaryFormation.GetLocationString])"
  FORMATION_STATUS_TRAVELING_TO_HQ: "Traveling to [HQ.GetName] ([MilitaryFormation.GetTravelDaysLeft|v] days left, currently in [MilitaryFormation.GetLocationString])[ConcatIfNeitherEmpty('\n', AddLocalizationIf(MilitaryFormation.IsFullyDefeated, 'FORMATION_FULLY_DEFEATED_SHORT'))]"
- FORMATION_STATUS_AT_FRONT: "At [Front.GetName]"
- FORMATION_STATUS_AT_HQ: "Stationed at [HQ.GetName]"
+ FORMATION_STATUS_AT_FRONT: "На [Front.GetName]"
+ FORMATION_STATUS_AT_HQ: "Перебуває в [HQ.GetName|l]"
  FORMATION_STATUS_AT_SEA_NODE: "At [Province.GetStateRegion.GetName] ([concept_presence]: [MilitaryFormation.GetSeaPresence|v%0])"
 
  MILITARY_FORMATION_OFFENSE: "@unit_offense! [MilitaryFormation.GetAverageOffenseExcludeUnavailableManpower|1v]"
@@ -1115,8 +1115,8 @@
  FORMATION_STATUS_TRAVELING_TO_FRONT_SHORT: "Traveling to [Front.GetName] ([MilitaryFormation.GetTravelDaysLeft|v]d)"
  FORMATION_STATUS_TRAVELING_TO_SEA_NODE_SHORT: "Traveling to [Province.GetStateRegion.GetName] ([MilitaryFormation.GetTravelDaysLeft|v]d)"
  FORMATION_STATUS_TRAVELING_TO_HQ_SHORT: "Traveling to [HQ.GetName] ([MilitaryFormation.GetTravelDaysLeft|v]d)"
- FORMATION_STATUS_AT_FRONT_SHORT: "At [Front.GetName]"
- FORMATION_STATUS_AT_HQ_SHORT: "Stationed at [HQ.GetName]"
+ FORMATION_STATUS_AT_FRONT_SHORT: "На [Front.GetName]"
+ FORMATION_STATUS_AT_HQ_SHORT: "Перебуває в [HQ.GetName|l]"
  FORMATION_STATUS_AT_SEA_NODE_SHORT: "At [Province.GetStateRegion.GetName] ([concept_presence]: [MilitaryFormation.GetSeaPresence|v%0])"
 
  COMBAT_UNIT_TYPES_CONCEPT: "[Concept('concept_combat_unit_type', '$concept_combat_unit_types$')]"
@@ -2167,9 +2167,9 @@
  diplomatic_actions_lens_tab: "Дипломатичні дії"
  diplomatic_actions_lens_tab_tooltip: "#header Виконати [Concept('concept_diplomatic_action', '$concept_diplomatic_actions_acc$')|l]#!\n$TOOLTIP_DELIMITER$\n[concept_diplomatic_action_desc]"
  army_lens_tab: "Військо"
- army_lens_tab_tooltip: "Взаємодіяти з моїм військом"
+ army_lens_tab_tooltip: "Взаємодіяти з моїми військами"
  navy_lens_tab: "Флот"
- navy_lens_tab_tooltip: "Взаємодіяти з моїм флотом"
+ navy_lens_tab_tooltip: "Взаємодіяти з моїм флотами"
  show_supply_areas_lens_tab: "Показати смуги постачаня"
  show_supply_areas_lens_tab_tooltip: "Показати смуги постачаня\n$TOOLTIP_DELIMITER$\n#b DEBUG#!"
  trade_actions_lens_tab: "Торгові дії"
@@ -2523,7 +2523,7 @@
  BUTTON_TRADE_OVERVIEW: "#header Ринок#!"
  BUTTON_CULTURE_OVERVIEW: "#header Культури#!"
  BUTTON_BUDGET: "#header Бюджет#!"
- BUTTON_MILITARY: "#header Військо#!"
+ BUTTON_MILITARY: "#header Збройні сили#!"
  BUTTON_TECHNOLOGY: "#header Технології#!\n[SelectLocalization( Technology.IsValid, 'RESEARCHING', 'NOT_RESEARCHING' )]"
  UNLOCK_MAP_MODE: "Зняти вибраний режим мапи"
  UNLOCK_MAP_MODE_TOOLTIP: "#header $UNLOCK_MAP_MODE$#!\nРежим мапи [GetSelectedMapModeName] зараз вибраний."
@@ -3124,7 +3124,7 @@
  GO_TO_BUTTON_SEA_REGION: "Показати морський реґіон [Province.GetSeaNodeName]"
  GO_TO_BUTTON_COUNTRY: "Показати [Concept('concept_country', '$concept_country_acc$')|l] [Country.GetName]"
  GO_TO_BUTTON_CHARACTER: "Показати персонажа [Character.GetFullName]" 
- GO_TO_BUTTON_FORMATION:0 "Go to [MilitaryFormation.GetName]"
+ GO_TO_BUTTON_FORMATION: "Показати з’єднання [MilitaryFormation.GetName]"
  GO_TO_BUTTON_MARKET: "Показати [Market.GetName|l]"
  GO_TO_BUTTON_CONSTRUCTION_QUEUE: "Показати [Concept('concept_construction_queue', '$concept_construction_queue_acc$')|l]"
  GO_TO_BUTTON_INTEREST_GROUP: "Показати [Concept('concept_interest_group', '$concept_interest_group_acc$')|l] [InterestGroup.GetName]"
@@ -3132,7 +3132,7 @@
  GO_TO_BUTTON_JOURNAL: "Показати часопис"
  GO_TO_BUTTON_EXILED_AGITATORS: "Показати [Concept('concept_exile', '$concept_exiled_adj$их')|l] [Concept('concept_agitator', '$concept_agitators_acc$')|l]"
  GO_TO_BUTTON_LAW: "Показати [Concept('concept_law_group', '$concept_law_group_acc$')|l] «[Law.GetGroup.GetName]»"
- GO_TO_BUTTON_MILITARY_FORMATION:0 "Go to [MilitaryFormation.GetName]"
+ GO_TO_BUTTON_MILITARY_FORMATION: "Показати з’єднання [MilitaryFormation.GetName]"
 
  START_RESEARCHING: "Почати дослідження"
 
@@ -4961,7 +4961,7 @@
  character_info_tooltip_ruler: "#HEADER $character_name_info$#!\n$character_role_info$\n$TOOLTIP_DELIMITER$\n$character_age_info$\n\n$character_traits_info$"
  character_info_tooltip_heir: "#HEADER $character_name_info$#!\n$character_role_info$\n$TOOLTIP_DELIMITER$\n$character_age_info$\n\n$character_traits_info$"
 
- MILITARY_PANEL: "Військо"
+ MILITARY_PANEL: "Збройні сили"
  MILITARY_PANEL_TAB_ARMY: "Військо"
  MILITARY_PANEL_TAB_ARMY_SELECTED: "#bold Військо#!"
  MILITARY_PANEL_TAB_GARRISON: "Залога"
@@ -6685,8 +6685,8 @@ LAW_ENACTMENT_PROGRESS:6 "#header [Concept('concept_enactment_of_laws', '$concep
  outliner_title_politicians: "#outliner_header Політики#!"
  outliner_title_generals: "#outliner_header Генерали#!  (#tooltip:[GetPlayer.GetTooltipTag],PANEL_MILITARY_ARMY_CURRENT_BATTALIONS_TOOLTIP #variable @battalions![GetPlayer.GetBattalions|0]#!#!)"
  outliner_title_admirals: "#outliner_header Адмірали#!  (#tooltip:[GetPlayer.GetTooltipTag],PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS_TOOLTIP #variable @navy_SP![GetPlayer.GetWarships|0]#!#!)"
- outliner_title_army: "#outliner_header Наземні сили#!  (#tooltip:[GetPlayer.GetTooltipTag],PANEL_MILITARY_ARMY_OVERVIEW_TOOLTIP #variable @battalions![GetPlayer.GetBattalions|0]#!#!)"
- outliner_title_navy: "#outliner_header Морські сили#!  (#tooltip:[GetPlayer.GetTooltipTag],PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS_TOOLTIP #variable @navy_SP![GetPlayer.GetWarships|0]#!#!)"
+ outliner_title_army: "#outliner_header Війська#!  (#tooltip:[GetPlayer.GetTooltipTag],PANEL_MILITARY_ARMY_OVERVIEW_TOOLTIP #variable @battalions![GetPlayer.GetBattalions|0]#!#!)"
+ outliner_title_navy: "#outliner_header Флоти#!  (#tooltip:[GetPlayer.GetTooltipTag],PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS_TOOLTIP #variable @navy_SP![GetPlayer.GetWarships|0]#!#!)"
  outliner_title_agitators: "#outliner_header Закликачі#!"
  outliner_title_companies: "#outliner_header Підприємства#!"
  outliner_title_interest_groups: "#outliner_header Зацікавлені групи#!"

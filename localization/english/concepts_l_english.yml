@@ -473,13 +473,13 @@
  concept_battle_condition_short: "Умови"
  concept_battle_condition_desc:0 "During [Concept('concept_battle','$concept_battles$')] each side will be affected by a $concept_battle_condition$ that influences the outcome. Which $concept_battle_condition_short$ applies depends on a number of factors, which often includes the [Concept('concept_character_trait','$concept_character_traits$')] of the [Concept('concept_commander','$concept_commanders$')] in charge of that side."
 
- concept_army: "Наземні сили"
- concept_armies:0 "Armies"
+ concept_army: "Військо"
+ concept_armies: "Війська"
  concept_army_possessive:0 "Army\\'s"
  concept_army_long: "Наземне об’єднання"
- concept_army_desc:0 "An $concept_army$ is a part of your land forces which is composed of $combat_unit_group_infantry$, $combat_unit_group_artillery$ and $combat_unit_group_cavalry$. A $concept_army$ can be given orders like $advance$ or $defend$."
- concept_fleet: "Морські сили"
- concept_fleets:0 "Fleets"
+ concept_army_desc: "$concept_army$ - частина ваших наземних сил, які складаються з піхоти, гарматні та кінноти. $concept_army$ може отримувати накази такі як наступ або оборона." #$combat_unit_group_infantry$, $combat_unit_group_artillery$ and $combat_unit_group_cavalry$ $advance$ or $defend$
+ concept_fleet: "Флот"
+ concept_fleets: "Флоти"
  concept_fleet_possessive:0 "Fleet\\'s"
  concept_fleet_long: "Морське об’єднання"
  concept_fleet_desc:0 "A $concept_fleet$ is a part of your naval forces which is composed of $combat_unit_group_light_ship$, $combat_unit_group_capital_ship$ and $combat_unit_group_support_ship$. A $concept_fleet$ can be given orders like $patrol_coast$, $raid_convoys$ or $escort_convoys$."
@@ -704,8 +704,8 @@
  concept_local_prices: "Місцеві ціни"
  concept_local_price_desc:2 "The price of a [concept_good] in a [concept_state]. It is determined by the local [concept_good_consumption] and [concept_good_production], moderated by the [concept_market_price] depending on the [Concept('concept_state','$concept_state_possessive$')] [concept_market_access] and #v $modifier_state_market_access_price_impact$#! modifier. All transactions except [Concept('concept_trade_route','$concept_trade$')] occur in the $concept_local_price$, with purchases and sales creating [Concept('concept_buy_orders','$concept_buy_order_short$')] and [concept_sell_orders] on the [concept_market]."
 
- concept_local_good:0 "Local Good"
- concept_local_goods:0 "Local Goods"
+ concept_local_good: "Місцевий товар"
+ concept_local_goods: "Місцеві товари"
  concept_local_good_desc:0 "$concept_local_goods$ are certain [Concept('concept_good','$concept_goods$')] that are not available in the wider [concept_market] outside the [concept_state] where they are produced. Their price is fully determined by local [concept_good_production] and [concept_good_consumption], with [concept_market_price] not factored in at all."
  
  concept_subsistence_building: "Прожиткова споруда"

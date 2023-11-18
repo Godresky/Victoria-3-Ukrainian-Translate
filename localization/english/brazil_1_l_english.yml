@@ -144,11 +144,11 @@
  not_burning_coffee_ig:0 "Coffee Preservation Advocate"
 
 # Brazilian Naval Power
- je_brazil_navy: "Морська сила Бразилії"
+ je_brazil_navy: "Морські сили Бразилії"
  je_brazil_navy_reason: "З моменту здобуття незалежности ВМС Бразилії відіграють вирішальну ролю в захисті нашої самостійности. Ми повинні прагнути бути провідною військово-морською державою в Південній Америці та однією з найбільших у світі."
  je_brazil_navy_goal: "Наступне має бути вірним протягом принаймні 40 років:"
  best_south_american_navy: "Жодна держава не має більшої [Concept('concept_power_projection','$concept_power_projection_acc$')|l] ніж Бразилія"
- brazil_navy.1.t: "Морська сила Бразилії"
+ brazil_navy.1.t: "Морські сили Бразилії"
  brazil_navy.1.d:0 "On behalf of our [GetPopType('officers').GetName], [SCOPE.sCharacter('admiral_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('admiral_scope').GetLastName] reminds the government of the importance of maintaining [ROOT.GetCountry.GetAdjective] sea power. We must strive to be the foremost naval power in South America, and among the greatest in the world."
  brazil_navy.1.f:0 ""My [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle], I would urge you to consider more than your domestic state. Land armies win battles, indeed, but it is your naval vessels that win you empires. Britain's very success depended upon such a stern armada. And you won't find a stern armada amongst the remnants of our father's sorry vessels. Why, it's barely even firewood! And your captains deserve better ships than rotting hulks of driftwood.""
  brazil_navy.1.a:0 "The navy protects our wealth and cares for our people."
