@@ -3,8 +3,8 @@
   je_pedro_success: "#bold Поступ#! більший за #variable 50%#!"
   je_pedro_fail: "#bold Поступ#! досягне #variable 0%#!"
   je_pedro_fail_2: "#bold Поступ#! нижчий або дорівнює #variable 50%#!"
-  add_pedropoint: "Поступ #Bold Великодушного монарху#! [concept_journal_entry] просунеться на #Bold 1#!"
-  remove_pedropoint: "Поступ #Bold Великодушного монарху#! [concept_journal_entry] зменшиться на #Bold 1#!"
+  add_pedropoint: "Поступ [Concept('concept_journal_entry','$concept_journal_entry_gen$')|l] #Bold «Великодушний монарх»#! збільшиться на #Bold 1#!"
+  remove_pedropoint: "Поступ [Concept('concept_journal_entry','$concept_journal_entry_gen$')|l] #Bold «Великодушний монарх»#! зменшиться на #Bold 1#!"
 
   je_pedro_brazil: "Великодушний монарх"
   je_pedro_brazil_reason: "Статус #bold поступу#! буде визначатися різними #tooltippable;tooltip:[Country.GetTooltipTag],je_pedro_special_tooltip_advance схвальними#! або #tooltippable;tooltip:[Country.GetTooltipTag],je_pedro_special_tooltip_deplete несхвальними#! умовами. Падіння #bold поступу#! до #bold 0#! призведе до кінця правління імператора та проголошення #bold консервативної республіки#!.\n\nІмператор [SCOPE.sCountry('brazil_scope').GetRuler.GetFullName], другий правитель імперії [SCOPE.sCountry('brazil_scope').GetName], сів на престол у ранньому віці після зречення свого батька. Педру II прагне підтримувати демократичне правління та захищати громадянські свободи, гарантовані конституцією, а також остаточно покінчити з рабством, яке псує Бразилію, незважаючи на силу консервативних сил, спрямованих проти його ліберальної справи."
@@ -89,7 +89,7 @@
   pedro.12.f:0 ""This has been the most fatal blow I could have received, and I certainly would not have survived had it not been that I still have a wife and two children whom I need to educate so that they can guarantee the happiness of the country in which they were born.""
   pedro.12.a:0 "Women are not fit to rule."
   pedro.12.b:0 "Isabel must be groomed to take the throne."
-  add_3_pedropoint: "Поступ #Bold Великодушного монарху#! [concept_journal_entry] просунеться на #Bold 3#!"
+  add_3_pedropoint: "Поступ [Concept('concept_journal_entry','$concept_journal_entry_gen$')|l] #Bold «Великодушний монарх»#! збільшиться на #Bold 3#!"
   
   pedro.13.t:0 "Heir to the Empire"
   pedro.13.d:0 "Years of grooming have at last prepared [SCOPE.sCharacter('isabel_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('isabel_scope').GetFirstName] to take her father's throne. Even those most staunchly opposed have come to accept that the line of succession is secure."
@@ -99,7 +99,7 @@
   je_isabel: "Бразильське правонаступництво"
   je_isabel_reason: "Хоча [SCOPE.sCharacter('isabel_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('isabel_scope').GetFullName] є законною спадкоємнецею престолу, багато хто в Бразилії не прийме жінку на трон. Людям потрібен час, щоб побачити, що принцеса стане гідною наступницею свого батька."
   je_isabel_goal: "[SCOPE.sCharacter('isabel_scope').GetFullName] була спадкоємнецею престолу не менше 10 років"
-  isabel_je_tt: "Якщо завершено, поступ #Bold Великодушного монарху#! [concept_journal_entry] просунеться на #Bold 3#!"
+  isabel_je_tt: "Якщо завершено, поступ [Concept('concept_journal_entry','$concept_journal_entry_gen$')|l] #Bold «Великодушний монарх»#! збільшиться на #Bold 3#!"
   is_isabella_tt: "[SCOPE.sCharacter('isabel_scope').GetFullName] не [concept_heir|l]"
 
   pedro.14.t: "Найвищі стандарти"

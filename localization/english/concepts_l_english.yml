@@ -475,6 +475,7 @@
  concept_battle_condition_desc:0 "During [Concept('concept_battle','$concept_battles$')] each side will be affected by a $concept_battle_condition$ that influences the outcome. Which $concept_battle_condition_short$ applies depends on a number of factors, which often includes the [Concept('concept_character_trait','$concept_character_traits$')] of the [Concept('concept_commander','$concept_commanders$')] in charge of that side."
 
  concept_army: "Військо"
+ concept_army_gen: "Війська"
  concept_armies: "Війська"
  concept_army_possessive:0 "Army\\'s"
  concept_army_long: "Наземне об’єднання"
@@ -1394,11 +1395,11 @@
 
  concept_migration: "Міґрація"
  concept_migrating: "Міґрувати"
- concept_migrate:0 "Migrate"
+ concept_migrate: "Міґрувати"
  concept_immigration: "Іміґрація"
  concept_immigrating:1 "Immigrating"
- concept_emigrate: "Переселятися"
- concept_emigration: "Переселення"
+ concept_emigrate: "Еміґрувати"
+ concept_emigration: "Еміґрація"
  concept_emigrating:1 "Emigrating"
  concept_migration_desc:1 "The movement of [Concept('concept_pop','$concept_pops$')] between [Concept('concept_state','$concept_states$')] in the same [concept_market], or between [Concept('concept_country','$concept_countries$')] facilitated by [Concept('concept_migration_target','$concept_migration_targets$')]. $concept_migration$ generally flows from $concept_states$ with lower to higher [concept_migration_pull]. $concept_pops$ will only consider $concept_emigrating$ if their [concept_sol] is lower than the average in their [concept_market] or if they are [concept_unemployed]. $concept_migration$ rate is affected by [concept_infrastructure] in the $concept_states$."
 

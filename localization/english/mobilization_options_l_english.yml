@@ -2,11 +2,11 @@
 
  MOBILIZATION_OPTION_GROUP_TOOLTIP: "[MobilizationOptionGroup.GetDesc]"
  MOBILIZATION_OPTION_TOOLTIP:0 "[AddLocalizationIf(Not(MobilizationOption.GetUnitModifier.IsEmpty),'MOBILIZATION_OPTION_EFFECTS_HEADER')][MobilizationOption.GetUnitModifier.GetDesc][AddLocalizationIf(Not(MobilizationOption.GetUnitModifier.IsEmpty),'\n\n')][AddLocalizationIf(Not(MobilizationOption.GetUpkeepModifier.IsEmpty),'MOBILIZATION_OPTION_UPKEEP_HEADER')][Concatenate(MobilizationOption.GetUpkeepModifier.GetDesc,MobilizationOption.GetUpkeepUnscaledModifier.GetDesc)][AddLocalizationIf(Not(MobilizationOption.GetUpkeepModifier.IsEmpty),'\n\n')][MobilizationOption.GetDesc]"
- MOBILIZATION_OPTION_EFFECTS_HEADER: "#title Уплив на всі @battalions![Nbsp][Concept('concept_battalion','$concept_battalions$')|l] у [concept_army|l]:#!\n"
+ MOBILIZATION_OPTION_EFFECTS_HEADER: "#title Уплив на всі @battalions![Nbsp][Concept('concept_battalion','$concept_battalions_acc$')|l] [Concept('concept_army','$concept_army_gen$')|l]:#!\n"
  MOBILIZATION_OPTION_UPKEEP_HEADER: "#title Споживання кожного @battalions![Nbsp][Concept('concept_battalion','$concept_battalion_dat$')|l] протягом [Concept('concept_mobilize_army','$concept_mobilize_army_mobilization_gen$')|l]:#!\n"
 
  ACTIVATE_MOBILIZATION_OPTION_BUTTON_TOOLTIP: "#header Надати [MobilizationOption.GetName]#![ConcatIfNeitherEmpty('\n', AddLocalizationIf(MobilizationOption.IsActivated(FormationPanel.GetFormation), 'ALREADY_ACTIVATED'))]\n$TOOLTIP_DELIMITER$\n[MobilizationOption.GetTooltipWithActivateDesc(FormationPanel.GetFormation)]"
- ALREADY_ACTIVATED:0 "#i Уже надається#!"
+ ALREADY_ACTIVATED: "#i Уже надається#!"
  DEACTIVATE_MOBILIZATION_OPTION_BUTTON_TOOLTIP: "#header Прибрати [MobilizationOption.GetName]#!\n$TOOLTIP_DELIMITER$\n[MobilizationOption.GetTooltipWithDeactivateDesc(FormationPanel.GetFormation)]"
  
  MOBILIZATION_OPTION_TOOLTIP_WITH_TOGGLE_DESC: "[ConcatIfNeitherEmpty('$TOGGLE_DESC$','\n\n')]$TOOLTIP$[ConcatIfNeitherEmpty('\n\n','$EFFECT_HEADER$')]$EFFECT$"
@@ -17,7 +17,7 @@
  MOBILZATION_SUMMARY_EFFECTS_HEADER: "Уплив на @battalions! [Concept('concept_battalion','$concept_battalions$')|l]"
  MOBILIZATION_SUMMARY_CONSUMPTION_HEADER: "Загальне споживання [Concept('concept_good','$concept_goods_gen$')|l]"
  MOBILIZATION_OPTION_GROUP_NAME: "[MobilizationOptionGroup.GetName]"
- MOBILIZATION_OPTION_GROUP_UPKEEP_SUMMARY_UPKEEP: "Споживання:"
+ MOBILIZATION_OPTION_GROUP_UPKEEP_SUMMARY_UPKEEP: "Утримання:"
  MOBILIZATION_OPTION_GROUP_UPKEEP_SUMMARY_ITEM: "$ICON$ $VALUE|-=1$"
 
  COMMAND_CONFIRMATION_TOGGLE_MOBILIZATION_OPTION:0 "Are you sure you want to turn $TOGGLE_DIRECTION$ [MobilizationOption.GetName] for [MilitaryFormation.GetName]?\n\n#indent_newline:3 It would impose the following effects:\n$EFFECT_BREAKDOWN$#!"
@@ -53,8 +53,8 @@
  mobilization_option_truck_transport_desc: "Замовляйте вантажівки для перевезення ваших солдатів на фронт."
  mobilization_option_rail_transport: "Залізниці"
  mobilization_option_rail_transport_desc: "Нехай ваші військовослужбовці їздять поїздом за державні кошти."
- mobilization_option_machinegunners: "Кулеметники"
- mobilization_option_machinegunners_desc: "Автоматичні кулемети дозволяють нам успішно укріплювати позиції."
+ mobilization_option_machinegunners: "Скоростріли"
+ mobilization_option_machinegunners_desc: "Автоматичні скоростріли дозволяють нам успішно укріплювати позиції."
  mobilization_option_chemical_weapons: "Хемічна зброя"
  mobilization_option_chemical_weapons_desc: "Звірство? Можливо. Але як порівняти моральну вагу жорстокості з тим, щоб дозволити налякати людей?"
  mobilization_option_flamethrowers: "Вогнеметники"
@@ -76,7 +76,7 @@
  transport: "Перевезення"
  transport_desc: "Методи, якими це військо змінює своє розташування."
  reconnaissance: "Розвідка"
- reconnaissance_desc: "Військові методи розвідки як місцевості, так і противника."
+ reconnaissance_desc: "Військові методи розвідки як місцевости, так і ворога."
  special_weapons: "Підрозділи підтримки"
  special_weapons_desc: "Спеціальні підрозділи для підтримки ваших військ у бою."
  medic_support: "Медична допомога"
