@@ -58,7 +58,7 @@
 
  ai_budget_savings: "Заощадження"
  ai_budget_government_expenses: "Уряд"
- ai_budget_military_expenses: "Військо"
+ ai_budget_military_expenses: "Збройні сили"
  ai_budget_subsidies: "Субсидії"
   
  ai_expense_money: "Гроші"
@@ -109,12 +109,20 @@
  ai_strategy_unify_ethiopia: "Об'єднання Етіопії"
  ai_strategy_unify_ethiopia_desc: "[COUNTRY.GetName] хоче об’єднати етіопських князів під своїм прапором."
  ai_strategy_unify_china: "Об'єднання Хіни"
- ai_strategy_unify_china_desc: "[COUNTRY.GetName] хоче об’єднати хінських воєначальників під своїм прапором."
- 
+ ai_strategy_unify_china_desc:0 "[COUNTRY.GetName] хоче об’єднати хінських воєначальників під своїм прапором."
+ ai_strategy_colonial_extraction:0 "Colonial Extraction"
+ ai_strategy_colonial_extraction_desc:0 "As a colonial nation, [COUNTRY.GetName] seeks to extract and export raw resources at the behest of their colonial overlord."
+ ai_strategy_socialism_in_one_country:0 "Socialism in One Country"
+ ai_strategy_socialism_in_one_country_desc:0 "[COUNTRY.GetName] wants to keep capitalist powers at bay whilst it develops a mature socialist economy."
+ ai_strategy_world_revolution:0 "World Revolution"
+ ai_strategy_world_revolution_desc:0 "[COUNTRY.GetName] seeks to spread socialist revolution across the world, converting other nations to their cause."
+ ai_strategy_anti_imperialism:0 "Anti-Imperialism"
+ ai_strategy_anti_imperialism_desc:0 "[COUNTRY.GetName] seeks to support unrecognized states and contain the expansion of imperial powers."
+
  ATTITUDE_DETAILS: "[COUNTRY.GetAttitudeTowards(TARGET_COUNTRY.Self).GetReasonsDesc]\n\n[COUNTRY.GetAttitudeTowards(TARGET_COUNTRY.Self).GetStrategicDesireDesc]"
   
  ai_attitude_human: "#V Людина#!"
- ai_attitude_human_desc: "[COUNTRY.GetName] контролюється людиною-гравцем і їхнє ставлення до нас повністю залежить від людини."
+ ai_attitude_human_desc: "[COUNTRY.GetName] контролюється людиною-гравцем і їхнє ставлення до [Concept('concept_country', '$concept_country_gen$')|l] [GetPlayer.GetName] повністю залежить від людини."
  ai_attitude_human_tooltip: "#header $ai_attitude_human$#!\n$ai_attitude_human_desc$"
  
  ai_attitude_disinterested: "#V Незацікавлене#!"

@@ -5,7 +5,7 @@
  mining_production_modifier:0 "Mining Production"
  munitions_production_modifier:0 "Ammunition Production"
  je_shortform_building_munition_plants_tooltip: "Будівля - $building_munition_plants$"
- je_shortform_building_chemical_plants_tooltip: "Будівля - $building_chemical_plants$"
+ je_shortform_building_chemical_plants_tooltip: "Будівля - $building_explosives_factory$"
  je_shortform_building_mine_tooltip: "Будівля - залізна, вугільна, свинцева або сірчана копальні"
  je_combustion_engines: "Громадський транспорт"
  je_combustion_engines_reason: "Оскільки особистий транспорт є новим захопленням, багато хто в країні вважає, що ми повинні зосередитися на забезпеченні громадян власними особистими видами транспорту за рахунок громадського транспорту."
@@ -102,8 +102,6 @@
  d_urban: "Д'Урбан"
  eduardo: "Едуардо"
  angelim: "Анжелім"
- dyn_c_spanish_philippines: "Еспанські Філіппіни"
- dyn_c_spanish_philippines_adj: "Еспанськофіліппінськ"
  KUR: "Курдистан"
  KUR_ADJ: "Курдськ"
  GLI: "Ґалісія"
@@ -396,15 +394,13 @@
  pmg_base_building_white_house: "Основа"
 
 #Barrack PMs
- pm_mechanized_infantry: "Механізована піхота"
  pm_motorized_recon: "Моторозвідка"
- pm_mechanized_infantry_conscription: "$pm_mechanized_infantry$"
  pm_motorized_recon_conscription: "$pm_motorized_recon$"
 
 #Naval Base PMs
  pmg_escorts: "Конвойний супровід"
  pmg_raiders: "Конвойні рейдери"
- pm_frigates: "Фрегати супроводу"
+ pm_frigates: "Фреґати супроводу"
  pm_destroyers: "Руйнівники"
  pm_commerce_raider: "Торгові рейдери"
  pm_torpedo_boat: "Торпедоносці"

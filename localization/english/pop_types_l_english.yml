@@ -22,7 +22,7 @@
  engineers: "@engineers! $engineers_no_icon$"
  engineers_only_icon: "@engineers!"
  engineers_no_icon: "Знадібники"
- engineers_desc: "Винахідники та розробники технічних рішень, які працюють із передовим обладнанням у таких витинках, як виробництво, гірнича промисловість і будівництво. Одні підтримують промисловців, а інші приєднуються до профспілок."
+ engineers_desc:1 "Inventors and designers of technical solutions, working with advanced machinery in sectors like manufacturing, mining and construction. Some support the Industrialists or Petty Bourgeoisie, while others join Trade Unions."
  farmers: "@farmers! $farmers_no_icon$"
  farmers_only_icon: "@farmers!"
  farmers_no_icon: "Хутірники"

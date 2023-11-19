@@ -67,6 +67,8 @@
  gov_caliphate_desc: "Це [concept_government_type|l], де [Concept('concept_country','$concept_country_ins$')|l] керує голова духівництва.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_sharif: "Шаріфат"
  gov_sharif_desc: "Це [concept_government_type|l], де [Concept('concept_ruler','$RULER_TITLE_SHARIF$')|l] керує [Concept('concept_country','$concept_country_ins$')|l].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_confederation_of_the_rhine:0 "Rhenish Confederation"
+ gov_confederation_of_the_rhine_desc:0 "This is a [concept_government_type] where power is shared equally between the princes of the Confederation's component states, with the [Concept('concept_ruler','$RULER_TITLE_PRINCE_PRIMATE$')] or [Concept('concept_ruler','$RULER_TITLE_PRINCESS_PRIMATE$')] serving as first among equals.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_kaiser: "Кайзеррайх"
  gov_kaiser_desc: "Це [concept_government_type|l], де [Concept('concept_ruler','$RULER_TITLE_KAISER$')|l] або [Concept('concept_ruler','$RULER_TITLE_KAISERINE$')|l] керує [Concept('concept_country','$concept_country_ins$')|l].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_decentralized_sultanate: "Султанат"
@@ -164,6 +166,20 @@
  gov_contechne_desc:0 "This is a [concept_government_type] ruled by the [Concept('concept_ruler','$RULER_TITLE_ARCHMAGOS$')], the senior priest in the meritocratic hierarchy of an enlightened clergy.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
 
 # Presidential Republics
+ gov_brazil_oligarchic_republic_presidential:0 "Oligarchic Republic"
+ gov_brazil_oligarchic_republic_presidential_desc:0 "This is a [concept_government_type] where the [concept_country] is ruled by a [Concept('concept_ruler','$RULER_TITLE_PRESIDENT$')] [Concept('concept_election','$concept_elected$')] largely by agrarian oligarchs.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_peru_bolivia_confederal_state:0 "Confederal State"
+ gov_peru_bolivia_confederal_state_desc:0 "This is a [concept_government_type] where the [concept_country] is ruled by an [Concept('concept_election','$concept_elected$')] [Concept('concept_ruler','$RULER_TITLE_PRESIDENT$')] accountable to the Supreme Protector of the Peru-Bolivian Confederation.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_peru_bolivia_confederal_state_dictatorship:0 "Confederal State"
+ gov_peru_bolivia_confederal_state_dictatorship_desc:0 "This is a [concept_government_type] where the [concept_country] is ruled by a [Concept('concept_ruler','$RULER_TITLE_PRESIDENT$')] accountable to the Supreme Protector of the Peru-Bolivian Confederation.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_peru_bolivia_confederal_state_bolivia:0 "Confederal State"
+ gov_peru_bolivia_confederal_state_bolivia_desc:0 "This is a [concept_government_type] where the [concept_country] is ruled by an [Concept('concept_election','$concept_elected$')] [Concept('concept_ruler','$RULER_TITLE_SUPREME_PROTECTOR$')], charged with overseeing the state governments of the Peru-Bolivian Confederation.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_peru_bolivia_confederal_state_bolivia_dictatorship:0 "Confederal State"
+ gov_peru_bolivia_confederal_state_bolivia_dictatorship_desc:0 "This is a [concept_government_type] where the [concept_country] is ruled by a [Concept('concept_ruler','$RULER_TITLE_SUPREME_PROTECTOR$')], charged with overseeing the state governments of the Peru-Bolivian Confederation.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_peru_bolivia_confederal_autonomy:0 "Confederal Autonomy"
+ gov_peru_bolivia_confederal_autonomy_desc:0 "This is an autonomous region of the Peru-Bolivian Confederation, ruled by an [Concept('concept_election','$concept_elected$')] [Concept('concept_ruler','$RULER_TITLE_SUPREME_CHIEF$')] aligned with the central government.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_peru_bolivia_confederal_autonomy_dictatorship:0 "Confederal Autonomy"
+ gov_peru_bolivia_confederal_autonomy_dictatorship_desc:0 "This is an autonomous region of the Peru-Bolivian Confederation, ruled by a [Concept('concept_ruler','$RULER_TITLE_SUPREME_CHIEF$')] aligned with the central government.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_french_2nd_republic_presidential: "Друга республіка"
  gov_french_2nd_republic_presidential_desc: "Це [concept_government_type|l], де демократично [Concept('concept_election','$concept_elected$')|l] президент керує [Concept('concept_country','$concept_country_ins$')|l].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_french_2nd_republic_presidential_dictator: "Друга республіка"
@@ -206,6 +222,7 @@
  gov_provisional_government_desc:0 "This is a [concept_government_type] typical to revolutions, where the [concept_country] is ruled by a provisional [Concept('concept_ruler','$RULER_TITLE_PRESIDENT$')] wielding greatly expanded powers.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_technate_presidential: "Технократія"
  gov_technate_presidential_desc:0 "This is a [concept_government_type] ruled by the [Concept('concept_ruler','$RULER_TITLE_CHIEF_EXECUTIVE$')], a qualified figure entrusted with administration by a board of technocratic officials.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
 
 # Parliamentary Republics
  gov_french_2nd_republic_parliamentary: "Друга республіка"
@@ -314,6 +331,8 @@
  RULER_TITLE_SHARIF: "Шаріф"
  RULER_TITLE_KAISER: "Цісар"
  RULER_TITLE_KAISERINE: "Цісарева"
+ RULER_TITLE_PRINCE_PRIMATE: "Князь-Примас"
+ RULER_TITLE_PRINCESS_PRIMATE: "Князівна-Примас"
  RULER_TITLE_ARCHDUKE: "Ерцерцоґ"
  RULER_TITLE_ARCHDESS: "Ерцерцоґиня"
  RULER_TITLE_ALII_NUI: "Алії-Нуї"
@@ -388,6 +407,9 @@
  RULER_TITLE_MAGOS: "Маг"
  RULER_FOREMAN: "Старший робітник"
  RULER_FOREWOMAN: "Старша робітниця"
+
+ RULER_TITLE_SUPREME_PROTECTOR: "Верховний реґент"
+ RULER_TITLE_SUPREME_CHIEF: "Верховний вождь"
 
  HEIR_TITLE_DEFAULT: "Спадкоємець"
 

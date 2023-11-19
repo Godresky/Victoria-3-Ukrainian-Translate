@@ -1,5 +1,5 @@
 ﻿l_english:
- CREATE_SOCIAL_PROFILE_WINDOW_TITLE:0 "Create social profile"
+ CREATE_SOCIAL_PROFILE_WINDOW_TITLE:0 "Social Profile"
  CREATE_SOCIAL_PROFILE_WINDOW_DESCRIPTION:0 "In order to use the social services you need to create a social profile. Please enter your desired name for your social profile." # TODO: Add more descriptive text
  FRIEND_LIST_TITLE:0 "Friends"
  ADD_FRIEND_WINDOW_TITLE:0 "Add friend"

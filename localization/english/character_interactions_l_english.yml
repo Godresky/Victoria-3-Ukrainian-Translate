@@ -14,10 +14,6 @@
  CHARACTER_INTERACTION_NAME: "[CharacterInteraction.GetName][AddLocalizationIf(CharacterInteraction.IsOnCooldown(Character.Self), 'INTERACTION_COOLDOWN')]"
  INTERACTION_COOLDOWN: " ([CharacterInteraction.GetCooldown(Character.Self)])"
 
- demobilize_general: "Зняти зі служби"
- demobilize_general_info: "Якщо було наказано провести дочасне [Concept('concept_mobilize_general','$concept_mobilize_general_demobilization_acc$')|l], [Character.GetFullName] та [Character.GetCustom('UA_joho_jiji')|l] військо буде негайно відкликано та повернуто до [Character.GetHomeHQ.GetName|l], але частина вартости збирання буде утримуватися протягом [Character.MakeScope.ScriptValue('num_months_mobilization_cost_after_early_demobilization')|v0] місяців."
- demobilize_general_tt: "Бу[Select_CString(Character.IsFemale,'$CustomLoc_UA_vona_la$','$CustomLoc_UA_vin_v$')|l] [Select_CString(Character.IsFemale,'[Concept('concept_mobilize_general','$concept_mobilize_general_mobilized_adj$ою')]','[Concept('concept_mobilize_general','$concept_mobilize_general_mobilized_adj$им')]')|l] принаймні [Character.MakeScope.ScriptValue('num_months_before_permit_demobilization')|v0] місц. (наразі: [Character.MakeScope.Var('num_months_mobilized').GetValue|v0] )"
-
  grant_command_to_ruler: "Зробити командиром"
  remove_command_from_ruler: "Відправити у відставку"
  retire_commander: "Відправити у відставку"

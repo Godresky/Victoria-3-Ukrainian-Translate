@@ -18,3 +18,11 @@
  notification_je_make_schools_secular_fail_name: "Провалено перехід на світську освіту"
  notification_je_make_schools_secular_fail_desc: "Ви не змогли перейти на світський закон про освіту."
  notification_je_make_schools_secular_fail_tooltip: "Ви не змогли перейти на світський закон про освіту."
+
+ je_group_historical_content: "Національний порядок денний"
+ je_group_crises: "Надзвичайні ситуації"
+ je_group_internal_affairs: "Внутрішні справи"
+ je_group_foreign_affairs: "Зовнішні справи"
+ je_group_expeditions: "Виправи"
+ je_group_technology: "Розвиток"
+ je_group_tutorial: "Навчання"

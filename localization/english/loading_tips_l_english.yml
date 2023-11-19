@@ -1,2 +1,3 @@
 ﻿l_english:
  ROLL_LOADING_TIP: "Покажіть мені наступну пораду!"
+ ROLL_LOADING_TIP_TOOLTIP: "#i Клацніть, щоби показати інший [Concept('concept_concept','$concept_concept_acc$')|l]#!"

@@ -65,7 +65,8 @@
  party_blue_shirts_society: "Товариство синіх сорочок"
  party_freedom_party: "Партія Свободи"
  party_national_fascist_party: "Національна фашистська партія"
- party_national_union_of_greece: "Національний союз Греції"
+ party_national_union_of_greece: "Національний союз Греччини"
+ integralist_action:0 "Brazilian Integralist Action"
 
 #conservative_party
  party_moderate_party: "Помірна партія"
@@ -90,6 +91,10 @@
  party_russian_party: "Московитська партія"
  party_resistance_party: "Партія супротиву"
  party_party_of_order: "Партія порядку"
+ party_minas_gerais_republican_party:0 "Minas Republican Party"
+ party_sao_paulo_republican_party:0 "Paulista Republican Party"
+ party_bahia_republican_party:0 "Bahia Republican Party"
+ party_federal_republican_party:0 "Federal Republican Party"
 
 #free_trade_party
  party_historic_party: "Історична партія"
@@ -100,6 +105,8 @@
  party_national_party: "Національна партія"
  party_party_of_peaceful_renovation: "Партія мирного оновлення"
  party_democratic_alliance: "Демократичний альянс"
+ party_federalist_party:0 "Federalist Party"
+ party_constitutional_union_party:0 "Constitutional Union Party"
 
 #liberal_party
  party_progressive_party: "Поступова партія"
@@ -122,6 +129,10 @@
  party_whig_party: "Партія віґів"
  party_the_left: "Ліві"
  party_english_party: "Англійська партія"
+ party_libertador_party:0 "Liberating Party"
+ party_liberal_republican_party:0 "Liberal Republican Party"
+ party_progressive_league:0 "Progressive League"
+ party_exalted_liberal:0 "Exalted Liberal Party"
 
 #military_party
  party_patriotic_union: "Патріотичний союз"
@@ -150,13 +161,13 @@
  party_revive_china_society: "Товариство відродження Хіни"
  party_revival_party: "Партія відродження"
  party_committee_of_union_and_progress: "Комітет союзу та поступу"
- party_progressive_league: "Поступова ліга"
  party_mexican_liberal_party: "Мексиканська ліберальна партія"
  party_tongmenghui: "Тунменхой"
  party_the_far_left: "Ультраліві"
  party_french_party: "Французька партія"
  party_trudovik_group: "Трудова група"
  party_republican_union: "Республіканська спілка"
+ party_farroupilha:0 "Farroupilha Party"
 
 
 #religious_party
@@ -195,7 +206,8 @@
  party_socialist_party_of_america: "Соціялістична партія Америки"
  party_confederate_socialist_party: "Конфедеративна соціялістична асоціяція"
  party_psi: "Італійська соціялістична партія"
- party_seke: "Соціял-демократична партія Греції"
+ party_seke: "Соціял-демократична партія Греччини"
+ party_anl:0 "National Liberation Alliance"
 
 #communist_party
  party_british_socialist_party: "Британська соціялістична партія"
@@ -214,7 +226,7 @@
  party_justice_party: "Партія справедливости"
  party_socialist_workers_party: "Соціялістична робітнича партія"
  party_workingmens_party: "Партія трудящих"
- party_kke: "Комуністична партія Греції"
+ party_kke: "Комуністична партія Греччини"
 
 #agrarian_party
  party_irish_national_land_league: "Ірляндська національна земельна ліга"
@@ -230,7 +242,8 @@
  party_national_farmer_party: "Національна хутірницька партія"
  party_patrons_of_industry: "Покровителі промисловости"
  party_national_grange: "Національна садиба"
- party_agrarian_and_farmer_party: "Рільничо-хутріницька партія"
+ party_agrarian_and_farmer_party: "Рільничо-хутірницька партія"
+ party_conservative_republican_party:0 "Conservative Republican Party"
 
 #anarchist_party
  party_young_socialists: "Молоді соціялісти"
@@ -255,6 +268,7 @@
  from_powerful_devout: "Є потужними"
  from_powerful_devout_other: "Провідник - релігійний"
  from_antireligious: "Протирелігійна ідеологія"
+ from_corporatism:0 "Corporatist Ideology"
  from_social_democrat_powerful: "Є потужними"
  from_social_democrat: "Провідник - соціял-демократ"
  from_powerful_communists: "Посилення лівої зацікавленої групи"
@@ -362,7 +376,10 @@
  from_three_prior_members: "Три інші члени партії"
  from_more_than_three_prior_members: "Більше трьох інших членів партії" 
  from_authoritarian: "Самодержавна ідеологія  провідника"
- from_protectionist_leader: "Захистська ідеологія провідника"
+ from_protectionist_leader: "Протекціоністська ідеологія провідника"
  from_french_monarchist_rival: "Потужні суперники-монархісти"
  from_only_legal_party: "Через єдину законну партію"
+ from_brazil_liberalism:0 "From Exalted Leader"
+ from_two_party_system:0 "From Conservative-Liberal System"
+ from_feijo_regency:0 "From the Feijó Regency"
  from_jacksonian_democrat: "Через джексоновську демократію"

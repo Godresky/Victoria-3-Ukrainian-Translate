@@ -14,20 +14,6 @@ We use outdated words to convey the atmosphere of the world at that time. We als
     [*]Launch and enjoy the Ukrainian
 [/olist]
 
-[h1]Translation progress.[/h1]
-Currently translated:
-[list]
-[*]Most part of the interface
-[*]The majority part of events, decisions, and entries in the original game's journal
-[*]Part of the events, decisions, and entries in the Voice of the People expansion's journal
-[*]All names of countries (and descriptions), cultures, religions, types of government
-[*]All names of laws and descriptions of laws, production methods, character traits
-[*]All song titles of the original game and the expansion "Melodies for the Masses"
-[*]Part of tutorials
-[*]Part of concepts
-[*]Small part of character names
-[/list]
-
 
 [h1]Do you want to help?[/h1]
 Share the mod with your friends, download and play.
@@ -40,7 +26,7 @@ They helped with the translation: [url=https://t.me/HeartsofUkraine4]пан Дм
 
 Useful:
 [list]
-[*]Supported game version: [b]1.4.2[/b]
+[*]Supported game version: [b]1.5.9[/b]
 [*][url=https://github.com/Godresky/Victoria-3-Ukrainian-Translate]GitHub link[/url]
 [*][url=https://drive.google.com/drive/folders/186_K4LmKJh6JLijl9xXBqJsZbesNsF_c?usp=sharing]Google Drive[/url]
 [*][url=https://discord.gg/zeMqBmzCzA]My Victoria 3 Discord Server[/url]

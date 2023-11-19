@@ -66,7 +66,7 @@
  ACHIEVEMENT_barbarys_back: "Бербери повертаються"
  ACHIEVEMENT_miners_and_minors: "Неповнолітні, а не копальники"
  ACHIEVEMENT_healthy_man_of_europe: "Здорова людина Европи"
- ACHIEVEMENT_habsburg_resurgence: "Габсбурґське відродження"
+ ACHIEVEMENT_habsburg_resurgence: "Габсбурзьке відродження"
  ACHIEVEMENT_great_game: "Велика гра"
  ACHIEVEMENT_bourbon_for_everyone: "Бурбон для всіх!"
  ACHIEVEMENT_manifest_mexico: "Мексиканський маніфест"
@@ -112,13 +112,13 @@
  ACHIEVEMENT_DESC_barbarys_back: "Почавши за Маскару, Константішу, Аїт Аббас або Туґґурт утворіть Алжир та станьте сильною державою"
  ACHIEVEMENT_DESC_miners_and_minors: "Почавши за Ланфанґ, об’єднайте усі землі Борнео та введіть закон про обов’язкову початкову школу"
  ACHIEVEMENT_DESC_healthy_man_of_europe: "За Османів, станьте Великою державою та майте максимальний рівень державного медичного страхування"
- ACHIEVEMENT_DESC_habsburg_resurgence: "За Австрію, володійте Сілезією та зробіть Прусію слабкою державою або нижчим ранґом"
+ ACHIEVEMENT_DESC_habsburg_resurgence: "За Австрію, володійте Сілезією та зробіть Прущину слабкою державою або нижчим ранґом"
  ACHIEVEMENT_DESC_great_game: "За Московщину, заволодійте Середньою Азією"
  ACHIEVEMENT_DESC_bourbon_for_everyone: "За Еспанію, майте середній рівень життя принаймні 20, залишаючись монархією"
  ACHIEVEMENT_DESC_manifest_mexico: "За Мексику, заволодійте Тихоокеанським узбережжям, Великими рівнинами та Техасом і майте вищий ранґ, ніж ЗСА"
  ACHIEVEMENT_DESC_american_territory: "Почавши за Індіянську територію, ЗСА мають стати підвладними з не більше ніж трьома землями"
  ACHIEVEMENT_DESC_broken_promises: "За Італію приєднайтеся до дипломатичної гри проти 2 або більше ваших союзників"
- ACHIEVEMENT_DESC_the_berlin_conference: "Почавши з Прусію, сформуйте Німеччину та повністю володійте щонайменше 10-ма землями в Африці"
+ ACHIEVEMENT_DESC_the_berlin_conference: "Почавши з Прущини, сформуйте Німеччину та повністю володійте щонайменше 10-ма землями в Африці"
  ACHIEVEMENT_DESC_belle_epoque: "Почавши за Францію, майте найвищий у світі ВВП та рівень іновацій"
  ACHIEVEMENT_DESC_deeds_not_words: "Надайте сили законові про виборче право жінок"
  ACHIEVEMENT_DESC_first_flight: "Станьте першою нацією у світі, яка літатиме на літаках"
@@ -207,3 +207,53 @@
 
  ACHIEVEMENT_achievement_meiji_restoration: "Реставрація Мейджі"
  ACHIEVEMENT_DESC_achievement_meiji_restoration: "За Японію, виконайте запис у часописі «Почесна віднова» до 1912 року"
+
+# 1.5 Achievements
+ ACHIEVEMENT_achievement_magnanimous: "Великодушний"
+ ACHIEVEMENT_DESC_achievement_magnanimous: "За Бразилію, виконайте запис у часописі «Великодушний монарх» і збережіть монархію"
+ achievement_magnanimous_tt: "Запис «Великодушний монарх» виконано" 
+
+ ACHIEVEMENT_achievement_federation_day:0 "День Федерації" #чи як там федерація в перекладі
+ ACHIEVEMENT_DESC_achievement_federation_day: "Утворіть Федерацію Анд"
+ achievement_federation_day_tt: "Федерацію Анд утворено" 
+
+ ACHIEVEMENT_achievement_not_yet_lost: "Все ще не втрачена"
+ ACHIEVEMENT_DESC_achievement_not_yet_lost: "За Краків, сформуйте Річ Посполиту та виконайте запис у часописі «Відродження Речі  Посполитої»"
+ achievement_not_yet_lost_2_tt: "Запис «Відродження Речі Посполитої» виконано"
+ achievement_not_yet_lost_tt: "Річ Посполиту утворено" 
+
+ ACHIEVEMENT_achievement_estado_novo: "Estado Novo"
+ ACHIEVEMENT_DESC_achievement_estado_novo: "За Бразилію, приведить Жетулью Варґаса до влади та заповніть запис у часописі «Нова республіка»"
+ achievement_estado_novo_tt: "Запис «Нова республіка» виконано" 
+
+ ACHIEVEMENT_achievement_viva_la_confederacion: "Viva la Confederación!"
+ ACHIEVEMENT_DESC_achievement_viva_la_confederacion: "За Болівію, сформуйте Перуансько-Болівійську конфедерацію"
+ achievement_viva_la_confederacion_tt: "Перуансько-Болівійську конфедерацію утворено" 
+
+ ACHIEVEMENT_achievement_desteapta_te_romane: "Deșteaptă-te, Române!"
+ ACHIEVEMENT_DESC_achievement_desteapta_te_romane: "Як румунська нація, сформуйте Румунію та заволодійте всіма румунськими землями"
+ achievement_desteapta_te_romane_tt: "Румунію утворено"
+ achievement_desteapta_te_romane_2_tt: "Ви володієте всіма румунськими землями" 
+
+ ACHIEVEMENT_achievement_piratini_not_piratiny:0 "Piratini, not Pira-tiny"
+ ACHIEVEMENT_DESC_achievement_piratini_not_piratiny: "Граючі за Піратині або Ґран-Пару, майте вищий ВВП, ніж Бразилія"
+ achievement_piratini_not_piratiny_tt: "Ви маєте вищий ВВП, або Бразилія не існує" 
+
+ ACHIEVEMENT_achievement_stonks:0 "Stonks"
+ ACHIEVEMENT_DESC_achievement_stonks: "Володійте трьома компаніями з максимальним процвітанням одночасно" 
+
+ ACHIEVEMENT_achievement_banana_republic: "Бананова республіка"
+ ACHIEVEMENT_DESC_achievement_banana_republic: "Як нація Янкі або Діксі, досягніть максимального процвітання з «Об'єднаною фруктовою  компанією» та майте принаймні 75 бананових плантацій" 
+
+ ACHIEVEMENT_achievement_republic_or_death: "Республіка або смерть!"
+ ACHIEVEMENT_DESC_achievement_republic_or_death:0 "За Парагвай, виконайте записи в часописі «Expanding Paraguay» і «Population the  Americas»"
+ achievement_republic_or_death_tt:0 "Запис «Expanding Paraguay» виконано" 
+
+ ACHIEVEMENT_achievement_spqr: "SPQR"
+ ACHIEVEMENT_DESC_achievement_spqr: "За Папську державу, стеньте Римською республікою, а потім утворіть Італію"
+ achievement_spqr_tt: "Італію утворено" 
+
+ ACHIEVEMENT_achievement_devils_railroad: "Диявольська залізниця"
+ ACHIEVEMENT_DESC_achievement_devils_railroad: "Виконайте запис у часописі «Експлуатація лісів Амазонки», володійте всією Амазонкою і  побудуйте в ній залізниці"
+ achievement_devils_railroad_tt: "Запис «Експлуатація лісів Амазонки» виконано"
+ achievement_devils_railroad_2_tt: "Усі землі з ознаками «Амазонські тропічні ліси» належать вашій державі та мають будівлю залізниці"
