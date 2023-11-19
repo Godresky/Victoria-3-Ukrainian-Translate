@@ -89,7 +89,7 @@
   pedro.12.f:0 ""This has been the most fatal blow I could have received, and I certainly would not have survived had it not been that I still have a wife and two children whom I need to educate so that they can guarantee the happiness of the country in which they were born.""
   pedro.12.a:0 "Women are not fit to rule."
   pedro.12.b:0 "Isabel must be groomed to take the throne."
-  add_3_pedropoint:0 "The progress bar of the #Bold Magnanimous Monarch#! [concept_journal_entry] is advanced by #Bold 3#!"
+  add_3_pedropoint: "Поступ #Bold Великодушного монарху#! [concept_journal_entry] просунеться на #Bold 3#!"
   
   pedro.13.t:0 "Heir to the Empire"
   pedro.13.d:0 "Years of grooming have at last prepared [SCOPE.sCharacter('isabel_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('isabel_scope').GetFirstName] to take her father's throne. Even those most staunchly opposed have come to accept that the line of succession is secure."
