@@ -1052,7 +1052,7 @@
  concept_defense: "Оборона"
  concept_defense_desc: "Боєздатність [Concept('concept_unit','$concept_unit_gen$')|l] у [Concept('concept_battle','$concept_battle_loc$')|l] під час оборони від ворожих вторгнень."
 
- concept_organization:0 "Organization"
+ concept_organization: "Організація"
  concept_organization_organized:0 "Organized"
  concept_organization_desc:0 "A [concept_military_formation] with low $concept_organization$ will be less effective in [concept_battle] in a variety of ways. $concept_organization$ starts out low when a $concept_military_formation$ is first created, but will increase over time while the $concept_military_formation$ is not traveling. $concept_organization$ is limited if you have too low [concept_command_limit] for all your [Concept('concept_unit','$concept_units$')] or if your $concept_military_formation$ has more $concept_units_special$ than $concept_units_default$.\n\n$concept_organization$ can also be impacted temporarily when switching [Concept('concept_mobilization_option','$concept_mobilization_options$')] on or off, and when transferring [Concept('concept_unit','$concept_units$')] between [Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')] $concept_armies$ with different sets of $concept_mobilization_options$.\n\n#indent_newline:3 A $concept_military_formation$ with low $concept_organization$ will suffer penalties the lower the value is, up to the following effects:\n[GetStaticModifier('low_organization').GetDesc]#!"
  
@@ -1150,7 +1150,7 @@
  concept_embargo_acc: "Ембарґо"
  concept_embargoed: "Під ембарго"
  concept_embargoes: "Ембарґо"
- concept_embargoing: "Введення ембарґо"
+ concept_embargoing: "Уведення ембарґо"
  concept_embargo_desc:6 "An [concept_ongoing_diplomatic_action] established by one [concept_country] targeting another, which completely blocks the target [concept_country] from importing or exporting [Concept('concept_good','$concept_goods$')] in the [concept_market] belonging to the country enforcing the embargo. $concept_countries$ that are at [concept_war] will automatically Embargo each other."
  
  concept_encourage_consumption: "Захочення споживання"
@@ -1564,6 +1564,7 @@
  concept_admiral_defeated_desc:0 "An [concept_admiral] is $concept_admiral_defeated$ when he loses a [concept_battle] at sea. A [concept_fleet] is $concept_admiral_defeated$ when all its [Concept('concept_admiral','$concept_admirals$')] are $concept_admiral_defeated$. $concept_admirals$ and $concept_fleets$ will only repair and regroup once they are back at their home [concept_hq]."
 
  concept_military_formation: "З’єднання"
+ concept_military_formation_loc: "З’єднанні"
  concept_military_formations: "З’єднання"
  concept_military_formation_desc:0 "A $concept_military_formation$ is an [concept_army] or [concept_fleet] that is used in [Concept('concept_war','$concept_wars$')] to achieve military objectives. They may have assigned [Concept('concept_unit','$concept_units$')] and [Concept('concept_commander','$concept_commanders$')] and can be ordered to [Concept('concept_front','$concept_fronts$')] to fight the enemy forces there."
 
@@ -2261,7 +2262,7 @@
 
  concept_devastation: "Спустошення"
  concept_devastation_gen: "Спустошення"
- concept_pollution_impact:0 "Pollution Impact"
+ concept_pollution_impact: "Вплив забруднення"
  concept_pollution_impact_desc:0 "The $concept_pollution_impact$ on a [concept_state_region] indicates how severe the effects of the total [concept_generated_pollution] by buildings in that State Region are. The more [concept_arable_land] a State Region has, the lower the impact of the $concept_generated_pollution$.\n\nA highly polluted $concept_state_region$ will also affect its neighboring states, although at a reduced rate. If a neighboring state already has a higher $concept_pollution_impact$ due to its own buildings or other neighboring states, only the highest $concept_pollution_impact$ has an effect.\n\nThe effects of $concept_pollution_impact$ can increase up to:\n[GetStaticModifier('state_region_pollution_general').GetDesc]\n[GetStaticModifier('state_region_pollution_health').GetDesc]#!"
  concept_generated_pollution:0 "Generated Pollution"
  concept_generated_pollution_desc:0 "$concept_generated_pollution$ is how much total pollution the buildings in a [concept_state_region] produce. How much [concept_pollution_impact] a $concept_state_region$ has is also dependent on the amount of [concept_arable_land] in that $concept_state_region$.\n\nA $concept_state_region$ with a lot of $concept_arable_land$ will see $concept_generated_pollution$ increase $concept_pollution_impact$ by a smaller amount than a $concept_state_region$ with little $concept_arable_land$."
@@ -2679,7 +2680,7 @@
 
  concept_upper_strata: "Верхня верства"
  concept_upper_strata_gen: "Верхньої верстви"
- concept_upper_strata_desc: "$concept_upper_strata$ містить [Concept('concept_pop','$concept_pops_acc$')|l] з [Concept('concept_profession','$concept_professions_ins$')|l], до яких вони [Concept('concept_pop_qualifications','Підготовлені')|l] здебільшого через своє [Concept('concept_wealth','Багатство')|l]. Ці ремесла зазвичай недоступні громадам, які є [Concept('concept_discrimination','$concept_discriminated_adj$ими')|l]. Вони, як правило, мають [Concept('concept_ownership_share','$concept_ownership_shares_acc$')|l] своїх [Concept('concept_building','$concept_buildings_gen$')|l], отримують [Concept('concept_dividends','$concept_dividends_acc$')|l] та одержують [Concept('concept_budget_interest','$concept_budget_interest_acc$')|l] на додаток до [Concept('concept_building_wage','$concept_building_wage_gen$')|l].[AddLocalizationIf(GetPlayer.IsValid, 'concept_upper_strata_ingame_added')]"
+ concept_upper_strata_desc: "$concept_upper_strata$ містить [Concept('concept_pop','$concept_pops_acc$')|l] з [Concept('concept_profession','$concept_professions_ins$')|l], до яких вони [Concept('concept_pop_qualifications','Готові')|l] здебільшого через своє [Concept('concept_wealth','Багатство')|l]. Ці ремесла зазвичай недоступні громадам, які є [Concept('concept_discrimination','$concept_discriminated_adj$ими')|l]. Вони, як правило, мають [Concept('concept_ownership_share','$concept_ownership_shares_acc$')|l] своїх [Concept('concept_building','$concept_buildings_gen$')|l], отримують [Concept('concept_dividends','$concept_dividends_acc$')|l] та одержують [Concept('concept_budget_interest','$concept_budget_interest_acc$')|l] на додаток до [Concept('concept_building_wage','$concept_building_wage_gen$')|l].[AddLocalizationIf(GetPlayer.IsValid, 'concept_upper_strata_ingame_added')]"
  concept_upper_strata_ingame_added: "\n\nМістить такі ремесла:\n[GetPopTypesInUpperStrataDesc]"
 
 ### NEW ITEMS
@@ -2746,8 +2747,8 @@
  concept_alert_settings_none:0 "None"
  concept_alert_settings_none_desc:0 "Alerts/important actions that does not appear anywhere in the user interface."
 
- concept_training_rate: "Ефективність тренування"
- concept_training_rate_desc: "$concept_training_rate$ - це кількість [Concept('concept_manpower','$concept_manpower_gen$')|l], яка може натренована за тиждень у [Concept('concept_military_building','$concept_military_building_loc$')|l]."
+ concept_training_rate: "Ефективність вишколу"
+ concept_training_rate_desc: "$concept_training_rate$ - це кількість [Concept('concept_manpower','$concept_manpower_gen$')|l], яка може вишколена за тиждень у [Concept('concept_military_building','$concept_military_building_loc$')|l]."
 
  concept_landing_progress:0 "Landing Progress"
  concept_landing_progress_desc:0 "The $concept_landing_progress$ is equivalent to how much [concept_occupation] the invader has gained of the invaded [concept_state]. If the $concept_landing_progress$ reaches #v 100%#!, the #b Naval Invasion#! is successful and a [concept_front] will be established."

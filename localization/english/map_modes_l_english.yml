@@ -6,7 +6,7 @@
  mm_theater: "Войовища"
  mm_military: "Збройні сили"
  mm_military_with_past_battles: "Битви"
- mm_peace_deal: "Воєнна та мирна угода"
+ mm_peace_deal: "Воєнна та мирна угоди"
 
  mm_interest_group: "Зацікавлені групи"
  mm_population_nationally: "Населення держави"
@@ -19,7 +19,7 @@
  mm_goods_production: "Виробництво товарів"
  mm_goods_consumption: "Споживання товарів"
  mm_goods_potentials: "Мічности товарів"
- mm_goods_local_prices:0 "Local Goods Prices"
+ mm_goods_local_prices: "Ціни на місцеві товари"
  mm_country_attitude: "Ставлення держав"
  mm_country_relations: "Відносини між державами"
  mm_technology: "Технології"
@@ -32,7 +32,7 @@
  mm_gdp: "Світовий ВВП"
  mm_gdp_nationally: "Національний ВВП"
  mm_literacy: "Грамотність"
- mm_pollution:0 "Pollution Impact"
+ mm_pollution: "Вплив забруднення"
  mm_infamy: "Ганебність"
 
  mm_theater_interaction: "Взаємодія з войовищем"

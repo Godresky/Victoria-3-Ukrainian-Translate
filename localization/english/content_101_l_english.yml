@@ -83,7 +83,7 @@
  expedition_events.512.f:1 ""We sat on the top of a mountain. Briefly we stopped. The water was running low, and so was the food. The jungle couldn't possibly end; it wasn't in its nature. Monstrous trees bit the last fragments of sky. We were so tired. So tired.""
  expedition_events.512.a:0 "Damnation!"
 
- central_africa_expedition: "Виправа шукання витоки Нілу"
+ central_africa_expedition: "Виправа зі шукання витоку Нілу"
  central_africa_expedition_desc: "У центрі африканського суходолу зберігається таємниця витоку Нілу."
  central_africa_expedition_tooltip: "Вимоги:"
 

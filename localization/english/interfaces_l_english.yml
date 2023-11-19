@@ -871,12 +871,12 @@
  SELECT_UNIT_TYPE_TO_TRANSFER: "Select this [concept_combat_unit_type] for transfer"
  SELECT_UNIT_TO_TRANSFER: "Select this [concept_unit] for transfer"
  NO_FORMATION_SELECTED: "No [concept_military_formation] selected"
- NO_FORMATION_COMMANDERS: "No [Concept('concept_commander','$concept_commanders$')] in this [concept_military_formation]"
+ NO_FORMATION_COMMANDERS: "Немає [Concept('concept_commander','$concept_commanders_gen$')|l] у цьому [Concept('concept_military_formation','$concept_military_formation_loc$')|l]"
  THIS_WILL_CREATE_A_NEW_MILITARY_FORMATION: "Moving [Concept('concept_unit','$concept_units$')] and [Concept('concept_commander', '$concept_commanders$')] here with no [concept_military_formation] selected would create a new $concept_military_formation$ if confirmed"
  TRANSFER_FORMATION_SELECT_UNITS_TO_TRANSFER: "Select $concept_units$ to Transfer"
  TRANSFER_FORMATION_SELECT_COMMANDERS_TO_TRANSFER: "Select $concept_commanders$ to Transfer"
  SELECT_COMMANDER_TO_TRANSFER: "Select this [concept_commander]"
- NO_COMMANDERS_IN_MILITARY_FORMATION: "No [Concept('concept_commander','$concept_commanders$')] in this [concept_military_formation]"
+ NO_COMMANDERS_IN_MILITARY_FORMATION: "Немає [Concept('concept_commander','$concept_commanders_gen$')|l] у цьому [Concept('concept_military_formation','$concept_military_formation_loc$')|l]"
  NO_UNITS_IN_MILITARY_FORMATION: "No [Concept('concept_unit','$concept_units$')] in this [concept_military_formation]"
  NO_UNITS_IN_UNIT_GROUP: "No #b [CombatUnitGroup.GetName]#! [Concept('concept_unit','$concept_units$')]"
  TRANSFER_FORMATION_MOVE_UNITS_TOOLTIP: "#header Move [SelectLocalization(TransferFormationPopup.HasArmyContext, '@battalions!', '@flotillas!')] #v [StagedUnitTypeTransfer.GetNumSelectedRegulars]#! [SelectLocalization(TransferFormationPopup.HasArmyContext, 'CONCEPT_REGULAR_BATTALIONS', 'CONCEPT_FLOTILLAS')] to the other [concept_military_formation]#![ConcatIfNeitherEmpty('\n', AddLocalizationIf(LessThan_int32(StagedUnitTypeTransfer.GetNumSelectedRegulars, '(int32)1'), 'TRANSFER_FORMATION_NO_UNITS_SELECTED'))]"
@@ -1187,7 +1187,7 @@
  SUPPLY_NETWORK_STRENGTH: "Потужність мережі постачання: #$SUPPLY_NETWORK_STRENGTH_COLOR$ [Country.GetSupplyNetworkStrength|%0]#!"
  SUPPLY_NETWORK_STRENGTH_TEXT: "Потужність мережі постачання:"
  SUPPLY_NETWORK_STRENGTH_VALUE: "#$SUPPLY_NETWORK_STRENGTH_COLOR$ [Country.GetSupplyNetworkStrength|%0]#!"
- SUPPLY_NETWORK_STRENGTH_TOOLTIP: "Скільки [Concept('concept_convoys', '$concept_convoys_gen$')|l] є в наявности порівняно з необхідною кількістю"
+ SUPPLY_NETWORK_STRENGTH_TOOLTIP: "Скільки [Concept('concept_convoys', '$concept_convoys_gen$')|l] є в наявності порівняно з необхідною кількістю"
  NUM_SEA_NODES: "Морські вузли: #v [Country.GetSupplyNetworkNumSeaNodes]#!"
  NUM_SEA_NODES_TEXT: "Морські вузли:"
  NUM_SEA_NODES_VALUE: "[Country.GetSupplyNetworkNumSeaNodes]"
@@ -1212,12 +1212,12 @@
  DISCORD_URL:0 "#header Open the Victoria 3 Discord#!\n$TOOLTIP_DELIMITER$\nOpens the following link in your web browser:\n[GetDiscordUrl]"
 
  SUPPLY_NETWORK_HEADER: "#title [concept_supply_network]#!"
- ACTIVE_BATTLES_HEADER: "#title Активні битви #!"
- ACTIVE_LAND_BATTLES_HEADER:0 "#title Active Land Battles#!"
- ACTIVE_NAVAL_BATTLES_HEADER:0 "#title Active Naval Battles#!"
+ ACTIVE_BATTLES_HEADER: "#title Активні битви#!"
+ ACTIVE_LAND_BATTLES_HEADER: "#title Активні наземні битви#!"
+ ACTIVE_NAVAL_BATTLES_HEADER: "#title Активні морські битви#!"
  ENDED_BATTLES_HEADER: "#title Завершені битви#!"
- ENDED_LAND_BATTLES_HEADER:0 "#title Ended Land Battles#!"
- ENDED_NAVAL_BATTLES_HEADER:0 "#title Ended Naval Battles#!"
+ ENDED_LAND_BATTLES_HEADER: "#title Завершені наземні битви#!"
+ ENDED_NAVAL_BATTLES_HEADER: "#title Завершені морські битви#!"
  SEA_REGION_PANEL_ADMIRALS: "#title Діяльність адміралів#!"
 
  NO_ACTIVE_LAND_BATTLES:0 "No Active Land Battles"
@@ -3880,7 +3880,7 @@
 
 
  
- CAN_EXPAND_BUILDING_TOOLTIP:2 "#header $BUILD_OR_EXPAND$ [BUILDING_TYPE.GetName] in [STATE.GetName]#! (Size: [BUILDING.GetExpansionLevelBreakdownDesc])\n#tooltippable #tooltip:[GetRawTextTooltipTag('$PROFIT_IMPACT_DESC$')] #v @money!$PROFIT_IMPACT|K+=$#!#!#! Predicted [SelectLocalization(Or(Or(ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_government_administration').Self), ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_construction_sector').Self)), BUILDING.GetBuildingType.IsMilitaryBuilding), 'BUILDING_UPKEEP_HEADER', 'BUILDING_EARNINGS_HEADER')] / week\n[SelectLocalization(BUILDING.GetBuildingType.IsMilitaryBuilding, 'MILITARY_BUILDING_INFO', '')][ConcatIfNeitherEmpty('$QUALIFICATIONS$', '\n')][SelectLocalization( LessThan_CFixedPoint(State.GetConstructionEfficiency, '(CFixedPoint)0'), 'CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY_WARNING', '')]$TOOLTIP_DELIMITER$\n@construction! $REQUIRED_CONSTRUCTION|v0$ [concept_construction] ($CONSTRUCTION_COST_CHANGE$)\n[ConcatIfNeitherEmpty('$INVESTMENT_FUND$', '\n')]\n$PRODUCTION_BREAKDOWN$\n\n[STATE.GetMarketAccessStatus]\nAvailable Labor: [State.GetNumSubsistenceWorkingAdults|Dv] [GetPopType('peasants').GetName] [SelectLocalization( GreaterThan_int64(State.GetNumUnemployedWorkingAdults, '(int64)0'), 'AND_UNEMPLOYED', '' )][ConcatIfNeitherEmpty('$PORT_INFO$', '\n')]\n\n$KEY_MODIFIER_INSTRUCTIONS$"
+ CAN_EXPAND_BUILDING_TOOLTIP: "#header $BUILD_OR_EXPAND$ [BUILDING_TYPE.GetName] у землі [STATE.GetName]#! (Розмір: [BUILDING.GetExpansionLevelBreakdownDesc])\n#tooltippable #tooltip:[GetRawTextTooltipTag('$PROFIT_IMPACT_DESC$')] #v @money!$PROFIT_IMPACT|K+=$#!#!#! [SelectLocalization(Or(Or(ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_government_administration').Self), ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_construction_sector').Self)), BUILDING.GetBuildingType.IsMilitaryBuilding), 'Передбачуване', 'Передбачуваний')] [SelectLocalization(Or(Or(ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_government_administration').Self), ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_construction_sector').Self)), BUILDING.GetBuildingType.IsMilitaryBuilding), 'BUILDING_UPKEEP_HEADER', 'BUILDING_EARNINGS_HEADER')|l] / тиждень\n[SelectLocalization(BUILDING.GetBuildingType.IsMilitaryBuilding, 'MILITARY_BUILDING_INFO', '')][ConcatIfNeitherEmpty('$QUALIFICATIONS$', '\n')][SelectLocalization( LessThan_CFixedPoint(State.GetConstructionEfficiency, '(CFixedPoint)0'), 'CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY_WARNING', '')]$TOOLTIP_DELIMITER$\n@construction! $REQUIRED_CONSTRUCTION|v0$ [concept_construction] ($CONSTRUCTION_COST_CHANGE$)\n[ConcatIfNeitherEmpty('$INVESTMENT_FUND$', '\n')]\n$PRODUCTION_BREAKDOWN$\n\n[STATE.GetMarketAccessStatus]\nДоступна робоча сила: [State.GetNumSubsistenceWorkingAdults|Dv] [GetPopType('peasants').GetName] [SelectLocalization( GreaterThan_int64(State.GetNumUnemployedWorkingAdults, '(int64)0'), 'AND_UNEMPLOYED', '' )][ConcatIfNeitherEmpty('$PORT_INFO$', '\n')]\n\n$KEY_MODIFIER_INSTRUCTIONS$"
 #  is currently not included, re-add to CAN_EXPAND_BUILDING_TOOLTIP if deeemed necessary 
 
  AND_UNEMPLOYED: "та [State.GetNumUnemployedWorkingAdults|Dv] [Concept('concept_unemployed', '$concept_unemployed_gen$')|l]"
@@ -4846,7 +4846,7 @@
  INFORMATION: "Відомості"
  STATE_MODIFIERS: "Змінювачі в землі:\n[State.GetModifier.GetDesc]"
 
- SP_CAPACITY_CONCEPT: "#concept Військо спробує досягнути обмеження сили тим, що братиме гроші з війського бюджету, купуватиме військові товари та використовуватиме їх для тренування солдат в куренях чи морських базах.#!"
+ SP_CAPACITY_CONCEPT: "#concept Військо спробує досягнути обмеження сили тим, що братиме гроші з війського бюджету, купуватиме військові товари та використовуватиме їх для вишколу вояк у куренях чи морських базах.#!"
 
  STAPLE: "Основні"
  STAPLE_FILTER: "#instruction Показати/Приховати#! #header основні товари#!\n\n#concept Основні товари є основними товарами.#!"
@@ -6528,7 +6528,7 @@ LAW_ENACTMENT_PROGRESS:6 "#header [Concept('concept_enactment_of_laws', '$concep
  TARIFF_LEVEL_TARIFF_LAW: "Торгова політика: [LawType.GetName|l]"
  TARIFF_LEVEL_NO_TARIFF_LAW: "Торгова політика: немає"
 
- LOCAL_PRICES:0 "Local Prices"
+ LOCAL_PRICES: "Місцеві ціни"
 
  LAW_FROM_TO: "«[GetPlayer.GetActiveLawFromGroup(Law.GetGroup.GetKey).GetName]» на «[Law.GetName]»"
  GROW_INSTITUTION: "#header Збільшити рівень установи «[INSTITUTION.GetName]#!»"
@@ -8418,18 +8418,18 @@ LAW_ENACTMENT_PROGRESS:6 "#header [Concept('concept_enactment_of_laws', '$concep
  FLOTILLAS_LEADERBOARD_ITEM: "\n$RANK$. @flotillas! $VAL|vD$ - $COUNTRY$"
  COMMANDER_RANK_LOC_KEY: "[Concept('concept_commander_rank','$concept_commander_rank_short$')] "
 
- EDIT:0 "Edit"
- CHANGE_NAME:0 "Change name"
- CUSTOMISE_MILITARY_FORMATION:0 "Customize Formation"
- UNIT_NAMES:0 "Unit Names"
- BASE_ON:0 "Base on"
- FORMATION_NAME:0 "Formation Name"
- CHOOSE_FORMATION_FLAG:0 "Flag Pattern"
- CHOOSE_FORMATION_FLAG_COLOUR:0 "Flag Colour"
- MILITARY_FORMATION_INVALID_NAME:0 "Invalid Name:\n$DESC$"
+ EDIT: "Зредагувати"
+ CHANGE_NAME: "Перейменувати"
+ CUSTOMISE_MILITARY_FORMATION: "Видозміна з’єднання"
+ UNIT_NAMES: "Назви підрозділів"
+ BASE_ON: "На основі"
+ FORMATION_NAME: "Назва з’єднання"
+ CHOOSE_FORMATION_FLAG: "Візерунок стяга"
+ CHOOSE_FORMATION_FLAG_COLOUR: "Колір стяга"
+ MILITARY_FORMATION_INVALID_NAME: "Недоступна назва:\n$DESC$"
  MILITARY_FORMATION_INVALID:0 "Invalid formation"
  MILITARY_FORMATION_NOT_YOURS:0 "Player does not own this formation."
- COMPANY_INVALID_NAME:0 "Invalid Name:\n$DESC$"
+ COMPANY_INVALID_NAME: "Недоступна назва:\n$DESC$"
  COMPANY_INVALID:0 "Invalid company"
  COMPANY_NOT_YOURS:0 "Player does not own this company."
 

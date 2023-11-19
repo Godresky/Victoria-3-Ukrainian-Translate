@@ -350,8 +350,8 @@ pm_disabled_steam_power: "Без парової потужності"
  pm_intensive_farming: "Інтенсивне землеробство"
  pm_chemical_fertilizer_building_maize_farm: "Хемічні добрива"
 
- pm_orchards: "Овочеві сади"
- pm_orchards_no: "Без овочевих садів"
+ pm_orchards: "Сади"
+ pm_orchards_no: "Без садів"
 
 
 #Твариницька ферма
@@ -470,13 +470,13 @@ pm_steam_rail_transport: "Залізниця"
  pm_personal_files: "Індивідуальні справи"
 
 # Barracks
- pmg_training:0 "Training"
- pm_no_organization:0 "No Organized Training"
- pm_general_training:0 "General Training"
- pm_advanced_tactics_training:0 "Advanced Tactics Training"
- pm_training_streamlining:0 "Training Method Streamlining"
- pm_nco_incorporation:0 "NCO Incorporation"
- pm_mobile_warfare_tactics:0 "Mobile Warfare Tactics"
+ pmg_training: "Вишкіл"
+ pm_no_organization: "Без вишколу"
+ pm_general_training: "Загальний вишкіл"
+ pm_advanced_tactics_training: "Просунутий тактичний вишкіл"
+ pm_training_streamlining: "Вишкіл методом окопування"
+ pm_nco_incorporation: "Готування сержантського складу"
+ pm_mobile_warfare_tactics: "Тактика мобільної війни"
  
 ###
  pmg_training_conscription:0 "$pmg_training$"
