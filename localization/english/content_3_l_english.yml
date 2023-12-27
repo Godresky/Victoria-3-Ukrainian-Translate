@@ -247,6 +247,7 @@
 
  je_boxer_rebellion: "Боксерське повстання"
  je_boxer_rebellion_reason: "Принизлива втрата хінських земель чужоземним «дикунам» призвела до утворення численних ополчень, натхненних бойовими мистецтвами, що мали на меті очистити країну від будь-якого іноземного впливу.\n\nНеспроможність втілити задуми ополченців у життя може мати драматичні трагічні для держави [ROOT.GetCountry.GetName]."
+ qing_owns_all_han_states_tt: "Owns all [GetCulture('han').GetName] [Concept('concept_homeland','$concept_homelands$')], and no [GetCulture('han').GetName] [concept_homeland] is a [concept_split_state]"
 
  dyn_c_empire_of_china: "Хінська імперія"
  dyn_c_empire_of_china_adj: "Хінськ"

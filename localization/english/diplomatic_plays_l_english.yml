@@ -176,6 +176,7 @@
  JOIN_DIPLO_PLAY_FACTOR_RELUCTANT_TO_SUPPORT_UNRECOGNIZED_ENEMY_INSIGNIFICANT_DEMANDS: "Reluctant to support non-allied [concept_unrecognized_power] against a [concept_recognized_power] with insignificant demands: #bold $VALUE|+=$#!"
  JOIN_DIPLO_PLAY_FACTOR_RELUCTANT_TO_SUPPORT_UNRECOGNIZED_SIGNIFICANT_DEMANDS: "Reluctant to support non-allied [concept_unrecognized_power] with significant demands against a [concept_recognized_power]: #bold $VALUE|+=$#!"
  JOIN_DIPLO_PLAY_FACTOR_ADDED_MILITARY_POWER:0 "Military power of [COUNTRY.GetName]: #bold $VALUE|+=$#!"
+ JOIN_DIPLO_PLAY_FACTOR_LOW_MILITARY_POWER: "Military support from [COUNTRY.GetName] would make no meaningful difference: #bold $VALUE|+=$#!"
  JOIN_DIPLO_PLAY_FACTOR_OVERWHELMING_MILITARY_POWER:0 "[COUNTRY_THIRD_PARTY.GetName] has overwhelming military power in the [concept_diplomatic_play]: #bold $VALUE|+=$#!"
  JOIN_DIPLO_PLAY_FACTOR_WANTS_CALL_IN_OBLIGATION:0 "Would use up [concept_obligation]: #bold $VALUE|+=$#!"
  JOIN_DIPLO_PLAY_FACTOR_WANTS_OBLIGATION:0 "Would owe an [concept_obligation]: #bold $VALUE|+=$#!"
@@ -198,6 +199,7 @@
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_STRATEGY: "#yellow $NAME|v$а#! [concept_ai_strategy|l]: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_WEAK_PREFERENCE: "Нема жодної переваги у будь-якої сторони: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_DEBT: "Розмір #yellow [Country.GetAdjective|l]ої#! [Concept('concept_loans','$concept_loan_gen$')|l]: #bold $VALUE|+=$#!"
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_BANKRUPTCY:0 "[Country.GetName] is in [concept_bankruptcy]: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_GOLD_RESERVES: "Розмір #yellow [Country.GetAdjective|l]ого#! [Concept('concept_gold_reserves','$concept_gold_reserves_gen$')|l]: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_DEVASTATION: "[concept_devastation] у державі [Country.GetName]: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_TURMOIL: "[concept_turmoil] у державі [Country.GetName]: #bold $VALUE|+=$#!"
@@ -488,6 +490,7 @@
  war_goal_liberate_subject_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to grant independence to [WAR_GOAL.GetTarget.GetName]."
   
  war_goal_liberate_country_type_name: "Звільнення держави"
+ war_goal_liberate_country_type_desc:0 "Force a country to grant independence to another nation."
  war_goal_liberate_country_desc:1 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to release the country of [WAR_GOAL.GetCountryCreation.GetName].\n\nThe following [Concept('concept_state', '$concept_states$')] will be liberated:\n[WAR_GOAL.GetCountryCreation.ListReleasableStates( WAR_GOAL.GetTarget )]"
  war_goal_liberate_country: "Звільнення держави [WAR_GOAL.GetCountryCreation.GetName]"
  war_goal_liberate_country_desc:0 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to release the country of [WAR_GOAL.GetCountryCreation.GetName]."

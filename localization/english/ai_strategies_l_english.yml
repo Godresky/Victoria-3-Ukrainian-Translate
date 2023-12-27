@@ -95,12 +95,10 @@
  ai_strategy_maintain_power_balance: "Підтримування балянсу сил"
  ai_strategy_maintain_power_balance_desc: "[COUNTRY.GetName] хоче обережно нарощувати власну потужність, гарантуючи, що жоден із її суперників не стане надто сильним."
  ai_strategy_armed_isolationism: "Захист кордонів"
- ai_strategy_armed_isolationism_l: "захист кордонів"
  ai_strategy_armed_isolationism_desc: "[COUNTRY.GetName] хоче тримати світ на відстані через озброєний відокремство."
  ai_strategy_maintain_mandate_of_heaven: "Збереження небесного мандату"
  ai_strategy_maintain_mandate_of_heaven_desc: "[COUNTRY.GetName] прагне зберегти своє правління, зберігаючи Небесний Мандат."
  ai_strategy_economic_imperialism: "Економічний імперіялізм"
- ai_strategy_economic_imperialism_l: "економічний імперіялізм"
  ai_strategy_economic_imperialism_desc: "[COUNTRY.GetName] хоче розширити свій [concept_market|l] і відкрити ізольовані [Concept('concept_country', '$concept_countries$')|l]."
  ai_strategy_unify_germany: "Об'єднання Німеччини"
  ai_strategy_unify_germany_desc: "[COUNTRY.GetName] хоче об’єднати німецькі землі під своїм прапором."
@@ -118,6 +116,8 @@
  ai_strategy_world_revolution_desc:0 "[COUNTRY.GetName] seeks to spread socialist revolution across the world, converting other nations to their cause."
  ai_strategy_anti_imperialism:0 "Anti-Imperialism"
  ai_strategy_anti_imperialism_desc:0 "[COUNTRY.GetName] seeks to support unrecognized states and contain the expansion of imperial powers."
+ ai_strategy_restore_natural_borders: "Restore Natural Borders"
+ ai_strategy_restore_natural_borders_desc: "[COUNTRY.GetName] seeks to expand its core territories and achieve its "natural borders" at the river Rhine."
 
  ATTITUDE_DETAILS: "[COUNTRY.GetAttitudeTowards(TARGET_COUNTRY.Self).GetReasonsDesc]\n\n[COUNTRY.GetAttitudeTowards(TARGET_COUNTRY.Self).GetStrategicDesireDesc]"
   

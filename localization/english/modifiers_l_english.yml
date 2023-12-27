@@ -2052,6 +2052,8 @@
  modifier_country_subsidies_bg_infrastructure_desc: "Законодавчий дозвіл на надавання державних субсидій інфраструктурі"
  modifier_country_subsidies_bg_trade: "Можна надавати субсидії торговим центрам"
  modifier_country_subsidies_bg_trade_desc: "Законодавчий дозвіл на надавання державних субсидій торговим центрам"
+ modifier_country_subsidies_bg_power: "Можна надавати субсидії торговим центрам"
+ modifier_country_subsidies_bg_power_desc: "Законодавчий дозвіл на надавання державних субсидій торговим центрам"
  modifier_market_disallow_trade_routes: "Заборонити торгові тори"
  modifier_market_disallow_trade_routes_desc: "Заборонити будь-який ввіз та вивіз товарів на ринку"
  modifier_country_disable_investment_pool: "Заборонити пул вкладів"
@@ -2284,6 +2286,12 @@
  modifier_unit_combat_unit_type_mobile_artillery_mult:0 "$combat_unit_type_mobile_artillery$ $modifier_unit_offense_mult$"
  modifier_unit_combat_unit_type_mobile_artillery_mult_desc:0 "$combat_unit_type_mobile_artillery$ $modifier_unit_offense_mult$"
 
+ modifier_unit_combat_unit_type_trench_infantry_offense_add: "$combat_unit_type_trench_infantry$ $modifier_unit_offense_add$"
+ modifier_unit_combat_unit_type_trench_infantry_offense_add_desc: "$combat_unit_type_trench_infantry$ $modifier_unit_offense_add$"
+ modifier_unit_combat_unit_type_squad_infantry_offense_add: "$combat_unit_type_squad_infantry$ $modifier_unit_offense_add$"
+ modifier_unit_combat_unit_type_squad_infantry_offense_add_desc: "$combat_unit_type_squad_infantry$ $modifier_unit_offense_add$"
+ modifier_unit_combat_unit_type_mechanized_infantry_offense_add: "$combat_unit_type_mechanized_infantry$ $modifier_unit_offense_add$"
+ modifier_unit_combat_unit_type_mechanized_infantry_offense_add_desc: "$combat_unit_type_mechanized_infantry$ $modifier_unit_offense_add$"
 
  modifier_unit_morale_loss_add: "Втрата [Concept('concept_morale','$concept_morale_gen$')|l]"
  modifier_unit_morale_loss_add_desc: "Кількість [Concept('concept_morale','$concept_morale_gen$')|l], яку втрачає [Concept('concept_unit','$concept_unit_acc$')|l] під час битви"
@@ -2338,11 +2346,17 @@
  modifier_unit_mobilization_speed_mult:0 "[Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilization$')] Speed"
  modifier_unit_mobilization_speed_mult_desc:0 "How rapidly [Concept('concept_battalion','$concept_battalions$')] [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilize$')]"
 
- modifier_unit_mobilization_speed_from_railways_mult:0 "[GetBuildingType('building_railway').GetName] [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilization$')] Speed"
- modifier_unit_mobilization_speed_from_railways_mult_desc:0 "The impact a [GetBuildingType('building_railway').GetName] in the same state as the [concept_battalion] has on its [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilization$')] Speed"
+ modifier_military_formation_movement_speed_add: "[concept_military_formation] Speed"
+ modifier_military_formation_movement_speed_add_desc: "How quickly a [concept_military_formation] can travel to reach a new destination"
 
- modifier_military_formation_travel_speed_mult:0 "[concept_military_formation] Travel Speed"
- modifier_military_formation_travel_speed_mult_desc:0 "How quickly a [concept_military_formation] can travel to reach a new destination"
+ modifier_military_formation_movement_speed_mult: "$modifier_military_formation_movement_speed_add$"
+ modifier_military_formation_movement_speed_mult_desc: "$modifier_military_formation_movement_speed_add_desc$"
+ 
+ modifier_military_formation_mobilization_speed_add: "[concept_military_formation] [Concept('concept_mobilize_army', '$concept_mobilize_army_mobilization$')] Speed"
+ modifier_military_formation_mobilization_speed_add_desc: "How quickly a [concept_military_formation] can [Concept('concept_mobilize_army', '$concept_mobilize_army_mobilize$')] its units"
+
+ modifier_military_formation_mobilization_speed_mult: "$modifier_military_formation_mobilization_speed_add$"
+ modifier_military_formation_mobilization_speed_mult_desc: "$modifier_military_formation_mobilization_speed_add_desc$"
  
  modifier_military_formation_organization_gain_add:0 "Daily $concept_organization$ Gain"
  modifier_military_formation_organization_gain_add_desc:0 "How much [concept_organization] the [concept_military_formation] gains each day.\n\n$concept_organization_desc$"
@@ -2443,12 +2457,6 @@
 
  five_year_plan_welfare_mod:0 "Success of the 5 Year Plan"
 
- MODIFIER_DESCRIPTION_ENTRY:0 "$HEADER$: $VALUE$"
- MODIFIER_ENTRY_DESCRIPTION:0 "$HEADER$: $VALUE$"
- MODIFIER_ICON_SUMMARY_WITH_NAME:0 "$ICON$ $HEADER$: $VALUE$"
- MODIFIER_ICON_SUMMARY_WITHOUT_NAME:0 "$ICON$ $VALUE$"
-
- 
  ### LAW SUPPORT MODIFIERS
  POP_SUPPORT_MODIFIER_ADD:0 "Pop Support Modifiers"
  POP_SUPPORT_MODIFIER_MULT:0 "Pop Support Modifiers"
@@ -2902,14 +2910,14 @@ modifier_state_pop_support_law_parliamentary_republic_add:0 "[GetLawType('law_pa
  modifier_character_advancement_speed_add:0 "[concept_general] [concept_advancement_speed]"
  modifier_character_advancement_speed_add_desc:0 "A bonus or penalty to how quickly a [concept_general] accumulates [concept_advancement_progress]"
 
- modifier_character_convoy_protection_add:0 "[concept_admiral] [concept_convoys] Protection#!"
- modifier_character_convoy_protection_add_desc:0 "A bonus or penalty to how effectively a [concept_admiral] protects [concept_convoys]"
+ modifier_character_convoy_protection_mult: "[concept_admiral] [concept_convoys] Protection#!"
+ modifier_character_convoy_protection_mult_desc: "A bonus or penalty to how effectively a [concept_admiral] protects [concept_convoys]"
 
  modifier_character_interception_add:0 "[concept_admiral] Interception"
  modifier_character_interception_add_desc:0 "A bonus or penalty to how effectively a [concept_admiral] intercepts navies"
 
- modifier_character_convoy_raiding_add:0 "[concept_admiral] [concept_convoys] Raiding Chance"
- modifier_character_convoy_raiding_add_desc:0 "A bonus or penalty to a [concept_admiral] chance of raiding [concept_convoys]"
+ modifier_character_convoy_raiding_mult: "[concept_admiral] [concept_convoys] Raiding Efficiency"
+ modifier_character_convoy_raiding_mult_desc: "A bonus or penalty to a [concept_admiral] efficiency of raiding [concept_convoys]"
 
  modifier_dummy_modifier_type:0 "@warning! This modifier type should never be used"
  modifier_dummy_modifier_type_desc:0 "$modifier_dummy_modifier_type$"
