@@ -183,7 +183,6 @@
  battle_average_provinces_lost:0 "$average_unit_value$"
  battle_average_provinces_lost_desc:0 "$average_unit_value$"
  battle_naval_invasion_beachhead_penalty:0 "Insufficient [concept_naval_invasion_support]"
- battle_naval_invasion_beachhead_penalty:0 "Insufficient Naval Invasion Support"
  battle_naval_invasion_beachhead_penalty_desc:2 "Not enough [Concept('concept_flotilla','$concept_flotillas$')] supporting the landing battle"
  battle_naval_invasion_landing_penalty:0 "Difficult Landing"
  battle_naval_invasion_landing_penalty_desc:0 "Your [Concept('concept_battalion','$concept_battalions$')] fight at a disadvantage due to a difficult landing"
@@ -2243,7 +2242,7 @@
  modifier_unit_defense_mult_desc:0 "$modifier_unit_defense_add_desc$"
 
  modifier_unit_army_offense_add: "$modifier_unit_offense_add$ війська"
- modifier_unit_army_offense_add_desc:0"$modifier_unit_offense_add_desc$ (Лише для війська)"
+ modifier_unit_army_offense_add_desc:0 "$modifier_unit_offense_add_desc$ (Лише для війська)"
  modifier_unit_army_defense_add: "$modifier_unit_defense_add$ війська"
  modifier_unit_army_defense_add_desc: "$modifier_unit_defense_add_desc$ (Лише для війська)"
  modifier_unit_army_offense_mult: "$modifier_unit_offense_mult$ війська"

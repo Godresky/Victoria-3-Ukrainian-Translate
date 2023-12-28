@@ -58,8 +58,7 @@
  generic_laws.6.t: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] втручається у політичний процес"
  generic_laws.6.d: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] вияви[Select_CString(ROOT.GetCountry.GetRuler.IsFemale,'$CustomLoc_UA_vona_la$','$CustomLoc_UA_vin_v$')|l] особисту зацікавленість до поточного обговорення [Concept('concept_law', '$concept_law_gen$')|l] «[SCOPE.sLaw('current_law_scope').GetName]» і виріши[Select_CString(ROOT.GetCountry.GetRuler.IsFemale,'$CustomLoc_UA_vona_la$','$CustomLoc_UA_vin_v$')|l] використати свою королівську прерогативу, щоб забезпечити ухвалення закону."
  generic_laws.6.f: "[ROOT.GetCountry.GetRuler.GetFullNameNoFormatting] рідко втручається безпосередньо в обговорення закону, покладаючись на систему доручення повноважень та особистого впливу для ефективного управління [ROOT.GetCountry.GetRuler.GetCustom('UA_joho_jiji')|l] державою. Хоч юридично, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] може використовувати свою королівську владу на власний розсуд, це неодмінно розлютить як республіканців, так і опонентів закону, про який йдеться."
- generic_laws.6.a: ""
- generic_laws.6.b: "Все, що потрібно - це [ROOT.GetCountry.GetRuler.GetCustom('UA_joho_jiji')|l] згода."
+ generic_laws.6.a: "Все, що потрібно - це [ROOT.GetCountry.GetRuler.GetCustom('UA_joho_jiji')|l] згода."
  generic_laws.6.b: "Нехай буде виконана [ROOT.GetCountry.GetRuler.GetCustom('UA_joho_jiji')|l] воля!"
  generic_laws.6.c: "Спробуємо відмовити [ROOT.GetCountry.GetRuler.GetCustom('UA_joho_jiji')|l] від цього, адже це принесе більше шкоди, ніж користі."
  royal_prerogative: "Використано королівську прерогативу"
@@ -311,7 +310,7 @@
  election_contextual_events.4.f: "«Несподівано? Ба! Цей старий мішок з кістками вже давно мав зустрітися зі своїм творцем. Настав час поповнити партію свіжою кров’ю!»"
  election_contextual_events.4.a: "Ідіть з популярним, але бездарним кандидатом."
  election_contextual_events.4.b: "Сміливий, але пихатий хлопець закріплює крісло."
- well_connected: З хорошими зв’язками"
+ well_connected: "З хорошими зв’язками"
  imperious_upstart: "Пихатий вискочка"
 
  election_contextual_events.5.t: "Держава потреб" # Low Standard of Living

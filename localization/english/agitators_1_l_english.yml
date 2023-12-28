@@ -82,7 +82,6 @@
   je_cement_the_rightful_dynasty_progressing_civil_war:0 "The House of [JournalEntry.GetCountry.GetCustom('french_dynasty')] has been caught up in a #r civil war#!."
   je_cement_the_rightful_dynasty_progressing_low_legitimacy:0 "The [ROOT.GetCountry.GetCustom('french_dynasty')] dynasty's right to rule is widely #r disputed#!."
   je_cement_the_rightful_dynasty_goal:0 "The [SCOPE.GetRootScope.GetCountry.GetCustom('french_dynasty')] dynasty maintains uninterrupted rule at no less than [GetLegitimacyLevel('legitimacy_level_contested').GetName] [concept_legitimacy]. The higher $concept_legitimacy$ the dynasty can achieve the sooner they will secure the throne."
-  je_cement_the_rightful_dynasty_goal:0 "The [SCOPE.GetRootScope.GetCountry.GetCustom('french_dynasty')] dynasty maintains #bold 10#! years of uninterrupted rule."
   je_cement_the_rightful_dynasty_reason:0 "France is a tumultuous land, and has seen more governments come and go in recent generations than some other countries have seen pass over centuries. To firmly establish the monarchy, the House of [SCOPE.GetRootScope.GetCountry.GetCustom('french_dynasty')] must prove that it can provide the stability France cries out for."
   dynasty_orleans: "Орлеанськ"
   dynasty_bourbon: "Бурбонськ"

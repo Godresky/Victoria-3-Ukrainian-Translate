@@ -33,7 +33,7 @@
 
  industrial_accident_events.6.t: "Нещасний випадок у копальні"
  industrial_accident_events.6.d: "Копальня у [Concept('concept_state','$concept_state_loc$')|l] [SCOPE.sState('mining_accident_state').GetName] обвалилася, через що рудокопи потрапили у пастку в темних копальнях під землею. Розмір нещасного випадку перетворив його на велику трагедію для [Concept('concept_state','$concept_state_gen$')|l] [SCOPE.sState('mining_accident_state').GetName] і усієї нації."
- industrial_accident_events.6.f:1 "«Вони відкопали мене, але мого друга покинули. Сподіваюся, куди би він не пішов... там краще, ніж тут.»\n\nThat was all the foreman was able to get out of the wretched boy. Sooty rags clung to him like wispy strands of a torn funeral jacket. Whether he held back his tears for fear of a beating, or to keep strong, the foreman did not know. He was spent for the day. The foreman hoped the manager had a mind for mercy.",
+ industrial_accident_events.6.f:1 "«Вони відкопали мене, але мого друга покинули. Сподіваюся, куди би він не пішов... там краще, ніж тут.»\n\nThat was all the foreman was able to get out of the wretched boy. Sooty rags clung to him like wispy strands of a torn funeral jacket. Whether he held back his tears for fear of a beating, or to keep strong, the foreman did not know. He was spent for the day. The foreman hoped the manager had a mind for mercy."
  industrial_accident_events.6.a: "Це незначна ціна, яку доводиться платити за розвиток промисловости."
  industrial_accident_events.6.b: "Це обурливе знущання над простими людьми не може тривати вічно!"
  industrial_accident_events.6.c: "Ці копальні завдають шкоди як людині, так і довкіллю."
@@ -253,7 +253,7 @@
  monarchy_law_events.1.f:0 ""Friends! The nation cries out for leadership, for justice, and for an end to chaos! If you want stability, if you want the will of the nation to be fully realized, then together let us vote for a king, and you will never have to vote again.""
  monarchy_law_events.1.a:0 "[SCOPE.sCharacter('monarchist_ig_leader_scope').GetFullName] is a figure who really knows [SCOPE.sCharacter('monarchist_ig_leader_scope').GetHerHis] stuff."
  monarchy_law_events.1.b:0 "[SCOPE.gsInterestGroup('monarchist_ig_scope').GetName] is clearly the home of monarchists, and therefore the nation."
- monarchy_law_events.2.t:0 "Worldly Whispers"я
+ monarchy_law_events.2.t:0 "Worldly Whispers"
  monarchy_law_events.2.d:0 "[ROOT.GetCountry.GetRuler.GetTitle] [ROOT.GetCountry.GetRuler.GetFullName] has been heard casually making positive comments about various secular governments. Some suspect that [SCOPE.sCharacter('secularizing_spiritualist').GetSheHe] is tiring of ruling [ROOT.GetCountry.GetName] as a theocrat."
  monarchy_law_events.2.f:0 ""Yes yes, of course I care for the souls of my flock. There is no greater calling than the salvation of man, the redemption of the wayward, the faith triumphant. But... be honest with me, is there anything wrong with a crown?""
  monarchy_law_events.2.a:0 "[SCOPE.sCharacter('secularizing_spiritualist').GetFullName] knows which way the winds are blowing."

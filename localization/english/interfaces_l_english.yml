@@ -531,7 +531,7 @@
  RADICALS_TOOLTIP_POP_LIST: "#header $RADICALS$#!\nКількість [Concept('concept_radical', '$concept_radicals_gen$')|l] серед [PopListItem.GetTotalPopSize|dv] [PopListItem.GetPopType.GetName|l]: #v [PopListItem.GetNumRadicals|d]#!"
  SUPPORTING_RADICALS_TOOLTIP_POP_LIST: "#header $RADICALS$#!\nКількість [Concept('concept_radical', '$concept_radicals_gen$')|l] серед #v [PopListItem.GetTotalPopSize|d]#! [PopListItem.GetPopType.GetName|l]: #v [PopListItem.GetNumRadicals|d]#!"
 
- CULTURAL_POSSIBLE_SECESSION_ICON_TOOLTIP: "Має щотижня [Culture.GetChanceForSecessionMovement( GetPНlayer.Self )|%1v] шансу, що розпочнеться #variable [Concept('concept_secession', '$concept_secession_adj$ий')|l] рух#! через те, що вони є не [Concept('concept_primary_cultures','$concept_primary_cultures_ins$')|l] з високим [Concept('concept_turmoil','$concept_turmoil_ins$')|l]!\n$TOOLTIP_DELIMITER$\n[concept_secession_desc]"
+ CULTURAL_POSSIBLE_SECESSION_ICON_TOOLTIP: "Має щотижня [Culture.GetChanceForSecessionMovement( GetPlayer.Self )|%1v] шансу, що розпочнеться #variable [Concept('concept_secession', '$concept_secession_adj$ий')|l] рух#! через те, що вони є не [Concept('concept_primary_cultures','$concept_primary_cultures_ins$')|l] з високим [Concept('concept_turmoil','$concept_turmoil_ins$')|l]!\n$TOOLTIP_DELIMITER$\n[concept_secession_desc]"
  CULTURAL_GROWING_SECESSION_ICON_TOOLTIP: "[Culture.GetName] розпочали #variable [Concept('concept_secession', '$concept_secession_adj$ий')|l] рух#! супроти нас!\n$TOOLTIP_DELIMITER$\n[concept_secession_desc]"
 
  CULTURAL_TURMOIL_TOOLTIP: "#header [concept_turmoil] культури#!\n$TOOLTIP_DELIMITER$\n[Culture.GetName] - [concept_turmoil|l] у світі: [Culture.GetTurmoil|-0%]\n[Culture.GetName] - [concept_turmoil|l] у [Concept('concept_country', '$concept_country_loc$')|l] [GetPlayer.GetName]: [GetPlayer.CalcCulturalTurmoil( Culture.Self )|-%]"
@@ -905,7 +905,6 @@
  TRANSFER_RESULT_COMMANDER: "$CHARACTER_FULL_NAME$ will be transferred here"
  TRANSFER_RESULT_UNIT_TYPE: "$UNIT_ICON$ $RESULTING_UNIT_NUMBER$ $UNIT_TYPE_NAME$"
 
- TRANSFER_FORMATION_POPUP_CONFIRM_TOOLTIP: "#header Confirm this transfer#![ConcatIfNeitherEmpty('\n', AddLocalizationIf(Not(IsValid(TransferFormationPopup.Confirm)), 'MOVE_AT_LEAST_ONE_UNIT'))]\n[ConcatIfNeitherEmpty(AddTextIf(IsValid(TransferFormationPopup.Confirm), '$TRAVEL_TIME$'), '\n')]$TOOLTIP_DELIMITER$\n$VISIBLE_EFFECT_EXPLANATION$[ConcatIfNeitherEmpty('\n\n', '$NEW_ORGANIZATION_DESC$')][ConcatIfNeitherEmpty('\n\n', '$SELECTED_COMMANDERS_LIST$')][ConcatIfNeitherEmpty('\n\n', '$SELECTED_UNITS_LIST$')]"
  MOVE_AT_LEAST_ONE_UNIT: "@simple_box! Move at least [SelectLocalization(TransferFormationPopup.HasArmyContext, '@battalions!', '@flotillas!')] #v 1#! [concept_unit] or a [concept_commander] to the other [concept_military_formation]"
  TRANSFER_FORMATION_CONFIRMATION_SOURCE_WILL_BE_GONE: "Are you sure you want to transfer the entirety of $SOURCE_NAME|v$ into $TARGET_NAME|v$?"
  SELECT_UNIT_TYPE_TO_TRANSFER: "Select this [concept_combat_unit_type] for transfer"
@@ -1120,7 +1119,7 @@
  MILITARY_FORMATION_RECRUIT_UNIT_TOOLTIP: "Recruit #b [CombatUnitType.GetName]#![ConcatIfNeitherEmpty('\n\n', MilitaryFormation.CanRecruitRegularUnitTooltip( CombatUnitType.AccessSelf ) ) ]"
  UPGRADING_UNIT_TYPE: "Upgrading  #b [MilitaryFormationUnitEntry.GetUnitType.GetName]#! to #b [MilitaryFormation.GetSelectedUnitTypeForGroup( MilitaryFormationUnitEntry.GetUnitType.GetGroup.Self ).GetName] #!"
  UPGRADE_UNIT_TYPE: "Upgrade #b [MilitaryFormationUnitEntry.GetUnitType.GetName]#! to #b [MilitaryFormation.GetSelectedUnitTypeForGroup( MilitaryFormationUnitEntry.GetUnitType.GetGroup.Self ).GetName]#!\n\nThis will [Concept('concept_mobilize_army', '$concept_mobilize_army_demobilize$')] the units while upgrading them."
- MILITARY_FORMATION_UPGRADE_UNIT_TOOLTIP: "[SelectLocalization( MilitaryFormation.IsUnitTypeUpgrading( MilitaryFormationUnitEntry.GetUnitType ), 'UPGRADING_UNIT_TYPE', 'UPGRADE_UNIT_TYPE' )] [ConcatIfNeitherEmpty('\n\n', GetDesc( MilitaryFormation.GetUpgradeUnitTypeCommand( MilitaryFormationUnitEntry.GetUnitType ) ))]"
+ MILITARY_FORMATION_UPGRADE_UNIT_TOOLTIP: "[SelectLocalization( MilitaryFormation.IsRegularUnitTypeUpgrading( MilitaryFormationUnitEntry.GetUnitType ), 'UPGRADING_UNIT_TYPE', 'UPGRADE_UNIT_TYPE' )] [ConcatIfNeitherEmpty('\n\n', GetDesc( MilitaryFormation.GetUpgradeRegularUnitTypeCommand( MilitaryFormationUnitEntry.GetUnitType ) ))]"
  CANNOT_UPGRADE_UNIT_TO_TYPE: "[COMBAT_UNIT_TYPE.GetName] cannot be upgraded to [TARGET_COMBAT_UNIT_TYPE.GetName]"
  
  MILITARY_FORMATION_REMOVE_CONSCRIPT_UNIT_TOOLTIP: "Disband one #b [Concept('concept_conscript_battalion','$concept_conscript_battalion_short$')] [CombatUnitType.GetName]#!"
@@ -1304,12 +1303,12 @@
  NO_FLOTILLAS_IN_HQ: "Немає @flotillas! [Concept('concept_flotilla', '$concept_flotillas_gen$')|l] у цьому [Concept('concept_hq', '$concept_hq_loc$')|l]"
  NO_BATTALIONS_IN_HQ: "Немає @battalions! [Concept('concept_battalion', '$concept_battalions_gen$')|l] у цьому [Concept('concept_hq', '$concept_hq_loc$')|l]"
 
- ORIGIN_STATE_NAME: "[State.GetName]"
- ORIGIN_STATE_NUMBER_OF_SHIPPING_LANES: "(#v [GetDataModelSize( State.AccessShippingLanesFromThisState )]#!)"
- ORIGIN_STATE_NUMBER_OF_SHIPPING_LANES_TOOLTIP: "Загальна кількість [Concept('concept_shipping_lane', '$concept_shipping_lanes_gen$')|l] до/від [Concept('concept_state', '$concept_state_gen$')|l] [State.GetName], що проходять крізь цей морський реґіон"
- ORIGIN_STATE_TOTAL_CONVOYS_USED: "@convoys! #v [State.GetTotalConvoysFromShippingLanesViaState|D]#!"
- ORIGIN_STATE_TOTAL_CONVOYS_USED_TOOLTIP: "Загальна кількість [Concept('concept_convoys', '$concept_convoys_gen$')|l], яку використовують [Concept('concept_shipping_lane', '$concept_shipping_lanes$')|l] до/від [Concept('concept_state', '$concept_state_gen$')|l] [State.GetName], що проходять крізь цей морський реґіон"
- ORIGIN_STATE_TOTAL_NUMBER_OF_PORT_CONNECTIONS: "#v [State.GetTotalPortConnectionsViaState]#! [SelectLocalization(GreaterThan_int32( State.GetTotalPortConnectionsViaState, '(int32)1'), Concept('concept_port_connection', '$concept_port_connections$'), concept_port_connection )|l]"
+ ORIGIN_STATE_NAME:0 "[State.GetName]"
+ ORIGIN_STATE_NUMBER_OF_SHIPPING_LANES:0 "(#v [GetDataModelSize( State.AccessShippingLanesFromThisState(SeaRegionPanel.GetProvince.Self) )]#!)"
+ ORIGIN_STATE_NUMBER_OF_SHIPPING_LANES_TOOLTIP:0 "Загальна кількість [Concept('concept_shipping_lane', '$concept_shipping_lanes_gen$')|l] до/від [Concept('concept_state', '$concept_state_gen$')|l] [State.GetName], що проходять крізь цей морський реґіон"
+ ORIGIN_STATE_TOTAL_CONVOYS_USED:0 "@convoys! #v [State.GetTotalConvoysFromShippingLanesViaState(SeaRegionPanel.GetProvince.Self)|D]#!"
+ ORIGIN_STATE_TOTAL_CONVOYS_USED_TOOLTIP:0 "Загальна кількість [Concept('concept_convoys', '$concept_convoys_gen$')|l], яку використовують [Concept('concept_shipping_lane', '$concept_shipping_lanes$')|l] до/від [Concept('concept_state', '$concept_state_gen$')|l] [State.GetName], що проходять крізь цей морський реґіон"
+ ORIGIN_STATE_TOTAL_NUMBER_OF_PORT_CONNECTIONS:0 "#v [State.GetTotalPortConnectionsViaState(SeaRegionPanel.GetProvince.Self)]#! [SelectLocalization(GreaterThan_int32( State.GetTotalPortConnectionsViaState(SeaRegionPanel.GetProvince.Self), '(int32)1'), Concept('concept_port_connection', '$concept_port_connections$'), concept_port_connection )]"
 
  COUNTRY_SHIPPING_LANES: "#yellow [Country.GetAdjectiveNoFlag]і#! [Concept('concept_shipping_lane', '$concept_shipping_lanes$')|l]"
  COUNTRY_SHIPPING_LANES_NETWORK_STRENGTH: "#$SUPPLY_NETWORK_STRENGTH_COLOR$ [Country.GetSupplyNetworkStrength|%0]#!"
@@ -2317,9 +2316,7 @@
  IG_RADICALS_TOOLTIP: "#tooltip_header $RADICALS$#!\nКількість [Concept('concept_radical','$concept_radicals_gen$')|l] у групі [InterestGroup.GetName]: #v [InterestGroup.GetNumRadicals|-*2]#!\n[InterestGroup.GetNumRadicalsRatio|%2r] з #v #tooltippable #tooltip:[InterestGroup.GetTooltipTag],TOOLTIP_POPULATION [InterestGroup.GetPopulation|*2]#!#!#! зацікавленого [Concept('concept_pop', '$concept_population_gen$')|l]"
  IG_LOYALISTS_TOOLTIP: "#tooltip_header $LOYALISTS$#!\nКількість [Concept('concept_loyalist','$concept_loyalists_gen$')|l] у групі [InterestGroup.GetName]: #v [InterestGroup.GetNumLoyalists|+*2]#!\n[InterestGroup.GetNumLoyalistsRatio|%2g] з #v #tooltippable #tooltip:[InterestGroup.GetTooltipTag],TOOLTIP_POPULATION [InterestGroup.GetPopulation|*2]#!#!#! зацікавленого [Concept('concept_pop', '$concept_population_gen$')|l]"
  IG_NEUTRALS_TOOLTIP: "#tooltip_header $NEUTRALS$#!\nКількість [Concept('concept_neutral', '$concept_neutrals_gen$')|l] у групі [InterestGroup.GetName]: #v [InterestGroup.GetNumNeutrals|*2]#!\n[InterestGroup.GetNumNeutralsRatio|%2v] з #v #tooltippable #tooltip:[InterestGroup.GetTooltipTag],TOOLTIP_POPULATION [InterestGroup.GetPopulation|*2]#!#!#! зацікавленого [Concept('concept_pop', '$concept_population_gen$')|l]"
- POP_TOOLTIP_DELAYED: "\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty( SelectLocalization( GreaterThan_int64( GetPlayer.GetPeopleAbroad, '(int64)0' ), 'INCORPORATED_POPULATION', ''), '\n')][ConcatIfNeitherEmpty( SelectLocalization( GreaterThan_int64( GetPlayer.GetPeopleAbroad, '(int64)0' ), 'UNINCORPORATED_POPULATION', ''), '\n\n')]$POP_TOOLTIP_DELAYED_EMPLOYMENT_DETAIL$"
-
- POP_TOOLTIP_DELAYED: "\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty( SelectLocalization( GreaterThan_int32( GetPlayer.GetPeopleAbroad, '(int32)0' ), 'INCORPORATED_POPULATION', ''), '\n')][ConcatIfNeitherEmpty( SelectLocalization( GreaterThan_int32( GetPlayer.GetPeopleAbroad, '(int32)0' ), 'UNINCORPORATED_POPULATION', ''), '\n\n')]$POP_TOOLTIP_DELAYED_EMPLOYMENT_DETAIL$"
+ POP_TOOLTIP_DELAYED:0 "\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty( SelectLocalization( GreaterThan_int64( GetPlayer.GetPeopleAbroad, '(int64)0' ), 'INCORPORATED_POPULATION', ''), '\n')][ConcatIfNeitherEmpty( SelectLocalization( GreaterThan_int64( GetPlayer.GetPeopleAbroad, '(int64)0' ), 'UNINCORPORATED_POPULATION', ''), '\n\n')]$POP_TOOLTIP_DELAYED_EMPLOYMENT_DETAIL$"
  POP_TOOLTIP_DELAYED_EMPLOYMENT_DETAIL: "Працевлаштовані: #variable [Country.GetSalariedWorkingAdults|K]#!\nСеляни: [Country.GetSubsistingWorkingAdults|Kv]\n[Concept('concept_unemployed','$concept_unemployed$')]: [Country.GetUnemployedWorkingAdults|Kv]\n[concept_dependents]: #variable [Country.GetDependents|K]#!"
  COST_POLITICAL: "@aut!#BOLD #V $COST|1$#!#!"
  COST_DIPLOMATIC: "@inf!#BOLD #V $COST|1$#!#!"
@@ -2545,12 +2542,12 @@
  NAVAL_INVASION_LANDING_PROGRESS_STALLED:0 "[NavalInvasion.GetInvaderCountry.GetAdjective] [concept_landing_progress] is stalled due to enemy [Concept('concept_fleet', '$concept_fleets$')]!"
  NAVAL_INVASION_LANDING_PROGRESS_BAR_TOOLTIP:0 "Landing progress [NavalInvasion.GetLandingProgress|v%0]"
  NAVAL_INVASION_HAS_CONCLUDED:0 "This Naval Invasion has concluded."
- NAVAL_INVASION_SEA_REGION_STATUS:0 "[SelectLocalization(NavalInvasion.HasEnemyFleetOnSeaNode, 'NAVAL_INVASION_SEA_REGION_CONTESTED', 'NAVAL_INVASION_SEA_REGION_CONTROLLED')]"
- NAVAL_INVASION_SEA_REGION_STATUS_TOOLTIP:0 "[SelectLocalization(NavalInvasion.HasEnemyFleetOnSeaNode, 'NAVAL_INVASION_SEA_REGION_CONTESTED_TOOLTIP', 'NAVAL_INVASION_SEA_REGION_CONTROLLED_TOOLTIP')]"
+ NAVAL_INVASION_SEA_REGION_STATUS: "[SelectLocalization(NavalInvasion.HasBlockingEnemyFleetOnSeaNode, 'NAVAL_INVASION_SEA_REGION_CONTESTED', 'NAVAL_INVASION_SEA_REGION_CONTROLLED')]"
+ NAVAL_INVASION_SEA_REGION_STATUS_TOOLTIP: "[SelectLocalization(NavalInvasion.HasBlockingEnemyFleetOnSeaNode, 'NAVAL_INVASION_SEA_REGION_CONTESTED_TOOLTIP', 'NAVAL_INVASION_SEA_REGION_CONTROLLED_TOOLTIP')]"
  NAVAL_INVASION_SEA_REGION_CONTROLLED:0 "Controlled by [NavalInvasion.GetInvaderCountry.GetNameNoFlag]"
  NAVAL_INVASION_SEA_REGION_CONTROLLED_TOOLTIP:0 "There are no [Concept('concept_fleet', '$concept_fleets$')] defending [NavalInvasion.GetSeaNodeName]"
  NAVAL_INVASION_SEA_REGION_CONTESTED:0 "Contested!"
- NAVAL_INVASION_SEA_REGION_CONTESTED_TOOLTIP:0 "This [concept_naval_invasion] will not progress while there are defending fleets in [NavalInvasion.GetSeaNodeName]."
+ NAVAL_INVASION_SEA_REGION_CONTESTED_TOOLTIP: "This [concept_naval_invasion] will not progress while there are defending fleets in [NavalInvasion.GetSeaNodeName]."
  INVADER:0 "Invader"
  NAVAL_INVASION_NUMBER_OF_INVADING_FLEETS:0 "[NavalInvasion.GetNumInvadingFleets|v] [NavalInvasion.GetInvaderCountry.GetAdjective] [Concept('concept_fleet','$concept_fleets$')]"
  NAVAL_INVASION_NUMBER_OF_DEFENDING_FLEETS:0 "[NavalInvasion.GetNumDefendingFleets|v] [NavalInvasion.GetInvadedCountry.GetAdjective] [Concept('concept_fleet','$concept_fleets$')]"
@@ -6409,8 +6406,7 @@ LAW_ENACTMENT_PROGRESS:6 "#header [Concept('concept_enactment_of_laws', '$concep
  LAW_NEXT_CHECKPOINT_TIME: "За [Law.GetCheckpointRemainingDays|v] дн. ([Law.GetCheckpointEndDateString])"
  LAW_NEXT_CHECKPOINT_TIME_FACTORS_TOOLTIP:1 "#header Law Enactment Time#!\n[Law.GetCheckpointTotalDays|v] days between checkpoints\n$TOOLTIP_DELIMITER$\nBase Days for [Law.GetName]: [Law.GetCheckpointBaseDays|v]\n[Law.GetCheckpointTotalDaysBreakdown]"
  LAW_NEXT_CHECKPOINT_TIME_DESC:0 "The next law enactment checkpoint will occur in [Law.GetCheckpointRemainingDays|v] days ([Law.GetCheckpointEndDateString])\n\n[Law.GetCheckpointTotalDays|v] days between checkpoints\n$TOOLTIP_DELIMITER$\nBase Days for [Law.GetName]: [Law.GetCheckpointBaseDays|v]\n[Law.GetCheckpointTotalDaysBreakdown]"
- LAW_NEXT_CHECKPOINT_TIME_FACTORS_TOOLTIP: "Базова кількість днів для [Concept('concept_law', '$concept_law_gen$')|l] «[Law.GetName]»: [Law.GetCheckpointBaseDays|v]\n[Law.GetCheckpointTotalDaysBreakdown]"
-
+ 
  LAW_NEXT_CHECKPOINT_OUTCOME_CHANCES_DESC: "$NEXT_CHECKPOINT$\n$TAB$$OUTCOME_SUCCESS$\n$TAB$$OUTCOME_ADVANCE$\n$TAB$$OUTCOME_DEBATE$\n$TAB$$OUTCOME_STALL$"
  LAW_NEXT_CHECKPOINT_OUTCOME_CHANCES_DESC_NO_DATE: "$NEXT_CHECKPOINT_NO_DATE$\n$TAB$$OUTCOME_SUCCESS$\n$TAB$$OUTCOME_ADVANCE$\n$TAB$$OUTCOME_DEBATE$\n$TAB$$OUTCOME_STALL$"
  LAW_NEXT_CHECKPOINT_OUTCOME_CHANCES_DESC_NO_NESTING: "$NEXT_CHECKPOINT_NO_NESTING$\n$TAB$$OUTCOME_SUCCESS$\n$TAB$$OUTCOME_ADVANCE$\n$TAB$$OUTCOME_DEBATE$\n$TAB$$OUTCOME_STALL$"

@@ -493,7 +493,6 @@
  war_goal_liberate_country_type_desc:0 "Force a country to grant independence to another nation."
  war_goal_liberate_country_desc:1 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to release the country of [WAR_GOAL.GetCountryCreation.GetName].\n\nThe following [Concept('concept_state', '$concept_states$')] will be liberated:\n[WAR_GOAL.GetCountryCreation.ListReleasableStates( WAR_GOAL.GetTarget )]"
  war_goal_liberate_country: "Звільнення держави [WAR_GOAL.GetCountryCreation.GetName]"
- war_goal_liberate_country_desc:0 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to release the country of [WAR_GOAL.GetCountryCreation.GetName]."
  war_goal_liberate_country_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to release the country of [WAR_GOAL.GetCountryCreation.GetName]."
   
  war_goal_force_recognition_type_name: "Примусове визнання"

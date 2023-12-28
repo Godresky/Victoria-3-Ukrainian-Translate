@@ -156,7 +156,6 @@
  concept_trade_routes_dat: "Торговим торам"
  concept_trade_routes_ins: "Торговими торами"
  concept_trade_routes_acc: "Торгові тори"
- concept_trade_routes_ins: "Торговими торами"
  concept_trade_route_desc:4 "$concept_trade_routes$ $concept_buy_order_short$ [Concept('concept_good', '$concept_goods$')] on one [concept_market], transport it to another using [concept_convoys] (or overland, if the $concept_markets$ are adjacent), and $concept_sell_order_short$ the $concept_goods$ there in order to make [concept_revenue] (from which [concept_tariffs] are subtracted) for the [SelectLocalization(GetPlayer.IsValid,'concept_trade_route_desc_added','Trade Center')] managing it. In the process it creates [Concept('concept_buy_orders','$concept_buy_order_short$')] and [concept_sell_orders] on the two $concept_markets$, making it more expensive in one and less in the other. The volume of $concept_goods$ moved will independently scale up and down to meet the $concept_market$ conditions in both, employing more or less [concept_workforce] to match. Each $concept_country$ can support a certain number of free $concept_trade_routes$, after which additional routes cost [concept_bureaucracy] to maintain."
  concept_trade_route_desc_added:0 "[GetBuildingType('building_trade_center').GetName]"
 
@@ -623,7 +622,6 @@
  concept_laws_acc: "Закони"
  concept_laws_dat: "Законам"
  concept_laws_ins: "Законами"
- concept_law_desc: "$concept_laws$ встановлють основні правила функціонування та управління вашої [Concept('concept_country','$concept_country_gen$')|l]. Певні закони роблять доступними [Concept('concept_institution', '$concept_institutions_acc$')|l], які здійснюватимуть подальший контроль. Для того, щоб закон міг бути [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted_adj$им')|l], його повинна [Concept('concept_endorse_oppose','підтримати')|l] принаймні одна [Concept('concept_interest_group', '$concept_interest_group$')|l] [concept_in_government|l] або сучасний [Concept('concept_political_movement', '$concept_political_movement$')|l]."
  concept_law_desc:4 "$concept_laws$ sets the ground rules for how your [concept_country] operates and is governed. Certain $concept_laws$ enable [Concept('concept_institution', '$concept_institutions$')] that provide further control. $concept_enactment_of_laws_potential$"
 
  concept_enactment_setback: "Невдача в ухвалені"

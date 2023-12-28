@@ -968,7 +968,6 @@
  temporary_tax_cut_graduated: "$temporary_tax_cut_land_based$"
  temporary_tax_cut_per_capita: "$temporary_tax_cut_land_based$"
  unpatriotic_movement: "Непатріотичний рух"
- je_schleswig_holstein_question_state_ownership_desc: "Володієте [Concept('concept_state', '$concept_state_ins$')|l] у [Concept('concept_state_region', '$concept_state_region_loc$')|l] $STATE_SCHLESWIG_HOLSTEIN$, а інші не німецькі [Concept('concept_country', '$concept_country$')|l] не мають там володінь."
  je_schleswig_holstein_question_state_ownership_desc: "[GetPlayer.GetName] контролює частину [Concept('concept_state_region', '$concept_state_region_gen$')|l] $STATE_SCHLESWIG_HOLSTEIN$, і немає не німецьких [Concept('concept_country', '$concept_country_gen$')|l], які б володіли або контролювали частину [Concept('concept_state', '$concept_state_gen$')|l]"
  je_german_unification_complete_trigger_desc: "Ми утворили Німеччину"
  schleswig_holstein_question_solver: "Вирішене питання Шлезвіґ-Гольштайну"
