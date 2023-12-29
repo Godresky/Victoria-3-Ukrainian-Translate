@@ -48,13 +48,15 @@
 
 [h1]Примітки.[/h1]
 Робота над перекладом все ще йде, тому можна часто зустріти англійський текст.
-З перекладом допомагали: [url=https://t.me/HeartsofUkraine4]пан Дмитро[/url], пані Меліса, пан Марк Хан (remark644@gmail.com), пан Андріян, пан _rlly_, [url=https://steamcommunity.com/id/leton_ostislavic]пан Letōn[/url] (дяка за шрифти), пан twentysixz, Дружня спільнота та Греко-католицька церква.
+З перекладом допомагали: пан Дмитро, пані Меліса, пан Марк Хан (remark644@gmail.com), пан Андріян, пан _rlly_, [url=https://steamcommunity.com/id/leton_ostislavic]пан Letōn[/url] (дяка за шрифти), пан twentysixz, дружня спільнота та Греко-католицька церква.
  
+А також щира подяка пану [url=https://steamcommunity.com/id/Rostik18/]Rostik18UA[/url] за оновлення перекладу до нової версії.
+
 Корисне:
 [list]
-[*]Підтримувана версія гри: [b]1.5.9[/b]
+[*]Підтримувана версія гри: [b]1.5.12[/b]
 [*][url=https://github.com/Godresky/Victoria-3-Ukrainian-Translate]Поклик на Ґітгаб[/url]
-[*][url=https://drive.google.com/drive/folders/186_K4LmKJh6JLijl9xXBqJsZbesNsF_c?usp=sharing]Поклик на Ґуґл диск[/url]
+[*][url=https://drive.google.com/drive/folders/186_K4LmKJh6JLijl9xXBqJsZbesNsF_c?usp=sharing]Поклик на Ґуґл-диск[/url]
 [*][url=https://discord.gg/zeMqBmzCzA]Дискорд-сервер по Вікторії 3[/url]
 [*][url=https://t.me/by_godresky]Мій Тґ канал[/url]
 [*][url=https://send.monobank.ua/jar/7H5RNWs4kw]Сказати "дякую" розробникам[/url]

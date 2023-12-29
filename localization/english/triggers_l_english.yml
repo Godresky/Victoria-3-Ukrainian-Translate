@@ -1303,6 +1303,10 @@
  
  TRIGGER_MARKET_GOODS_SELL_ORDERS:0 "Sell orders for [GOODS.GetName] in [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_MARKET_GOODS_SELL_ORDERS_NOT:1 "Sell orders for [GOODS.GetName] in [MARKET.GetName] #bold not #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_MARKET_GOODS_SELL_ORDERS_FIRST:0 "[concept_sell_orders] for [GOODS.GetName] in [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_MARKET_GOODS_SELL_ORDERS_FIRST_NOT:0 "[concept_sell_orders] for [GOODS.GetName] in [MARKET.GetName] #bold not #! $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_MARKET_GOODS_SELL_ORDERS_THIRD:0 "[concept_sell_orders] for [GOODS.GetName] in [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_MARKET_GOODS_SELL_ORDERS_THIRD_NOT:0 "[concept_sell_orders] for [GOODS.GetName] in [MARKET.GetName] #bold not #! $COMPARATOR$ #variable $NUM$#!"
  
  TRIGGER_MARKET_GOODS_CONSUMPTION:0 "Consumption for [GOODS.GetName] in [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_MARKET_GOODS_CONSUMPTION_NOT:1 "Consumption for [GOODS.GetName] in [MARKET.GetName] #bold not #!$COMPARATOR$ #variable $NUM$#!"
@@ -3181,6 +3185,11 @@ TRIGGER_HAS_CULTURAL_COMMUNITY_THIRD:0 "#todo There is a [CULTURE.GetName] cultu
 TRIGGER_HAS_CULTURAL_COMMUNITY_THIRD_NOT:0 "#todo There is #b not#! a [CULTURE.GetName] cultural community in [STATE.GetName]#!"
 TRIGGER_CULTURE_HAS_COMMUNITY_IN_STATE:0 "#todo Has a cultural community in [STATE.GetName]#!"
 TRIGGER_CULTURE_HAS_COMMUNITY_IN_STATE_NOT:0 "#todo Does #b not#! have a cultural community in [STATE.GetName]#!"
+
+ TRIGGER_IS_NAVAL_INVASION_STALLED_DUE_TO_ORDERS: "[concept_naval_invasion] is stalled due to unsuitable [concept_admiral] [Concept('concept_order','$concept_orders$')]"
+ TRIGGER_IS_NAVAL_INVASION_STALLED_DUE_TO_ORDERS_NOT: "[concept_naval_invasion] is #b not#! stalled due to unsuitable [concept_admiral] [Concept('concept_order','$concept_orders$')]"
+ TRIGGER_IS_NAVAL_INVASION_STALLED_DUE_TO_ORDERS_THIRD: "[NAVAL_INVASION.GetName] is stalled due to unsuitable [concept_admiral] [Concept('concept_order','$concept_orders$')]"
+ TRIGGER_IS_NAVAL_INVASION_STALLED_DUE_TO_ORDERS_THIRD_NOT: "[NAVAL_INVASION.GetName] is #b not#! stalled due to unsuitable [concept_admiral] [Concept('concept_order','$concept_orders$')]"
 
  TRIGGER_ANY_COMPANY:0 "Any [concept_company]:"
  TRIGGER_ANY_COMPANY_ALL:0 "All [Concept('concept_company','$concept_companies$')]:"

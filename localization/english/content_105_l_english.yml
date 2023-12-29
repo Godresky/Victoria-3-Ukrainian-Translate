@@ -1016,8 +1016,9 @@
   # Warlord China
  je_warlord_china: "Крихка єдність"
  je_warlord_china_reason: "Різні місцеві військові сили всередині [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.GetRootScope.GetCountry.GetName] можуть розірвати країну на частини, якщо тільки дати їм таку можливість."
- je_warlord_china_goal: "Велика кількість чинників руйнування [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.GetRootScope.GetCountry.GetName]"
- warlord_china_criteria: "Кожна з цих дій збільшить імовірність розриву [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.GetRootScope.GetCountry.GetName] на #red 20%#!:\n- Поразка у #BOLD опіюмних війнах#!\n- Поразка у зупинені появи #BOLD Небесного Царства#!\n- Поразка у знищені #BOLD Небесного Царства#!\n- Поразка у #BOLD Боксерському постанні#!\n- Потрапляння у довги та взяття будь-яких [Concept('concept_loans', '$concept_loans_gen$')|l]\n- Перебування у [Concept('concept_civil_war', '$concept_civil_war_loc$')|l]\n- Перетворення на [Concept('concept_subject', '$concept_subject_gen$')|l] іншої країни\n- Скасування закону «[SCOPE.sLaw('monarchy_scope').GetName]»\n\nКожна з цих дій зменшить імовірність розриву [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.GetRootScope.GetCountry.GetName] на #green -20%#!:\n- Перемога у #BOLD опіюмних війнах#!\n- Припинення стану [Concept('concept_unrecognized_power', '$concept_unrecognized_power_gen$')|l]\n- Завершення [Concept('concept_journal_entry', '$concept_journal_entry_gen$')|l] #BOLD «Викорінення монархізму»#!"
+ je_warlord_china_special_tooltip_advance: "The following conditions will #bold advance#! the #bold Progress Bar#!:\n• Losing the #BOLD Opium Wars#!\n• Failing to stop the appearance of the #BOLD Heavenly Kingdom#!\n• Failing to retake the #BOLD Heavenly Kingdom#!\n• Failing the #BOLD Boxer Rebellion#!\n• Going into debt and taking any [concept_loans]\n• Having a [concept_civil_war]\n• Becoming a [concept_subject] under another country\n• Abolishing the [GetLawType('law_monarchy').GetName]"
+ je_warlord_china_special_tooltip_deplete: "The following conditions will #bold deplete#! the #bold Progress Bar#!:\n• Winning the #BOLD Opium Wars#!\n• Ceasing to be an [concept_unrecognized_power]\n• Finishing the #BOLD Stamp Out Monarchism#! [concept_journal_entry]"
+ je_china_failure_tt: "The #bold Progress Bar#! has reached #variable 100%#!"
  warlord_china_explosion_point_add_name: "Збільшення імовірности розриву"
  warlord_china_explosion_point_add_desc: "#BOLD Крихка єдність#! держави [SCOPE.GetRootScope.GetCountry.GetName] була ослаблена."
  warlord_china_explosion_point_add_tooltip: "#header $warlord_china_explosion_point_name$#!\n$TOOLTIP_DELIMITER$\n$warlord_china_explosion_point_desc$"
@@ -1268,6 +1269,5 @@
  slavery_law_events.7.b: "Ми не можемо забути винуватців цього злочину."
 
  modifier_slavery_forgotten: "Виправдані за рабовласництво"
- modifier_slavery_whitewashing: "Виправдання рабовласників
-"
+ modifier_slavery_whitewashing: "Виправдання рабовласників"
  modifier_slavery_forgotten_bad: "Спадщина рабства"

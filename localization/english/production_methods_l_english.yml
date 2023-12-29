@@ -111,22 +111,18 @@ pm_disabled_steam_power: "Без парової потужності"
  pmg_base_building_textile_mills: "Обладнання"
  pm_handsewn_clothes: "Ручна робота"
  pm_dye_workshops: "Фарбні майстерні"
- pm_sewing_machines: "Швейні машинки"
- pm_electric_sewing_machines: "Електричні машинки"
 
  pmg_luxury_building_textile_mills: "Розкішне виробництво"
  pm_no_luxury_clothes: "Нерозкішний одяг"
- pm_craftsman_sewing: "Швейні майстри"
+ pm_luxury_clothes:0 "Luxury Clothing Production"
  pm_elastics: "Пружний одяг"
-
- pmg_automation_building_textile_mills: "Тип ткацтва"
- pm_traditional_looms: "Традиційне ткацтво"
- pm_mechanized_looms: "Механізоване ткацтво"
- pm_automatic_power_looms: "Автоматичне ткацтво"
+ pm_disabled_elastics:0 "No Elastics"
+ pm_masticators:0 "Masticators"
+ pm_rubber_bands:0 "Rubber Bands"
 
  pm_cotton_gin: "Бавовноочисники"
+ pm_disabled_gin: "Без бавовноочисників"
  pm_system_gin: "Система бавовноочистки"
- #pm_disabled_gin: "Без бавовноочисників"
  #pm_disabled_elastics: "Непружні"
  #pm_masticators: "Мастикатори"
  #pm_rubber_bands: "Ризиночки"
@@ -143,7 +139,6 @@ pm_disabled_steam_power: "Без парової потужності"
  pm_luxury_furniture: "Розкішні меблі"
  pm_precision_tools: "Точні знадоби"
 
- pmg_automation_building_furniture_manufacturies: "Самочинність"
  pm_watertube_boiler_building_furniture_manufacturies: "Водотрубні котли"
  pm_rotary_valve_engine_building_furniture_manufacturies: "Роторні рушії"
 
@@ -156,7 +151,6 @@ pm_disabled_steam_power: "Без парової потужності"
 # Glassworks
  pmg_base_building_glassworks: "Тип скла"
  pm_forest_glass: "Доморобницьке скло"
- pm_leaded_glass: "Свинцеве скло"
  pm_crystal_glass: "Кришталеве скло"
  pm_houseware_plastics: "Посуд з пластику"
 
@@ -167,7 +161,6 @@ pm_disabled_steam_power: "Без парової потужності"
 
  
  pmg_glassblowing: "Масове виробництво"
- pm_manual_glassblowing: "Ручне скловидування"
  pm_automatic_bottle_blowers: "Самоччине скловидування"
  pm_disabled_glassblowing: "Без скловидування"
  
@@ -178,7 +171,6 @@ pm_disabled_steam_power: "Без парової потужності"
  pm_steel: "Крицеві знадоби"
  pm_rubber_grips:0 "Machined Steel Tools"
 
- pmg_automation_building_tooling_workshops: "Автоматізація"
  pm_watertube_boiler_building_tooling_workshops: "Водотрубний котел"
  pm_rotary_valve_engine_building_tooling_workshops: "Роторний клапанний рушій"
  pm_assembly_lines_building_tooling_workshops: "Складальні лінії"
@@ -194,21 +186,17 @@ pm_disabled_steam_power: "Без парової потужності"
  pm_bolt_action_rifles: "Кріси зі засувом"
 
  pmg_foundries: "Моделя гармат"
- pm_no_artillery_production: "Стрілецька зброя"
  pm_cannons: "Гармата"
  pm_smoothbores: "Гладкоствольна гармата"
  pm_breech_loaders: "Казенна гармата"
  pm_recoiled_barrels:0 "Recoil Mechanisms"
 
- pm_artillery_production: "Виробництво гарматні"
-  
 # Paper Mills
  pmg_base_building_paper_mills: "$pm_base$"
  pm_pulp_pressing: "Пресування клітковини"
  pm_sulfite_pulping: "Сірчана клітковина"
  pm_bleached_paper: "Відбілювання паперу"
  
- pmg_automation_building_paper_mills: "Самочинність"
  pm_watertube_boiler_building_paper_mills: "Водотрубні котли"
  pm_rotary_valve_engine_building_paper_mills: "Роторні рушії"
 
@@ -224,7 +212,6 @@ pm_disabled_steam_power: "Без парової потужності"
  pm_open_hearth_process: "Мартенівський процес"
  pm_electric_arc_process: "Електродуговий процес"
   
- pmg_automation_building_steel_mills: "Самочинність"
  pm_watertube_boiler_building_steel_mills: "Водотрубний котел"
  pm_rotary_valve_engine_building_steel_mills: "Роторний клапанний рушій"
 
@@ -246,11 +233,8 @@ pm_disabled_steam_power: "Без парової потужності"
  pm_electric_engines: "Електричні рушії"
  pm_diesel_engines: "Дизельні рушії"
 
- pmg_automobile_production: "Виробництво"
  pm_automobiles_disabled: "Виробництво рушіїв"
- pm_automobile_production: "Виробництво автомобілів"
 
- pmg_automation_building_motor_industry: "Самочинність"
  pm_watertube_boiler_building_motor_industry: "Водотрубний котел"
  pm_rotary_valve_engine_building_motor_industry: "Роторний клапанний рушій"
  pm_assembly_lines_building_motor_industry: "Складальні лінії"
@@ -551,50 +535,6 @@ pm_steam_rail_transport: "Залізниця"
  pm_jeune_ecole: "Молода школа"
  pm_sea_lane_strategies: "Стратегія морської доріжки"
  pm_battlefleet_tactics: "Тактика бойового флоту"
- 
-# Agriculture Buildings
- pm_primary: "Первинний"
- pmg_secondary_building_rye_farm: "Вторинний"
- pmg_secondary_building_wheat_farm: "Вторинний"
- pmg_secondary_building_rice_farm: "Вторинний"
- pmg_secondary_building_maize_farm: "Вторинний"
- pmg_secondary_building_millet_farm: "Вторинний"
- pm_no_secondary: "Однокультурність"
- pm_potatoes: "Картопля"
- pm_vineyards: "Виноградники"
- pm_vineyards_building_maize_farm: "Виноградники"
- pm_apple_orchards: "Яблуневі сади"
- pm_citrus_orchards: "Цитрусові сади"
- pm_fig_orchards: "Інжирні сади"
- pm_fig_orchards_building_rice_farm: "Інжирні сади"
- pm_mulberry_groves: "Тутові гаї"
-
- pmg_automation: "Самочинність"
- pmg_automation_building_food_industry: "Самочинність"
- 
- pm_civilian_priority: "Цивільний пріоритет"
- pm_military_priority: "Військовий пріоритет"
-
-# Chemical Plants
- pm_leblanc_process: "Процес Леблана"
- pm_no_explosives_production: "Пріорітет на добрива"
- pm_ammonia-soda_process: "Сопушецько-содовий процес"
- pm_vacuum_evaporation: "Вакуумне випаровування"
- pm_brine_electrolysis: "Електроліз розсолу"
- pmg_fertilizer_production: "Виробництво добрив"
- pm_no_artificial_fertilizers: "Без штучних добрив"
- pm_artificial_fertilizers: "Штучні добрива"
- pm_improved_fertilizer: "Покращені добрива"
- pm_nitrogen_fixation: "Процес фіксації азоту"
- pm_dyes_production: "Виробництво барвників"
- pm_no_synthetic_dyes: "Без синтетичних барвників"
- pmg_synthetic_dyes: "Синтетичні барвники"
- pm_silk_production: "Виробництво шовку"
- pm_no_artificial_fibers: "Пріоритет на барвники"
- pm_rayon: "Штучний шовк"
-
-# Foundries
- pm_steamworks: "Парова робота"
 
 # Unsorted
  pm_publishing: "Видавнича справа"

@@ -38,7 +38,7 @@
  rule_formable_nations: "Утворення націй"
  setting_all_formable_nations: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_all_formable_nations_desc Усі#!#!"
  setting_all_formable_nations_desc: "Дозволено утворювати неправдоподібні та фантастичні нації"
- setting_plausible_releasable_nations: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_plausible_releasable_nations_desc Історично правдоподібне#!#!"
+ setting_plausible_formable_nations:1 "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_plausible_formable_nations_desc Historically Plausible#!#!"
  setting_plausible_formable_nations_desc: "Дозволено утворювати лише історично правдоподібні нації"
 
  rule_releasable_nations: "Звільнення націй"

@@ -1471,6 +1471,7 @@
   
   je_the_paris_commune_communards:0 "The Paris Commune"
   je_the_paris_commune_communards_reason:0 "The proletariat of Paris have risen and occupied the capital, declaring a rival government over [SCOPE.sCountry('france_scope').GetName].\n\nAs long as our [SCOPE.sCountry('commune_scope').GetName] continues to exist, it represents a drastic threat to the bourgeois government in Versailles. If the progress of the Commune reaches #bold 100#!, our forces shall be able to carry out a march on Versailles, ending our rival government entirely, but if its progress reaches #bold 0#!, the Versailles government shall invade Paris, ending our government entirely.\n\n#italic The effects of this journal entry will contribute @money! #variable [Country.MakeScope.Var('PRC_money_transfer').GetValue|+D]#! to our treasury every week.#!"
+
   je_paris_commune_drift_special_tooltip:0 "This rate is determined by the following:\n#variable [Country.MakeScope.Var('PRC_recognition_level').GetValue]#! from foreign recognition of the #bold Paris Commune#!\n#variable [GetGlobalVariable('paris_commune_progress_drift').GetValue]#! from events and other effects"
 
   je_the_paris_commune_france_complete:0 "The progress of the #bold Paris Commune#! has been reduced to #bold 0#!, allowing for the suppression of the uprising"
@@ -1491,6 +1492,7 @@
   cooldown_three_months_tt:0 "The #bold Paris Commune#! decisions will become available again in #bold three months#!"
 
   fra_paris_commune_drain_proceeds:0 "The Bank of France"
+
   pc_tick_retreat:0 "#bold retreating#!"
   pc_tick_advance:0 "#bold advancing#!"
 
@@ -2254,6 +2256,14 @@
   notification_paris_commune_automation_pulse_8_a2_desc:0 "Whilst withdrawing from Paris, soldiers loyal to the Versailles government have made an attempt to seize the [SCOPE.sCountry('paris_commune_nation_scope').GetName]'s artillery stockpile. The raid was repelled by the National Guard, prompting defections to the Commune's forces.\n\nThe progress of the #bold Paris Commune#! has #bold increased#! by #variable 10#!."
   notification_paris_commune_automation_pulse_8_a2_tooltip:0 "#header $notification_paris_commune_automation_pulse_8_a2_name$#!\n$TOOLTIP_DELIMITER$\n$notification_paris_commune_automation_pulse_8_a2_desc$"
 
+	notification_paris_commune_event_8_a1_name: "Successful Seizure of Cannon Stocks"
+	notification_paris_commune_event_8_a1_desc: ""Whilst withdrawing from Paris, soldiers loyal to our government have seized or destroyed a significant percentage of the [SCOPE.sCountry('paris_commune_nation_scope').GetName]'s cannon stockpile."
+	notification_paris_commune_event_8_a1_tooltip: "#header $notification_paris_commune_event_8_a1_name$#!\n$TOOLTIP_DELIMITER$\n$notification_paris_commune_event_8_a1_desc$"
+
+	notification_paris_commune_event_8_a2_name: "Raid on Cannon Stocks Fails"
+	notification_paris_commune_event_8_a2_desc: "Whilst withdrawing from Paris, soldiers loyal to our government have made an attempt to seize the [SCOPE.sCountry('paris_commune_nation_scope').GetName]'s artillery stockpile. The raid was repelled by the National Guard, prompting defections to the enemy forces."
+	notification_paris_commune_event_8_a2_tooltip: "#header $notification_paris_commune_event_8_a2_name$#!\n$TOOLTIP_DELIMITER$\n$notification_paris_commune_event_8_a2_desc$"
+
   notification_paris_commune_automation_pulse_8_b_name:0 "Versailles Government Withdraws Forces from Paris"
   notification_paris_commune_automation_pulse_8_b_desc:0 "Sensing an untenable position, the Versailles government has withdrawn all forces from the borders of the [SCOPE.sCountry('paris_commune_nation_scope').GetName]. The retreat of the government forces for the time being has been hailed as a great victory for the National Guard.\n\nThe progress of the #bold Paris Commune#! has #bold increased#! by #variable 5#!."
   notification_paris_commune_automation_pulse_8_b_tooltip:0 "#header $notification_paris_commune_automation_pulse_8_b_name$#!\n$TOOLTIP_DELIMITER$\n$notification_paris_commune_automation_pulse_8_b_desc$"
@@ -2281,6 +2291,14 @@
   notification_paris_commune_automation_pulse_10_a1_name:0 "Fortress Recaptured from Versailles Government"
   notification_paris_commune_automation_pulse_10_a1_desc:0 "Following the withdrawal of a National Guard unit from a fortified position and its seizure by the Versailles government, [SCOPE.sCountry('paris_commune_nation_scope').GetAdjective] reinforcements have managed to retake the position. This triumph has emboldened hawkish elements within the Commune.\n\nThe progress of the #bold Paris Commune#! has #bold increased#! by #variable 10#!."
   notification_paris_commune_automation_pulse_10_a1_tooltip:0 "#header $notification_paris_commune_automation_pulse_10_a1_name$#!\n$TOOLTIP_DELIMITER$\n$notification_paris_commune_automation_pulse_10_a1_desc$"
+
+	notification_paris_commune_event_10_a1_name: "Communard Reinforcements Retake Fortress"
+	notification_paris_commune_event_10_a1_desc: "Following the withdrawal of besieged [SCOPE.sCountry('paris_commune_nation_scope').GetAdjective] forces from a fortified position, [SCOPE.sCountry('paris_commune_nation_scope').GetAdjectiveNoFormatting] reinforcements were able to retake the position from our troops."
+	notification_paris_commune_event_10_a1_tooltip: "#header $notification_paris_commune_event_10_a1_name$#!\n$TOOLTIP_DELIMITER$\n$notification_paris_commune_event_10_a1_desc$"
+
+	notification_paris_commune_event_10_a2_name: "Loyalist Forces Capture Fortress"
+	notification_paris_commune_event_10_a2_desc: "Following the withdrawal of besieged [SCOPE.sCountry('paris_commune_nation_scope').GetAdjective] forces from a fortified position, our forces have been able to secure another area on the border of Paris."
+	notification_paris_commune_event_10_a2_tooltip: "#header $notification_paris_commune_event_10_a2_name$#!\n$TOOLTIP_DELIMITER$\n$notification_paris_commune_event_10_a2_desc$"
 
   notification_paris_commune_automation_pulse_10_a2_name:0 "Versailles Government Permits Retreat from Fortress"
   notification_paris_commune_automation_pulse_10_a2_desc:0 "Clashes surrounding a fortified position held by [SCOPE.sCountry('paris_commune_nation_scope').GetAdjective] forces have led to the National Guard withdrawing to fight another day. This has been interpreted as an olive branch from Versailles by reformist elements within the Commune.\n\nThe progress of the #bold Paris Commune#! has #bold increased#! by #variable 5#!."
@@ -2366,6 +2384,8 @@
   paris_commune.5.a:0 "The Paris "government" has no leg to stand upon."
   paris_commune.5.b:0 "[SCOPE.sCountry('france_scope').GetNameNoFormatting] could use a change in government."
   paris_commune.5.c:0 "We have no interest in this."
+
+  will_improve_commune_progress_tt: "The #bold Paris Commune#! will be advantaged in its struggle against [SCOPE.sCountry('france_scope').GetName]"
 
   notification_foreign_country_supports_commune_name:0 "[SCOPE.sCountry('recogniser_scope').GetName] Recognizes Paris Commune"
   notification_foreign_country_supports_commune_desc:0 "The government of [SCOPE.sCountry('recogniser_scope').GetName] has recognized the government of the [SCOPE.sCountry('paris_commune_scope').GetName] as the legitimate government of all of France, citing alleged failures of the Versailles Government to properly serve its people."

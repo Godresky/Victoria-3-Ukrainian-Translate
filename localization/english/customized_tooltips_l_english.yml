@@ -39,6 +39,7 @@
  DATA_MOBILIZATION_OPTION_NAME_FORMAT:0 "#tooltippable_name #tooltip:$TAG$,DATA_MOBILIZATION_OPTION_NAME_TOOLTIP,MobilizationOptionTooltip $NAME$#!#!"
  DATA_MOBILIZATION_OPTION_GROUP_NAME_FORMAT:0 "#tooltippable_name #tooltip:$TAG$,MOBILIZATION_OPTION_GROUP_TOOLTIP,MobilizationOptionGroupTooltip $NAME$#!#!"
  DATA_MILITARY_FORMATION_NAME_FORMAT:0 "#tooltippable_name #tooltip:$TAG$,DATA_MILITARY_FORMATION,MilitaryFormationTooltip $NAME$#!#!"
+ DATA_COMMANDER_ORDER_TYPE_NAME_FORMAT:0 "#tooltippable_name #tooltip:$TAG$,DATA_COMMANDER_ORDER_TYPE_NAME_TOOLTIP,CommanderOrderTypeTooltip $NAME$#!#!"
 
  DATA_GOODS_STATE_PRICE_WITH_TOOLTIP_FORMAT:0 "#tooltippable #tooltip:$TAG$,DATA_GOODS_STATE_PRICE_BREAKDOWN,GraphTooltipGoodsPrice @money![Goods.GetStatePrice|1]#!#! [Goods.GetCompareIconAgainstBasePriceNoFormatting( Goods.GetStatePrice )]"
  DATA_GOODS_MARKET_PRICE_WITH_TOOLTIP_FORMAT:0 "#tooltippable #tooltip:$TAG$,DATA_GOODS_MARKET_PRICE_BREAKDOWN,GraphTooltipGoodsPrice @money![Goods.GetMarketPrice|1]#!#! [Goods.GetCompareIconAgainstBasePriceNoFormatting( Goods.GetMarketPrice )]"
@@ -246,6 +247,7 @@
  DATA_COMBAT_UNIT_TYPE_NAME_TOOLTIP:0 "[ConcatIfNeitherEmpty(CombatUnitType.GetRequirements,'\n\n')][ConcatIfNeitherEmpty(ConcatIfNeitherEmpty('$DATA_COMBAT_UNIT_TYPE_NAME_TOOLTIP_BATTLE_MODIFIER_TITLE$',CombatUnitType.GetBattleModifier.GetDesc),'\n\n')][ConcatIfNeitherEmpty(ConcatIfNeitherEmpty('$DATA_COMBAT_UNIT_TYPE_NAME_TOOLTIP_UPKEEP_MODIFIER_TITLE$',CombatUnitType.GetUpkeepModifier.GetDesc),'\n\n')][CombatUnitType.GetDesc]"
  DATA_COMBAT_UNIT_TYPE_NAME_TOOLTIP_BATTLE_MODIFIER_TITLE:0 "#title Base Values:#!\n"
  DATA_COMBAT_UNIT_TYPE_NAME_TOOLTIP_UPKEEP_MODIFIER_TITLE:0 "#title Upkeep per $concept_unit_short$:#!\n"
+ DATA_COMMANDER_ORDER_TYPE_NAME_TOOLTIP: "[CommanderOrderType.GetDesc][ConcatIfNeitherEmpty( '\n\n', CommanderOrderType.GetModifier.GetDesc )]"
 
  DATA_GOODS_MARKET_CONTEXT_BALANCE_LABEL: "([Market.GetName]) балянс"
  DATA_GOODS_MARKET_CONTEXT_PRICE_LABEL: "([Market.GetName]) ціна"

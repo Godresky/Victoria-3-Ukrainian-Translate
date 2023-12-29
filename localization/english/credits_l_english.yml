@@ -14,8 +14,7 @@
  TITLE_PROJECT_LEAD_QA_LEAD: "#credits_subheader QA голова#!"
 
  HEADER_PRODUCTION: "#credits_header РОЗРОБКА#!"
- TITLE_PRODUCER:0 "#credits_subheader Producer#!"
- TITLE_GAME_PRODUCER: "#credits_subheader Продюсер#!"
+ TITLE_PRODUCER:0 "#credits_subheader Продюсер#!"
  TITLE_ADDITIONAL_PRODUCER: "#credits_subheader Додатковий продюсер#!"
  
  HEADER_DESIGN: "#credits_header ДИЗАЙН#!"
@@ -44,7 +43,7 @@
  TITLE_VFX: "#credits_subheader Візуальні ефекти#!"
 
  HEADER_EXTERNAL_ART_PARTNERS:0 "#credits_header EXTERNAL ART PARTNERS#!"
- HEADER_FREELANCE_ART0: "#credits_header ФРІЛАНС-МИТЦІ#!"
+ HEADER_FREELANCE_ART:0 "#credits_header ФРІЛАНС-МИТЦІ#!"
  TITLE_LOADING_SCREEN_ILLUSTRATIONS: "#credits_subheader Світлини завантажувального екрану#!"
  TITLE_3D_ART: "#credits_subheader 3Д митець#!"
  TITLE_ILLUSTRATIONS: "#credits_subheader Світлини#!"

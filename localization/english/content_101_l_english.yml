@@ -215,7 +215,6 @@
  custom_stabbed:0 "stabbed hundreds of times, until they're almost unrecognizable."
 
  ACTIVE_LAWS_DESC: "Чинні закони вашої держави."
- Decentralized_Power: "Decentralized Power"
  decentralized_power: "[Concept('concept_decentralized_nation', '$concept_decentralized_power$')]"
 
  natural_disaster_events.1.t: "Землетрус у [Concept('concept_state','$concept_state_loc$')|l] [SCOPE.sState('earthquake_state').GetName]"

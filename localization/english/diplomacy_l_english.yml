@@ -47,7 +47,12 @@
  
  DIPLO_PLAY_GREAT_POWER_TRIGGER: "Ми повинні бути [Concept('concept_great_power','$concept_great_power_ins$')|l], щоб почати цю [Concept('concept_diplomatic_play','$concept_diplomatic_play_acc$')|l]"
  DIPLO_PLAY_OUTRAGED_TRIGGER: "Їхня [concept_infamy|l] повинна бути: $infamy_pariah$"
- 
+
+ DIPLOMATIC_PACT_BREAK_DURATION_EXPIRED: "Duration of the enforced [concept_diplomatic_pact] has expired"
+ DIPLOMATIC_PACT_BREAK_DECENTRALIZED: "One of the two [Concept('concept_country', '$concept_countries$')] is a [concept_decentralized_nation]"
+ DIPLOMATIC_PACT_BREAK_NON_AUTONOMOUS_SUBJECT: "One of the two [Concept('concept_country', '$concept_countries$')] is a [concept_subject] without diplomatic autonomy"
+ DIPLOMATIC_PACT_BREAK_NOT_VALID_RIVALS: "[concept_rank] difference of the two [Concept('concept_country', '$concept_countries$')] does not allow for a [concept_rivalry]"
+
  DIPLO_ACTION_RELATIONS: "[concept_relations] між [Concept('concept_country', '$concept_countries_ins$')|l] [SCOPE.GetRootScope.GetCountry.GetName] та [SCOPE.sC('target_country').GetName]"
  DIPLO_ACTION_RELATIONS_CORDIAL: "$DIPLO_ACTION_RELATIONS$ - $relations_cordial_l$"
  DIPLO_ACTION_RELATIONS_CORDIAL_NOT: "$DIPLO_ACTION_RELATIONS$ не $relations_cordial_l$"
@@ -223,6 +228,7 @@
  DIPLOMATIC_ACCEPTANCE_IDEOLOGICAL_OPINION_NEGATIVE: "Ідеологічні розбіжності наших [Concept('concept_government','$concept_governments_gen$')|l]"
  DIPLOMATIC_ACCEPTANCE_ALLIED_TO_RIVALS: "Ми уклали [Concept('concept_alliance','$concept_alliances_acc$')|l] або [Concept('concept_defensive_pact','$concept_defensive_pacts_acc$')|l] з [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting|l]ими [Concept('concept_rivalry','$concept_rivals_ins$')|l]"
  DIPLOMATIC_ACCEPTANCE_ALLIED_TO_ALLIES: "Ми уклали [Concept('concept_alliance','$concept_alliances_acc$')|l] або [Concept('concept_defensive_pact','$concept_defensive_pacts_acc$')|l] з [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting|l]ими союзниками"
+ DIPLOMATIC_ACCEPTANCE_SHARED_RIVALS: "We have shared [Concept('concept_rivalry','$concept_rivals$')]"
  DIPLOMATIC_ACCEPTANCE_NUM_ALLIES: "Кількість [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting|l]их [Concept('concept_alliance','$concept_alliances_gen$')]"
  DIPLOMATIC_ACCEPTANCE_NUM_DEFENSIVE_PACTS: "Кількість [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting|l]их [Concept('concept_defensive_pact','$concept_defensive_pacts_gen$')|l]"
  DIPLOMATIC_ACCEPTANCE_DEFENSIVE_PACT: "Ми уклали [Concept('concept_defensive_pact','$concept_defensive_pact_acc$')|l]"
