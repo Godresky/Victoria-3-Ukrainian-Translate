@@ -21,7 +21,7 @@
 
 # Exile Interactions
  exile_character: "Вигнати незгодного"
- exile_character_info: "Якщо [Concept( 'concept_exile', 'Вигнати' )|l], [Character.GetFullName] покине країну [Character.GetCountry.GetName], і його зможуть найняти інші [Concept('concept_country', '$concept_countries_acc$')|l] як Concept('concept_agitator', '$concept_agitator_gen$')|l]"
+ exile_character_info: "Якщо [Concept( 'concept_exile', 'Вигнати' )|l], [Character.GetFullName] покине країну [Character.GetCountry.GetName], і його зможуть найняти інші [Concept('concept_country', '$concept_countries_acc$')|l] як [Concept('concept_agitator', '$concept_agitator_gen$')|l]"
  exile_dissident_tt: "[Character.GetFullName] буде відправлен[Select_CString(Character.IsFemale,'$CustomLoc_UA_vona_a$','$CustomLoc_UA_vin_yY$')|l] у вигнання"
  invite_exile: "Запросити вигнанця"
  invite_exile_start_join_movement_effect: "[SelectLocalization(Character.PredictLawToAgitate(GetPlayer.Self).GetPoliticalMovement.IsValid, 'invite_exile_join_movement', SelectLocalization(Character.PredictLawToAgitate(GetPlayer.Self).IsValid, 'invite_exile_start_movement', 'invite_exile_no_movement'))]"
