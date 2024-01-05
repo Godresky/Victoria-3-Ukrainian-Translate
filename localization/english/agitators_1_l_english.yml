@@ -313,7 +313,7 @@
   exiles_more_events.2.c: "Погляди [SCOPE.gsInterestGroup('interventionist_exile_ig').GetName] більше не збігаються з [SCOPE.sCharacter('interventionist_exile_scope').GetFullName]."
   exiles_more_events.2.c.tt: "[SCOPE.sCharacter('interventionist_exile_scope').GetFullName] та [SCOPE.sCharacter('interventionist_exile_ig_leader').GetFullName] не сходяться ідеологією."
   exiles_more_events.3.t: "Справа без повстанця"
-  exiles_more_events.3.d: "Хоча [SCOPE.sCharacter('the_loneliest_little_agitator').GetFullName] все ще бореться за свою справу, ніхто більше не слідує за [SCOPE.sCharacter('the_loneliest_little_agitator').GetHerHim]. Зневірившись, [SCOPE.sCharacter('the_loneliest_little_agitator').GetLastName] починає публічно заявляти, що може взагалі відмовитися від [SCOPE.sCharacter('the_loneliest_little_agitator').GetHerHis] діяльності."
+  exiles_more_events.3.d: "Хоча [SCOPE.sCharacter('the_loneliest_little_agitator').GetFullName] все ще бореться за свою справу, ніхто більше [SCOPE.sCharacter('the_loneliest_little_agitator').GetHerHim|l] не слухає. Зневірившись, [SCOPE.sCharacter('the_loneliest_little_agitator').GetLastName] починає публічно заявляти, що може взагалі відмовитися від своєї діяльності."
   exiles_more_events.3.f: "«Який сенс? Спікери — якщо вони є — виступають у порожніх залах для порожніх крісел. Немає натовпу, немає банерів. Якщо хтось взагалі звертає увагу, вони не розуміють нічого, що ми проповідуємо. Яка причина залишатися ми всі застрягли, нічого не роблячи»."
   exiles_more_events.3.a: "Можливо, [SCOPE.sCharacter('the_loneliest_little_agitator').GetFullName] зможе знайти зеленіші пасовища деінде."
   exiles_more_events.3.b: "Трохи досліджень та роздумів можуть оживити рух."
