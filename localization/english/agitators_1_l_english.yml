@@ -201,7 +201,7 @@
   revolution_pulse1_events.7.d: "[SCOPE.sCharacter('guglielmo_pepe').GetPrimaryRoleTitle] [SCOPE.sCharacter('guglielmo_pepe').GetLastName], партнер революційної [SCOPE.gsInterestGroup('guglielmo_pepe_ig').GetName], як відомо, має деякі сумніви щодо своїх переконань. Можна використати цю нерішучість на користь уряду."
   revolution_pulse1_events.7.f: "«Друзі! Я, не те, що я не хочу, щоб повстання відбулося, я стурбований, ви знаєте. Це... Я, е-е. Я в хорошому становищі, просто... о, що мені робити? Що мені робити?»"
   revolution_pulse1_events.7.a: "Натиснути на [SCOPE.sCharacter('guglielmo_pepe').GetPrimaryRoleTitle], щоб підтримати уряд."
-  revolution_pulse1_events.7.b: "[SCOPE.sCharacter('guglielmo_pepe').GetFullName] не можна довіряти. Заарештуйте [SCOPE.sCharacter('guglielmo_pepe').GetHerHim]!"
+  revolution_pulse1_events.7.b: "[SCOPE.sCharacter('guglielmo_pepe').GetFullName] не можна довіряти. Заарештуйте [SCOPE.sCharacter('guglielmo_pepe').GetHerHis|l]!"
   revolution_pulse1_events.8.t: "Моряки залишаються на березі"
   revolution_pulse1_events.8.d: "Моряки в [SCOPE.sState('coastal_navy_state').GetName] відмовилися виходити з порту. Розмах заколоту вимагає делікатного підходу до ситуації."
   revolution_pulse1_events.8.f: "«Це дуже просто. У нас є вимоги. Ми не пливемо, поки ці вимоги не будуть виконані»."
