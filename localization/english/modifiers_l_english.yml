@@ -222,7 +222,7 @@
  modifier_stockpile_navy_cap_mult_desc:0 "$modifier_stockpile_navy_cap_add_desc$"
  
  modifier_character_command_limit_combat_unit_regular_add: "Обмеження командира для постійних куренів"
- modifier_character_command_limit_combat_unit_regular_add_desc: "Кількість [Concept('concept_unit','$concept_units_gen$')], яким цей [concept_character|l] може командувати.\n\n$concept_command_limit_desc$"
+ modifier_character_command_limit_combat_unit_regular_add_desc: "Кількість [Concept('concept_unit','$concept_units_gen$')], якими цей [concept_character|l] може командувати.\n\n$concept_command_limit_desc$"
  modifier_character_command_limit_combat_unit_conscript_add: "Обмеження командира для призваних куренів"
  modifier_character_command_limit_combat_unit_conscript_add_desc: "$modifier_character_command_limit_combat_unit_regular_add_desc$"
  modifier_character_command_limit_combat_unit_flotilla_add: "Обмеження командира для флотилій"
@@ -232,7 +232,7 @@
  modifier_character_command_limit_add_desc:0 "$concept_command_limit_desc$"
 
  modifier_character_command_limit_mult: "Обмеження командира"
- modifier_character_command_limit_mult_desc: "Множник кількости підрозділів, якими цей [concept_character] може командувати."
+ modifier_character_command_limit_mult_desc: "Множник кількости частин, якими цей [concept_character|l] може командувати."
  modifier_character_command_budget_add_pre_fix:0 "@money!"
  modifier_building_production_mult:0 "Building Production"
  modifier_building_production_mult_desc:0 "Affects production output of all the goods produced in the building"

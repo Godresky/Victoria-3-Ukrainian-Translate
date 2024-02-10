@@ -275,7 +275,7 @@
   revolution_pulse1_events.18.a: "Зробіть догану [SCOPE.sCharacter('will_kill_for_peace_general').GetPrimaryRoleTitle] та відхиліть план."
   revolution_pulse1_events.18.b: "Ми повинні використовувати інструменти, які у нас є, щоб вирішити наявні проблеми."
   revolution_pulse1_events.18.c: "Можливо, [SCOPE.sCharacter('will_kill_for_peace_general').GetPrimaryRoleTitle] розгляне добріший план?"
-  revolution_pulse1_events.18.dd: "Груба сила, можливо, найкращий варіант."
+  revolution_pulse1_events.18.dd: "Груба сила, можливо, найкращий варіянт."
   our_general_is_disrespected: "Нашого генерала не поважають"
   revolution_pulse1_events.19.t: "Протистояння на вулиці"
   revolution_pulse1_events.19.d: "Війська в [SCOPE.sState('mob_gathering_state').GetName] повідомляють про все більше зіткнень із войовничими натовпами. Бойові дії, ймовірно, незабаром спалахнуть, навіть якщо нічого не буде наказано. Є лише два способи контролювати ситуацію: або відвести війська назад, або сказати їм вступити в бій."

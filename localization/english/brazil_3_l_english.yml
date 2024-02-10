@@ -62,7 +62,7 @@
   brz_brasil_brasileiro: "Бразильська Бразилія"
   brz_brasil_pra_mim: "Бразилія! Для мене!"
   je_south_american_national_identity: "Нова національна ідентичність"
-  je_south_american_national_identity_reason: "Хоча колись ми були частиною великого континууму, маючи спільний колоніальний уряд і спільне керівництво з нашими сусідами, ми значно розійшлися після того, як ми здобули незалежність. Настав час повністю прийняти нову ідентичність. Ми - [SCOPE.sCulture('new_national_culture').GetName]."
+  je_south_american_national_identity_reason: "Хоча колись ми були частиною великого континууму, маючи спільні осадницький уряд і керівництво з нашими сусідами, ми значно розійшлися після того, як ми здобули незалежність. Настав час повністю прийняти нову ідентичність. Ми - [SCOPE.sCulture('new_national_culture').GetName]."
   je_south_american_national_identity_integrate_a_state: "Promote National Identity"
   je_south_american_national_identity_integrate_a_state_desc: "Begins a campaign to push the integration of our new national culture across the nation, granting new [SCOPE.sCulture('new_national_culture').GetName] homelands in our [SCOPE.sCulture('old_national_culture').GetName] [Concept('concept_incorporated_state', '$concept_incorporated_states$')]."
   new_culture_has_25_percent_tt: "The population of this state is at least #variable 25%#! [SCOPE.sCulture('new_national_culture').GetName]"
