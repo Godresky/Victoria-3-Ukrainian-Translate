@@ -344,9 +344,10 @@
  concept_homelands: "Батьківщини"
  concept_homeland_desc:2 "A [Concept('concept_culture','$concept_culture_possessive$')] $concept_homelands$ consist of those [Concept('concept_state_region','$concept_state_regions$')] that [Concept('concept_pop', '$concept_pops$')] of that $concept_culture$ feel are historically or naturally their territory. $concept_pops$ are more prone to [Concept('concept_migration','$concept_migrate$')] to their $concept_homelands$ than other [Concept('concept_state','$concept_states$')], and $concept_pops$ who reside there will never consider [Concept('concept_assimilation','$concept_assimilating$')].\n\nLaunching a [concept_diplomatic_play] to conquer a $concept_state$ considered a $concept_homeland$ of one of your [concept_primary_cultures] is considered relatively legitimate, and will generate substantially less [concept_infamy] than usual."
 
- concept_mobilization_option:0 "Mobilization Option"
- concept_mobilization_option_short:0 "Option"
- concept_mobilization_options:0 "Mobilization Options"
+ concept_mobilization_option: "Опція збору"
+ concept_mobilization_option_dat: "Опції збору"
+ concept_mobilization_option_short: "Опція"
+ concept_mobilization_options: "Опції збору"
  concept_mobilization_option_desc:0 "An [concept_army] can be configured with any number of $concept_mobilization_options$ while in peacetime. Each $concept_mobilization_option_short$ applies a cost in [Concept('concept_good','$concept_goods$')] and an effect for all [Concept('concept_battalion','$concept_battalions$')] in the $concept_army$ while it is [Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')]"
 
  concept_mobilize_army: "Збір війська"
@@ -1034,6 +1035,7 @@
  concept_unit_short: "Частина"
  concept_units: "Військові частини"
  concept_units_gen: "Військових частин"
+ concept_units_acc: "Військові частини"
  concept_units_short: "Частини"
  concept_units_default: "Звичайні частини"
  concept_units_special: "Спеціяльні частини"
@@ -1043,20 +1045,21 @@
  concept_special_unit: "Спеціяльна частина"
  concept_special_units: "Спеціяльні частини"
  concept_special_units_acc: "Спеціяльні частини"
- concept_special_unit_desc:0 "These are [Concept('concept_unit','$concept_units$')] that are not #b [GetCombatUnitGroup('combat_unit_group_infantry').GetName]#! or #b [GetCombatUnitGroup('combat_unit_group_light_ship').GetName]#! which are considered [Concept('concept_default_unit','$concept_default_units$')].\n\n$concept_special_units$ for [Concept('concept_army','$concept_armies_gen$')|l]:\n$TAB$#b [GetCombatUnitGroup('combat_unit_group_artillery').GetName]#!\n$TAB$#b [GetCombatUnitGroup('combat_unit_group_cavalry').GetName]#!\n\n$concept_special_units$ for [Concept('concept_fleet','$concept_fleets$')]:\n$TAB$#b [GetCombatUnitGroup('combat_unit_group_capital_ship').GetName]#!\n$TAB$#b [GetCombatUnitGroup('combat_unit_group_support_ship').GetName]#!"
+ concept_special_unit_desc: "Це не [Concept('concept_unit','$concept_units_acc$')|l], такі як #b [GetCombatUnitGroup('combat_unit_group_infantry').GetName|l]#! або #b [GetCombatUnitGroup('combat_unit_group_light_ship').GetName|l]#!, що відносяться до [Concept('concept_default_unit','$concept_default_units_gen$')|l].\n\n$concept_special_units$ для [Concept('concept_army','$concept_army_gen$')|l]:\n$TAB$#b [GetCombatUnitGroup('combat_unit_group_artillery').GetName]#!\n$TAB$#b [GetCombatUnitGroup('combat_unit_group_cavalry').GetName]#!\n\n$concept_special_units$ для [Concept('concept_fleet','$concept_fleet_gen$')|l]:\n$TAB$#b [GetCombatUnitGroup('combat_unit_group_capital_ship').GetName]#!\n$TAB$#b [GetCombatUnitGroup('combat_unit_group_support_ship').GetName]#!"
 
  concept_default_unit: "Звичайна частина"
  concept_default_units: "Звичайні частини"
+ concept_default_units_gen: "Звичайних частин"
  concept_default_units_acc: "Звичайні частини"
  concept_default_unit_desc: "Це [Concept('concept_unit','$concept_units$')|l], такі як #b [GetCombatUnitGroup('combat_unit_group_infantry').GetName|l]#! для [Concept('concept_army','$concept_army_gen$')|l] або #b [GetCombatUnitGroup('combat_unit_group_light_ship').GetName|l]#! для [Concept('concept_fleet','$concept_fleet_gen$')|l]."
 
- concept_kill_rate: "Показник смертности"
- concept_kill_rate_ins: "Показником смертности"
+ concept_kill_rate: "Показник смертоносности"
+ concept_kill_rate_ins: "Показником смертоносности"
  concept_kill_rate_desc:0 "How effective a [concept_unit] is at ensuring their opponent's [concept_casualties] end up unable to come back to fight another day. Increases the ratio of [concept_casualties] that end up killed (instead of [concept_wounded]). $concept_kill_rate$ is countered by the enemy $concept_unit$'s [concept_recovery_rate]."
 
- concept_recovery_rate: "Показник відновлення"
- concept_recovery_rate_gen: "Показника відновлення"
- concept_recovery_rate_desc:0 "The percentage of [concept_casualties] a [concept_unit] takes that survive, in some cases by becoming [concept_dependents]. Can be increased with #b [Concept('concept_mobilization_option','$concept_mobilization_options$')]. $concept_recovery_rate$ is countered by the enemy $concept_unit$'s [concept_kill_rate]."
+ concept_recovery_rate: "Показник виживання"
+ concept_recovery_rate_gen: "Показника виживання"
+ concept_recovery_rate_desc: "Відсоток [Concept('concept_casualties','$concept_casualties_gen$')|l] [Concept('concept_unit','$concept_unit_gen$')|l], які вижили та в деяких випадках стають [Concept('concept_dependents','$concept_dependents_ins$')|l]. Може зрости завдяки #b [Concept('concept_mobilization_option','$concept_mobilization_option_dat$')|l]. $concept_recovery_rate$ залежить від [Concept('concept_kill_rate','$concept_kill_rate_ins$')|l] ворожої військової частини."
 
  concept_casualties: "Втрати"
  concept_casualties_gen: "Втрат"
@@ -1073,10 +1076,10 @@
  concept_organization_organized:0 "Organized"
  concept_organization_desc:0 "A [concept_military_formation] with low $concept_organization$ will be less effective in [concept_battle] in a variety of ways. $concept_organization$ starts out low when a $concept_military_formation$ is first created, but will increase over time while the $concept_military_formation$ is not traveling. $concept_organization$ is limited if you have too low [concept_command_limit] for all your [Concept('concept_unit','$concept_units$')] or if your $concept_military_formation$ has more $concept_units_special$ than $concept_units_default$.\n\n$concept_organization$ can also be impacted temporarily when switching [Concept('concept_mobilization_option','$concept_mobilization_options$')] on or off, and when transferring [Concept('concept_unit','$concept_units$')] between [Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')] $concept_armies$ with different sets of $concept_mobilization_options$.\n\n#indent_newline:3 A $concept_military_formation$ with low $concept_organization$ will suffer penalties the lower the value is, up to the following effects:\n[GetStaticModifier('low_organization').GetDesc]#!"
  
- concept_unit_experience:0 "Unit Experience"
+ concept_unit_experience: "Досвід частини"
  concept_unit_experience_desc:0 "A Unit gains experience over time, more when mobilized and during battles, once it gains enough it increases in [concept_veterancy_level] giving it various bonuses"
  
- concept_veterancy_level:0 "Unit Veterancy Level"
+ concept_veterancy_level: "Рівень ветеранства частини"
  concept_veterancy_level_desc:0 "Units gain Veterancy levels by gaining [concept_unit_experience], the levels gives them various bonuses"
 
  concept_battalion: "Курінь"
@@ -2443,7 +2446,7 @@
  concept_wounded_gen: "Поранених"
  concept_wounded_ins: "Пораненими"
  concept_wounded_adj: "Поранен"
- concept_wounded_desc: "[concept_casualties], які є лише пораненнями внаслідок [Concept('concept_battle','$concept_battle_gen$')|l] або [Concept('concept_attrition','$concept_attrition_gen$')|l]. Деякі поранені одужують і через певний час повертаються до служби, коли ж інші стають [Concept('concept_dependents','$concept_dependents_ins$')|l] інакших [Concept('concept_pop','$concept_people_gen$')] у вашій [Concept('concept_country','$concept_country_loc$')|l]."
+ concept_wounded_desc: "[concept_casualties], які є лише пораненнями внаслідок [Concept('concept_battle','$concept_battle_gen$')|l] або [Concept('concept_attrition','$concept_attrition_gen$')|l]. Деякі поранені одужують і через певний час повертаються до служби, коли ж інші стають [Concept('concept_dependents','$concept_dependents_ins$')|l] інших [Concept('concept_pop','$concept_people_gen$')|l] у вашій [Concept('concept_country','$concept_country_loc$')|l]."
 
  concept_attrition: "Виснаження"
  concept_attrition_gen: "Виснаження"

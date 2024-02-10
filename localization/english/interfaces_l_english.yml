@@ -8459,7 +8459,7 @@
  MESSAGE_SETTINGS_NONE: "[concept_message_settings_none]"
  MESSAGE_SETTINGS_DEFAULT: "Звичайні"
 
- JOURNAL_ENTRY_POSSIBLE_ACTIONS:0 "[JournalEntry.GetNumPossibleScriptedButtons|v] possible action[SelectLocalization(GreaterThan_int32(JournalEntry.GetNumPossibleScriptedButtons, '(int32)1'), 's', '')]"
+ JOURNAL_ENTRY_POSSIBLE_ACTIONS: "Можливих дій: [JournalEntry.GetNumPossibleScriptedButtons|v]" #[SelectLocalization(GreaterThan_int32(JournalEntry.GetNumPossibleScriptedButtons, '(int32)1'), 's', '')]
 
  RANKING_FORMAT: "(#tooltippable #tooltip:$LEADERBOARD$ #v ##$RANKING$#!#!#! по світу)"
  GDP_LEADERBOARD_HEADER: "#header ВВП#!"
