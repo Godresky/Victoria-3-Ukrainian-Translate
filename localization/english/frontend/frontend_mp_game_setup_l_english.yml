@@ -1,7 +1,7 @@
 ﻿l_english:
- FRONTEND_MP_GAME_SETUP_HOST_HEADER: "Керування багатокор грою"
- FRONTEND_MP_GAME_SETUP_HOST_NEW_GAME: "Нова гра"
- FRONTEND_MP_GAME_SETUP_HOST_SAVED_GAME: "Завантажити збереження"
- FRONTEND_MP_GAME_SETUP_GAME_SETTINGS: "Налаштування гри"
- FRONTEND_MP_GAME_SETUP_VERSION: "Версія: [GetGameVersionInfoShort]"
- MULTIPLAYER_GUI_PUBLIC_MICROSOFT_ONLY_TT: "Лише крамниця «Майкрософт»"
+ FRONTEND_MP_GAME_SETUP_HOST_HEADER:0 "Керування багатокор грою"
+ FRONTEND_MP_GAME_SETUP_HOST_NEW_GAME:0 "Нова гра"
+ FRONTEND_MP_GAME_SETUP_HOST_SAVED_GAME:0 "Завантажити збереження"
+ FRONTEND_MP_GAME_SETUP_GAME_SETTINGS:0 "Налаштування гри"
+ FRONTEND_MP_GAME_SETUP_VERSION:0 "Версія: [GetGameVersionInfoShort]"
+ MULTIPLAYER_GUI_PUBLIC_MICROSOFT_ONLY_TT:0 "Лише крамниця «Майкрософт»"
