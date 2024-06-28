@@ -47,7 +47,7 @@
  SETTING_SHADOW_MAP_RESOLUTION_TOOLTIP: "#T $SETTING_SHADOW_MAP_RESOLUTION$\n#!Визначає роздільну здатність візуалізації мапи тіней, якщо тіні ввімкнено.\n\nНижчі налаштування можуть збільшити продуктивність."
  SETTING_DISPLAY_MODE: "Режим відображення"
  SETTING_DISPLAY_MODE_TOOLTIP: "#T $SETTING_DISPLAY_MODE$\n#!Визначає спосіб відображення гри на екрані"
- SETTING_BLOOM: "Світіння"
+ SETTING_BLOOM_QUALITY: "Світіння"
  SETTING_MESH_LOD_BIAS: "Якість Mesh LOD"
  SETTING_MESH_LOD_FADE: "Сітка LOD Fade"
  SETTING_TERRAIN_SMOOTHING: "Згладжування рельєфу"
@@ -71,7 +71,7 @@
  SETTING_SFX: "Звукові ефекти"
  SETTING_UI: "Інтерфейс"
  SETTING_QUALITY_TOOLTIP: "#T $SETTING_QUALITY$\n#!Виберіть задане налаштування для розширених параметрів графіки нижче.\n\nНизьке налаштування підвищить продуктивність."
- SETTING_BLOOM_TOOLTIP: "#T $SETTING_BLOOM$\n#!Вмикає блюм ефект, де надзвичайно яскраве світло переливатиметься на інші частини зображення.\n\nВимкнення може збільшити продуктивність."
+ SETTING_BLOOM_QUALITY_TOOLTIP: "#T $SETTING_BLOOM_QUALITY$\n#!Вмикає блюм ефект, де надзвичайно яскраве світло переливатиметься на інші частини зображення.\n\nВимкнення може збільшити продуктивність."
  SETTING_DOF_TOOLTIP: "#T $SETTING_DOF$\n#!Вмикає глибину різкості для імітації об’єктива знімача, розмиває точки зображення поза фокусом.\n\nВимкнення може збільшити продуктивність."
  SETTING_LENS_FLARE_TOOLTIP: "#T $SETTING_LENS_FLARE$\n#!Увімкнення ефекту відблиску лінзи, який з‘являється в місцях сильної якскравости. Для того, щоб ефект з‘явився, необхідно увімкнути блюм. \n\nВимкнення може збільшити продуктивність."
  SETTING_SECONDARY_LENS_FLARE_TOOLTIP: "#T $SETTING_SECONDARY_LENS_FLARE$\n#!Вмикає ефект вторинного відблиску об‘єктива, який з‘являється в місцях сильної якскравости. Для того, щоб ефект з‘явився, необхідно увімкнути блюм. \n\nВимкнення може збільшити продуктивність."
@@ -101,6 +101,9 @@
  SETTING_ANIMATION_SPEED: "Швидкість анімації"
  SETTING_GUI_SCALING: "Мірування ГІК"
  SETTING_GUI_SCALING_TOOLTIP: "#T $SETTING_GUI_SCALING$\n#!Встановлює мірило усього інтерфейсу користувача. Корисно для вищої роздільної здатності екрана.\n\n#X Якщо встановити занадто високе значення, інтерфейс не буде належним чином розміщуватися на екрані!#!"
+ SETTING_TOOLS_GUI_SCALING: "Tools GUI Scaling"
+ SETTING_TOOLS_GUI_SCALING_TOOLTIP: "#T $SETTING_TOOLS_GUI_SCALING$\n#!Sets the scale of the tools user interface. Useful for higher screen resolutions.\n\n#X Setting it too high will make interfaces not properly fit inside the screen!#!"
+
  # System
  SETTING_SCREEN_EDGE_SCROLL_MODE: "Приближення миші"
  SETTING_SCREEN_EDGE_SCROLL_MODE_FREE: "Вільне"

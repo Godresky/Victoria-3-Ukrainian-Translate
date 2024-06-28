@@ -1,3 +1,11 @@
 ﻿l_english:
  JOMINI_LOAD_GAME_FAILED_TITLE: "Не вдалося завантажити збереження"
  JOMINI_LOAD_GAME_FAILED_DESC: "Не вдалося завантажити збереження, причиною може бути:\n#indent_newline:2 • Збереження створене з несумісною версією гри\n• Збереження використовує інший набір доповнень\n• Файл збереження пошкоджений#!"
+ JOMINI_LOAD_INCOMPATIBLE_GAME_TITLE: "Savegame might be incompatible"
+ JOMINI_LOAD_INCOMPATIBLE_GAME_DESC: "The savegame might not be loaded due to:\n\n$REASON$\n\nDo you want to continue loading?"
+ JOMINI_DELETE_PLAYTHROUGH_CONFIRMATION_TITLE: "Deleting Playthrough"
+ JOMINI_DELETE_PLAYTHROUGH_CONFIRMATION_DESC: "($NAME$) playthrough and the savegames inside will be deleted.\n\n Are you sure?"
+ JOMINI_DELETE_SAVEGAME_CONFIRMATION_TITLE: "Deleting Savegame"
+ JOMINI_DELETE_SAVEGAME_CONFIRMATION_DESC: "($NAME$) will be deleted.\n\n Are you sure?"
+ JOMINI_OVERWRITE_SAVEGAME_CONFIRMATION_TITLE: "Overwrite Savegame"
+ JOMINI_OVERWRITE_SAVEGAME_CONFIRMATION_DESC: "($NAME$) will be overwritten.\n\n Are you sure?"

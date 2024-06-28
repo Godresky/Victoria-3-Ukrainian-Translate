@@ -1,9 +1,9 @@
 ﻿l_english:
- BATTLE_CONDITION_TOOLTIP: "#header [BattleCondition.GetName] ([concept_battle_condition])#!\n$TOOLTIP_DELIMITER$\n[BattleCondition.GetModifierDesc]\n#lore [BattleCondition.GetDesc]#!"
- BATTLE_CONDITION_ATTACKER_TOOLTIP: "$BATTLE_CONDITION_TOOLTIP$\n\n[Battle.GetAttackerConditionUpdateDesc]"
- BATTLE_CONDITION_DEFENDER_TOOLTIP: "$BATTLE_CONDITION_TOOLTIP$\n\n[Battle.GetDefenderConditionUpdateDesc]" 
- BATTLE_CONDITION_EARLIEST_UPDATE: "Зміниться о або після [DATE.GetString] ($REMAINING$ залишилося)"
- BATTLE_CONDITION_IMMINENT_UPDATE: "Скоро зміниться, поточний шанс: $CHANCE|v0%$"
+ BATTLE_CONDITION_TOOLTIP:3 "[BattleCondition.GetModifierDesc]\n\n#lore [BattleCondition.GetDesc]#!"
+ BATTLE_CONDITION_ATTACKER_TOOLTIP:0 "$BATTLE_CONDITION_TOOLTIP$\n\n[Battle.GetAttackerConditionUpdateDesc]"
+ BATTLE_CONDITION_DEFENDER_TOOLTIP:0 "$BATTLE_CONDITION_TOOLTIP$\n\n[Battle.GetDefenderConditionUpdateDesc]"
+ BATTLE_CONDITION_EARLIEST_UPDATE:0 "Зміниться о або після [DATE.GetString] ($REMAINING$ залишилося)"
+ BATTLE_CONDITION_IMMINENT_UPDATE:0 "Скоро зміниться, поточний шанс: $CHANCE|v0%$"
 
  battle_condition_pursuit: "Pursuit"
  battle_condition_pursuit_desc: "Due to overwhelming numerical advantage the commander is ordering the enemy surrounded and pursued into retreat."

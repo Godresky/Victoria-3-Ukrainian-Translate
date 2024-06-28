@@ -62,6 +62,8 @@
  mobilization_option_flamethrowers_desc: "Дуже ефективний при завойовуванні оборонних позицій."
  mobilization_option_motorized_recon: "Моторизована розвідка"
  mobilization_option_motorized_recon_desc: "Використання автомобілів може зробити нашу розвідку кращою."
+ mobilization_option_balloon_recon: "Balloon Reconnaisance"
+ mobilization_option_balloon_recon_desc: "Using balloons we can observe the battlefield with a bird's eye view."
  mobilization_option_aerial_recon: "Повітряна розвідка"
  mobilization_option_aerial_recon_desc: "Винахід літаків зробив видимість поля бою проблемою минулого."
  mobilization_option_first_aid: "Перша допомога"
