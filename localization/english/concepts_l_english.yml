@@ -157,7 +157,7 @@
  concept_tributary_gen: "Голдівника"
  concept_tributary_ins: "Голдівником"
  concept_tributaries: "Tributaries"
- concept_tributary_desc:` "[Concept('concept_unrecognized_power','$concept_unrecognized_powers$')] можуть перетворити слабшу [Concept('concept_country','країну')|l] у свого голдівника. Голдівник - це більш самостійний тип [Concept('concept_subject','$concept_subject_gen$')|l], який може починати власні [Concept('concept_diplomatic_play','$concept_diplomatic_plays_acc$')|l] і не змушений приєднюватися до [Concept('concept_war','$concept_wars_gen$')|l] [Concept('concept_overlord','$concept_overlord_gen$')|l]. Проте він повинен щотижня платити #v 20%#! від своїх доходів зі [Concept('concept_treasury','$concept_treasury_gen$')|l] владарю."
+ concept_tributary_desc:1 "[Concept('concept_unrecognized_power','$concept_unrecognized_powers$')] можуть перетворити слабшу [Concept('concept_country','країну')|l] у свого голдівника. Голдівник - це більш самостійний тип [Concept('concept_subject','$concept_subject_gen$')|l], який може починати власні [Concept('concept_diplomatic_play','$concept_diplomatic_plays_acc$')|l] і не змушений приєднюватися до [Concept('concept_war','$concept_wars_gen$')|l] [Concept('concept_overlord','$concept_overlord_gen$')|l]. Проте він повинен щотижня платити #v 20%#! від своїх доходів зі [Concept('concept_treasury','$concept_treasury_gen$')|l] владарю."
 
  concept_vassal:0 "Слушник"
  concept_vassal_gen: "Слушника"
@@ -2531,7 +2531,7 @@
  concept_wounded_adj:0 "Поранен"
  concept_wounded_desc:2 "[concept_casualties], які є лише пораненнями внаслідок [Concept('concept_battle','$concept_battle_gen$')|l] або [Concept('concept_attrition','$concept_attrition_gen$')|l]. Деякі поранені одужують і через певний час повертаються до служби, коли ж інші стають [Concept('concept_dependents','$concept_dependents_ins$')|l] інших [Concept('concept_pop','$concept_people_gen$')|l] у вашій [Concept('concept_country','$concept_country_loc$')|l]."
 
- concept_attrition: 0"Виснаження"
+ concept_attrition:0 "Виснаження"
  concept_attrition_gen:0 "Виснаження"
  concept_attrition_acc:0 "Виснаження"
  concept_attrition_desc:3 "[concept_casualties] inflicted on [concept_manpower] outside of [concept_battle] is referred to as $concept_attrition$. It is frequently experienced when [Concept('concept_battalion','$concept_battalions$')] are [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilized$')] and can be the result of disease, accidents, exposure, or even desertion. $concept_attrition$ can be counteracted by using $medic_support$ [Concept('concept_mobilization_option','$concept_mobilization_options$')]."

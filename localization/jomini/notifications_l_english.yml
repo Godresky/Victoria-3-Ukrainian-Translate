@@ -1,6 +1,6 @@
 ﻿l_english:
- JOMINI_NOTIFICATION_TIMESTAMP_NOW: "Just now"
- JOMINI_NOTIFICATION_TIMESTAMP_MINUTES: "$MINUTES$ minutes ago"
+ JOMINI_NOTIFICATION_TIMESTAMP_NOW: "Тільки що"
+ JOMINI_NOTIFICATION_TIMESTAMP_MINUTES: "$MINUTES$ хвилин тому"
  JOMINI_NOTIFICATION_TIMESTAMP: "$DATE$"
  JOMINI_DLC_MANAGER_DISABLED_MODS_CRASH_TITLE: "Mods Disabled"
  JOMINI_DLC_MANAGER_DISABLED_MODS_CRASH_DESC: "The game encountered a problem during the last startup, possibly due to an incompatible mod.\nTo ensure stability, all mods have been temporarily disabled.\nTo reactivate your mods, navigate to the \"$MESSAGE$\" Playset, remove any problematic mods, and apply the changes."

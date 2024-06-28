@@ -64,7 +64,3 @@
  LOBBY_START_TOOLTIP:0 "[LobbyView.GetControlToolTip][ConcatIfNeitherEmpty( '\n\n', SelectLocalization( And(And( HasGameStartedForTheFirstTime, CanGetAchievements ), Not( LobbyView.GetSelectedPlayable.GetCountry.IsPlayer )), 'ACHIEVEMENTS_WILL_BE_DISABLED_START_WITH_NEW_COUNTRY', '' ))]"
  LOBBY_MULTIPLAYER_TOOLTIP:0 "[LobbyView.GetOpenMultiplayerToolTip][ConcatIfNeitherEmpty( '\n\n', SelectLocalization( CanGetAchievements, 'ACHIEVEMENTS_WILL_BE_DISABLED_MULTIPLAYER', '' ))]"
  INGAME_MENU_SWITCH_COUNTRY:0 "[SelectLocalization( CanGetAchievements, 'ACHIEVEMENTS_WILL_BE_DISABLED_SWITCH_COUNTRY', '' )]"
- JOMINI_MSGRDK_SIGNIN_FAILED_TITLE: "Виникла проблема"
- JOMINI_MSGRDK_SIGNIN_FAILED_TEXT: "Нам не вдалося ввійти за допомогою облікового запису Microsoft. Деякі функції гри можуть бути недоступні."
- JOMINI_MSGRDK_NO_PERMISSION_TITLE: "Дозвіл на обліковий запис"
- JOMINI_MSGRDK_NO_UGC_TEXT: "У вас немає дозволу на доступ до створеного користувачами вмісту. Моди будуть вимкнені."
