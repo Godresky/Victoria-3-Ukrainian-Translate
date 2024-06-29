@@ -40,7 +40,7 @@
  setting_plausible_releasable_nations: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_plausible_releasable_nations_desc Історично правдоподібне#!#!"
  setting_plausible_releasable_nations_desc: "Дозволено звільняти лише історично правдоподібні нації"
  rule_investment_pool: "Пул вкладів"
- setting_autonomous_investment_pool: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_autonomous_investment_pool_desc Самостійний пул вкладів#!#!"
+ setting_autonomous_investment_pool:1 "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_autonomous_investment_pool_desc Autonomous Investment Pool#!#!"
  setting_autonomous_investment_pool_desc: "[concept_investment_pool] використовуватиметься для самостійного фінансування [Concept('concept_private_construction', '$concept_private_construction_gen$')|l] відповідних [Concept('concept_building','споруд')|l], в залежности від [Concept('concept_law','$concept_laws_gen$')|l] [Concept('concept_country', '$concept_country_gen$')|l]."
  setting_directly_controlled_investment_pool: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_directly_controlled_investment_pool_desc Пул вкладів під прямим контролем#!#!"
  setting_directly_controlled_investment_pool_desc: "[concept_investment_pool] використовується безпосередньо кожною [Concept('concept_country', '$concept_country_ins$')|l] та може бути використаний для фінансування [Concept('concept_government_construction', '$concept_government_construction_gen$')|l] відповідних [Concept('concept_building','споруд')|l], в залежности від [Concept('concept_law','$concept_laws_gen$')|l] [Concept('concept_country', '$concept_country_gen$')|l]."

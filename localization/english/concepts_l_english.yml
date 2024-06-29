@@ -2462,7 +2462,7 @@
  concept_port_connection_desc:3 "A [concept_shipping_lane] connecting one or several [Concept('concept_state','$concept_states$')] otherwise unreachable overland to the [concept_market_capital], ensuring [concept_market_access] to remote regions. $concept_port_connections$ require a [SelectLocalization(GetPlayer.IsValid,'concept_port_connection_desc_added','Port')] in both ends. The [concept_convoy_cost] of a $concept_port_connection$ is dependent on the total [concept_infrastructure_usage] of the [Concept('concept_state','$concept_states$')] it's connecting."
  concept_port_connection_desc_added:0 "[GetBuildingType('building_port').GetName]"
 
- concept_shipping_lane_effectiveness1: "Ефективність судноплавного тору"
+ concept_shipping_lane_effectiveness:1 "Ефективність судноплавного тору"
  concept_shipping_lane_effectiveness_short:0 "Ефективність"
  concept_shipping_lane_effectiveness_desc:3 "The $concept_shipping_lane_effectiveness_short$ of a [concept_shipping_lane] is determined by the strength of a [Concept('concept_country','$concept_country_possessive$')] [concept_supply_network], reduced by any damage it has sustained from [concept_raid_convoys]. When $concept_shipping_lane_effectiveness_short$ is below #v 100%#!, the function of the $concept_shipping_lane$ is reduced to match."
 

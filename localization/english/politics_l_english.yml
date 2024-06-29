@@ -92,17 +92,17 @@
  POLITICAL_MOVEMENT_RADICALISM_FROM_RADICAL_POPS: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|v=0$#!#! через підтримку [Concept('concept_radical', '$concept_radicals_gen$')|l]"
  POLITICAL_MOVEMENT_RADICALISM_FROM_RADICAL_POPS_BREAKDOWN: "#header Підтримка [Concept('concept_radical', '$concept_radicals_gen$')|l]#!\n$TOOLTIP_DELIMITER$\n$VALUE|v=0$ через те, що $RADICALS_FRACTION|v%$ ($NUM_RADICALS|Dv$) зі всього населення - [Concept('concept_radical', '$concept_radicals$')|l], які підтримують ($RADICALS_FRACTION|v2$ x [GetDefine('NPolitics','POLITICAL_MOVEMENT_RADICALISM_TARGET_FROM_RADICALS')|v])" #[concept_pop]
  
- POP_SUPPORT_FOR_POLITICAL_MOVEMENTS: "[Concept('concept_political_movement', '$concept_political_movements$')]:\n$DETAILS$"
+ POP_SUPPORT_FOR_POLITICAL_MOVEMENTS:0 "[Concept('concept_political_movement', '$concept_political_movements$')]:\n$DETAILS$"
  POP_SUPPORT_FOR_POLITICAL_MOVEMENTS_ENTRY: "[Pop.GetPoliticalMovementSupporterCount(PoliticalMovement.Self)|Dv] [Concept('concept_individual', '$concept_individuals_gen$')] підтримують [Concept('concept_political_movement', '$concept_political_movement_short_acc$')] [PoliticalMovement.GetName|l]\n[Pop.GetPoliticalMovementSupportFraction(PoliticalMovement.Self)|%v] від загальної кількости [Concept('concept_pop', '$concept_population_gen$')|l] #tooltippable #tooltip:[Pop.GetTooltipTag],POP_POPULATION [Pop.GetTotalSize|Dv]#!#!"
  INTEREST_GROUP_POLITICAL_MOVEMENT_DESC: "Підтримує [PoliticalMovement.GetFullName|l]"
  POP_OWNERSHIP_SHARES_IN_BUILDING: "[Pop.GetSharesDesc] of the [Pop.GetBuilding.GetName] in [Pop.GetBuilding.GetState.GetName]"
  
- LAW_POLITICAL_MOVEMENT_TO_PRESERVE: "[PoliticalMovement.GetFullName] вимагає, щоб ми припинили процес надання чинности нового [Concept('concept_law', '$concept_law_gen$')|l]"
- LAW_POLITICAL_MOVEMENT_TO_ENACT: "[PoliticalMovement.GetFullName] вимагає, щоб ми надали чинности цьому [Concept('concept_law', '$concept_law_gen$')|l]"
+ LAW_POLITICAL_MOVEMENT_TO_PRESERVE:0 "[PoliticalMovement.GetFullName] вимагає, щоб ми припинили процес надання чинности нового [Concept('concept_law', '$concept_law_gen$')|l]"
+ LAW_POLITICAL_MOVEMENT_TO_ENACT:0 "[PoliticalMovement.GetFullName] вимагає, щоб ми надали чинности цьому [Concept('concept_law', '$concept_law_gen$')|l]"
 
- revolution: "Революція"
- secession: "Розкол"
-
+ revolution:0 "Революція"
+ secession:0 "Розкол"
+ 
   ### Law Impositions
  je_law_imposition: "Foreign Legal Imposition"
  je_law_imposition_status_not_yet_enacting: "Preparing to enact [SCOPE.sLaw('foreign_imposition_law').GetName] at the behest of [SCOPE.sC('foreign_imposition_country').GetNameNoFlag]"
