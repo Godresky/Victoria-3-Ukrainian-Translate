@@ -342,8 +342,9 @@
  concept_building_level_acc:0 "Розмір будівлі"
  concept_building_level_short:0 "Розмір"
  concept_building_levels:0 "Розмір будівлі"
+ concept_building_levels_short:0 "Levels"
  concept_building_level_desc:1 "A [Concept('concept_building', '$concept_building_possessive$')] $concept_building_level_short$ scales its current [concept_good_consumption], [concept_good_production], [concept_workforce] requirements, and may apply an [concept_economy_of_scale] bonus.\n\nExpanding a $concept_building$'s $concept_building_level_short$ usually requires [concept_construction], though some $concept_building$'s $concept_building_level_short$ is automatically adjusted based on other factors such as [concept_infrastructure], [Concept('concept_trade_route','$concept_trade_routes$')], [Concept('concept_conscription_center','$concept_conscription$')] rate, or unused $concept_arable_land$.\n\nEach $concept_building_level_short$ is either [concept_privately_owned] or [concept_nationally_owned].\n\nThe maximum $concept_building_level_short$ a $concept_building$ can be expanded to may depend on the [concept_resource_potential] or [concept_arable_land] in the [concept_state]."
- 
+
  
  concept_diplomatic_play:0 "Дипломатична гра"
  concept_diplomatic_play_gen:0 "Дипломатичної гри"

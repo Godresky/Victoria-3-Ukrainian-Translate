@@ -4969,9 +4969,9 @@
  LOWER_NO_ICON:0 "[concept_lower_strata]"
  MIDDLE_NO_ICON:0 "[concept_middle_strata]"
  UPPER_NO_ICON:0 "[concept_upper_strata]"
- 
- DIVIDENDS_FROM_GOVERNMENT_SHARES: "[concept_government_dividends]"
- LOSSES_FROM_GOVERNMENT_SHARES: "Збитки від [Concept('concept_government_ownership_share', '$concept_government_ownership_shares_gen$')|l]"
+
+ DIVIDENDS_FROM_GOVERNMENT_SHARES:0 "[concept_government_dividends]"
+ LOSSES_FROM_GOVERNMENT_SHARES:1 "Збитки від [concept_nationally_owned] [Concept('concept_building', '$concept_buildings$')]"
  GOVERNMENT_DIVIDENDS_MULT_DESC: "$concept_government_dividends$ Efficiency: #tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|%+$#!#!"
  GOVERNMENT_DIVIDENDS_WASTE_DESC: "Multiplied by #v x$MULTIPLIER$#! due to waste:"
 
@@ -4999,8 +4999,8 @@
  INVESTMENT_POOL_SOURCES_BREAKDOWN: "#header [Concept('concept_building', '$concept_buildings$')], що вклали [Concept('concept_money', '$concept_money_acc$')|l] у [Concept('concept_investment_pool', '$concept_investment_pool_acc$')|l]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetInvestmentPoolChangeFromInvestmentBreakdown]"
  INVESTMENT_FROM_BUILDING_DETAIL:0 "[BuildingType.GetName]: #N #variable @money!$VAL|D+$#!#!"
 
- CURRENT_INVESTMENT_POOL: "[concept_investment_pool]: #v @money![GetPlayer.GetInvestmentPool|D+]#! ([GetPlayer.GetInvestmentPoolChange|=+D])"
- NEXT_PRIVATE_CONSTRUCTION: "[GetPlayer.GetInvestmentPoolPredictedNextBuildingDesc]"
+ CURRENT_INVESTMENT_POOL:0 "[concept_investment_pool]: #v @money![GetPlayer.GetInvestmentPool|D+]#! ([GetPlayer.GetInvestmentPoolChange|=+D])"
+ NEXT_PRIVATE_CONSTRUCTION:0 "[GetPlayer.GetInvestmentPoolPredictedNextBuildingDesc]"
  NO_NEXT_PRIVATE_CONSTRUCTION_OTHER_REASON:1 "No potential [Concept('concept_private_construction', '$concept_private_constructions$')] to invest in"
  NO_NEXT_PRIVATE_CONSTRUCTION_NO_INFRASTRUCTURE: "There is no [concept_state] with enough [concept_infrastructure] for [Concept('concept_private_construction', '$concept_private_constructions$')] and we lack the [concept_technology] or [concept_workforce] needed for [GetBuildingType('building_railway').GetName]"
  NO_NEXT_PRIVATE_CONSTRUCTION_NO_CONSTRUCTION_SECTOR: "A [GetBuildingType('building_construction_sector').GetName] is needed to support [Concept('concept_private_construction', '$concept_private_constructions$')]"
@@ -5021,8 +5021,8 @@
  INVESTMENT_POOL_NEXT_FRACTION_HANDLED_BY_WEEKLY_FUNDS: "$FRACTION|%0v$ від щотижневої вартости будівництва (@money!$COST|vD$) покриваються доступними щотижневими коштами, які вносяться у [Concept('concept_investment_pool', '$concept_investment_pool_acc$')|l]"
  INVESTMENT_POOL_TOTAL_FRACTION: "@information! [Concept('concept_private_construction', '$concept_private_construction_alt$')] вважається профінансованим, якщо уся сума покриття його щотижневих та загальних витрат становить $REQUIRED|%v0$ (Наразі: $TOTAL|%v0$). Відсоток фінансування може коливатися через такі чинники, як поточна вартість будівельних [Concept('concept_good', '$concept_goods_gen$')|l]."
  
- TOTAL_INCOME_BREAKDOWN: "[GetPlayer.GetIncomeBreakdown]"
- TOTAL_EXPENSES_BREAKDOWN: "[GetPlayer.GetExpensesBreakdown]"
+ TOTAL_INCOME_BREAKDOWN:0 "[GetPlayer.GetIncomeBreakdown]"
+ TOTAL_EXPENSES_BREAKDOWN:0 "[GetPlayer.GetExpensesBreakdown]"
 
  BUILDING_GROUP_LAW_HEADER:0 "[Law.GetName] allows the following to be funded using the [concept_investment_pool]:"
 
@@ -5037,8 +5037,8 @@
  POP_LAND_TAX:0 "[concept_budget_land_taxes]: #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] #N #bold @money!-$TAX_LOSS|D$#!#!#!#!"
  POP_HEATHEN_TAX:0 "[concept_budget_heathen_taxes]: #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] #N #bold @money!-$TAX_LOSS|D$#!#!#!#!"
  POP_CONSUMPTION_TAX:0 "[concept_budget_consumption_taxes]: #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] #N #bold @money!-$TAX_LOSS|D$#!#!#!#!"
- POP_CONSUMPTION_TAX_BREAKDOWN: "#header [concept_budget_consumption_taxes]#!\n$BREAKDOWN$"
- POP_CONSUMPTION_TAX_ENTRY: "[Goods.GetName]: #N #bold @money!-$AMOUNT|D$#!#!#!#!"
+ POP_CONSUMPTION_TAX_BREAKDOWN:0 "#header [concept_budget_consumption_taxes]#!\n$BREAKDOWN$"
+ POP_CONSUMPTION_TAX_ENTRY:0 "[Goods.GetName]: #N #bold @money!-$AMOUNT|D$#!#!#!#!"
  ECONOMIC_CONTRIBUTION:0 "Economic Contribution: $VAL|v%0$"
  TAXATION_BREAKDOWN: "#header Оподаткування#!\nЗагальне оподаткування: #variable $VAL|%1$#! через:\n$TAB$$STATE_TAX_MODIFIER$\n$TAB$$BREAKDOWN$"
 
@@ -5094,7 +5094,7 @@
  ADDITIONAL_EXPENSES_BREAKDOWN: "#tooltip_header Додаткові витрати#!\nВсього: #v @money![GetPlayer.GetModifier.GetInvertedValueFor('country_expenses_add')|K+=]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetModifier.GetDescFor('country_expenses_add')]"
  WELFARE_PAYMENTS_EXPENSES_BREAKDOWN: "#tooltip_header [concept_welfare_payments]#!\nВсього: #n @money!-[GetPlayer.GetWelfarePaymentsExpenses|D ]#!"
 
- DIPLOMATIC_PACTS_INCOME_BREAKDOWN: "#tooltip_header Дипломатичні пакти#!\nВсього: #v @money![GetPlayer.PredictDiplomaticPactsIncome|K+]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.PredictDiplomaticPactsIncomeDesc]"
+ DIPLOMATIC_PACTS_INCOME_BREAKDOWN:0 "#tooltip_header Дипломатичні пакти#!\nВсього: #v @money![GetPlayer.PredictDiplomaticPactsIncome|K+]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.PredictDiplomaticPactsIncomeDesc]"
  POWER_BLOC_INCOME_BREAKDOWN: "#tooltip_header Power Bloc#!\nTotal: #v @money![GetPlayer.GetPowerBlocIncomeRaw|K+]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetPowerBlocIncomeDesc]"
 
  ONLY_SHOW_AVAILABLE: "Показати лише доступних"
@@ -7457,7 +7457,7 @@
  INSTITUTION_PROVIDING_LAWS: "[concept_law] «$LAW_LIST$»"
 
  DISABLES_INSTITUTION: "Зробить недоступною [Concept('concept_institution','$concept_institution_acc$')|l] [INSTITUTION.GetName|l]"
- PROVIDES_INSTITUTION_TYPE: "Зробить доступною [Concept('concept_institution','$concept_institution_acc$')|l] [INSTITUTION_TYPE.GetName|l]\nДодаткові витрати $sBUREAUCRACY_gen$: $COST|=v1$"
+ PROVIDES_INSTITUTION_TYPE: "Зробить доступною [Concept('concept_institution','$concept_institution_acc$')|l] [INSTITUTION_TYPE.GetName|l]\nДодаткові витрати $concept_bureaucracy_gen$: $COST|=v1$"
  PROVIDES_INSTITUTION: "Зробить доступною [Concept('concept_institution','$concept_institution_acc$')|l] [INSTITUTION.GetName|l]"
  INSTITUTION_TYPE_NEW_EFFECT: "[LawType.GetName] надасть установі [INSTITUTION_TYPE.GetName|l] (Рівень #v 1#!):\n$EFFECTS$"
  INSTITUTION_NEW_EFFECT: "[LawType.GetName] надасть установі [INSTITUTION.GetName|l] (Рівень [Institution.GetInvestmentLevel|v]):\n$EFFECTS$"
