@@ -2701,7 +2701,7 @@
  INSTITUTION_GROWTH_TOOLTIP: "Ця установа наразі збільшується."
  INSTITUTION_SHRINKING_TOOLTIP: "Ця установа наразі зменшується."
 
- IG_SUPPRESSED_EXPENSE_LIST_ITEM: " #variable #N -$VAL|0$#!#! через [Concept('concept_suppress','$concept_suppressing$')|l] [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l] [INTEREST_GROUP.GetName]"
+ IG_SUPPRESSED_EXPENSE_LIST_ITEM:2 " #variable #N -$VAL|0$#!#! from [Concept('concept_suppress','$concept_suppressing$')] the [INTEREST_GROUP.GetName]"
  IG_BOLSTERED_EXPENSE_LIST_ITEM:2 " #variable #N -$VAL|0$#!#! from [Concept('concept_bolster','$concept_bolstering$')] the [INTEREST_GROUP.GetName]"
  GOODS_EMBARGO_EXPENSE_LIST_ITEM: " #variable #N -$VAL|0$#!#! через [Concept('concept_embargo', '$concept_embargoing$')|l] на [Concept('concept_good','$concept_good_acc$')|l] [GOODS.GetName|l]"
  GOODS_ENCOURAGE_CONSUMPTION_EXPENSE_LIST_ITEM: " #variable #N -$VAL|0$#!#! через [Concept('concept_encourage_consumption', '$concept_encouraging_consumption$')|l] [Concept('concept_good','$concept_good_gen$')|l] [GOODS.GetName|l]"
@@ -2711,8 +2711,8 @@
  STATE_POP_GROWTH:0 "$concept_pop_growth$ #v [State.GetPopNetGrowth|K=+]#!"
 
  TOOLTIP_POP_GROWTH_COMMON: "Передбачення [Concept('concept_pop_growth','$concept_pop_growth_gen$')|l] на рік: #variable $NETGROWTHRATE|+=%$ #! (#variable $NETGROWTH|=*$#!)"
- TOOLTIP_COUNTRY_POP_GROWTH: "$TOOLTIP_POP_GROWTH_COMMON$"
- TOOLTIP_STATE_POP_GROWTH: "$TOOLTIP_POP_GROWTH_COMMON$"
+ TOOLTIP_COUNTRY_POP_GROWTH:1 "$TOOLTIP_POP_GROWTH_COMMON$"
+ TOOLTIP_STATE_POP_GROWTH:1 "$TOOLTIP_POP_GROWTH_COMMON$"
  TOOLTIP_STATE_POP_MIGRATION: "Річна передбачена [concept_migration|l]: #variable $NETGROWTHRATE|+=%$#! (#variable $NETGROWTH|=*$#!)"
  HEADER_CULTURAL_COMMUNITIES: "[Concept('concept_cultural_community','$concept_cultural_communities$')]"
 
@@ -3482,7 +3482,7 @@
 
  CHANGE_PRODUCTION_METHOD_TOOLTIP: "#header Виберіть [Concept('concept_production_method','$concept_production_method_acc$')|l] «[ProductionMethod.GetName]» для «[ChangeProductionMethodMenuItem.GetProductionMethodGroup.GetName]» #!\n[ChangeProductionMethodMenuItem.GetTooltip(GetPlayer.Self)]"
  CHANGE_FROM_CURRENT_PRODUCTION_METHOD_TOOLTIP: "#header [concept_production_method] «[ProductionMethodGroup.GetName]»#!\nВибрано: [ProductionMethod.GetName|l]\n[ProductionMethod.GetTooltipForBuilding(GetPlayer.Self, Building.Self)]\n\n#instruction #bold Лівий клац#!, щоб побачити усі доступні варіянти#!"
- CHANGE_PRODUCTION_METHOD_IMPACT_ON_BALANCE: "Передбачений вплив на щотижневий балянс за повної зайнятості після [Concept('concept_goods_substitution', '$concept_goods_substitution_acc$')|l]: #v @money!$VAL|D+=$#!"
+ CHANGE_PRODUCTION_METHOD_IMPACT_ON_BALANCE:0 "Predicted Weekly [concept_building_balance]: #v @money!$BALANCE|Dv$#! (#v @money!$BALANCE_DELTA|D+=$#! from current)\nPredicted [concept_productivity]: @money!$PRODUCTIVITY$ (@money!$PRODUCTIVITY_DELTA|=+1$ from current)"
  CHANGE_PRODUCTION_METHOD_IMPACT_ON_BALANCE_MULTI: "Predicted Average Weekly [concept_building_balance]: #v @money!$BALANCE|D$#! (#v @money!$BALANCE_DELTA|D+=$#! from current)\nPredicted Average [concept_productivity]: @money!$PRODUCTIVITY|v1$ (@money!$PRODUCTIVITY_DELTA|=+1$ from current)"
  CHANGE_PRODUCTION_NO_EFFECT: "Цей спосіб виробництва зараз немає жодних заподій"
  BULK_CHANGE: "#header Змінити [Concept('concept_production_method','$concept_production_method_acc$')|l] «[ProductionMethodGroup.GetName]» для усіх [Concept('concept_building','$concept_buildings_gen$')|l] [BuildingType.GetName|l]#!"
@@ -3495,12 +3495,12 @@
  PRODUCTION_METHOD_WITH_REQUIREMENTS_TOOLTIP_FORMAT:2 "[ConcatIfNeitherEmpty('$PREDICTION$', '\n')][AddTextIf(Not(StringIsEmpty('$TOTAL_VALUES_OUTPUT$')),'$TOOLTIP_DELIMITER$\n')][ConcatIfNeitherEmpty('$TIMED_MODIFIERS$','\n')][ConcatIfNeitherEmpty('$TOTAL_VALUES_OUTPUT$','\n\n')]$PER_LEVEL_VALUES_NESTED_TOOLTIP$[AddTextIf(Not(StringIsEmpty('$EMPTY_REQUIREMENTS$')), '\n$TOOLTIP_REQUIREMENTS_ANY$\n')]$REQUIREMENTS$[AddTextIf(Not(StringIsEmpty('$EMPTY_REQUIREMENTS$')), '\n')]$BUILDING_TYPE_INFO$"
  PER_LEVEL_VALUES_ONLY:0 "$VALUES$"
 
- COMPACT_PM_DESC_OUTPUT: " $ICON$#v $VAL|+^$#! "
- COMPACT_PM_DESC_INPUT: " $ICON$#v $VAL|-^$#! "
+ COMPACT_PM_DESC_OUTPUT:0 " $ICON$#v $VAL|+^$#! "
+ COMPACT_PM_DESC_INPUT:0 " $ICON$#v $VAL|-^$#! "
  COMPACT_PM_DESC_OUTPUT_MODIFIERS: "$NUM|v$ змінювачів"
 
- COMPACT_PM_DESC_MORE_EMPLOYEES: " #v $ICON$ $VAL|D$#! "
- COMPACT_PM_DESC_LESS_EMPLOYEES: " #v $ICON$ $VAL|=D$#! "
+ COMPACT_PM_DESC_MORE_EMPLOYEES:0 " #v $ICON$ $VAL|D$#! "
+ COMPACT_PM_DESC_LESS_EMPLOYEES:0 " #v $ICON$ $VAL|=D$#! "
 
  COMPACT_PM_GOODS_DESC_FORMAT: "[AddTextIf(StringIsEmpty('$INPUT_GOODS$'), '#title Немає товарів #!')]$INPUT_GOODS$[ConcatIfNeitherEmpty(' @turns_into! ','$OUTPUT_GOODS$')]"
  COMPACT_PM_EMPLOYMENT_DESC_FORMAT: "$MORE_EMPLOYEES$[ConcatIfNeitherEmpty(' ','$LESS_EMPLOYEES$')]#!"
@@ -3952,7 +3952,7 @@
  POP_IG_ATTRACTION_HEADER:1 "#header [concept_interest_group]#!\nThis [Concept('concept_pop','$concept_pop_possessive$')] Primary $concept_interest_group$ is [Pop.GetLargestInterestGroup.GetName]\n$TOOLTIP_DELIMITER$\n#title $concept_interest_group$ Membership#!\n[Pop.GetIGMembershipDesc]\n$POP_DETAILS_IG$"
  POP_IG_ATTRACTION_HEADER_NO_CLICK:0 "#header [concept_interest_group]#!\nThis [Concept('concept_pop','$concept_pop_possessive$')] Primary $concept_interest_group$ is [Pop.GetLargestInterestGroup.GetName]\n$TOOLTIP_DELIMITER$\n#title $concept_interest_group$ Membership#!\n[Pop.GetIGMembershipDesc]"
  POP_IG_DISCRIMINATED:1 "This $concept_pop$ is [concept_disenfranchised] due to [concept_discrimination] and cannot join [Concept('concept_interest_group', '$concept_interest_groups$')]."
- POP_IG_MEMBERSHIP: "#variable $MEMBERS|D$#! підтримують [Concept('concept_interest_group', '$concept_interest_group_short_acc$')|l] [INTEREST_GROUP.GetName] (Attraction: #tooltip_header #tooltippable #tooltip:[INTEREST_GROUP.GetPopWithIG(POP.Self).GetTooltipTag],POP_IG_ATTRACTION_TOOLTIP $ATTRACTION|%0$#!#!#!)\n"
+ POP_IG_MEMBERSHIP:2 "#variable $MEMBERS|D$#! support the [INTEREST_GROUP.GetName] (Attraction: #tooltip_header #tooltippable #tooltip:[INTEREST_GROUP.GetPopWithIG(POP.Self).GetTooltipTag],POP_IG_ATTRACTION_TOOLTIP $ATTRACTION|%0$#!#!#!)\n"
  POP_IG_ATTRACTION_TOOLTIP:0 "#header Pop Attraction to [PopWithIG.GetInterestGroup.GetName]#!\n$TOOLTIP_DELIMITER$\nTotal Attraction: [PopWithIG.CalcAttractionToIG|v]\n[PopWithIG.GetAttractionToIGDesc]"
  POP_IG_NO_MEMBERSHIP:2 "#variable $NUM_INACTIVE|D$#! are #bold [Concept('concept_politically_unaligned_aligned', '$concept_politically_unaligned$')]#! and do not support any [concept_interest_group]\n#variable $NUM_NON_PARTICIPATING|D$#! #bold Disenfranchised Dependents#! cannot participate in politics"
 
@@ -4565,10 +4565,10 @@
  
  SOL_WELFARE: "$TOTAL|vD$ ($FRACTION|%1v$) з них отримують [Concept('concept_welfare_payments','$concept_welfare_payments_acc$')|l], що збільшує їхній [Concept('concept_sol','$concept_sol_acc$')|l]"
 
- TOOLTIP_SOL_MODIFIERS: "$BREAKDOWN$"
+ TOOLTIP_SOL_MODIFIERS:0 "$BREAKDOWN$"
  POP_DETAILS_TITLE: "#bold Відомості громади#!"
 
- POP_DETAILS_IG: "\n#instruction Клацніть#!, щоб показати [Concept('concept_interest_group_short', '$concept_interest_group_short_acc$')|l] #variable [Pop.GetLargestInterestGroup.GetName]#!"
+ POP_DETAILS_IG:0 "\n#instruction Click#! to go to #variable [Pop.GetLargestInterestGroup.GetName]#!"
 
  EMPLOYEE_POPS_LIST:0 "$RELIGION$ $CULTURE$ $TYPE$: $SIZE$"
 
@@ -5986,8 +5986,8 @@
  IG_IS_SUPPRESSED_ATTRACTION:1 "[Concept('concept_suppress','$concept_suppressed$')]: #variable $VAL|+=%0$#!"
  IG_IS_PROMOTED_ATTRACTION:2 "[Concept('concept_bolster','$concept_bolstered$')]: #variable $VAL|+=%0$#!"
 
- PEOPLE_ABROAD_TOOLTIP: "#BOLD #V Unincorporated Population#!#!\n$TOOLTIP_DELIMITER$\n$ABROAD_POP_CONCEPT$"
- INTEREST_GROUP_TITLE: "#title [concept_interest_group]#!"
+ PEOPLE_ABROAD_TOOLTIP:0 "#BOLD #V Unincorporated Population#!#!\n$TOOLTIP_DELIMITER$\n$ABROAD_POP_CONCEPT$"
+ INTEREST_GROUP_TITLE:0 "#title [concept_interest_group]#!"
  LAW_TITLE: "#title Закон#!"
  CLOUT_TITLE: "#title Вплив#!"
  SP_TITLE:0 "#title Army Strength Points#!"
@@ -5998,9 +5998,9 @@
  REVOLUTION_VICTORY_DESC:0 "When the revolters hold all Capital provinces this bar will start to fill, once it is full the revolters will win and force all their demands"
  REVOLUTION_SURRENDER_DESC:0 "This bar represents how much Strength Points is still in commands that are fighting for the revolution, if the remaining Strength Points drops below [GetDefineCountryRevolutionarySurrenderCutoff|1%] of the Strength Points that the faction had when the revolution broke out, they will surrender"
  REVOLUTION_VICTORY_DETAILS:0 "If the rebels win they will enforce the following:\n[RevolutionaryFaction.GetVictoryEffectDesc]"
-
- COUNTRY_NAME: "[ConcatIfNeitherEmpty('$PREFIX$', AddTextIf(Or(Or( EqualTo_string('Східна Індія', '$NAME$'), EqualTo_string('Східноіндійська компанія', '$NAME$')), EqualTo_string('Індія', '$NAME$')), Concatenate(Localize('а'), ' ')))]$NAME$"
- REVOLUTION_COUNTRY_NAME: "[ConcatIfNeitherEmpty('$PREFIX$',AddTextIf(Or(Or( EqualTo_string('Східна Індія', '$NAME$'), EqualTo_string('Східноіндійська компанія', '$NAME$')), EqualTo_string('Індія', '$NAME$')), Concatenate(Localize('а'), ' ')))]$ADJECTIVE$і революціонери"
+ 
+ COUNTRY_NAME: "[ConcatIfNeitherEmpty('$PREFIX$',' ')]$NAME$"
+ REVOLUTION_COUNTRY_NAME:0 "Revolutionary [ConcatIfNeitherEmpty('$PREFIX$',' ')]$NAME$"
  SECESSION_COUNTRY_NAME: "$ADJECTIVE$е повстання"
  COUNTRY_ADJECTIVE: "[ConcatIfNeitherEmpty('$PREFIX$','о-')]$ADJECTIVE$"
  REVOLUTION_COUNTRY_ADJECTIVE: "Революційно-[ConcatIfNeitherEmpty('$PREFIX$','о-')]$ADJECTIVE$"
@@ -7767,7 +7767,7 @@
  MAP_INTERACTION_RESET_PRODUCTION_METHODS_STATE_SELECT: "#header Скинути способи виробництва#!\nТакі зміни будуть внесені по всії [Concept('concept_state', '$concept_state_loc$')|l] [State.GetName]:\n\n$LIST$"
  RESET_PRODUCTION_METHODS_BUILDING:0 "#header Reset Production Methods#!\n[ConcatIfNeitherEmpty(AddLocalizationIf(Not(IsValid(Building.ResetProductionMethodsToStandard)), 'RESET_PM_NOT_VALID'), '\n\n')]This would reset [Concept('concept_production_method','$concept_production_methods$')] for $NAME$ in [State.GetName] to match your most common national standards. The following adjustments will be made:\n\n$LIST$"
  RESET_PRODUCTION_METHODS_BUILDING_TYPE:0 "#header Reset Production Methods#!\n[ConcatIfNeitherEmpty(AddLocalizationIf(Not(IsValid($BUILDING_TYPE$.ResetProductionMethodsToStandard)), 'RESET_PM_NOT_VALID'), '\n\n')]All [Concept('concept_production_method','$concept_production_methods$')] for all $NAME$ in [Country.GetName] will reset to match your most common national standards. The following adjustments will be made:\n\n$LIST$"
- RESET_PM_NOT_VALID:0 "@red_cross! There are no [Concept('concept_production_method','$concept_production_methods$')] to reset"
+ RESET_PM_NOT_VALID: "@red_cross! There are no [Concept('concept_production_method','$concept_production_methods$')] to reset"
  RESET_PM_BUILDING:0 "Reset Production Methods in [Building.GetState.GetName]"
  RESET_PM_BUILDING_TYPE:0 "Reset Production Methods across [Country.GetName]"
 
@@ -7776,15 +7776,15 @@
  RESET_PRODUCTION_METHOD_TOOLTIP_LIST_ENTRY: "[Building.GetName]: $ACTIVE_METHOD$ @arrow_right! $STANDARD_METHOD$"
  RESET_PRODUCTION_METHOD_TOOLTIP_LIST_ENTRY_WITH_STATE_NAME: "[Building.GetName] у [Concept('concept_state', '$concept_state_loc$')|l] [Building.GetState.GetName]: $ACTIVE_METHOD$ @arrow_right! $STANDARD_METHOD$"
 
- notification_peace_agreement_signed_war_leader_tooltip: "#header $notification_peace_agreement_signed_war_leader_name$#!\n$TOOLTIP_DELIMITER$\n$notification_peace_agreement_signed_war_leader_desc$"
+ notification_peace_agreement_signed_war_leader_tooltip:0 "#header $notification_peace_agreement_signed_war_leader_name$#!\n$TOOLTIP_DELIMITER$\n$notification_peace_agreement_signed_war_leader_desc$"
  notification_peace_agreement_signed_war_leader_name: "Мир з [Concept('concept_country', '$concept_country_ins$')|l] [SCOPE.sC('recipient').GetName]"
  notification_peace_agreement_signed_war_leader_desc: "Ми підписала мирну угоду з [Concept('concept_country', '$concept_country_ins$')|l] #variable [SCOPE.sC('recipient').GetName]#!, наші воєнні дії були припинені."
 
- notification_peace_agreement_signed_war_participant_tooltip: "#header $notification_peace_agreement_signed_war_participant_name$#!\n$TOOLTIP_DELIMITER$\n$notification_peace_agreement_signed_war_participant_desc$"
+ notification_peace_agreement_signed_war_participant_tooltip:0 "#header $notification_peace_agreement_signed_war_participant_name$#!\n$TOOLTIP_DELIMITER$\n$notification_peace_agreement_signed_war_participant_desc$"
  notification_peace_agreement_signed_war_participant_name: "Настав мир між [Concept('concept_country', '$concept_countries_ins$')|l] [SCOPE.sC('actor').GetName] та [SCOPE.sC('target').GetName]"
  notification_peace_agreement_signed_war_participant_desc: "#variable [SCOPE.sC('actor').GetName]#! підписала мирну угоду з [Concept('concept_country', '$concept_country_ins$')|l] #variable [SCOPE.sC('target').GetName]#!, воєнні дії були припинені."
 
- notification_peace_agreement_signed_non_participant_tooltip: "#header $notification_peace_agreement_signed_non_participant_name$#!\n$TOOLTIP_DELIMITER$\n$ notification_peace_agreement_signed_non_participant_desc$"
+ notification_peace_agreement_signed_non_participant_tooltip:0 "#header $notification_peace_agreement_signed_non_participant_name$#!\n$TOOLTIP_DELIMITER$\n$notification_peace_agreement_signed_non_participant_desc$"
  notification_peace_agreement_signed_non_participant_name: "Настав мир між [Concept('concept_country', '$concept_countries_ins$')|l] [SCOPE.sC('actor').GetName] та [SCOPE.sC('target').GetName]"
  notification_peace_agreement_signed_non_participant_desc: "#variable [SCOPE.sC('actor').GetName]#! підписала мирну угоду з [Concept('concept_country', '$concept_country_ins$')|l] #variable [SCOPE.sC('target').GetName]#!, воєнні дії між ними були припинені."
 
@@ -7800,153 +7800,153 @@
  notification_ally_capitulated_name:0 "#variable [SCOPE.sC('target').GetName]#! capitulates"
  notification_ally_capitulated_desc:0 "Our ally #variable [SCOPE.sC('target').GetName]#! has capitulated. All wargoals targeting them have been enforced."
 
- notification_diplo_play_start_notification_tooltip: "#header $notification_diplo_play_start_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_start_notification_desc$"
+ notification_diplo_play_start_notification_tooltip:0 "#header $notification_diplo_play_start_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_start_notification_desc$"
  notification_diplo_play_start_notification_name: "#yellow [SCOPE.sC('actor').GetAdjective]а#! [concept_diplomatic_play|l] проти нас"
  notification_diplo_play_start_notification_desc: "[SCOPE.sC('actor').GetName] почала [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] «[SCOPE.GetRootScope.GetDiplomaticPlay.GetDiplomaticPlayType.GetName|b]» проти нас."
 
- notification_diplo_play_start_third_party_notification_tooltip: "#header $notification_diplo_play_start_third_party_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_start_third_party_notification_desc$"
+ notification_diplo_play_start_third_party_notification_tooltip:0 "#header $notification_diplo_play_start_third_party_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_start_third_party_notification_desc$"
  notification_diplo_play_start_third_party_notification_name: "[SCOPE.sC('actor').GetFlagTextIcon] [SCOPE.GetRootScope.GetDiplomaticPlay.GetDiplomaticPlayType.GetName|b] у [Concept('concept_strategic_region', '$concept_strategic_region_short_loc$')|l] [SCOPE.GetRootScope.GetDiplomaticPlay.GetStrategicRegion.GetName]"
  notification_diplo_play_start_third_party_notification_desc: "[SCOPE.sC('actor').GetName] почала [Concept('concept_diplomatic_play', '$concept_diplomatic_play_acc$')|l] «[SCOPE.GetRootScope.GetDiplomaticPlay.GetDiplomaticPlayType.GetName|b]» проти [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sC('target').GetName]."
 
- notification_diplo_play_back_down_notification_tooltip: "#header $notification_diplo_play_back_down_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_back_down_notification_desc$"
+ notification_diplo_play_back_down_notification_tooltip:0 "#header $notification_diplo_play_back_down_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_back_down_notification_desc$"
  notification_diplo_play_back_down_notification_name: "[SCOPE.sC('actor').GetName] відступає"
  notification_diplo_play_back_down_notification_desc:0 "[SCOPE.sC('actor').GetName] відступає у нашій [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l], через що ми виконали наші основні воєнні цілі."
 
- notification_diplo_play_back_down_involved_notification_tooltip: "#header $notification_diplo_play_back_down_involved_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_back_down_involved_notification_desc$"
+ notification_diplo_play_back_down_involved_notification_tooltip:0 "#header $notification_diplo_play_back_down_involved_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_back_down_involved_notification_desc$"
  notification_diplo_play_back_down_involved_notification_name: "[SCOPE.sC('actor').GetName] відступає"
  notification_diplo_play_back_down_involved_notification_desc: "[SCOPE.sC('actor').GetName] відступає у [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l] проти [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sC('target').GetName]."
 
- notification_diplo_play_join_side_notification_tooltip: "#header $notification_diplo_play_join_side_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_join_side_notification_desc$"
+ notification_diplo_play_join_side_notification_tooltip:0 "#header $notification_diplo_play_join_side_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_join_side_notification_desc$"
  notification_diplo_play_join_side_notification_name: "[SCOPE.sC('actor').GetName] зайняла позицію [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sC('target').GetName]"
  notification_diplo_play_join_side_notification_desc: "[SCOPE.sC('actor').GetName] зайняла позицію [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sC('target').GetName] у [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l] проти [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sC('recipient').GetName]."
 
- notification_diplo_play_abandon_side_notification_tooltip: "#header $notification_diplo_play_abandon_side_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_abandon_side_notification_desc$"
+ notification_diplo_play_abandon_side_notification_tooltip:0 "#header $notification_diplo_play_abandon_side_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_abandon_side_notification_desc$"
  notification_diplo_play_abandon_side_notification_name: "[SCOPE.sC('actor').GetName] покинула [Concept('concept_country', '$concept_country_acc$')|l] [SCOPE.sC('target').GetName]"
  notification_diplo_play_abandon_side_notification_desc: "[SCOPE.sC('actor').GetName] відмовилися від підтримки [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sC('target').GetName] у [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l] проти [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sC('recipient').GetName]."
 
- notification_diplo_play_war_start_third_party_notification_tooltip: "#header $notification_diplo_play_war_start_third_party_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_war_start_third_party_notification_desc$"
+ notification_diplo_play_war_start_third_party_notification_tooltip:0 "#header $notification_diplo_play_war_start_third_party_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_war_start_third_party_notification_desc$"
  notification_diplo_play_war_start_third_party_notification_name: "Війна між [Concept('concept_country','$concept_countries_ins$')|l] [SCOPE.sC('actor').GetName] та [SCOPE.sC('target').GetName]"
  notification_diplo_play_war_start_third_party_notification_desc: "Розпочалася війна між [Concept('concept_country','$concept_countries_ins$')|l] [SCOPE.sC('actor').GetName] та [SCOPE.sC('target').GetName]."
 
- notification_diplo_play_subject_released_notification_tooltip: "#header $notification_diplo_play_subject_released_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_subject_released_notification_desc$"
+ notification_diplo_play_subject_released_notification_tooltip:0 "#header $notification_diplo_play_subject_released_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_subject_released_notification_desc$"
  notification_diplo_play_subject_released_notification_name: "[SCOPE.sC('target').GetName] отримала свободу"
  notification_diplo_play_subject_released_notification_desc: "Через нездатність [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sC('actor').GetName] захистити свою підвладну країну [SCOPE.sC('target').GetName], їхній пакт втратив силу."
 
- notification_diplo_play_subject_released_overlord_notification_tooltip: "#header $notification_diplo_play_subject_released_overlord_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_subject_released_overlord_notification_desc$"
+ notification_diplo_play_subject_released_overlord_notification_tooltip:0 "#header $notification_diplo_play_subject_released_overlord_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_subject_released_overlord_notification_desc$"
  notification_diplo_play_subject_released_overlord_notification_name: "[SCOPE.sC('target').GetName] отримала свободу"
  notification_diplo_play_subject_released_overlord_notification_desc: "Через те, що ми не змогли захистити нашу підвладну країну [SCOPE.sC('target').GetName], вони стали незалежними."
 
- notification_diplo_play_declare_neutrality_notification_tooltip: "#header $notification_diplo_play_declare_neutrality_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_declare_neutrality_notification_desc$"
+ notification_diplo_play_declare_neutrality_notification_tooltip:0 "#header $notification_diplo_play_declare_neutrality_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_declare_neutrality_notification_desc$"
  notification_diplo_play_declare_neutrality_notification_name: "[SCOPE.sC('actor').GetName] проголосила невтралітет"
  notification_diplo_play_declare_neutrality_notification_desc: "[SCOPE.sC('actor').GetName] проголосила їхній невтралітет у цій [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l] між [Concept('concept_country', '$concept_countries_ins$')|l] [SCOPE.sC('initiator').GetName] та [SCOPE.sC('target').GetName]."
 
- notification_resource_discovered_tooltip: "#header $notification_resource_discovered_name$#!\n$TOOLTIP_DELIMITER$\n$notification_resource_discovered_desc$"
+ notification_resource_discovered_tooltip:0 "#header $notification_resource_discovered_name$#!\n$TOOLTIP_DELIMITER$\n$notification_resource_discovered_desc$"
  notification_resource_discovered_name: "[SCOPE.sBT('target').GetDiscoveredResourceName] знайдено у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetStateRegion.GetName]"
  notification_resource_discovered_desc: "[SCOPE.sBT('target').GetDiscoveredResourceName] знайдено у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetStateRegion.GetName]. [concept_state_region] тепер може мати додаткові [Concept('concept_building', '$concept_buildings_acc$')|l] [SCOPE.sBT('target').GetName|l]."
 
- notification_resource_depleted_tooltip: "#header $notification_resource_depleted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_resource_depleted_desc$"
+ notification_resource_depleted_tooltip:0 "#header $notification_resource_depleted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_resource_depleted_desc$"
  notification_resource_depleted_name: "[SCOPE.sBT('target').GetDiscoveredResourceName] вичерпано у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetStateRegion.GetName]"
  notification_resource_depleted_desc: "[SCOPE.sBT('target').GetDiscoveredResourceName] вичерпано у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetStateRegion.GetName]. [concept_state_region] тепер може мати менше [Concept('concept_building', '$concept_buildings_acc$')|l] [SCOPE.sBT('target').GetName|l]."
 
- notification_new_culture_obsession_tooltip: "#header $notification_new_culture_obsession_name$#!\n$TOOLTIP_DELIMITER$\n$notification_new_culture_obsession_desc$"
+ notification_new_culture_obsession_tooltip:0 "#header $notification_new_culture_obsession_name$#!\n$TOOLTIP_DELIMITER$\n$notification_new_culture_obsession_desc$"
  notification_new_culture_obsession_name: "[SCOPE.GetRootScope.GetCulture.GetName] стали одержимими [Concept('concept_good', '$concept_good_ins$')|l] [SCOPE.sG('goods').GetName|l]"
  notification_new_culture_obsession_desc: "[SCOPE.GetRootScope.GetCulture.GetName] стали одержимими [Concept('concept_good', '$concept_good_ins$')|l] [SCOPE.sG('goods').GetName|l]."
 
- notification_commander_order_invalidated_tooltip: "#header $notification_commander_order_invalidated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_commander_order_invalidated_desc$"
+ notification_commander_order_invalidated_tooltip:0 "#header $notification_commander_order_invalidated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_commander_order_invalidated_desc$"
  notification_commander_order_invalidated_name: "Новий наказ командиру"
  notification_commander_order_invalidated_desc: "[SCOPE.GetRootScope.GetCharacter.GetFullName] тепер має новий наказ [SCOPE.sCOT('target').GetName] (Попередній [SCOPE.sCOT('actor').GetName])"
 
- notification_migration_target_created_tooltip: "#header $notification_migration_target_created_name$#!\n$TOOLTIP_DELIMITER$\n$notification_migration_target_created_desc$"
+ notification_migration_target_created_tooltip:0 "#header $notification_migration_target_created_name$#!\n$TOOLTIP_DELIMITER$\n$notification_migration_target_created_desc$"
  notification_migration_target_created_name: "Масове переселення народу [SCOPE.GetRootScope.GetState.GetMassMigrationCulture.GetName|l]"
  notification_migration_target_created_desc: "Велика кількість людей народу [SCOPE.GetRootScope.GetState.GetMassMigrationCulture.GetName|l] почала переселення з [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sC('country').GetName] до [Concept('concept_state', '$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetName] та сусідніх [Concept('concept_state', '$concept_states_gen$')|l]."
 
- notification_migration_target_created_other_tooltip: "#header $notification_migration_target_created_other_name$#!\n$TOOLTIP_DELIMITER$\n$notification_migration_target_created_other_desc$"
+ notification_migration_target_created_other_tooltip:0 "#header $notification_migration_target_created_other_name$#!\n$TOOLTIP_DELIMITER$\n$notification_migration_target_created_other_desc$"
  notification_migration_target_created_other_name: "Масове переселення народу [SCOPE.GetRootScope.GetState.GetMassMigrationCulture.GetName|l]"
  notification_migration_target_created_other_desc: "Велика кількість людей народу [SCOPE.GetRootScope.GetState.GetMassMigrationCulture.GetName|l] почала переселення з нашої [Concept('concept_country', '$concept_country_gen$')|l] до [Concept('concept_state', '$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetName] та сусідніх [Concept('concept_state', '$concept_states_gen$')|l]."
 
- notification_country_swayed_tooltip: "#header $notification_country_swayed_name$#!\n$TOOLTIP_DELIMITER$\n$notification_country_swayed_desc$"
+ notification_country_swayed_tooltip:0 "#header $notification_country_swayed_name$#!\n$TOOLTIP_DELIMITER$\n$notification_country_swayed_desc$"
  notification_country_swayed_name: "[SCOPE.sC('recipient').GetName] змінила позицію"
  notification_country_swayed_desc: "[SCOPE.sC('recipient').GetName] схилилася на #yellow [SCOPE.sC('actor').GetAdjective|l]ий#! бік у [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l] проти [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sC('target').GetName]"
 
- notification_sway_offer_accepted_tooltip: "#header $notification_sway_offer_accepted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_sway_offer_accepted_desc$"
+ notification_sway_offer_accepted_tooltip:0 "#header $notification_sway_offer_accepted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_sway_offer_accepted_desc$"
  notification_sway_offer_accepted_name: "[SCOPE.sC('recipient').GetName] змінила позицію"
  notification_sway_offer_accepted_desc: "[SCOPE.sC('recipient').GetName] схилилася на наш бік у [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l] проти [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sC('target').GetName]"
+ 
+ notification_reverse_sway_offer_accepted_tooltip: "#header $notification_reverse_sway_offer_accepted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_reverse_sway_offer_accepted_desc$"
+ notification_reverse_sway_offer_accepted_name: "[SCOPE.sC('recipient').GetName] accepted our support"
+ notification_reverse_sway_offer_accepted_desc: "[SCOPE.sC('recipient').GetName] accepted our [Concept('concept_offer_support','$concept_offer_of_support$')] in the [concept_diplomatic_play] against [SCOPE.sC('target').GetName]"
 
- notification_reverse_sway_offer_accepted_tooltip:0 "#header $notification_reverse_sway_offer_accepted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_reverse_sway_offer_accepted_desc$"
- notification_reverse_sway_offer_accepted_name:0 "[SCOPE.sC('recipient').GetName] accepted our support"
- notification_reverse_sway_offer_accepted_desc:0 "[SCOPE.sC('recipient').GetName] accepted our [Concept('concept_offer_support','$concept_offer_of_support$')] in the [concept_diplomatic_play] against [SCOPE.sC('target').GetName]"
-
- notification_sway_offer_rejected_tooltip: "#header $notification_sway_offer_rejected_name$#!\n$TOOLTIP_DELIMITER$\n$notification_sway_offer_rejected_desc$"
+ notification_sway_offer_rejected_tooltip:0 "#header $notification_sway_offer_rejected_name$#!\n$TOOLTIP_DELIMITER$\n$notification_sway_offer_rejected_desc$"
  notification_sway_offer_rejected_name: "Спроба схилити [Concept('concept_country', '$concept_country_acc$')|l] [SCOPE.sC('recipient').GetName] провалилася"
  notification_sway_offer_rejected_desc: "[SCOPE.sC('recipient').GetName] відмовився схилитися на наш бік у [Concept('concept_diplomatic_play', '$concept_diplomatic_play_loc$')|l] проти [Concept('concept_country', '$concept_country_gen$')|l] [SCOPE.sC('target').GetName]"
-
- notification_reverse_sway_offer_rejected_tooltip:0 "#header $notification_reverse_sway_offer_rejected_name$#!\n$TOOLTIP_DELIMITER$\n$notification_reverse_sway_offer_rejected_desc$"
- notification_reverse_sway_offer_rejected_name:0 "[SCOPE.sC('recipient').GetName] refused [Concept('concept_offer_support','$concept_offer_of_support$')]"
- notification_reverse_sway_offer_rejected_desc:0 "[SCOPE.sC('recipient').GetName] rejected our [Concept('concept_offer_support','$concept_offer_of_support$')] in the [concept_diplomatic_play] against [SCOPE.sC('target').GetName]"
  
- notification_diplomatic_demand_accepted_tooltip:0 "#header $notification_diplomatic_demand_accepted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplomatic_demand_accepted_desc$"
- notification_diplomatic_demand_accepted_name:0 "[SCOPE.sC('recipient').GetName] accepts demands"
- notification_diplomatic_demand_accepted_desc:0 "[SCOPE.sC('recipient').GetName] accepted the [concept_diplomatic_demand] of '[SCOPE.GetRootScope.GetDiplomaticDemand.GetDemandedWarGoal.GetName]' by [SCOPE.sC('actor').GetName]"
+ notification_reverse_sway_offer_rejected_tooltip: "#header $notification_reverse_sway_offer_rejected_name$#!\n$TOOLTIP_DELIMITER$\n$notification_reverse_sway_offer_rejected_desc$"
+ notification_reverse_sway_offer_rejected_name: "[SCOPE.sC('recipient').GetName] refused [Concept('concept_offer_support','$concept_offer_of_support$')]"
+ notification_reverse_sway_offer_rejected_desc: "[SCOPE.sC('recipient').GetName] rejected our [Concept('concept_offer_support','$concept_offer_of_support$')] in the [concept_diplomatic_play] against [SCOPE.sC('target').GetName]"
  
- notification_diplomatic_demand_rejected_tooltip:0 "#header $notification_diplomatic_demand_rejected_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplomatic_demand_rejected_desc$"
- notification_diplomatic_demand_rejected_name:0 "[SCOPE.sC('recipient').GetName] refuses demands"
- notification_diplomatic_demand_rejected_desc:0 "[SCOPE.sC('recipient').GetName] refused our [concept_diplomatic_demand] of '[SCOPE.GetRootScope.GetDiplomaticDemand.GetDemandedWarGoal.GetName]', triggering a [concept_diplomatic_play]"
-
- notification_interest_activated_tooltip: "#header $notification_interest_activated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_interest_activated_desc$"
+ notification_diplomatic_demand_accepted_tooltip: "#header $notification_diplomatic_demand_accepted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplomatic_demand_accepted_desc$"
+ notification_diplomatic_demand_accepted_name: "[SCOPE.sC('recipient').GetName] accepts demands"
+ notification_diplomatic_demand_accepted_desc: "[SCOPE.sC('recipient').GetName] accepted the [concept_diplomatic_demand] of '[SCOPE.GetRootScope.GetDiplomaticDemand.GetDemandedWarGoal.GetName]' by [SCOPE.sC('actor').GetName]"
+ 
+ notification_diplomatic_demand_rejected_tooltip: "#header $notification_diplomatic_demand_rejected_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplomatic_demand_rejected_desc$"
+ notification_diplomatic_demand_rejected_name: "[SCOPE.sC('recipient').GetName] refuses demands"
+ notification_diplomatic_demand_rejected_desc: "[SCOPE.sC('recipient').GetName] refused our [concept_diplomatic_demand] of '[SCOPE.GetRootScope.GetDiplomaticDemand.GetDemandedWarGoal.GetName]', triggering a [concept_diplomatic_play]"
+ 
+ notification_interest_activated_tooltip:0 "#header $notification_interest_activated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_interest_activated_desc$"
  notification_interest_activated_name: "[concept_interest] [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName] проявлений"
  notification_interest_activated_desc: "Ми тепер зможемо брати участь у [Concept('concept_diplomatic_play', '$concept_diplomatic_plays_loc$')|l], вести дипломатію, створювати [Concept('concept_trade_route', '$concept_trade_routes_acc$')|l] з [Concept('concept_country', '$concept_countries_ins$')|l] у [Concept('concept_strategic_region', '$concept_strategic_region_loc$')|l] [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName]."
 
- notification_interest_deactivated_tooltip: "#header $notification_interest_deactivated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_interest_deactivated_desc$"
+ notification_interest_deactivated_tooltip:0 "#header $notification_interest_deactivated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_interest_deactivated_desc$"
  notification_interest_deactivated_name: "[concept_interest] [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName] прибраний"
  notification_interest_deactivated_desc: "Ми більше не зможемо брати участь у [Concept('concept_diplomatic_play', '$concept_diplomatic_plays_loc$')|l], вести дипломатію, створювати [Concept('concept_trade_route', '$concept_trade_routes_acc$')|l] з [Concept('concept_country', '$concept_countries_ins$')|l] у [Concept('concept_strategic_region', '$concept_strategic_region_loc$')|l] [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName]."
  
- notification_interest_activated_third_party_tooltip: "#header $notification_interest_activated_third_party_name$#!\n$TOOLTIP_DELIMITER$\n$notification_interest_activated_third_party_desc$"
+ notification_interest_activated_third_party_tooltip:0 "#header $notification_interest_activated_third_party_name$#!\n$TOOLTIP_DELIMITER$\n$notification_interest_activated_third_party_desc$"
  notification_interest_activated_third_party_name: "Дипломатичні зв’язки з [Concept('concept_country', '$concept_country_ins$')|l] [SCOPE.sCountry('actor').GetName]"
  notification_interest_activated_third_party_desc: "Завдяки тому, що [SCOPE.sCountry('actor').GetName] проявила [Concept('concept_interest', '$concept_interest_acc$')|l] у [Concept('concept_strategic_region', '$concept_strategic_region_short_loc$')|l] [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName], ми тепер зможемо вести дипломатію з ними."
 
- notification_interest_deactivated_third_party_tooltip: "#header $notification_interest_deactivated_third_party_name$#!\n$TOOLTIP_DELIMITER$\n$notification_interest_deactivated_third_party_desc$"
+ notification_interest_deactivated_third_party_tooltip:0 "#header $notification_interest_deactivated_third_party_name$#!\n$TOOLTIP_DELIMITER$\n$notification_interest_deactivated_third_party_desc$"
  notification_interest_deactivated_third_party_name: "Втрачено дипломатичні зв’язки з [Concept('concept_country', '$concept_country_ins$')|l] [SCOPE.sCountry('actor').GetName]"
  notification_interest_deactivated_third_party_desc: "Через те, що [SCOPE.sCountry('actor').GetName] втратила свій [Concept('concept_interest', '$concept_interest_acc$')|l] у [Concept('concept_strategic_region', '$concept_strategic_region_short_loc$')|l] [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName], ми більше не зможемо вести дипломатію з ними."
 
- notification_colony_created_tooltip: "#header $notification_colony_created_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colony_created_desc$"
+ notification_colony_created_tooltip:0 "#header $notification_colony_created_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colony_created_desc$"
  notification_colony_created_name: "[SCOPE.sCountry('actor').GetName] осадила [Concept('concept_state','$concept_state_acc$')|l] [SCOPE.GetRootScope.GetState.GetStateRegion.GetName]"
  notification_colony_created_desc: "[SCOPE.sCountry('actor').GetName] заснувала [Concept('concept_colony','$concept_colony_acc$')|l] у [Concept('concept_state','$concept_state_loc$')|l] [SCOPE.GetRootScope.GetState.GetName]."
  
- notification_colony_complete_tooltip: "#header $notification_colony_complete_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colony_complete_desc$"
+ notification_colony_complete_tooltip:0 "#header $notification_colony_complete_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colony_complete_desc$"
  notification_colony_complete_name: "Осадництво [Concept('concept_state','$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetStateRegion.GetName] завершено"
  notification_colony_complete_desc: "Наше осадництво [Concept('concept_state','$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetName] завершено і наша колишня [concept_colony|l] тепер стала повноцінною [Concept('concept_state','$concept_state_ins$')|l]."
  
- notification_colony_complete_third_party_tooltip: "#header $notification_colony_complete_third_party_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colony_complete_third_party_desc$"
+ notification_colony_complete_third_party_tooltip:0 "#header $notification_colony_complete_third_party_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colony_complete_third_party_desc$"
  notification_colony_complete_third_party_name: "#yellow [SCOPE.sCountry('actor').GetAdjective]е#! осадництво [Concept('concept_state','$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetStateRegion.GetName] завершено"
  notification_colony_complete_third_party_desc: "#yellow [SCOPE.sCountry('actor').GetAdjective]е#! осадництво [Concept('concept_state','$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetName] завершено і їхня колишня [concept_colony|l] тепер стала повноцінною [Concept('concept_state','$concept_state_ins$')|l]."
 
- notification_ig_trait_activated_tooltip: "#header $notification_ig_trait_activated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_trait_activated_desc$"
+ notification_ig_trait_activated_tooltip:0 "#header $notification_ig_trait_activated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_trait_activated_desc$"
  notification_ig_trait_activated_name: "[SCOPE.GetRootScope.GetInterestGroup.GetName] - риса «[SCOPE.sInterestGroupTrait('target').GetName(SCOPE.GetRootScope.GetInterestGroup.Self)]» дієва"
  notification_ig_trait_activated_desc: "Це сталося, тому що їхнє [concept_approval|l] - [SCOPE.GetRootScope.GetInterestGroup.GetApprovalRating|l] (#tooltippable #tooltip:[SCOPE.GetRootScope.GetInterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [SCOPE.GetRootScope.GetInterestGroup.GetApprovalValue|=+]#!#!)\n\n#title Заподії:#!\n[SCOPE.sInterestGroupTrait('target').GetModifiersDesc(SCOPE.GetRootScope.GetInterestGroup.Self)]"
 
- notification_ig_became_influential_tooltip: "#header $notification_ig_became_influential_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_became_influential_desc$"
- notification_ig_became_influential_name: "[Concept('concept_interest_group','$concept_interest_group_short$')] [SCOPE.GetRootScope.GetInterestGroup.GetName] тепер [Concept('concept_influential', '$concept_influential_adj$а')|l]"
+ notification_ig_became_influential_tooltip:0 "#header $notification_ig_became_influential_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_became_influential_desc$"
+ notification_ig_became_influential_name:1 "[SCOPE.GetRootScope.GetInterestGroup.GetName] are now [concept_influential]"
  notification_ig_became_influential_desc: "[Concept('concept_interest_group','$concept_interest_group$')] [SCOPE.GetRootScope.GetInterestGroup.GetName] була [Concept('concept_marginalized', '$concept_marginalized_adj$ою')|l], але тепер стала [Concept('concept_influential', '$concept_influential_adj$ою')|l]."
 
- notification_ig_became_powerful_tooltip: "#header $notification_ig_became_powerful_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_became_powerful_desc$"
- notification_ig_became_powerful_name: "[Concept('concept_interest_group','$concept_interest_group_short$')] [SCOPE.GetRootScope.GetInterestGroup.GetName] тепер [Concept('concept_powerful','$concept_powerful_adj$а')|l]"
+ notification_ig_became_powerful_tooltip:0 "#header $notification_ig_became_powerful_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_became_powerful_desc$"
+ notification_ig_became_powerful_name:1 "[SCOPE.GetRootScope.GetInterestGroup.GetName] are now [concept_powerful]"
  notification_ig_became_powerful_desc: "[Concept('concept_interest_group','$concept_interest_group$')] [SCOPE.GetRootScope.GetInterestGroup.GetName] була [Concept('concept_influential', '$concept_influential_adj$ою')|l], але тепер стала [Concept('concept_powerful', '$concept_powerful_adj$ою')|l]."
 
- notification_ig_no_longer_powerful_tooltip: "#header $notification_ig_no_longer_powerful_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_no_longer_powerful_desc$"
- notification_ig_no_longer_powerful_name: "[Concept('concept_interest_group','$concept_interest_group_short$')] [SCOPE.GetRootScope.GetInterestGroup.GetName] більше не [Concept('concept_powerful', '$concept_powerful_adj$а')|l]"
+ notification_ig_no_longer_powerful_tooltip:0 "#header $notification_ig_no_longer_powerful_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_no_longer_powerful_desc$"
+ notification_ig_no_longer_powerful_name:1 "[SCOPE.GetRootScope.GetInterestGroup.GetName] are no longer [concept_powerful]"
  notification_ig_no_longer_powerful_desc: "[Concept('concept_interest_group','$concept_interest_group$')] [SCOPE.GetRootScope.GetInterestGroup.GetName] була [Concept('concept_powerful', '$concept_powerful_adj$ою')|l], але тепер стала [Concept('concept_influential', '$concept_influential_adj$ою')|l]."
 
- notification_ig_no_longer_influential_tooltip: "#header $notification_ig_no_longer_influential_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_no_longer_influential_desc$"
- notification_ig_no_longer_influential_name: "[Concept('concept_interest_group','$concept_interest_group_short$')] більше не [Concept('concept_influential', '$concept_influential_adj$а')|l]"
+ notification_ig_no_longer_influential_tooltip:0 "#header $notification_ig_no_longer_influential_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_no_longer_influential_desc$"
+ notification_ig_no_longer_influential_name:1 "[SCOPE.GetRootScope.GetInterestGroup.GetName] are no longer [concept_influential]"
  notification_ig_no_longer_influential_desc: "[Concept('concept_interest_group','$concept_interest_group$')] [SCOPE.GetRootScope.GetInterestGroup.GetName] була [Concept('concept_influential', '$concept_influential_adj$ою')|l], але тепер стала [Concept('concept_marginalized', '$concept_marginalized_adj$ою')|l]."
 
- notification_ig_trait_deactivated_tooltip: "#header $notification_ig_trait_deactivated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_trait_deactivated_desc$"
+ notification_ig_trait_deactivated_tooltip:0 "#header $notification_ig_trait_deactivated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_trait_deactivated_desc$"
  notification_ig_trait_deactivated_name: "[SCOPE.GetRootScope.GetInterestGroup.GetName] - риса «[SCOPE.sInterestGroupTrait('target').GetName(SCOPE.GetRootScope.GetInterestGroup.Self)]» недієва"
  notification_ig_trait_deactivated_desc: "Це сталося, тому що їхнє [concept_approval|l] - [SCOPE.GetRootScope.GetInterestGroup.GetApprovalRating|l] (#tooltippable #tooltip:[SCOPE.GetRootScope.GetInterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [SCOPE.GetRootScope.GetInterestGroup.GetApprovalValue|=+]#!#!).\n\n#title Заподії (більше не діють):#!\n[SCOPE.sInterestGroupTrait('target').GetModifiersDesc(SCOPE.GetRootScope.GetInterestGroup.Self)]"
 
  notification_ig_movement_left_marginal_name: "[SCOPE.GetRootScope.GetInterestGroup.GetName] покинула рух [SCOPE.sPoliticalMovement('political_movement').GetName|l]"
  notification_ig_movement_left_marginal_desc: "Це сталося через те, що зацікавлена група стала маргінальною."
- notification_ig_movement_left_marginal_tooltip: "#header $notification_ig_movement_left_marginal_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_movement_left_marginal_desc$"
+ notification_ig_movement_left_marginal_tooltip:0 "#header $notification_ig_movement_left_marginal_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_movement_left_marginal_desc$"
 
  notification_ig_movement_left_in_government_name: "[SCOPE.GetRootScope.GetInterestGroup.GetName] покинула рух [SCOPE.sPoliticalMovement('political_movement').GetName|l]"
  notification_ig_movement_left_in_government_desc: "Це сталося через те, що зацікавлена група стала частиною уряду."
@@ -8819,7 +8819,7 @@
  POP_TYPE_IN_RELIGION_HEADER:0 "[PopListItem.GetTotalPopSize|vD] [Religion.GetName] [PopType.GetNameNoIcon]"
  POP_TYPE_IN_IG: "#b [PopType.GetName] у [Concept('concept_country', '$concept_country_loc$')|l] [InterestGroup.GetCountry.GetName]#!:\n$TAB$$TAB$Населення: [PopType.GetPopulation(InterestGroup.GetCountry)|kv]\n$TAB$$TAB$$TAB$$TAB$[concept_workforce]: [PopType.GetWorkforce(InterestGroup.GetCountry)|kv]\n$TAB$$TAB$$TAB$$TAB$[concept_dependents]: [PopType.GetDependents(InterestGroup.GetCountry)|kv]\n$TAB$$TAB$[concept_political_strength]: [PopType.GetPolStr(InterestGroup.GetCountry)|kv][SelectLocalization(InterestGroup.GetCountry.IsPlayer, 'POP_TYPE_IN_IG_SUPPORT', '')]"
  POP_TYPE_IN_IG_SUPPORT: "\n\n[PopType.GetInterestGroupSupportDesc( InterestGroup.GetCountry )]"
- POP_TYPE_IN_IG_HEADER: "[PopType.GetNameNoIcon] підтримують [Concept('concept_interest_group', '$concept_interest_group_short_acc$')|l] [InterestGroup.GetNameNoIcon]: [PopListItem.GetTotalPopSize|vD] ос."
+ POP_TYPE_IN_IG_HEADER:0 "[PopListItem.GetTotalPopSize|vD] [PopType.GetNameNoIcon] support the [InterestGroup.GetNameNoIcon]"
 
 
 
@@ -9628,8 +9628,8 @@
  UNPIN_POLITICAL_LOBBY: "Unpin [PoliticalLobby.GetName] from the Outliner"
  PIN_COUNTRY:0 "Pin [Country.GetName] to the Outliner"
  UNPIN_COUNTRY:0 "Unpin [Country.GetName] from the Outliner"
- PIN_IG: "Прикріпити [Concept('concept_interest_group', '$concept_interest_group_short_acc$')|l] [InterestGroup.GetName] до плянувальника"
- UNPIN_IG: "Відкріпити [Concept('concept_interest_group', '$concept_interest_group_short_acc$')|l] [InterestGroup.GetName] від плянувальника"
+ PIN_IG:0 "Pin [InterestGroup.GetName] to the Outliner"
+ UNPIN_IG:0 "Unpin [InterestGroup.GetName] from the Outliner"
  PIN_JOURNAL_ENTRY: "Прикріпити «[JournalEntry.GetName]» до плянувальника"
  UNPIN_JOURNAL_ENTRY: "Відкріпити «[JournalEntry.GetName]» від плянувальника"
  PIN_MARKET: "Прикріпити [Market.GetName|l] до плянувальника"

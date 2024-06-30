@@ -281,7 +281,7 @@
  monarchist_stall_fail:0 "Tin Crown Mocked"
 
  trains.1.t:0 "Велика залізнична троща"
- trains.1.d:0 "Заповзятливий шоумен влаштував зіткнення двох старих паротягів на місцевому ярмарку. Зіткнення може становити небезпеку для натовпу, хоча це не зупинило [Concept('concept_character','$concept_character_gen$')|l] [SCOPE.sCharacter('train_crash_attendee').GetFullName], провідника [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l] [SCOPE.gsInterestGroup('train_crash_attendee_ig').GetName], від заяви, що [SCOPE.sCharacter('train_crash_attendee').GetCustom('UA_vin_vona')|l] буде сидіти в першому ряду на цьому заході."
+ trains.1.d:0 "An enterprising entertainer has arranged for two aging locomotives to run into each other at a local fair. The resulting collision may pose a danger to the crowd, although that hasn't stopped [SCOPE.sCharacter('train_crash_attendee').GetFullName], leader of the [SCOPE.gsInterestGroup('train_crash_attendee_ig').GetName], from declaring that [SCOPE.sCharacter('train_crash_attendee').GetSheHe] will have a front-row seat at the event."
  trains.1.f:0 "-Заради Бога, навіщо? Чому ви так сильно хочете побачити трощу?\n\n-Чесно? Я вірю, що десь у глибині душі кожної нормальної людини, так само як і в мені, ховається пригнічене бажання все зруйнувати."
  trains.1.a:0 "Насолоджуйтеся видовищем!"
  trains.1.b:0 "Заборонити [SCOPE.sCharacter('train_crash_attendee').GetCustom('UA_jomu_jij')|l] ризикувати життям, відвідуючи захід!"

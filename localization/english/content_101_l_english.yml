@@ -291,8 +291,8 @@
  warlord_china_events.110.a:0 "The people should know."
  warlord_china_events.110.b:0 "Best to cover this up."
 
- notification_ig_leader_steps_down_name:0 "Провідник [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l]  [SCOPE.gsInterestGroup('stepping_down_leader_ig').GetName] пішов у відставку"
- notification_ig_leader_steps_down_desc:0 "[SCOPE.sCharacter('stepping_down_leader').GetFullName], провідник [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l] [SCOPE.gsInterestGroup('stepping_down_leader_ig').GetName], пішов у відставку [SCOPE.sCharacter('stepping_down_leader').GetCustom('stepping_down_reason')|l]"
+ notification_ig_leader_steps_down_name:0 "Leader of the [SCOPE.gsInterestGroup('stepping_down_leader_ig').GetName] steps down."
+ notification_ig_leader_steps_down_desc:0 "[SCOPE.sCharacter('stepping_down_leader').GetFullName], the leader of the [SCOPE.gsInterestGroup('stepping_down_leader_ig').GetName], has stepped down [SCOPE.sCharacter('stepping_down_leader').GetCustom('stepping_down_reason')]"
  notification_ig_leader_steps_down_tooltip:0 "#header $notification_ig_leader_steps_down_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_leader_steps_down_desc$"
 
  custom_loc_personal_reasons:0 "через особисті причини."

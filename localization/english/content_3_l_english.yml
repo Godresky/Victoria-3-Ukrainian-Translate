@@ -4,7 +4,7 @@
 
 
  generic_laws.1.t:0 "Зворушлива промова захоплює публіку"
- generic_laws.1.d:0 "Сьогодні по обіді, [SCOPE.sCharacter('orator_ig_leader_scope').GetFullName], провідник [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l] [SCOPE.gsInterestGroup('orator_ig_scope').GetName], виступив з полум‘яною промовою на підтримку надання чинности [Concept('concept_law','$concept_law_gen$')|l] «[SCOPE.sLaw('current_law_scope').GetName]»."
+ generic_laws.1.d:0 "This afternoon, [SCOPE.sCharacter('orator_ig_leader_scope').GetFullName], leader of the [SCOPE.gsInterestGroup('orator_ig_scope').GetName], delivered a fiery speech advocating for the enactment of [SCOPE.sLaw('current_law_scope').GetName]."
  generic_laws.1.f:0 "Виступ перед публікою на головній площі міста [SCOPE.sCharacter('orator_ig_leader_scope').GetCountry.GetCapital.GetCityHubName]. [SCOPE.sCharacter('orator_ig_leader_scope').GetFullNameNoFormatting] своєю палкою промовою не залиши[Select_CString(SCOPE.sCharacter('ottoman_sultan').IsFemale,'$CustomLoc_UA_vona_la$','$CustomLoc_UA_vin_v$')|l] байдужими навіть своїх найбільш озлоблених політичних опонентів. Уривки з промови вже ширяться всією країною, роздмухуючи вогонь і без того бурхливих суперечок." # [ROOT.GetCountry.GetNameNoFormatting]
  generic_laws.1.a:0 "Це має значно полегшити шлях до змін."  #переробити
  generic_laws.1.b:0 "[SCOPE.sCharacter('orator_ig_leader_scope').GetFullNameNoFormatting] у промові добре показав свої цілі."
@@ -14,7 +14,7 @@
  skilled_orator:0 "Визнаний промовець"
 
  generic_laws.2.t:0 "Викрито залаштункові оборудки"
- generic_laws.2.d:0 "Видатні учасники [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l] [SCOPE.gsInterestGroup('corrupt_ig_scope').GetName] — відверті прихильники [Concept('concept_law','$concept_law_gen$')|l] «[SCOPE.sLaw('current_law_scope').GetName]» і [SCOPE.sCharacter('corrupt_ig_leader_scope').GetFullName] та [SCOPE.sCharacter('corrupt_ig_leader_scope').GetCustom('UA_joho_jiji')|l] близькі союзники були викриті в корупційному скандалі, обмінявши політичні послуги на особисті «подарунки»."
+ generic_laws.2.d:0 "Prominent members of the [SCOPE.gsInterestGroup('corrupt_ig_scope').GetName] — outspoken supporters of [SCOPE.sLaw('current_law_scope').GetName] and close allies of [SCOPE.sCharacter('corrupt_ig_leader_scope').GetFullName] — have been exposed in a corruption scandal, having exchanged political favors for personal "gifts"."
  generic_laws.2.f:1 "One aide was all it took. One boy squeezing acne from his face in the right place at the right time to overhear the howling laughter, smell the rich tobacco blend, and spot [SCOPE.sCharacter('corrupt_ig_leader_scope').GetFullNameNoFormatting]'s new, golden cufflinks. One honest fellow's word to the right ears, and it was all uncovered."
  generic_laws.2.a:0 "І що? Така природа політики."
  generic_laws.2.b:0 "Викиньте їх за борт, ми не повинні залишати цей безлад."
@@ -25,7 +25,7 @@
  dealing_with_corruption:0 "Боротьба з корупцією"
 
  generic_laws.3.t:1 "Опозиціонери висунули вимоги"
- generic_laws.3.d:0 "Більш праґматично налаштовані члени [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l] [SCOPE.gsInterestGroup('opposition_demands_ig_scope').GetName], які обстоюють проти ухвалення [Concept('concept_law','$concept_law_gen$')|l] «[SCOPE.sLaw('current_law_scope').GetName]», погодилися змінити свою позицію, якщо їм запропонують певні політичні поступки. Однак, [SCOPE.gsInterestGroup('opposition_demands_supporting_ig_scope').GetName] не зрозуміє такі поступки."
+ generic_laws.3.d:0 "More pragmatically inclined members of the [SCOPE.gsInterestGroup('opposition_demands_ig_scope').GetName], currently opposed to the passing of [SCOPE.sLaw('current_law_scope').GetName], have offered to change their stance were they to be offered certain political concessions. Such concessions would not be popular with the [SCOPE.gsInterestGroup('opposition_demands_supporting_ig_scope').GetName], however."
  generic_laws.3.f:0 "«Компроміс - це хороша парасолька, але поганий дах; він тимчасово доцільний, часто слушний у партійній політиці, але майже напевно безглуздий у державному управлінні.»" # James Russell Lowell
  generic_laws.3.a:0 "Якщо пристати на їхні вимоги, закон буде ухвалений."
  generic_laws.3.b:0 "Компроміс - знаряддя слабких."
@@ -38,7 +38,7 @@
 
 
  generic_laws.4.t:0 "Популярний драматург підтримав зміну"
- generic_laws.4.d:0 "У розпал дебатів навколо [Concept('concept_law','$concept_law_gen$')|l] «[SCOPE.sLaw('current_law_scope').GetName]», один із провідних драматургів держави, який тісно асоціюється з [Concept('concept_interest_group','$concept_interest_group_short_ins$')|l] [SCOPE.gsInterestGroup('playwright_ig_scope').GetName], поставив широко відому п’єсу, що порушує політичне питання та у якій творець не приховує своєї підтримки в ухвалені закону."
+ generic_laws.4.d:0 "In the midst of the debate surrounding [SCOPE.sLaw('current_law_scope').GetName], one of the country's leading playwrights, strongly associated with the [SCOPE.gsInterestGroup('playwright_ig_scope').GetName], has staged a widely acclaimed play whose politically laden theme makes no secret of the author's desire for the law to be passed."
  generic_laws.4.f:0 "«Точка зору творця може бути дещо упередженою, але, пане, з його прозою не посперечаєшся!»"
  generic_laws.4.a:0 "[SCOPE.sLaw('current_law_scope').GetNameNoFormatting] тепер у всіх на вустах."
  generic_laws.4.b:0 "[SCOPE.gsInterestGroup('playwright_ig_scope').GetNameNoFormatting] тепер має хорошу славу."

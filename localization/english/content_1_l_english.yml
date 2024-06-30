@@ -200,7 +200,7 @@
  anti_mask_discredited:0 "Знеславлення Протимаскової спілки"
   # Battle of Cable Street
  cable_street.1.t:1 "Битва за [SCOPE.sState('fascist_rally_state').GetCityHubName]"
- cable_street.1.d:1 "[SCOPE.sCharacter('fascist_leader').GetFullName] та [SCOPE.sParty('fascist_party').GetName] плянують великий мітинг у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.sState('fascist_rally_state').GetName]. Вони очікують спрагненого опору з боку протифашистських груп, вільно організованих під стягами [Concept('concept_interest_group', '$concept_interest_group_short_gen$')|l] [SCOPE.gsInterestGroup('antifa_ig').GetName]."
+ cable_street.1.d:1 "[SCOPE.sCharacter('fascist_leader').GetFullName] and the [SCOPE.sParty('fascist_party').GetName] are planning a major rally in [SCOPE.sState('fascist_rally_state').GetName]. They expect impassioned resistance from anti-fascist groups loosely organized under the banner of the [SCOPE.gsInterestGroup('antifa_ig').GetName]."
  cable_street.1.f:1 "«На барикади! Геть фашистів! Вони не пройдуть!»"
  cable_street.1.a:1 "Ми повинні захистити їхнє право на марш."
  cable_street.1.b:1 "Нехай воюють, ми не будемо втручатися."
@@ -1441,7 +1441,7 @@
  autocracy.1.b:0 "[SCOPE.sCulture('primary_culture_scope').GetName] - найважливіше."
  autocracy.1.c:0 "[SCOPE.gsInterestGroup('church_scope').GetName] проторує нам дорогу."
  autocracy.2.t:0 "Таємні товариства"
- autocracy.2.d:1 "Підпільні групи вчених у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.sState('secret_societies_state').GetName] готують змову проти уряду, щоб просунути необґрунтовано усунуту [Concept('concept_interest_group', '$concept_interest_group_short_acc$')|l] [SCOPE.gsInterestGroup('secret_society_ig').GetName]."
+ autocracy.2.d:1 "Clandestine groups of academics in [SCOPE.sState('secret_societies_state').GetName] are plotting against the state to advance the misguided cause of the [SCOPE.gsInterestGroup('secret_society_ig').GetName]."
  autocracy.2.f:1 "«Ми знайшли ваші богохульні та зрадницькі книжки. Ваші брошури. Крамниці, які ви використовували як прикриття. Ваші будинки. Місця зустрічей, які, як ви думали, тримали в таємниці. Ми спалили їх усіх. Залишилося отримати тільки твоє зізнання.»"
  autocracy.2.a:0 "Дайте їм спокій, вони не становлять жодної загрози."
  autocracy.2.b:0 "Іншодумство має бути покаране."

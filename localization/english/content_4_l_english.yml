@@ -339,7 +339,7 @@
  republic_laws.1.b:0 "Можливо, [ROOT.GetCountry.GetRuler.GetCustom('UA_vin_vona')|l] просто випадково проспа[Select_CString(ROOT.GetCountry.GetRuler.IsFemale,'$CustomLoc_UA_vona_la$','$CustomLoc_UA_vin_v$')|l]."
  republic_laws.1.c:0 "Напишіть про це пресі."
  republic_laws.2.t:0 "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] і [ROOT.GetCountry.GetRuler.GetCustom('UA_joho_jiji')|l] доля"
- republic_laws.2.d:0 "[SCOPE.sCharacter('monarchist_supporter').GetFullName] з [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l] [SCOPE.gsInterestGroup('rulers_fate').GetName] запитав, як [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] житиме далі, якщо уряд ухвалить [Concept('concept_law','$concept_law_acc$')|l] «[SCOPE.sLaw('current_law_scope').GetName]»."
+ republic_laws.2.d:0 "[SCOPE.sCharacter('monarchist_supporter').GetFullName] of the [SCOPE.gsInterestGroup('rulers_fate').GetName] has asked what is to become of the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] should the Government become a [SCOPE.sLaw('current_law_scope').GetName]."
  republic_laws.2.f:0 "«Монархія є одним з основних стовпів, на яких тримається ця держава. Ми не можемо серйозно розглядати ідею просто позбутися її.»\n\n«Але ми не можемо мати справедливу та рівну націю, якщо ми маємо намір утримувати одну людину вищою за інших. Якщо [ROOT.GetCountry.GetRuler.GetCustom('UA_vin_vona')|l] хоче зберегти свою шляхетність, ми повинні відправити його кудись подалі. [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] не повинна більше існувати у нашому суспільстві.»"
  republic_laws.2.a:0 "Нехай [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] зречеться престолу."
  republic_laws.2.b:0 "Нехай [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] відправляється у вигнання."
