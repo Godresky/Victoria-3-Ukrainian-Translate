@@ -174,3 +174,5 @@
  engineer_desc: "Цей персонаж є майстром технічних мистецтв і розуміє виклики промислової сучасности."
  master_bureaucrat: "Майстерний урядовець"
  master_bureaucrat_desc: "Цей персонаж неймовірно вміє керувати як людьми, так і паперовою роботою."
+ political_appointee: "Political Appointee"
+ political_appointee_desc: "This character was thrust into a position of power by another authority, and does not enjoy a natural powerbase."

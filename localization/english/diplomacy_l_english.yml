@@ -50,6 +50,8 @@
  DIPLO_PLAY_GREAT_POWER_TRIGGER: "Ми повинні бути [Concept('concept_great_power','$concept_great_power_ins$')|l], щоб почати цю [Concept('concept_diplomatic_play','$concept_diplomatic_play_acc$')|l]"
  DIPLO_PLAY_OUTRAGED_TRIGGER: "Їхня [concept_infamy|l] повинна бути: $infamy_pariah$"
 
+ DIPLOMATIC_PACT_REDUCED_LIBERTY_DESIRE: "Will contribute to a decline in [SCOPE.sCountry('target_country').GetAdjective] [concept_liberty_desire]"
+
  DIPLOMATIC_PACT_REQUIREMENT_MORE_TECHS_RESEARCHED: "[SCOPE.sCountry('actor').GetName] must have unlocked more [Concept('concept_technology', '$concept_technologies$')] than [SCOPE.sCountry('target_country').GetName]"
  DIPLOMATIC_PACT_REQUIREMENT_HIGH_LIBERTY_DESIRE: "[SCOPE.sCountry('actor').GetAdjective] [concept_liberty_desire] must be at least [GetDefine('NDiplomacy','WAR_GOAL_INCREASE_AUTONOMY_MIN_LIBERTY_DESIRE')]"
  DIPLOMATIC_PACT_REQUIREMENT_TARGET_HIGH_LIBERTY_DESIRE: "[SCOPE.sCountry('target_country').GetAdjective] [concept_liberty_desire] must be at least [GetDefine('NDiplomacy','WAR_GOAL_INCREASE_AUTONOMY_MIN_LIBERTY_DESIRE')]"
@@ -251,6 +253,7 @@
  DIPLOMATIC_ACCEPTANCE_WORLD_REVOLUTION: "They are pursuing a [concept_ai_strategy] of #v $ai_strategy_world_revolution$#!"
  DIPLOMATIC_ACCEPTANCE_UNRECOGNIZED: "[SCOPE.sCountry('actor').GetName] is an [concept_unrecognized_power]"
  DIPLOMATIC_ACCEPTANCE_DECREASED_COHESION: "[concept_power_bloc_cohesion] reduction if [SCOPE.sCountry('actor').GetName] joined"
+ DIPLOMATIC_ACCEPTANCE_LEGITIMACY: "[concept_legitimacy] of [SCOPE.GetRootScope.GetCountry.GetName] ([SCOPE.GetRootScope.GetCountry.GetGovernmentLegitimacy|v])"
  
  DIPLOMATIC_ACCEPTANCE_NATIONAL_MILITIA: "They have enacted [GetLawType('law_national_militia').GetName]"
  DIPLOMATIC_ACCEPTANCE_DISALLOWED_TRADE_ROUTES: "They disallowed [Concept('concept_trade_route', '$concept_trade_routes$')]"
@@ -280,6 +283,7 @@
  DIPLOMATIC_ACCEPTANCE_COHESION: "[concept_power_bloc_cohesion] of [SCOPE.sCountry('actor').GetPowerBloc.GetName]"
  DIPLOMATIC_ACCEPTANCE_COHESION_OF_TARGET: "[concept_power_bloc_cohesion] of [SCOPE.GetRootScope.GetCountry.GetPowerBloc.GetName]"
  DIPLOMATIC_ACCEPTANCE_IDENTITY_AFFINITY_TO_RANK: "[SCOPE.sCountry('actor').GetPowerBloc.GetName] affinity to [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting] [concept_rank] of [SCOPE.GetRootScope.GetCountry.GetRank]"
+ DIPLOMATIC_ACCEPTANCE_FROM_IDENTITY: "[SCOPE.sCountry('actor').GetPowerBloc.GetIdentity.GetName]"
  DIPLOMATIC_ACCEPTANCE_TRADE_AGREEMENT: "We have a [concept_trade_agreement]"
  DIPLOMATIC_ACCEPTANCE_FOREIGN_INVESTMENT_RIGHTS: "They have [concept_foreign_investment_rights]"
  DIPLOMATIC_ACCEPTANCE_SAME_POWER_BLOC: "In the same [concept_power_bloc]"
@@ -347,7 +351,8 @@
  DIPLOMATIC_ACTION_MAINTENANCE_COST_DESC: "#header $NAME$ Maintenance Cost: @inf!$COST|v0$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
  DIPLO_ACTION_REVERSE_PACT_ALREADY_ACTIVE: "This pact is already established"
  
- DIPLO_ACTION_PENDING: "Наша пропозиція очікує на затвердження"
+ DIPLO_ACTION_PENDING:0 "Наша пропозиція очікує на затвердження"
+ DIPLO_ACTION_PENDING_OTHER: "They are already considering a proposal from us"
  DIPLO_ACTION_REVERSE_PENDING: "Їхня пропозиція очікує на затвердження"
  DIPLO_PACT_RELATIONS_CHANGE_POS: "Поточні зусилля з #b покращення [Concept('concept_relations', '$concept_relations_gen$')|l]#! виконані на $PROGRESS|2%v$ ($PROGRESS_DAILY|%=v2$ / щодня) і це призведе до взаємної зміни [Concept('concept_relations', '$concept_relations_gen$')|l] на #P #b +1#!#! в $DATE|v$"
  DIPLO_PACT_RELATIONS_CHANGE_NEG: "Поточні зусилля з #b погіршення [Concept('concept_relations', '$concept_relations_gen$')|l]#! виконані на $PROGRESS|2%v$ ($PROGRESS_DAILY|%=v2$ / щодня) і це призведе до взаємної зміни [Concept('concept_relations', '$concept_relations_gen$')|l] на #N #b -1#!#! в $DATE|v$"

@@ -220,3 +220,8 @@
  region_pacific_seaboard_02:0 "Тихоокеанське узбережжя"
  region_centroamerican_sea:0 "Центральноамериканське море"
  region_baltic_sea:0 "Балтійське море"
+ region_belarus: "Belarus"
+ region_baltic_states: "Livonia"
+ region_finland: "Finland"
+ region_arctic_russia: "Arctic Russia"
+ region_urals: "Urals"

@@ -202,6 +202,13 @@
  TRIGGER_HAS_JOURNAL_ENTRY_THIRD: "У державі [COUNTRY.GetName] є активним [Concept('concept_journal_entry', '$concept_journal_entry_acc$')|l] «[JOURNAL_ENTRY_TYPE.GetName]»"
  TRIGGER_HAS_JOURNAL_ENTRY_THIRD_NOT:1 "[COUNTRY.GetName] does #bold not #!have an active [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
  
+ TRIGGER_HAS_INACTIVE_JOURNAL_ENTRY: "Has an inactive [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
+ TRIGGER_HAS_INACTIVE_JOURNAL_ENTRY_NOT: "Does #bold not #!have an inactive [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
+ TRIGGER_HAS_INACTIVE_JOURNAL_ENTRY_FIRST: "[COUNTRY.GetNameNoFlag] has an inactive [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
+ TRIGGER_HAS_INACTIVE_JOURNAL_ENTRY_FIRST_NOT: "[COUNTRY.GetNameNoFlag] does #bold not #!have an inactive [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
+ TRIGGER_HAS_INACTIVE_JOURNAL_ENTRY_THIRD: "[COUNTRY.GetName] has an inactive [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
+ TRIGGER_HAS_INACTIVE_JOURNAL_ENTRY_THIRD_NOT: "[COUNTRY.GetName] does #bold not #!have an inactive [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
+
  TRIGGER_HAS_VARIABLE: "#variable Держава#! має #variable відповідну змінну#!"
  TRIGGER_HAS_VARIABLE_NOT: "#variable Держава#! #bold не#! має #variable відповідну змінну#!"
  TRIGGER_HAS_VARIABLE_FIRST: "#variable Держава#! має #variable відповідну змінну#!"
@@ -1314,9 +1321,13 @@
  TRIGGER_HAS_REVOLUTION_OVER_LAW_TYPE_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold не#! у [Concept('concept_revolution', '$concept_revolution_loc$')|l] через закон «[TARGET_LAW_TYPE.GetName]»"
  TRIGGER_HAS_REVOLUTION_OVER_LAW_TYPE_THIRD: "[COUNTRY.GetName] у [Concept('concept_revolution', '$concept_revolution_loc$')|l] через закон «[TARGET_LAW_TYPE.GetName]»"
  TRIGGER_HAS_REVOLUTION_OVER_LAW_TYPE_THIRD_NOT: "[COUNTRY.GetName] #bold не#! у [Concept('concept_revolution', '$concept_revolution_loc$')|l] через закон «[TARGET_LAW_TYPE.GetName]»"
- 
- TRIGGER_IS_REVOLUTIONARY:0 "Is revolutionary"
- TRIGGER_IS_REVOLUTIONARY_NOT:1 "Is #bold not #!revolutionary"
+  
+ TRIGGER_IS_REVOLUTIONARY: "Is [Concept('concept_revolution','$concept_revolutionary$')]"
+ TRIGGER_IS_REVOLUTIONARY_NOT: "Is #bold not #! [Concept('concept_revolution','$concept_revolutionary$')]"
+ TRIGGER_IS_REVOLUTIONARY_FIRST: "[COUNTRY.GetNameNoFlag] is [Concept('concept_revolution','$concept_revolutionary$')]"
+ TRIGGER_IS_REVOLUTIONARY_FIRST_NOT: "[COUNTRY.GetNameNoFlag] is #bold not #! [Concept('concept_revolution','$concept_revolutionary$')]"
+ TRIGGER_IS_REVOLUTIONARY_THIRD: "[COUNTRY.GetName] is [Concept('concept_revolution','$concept_revolutionary$')]"
+ TRIGGER_IS_REVOLUTIONARY_THIRD_NOT: "[COUNTRY.GetName] #bold not #! [Concept('concept_revolution','$concept_revolutionary$')]"
 
  TRIGGER_IS_SECESSIONIST:0 "Is secessionist"
  TRIGGER_IS_SECESSIONIST_NOT:0 "Is #bold not #!secessionist"
@@ -1632,6 +1643,13 @@
  TRIGGER_NAVAL_POWER_PROJECTION_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag] naval [concept_power_projection] is #bold not #!$COMPARATOR$ $NUM|v$"
  TRIGGER_NAVAL_POWER_PROJECTION_THIRD: "[COUNTRY.GetAdjective] naval [concept_power_projection] is $COMPARATOR$ $NUM|v$"
  TRIGGER_NAVAL_POWER_PROJECTION_THIRD_NOT: "[COUNTRY.GetAdjective] naval [concept_power_projection] is #bold not #!$COMPARATOR$ $NUM|v$"
+  
+ TRIGGER_ARMY_POWER_PROJECTION: "Army [concept_power_projection] $COMPARATOR$ $NUM|v$"
+ TRIGGER_ARMY_POWER_PROJECTION_NOT: "Army [concept_power_projection] #bold not #! $COMPARATOR$ $NUM|v$"
+ TRIGGER_ARMY_POWER_PROJECTION_FIRST: "[COUNTRY.GetAdjectiveNoFlag] army [concept_power_projection] is $COMPARATOR$ $NUM|v$"
+ TRIGGER_ARMY_POWER_PROJECTION_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag] army [concept_power_projection] is #bold not #!$COMPARATOR$ $NUM|v$"
+ TRIGGER_ARMY_POWER_PROJECTION_THIRD: "[COUNTRY.GetAdjective] army [concept_power_projection] is $COMPARATOR$ $NUM|v$"
+ TRIGGER_ARMY_POWER_PROJECTION_THIRD_NOT: "[COUNTRY.GetAdjective] army [concept_power_projection] is #bold not #!$COMPARATOR$ $NUM|v$"
 
  TRIGGER_SUPPLY_NETWORK_STRENGTH:0 "Supply Network strength is $COMPARATOR$ $NUM|v%0$"
  TRIGGER_SUPPLY_NETWORK_STRENGTH_NOT:0 "Supply Network strength is #bold not #!$COMPARATOR$ $NUM|v%0$"
@@ -1919,6 +1937,9 @@
  TRIGGER_TRADE_ROUTE_NEEDS_CONVOYS_TO_GROW:0 "The [concept_trade_route] needs additional [concept_convoys] to grow"
  TRIGGER_TRADE_ROUTE_NEEDS_CONVOYS_TO_GROW_NOT:0 "The [concept_trade_route] does #b not#! need additional [concept_convoys] to grow"
  
+ TRIGGER_IS_MARKET_REACHABLE_FOR_TRADE: "The target [concept_market] is reachable for [concept_trade] via land adjacency or a [concept_shipping_lane]"
+ TRIGGER_IS_MARKET_REACHABLE_FOR_TRADE_NOT: "The target [concept_market] is #b not#! reachable for [concept_trade] via land adjacency or a [concept_shipping_lane]"
+
  TRIGGER_IS_CONSTRUCTION_EXPENSIVE:0 "The construction of [BuildingType.GetName] in [State.GetName] is expensive"
  TRIGGER_IS_CONSTRUCTION_EXPENSIVE_NOT:1 "The construction of [BuildingType.GetName] in [State.GetName] is #bold not #!expensive"
  

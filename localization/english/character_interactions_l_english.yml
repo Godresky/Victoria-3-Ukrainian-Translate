@@ -4,6 +4,8 @@
  CHARACTER_INTERACTION_ERRORS_IMPL: "#title Вимоги:#!\n[CharacterInteraction.GetCommandDesc(Character.Self)]"
  CHARACTER_INTERACTION_REQUIREMENTS: "[AddTextIf(And(CharacterInteraction.ShouldShowRequirements, Not(StringIsEmpty(CharacterInteraction.GetRequirements(Character.Self)))), Concatenate(Localize('CHARACTER_INTERACTION_REQUIREMENTS_IMPL'), '\n\n'))]"
  CHARACTER_INTERACTION_REQUIREMENTS_IMPL: "#title Вимоги:#!\n[CharacterInteraction.GetRequirements(Character.Self)][AddTextIf(CharacterInteraction.IsOnCooldown(Character.Self), Concatenate('\n\n@red_cross! ', CharacterInteraction.GetCooldownDesc(Character.Self)))]"
+ CHARACTER_INTERACTION_COOLDOWN_DURATION_INFO: "[AddLocalizationIf(Not(StringIsEmpty(CharacterInteraction.GetCooldownDuration(Character.Self))), 'CHARACTER_INTERACTION_COOLDOWN_DURATION_INFO_IMPL')]"
+ CHARACTER_INTERACTION_COOLDOWN_DURATION_INFO_IMPL: "@information! This action can only be taken once every [CharacterInteraction.GetCooldownDuration(Character.Self)]\n\n"
  CHARACTER_INTERACTION_INFO: "[ConcatIfNeitherEmpty(CharacterInteraction.GetInfo, '\n\n')]"
  CHARACTER_INTERACTION_EFFECTS: "#title Заподії:#!\n[Select_CString(Not(StringIsEmpty(CharacterInteraction.GetEffects(Character.Self))), CharacterInteraction.GetEffects(Character.Self), Localize('CHARACTER_INTERACTION_NO_EFFECT'))]"
  CHARACTER_INTERACTION_NO_EFFECT: "#italic Без заподій#!"

@@ -586,6 +586,8 @@
 
  concept_diplomatic_demand: "Дипломатичний запит"
  concept_diplomatic_demands: "Дипломатичні запити"
+ concept_diplomatic_demand_short: "Demand"
+ concept_diplomatic_demands_short: "Demands"
  concept_diplomatic_demand_desc: "A $concept_diplomatic_demand$ is a single [concept_war_goal] which one [concept_country] demands from another. If the $concept_diplomatic_demand$ is rejected, a [concept_diplomatic_play] will start with the demanded [concept_war_goal] as the [concept_primary_demand] of the [concept_initiator]."
 
  concept_diplomatic_action:0 "Дипломатична дія"
@@ -1661,6 +1663,7 @@
  concept_military_formation: "З’єднання"
  concept_military_formation_loc: "З’єднанні"
  concept_military_formations: "З’єднання"
+ concept_military_formation_possessive: "Formation’s"
  concept_military_formation_desc: "A $concept_military_formation$ is an [concept_army] or [concept_fleet] that is used in [Concept('concept_war','$concept_wars$')] to achieve military objectives. They may have assigned [Concept('concept_unit','$concept_units$')] and [Concept('concept_commander','$concept_commanders$')] and can be ordered to [Concept('concept_front','$concept_fronts$')] to fight the enemy forces there."
 
  concept_political_strength:0 "Політична сила"
@@ -2267,6 +2270,7 @@
  concept_construction_gen:0 "Будівництва"
  concept_construction_acc:0 "Будівництво"
  concept_construction_adj:0 "Будівельн"
+ concept_constructions: "Constructions"
  concept_construct:0 "Будувати"
  concept_construction_desc:3 "@construction! Будівництво виробляється [SelectLocalization(GetPlayer.IsValid,'будівлею','')|l] [SelectLocalization(GetPlayer.IsValid,'concept_construction_desc_added','будівельним витинком')|l] та використовується для спорудження [Concept('concept_building', '$concept_buildings_gen$')|l]."
  concept_construction_desc_added:0 "[GetBuildingType('building_construction_sector').GetName]"

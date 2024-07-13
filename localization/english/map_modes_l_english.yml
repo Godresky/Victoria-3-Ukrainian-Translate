@@ -64,6 +64,7 @@
  mm_diplomatic_play_state_interaction:1 "$concept_diplomatic_demand$ on a State"
  mm_diplomatic_action_interaction: "Дипломатичні дії"
  mm_establish_colony_interaction: "Заснувати осаду"
+ mm_building_relationship: "Building Relationships"
 
  mm_budget: "Бюджет"
  mm_political: "Політика"

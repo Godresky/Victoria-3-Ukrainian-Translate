@@ -103,6 +103,7 @@
   
  WARGOAL_NO_TREATY_PORT:1 " Target state has no valid [concept_treaty_port] province"
  WARGOAL_IS_TREATY_PORT:1 " Target state is a [concept_treaty_port]"
+ WARGOAL_NO_PORT: " Target $concept_state$ must have a #v $building_port$#! constructed"
  WARGOAL_CANNOT_HOLD_TREATY_PORT:0 " [COUNTRY.GetAdjective] [concept_rank] must be higher than [TARGET_COUNTRY.GetAdjective] [concept_rank] of [TARGET_COUNTRY.GetRank]"
  WARGOAL_NOT_SUBJECT_OF:2 " [COUNTRY.GetName] is not a subject of [TARGET_COUNTRY.GetName]"
  WARGOAL_IS_SUBJECT_OF:1 " [COUNTRY.GetName] is a subject of [TARGET_COUNTRY.GetName]"
@@ -150,12 +151,12 @@
  WARGOAL_SUBJECT_TRANSFER_NOT_ALLOWED: "[COUNTRY.GetName] is a #v $SUBJECT_TYPE$#! and cannot be targeted with $war_goal_transfer_subject_type_name$"
  WARGOAL_NATIVE_NO_TARGET_STATE: "No target states for Native Uprising"
  
- DIPLOMATIC_PLAY_PARTICIPANTS_DEPEND_ON_TARGET:0 "Participants will vary based on which target [concept_country] is selected to be liberated."
- DIPLOMATIC_PLAY_NO_COUNTRY_CREATION_SELECTED:0 "No target [concept_country] selected"
- DIPLOMATIC_PLAY_NUM_RELEASABLE_STATES:0 "[SelectLocalization(GreaterThan_int32(CountryCreation.GetNumReleasableStates(DiplomaticPlayConfirmation.GetTargetCountry),'(int32)1'),'DIPLOMATIC_PLAY_RELEASABLE_STATES_MULTI','DIPLOMATIC_PLAY_RELEASABLE_STATES_SINGLE')]"
- DIPLOMATIC_PLAY_RELEASABLE_STATES_MULTI:0 "#v [CountryCreation.GetNumReleasableStates(DiplomaticPlayConfirmation.GetTargetCountry)]#! [Concept('concept_state', '$concept_states$')]"
- DIPLOMATIC_PLAY_RELEASABLE_STATES_SINGLE:0 "#v [CountryCreation.GetNumReleasableStates(DiplomaticPlayConfirmation.GetTargetCountry)]#! [concept_state]"
- DIPLOMATIC_PLAY_COUNTRY_CREATION_TOOLTIP:0 "#header Liberate [CountryCreation.GetName]#!\n$TOOLTIP_DELIMITER$\n[Concept('concept_state', '$concept_states$')]: [CountryCreation.ListReleasableStates( Country.Self )]"
+ DIPLOMATIC_PLAY_PARTICIPANTS_DEPEND_ON_TARGET: "Participants will vary based on which target [concept_country] is selected to be liberated."
+ DIPLOMATIC_PLAY_NO_COUNTRY_CREATION_SELECTED: "No target [concept_country] selected"
+ DIPLOMATIC_PLAY_NUM_RELEASABLE_STATES: "[SelectLocalization(GreaterThan_int32(CountryCreation.GetNumReleasableStates(DiplomaticPlayConfirmation.GetTargetCountry),'(int32)1'),'DIPLOMATIC_PLAY_RELEASABLE_STATES_MULTI','DIPLOMATIC_PLAY_RELEASABLE_STATES_SINGLE')]"
+ DIPLOMATIC_PLAY_RELEASABLE_STATES_MULTI: "#v [CountryCreation.GetNumReleasableStates(DiplomaticPlayConfirmation.GetTargetCountry)]#! [Concept('concept_state', '$concept_states$')]"
+ DIPLOMATIC_PLAY_RELEASABLE_STATES_SINGLE: "#v [CountryCreation.GetNumReleasableStates(DiplomaticPlayConfirmation.GetTargetCountry)]#! [concept_state]"
+ DIPLOMATIC_PLAY_COUNTRY_CREATION_TOOLTIP: "#header Liberate [CountryCreation.GetName]#!\n$TOOLTIP_DELIMITER$\n[Concept('concept_state', '$concept_states$')]: [CountryCreation.ListReleasableStates( Country.Self )]"
  
  DIPLOMATIC_PLAY_JUNIOR_IN_MARKET: "[COUNTRY.GetName] is a [concept_junior_partner] in market controlled by [COUNTRY.GetMarketControllerName]"
  
