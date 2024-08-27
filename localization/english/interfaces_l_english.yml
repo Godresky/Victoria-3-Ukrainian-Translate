@@ -5784,12 +5784,12 @@
  WILL_RADICALIZE_WARNING:1 "@warning! [INTEREST_GROUP.GetName] може [Concept('concept_political_movement_radicalism', '$concept_political_movement_radicalize$')|l]"
 
  IG_APPROVAL_FROM_LEADER: "(from [CHARACTER.GetFullName] [INTEREST_GROUP.GetTextIcon])"
- IG_APPROVES_OF_LAW: "@approves! $NAME$ $CLOUT_OPTIONAL$#P #bold підтримка#!#! [Concept('concept_law', '$concept_law_gen$')|l] «[Law.GetName]»: #BOLD $VAL|+=$#!\n"
- IG_DISAPPROVES_OF_LAW: "@disapproves! $NAME$ $CLOUT_OPTIONAL$#N #bold протидія#!#! [Concept('concept_law', '$concept_law_gen$')|l] «[Law.GetName]»: #BOLD $VAL|+=$#!\n"
- IG_APPROVES_OF_LAW_CHANGE: "@approves! $NAME$ $CLOUT_OPTIONAL$#P #bold підтримка#!#! зміниться: #tooltippable #tooltip:[INTEREST_GROUP.GetTooltipTag]|[LAW.GetTooltipTag],IG_LAW_APPROVAL_BREAKDOWN #BOLD $APPROVAL_DELTA|+=$#!#!#! (з #v $CURR_APPROVAL|+$#! на #v $PROJECTED_APPROVAL|+$#!)\n\n"
- IG_APPROVES_OF_PREVIOUS_LAW_CHANGE: "@approves! $NAME$ $CLOUT_OPTIONAL$#P #bold підтримує#!#! нещодавню зміну [Concept('concept_law', '$concept_law_gen$')|l] з «[LAW_OTHER.GetName]» на «[LAW.GetName]»: #BOLD $APPROVAL_DELTA|+=$#!#!#!\n\n"
- IG_DISAPPROVES_OF_LAW_CHANGE: "@disapproves! $NAME$ $CLOUT_OPTIONAL$#N #bold протидія#!#! зміниться: #tooltippable #tooltip:[INTEREST_GROUP.GetTooltipTag]|[LAW.GetTooltipTag],IG_LAW_APPROVAL_BREAKDOWN #BOLD $APPROVAL_DELTA|+=$#!#!#! (з #v $CURR_APPROVAL|+$#! на #v $PROJECTED_APPROVAL|+$#!)\n\n"
- IG_DISAPPROVES_OF_PREVIOUS_LAW_CHANGE: "@disapproves! $NAME$ $CLOUT_OPTIONAL$#N #bold обстає проти#!#! нещодавньої зміни [Concept('concept_law', '$concept_law_gen$')|l] з «[LAW_OTHER.GetName]» на «[LAW.GetName]»: #BOLD $APPROVAL_DELTA|+=$#!#!#!\n\n"
+ IG_APPROVES_OF_LAW: "#BOLD $VAL|+=$#! from @approves! [Law.GetName]\n"
+ IG_DISAPPROVES_OF_LAW: "#BOLD $VAL|+=$#! from @disapproves! [Law.GetName]\n"
+ IG_APPROVES_OF_LAW_CHANGE:1 "@approves! $NAME$ $CLOUT_OPTIONAL$#P #bold підтримка#!#! зміниться: #tooltippable #tooltip:[INTEREST_GROUP.GetTooltipTag]|[LAW.GetTooltipTag],IG_LAW_APPROVAL_BREAKDOWN #BOLD $APPROVAL_DELTA|+=$#!#!#! (з #v $CURR_APPROVAL|+$#! на #v $PROJECTED_APPROVAL|+$#!)\n\n"
+ IG_APPROVES_OF_PREVIOUS_LAW_CHANGE:1 "@approves! $NAME$ $CLOUT_OPTIONAL$#P #bold підтримує#!#! нещодавню зміну [Concept('concept_law', '$concept_law_gen$')|l] з «[LAW_OTHER.GetName]» на «[LAW.GetName]»: #BOLD $APPROVAL_DELTA|+=$#!#!#!\n\n"
+ IG_DISAPPROVES_OF_LAW_CHANGE:1 "@disapproves! $NAME$ $CLOUT_OPTIONAL$#N #bold протидія#!#! зміниться: #tooltippable #tooltip:[INTEREST_GROUP.GetTooltipTag]|[LAW.GetTooltipTag],IG_LAW_APPROVAL_BREAKDOWN #BOLD $APPROVAL_DELTA|+=$#!#!#! (з #v $CURR_APPROVAL|+$#! на #v $PROJECTED_APPROVAL|+$#!)\n\n"
+ IG_DISAPPROVES_OF_PREVIOUS_LAW_CHANGE:1 "@disapproves! $NAME$ $CLOUT_OPTIONAL$#N #bold обстає проти#!#! нещодавньої зміни [Concept('concept_law', '$concept_law_gen$')|l] з «[LAW_OTHER.GetName]» на «[LAW.GetName]»: #BOLD $APPROVAL_DELTA|+=$#!#!#!\n\n"
 
  IG_NAME_WITH_LEADER: "[CHARACTER.GetFullName] - [INTEREST_GROUP.GetName]"
  IG_APPROVES_OF_LAW_LONG: "@approves! $NAME$ $CLOUT_OPTIONAL$#P #bold $concept_endorse$#!#! [Law.GetName]: #BOLD $VAL|+=$#!\n"

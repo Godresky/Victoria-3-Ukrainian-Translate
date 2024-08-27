@@ -7,7 +7,7 @@
  pmg_base_building_furniture_manufacturies:1 "$pm_base$"
  pmg_base_building_glassworks:1 "Тип скла"
  pmg_base_building_tooling_workshops:1 "Тип знадобів"
- pmg_base_building_paper_mills:1 
+ pmg_base_building_paper_mills:1 "$pm_base$"
  pmg_base_building_motor_industry:1 "Моделя рушія"
  pmg_base_building_shipyards:1 "Моделя кораблів"
  pmg_base_building_munition_plants:1 "Тип набоїв"

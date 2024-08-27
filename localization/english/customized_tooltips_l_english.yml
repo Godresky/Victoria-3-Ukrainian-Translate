@@ -105,11 +105,11 @@
  DATA_CHARACTER_NAME_TOOLTIP_LOCATION_COUNTRY: "[concept_country]: [Character.GetCountry.GetName]"
  DATA_CHARACTER_NAME_TOOLTIP_LOCATION_EXILE: "[Concept('concept_exile', '$concept_in_exile$')]"
  DATA_CHARACTER_NAME_TOOLTIP_COMMANDER_DETAILS:0 "[ConcatIfNeitherEmpty( '\n', AddTextIf( Character.IsCommander, Character.GetCommanderDetails ))]"
- DATA_CHARACTER_COMMANDER_DETAILS: "Звання: [Character.GetRankName|v]\n[concept_command_limit]: [SelectLocalization(Character.IsAdmiral, '@flotillas!', '@battalions!')] [Character.GetCommandLimit][ConcatIfNeitherEmpty( '\n\n', AddLocalizationIf( Not( Character.IsOffer ), 'DATA_CHARACTER_COMMANDER_LOCATION_TOOLTIP' ))][AddLocalizationIf( Not( Character.IsOffer ), 'DATA_CHARACTER_COMMANDER_ADVANCEMENT_CONTRIBUTION' )][ConcatIfNeitherEmpty( '\n', AddLocalizationIf( Character.GetOrderType.IsValid, 'DATA_CHARACTER_COMMANDER_DETAILS_ORDER' ))][ConcatIfNeitherEmpty( '\n', AddLocalizationIf( Character.IsDefeated, 'DATA_CHARACTER_ADMIRAL_DEFEATED' ) )]"
- DATA_CHARACTER_COMMANDER_DETAILS_ORDER:0 "[concept_order]: #b [Character.GetOrderType.GetName]#![AddTextIf(Character.GetAssignedState.IsValid,Concatenate(' assigned to ',Character.GetAssignedState.GetName))]"
- DATA_CHARACTER_ADMIRAL_DEFEATED:0 "Currently [concept_admiral_defeated] [AddLocalizationIf(Character.HasNavalInvasionPlan, 'DATA_CHARACTER_ADMIRAL_DEFEATED_NAVAL_INVASION')]"
- DATA_CHARACTER_ADMIRAL_DEFEATED_NAVAL_INVASION:0 "in [Character.GetNavalInvasion.GetName]"
-
+ DATA_CHARACTER_COMMANDER_DETAILS:9 "Звання: [Character.GetRankName|v]\n[concept_command_limit]: [SelectLocalization(Character.IsAdmiral, '@flotillas!', '@battalions!')] [Character.GetCommandLimit][ConcatIfNeitherEmpty( '\n\n', AddLocalizationIf( Not( Character.IsOffer ), 'DATA_CHARACTER_COMMANDER_LOCATION_TOOLTIP' ))][ConcatIfNeitherEmpty( '\n', AddLocalizationIf( Character.GetOrderType.IsValid, 'DATA_CHARACTER_COMMANDER_DETAILS_ORDER' ))][ConcatIfNeitherEmpty( '\n', AddLocalizationIf( Character.IsDefeated, 'DATA_CHARACTER_ADMIRAL_DEFEATED' ) )]"
+ DATA_CHARACTER_COMMANDER_DETAILS_ORDER: "[concept_order]: #b [Character.GetOrderType.GetName]#![AddTextIf(Character.GetAssignedState.IsValid,Concatenate(' assigned to ',Character.GetAssignedState.GetName))]"
+ DATA_CHARACTER_ADMIRAL_DEFEATED: "Currently [concept_admiral_defeated] [AddLocalizationIf(Character.HasNavalInvasionPlan, 'DATA_CHARACTER_ADMIRAL_DEFEATED_NAVAL_INVASION')]"
+ DATA_CHARACTER_ADMIRAL_DEFEATED_NAVAL_INVASION: "in [Character.GetNavalInvasion.GetName]"
+ 
  DATA_CHARACTER_TRAIT_NAME_TOOLTIP:1 "[CharacterTrait.GetModifiers]\n\n#lore [CharacterTrait.GetDesc]#!"
  DATA_CHARACTER_RANK: "Звання: [Character.GetRankName|v]"
  DATA_CHARACTER_RANK_NAME_FORMAT_TOOLTIP: "[CommanderRank.GetModifiers( Character.Self )]"
@@ -131,7 +131,7 @@
  DATA_COUNTRY_POWER_BLOC: "[concept_power_bloc]: [Country.GetPowerBloc.GetName] ($POWER_BLOC_RANK_FORMATTED$) [AddLocalizationIf(Country.GetPowerBloc.IsLeader(Country.Self), 'DATA_COUNTRY_POWER_BLOC_LEADER_LABEL')]"
  DATA_COUNTRY_POWER_BLOC_LEADER_LABEL: "([Concept('concept_power_bloc_leader','$concept_power_bloc_leader_short$')])[ConcatIfNeitherEmpty('\n', AddLocalizationIf(Not(GetPlayer.GetPowerBloc.IsLeader(GetPlayer)), 'DATA_POWER_BLOC_LEVERAGE_OVER_PLAYER'))]"
  DATA_COUNTRY_NAME_DEAD_TOOLTIP_IMPL: "@warning!#X  Держави більше не існує#!\n\nКультури: #VARIABLE [Country.GetPrimaryCulturesDesc]#!\n[concept_religion]: #VARIABLE [Country.GetStateReligion.GetName]#!"
- DATA_COUNTRY_NAME_TOOLTIP_OBSERVER: "[concept_observer_mode_desc]"
+ DATA_COUNTRY_NAME_TOOLTIP_OBSERVER:1 "[concept_observer_mode_desc]"
  DATA_COUNTRY_SUBJECT_LIBERTY_DESIRE_LABEL: "[concept_liberty_desire]: #v #tooltippable #tooltip:$COUNTRY_TOOLTIP_TAG$,COUNTRY_LIBERTY_DESIRE_ACTIVE_LEVEL_TOOLTIP [LIBERTY_DESIRE_LEVEL.GetNameNoFormatting]#!#!#! (#v #tooltippable #tooltip:$COUNTRY_TOOLTIP_TAG$,COUNTRY_LIBERTY_DESIRE_ACTIVE_LEVEL_TOOLTIP $LIBERTY_DESIRE_VALUE|0$#!#!#!)"
 
  COUNTRY_RANKING_INFO: "[concept_rank]: #variable [Country.GetRank]#! (#v #tooltippable #tooltip:COUNTRY_RANK_BREAKDOWN ##[Country.GetCountryScorePositionDesc]#!#!#!)[ConcatIfNeitherEmpty('\n', AddLocalizationIf(Country.IsInPowerBloc, 'DATA_COUNTRY_POWER_BLOC'))][ConcatIfNeitherEmpty('\n', AddLocalizationIf(And( And( Not(Country.GetPowerBloc.IsLeader(Country.Self)), Not(Country.IsLocalPlayer)), GetPlayer.GetPowerBloc.IsValid), 'DATA_POWER_BLOC_LEVERAGE_OVER_COUNTRY'))][Country.TryGetOverlordTooltipEntry][ConcatIfNeitherEmpty('\n', Country.GetLibertyDesireLevelLabel)][ConcatIfNeitherEmpty('\n', Country.TryGetSubjectsTooltipEntry)]\n\n[Concept('concept_gdp', '$concept_gdp_short$')]: #v #tooltippable #tooltip:GDP_TOOLTIP @money![Country.GetGDP|1*]#!#!#! ([Country.GetGDPRanking])\n[Concept('concept_pop','$concept_population$')]: #v [Country.GetTotalPopulation|D]#! ([Country.GetPopulationRanking])\n[concept_sol]: [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Country.GetAverageSoLByPopulation)|v] ([Country.GetAverageSoLByPopulation|v1]) ([Country.GetStandardOfLivingRanking])"
