@@ -169,6 +169,7 @@
  modifier_ditched_marx:0 "Відмовився від соціялізму"
  Karl_Heinrich:0 "Карл Гайнрих"
  Marx:0 "Маркс"
+ exile_communist_agitator_tt: "A [GetIdeology('ideology_communist').GetName] [concept_agitator] appears in [concept_exile]"
  
  je_sol_1:0 "Криза бідности"
  je_sol_1_goal:0 "Покращіть [Concept('concept_sol', '$concept_sol_acc$')|l] у вашій державі."
