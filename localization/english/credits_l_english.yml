@@ -1,23 +1,26 @@
 ﻿l_english:
- HEADER_Victoria_3: "#credits_title Victoria 3#!"
- HEADER_V3_TITLE: "#credits_title Victoria 3: Sphere of Influence#!"
+ HEADER_Victoria_3:0 "#credits_title Victoria 3#!"
+ HEADER_V3_TITLE: "#credits_title Victoria 3: Pivot of Empire#!"
  HEADER_ALSO_INCLUDES: "#credits_header Also includes credits for:#!"
- HEADER_MELODIES_FOR_THE_MASSES: "#credits_header Also includes credits for Melodies for the Masses#!"
- HEADER_VOICE_OF_THE_PEOPLE: "#credits_title Victoria 3: VOICE OF THE PEOPLE#!"
+ HEADER_MELODIES_FOR_THE_MASSES: "#credits_header Melodies for the Masses#!"
+ HEADER_VOICE_OF_THE_PEOPLE: "#credits_header Voice of the People#!"
  HEADER_DAWN_OF_WONDER: "#credits_header Dawn of Wonder#!"
- HEADER_RP1: "#credits_header Colossus of the South#!"
+ HEADER_COLOSSUS_OF_THE_SOUTH: "#credits_header Colossus of the South#!"
+ HEADER_SPHERE_OF_INFLUENCE: "#credits_header Sphere of Influence#!"
+ HEADER_PIVOT_OF_EMPIRE: "#credits_header Pivot of Empire#!"
 
  HEADER_PROJECT_LEADS: "#credits_header ПРОВІДНИК ПРОЄКТУ#!"
  TITLE_PROJECT_LEAD_GAME_DIRECTOR: "#credits_subheader Ігровий директор#!"
  TITLE_PROJECT_LEAD_ART_DIRECTOR: "#credits_subheader Митецький директор#!"
  TITLE_PROJECT_LEAD_LEAD_PRODUCER: "#credits_subheader Головний продюсер#!"
- TITLE_PROJECT_LEAD_LEAD_DESIGNER: "#credits_subheader Головний дизайнер#!"
+ TITLE_PROJECT_LEAD_DESIGN_LEAD: "#credits_subheader Головний дизайнер#!"
  TITLE_PROJECT_LEAD_CONTENT_DESIGN_LEAD: "#credits_subheader Головний дизайнер контенту#!"
  TITLE_PROJECT_LEAD_TECH_LEAD: "#credits_subheader Технічний голова#!"
  TITLE_PROJECT_LEAD_ART_LEAD: "#credits_subheader Митецька голова#!"
  TITLE_PROJECT_LEAD_QA_LEAD: "#credits_subheader QA голова#!"
 
  HEADER_PRODUCTION: "#credits_header РОЗРОБКА#!"
+ TITLE_LEAD_PRODUCER:0 "#credits_subheader Lead Producer#!"
  TITLE_PRODUCER:0 "#credits_subheader Продюсер#!"
  TITLE_ADDITIONAL_PRODUCER: "#credits_subheader Додатковий продюсер#!"
  
@@ -29,6 +32,8 @@
  TITLE_CONTENT_DESIGN: "#credits_subheader Дизайн контенту#!"
  TITLE_ADDITIONAL_CONTENT_DESIGN: "#credits_subheader Додатковий дизайн контенту#!"
  TITLE_DESIGN_CONSULTANTS: "#credits_subheader Design Consultants#!"
+ TITLE_ADDITIONAL_GAME_DESIGN:0 "#credits_subheader Additional Game Design#!"
+ TITLE_GAME_WRITER_AND_REGIONAL_CONSULTANT:0 "#credits_subheader Game Writer and Regional Consultant#!"
 
  HEADER_PROGRAMMING: "#credits_header ПРОГРАМУВАННЯ#!"
  TITLE_PROGRAMMERS: "#credits_subheader Програмісти#!"
@@ -63,6 +68,7 @@
  TITLE_ADDITIONAL_QA_LEAD: "#credits_subheader Додатковий QA голова#!"
  TITLE_QA_TESTERS: "#credits_subheader QA тестери#!"
  TITLE_QA_ANALYSTS: "#credits_subheader QA Analysts#!"
+ TITLE_ANTIGAQA:0 "#credits_subheader AntiQA#!"
 
  HEADER_AUDIO: "#credits_header АВДІО#!"
  TITLE_HEAD_OF_AUDIO: "#credits_subheader Голова авдіо#!"
@@ -114,6 +120,7 @@
  TITLE_COMPATIBILITY_TESTING: "#credits_subheader Тестування сумісності#!"
  TITLE_COMPLIANCE_DESIGNER: "#credits_subheader Дизайнер відповідності#!"
  TITLE_RELEASE_MANAGER: "#credits_subheader Менеджер випуску#!"
+ TITLE_CONTENT_PRODUCER:0 "#credits_subheader Content Producer#!"
 
  HEADER_PARADOX_INTERACTIVE: "#credits_header PARADOX INTERACTIVE#!"
  HEADER_MANAGEMENT: "#credits_header УПРАВЛІННЯ#!"
@@ -149,12 +156,15 @@
  TITLE_HEAD_OF_COMMUNICATIONS: "#credits_subheader Керівник зв'язку#!"
  TITLE_PUBLIC_RELATIONS: "#credits_subheader Публічні відносини#!"
  TITLE_CORPORATE_COMMUNICATIONS: "#credits_subheader Корпоративні комунікації#!"
+ TITLE_COMMUNICATION_PROJECT_MANAGER:0 "#credits_subheader Communications Project Manager#!"
  TITLE_COMMUNITY_MANAGEMENT: "#credits_subheader Управління громадою#!"
  TITLE_COMMUNITY_PROJECT_LEAD:0 "#credits_subheader Community Project Lead#!"
+ TITLE_MARKETING_GROWTH_MANAGER:0 "#credits_subheader Marketing Growth Manager#!"
  TITLE_LIVE_CONTENT: "#credits_subheader Живий уміст#!"
  TITLE_EVENTS_MANAGEMENT: "#credits_subheader Менеджер заходів#!"
  TITLE_USER_RESEARCH_MANAGER: "#credits_subheader Менеджер з дослідження користувачів#!"
  TITLE_HEAD_OF_SALES: "#credits_subheader Начальник відділу продажів#!"
+ TITLE_PARTNER_MARKETING_MANAGER:0 "#credits_subheader Partner Marketing Manager#!"
 
  HEADER_BUSINESS_DEVELOPMENT: "#credits_header РОЗВИТОК БІЗНЕСУ#!"
  TITLE_VP_OF_BUSINESS_DEVELOPMENT: "#credits_subheader Віце-президент з розвитку бізнесу#!"
@@ -186,6 +196,7 @@
  TITLE_IT_PROJECT_MANAGER: "#credits_subheader Менеджер ІТ-проєктів#!"
  TITLE_IT_SUPPORT_TEAM_LEAD: "#credits_subheader Керівник групи підтримки ІТ#!"
  TITLE_IT_SUPPORT_TECHNICIAN: "#credits_subheader ІТ технік з підтримки#!"
+ TITLE_IT_SERVICE_MANAGER:0 "#credits_subheader IT Service Manager#!"
 
  HEADER_FACILITY_AND_OFFICE: "#credits_header ПРИМІЩЕННЯ ТА ОФІС#!"
  TITLE_FACILITY_MANAGEMENT: "#credits_subheader Об'єкт управління#!"
@@ -223,6 +234,7 @@
  TITLE_SPANISH: "#credits_subheader Еспанські#!"
  TITLE_TURKISH: "#credits_subheader Турецькі#!"
  TITLE_COMMUNITY_REPRESENTEE: "#credits_subheader Представник спільноти#!"
+ TITLE_REVIEWER:0 "#credits_subheader Reviewer#!"
 
  HEADER_EXTERNAL_QA_PARTNERS: "#credits_header Зовнішні партнери контролю якости#!"
  TITLE_QLOC: "#credits_subheader QLOC#!"
@@ -235,6 +247,7 @@
  TITLE_LQA_PROJECT_MANAGER: "#credits_subheader Менеджер проєкту LQA#!"
  TITLE_LQA_TEST_LEAD: "#credits_subheader Провідник тесту LQA#!"
  TITLE_LQA_TEAM: "#credits_subheader Команда LQA#!"
+ TITLE_QLOC_QA_PROJECT_MANAGER:0 "#credits_subheader QA Project Manager#!"
 
  HEADER_COMMUNITY: "#credits_header СПІЛЬНОТА#!"
  TITLE_COMMUNITY_AMBASSADOR: "#credits_subheader Посол спільноти#!"

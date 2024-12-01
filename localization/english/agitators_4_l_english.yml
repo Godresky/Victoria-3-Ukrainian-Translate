@@ -6,6 +6,7 @@
   je_nihilist_movement_trigger_tt_1: "[SCOPE.GetRootScope.GetCountry.GetName] has enacted [GetLawType('law_censorship').GetName] or [GetLawType('law_outlawed_dissent').GetName], and all Nihilist interest groups are suppressed for more than 5 years"
   je_nihilist_movement_trigger_tt_2: "[SCOPE.GetRootScope.GetCountry.GetName] has maintained the #bold positive#! support of the [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName], or has kept them marginalized for more than 5 years"
   je_nihilist_movement_reason: "Claiming to desire the abolition of all things declared to be sacred, a movement of radical [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName] has begun to spread tracts condemning divinely-appointed rule. This movement threatens the very foundations of our government with its criticism."
+  has_no_nihilist_movement_tt: "Does #b not#! have an active #v $movement_nihilist$#!"
 
   modifier_fathers_and_sons: "Endorsed Anti-Nihilist Literature"
   modifier_fathers_and_sons_ignored: "Wrong Lessons Learned"
@@ -43,6 +44,8 @@
   modifier_defeated_in_forum: "Defeated in Forum"
   modifier_triumphant_in_forum: "Triumphant in Forum"
   modifier_dashing_character: "Romanticized Nihilist"
+
+  modifier_nihilist_movement_enhancement: "Nihilist Conspiracies"
 
   #nihilism.1 and all attached things are in content_1.
   nihilism.2.t: "Nothing Ends"

@@ -64,6 +64,15 @@
  SET_IDEOLOGY_FIRST:0 "[Character.GetFullName|v] змінить ідеологію на [TARGET_IDEOLOGY.GetName]"
  SET_IDEOLOGY_THIRD:0 "[Character.GetFullName|v] змінить ідеологію на [TARGET_IDEOLOGY.GetName]"
  
+ SET_CORE_IDEOLOGY: "Will change their Core Ideology to [IDEOLOGY.GetName]"
+ SET_CORE_IDEOLOGY_THIRD: "[PoliticalMovement.GetName] will change their core [concept_ideology] to [IDEOLOGY.GetName]"
+
+ ADD_CHARACTER_IDEOLOGY: "Will gain [IDEOLOGY.GetName] as a potential [concept_character] [concept_ideology]"
+ ADD_CHARACTER_IDEOLOGY_THIRD: "[PoliticalMovement.GetName] will gain [IDEOLOGY.GetName] as a potential [concept_character] [concept_ideology]"
+
+ REMOVE_CHARACTER_IDEOLOGY: "Will lose [IDEOLOGY.GetName] as a potential [concept_character] [concept_ideology]"
+ REMOVE_CHARACTER_IDEOLOGY_THIRD: "[PoliticalMovement.GetName] will lose [IDEOLOGY.GetName] as a potential [concept_character] [concept_ideology]"
+  
  CHANGE_RELATIONS: "#variable [COUNTRY.GetAdjectiveNoFormatting]і#! [concept_relations|l] з державою #variable [TARGET_COUNTRY.GetName]#! покращаться на $VALUE|0+$"
  CHANGE_RELATIONS_NEG: "#variable [COUNTRY.GetAdjectiveNoFormatting]і#! [concept_relations|l] з державою #variable [TARGET_COUNTRY.GetName]#! погіршаться на $VALUE|0-$"
  CHANGE_RELATIONS_FIRST: "#variable [COUNTRY.GetAdjectiveNoFormatting]і#! [concept_relations|l] з державою #variable [TARGET_COUNTRY.GetName]#! покращаться на $VALUE|0+$"
@@ -121,6 +130,10 @@
  TRY_FORM_GOVERNMENT_WITH: "[concept_country] tries to form new [concept_government] with at least $VALUE|v0$ [concept_legitimacy]"
  TRY_FORM_GOVERNMENT_WITH_FIRST: "[COUNTRY.GetName] tries to form new [concept_government] with at least $VALUE|v0$ [concept_legitimacy]"
 
+ SET_HEIR: "[TARGET_CHARACTER.GetFullName] becomes the [concept_heir]"
+ SET_HEIR_FIRST: "[TARGET_CHARACTER.GetFullName] becomes the [concept_heir] of [COUNTRY.GetNameNoFlag]"
+ SET_HEIR_THIRD: "[TARGET_CHARACTER.GetFullName] becomes the [concept_heir] of [COUNTRY.GetName]"
+ 
  ADD_PRIMARY_CULTURE: "[TARGET_CULTURE.GetName] тепер [Concept('concept_primary_cultures','$concept_primary_culture_acc$')|l] держави [COUNTRY.GetName]"
  ADD_PRIMARY_CULTURE_FIRST: "[TARGET_CULTURE.GetName] тепер [Concept('concept_primary_cultures','$concept_primary_culture_acc$')|l] держави [COUNTRY.GetNameNoFlag]"
  ADD_PRIMARY_CULTURE_THIRD: "[TARGET_CULTURE.GetName] тепер [Concept('concept_primary_cultures','$concept_primary_culture_acc$')|l] держави [COUNTRY.GetName]"
@@ -134,8 +147,12 @@
  
  ADD_CULTURAL_OBSESSION: "[CULTURE.GetName] стануть одержимими товаром [GOODS.GetName|l]"
  REMOVE_CULTURAL_OBSESSION: "[CULTURE.GetName] перестануть бути одержимими товаром [GOODS.GetName|l]"
- 
- ADD_CULTURAL_COMMUNITY: "#todo A [CULTURE.GetName] cultural community appears in [STATE.GetName]#!"
+
+ ADD_CULTURAL_COMMUNITY: "A [CULTURE.GetName] [concept_cultural_community] appears"
+ ADD_CULTURAL_COMMUNITY_THIRD: "A [CULTURE.GetName] [concept_cultural_community] appears in [STATE.GetName]"
+
+ADD_ACCEPTANCE: "[concept_acceptance] of [CULTURE.GetName] [Concept('concept_pop','$concept_pops$')] in [STATE.GetName] is #positive_value improved#! by #positive_value $VALUE|=0$#!"
+ ADD_ACCEPTANCE_NEG: "[concept_acceptance] of [CULTURE.GetName] [Concept('concept_pop','$concept_pops$')] in [STATE.GetName] is #negative_value reduced#! by #negative_value -$VALUE|0$#!"
 
  CREATE_RANDOM_CHARACTER_NAME: "Персонаж"
  
@@ -341,6 +358,13 @@
  REMOVE_RULING_INTEREST_GROUP:0 "[INTEREST_GROUP.GetName] is removed from the [concept_government]"
  SET_RULING_PARTY:0 "[PARTY.GetName] [Party.GetMembersSummary] is added to the [concept_government] while everyone else are removed"
  SET_RULING_INTEREST_GROUPS:0 "The specified set of Interest Groups are added to the [concept_government] while everyone else are removed"
+ SET_ONLY_LEGAL_PARTY_FROM_IG_EFFECT_FIRST: "[PARTY.GetName] becomes the only legal [concept_party] in [COUNTRY.GetNameNoFlag]"
+ SET_ONLY_LEGAL_PARTY_FROM_IG_EFFECT_GLOBAL: "[PARTY.GetName] becomes the only legal [concept_party] in [concept_country]"
+ SET_ONLY_LEGAL_PARTY_FROM_IG_EFFECT_THIRD: "[PARTY.GetName] becomes the only legal [concept_party] in [COUNTRY.GetName]"
+ 
+ UNSET_ONLY_LEGAL_PARTY_EFFECT_FIRST: "[COUNTRY.GetNameNoFlag] no longer has only a single legal [concept_party]"
+ UNSET_ONLY_LEGAL_PARTY_EFFECT_GLOBAL: "[concept_country] no longer has only a single legal [concept_party]"
+ UNSET_ONLY_LEGAL_PARTY_EFFECT_THIRD: "[COUNTRY.GetName] no longer has only a single legal [concept_party]"
  
  ADD_MODIFIER: "$SUBJECT_NAME$ отримає «#tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#!» $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
  ADD_MODIFIER_FIRST: "$SUBJECT_NAME$ отримає «#tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#!» $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
@@ -377,6 +401,11 @@
  REMOVE_STATE_TRAIT_GLOBAL:0 "Lose the #v $STATE_TRAIT$#! trait"
  REMOVE_STATE_TRAIT:0 "States in [STATE_REGION.GetName] lose the #v $STATE_TRAIT$#! trait"
 
+ START_HARVEST_CONDITION_GLOBAL: "Start [HarvestConditionType.GetName]"
+ START_HARVEST_CONDITION: "Start [HarvestConditionType.GetName] in [StateRegion.GetName]"
+ FINISH_HARVEST_CONDITION_GLOBAL: "Finish [HarvestConditionType.GetName]"
+ FINISH_HARVEST_CONDITION: "Finish [HarvestConditionType.GetName] in [StateRegion.GetName]"
+
  CREATE_COUNTRY:0 "A new country is created"
  CREATE_COUNTRY_FIRST:0 "A new [concept_country] is created"
  CREATE_COUNTRY_THIRD:0 "A new [concept_country] is created"
@@ -398,10 +427,10 @@
  JOIN_REVOLUTION:0 "[INTEREST_GROUP.GetName] becomes insurrectionary"
  ABANDON_REVOLUTION:0 "[INTEREST_GROUP.GetName] stops being insurrectionary"
 
- START_BOLSTER_IG: "[concept_bolster] [INTEREST_GROUP.GetName]"
- STOP_BOLSTER_IG: "Зупинити [Concept('concept_bolster','$concept_bolstering$')|l] [INTEREST_GROUP.GetName]"
- START_SUPPRESS_IG: "[concept_suppress] [INTEREST_GROUP.GetName]"
- STOP_SUPPRESS_IG: "Зупинити [Concept('concept_suppress','$concept_suppressing$')|l] [INTEREST_GROUP.GetName]"
+ START_BOLSTER:0 "[concept_bolster] [POLITICAL_MOVEMENT.GetName]"
+ STOP_BOLSTER:0 "Stop [Concept('concept_bolster','$concept_bolstering$')] [POLITICAL_MOVEMENT.GetName]"
+ START_SUPPRESS:1 "[concept_suppress] [POLITICAL_MOVEMENT.GetName]"
+ STOP_SUPPRESS:1 "Stop [Concept('concept_suppress','$concept_suppressing$')] [POLITICAL_MOVEMENT.GetName]"
   
  ADD_BANNED_GOODS: "[COUNTRY.GetName] накладає повну заборону на товар [TARGET_GOODS.GetName|l]"
  ADD_BANNED_GOODS_FIRST: "[COUNTRY.GetNameNoFlag] накладає повну заборону на товар [TARGET_GOODS.GetName|l]"
@@ -446,6 +475,8 @@
  REMOVE_COMPANY_THIRD: "[COUNTRY.GetName] disbands the [TARGET_COMPANY_TYPE.GetName] [concept_company]"
  SET_COMPANY_ESTABLISHMENT_DATE_GLOBAL: "The establishment date of [concept_company] is set to a new date"
  SET_COMPANY_ESTABLISHMENT_DATE_THIRD: "The establishment date of [COMPANY.GetName] is set to [DATE.GetString|v]"
+ SET_COMPANY_STATE_REGION_GLOBAL: "The [concept_state_region] of [concept_company] is set to [StateRegion.GetName]"
+ SET_COMPANY_STATE_REGION_THIRD: "The [concept_state_region] of [Company.GetName] is set to [StateRegion.GetName]"
 
  SET_TARIFFS:0 "[COUNTRY.GetName] starts to collect #v Unprioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
  SET_TARIFFS_FIRST:0 "[COUNTRY.GetNameNoFlag] starts to collect #v Unprioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
@@ -586,7 +617,11 @@
  CREATE_DIPLOMATIC_CATALYST_THIRD: "A [DIPLOMATIC_CATALYST_TYPE.GetName] [concept_diplomatic_catalyst] is triggered between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName]"
  CREATE_DIPLOMATIC_CATALYST_FIRST: "A [DIPLOMATIC_CATALYST_TYPE.GetName] [concept_diplomatic_catalyst] is triggered with [TARGET_COUNTRY.GetName]"
  CREATE_DIPLOMATIC_CATALYST_GLOBAL: "A [DIPLOMATIC_CATALYST_TYPE.GetName] $concept_diplomatic_catalyst$ is triggered with [TARGET_COUNTRY.GetName]"
- 
+
+ CREATE_POLITICAL_MOVEMENT_THIRD: "A new [TARGET_POLITICAL_MOVEMENT_TYPE.GetName|v] is created in [COUNTRY.GetName]"
+ CREATE_POLITICAL_MOVEMENT_FIRST: "A new [TARGET_POLITICAL_MOVEMENT_TYPE.GetName|v] is created"
+ CREATE_POLITICAL_MOVEMENT_GLOBAL: "A new $concept_political_movement$ is created"
+
  ADD_LOBBY_MEMBER_GLOBAL: "[TARGET_INTEREST_GROUP.GetName] joins the [POLITICAL_LOBBY.GetName]"
  ADD_LOBBY_MEMBER_THIRD: "[TARGET_INTEREST_GROUP.GetName] joins the [POLITICAL_LOBBY.GetName]"
  
@@ -682,3 +717,7 @@
 
  FULLY_MOBILIZE_ARMY_THIRD: "[MILITARY_FORMATION.GetName] is immediately fully [Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')]"
  FULLY_MOBILIZE_ARMY_GLOBAL: "[concept_military_formation] is immediately fully [Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')]"
+
+ SET_SOCIAL_HIERARCHY: "[SOCIAL_HIERARCHY.GetName] gets adopted"
+ SET_SOCIAL_HIERARCHY_FIRST: "[COUNTRY.GetNameNoFlag] adopts [SOCIAL_HIERARCHY.GetName]"
+ SET_SOCIAL_HIERARCHY_THIRD: "[COUNTRY.GetName] adopts [SOCIAL_HIERARCHY.GetName]"

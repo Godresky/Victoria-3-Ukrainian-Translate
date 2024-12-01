@@ -192,13 +192,11 @@
  decree_events.101.a:0 "Credit the [SCOPE.gsInterestGroup('industrialists_ig_focus').GetName]."
  decree_events.101.b:0 "This is a victory for the workers."
  decree_events.101.c:0 "Focus this on someone else."
-
  decree_events.102.t:0 "Хутірницький сплеск"
  decree_events.102.d:1 "Спонукання розвитку сільського господарства у [Concept('concept_state','$concept_state_loc$')|l] [SCOPE.sState('decree_agricultural_industry').GetName] призвело до невеликого сплеску виробництва на нашій [Concept('concept_building','$concept_building_gen$')|l] [SCOPE.sBuilding('agricultural_building_production').GetName|l]. Ми повинні розглянути можливості використання цього гаміру, доки не втратили шанс."
  decree_events.102.f:1 "«Наші люди їстимуть, як пани! Голодна смерть залишиться у минулому. Гайда використаємо це на свою користь, щоб допомогти не тільки собі, а й іншим, звісно не безплатно. Нехай знає весь народ, ми рухаємося вперед!»"
  decree_events.102.a:0 "Розвивайте наші хутори і надалі."
  decree_events.102.b:0 "Робітники заслуговують на це більше."
-
  decree_events.103.t:0 "Who deserves the Credit"
  decree_events.103.d:1 "Recent investments in [SCOPE.sState('decree_agricultural_politics').GetName] towards our  [SCOPE.sBuilding('agricultural_building_production_politics').GetName] has brought into question who should get the credit for the boost in investment. However, opinions seem to be split."
  decree_events.103.f:0 ""To where the credit lies is the question most wondered. To the owners of the field and the organizers of the harvest? Or the ordinary people who work the fields day and night, whose sweat and blood water the fields?""
@@ -268,10 +266,10 @@
  ideology_orthodox_patriarch_desc:0 "#lore Православний патріярхат вважає себе одним з трьох стовпів держави, а право на правління походить від Бога.#!"
  ideology_buddhist_moralist:0 "Буддійський моралізм"
  ideology_buddhist_moralist_desc:0 "#lore Буддійська путь чітко визначена, а боговладдя необхідне для того, щоб найкращим чином вести націю тором цього вчення.#!"
- ideology_sikh_moralist:0 "Сикхська войовничість"
- ideology_sikh_moralist_desc:0 "#lore Сикхи мають войовничий рух, який підтримує створення сильного національного війська.#!"
  ideology_hindu_moralist:0 "Індуїський моралізм"
  ideology_hindu_moralist_desc:0 "#lore Індуїстські священики вважають, що урядовці повинні дотримуватися кастової системи.#!"
+ ideology_hindu_moralist_british_india: "Hindu Moralist"
+ ideology_hindu_moralist_british_india_desc:0 "#lore Hindu Priests favor upholding the traditional Hindu caste system. Whilst India remains ruled by foreigners, they staunchly oppose the colonial government imposing their religion upon the populace.#!"
  ideology_oriental_orthodox_patriarch:1 "Орієнтально-православний патріярхат"
  ideology_oriental_orthodox_patriarch_desc:1 "#lore У Орієнтально-православному патріярхаті вважають, що освіта дітей має бути пріоритетом для нації.#!"
 

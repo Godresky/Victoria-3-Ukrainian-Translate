@@ -36,6 +36,11 @@
  SETTING_SHADER_QUALITY_TOOLTIP: "#T $SETTING_SHADER_QUALITY$#!\nВизначає якість різних шейдерів й ефектів.\n\n#T Висока:#! Покращує якість деяких шейдерних ефектів за рахунок продуктивности.\n\n#T Середня:#! Звичайні налаштування.\n\n#T Низька:#! Цей параметр призначений для компів низького клясу та не рекомендований через втрату візуальної якости. Кілька шейдерів спрощено для підвищення графічної продуктивности."
  SETTING_SHOW_NUDITY: "Показати наготу"
  SETTING_SHOW_NUDITY_TOOLTIP: "#T $SETTING_SHOW_NUDITY$#!\nВстановлює, чи можна показувати наготу."
+ 
+ SETTING_PAUSE_ON_EVENT: "Pause and Popup on Events"
+ SETTING_PAUSE_ON_EVENT_TOOLTIP: "#T $SETTING_PAUSE_ON_EVENT$#!\nPauses the game and shows the popup when an event is triggered."
+ SETTINGS_CATEGORY_GAME_NOTIFICATIONS: "Notifications"
+ SETTING_PAUSE_ON_EVENT_MESSAGE_SETTINGS: "$SETTING_PAUSE_ON_EVENT$ (Single player only)"
 
  SETTING_VALUE_HOURS: "$VALUE|0$ год"
  SETTING_VALUE_HOUR_FULL: "$VALUE|0$:00"
@@ -108,6 +113,8 @@
  table_asset_3_theme_desc: "Об’єкт, що відображається у нижньому лівому куті стільниці поруч з мапою при відаленні."
  table_asset_4_theme: "Об’єкт на столі (нижній лівий кут)"
  table_asset_4_theme_desc: "Об’єкт, що відображається у нижньому правому куті стільниці поруч з мапою при відаленні."
+ table_asset_cloth_theme: "Table Cloth"
+ table_asset_cloth_theme_desc: "The cloth which the coins are resting on."
  building_sets_themes: "Набір будівель"
 
  color_blind_mode_test: "Тест"

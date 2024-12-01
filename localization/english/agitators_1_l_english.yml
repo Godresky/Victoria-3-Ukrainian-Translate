@@ -77,6 +77,7 @@
   bonapartist_progress_from_characters: "combined [concept_popularity] of #bold Bonapartist#! characters"
   bonapartist_progress_from_igs: "[concept_clout] of #bold Bonapartist#! [Concept('concept_interest_group', '$concept_interest_groups$')]"
   bonapartist_progress_from_military: "Military [Concept('concept_building_level', '$concept_building_levels$')]"
+  bonapartist_progress_from_movements: "[concept_political_movement_support] of #bold Bonapartist#! [Concept('concept_political_movement','$concept_political_movements$')]"
   bonapartist_progress_from_legitimacy: "[concept_government] [concept_legitimacy]"
   bonapartist_progress_from_effects: "events and other effects"
 
@@ -84,13 +85,22 @@
   orleanist_progress_from_igs: "[concept_clout] of #bold Orleanist#! [Concept('concept_interest_group', '$concept_interest_groups$')]"
   orleanist_progress_from_factories: "Industrial [Concept('concept_building_level', '$concept_building_levels$')]"
   orleanist_progress_from_legitimacy: "[concept_government] [concept_legitimacy]"
+  orleanist_progress_from_movements: "[concept_political_movement_support] of #bold Orleanist#! [Concept('concept_political_movement','$concept_political_movements$')]"
   orleanist_progress_from_effects: "events and other effects"
 
   legitimist_progress_from_characters: "combined [concept_popularity] of #bold Legitimist#! characters"
   legitimist_progress_from_igs: "[concept_clout] of #bold Legitimist#! [Concept('concept_interest_group', '$concept_interest_groups$')]"
   legitimist_progress_from_farms: "Agriculture [Concept('concept_building_level', '$concept_building_levels$')]"
+  legitimist_progress_from_movements: "[concept_political_movement_support] of #bold Legitimist#! [Concept('concept_political_movement','$concept_political_movements$')]"
   legitimist_progress_from_legitimacy: "[concept_government] [concept_legitimacy]"
   legitimist_progress_from_effects: "events and other effects"
+
+  supported_by_republican_tt: "Any non-[concept_marginalized] supporting [concept_interest_group] approves of the [GetLawType('law_presidential_republic').GetName] [concept_law]"
+  republican_revolution_at_75_percent_tt: "[concept_revolution] has progressed above #v 75%#! progress"
+
+  NON_ORLEANIST_MONARCH: "Non-[GetIdeology('ideology_orleanist').GetName] Monarch"
+  NON_BONAPARTIST_MONARCH: "Non-[GetIdeology('ideology_bonapartist').GetName] Monarch"
+  NON_LEGITIMIST_MONARCH: "Non-[GetIdeology('ideology_legitimist').GetName] Monarch"
 
   exile_old_ruler_tt: "[SCOPE.sCharacter('old_ruler_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('old_ruler_scope').GetFullName] втече у [Concept('concept_exile', '$concept_exile_acc$')|l]"
   french_pretenders.6.t: "Тимчасовий уряд"
@@ -326,6 +336,7 @@
   1848.12.f: "«Це непристойно! Якщо влада не може навіть нагодувати своїх людей, то на що вона здатна?»"
   1848.12.a: "Скарги [SCOPE.gsInterestGroup('famine_radicalized_ig')] не впливатимуть на наші дії."
   1848.12.b: "Ми можемо надати деяку допомогу."
+  government_support_to_financially_distressed: "Support to Financially Distressed"
   exiles_more_events.1.t: "Патріотичне примирення"
   exiles_more_events.1.d: "Оскільки нація атакована, [SCOPE.sCharacter('patriotic_exile_scope').GetFullName] пропонує свої послуги країні яка колись відправила [SCOPE.sCharacter('patriotic_exile_scope').GetHerHis] у заслання. [SCOPE.gsInterestGroup('patriotic_exile_home_ig').GetName] в захваті від цієї ідеї."
   exiles_more_events.1.f: "«У ці жахливі часи ми повинні стерти відмінності між людьми. В обложеному таборі не може бути ворогів. Лише брати по зброї можуть протистояти натиску, з яким зараз стикається наша нація»."

@@ -23,6 +23,10 @@
  ig_trait_wiener_walzer_desc: "Хтось мав нахабність на останньому балу попросити зіграти менует. Мила моя, ми вальсуємо! Ми встановлюємо, що модно, і це #italic не#! менует!"
  ig_trait_fazenda_ibicaba: "Ферма Ібікаба"
  ig_trait_fazenda_ibicaba_desc: "Робоча сила є постійною проблемою для наших підприємств, тому ми повинні використовувати всі можливі шляхи, щоб отримати необхідну робочу силу."
+ ig_trait_summon_no_zamindars: "Summon No Zamindars"
+ ig_trait_summon_no_zamindars_desc: "The rulers of our country have demonstrated that they have no interest in negotiation or flexibility. If this is so, then they should not miss the more subtle things we do to keep order."
+ ig_trait_famine_reserves: "Famine Reserves"
+ ig_trait_famine_reserves_desc: "It is our duty to open our stores of grain when a pressing need emerges. What better way is there to purchase goodwill from our tenants?"
 
   # Industrialists IG Traits
  ig_trait_job_creators:0 "Творці робочих місць"
@@ -41,6 +45,12 @@
  ig_trait_ventilate_unify_beautify_desc: "Ви бачили, як воно там? Це майстерня хвороб, місце, де ніколи не світить сонце, де рослини летять і гинуть, і де нещастя та чума діють разом. Нам, звичайно, належить виправити цей безлад."
  ig_trait_the_goods_must_flow: "Товари мають плисти"
  ig_trait_the_goods_must_flow_desc: "Виробляти стільки, скільки виробляє наша нація, це добре, але яка від цього користь, якщо товари не можуть досягти ринків, на яких мають бути продані? Настав час переконатися, що країна розуміє, наскільки необхідним є хороший транспорт."
+ ig_trait_wounded_honor: "Wounded Honor"
+ ig_trait_wounded_honor_desc: "We are an enlightened few in a land that resists any enlightenment. Our methods are superior—any disorder is a betrayal, and betrayal must be met with the harshest sanction."
+ ig_trait_stamped_and_signed: "Stamped and Signed"
+ ig_trait_stamped_and_signed_desc: "Stamps and ledgers are the methods we use to create order out of chaos. The governance of India requires an ocean of paper, and it is our task to ensure it circulates flawlessly."
+ ig_trait_responsible_government: "Responsible Governance"
+ ig_trait_responsible_government_desc: "Our mission is to extend justice and civilization to all men—and, of course, to perpetuate the rule which permits this forevermore."
 
   # Armed Forces IG Traits
  ig_trait_patriotic_fervor:0 "Патріотичний запал"
@@ -63,6 +73,12 @@
  ig_trait_clube_militar_desc: "Місце, де офіцери та солдати, як ми, можуть відпочити, розслабитися та організувати свій вільний час, безперечно, буде корисним. У всякому разі, місце, де ми всі можемо поговорити та спланувати речі, може принести користь країні."
  ig_trait_coronelismo: "Коронелізм"
  ig_trait_coronelismo_desc: "Ви бачили останню постанову уряду? Невже вони не розуміють, з ким мають справу? З таким поважним джентльменом, як я, з усіма моїми людьми та маєтками, не можна жартувати!"
+ ig_trait_divided_ranks: "Divided Ranks"
+ ig_trait_divided_ranks_desc: "There is a fundamental rift between our soldiers and our officers, one which has grown too wide to ignore. Why would a man put his life on the line for one who treats his customs with contempt?"
+ ig_trait_imperial_service: "Imperial Service"
+ ig_trait_imperial_service_desc: "To wear our uniform and expand our frontier is a great honor, one which millions strive towards. It is fortunate for them that there are always positions to fill."
+ ig_trait_veerta: "Veerta"
+ ig_trait_veerta_desc: "Ours is the army which conquered all of India, producing an unending stream of victories against all matter of foes. Our bravery and discipline ensure that this roll of honor will never come to an end."
 
   # Rural Folk IG Traits
  ig_trait_farmers_markets:0 "Хутірницькі ринки"
@@ -79,6 +95,12 @@
  ig_trait_nucleos_coloniais_desc: "Новий будинок означає початок нового життя. Що тут може не подобатися? Давай, подивимося, що може запропонувати це нове поселення."
  ig_trait_plantation_work: "Робота на плантації"
  ig_trait_plantation_work_desc: "Ми наполегливо працюємо день у день і отримуємо те, що нам потрібно. Однак іноді ми отримуємо більше, і ми цінуємо ці дні."
+ ig_trait_of_the_sovereign_alone: "Of the Sovereign Alone"
+ ig_trait_of_the_sovereign_alone_desc: "The burden placed upon us by those who own the land is unbearable. These intermediaries must be reminded that we are ryots of the sovereign alone, and they have no rightful power over us."
+ ig_trait_imandari: "Imandari"
+ ig_trait_imandari_desc: "Our land is a wealthy one, and we work it with diligence. In good times, we can produce what we need and more."
+ ig_trait_bazaar_bargains: "Bazaar Bargains"
+ ig_trait_bazaar_bargains_desc: "It is our bazaars which enrich our towns and draw visitors from miles around. If prosperity requires some extra organization, that's a price we're willing to pay."
 
   # Trade Unions IG Traits
  ig_trait_solidarity:0 "Солідарність"
@@ -107,6 +129,10 @@
  ig_trait_brasilidade_desc: "Приходь, друже, будемо сьогодні святкувати! Тут ми чуємо найкрасивіші балади під сяйвом зірок із пляшкою в руках, а там — ну, дивіться, він уже малює! Хіба це не життя?"
  ig_trait_bachareis: "Бакаляври"
  ig_trait_bachareis_desc: "Ми знаємо, що потрібно нації! Зрештою, ми говоримо від імені народу — Що? Ні, ми не говорили, що говоримо #italic з#! народом."
+ ig_trait_swaraj: "Swaraj"
+ ig_trait_swaraj_desc: "We find ourselves both alienated from and enslaved by the state. Our rulers deny us agency whilst requesting our unthinking service. Such a thing is doomed to fail—and, if needed, we will work to ensure that it does."
+ ig_trait_westernisation: "Westernization"
+ ig_trait_westernisation_desc: "Our present government serves as a representative of justice and progress, yet much of our country remains distant from it. We must seek to reduce the separation between state and people."
 
   # Petite-Bourgeoisie IG Traits
  ig_trait_treasury_bonds:0 "Скарбівничі тзобов‘язання"
@@ -131,6 +157,12 @@
  ig_trait_civil_service_desc: "Люди дійсно мають смішні уявлення про державних службовців. Ми тут, щоб допомогти вам сформулювати та реалізувати вашу політику, от і все."
  ig_trait_bah_humbug: "Bah Humbug"
  ig_trait_bah_humbug_desc: "Бідні та знедолені, скажете ви. Чи в'язниць немає? Чи працюють ще робітничі будинки? Тоді залиште мене! Туди повинні йти нужденні."
+ ig_trait_swadesh: "Swadesh"
+ ig_trait_swadesh_desc: "We are as industrious as any other people, yet we are denied credit and forced into servitude by foreign businesses. If our rulers seek to exclude us from the economy, we will do the same for them."
+ ig_trait_lines_of_credit: "Lines of Credit"
+ ig_trait_lines_of_credit_desc: "Were it not for credit provided by our own adept financiers, the Company could never have conquered India. If we are given a solid business case, we are entirely willing to continue this relationship."
+ ig_trait_cooperative_agencies: "Cooperative Agencies"
+ ig_trait_cooperative_agencies_desc: "Our rulers possess abundant capital, but have little knowledge of our country. By pooling their resources and our expertise, we may enrich our homeland far more than they ever would alone."
 
   # Devout IG Traits
  ig_trait_be_fruitful_and_multiply:0 "Плодючість та розмноження"
@@ -145,8 +177,6 @@ ig_trait_work_ethic: "Трудова етика"
  ig_trait_asceticism_desc: "Утримуватися від задоволень цього світу — правильний шлях. Не дозволяйте себе турбувати матеріяльними змінами, вони теж пройдуть."
  ig_trait_kar_seva: "Кар Сева"
  ig_trait_kar_seva_desc: "Бог з нами і між нами. Отже, безкорисливо служити іншим означає служити Божому творінню і служити Богу. Усім нам належить займатися чесною працею і ділитися плодами цієї праці з іншими, і таким чином бути ближчими до Бога."
- ig_trait_khalsa: "Халса"
- ig_trait_khalsa_desc: "З часів першого Пандж П’яре наша віра спонукала найбільших воїнів приєднатися до нашої справедливої справи. У ці складні часи солдати знову керуються вірою, щоб служити під нашими прапорами."
  ig_trait_temporal_mandate: "Тимчасовий мандат"
  ig_trait_temporal_mandate_desc: "Межа між небом і землею часто розмита; так само є межа між вірою та урядом. Для управління світським світом потрібні всі типи умільців — ми завжди можемо знайти способи змусити наші системи працювати разом."
  ig_trait_the_best_revenge: "Найкраща помста"

@@ -140,6 +140,7 @@
   # Springtime of the Peoples
  peoples_springtime.1.t:0 "Вогник революції"
  peoples_springtime.1.d:0 "Революція, що назріває, у [Concept('concept_country', '$concept_country_loc$')|l] [ROOT.GetCountry.GetName] надихає радикальні настрої по всьому материку."
+ peoples_springtime.1.d_france: "The fall of the monarchy and declaration of the [ROOT.GetCountry.GetName] has spurred a tidal wave of radical sentiments across the continent."
  peoples_springtime.1.f:0 "«Я розумію певне занепокоєння, що зброя, використана у [ROOT.GetCountry.GetAdjectiveNoFormatting|l]ій революції, може потрапити до сусідніх країн і опинитися у ворожих руках. Я боюся не пороху, а того, що може його запалити. Не кожна людина прагне влади заради неї самої, але якщо вона переконана, що її обманом позбавили свого, вона може вважати своїм обов'язком вимагати владу. Що може бути небезпечнішим за ідею, що влада належить народу?»"
  peoples_springtime.1.a:0 "Хто очолить державу [ROOT.GetCountry.GetName] в майбутньому?"
  peoples_springtime.1.b:0 "Ми не дозволимо цим ідеям розділити нас!"
@@ -195,6 +196,8 @@
  je_springtime_of_the_peoples_tt_3:1 "If completed with a #ITALIC Revolutionary Victory:#!\nTriggers the event #variable $peoples_springtime.7.t$#!"
  je_springtime_of_the_peoples_tt_4:1 "If completed with a #ITALIC Reactionary Victory:#!\nTriggers the event #variable $peoples_springtime.8.t$#!"
   #je_springtime_of_the_peoples_custom_complete: "The international current of revolutionary sentiment has subsided."
+ springtime_of_the_peoples_timer_tt: "The following has been true for #b 12#! consecutive months (currently #v [ROOT.GetCountry.MakeScope.Var('springtime_timer_var').GetValue]#!):"
+ springtime_of_the_peoples_timer_dummy_tt: "The following has been true for #b 12#! consecutive months (currently #v 0#!):"
 
   # Suffragist Events
  je_suffragists:0 "Заклик до виборчого права для жінок"
@@ -298,6 +301,8 @@
  secession_events.3.f:0 ""Have you heard who spoke at their last rally? To think that the opposition gives credence to [SCOPE.sCulture('secessionist_culture').GetName] propaganda now! The sitting government would never host a speaker like that. Which, incidentally, was the exact argument made in the speech itself.""
  secession_events.3.a:0 "A [SCOPE.sCulture('secessionist_culture').GetName] political leader? Unthinkable!"
  secession_events.3.b:0 "Anyone can make it in [ROOT.GetCountry.GetName]."
+ secessionist_agitator_tt: "A [SCOPE.sCulture('secessionist_culture').GetName] [concept_agitator] will appear in [ROOT.GetCountry.GetName]"
+ secessionist_leader_tt: "A [SCOPE.sCulture('secessionist_culture').GetName] [concept_politician] will assume leadership of the [SCOPE.gsInterestGroup('secessionist_ig').GetName]"
  secession_events.4.t:0 "Secessionists Protest"
  secession_events.4.d:0 "Proponents of the [SCOPE.sCulture('secessionist_culture').GetName] secession movement have gathered for a public protest."
  secession_events.4.f:0 "As the crowd began to gather, a tension seemed apparent among onlookers and passers-by, more than that which would usually be expected at the sight of a political rally. Perhaps the agenda of national independence stirred up thoughts about civil war, or perhaps — more likely — it was simply the unfamiliar feeling of finding themselves outnumbered even momentarily by [SCOPE.sCulture('secessionist_culture').GetName] people."
@@ -341,6 +346,15 @@
  secessionist_leader_ignored:0 "Secessionist Leader Ignored"
  defended_legal_discrimination:0 "Defended Legal Discrimination"
  soft_on_minorities:0 "Soft on Minorities"
+ modifier_refuting_secessionist_manifesto_movement: "Refuting Secessionist Manifesto"
+ modifier_censoring_secessionist_manifesto_movement: "Censored Secessionist Manifesto"
+ modifier_secessionist_manifesto_circulating: "Circulating Secessionist Manifesto"
+ modifier_tolerating_secession_movement: "Tolerated Secessionist Leader"
+ modifier_suppressed_secessionist_speech: "Suppressed Secessionist Leader"
+ modifier_frosty_reception: "Inconsequential Speech"
+ modifier_recognized_legal_discrimination: "Discrimination Recognized"
+ modifier_secessionist_rallies: "Secessionist Rallies"
+ modifier_assassinated_secessionist_leader: "Assassinated Secessionist Leader"
 
   # Oil Rush Events
  oil_rush.1.t:0 "Ропа!"
@@ -1010,12 +1024,6 @@
  doctrine_of_lapse:0 "Доктрина відумерлих володінь"
  doctrine_of_lapse_desc:0 "Ми повинні використовувати будь-які засоби, законні чи незаконні, щоб привласнити більше землі для нашої компанії."
  doctrine_of_lapse_cooldown_tt:0 "Не застосовано доктрину відумерлих володінь протягом 2-х років"
- je_avert_sepoy_mutiny:0 "Запобігти повстанню"
- je_avert_sepoy_mutiny_reason:0 "Незадоволеність пануванням Компанії на індійському субконтиненті зростає, навіть у лавах нашого власного місцевого війська. Повстанню все ще можна запобігти."
- je_avert_sepoy_mutiny_tt_1:0 "Виконайте запис у часописі #BOLD «$je_consolidate_colonial_rule$»#!"
- je_avert_sepoy_mutiny_tt_2:0 "Виконайте запис у часописі #BOLD «$je_reform_indies$»#!"
- je_sepoy_mutiny:0 "Повстання сипаїв"
- je_sepoy_mutiny_reason:0 "Проти Компанії спалахнув заколот і повстання. Якщо ми хочемо зберегти нашу владу, їх треба повністю придушити."
   # Sepoy Mutiny Events
  raj.3.t:0 "Forbidden Grease"
  raj.3.d:0 "Officials have raised concerns that a new type of rifle due to be issued to our troops use cartridge grease which may include tallow and lard, taboo in Hindu and Muslim faiths."

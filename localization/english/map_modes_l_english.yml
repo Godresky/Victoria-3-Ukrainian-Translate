@@ -5,6 +5,7 @@
  mm_state: "Землі"
  mm_theater: "Войовища"
  mm_military: "Збройні сили"
+ mm_military_formation: "Military Formation"
  mm_military_with_past_battles: "Битви"
  mm_peace_deal: "Воєнна та мирна угоди"
 
@@ -46,6 +47,8 @@
  mm_market_interaction: "Взаємодія з ринком"
  mm_strategic_region_interaction: "Взаємодія з стратегічним реґіоном"
  mm_command_interaction: "Взаємодія з командуванням"
+ mm_harvest_conditions: "Harvest Conditions"
+ mm_global_starvation: "Global Starvation"
  mm_hq_interaction: "Взаємодія з голпроводом"
  mm_front_interaction: "Взаємодія з фронтом"
  mm_recruit_generals_interaction: "Найм генералів"

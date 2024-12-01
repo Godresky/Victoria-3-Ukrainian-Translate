@@ -29,6 +29,16 @@
  alert_revolution_alert_hint:1 "Ви можете вибрати, який бік конфлікту ви підтримаєте в [Concept('concept_civil_war','$concept_civil_war_loc$')|l] та [Concept('concept_sway','$concept_sway$')|l] на свій бік інші держави (якщо потрібно), щоб досягти успіху."
  alert_revolution_alert_action:0 "Панель політики"
 
+ alert_can_abdicate_alert_name: "Can #bold Abdicate#! [concept_ruler]"
+ alert_can_abdicate_alert_desc: "Our [concept_ruler] is capable of #bold abdicating#! to placate the brewing [concept_insurrection] in our [concept_country]"
+ alert_can_abdicate_alert_hint: "You can use the #bold Character Interactions#! menu to #bold abdicate#! your [concept_ruler], and placate the [concept_insurrection] brewing in your [concept_country]"
+ alert_can_abdicate_alert_action: "Politics Panel"
+
+ alert_can_resign_alert_name: "Can #bold Resign#! [concept_ruler]"
+ alert_can_resign_alert_desc: "Our [concept_ruler] is capable of #bold resigning#! to placate the brewing [concept_insurrection] in our [concept_country]"
+ alert_can_resign_alert_hint: "You can use the #bold Character Interactions#! menu to #bold resign#! your [concept_ruler], and placate the [concept_insurrection] brewing in your [concept_country]"
+ alert_can_resign_alert_action: "Politics Panel"
+
  alert_secession_alert_name:0 "[concept_secession]!"
  alert_secession_alert_desc:0 "Наша держава була в втягнута у [Concept('concept_civil_war','$concept_civil_war_acc$')|l]!"
  alert_secession_alert_hint:2 "Ви можете вибрати, який бік конфлікту ви підтримаєте в [Concept('concept_civil_war','$concept_civil_war_loc$')|l] та [Concept('concept_sway','$concept_sway$')|l] на свій бік інші держави (якщо потрібно), щоб досягти успіху."
@@ -154,6 +164,11 @@
  alert_has_convoys_being_sunk_hint:2 "You can counter this by assigning an [concept_admiral] to [concept_escort_convoys] along the [Concept('concept_shipping_lane','$concept_shipping_lanes$')] passing through the Sea Node."
  alert_has_convoys_being_sunk_action:0 "Military Navy Panel"
 
+ alert_above_company_limit_name: "Above [concept_company] limit"
+ alert_above_company_limit_desc: "You have more $concept_companies$ than your limit permits. This causes all your $concept_companies$ to suffer heavy penalties to the [concept_throughput] they provide."
+ alert_above_company_limit_hint: "You can disband a $concept_company$ from the Company Panel to get below the allowed limit again. Alternatively you can keep it and live with the penalties or research a technology that increases the limit."
+ alert_above_company_limit_action: "Company Panel"
+
  HAS_CONVOYS_BEING_SUNK_HEADER:1 "Our [concept_convoys] are being sunk by hostile [Concept('concept_admiral', '$concept_admirals$')]. We believe the attacks are happening in at least one of these Sea Zones:"
 
  alert_unhealthy_economy_alert_name:0 "Нездорова економіка"
@@ -218,6 +233,10 @@
  alert_market_goods_shortage_alert_affected_buildings_breakdown:0 "[MarketGoods.GetBreakdownOfBuildingsAffectedByShortage]"
  alert_market_goods_shortage_alert_affected_buildings_breakdown_data_version:0 "[Goods.GetBreakdownOfBuildingsAffectedByShortageInMarket]"
  alert_market_goods_shortage_alert_affected_building_entry:0 "[Building.GetName] у [Concept('concept_state', '$concept_state_loc$')|l] [Building.GetState.GetName]"
+
+ alert_famine_alert_name: "[concept_famine] in [GetPlayer.GetName]"
+ alert_famine_alert_hint: "You can improve the [concept_food_security] of the [Concept('concept_pop','$concept_pops$')] living in the affected [Concept('concept_state','$concept_states$')] by increasing the supply of [GetPopNeed('popneed_basic_food').GetName] [Concept('concept_good','$concept_goods$')]. This can be done either by constructing [Concept('concept_building','$concept_buildings$')] that produce any of the $concept_goods$ that fulfill the [GetPopNeed('popneed_basic_food').GetName] [Concept('concept_pop_needs','$concept_pop_need$')] or by [Concept('concept_trade_route','$concept_importing$')] it.\n\nA low [concept_market_access] may also affect the access to [GetPopNeed('popneed_basic_food').GetName] $concept_goods$.\n\n$concept_buildings$ and $concept_imports$ might take a while to come in full effect. The [GetDecreeType('decree_emergency_relief').GetName] [concept_decree] may work as a quicker, although temporary, solution."
+ alert_famine_alert_action: "[concept_food_security] tab for the [SCOPE.GetRootScope.GetMarket.GetName]"
 
  alert_low_market_access_alert_name:1 "[SCOPE.GetRootScope.GetState.GetMarketAccess|%0v] [Concept('concept_market_access', '$concept_market_access_gen$')|l] у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetState.GetName]"
  alert_low_market_access_alert_hint:2 "Ви можете покращити [Concept('concept_market_access', '$concept_market_access_acc$')|l] у [Concept('concept_state', '$concept_state_loc$')|l] [SCOPE.GetRootScope.GetState.GetName], завдяки збільшеню рівня [Concept('concept_infrastructure', '$concept_infrastructure_gen$')|l] (звівши будівлі [GetBuildingType('building_port').GetName|l] чи [GetBuildingType('building_railway').GetName|l]), завдяки [Concept('concept_decree', '$concept_decrees_dat$')|l] «[GetDecreeType('decree_road_maintenance').GetName]» чи забезпечивши достатню кількість [Concept('concept_convoys', '$concept_convoys_gen$')|l] для з‘єднання морським тором [Concept('concept_state', '$concept_state_gen$')|l] [SCOPE.GetRootScope.GetState.GetName] зі [Concept('concept_market_capital', '$concept_market_capital_ins$')|l]."
@@ -394,6 +413,7 @@
 country_default_setting_name: "Country Default"
 has_no_research_alert_setting_name: "Has No Research"
 can_establish_company_setting_name: "Can Establish Company"
+above_company_limit_setting_name: "Above Company Limit"
 free_government_reform_setting_name: "Free Government Reform"
 revolution_alert_setting_name: "Revolution"
 secession_alert_setting_name: "Secession"
@@ -424,6 +444,7 @@ company_losing_prosperity_setting_name: "Company Losing Prosperity"
 market_goods_shortage_setting_name: "Market Goods Shortage"
 state_goods_shortage_setting_name: "State Goods Shortage"
 low_market_access_alert_setting_name: "Low Market Access"
+famine_alert_setting_name: "Famine"
 expensive_government_goods_alert_setting_name: "Expensive Government Goods"
 expensive_military_goods_alert_setting_name: "Expensive Military Goods"
 low_expected_sol_in_state_setting_name: "Low Expected SoL in State"
@@ -439,6 +460,8 @@ power_struggle_leader_setting_name: "Bloc Leader Power Struggle"
 power_struggle_contender_setting_name: "Bloc Member Power Struggle"
 power_bloc_mandates_available_setting_name: "Available Mandates"
 power_bloc_invite_available_setting_name: "Available Power Bloc Invitation"
+can_abdicate_alert_setting_name: "[concept_ruler] Can Abdicate"
+can_resign_alert_setting_name: "[concept_ruler] Can Resign"
 
 state_in_turmoil_alert: "State in Turmoil"
 high_tension_alert: "High Tension"

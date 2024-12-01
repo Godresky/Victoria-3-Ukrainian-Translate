@@ -4,6 +4,7 @@
  party_communist: "Комуністична партія"
  party_liberal: "Ліберальна партія"
  party_nazis: "Нацистська партія"
+ party_german_social_party: "German Social Party"
  party_british_union_of_fascists: "Британський союз фашистів"
  party_mouvement_franciste: "Французька дія"
  party_silver_legion: "Срібний легіон"
@@ -39,6 +40,7 @@
  party_national_civic_union: "Національний громадянський союз"
  party_radical_civic_union: "Радикальне громадянське об'єднання"
  party_labour_party: "Лейбористська партія"
+ party_hindu_mahasabha: "All-India Hindu Grand Assembly"
 
  #fascist_party
  party_fatherland_front: "Вітчизняний фронт"
@@ -96,6 +98,7 @@
  party_federal_republican_party: "Federal Republican Party"
  party_napist_party: "Napist Party"
  party_ethnikon_komma: "National Party"
+ party_congress_nationalist_party: "Congress Nationalist Party"
 
 #free_trade_party
  party_historic_party: "Історична партія"
@@ -167,7 +170,8 @@
  party_the_far_left: "Ультраліві"
  party_trudovik_group: "Трудова група"
  party_republican_union: "Республіканська спілка"
- party_farroupilha:0 "Farroupilha Party"
+ party_farroupilha: "Farroupilha Party"
+ party_swaraj_party: "Swaraj Party"
 
 
 #religious_party
@@ -207,7 +211,8 @@
  party_confederate_socialist_party: "Конфедеративна соціялістична асоціяція"
  party_psi: "Італійська соціялістична партія"
  party_seke: "Соціял-демократична партія Греччини"
- party_anl:0 "National Liberation Alliance"
+ party_anl: "National Liberation Alliance"
+ party_inc: "Congress Party"
 
 #communist_party
  party_british_socialist_party: "Британська соціялістична партія"
