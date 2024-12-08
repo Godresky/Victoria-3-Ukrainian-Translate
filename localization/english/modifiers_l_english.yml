@@ -202,15 +202,10 @@
  country_bolster_attraction_mult:1 "[Concept('concept_bolster', '$concept_bolstered$')] impact on [concept_political_movement] attraction"
  country_bolster_attraction_mult_desc:1 "A bonus or penalty to how attracted [Concept('concept_pop', '$concept_pops$')] are to a [concept_political_movement] as a result of being [Concept('concept_bolster', '$concept_bolstered$')]"
   
- country_suppression_ig_attraction_mult: "Вплив [Concept('concept_suppress', '$concept_suppression$')|l] на [Concept('concept_interest_group_attraction','$concept_interest_group_attraction_acc$')|l]"
- country_suppression_ig_attraction_mult_desc: "Наддаток або карна до того, наскільки [Concept('concept_pop', '$concept_pops$')|l] є [Concept('concept_interest_group_attraction', '$concept_attracted_adj$ими')|l] до [Concept('concept_interest_group', '$concept_interest_group_gen$')|l] під впливом [Concept('concept_suppress', '$concept_suppression_gen$')|l]"
- country_bolster_ig_attraction_mult: "Вплив [Concept('concept_bolster', '$concept_bolstering$')|l] на [Concept('concept_interest_group_attraction','$concept_interest_group_attraction_acc$')|l]"
- country_bolster_ig_attraction_mult_desc: "Наддаток або карна до того, наскільки [Concept('concept_pop', '$concept_pops$')|l] є [Concept('concept_interest_group_attraction', '$concept_attracted_adj$ими')|l] до [Concept('concept_interest_group', '$concept_interest_group_gen$')|l] під впливом [Concept('concept_bolster', '$concept_bolstering_gen$')|l]"
-  
  country_suppression_cost_mult: "[Concept('concept_suppress', '$concept_suppression$')] cost"
- country_suppression_cost_mult_desc: "An increase or decrease to the cost of [Concept('concept_suppress', '$concept_suppressing$')] an [concept_interest_group]."
+ country_suppression_cost_mult_desc: "An increase or decrease to the cost of [Concept('concept_suppress', '$concept_suppressing$')] an [concept_political_movement]."
  country_bolster_cost_mult: "[Concept('concept_bolster', '$concept_bolstering$')] cost"
- country_bolster_cost_mult_desc: "An increase or decrease to the cost of [Concept('concept_bolster', '$concept_bolstering$')] an [concept_interest_group]."
+ country_bolster_cost_mult_desc: "An increase or decrease to the cost of [Concept('concept_bolster', '$concept_bolstering$')] a [concept_political_movement]."
 
  country_loan_interest_rate_add:0 "Відсоткова ставка за кредитом"
  country_loan_interest_rate_add_desc:1 "A bonus or penalty to loan [Concept('concept_budget_interest', 'interest')] rate"
@@ -220,9 +215,9 @@
  country_gold_reserve_limit_mult_desc:0 "Once your [concept_gold_reserves] exceed this limit, the amount of gold you get to stockpile for every @money! diminishes progressively"
   
  country_resource_discovery_chance_mult:0 "Resource Discovery Chance"
- country_resource_discovery_chance_mult_desc:0 ""
+ country_resource_discovery_chance_mult_desc: "Increases the chance of discovering hidden $RESOURCE_POTENTIALS$"
  country_resource_depletion_chance_mult:0 "Resource Depletion Chance"
- country_resource_depletion_chance_mult_desc:0 ""
+ country_resource_depletion_chance_mult_desc: "Increases the chance of depleting $RESOURCE_POTENTIALS$"
 
  country_reached_sp_target:0 "Country Strength Points Target Reached"
  command_reached_sp_target:0 "Local commands Strength Points Target Reached"
@@ -417,12 +412,6 @@
  state_middle_strata_expected_sol_add_desc: "An increase or decrease to the minimum [concept_sol] that [concept_middle_strata] [Concept('concept_pop', '$concept_pops$')] expect to enjoy"
  state_upper_strata_expected_sol_add: "Minimum Expected [concept_sol] for the [concept_upper_strata]"
  state_upper_strata_expected_sol_add_desc: "An increase or decrease to the minimum [concept_sol] that [concept_upper_strata] [Concept('concept_pop', '$concept_pops$')] expect to enjoy"
- state_poor_expected_sol:0 "Найменший очікуваний [concept_sol|l] для [Concept('concept_lower_strata', '$concept_lower_strata_gen$')|l]"
- state_poor_expected_sol_desc:0 "Збільшує або зменшує найменший [Concept('concept_sol', '$concept_sol_acc$')|l] [Concept('concept_lower_strata', '$concept_lower_strata_gen$')|l] [Concept('concept_pop', '$concept_population_gen$')|l] очікуваний для щастя"
- state_middle_expected_sol:0 "Найменший очікуваний [concept_sol|l] для [Concept('concept_middle_strata', '$concept_middle_strata_gen$')|l]"
- state_middle_expected_sol_desc:0 "Збільшує або зменшує найменший [Concept('concept_sol', '$concept_sol_acc$')|l] [Concept('concept_middle_strata', '$concept_middle_strata_gen$')|l] [Concept('concept_pop', '$concept_population_gen$')|l] очікуваний для щастя"
- state_rich_expected_sol:0 "Найменший очікуваний [concept_sol|l] для [Concept('concept_upper_strata', '$concept_upper_strata_gen$')|l]"
- state_rich_expected_sol_desc:0 "Збільшує або зменшує найменший [Concept('concept_sol', '$concept_sol_acc$')|l] [Concept('concept_upper_strata', '$concept_upper_strata_gen$')|l] [Concept('concept_pop', '$concept_population_gen$')|l] очікуваний для щастя"
  tax_income_add:0 "Ставка податку на прибуток"
  tax_income_add_desc:0 "Частка [Concept('concept_budget_wages', '$concept_budget_wage_gen$')|l], яку [Concept('concept_pop', '$concept_population$')|l] мусить заплатити податку"
  state_urbanization_add:0 "$urban_capacity$"
@@ -600,9 +589,6 @@
  country_allow_multiple_alliances_bool:0 "Дозвіл кількох альянсів"
  country_allow_multiple_alliances_bool_desc:0 "Чи дозволено країні створювати кілька [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts_gen$')|l] [concept_alliance|l] "
 
- state_minimum_wealth_add:0 "Minimum Wealth"
- state_minimum_wealth_add_desc:0 "Pop Wealth cannot drop below this level through normal means"
-  
  building_minimum_wage_mult:0 "Minimum Wage"
  building_minimum_wage_mult_desc:1 "Employers must pay this fraction of the standard [concept_normal_wage] or higher to their employees"
   
@@ -1695,8 +1681,6 @@ state_migration_quota_mult_desc: "A bonus or penalty to the amount of people tha
   
  state_political_strength_from_wealth_mult:0 "[concept_political_strength] from [concept_wealth]"
  state_political_strength_from_wealth_mult_desc:0 "An increase or decrease to the amount of [concept_political_strength] of [Concept('concept_pop','$concept_pops$')] from [concept_wealth]"
- state_political_strength_from_discrimination_mult:0 "[concept_political_strength] from [concept_discrimination]"
- state_political_strength_from_discrimination_mult_desc:0 "An increase or decrease to the amount of [concept_political_strength] of [Concept('concept_pop','$concept_pops$')] from [concept_discrimination]"
  state_political_strength_from_welfare_mult:0 "Політична сила при отриманні допомоги"
  state_political_strength_from_welfare_mult_desc:0 "An increase or decrease to the amount of [concept_political_strength] of [Concept('concept_pop','$concept_pops$')] that are receiving [concept_welfare_payments]"
  
@@ -1927,8 +1911,7 @@ state_migration_quota_mult_desc: "A bonus or penalty to the amount of people tha
  country_tech_group_research_speed_mult_desc: "A bonus or penalty to the research speed which scales with the number of countries that have already researched the current [concept_technology]"
  country_ahead_of_time_research_penalty_mult: "Ahead of Time Penalty"
  country_ahead_of_time_research_penalty_mult_desc: "An increase or decrease to the research penalty from unresearched [Concept('concept_technology', '$concept_technologies$')] from previous [Concept('concept_technology_era', '$concept_technology_eras_short$')]"
- character_morale_cap_add:0 "Morale Cap"
- character_morale_cap_add_desc:0 "A bonus or penalty to max unit morale."
+
  character_budget_mult:0 "Character Budget"
  character_budget_mult_desc:0 "A bonus or penalty to the monetary cost for characters."
  character_health_add: "Здоров’я персонажа"

@@ -260,9 +260,14 @@
  raj.2.t:0 "Доктрина відумерлих володінь"
  raj.2.d1:1 "The [ROOT.GetCountry.GetTopOverlord.GetAdjectiveNoFormatting] Resident has invoked the Doctrine of Lapse, citing our ruler's advanced age and failure to produce a male heir. By [ROOT.GetCountry.GetTopOverlord.GetAdjectiveNoFormatting] decree, the territory of [ROOT.GetCountry.GetName] is to be immediately annexed into the [ROOT.GetCountry.GetTopOverlord.GetName]."
  raj.2.d2: "The [ROOT.GetCountry.GetTopOverlord.GetAdjectiveNoFormatting] Resident has invoked the Doctrine of Lapse, citing the alleged incompetence of our [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]. By [ROOT.GetCountry.GetTopOverlord.GetAdjectiveNoFormatting] decree, the territory of [ROOT.GetCountry.GetName] is to be immediately annexed into the [ROOT.GetCountry.GetOverlord.GetName]."
- raj.2.f:0 "«„Розділяй і володарюй“ було давньоримським гаслом, і воно має стати й нашим гаслом. Ми повинні використовувати будь-які засоби, законні чи незаконні, щоб привласнити більше землі для компанії.»"
- raj.2.a:0 "[SCOPE.sState('doctrine_of_lapse_target_state_1').GetName] потрібен кращий управитель"
- raj.2.b:0 "[SCOPE.sState('doctrine_of_lapse_target_state_2').GetName] виглядає непоганим кандидатом"
+ raj.2.f:1 "At one PM sharp, the Resident entered. At five past one, tea was served to the the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] and [ROOT.GetCountry.GetRuler.GetHerHis] interpreter. At ten past one, the dictate was served. At fifteen, there was no more [ROOT.GetCountry.GetNameNoFormatting], and no more [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]. The Resident departed, steam still rising from his untouched cup."
+ raj.2.a:1 "There is no way that we might resist."
+ raj.2.b:1 "Summon our army, we make our stand here."
+
+ if_accepted_by_target_country_tt: "If [SCOPE.sCountry('target_country').GetName] accepts:"
+ transfers_treasury_to_eic_tt: "The contents of [ROOT.GetCountry.GetName]'s [concept_treasury] (@money![ROOT.GetCountry.GetGoldReserves|K]) are transferred to the [ROOT.GetCountry.GetOverlord.GetName]"
+ transfers_treasury_to_eic_diplo_tt: "The contents of [SCOPE.sCountry('target_country').GetName]'s [concept_treasury] (@money![SCOPE.sCountry('target_country').GetGoldReserves|K]) are transferred to the [ROOT.GetCountry.GetName]"
+
   # Strike!
  strike.1.t:0 "Strike!"
  strike.1.d:1 "Workers in the [SCOPE.sBuilding('prime_strike_workplace').GetName] have had enough of their poor conditions. Working with the [SCOPE.gsInterestGroup('unions_ig').GetName], they have initiated an industry-wide strike in [SCOPE.sState('strike_state').GetName]."

@@ -64,6 +64,10 @@
  YOU_CANNOT_PLAY_AS_DECENTRALIZED:0 "Ви не можете грати за [Concept('concept_decentralized_nation','$concept_decentralized_nation_acc$')|l]"
  LAUNCHER_SAVE_DESCRIPTION:0 "Грати за державу $COUNTRY$"
  LAUNCHER_SAVE_DESCRIPTION_OBSERVER:1 "Спостерігати за державою $COUNTRY$"
+ 
+ SAVE_ERROR: "Error Saving Game"
+ SAVE_ERROR_NO_CLOUD: "Failed to save to cloud, not connected to cloud storage"
+ SAVE_ERROR_FILE_ERROR: "Failed to write save file"
 
  NAME_WITH_VALUE_FORMATTING: "#v $FORMATTED_NAME$#!"
  BASE_VALUE_YELLOW:0 "Базове значення: #BOLD $VAL|Dv$#!"
