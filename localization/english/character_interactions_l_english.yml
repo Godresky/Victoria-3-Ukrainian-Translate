@@ -4,6 +4,8 @@
  CHARACTER_INTERACTION_ERRORS_IMPL: "#title Вимоги:#!\n[CharacterInteraction.GetCommandDesc(Character.Self)]"
  CHARACTER_INTERACTION_REQUIREMENTS: "[AddTextIf(And(CharacterInteraction.ShouldShowRequirements, Not(StringIsEmpty(CharacterInteraction.GetRequirements(Character.Self)))), Concatenate(Localize('CHARACTER_INTERACTION_REQUIREMENTS_IMPL'), '\n\n'))]"
  CHARACTER_INTERACTION_REQUIREMENTS_IMPL: "#title Вимоги:#!\n[CharacterInteraction.GetRequirements(Character.Self)][AddTextIf(CharacterInteraction.IsOnCooldown(Character.Self), Concatenate('\n\n@red_cross! ', CharacterInteraction.GetCooldownDesc(Character.Self)))]"
+ CHARACTER_INTERACTION_COOLDOWN_DURATION_INFO: "[AddLocalizationIf(Not(StringIsEmpty(CharacterInteraction.GetCooldownDuration(Character.Self))), 'CHARACTER_INTERACTION_COOLDOWN_DURATION_INFO_IMPL')]"
+ CHARACTER_INTERACTION_COOLDOWN_DURATION_INFO_IMPL: "@information! This action can only be taken once every [CharacterInteraction.GetCooldownDuration(Character.Self)]\n\n"
  CHARACTER_INTERACTION_INFO: "[ConcatIfNeitherEmpty(CharacterInteraction.GetInfo, '\n\n')]"
  CHARACTER_INTERACTION_EFFECTS: "#title Заподії:#!\n[Select_CString(Not(StringIsEmpty(CharacterInteraction.GetEffects(Character.Self))), CharacterInteraction.GetEffects(Character.Self), Localize('CHARACTER_INTERACTION_NO_EFFECT'))]"
  CHARACTER_INTERACTION_NO_EFFECT: "#italic Без заподій#!"
@@ -25,6 +27,7 @@
  exile_dissident_tt: "[Character.GetFullName] буде відправлен[Select_CString(Character.IsFemale,'$CustomLoc_UA_vona_a$','$CustomLoc_UA_vin_yY$')|l] у вигнання"
  invite_exile: "Запросити вигнанця"
  invite_exile_start_join_movement_effect: "[SelectLocalization(Character.PredictLawToAgitate(GetPlayer.Self).GetPoliticalMovement.IsValid, 'invite_exile_join_movement', SelectLocalization(Character.PredictLawToAgitate(GetPlayer.Self).IsValid, 'invite_exile_start_movement', 'invite_exile_no_movement'))]"
+ invite_exile_do_not_join_movement: "[SelectLocalization(Character.PredictMovementTypeToStart(GetPlayer.Self).IsValid, 'invite_exile_start_movement', 'invite_exile_no_movement')]"
  invite_exile_start_movement: "Почне [Concept('concept_political_movement', '$concept_political_movement_acc$')|l] [Character.PredictLawToAgitate(GetPlayer.Self).GetPotentialPoliticalMovementName|l]"
  invite_exile_join_movement: "Приєднається до [Concept('concept_political_movement', '$concept_political_movement_gen$')|l] [Character.PredictLawToAgitate(GetPlayer.Self).GetPoliticalMovement.GetName|l]"
  invite_exile_no_movement: "#b Не#! почне [Concept('concept_political_movement', '$concept_political_movement_acc$')|l] або не приєднається до нього"
@@ -39,7 +42,7 @@
 
 # Agitator Interactions
  grant_leadership_to_agitator: "Зробити провідником"
- grant_leadership_to_agitator_info: "[concept_ideology]: [Character.GetIdeology.GetName]\n[concept_popularity]: #v #tooltip:[Character.GetTooltipTag],POPULARITY_BREAKDOWN [LabelingHelper.GetLabelForPopularityCFixedPoint(Character.GetPopularity)]#!#! (#v #tooltippable #tooltip:[Character.GetTooltipTag],POPULARITY_BREAKDOWN [Character.GetPopularity|0]#!#!#!)\n\nЯкщо зробити провідником, то [CharacterInteraction.GetCustom('UA_joho_jiji')|l] ідеологія буде додана до [Concept('concept_interest_group','$concept_interest_group_short_gen$')|l] [Character.GetInterestGroup.GetName], а популярність персонажа вплине на [Concept('concept_interest_group_attraction','$concept_interest_group_attraction_acc$')|l]"
+ grant_leadership_to_agitator_info: "[concept_ideology]: [Character.GetIdeology.GetName]\n[concept_popularity]: #v #tooltip:[Character.GetTooltipTag],POPULARITY_BREAKDOWN [LabelingHelper.GetLabelForPopularityCFixedPoint(Character.GetPopularity)]#!#! (#v #tooltippable #tooltip:[Character.GetTooltipTag],POPULARITY_BREAKDOWN [Character.GetPopularity|0]#!#!#!)\n\nЯкщо зробити провідником, the $concept_ideology$ of [Character.GetFullName] will be added to the [Character.GetInterestGroup.GetName] and [Character.GetHerHis] $concept_popularity$ will affect their [concept_interest_group_attraction]"
  make_agitator_ig_leader_tt: "Стане [Concept('concept_leader','$concept_leader_ins$')|l] групи [Character.GetInterestGroup.GetName]"
  grant_command_to_agitator: "Зробити командиром"
  grant_command_to_agitator_info: "Якщо зробити командиром, то [Character.GetFullName] залишиться [Concept('concept_agitator','$concept_agitator_ins$')|l], але отримає здатність очолювати військо як [Concept('concept_general','$concept_general$')|l], зі своїм [Concept('concept_commander_rank','$concept_commander_rank_ins$')|l], яке впливає на [Concept('concept_clout','$concept_clout_acc$')|l] групи [Character.GetInterestGroup.GetName]"

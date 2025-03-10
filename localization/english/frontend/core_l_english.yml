@@ -53,6 +53,7 @@
  GENERATING_BOOKMARK_PROGRESS:0 "Створення історії світу: $PROGRESS|0%$"
  LOADING_SAVEGAME_PROGRESS:0 "Завантаження: $PROGRESS|0%$"
  LOADSCREEN_INITIALIZING_GAME:0 "Започатковування гри..."
+ SHADERS_COMPILED: "Compiling #v [GetNumberOfShadersCompiled]#! shaders due to first time starting this update.\nThis may take some extra time."
  SERVER_NAME:0 "Гра $NAME$"
  PLAYERS_ON_SERVER:0 "Гравців на сервері: NAME — TITLE — PING"
  PLAYER_ON_SERVER:0 "$NAME$ - $TITLE$ - $PING$"

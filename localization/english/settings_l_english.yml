@@ -29,12 +29,18 @@
  SETTINGS_CATEGORY_LANGUAGE: "Мова"
  SETTINGS_CATEGORY_SAVE_GAMES: "Збереження гри"
  SETTINGS_CATEGORY_TOOLTIPS: "Параметри підказок"
+ SETTINGS_CATEGORY_OUTLINER:0 "Outliner"
  SETTINGS_CATEGORY_MAP_CONTROLS: "Керування мапою"
  SETTINGS_CATEGORY_MAPMODES: "Режими мапи"
  SETTING_SHADER_QUALITY: "Якість шейдерів"
  SETTING_SHADER_QUALITY_TOOLTIP: "#T $SETTING_SHADER_QUALITY$#!\nВизначає якість різних шейдерів й ефектів.\n\n#T Висока:#! Покращує якість деяких шейдерних ефектів за рахунок продуктивности.\n\n#T Середня:#! Звичайні налаштування.\n\n#T Низька:#! Цей параметр призначений для компів низького клясу та не рекомендований через втрату візуальної якости. Кілька шейдерів спрощено для підвищення графічної продуктивности."
  SETTING_SHOW_NUDITY: "Показати наготу"
  SETTING_SHOW_NUDITY_TOOLTIP: "#T $SETTING_SHOW_NUDITY$#!\nВстановлює, чи можна показувати наготу."
+ 
+ SETTING_PAUSE_ON_EVENT: "Pause and Popup on Events"
+ SETTING_PAUSE_ON_EVENT_TOOLTIP: "#T $SETTING_PAUSE_ON_EVENT$#!\nPauses the game and shows the popup when an event is triggered."
+ SETTINGS_CATEGORY_GAME_NOTIFICATIONS: "Notifications"
+ SETTING_PAUSE_ON_EVENT_MESSAGE_SETTINGS: "$SETTING_PAUSE_ON_EVENT$ (Single player only)"
 
  SETTING_VALUE_HOURS: "$VALUE|0$ год"
  SETTING_VALUE_HOUR_FULL: "$VALUE|0$:00"
@@ -57,6 +63,9 @@
 
  SETTING_BUILDINGS_CUTOFF: "Відсівання віддалених будівель"
  SETTING_BUILDINGS_CUTOFF_TOOLTIP:1 "#T $SETTING_BUILDINGS_CUTOFF$#!\nShow fewer buildings on the map, the further away they are from the camera.\n\nTurning it on may increase performance."
+
+ SETTING_SHOW_NOTIFICATION_FEED_NEXT_TO_OUTLINER: "Notifications to the left of Outliner"
+ SETTING_SHOW_NOTIFICATION_FEED_NEXT_TO_OUTLINER_TOOLTIP: "#t $SETTING_SHOW_NOTIFICATION_FEED_NEXT_TO_OUTLINER$#!\nPlace the Notifications Feed to the left of the Outliner"
 
  SETTINGS_CATEGORY_GAME_PORTRAITS: "Портрети"
  SETTING_SOUNDTRACK: "Музика на тлі"
@@ -83,12 +92,12 @@
  SETTING_OCCUPATION_STRIPES: "Смугаста окупація"
  SETTING_OCCUPATION_STRIPES_TOOLTIP: "#T $SETTING_OCCUPATION_STRIPES$#!\nУвімкнути кольорові смуги як візуальне позначення окупації на мапі замість зображень стягів країн"
  
- SETTING_PORTRAIT_RENDER_SCALE:0 "Portrait Render Scaling"
- SETTING_PORTRAIT_RENDER_SCALE_TOOLTIP:0 "#T SETTING_PORTRAIT_RENDER_SCALE#!\nImprove character portrait detail level by upscaling render results, at the cost of some more rendering performance."
- 
- OPTION_PORTRAIT_RENDER_SCALE_NONE:0 "×1.0 - None"
- OPTION_PORTRAIT_RENDER_SCALE_MEDIUM:0 "×1.5 - Medium"
- OPTION_PORTRAIT_RENDER_SCALE_HIGH:0 "×2.0 - High"
+ SETTING_PORTRAIT_RENDER_SCALE: "Portrait Render Scaling"
+ SETTING_PORTRAIT_RENDER_SCALE_TOOLTIP: "#T $SETTING_PORTRAIT_RENDER_SCALE$#!\nImprove character portrait detail level by upscaling render results, at the cost of some more rendering performance."
+
+ OPTION_PORTRAIT_RENDER_SCALE_NONE: "×1.0 - None"
+ OPTION_PORTRAIT_RENDER_SCALE_MEDIUM: "×1.5 - Medium"
+ OPTION_PORTRAIT_RENDER_SCALE_HIGH: "×2.0 - High"
 
  ui_skin_theme: "Інтерфейс користувача"
  ui_skin_theme_desc: "Кнопки, рамки, вікна, горища тощо у грі."
@@ -104,6 +113,8 @@
  table_asset_3_theme_desc: "Об’єкт, що відображається у нижньому лівому куті стільниці поруч з мапою при відаленні."
  table_asset_4_theme: "Об’єкт на столі (нижній лівий кут)"
  table_asset_4_theme_desc: "Об’єкт, що відображається у нижньому правому куті стільниці поруч з мапою при відаленні."
+ table_asset_cloth_theme: "Table Cloth"
+ table_asset_cloth_theme_desc: "The cloth which the coins are resting on."
  building_sets_themes: "Набір будівель"
 
  color_blind_mode_test: "Тест"

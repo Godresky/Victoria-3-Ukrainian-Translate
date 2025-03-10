@@ -86,7 +86,7 @@ je_conquest_of_algeria_tt: "Події про масові напади біль
 je_the_algerian_departements: "Департаменти Алжиру"
 je_the_algerian_departements_reason: "Розпочалося перетворення Алжиру з осадницького фронтиру, керованого шаблею, на невід’ємну частину [ROOT.GetCountry.GetNameNoFormatting] метрополії.\n\nОднак, як виявили наші адміністратори під час завоювання, лояльність корінних жителів мінлива та купується важко. Щоб належним чином використовувати численні ресурси Алжиру, ми повинні або переселити більш лояльну базу населення, або ми повинні вжити рішучих заходів, щоб забезпечити лояльність тих, хто вже є."
 je_the_algerian_departements_tt_1: "Землі [SCOPE.sState('je_algiers_state_scope').GetStateRegion.GetName], [SCOPE.sState('je_oran_state_scope').GetStateRegion.GetName] та [SCOPE.sState('je_constantine_state_scope').GetStateRegion.GetName] повинні повністю належати нам та бути [Concept('concept_incorporated_state','$concept_incorporated$')|l], з [concept_turmoil|l] нище #bold 10%#!."
-je_the_algerian_departements_tt_2: "[SCOPE.sCulture('maghrebi_culture_scope').GetName] та [SCOPE.sCulture('berber_culture_scope').GetName] мають бути [Concept('concept_accepted_culture','$concept_accepted_culture_short$')|l] [Concept('concept_culture','$concept_cultures$')|l] в [SCOPE.GetRootScope.GetCountry.GetName]."
+#je_the_algerian_departements_tt_2 was removed since it was using old gameconcept 'concept_accepted_culture', and not used in the JE anymore
 je_the_algerian_departements_tt_3: "[SCOPE.sCulture('french_culture_scope').GetName] [Concept('concept_pop','$concept_population$')|l] поширена в [SCOPE.sState('je_algiers_state_scope').GetStateRegion.GetName], [SCOPE.sState('je_oran_state_scope').GetStateRegion.GetName] та [SCOPE.sState('je_constantine_state_scope').GetStateRegion.GetName] не менше ніж на #bold 20%#!."
 
 je_reconquest_of_algeria: "Алжирська війна за незалежність"
@@ -682,7 +682,7 @@ paris_commune_pulse_events.7.b: "Немає пощади до зрадників
 
 paris_commune_pulse_events.8.t: "Салют чотирьохсот гармат"
 paris_commune_pulse_events.8.d: "Сотні бронзових польових гармат у Парижі залишилися незатребуваними. Версальський уряд закликає до обережності. Генерал [SCOPE.sCharacter('cannon_seizing_general_scope').GetLastName] запевняє, що має достатньо людей, щоб захопити гармати."
-paris_commune_pulse_events.8.f: "«Ви розумієте, якої шкоди можуть завдати чотириста гармат? Скільки наших людей може загинути?\nТак, вони застаріли. Так, їх важко завантажити. Але одна кована куля розтрощить з’єднання та послабить укріплення.\Зарядіть їх достатньою кількістю лангражу, і у вас буде достатньо шрапнелі, щоб перетворити армію на сосиски.\n\nЦе має сенс, чи почекаємо коли комунари це продемострують?»"
+paris_commune_pulse_events.8.f: ""Ви розумієте, якої шкоди можуть завдати чотириста гармат? Скільки наших людей може загинути?\nТак, вони застаріли. Так, їх важко завантажити. Але одна кована куля розтрощить з’єднання та послабить укріплення.\Зарядіть їх достатньою кількістю лангражу, і у вас буде достатньо шрапнелі, щоб перетворити армію на сосиски.\n\nЦе має сенс, чи почекаємо коли комунари це продемострують?""
 paris_commune_pulse_events.8.a: "Ідіть зараз, поки у нас є елемент несподіванки."
 paris_commune_pulse_events.8.b: "Надто мало людей, щоб їх захопити."
 paris_commune_pulse_events.8.c: "У нас є краща зброя."

@@ -107,6 +107,9 @@
  bandit: "Бандит"
  bandit_desc: "Цей персонаж відомий тим, що він закінчив «Вищу школу розбоїв»."
 
+ social_bandit: "Social Bandit"
+ social_bandit_desc: "This character is widely known amongst the common people for their legendary escapades, stealing from the rich to give to the poor."
+
  convoy_raider_commander: "Конвойний рейдер"
  convoy_raider_commander_desc: "Цей адмірал має досвід рейду на конвої."
  experienced_convoy_raider: "Досвідчений конвойний рейдер"
@@ -174,3 +177,17 @@
  engineer_desc: "Цей персонаж є майстром технічних мистецтв і розуміє виклики промислової сучасности."
  master_bureaucrat: "Майстерний урядовець"
  master_bureaucrat_desc: "Цей персонаж неймовірно вміє керувати як людьми, так і паперовою роботою."
+ political_appointee: "Political Appointee"
+ political_appointee_desc: "This character was thrust into a position of power by another authority, and does not enjoy a natural powerbase."
+
+
+ ruthless: "Ruthless"
+ ruthless_desc: "This character is willing to take whatever steps are necessary to achieve their goals."
+ compliant: "Compliant"
+ compliant_desc: "This character is prone to subordinating themselves to others."
+ aesthete: "Aesthete"
+ aesthete_desc: "This character possesses refined aesthetic sensibilities and a great interest in the fine arts."
+ inept: "Inept"
+ inept_desc: "The responsibilities of this character's position greatly outweigh their competence."
+ inexperienced: "Inexperienced"
+ inexperienced_desc: "This character is a neophyte in their position, and has yet to develop their skills to an advanced level."

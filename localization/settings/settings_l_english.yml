@@ -40,5 +40,3 @@
  SETTINGS_INPUT_BINDING_TEXT: "Виберіть прив’язку введення для дії '$INPUT_ACTION$':\n\n$INPUT_NAME$"
  SETTINGS_INPUT_BINDING_WARNING_TEXT: "Увага: Ця прив’язка введення вже існує для '$INPUT_ACTION$'!\nКлацніть '$SETTINGS_INPUT_CONFIRM$', щоб очистити стару прив'язку"
  SETTINGS_INPUT_BINDING_MODIFIERS_WARNING_TEXT: "Увага: input binding can not consist of only modifier keys"
-
-

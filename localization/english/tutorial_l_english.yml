@@ -221,6 +221,7 @@
  lesson_pops_state_population_details_continue:1 "Expand a pop list, then click on an individual Pop"
  lesson_pops_state_population_details_back:0 "Population tab is #b not#! open"
 
+ 
  lesson_pops_stats_1:0 "Pop Properties"
  lesson_pops_stats_1_desc:0 "Here we see an individual Pop in all its glory. While you never interact directly with a Pop, every action you take affects the properties of Pops in your country. Your country changes in turn as the capabilities, conditions, mobility, and desires of your population changes.\n\nWe will now go over the properties of a Pop. While running your country you will almost always deal with these values as averages or aggregates, but sometimes it's necessary to drill down to the individual level to see #b why#! a value is what it is. For every value there is always an explanatory tooltip available."
  lesson_pops_stats_1_back:0 "Individual Pop tab is #b not#! open"
@@ -555,7 +556,7 @@
  ### HOW
  lesson_fix_unproductive_building_how_1:0 "Improve an $concept_unproductive$ $concept_building$'s Earnings"
  lesson_fix_unproductive_building_how_1_desc:0 "There is no one-click fix for a [Concept('concept_building', '$concept_building_possessive$')] low [concept_productivity]! Let’s have a look at the $concept_building$'s Process breakdown to see what the issues might be."
- lesson_fix_unproductive_building_how_1_continue:0 "Open the $concept_building$ details panel for the [GetTutorialJournalEntry.GetTarget.GetBuilding.GetName] in [GetTutorialJournalEntry.GetTarget.GetBuilding.GetState.GetName]"
+ lesson_fix_unproductive_building_how_1_continue:0 "Open the $concept_state$ tab of [GetTutorialJournalEntry.GetTarget.GetBuilding.GetState.GetName] by clicking on the map. In the $concept_state$ $concept_building$ Tab, select the [GetTutorialJournalEntry.GetTarget.GetBuilding.GetName] $concept_building$"
  lesson_fix_unproductive_building_how_2_back:0 "[GetTutorialJournalEntry.GetTarget.GetBuilding.GetName] panel must be closed to backtrack"
 
  lesson_fix_unproductive_building_how_2:0 "$lesson_fix_unproductive_building_how_1$"
@@ -578,7 +579,7 @@
  lesson_fix_unproductive_building_how_7_desc:0 "If there’s no good way to make a [concept_building] more [Concept('concept_productivity', '$concept_productive$')], but your economy still needs what the $concept_building$ produces, you can [Concept('concept_subsidies', '$concept_subsidize$')] it. This ensures it always has all the funds required to purchase its input [Concept('concept_good', '$concept_goods$')] and maintain a competitive [concept_building_wage] by covering any budgetary shortfalls from the [concept_treasury]. Your economic system law decides which $concept_buildings$ you may $concept_subsidize$."
 
  lesson_fix_unproductive_building_how_8:0 "$lesson_fix_unproductive_building_how_1$"
- lesson_fix_unproductive_building_how_8_desc:0 "[Concept('concept_building', '$concept_buildings$')] whose [concept_productivity] falls low enough that they can’t offer a competitive [concept_building_wage] will naturally adjust to the [concept_market], as their [concept_throughput] will be affected by lower employment which increases the earnings per remaining employee. If you want to speed up this process you can always downsize the $concept_building$ to force the workforce to go elsewhere. Note that this will anger affected [Concept('concept_pop', '$concept_pops$')] with [Concept('concept_ownership_share', '$concept_ownership_shares$')]."
+ lesson_fix_unproductive_building_how_8_desc:0 "[Concept('concept_building', '$concept_buildings$')] whose [concept_productivity] falls low enough that they can’t offer a competitive [concept_building_wage] will naturally adjust to the [concept_market], as their [concept_throughput] will be affected by lower employment which increases the earnings per remaining employee. If you want to speed up this process you can always downsize the $concept_building$ to force the workforce to go elsewhere. Note that this will anger the [Concept('concept_pop', '$concept_pops$')] that lose their jobs."
 
  lesson_fix_unproductive_building_how_9:0 "$lesson_fix_unproductive_building_how_1$"
  lesson_fix_unproductive_building_how_9_desc:0 "Use whatever tools at your disposal to improve the [concept_productivity] of this [concept_building]. If all else fails, you can [Concept('concept_subsidies', '$concept_subsidize$')] or even downsize it."
@@ -589,52 +590,52 @@
 
  ### Promote an IG
  ### HOW
- lesson_promote_ig_how_0:2 "You can not currently [concept_bolster] [Concept('concept_interest_group', '$concept_interest_groups$')]"
- lesson_promote_ig_how_0_desc:2 "Your country has no $modifier_country_promotion_ig_attraction_mult$ and therefore does not let you [concept_bolster] [Concept('concept_interest_group', '$concept_interest_groups$')]. You must pass a [concept_law] that grants it first.[ConcatIfNeitherEmpty('\n\n',GetPlayer.GetModifier.GetDescFor('country_promotion_ig_attraction_mult'))]"
- lesson_promote_ig_how_0_continue:0 "Open the Politics panel, click the Laws tab, and click the [GetPlayer.GetActiveLawFromGroup('lawgroup_free_speech').GetName] [concept_law] to see your possible options. Restart this lesson once your new $concept_law$ has been enacted!"
+ lesson_promote_movement_how_0:2 "You can not currently [concept_bolster] [Concept('concept_political_movement', '$concept_political_movements$')]"
+ lesson_promote_movement_how_0_desc:2 "Your country has no $country_bolster_ig_attraction_mult$ and therefore does not let you [concept_bolster] [Concept('concept_political_movement', '$concept_political_movements$')]. You must pass a [concept_law] that grants it first.[ConcatIfNeitherEmpty('\n\n',GetPlayer.GetModifier.GetDescFor('country_bolster_ig_attraction_mult'))]"
+ lesson_promote_movement_how_0_continue:0 "Open the Politics panel, click the Laws tab, and click the [GetPlayer.GetActiveLawFromGroup('lawgroup_free_speech').GetName] [concept_law] to see your possible options. Restart this lesson once your new $concept_law$ has been enacted!"
 
- lesson_promote_ig_how_1:2 "How to $concept_bolster$ $concept_interest_groups$"
- lesson_promote_ig_how_1_desc:3 "To [concept_bolster] an [concept_interest_group] you must first of all have a [concept_law] that permits it. This is defined mostly by your stance on [GetLawGroup('lawgroup_free_speech').GetName] (currently [GetPlayer.GetActiveLawFromGroup('lawgroup_free_speech').GetName]). By enacting different $concept_laws$ you can grant yourself more or less power to impact this."
+ lesson_promote_movement_how_1:2 "How to $concept_bolster$ $concept_political_movements$"
+ lesson_promote_movement_how_1_desc:3 "To [concept_bolster] a [concept_political_movement] you must first of all have a [concept_law] that permits it. This is defined mostly by your stance on [GetLawGroup('lawgroup_free_speech').GetName] (currently [GetPlayer.GetActiveLawFromGroup('lawgroup_free_speech').GetName]). By enacting different $concept_laws$ you can grant yourself more or less power to impact this."
 
- lesson_promote_ig_how_2:0 "$lesson_promote_ig_how_1$"
- lesson_promote_ig_how_2_desc:0 "You can find a list of your currently active [Concept('concept_interest_group', '$concept_interest_groups$')] on the $politics$ panel."
- lesson_promote_ig_how_2_continue:1 "Open the #v Politics#! panel and the #v Government#! tab"
+ lesson_promote_movement_how_2:0 "$lesson_promote_movement_how_1$"
+ lesson_promote_movement_how_2_desc:0 "You can find a list of your currently active [Concept('concept_political_movement', '$concept_political_movements$')] on the $politics$ panel."
+ lesson_promote_movement_how_2_continue:1 "Open the #v Politics#! panel and the #v Overview#! tab"
 
- lesson_promote_ig_how_3:0 "$lesson_promote_ig_how_1$"
- lesson_promote_ig_how_3_desc:1 "[Concept('concept_interest_group', '$concept_interest_groups$')] both in and out of [concept_government] can be [Concept('concept_bolster', '$concept_bolstered$')]."
- lesson_promote_ig_how_3_continue:1 "Click on an [concept_interest_group] you think looks interesting\n(click on their icon)"
- lesson_promote_ig_how_3_continue_close:2 "Close the $concept_interest_group$ panel to backtrack"
- lesson_promote_ig_how_3_back:1 "Close the #v Politics#! panel and the #v Government#! tab to backtrack"
+ lesson_promote_movement_how_3:0 "$lesson_promote_movement_how_1$"
+ lesson_promote_movement_how_3_desc:1 "All [Concept('concept_political_movement', '$concept_political_movements$')] can be [Concept('concept_bolster', '$concept_bolstered$')], though it may be risky to $concept_bolster$ a $concept_political_movement_short$ with high [concept_activism]."
+ lesson_promote_movement_how_3_continue:1 "Click on a [concept_political_movement] you think looks interesting"
+ lesson_promote_movement_how_3_continue_close:2 "Close the $concept_political_movement$ panel to backtrack"
+ lesson_promote_movement_how_3_back:1 "Close the #v Politics#! panel and the #v Overview#! tab to backtrack"
 
- lesson_promote_ig_how_4:0 "$lesson_promote_ig_how_1$"
- lesson_promote_ig_how_4_desc:1 "[Concept('concept_bolster', '$concept_bolstering$')] [concept_interest_group] costs [concept_authority], and at the moment you do not have enough to spare. Review your $concept_authority$ expenditures and cancel enough of them that you have at least [GetDefine('NPolitics','IG_BOLSTER_COST')|0v] @aut! $concept_authority$ available."
- lesson_promote_ig_how_4_continue:2 "Have at least [GetDefine('NPolitics','IG_BOLSTER_COST')|0v] @aut! $concept_authority$"
+ lesson_promote_movement_how_4:0 "$lesson_promote_movement_how_1$"
+ lesson_promote_movement_how_4_desc:1 "[Concept('concept_bolster', '$concept_bolstering$')] [concept_political_movement] costs [concept_authority], and at the moment you do not have enough to spare. Review your $concept_authority$ expenditures and cancel enough of them that you have at least [GetDefine('NPolitics','BOLSTER_COST')|0v] @aut! $concept_authority$ available."
+ lesson_promote_movement_how_4_continue:2 "Have at least [GetDefine('NPolitics','BOLSTER_COST')|0v] @aut! $concept_authority$"
 
- lesson_promote_ig_how_5:0 "$lesson_promote_ig_how_1$"
- lesson_promote_ig_how_5_desc:1 "You can choose to [concept_bolster] any [concept_interest_group], but remember, it comes at a cost of [concept_authority]. You $concept_bolster$ an $concept_interest_group$ by using the #b $concept_bolster$#! button the top of any $concept_interest_group$'s panel."
- lesson_promote_ig_how_5_continue:1 "[concept_bolster] any one [concept_interest_group]"
+ lesson_promote_movement_how_5:0 "$lesson_promote_movement_how_1$"
+ lesson_promote_movement_how_5_desc:1 "You can choose to [concept_bolster] any [concept_political_movement], but remember, it comes at a cost of [concept_authority]. You $concept_bolster$ an $concept_political_movement$ by using the #b $concept_bolster$#! button the top of any $concept_political_movement$'s panel."
+ lesson_promote_movement_how_5_continue:1 "[concept_bolster] any one [concept_political_movement]"
 
- lesson_promote_ig_how_6:0 "$lesson_promote_ig_how_1$"
- lesson_promote_ig_how_6_desc:1 "A [Concept('concept_bolster', '$concept_bolstered$')] [concept_interest_group] does not radically change right away. Only the [concept_interest_group_attraction] changes, which will cause more eligible [Concept('concept_pop', '$concept_pops$')] to support it over time. Wait a while and you will soon see the impact on the $concept_interest_group$'s [concept_clout] and membership."
+ lesson_promote_movement_how_6:0 "$lesson_promote_movement_how_1$"
+ lesson_promote_movement_how_6_desc:1 "A [Concept('concept_bolster', '$concept_bolstered$')] [concept_political_movement] does not radically change right away. Only the attraction changes, which will cause more eligible [Concept('concept_pop', '$concept_pops$')] to support it over time. Wait a while and you will soon see the impact on the $concept_political_movement$'s [concept_clout] and membership."
  
  ### WHY
- lesson_promote_ig_why_1:2 "Why $concept_bolster$ $concept_interest_groups$"
- lesson_promote_ig_why_1_desc:0 "[Concept('concept_interest_group', '$concept_interest_groups$')] are instrumental in determining and shaping the politics of your [concept_country]. If you have not yet read the tutorial lesson on $concept_interest_groups$ you should do so before starting this lesson.\n\nYou can start the lesson by hovering the [Concept('concept_interest_group', '$concept_interest_groups$')] [concept_concept] and pressing the #v $GUIDE_ME$#! button."
- lesson_promote_ig_why_1_continue:0 "Open any $concept_interest_group$'s panel to continue"
- lesson_promote_ig_why_1_continue_close:0 "Close the $concept_interest_group$'s panel"
+ lesson_promote_movement_why_1:2 "Why $concept_bolster$ $concept_political_movements$"
+ lesson_promote_movement_why_1_desc:0 "[Concept('concept_political_movement', '$concept_political_movements$')] are instrumental in determining and shaping the politics of the [concept_interest_group] in your [concept_country]."
+ lesson_promote_movement_why_1_continue:0 "Open any $concept_political_movement$'s panel to continue"
+ lesson_promote_movement_why_1_continue_close:0 "Close the $concept_political_movement$'s panel"
 
- lesson_promote_ig_why_2:0 "$lesson_promote_ig_why_1$"
- lesson_promote_ig_why_2_desc:0 "[Concept('concept_interest_group', '$concept_interest_groups$')] will grow or wane in [concept_political_strength] over time, (see [concept_clout]). The $concept_political_strength$ grows and wanes along with changing conditions affecting [Concept('concept_pop', '$concept_pops$')] in your [concept_country]. This changing political landscape could come as a surprise to you and derail your plans.\n\nBy taking a more active role in deciding which $concept_interest_groups$ to support you can both affect and more easily predict where your country is headed."
+ lesson_promote_movement_why_2:0 "$lesson_promote_movement_why_1$"
+ lesson_promote_movement_why_2_desc:0 "[Concept('concept_political_movement', '$concept_political_movements$')] will grow or wane in [concept_political_movement_support] over time. The $concept_political_movement_support$ grows and wanes along with changing conditions affecting [Concept('concept_pop', '$concept_pops$')] in your [concept_country]. This changing political landscape could come as a surprise to you and derail your plans.\n\nBy taking a more active role in deciding which $concept_political_movements$ to support you can both affect and more easily predict where your country is headed."
 
- lesson_promote_ig_why_3:0 "$lesson_promote_ig_why_1$"
- lesson_promote_ig_why_3_desc:4 "A [Concept('concept_bolster', '$concept_bolstered$')] [concept_interest_group] will increase both its [concept_pop] membership and [concept_political_strength] over time. Their [concept_approval] will also increase as a result of enjoying an officially sanctioned status.\n\nBy [Concept('concept_bolster', '$concept_bolstering$')] the $concept_interest_groups$ who support [Concept('concept_law', '$concept_laws$')] you would like to enact, or who have [Concept('concept_interest_group_trait', '$concept_interest_group_traits$')] you would like to exploit, you will be met with less resistance as you transform or maintain your $concept_country$'s $concept_laws$."
+ lesson_promote_movement_why_3:0 "$lesson_promote_movement_why_1$"
+ lesson_promote_movement_why_3_desc:5 "A [Concept('concept_bolster', '$concept_bolstered$')] [concept_political_movement] will increase both its [concept_pop] membership and [concept_political_movement_support] over time. This will allow them to more easily influence the [Concept('concept_ideology', '$concept_ideologies$')] of your [Concept('concept_interest_group','$concept_interest_groups$')], which in turn can lead to an easier time enacting certain [Concept('concept_law', '$concept_laws$')]."
 
- lesson_promote_ig_why_4:0 "$lesson_promote_ig_why_1$"
- lesson_promote_ig_why_4_desc:2 "In addition to [Concept('concept_bolster', '$concept_bolstering$')] [Concept('concept_interest_group', '$concept_interest_groups$')] you support, you can also [concept_suppress] those you oppose. Each of these actions cost a certain amount of @aut![Nbsp][concept_authority]."
- lesson_promote_ig_why_4_continue:0 "Navigate to the [Concept('concept_law', '$concept_laws$')] tab on the $politics$ panel."
+ lesson_promote_movement_why_4:0 "$lesson_promote_movement_why_1$"
+ lesson_promote_movement_why_4_desc:2 "In addition to [Concept('concept_bolster', '$concept_bolstering$')] [Concept('concept_political_movement', '$concept_political_movements$')] you support, you can also [concept_suppress] those you oppose. Each of these actions cost a certain amount of @aut![Nbsp][concept_authority]."
+ lesson_promote_movement_why_4_continue:0 "Navigate to the [Concept('concept_law', '$concept_laws$')] tab on the $politics$ panel."
 
- lesson_promote_ig_why_5:0 "$lesson_promote_ig_why_1$"
- lesson_promote_ig_why_5_desc:2 "Your ability to [concept_bolster] and [concept_suppress] [Concept('concept_interest_group', '$concept_interest_groups$')] is governed by two aspects:\n\n* Your @aut![Nbsp][concept_authority] capacity\n* Your values in $modifier_country_promotion_ig_attraction_mult$ (currently [GetTutorialJournalEntry.GetCountry.GetModifier.GetValueWithBreakdownFor('country_promotion_ig_attraction_mult')]) and $modifier_country_suppression_ig_attraction_mult$ (currently [GetTutorialJournalEntry.GetCountry.GetModifier.GetValueWithBreakdownFor('country_suppression_ig_attraction_mult')])\n\nA prominent source for both of these is your current [concept_law] of [GetPlayer.GetActiveLawFromGroup('lawgroup_free_speech').GetName] under the [GetPlayer.GetActiveLawFromGroup('lawgroup_free_speech').GetGroup.GetName] [concept_law_group]."
+ lesson_promote_movement_why_5:0 "$lesson_promote_movement_why_1$"
+ lesson_promote_movement_why_5_desc:2 "Your ability to [concept_bolster] and [concept_suppress] [Concept('concept_political_movement', '$concept_political_movements$')] is governed by two aspects:\n\n* Your @aut![Nbsp][concept_authority] capacity\n* Your values in $country_bolster_attraction_mult$ (currently [GetTutorialJournalEntry.GetCountry.GetModifier.GetValueWithBreakdownFor('country_bolster_attraction_mult')]) and $country_suppression_attraction_mult$ (currently [GetTutorialJournalEntry.GetCountry.GetModifier.GetValueWithBreakdownFor('country_suppression_attraction_mult')])\n\nA prominent source for both of these is your current [concept_law] of [GetPlayer.GetActiveLawFromGroup('lawgroup_free_speech').GetName] under the [GetPlayer.GetActiveLawFromGroup('lawgroup_free_speech').GetGroup.GetName] [concept_law_group]."
 
 
  ### Improve Market Access
@@ -697,18 +698,13 @@
  lesson_market_access_with_railways_how_3_back:0 "Cancel construction building Railways in [GetTutorialJournalEntry.GetTarget.GetState.GetName] to backtrack"
 
  lesson_market_access_with_railways_how_4:0 "$lesson_market_access_with_railways_how_1$"
- lesson_market_access_with_railways_how_4_desc:0 "You can find more details of what the Railways do on its details panel."
- lesson_market_access_with_railways_how_4_continue:0 "Open the Railways details panel in [GetTutorialJournalEntry.GetTarget.GetState.GetName]"
+ lesson_market_access_with_railways_how_4_desc:1 "Both [Concept('concept_pop', '$concept_pops$')] and other [Concept('concept_building', '$concept_buildings$')] can purchase [GetGoods('transportation').GetTextIcon] [GetGoods('transportation').GetName], to fulfill [concept_pop_needs] or as part of a [concept_production_method]. But if demand is low and the cost of input goods is high, Railways can easily become unproductive and lose employees due to low [Concept('concept_building_wage', '$concept_building_wages$')]. To ensure optimal access to rail-based [concept_infrastructure] you may need to [Concept('concept_subsidies', '$concept_subsidize$')] Railways - either in specific [Concept('concept_state', '$concept_states$')] or all at once, if they are not already subsidized."
+ lesson_market_access_with_railways_how_4_continue:0 "Open the $concept_buildings$ panel, click the Developments tab, and see if Railways are $concept_subsidized$"
  lesson_market_access_with_railways_how_4_back:0 "Open the [concept_trade_lens] to backtrack"
 
  lesson_market_access_with_railways_how_5:0 "$lesson_market_access_with_railways_how_1$"
- lesson_market_access_with_railways_how_5_desc:1 "Both [Concept('concept_pop', '$concept_pops$')] and other [Concept('concept_building', '$concept_buildings$')] can purchase [GetGoods('transportation').GetTextIcon] [GetGoods('transportation').GetName], to fulfill [concept_pop_needs] or as part of a [concept_production_method]. But if demand is low and the cost of input goods is high, Railways can easily become unproductive and lose employees due to low [Concept('concept_building_wage', '$concept_building_wages$')]. To ensure optimal access to rail-based [concept_infrastructure] you may need to [Concept('concept_subsidies', '$concept_subsidize$')] Railways - either in specific [Concept('concept_state', '$concept_states$')] or all at once, if they are not already subsidized."
- lesson_market_access_with_railways_how_5_continue:0 "Open the $concept_buildings$ panel, click the Developments tab, and see if Railways are $concept_subsidized$"
- lesson_market_access_with_railways_how_5_back:0 "Close the Railways details panel in [GetTutorialJournalEntry.GetTarget.GetState.GetName] to backtrack"
-
- lesson_market_access_with_railways_how_6:0 "$lesson_market_access_with_railways_how_1$"
- lesson_market_access_with_railways_how_6_desc:0 "It is possible that when construction completes and the Railway becomes fully employed, [concept_state] [concept_infrastructure] is still insufficient compared to [concept_infrastructure_usage]. If so, you can construct more Railways as long as you ensure they stay profitable, or subsidize them. At your option you could also downsize obsolete buildings contributing to the excessive $concept_infrastructure_usage$ in the $concept_state$."
- lesson_market_access_with_railways_how_6_back:0 "Close the Developments tab in the $concept_buildings$ panel to backtrack"
+ lesson_market_access_with_railways_how_5_desc:0 "It is possible that when construction completes and the Railway becomes fully employed, [concept_state] [concept_infrastructure] is still insufficient compared to [concept_infrastructure_usage]. If so, you can construct more Railways as long as you ensure they stay profitable, or subsidize them. At your option you could also downsize obsolete buildings contributing to the excessive $concept_infrastructure_usage$ in the $concept_state$."
+ lesson_market_access_with_railways_how_5_back:0 "Close the Developments tab in the $concept_buildings$ panel to backtrack"
 
  ### WHY - RAILWAYS
  lesson_market_access_with_railways_why_1:0 "Why Improve $concept_market_access$ with Railways"
@@ -721,8 +717,7 @@
  ### Increase Immigration
  ### HOW
  lesson_increase_immigration_how_1:0 "How to Increase $concept_immigration$"
- lesson_increase_immigration_how_1_desc:0 "A [concept_state] will be an attractive target for [concept_migration] if the average [concept_sol] is high. [Concept('concept_pop', '$concept_pops$')] will move from States with lower [concept_migration_pull] to those with higher $concept_migration_pull$ in the same [concept_market]."
- lesson_increase_immigration_how_1_continue:0 "Activate the $concept_migration$ map mode"
+ lesson_increase_immigration_how_1_desc:1 "A [concept_state] will be an attractive target for [concept_migration] if the average [concept_sol] is high. [Concept('concept_pop', '$concept_pops$')] will move from States with lower [concept_migration_pull] to those with higher $concept_migration_pull$ in the same [concept_market].\n\nThere are several [concept_migration] map modes to activate in the map mode list next to the lenses which will give you an overview of where $concept_pops$ are $concept_migrating$. Feel free to check them out and continue whenever you are done."
 
  lesson_increase_immigration_how_2:0 "$lesson_increase_immigration_how_1$"
  lesson_increase_immigration_how_2_desc:0 "Hover any [concept_state] to see its [concept_migration_pull] tooltip breakdown.\n\nWhen you are done looking at $concept_migration_pull$ tooltips, find [GetTutorialJournalEntry.GetTarget.GetState.GetName] on the map. "
@@ -746,7 +741,7 @@
  ### WHY
  lesson_increase_immigration_why_1:0 "Why to Increase $concept_immigration$"
  lesson_increase_immigration_why_1_desc:0 "The most common reason to encourage [concept_migration] to a certain [concept_state] is to increase its labor supply to more effectively exploit its resources. Migration occurs naturally as poorer [Concept('concept_pop', '$concept_pops$')] seek better places to live and work in the same [concept_market]. Interfering in this process using [Concept('concept_law', '$concept_laws$')] or [Concept('concept_decree', '$concept_decrees$')] can speed up, slow down, or even reverse migration."
- lesson_increase_immigration_why_1_continue:0 "Click the [Concept('concept_culture', '$concept_cultures$')] panel"
+ lesson_increase_immigration_why_1_continue: "Open the [Concept('concept_culture', '$concept_cultures$')] tab in the Society Panel"
 
  lesson_increase_immigration_why_2:0 "$lesson_increase_immigration_why_1$"
  lesson_increase_immigration_why_2_desc:0 "High [concept_migration_pull] will not only make a [concept_state] a more attractive destination for [Concept('concept_pop', '$concept_pops$')] in the same [concept_market] and/or [concept_country], but will also increase the chance of it being randomly selected as a [concept_migration_target] for the mass movement of $concept_pops$ of [Concept('concept_culture', '$concept_cultures$')] with high average [concept_turmoil]. Hover a $concept_turmoil$ value to see both the global and national $concept_turmoil$ of that $concept_culture$."
@@ -820,7 +815,7 @@
  lesson_enact_institution_law_why_3:0 "$lesson_enact_institution_law_why_1$"
  lesson_enact_institution_law_why_3_desc:0 "You can see your current [Concept('concept_institution','$concept_institutions$')] on the $concept_institution$ tab."
  lesson_enact_institution_law_why_3_continue:0 "Open the $concept_institutions$ tab on the Politics Panel"
-
+ 
  lesson_enact_institution_law_why_4:0 "$lesson_enact_institution_law_why_1$"
  lesson_enact_institution_law_why_4_desc:0 "[Concept('concept_institution','$concept_institutions$')] are used to provide benefits for your nation or additional powers for you. In the process they use @bur![Nbsp][concept_bureaucracy], translating into an expense for the [concept_treasury] in relation to the size of your [Concept('concept_incorporated_state', '$concept_incorporated$')] population. To create a new $concept_institution$ you must enact a [concept_law] that enables it."
  lesson_enact_institution_law_why_4_back:0 "Close the $concept_institutions$ tab to backtrack"
@@ -862,12 +857,13 @@
  ### COMPLETE
  lesson_reform_government_complete:0 "$lesson_reform_government_how_1$"
  lesson_reform_government_complete_desc:1 "Your new government has a much more reasonable [concept_legitimacy] score of [GetPlayer.GetGovernmentLegitimacy], letting it attempt to enact new Laws every [GetDefine('NPolitics','LAW_ENACTMENT_COOLDOWN_DAYS')|0] days. Hopefully it is also able to enact the political changes you desire! If not, you can always make changes to your government as long as you're willing to pay the price in Legitimacy and/or Radicalism."
+
  
  ### Increase Relations
  ### HOW
  lesson_increase_relations_how_0:0 "You can not Increase Relations"
- lesson_increase_relations_how_0_desc:1 "You need at least #v [GetDiplomaticActionType('increase_relations').GetMaintenanceCost(GetPlayer.Self, GetTutorialJournalEntry.GetTarget.GetCountry.Self)]#! available @inf![Nbsp][concept_influence] to [GetDiplomaticActionType('increase_relations').GetName] with [GetTutorialJournalEntry.GetTarget.GetCountry.GetName]. End this lesson now and return once you have canceled some other [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]."
- lesson_increase_relations_how_0_continue:1 "Have at least #v [GetDiplomaticActionType('increase_relations').GetMaintenanceCost(GetPlayer.Self, GetTutorialJournalEntry.GetTarget.GetCountry.Self)]#! available @inf![Nbsp][concept_influence]"
+ lesson_increase_relations_how_0_desc:1 "You need at least #v [GetDiplomaticActionType('increase_relations').GetMaintenanceCostFormatted(GetPlayer.Self, GetTutorialJournalEntry.GetTarget.GetCountry.Self)]#! available @inf![Nbsp][concept_influence] to [GetDiplomaticActionType('increase_relations').GetName] with [GetTutorialJournalEntry.GetTarget.GetCountry.GetName]. End this lesson now and return once you have canceled some other [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]."
+ lesson_increase_relations_how_0_continue:1 "Have at least #v [GetDiplomaticActionType('increase_relations').GetMaintenanceCostFormatted(GetPlayer.Self, GetTutorialJournalEntry.GetTarget.GetCountry.Self)]#! available @inf![Nbsp][concept_influence]"
 
  lesson_increase_relations_how_1:0 "How to Increase Relations"
  lesson_increase_relations_how_1_desc:0 "[GetDiplomaticActionType('increase_relations').GetName] is a type of [concept_diplomatic_pact] and can be found under the #b Diplomacy#! Lens."
@@ -875,7 +871,7 @@
 
  lesson_increase_relations_how_2:0 "$lesson_increase_relations_how_1$"
  lesson_increase_relations_how_2_desc:0 "We want to [GetDiplomaticActionType('increase_relations').GetName] with [GetTutorialJournalEntry.GetTarget.GetCountry.GetName]. Most [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] require @inf![Nbsp][concept_influence] to maintain, and we can see how much it would cost us ahead of time."
- lesson_increase_relations_how_2_continue:0 "Click on [GetTutorialJournalEntry.GetTarget.GetCountry.GetName] on the map or in the map list to start increasing your $concept_countries$' relation"
+ lesson_increase_relations_how_2_continue:0 "Find and click on [GetTutorialJournalEntry.GetTarget.GetCountry.GetName] on the map or the @map_list_plus_small! plus button in the map list to start increasing your $concept_countries$' relation"
  lesson_increase_relations_how_2_back:0 "Close #b Diplomacy#! Lens to backtrack"
 
  lesson_increase_relations_how_3:0 "$lesson_increase_relations_how_1$"
@@ -906,12 +902,12 @@
 
  lesson_expand_military_how_2:0 "$lesson_expand_military_how_1$"
  lesson_expand_military_how_2_desc:1 "Barracks create and maintain [Concept('concept_battalion', '$concept_battalions$')] which make up your [concept_army]. Battalions are commanded by [Concept('concept_general', '$concept_generals$')] to advance or defend [Concept('concept_front', '$concept_fronts$')], and are used to protect the integrity of your borders, by being stationed on the front line.\n\nRegardless of the Battalion you wish to recruit it will always build a Barrack.\n\nInside the [concept_military_formation] Panel you can find buttons to build new Barracks for the different unit types: Infantry, Artillery and Cavalry."
- lesson_expand_military_how_2_continue:0 "Select the Formation you wish to recruit the [Concept('concept_unit', '$concept_units$')] for"
+ lesson_expand_military_how_2_continue:0 "Open the [GetTutorialJournalEntry.GetTarget.GetMilitaryFormation.GetName] Formation to continue and recruit units"
  lesson_expand_military_how_2_back:0 "Close #b Military#! Panel to backtrack"
 
  lesson_expand_military_how_3:0 "$lesson_expand_military_how_1$"
  lesson_expand_military_how_3_desc:3 "Like all buildings, [Concept('concept_military_building','$concept_military_buildings$')] are constructed in [Concept('concept_state','$concept_states$')], but the [Concept('concept_unit','$concept_units_short$')] they provide will be assigned to the [concept_military_formation] it was built from, and can later be transferred to other Formations. Ensure your Military originates from states where you can spare the [concept_workforce] but still have good access to [concept_infrastructure] and [Concept('concept_military_good','$concept_military_goods$')].\n\nEnsure the costs of your expanded Military is not larger than your [concept_treasury] can manage! If your budget is not balanced, wait with expanding further until you have made the necessary improvements."
- lesson_expand_military_how_3_continue:0 "Start expansion to continue"
+ lesson_expand_military_how_3_continue:0 "Start expansion in any [concept_state] to continue"
  lesson_expand_military_how_3_back:0 "Close #b Military#! Panel to backtrack"
 
 
@@ -970,49 +966,44 @@
  ### Recruit and Promote a Commander
  ### HOW
  lesson_recruit_promote_commander_how_1:0 "How to Recruit a Commander"
- lesson_recruit_promote_commander_how_1_desc:1 "New [Concept('concept_commander','$concept_commanders$')] can be recruited through the [Concept('concept_military_formation','$concept_army_long$')] panel."
- lesson_recruit_promote_commander_how_1_continue:1 "Open a Formation panel"
+ lesson_recruit_promote_commander_how_1_desc:1 "New [Concept('concept_commander','$concept_commanders$')] can be recruited on any [Concept('concept_military_formation','$concept_military_formation_possessive$')] info panel, either an [concept_army] or a [concept_fleet]."
+ lesson_recruit_promote_commander_how_1_continue:1 "Open any $concept_military_formation_possessive$ panel"
 
- lesson_recruit_promote_commander_how_2:0 "$lesson_recruit_promote_commander_how_1$"
- lesson_recruit_promote_commander_how_2_desc:0 "You can have up to four [Concept('concept_commander','$concept_commanders$')] in an [Concept('concept_military_formation','$concept_army_long$')]. They affect the maximum [concept_command_limit] that your Formation has available. When you press the big + button in the Commanders section, you will see a few candidates for a new one."
- lesson_recruit_promote_commander_how_2_continue:0 "Open the Commander Recruitment Pop Up via the + button in the Commanders section"
- lesson_recruit_promote_commander_how_2_back:0 "Close [concept_commander] selection screen to backtrack"
+lesson_recruit_promote_commander_how_2:0 "$lesson_recruit_promote_commander_how_1$"
+ lesson_recruit_promote_commander_how_2_desc:0 "You can have up to four [Concept('concept_commander','$concept_commanders$')] in an [concept_army] or a [concept_fleet]. They affect the maximum [concept_command_limit] that your [concept_military_formation] has available. When you press the big + button in the $concept_commanders$ section, you will see a few candidates for a new one."
+ lesson_recruit_promote_commander_how_2_continue:0 "Open the $concept_commander$ Recruitment popup via the + button in the $concept_commanders$ section"
+ lesson_recruit_promote_commander_how_2_back:0 "Close the [concept_military_formation] panel to backtrack"
+
+ lesson_recruit_promote_commander_how_3:0 "$lesson_recruit_promote_commander_how_1$"
+ lesson_recruit_promote_commander_how_3_desc:0 "You now have several choices of $concept_commanders$ to choose between. Let's take a look at why you might want to choose one over another."
+ lesson_recruit_promote_commander_how_3_continue:0 "Select your new [concept_commander]."
+ lesson_recruit_promote_commander_how_3_back:0 "Close [concept_commander] selection screen to backtrack"
 
  lesson_recruit_promote_commander_how_4:0 "$lesson_recruit_promote_commander_how_1$"
- lesson_recruit_promote_commander_how_4_desc:0 "You now have several choices of $concept_commanders$ to choose between. Let's take a look at why you might want to choose one over another."
- lesson_recruit_promote_commander_how_4_continue:0 "Select your new [concept_commander]."
- lesson_recruit_promote_commander_how_4_back:0 "Close [concept_commander] selection screen to backtrack"
+ lesson_recruit_promote_commander_how_4_desc:0 "Their [Concept('concept_character_trait','$concept_character_traits$')] impact their behavior and abilities in and outside of [concept_battle]. Tooltip them to find out what they do. Some $concept_character_traits$ only have an impact if the [concept_character] acts in a particular role. We are currently only interested in the effects the $concept_character_traits$ have for $concept_commanders$.\n\n#u Blue#! $concept_character_traits$ are #u Personality#! $concept_character_traits$, which all $concept_characters$ have only one of. It will generally not change. #v White#! $concept_character_traits$ are #v Skill#! $concept_character_traits$, which affect the $concept_character_possessive$ abilities in their current [concept_character_role]. #v Skill#! $concept_character_traits$ can be gained or developed over time with [concept_life_experience]. #r Red#! $concept_character_traits$ are #r Conditions#!, which have a negative impact on the $concept_character$ and typically do not change."
 
  lesson_recruit_promote_commander_how_5:0 "$lesson_recruit_promote_commander_how_1$"
- lesson_recruit_promote_commander_how_5_desc:0 "Their [Concept('concept_character_trait','$concept_character_traits$')] impact their behavior and abilities in and outside of [concept_battle]. Tooltip them to find out what they do. Some traits only have an impact if the [concept_character] acts in a particular role. We are currently only interested in the effects the traits have for Commanders.\n\nBlue traits are Personality Traits, which all characters have only one of. It will generally not change. White traits are Skill Traits, which affect the character's abilities in their current role. Skill Traits can be gained or developed over time, with [concept_life_experience]. Red Traits are Conditions, which have a negative impact on the character and typically do not change."
+ lesson_recruit_promote_commander_how_5_desc:0 "All characters are members of an [concept_interest_group] whose politics they support. $concept_commanders$ increase their $concept_interest_group$'s [concept_clout]. When an $concept_interest_group$ revolts, $concept_commanders$ who support them will join the revolution. It is prudent to ensure your highest-ranking $concept_commanders$ support the kind of politics you want to see in your country."
 
  lesson_recruit_promote_commander_how_6:0 "$lesson_recruit_promote_commander_how_1$"
- lesson_recruit_promote_commander_how_6_desc:0 "All characters are members of an [concept_interest_group] whose politics they support. $concept_commanders$ increase their $concept_interest_group$'s [concept_clout]. When an $concept_interest_group$ revolts, $concept_commanders$ who support them will join the revolution. It is prudent to ensure your highest-ranking $concept_commanders$ support the kind of politics you want to see in your country."
+ lesson_recruit_promote_commander_how_6_desc:0 "[concept_commander_rank] determines the $concept_commander$'s [concept_command_limit] as well as the degree by which they increase their $concept_interest_group$'s [concept_clout]. Most $concept_commanders$ start their career as first rank, but you can promote them anytime to increase it at a cost of @bur![concept_bureaucracy]."
 
  lesson_recruit_promote_commander_how_7:0 "$lesson_recruit_promote_commander_how_1$"
- lesson_recruit_promote_commander_how_7_desc:0 "[concept_commander_rank] determines the $concept_commander$'s [concept_command_limit] as well as the degree by which they increase their $concept_interest_group$'s [concept_clout]. Most $concept_commanders$ start their career as first rank, but you can promote them anytime to increase it at a cost of @bur![concept_bureaucracy]."
+ lesson_recruit_promote_commander_how_7_desc:0 "Evaluate your options and choose a [concept_commander] to recruit."
+ lesson_recruit_promote_commander_how_7_continue:0 "Recruit a $concept_commander$"
 
  lesson_recruit_promote_commander_how_8:0 "$lesson_recruit_promote_commander_how_1$"
- lesson_recruit_promote_commander_how_8_desc:0 "Evaluate your options and choose a [concept_commander] to recruit."
- lesson_recruit_promote_commander_how_8_continue:0 "Recruit a $concept_commander$"
+ lesson_recruit_promote_commander_how_8_desc:1 "You can find the [concept_general] you recruited in the Formation tab. Find the [concept_commander] you recruited and select their portrait to continue."
+ lesson_recruit_promote_commander_how_8_continue:0 "Go to the newly recruited #b Commander's#! Panel"
+ lesson_recruit_promote_commander_how_8_back:0 "Open the Recruit Commander panel to go back"
 
  lesson_recruit_promote_commander_how_9:0 "$lesson_recruit_promote_commander_how_1$"
- lesson_recruit_promote_commander_how_9_desc:1 "Your new $concept_commander$ can be found in the #b Formation#! Panel."
- lesson_recruit_promote_commander_how_9_continue:2 "Go to the #b Formation Panel#!"
+ lesson_recruit_promote_commander_how_9_desc:2 "From here you can promote the [concept_commander] to a higher [concept_commander_rank]. This will not increase their abilities but only their [concept_command_limit], which governs the size of the force they can have under their direct command."
+ lesson_recruit_promote_commander_how_9_back:0 "Close the recruited #b Commander's#! Panel to backtrack"
 
  lesson_recruit_promote_commander_how_10:0 "$lesson_recruit_promote_commander_how_1$"
- lesson_recruit_promote_commander_how_10_desc:1 "You can find the [concept_general] you recruited in the Formation tab. Find the [concept_commander] you recruited and select their portrait to continue."
- lesson_recruit_promote_commander_how_10_continue:0 "Go to the newly recruited #b Commander's#! Panel"
- lesson_recruit_promote_commander_how_10_back:0 "Open the Recruit Commander panel to go back"
-
-
- lesson_recruit_promote_commander_how_11:0 "$lesson_recruit_promote_commander_how_1$"
- lesson_recruit_promote_commander_how_11_desc:2 "From here you can promote the [concept_commander] to a higher [concept_commander_rank]. This will not increase their abilities but only their [concept_command_limit], which governs the size of the force they can have under their direct command."
- lesson_recruit_promote_commander_how_11_back:0 "Close the recruited #b Commander's#! Panel to backtrack"
-
- lesson_recruit_promote_commander_how_12:0 "$lesson_recruit_promote_commander_how_1$"
- lesson_recruit_promote_commander_how_12_desc:1 "You can promote the [concept_commander] by clicking the #b Promote#! button on this panel or right-clicking the $concept_commander$ in any interface."
- lesson_recruit_promote_commander_how_12_continue:1 "Promote the $concept_commander$ to complete the tutorial."
+ lesson_recruit_promote_commander_how_10_desc:1 "You can promote the [concept_commander] by clicking the #b Promote#! button on this panel, open the interactions menu, or right-clicking the $concept_commander$ in any interface."
+ lesson_recruit_promote_commander_how_10_continue:1 "Promote the $concept_commander$ to complete the tutorial."
 
 
  ### COMPLETE
@@ -1026,7 +1017,7 @@
  lesson_declare_interest_how_1_continue:0 "Find and click #b Declare Interest#! in the #b Diplomatic#! Lens"
 
  lesson_declare_interest_how_2:0 "$lesson_declare_interest_how_1$"
- lesson_declare_interest_how_2_desc:1 "Now select the target [concept_strategic_region] and declare an [concept_interest] in it. \nTake note of the other [Concept('concept_country','$concept_countries$')] that are present or have $concept_interests$ in the $concept_strategic_region$, as they have the same influence in this region as you when declaring your interest.\n\nYour new [concept_interest] starts out inactive. It takes #v [GetDefine('NDiplomacy','INTEREST_NUM_DAYS_CHANGE')|0] days#! for a new $concept_interest$ to activate. During this time it conveys no benefits to you."
+ lesson_declare_interest_how_2_desc:1 "Now select any [concept_strategic_region] and declare an [concept_interest] in it. \nTake note of the other [Concept('concept_country','$concept_countries$')] that are present or have $concept_interests$ in that $concept_strategic_region$, as they have the same influence in this region as you when declaring your interest.\n\nYour new [concept_interest] starts out inactive. It takes #v [GetDefine('NDiplomacy','INTEREST_NUM_DAYS_CHANGE')|0] days#! for a new $concept_interest$ to activate. During this time it conveys no benefits to you."
  lesson_declare_interest_how_2_back:0 "Close Lens to backtrack"
 
  ### WHY
@@ -1074,7 +1065,7 @@
 
  ### COMPLETE
  lesson_incorporate_state_complete:0 "$concept_state$ $concept_incorporated$!"
- lesson_incorporate_state_complete_desc:0 "Well done! You have now [Concept('concept_incorporated_state','$concept_incorporated$')] an [concept_unincorporate_state]. This means they will now pay taxes, gain access to benefits from [Concept('concept_institution', '$concept_institutions$')], and participate fully in your Country's political system."
+ lesson_incorporate_state_complete_desc:0 "Well done! You have now [Concept('concept_incorporated_state','$concept_incorporated$')] an [concept_unincorporated_state]. This means they will now pay taxes, gain access to benefits from [Concept('concept_institution', '$concept_institutions$')], and participate fully in your Country's political system."
 
 
  ### Interest Group Concept Lesson
@@ -1111,7 +1102,7 @@
 
 
  ### Journal Entries
- JOURNAL_ENTRY_IN_PROGRESS: "@green_checkmark! #bold Виконання триває#!"
+ JOURNAL_ENTRY_IN_PROGRESS:0 "@green_checkmark! #bold Completion In Progress#!"
  
  je_tutorial_expand_basic_building:1 "Expand a basic $concept_building$"
  je_tutorial_expand_basic_building_status:0 "Expand the [JournalEntry.GetTarget.GetBuilding.GetName] in [JournalEntry.GetTarget.GetBuilding.GetState.GetName]"
@@ -1155,10 +1146,10 @@
  je_tutorial_fix_unproductive_building_invalid_tooltip:0 "[JournalEntry.GetTarget.GetBuilding.GetName] in [JournalEntry.GetTarget.GetBuilding.GetState.GetName] is no longer owned by [GetPlayer.GetName]"
  je_tutorial_fix_unproductive_building_goal:1 "[JournalEntry.GetTarget.GetBuilding.GetName] has maintained a [concept_productivity] of at least #v @money!5.0#!, or been [Concept('concept_subsidies','$concept_subsidized$')], for [JournalEntry.GetGoalProgressValue|0]/[JournalEntry.GetTotalGoalValue|0]#! weeks."
    
- je_tutorial_promote_ig:2 "$concept_bolster$ an $concept_interest_group$"
- je_tutorial_promote_ig_goal:1 "[Concept('concept_bolster','$concept_bolstered$')] an [concept_interest_group] for [JournalEntry.GetTotalGoalValue|v0] weeks"
- je_tutorial_promote_ig_reason:1 "It is time to choose a political vision for your country. Review your active [Concept('concept_interest_group', '$concept_interest_groups$')] and choose one or several to [concept_bolster] for the rocky road ahead."
- je_tutorial_promote_ig_status:1 "[Concept('concept_bolster','$concept_bolstered$')] $concept_interest_group$ for [JournalEntry.CalcCurrentGoalValue] / [JournalEntry.GetTotalGoalValue] weeks"
+ je_tutorial_promote_movement:2 "$concept_bolster$ a $concept_political_movement$"
+ je_tutorial_promote_movement_goal:1 "[Concept('concept_bolster','$concept_bolstered$')] a [concept_political_movement] for [JournalEntry.GetTotalGoalValue|v0] weeks"
+ je_tutorial_promote_movement_reason:1 "It is time to choose a political vision for your country. Review your active [Concept('concept_political_movement', '$concept_political_movements$')] and choose one or several to [concept_bolster] for the rocky road ahead."
+ je_tutorial_promote_movement_status:1 "[Concept('concept_bolster','$concept_bolstered$')] $concept_political_movement$ for [JournalEntry.CalcCurrentGoalValue] / [JournalEntry.GetTotalGoalValue] weeks"
 
  je_tutorial_grow_gdp:1 "Grow $concept_gdp_short$"
  je_tutorial_grow_gdp_status:0 "$concept_gdp_short$ increased by (#variable @money![JournalEntry.GetGoalProgressValue|K] / @money![JournalEntry.GetGoalAddValue|K]#!)"
@@ -1166,7 +1157,7 @@
  je_tutorial_grow_gdp_reason:3 "This is an open-ended task that makes use of all that you have learned about [Concept('concept_building', '$concept_buildings$')], [Concept('concept_market', '$concept_markets$')] and [Concept('concept_trade_route', '$concept_trade_routes$')] to grow the [concept_gdp] of your country.\n\nBuilding $concept_buildings$, growing your [Concept('concept_pop','$concept_population$')], tweaking [Concept('concept_production_method', '$concept_production_methods$')] and manipulating $concept_market$ prices are all potential ways to grow your $concept_gdp$."
 
  je_tutorial_increase_market_access_by_decree:1 "Increase $concept_market_access$ by $concept_decree$"
- je_tutorial_increase_market_access_by_decree_goal:2 "Any [concept_state] has had [GetDecreeType('decree_road_maintenance').GetName] $concept_decree$ in place for [JournalEntry.GetTotalGoalValue|v0] weeks"
+ je_tutorial_increase_market_access_by_decree_goal:3 "[JournalEntry.GetTarget.GetState.GetName] has had [GetDecreeType('decree_road_maintenance').GetName] $concept_decree$ in place for [JournalEntry.GetTotalGoalValue|v0] weeks"
  je_tutorial_increase_market_access_by_decree_reason:1 "[concept_market_access] in [JournalEntry.GetTarget.GetState.GetName] has dropped below 100%, causing adverse price conditions. Improve this by issuing the [GetDecreeType('decree_road_maintenance').GetName] [concept_decree] in [JournalEntry.GetTarget.GetState.GetName]."
  je_tutorial_increase_market_access_by_decree_status_first:0 "Issue [GetDecreeType('decree_road_maintenance').GetName] $concept_decree$ in [SCOPE.sJE('journal_entry').GetTarget.GetState.GetName]"
  je_tutorial_increase_market_access_by_decree_status_second:0 "Maintain [GetDecreeType('decree_road_maintenance').GetName] $concept_decree$ in [SCOPE.sJE('journal_entry').GetTarget.GetState.GetName] for [SCOPE.sJE('journal_entry').CalcCurrentGoalValue|v0]/[SCOPE.sJE('journal_entry').GetTotalGoalValue|v0] weeks"
@@ -1175,7 +1166,7 @@
  je_tutorial_improve_market_access_with_railways:1 "Increase $concept_infrastructure$ by Railways"
  je_tutorial_improve_market_access_with_railways_reason:1 "[concept_infrastructure] in [JournalEntry.GetTarget.GetState.GetName] is no longer sufficient to support its industries, impacting [concept_market_access]. Invest in local Railways to fix this problem once and for all."
  je_tutorial_improve_market_access_with_railways_invalid_tooltip:0 "[JournalEntry.GetTarget.GetState.GetName] is no longer owned by [GetPlayer.GetName]"
- je_tutorial_improve_market_access_with_railways_tooltip:0 "$concept_infrastructure$ balance in [JournalEntry.GetTarget.GetState.GetName] must be positive. Current Balance: [JournalEntry.GetTarget.GetState.GetInfrastructureBalance|0+=]"
+ je_tutorial_improve_market_access_with_railways_tooltip: "$concept_infrastructure$ balance in [JournalEntry.GetTarget.GetState.GetName] must be positive. Current Balance: [JournalEntry.GetTarget.GetState.GetInfrastructureBalance|0+=]"
 
  je_tutorial_increase_immigration:0 "Increase Immigration"
  je_tutorial_increase_immigration_goal:2 "Increase $concept_population$ by #v [JournalEntry.GetGoalAddValue|K]#! (currently #v [JournalEntry.GetGoalProgressValue|K]#! / [JournalEntry.GetGoalAddValue|K])"
@@ -1183,17 +1174,13 @@
  je_tutorial_increase_immigration_invalid_tooltip:0 "[JournalEntry.GetTarget.GetState.GetName] is no longer owned by [GetPlayer.GetName], or 10 years have passed"
  je_tutorial_increase_immigration_status:2 "Increase [Concept('concept_pop','$concept_population$')] in [JournalEntry.GetTarget.GetState.GetName] from #v [JournalEntry.CalcCurrentGoalValue|K]#! to #v [JournalEntry.GetTotalGoalValue|K]#!"
 
- je_tutorial_expend_investment_pool:0 "Empty the Investment Pool"
- je_tutorial_expend_investment_pool_reason:0 "The [concept_investment_pool] is overflowing with [concept_money]. You should look at putting this [concept_money] to use instead of having it sit around collecting dust."
- je_tutorial_expend_investment_pool_status:0 "Current amount in [concept_investment_pool]: #v @money![GetPlayer.GetInvestmentPool|D+]#!#!#!"
-
  je_tutorial_improve_supply_network:0 "Improve Supply Network"
  je_tutorial_improve_supply_network_reason:1 "Our [concept_supply_network] has begun to buckle under the strain of overuse. You should look to remedy this before it becomes a larger issue and begins affecting our trade or overseas war efforts."
  je_tutorial_improve_supply_network_status:1 "Increase your supply of [concept_convoys] by a healthy margin"
  je_tutorial_improve_supply_network_goal:0 "Increase number of [concept_convoys]: #v [JournalEntry.CalcCurrentGoalValue|0] / [JournalEntry.GetTotalGoalValue|0]#!"
 
  je_tutorial_improve_consumer_goods_access:0 "Improve Access to Consumer Goods" #Doesn't display information fully
- je_tutorial_improve_consumer_goods_access_reason:1 "Many of your [Concept('concept_pop', '$concept_pops$')] are reporting that they are having a hard time getting access to [JournalEntry.GetTarget.GetMarketGoods.GetGoods.GetName]. Alleviating these pains for your $concept_pops$ will increase [concept_sol] and help build [Concept('concept_loyalist','$concept_loyalty$')]."
+ je_tutorial_improve_consumer_goods_access_reason:1 "Many of your [Concept('concept_pop', '$concept_pops$')] in [JournalEntry.GetTarget.GetStateGoods.GetState.GetName] are reporting that they are having a hard time getting access to [JournalEntry.GetTarget.GetStateGoods.GetGoods.GetName]. Alleviating these pains for your $concept_pops$ will increase [concept_sol] and help build [Concept('concept_loyalist','$concept_loyalty$')]."
 
  je_tutorial_make_interest_group_happy:0 "Make Interest Group Happy"
  je_tutorial_make_interest_group_happy_reason:1 "The [JournalEntry.GetTarget.GetInterestGroup.GetName] seem to have a low [concept_approval] of our [concept_government]. We should keep them happy to avoid any potential of them becoming [Concept('concept_radical','$concept_radicalized$')] and turning against us."
@@ -1230,7 +1217,7 @@
  je_tutorial_expand_military_status:2 "Current number of [Concept('concept_battalion', '$concept_battalions$')] in [Concept('concept_military_formation', '$concept_military_formations$')]: #v [JournalEntry.CalcCurrentGoalValue] / [JournalEntry.GetTotalGoalValue]#!"
 
  je_tutorial_recruit_promote_commander:0 "Recruit and Promote a Commander"
- je_tutorial_recruit_promote_commander_reason:0 "With war an ever-present danger, we should look to prepare our military for any potential upcoming conflicts."
+ je_tutorial_recruit_promote_commander_reason:1 "Now that our army has [Concept('concept_unit','$concept_units$')] we will need to put someone in charge of these $concept_units$. Without a commander the army will have low organization and not be as effective if we find ourselves in a conflict. We should be prepared for this eventuality."
  je_tutorial_recruit_promote_commander_first:0 "Recruit a Commander"
  je_tutorial_recruit_promote_commander_second:0 "Promote your new Commander"
  je_tutorial_recruit_promote_commander_complete_trigger:0 "Has recruited and promoted a Commander"
@@ -1302,10 +1289,10 @@
  je_tutorial_research_technology_complete_trigger:0 "Select a $concept_technology$ to research, and research it to completion"
 
  je_tutorial_establish_trade_route:0 "Establish a Trade Route"
- je_tutorial_establish_trade_route_reason:0 "[Concept('concept_input_goods_shortage','$concept_input_goods_shortages$')] can be easily dealt with by importing [Concept('concept_good','$concept_goods$')] from countries that produce what you require.\n\nSolving shortages or reducing [Concept('concept_market_price','$concept_market_prices$')] are not the only reasons to trade, though. Exporting $concept_goods$ keep your market from getting oversaturated and ensure profits stay healthy, while ensuring other economies start to become reliant on yours."
- je_tutorial_establish_trade_route_goal:0 "Resolve the [concept_input_goods_shortage] of [JournalEntry.GetTarget.GetMarketGoods.GetGoods.GetTextIcon][Nbsp][JournalEntry.GetTarget.GetMarketGoods.GetGoods.GetName] and decrease its [concept_market_price] for #v [JournalEntry.GetGoalProgressValue|0]/[JournalEntry.GetTotalGoalValue|0]#! weeks"
+ je_tutorial_establish_trade_route_reason:0 "[Concept('concept_shortage','$concept_input_goods_shortages$')] can be easily dealt with by importing [Concept('concept_good','$concept_goods$')] from countries that produce what you require.\n\nSolving shortages or reducing [Concept('concept_market_price','$concept_market_prices$')] are not the only reasons to trade, though. Exporting $concept_goods$ keep your market from getting oversaturated and ensure profits stay healthy, while ensuring other economies start to become reliant on yours."
+ je_tutorial_establish_trade_route_goal:0 "Resolve the [Concept('concept_shortage','$concept_input_goods_shortage$')] of [JournalEntry.GetTarget.GetMarketGoods.GetGoods.GetTextIcon][Nbsp][JournalEntry.GetTarget.GetMarketGoods.GetGoods.GetName] and decrease its [concept_market_price] for #v [JournalEntry.GetGoalProgressValue|0]/[JournalEntry.GetTotalGoalValue|0]#! weeks"
  je_tutorial_establish_trade_route_status_not_progressing:1 "Begin imports of [SCOPE.sJE('journal_entry').GetTarget.GetMarketGoods.GetGoods.GetTextIcon][Nbsp][SCOPE.sJE('journal_entry').GetTarget.GetMarketGoods.GetGoods.GetName]"
- je_tutorial_establish_trade_route_status_progressing:1 "Resolve the [concept_input_goods_shortage] and decrease the [concept_market_price] of [SCOPE.sJE('journal_entry').GetTarget.GetMarketGoods.GetGoods.GetTextIcon][Nbsp][SCOPE.sJE('journal_entry').GetTarget.GetMarketGoods.GetGoods.GetName]"
+ je_tutorial_establish_trade_route_status_progressing:1 "Resolve the [Concept('concept_shortage','$concept_input_goods_shortage$')] and decrease the [concept_market_price] of [SCOPE.sJE('journal_entry').GetTarget.GetMarketGoods.GetGoods.GetTextIcon][Nbsp][SCOPE.sJE('journal_entry').GetTarget.GetMarketGoods.GetGoods.GetName]"
  
  ### Establish Trade Route
  ### HOW
@@ -1339,11 +1326,11 @@
  lesson_establish_trade_route_how_7_continue:0 "Press Next"
  
  lesson_establish_trade_route_how_8:0 "$lesson_establish_trade_route_how_1$"
- lesson_establish_trade_route_how_8_desc:0 "Now that you know the effects of starting one [concept_trade_route] over another, choose one or several [Concept('concept_market','$concept_markets$')] to import from. You can sort the list by clicking on the headers.\n\nYou can trade each [concept_good] with more than one $concept_market$, but each route costs a fixed amount of @bur![Nbsp][concept_bureaucracy] in upkeep. Establish as few routes as possible that provides enough quantity to resolve your [concept_input_goods_shortage]."
+ lesson_establish_trade_route_how_8_desc:0 "Now that you know the effects of starting one [concept_trade_route] over another, choose one or several [Concept('concept_market','$concept_markets$')] to import from. You can sort the list by clicking on the headers.\n\nYou can trade each [concept_good] with more than one $concept_market$, but each route costs a fixed amount of @bur![Nbsp][concept_bureaucracy] in upkeep. Establish as few routes as possible that provides enough quantity to resolve your [Concept('concept_shortage','$concept_input_goods_shortage$')]."
  lesson_establish_trade_route_how_8_continue:0 "Establish an Import Route to continue"
  
  lesson_establish_trade_route_how_9:0 "$lesson_establish_trade_route_how_1$"
- lesson_establish_trade_route_how_9_desc:1 "Good! Your [concept_trade_route] has now been established. For as long as it remains profitable for the [Concept('concept_pop','$concept_pops$')] in the [GetBuildingType('building_trade_center').GetName], and you have enough [concept_convoys] to support it, it will keep expanding until a [concept_market_price] equilibrium has been reached between the two [Concept('concept_market','$concept_markets$')]. If the quantity is insufficient to resolve your [concept_input_goods_shortage] you can start more $concept_trade_routes$, focus on domestic production, or attempt to reduce the quantity used. The #b Why#! tutorial covers more advanced trade topics that may also help.\n\nGood luck!"
+ lesson_establish_trade_route_how_9_desc:1 "Good! Your [concept_trade_route] has now been established. For as long as it remains profitable for the [Concept('concept_pop','$concept_pops$')] in the [GetBuildingType('building_trade_center').GetName], and you have enough [concept_convoys] to support it, it will keep expanding until a [concept_market_price] equilibrium has been reached between the two [Concept('concept_market','$concept_markets$')]. If the quantity is insufficient to resolve your [Concept('concept_shortage','$concept_input_goods_shortages$')] you can start more $concept_trade_routes$, focus on domestic production, or attempt to reduce the quantity used. The #b Why#! tutorial covers more advanced trade topics that may also help.\n\nGood luck!"
  lesson_establish_trade_route_how_9_continue:0 "Finish"
  
  ### WHY
@@ -1439,3 +1426,105 @@
  lesson_establish_company_how_3:0 "$lesson_establish_company_how_1$"
  lesson_establish_company_how_3_desc:0 "Your [concept_company] is now established and bonuses are applied to their associated [Concept('concept_building','$concept_buildings$')]. Be sure to come back to the Companies screen to check on the [concept_prosperity] of your Companies to achieve additional bonuses."
  lesson_establish_company_how_3_back:0 "Return to Companies tab"
+
+ je_subject_liberty: "Subject $concept_liberty_desire$"
+ je_subject_liberty_status: "Lower [JournalEntry.GetTarget.GetCountry.GetNameNoFlag]'s [concept_liberty_desire]"
+ je_subject_liberty_reason: "Your [concept_subject] [JournalEntry.GetTarget.GetCountry.GetNameNoFlag] is about to reach a dangerous level of $concept_liberty_desire$. When it reaches the final level they may attempt to increase their [concept_autonomy] or even try and become independent. We risk losing control of them if this progresses."
+
+ lesson_subject_liberty_how_1: "Interacting With A $concept_subject$"
+ lesson_subject_liberty_how_1_desc: "An overview of your [Concept('concept_subject', '$concept_subjects$')] can be found in the #b $concept_subjects$ tab#! on the #b Diplomacy panel#!."
+ lesson_subject_liberty_how_1_continue: "Open the #b $concept_subjects$ tab#! on the #b Diplomacy panel#!"
+
+ lesson_subject_liberty_how_2: "$lesson_subject_liberty_how_1$"
+ lesson_subject_liberty_how_2_desc: "Here you can see your different [Concept('concept_subject', '$concept_subjects$')], their [concept_liberty_desire], and your available [Concept('concept_overlord_action', '$concept_overlord_actions$')].\n\nUnderneath the name of your $concept_subject$ and the [concept_subject_type], there is the $concept_liberty_desire$ bar. This bar shows you their current $concept_liberty_desire$ level. You can hover each part of the bar to see the effects of each level. They range from #g Positive#! - None - #r Negative#! effects on the generation of [Concept('concept_radical','$concept_radicals$')] and [Concept('concept_loyalist','$concept_loyalists$')] in the $concept_subject$ [concept_country]."
+ lesson_subject_liberty_how_2_back: "Close the #b Subjects tab#! to backtrack"
+
+ lesson_subject_liberty_how_3: "$lesson_subject_liberty_how_1$"
+ lesson_subject_liberty_how_3_desc: "To the right, you find a button to open and see your available [Concept('concept_overlord_action', '$concept_overlord_actions$')]. They can be used to fine tailor and set expectations for your [Concept('concept_subject', '$concept_subjects$')]. However, if you hover each actions and check the effects, note that many of these actions affect the $concept_subject_possessive$ [concept_liberty_desire] either directly by giving a set amount, or indirectly by increasing or decreasing the weekly gain/loss."
+
+ lesson_subject_liberty_how_4: "$lesson_subject_liberty_how_1$"
+ lesson_subject_liberty_how_4_desc: "[Concept('concept_overlord_action', '$concept_overlord_actions$')] are not the only way to change the [concept_liberty_desire] of a [concept_subject].\n\n$concept_liberty_desire$ is also affected by the following:\n - [concept_relations]: Boosting relations between $concept_subject$ and $concept_overlord$\n - [concept_economic_dependence]: The impact on their economy.\n - [concept_prestige]: The difference in $concept_prestige$, higher difference means lower $concept_liberty_desire$ for the $concept_subject$.\n - $concept_subject$ [Concept('concept_political_lobby', '$concept_political_lobbies_short$')]: Towards their [concept_overlord].\n\nIt is always important to keep an eye on your $concept_subjects$ and their $concept_liberty_desire$."
+
+ lesson_subject_liberty_how_5: "$lesson_subject_liberty_how_1$"
+ lesson_subject_liberty_how_5_desc: "When the [concept_liberty_desire] gets high or low enough for one of your [Concept('concept_subject', '$concept_subjects$')], you have the opportunity to [GetDiplomaticActionType('da_decrease_autonomy').GetName] or [GetDiplomaticActionType('da_increase_autonomy_of_subject').GetName] with the buttons on either side of the bar, which will either lower or increase the amount of control you have over the $concept_subject$. You can see what each [concept_subject_type] leads to when increasing or decreasing autonomy in the #b Subject Types Table#!.\n\nThis can be helpful if you can sacrifice [concept_autonomy] for a lower $concept_liberty_desire$, or if you wish to take steps towards annexing a $concept_subject$."
+
+ lesson_subject_liberty_why_1: "Why Lower $concept_liberty_desire$"
+ lesson_subject_liberty_why_1_desc: "The largest risk to high levels of [concept_liberty_desire] is the chance that your [concept_subject] may attempt to start a [concept_diplomatic_play] for Independence and rebel against you.\n\nA $concept_subject$ may attempt a $concept_diplomatic_play$ for Independence if $concept_liberty_desire$ is #bold High#! and they have had their request for increased [concept_autonomy] rejected by their [concept_overlord]."
+ lesson_subject_liberty_why_1_continue: "Open the #b $concept_subjects$ tab#! on the #b Diplomacy panel#!"
+
+ lesson_subject_liberty_why_2: "$lesson_subject_liberty_why_1$"
+ lesson_subject_liberty_why_2_desc: "Additionally a $concept_subject$ with high [concept_liberty_desire] will unlock options to increase their [concept_autonomy]. A $concept_subject$ with increased $concept_autonomy$ will pay less tribute to their [concept_overlord].\n\nBe careful when declining $concept_autonomy$ requests as it usually is the first step towards an [GetDiplomaticPlayType('dp_independence').GetName] [concept_diplomatic_play]."
+ lesson_subject_liberty_why_2_back: "Close the #b Subjects tab#! to backtrack"
+
+ lesson_subject_liberty_why_3: "$lesson_subject_liberty_why_1$"
+ lesson_subject_liberty_why_3_desc: "[Concept('concept_subject','$concept_subjects$')] with a high level of [concept_liberty_desire] can potentially block certain [Concept('concept_overlord_action', '$concept_overlord_actions$')] that would normally be available if $concept_liberty_desire$ was lower."
+
+ je_tutorial_form_power_bloc: "Form Power Bloc"
+ je_tutorial_form_power_bloc_status: "Become a [concept_power_bloc_leader]"
+ je_tutorial_form_power_bloc_reason: "As a Great Power we must show strength. Other Great Powers are [Concept('concept_power_bloc_leader','$concept_power_bloc_leaders$')]. We should look to creating our own Sphere of Influence if we hope to compete with the others. Creating a $concept_power_bloc$ will allow us to keep a closer grip on [Concept('concept_country','$concept_countries$')] that we may wish to keep influence over."
+
+ lesson_form_power_bloc_how_1: "Forming A $concept_power_bloc$"
+ lesson_form_power_bloc_how_1_desc: "Forming a [concept_power_bloc] allows you to create a group of [Concept('concept_country','$concept_countries$')] that can work together in bettering their situation.\n\nYou can see details about all the already existing $concept_power_blocs$ on the #b $concept_power_bloc$ panel#!. Here is also where you can form your own."
+ lesson_form_power_bloc_how_1_continue: "Open the #b $concept_power_bloc$ panel#! and click the #b '$FORM_POWER_BLOC$'#! button at the bottom of the panel"
+
+ lesson_form_power_bloc_how_2: "$lesson_form_power_bloc_how_1$"
+ lesson_form_power_bloc_how_2_desc: "Here you can customize your own [concept_power_bloc].\n\nMandatory things to select:\n - A name for your $concept_power_bloc$\n - A [concept_power_bloc_identity]\n - A [concept_power_bloc_principle] from a [concept_power_bloc_primary_principle_group]\n\nThe $concept_power_bloc_identity$ is the main guide for how your $concept_power_bloc$ will operate, but $concept_power_bloc_principles$ are what will define your $concept_power_bloc$ over time as you gain [Concept('concept_power_bloc_mandate','$concept_power_bloc_mandates$')] for new and upgraded versions of them.\n\nIf you are happy with your $concept_power_bloc$ name and $concept_power_bloc_identity$, then all you have left to do is to select your starting $concept_power_bloc_principle$."
+ lesson_form_power_bloc_how_2_continue: "Click #bold $ADD_NEW_PRINCIPLE$#! to open the #b Principle Selection window#!"
+ lesson_form_power_bloc_how_2_back: "Close the #b Power Bloc Formation panel#! to backtrack."
+
+ lesson_form_power_bloc_how_3: "$lesson_form_power_bloc_how_1$"
+ lesson_form_power_bloc_how_3_desc: "$concept_power_bloc_principles$ are your way to tailor your [concept_power_bloc] into its own unique entity. However, when starting a $concept_power_bloc$ you have to select a [concept_power_bloc_principle] from a [concept_power_bloc_primary_principle_group]. The $concept_power_bloc_primary_principle_group$ is dependent on the [concept_power_bloc_identity] of your Bloc.\n\nTo get more principles you will need [Concept('concept_power_bloc_mandate','$concept_power_bloc_mandates$')]. $concept_power_bloc_mandates$ are accumulated over time, and you can generally acquire them faster by inviting more members to your Power Bloc."
+ lesson_form_power_bloc_how_3_continue: "Pick any of the available $concept_power_bloc_principles$ and then #b $PRINCIPLE_SELECTION_SUBMIT_BUTTON_LABEL$#!"
+ lesson_form_power_bloc_how_3_back: "Close the #b Principle Selection window#! to backtrack."
+
+ lesson_form_power_bloc_how_4: "$lesson_form_power_bloc_how_1$"
+ lesson_form_power_bloc_how_4_desc: "All that is left now is to click the #b $FORM_POWER_BLOC$#! button and your [concept_power_bloc] will be formed! Be sure to invite more [Concept('concept_country','$concept_countries$')] to your newly formed $concept_power_bloc$ when you have enough [concept_power_bloc_leverage_advantage] over them."
+
+ lesson_form_power_bloc_why_1: "Why Form a Power Bloc"
+ lesson_form_power_bloc_why_1_desc: "Forming a [concept_power_bloc] allows you to have access to an extra avenue of interactions with other [Concept('concept_country','$concept_countries$')] that you might have an interest in, be it for [Concept('concept_alliance','$concept_alliances$')], [Concept('concept_trade_route','$concept_trade$')], or just keeping them close for later. Forming a $concept_power_bloc$ and aquiring [Concept('concept_power_bloc_mandate','$concept_power_bloc_mandates$')] can be used to unlock additional bonuses for the [Concept('concept_power_bloc_member','$concept_power_bloc_members_short$')]."
+ 
+ lesson_form_power_bloc_why_2: "$lesson_form_power_bloc_why_1$"
+ lesson_form_power_bloc_why_2_desc: "Forming a [concept_power_bloc] will open access to the [Concept('concept_power_bloc_principle','$concept_power_bloc_principles$')]. $concept_power_bloc_principles$ are a way for a [concept_country] to tailor their Bloc to become more what a group of $concept_countries$ might need, or what they might wish to try and accomplish.\n\n$concept_power_bloc_principles$ are divided up into [Concept('concept_power_bloc_principle_group','$concept_power_bloc_principle_groups$')] and a group has three levels. Each level provides a new effect, but will cost an additional $concept_power_bloc_mandate$ when increasing the level of the $concept_power_bloc_principle_group$."
+ 
+ lesson_form_power_bloc_why_3: "$lesson_form_power_bloc_why_1$"
+ lesson_form_power_bloc_why_3_desc: "Having other [Concept('concept_country','$concept_countries$')] inside of your [concept_power_bloc] can allow for some level of control over them. [Concept('concept_power_bloc_member','$concept_power_bloc_members_short$')] can be integrated into a [concept_customs_union] that will allow for a more open access to goods.\n\nIf you do not wish to have all $concept_power_bloc_members_short$ in a $concept_customs_union$, you can allow one or multiple $concept_power_bloc_members_short$ to maintain their own market while still remaining within the $concept_power_bloc_short$. This can be helpful if they are not directly connected to your $concept_country$, and you do not have the required [concept_convoys] to maintain $concept_trade$."
+
+ lesson_form_power_bloc_why_4: "$lesson_form_power_bloc_why_1$"
+ lesson_form_power_bloc_why_4_desc: "The main argument for having a [concept_power_bloc] is the ability to secure [Concept('concept_country','$concept_countries$')] that you might not have the diplomatic [concept_influence] to maintain relations with otherwise, while also keeping those $concept_countries$ away from other $concept_power_blocs$.\n\nAdding more $concept_countries$ to your $concept_power_bloc$ will require [concept_power_bloc_leverage] and will decrease your $concept_power_bloc_possessive$ [concept_power_bloc_cohesion]."
+
+ je_tutorial_foreign_investment: "Increase our $concept_foreign_investment$"
+ je_tutorial_foreign_investment_status: "Build up [JournalEntry.GetTarget.GetCountry.GetNameNoFlag]"
+ je_tutorial_foreign_investment_reason: "The nation of [JournalEntry.GetTarget.GetCountry.GetName] currently allows for us to build in their [concept_country]. We should take advantage of this by expanding [Concept('concept_building','$concept_buildings$')] that can bolster both $concept_countries_possessive$ economies."
+
+ lesson_foreign_investmen_why_1: "Why Invest in a Foreign $concept_country$"
+ lesson_foreign_investmen_why_1_desc: "Having the ability to expand [Concept('concept_building','$concept_buildings$')] in another [concept_country] can be extremely helpful in regards to bettering your economic situation. An example of this is that you can build in a $concept_country$ that has access to [Concept('concept_good', '$concept_goods$')] currently unavailable to you. Additionally, you can help industrialize $concept_countries$ that might have many [GetPopType('peasants').GetName] but no construction capabilities to take advantage of these large number of [Concept('concept_pop','$concept_pops$')]."
+
+ lesson_foreign_investmen_why_2: "$lesson_foreign_investmen_why_1$"
+ lesson_foreign_investmen_why_2_desc: "The potential to expand [Concept('concept_building','$concept_buildings$')] in other [Concept('concept_country','$concept_countries$')] can reduce your reliance on other $concept_countries$ that might not be aligned with you in the future. Being able to effectively build your own [concept_trade_route] network can allow for an expansion of the industry in your home lands."
+
+ lesson_foreign_investmen_why_3: "$lesson_foreign_investmen_why_1$"
+ lesson_foreign_investmen_why_3_desc: "Another reason to invest in another [concept_country], might be because that $concept_country$ is incapable of rapidly expanding on its own. This $concept_country$ might not have the ability to build up their economy due to a lack of [GetBuildingType('building_construction_sector').GetName] [Concept('concept_building', '$concept_buildings$')]. Doing this would not only allow for the potential inclusion of their resources into your market, but also the development of their economy, and the utilization of their [Concept('concept_pop','$concept_pops$')]. In a [concept_subject] this will allow for a stronger [concept_army], an increase in tribute, and an increased potential for private investment by your $concept_pops$."
+
+ je_tutorial_lobbies: "Lobby $concept_political_lobby_appeasement$"
+ je_tutorial_lobbies_status: "Increase [concept_political_lobby] [concept_political_lobby_appeasement]"
+ je_tutorial_lobbies_reason: "One of our [Concept('concept_interest_group','$concept_interest_groups$')] has started a $concept_political_lobby$ targeting [SCOPE.sPL('target').GetTargetCountry.GetName]. $concept_political_lobby_appeasing$ our $concept_interest_groups$ will give them more [concept_approval] to use in the enacting of new [Concept('concept_law', '$concept_laws$')] and potentially unlock more [Concept('concept_interest_group_trait', '$concept_interest_group_traits$')]."
+ je_tutorial_lobbies_goal: "Increase [SCOPE.sPL('target').GetName] $concept_political_lobby_appeasement$ to [JournalEntry.GetTotalGoalValue|v0] (currently level [JournalEntry.CalcCurrentGoalValue|v0])"
+
+ lesson_lobbies_how_1: "How to $concept_political_lobby_appease$ a $concept_political_lobby$"
+ lesson_lobbies_how_1_desc: "[Concept('concept_political_lobby','$concept_political_lobbies$')] are a way for your [Concept('concept_interest_group','$concept_interest_groups$')] to express their opinion on the diplomatic [concept_relations] of your [concept_country]. You can see a list of active $concept_political_lobbies_short$ in the outliner on the right side of the screen and in the #b $POLITICS$#! panel."
+ lesson_lobbies_how_1_continue: "Open the #b $POLITICS$#! panel"
+
+ lesson_lobbies_how_2: "$lesson_lobbies_how_1$"
+ lesson_lobbies_how_2_desc: "Here you can see a list of active [Concept('concept_political_lobby','$concept_political_lobbies_short$')] and the [Concept('concept_interest_group','$concept_interest_groups$')] that support them. The current level of $concept_political_lobby_appeasement$ is also visible."
+ lesson_lobbies_how_2_back: "Close the #b $POLITICS$#! panel to backtrack."
+ lesson_lobbies_how_2_continue: "Open the panel for the [GetTutorialJournalEntry.GetTarget.GetPoliticalLobby.GetName] [concept_political_lobby]."
+
+ lesson_lobbies_how_3: "$lesson_lobbies_how_1$"
+ lesson_lobbies_how_3_desc: "This is the [concept_political_lobby] panel. Here you can see all the details of who is supporting the $concept_political_lobby_short$ and how to influence it further.\nAt the top you can see the [concept_political_lobby_appeasement] Bar, the [Concept('concept_interest_group','$concept_interest_groups$')] that support this $concept_political_lobby_short$, and the combined [concept_clout] of the $concept_interest_groups$.\n\nThe $concept_political_lobby_appeasement$ Bar shows the $concept_political_lobby_appeasement$ level from complying with your $concept_interest_groups$' requests. The more you increase $concept_political_lobby_appeasement$ the more [concept_approval] the supporting $concept_interest_groups$ will receive."
+ lesson_lobbies_how_3_back: "Close the panel for the [GetTutorialJournalEntry.GetTarget.GetPoliticalLobby.GetName] [concept_political_lobby] to backtrack."
+
+ lesson_lobbies_how_4: "$lesson_lobbies_how_1$"
+ lesson_lobbies_how_4_desc: "Below that you have the supporting [Concept('concept_interest_group','$concept_interest_groups$')] of the [Concept('concept_political_lobby','$concept_political_lobby_short$')], and the [concept_clout] of the $concept_political_lobby_short$. The $concept_political_lobby_short_possessive$ $concept_clout$ is determined from the combined $concept_clout$ value of all supporting $concept_interest_groups$. This $concept_clout$ value impacts the [concept_influence] costs of [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] with the target [concept_country] of the $concept_political_lobby$."
+
+ lesson_lobbies_how_5: "$lesson_lobbies_how_1$"
+ lesson_lobbies_5_how_desc: "Lastly at the bottom of the tab are ways of increasing or decreasing [concept_political_lobby_appeasement]. Fulfilling any of the conditions in the increase category below will bolster $concept_political_lobby_appeasement$, and increase [concept_interest_group] [concept_approval], while anything in the bottom category will decrease $concept_political_lobby_appeasement$."
